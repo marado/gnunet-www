@@ -147,45 +147,14 @@
               applications that have been distributed with unix systems
               ever since the 1980's. We can produce an OS distribution
               where these things work out of the box with the nicknames
-              of people instead of cloud services. We have discussed
-              about this topic at the 2018 GNUnet Hacker Meeting, and
-              concluded that this will take
+              of people instead of cloud services. For more information
+	      and context, read
             {% endtrans %}
-          </p>
-          <ol>
-            <li>
-              {% trans %}
-                deterministic allocation of IP addresses in exit range
-                by PeerId AND CADET port.
-              {% endtrans %}
-            </li>
-            <li>
-              {% trans %}
-                change of exit daemon to exit service, with new APIs to
-                (a) export mapping of allocated IP addresses to PeerID
-                and CADET port (and eventually also dynamic
-                adding/removing of exit maps)
-              {% endtrans %}
-            </li>
-            <li>
-              {% trans %}
-                new service that hijacks DNS reverse lookups in the exit
-                range, mapping them to its own GNS zone where labels are
-                mapped to VPN records with the information from (2), and
-                the label.zone is returned for the reverse lookup.
-              {% endtrans %}
-            </li>
-          </ol>
-          <p>
-            {% trans %}
-              For more information and context,
-              read
               <a href="https://bugs.gnunet.org/view.php?id=4625">bug id 4625</a>.
-            {% endtrans %}
           </p>
           <p>
             {% trans %}
-              Mentors: lynX, dvn
+              Mentors: lynX &amp; dvn
             {% endtrans %}
           </p>
         </section>
