@@ -23,7 +23,7 @@ msgid "GNU maintainer."
 msgstr ""
 
 #: about.html.j2:14
-msgid "Continuous Integration, SecuShare, packaging (Guix)."
+msgid "Continuous Integration, secushare, packaging (Guix)."
 msgstr ""
 
 #: about.html.j2:19
@@ -39,7 +39,7 @@ msgid "Random peer sampling."
 msgstr ""
 
 #: about.html.j2:36
-msgid "SecuShare, Social, PSYC, Multicast, Data Protection Theory."
+msgid "secushare, Social, PSYC, Multicast, Data Protection Theory."
 msgstr ""
 
 #: about.html.j2:42
@@ -51,7 +51,7 @@ msgid "Testbed, voice."
 msgstr ""
 
 #: about.html.j2:52 about.html.j2:64
-msgid "SecuShare, Social, PSYC, Multicast."
+msgid "secushare, Social, PSYC, Multicast."
 msgstr ""
 
 #: about.html.j2:59
@@ -325,13 +325,6 @@ msgstr ""
 msgid "_project_title"
 msgstr "Stack di protocolli GNU per un nuovo Internet etico"
 
-#: index.html.j2:13
-msgid ""
-"An alternative P2P network stack to build secure, decentralized and privacy-"
-"preserving distributed applications; built to replace the old insecure "
-"Internet protocols."
-msgstr ""
-
 #: index.html.j2:25
 msgid "The Internet is broken"
 msgstr ""
@@ -349,16 +342,6 @@ msgstr ""
 
 #: index.html.j2:36
 msgid "Developing decentralized applications is hard"
-msgstr ""
-
-#: index.html.j2:39
-msgid ""
-"It seems like every other P2P project develops its own library stack, "
-"covering transports, stream muxing, discovery and others. This divides "
-"effort and multiplies bug count. <br><br> GNUnet is a metadata-preserving "
-"foundation for your application covering areas from addressing to reliable "
-"bidirectional Axolotl-encrypted channels, with advanced routing and based on "
-"years of research."
 msgstr ""
 
 #: index.html.j2:49
