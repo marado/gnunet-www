@@ -1,7 +1,13 @@
 <article>
 <h3>
-<a NAME="gsoc2019"></a>2019-02: Topics for GSoC 2019
+<a NAME="gsoc2019"></a>
+<a  href="gsoc.html">2019-02: Topics for GSoC 2019</a>
 </h3>
+<p>
+GNUnet is participating in the Google Summer of Code
+again through GNU. If you are interested in any of
+there projects, reach out to us!
+</p>
 <section>
 <h4>Android Port</h4>
 <p>
