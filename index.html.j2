@@ -2,26 +2,88 @@
 {% block body_content %}
 <!-- Jumbotron -->
 <div class="jumbotron">
-  <div style="height: 40vh">
-    <img alt="{{ _("GNUnet logo")}}" style="object-fit:contain;width:100%;height:100%" class="center-block" src="{{ url('images/gnunet-logo.svg') }}" />
-  </div>
-
   <div class="container text-center">
     <h1>{{ _("_project_title") }}</h1>
 
     <p>
       {% trans %}
-      GNUnet is an alternative network stack for
-      building secure, decentralized and privacy-preserving
-      distributed applications. Our goal is to replace the old
-      insecure Internet protocol stack. Starting from an application
-      for secure publication of files, GNUnet has grown to include all
-      kinds of basic protocol components and applications towards the
-      creation of a GNU internet.
+      An alternative P2P network stack to build secure, decentralized and privacy-preserving distributed applications;  built to replace the old insecure Internet protocols.
       {% endtrans %}
      </p>
 
+    <a class="btn btn-dark" href="https://gitlab.secushare.org/GNUnet/tutorials/blob/master/README.md">
+      {% trans %}
+      Try it
+      {% endtrans %}
+    </a>
   </div>
+</div>
+
+<div class="container text-center">
+  <h3>
+    {% trans %}
+    The Internet of tomorrow needs GNUnet today.
+    {% endtrans %}
+  </h3>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>{{ _("The Internet is broken") }}</h3>
+
+      <p>
+        {% trans %}
+        Protocols from Ethernet and IP to BGP and X.509 PKI fail by being unsecure-by-default: protecting against address forgery, routers learning metadata, or choosing really trusted CAs is nontrivial and sometimes nigh impossible.
+        <br><br>
+        GNUnet is an Internet <a href="https://www.w3.org/2014/strint/papers/65.pdf">secure-by-design</a>, addressing addressing, routing, naming and content distribution in a technically robust manner - as opposed to ad-hoc designs in place today.
+        {% endtrans %}
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <h3>{{ _("Developing decentralized applications is hard") }}</h3>
+
+      <p>
+        {% trans %}
+        It seems like every other P2P project develops its own library stack, covering transports, stream muxing, discovery and others. This divides effort and multiplies bug count.
+        <br><br>
+        GNUnet is a metadata-preserving foundation for your application, covering areas from addressing to reliable bidirectional Axolotl-encrypted channels, with advanced routing.  Our work is based on continuous research spanning almost two decades.
+        {% endtrans %}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>{{ _("Metadata leaks en masse") }}</h3>
+
+      <p>
+        {% trans %}
+        Even though transport encryption is increasingly being deployed in the Internet, it can only do so much: sender and receiver, times, frequency and the volume of communication are all revealed, which enables reverse engineering pages visited and website fingerprinting, as demonstrated with Tor.
+        <br><br>
+        GNUnet addresses these concerns with Perfect Forward Secrecy via ephemeral public key addressing, fixed packet size to hinder traffic analysis, layered encryption, Sybil-resistant routing, and others. 
+        {% endtrans %}
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <h3>{{ _("Users’ freedoms are not respected") }}</h3>
+
+      <p>
+        {% trans %}
+        Today, monitoring infrastructure, proprietary implementations, traffic shapers and firewalls restrict all of the <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a> to some degree.
+        <br><br>
+        GNUnet gives users freedoms to securely access information (“run” the network), to study all aspects of the network’s operation (“access the code”), to distribute information (“copy”), as well as the freedom to deploy new applications (“modify”).
+        {% endtrans %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center">
+  <h3>
+    {% trans %}
+    GNUnet aims to enable a secure and ethical Internet—by replacing the technology stack.
+    {% endtrans %}
+  </h3>
 </div>
 
 <div class="container adorn_h3_bracket">
@@ -77,10 +139,10 @@
 
       <p>
         {% trans %}
-        pretty Easy privacy (PEP) is creating a usable 
+        pretty Easy privacy (p&#8801;p) is creating a usable
 	usable end-to-end encrypted e-mail solution using
 	opportunistic key exchange.
-	PEP will use GNUnet to protect meta data and exploit new
+	p&#8801;p will use GNUnet to protect meta data and exploit new
 	cryptographic protocols to create a privacy-preserving version
 	of the Web-of-Trust.
         {% endtrans %}
@@ -110,7 +172,7 @@
 	Each subsystem runs as a separate process, providing
         fault-isolation and enabling tight permissions to be
 	granted to each subsystem.  Naturally, the
-        implementation is a <a href="http://www.gnu.org/">GNU</a>
+        implementation is a <a href="https://www.gnu.org/">GNU</a>
         package, and will always remain free software.
         {% endtrans %}
       </p>
@@ -118,6 +180,18 @@
   </div>
 </div>
 
+<div class="container text-center">
+  <a class="btn btn-dark" href="https://grothoff.org/christian/habil.pdf">
+    {% trans %}
+    Read the habiliation thesis 'The GNUnet System'
+    {% endtrans %}
+  </a>
+  <br>
+  {% trans %}
+  (More publications around and about GNUnet can be found on our
+  <a href="https://docs.gnunet.org/bib">bibliography</a> website)
+  {% endtrans %}
+</div>
 
 <div class="container">
   <div class="row">

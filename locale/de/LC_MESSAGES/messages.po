@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-03 00:54+0100\n"
+"POT-Creation-Date: 2018-01-08 14:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,215 +17,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
-#: about.html.j2:8
-msgid ""
-"GNU maintainer. Network security &amp; privacy researcher. Software "
-"architect."
+#: about.html.j2:9
+msgid "GNU maintainer."
 msgstr ""
 
-#: about.html.j2:13
-msgid ""
-"Entrepreneur, Investor, Fortune 100 CIO, IT company director in different "
-"industries, …."
+#: about.html.j2:14
+msgid "Continuous Integration, SecuShare, packaging (Guix)."
 msgstr ""
 
-#: about.html.j2:20
-msgid "Applied cryptography. Contact to W3c &amp; Tor."
+#: about.html.j2:19
+msgid "Set, Consensus, Voting."
 msgstr ""
 
-#: about.html.j2:25
-msgid "Theoretical foundations."
+#: about.html.j2:26
+msgid "Mix networking."
 msgstr ""
 
-#: about.html.j2:30
-msgid "Founder of the GNU project. Ethical guidance and licensing."
+#: about.html.j2:31
+msgid "Random peer sampling."
 msgstr ""
 
-#: about.html.j2:37
-msgid "PhD Student, TU Munich. Currently teaching."
+#: about.html.j2:36
+msgid "SecuShare, Social, PSYC, Multicast, Data Protection Theory."
 msgstr ""
 
 #: about.html.j2:42
-msgid "PhD Student, Inria.."
+msgid "GNU Name System, Identity Management, ABE."
 msgstr ""
 
-#: about.html.j2:47 about.html.j2:62
-msgid "Software engineer."
+#: about.html.j2:47
+msgid "Testbed, voice."
 msgstr ""
 
-#: about.html.j2:54
-msgid "Sustainable business development."
+#: about.html.j2:52 about.html.j2:64
+msgid "SecuShare, Social, PSYC, Multicast."
 msgstr ""
 
-#: about.html.j2:58
-msgid "Software engineer. Works on libebics."
+#: about.html.j2:59
+msgid "Web site, packaging (Nix/Guix)."
 msgstr ""
 
-#: about.html.j2:68 about.html.j2:72 about.html.j2:76
-msgid "Translator (Spanish)"
+#: about.html.j2:70
+msgid "NSE, CADET."
 msgstr ""
 
-#: about.html.j2:82 about.html.j2:86 about.html.j2:90
-msgid "Translator (Italian)"
+#: about.html.j2:74 about.html.j2:78
+msgid "W32 port."
 msgstr ""
 
-#: about.html.j2:94
-msgid "Translator (German)"
+#: about.html.j2:84
+msgid "Documentation, packaging (Guix), System Integration"
 msgstr ""
 
-#: about.html.j2:100
-msgid "Hardware security module"
-msgstr ""
-
-#: about.html.j2:104
-msgid "Risk management"
-msgstr ""
-
-#: about.html.j2:108
-msgid "PhD student, TU Munich. Currently teaching."
-msgstr ""
-
-#: about.html.j2:114
-msgid "Software engineer. Works on Android wallet."
+#: about.html.j2:88
+msgid "Multicast."
 msgstr ""
 
 #: architecture.html.j2:6
-msgid "Taler System Architecture"
-msgstr ""
-
-#: bibliography.html.j2:4
-msgid "GNU Taler Bibliography"
-msgstr ""
-
-#: bibliography.html.j2:9 bibliography.html.j2:16 bibliography.html.j2:23
-#: bibliography.html.j2:29
-msgid "by"
-msgstr ""
-
-#: bibliography.html.j2:16 bibliography.html.j2:23 bibliography.html.j2:29
-msgid "and"
-msgstr ""
-
-#: bibliography.html.j2:30
-msgid "available upon request"
-msgstr ""
-
-#: citizens.html.j2:5
-msgid "Advantages for Citizens"
-msgstr ""
-
-#: citizens.html.j2:9
-msgid ""
-"Taler largely functions like digital cash. You withdraw money from your bank "
-"account into your electronic wallet, and can henceforth spend digital cash. "
-"The electronic wallet can carry multiple currencies."
-msgstr ""
-
-#: citizens.html.j2:25 governments.html.j2:58 merchants.html.j2:41
-msgid "Secure"
-msgstr ""
-
-#: citizens.html.j2:27
-msgid ""
-"Taler uses modern cryptography, ensuring that there is no counterfeit. Your "
-"digital wallet is safer than your physical wallet. At most, you can lose its "
-"contents because your computer or mobile is irreparably damaged or "
-"compromised. Unlike a physical wallet, you can make backups to secure "
-"against data loss."
-msgstr ""
-
-#: citizens.html.j2:37
-msgid "Private"
-msgstr ""
-
-#: citizens.html.j2:39
-msgid ""
-"Your transactions are private, neither the payment service provider nor "
-"merchant needs to learn your identity. There is no need to give out credit "
-"card numbers or other sensitive information. The merchant will only be able "
-"to do exactly the transaction you agreed to."
-msgstr ""
-
-#: citizens.html.j2:50
-msgid "Convenient"
-msgstr ""
-
-#: citizens.html.j2:52
-msgid ""
-"You will be able to withdraw money to replenish the digital coins in your "
-"wallet using your credit card or wire transfers. Afterwards you can pay with "
-"one-click using the Taler wallet, which optionally keeps your transaction "
-"history on your computer."
-msgstr ""
-
-#: citizens.html.j2:61
-msgid "Stable"
-msgstr ""
-
-#: citizens.html.j2:63
-msgid ""
-"Coins in your digital wallet will be of the same denomination as the cash in "
-"your physical wallet. Taler is not a crypto-currency, so you do not have to "
-"worry about cryto-currency related value fluctuations. Banking with Taler is "
-"subject to the usual government protections for financial services."
-msgstr ""
-
-#: citizens.html.j2:79
-msgid "Wallet Browser Extension"
-msgstr ""
-
-#: citizens.html.j2:81
-msgid ""
-"We currently provide a <a href=\"wallet.html\">wallet browser extension</a> "
-"for Chromium, Chrome, Firefox, Opera and Edge. Wallets for mobile phones and "
-"other platforms will be available in the future."
-msgstr ""
-
-#: citizens.html.j2:88
-msgid "Taler Demo"
-msgstr ""
-
-#: citizens.html.j2:90
-msgid ""
-"You can see how Taler works in practice by visiting our <a href=\"https://"
-"demo.taler.net\">demo page</a>."
-msgstr ""
-
-#: citizens.html.j2:103
-msgid "The Taler Wallet for customers"
-msgstr ""
-
-#: citizens.html.j2:105
-msgid "Customers interact with the Taler system using the Taler wallet:"
-msgstr ""
-
-#: citizens.html.j2:110
-msgid ""
-"To <b>withdraw</b> electronic coins, the customer transfers funds from his "
-"bank account to the Taler payment service provider (the exchange). The wire "
-"transfer subject must match a code identifying the customer's wallet. After "
-"the wire transfer is complete, the wallet will automatically withdraw the "
-"coins from the exchange."
-msgstr ""
-
-#: citizens.html.j2:118
-msgid ""
-"To <b>spend</b> electronic coins, a merchant must cause the wallet to "
-"display a proposal for some purchase. The wallet will ask the customer for "
-"one-click confirmation. Payment is then instant. Transaction histories and "
-"digitally signed contracts can be preserved by the wallet."
-msgstr ""
-
-#: citizens.html.j2:125
-msgid ""
-"The customer can use the wallet to <b>review</b> his balance. The wallet can "
-"contain different currencies, and may be shared across devices. Customers "
-"can make backups of the wallet to secure its contents against hardware "
-"failures."
-msgstr ""
-
-#: citizens.html.j2:137 merchants.html.j2:179
-msgid "customer perspective"
+msgid "GNUnet System Architecture"
 msgstr ""
 
 #: contact.html.j2:6
@@ -265,7 +114,7 @@ msgid ""
 "also report bugs or feature requests to the mailing list."
 msgstr ""
 
-#: common/footer.j2.inc:21 copyright.html.j2:6
+#: common/footer.j2.inc:20 copyright.html.j2:6
 msgid "Copyright Assignment"
 msgstr ""
 
@@ -296,202 +145,72 @@ msgid ""
 msgstr ""
 
 #: developers.html.j2:5
-msgid "Taler for developers"
+msgid "GNUnet for developers"
 msgstr ""
 
-#: developers.html.j2:12 merchants.html.j2:58
-msgid "Free"
+#: developers.html.j2:13
+msgid "Git"
 msgstr ""
 
-#: developers.html.j2:15
+#: developers.html.j2:16
 msgid ""
-"GNU Taler is free software implementing an open protocol. Anybody is welcome "
-"to integrate our reference implementation into their applications. Different "
-"components of Taler are being made available under different licenses. The "
-"Affero GPLv3+ is used for the exchange, the LGPLv3+ is used for reference "
-"code demonstrating integration with merchant platforms, and licenses like "
-"GPLv3+ are used for wallets and related customer-facing software. We are "
-"open for constructive suggestions for maximizing the adoption of this "
-"payment platform."
+"A list of our Git repositories can be found in our <a href=\"https://gnunet."
+"org/git/\">GitWeb</a>."
 msgstr ""
 
-#: developers.html.j2:32
-msgid "RESTful"
+#: common/footer.j2.inc:22 common/navigation.j2.inc:12 developers.html.j2:24
+msgid "Bibliography"
 msgstr ""
 
-#: developers.html.j2:35
+#: developers.html.j2:27
 msgid ""
-"Taler is designed to work on the Internet. To ensure that Taler payments can "
-"work with restrictive network setups, Taler uses a RESTful protocol over "
-"HTTP or HTTPS. Taler's security does not depend upon the use of HTTPS, but "
-"obviously merchants may choose to offer HTTPS for consistency and because it "
-"generally is better for privacy compared to HTTP. Taler uses JSON to encode "
-"structure data, making it easy to integrate Taler with existing Web "
-"applications. Taler's protocol is documented in detail at <a href=\"https://"
-"docs.taler.net/\">docs.taler.net</a>."
+"Technical papers can be found in our <a href=\"https://old.gnunet.org/"
+"bibliography\">bibliography</a>."
 msgstr ""
 
-#: developers.html.j2:58
-msgid "Code"
-msgstr ""
-
-#: developers.html.j2:61
-msgid ""
-"Taler is currently primarily developed by a research team at <a href="
-"\"http://www.inria.fr/\">Inria</a> and <a href=\"https://gnunet.org/"
-"\">GNUnet</a>. However, contributions from anyone are welcome. Our Git "
-"repositories can be cloned using the Git and HTTP access methods against "
-"<tt>git.taler.net</tt> with the name of the respective repository. A list of "
-"repositories can be found in our <a href=\"https://git.taler.net/\">GitWeb</"
-"a>."
-msgstr ""
-
-#: developers.html.j2:75
-msgid "Documentation"
-msgstr ""
-
-#: developers.html.j2:78
-msgid ""
-"In addition to this website, the <a href=\"https://git.taler.net/"
-"\">documented code</a> and the <a href=\"https://docs.taler.net/\">API "
-"documentation</a>. Technical papers can be found in our <a href="
-"\"bibliography.html\">bibliography</a>."
-msgstr ""
-
-#: common/footer.j2.inc:15 developers.html.j2:88
+#: developers.html.j2:34
 msgid "Discussion"
 msgstr ""
 
-#: developers.html.j2:91
+#: developers.html.j2:37
 msgid ""
 "We have a mailing list for developer discussions. You can subscribe to or "
 "read the list archive at <a href=\"http://lists.gnu.org/mailman/listinfo/"
-"taler\">http://lists.gnu.org/mailman/listinfo/taler</a>."
+"gnunet-developers\">http://lists.gnu.org/mailman/listinfo/gnunet-developers</"
+"a>."
 msgstr ""
 
-#: developers.html.j2:101
+#: developers.html.j2:47
 msgid "Regression Testing"
 msgstr ""
 
-#: developers.html.j2:104
+#: developers.html.j2:50
 msgid ""
 "We have <a href=\"https://buildbot.net/\">Buildbot</a> automation tests to "
-"detect regressions and check for portability at <a href=\"https://buildbot."
-"taler.net/\">buildbot.taler.net</a>."
+"detect regressions and check for portability at <a href=\"https://gnunet.org/"
+"buildbot/gnunet/\">https://gnunet.org/buildbot/gnunet/</a>."
 msgstr ""
 
-#: developers.html.j2:113
+#: developers.html.j2:59
 msgid "Code Coverage Analysis"
 msgstr ""
 
-#: developers.html.j2:116
+#: developers.html.j2:62
 msgid ""
 "We use <a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</a> to "
 "analyze the code coverage of our tests, the results are available at <a href="
-"\"https://lcov.taler.net/\">lcov.taler.net</a>."
+"\"https://gnunet.org/coverage/\">https://gnunet.org/coverage/</a>."
 msgstr ""
 
-#: developers.html.j2:126
+#: developers.html.j2:72
 msgid "Performance Analysis"
 msgstr ""
 
-#: developers.html.j2:129
+#: developers.html.j2:75
 msgid ""
 "We use <a href=\"https://gnunet.org/gauger\">Gauger</a> for performance "
-"regression analysis of the exchange backend at <a href=\"https://gauger."
-"taler.net/\">gauger.taler.net</a>."
-msgstr ""
-
-#: developers.html.j2:145
-msgid "Taler system overview"
-msgstr ""
-
-#: developers.html.j2:148
-msgid ""
-"The Taler system consists of protocols executed among a number of actors as "
-"illustrated in the illustration on the right. Typical transactions involve "
-"the following steps:"
-msgstr ""
-
-#: developers.html.j2:155
-msgid "system overview"
-msgstr ""
-
-#: developers.html.j2:158
-msgid ""
-"A customer instructs his <b>bank</b> to transfer funds from his account to "
-"the Taler exchange (top left). In the subject of the transaction, he "
-"includes an authentication token from his electronic <b>wallet</b>. In Taler "
-"terminology, the customer creates a reserve at the exchange."
-msgstr ""
-
-#: developers.html.j2:170
-msgid ""
-"Once the exchange has received the wire transfer, it allows the customer's "
-"electronic wallet to <b>withdraw</b> electronic coins. The electronic coins "
-"are digital representations of the original currency from the transfer. It "
-"is important to note that the exchange does not learn the &quot;serial "
-"numbers&quot; of the coins created in this process, so it cannot tell later "
-"which customer purchased what at which merchant. The use of Taler does not "
-"change the currency or the total value of the funds (except for fees which "
-"the exchange may charge for the service)."
-msgstr ""
-
-#: developers.html.j2:188
-msgid ""
-"Once the customer has the digital coins in his wallet, the wallet can be "
-"used to <b>spend</b> the coins with merchant portals that support the Taler "
-"payment system and accept the respective exchange as a business partner "
-"(bottom arrow). This creates a digital contract signed by the customer's "
-"coins and the merchant. If necessary, the customer can later use this "
-"digitally signed contract in a court of law to prove the exact terms of the "
-"contract and that he paid the respective amount. The customer does not learn "
-"the banking details of the merchant, and Taler does not require the merchant "
-"to learn the identity of the customer. Naturally, the customer can spend any "
-"fraction of his digital coins (the system takes care of customers getting "
-"change)."
-msgstr ""
-
-#: developers.html.j2:210
-msgid ""
-"Merchants receiving digital coins <b>deposit</b> the respective claims that "
-"resulted from the contract signing with the customer at the exchange to "
-"redeem the coins. The deposit step does not reveal the details of the "
-"contract between the customer and the merchant or the identity of the "
-"customer to the exchange in any way. However, the exchange does learn the "
-"identity of the merchant via the provided bank routing information. The "
-"merchant can, for example when compelled by the state for taxation, provide "
-"information linking the individual deposit to the respective contract signed "
-"by the customer. Thus, the exchange's database allows the state to enforce "
-"that merchants pay applicable taxes (and do not engage in illegal contracts)."
-msgstr ""
-
-#: developers.html.j2:233
-msgid ""
-"Finally, the exchange transfers funds corresponding to the digital coins "
-"redeemed by the merchants to the merchant's <b>bank</b> account. The "
-"exchange may combine multiple small transactions into one larger bank "
-"transfer. The merchant can query the exchange about the relationship between "
-"the bank transfers and the individual claims that were deposited."
-msgstr ""
-
-#: developers.html.j2:247
-msgid ""
-"Most importantly, the exchange keeps cryptographic proofs that allow it to "
-"demonstrate that it is operating correctly to third parties. The system "
-"requires an external <b>auditor</b>, such as a government-appointed "
-"financial regulatory body, to frequently verify the exchange's databases and "
-"check that its bank balance matches the total value of the remaining coins "
-"in circulation."
-msgstr ""
-
-#: developers.html.j2:262
-msgid ""
-"Without the auditor, the exchange operators could embezzle funds they are "
-"holding in reserve. Customers and merchants cannot cheat each other or the "
-"exchange. If any party's computers are compromised, the financial damage is "
-"limited to the respective party and proportional to the funds they have in "
-"circulation during the period of the compromise."
+"regression analysis of the exchange backend at <a href=\"https://gnunet.org/"
+"gauger/\">https://gnunet.org/gauger/</a>."
 msgstr ""
 
 #: ev.html.j2:5
@@ -582,581 +301,111 @@ msgid "2016-12"
 msgstr ""
 
 #: faq.html.j2:5
-msgid "How is Taler related to Bitcoin or Blockchains?"
+msgid "Q?"
 msgstr ""
 
-#: index.html.j2:10
-msgid "_project_title"
-msgstr "GNUs Protokoll-Stack für ein neues ethisches Internet"
-
-#: faq.html.j2:11
-msgid ""
-"<p>It would be possible, however, to withdraw coins denominated in Bitcoin "
-"into a Taler wallet (with an appropriate exchange), which would give some "
-"benefits over plain Bitcoin, such as instant confirmation times.</p>"
-msgstr ""
-
-#: faq.html.j2:18
-msgid "Where is the balance in my wallet stored?"
-msgstr ""
-
-#: faq.html.j2:19
-msgid ""
-"<p>Your wallet stores digital coins and thus ultimately your computer holds "
-"your balance. The exchange keeps funds matching all unspent coins in an "
-"escrow bank account.</p>"
-msgstr ""
-
-#: faq.html.j2:25
-msgid "What if my wallet is lost?"
-msgstr ""
-
-#: faq.html.j2:26
-msgid ""
-"<p>Since the digital coins of value in your wallet are anonymized, the "
-"exchange can not assist you in recovering a lost or stolen wallet. Just like "
-"with a physical wallet for cash, you are responsible for keeping it safe.</p>"
-msgstr ""
-
-#: faq.html.j2:32
-msgid ""
-"<p>The risk of losing a wallet can be mitigated by making backups or keeping "
-"the balance reasonably low.</p>"
-msgstr ""
-
-#: faq.html.j2:37
-msgid "What if my computer is hacked?"
-msgstr ""
-
-#: faq.html.j2:38
-msgid ""
-"<p>In case of a compromise of one of your devices, an attacker can spend "
-"coins from your wallet. Checking your balance might reveal to you that your "
-"device has been compromised.</p>"
-msgstr ""
-
-#: faq.html.j2:44
-msgid "Can I send money to my friend with Taler?"
-msgstr ""
-
-#: faq.html.j2:45
-msgid ""
-"<p>If your friend provides goods or services for you in exchange for a "
-"payment, they can easily set up a Taler merchant and receive the payment in "
-"their bank account.</p>"
-msgstr ""
-
-#: faq.html.j2:50
-msgid ""
-"<p>Future versions of the Taler wallet may allow exchanging coins among "
-"friends directly as well.</p>"
-msgstr ""
-
-#: faq.html.j2:56
-msgid "How does Taler handle payments in different currencies?"
-msgstr ""
-
-#: faq.html.j2:57
-msgid ""
-"<p>Taler wallets can store digital coins corresponding to multiple different "
-"currencies such as the Euro, US Dollars or Bitcoins.</p>"
-msgstr ""
-
-#: faq.html.j2:61
-msgid "<p>Taler currently does not offer conversion between currencies.</p>"
-msgstr ""
-
-#: faq.html.j2:65
-msgid "How does Taler protect my privacy?"
-msgstr ""
-
-#: faq.html.j2:66
-msgid ""
-"<p>Your wallet stores digital coins that are <a href=\"https://en.wikipedia."
-"org/wiki/Blind_signature\">blindly signed</a> by an exchange. The use of a "
-"blind signature protects your privacy as it prevents the exchange from "
-"knowing which coin it signed for which customer.</p>"
-msgstr ""
-
-#: financial-news.html.j2:6
-msgid "Financial News"
-msgstr ""
-
-#: financial-news.html.j2:9
-msgid ""
-"This page explains (only in English) how Taler can change ongoing "
-"developments in the financial industry."
+#: faq.html.j2:6 faq.html.j2:11
+msgid "<p> A: </p>"
 msgstr ""
 
 #: glossary.html.j2:6
-msgid "auditor"
+msgid "term"
 msgstr ""
 
-#: glossary.html.j2:14
-msgid ""
-"traditional financial service provider who offers wire `transfers` between "
-"accounts"
-msgstr ""
-
-#: glossary.html.j2:18
-msgid "coin"
-msgstr ""
-
-#: glossary.html.j2:20
-msgid ""
-"coins are individual token representing a certain amount of value, also "
-"known as the `denomination` of the coin"
-msgstr ""
-
-#: glossary.html.j2:24
-msgid "contract"
-msgstr ""
-
-#: glossary.html.j2:26
-msgid "the proposal signed by the wallet."
-msgstr ""
-
-#: glossary.html.j2:30
-msgid "denomination"
-msgstr ""
-
-#: glossary.html.j2:32
-msgid ""
-"unit of currency, specifies both the currency and the face value of a `coin`"
-msgstr ""
-
-#: glossary.html.j2:36
-msgid "denomination key"
-msgstr ""
-
-#: glossary.html.j2:38
-msgid ""
-"RSA key used by the exchange to certify that a given `coin` is valid and of "
-"a particular `denomination`"
-msgstr ""
-
-#: glossary.html.j2:42
-msgid "deposit"
-msgstr ""
-
-#: glossary.html.j2:44
-msgid ""
-"operation by which a merchant passes coins to an exchange, expecting the "
-"exchange to credit his `bank` account in the future using a wire `transfer`"
-msgstr ""
-
-#: glossary.html.j2:48
-msgid "dirty"
-msgstr ""
-
-#: glossary.html.j2:50
-msgid ""
-"a `coin` is dirty if its public key may be known to an entity other than the "
-"customer, thereby creating the danger of some entity being able to link "
-"multiple transactions of coin's owner if the coin is not refreshed first"
-msgstr ""
-
-#: glossary.html.j2:54
-msgid "exchange"
-msgstr ""
-
-#: glossary.html.j2:56
-msgid ""
-"Taler's payment service provider. Issues eletronic `coins` during "
-"`withdrawal` and redeems them when they are `deposited` by merchants."
-msgstr ""
-
-#: glossary.html.j2:60
-msgid "extension"
-msgstr ""
-
-#: glossary.html.j2:62
-msgid "implementation of a `wallet` for browsers"
-msgstr ""
-
-#: glossary.html.j2:66
-msgid "fresh coin"
-msgstr ""
-
-#: glossary.html.j2:68
-msgid "a `coin` is fresh if its public key is only known to the customer"
-msgstr ""
-
-#: glossary.html.j2:72
-msgid "master key"
-msgstr ""
-
-#: glossary.html.j2:74
-msgid ""
-"offline key used by the exchange to certify denomination keys and message "
-"signing keys"
-msgstr ""
-
-#: glossary.html.j2:78
-msgid "message signing key"
-msgstr ""
-
-#: glossary.html.j2:80
-msgid "key used by the exchange to sign online messages, other than coins"
-msgstr ""
-
-#: glossary.html.j2:84
-msgid "offer"
-msgstr ""
-
-#: glossary.html.j2:86
-msgid ""
-"specification of the details of a transaction, specifies the payment "
-"obligations for the customer (i.e. the amount), the deliverables of the "
-"merchant and other related information, such as deadlines or locations; "
-"However, it lacks some information that the backend is supposed to provide. "
-"In other words, after the backend adds the missing information to the offer "
-"and signs it, it becomes a proposal."
-msgstr ""
-
-#: glossary.html.j2:95
-msgid "owner"
-msgstr ""
-
-#: glossary.html.j2:97
-msgid "a `coin` is owned by the entity that knows the private key of the coin"
-msgstr ""
-
-#: glossary.html.j2:101
-msgid "proof"
-msgstr ""
-
-#: glossary.html.j2:103
-msgid ""
-"message that cryptographically demonstrates that a particular claim is "
-"correct"
-msgstr ""
-
-#: glossary.html.j2:107
-msgid "proposal"
-msgstr ""
-
-#: glossary.html.j2:109
-msgid "a sketch that has been completed and signed by the merchant backend."
-msgstr ""
-
-#: glossary.html.j2:113
-msgid "reserve"
-msgstr ""
-
-#: glossary.html.j2:115
-msgid ""
-"funds set aside for future use; either the balance of a customer at the "
-"exchange ready for `withdrawal`, or the funds kept in the exchange's bank "
-"account to cover obligations from coins in circulation"
-msgstr ""
-
-#: glossary.html.j2:119
-msgid "refreshing"
-msgstr ""
-
-#: glossary.html.j2:121
-msgid ""
-"operation by which a `dirty` `coin` is converted into one or more `fresh` "
-"coins"
-msgstr ""
-
-#: glossary.html.j2:125
-msgid "refund"
-msgstr ""
-
-#: glossary.html.j2:127
-msgid ""
-"operation by which a merchant steps back from the right to funds that he "
-"obtained from a `deposit` operation, giving the right to the funds back to "
-"the customer"
-msgstr ""
-
-#: glossary.html.j2:131
-msgid "sharing"
-msgstr ""
-
-#: glossary.html.j2:133
-msgid ""
-"users can share ownership of a `coin` by sharing access to the coin's "
-"private key, thereby allowing all co-owners to spend the coin at any time."
-msgstr ""
-
-#: glossary.html.j2:137
-msgid "signing key"
-msgstr ""
-
-#: glossary.html.j2:139
-msgid "see message signing key."
-msgstr ""
-
-#: glossary.html.j2:143
-msgid "spending"
-msgstr ""
-
-#: glossary.html.j2:145
-msgid ""
-"operation by which a customer gives a merchant the right to `deposit` coins "
-"in return for merchandise"
-msgstr ""
-
-#: glossary.html.j2:149
-msgid "transfer"
-msgstr ""
-
-#: glossary.html.j2:151
-msgid "method of sending funds between `bank` accounts"
-msgstr ""
-
-#: glossary.html.j2:155
-msgid "transaction"
-msgstr ""
-
-#: glossary.html.j2:157
-msgid ""
-"method by which ownership is exclusively transferred from one entity to "
-"another"
-msgstr ""
-
-#: glossary.html.j2:161
-msgid "transaction id"
-msgstr ""
-
-#: glossary.html.j2:163
-msgid "unique number by which a merchant identifies a `transaction`"
-msgstr ""
-
-#: glossary.html.j2:167
-msgid "wallet"
-msgstr ""
-
-#: glossary.html.j2:169
-msgid ""
-"software running on a customer's computer; withdraws, stores and spends coins"
-msgstr ""
-
-#: glossary.html.j2:173
-msgid "wire transfer"
-msgstr ""
-
-#: glossary.html.j2:175
-msgid "see `transfer`"
-msgstr ""
-
-#: glossary.html.j2:179
-msgid "wire transfer identifier"
-msgstr ""
-
-#: glossary.html.j2:181
-msgid ""
-"subject of a wire `transfer`; usually a random string to uniquely identify "
-"the `transfer`"
-msgstr ""
-
-#: glossary.html.j2:185
-msgid "withdrawal"
-msgstr ""
-
-#: glossary.html.j2:187
-msgid ""
-"operation by which a `wallet` can convert funds from a reserve to fresh coins"
-msgstr ""
-
-#: governments.html.j2:6
-msgid "Advantages for Governments"
-msgstr ""
-
-#: governments.html.j2:8
-msgid ""
-"Taler provides accountability to ensure business operate legally, while also "
-"respecting civil liberties of citizens. Taler is a payment system based on "
-"open standards and free software. Taler needs governments as they set a "
-"financial framework and act as trusted regulators. Taler contributes to "
-"digital sovereignty in the critical financial infrastructure."
-msgstr ""
-
-#: governments.html.j2:25
-msgid "Taxable"
-msgstr ""
-
-#: governments.html.j2:28
-msgid ""
-"Taler was built with the goal of fighting corruption and supporting "
-"taxation. With Taler, the receiver of any form of payment is easily "
-"identified by the government, and the merchant can be compelled to provide "
-"the contract that was accepted by the customer. Governments can use this "
-"data to tax businesses and individuals based on their income, making tax "
-"evasion and black markets less viable."
-msgstr ""
-
-#: governments.html.j2:41
-msgid ""
-"Thus, despite offering anonymity for citizens spending digital cash to buy "
-"goods and services, Taler also ensures that the state can observe incoming "
-"funds. This can be used to ensure businesses engage only in legal "
-"activities, and do not evade income tax, sales tax or value-added tax. "
-"However, this observational capability does not extend to the immediate "
-"personal domain. In particular, monitoring does not cover shared access to "
-"funds with trusted friends and family, or synchronizing wallets across "
-"multiple devices."
-msgstr ""
-
-#: governments.html.j2:61
-msgid ""
-"Taler's payments are cryptographically secured. Thus, customers, merchants "
-"and the Taler payment service provider (the exchange) can mathematically "
-"demonstrate their lawful behavior in court in case of disputes. Financial "
-"damages are strictly limited, improving economic security for individuals, "
-"merchants, the exchange and the state."
-msgstr ""
-
-#: governments.html.j2:73
-msgid ""
-"As a payment service provider, the Taler exchange is subject to financial "
-"regulation. Financial regulation and regular audits are critical to "
-"establish trust. In particular, the Taler design mandates the existence of "
-"an independent auditor who checks cryptographic proofs that accumulate at "
-"the exchange to ensure that the escrow account is managed honestly. This "
-"ensures that the exchange does not threaten the economy due to fraud."
-msgstr ""
-
-#: governments.html.j2:88
-msgid "Libre"
-msgstr ""
-
-#: governments.html.j2:91
-msgid ""
-"Taler is free software implementing an open protocol standard. Thus, Taler "
-"will enable competition and avoid the monopolization of payment systems that "
-"threatens global political and financial stability today."
-msgstr ""
-
-#: governments.html.j2:101
-msgid "Efficient"
-msgstr ""
-
-#: governments.html.j2:104
-msgid ""
-"Taler has an efficient design. Unlike Blockchain-based payment systems, such "
-"as Bitcoin, Taler will not threaten the availability of national electric "
-"grids or (significantly) contribute to environmental pollution."
-msgstr ""
-
-#: governments.html.j2:120
-msgid "Taler and regulation"
-msgstr ""
-
-#: governments.html.j2:122
-msgid "Anti money laundering (AML)"
-msgstr ""
-
-#: governments.html.j2:123
-msgid ""
-"With Taler, income is visible and can be tied to the contract signed by both "
-"parties."
-msgstr ""
-
-#: governments.html.j2:124
-msgid "Know your customer (KYC)"
-msgstr ""
-
-#: governments.html.j2:125
-msgid ""
-"In Taler, payer and payee are known by their bank accounts when withdrawing "
-"or depositing coins respectively"
-msgstr ""
-
-#: governments.html.j2:126
-msgid "General Data Protection Regulation (GDPR)"
-msgstr ""
-
-#: governments.html.j2:127
-msgid ""
-"Taler cryptographically protects citizen's privacy, and by design implements "
-"data minimization and privacy by default."
-msgstr ""
-
-#: governments.html.j2:128
-msgid "Payment Services Directive (PSD2)"
-msgstr ""
-
-#: governments.html.j2:129
-msgid ""
-"Taler provides an open standard with public APIs contributing to a "
-"competitive banking sector."
-msgstr ""
-
-#: governments.html.j2:137
-msgid "Taler provides privacy and accountability"
-msgstr ""
-
-#: governments.html.j2:140
-msgid ""
-"Taler assumes governments can observe traditional wire transfers entering "
-"and leaving the Taler payment system. Starting with the wire transfers, "
-"governments can obtain:"
-msgstr ""
-
-#: governments.html.j2:148
-msgid ""
-"The total amount of digital currency withdrawn by a customer. The government "
-"can impose limits on how much digital cash a customer can withdraw within a "
-"given time frame."
-msgstr ""
-
-#: governments.html.j2:157
-msgid "The income received by any merchant via the Taler system."
-msgstr ""
-
-#: governments.html.j2:164
-msgid ""
-"The exact details of the underlying contract that was signed between "
-"customer and merchant. However, this information would typically not include "
-"the identity of the customer."
-msgstr ""
-
-#: governments.html.j2:174
-msgid ""
-"The amounts of digital coins legitimately withdrawn by customers from the "
-"exchange, the value of non-redeemed digital coins in customer's wallets, the "
-"value and corresponding wire details of deposit operations performed by "
-"merchants with the exchange, and the income of the exchange from transaction "
-"fees."
+#: glossary.html.j2:8
+msgid "explanation"
 msgstr ""
 
 #: index.html.j2:6
 msgid "GNUnet logo"
 msgstr ""
 
-#: index.html.j2:10
-msgid "GNU's Framework for Secure Peer-to-Peer Networking!"
-msgstr ""
+#: common/base.j2:6 index.html.j2:10
+msgid "_project_title"
+msgstr "GNUs Protokoll-Stack für ein neues ethisches Internet"
 
 #: index.html.j2:13
 msgid ""
-"GNUnet is an alternative network stack for building secure, decentralized "
-"and privacy-preserving distributed applications. Our goal is to replace the "
-"old insecure Internet protocol stack. Starting from an application for "
-"secure publication of files, GNUnet has grown to include all kinds of basic "
-"protocol components and applications towards the creation of a GNU internet."
+"An alternative P2P network stack to build secure, decentralized and privacy-"
+"preserving distributed applications; built to replace the old insecure "
+"Internet protocols."
 msgstr ""
 
-#: index.html.j2:30
+#: index.html.j2:25
+msgid "The Internet is broken"
+msgstr ""
+
+#: index.html.j2:28
+msgid ""
+"Protocols from Ethernet and IP to BGP and X.509 PKI fail by being unsecure-"
+"by-default: protecting against address forgery, routers learning metadata, "
+"or choosing really trusted CAs is nontrivial and sometimes nigh impossible. "
+"<br><br> GNUnet is an Internet <a href=\"https://www.w3.org/2014/strint/"
+"papers/65.pdf\">secure-by-design</a>, addressing addressing, routing, naming "
+"and content distribution in a technically robust manner - as opposed to ad-"
+"hoc designs in place today."
+msgstr ""
+
+#: index.html.j2:36
+msgid "Developing decentralized applications is hard"
+msgstr ""
+
+#: index.html.j2:39
+msgid ""
+"It seems like every other P2P project develops its own library stack, "
+"covering transports, stream muxing, discovery and others. This divides "
+"effort and multiplies bug count. <br><br> GNUnet is a metadata-preserving "
+"foundation for your application covering areas from addressing to reliable "
+"bidirectional Axolotl-encrypted channels, with advanced routing and based on "
+"years of research."
+msgstr ""
+
+#: index.html.j2:49
+msgid "Metadata leaks en masse"
+msgstr ""
+
+#: index.html.j2:52
+msgid ""
+"Even though transport encryption is increasingly being deployed in the "
+"Internet, it can only do so much: sender and receiver, times, frequency and "
+"the volume of communication are all revealed, which enables reverse "
+"engineering pages visited and website fingerprinting, as demonstrated with "
+"Tor. <br><br> GNUnet addresses these concerns with Perfect Forward Secrecy "
+"via ephemeral public key addressing, fixed packet size to hinder traffic "
+"analysis, layered encryption, Sybil-resistant routing, and others."
+msgstr ""
+
+#: index.html.j2:60
+msgid "Users’ freedoms are not respected"
+msgstr ""
+
+#: index.html.j2:63
+msgid ""
+"Today, monitoring infrastructure, proprietary implementations, traffic "
+"shapers and firewalls restrict all of the <a href=\"https://www.gnu.org/"
+"philosophy/free-sw.html\">essential freedoms</a> to some degree. <br><br> "
+"GNUnet gives users freedoms to securely access information (“run” the "
+"network), to study all aspects of the network’s operation (“access the "
+"code”), to distribute information (“copy”), as well as the freedom to deploy "
+"new applications (“modify”)."
+msgstr ""
+
+#: index.html.j2:76
 msgid "GNU Taler"
 msgstr ""
 
-#: index.html.j2:33
+#: index.html.j2:79
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
 
-#: index.html.j2:44
+#: index.html.j2:90
 msgid "The GNU Name System"
 msgstr ""
 
-#: index.html.j2:47
+#: index.html.j2:93
 msgid ""
 "The GNU Name System (GNS) is a fully decentralized replacement for the "
 "Domain Name System (DNS). Instead of using a hierarchy, GNS uses a directed "
@@ -1166,11 +415,11 @@ msgid ""
 "instant key revocation mechanism."
 msgstr ""
 
-#: index.html.j2:60
+#: index.html.j2:106
 msgid "secushare"
 msgstr ""
 
-#: index.html.j2:63
+#: index.html.j2:109
 msgid ""
 "<a href=\"http://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
@@ -1178,11 +427,11 @@ msgid ""
 "encrypted to authorized users only."
 msgstr ""
 
-#: index.html.j2:76
+#: index.html.j2:122
 msgid "pretty Easy privacy"
 msgstr ""
 
-#: index.html.j2:79
+#: index.html.j2:125
 msgid ""
 "pretty Easy privacy (PEP) is creating a usable usable end-to-end encrypted e-"
 "mail solution using opportunistic key exchange. PEP will use GNUnet to "
@@ -1190,11 +439,11 @@ msgid ""
 "privacy-preserving version of the Web-of-Trust."
 msgstr ""
 
-#: index.html.j2:91
+#: index.html.j2:137
 msgid "Foundations"
 msgstr ""
 
-#: index.html.j2:93
+#: index.html.j2:139
 msgid ""
 "The foundation of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET) and a pluggable transport "
@@ -1203,11 +452,11 @@ msgid ""
 "TCP/IP stack."
 msgstr ""
 
-#: index.html.j2:105
+#: index.html.j2:151
 msgid "Security"
 msgstr ""
 
-#: index.html.j2:108
+#: index.html.j2:154
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -1216,247 +465,8 @@ msgid ""
 "free software."
 msgstr ""
 
-#: index.html.j2:125
+#: index.html.j2:171
 msgid "GNUnet News"
-msgstr ""
-
-#: investors.html.j2:6
-msgid "Invest in Taler!"
-msgstr ""
-
-#: investors.html.j2:9
-msgid ""
-"We have created a company, Taler Systems SA in Luxembourg.<br> Please "
-"contact <tt>invest@taler.net</tt> if you want to invest in Taler."
-msgstr ""
-
-#: investors.html.j2:24
-msgid "The Team"
-msgstr ""
-
-#: investors.html.j2:27
-msgid ""
-"Our <a href=\"about.html\">team</a> combines world-class business leaders, "
-"cryptographers, software engineers, civil-rights activists and academics. We "
-"are unified by a vision of how payments should work and the goal of imposing "
-"this vision upon the world."
-msgstr ""
-
-#: investors.html.j2:37
-msgid ""
-"We are currently supported by <a href=\"http://www.inria.fr/\">Inria</a>, "
-"the French national institute for research in informatics and automation, "
-"and the <a href=\"https://renewablefreedom.org/\">Renewable Freedom "
-"Foundation</a>."
-msgstr ""
-
-#: investors.html.j2:45
-msgid "The Technology"
-msgstr ""
-
-#: investors.html.j2:48
-msgid ""
-"All transactions in Taler are secured using <a href=\"bibliography.html"
-"\">modern cryptography</a> and trust in all parties is minimized. Financial "
-"damage is bounded (for customers, merchants and the exchange) even in the "
-"case that systems are compromised and private keys are stolen. Databases can "
-"be audited for consistency, resulting in either the detection of compromised "
-"systems or the demonstration that participants were honest. Actual "
-"transaction costs are fractions of a cent."
-msgstr ""
-
-#: investors.html.j2:63
-msgid "The Business"
-msgstr ""
-
-#: investors.html.j2:66
-msgid ""
-"The scalable business model for Taler is the operation of the payment "
-"service provider, which converts money from traditional payment systems "
-"(MasterCard, SEPA, UPI, Visa, Bitcoin, ACH, SWIFT, etc.) to anonymous "
-"electronic coins in the same currency. The customer can then redeem the "
-"electronic coins at a merchant, who can exchange them for money represented "
-"using traditional payment systems at the exchange. The exchange charges fees "
-"to facilitate the transactions."
-msgstr ""
-
-#: investors.html.j2:85
-msgid "The Business Case"
-msgstr ""
-
-#: investors.html.j2:88
-msgid "Download"
-msgstr ""
-
-#: investors.html.j2:91
-msgid ""
-"Our <a href=\"financial-news.html\">financial news</a> page explains in "
-"English how Taler can impact current developments in the global payment "
-"market."
-msgstr ""
-
-#: investors.html.j2:114
-msgid "Running a Taler payment service operator"
-msgstr ""
-
-#: investors.html.j2:117
-msgid ""
-"The payment service operator runs the <em>Taler exchange</em>. The exchange "
-"charges <b>transaction fees</b> to customers or merchants. Its operational "
-"expenses are from wire transfers with the banking system and the operation "
-"of the computing infrastructure."
-msgstr ""
-
-#: investors.html.j2:127
-msgid ""
-"Cryptographic operations, bandwidth and storage costs are less than 0.01 "
-"cent per transaction."
-msgstr ""
-
-#: investors.html.j2:129
-msgid ""
-"Multiple Taler transactions can be aggregated into larger wire transfers to "
-"merchants to minimize wire transfer costs."
-msgstr ""
-
-#: investors.html.j2:131
-msgid ""
-"Protocol allows the exchange to charge fees for any expensive operation "
-"(withdraw, deposit, refresh, refund or aggregated wire transfers)."
-msgstr ""
-
-#: investors.html.j2:133
-msgid "Partnership with banks establishes consumer trust."
-msgstr ""
-
-#: investors.html.j2:135
-msgid "Partnership with free software community enables rapid deployment."
-msgstr ""
-
-#: merchants.html.j2:5
-msgid "Advantages for Merchants"
-msgstr ""
-
-#: merchants.html.j2:8
-msgid ""
-"Taler is a cost-effective electronic payment system which provides you with "
-"cryptographic proof that the payment worked correctly within milliseconds. "
-"Your Web customers pay with previously unknown levels of convenience without "
-"risk of fraud."
-msgstr ""
-
-#: merchants.html.j2:22
-msgid "Fast"
-msgstr ""
-
-#: merchants.html.j2:25
-msgid ""
-"Processing transactions with Taler is fast, allowing you to confirm the "
-"transaction with your customer virtually immediately. Your customers will "
-"appreciate that they do not have to type in credit card information and play "
-"the &quot;verified by&quot; game. By making payments significantly more "
-"convenient for your customers, you may be able to use Taler for small "
-"transactions that would not work with credit card payments due to the mental "
-"overhead for customers."
-msgstr ""
-
-#: merchants.html.j2:44
-msgid ""
-"You will have cryptographic proof of payment from the Taler payment service "
-"provider. With Taler you never handle sensitive customer account information "
-"and thus do not have to undergo any particular security audits (such as PCI "
-"DSS). Your systems will have customer contracts with qualified signatures "
-"for all transactions which you can use in court in case of disputes."
-msgstr ""
-
-#: merchants.html.j2:61
-msgid ""
-"Taler is free software, and you can use the liberally-licensed reference "
-"code as a starting point to integrate Taler into your services. To use "
-"Taler, you do not need to pay license fees, and the free software "
-"development model will ensure that you can select from many competing "
-"integrators for support."
-msgstr ""
-
-#: merchants.html.j2:76
-msgid "Cheap"
-msgstr ""
-
-#: merchants.html.j2:79
-msgid ""
-"Taler is uses efficient cryptographic constructions with low bandwidth and "
-"storage requirements. Combined with Taler's strong security which makes "
-"fraud impossible, Taler payment service providers can operate with very low "
-"overhead and thus offer low transaction fees."
-msgstr ""
-
-#: merchants.html.j2:89
-msgid "Flexible"
-msgstr ""
-
-#: merchants.html.j2:92
-msgid ""
-"Taler can be used for different currencies (such as Euros, US Dollars or "
-"Bitcoins) and any amount, limited only by applicable regulatation and what "
-"denominations the payment service provider supports."
-msgstr ""
-
-#: merchants.html.j2:101
-msgid "Ethical"
-msgstr ""
-
-#: merchants.html.j2:104
-msgid ""
-"Taler prevents tax evasion and money laundering. Taler's protocols are "
-"efficient and do not use wasteful proof-of-work calculations. Taler "
-"encourages transparency by providing an open standard and free software "
-"reference implementations."
-msgstr ""
-
-#: merchants.html.j2:119
-msgid "Manuals for merchants"
-msgstr ""
-
-#: merchants.html.j2:122
-msgid "The GNU Taler merchant backend operator manual"
-msgstr ""
-
-#: merchants.html.j2:125
-msgid "The GNU Taler Web shop integration tutorial (PHP)"
-msgstr ""
-
-#: merchants.html.j2:128
-msgid "The GNU Taler Web shop integration tutorial (Python)"
-msgstr ""
-
-#: merchants.html.j2:140
-msgid "The GNU Taler Merchant Backend"
-msgstr ""
-
-#: merchants.html.j2:142
-msgid "Merchants process payments using the Taler backend:"
-msgstr ""
-
-#: merchants.html.j2:147
-msgid ""
-"The backend <b>signs</b> and <b>stores</b> the complete terms of offers made "
-"by the merchant to customers. For this, the merchant's frontend needs to "
-"give the customer's order in a JSON format to the backend."
-msgstr ""
-
-#: merchants.html.j2:156
-msgid ""
-"The backend <b>validates</b> payments received from the wallet and "
-"<b>executes</b> them with the Taler payment service provider (the exchange). "
-"For this, the merchant's frontend must pass the payment request through to "
-"the Taler backend and check the HTTP status code that is returned."
-msgstr ""
-
-#: merchants.html.j2:167
-msgid ""
-"The backend can <b>list</b> completed transactions and <b>map</b> wire "
-"transfers to sets of business transactions, including the exact terms of "
-"each contract."
 msgstr ""
 
 #: news.html.j2.inc:1
@@ -1468,19 +478,11 @@ msgid "Older News"
 msgstr ""
 
 #: old-news.html.j2:9
-msgid "This page documents the GNU Taler history."
-msgstr ""
-
-#: press.html.j2:4
-msgid "GNU Taler in the Press"
+msgid "This page documents the GNUnet history."
 msgstr ""
 
 #: common/base.j2:5
 msgid "GNUnet"
-msgstr ""
-
-#: common/base.j2:6
-msgid "GNU's Framework for Secure Peer-to-Peer Networking"
 msgstr ""
 
 #: common/footer.j2.inc:7
@@ -1499,19 +501,15 @@ msgstr ""
 msgid "Bug Tracker"
 msgstr ""
 
-#: common/footer.j2.inc:16
+#: common/footer.j2.inc:15
 msgid "IRC logs"
 msgstr ""
 
-#: common/footer.j2.inc:22
+#: common/footer.j2.inc:21
 msgid "Continuous Integration"
 msgstr ""
 
-#: common/footer.j2.inc:23 common/navigation.j2.inc:12
-msgid "Bibliography"
-msgstr ""
-
-#: common/footer.j2.inc:31
+#: common/footer.j2.inc:30
 msgid ""
 "This page was created using <a href='https://www.gnu.org/'>Free Software</a> "
 "only."
