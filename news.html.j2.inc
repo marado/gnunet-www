@@ -4,4 +4,4 @@
 
 <p>The GNUnet hackers met for the second time this year. The primary goal was
 to squash bugs to bring out a new release. Aside from this we worked hard on
-improving the documentation and to launch a new website.</p>
+improving the documentation and to launch this new website.</p>

@@ -90,12 +90,11 @@
     <div class="row">
       <div class="col-lg-4">
         <h3>{{ _("Metadata is exposed") }}</h3>
-
         <p>
           {% trans %}
-          Even though transport encryption is increasingly being deployed on the Internet, it can only do so much: sender and receiver, times, frequency and the volume of communication are still revealed, which <a href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables reverse engineering pages visited via website fingerprinting</a>.
+          Even though transport encryption is increasingly being deployed on the Internet, it still reveals data that can threaten democracy: the identities of senders and receivers, the times, frequency and the volume of communication are all still revealed. <!-- Looks like a weak argumentation to me: which <a href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables reverse-engineering pages visited via website fingerprinting</a>. -->
           <br><br>
-          GNUnet addresses these concerns with perfect forward secrecy via ephemeral public key addressing, fixed packet size to hinder traffic analysis, layered encryption, Sybil-resistant routing, and others. 
+          <a href="https://secushare.org/anonymity">GNUnet addresses these concerns</a> with perfect forward secrecy via ephemeral public key addressing, fixed packet size to hinder traffic analysis, layered encryption, Sybil-resistant routing, and more. 
           {% endtrans %}
         </p>
       </div>
@@ -167,8 +166,9 @@
 	hierarchy, GNS uses a directed graph.  Naming conventions
 	are similar to DNS, but queries and replies are private even
 	with respect to peers providing the answers.  The integrity of
-	records is cryptographically secured.  GNS integrates
-	a robust, efficient and instant key revocation mechanism.
+	records and privacy of look-ups is cryptographically secured.
+	<!-- Too technical: GNS integrates
+	a robust, efficient and instant key revocation mechanism. -->
         {% endtrans %}
       </p>
 
@@ -182,7 +182,7 @@
 	is creating a decentralized social networking
 	application on top of GNUnet.  Using overlay
 	multicast and the extensible PSYC protocol, notifications are
-	distributed end-to-end encrypted to authorized users only.
+	distributed end-to-end encrypted to authorized recipients only.
         {% endtrans %}
       </p>
     </div>
@@ -194,7 +194,8 @@
 
       <p>
         {% trans %}
-        <a href="https://pep.foundation/">pretty Easy privacy (p&#8801;p)</a> is creating a usable end-to-end encrypted e-mail solution using
+        <a href="https://pep.foundation/">pretty Easy privacy</a> (p&#8801;p)
+        is creating a usable end-to-end encrypted e-mail solution using
 	opportunistic key exchange.
 	p&#8801;p will use GNUnet to protect metadata and exploit new
 	cryptographic protocols to verify keys.
@@ -206,8 +207,8 @@
       <p>
         {% trans %}
         GNUnet filesharing is an application that provides
-        censorship-resistant, anonymous filesharing. It also supports
-        non-anonymous filesharing that can provide better performance.
+        censorship-resistant, anonymous filesharing. The publisher is
+	empowered to make a gradual choice between performance and anonymity.
         {% endtrans %}
       </p>
 
