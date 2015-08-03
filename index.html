@@ -202,6 +202,11 @@
         <p lang="en">The Taler system consists of protocols and free software
           implementations between a number of actors as illustrated in the
           illustration on the right.  Typical transactions involve the following steps:
+        </p>
+        <p lang="de" note="outdated"></p>
+        <p lang="fr" note="outdated"></p>
+        <p lang="it" note="outdated"></p>
+        <p>
           <img src="images/system.svg" alt="system overview" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
              <li lang="en">A customer instructs his <b>bank</b> to transfer funds
@@ -209,6 +214,9 @@
                the transaction, he includes an authentication token from his
                electronic <b>wallet</b>. In Taler terminology, the customer
                creates a reserve at the mint.</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
              <li lang="en">Once the mint has received the transfer, it allows the
                customer's electronic wallet to <b>withdraw</b> electronic coins.
                The electronic coins are digital representations of the original
@@ -218,6 +226,9 @@
                The use of Taler does not change the currency or the
                total value of the funds (except for fees which the mint may
                charge for the service).</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
              <li lang="en">Once the customer has the digital coins in his wallet,
                the wallet can be used to <b>spend</b> the coins with merchant
                portals that support the Taler
@@ -232,6 +243,9 @@
                customer. Naturally, the customer can spend any fraction of his
                digital coins (the system takes care of customers getting
                change).</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
              <li lang="en">Merchants receiving digital coins <b>deposits</b>
                the respective receipts that resulted from the contract signing
                with the customer at the mint to redeem the coins.
@@ -245,6 +259,9 @@
                customer. Thus, the mint's database allows the state to enforce
                that merchants pay applicable taxes (and do not engage in
                illegal contracts).</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
              <li lang="en">Finally, the mint transfers funds corresponding to
                the digital coins redeemed by the merchants to the merchant's
                <b>bank</b> account. The mint may combine multiple small
@@ -252,6 +269,9 @@
                The merchant can query the mint
                about the relationship between the bank transfers and the
                individual claims that were deposited.</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
              <li lang="en">Most importantly, the mint keeps cryptographic
                proofs that allow it to demonstrate that it is operating
                correctly to third parties.  The system requires an external
@@ -259,12 +279,18 @@
                body, to frequently verify the mint's databases and check that
                its bank balance matches the total value of the remaining coins
                in circulation.</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
              <li lang="en">Without the auditor, the mint operators could
                steal funds they are holding in reserve. Customers and merchants
                cannot cheat each other or the mint. If any party's computers
                are compromised, the financial damage is limited to the
                respective party and proportional to the funds they
                have in circulation during the period of the compromise.</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
            </ol>
          </p>
        </div>
@@ -282,6 +308,9 @@
            family or copying coins between devices should not be subject to
            monitoring by the state.
          </p>
+         <p lang="de" note="outdated"></p>
+         <p lang="fr" note="outdated"></p>
+         <p lang="it" note="outdated"></p>
          <p lang="en">In Taler terminology, we distinguish between
            <b>transactions</b> where the exclusive ownership of the value of a
            coin is passed from one entity to another, and <b>sharing</b>
@@ -295,6 +324,9 @@
            involved, and thus represent interactions in the protected immediate
            personal domain, and not commercial transactions.
          </p>
+         <p lang="de" note="outdated"></p>
+         <p lang="fr" note="outdated"></p>
+         <p lang="it" note="outdated"></p>
          <p lang="en">When Taler needs to provide change, for example because
            a customer only has a 5 Euro coin but wants to make a 2 Euro
            purchase, it needs to create <b>fresh</b> coins (of a total value
@@ -309,10 +341,16 @@
            <i>transfers</i>, as the linkage ensures that the fresh coins are
            always <i>shared</i> with the owner of the original coin.
          </p>
+         <p lang="de" note="outdated"></p>
+         <p lang="fr" note="outdated"></p>
+         <p lang="it" note="outdated"></p>
          <p lang="en">As a result, Taler does not intrude into the
            personal economic domain, offers good privacy, taxability
            for transactions and the ability to give change.
          </p>
+         <p lang="de" note="outdated"></p>
+         <p lang="fr" note="outdated"></p>
+         <p lang="it" note="outdated"></p>
        </div>
        <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->
