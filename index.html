@@ -195,25 +195,22 @@
           <p><a lang="it" class="btn btn-primary" href="/news" role="button" lang="it">Scopri di più &raquo;</a></p>
         </div>
       </div>
-      <div class="jumbotron">
+      <div class="jumbotron" align="left">
         <h2 lang="en">Taler system overview</h1>
         <h2 lang="de">Das Taler-System im &Uuml;berblick</h1>
         <h2 lang="fr" note="outdated"></h2>
         <h2 lang="it" note="outdated"></h2>
-        <p lang="en" align="center">
-          <img src="images/system.svg" alt="system overview">
-        </p>
         <p lang="en">The Taler system consists of protocols and free software
           implementations between a number of actors as illustrated in the
           illustration above.  Typical transactions involve the following steps:
-         </p>
-         <ul>
-           <li lang="en">A customer instructs his <b>bank</b> to transfer funds
+          <img src="images/system.svg" alt="system overview" style="float: right; margin: 5px 5px 5px 5px;" width="50%">
+          <ol>
+             <li lang="en">A customer instructs his <b>bank</b> to transfer funds
              from his account to the Taler mint (top left).  In the subject of
              the transaction, he includes an authentication token from his
              electronic <b>wallet</b>. In Taler terminology, the customer
              creates a reserve at the mint.</li>
-           <li lang="en">Once the mint has received the transfer, it allows the
+             <li lang="en">Once the mint has received the transfer, it allows the
              customer's electronic wallet to <b>withdraw</b> electronic coins.
              The electronic coins are digital representations of the original
              transfer. It is important to note that the mint does not learn
@@ -222,7 +219,7 @@
              The use of Taler does not change the currency or the
              total value of the funds (except for fees which the mint may
              charge for the service).</li>
-           <li lang="en">Once the customer has the digital coins in his wallet,
+             <li lang="en">Once the customer has the digital coins in his wallet,
              the wallet can be used to <b>spend</b> the coins with merchant
              portals that support the Taler
              payment system and accept the respective mint as a business
@@ -236,7 +233,7 @@
              customer. Naturally, the customer can spend any fraction of his
              digital coins (the system takes care of customers getting
              change).</li>
-           <li lang="en">Merchants receiving digital coins <b>deposits</b>
+             <li lang="en">Merchants receiving digital coins <b>deposits</b>
              the respective receipts that resulted from the contract signing
              with the customer at the mint to redeem the coins.
              The deposit step does not reveal the learn the details of the
@@ -249,27 +246,28 @@
              customer. Thus, the mint's database allows the state to enforce
              that merchants pay applicable taxes (and do not engage in
              illegal contracts).</li>
-           <li lang="en">Finally, the mint transfers funds corresponding to
+             <li lang="en">Finally, the mint transfers funds corresponding to
              the digital coins redeemed by the merchants to the merchant's
              <b>bank</b> account. The mint may combine multiple small
              transactions into one larger bank transfer.
              The merchant can query the mint
              about the relationship between the bank transfers and the
              individual claims that were deposited.</li>
-           <li lang="en">Most importantly, the mint keeps cryptographic
+             <li lang="en">Most importantly, the mint keeps cryptographic
              proofs that allow it to demonstrate that it is operating
              correctly to third parties.  The system requires an external
              <b>auditor</b>, such as a government-appointed financial regulatory
              body, to frequently verify the mint's databases and check that
              its bank balance matches the total value of the remaining coins
              in circulation.</li>
-           <li lang="en">Without the auditor, the mint operators could
+             <li lang="en">Without the auditor, the mint operators could
              steal funds they are holding in reserve. Customers and merchants
              cannot cheat each other or the mint. If any party's computers
              are compromised, the financial damage is limited to the
              respective party and proportional to the funds they
              have in circulation during the period of the compromise.</li>
-         </ul>
+           </ol>
+         </p>
        </div>
       <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->
