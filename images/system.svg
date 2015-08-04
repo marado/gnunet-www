@@ -6995,8 +6995,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="414.69727"
-     inkscape:cy="258.34595"
+     inkscape:cx="416.12584"
+     inkscape:cy="301.20309"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -7019,7 +7019,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -12627,65 +12627,26 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Gentium;-inkscape-font-specification:Gentium;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="509.28506"
-       y="-155.05165"
+       x="511.86011"
+       y="-176.33693"
        id="text16418"
        sodipodi:linespacing="125%"
        transform="matrix(0.60013616,0.79989786,-0.79989786,0.60013616,0,0)"><tspan
          sodipodi:role="line"
          id="tspan16420"
-         x="509.28506"
-         y="-155.05165">Deposit</tspan></text>
+         x="511.86011"
+         y="-176.33693">Deposit</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Gentium;-inkscape-font-specification:Gentium;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="-101.58882"
-       y="423.69241"
-       id="text16422"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.63417034,-0.77319337,0.77319337,0.63417034,0,0)"
-       inkscape:transform-center-y="13.478551"
-       inkscape:transform-center-x="-1.4601816"><tspan
-         sodipodi:role="line"
-         id="tspan16424"
-         x="-101.58882"
-         y="423.69241">API (RESTful)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Gentium;-inkscape-font-specification:Gentium;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="504.87759"
-       y="-157.35228"
-       id="text16426"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.63039738,0.7762726,-0.7762726,0.63039738,0,0)"
-       inkscape:transform-center-x="150.55667"
-       inkscape:transform-center-y="51.931767"><tspan
-         sodipodi:role="line"
-         id="tspan16428"
-         x="504.87759"
-         y="-157.35228">API (RESTful)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Gentium;-inkscape-font-specification:Gentium;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="312.85715"
-       y="484.50507"
-       id="text16430"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan16432"
-         x="312.85715"
-         y="484.50507">API</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Gentium;-inkscape-font-specification:Gentium;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="583.57141"
-       y="227.36217"
+       x="582.5"
+       y="213.43359"
        id="text18412"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan18414"
-         x="583.57141"
-         y="227.36217">verify</tspan></text>
+         x="582.5"
+         y="213.43359">verify</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot18428"
