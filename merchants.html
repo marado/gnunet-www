@@ -222,6 +222,60 @@
 	     fornendo standard aperti e implementazioni di riferimento in free-software.</p>
         </div>
       </div>
+     <div class="col-lg-12">
+        <h2 lang="en" id="overview">Taler as seen by merchants</h1>
+        <h2 lang="de">Taler aus Gesch&auml;ftssicht</h1>
+        <h2 lang="fr" note="outdated"></h2>
+        <h2 lang="it" note="outdated"></h2>
+        <p lang="en">Merchants supporting the Taler system need to integrate
+          some relatively simple logic into their transaction processing
+          system.
+          Typical steps performed by the merchant system are:
+        </p>
+        <p lang="de" note="outdated"></p>
+        <p lang="fr" note="outdated"></p>
+        <p lang="it" note="outdated"></p>
+        <p>
+          <img src="images/merchant.svg" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
+          <ol>
+            <li lang="en">The new logic detects when a customer's system
+              supports Taler and then needs to send a digitally signed
+              version of the proposed contract in a simple JSON format to
+              the customer.
+              The message also includes salted, hashed wire details for
+              the merchant, as well as restrictions as to which mint operators
+              the merchant is willing to deal with.</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
+            <li lang="en">The customer sends a signed response which states
+               that certain digital coins now belong to the merchant to both
+               signal acceptance of the deal as well as to pay the respective
+               amount (bottom).</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
+             <li lang="en">The merchant then forwards the signed messages
+               received from the customer to the mint, together with its
+               wire details and the salt (without hashing).  The mint verifies
+               the details and sends a signed confirmation (or an error
+               message) to the merchant.  The merchant checks that the
+               mint's signature is valid, sends a confirmation to the
+               customer and executes the contract-specific business logic.</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
+             <li lang="en">The mint performs wire transfers corresponding to
+               the claims deposited by the merchant.  Note that the mint may
+               charge fees for the deposit operation, hence merchants may
+               impose limits restricting the set of mint operators they are
+               willing to deal with.</li>
+             <li lang="de" note="outdated"></li>
+             <li lang="fr" note="outdated"></li>
+             <li lang="it" note="outdated"></li>
+          </ol>
+        </p>
+      </div>
       <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->
   </body>
