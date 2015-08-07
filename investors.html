@@ -112,12 +112,12 @@
 	     l'échanger contre de la monnaie en utilisant les système de paiement
 	     traditionnels à la Banque. La Banque peut ajouter des frais (au
 	     client, commerçant ou au deux) pour faciliter la transaction.</p>
-	  <p lang="it">Il modello business di base per Taler è l'operazione di un "banca" (mint).
-	     La "banca" (mint) converte i soldi da un sistema di pagamento tradizionale (Mastercard,
+	  <p lang="it">Il modello business di base per Taler è l'operazione di un zecca (mint).
+	     La zecca (mint) converte i soldi da un sistema di pagamento tradizionale (Mastercard,
 	     SEPA, Visa, BitCoin, ACH, SWIFT, ecc.) a monete elettroniche anonime nella stessa
 	     valuta. Il cliente può allora restituire le monete elettroniche ad un mercante,
-	     che può scambiarle alla "banca" (mint) ccon monete rappresentate dal sistema di
-	     pagamento tradizionale. La "banca" (mint) può quindi tassare (il cliente, il mercante
+	     che può scambiarle alla zecca (mint) ccon monete rappresentate dal sistema di
+	     pagamento tradizionale. La zecca (mint) può quindi tassare (il cliente, il mercante
 	     o entrambi) per facilitare le transazioni.</p>
         </div>
       </div>
@@ -125,7 +125,7 @@
         <h2 lang="en" id="overview">Taler as seen by the mint operator</h1>
         <h2 lang="de">Taler aus Betreiberperspektive</h1>
         <h2 lang="fr" note="outdated"></h2>
-        <h2 lang="it" note="outdated"></h2>
+        <h2 lang="it" note="outdated">Come opera la zecca di Taler</h2>
         <p lang="en">The mint operator primarily operates a Web service
           portal and keeps databases with transaction details and
           cryptographic proofs.  Its operational expenses are thus related to
@@ -136,7 +136,13 @@
         </p>
         <p lang="de" note="outdated"></p>
         <p lang="fr" note="outdated"></p>
-        <p lang="it" note="outdated"></p>
+        <p lang="it">Chi gestisce la zecca dovrà offrire un portale
+	Web e mantenere vari database in cui custodire dettagli circa transazioni
+	e certificati criptografici. I suoi costi dipenderanno dunque da quanto e come
+	essa si interfaccerà col sistema bancario, e dalla sua infrastruttura informatica.
+	Dall'altro lato, i suoi guadagni saranno basati sulle tariffe applicate alle
+	varie operazioni offerte. Tali operazioni offerte comprendono:
+	</p>
         <p>
           <img src="images/mint.svg" alt="operator perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ul>
@@ -144,26 +150,33 @@
               wire transfer from a customer.</li>
             <li lang="de" note="outdated"></li>
             <li lang="fr" note="outdated"></li>
-            <li lang="it" note="outdated"></li>
+            <li lang="it">Creazione di una <b>riserva</b> in seguito
+	    alla ricezione di un bonifico bancario da parte di un cliente</li>
             <li lang="en">Allow customers to withdraw (and refresh)
                digital coins from their reserve.</li>
             <li lang="de" note="outdated"></li>
             <li lang="fr" note="outdated"></li>
-            <li lang="it" note="outdated"></li>
+            <li lang="it">Permettere ai clienti di ritirare e cambiare gettoni posseduti
+	    con gettoni nuovi (attraverso una operazione chiamata <b>refresh</b>)
+	    i gettoni digitali dalla loro riserva</li>
             <li lang="en">Accept and validate deposits from merchants.</li>
             <li lang="de" note="outdated"></li>
             <li lang="fr" note="outdated"></li>
-            <li lang="it" note="outdated"></li>
+            <li lang="it">Accettare e validare depositi di gettoni elettronici
+	    da parte dei venditori</li>
             <li lang="en">Execute wire transfers to merchants in
                response to validated deposits.</li>
             <li lang="de" note="outdated"></li>
             <li lang="fr" note="outdated"></li>
-            <li lang="it" note="outdated"></li>
+            <li lang="it">Eseguire bonifici verso i conti dei venditori in seguito
+	    a depositi (di gettoni elettronici) andati a buon fine</li>
             <li lang="en">Preserve and provide cryptographic proofs of
                correct operation for audits by financial regulators.</li>
             <li lang="de" note="outdated"></li>
             <li lang="fr" note="outdated"></li>
-            <li lang="it" note="outdated"></li>
+            <li lang="it">Preservare e fornire prove crittografiche delle
+	    varie operazioni al fine di permettere controlli da parte di organi
+	    finanziari</li>
           </ul>
         </p>
       </div>
