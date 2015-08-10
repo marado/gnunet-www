@@ -83,13 +83,13 @@
 	     be revealed to the merchant. The bank, government and mint will also
 	     never learn how you spent your electronic money. However, you can
 	     prove that you paid in court if necessary.</p>
-	  <p lang="de">Ein Zahlungsvorgangs mit Taler hat nicht das Offenlegen
+	  <p lang="de">Ein Zahlungsvorgang mit Taler hat nicht das Offenlegen
 	     der Identit&auml;t des K&auml;ufers gegen&uuml;ber dem H&auml;ndler zur
-	     Folge. Banken, Regierungen und M&uuml;nzanstalten k&ouml;nnen den
-	     konkreten Verwendungszweck einer Transaktion nicht in Erfahrung
-	     bringen.  Trotzdem sind Zahlende in der Lage, die von ihnen
-	     durchgef&uuml;hrten Transaktionen im Falle eines Gerichtsprozesses
-	     kryptographisch nachzuweisen.</p>
+	     Folge. Das bedeutet insbesondere, dass Banken, Regierungen und
+	     M&uuml;nzanstalten k&ouml;nnen den konkreten Verwendungszweck einer
+	     Transaktion nicht in Erfahrung bringen. Trotzdem sind Zahlende in
+	     der Lage, die von ihnen durchgef&uuml;hrten Transaktionen im Falle
+	     eines Gerichtsprozesses kryptographisch nachzuweisen.</p>
 	  <p lang="fr">Quand vous payez avec Taler, votre identité ne doit pas
 	     être révélée au commerçant. La banque, le gouvernement et la monnaie
 	     de Paris ne sauront pas non plus comment vous avez dépensé votre
@@ -161,12 +161,12 @@
 	     a new currency with the inherent currency fluctuation risks, but
 	     instead the cryptographic coins correspond to existing currencies, such as
 	     US Dollars, Euros or even BitCoins.</p>
-	  <p lang="de">Taler benutzt eine elektronische M&uuml;nzanstalt
-             die finanziellen Reserven in bestehenden W&auml;hrungen h&auml;lt.
-             Dies bedeutet, dass bei Taler keine neue W&auml;hrung gibt: Elektronische
-             M&uuml;nzen in Taler sind nur cryptographische Repr&auml;sentation
-             bestehender bestehenden W&auml;hrungen, wie zum Beispiel
-             Euro, US-Dollar oder auch BitCoin.
+	  <p lang="de">Bei Taler kommt eine elektronische M&uuml;nzanstalt zum
+	     Einsatz, welche die finanziellen Reserven in bestehenden
+	     W&auml;hrungen h&auml;lt. Dies bedeutet, dass Taler selbst keine neue
+	     W&auml;hrung darstellt: Elektronische M&uuml;nzen in Taler sind nur
+	     die kryptographische Repr&auml;sentation bestehender
+	     W&auml;hrungen, wie zum Beispiel Euro, US-Dollar oder auch BitCoin.
           </p>
 	  <p lang="fr" note="outdated">Taler fonctionne comme une trésorerie. Cela signifie que
 	     Taler n'est pas une nouvelle devise avec les risques inhérents aux
@@ -198,7 +198,7 @@
       </div>
        <div class="col-lg-12">
          <h2 lang="en" id="taxability">Taler technology: About taxability, change and privacy</h1>
-         <h2 lang="de">Taler Technik: Steuern, Wechselgeld und Privatsph&auml;re</h1>
+         <h2 lang="de">Die Technologie hinter Technik: Steuern, Wechselgeld und Privatsph&auml;re</h1>
          <h2 lang="fr" note="outdated"></h2>
          <h2 lang="it">La tecnologia Taler: tassabilità, cambio e privacy</h2>
          <p lang="en">One of the key goals of Taler is to provide anonymity for
@@ -210,7 +210,20 @@
            family or copying coins between devices should not be subject to
            monitoring by the state.
          </p>
-         <p lang="de" note="outdated"></p>
+         <p lang="de">Eins der Schl&uuml;sselziele Talers ist
+	   es, die Anonymit&auml;t der B&uuml;rger beim T&auml;tigen von
+	   Eink&auml;fen innerhalb des Systems zu sch&uuml;tzen. Gleichzeitig
+	   sieht Taler aber auch vor, dass der Staat Einsicht in eingehende
+	   Transaktionen nehmen kann und so die Legalit&auml;t der
+	   Gesch&auml;fte, sowie die ordnungsgem&auml;&szlig;e Besteuerung
+	   (beispielsweise Einkommen-, Umsatz-, Mehrwertsteuer) sicher gestellt
+	   werden k&ouml;nnen. Nichtsdestotrotz nimmt Taler keinen Einfluss auf
+	   das n&auml;here pers&ouml;nliche Umfeld: So sind wir beispielsweise
+	   davon &uuml;berzeugt, dass der Staat in Transaktionen wie das
+	   Transferieren von Geld innerhalb einer Familie oder etwa das Kopieren
+	   von M&uuml;nzen zwischen den Ger&auml;ten einer einzelnen Person
+	   explizit keine Einsicht nehmen darf.
+	 </p>
          <p lang="fr" note="outdated"></p>
          <p lang="it">Uno dei principali obbiettivi di Taler è quello
 	 di fornire anonimato ai cittadini nel momento in cui questi effettuano acquisti
@@ -233,7 +246,21 @@
            involved, and thus represent interactions in the protected immediate
            personal domain, and not commercial transactions.
          </p>
-         <p lang="de" note="outdated"></p>
+	 <p lang="de">Dies wird erreicht, indem Taler zwischen
+	 <b>Transaktionen</b>, bei denen der Besitzer einer M&uuml;nze
+	   innerhalb des Systems wechselt, und <b>gemeinsamer Nutzung</b> einer
+	   M&uuml;nze durch mehrere elektronische Geldb&ouml;rsen (die auch
+	   unterschiedlichen Personen zugeordnet sein k&ouml;nnen). Bei jeder
+	   Transaktion ist der Empf&auml;nger beh&ouml;rdlich einsehbar und
+	   daher besteuerbar, wohingegen das gemeinsame Nutzen (Teilen)
+	   bestimmter Geldbetr&auml;ge unsichtbar f&uuml;r alle unbeteiligten
+	   Parteien ist.  Sobald eine M&uuml;nze unter mehreren Personen geteilt
+	   wurde kann jede dieser Personen die M&uuml;nze auch ausgeben -- aber
+	   nur bei der ersten Aufwendung der M&uuml;ze kommt auch eine
+	   g&uuml;ltige Transaktion zustande. Das Teilen gemeinsamer
+	   Geldbetr&auml;ge bedarf daher eines hohen Vertrauens unter den
+	   Beteiligten und stellt somit keine kommerzielle Transaktion dar.
+	 </p>
          <p lang="fr" note="outdated"></p>
          <p lang="it">Nella terminologia di Taler, si considerano
 	 <b>transazioni</b> e  <b>condivisione</b>. Nel primo caso, la proprietà
@@ -257,11 +284,27 @@
            that any owner of an original coin that was involved in a
            refresh operation can follow a <b>link</b> to the private
            information of the fresh coins generated by the operation.  As a
-           result of this trick, refresh operations cannot uses to create
+           result of this trick, refresh operations cannot be used to create
            <i>transfers</i>, as the linkage ensures that the fresh coins are
            always <i>shared</i> with the owner of the original coin.
          </p>
-         <p lang="de" note="outdated"></p>
+         <p lang="de">Tritt im System die Notwendigkeit von
+	   Wechselgeld auf, sei es weil ein Kunde mit einer
+	   F&uuml;nf-Euro-M&uuml;nze eine Transaktion im Wert von zwei Euro
+	   durchf&uuml;hren muss, erstellt das System <b>neue</b> M&uuml;nzen im
+	   Wert von drei Euro. Diese neuen M&uuml;nzen sind so angelegt, dass
+	   sie nicht mit der ausgegebenen F&uuml;nf-Euro-M&uuml;nze in
+	   Verbindung gebracht werden k&ouml;nnen, um die Privatsph&auml;re
+	   sicherzustellen. Um diesen Vorgang vor Missbrauch zu sch&ouml;tzen,
+	   bei dem vermeintliches Wechselgeld von einem Teilnehmer zum anderen
+	   <i>transferiert</i> wird, stellt Taler sicher, dass alle Besitzer der
+	   originalen M&uuml;nze einer <b>nachvollziehen</b> k&ouml;nnen, welche
+	   privaten Informationen mit dem frisch generierten Wechselgeld
+	   assoziert werden. Dieser Trick verhindert effektiv, dass Wechselgeld
+	   zum <i>Transferieren</i> von M&uuml;nzen verwendet werden kann: Das
+	   neu generierte Wechselgeld ist immer auch <i>geteilt</i> mit dem
+	   Besitzer der originalen M&uuml;nze.
+	 </p>
          <p lang="fr" note="outdated"></p>
          <p lang="it">Quando Taler deve fornire cambio, come può avvenire
 	 se un utente possiede un gettone da 5 Euro ma deve fare un acquisto da 2 Euro, procede
@@ -279,7 +322,13 @@
            personal economic domain, offers good privacy, taxability
            for transactions and the ability to give change.
          </p>
-         <p lang="de" note="outdated"></p>
+         <p lang="de">Die oben dargelegten Eigenschaften haben
+	   daher zur Folge, dass Taler sich nicht in pers&ouml;nliche Bereiche
+	   einmischt, gleichzeitig aber die Privatsph&auml;are der Nutzer
+	   sch&uuml;tzt und trotzdem die M&ouml;glichkeit der Besteuerung von
+	   Transaktionen sowie die des Generierens von Wechselgeld
+	   erm&ouml;glicht.
+	 </p>
          <p lang="fr" note="outdated"></p>
          <p lang="it">Ne deriva che Taler non entra nella gestione economica personale,
 	 offre privacy affidabile, tassabilità per le transazioni e la possibilità di dare
