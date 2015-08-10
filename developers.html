@@ -159,7 +159,7 @@
           <h2 lang="en">Discussion</h2>
 	  <h2 lang="de">Diskussion</h2>
 	  <h2 lang="fr">Discussion</h2>
-	  <h2 lang="it">Discurssione</h2>
+	  <h2 lang="it">Discussione</h2>
           <p lang="en">We have a mailinglist for developer discussions.
             You can subscribe to it or read the list archive at
             <a href="http://lists.gnu.org/mailman/listinfo/taler">http://lists.gnu.org/mailman/listinfo/taler</a>.</p>
@@ -180,37 +180,43 @@
           <h2 lang="en">Regression Testing</h2>
 	  <h2 lang="de">Regressionstests</h2>
 	  <h2 lang="fr" note="outdated"></h2>
-	  <h2 lang="it" note="outdated"></h2>
+	  <h2 lang="it">Test delle regressioni</h2>
           <p lang="en">We have <a href="http://www.buildbot.org/">Buildbot</a> automation tests
             to detect regressions and check for portability at
             <a href="http://buildbot.taler.net/">buildbot.taler.net</a>.</p>
           <p lang="de" note="outdated"></p>
           <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
+          <p lang="it">E' disponibile un <a href="http://www.buildbot.org/">Buildbot</a>
+	  dedicato a test automatici per individuare regressioni e controllare la portabilità, alla
+	  pagina <a href="http://buildbot.taler.net/">buildbot.taler.net</a>.</p>
         </div>
         <div class="col-lg-4" note="not yet operational">
           <h2 lang="en">Code Coverage Analysis</h2>
 	  <h2 lang="de" note="outdated"></h2>
 	  <h2 lang="fr" note="outdated"></h2>
-	  <h2 lang="it" note="outdated"></h2>
+	  <h2 lang="it">Analisi della copertura del codice</h2>
           <p lang="en">We use <a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a> to
             analyze the code coverage of our tests, the results are available
             at <a href="http://lcov.taler.net/">lcov.taler.net</a>.</p>
           <p lang="de" note="outdated"></p>
           <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
+          <p lang="it">I test effettuati sul software Taler subiscono la misurazione della loro "copertura"
+	  da <a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a>; inoltre, tali risultati sono
+	  disponibili alla pagina <a href="http://lcov.taler.net/">lcov.taler.net</a>.</p>
         </div>
         <div class="col-lg-4">
           <h2 lang="en">Performance Analysis</h2>
 	  <h2 lang="de" note="outdated"></h2>
 	  <h2 lang="fr" note="outdated"></h2>
-	  <h2 lang="it" note="outdated"></h2>
+	  <h2 lang="it">Analisi delle prestazioni</h2>
           <p lang="en">We use <a href="http://gnunet.org/gauger">Gauger</a> for performance
             regression analysis of the Mint backend
             at <a href="http://gauger.taler.net/">gauger.taler.net</a>.</p>
           <p lang="de" note="outdated"></p>
           <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
+          <p lang="it">Le prestazioni della zecca (Mint) sono misurate attraverso
+	  <a href="http://gnunet.org/gauger">Gauger</a>, e i risultati disponibili alla pagina
+	  <a href="http://gauger.taler.net/">gauger.taler.net</a>.</p>
         </div>
       </div>
 
@@ -218,14 +224,16 @@
         <h2 lang="en" id="overview">Taler system overview</h1>
         <h2 lang="de">Das Taler-System im &Uuml;berblick</h1>
         <h2 lang="fr" note="outdated"></h2>
-        <h2 lang="it" note="outdated"></h2>
+        <h2 lang="it">Schema generale del sistema Taler</h2>
         <p lang="en">The Taler system consists of protocols and free software
           implementations between a number of actors as illustrated in the
           illustration on the right.  Typical transactions involve the following steps:
         </p>
         <p lang="de" note="outdated"></p>
         <p lang="fr" note="outdated"></p>
-        <p lang="it" note="outdated"></p>
+        <p lang="it">Taler usa software libero per realizzare i protocolli finalizzati alla
+	comunicazione tra i vari partecipanti come illustrato nella figura a destra.
+	La tipica transazione nel modello Taler si compone dei seguenti passaggi:</p>
         <p>
           <img src="images/system.svg" alt="system overview" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
@@ -236,7 +244,12 @@
                creates a reserve at the mint.</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">Un cliente chiede alla sua <b>banca</b> di trasferire
+	     fondi dal suo conto a quello della zecca Taler (in alto a destra).
+	     La causale di questo trasferimento includerà l'informazione necessaria,
+	     generata dal portafoglio elettronico (<b>wallet</b>) compatibile col
+	     sistema Taler, ad autenticare il cliente alla zecca (nota anche come "mint").
+	     Nella terminologia adeguata, si dirà che il cliente ha creato una riserva.</li>
              <li lang="en">Once the mint has received the transfer, it allows the
                customer's electronic wallet to <b>withdraw</b> electronic coins.
                The electronic coins are digital representations of the original
@@ -248,7 +261,15 @@
                charge for the service).</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">In seguito alla ricezione del trasferimento da parte della
+	     zecca, il cliente potrà <b>ritirare</b> i suoi gettoni elettronici.
+	     Tali gettoni sono rappresentazioni digitali dell'ammonto che il cliente
+	     ha trasferitto alla zecca. E' fondamentale notare che in questo processo
+	     la zecca non apprende nessun "numero seriale" dei gettoni coinvolti, in
+	     modo tale da non poter a posteriori associare un certo cliente ad un certo
+	     acquisto. Taler non interferisce dunque né con la valuta né con l'ammonto
+	     presente nella riserva. L'unica modifca apportata da Taler alla riserva è
+	     la sottrazione da questa della tariffa del servizio.
              <li lang="en">Once the customer has the digital coins in his wallet,
                the wallet can be used to <b>spend</b> the coins with merchant
                portals that support the Taler
@@ -265,11 +286,25 @@
                change).</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
-             <li lang="en">Merchants receiving digital coins <b>deposits</b>
+             <li lang="it">Con i gettoni elettronici nel portafogli, il cliente
+	     può <b>spendere</b> presso tutti i venditori che accettano Taler tra
+	     i loro sistemi di pagamento, e che sono disponibili a finalizzare l'operazione
+	     con la stessa zecca che ha dato i gettoni al cliente (freccia in basso).
+	     Tecnicamente, ciò comporta la creazione di un certificato firmato d'ambo le parti:
+	     dal venditore e dalla chiave corrispondente al gettone speso (vale la pena
+	     notare che un gettone, altro non è, che una coppia di chiavi pubblica e
+	     privata). Assumendo che i tribunali accettino firme elettroniche, un cliente
+	     può utilizzare tale certificato per mostrare i suoi termini esatti e che
+	     egli ha pagato la somma dovuta. Ancora, il cliente non viene mai a conoscenza degli
+	     estremi bancari del negoziante e, allo stesso modo, Taler non richiede che il
+	     negoziante debba conoscere l'identità del cliente. Naturalmente, il cliente
+	     può anche spendere una frazione di uno dei suoi gettoni, grazie alla facoltà
+	     che Taler ha di restituire il cambio.	     
+	     </li>
+             <li lang="en">Merchants receiving digital coins <b>deposit</b>
                the respective receipts that resulted from the contract signing
                with the customer at the mint to redeem the coins.
-               The deposit step does not reveal the learn the details of the
+               The deposit step does not reveal the details of the
                contract between the customer and the merchant or the identity
                of the customer to the mint in any way. However, the mint
                does learn the identity of the merchant via the provided bank
@@ -281,7 +316,14 @@
                illegal contracts).</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">Contemporaneamente alla firma dei
+	     contratti viene creata una ricevuta che il negoziante può <b>depositare</b>
+	     alla zecca al fine di riavere indietro il corrispettivo in denaro
+	     del gettone che ha ricevuto dal cliente. Il deposito non mette la zecca
+	     nelle condizioni di apprendere i dettagli del contratto tra il negoziante
+	     e il cliente, né l'identità stessa del cliente. Ad ogni modo, la zecca
+	     potrà (e dovrà) conoscere l'identità del negoziante, dal momento che
+	     essa necessità dei suoi estremi bancari necessari a finalizzare il processo.</li>
              <li lang="en">Finally, the mint transfers funds corresponding to
                the digital coins redeemed by the merchants to the merchant's
                <b>bank</b> account. The mint may combine multiple small
@@ -291,7 +333,12 @@
                individual claims that were deposited.</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">Infine, la zecca trascferirà fondi della stessa cifra dei
+	     gettoni riscattati dal negoziate verso il conto in <b>banca</b> di quest'
+	     ultimo. Nulla impedisce alla zezza di combinare molteplici piccole transazioni
+	     in un unico bonifico verso il conto del negoziante. Il negoziante può in ogni momento
+	     interrogare la zecca sullo stato dei bonifici che egli ha diritto a ricevere.
+	     </li>
              <li lang="en">Most importantly, the mint keeps cryptographic
                proofs that allow it to demonstrate that it is operating
                correctly to third parties.  The system requires an external
@@ -301,7 +348,12 @@
                in circulation.</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">E' importante notare che la zecca mantiene
+	     prove crittografiche che le permettono di dimostrare la sua buona fede
+	     verso terze parti. Nell'architettura di Taler è prevista la presenza di un
+	     <b>ispettore</b> esterno, come ad esempio un apparato statale del fisco,
+	     che controlla costantemente i database della zecca per verificare che il suo
+	     bilancio corrisponda sempre alla quantità di gettoni ancora in circolazione.</li>
              <li lang="en">Without the auditor, the mint operators could
                steal funds they are holding in reserve. Customers and merchants
                cannot cheat each other or the mint. If any party's computers
@@ -310,7 +362,13 @@
                have in circulation during the period of the compromise.</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">L'assenza di taler ispettore metterebbe i gestori della zecca
+	     nelle condizioni di appropriarsi del denaro presente nelle sue riserve.
+	     Clienti e negozianti non hanno la possibilità di frodarsi a vicenda, né
+	     di frodare la zecca. Se il computer di qualcuna delle parti viene compromesso,
+	     la perdita finananziaria non tocca le altre parti ed è proporzionale ai fondi
+	     che tale computer ha in circolazione durante il periodo della compromissione.
+	     </li>
            </ol>
          </p>
        </div>
