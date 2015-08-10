@@ -226,7 +226,7 @@
         <h2 lang="en" id="overview">Taler as seen by merchants</h1>
         <h2 lang="de">Taler aus Gesch&auml;ftssicht</h1>
         <h2 lang="fr" note="outdated"></h2>
-        <h2 lang="it" note="outdated"></h2>
+        <h2 lang="it">Come i negozianti vedono Taler</h2>
         <p lang="en">Merchants supporting the Taler system need to integrate
           some relatively simple logic into their transaction processing
           system.
@@ -234,7 +234,9 @@
         </p>
         <p lang="de" note="outdated"></p>
         <p lang="fr" note="outdated"></p>
-        <p lang="it" note="outdated"></p>
+        <p lang="it">Al fine di supportare Taler, i negozianti
+	dovranno integrare alcune semplici procedure nei loro sistemi di ricezione
+	dei pagamenti</p>
         <p>
           <img src="images/merchant.svg" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
@@ -247,14 +249,23 @@
               the merchant is willing to deal with.</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">La nuova procedura rileva il caso in cui un cliente
+	     supporta Taler, e procede ad inviarvi un contratto digitale firmato
+	     in un semplice formato JSON.
+	     Il messaggio include anche le coordinate bancarie del negoziante
+	     fissate in un "hashcode" assieme ad un numero casuale, nonché la
+	     lista delle zecche con cui il negoziante è disposto a trattare..</li>
             <li lang="en">The customer sends a signed response which states
                that certain digital coins now belong to the merchant to both
                signal acceptance of the deal as well as to pay the respective
                amount (bottom).</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">Il cliente invia una risposta firmata che attesta
+	     che un certo numero di gettoni ora appartiene al negoziante, così
+	     da segnalare sia l'accettazione dello scambio che il suo impegno
+	     a pagare il prezzo dovuto (in basso).	     
+	     </li>
              <li lang="en">The merchant then forwards the signed messages
                received from the customer to the mint, together with its
                wire details and the salt (without hashing).  The mint verifies
@@ -264,7 +275,15 @@
                customer and executes the contract-specific business logic.</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">Il negoziante inoltra tale messaggio firmato appena
+	     ricevuto del cliente alla zecca, insieme alle sue coordinata bancarie
+	     e al numero casuale usato in precedenza per produrre l'"hash" dei due.
+	     La zecca verifica le coordinate e manda una conferma (o un messaggio
+	     d'errore) firmata al negoziante. A questo punto, il negoziante controlla
+	     che la firma della zecca sia valida, manda una conferma al cliente,
+	     e procede ad assolvere quanto indicato nel contratto.
+	     
+	     </li>
              <li lang="en">The mint performs wire transfers corresponding to
                the claims deposited by the merchant.  Note that the mint may
                charge fees for the deposit operation, hence merchants may
@@ -272,7 +291,13 @@
                willing to deal with.</li>
              <li lang="de" note="outdated"></li>
              <li lang="fr" note="outdated"></li>
-             <li lang="it" note="outdated"></li>
+             <li lang="it">Per ogni deposito (od opzionalmente per ogni
+	     raggruppamento di depositi) ricevuto da un certo negoziante,
+	     la zecca procederà con il versamento verso il conto in banca di
+	     quest'ultimo. La zecca potrebbe anche prevedere delle tariffe
+	     per l'operazione di deposito, da cui è plausibile che alcuni
+	     mercanti impongano delle restrizioni su quali siano le zecche
+	     con cui essi vogliano trattare.</li>
           </ol>
         </p>
       </div>
