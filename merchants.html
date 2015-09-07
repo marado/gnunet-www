@@ -224,7 +224,7 @@
       </div>
      <div class="col-lg-12">
         <h2 lang="en" id="overview">Taler as seen by merchants</h1>
-        <h2 lang="de">Taler aus Gesch&auml;ftssicht</h1>
+        <h2 lang="de">Taler aus H&auml;ndlerperspektive</h1>
         <h2 lang="fr" note="outdated"></h2>
         <h2 lang="it">Come i negozianti vedono Taler</h2>
         <p lang="en">Merchants supporting the Taler system need to integrate
@@ -232,7 +232,10 @@
           system.
           Typical steps performed by the merchant system are:
         </p>
-        <p lang="de" note="outdated"></p>
+        <p lang="de" note="outdated">H&auml;nder die Taler als Bezahlsystem
+          anbieten wollen, m&uuml;ssen ein paar relativ einfache Erweiterungen
+          an ihrem Transaktionssystem vornehmen. Die typischen Schritte die
+          ein H&auml;ndler bei Taler durchf&uuml;ren muss sind:</p>
         <p lang="fr" note="outdated"></p>
         <p lang="it">Al fine di supportare Taler, i negozianti
 	dovranno integrare alcune semplici procedure nei loro sistemi di ricezione
@@ -241,13 +244,20 @@
           <img src="images/merchant.svg" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
             <li lang="en">The new logic detects when a customer's system
-              supports Taler and then needs to send a digitally signed
+              supports Taler and then needs to send a cryptographically signed
               version of the proposed contract in a simple JSON format to
               the customer.
               The message also includes salted, hashed wire details for
               the merchant, as well as restrictions as to which mint operators
               the merchant is willing to deal with.</li>
-             <li lang="de" note="outdated"></li>
+             <li lang="de">Die H&auml;ndlerwebseite muss
+              pr&uuml;fen ob der Kunde eine Taler Geldb&ouml;rsenanwendung 
+              benutzt und dieser einen kryptographisch unterzeichneten
+              Vertragstext in einem JSON-Format &uuml;bertragen.  Der
+              Vertragstext muss auch einen Hash der Kontoinformationen
+              des H&auml;ndlers sowie Restriktionen f&uuml;r die vom
+              H&auml;ndler unterst&uuml;tzten M&uuml;nzanstalten beinhalten. 
+              </li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">La nuova procedura rileva il caso in cui un cliente
 	     supporta Taler, e procede ad inviarvi un contratto digitale firmato
