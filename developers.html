@@ -254,10 +254,10 @@
                electronic <b>wallet</b>. In Taler terminology, the customer
                creates a reserve at the mint.</li>
              <li lang="de">Ein Kunde weist seine <b>Bank</a> an,
-               Gelder aus seinem Konto an die Taler M&uuml;nzerei zu &uuml;bertragen (oben links).
+               Gelder aus seinem Konto an die Taler M&uuml;nzanstalt zu &uuml;bertragen (oben links).
                Im Betreff gibt er ein von seiner elektronischen <b>Geldb&ouml;rse</b>
                erzeugtes Authentifizierungstoken an. In der Terminologie von
-               Taler sagen wir, der Kunde legt eine Reserve bei der M&uuml;nzerei an.</li>
+               Taler sagen wir, der Kunde legt eine Reserve bei der M&uuml;nzanstalt an.</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">Un cliente chiede alla sua <b>banca</b> di trasferire
 	     fondi dal suo conto a quello della zecca Taler (in alto a destra).
@@ -274,17 +274,17 @@
                The use of Taler does not change the currency or the
                total value of the funds (except for fees which the mint may
                charge for the service).</li>
-               <li lang="de" note="outdated">Sobald die M&uuml;nzerei den Transfer
+               <li lang="de" note="outdated">Sobald die M&uuml;nzanstalt den Transfer
                  bekommen hat, erlaubt es der elektronischen Geldb&ouml;rse das
                  <b>abheben</b> elektronischer M&uuml;nzen. Diese elektronischen
                  M&uuml;nzen sind digitale R&auml;presentationen der urspr&uuml;nglichen
                  W&auml;hrung der &Uuml;berweisung. Hierbei ist es wichtig, dass die
-                 M&uuml;nzerei nicht die "Seriennummern" der bei diesem Prozess erzeugten
-                 M&uuml;nzen lernt. Somit kann die M&uuml;nzerei sp&auml;ter nicht
+                 M&uuml;nzanstalt nicht die "Seriennummern" der bei diesem Prozess erzeugten
+                 M&uuml;nzen lernt. Somit kann die M&uuml;nzanstalt sp&auml;ter nicht
                  feststellen, welcher Kunde bei welchem H&auml;nlder was einkauft.
                  Die Benutzung von Taler &auml;ndert weder die W&auml;hrung noch
                  den Gesamtwert (ausgenommen nat&uuml;rlich die Geb&uum;hren,
-                 die die M&uuml;nzerei f&uuml;r ihre Dienste verlangen k&ouml;nnte).</li>
+                 die die M&uuml;nzanstalt f&uuml;r ihre Dienste verlangen k&ouml;nnte).</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">In seguito alla ricezione del trasferimento da parte della
 	     zecca, il cliente potrà <b>ritirare</b> i suoi gettoni elettronici.
@@ -311,7 +311,7 @@
                change).</li>
                <li lang="de">Sobald der Kunde digitale M&uuml;nzen in seiner
                elektronischen Geldb&ouml;rse hat, kann er diese bei H&auml;ndlern
-               die Taler unterst&uuml;tzen und die entsprechende M&uuml;nzerei
+               die Taler unterst&uuml;tzen und die entsprechende M&uuml;nzanstalt
                akzeptieren <b>ausgeben</b>. Dabei wird ein Vertrag cryptographisch
                signiert durch die M&uuml;nzen des Kunden und den Schl&uuml;ssel des
                H&auml;ndlers.  Falls notwendig, kann der Kunde kann diesen Vertrag
@@ -351,7 +351,21 @@
                customer. Thus, the mint's database allows the state to enforce
                that merchants pay applicable taxes (and do not engage in
                illegal contracts).</li>
-             <li lang="de" note="outdated"></li>
+               <li lang="de" note="outdated">H&auml;ndler die digitale M&uuml;nzen
+               erhalten <b>deponieren</b> die Belege aus dem Vertragsabschluss
+               bei der M&uuml;nzanstalt um den Gegenwert zu erhalten. Beim
+               Deponieren werden weder die Vertragsdetails zwischen Kunde und
+               H&auml;ndler noch die Identit&auml;lt des Kunden der
+               M&uuml;nzanstalt bekannt. Die M&uuml;nzanstalt lernt jedoch
+               die Identit&auml;t des H&auml;ndlers da dieser seine
+               Kontoinformationen im Klartext zur Verf&uuml;gung stellen muss.
+               Falls der Staat es sp&auml;ter verlangt, kann der H&auml;ndler
+               beweisen, welcher Vertrag dem Depotvorgang zugrundelag, z.B.
+               damit der Staat die richtige Steuerkategorie bestimmen kann.
+               Somit erlaubten es die Informationen der M&uuml;nzanstalt dem
+               Staat H&auml;ndler zum abf&uuml;hren von Steuern zu zwingen
+               (und kriminelle Vertr&auml;ge entsprechend zu ahnden).
+               </li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">Contemporaneamente alla firma dei
 	     contratti viene creata una ricevuta che il negoziante può <b>depositare</b>
@@ -368,7 +382,13 @@
                The merchant can query the mint
                about the relationship between the bank transfers and the
                individual claims that were deposited.</li>
-             <li lang="de" note="outdated"></li>
+             <li lang="de">Abschlie&szlig;end &uuml;berweist die M&uuml;nzanstalt
+               dem H&auml;ndler den entsprechenden Betrag auf sein <b>Bankkonto</b>.
+               Die M&uuml;nzanstalt k&ouml;nnte dabei mehrere kleine Transaktionen
+               zu einem g&ouml;&szlig;erem Transfer zusammenfassen.  Der H&auml;ndler
+               kann in diesem Fall bei der M&uuml;nzanstalt nachfragen, um Informationen
+               zur Relation der Transfers und den dazugeh&ouml;rigen Depotvorg&auml;ngen
+               zu erhalten.</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">Infine, la zecca trascferirà fondi della stessa cifra dei
 	     gettoni riscattati dal negoziate verso il conto in <b>banca</b> di quest'
@@ -383,7 +403,13 @@
                body, to frequently verify the mint's databases and check that
                its bank balance matches the total value of the remaining coins
                in circulation.</li>
-             <li lang="de" note="outdated"></li>
+             <li lang="de">Die M&uuml;nzanstalt speichert
+               kryptographische Beweise die es ihr erlauben, gegen&uuml;ber
+               Dritten zu beweisen, dass Sie korrekt gearbeitet hat.  Es
+               wird erwartet, dass die M&uuml;nzanstalt gegen&uuml;ber der
+               Finanzaufsicht nachweisen muss, dass sie gen&uuml;gend
+               R&uuml;cklagen zur Deckung aller noch ausstehenden M&uuml;nzen
+               besitzt.</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">E' importante notare che la zecca mantiene
 	     prove crittografiche che le permettono di dimostrare la sua buona fede
@@ -397,7 +423,12 @@
                are compromised, the financial damage is limited to the
                respective party and proportional to the funds they
                have in circulation during the period of the compromise.</li>
-             <li lang="de" note="outdated"></li>
+            <li lang="de">Ohne die Finanzaufsicht w&auml;re es
+               dem Betreiber der M&uuml;nzerei m&ouml;glich, Gelder aus
+               der Reserve zu entwenden.  Wenn die Computer von einem der
+               Teilnehmer kompromitiert werden, hat immer nur der kompromitierte
+               Teilnehmer den finanziellen Schaden.  Dieser ist weiterhin
+               begrenzt auf den Gesamtumsatz mit Taler im fraglichen Zeitraum.</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">L'assenza di taler ispettore metterebbe i gestori della zecca
 	     nelle condizioni di appropriarsi del denaro presente nelle sue riserve.
