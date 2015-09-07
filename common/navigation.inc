@@ -29,10 +29,10 @@
             <li lang="de" class="m_developers"><a href="/developers">Entwickler</a></li>
             <li lang="fr" class="m_developers"><a href="/developers">Développeurs</a></li>
             <li lang="it" class="m_developers"><a href="/developers">Sviluppatori</a></li>
-            <li lang="en" class="m_investors"><a href="/investors">Investors</a></li>
-            <li lang="de" class="m_investors"><a href="/investors">Investoren</a></li>
-            <li lang="fr" class="m_investors"><a href="/investors">Investisseurs</a></li>
-            <li lang="it" class="m_investors"><a href="/investors">Investitori</a></li>
+            <li lang="en" class="m_investors"><a href="/investors">Operators</a></li>
+            <li lang="de" class="m_investors"><a href="/investors">Betreiber</a></li>
+            <li lang="fr" note="outdated" class="m_investors"><a href="/investors">Investisseurs</a></li>
+            <li lang="it" note="outdated" class="m_investors"><a href="/investors">Investitori</a></li>
             <li lang="en" class="m_about"><a href="/about">About&nbsp;us</a></li>
             <li lang="de" class="m_about"><a href="/about">&Uuml;ber uns</a></li>
             <li lang="fr" class="m_about"><a href="/about">À&nbsp;propos</a></li>
