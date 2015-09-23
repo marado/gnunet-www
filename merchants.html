@@ -224,7 +224,7 @@
       </div>
      <div class="col-lg-12">
         <h2 lang="en" id="overview">Taler as seen by merchants</h1>
-        <h2 lang="de">Taler aus Gesch&auml;ftssicht</h1>
+        <h2 lang="de">Taler aus H&auml;ndlerperspektive</h1>
         <h2 lang="fr" note="outdated"></h2>
         <h2 lang="it">Come i negozianti vedono Taler</h2>
         <p lang="en">Merchants supporting the Taler system need to integrate
@@ -232,7 +232,10 @@
           system.
           Typical steps performed by the merchant system are:
         </p>
-        <p lang="de" note="outdated"></p>
+        <p lang="de">H&auml;nder die Taler als Bezahlsystem
+          anbieten wollen, m&uuml;ssen ein paar relativ einfache Erweiterungen
+          an ihrem Transaktionssystem vornehmen. Die typischen Schritte die
+          ein H&auml;ndler bei Taler durchf&uuml;ren muss sind:</p>
         <p lang="fr" note="outdated"></p>
         <p lang="it">Al fine di supportare Taler, i negozianti
 	dovranno integrare alcune semplici procedure nei loro sistemi di ricezione
@@ -241,30 +244,41 @@
           <img src="images/merchant.svg" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
             <li lang="en">The new logic detects when a customer's system
-              supports Taler and then needs to send a digitally signed
+              supports Taler and then needs to send a cryptographically signed
               version of the proposed contract in a simple JSON format to
               the customer.
               The message also includes salted, hashed wire details for
               the merchant, as well as restrictions as to which mint operators
               the merchant is willing to deal with.</li>
-             <li lang="de" note="outdated"></li>
+             <li lang="de">Die H&auml;ndlerwebseite muss
+              pr&uuml;fen ob der Kunde eine Taler Geldb&ouml;rsenanwendung
+              benutzt und dieser einen kryptographisch unterzeichneten
+              Vertragstext in einem JSON-Format &uuml;bertragen.  Der
+              Vertragstext muss auch einen Hash der Kontoinformationen
+              des H&auml;ndlers sowie Restriktionen f&uuml;r die vom
+              H&auml;ndler unterst&uuml;tzten M&uuml;nzanstalten beinhalten.
+              </li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">La nuova procedura rileva il caso in cui un cliente
 	     supporta Taler, e procede ad inviarvi un contratto digitale firmato
 	     in un semplice formato JSON.
 	     Il messaggio include anche le coordinate bancarie del negoziante
 	     fissate in un "hashcode" assieme ad un numero casuale, nonché la
-	     lista delle zecche con cui il negoziante è disposto a trattare..</li>
+	     lista delle zecche con cui il negoziante è disposto a trattare.</li>
             <li lang="en">The customer sends a signed response which states
                that certain digital coins now belong to the merchant to both
                signal acceptance of the deal as well as to pay the respective
                amount (bottom).</li>
-             <li lang="de" note="outdated"></li>
+             <li lang="de">Der Kunde schickt eine kryptografisch
+               signierte Antwort die besagt, dass der Wert bestimmter digitaler
+               M&uuml;nzen jetzt dem H&auml;ndler geh&ouml;rt. Dadurch erfolgen
+               die Akzeptanz des Vertrages als auch die
+               Bezahlung der Rechnung immer gleichzeitig (unten).</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">Il cliente invia una risposta firmata che attesta
 	     che un certo numero di gettoni ora appartiene al negoziante, così
 	     da segnalare sia l'accettazione dello scambio che il suo impegno
-	     a pagare il prezzo dovuto (in basso).	     
+	     a pagare il prezzo dovuto (in basso).
 	     </li>
              <li lang="en">The merchant then forwards the signed messages
                received from the customer to the mint, together with its
@@ -273,7 +287,13 @@
                message) to the merchant.  The merchant checks that the
                mint's signature is valid, sends a confirmation to the
                customer and executes the contract-specific business logic.</li>
-             <li lang="de" note="outdated"></li>
+             <li lang="de">Der H&auml;ndler leitet dann die
+               Unterschriften weiter an die M&uuml;nzanstalt, zusammen mit seinen
+               ungehashten Kontodaten.  Diese pr&uuml;ft die Daten und antwortet
+               mit einer kryptografisch signierten Best&auml;tigung (oder einer
+               Fehlernachricht).  Der H&auml;ndler pr&uumml;ft seinerseits die
+               Signatur, schickt eine Best&auml;tigung an den Kunden und
+               f&uuml;hrt seine vertragsspezifische Gesch&auml;ftslogik aus.</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">Il negoziante inoltra tale messaggio firmato appena
 	     ricevuto del cliente alla zecca, insieme alle sue coordinata bancarie
@@ -281,15 +301,20 @@
 	     La zecca verifica le coordinate e manda una conferma (o un messaggio
 	     d'errore) firmata al negoziante. A questo punto, il negoziante controlla
 	     che la firma della zecca sia valida, manda una conferma al cliente,
-	     e procede ad assolvere quanto indicato nel contratto.
-	     
-	     </li>
+	     e procede ad assolvere quanto indicato nel contratto.</li>
              <li lang="en">The mint performs wire transfers corresponding to
                the claims deposited by the merchant.  Note that the mint may
                charge fees for the deposit operation, hence merchants may
                impose limits restricting the set of mint operators they are
-               willing to deal with.</li>
-             <li lang="de" note="outdated"></li>
+               willing to deal with, for example by imposing a bound on
+               deposit fees.</li>
+             <li lang="de">Die M&uuml;nzanstalt &uuml;berweist
+               dem H&auml;ndler die Betr&auml;ge aus dem Vertrag. Da die
+               M&uuml;nzanstalt f&uuml;r diese Dienstleistung Geb&uuml;hren
+               einbehalten kann, ist es wichtig dass die H&auml;ndler ihre
+               Zusammenarbeit auf eine Menge von M&uuml;nzanstalten
+               einschr&auml;nken k&ouml;nnen, z.B. durch Angabe einer Obergrenze
+               f&uuml;r die Transaktionskosten.</li>
              <li lang="fr" note="outdated"></li>
              <li lang="it">Per ogni deposito (od opzionalmente per ogni
 	     raggruppamento di depositi) ricevuto da un certo negoziante,
