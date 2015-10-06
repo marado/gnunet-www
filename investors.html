@@ -15,6 +15,7 @@
         <h1 lang="de">Betreiben Sie eine M&uuml;nzanstalt!</h1>
         <h1 lang="fr" note="outdated">Investissez dans Taler !</h1>
         <h1 lang="it" note="outdated">Investi in Taler!</h1>
+        <h1 lang="es">¡Opere una Casa de Moneda Taler!</h1>
       </div>
       <div class="row">
         <div class="col-lg-4">
@@ -22,6 +23,7 @@
           <h2 lang="de">Effizient</h2>
 	  <h2 lang="fr">Efficace</h2>
 	  <h2 lang="it">Efficiente</h2>
+	  <h2 lang="es">Eficiente</h2>
           <p lang="en">Taler uses efficient cryptographic primitives (such as RSA 2048 and
              EdDSA) and is thus expected to be able to handle large transaction
              volumes, only limited by the input/output capabilities of the
@@ -45,12 +47,18 @@
 	     limitato solamente dalle capacità di input/output del database. Quindi, usare un conio
 	     di Taler dovrebbe essere redditizio anche con un prezzo di transazione molto basso
 	     (meno di 1 cent) in relazione al volume di transazione appropriato.</p>
+          <p lang="es">Taler usa primitivas criptográficas eficientes (como RSA 2048 y
+             EdDSA) y de este modo es capaz de manejar grandes volumenes de transacciones,
+             sólo limitados por la capacidad de entrada/salida de la base de datos.
+             Así, operar una casa de moneda Taler debría ser rentable aún con tasas de transacción
+             muy bajas (menores a 1 centavo, con volúmenes de transacción apropiados).</p>
         </div>
         <div class="col-lg-4">
           <h2 lang="en">Secure</h2>
           <h2 lang="de">Sicher</h2>
 	  <h2 lang="fr">Sûr</h2>
 	  <h2 lang="it">Sicuro</h2>
+	  <h2 lang="es">Seguro</h2>
           <p lang="en">All transactions in Taler are secured using modern cryptography and
              trust in all parties is minimized. Financial damage is bounded
              (for customers, merchants and the mint) even
@@ -83,12 +91,19 @@
 	     I database possono essere controllati per coerenza, facendo sì che vengano evidenziate
 	     sia la scoperta di sistemi compromessi, sia la dimostrazione che i partecipanti sono stati
 	     onesti.</p>
+          <p lang="es">Todas las transacciones en Taler están segurizadas usando criptografía moderna
+             por lo que la confianza necesaria entre todas las partes se minimiza. El daño financiero
+             se limita (para clientes, comerciantes y casas de moneda) aún en casos en lo que los sistemas
+             sean atacados y se roben las claves privadas.
+             Las bases de datos pueden auditarse por consistencia, resultando ya sea en la detección de los
+             sistemas comprometidos o en la demostración de que los participantes actuaron honestamente.</p>
         </div>
         <div class="col-lg-4">
           <h2 lang="en">Business model</h2>
 	  <h2 lang="de">Gesch&auml;ftsmodell</h2>
 	  <h2 lang="fr">Business model</h2>
 	  <h2 lang="it">Modello business</h2>
+	  <h2 lang="es">Modelo de negocios</h2>
           <p lang="en">The basic business model for Taler is the operation of a mint.  A
              mint converts money from traditional payment systems (Mastercard,
              SEPA, Visa, BitCoin, ACH, SWIFT, etc.) to anonymous electronic
@@ -119,6 +134,13 @@
 	     che può scambiarle alla zecca (mint) ccon monete rappresentate dal sistema di
 	     pagamento tradizionale. La zecca (mint) può quindi tassare (il cliente, il mercante
 	     o entrambi) per facilitare le transazioni.</p>
+          <p lang="es">El modelo de negocios básico para Taler consiste en la operación de una casa de 
+             moneda. Una casa de moneda convierte dinero de los sistemas de pagos tradicionales
+             (Mastercard, SEPA, Visa, BitCoin, ACH, SWIFT, etc.) a billetes electrónicos
+             anónimos de la misma moneda. El cliente puede entonces canjear los billetes electrónicos
+             a un comerciante, el que los cambiará por dinero mediante los sistemas tradicionales
+             de pago en la casa de moneda. La casa de moneda puede cobrar por este servicio
+             (al cliente, al comerciante o a ambos) por facilitar las transacciones.</p>
         </div>
       </div>
       <div class="col-lg-12">
@@ -126,6 +148,7 @@
         <h2 lang="de">Taler aus Betreiberperspektive</h1>
         <h2 lang="fr" note="outdated"></h2>
         <h2 lang="it">Come opera la zecca di Taler</h2>
+        <h2 lang="es">Taler desde el punto de vista del operador de casa de moneda</h1>
         <p lang="en">The mint operator primarily operates a Web service
           portal and keeps databases with transaction details and
           cryptographic proofs.  Its operational expenses are thus related to
@@ -150,6 +173,14 @@
 	Dall'altro lato, i suoi guadagni saranno basati sulle tariffe applicate alle
 	varie operazioni offerte. Tali operazioni offerte comprendono:
 	</p>
+        <p lang="es">El operador de casa de moneda opera fundamentalmente un portal de 
+          servicios web y mantiene bases de datos con detalles de las transacciones y
+          pruebas criptográficas. Sus gastos operativos se originan en las
+          interacciones con el sistema bancario y la infrastructura informática,
+          mientras que sus ingresos se basan en tasas de servicio por transacción
+          que pueden cobrar de sus varias interacciones.
+          Las interacciones principales de la casa de moneda incluyen:
+        </p>
         <p>
           <img src="images/mint.svg" alt="operator perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ul>
@@ -159,6 +190,8 @@
             <li lang="fr" note="outdated"></li>
             <li lang="it">Creazione di una <b>riserva</b> in seguito
 	    alla ricezione di un bonifico bancario da parte di un cliente</li>
+            <li lang="es">Crear <b>reservas</b> basadas en un giro o transferencia desde un cliente.</li>
+
             <li lang="en">Allow customers to withdraw (and refresh)
                digital coins from their reserve.</li>
             <li lang="de">Erm&ouml;gliche es Kunden digitale M&uuml;nzen von ihrer W&auml;rungsreserve
@@ -167,17 +200,23 @@
             <li lang="it">Permettere ai clienti di ritirare e cambiare gettoni posseduti
 	    con gettoni nuovi (attraverso una operazione chiamata <b>refresh</b>)
 	    i gettoni digitali dalla loro riserva.</li>
+            <li lang="es">Permitir a los clientes retirar (y obtener nuevos) billetes electrónicos de sus reservas.</li>
+
             <li lang="en">Accept and validate deposits from merchants.</li>
             <li lang="de">Annahme und Validierung von Einzahlungen durch H&auml;ndler.</li>
             <li lang="fr" note="outdated"></li>
             <li lang="it">Accettare e validare depositi di gettoni elettronici
 	    da parte dei venditori.</li>
+            <li lang="es">Aceptar y validar depósitos de los comerciantes.</li>
+
             <li lang="en">Execute wire transfers to merchants in
                response to validated deposits.</li>
             <li lang="de">Durchf&uuml;hrung von Bank&uuml;berweisungen an H&auml;ndler auf Basis der validierten Einzahlungen</li>
             <li lang="fr" note="outdated"></li>
             <li lang="it">Eseguire bonifici verso i conti dei venditori in seguito
 	    a depositi (di gettoni elettronici) andati a buon fine</li>
+            <li lang="es">Realizar transferencias a los comerciantes en respuesta a sus depósitos validados.</li>
+
             <li lang="en">Preserve and provide cryptographic proofs of
                correct operation for audits by financial regulators.</li>
             <li lang="de">Konservierung und Bereitstellung kryptographischer Beweise
@@ -187,6 +226,8 @@
             <li lang="it">Preservare e fornire prove crittografiche delle
 	    varie operazioni al fine di permettere controlli da parte di organi
 	    finanziari</li>
+            <li lang="es">Preservar y proveer pruebas criptográficas de su correcta operación para
+            ser auditados por reguladores financieros.</li>
           </ul>
         </p>
       </div>
