@@ -60,12 +60,12 @@
 	     venditore, e licenze come Apache/Mozilla/GPLv3+ sono usate per i portafogli e i
 	     relativi software di interfaccia dei clienti. Siamo aperti a suggerimenti costruttivi
 	     per massimizzare l'adozione di questa piattaforma di pagamento free.</p>
-    <p lang="es">Taler es software libre implementando un protocolo abierto. Quien quiera es bienvenido a inspeccionar
-       nuestro código e integrar nuestra implementación de referencia dentro de sus aplicaciones.
+    <p lang="es">Taler es software libre que utiliza un protocolo abierto. Cualquiera que lo desee es bienvenido a inspeccionar
+       nuestro código e integrar nuestra implementación de referencia en sus aplicaciones.
        Los diferentes componentes de Taler estaán disponibles bajo diferentes licencias. La licencia Affero GPLv3+ se usa
-       para la Casa de Mmoneda (Mint), la licencia LGPLv3+ para el código de referencia demostrando la integración con las
+       para la Casa de Moneda (Mint), la licencia LGPLv3+ para el código de referencia demostrando la integración con las
        plataformas de comercio, y licencias como Apache/Mozilla/GPLv3+ se usan para las billeteras y aplicaciones de cara 
-       a la vista de los clientes.
+       al cliente.
        Estamos abiertos a recibir sugerencias constructivas para maximizar la adopción de esta plataforma de pagos libre.</p>
         </div>
         <div class="col-lg-6">
@@ -111,11 +111,11 @@
 	     Taler usa JSON per codificare i dati di struttura, rendendo facile integrare Taler
 	     con le già esistenti applicazioni web. Il protocollo usato da Taler è documentato
 	     nel dettaglio <a href="http://api.taler.net/">qui</a>.</p>
-	  <p lang="es">Taler se diseñó para funcionar sobre Internet. Para garantizar que los pagos
+	  <p lang="es">Taler esta diseñado para funcionar en Internet. Para garantizar que los pagos
        Taler pueden funcionar con configuraciones de redes restrictivas, Taler usa
 	     un protocolo REST sobre HTTP o HTTPS. La seguridad de Taler no depende del uso de HTTPS,
        aunque obviamente los comerciantes pueden ofrecer HTTPS para consistencia y porque es
-       habitualmente mejor para la privacidad comparado con HTTP.  Taler usa JSON para codificar
+       generalmente mejor para la privacidad comparado con HTTP. Taler usa JSON para codificar
        datos estructurados, lo que simplifica integrar Taler con aplicaciones web existentes.
 	     El protocolo de Taler está documentado detalladamente <a href="http://api.taler.net/">aquí</a>.</p>
         </div>
@@ -154,7 +154,7 @@
 	     repository. Una lista delle repository pubbiche può essere trovata al nostro
 	     <a href="http://www.git.taler.net/">GitWeb</a>.</p>
 	  <p lang="es">Taler se desarrolla principalmente por un equipo de investigación en
-	     Inria y TU Munich. Igualmente son bienvenidas las contribuciones de cualquiera.
+	     Inria y TU Munich. Sin embargo, las contribuciones de cualquiera son bienvenidas.
        Nuestros repositorios Git se pueden clonar usando los métodos de acceso Git y HTTP
        en <tt>git.taler.net</tt> con el nombre del repositorio respectivo. La lista de
        repositorios públicos puede verse en <a href="http://www.git.taler.net/">GitWeb</a>.</p>
@@ -265,7 +265,7 @@
 	  <a href="http://gnunet.org/gauger">Gauger</a>, e i risultati disponibili alla pagina
 	  <a href="http://gauger.taler.net/">gauger.taler.net</a>.</p>
           <p lang="es">Usamos <a href="http://gnunet.org/gauger">Gauger</a> para análisis de
-            regresión de la performance del backend Mint en
+            regresión del rendimiento del sistema backend (Mint) en
             <a href="http://gauger.taler.net/">gauger.taler.net</a>.</p>
         </div>
       </div>
@@ -290,7 +290,7 @@
 	comunicazione tra i vari partecipanti come illustrato nella figura a destra.
 	La tipica transazione nel modello Taler si compone dei seguenti passaggi:</p>
         <p>
-        <p lang="en">El sistema Taler consta de protocolos entre varios actores con la ayuda de
+        <p lang="es">El sistema Taler consta de protocolos entre varios actores con la ayuda de
           <a href="http://www.fsf.org/">Software Libre</a> como se ve en la figura de la derecha.
           Las transacciones típicas consisten de los siguientes pasos:
         </p>
@@ -348,9 +348,9 @@
 	     acquisto. Taler non interferisce dunque né con la valuta né con l'ammonto
 	     presente nella riserva. L'unica modifca apportata da Taler alla riserva è
 	     la sottrazione da questa della tariffa del servizio.
-             <li lang="es">Una vez que la Casa de Moneda recibe la transferencia, permite que 
-                 la billetera del cliente <b>retire</b> billetes electrónicos.
-                 Los billetes electrónicos son representaciones digitales de la moneda original
+             <li lang="es">Una vez que la Casa de Moneda (Mint) ha recibido la transferencia, permite que 
+                 la billetera del cliente <b>retire</b> monedas electrónicas.
+                 Las modedas electrónicas son representaciones digitales de la moneda original
                de la transferencia. Es importante destacar que la casa de moneda no registra los
                "números de serie" de los billetes creados en este proceso, por lo que no puede 
                decir luego qué cliente compró qué cosa a qué comerciante.
@@ -400,16 +400,16 @@
 	     può anche spendere una frazione di uno dei suoi gettoni, grazie alla facoltà
 	     che Taler ha di restituire il cambio.
 	     </li>
-             <li lang="es">Una vez que el cliente tiene los billetes digitales en su
-       billetera, puede usarla para <b>gastar</b> esos billetes con portales de 
+             <li lang="es">Una vez que el cliente tiene las monedas digitales en su
+       billetera, puede usarla para <b>gastar</b> esas monedas con portales de 
        comerciantes que acepten el sistema de pagos Taler y acepten a la casa de moneda
-       referida como partner (flecha abajo). Esto crea un contrato digital firmado por
-       los billetes del cliente y el comerciante.
-       De ser necesario, los clientes pueden usar luego este contrato firmado digitalmente
-       en la Justicia para probar los términos exactos del contrato y que se pagó el monto
-       especificado. El cliente no dispone de los datos bancarios del comerciante, y Taler
+       referida como partner (flecha de abajo). Esto crea un contrato digital firmado por
+       las monedas del cliente y el comerciante.
+       De ser necesario, los clientes pueden llegar a usar este contrato firmado digitalmente
+       ante la Justicia para probar los términos exactos del contrato y que se pagó la cantidad
+       especificada. El cliente no dispone de los datos bancarios del comerciante, y Taler
        no requiere que el comerciante sepa la identidad del cliente. Naturalmente, el
-       cliente puede gastar cualquier fracción de sus billetes digitales (el sistema se 
+       cliente puede gastar cualquier fracción de sus monedas digitales (el sistema se 
        ocupa del proceso de obtener cambio).</li>
 
              <li lang="en">Merchants receiving digital coins <b>deposit</b>
@@ -449,9 +449,9 @@
 	     e il cliente, né l'identità stessa del cliente. Ad ogni modo, la zecca
 	     potrà (e dovrà) conoscere l'identità del negoziante, dal momento che
 	     essa necessità dei suoi estremi bancari necessari a finalizzare il processo.</li>
-             <li lang="es">Los comerciantes que reciben billetes electrónicos 
+             <li lang="es">Los comerciantes que reciben monedas electrónicas 
                <b>depositan</b> los recibos respectivos resultantes de los contratos
-               firmados con el cliente a la casa de moneda para canjear por los billetes.
+               firmados con el cliente en la casa de moneda para canjear las monedas.
                Al realizar el depósito no se revelan los detalles del contrato entre el
                cliente y la casa de moneda, de ninguna manera. Sin embargo, la casa de 
                moneda sí conoce la identidad del comerciante a través de la información
@@ -484,7 +484,7 @@
 	     interrogare la zecca sullo stato dei bonifici che egli ha diritto a ricevere.
 	     </li>
              <li lang="es">Por último, la casa de moneda transfiere los fondos 
-               correspondientes a los billetes digitales canjeados por el 
+               correspondientes a las monedas digitales canjeadas por el 
                comerciante a la cuenta de <b>banco</b> del comerciante.
                La casa de moneda puede combinar múltiples transacciones pequeñas
                en una transferencia de banco más grande. El comerciante puede
@@ -517,7 +517,7 @@
        El sistema requiere un <b>auditor</b> externo, como una entidad de regulación
        financiera avalada por el gobierno, para verificar fecuentemente las bases de 
        datos de la casa de moneda y chequear que su balance bancario coincide con el
-       valor total de los billetes que quedan en circulación.</li>
+       valor total de las monedas que hay en circulación.</li>
 
              <li lang="en">Without the auditor, the mint operators could
                steal funds they are holding in reserve. Customers and merchants
@@ -541,8 +541,8 @@
 	     </li>
              <li lang="es">Sin el auditor, los operadores de la casa de moneda 
        podrían robar los fondos que mantienen en las reservas. Los clientes y
-       comerciantes no pueden engañarse uno a otro, o a la casa de moneda. Si la
-       computadora de una de las partes se viera comprometida, el daño financiero
+       comerciantes no pueden engañarse uno a otro, o a la casa de moneda. Si el
+       ordenador de una de las partes se viera comprometido, el daño financiero
        se limita a la parte respectiva y proporcional a los fondos que tienen en
        circulación durante el período del inconveniente.</li>
            </ol>
