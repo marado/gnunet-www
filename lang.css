@@ -46,3 +46,15 @@ body.it :lang(fr) {
 body.it :lang(es) {
   display: none;
 }
+body.es :lang(de) {
+  display: none;
+}
+body.es :lang(en) {
+  display: none;
+}
+body.es :lang(fr) {
+  display: none;
+}
+body.es :lang(it) {
+  display: none;
+}
