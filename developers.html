@@ -210,7 +210,7 @@
         <div class="col-lg-4">
           <h2 lang="en">Regression Testing</h2>
 	  <h2 lang="de">Regressionstests</h2>
-	  <h2 lang="fr" note="outdated"></h2>
+	  <h2 lang="fr">Tests de régression</h2>
 	  <h2 lang="it">Test delle regressioni</h2>
 	  <h2 lang="es">Pruebas de regresión</h2>
           <p lang="en">We have <a href="http://www.buildbot.org/">Buildbot</a> automation tests
@@ -220,7 +220,10 @@
             um Regressionen zu finden und den Code auf Portabilit&auml;t zu testen.  Die Ergebnisse sind unter
             <a href="http://buildbot.taler.net/">buildbot.taler.net</a> zu finden.
           </p>
-          <p lang="fr" note="outdated"></p>
+          <p lang="fr">Des tests de régression automatiques ont été mis en place grace à
+            <a href="http://www.buildbot.org/">Buildbot</a> et sont disponibles à 
+            <a href="http://buildbot.taler.net/">buildbot.taler.net</a>.
+          </p>
           <p lang="it">E' disponibile un <a href="http://www.buildbot.org/">Buildbot</a>
 	  dedicato a test automatici per individuare regressioni e controllare la portabilità, alla
 	  pagina <a href="http://buildbot.taler.net/">buildbot.taler.net</a>.</p>
@@ -231,7 +234,7 @@
         <div class="col-lg-4" note="not yet operational">
           <h2 lang="en">Code Coverage Analysis</h2>
 	  <h2 lang="de">Testabdeckungsanalyse</h2>
-	  <h2 lang="fr" note="outdated"></h2>
+	  <h2 lang="fr">Mesure de couverture du code</h2>
 	  <h2 lang="it">Analisi della copertura del codice</h2>
 	  <h2 lang="es">Análisis de cobertura de código</h2>
           <p lang="en">We use <a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a> to
@@ -240,7 +243,10 @@
           <p lang="de" note="outdated">Wir benutzen <a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a> um
             die Abdeckung unseres Codes durch unsere Tests zu verstehen. Die Ergebnisse sind unter
             <a href="http://lcov.taler.net/">lcov.taler.net</a> zu finden.</p>
-          <p lang="fr" note="outdated"></p>
+          <p lang="fr"><a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a> est utilisé
+            pour analyser la couverture du code par nos tests. Les résultats sont disponibles à
+            <a href="http://lcov.taler.net/">lcov.taler.net</a>.
+          </p>
           <p lang="it">I test effettuati sul software Taler subiscono la misurazione della loro "copertura"
 	  da <a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a>; inoltre, tali risultati sono
 	  disponibili alla pagina <a href="http://lcov.taler.net/">lcov.taler.net</a>.</p>
@@ -251,7 +257,7 @@
         <div class="col-lg-4">
           <h2 lang="en">Performance Analysis</h2>
 	  <h2 lang="de">Performanzanalyse</h2>
-	  <h2 lang="fr" note="outdated"></h2>
+	  <h2 lang="fr">Analyse de performances</h2>
 	  <h2 lang="it">Analisi delle prestazioni</h2>
 	  <h2 lang="es">Performance</h2>
           <p lang="en">We use <a href="http://gnunet.org/gauger">Gauger</a> for performance
@@ -260,7 +266,10 @@
           <p lang="de">Wir benutzen <a href="http://gnunet.org/gauger">Gauger</a> um
             Performanzprobleme der Datenbankbackends der M&uuml;zanstalt zu verstehen.  Die
             Ergebnisse sind unter <a href="http://gauger.taler.net/">gauger.taler.net</a>.</p>
-          <p lang="fr" note="outdated"></p>
+          <p lang="fr">Nous utilisons <a href="http://gnunet.org/gauger">Gauger</a> pour
+            une analyse des régression de performances du Mint, la parie serveur de Taler.
+            les résultats sont disponibles à <a href="http://gauger.taler.net/">gauger.taler.net</a>.
+          </p>
           <p lang="it">Le prestazioni della zecca (Mint) sono misurate attraverso
 	  <a href="http://gnunet.org/gauger">Gauger</a>, e i risultati disponibili alla pagina
 	  <a href="http://gauger.taler.net/">gauger.taler.net</a>.</p>
@@ -273,7 +282,7 @@
       <div class="col-lg-12">
         <h2 lang="en" id="overview">Taler system overview</h1>
         <h2 lang="de">Das Taler-System im &Uuml;berblick</h1>
-        <h2 lang="fr" note="outdated"></h2>
+        <h2 lang="fr">Vue d'ensemble de Taler</h2>
         <h2 lang="it">Schema generale del sistema Taler</h2>
         <h2 lang="es">Diagrama general del sistema Taler</h2>
         <p lang="en">The Taler system consists of protocols executed among a number of actors
@@ -285,7 +294,10 @@
           <a href="http://www.fsf.org/">Freier Software</a> ausgef&uuml;hrt werden.
           Die Illustration auf der rechten Seite veranschaulicht die folgenden f&uuml;r die
           Durchf&uuml;hrung einer Transaktion typischen Schritte:</p>
-        <p lang="fr" note="outdated"></p>
+        <p lang="fr">Le system de Taler consiste de protocols exécutés entre plusieurs
+          acteurs à l'aide de <a href="http://www.fsf.org/">Logiciel Libre</a>.
+          Une transaction typique comporte les étapes suivantes :
+        </p>
         <p lang="it">Taler usa <a href="http://www.fsf.org/">software libero</a> per realizzare i protocolli finalizzati alla
 	comunicazione tra i vari partecipanti come illustrato nella figura a destra.
 	La tipica transazione nel modello Taler si compone dei seguenti passaggi:</p>
@@ -306,7 +318,12 @@
                Im Betreff gibt er ein von seiner elektronischen <b>Geldb&ouml;rse</b>
                erzeugtes Authentifizierungstoken an. In der Terminologie von
                Taler sagen wir, der Kunde legt eine Reserve bei der M&uuml;nzanstalt an.</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Un client demande à sa <b>banque</b> de transfèrer des fonds
+               de son compte en banque vers le mint de Taler (en haut à gauche). Dans le sujet
+               de la transaction, est inclus un jeton d'authentification du <b>porte-monnaie</b> électronique
+               du client. Dans la terminologie de Taler, le client crée une réserve dans
+               le mint.
+             </li>
              <li lang="it">Un cliente chiede alla sua <b>banca</b> di trasferire
 	     fondi dal suo conto a quello della zecca Taler (in alto a destra).
 	     La causale di questo trasferimento includerà l'informazione necessaria,
@@ -338,7 +355,13 @@
                  Die Benutzung von Taler &auml;ndert weder die W&auml;hrung noch
                  den Gesamtwert (ausgenommen nat&uuml;rlich die Geb&uum;hren,
                  die die M&uuml;nzanstalt f&uuml;r ihre Dienste verlangen k&ouml;nnte).</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Une fois que le mint a reçu le transfère, il permets au porte-monnaie
+               électronique du client de <b>retirer</b> des pièces électroniques. Les pièces
+               électroniques sont des représentations numériques des devises transfèrées initialement.
+               Il est important de noter que le mint ne connait pas le "numéro de serie" 
+               des pièces ainsi crées, il luis sera donc impossible de savoir quel client
+               a payer un marchant. L'utilisation de Taler ne change pas la devise ni la valeur
+               totale des fonds (à l'exeption des frais que le mint peut prendre comme son service).</li>
              <li lang="it">In seguito alla ricezione del trasferimento da parte della
 	     zecca, il cliente potrà <b>ritirare</b> i suoi gettoni elettronici.
 	     Tali gettoni sono rappresentazioni digitali dell'ammonto che il cliente
@@ -384,7 +407,18 @@
                des Kunden bestimmt.  Nat&uuml;rlich kann der Kunde auch
                Bruchteile seines Barbestandes ausgeben (das System sorgt ggf.
                daf&uuml;r das der Kunde wenn n&ouml;tig Wechselgelt erh&auml;lt).</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Une fois que le client a les pièces dans sont porte-monnaie,
+               celui-ci peut être utilisé pour <b>dépenser</b> les pièces avec un portail
+               marchand qui supporte Taler comme systeme de payement et accepte le mint
+               comme partenaire commercial (flèche du bas). Celà crée un contract signé
+               numériquement par le marchant et les pièces du client. Si celà 
+               s'avère nécéssaire, le client peut ensuite utiliser ce contract signé
+               numériquement face au tribunaux pour prouver les termes exacts du
+               contract et qu'il à payé le montant convenu. Le client n'a pas connaissance des
+               coordonées banquaires du marchant, et Taler ne requière pas que le marchant 
+               ai connaissance de l'identité du client. Naturellement, le client peut
+               dépenser seulement une partie de chaque pièce (le système se chargant de
+               rendre la monnaie). </li>
              <li lang="it">Con i gettoni elettronici nel portafogli, il cliente
 	     può <b>spendere</b> presso tutti i venditori che accettano Taler tra
 	     i loro sistemi di pagamento, e che sono disponibili a finalizzare l'operazione
@@ -439,8 +473,19 @@
                Somit erlaubten es die Informationen der M&uuml;nzanstalt dem
                Staat H&auml;ndler zum abf&uuml;hren von Steuern zu zwingen
                (und kriminelle Vertr&auml;ge entsprechend zu ahnden).
-               </li>
-             <li lang="fr" note="outdated"></li>
+             </li>
+             <li lang="fr">Les marchands recevant des pièces numériques les <b>déposent</b>
+               ,avec les reçus résultants des signatures du contract avec le client, auprès 
+               du mint pour récupérer les pièces. L'étape de dépos ne révèle pas les détails
+               du contract entre le client et le marchant ou l'identité du client au mint
+               de quelque façon que ce soit. Néanmoins, le mint prends connaissance de l'identité 
+               du marchant grace au coordonées banquaires fournies pour le virement. Le marchant
+               peut ensuite, par exemple lorsque l'état lui demande pour établire les taxes,
+               fournir des informations reliant chaque dépos à son contrat spécifique, 
+               signé par le client. Ainsi La base de donnée du mint permet à l'état de 
+               s'assurer que les marchants payent les taxes appliables (et ne s'engagent pas dans
+               des activités illégales).
+             </li>
              <li lang="it">Contemporaneamente alla firma dei
 	     contratti viene creata una ricevuta che il negoziante può <b>depositare</b>
 	     alla zecca al fine di riavere indietro il corrispettivo in denaro
@@ -476,7 +521,12 @@
                kann in diesem Fall bei der M&uuml;nzanstalt nachfragen, um Informationen
                zur Relation der Transfers und den dazugeh&ouml;rigen Depotvorg&auml;ngen
                zu erhalten.</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Finalement, le mint transfère les fonds correspondants aux pièces
+               déposées par le marchant sur le compte en <b>banque</b> du marchant. Le mint
+               peut combiner plusieurs petites transactions en un transfère plus conséquant.
+               Le marchant peut demander auprès du mint le lien entre chaque transfère banquaire
+               et les dépos individuels effectués.
+             </li>
              <li lang="it">Infine, la zecca trascferirà fondi della stessa cifra dei
 	     gettoni riscattati dal negoziate verso il conto in <b>banca</b> di quest'
 	     ultimo. Nulla impedisce alla zezza di combinare molteplici piccole transazioni
@@ -505,7 +555,13 @@
                Finanzaufsicht nachweisen muss, dass sie gen&uuml;gend
                R&uuml;cklagen zur Deckung aller noch ausstehenden M&uuml;nzen
                besitzt.</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Plus important, le mint conserve les preuves cryptographiques
+               qui lui permettent de démontrer aux autres parties qu'il opère correctement.
+               Le systeme requiere un <b>auditeur</b> externe, tel q'une authorité de 
+               régulation financière gouvernementale, qui vérifie régulièrement la base 
+               de donnée du mint et vérifie que son solde banquaire correspond à la valeur
+               totale de toutes les pièces en circulation.
+             </li>
              <li lang="it">E' importante notare che la zecca mantiene
 	     prove crittografiche che le permettono di dimostrare la sua buona fede
 	     verso terze parti. Nell'architettura di Taler è prevista la presenza di un
@@ -531,7 +587,13 @@
                Teilnehmer kompromitiert werden, hat immer nur der kompromitierte
                Teilnehmer den finanziellen Schaden.  Dieser ist weiterhin
                begrenzt auf den Gesamtumsatz mit Taler im fraglichen Zeitraum.</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Sans auditeur, l'entité opérant le mint pourrait voler 
+               les fonds que le mint garde en réserve. Clients et marchants ne
+               peuvent se voler l'un l'autre via le mint. Si les ordinateurs d'une partie 
+               sont compromis, les dégas financiers sont limités a cette partie seulement
+               et proportionels aux fonds qu'ils ont en circulation au moment
+               de l compromission.
+             </li>
              <li lang="it">L'assenza di taler ispettore metterebbe i gestori della zecca
 	     nelle condizioni di appropriarsi del denaro presente nelle sue riserve.
 	     Clienti e negozianti non hanno la possibilità di frodarsi a vicenda, né

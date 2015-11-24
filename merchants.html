@@ -265,7 +265,7 @@
      <div class="col-lg-12">
         <h2 lang="en" id="overview">Taler as seen by merchants</h1>
         <h2 lang="de">Taler aus H&auml;ndlerperspektive</h1>
-        <h2 lang="fr" note="outdated"></h2>
+        <h2 lang="fr">Taler du poit de vu des marchants</h2>
         <h2 lang="it">Come i negozianti vedono Taler</h2>
         <h2 lang="es">Taler desde el punto de vista del comerciante</h1>
         <p lang="en">Merchants supporting the Taler system need to integrate
@@ -327,7 +327,10 @@
                M&uuml;nzen jetzt dem H&auml;ndler geh&ouml;rt. Dadurch erfolgen
                die Akzeptanz des Vertrages als auch die
                Bezahlung der Rechnung immer gleichzeitig (unten).</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Le client envoid une réponse signée qui stipule
+               que certaines pièces numériques apartienent désormais au marchand.
+               Cette signature sert à la fois de payement et de validation
+               du contrat.</li>
              <li lang="it">Il cliente invia una risposta firmata che attesta
 	     che un certo numero di gettoni ora appartiene al negoziante, così
 	     da segnalare sia l'accettazione dello scambio che il suo impegno
@@ -352,7 +355,11 @@
                Fehlernachricht).  Der H&auml;ndler pr&uumml;ft seinerseits die
                Signatur, schickt eine Best&auml;tigung an den Kunden und
                f&uuml;hrt seine vertragsspezifische Gesch&auml;ftslogik aus.</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Le marchand transfère ensuite le message signé 
+               reçu du client au mint, avec ses détails banquaires et le sel (sans hashage).
+               Le mint vérifie les détails et envoie une confirmation (ou un message d'erreur).
+               au marchand. Le marchand verifie que la signature du mint est valide, envoi
+               la confirmation au client et execute le contrat.</li>
              <li lang="it">Il negoziante inoltra tale messaggio firmato appena
 	     ricevuto del cliente alla zecca, insieme alle sue coordinata bancarie
 	     e al numero casuale usato in precedenza per produrre l'"hash" dei due.
@@ -380,7 +387,11 @@
                Zusammenarbeit auf eine Menge von M&uuml;nzanstalten
                einschr&auml;nken k&ouml;nnen, z.B. durch Angabe einer Obergrenze
                f&uuml;r die Transaktionskosten.</li>
-             <li lang="fr" note="outdated"></li>
+             <li lang="fr">Le mint effectue le virement banquaire correspondant
+               au dépos effectué par le marchant. Nottez que le mint peut charger des
+               frais pour l'opération de dépos, les marchands peuvent donc imposer
+               des restrictions sur les mints avec lesquels il acceptent de travailler,
+               par exemple en imposant des limites sur les frais qu'ils acceptent.</li>
              <li lang="it">Per ogni deposito (od opzionalmente per ogni
 	     raggruppamento di depositi) ricevuto da un certo negoziante,
 	     la zecca procederà con il versamento verso il conto in banca di
