@@ -1,0 +1,33 @@
+digraph dependencies {
+splines = true;
+
+  Mint [shape=house];
+  Mint -> libmicrohttpd;
+  Mint -> libtalerutil;
+  Mint -> libtalermintdb;
+  libtalerutil -> libgnunetutil;
+  libgnunetutil -> libunistring;
+  libmicrohttpd -> libgnutls;
+  libgnunetutil -> libgcrypt;
+  libgnutls -> libnettle;
+  Mint -> libjansson;
+  libtalermintdb -> libtalerpq;
+  libtalerpq -> libpq;
+  libpq -> Postgres [shape=dashed];
+
+  Postgres [shape=house];
+
+  Auditor [shape=house];
+  Auditor -> libtalerutil;
+  Auditor -> libtalermintdb;
+
+  Wallet [shape=house];
+  Wallet -> libtalerutil;
+
+  Merchant [shape=house];
+  Merchant -> libmicrohttpd;
+  Merchant -> libjansson;
+  Merchant -> libtalerutil;
+  Merchant -> libtalerpq;
+
+}
