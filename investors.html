@@ -11,11 +11,11 @@
       <!--# include file="common/navigation.inc" -->
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1 lang="en">Operate a Taler mint!</h1>
-        <h1 lang="de">Betreiben Sie eine M&uuml;nzanstalt!</h1>
-        <h1 lang="fr">Investissez dans Taler !</h1>
+        <h1 lang="en">Operate a Taler exchange!</h1>
+        <h1 lang="de">Betreiben Sie eine Taler Wechelstube!</h1>
+        <h1 lang="fr" note="outdated">Investissez dans Taler !</h1>
         <h1 lang="it" note="outdated">Investi in Taler!</h1>
-        <h1 lang="es">¡Opere una Casa de Moneda Taler!</h1>
+        <h1 lang="es">¡Opere una Casa de Cambio Taler!</h1>
       </div>
       <div class="row">
         <div class="col-lg-4">
@@ -27,7 +27,7 @@
           <p lang="en">Taler uses efficient cryptographic primitives (such as RSA 2048 and
              EdDSA) and is thus expected to be able to handle large transaction
              volumes, only limited by the input/output capabilities of the
-             database. Thus, running a Taler mint should be profitable even
+             database. Thus, running a Taler exchange should be profitable even
              with very low (less than 1 cent) transaction fees (at appropriate
              transaction volume).</p>
 	  <p lang="de">Taler verwendet effiziente kryptographische
@@ -35,7 +35,7 @@
 	     gro&szlig;e Transaktionsvolumen zu bew&auml;ltigen, welche allein
 	     durch die Ein-/Ausgabe-Geschwindigkeit der zugrundeliegenden Datenbank
 	     begrenzt wird. Taler ist daher auch dann profitabel, wenn eine
-	     M&uuml;nzanstalt mit Transaktionsgeb&uuml;hren im Bereich von
+	     Wechselstube mit Transaktionsgeb&uuml;hren im Bereich von
 	     Bruchteilen eines Cents betrieben wird (entsprechendes
 	     Transaktionsvolumen vorausgesetzt).</p>
 	  <p lang="fr">Taler utilise des cryptographes primaires efficaces
@@ -50,7 +50,7 @@
           <p lang="es">Taler usa primitivas criptográficas eficientes (como RSA 2048 y
              EdDSA) y de este modo es capaz de manejar grandes volumenes de transacciones,
              sólo limitados por la capacidad de entrada/salida de la base de datos.
-             Así, operar una casa de moneda Taler debría ser rentable aún con tasas de transacción
+             Así, operar una casa de cambio Taler debría ser rentable aún con tasas de transacción
              muy bajas (menores a 1 centavo, con volúmenes de transacción apropiados).</p>
         </div>
         <div class="col-lg-4">
@@ -61,7 +61,7 @@
 	  <h2 lang="es">Seguro</h2>
           <p lang="en">All transactions in Taler are secured using modern cryptography and
              trust in all parties is minimized. Financial damage is bounded
-             (for customers, merchants and the mint) even
+             (for customers, merchants and the exchange) even
              in the case that systems are compromised and private keys are stolen.
              Databases can be audited for consistency, resulting in either the
              detection of compromised systems or the demonstration that
@@ -69,7 +69,7 @@
 	  <p lang="de">Alle Transaktionen in Taler sind durch moderne
 	     Kryptographiemethoden gesichert und das n&ouml;tige aufzubringende
 	     Vertrauen in Systemteilnehmer wurde minimalisiert. Finanzieller
-	     Schaden (f&uuml;r Kunden, H&auml;ndler und die M&uuml;nzanstalt) wird
+	     Schaden (f&uuml;r Kunden, H&auml;ndler und die Wechselstube) wird
 	     durch das System begrenzt, selbst wenn Teilnehmer komprommitiert
 	     und private Schl&uuml;ssel entwendet werden. Datenbanken
 	     k&ouml;nnen auf ihre Konsistenz hin &uuml;berpr&uuml;ft werden, was
@@ -93,7 +93,7 @@
 	     onesti.</p>
           <p lang="es">Todas las transacciones en Taler están segurizadas usando criptografía moderna
              por lo que la confianza necesaria entre todas las partes se minimiza. El daño financiero
-             se limita (para clientes, comerciantes y casas de moneda) aún en casos en lo que los sistemas
+             se limita (para clientes, comerciantes y casas de cambio) aún en casos en lo que los sistemas
              sean atacados y se roben las claves privadas.
              Las bases de datos pueden auditarse por consistencia, resultando ya sea en la detección de los
              sistemas comprometidos o en la demostración de que los participantes actuaron honestamente.</p>
@@ -104,91 +104,89 @@
 	  <h2 lang="fr">Business model</h2>
 	  <h2 lang="it">Modello business</h2>
 	  <h2 lang="es">Modelo de negocios</h2>
-          <p lang="en">The basic business model for Taler is the operation of a mint.  A
-             mint converts money from traditional payment systems (Mastercard,
+          <p lang="en">The basic business model for Taler is the operation of an exchange.  An exchange converts money from traditional payment systems (Mastercard,
              SEPA, Visa, BitCoin, ACH, SWIFT, etc.) to anonymous electronic
              coins in the same currency. The customer can then redeem the electronic
              coins at a merchant, who can exchange them for money represented using
-             traditional payment systems at the mint.  The mint can then charge
+             traditional payment systems at the exchange.  The exchange can then charge
              fees (to the customer, merchant or both) to facilitate the transactions.</p>
 	  <p lang="de">Das Gesch&auml;ftsmodell hinter Taler besteht im Betreiben
-	     einer M&uuml;nzanstalt. Aufgabe der M&uuml;nzanstalt ist es, Geld
+	     einer Wechelstube. Aufgabe der Wechselstube ist es, Geld
 	     traditioneller Bezahlungsysteme (Mastercard, SEPA, Visa, BitCoin, ACH,
 	     SWIFT, etc.) in anonyme Taler-M&uuml;nzen der selben W&auml;hrung zu
 	     konvertieren. Der Kunde kann die M&uuml;nzen anschließend bei
 	     einem H&auml;ndler einl&ouml;sen, der sie seinerseits bei der
-	     M&uuml;nzanstalt gegen Geld der traditionellen Bezahlungssysteme
+	     Wecheslstube gegen Geld der traditionellen Bezahlungssysteme
 	     einl&ouml;sen. </p>
 	  <p lang="fr">The business model basique pour Taler est une opération
-	     bancaire. Une banque convertie la monnaie d'un système de paiement
+	     bancaire. Un bureau de change convertie la monnaie d'un système de paiement
 	     traditionnel (Mastercard, SEPA, Visa, BitCoin, ACH, SWIFT, etc.) vers
 	     une monnaie électronique anonyme dans la même devise. The client peut
 	     alors transférer sa monnaie électronique vers un commerçant, qui peut
 	     l'échanger contre de la monnaie en utilisant les système de paiement
-	     traditionnels à la Banque. La Banque peut ajouter des frais (au
+	     traditionnels à la bureau de change. La bureau de change peut ajouter des frais (au
 	     client, commerçant ou au deux) pour faciliter la transaction.</p>
-	  <p lang="it">Il modello business di base per Taler è l'operazione di un zecca (mint).
-	     La zecca (mint) converte i soldi da un sistema di pagamento tradizionale (Mastercard,
+	  <p lang="it">Il modello business di base per Taler è l'operazione di un cambiavalute.
+	     La cambiavalute converte i soldi da un sistema di pagamento tradizionale (Mastercard,
 	     SEPA, Visa, BitCoin, ACH, SWIFT, ecc.) a monete elettroniche anonime nella stessa
 	     valuta. Il cliente può allora restituire le monete elettroniche ad un mercante,
-	     che può scambiarle alla zecca (mint) ccon monete rappresentate dal sistema di
-	     pagamento tradizionale. La zecca (mint) può quindi tassare (il cliente, il mercante
+	     che può scambiarle alla cambiavalute ccon monete rappresentate dal sistema di
+	     pagamento tradizionale. La cambiavalute può quindi tassare (il cliente, il mercante
 	     o entrambi) per facilitare le transazioni.</p>
-          <p lang="es">El modelo de negocios básico para Taler consiste en la operación de una casa de 
-             moneda (Mint). La casa de moneda convierte dinero de los sistemas de pagos tradicionales
+          <p lang="es">El modelo de negocios básico para Taler consiste en la operación de una casa de cambio. La casa de cambio convierte dinero de los sistemas de pagos tradicionales
              (Mastercard, SEPA, Visa, BitCoin, ACH, SWIFT, etc.) a monedas electrónicas
              anónimas en el mismo tipo de divisa. El cliente puede entonces canjear las monedas electrónicas
              con un comerciante, el cual los cambiará por dinero mediante los sistemas tradicionales
-             de pago en la casa de moneda. La casa de moneda puede cobrar por este servicio
+             de pago en la casa de cambio. La casa de cambio puede cobrar por este servicio
              (al cliente, al comerciante o a ambos) para facilitar las transacciones.</p>
         </div>
       </div>
       <div class="col-lg-12">
-        <h2 lang="en" id="overview">Taler as seen by the mint operator</h1>
+        <h2 lang="en" id="overview">Taler as seen by the exchange operator</h1>
         <h2 lang="de">Taler aus Betreiberperspektive</h1>
         <h2 lang="fr">Taler du point de vu de l'exploitant</h2>
-        <h2 lang="it">Come opera la zecca di Taler</h2>
-        <h2 lang="es">Taler desde el punto de vista del operador de casa de moneda</h1>
-        <p lang="en">The mint operator primarily operates a Web service
+        <h2 lang="it">Come opera la cambiavalute di Taler</h2>
+        <h2 lang="es">Taler desde el punto de vista del operador de casa de cambio</h1>
+        <p lang="en">The exchange operator primarily operates a Web service
           portal and keeps databases with transaction details and
           cryptographic proofs.  Its operational expenses are thus related to
           its interactions with the banking system and the operation of
           the computing infrastructure, while its income is based on
           transaction fees it may charge for the various interactions.
-          Key interactions of the mint include:
+          Key interactions of the exchange include:
         </p>
-        <p lang="de">Der Betreiber einer M&uuml;nzanstalt
+        <p lang="de">Der Betreiber einer Wechselstube
           betreibt prim&auml;r eine Webseite sowie Datenbanken mit
           Transaktionsinformationen und kryptografischen Beweisen.  Seine
           Ausgaben sind im Wesentlichen beschr&auml;nkt auf die Interaktion
           mit dem Bankensystem und dem Betrieb der Rechnerinfrastruktur.
           Die Betreibereinnahmen kommen aus Geb&uuml;hren die der Betreiber
           f&uuml;r die verschiedenen Interaktionen verlangen kann.  Die
-          wesentlichen Interaktionen der M&uuml;nzanstalt sind:</p>
-        <p lang="fr">L'exploitant d'un mint opère principalement un un portail de 
-          service web et garde une base de donnée des détails des transactions 
+          wesentlichen Interaktionen der Wechselstube sind:</p>
+        <p lang="fr">L'exploitant d'un bureau de change opère principalement un un portail de
+          service web et garde une base de donnée des détails des transactions
           et des preuves cryptographiques. Ses coûts operationels sont donc liés
           à ses interactions avec le système banquaire et à l'infrastructure
           informatique, tandis que ses revenus sont basés sur les frais de
           transaction qu'il peut facurer pour les diverses opérations. Les opérations
-          clées du mint incluent:</p>
-        <p lang="it">Chi gestisce la zecca dovrà offrire un portale
+          clées du bureau de change incluent:</p>
+        <p lang="it">Chi gestisce la cambiavalute dovrà offrire un portale
 	Web e mantenere vari database in cui custodire dettagli circa transazioni
 	e certificati criptografici. I suoi costi dipenderanno dunque da quanto e come
 	essa si interfaccerà col sistema bancario, e dalla sua infrastruttura informatica.
 	Dall'altro lato, i suoi guadagni saranno basati sulle tariffe applicate alle
 	varie operazioni offerte. Tali operazioni offerte comprendono:
 	</p>
-        <p lang="es">El operador de casa de moneda opera fundamentalmente un portal de 
+        <p lang="es">El operador de casa de cambio opera fundamentalmente un portal de
           servicios web y mantiene bases de datos con detalles de las transacciones y
           pruebas criptográficas. Sus gastos operativos se originan en las
           interacciones con el sistema bancario y la infrastructura informática,
           mientras que sus ingresos se basan en tasas de servicio por transacción
           que pueden cobrar de sus varias interacciones.
-          Las interacciones principales de la casa de moneda incluyen:
+          Las interacciones principales de la casa de cambio incluyen:
         </p>
         <p>
-          <img src="images/mint.svg" alt="operator perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
+          <img src="images/exchange.svg" alt="operator perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ul>
             <li lang="en">Create a <b>reserve</b> based on an incoming
               wire transfer from a customer.</li>
@@ -202,7 +200,7 @@
                digital coins from their reserve.</li>
             <li lang="de">Erm&ouml;gliche es Kunden digitale M&uuml;nzen von ihrer W&auml;rungsreserve
                abzuheben bzw. bestehende M&uuml;nzen aufzufrischen.</li>
-            <li lang="fr">Permetre aux utilisateurs de <b>retirer</b> (et rafraichir) des 
+            <li lang="fr">Permetre aux utilisateurs de <b>retirer</b> (et rafraichir) des
                pièces numériques de leur réserve.</li>
             <li lang="it">Permettere ai clienti di ritirare e cambiare gettoni posseduti
 	    con gettoni nuovi (attraverso una operazione chiamata <b>refresh</b>)
@@ -219,7 +217,7 @@
             <li lang="en">Execute wire transfers to merchants in
                response to validated deposits.</li>
             <li lang="de">Durchf&uuml;hrung von Bank&uuml;berweisungen an H&auml;ndler auf Basis der validierten Einzahlungen</li>
-            <li lang="fr">Exection des transfères banquaires 
+            <li lang="fr">Exection des transfères banquaires
               vers les marchands en réponse aux dépos validés.</li>
             <li lang="it">Eseguire bonifici verso i conti dei venditori in seguito
 	    a depositi (di gettoni elettronici) andati a buon fine</li>
@@ -228,7 +226,7 @@
             <li lang="en">Preserve and provide cryptographic proofs of
                correct operation for audits by financial regulators.</li>
             <li lang="de">Konservierung und Bereitstellung kryptographischer Beweise
-              zum korrekten Verhalten der M&uuml;nzanstalt zwecks
+              zum korrekten Verhalten der Wechselstube zwecks
               &Uuml;berpr&uuml;fung durch die Finanzaufsicht.</li>
             <li lang="fr">Préserver et fournir les preuves cryptographiques
               des opérations requises pour les audits pes les authorités financières.</li>
