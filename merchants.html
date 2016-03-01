@@ -170,11 +170,11 @@
           <h2 lang="fr">Faible Coût </h2>
           <h2 lang="it">Prezzi bassi</h2>
           <h2 lang="es">Bajo costo</h2>
-	  <p lang="en">Taler is designed to minimize the work the Mint needs to
+	  <p lang="en">Taler is designed to minimize the work the exchange needs to
 	     perform.  Combined with Taler's strong security which prevents fraud,
-	     mints can operate with very low overhead and thus low transaction
-	     fees.  Given Taler's free software mint reference implementation,
-	     competition among mints will ensure fair, low transaction fees for
+	     exchanges can operate with very low overhead and thus low transaction
+	     fees.  Given Taler's free software exchange reference implementation,
+	     competition among exchanges will ensure fair, low transaction fees for
 	     merchants.</p>
           <p lang="de">Taler wurde konzipiert, die Arbeit der
 	     M&uuml;nzanstalt m&ouml;glichst gering zu halten. Zusammen mit den
@@ -190,11 +190,11 @@
 	     gestion et de frais très bas. L'installation via un logiciel libre de
 	     la monnaie Taler, la compétition entre monnaies permettra des coûts de
 	     transactions honnêtes et faibles pour les commerçants.</p>
-	  <p lang="it">Taler è progettato per minimizzare il lavoro che la "banca" (mint)
+	  <p lang="it">Taler è progettato per minimizzare il lavoro che la "banca" (exchange)
 	     ha necessità di eseguire. Combinate con la forte sicurezza di Taler che previene
-	     la frode, le "banche" (mints) possono operare con spese molto basse e quindi bassi
-	     costi di transazione. Considerata l'implementazione free-software di riferimento della "banca" (mint)
-	     la competizione tra "banche" (mints) garantirà costi di transazione giusti e bassi per
+	     la frode, le "banche" (exchanges) possono operare con spese molto basse e quindi bassi
+	     costi di transazione. Considerata l'implementazione free-software di riferimento della "banca" (exchange)
+	     la competizione tra "banche" (exchanges) garantirà costi di transazione giusti e bassi per
 	     i mercanti.</p>
 	  <p lang="es">Taler esta diseñado para minimizar el trabajo de la Casa de Moneda.
              Combinado con la fuerte seguridad de Taler que previene el fraude, las casas de moneda
@@ -211,7 +211,7 @@
           <h2 lang="es">Flexible</h2>
 	  <p lang="en">Taler can be used for different currencies (such as Euros
 	     or US Dollars) and different payment models limited only by what the
-	     mint supports in its interactions.</p>
+	     exchange supports in its interactions.</p>
           <p lang="de">Taler kann unabh&auml;ngig von verschiedenen
 	     W&auml;hrungen (wie zum Beispiel Euro oder US-Dollar) und
 	     Bezahlmodellen eingesetzt werden. Die einzige Beschr&auml;nkung
@@ -223,7 +223,7 @@
 	     la monnaie Taler, la compétition entre monnaies permettra des coûts de
 	     transactions honnêtes et faibles pour les commerçants.</p>
 	  <p lang="it">Taler può essere usato per diverse valute (come Euro o dollari americani)
-	     e diversi modelli di pagamento limitati solamente da quello che la "banca" (mint)
+	     e diversi modelli di pagamento limitati solamente da quello che la "banca" (exchange)
 	     supporta nelle sue interazioni.</p>
 	  <p lang="es">Taler se puede usar con diferentes monedas (como Euros o Dólares) y
              diferentes modelos de pago sólo limitado por las interacciones a las que dé soporte
@@ -294,7 +294,7 @@
               version of the proposed contract in a simple JSON format to
               the customer.
               The message also includes salted, hashed wire details for
-              the merchant, as well as restrictions as to which mint operators
+              the merchant, as well as restrictions as to which exchange operators
               the merchant is willing to deal with.</li>
              <li lang="de">Die H&auml;ndlerwebseite muss
               pr&uuml;fen ob der Kunde eine Taler Geldb&ouml;rsenanwendung
@@ -342,11 +342,11 @@
                pago por el monto respectivo (abajo).</li>
 
              <li lang="en">The merchant then forwards the signed messages
-               received from the customer to the mint, together with its
-               wire details and the salt (without hashing).  The mint verifies
+               received from the customer to the exchange, together with its
+               wire details and the salt (without hashing).  The exchange verifies
                the details and sends a signed confirmation (or an error
                message) to the merchant.  The merchant checks that the
-               mint's signature is valid, sends a confirmation to the
+               exchange's signature is valid, sends a confirmation to the
                customer and executes the contract-specific business logic.</li>
              <li lang="de">Der H&auml;ndler leitet dann die
                Unterschriften weiter an die M&uuml;nzanstalt, zusammen mit seinen
@@ -356,9 +356,9 @@
                Signatur, schickt eine Best&auml;tigung an den Kunden und
                f&uuml;hrt seine vertragsspezifische Gesch&auml;ftslogik aus.</li>
              <li lang="fr">Le marchand transfère ensuite le message signé
-               reçu du client au mint, avec ses détails banquaires et le sel (sans hashage).
-               Le mint vérifie les détails et envoie une confirmation (ou un message d'erreur).
-               au marchand. Le marchand verifie que la signature du mint est valide, envoi
+               reçu du client au exchange, avec ses détails banquaires et le sel (sans hashage).
+               Le exchange vérifie les détails et envoie une confirmation (ou un message d'erreur).
+               au marchand. Le marchand verifie que la signature du exchange est valide, envoi
                la confirmation au client et execute le contrat.</li>
              <li lang="it">Il negoziante inoltra tale messaggio firmato appena
 	     ricevuto del cliente alla zecca, insieme alle sue coordinata bancarie
@@ -374,10 +374,10 @@
                El comerciante revisa la validez de la firma de la casa de moneda y a su vez
                envía confirmación al cliente y ejecuta la lógica de negocio específica del contrato.</li>
 
-             <li lang="en">The mint performs wire transfers corresponding to
-               the claims deposited by the merchant. Note that the mint may
+             <li lang="en">The exchange performs wire transfers corresponding to
+               the claims deposited by the merchant. Note that the exchange may
                charge fees for the deposit operation, hence merchants may
-               impose limits restricting the set of mint operators they are
+               impose limits restricting the set of exchange operators they are
                willing to deal with, for example by imposing a bound on
                deposit fees.</li>
              <li lang="de">Die M&uuml;nzanstalt &uuml;berweist
@@ -387,10 +387,10 @@
                Zusammenarbeit auf eine Menge von M&uuml;nzanstalten
                einschr&auml;nken k&ouml;nnen, z.B. durch Angabe einer Obergrenze
                f&uuml;r die Transaktionskosten.</li>
-             <li lang="fr">Le mint effectue le virement banquaire correspondant
-               au dépos effectué par le marchant. Nottez que le mint peut charger des
+             <li lang="fr">Le exchange effectue le virement banquaire correspondant
+               au dépos effectué par le marchant. Nottez que le exchange peut charger des
                frais pour l'opération de dépos, les marchands peuvent donc imposer
-               des restrictions sur les mints avec lesquels il acceptent de travailler,
+               des restrictions sur les exchanges avec lesquels il acceptent de travailler,
                par exemple en imposant des limites sur les frais qu'ils acceptent.</li>
              <li lang="it">Per ogni deposito (od opzionalmente per ogni
 	     raggruppamento di depositi) ricevuto da un certo negoziante,
