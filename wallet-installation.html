@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8"/>
+  <title>Taler Demonstration Framework</title>
+  <link rel="stylesheet" type="text/css" href="web-common/style.css" />
+  <link rel="stylesheet" type="text/css" href="web-common/taler-presence.css" />
+  <link rel="icon" type="image/png" href="/web-common/favicon-taler.ico" />
+  <script src="web-common/taler-presence.js" type="text/javascript" />
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc" />
+
+    <script type="application/javascript">
+        /*
+        @licstart  The following is the entire license notice for the
+        JavaScript code in this page.
+
+        Copyright (C) 2015 GNUnet e.V.
+
+        The JavaScript code in this page is free software: you can
+        redistribute it and/or modify it under the terms of the GNU
+        Lesser General Public License (GNU LGPL) as published by the Free Software
+        Foundation, either version 2.1 of the License, or (at your option)
+        any later version.  The code is distributed WITHOUT ANY WARRANTY;
+        without even the implied warranty of MERCHANTABILITY or FITNESS
+        FOR A PARTICULAR PURPOSE.  See the GNU LGPL for more details.
+
+        As additional permission under GNU LGPL version 2.1 section 7, you
+        may distribute non-source (e.g., minimized or compacted) forms of
+        that code without the copy of the GNU LGPL normally required by
+        section 4, provided you include this license notice and a URL
+        through which recipients can access the Corresponding Source.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+        */
+
+    function onSuccess() {
+      console.log("installation successful");
+      location.reload();
+    }
+
+    function onFailure(detail) {
+      console.error("installation failed:", detail);
+    }
+
+    function installWallet() {
+      chrome.webstore.install("https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc", onSuccess, onFailure);
+    }
+    </script>
+
+    <style type="text/css">
+
+      a[disabled="true"] {
+      pointer-events: none;
+      color: grey;
+      }
+    </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="/index.html" id="logo">
+      <img src="web-common/logo.png" width="100" height="100" alt="Logo">
+    </a>
+    <!--#include virtual="web-common/dropdown-navbar.html"-->
+    <h1 class="nav">Taler Demonstration Framework</h1>
+  </header>
+
+  <aside class="sidebar" id="left">
+  </aside>
+
+  <section id="main">
+    <article>
+      <h2>Install the Taler wallet</h2>
+      <p class="taler-installed-hide">
+        <ul>
+          <li>from the app store for
+            <a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Google
+              Chrome and Chromium</a>
+          </li>
+          <li id="inline-install-chrome">via inline install:
+            <button onclick="installWallet()" id="install-button">
+              Add to Chrome
+            </button>
+          </li>
+        </ul>
+        Wallets for other browsers will be provided in the near future.
+      </p>
+      <p class="taler-installed-show">
+        Congratulations, you have installed the Taler wallet correctly.
+        You can now proceed with the next steps.
+      </p>
+    </article>
+  </section>
+  </body>
+</html>
