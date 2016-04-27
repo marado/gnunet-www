@@ -57,39 +57,24 @@
 </head>
 
 <body>
-
-  <header>
-    <a href="/index.html" id="logo">
-      <img src="web-common/logo-2015-medium.png" width="100" height="100" alt="Logo">
-    </a>
-    <h1 class="nav">Taler Demonstration Framework</h1>
-  </header>
-
-  <aside class="sidebar" id="left">
-  </aside>
-
-  <section id="main">
-    <article>
-      <h2>Install the Taler wallet</h2>
-      <p class="taler-installed-hide">
-        <ul>
-          <li>from the app store for
-            <a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Google
-              Chrome and Chromium</a>
-          </li>
-          <li id="inline-install-chrome">via inline install:
-            <button onclick="installWallet()" id="install-button">
-              Add to Chrome
-            </button>
-          </li>
-        </ul>
-        Wallets for other browsers will be provided in the near future.
-      </p>
-      <p class="taler-installed-show">
-        Congratulations, you have installed the Taler wallet correctly.
-        You can now proceed with the next steps.
-      </p>
-    </article>
-  </section>
-  </body>
+  <h1>Install the Taler wallet</h1>
+  <p>
+    <ul>
+      <li>from the app store for
+        <a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Google
+          Chrome and Chromium</a>
+      </li>
+      <li id="inline-install-chrome">via inline install:
+        <button onclick="installWallet()" id="install-button">
+          One-click installation
+        </button>
+      </li>
+    </ul>
+    Wallets for other browsers will be provided in the near future.
+  </p>
+  <p class="taler-installed-show" id="successbox">
+    Congratulations, you have installed the Taler wallet correctly.
+    You can now proceed with the next steps.
+  </p>
+</body>
 </html>
