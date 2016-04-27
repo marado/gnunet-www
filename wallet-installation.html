@@ -44,6 +44,15 @@
     function installWallet() {
       chrome.webstore.install("https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc", onSuccess, onFailure);
     }
+
+    taler.onPresent(function () {
+      document.getElementById("box-present").style.display = "inherit";
+      document.getElementById("box-not-present").style.display = "none";
+    });
+    taler.onAbsent(function () {
+      document.getElementById("box-present").style.display = "none";
+      document.getElementById("box-not-present").style.display = "inherit";
+    });
   </script>
 
   <style type="text/css">
@@ -80,11 +89,11 @@
     </ul>
     Wallets for other browsers will be provided in the near future.
   </p>
-  <p class="taler-installed-show bluebox">
+  <p class="greenbox" id="box-present" style="display:none">
     Congratulations, you have installed the Taler wallet.
     Check out the <a href="https://demo.taler.net/">demo</a>.
   </p>
-  <p class="taler-installed-hide greenbox">
+  <p class="bluebox" id="box-not-present" style="display:none">
     You don't have a wallet installed yet. 
   </p>
   </main>
