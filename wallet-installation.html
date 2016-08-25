@@ -32,28 +32,51 @@
     for the JavaScript code in this page.
     */
 
+    var chrome_min_version = '47.0.2526';
+
     function onSuccess() {
       console.log("installation successful");
-      document.getElementById("install-result").innerText = "(installation was successful)";
+      document.getElementById("install-result").appendChild(document.createTextNode("Installation was successful."));
     }
 
     function onFailure(detail) {
       console.error("installation failed:", detail);
-      document.getElementById("install-result").innerText = "(failed: " + detail + ")";
+      document.getElementById("install-result").appendChild(document.createTextNode("Installation failed: " + detail));
     }
 
     function installWallet() {
-      chrome.webstore.install("https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc", onSuccess, onFailure);
+      if (window.chrome) {
+        chrome.webstore.install("https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc", onSuccess, onFailure);
+      } else {
+        onFailure("Google Chrome or Chromium is required for installation.");
+      }
     }
 
-    taler.onPresent(function () {
-      document.getElementById("box-present").style.display = "inherit";
-      document.getElementById("box-not-present").style.display = "none";
-    });
-    taler.onAbsent(function () {
-      document.getElementById("box-present").style.display = "none";
-      document.getElementById("box-not-present").style.display = "inherit";
-    });
+    try {
+      taler.onPresent(function () {
+        document.getElementById("box-present").style.display = "inherit";
+        document.getElementById("box-not-present").style.display = "none";
+      });
+      taler.onAbsent(function () {
+        document.getElementById("box-present").style.display = "none";
+        document.getElementById("box-not-present").style.display = "inherit";
+      });
+    } catch (err) {
+    }
+
+    function onLoad() {
+      if (typeof window.chrome != "object") {
+        document.getElementById("error-chrome").style.display = "inherit";
+      } else {
+        var m = navigator.userAgent.match(/Chrome\/([0-9.]+)/);
+        if (null == m || m[1] < chrome_min_version) {
+          document.getElementById('chrome-min-version').appendChild(document.createTextNode(chrome_min_version));
+          document.getElementById('error-chrome-version').style.display = "inherit";
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoad);
   </script>
 
   <style type="text/css">
@@ -64,10 +87,21 @@
       padding: 0.5em;
     }
     .bluebox {
-        background-color: #C2C6FF;
-        border: solid;
-        border-radius: 5px;
-        padding: 0.5em;
+      background-color: #C2C6FF;
+      border: solid;
+      border-radius: 5px;
+      padding: 0.5em;
+    }
+    .error {
+      font-style: italic;
+      display: none;
+    }
+    #install-result {
+      font-weight: bold;
+    }
+
+    main ul li {
+      margin-bottom: 1em;
     }
   </style>
 </head>
@@ -76,26 +110,34 @@
   <h1>Install the Taler wallet</h1>
 
   <main style="display:inline-block;">
-  <p>
+    <h2>Google Chrome / Chromium</h2>
+    <p id="error-chrome" class="error">
+      <a href="https://www.google.com/chrome">Google Chrome</a> or <a href="https://www.chromium.org/">Chromium</a>
+      is required, but it appears you don't have it installed.
+    </p>
+    <p id="error-chrome-version" class="error">
+      <a href="https://www.google.com/chrome">Google Chrome</a> or <a href="https://www.chromium.org/">Chromium</a>
+      version <span id="chrome-min-version"></span> or newer is required, but it appears you have an older version.</p>
     <ul>
-      <li>from the app store for
-        <a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Google
-          Chrome and Chromium</a>
+      <li>
+        <a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Install from the Chrome Web Store</a>
       </li>
-      <li id="inline-install-chrome">from this page:
+      <li id="inline-install-chrome">
         <button onclick="installWallet()" id="install-button">
-          install now
-        </button> <span id="install-result"></span>
+          Install from this page
+        </button>
+        <div id="install-result"></div>
       </li>
     </ul>
-    Wallets for other browsers will be provided in the near future.
-  </p>
+
+    <h2>Other browsers</h2>
+    <p>Wallets for other browsers will be provided in the near future.</p>
   <p class="greenbox" id="box-present" style="display:none">
     Congratulations, you have installed the Taler wallet.
     Check out the <a href="https://demo.taler.net/">demo</a>.
   </p>
   <p class="bluebox" id="box-not-present" style="display:none">
-    You don't have a wallet installed yet. 
+    You don't have a wallet installed yet.
   </p>
   </main>
 </body>
