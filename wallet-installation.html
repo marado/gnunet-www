@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8"/>
+  <title>Taler Wallet Installation</title>
+  <link rel="icon" type="image/png" href="/web-common/favicon-taler.ico" />
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc" />
+  <script src="web-common/taler-wallet-lib.js" type="text/javascript"></script>
+
+  <script type="application/javascript">
+    /*
+    @licstart  The following is the entire license notice for the
+    JavaScript code in this page.
+
+    Copyright (C) 2015 GNUnet e.V.
+
+    The JavaScript code in this page is free software: you can
+    redistribute it and/or modify it under the terms of the GNU
+    Lesser General Public License (GNU LGPL) as published by the Free Software
+    Foundation, either version 2.1 of the License, or (at your option)
+    any later version.  The code is distributed WITHOUT ANY WARRANTY;
+    without even the implied warranty of MERCHANTABILITY or FITNESS
+    FOR A PARTICULAR PURPOSE.  See the GNU LGPL for more details.
+
+    As additional permission under GNU LGPL version 2.1 section 7, you
+    may distribute non-source (e.g., minimized or compacted) forms of
+    that code without the copy of the GNU LGPL normally required by
+    section 4, provided you include this license notice and a URL
+    through which recipients can access the Corresponding Source.
+
+    @licend  The above is the entire license notice
+    for the JavaScript code in this page.
+    */
+
+    var chrome_min_version = '47.0.2526';
+
+    function onSuccess() {
+      console.log("installation successful");
+      document.getElementById("install-result").appendChild(document.createTextNode("Installation was successful."));
+    }
+
+    function onFailure(detail) {
+      console.error("installation failed:", detail);
+      document.getElementById("install-result").appendChild(document.createTextNode("Installation failed: " + detail));
+    }
+
+    function installWallet() {
+      if (window.chrome) {
+        chrome.webstore.install("https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc", onSuccess, onFailure);
+      } else {
+        onFailure("Google Chrome or Chromium is required for installation.");
+      }
+    }
+
+    try {
+      taler.onPresent(function () {
+        document.getElementById("box-present").style.display = "inherit";
+        document.getElementById("box-not-present").style.display = "none";
+      });
+      taler.onAbsent(function () {
+        document.getElementById("box-present").style.display = "none";
+        document.getElementById("box-not-present").style.display = "inherit";
+      });
+    } catch (err) {
+    }
+
+    function onLoad() {
+      if (typeof window.chrome != "object") {
+        document.getElementById("error-chrome").style.display = "inherit";
+      } else {
+        var m = navigator.userAgent.match(/Chrome\/([0-9.]+)/);
+        if (null == m || m[1] < chrome_min_version) {
+          document.getElementById('chrome-min-version').appendChild(document.createTextNode(chrome_min_version));
+          document.getElementById('error-chrome-version').style.display = "inherit";
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', onLoad);
+  </script>
+
+  <style type="text/css">
+    .greenbox {
+      background-color: #5EFF64;
+      border: solid;
+      border-radius: 5px;
+      padding: 0.5em;
+    }
+    .bluebox {
+      background-color: #C2C6FF;
+      border: solid;
+      border-radius: 5px;
+      padding: 0.5em;
+    }
+    .error {
+      font-style: italic;
+      display: none;
+    }
+    #install-result {
+      font-weight: bold;
+    }
+
+    main ul li {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Install the Taler wallet</h1>
+
+  <main style="display:inline-block;">
+    <h2>Google Chrome / Chromium</h2>
+    <p id="error-chrome" class="error">
+      <a href="https://www.google.com/chrome">Google Chrome</a> or <a href="https://www.chromium.org/">Chromium</a>
+      is required, but it appears you don't have it installed.
+    </p>
+    <p id="error-chrome-version" class="error">
+      <a href="https://www.google.com/chrome">Google Chrome</a> or <a href="https://www.chromium.org/">Chromium</a>
+      version <span id="chrome-min-version"></span> or newer is required, but it appears you have an older version.</p>
+    <ul>
+      <li>
+        <a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Install from the Chrome Web Store</a>
+      </li>
+      <li id="inline-install-chrome">
+        <button onclick="installWallet()" id="install-button">
+          Install from this page
+        </button>
+        <div id="install-result"></div>
+      </li>
+    </ul>
+
+    <h2>Other browsers</h2>
+    <p>Wallets for other browsers will be provided in the near future.</p>
+  <p class="greenbox" id="box-present" style="display:none">
+    Congratulations, you have installed the Taler wallet.
+    Check out the <a href="https://demo.taler.net/">demo</a>.
+  </p>
+  <p class="bluebox" id="box-not-present" style="display:none">
+    You don't have a wallet installed yet.
+  </p>
+  </main>
+</body>
+</html>
