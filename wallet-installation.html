@@ -110,7 +110,7 @@
   <h1>Install the Taler wallet</h1>
 
   <main style="display:inline-block;">
-    <h2>Google Chrome / Chromium</h2>
+    <h2>Google Chrome / Chromium 49+</h2>
     <p id="error-chrome" class="error">
       <a href="https://www.google.com/chrome">Google Chrome</a> or <a href="https://www.chromium.org/">Chromium</a>
       is required, but it appears you don't have it installed.
@@ -129,6 +129,24 @@
         <div id="install-result"></div>
       </li>
     </ul>
+
+    <h2>Firefox 50+</h2>
+
+    <p>The add-on is currently in the process of being signed by Mozilla,
+       until then it can be installed the following way:</p>
+
+    <h3>Firefox Beta</h3>
+      <ol>
+        <li><a href="/releases/taler-wallet/taler-wallet-stable.xpi">Download the wallet</a></li>
+        <li>On the <a href="about:debugging">about:debugging</a> page, "Load temporary extension"</li>
+      </ol>
+
+    <h3>Firefox Developer Edition</h3>
+      <p>Either from the <a href="about:debugging">about:debugging</a> page like above, or:</p>
+      <ol>
+        <li>On the <a href="about:conf">about:config</a> page set <code>xpinstall.signatures.required</code> to <code>false</code></li>
+        <li><a href="/releases/taler-wallet/taler-wallet-stable.xpi">Install the wallet</a></li>
+      </ol>
 
     <h2>Other browsers</h2>
     <p>Wallets for other browsers will be provided in the near future.</p>
