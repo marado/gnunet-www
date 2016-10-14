@@ -129,8 +129,7 @@ document.addEventListener('DOMContentLoaded', onLoad);
 
       <div class="row">
         <div class="col-lg-6">
-
-          <h2>Google Chrome / Chromium 49+</h2>
+          <h2><a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Google Chrome / Chromium 49+</a></h2>
 
           <p id="error-chrome" class="error">
             <a href="https://www.google.com/chrome">Google Chrome</a> or <a href="https://www.chromium.org/">Chromium</a>
@@ -139,21 +138,16 @@ document.addEventListener('DOMContentLoaded', onLoad);
           <p id="error-chrome-version" class="error">
             <a href="https://www.google.com/chrome">Google Chrome</a> or <a href="https://www.chromium.org/">Chromium</a>
             version <span id="chrome-min-version"></span> or newer is required, but it appears you have an older version.</p>
-          <ul>
-            <li>
-              <a href="https://chrome.google.com/webstore/detail/gnu-taler-wallet/millncjiddlpgdmkklmhfadpacifaonc">Install from the Chrome Web Store</a>
-            </li>
-            <li id="inline-install-chrome">
-              <button onclick="installWallet()" id="install-button">
-                Install from this page
-              </button>
-              <div id="install-result"></div>
-            </li>
-          </ul>
+          <div id="inline-install-chrome">
+            <button onclick="installWallet()" id="install-button">
+              Install wallet
+            </button>
+            <div id="install-result"></div>
+          </div>
         </div> <!-- /col-lg-6 -->
 
         <div class="col-lg-6">
-          <h2>Firefox 50+</h2>
+          <h2><a href="https://addons.mozilla.org/en-US/firefox/addon/taler-wallet/">Firefox 50+</a></h2>
 
           <p>The add-on is currently in the process of being reviewed and signed by Mozilla,
              until then it can be installed the following way:</p>
