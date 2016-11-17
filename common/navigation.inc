@@ -15,11 +15,11 @@
             <li lang="it" class="m_index"><a href="/">Home</a></li>
             <li lang="es" class="m_index"><a href="/">Inicio</a></li>
 
-            <li lang="en" class="m_demo"><a href="/">Demo</a></li>
-            <li lang="de" class="m_demo"><a href="/">Demo</a></li>
-            <li lang="fr" class="m_demo"><a href="/">Démo</a></li>
-            <li lang="it" class="m_demo"><a href="/">Demo</a></li>
-            <li lang="es" class="m_demo"><a href="/">Demo</a></li>
+            <li lang="en" class="m_demo btn btn-outline-success"><a href="https://demo.taler.net/" target="_blank">Demo</a></li>
+            <li lang="de" class="m_demo btn btn-outline-success"><a href="https://demo.taler.net/" target="_blank">Demo</a></li>
+            <li lang="fr" class="m_demo btn btn-outline-success"><a href="https://demo.taler.net/" target="_blank">Démo</a></li>
+            <li lang="it" class="m_demo btn btn-outline-success"><a href="https://demo.taler.net/" target="_blank">Demo</a></li>
+            <li lang="es" class="m_demo btn btn-outline-success"><a href="https://demo.taler.net/" target="_blank">Demo</a></li>
 
 	    <li lang="en" class="m_citizens"><a href="/citizens">Citizens</a></li>
 	    <li lang="de" class="m_citizens"><a href="/citizens">B&uuml;rger</a></li>
