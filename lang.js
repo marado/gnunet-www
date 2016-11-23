@@ -34,14 +34,15 @@ function supports_html5_storage() {
 
 function setLang(l)
 {
-	document.body.className=l;
-	if (supports_html5_storage()) {
-		sessionStorage.setItem('lang', l);
-	}
-	if (l == 'en') document.title = 'GNU Taler - Taxable Anonymous Libre Electronic Reserve';
-	if (l == 'de') document.title = 'GNU Taler - Taxierbare Anonyme Liberale Elektronische Reserven';
-	if (l == 'fr') document.title = 'GNU Taler - Taxable Anonyme Libre Électronique Réserve';
-	if (l == 'it') document.title = 'GNU Taler';
+        // FIXME: hotfix since t10n does not work
+	//document.body.className=l;
+	//if (supports_html5_storage()) {
+	//	sessionStorage.setItem('lang', l);
+	//}
+	//if (l == 'en') document.title = 'GNU Taler - Taxable Anonymous Libre Electronic Reserve';
+	//if (l == 'de') document.title = 'GNU Taler - Taxierbare Anonyme Liberale Elektronische Reserven';
+	//if (l == 'fr') document.title = 'GNU Taler - Taxable Anonyme Libre Électronique Réserve';
+	//if (l == 'it') document.title = 'GNU Taler';
 }
 
 function get_default_lang()
