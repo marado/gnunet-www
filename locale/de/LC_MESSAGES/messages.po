@@ -1570,34 +1570,33 @@ msgstr ""
 "href='https://www.gnu.org/'>Freier Software</a> erstellt."
 
 #: common/navigation.inc.j2:12
-msgid "<a href='/'>Home</a>"
-msgstr "<a href='/'>Home</a>"
+msgid "Home"
+msgstr "Home"
 
 #: common/navigation.inc.j2:13
-msgid "<a href='https://demo.taler.net/' target='_blank'>Demo</a>"
-msgstr "<a href='https://demo.taler.net/' target='_blank'>Demo</a>"
+msgid "Demo"
+msgstr "Demo"
 
 #: common/navigation.inc.j2:14
-msgid "<a href='/citizens'>Citizens</a>"
-msgstr "<a href='/citizens'>Bürger</a>"
+msgid "Citizens"
+msgstr "Bürger"
 
 #: common/navigation.inc.j2:15
-msgid "<a href='/merchants'>Merchants</a>"
-msgstr "<a href='/merchants'>Händler</a>"
+msgid "Merchants"
+msgstr "Händler"
 
 #: common/navigation.inc.j2:16
-msgid "<a href='/governments'>Governments</a>"
-msgstr "<a href='/governments'>Regierungen</a>"
+msgid "Governments"
+msgstr "Regierungen"
 
 #: common/navigation.inc.j2:17
-msgid "<a href='/investors'>Operators</a>"
-msgstr "<a href='/investors'>Betreiber</a>"
+msgid "Operators"
+msgstr "Betreiber"
 
 #: common/navigation.inc.j2:18
-msgid "<a href='/developers'>Developers</a>"
-msgstr "<a href='/developers'>Entwickler</a>"
+msgid "Developers"
+msgstr "Entwickler"
 
 #: common/navigation.inc.j2:19
-msgid "<a href='/about'>About&nbsp;us</a>"
-msgstr "<a href='/about'>Über uns</a>"
-
+msgid "About&nbsp;us"
+msgstr "Über uns"

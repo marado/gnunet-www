@@ -1575,34 +1575,33 @@ msgid ""
 msgstr ""
 
 #: common/navigation.inc.j2:12
-msgid "<a href='/'>Home</a>"
-msgstr "<a href='/'>Home</a>"
+msgid "Home"
+msgstr "Home"
 
 #: common/navigation.inc.j2:13
-msgid "<a href='https://demo.taler.net/' target='_blank'>Demo</a>"
-msgstr "<a href='https://demo.taler.net/' target='_blank'>Demo</a>"
+msgid "Demo"
+msgstr "Demo"
 
 #: common/navigation.inc.j2:14
-msgid "<a href='/citizens'>Citizens</a>"
-msgstr "<a href='/citizens'>Cittadini</a>"
+msgid "Citizens"
+msgstr "Cittadini"
 
 #: common/navigation.inc.j2:15
-msgid "<a href='/merchants'>Merchants</a>"
-msgstr "<a href='/merchants'>Venditori</a>"
+msgid "Merchants"
+msgstr "Venditori"
 
 #: common/navigation.inc.j2:16
-msgid "<a href='/governments'>Governments</a>"
-msgstr "<a href='/governments'>Governi</a>"
+msgid "Governments"
+msgstr "Governi"
 
 #: common/navigation.inc.j2:17
-msgid "<a href='/investors'>Operators</a>"
-msgstr "<a href='/investors'>Investitori</a>"
+msgid "Operators"
+msgstr "Investitori"
 
 #: common/navigation.inc.j2:18
-msgid "<a href='/developers'>Developers</a>"
-msgstr "<a href='/developers'>Sviluppatori</a>"
+msgid "Developers"
+msgstr "Sviluppatori"
 
 #: common/navigation.inc.j2:19
-msgid "<a href='/about'>About&nbsp;us</a>"
-msgstr "<a href='/about'>Chi siamo</a>"
-
+msgid "About&nbsp;us"
+msgstr "Chi siamo"

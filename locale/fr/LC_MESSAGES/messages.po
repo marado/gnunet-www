@@ -1565,35 +1565,34 @@ msgid ""
 msgstr ""
 
 #: common/navigation.inc.j2:12
-msgid "<a href='/'>Home</a>"
-msgstr "<a href='/'>Accueil</a>"
+msgid "Home"
+msgstr "Accueil"
 
 #: common/navigation.inc.j2:13
-msgid "<a href='https://demo.taler.net/' target='_blank'>Demo</a>"
-msgstr "<a href='https://demo.taler.net/' target='_blank'>Démo</a>"
+msgid "Demo"
+msgstr "Démo"
 
 #: common/navigation.inc.j2:14
-msgid "<a href='/citizens'>Citizens</a>"
-msgstr "<a href='/citizens'>Citoyens</a>"
+msgid "Citizens"
+msgstr "Citoyens"
 
 #: common/navigation.inc.j2:15
-msgid "<a href='/merchants'>Merchants</a>"
-msgstr "<a href='/merchants'>Commerçants</a>"
+msgid "Merchants"
+msgstr "Commerçants"
 
 #: common/navigation.inc.j2:16
-msgid "<a href='/governments'>Governments</a>"
-msgstr "<a href='/governments'>Gouvernements</a>"
+msgid "Governments"
+msgstr "Gouvernements"
 
 #: common/navigation.inc.j2:17
 #, fuzzy
-msgid "<a href='/investors'>Operators</a>"
-msgstr "<a href='/investors'>Investisseurs</a>"
+msgid "Operators"
+msgstr "Investisseurs"
 
 #: common/navigation.inc.j2:18
-msgid "<a href='/developers'>Developers</a>"
-msgstr "<a href='/developers'>Développeurs</a>"
+msgid "Developers"
+msgstr "Développeurs"
 
 #: common/navigation.inc.j2:19
-msgid "<a href='/about'>About&nbsp;us</a>"
-msgstr "<a href='/about'>À&nbsp;propos</a>"
-
+msgid "About&nbsp;us"
+msgstr "À&nbsp;propos"
