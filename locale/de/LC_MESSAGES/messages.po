@@ -14,6 +14,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
+#: common/navigation.inc.j2:12
+msgid "Home"
+msgstr "Home"
+
+#: common/navigation.inc.j2:13
+msgid "Demo"
+msgstr "Demo"
+
+#: common/navigation.inc.j2:14
+msgid "Citizens"
+msgstr "Bürger"
+
+#: common/navigation.inc.j2:15
+msgid "Merchants"
+msgstr "Händler"
+
+#: common/navigation.inc.j2:16
+msgid "Governments"
+msgstr "Regierungen"
+
+#: common/navigation.inc.j2:17
+msgid "Operators"
+msgstr "Betreiber"
+
+#: common/navigation.inc.j2:18
+msgid "Developers"
+msgstr "Entwickler"
+
+#: common/navigation.inc.j2:19
+msgid "About&nbsp;us"
+msgstr "Über uns"
+
 #: about.html.j2:1 about.html.j2:5 about.html.j2:9 about.html.j2:116
 #: citizens.html.j2:1 citizens.html.j2:5 citizens.html.j2:9 citizens.html.j2:99
 #: developers.html.j2:1 developers.html.j2:5 developers.html.j2:9
@@ -1568,35 +1600,3 @@ msgid ""
 msgstr ""
 "Diese Seite wurde allein durch Einsatz von <a "
 "href='https://www.gnu.org/'>Freier Software</a> erstellt."
-
-#: common/navigation.inc.j2:12
-msgid "Home"
-msgstr "Home"
-
-#: common/navigation.inc.j2:13
-msgid "Demo"
-msgstr "Demo"
-
-#: common/navigation.inc.j2:14
-msgid "Citizens"
-msgstr "Bürger"
-
-#: common/navigation.inc.j2:15
-msgid "Merchants"
-msgstr "Händler"
-
-#: common/navigation.inc.j2:16
-msgid "Governments"
-msgstr "Regierungen"
-
-#: common/navigation.inc.j2:17
-msgid "Operators"
-msgstr "Betreiber"
-
-#: common/navigation.inc.j2:18
-msgid "Developers"
-msgstr "Entwickler"
-
-#: common/navigation.inc.j2:19
-msgid "About&nbsp;us"
-msgstr "Über uns"
