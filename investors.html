@@ -1,242 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="{{ _('en') }}"><head>
     <meta charset="utf-8">
-    <title>GNU Taler - Investors</title>
+    <title>{{ _("GNU Taler") }} - {{ _("Investors") }}</title>
     <meta name="description" content="">
       <!--# include file="common/header.inc" -->
   </head>
-  <body class="en" onLoad="loadLang();">
+  <body class="en" onload="loadLang();">
     <div class="container">
       <!--# include file="common/navigation.inc" -->
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1 lang="en">Operate a Taler exchange!</h1>
-        <h1 lang="de">Betreiben Sie eine Taler Wechelstube!</h1>
-        <h1 lang="fr" note="outdated">Investissez dans Taler !</h1>
-        <h1 lang="it" note="outdated">Investi in Taler!</h1>
-        <h1 lang="es">¡Opere una Casa de Cambio Taler!</h1>
+        <h1>{{ _("Operate a Taler exchange!") }}</h1>
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <h2 lang="en">Efficient</h2>
-          <h2 lang="de">Effizient</h2>
-	  <h2 lang="fr">Efficace</h2>
-	  <h2 lang="it">Efficiente</h2>
-	  <h2 lang="es">Eficiente</h2>
-          <p lang="en">Taler uses efficient cryptographic primitives (such as RSA 2048 and
+          <h2>{{ _("Efficient") }}</h2>
+
+          <p>{{ _("Taler uses efficient cryptographic primitives (such as RSA 2048 and
              EdDSA) and is thus expected to be able to handle large transaction
              volumes, only limited by the input/output capabilities of the
              database. Thus, running a Taler exchange should be profitable even
              with very low (less than 1 cent) transaction fees (at appropriate
-             transaction volume).</p>
-	  <p lang="de">Taler verwendet effiziente kryptographische
-	     Datenstrukturen (wie RSA 2048 und EdDSA) und ist daher in der Lage,
-	     gro&szlig;e Transaktionsvolumen zu bew&auml;ltigen, welche allein
-	     durch die Ein-/Ausgabe-Geschwindigkeit der zugrundeliegenden Datenbank
-	     begrenzt wird. Taler ist daher auch dann profitabel, wenn eine
-	     Wechselstube mit Transaktionsgeb&uuml;hren im Bereich von
-	     Bruchteilen eines Cents betrieben wird (entsprechendes
-	     Transaktionsvolumen vorausgesetzt).</p>
-	  <p lang="fr">Taler utilise des cryptographes primaires efficaces
-	     (comme RSA 2048 et EdDSA) et doit être capable de gérer des volumes de
-	     transaction importants, seulement limités par les capacités
-	     entrée/sortie de la base de donnée.</p>
-	  <p lang="it">Taler utilizza efficienti algoritmi crittografici di base (come RSA 2048
-	     e EdDSA) e quindi dovrebbe essere in grado di gestire transazioni di grande volume,
-	     limitato solamente dalle capacità di input/output del database. Quindi, usare un conio
-	     di Taler dovrebbe essere redditizio anche con un prezzo di transazione molto basso
-	     (meno di 1 cent) in relazione al volume di transazione appropriato.</p>
-          <p lang="es">Taler usa primitivas criptográficas eficientes (como RSA 2048 y
-             EdDSA) y de este modo es capaz de manejar grandes volumenes de transacciones,
-             sólo limitados por la capacidad de entrada/salida de la base de datos.
-             Así, operar una casa de cambio Taler debría ser rentable aún con tasas de transacción
-             muy bajas (menores a 1 centavo, con volúmenes de transacción apropiados).</p>
+             transaction volume).") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Secure</h2>
-          <h2 lang="de">Sicher</h2>
-	  <h2 lang="fr">Sûr</h2>
-	  <h2 lang="it">Sicuro</h2>
-	  <h2 lang="es">Seguro</h2>
-          <p lang="en">All transactions in Taler are secured using modern cryptography and
+          <h2>{{ _("Secure") }}</h2>
+
+          <p>{{ _("All transactions in Taler are secured using modern cryptography and
              trust in all parties is minimized. Financial damage is bounded
              (for customers, merchants and the exchange) even
              in the case that systems are compromised and private keys are stolen.
              Databases can be audited for consistency, resulting in either the
              detection of compromised systems or the demonstration that
-             participants were honest.</p>
-	  <p lang="de">Alle Transaktionen in Taler sind durch moderne
-	     Kryptographiemethoden gesichert und das n&ouml;tige aufzubringende
-	     Vertrauen in Systemteilnehmer wurde minimalisiert. Finanzieller
-	     Schaden (f&uuml;r Kunden, H&auml;ndler und die Wechselstube) wird
-	     durch das System begrenzt, selbst wenn Teilnehmer komprommitiert
-	     und private Schl&uuml;ssel entwendet werden. Datenbanken
-	     k&ouml;nnen auf ihre Konsistenz hin &uuml;berpr&uuml;ft werden, was
-	     das Entdecken von Angriffen auf das System erleichtert oder
-	     alternativ aufzeigt, ob Veruntreuungen durch die Systemteilnehmer
-	     stattgefunden haben.</p>
-	  <p lang="fr">Toutes les transactions dans Taler sont sécurisées en
-	     utilisant la cryptographie moderne et la confiance dans tous les
-	     acteurs est minimisée. Les pertes financières sont limitées (pour les
-	     clients, les commerçants et la banque) même dans le cas ou le système
-	     est compromis ou si les clés privées sont volées. Les bases de données
-	     peuvent être auditées sur leur régularité, avec pour résultat soit la
-	     détection de systèmes compromis ou faisant la démonstration que les
-	     participants sont honnêtes.</p>
-	  <p lang="it">Tutte le transazioni in Taler sono rese sicure usando la moderna
-	     crittografia e la fiducia in tutte le varie parti coinvolte è tenuta al minimo.
-	     Il danno finanziario è limitato (sia per il cliente, il mercante e la valuta)
-	     and in caso il sistema venisse compromesso e le chiavi private rubate.
-	     I database possono essere controllati per coerenza, facendo sì che vengano evidenziate
-	     sia la scoperta di sistemi compromessi, sia la dimostrazione che i partecipanti sono stati
-	     onesti.</p>
-          <p lang="es">Todas las transacciones en Taler están segurizadas usando criptografía moderna
-             por lo que la confianza necesaria entre todas las partes se minimiza. El daño financiero
-             se limita (para clientes, comerciantes y casas de cambio) aún en casos en lo que los sistemas
-             sean atacados y se roben las claves privadas.
-             Las bases de datos pueden auditarse por consistencia, resultando ya sea en la detección de los
-             sistemas comprometidos o en la demostración de que los participantes actuaron honestamente.</p>
+             participants were honest.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Business model</h2>
-	  <h2 lang="de">Gesch&auml;ftsmodell</h2>
-	  <h2 lang="fr">Business model</h2>
-	  <h2 lang="it">Modello business</h2>
-	  <h2 lang="es">Modelo de negocios</h2>
-          <p lang="en">The basic business model for Taler is the operation of an exchange.  An exchange converts money from traditional payment systems (Mastercard,
+          <h2>{{ _("Business model") }}</h2>
+
+          <p>{{ _("The basic business model for Taler is the operation of an exchange.  An exchange converts money from traditional payment systems (Mastercard,
              SEPA, Visa, BitCoin, ACH, SWIFT, etc.) to anonymous electronic
              coins in the same currency. The customer can then redeem the electronic
              coins at a merchant, who can exchange them for money represented using
              traditional payment systems at the exchange.  The exchange can then charge
-             fees (to the customer, merchant or both) to facilitate the transactions.</p>
-	  <p lang="de">Das Gesch&auml;ftsmodell hinter Taler besteht im Betreiben
-	     einer Wechelstube. Aufgabe der Wechselstube ist es, Geld
-	     traditioneller Bezahlungsysteme (Mastercard, SEPA, Visa, BitCoin, ACH,
-	     SWIFT, etc.) in anonyme Taler-M&uuml;nzen der selben W&auml;hrung zu
-	     konvertieren. Der Kunde kann die M&uuml;nzen anschließend bei
-	     einem H&auml;ndler einl&ouml;sen, der sie seinerseits bei der
-	     Wecheslstube gegen Geld der traditionellen Bezahlungssysteme
-	     einl&ouml;sen. </p>
-	  <p lang="fr">The business model basique pour Taler est une opération
-	     bancaire. Un bureau de change convertie la monnaie d'un système de paiement
-	     traditionnel (Mastercard, SEPA, Visa, BitCoin, ACH, SWIFT, etc.) vers
-	     une monnaie électronique anonyme dans la même devise. The client peut
-	     alors transférer sa monnaie électronique vers un commerçant, qui peut
-	     l'échanger contre de la monnaie en utilisant les système de paiement
-	     traditionnels à la bureau de change. La bureau de change peut ajouter des frais (au
-	     client, commerçant ou au deux) pour faciliter la transaction.</p>
-	  <p lang="it">Il modello business di base per Taler è l'operazione di un ufficio cambi.
-	     La ufficio cambi converte i soldi da un sistema di pagamento tradizionale (Mastercard,
-	     SEPA, Visa, BitCoin, ACH, SWIFT, ecc.) a monete elettroniche anonime nella stessa
-	     valuta. Il cliente può allora restituire le monete elettroniche ad un mercante,
-	     che può scambiarle alla ufficio cambi ccon monete rappresentate dal sistema di
-	     pagamento tradizionale. La ufficio cambi può quindi tassare (il cliente, il mercante
-	     o entrambi) per facilitare le transazioni.</p>
-          <p lang="es">El modelo de negocios básico para Taler consiste en la operación de una casa de cambio. La casa de cambio convierte dinero de los sistemas de pagos tradicionales
-             (Mastercard, SEPA, Visa, BitCoin, ACH, SWIFT, etc.) a monedas electrónicas
-             anónimas en el mismo tipo de divisa. El cliente puede entonces canjear las monedas electrónicas
-             con un comerciante, el cual los cambiará por dinero mediante los sistemas tradicionales
-             de pago en la casa de cambio. La casa de cambio puede cobrar por este servicio
-             (al cliente, al comerciante o a ambos) para facilitar las transacciones.</p>
+             fees (to the customer, merchant or both) to facilitate the transactions.") }}</p>
         </div>
       </div>
       <div class="col-lg-12">
-        <h2 lang="en" id="overview">Taler as seen by the exchange operator</h1>
-        <h2 lang="de">Taler aus Betreiberperspektive</h1>
-        <h2 lang="fr">Taler du point de vu de l'exploitant</h2>
-        <h2 lang="it">Come opera la ufficio cambi di Taler</h2>
-        <h2 lang="es">Taler desde el punto de vista del operador de casa de cambio</h1>
-        <p lang="en">The exchange operator primarily operates a Web service
+        <h2 id="overview">{{ _("Taler as seen by the exchange operator") }}</h2>
+
+        <p>{{ _("The exchange operator primarily operates a Web service
           portal and keeps databases with transaction details and
           cryptographic proofs.  Its operational expenses are thus related to
           its interactions with the banking system and the operation of
           the computing infrastructure, while its income is based on
           transaction fees it may charge for the various interactions.
           Key interactions of the exchange include:
-        </p>
-        <p lang="de">Der Betreiber einer Wechselstube
-          betreibt prim&auml;r eine Webseite sowie Datenbanken mit
-          Transaktionsinformationen und kryptografischen Beweisen.  Seine
-          Ausgaben sind im Wesentlichen beschr&auml;nkt auf die Interaktion
-          mit dem Bankensystem und dem Betrieb der Rechnerinfrastruktur.
-          Die Betreibereinnahmen kommen aus Geb&uuml;hren die der Betreiber
-          f&uuml;r die verschiedenen Interaktionen verlangen kann.  Die
-          wesentlichen Interaktionen der Wechselstube sind:</p>
-        <p lang="fr">L'exploitant d'un bureau de change opère principalement un un portail de
-          service web et garde une base de donnée des détails des transactions
-          et des preuves cryptographiques. Ses coûts operationels sont donc liés
-          à ses interactions avec le système banquaire et à l'infrastructure
-          informatique, tandis que ses revenus sont basés sur les frais de
-          transaction qu'il peut facurer pour les diverses opérations. Les opérations
-          clées du bureau de change incluent:</p>
-        <p lang="it">Chi gestisce la ufficio cambi dovrà offrire un portale
-	Web e mantenere vari database in cui custodire dettagli circa transazioni
-	e certificati criptografici. I suoi costi dipenderanno dunque da quanto e come
-	essa si interfaccerà col sistema bancario, e dalla sua infrastruttura informatica.
-	Dall'altro lato, i suoi guadagni saranno basati sulle tariffe applicate alle
-	varie operazioni offerte. Tali operazioni offerte comprendono:
-	</p>
-        <p lang="es">El operador de casa de cambio opera fundamentalmente un portal de
-          servicios web y mantiene bases de datos con detalles de las transacciones y
-          pruebas criptográficas. Sus gastos operativos se originan en las
-          interacciones con el sistema bancario y la infrastructura informática,
-          mientras que sus ingresos se basan en tasas de servicio por transacción
-          que pueden cobrar de sus varias interacciones.
-          Las interacciones principales de la casa de cambio incluyen:
-        </p>
+        ") }}</p>
+
         <p>
           <img src="images/exchange.svg" alt="operator perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-          <ul>
-            <li lang="en">Create a <b>reserve</b> based on an incoming
-              wire transfer from a customer.</li>
-            <li lang="de">Erzeuge eine Währungsreserve auf Grundlage einer eingehenden Banküberweisung eines Kunden.</li>
-            <li lang="fr">Création d'une <b>réserve</b> basé sur un transfère banquaire d'un client.</li>
-            <li lang="it">Creazione di una <b>riserva</b> in seguito
-	    alla ricezione di un bonifico bancario da parte di un cliente</li>
-            <li lang="es">Crear <b>reservas</b> basadas en un giro o transferencia desde un cliente.</li>
+          </p><ul>
+            <li>{{ _("Create a <b>reserve</b> based on an incoming
+              wire transfer from a customer.") }}</li>
 
-            <li lang="en">Allow customers to withdraw (and refresh)
-               digital coins from their reserve.</li>
-            <li lang="de">Erm&ouml;gliche es Kunden digitale M&uuml;nzen von ihrer W&auml;rungsreserve
-               abzuheben bzw. bestehende M&uuml;nzen aufzufrischen.</li>
-            <li lang="fr">Permetre aux utilisateurs de <b>retirer</b> (et rafraichir) des
-               pièces numériques de leur réserve.</li>
-            <li lang="it">Permettere ai clienti di ritirare e cambiare gettoni posseduti
-	    con gettoni nuovi (attraverso una operazione chiamata <b>refresh</b>)
-	    i gettoni digitali dalla loro riserva.</li>
-            <li lang="es">Permitir a los clientes retirar (y obtener nuevas) monedas electrónicas de sus reservas.</li>
+            <li>{{ _("Allow customers to withdraw (and refresh)
+               digital coins from their reserve.") }}</li>
 
-            <li lang="en">Accept and validate deposits from merchants.</li>
-            <li lang="de">Annahme und Validierung von Einzahlungen durch H&auml;ndler.</li>
-            <li lang="fr">Accepter et valider les dépos de marchands.</li>
-            <li lang="it">Accettare e validare depositi di gettoni elettronici
-	    da parte dei venditori.</li>
-            <li lang="es">Aceptar y validar depósitos de los comerciantes.</li>
+            <li>{{ _("Accept and validate deposits from merchants.") }}</li>
 
-            <li lang="en">Execute wire transfers to merchants in
-               response to validated deposits.</li>
-            <li lang="de">Durchf&uuml;hrung von Bank&uuml;berweisungen an H&auml;ndler auf Basis der validierten Einzahlungen</li>
-            <li lang="fr">Exection des transfères banquaires
-              vers les marchands en réponse aux dépos validés.</li>
-            <li lang="it">Eseguire bonifici verso i conti dei venditori in seguito
-	    a depositi (di gettoni elettronici) andati a buon fine</li>
-            <li lang="es">Realizar transferencias a los comerciantes en respuesta a sus depósitos validados.</li>
+            <li>{{ _("Execute wire transfers to merchants in
+               response to validated deposits.") }}</li>
 
-            <li lang="en">Preserve and provide cryptographic proofs of
-               correct operation for audits by financial regulators.</li>
-            <li lang="de">Konservierung und Bereitstellung kryptographischer Beweise
-              zum korrekten Verhalten der Wechselstube zwecks
-              &Uuml;berpr&uuml;fung durch die Finanzaufsicht.</li>
-            <li lang="fr">Préserver et fournir les preuves cryptographiques
-              des opérations requises pour les audits pes les authorités financières.</li>
-            <li lang="it">Preservare e fornire prove crittografiche delle
-	    varie operazioni al fine di permettere controlli da parte di organi
-	    finanziari</li>
-            <li lang="es">Preservar y proveer pruebas criptográficas de su correcta operación para
-            ser auditados por reguladores financieros.</li>
+            <li>{{ _("Preserve and provide cryptographic proofs of
+               correct operation for audits by financial regulators.") }}</li>
           </ul>
-        </p>
+        <p></p>
       </div>
       <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->

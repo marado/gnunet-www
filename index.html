@@ -1,213 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="{{ _('en') }} "><head>
     <meta charset="utf-8">
-    <title lang="en">GNU Taler</title>
-    <title lang="fr">GNU Taler</title>
-    <title lang="de">GNU Taler</title>
-    <title lang="it">GNU Taler</title>
-    <title lang="es">GNU Taler</title>
+    <title>{{ _("GNU Taler") }}</title>
     <meta name="description" content="Anonymous electronic payments for civil society">
       <!--# include file="common/header.inc" -->
   </head>
-  <body class="en" onLoad="loadLang();">
+  <body class="en" onload="loadLang();">
     <div class="container">
       <!--# include file="common/navigation.inc" -->
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <img align="middle" alt="Taler logo" width="33%" src="/images/logo-2015-medium.png" style="margin: 0px 0px -120px 0px;"></img>
+        <img align="middle" alt="Taler logo" width="33%" src="/images/logo-2015-medium.png" style="margin: 0px 0px -120px 0px;">
       </div>
       <div class="jumbotron">
-         <h1 lang="en">Electronic payments for a liberal society!</h1>
-         <h1 lang="de">Elektronisches Bezahlen f&uuml;r eine freiheitliche Gesellschaft!</h1>
-         <h1 lang="fr">Paiements électroniques pour une société libre!</h1>
-         <h1 lang="it">Pagamenti elettronici per una società libera!</h1>
-         <h1 lang="es">¡Pagos electrónicos para una sociedad libre!</h1>
-	 <p lang="en">Taler is a new electronic payment system under development
-	    at <a href="http://www.inria.fr/">Inria</a>.  Today, this website only
+         <h1>{{ _("Electronic payments for a liberal society!") }}</h1>
+	 <p>{{ _("Taler is a new electronic payment system under development
+	    at <a href='http://www.inria.fr/'>Inria</a>.  Today, this website only
 	    presents the advantages our system is expected to provide.  We expect to
-	    make the payment system operational in 2017.</p>
-	 <p lang="de">Taler ist ein neues elektronisches Zahlungssystem, welches
-	    bei <a href="http://www.inria.fr/">Inria</a> entwickelt wird. Zum
-	    heutigen Tag zeigt diese Seite die Vorteile unseres Systems auf.
-            Voraussichtlicher Startpunkt des
-	    Zahlungssystems ist das Jahr
-	    2017.</p>
-	 <p lang="fr">Taler est nouveau système de paiement électronique en
-	    développement à <a href="http://www.inria.fr/">Inria</a>. Ce site web
-	    présente aujourd'hui seulement les avantages que notre système doit
-	    fournir. Nous estimons pouvoir rendre le système de
-	    paiement operationel en 2017.</p>
-	 <p lang="it">Taler è un nuovo sistema di pagamento elettronico in fase di
-	    sviluppo presso Inria. Oggi questo sito presenta solo i vantaggi che
-	    ci si aspetta il nostro sistema fornisca. Riteniamo di poter rendere il
-	    sistema di pagamento operational nel 2017.</p>
-	 <p lang="es">Taler es un nuevo sistema de pagos electrónicos en desarrollo
-	    en <a href="http://www.inria.fr/">Inria</a>.  Hoy, este sitio web sólo
-	    presenta las ventajas que nuestro sistema espera ofrecer.  Estimamos tener operational
-	    el sistema en 2017.</p>
+	    make the payment system operational in 2017.") }}</p>
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <h2 lang="en">Taxable</h2>
-          <h2 lang="de">Taxierbar</h2>
-          <h2 lang="fr">Taxable</h2>
-          <h2 lang="it">Tassabile</h2>
-          <h2 lang="es">Imponible</h2>
-	  <p lang="en">Unlike BitCoin or cash payments, Taler ensures that
+          <h2>{{ _("Taxable") }}</h2>
+	  <p>{{ _("Unlike BitCoin or cash payments, Taler ensures that
 	     governments can learn their citizen's total income and thus collect
 	     sales, value-added or income taxes. Taler is thus a currency for the
-	     mainstream economy, and not the black market.</p>
-	  <p lang="de">Anders als bei BitCoin oder Barzahlungen kann im
-	     Taler-System die Einkommen von B&uuml;rgern leicht nachvollzogen werden
-	     und aufgrund dieser Basis dann Umsatz-, Mehrwert- und Einkommensteuern
-	     erhoben werden. Taler richtet sich daher an die regul&auml;re
-	     Wirtschaft und ist zur Verwendung auf dem Schwarzmarkt ungeeignet.</p>
-	  <p lang="fr">Contrairement à BitCoin ou les paiements en liquide,
-	     Taler permet aux gouvernements de tracer facilement les revenus de
-	     leurs citoyens et donc de collecter les ventes, les plus values ou les
-	     impots sur le revenu. Taler est donc une devise pour l'économie
-	     dominante officielle et non pour le marché noir.</p>
-	  <p lang="it">A differenza di BitCoin o del pagamento in contanti, Taler
-	     assicura che i govrni possano facilmente tracciare il reddito dei loro
-	     cittadini e di conseguenza riscuotere vendite, IVA o tasse. Taler è quindi
-	     una valuta per un'economia tradizionale, e non per il mercato nero.</p>
-	  <p lang="es">A diferencia de BitCoin o los pagos en efectivo, Taler garantiza que
-	     los gobiernos puedan revisar los ingresos de sus ciudadanos y así recaudar
-	     impuestos a las ventas, al valor agregado o a los ingresos brutos. Taler es
-	     por lo tanto una moneda para la economía oficial y no para el mercado negro.</p>
+	     mainstream economy, and not the black market.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Anonymous</h2>
-          <h2 lang="de">Anonym</h2>
-          <h2 lang="fr">Anonyme</h2>
-          <h2 lang="it">Anonimo</h2>
-          <h2 lang="es">Anónimo</h2>
-	  <p lang="en">When you pay with Taler, your identity does not have to
+          <h2>{{ _("Anonymous") }}</h2>
+	  <p>{{ _("When you pay with Taler, your identity does not have to
 	     be revealed to the merchant. The bank, government and exchange will also
 	     never learn how you spent your electronic money. However, you can
-	     prove that you paid in court if necessary.</p>
-	  <p lang="de">Ein Zahlungsvorgang mit Taler hat nicht das Offenlegen
-	     der Identit&auml;t des K&auml;ufers gegen&uuml;ber dem H&auml;ndler zur
-	     Folge. Das bedeutet insbesondere, dass Banken, Regierungen und
-	     Wechelstuben den konkreten Verwendungszweck einer
-	     Transaktion nicht in Erfahrung bringen k&ouml;nnen. Trotzdem sind Zahlende in
-	     der Lage, die von ihnen durchgef&uuml;hrten Transaktionen im Falle
-	     eines Gerichtsprozesses kryptographisch nachzuweisen.</p>
-	  <p lang="fr">Quand vous payez avec Taler, votre identité ne doit pas
-	     être révélée au commerçant. La banque, le gouvernement et le bureau
-             de change ne sauront pas non plus comment vous avez dépensé votre
-	     monnaie électronique. Cependant, vous pouvez prouver que vous avez
-	     payé par voie légale si nécessaire.</p>
-	  <p lang="it">Quando paghi usando Taler, la tua identità non deve essere
-	     rivelata al venditore. Anche la banca, il governo e la ufficio cambi non sapranno
-	     come spendi i tuoi soldi elettronici. Comunque, se necessario, è possibile
-	     dimostrante durante un processo di aver pagato.</p>
-	  <p lang="es">Al pagar con Taler, no es necesario revelar tu identidad
-	     al comerciante. El banco, el gobierno o la casa de cambio nunca sabrán en
-	     qué gastas tu dinero electrónico. Sin embargo puedes probar que pagaste,
-	     ante la Justicia, si fuera necesario.</p>
+	     prove that you paid in court if necessary.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Libre</h2>
-          <h2 lang="de">Liberal</h2>
-          <h2 lang="fr">Libre</h2>
-          <h2 lang="it">Libre</h2>
-          <h2 lang="es">Libre</h2>
-	  <p lang="en">Taler is free software from <a href="http://www.gnu.org/">GNU</a> implementing an open protocol.
+          <h2>{{ _("Libre") }}</h2>
+	  <p>{{ _("Taler is free software from <a href='http://www.gnu.org/'>GNU</a> implementing an open protocol.
 	     Anybody is welcome to inspect our code and integrate our reference
-	     implementation into their applications.</p>
-	  <p lang="de">Taler ist freie Software des <a href="http://www.gnu.org/">GNU Projektes</a>, welche ein offenes Protokoll
-	     implementiert. Der Code ist frei verf&uuml;gbar und jeder ist
-	     eingeladen, die Referenzimplementierung in eigene Projekte zu
-	     &uuml;bernehmen.</p>
-	  <p lang="fr">Taler est un logiciel libre du <a href="http://www.gnu.org/">GNU</a> exécutant un protocole
-	     ouvert. Vous pouvez tous inspecter notre code et intégrer notre mise
-	     en oeuvre de référence dans vos applications.</p>
-	  <p lang="it">Taler è un free software che utilizza un protocollo aperto. Chiunque
-	     è benaccetto per esaminare il nostro codice e integrare le nostre implementazioni
-	     di riferimento nelle loro applicazioni.</p>
-	  <p lang="es">Taler es software libre de <a href="http://www.gnu.org/">GNU</a> que implementa un protocolo abierto.
-	     Quien quiera es bienvenido a inspeccionar nuestro código fuente e integrar nuestra implementación de referencia
-	     en sus aplicaciones.</p>
+	     implementation into their applications.") }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <h2 lang="en">Electronic</h2>
-          <h2 lang="de">Elektronisch</h2>
-          <h2 lang="fr">Électronique</h2>
-          <h2 lang="it">Elettronico</h2>
-          <h2 lang="es">Electrónico</h2>
-	  <p lang="en">Taler is designed to work on the Internet. Using a
+          <h2>{{ _("Electronic") }}</h2>
+	  <p>{{ _("Taler is designed to work on the Internet. Using a
 	    so-called RESTful protocol over HTTP or HTTPS, Taler is easy to
-	    integrate with existing Web applications.</p>
-	  <p lang="de">Taler wurde zur Verwendung im Internet konzipiert. Durch
-	    Einsatz eines REST-basierten Protokolls &uuml;ber HTTP oder HTTPS ist
-	    Taler einfach in existierende Webapplikationen einzubinden.</p>
-	  <p lang="fr">Taler est conçu pour fonctionner sur Internet. En
-	    utilisant le protocole RESTful sur HTTP ou HTTPS, Taler est facile à
-	    intégrer avec des application Web existantes..</p>
-	  <p lang="it">Taler è progettato per funzionare su Internet. Usando un cosiddetto
-	    protocollo RESTful su HTTP o HTTPS, Taler è facile da integrare con applicazioni
-	    web già esistenti.</p>
-	  <p lang="es">Taler se diseñó para funcionar sobre Internet. Usando un protocolo RESTful
-	    sobre HTTP o HTTPS, Taler es fácil de integrar con las aplicaciones web existentes.</p>
+	    integrate with existing Web applications.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Reserves</h2>
-          <h2 lang="de">Reserven</h2>
-          <h2 lang="fr">Réserve</h2>
-          <h2 lang="it">Riserva</h2>
-          <h2 lang="es">Reservas</h2>
-	  <p lang="en">Taler uses an electronic exchange holding financial
+          <h2>{{ _("Reserves") }}</h2>
+	  <p>{{ _("Taler uses an electronic exchange holding financial
              reserves in existing currencies. This means that Taler is not
 	     a new currency with the inherent currency fluctuation risks, but
 	     instead the cryptographic coins correspond to existing currencies, such as
-	     US Dollars, Euros or even BitCoins.</p>
-	  <p lang="de">Bei Taler kommt eine elektronische Wechselstube zum
-	     Einsatz, welche die finanziellen Reserven in bestehenden
-	     W&auml;hrungen h&auml;lt. Dies bedeutet, dass Taler selbst keine neue
-	     W&auml;hrung darstellt: Elektronische M&uuml;nzen in Taler sind nur
-	     die kryptographische Repr&auml;sentation bestehender
-	     W&auml;hrungen, wie zum Beispiel Euro, US-Dollar oder auch BitCoin.
-          </p>
-	  <p lang="fr">Taler fonctionne comme une trésorerie. Cela signifie que
-	     Taler n'est pas une nouvelle devise avec les risques inhérents aux
-	     fluctuations monétaires, mais la monnaie digitale équivaut plutot aux
-	     monnaies existantes, comme le dollar Américain, l'Euro ou même le
-	     BitCoin.</p>
-	  <p lang="it">
-	     E' importante notare che Taler non è una nuova valuta, allontanandosi dunque da tutti i
-	     rischi di fluttuazione che questo comporterebbe. La sua ufficio cambi funziona come una riserva,
-	     ossia un tramite che fa corrispondere gettoni criptati a vere valute come Euro, Dollaro
-	     Americano o anche Bitcoin.</p>
-	  <p lang="es">Taler incluye una casa de cambio electrónica conteniendo las reservas financieras en
-             monedas existentes. Es decir que Taler no es una nueva moneda con los riesgos inherentes
-	     de fluctuación, sino que las monedas criptográficas se corresponden con otras monedas
-	     existentes hoy en día, como dólares, euros o incluso bitcoins.</p>
+	     US Dollars, Euros or even BitCoins.") }}</p>
         </div>
         <div class="col-lg-4">
           <h2>News</h2>
-	  <p lang="en">Taler Web payments paper published.</p>
-	  <p lang="de">Taler Web Bezahldienste Publikation erschienen.</p>
-	  <p lang="fr" note="outdated">Taler 0.0.0.</p>
-	  <p lang="it" note="outdated">Taler 0.0.0.</p>
-	  <p lang="es" note="outdated">Taler 0.0.0.</p>
-          <p><a lang="en" class="btn btn-primary" href="/news" role="button" lang="en">More news &raquo;</a></p>
-          <p><a lang="de" class="btn btn-primary" href="/news" role="button" lang="de">Mehr Neuigkeiten&raquo;</a></p>
-          <p><a lang="fr" class="btn btn-primary" href="/news" role="button" lang="fr">En savoir plus &raquo;</a></p>
-          <p><a lang="it" class="btn btn-primary" href="/news" role="button" lang="it">Scopri di più &raquo;</a></p>
-          <p><a lang="es" class="btn btn-primary" href="/news" role="button" lang="es">Ver más &raquo;</a></p>
+	  <p>{{ _("Taler Web payments paper published.") }}</p>
+          <p><a class="btn btn-primary" href="/news" role="button">{{ _("More news »") }}</a></p>
         </div>
       </div>
        <div class="col-lg-12">
-         <h2 lang="en" id="taxability">Taler technology: About taxability, change and privacy</h1>
-         <h2 lang="de">Die Technologie hinter Technik: Steuern, Wechselgeld und Privatsph&auml;re</h1>
-         <h2 lang="fr">La technologie de Taler: Taxabilité, rendu de monnaie et vie privée</h2>
-         <h2 lang="it">La tecnologia Taler: tassabilità, cambio e privacy</h2>
-         <h2 lang="es">La tecnología Taler: soporte impositivo, dar cambio y privacidad</h2>
-         <p lang="en">One of the key goals of Taler is to provide anonymity for
+         <h2 id="taxability">{{ _("Taler technology: About taxability, change and privacy") }}</h2>
+         <p>{{ _("One of the key goals of Taler is to provide anonymity for
            citizens buying goods and services, while ensuring that the state can
            observe incoming transactions to ensure businesses engage only in
            legal activities and do not evade taxes (such as income tax,
@@ -215,69 +71,11 @@
            out of the immediate personal domain, so sharing funds within a
            family or copying coins between devices should not be subject to
            monitoring by the state.
-         </p>
-         <p lang="de">Eins der Schl&uuml;sselziele Talers ist
-	   es, die Anonymit&auml;t der B&uuml;rger beim T&auml;tigen von
-	   Eink&auml;ufen innerhalb des Systems zu sch&uuml;tzen. Gleichzeitig
-	   sieht Taler aber auch vor, dass der Staat Einsicht in eingehende
-	   Transaktionen nehmen kann und so die Legalit&auml;t der
-	   Gesch&auml;fte, sowie die ordnungsgem&auml;&szlig;e Besteuerung
-	   (beispielsweise Einkommen-, Umsatz-, Mehrwertsteuer) sichergestellt
-	   werden k&ouml;nnen. Nichtsdestotrotz nimmt Taler keinen Einfluss auf
-	   das n&auml;here pers&ouml;nliche Umfeld: So sind wir beispielsweise
-	   davon &uuml;berzeugt, dass der Staat in Transaktionen wie das
-	   Transferieren von Geld innerhalb einer Familie oder etwa das Kopieren
-	   von M&uuml;nzen zwischen den Ger&auml;ten einer einzelnen Person
-	   explizit keine Einsicht nehmen darf.
-	 </p>
-         <p lang="fr">Un des buts principaux de Taler est de
-           fournir de l'anonymité pour les citoyens achetans des biens et des
-           services, tout en s'assurant que l'état peut observer les transactions
-           entrantes pour s'assurer que les activitées des entreprises soient
-           légales et qu'elle payent leur taxes. Néanmoins, nous voulons
-           aussi rester à l'écart du domaine personel. L'échange de fonds
-           dans le domaine familial et la copie de pièces entre plusieurs
-           dispositif ne devrais pas être assijeti à une surveillance étatique.
-         </p>
-         <p lang="it">Uno dei principali obbiettivi di Taler è quello
-  	   di fornire anonimato ai cittadini nel momento in cui questi effettuano acquisti
-	   di beni e servizi. Allo stesso tempo, si vuole dare allo Stato uno strumento che sia
-	   in grado di prevenire evasione fiscale (salvaguardando, ad esempio, IVA e imposta sul
-	   reddito) e attività illegali. Ad ogni modo, Taler non vuole intervenire nelle relazioni
-	   interpersonali, cosicché la condivisione di fondi tra membri di una famiglia o la
-	   copia di gettoni tra più dispositivi non sarà soggetta a monitoraggio statale.
-	 </p>
-         <p lang="es">Uno de los principales objectivos de Taler es proveer anonimato
-           a los ciudadanos que compren bienes y servicio, mientras se garantiza que el
-           Estado observa las transacciones de ingreso para asegurar que se refieren a
-           actividades lícitas y no evaden impuestos (como impuesto a los ingresos brutos,
-           a las ventas o al valor agregado).  Sin embargo también queremos extender el
-           dominio personal inmediato, de modo que se puedan compartir fondos dentro
-           de una familia o copiar monedas entre dispositivos sin que sea necesaria
-           una revisión estatal.
-         </p>
-
-         <p lang="en">As a result, Taler does not intrude into the
+         ") }}</p>
+         <p>{{ _("As a result, Taler does not intrude into the
            personal economic domain, offers good privacy, taxability
            for transactions and the ability to give change.
-         </p>
-         <p lang="de">Die oben dargelegten Eigenschaften haben
-	   daher zur Folge, dass Taler sich nicht in pers&ouml;nliche Bereiche
-	   einmischt, gleichzeitig aber die Privatsph&auml;re der Nutzer
-	   sch&uuml;tzt und trotzdem die M&ouml;glichkeit der Besteuerung von
-	   Transaktionen sowie die des Generierens von Wechselgeld
-	   erm&ouml;glicht.
-	 </p>
-         <p lang="fr">En conséquence, Taler n'envahit pas les
-         finances personelles, protège la vie privée, offre une taxabilité
-         des transactions et la possibilité de rendre la monnaie.</p>
-         <p lang="it">Ne deriva che Taler non entra nella gestione economica personale,
-	 offre privacy affidabile, tassabilità per le transazioni e la possibilità di dare
-	 il cambio</p>
-         <p lang="es">Por lo tanto, Taler no se inmiscuye en el dominio económico
-           personal, ofrece buena privacidad, la posibilidad de recaudación impositiva
-           para transacciones y la capacidad de dar cambio.
-         </p>
+         ") }}</p>
        </div>
        <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->

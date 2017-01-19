@@ -1,200 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="{{ _('en') }}"><head>
     <meta charset="utf-8">
-    <title>Taler - About us</title>
+    <title>{{ _("GNU Taler") }} - {{ _("About us") }}</title>
     <meta name="description" content="">
       <!--# include file="common/header.inc" -->
   </head>
-  <body class="en" onLoad="loadLang();">
+  <body class="en" onload="loadLang();">
     <div class="container">
       <!--# include file="common/navigation.inc" -->
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1 lang="en">About us</h1>
-        <h1 lang="de">&Uuml;ber uns</h1>
-        <h1 lang="fr">À&nbsp;propos</h1>
-        <h1 lang="it">Chi siamo</h1>
-        <h1 lang="es">Quiénes somos</h1>
+        <h1>{{ _("About us") }}</h1>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-4">
           <h2><a href="http://grothoff.org/christian/">Dr. Christian Grothoff</a></h2>
-          <img src="team-images/christian-grothoff.jpg" height=240 alt="Christian Grothoff" align="middle">
-          <p lang="en">GNU maintainer. Network security &amp; privacy researcher. Software architect.</p>
-          <p lang="de">GNU maintainer. Forscht zu Netzwerksicherheit &amp; Privatsph&auml;re. Softwarearchitect.</p>
-          <p lang="fr" note="outdated">Mégalomane local, C'est à dire, qui voudrait créer un nouveau système de paiement et un nouvel Internet ?</p>
-          <p lang="it" note="outdated">Megalomane locale. Intendo, chi creerebbe un nuovo sistema di pagamento e una nuova Internet?</p>
-          <p lang="es" note="outdated">Megalómano local. Es decir, ¿quién querría crear un nuevo sistema de pagos y un nuevo Internet?</p>
+          <img src="team-images/christian-grothoff.jpg" height="240" alt="Christian Grothoff" align="middle">
+          <p>{{ _("GNU maintainer. Network security &amp; privacy researcher. Software architect.") }}</p>
         </div>
         <div class="col-lg-4">
           <h2><a href="http://www.digitalekho.com/about-us/index.html">Leon Schumacher</a></h2>
-          <img src="team-images/leon-schumacher.jpg" height=240 alt="Leon Schumacher" align="middle">
-          <p lang="en">Entrepreneur, Investor, Fortune 100 CIO, IT company director in different industries, ….</p>
-          <p lang="de" note="outdated"></p>
-          <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
-          <p lang="es" note="outdated"></p>
+          <img src="team-images/leon-schumacher.jpg" height="240" alt="Leon Schumacher" align="middle">
+          <p>{{ _("Entrepreneur, Investor, Fortune 100 CIO, IT company director in different industries, ….") }}</p>
         </div>
         <div class="col-lg-4">
           <h2>Robert Goldmann</h2>
-          <img src="team-images/robert-goldmann.jpg" height=240 alt="Robert Goldmann" align="middle">
-          <p lang="en">CFO</p>
-          <p lang="de" note="outdated">CFO</p>
-          <p lang="fr" note="outdated">CFO</p>
-          <p lang="it" note="outdated">CFO</p>
-          <p lang="es" note="outdated">CFO</p>
+          <img src="team-images/robert-goldmann.jpg" height="240" alt="Robert Goldmann" align="middle">
+          <p>{{ _("CFO") }}</p>
         </div>
       </div>
       <div class="row">
 	<div class="col-lg-4">
           <h2>Dr. Jeffrey Burdges</h2>
-          <img src="team-images/jeff-burdges.jpg" height=240 alt="Jeffrey Burdges" align="middle">
-
-          <p lang="en">Applied cryptography. Contact to W3c &amp; Tor.</p>
-          <p lang="it" note="outdated">Matematico</p> <!- -->
-          <p lang="de" note="outdated">Mathematiker</p> <!- und Software Entwickler -->
-          <p lang="fr" note="outdated">mathématicien</p> <!- et développeur de logiciels -->
-          <p lang="es" note="outdated">Matemático</p> <!- y desarrollador de software -->
+          <img src="team-images/jeff-burdges.jpg" height="240" alt="Jeffrey Burdges" align="middle">
+          <p>{{ _("Applied cryptography. Contact to W3c &amp; Tor.") }}</p>
         </div>
         <div class="col-lg-4">
           <h2><a href="http://www.onete.net/">Dr. Cristina Onete</a></h2>
-          <img src="team-images/cristina-onete.jpg" height=240 alt="Cristina Onete" align="middle">
-
-          <p lang="en">Theoretical foundations.</p>
-          <p lang="de" note="outdated">Theoretisch t&ouml;tlich</p>
-          <p lang="fr" note="outdated">Fatale (en théorie)</p>
-          <p lang="it" note="outdated">Teoricamente mortale</p>
-          <p lang="es" note="outdated">Teóricamente mortal</p>
+          <img src="team-images/cristina-onete.jpg" height="240" alt="Cristina Onete" align="middle">
+          <p>{{ _("Theoretical foundations.") }}</p>
         </div>
         <div class="col-lg-4">
           <h2><a href="https://www.stallman.org/">Dr. Richard M. Stallman</a></h2>
-          <img src="team-images/richard-stallman.jpg" height=240 alt="Richard Stallman" align="middle">
-          <p lang="en">Founder of the GNU project. Ethical guidance and licensing.</p>
-          <p lang="de">Begr&uuml;nder des GNU Projektes. Ethikberatung und Lizenzrecht.</p>
-          <p lang="fr" note="outdated">Enthousiaste Ethique</p>
-          <p lang="it" note="outdated">Entusiasta di etica</p>
-          <p lang="es" note="outdated">Entusiasta de la ética</p>
+          <img src="team-images/richard-stallman.jpg" height="240" alt="Richard Stallman" align="middle">
+          <p>{{ _("Founder of the GNU project. Ethical guidance and licensing.") }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4">
           <h2><a href="http://sreeharsha.totakura.in/">Sree Harsha Totakura</a></h2>
-          <img src="team-images/sree-harsha-totakura.jpg" height=240 alt="Sree Harsha Totakura" align="middle">
-          <p lang="en">PhD Student, TU Munich. Currently teaching.</p>
-          <p lang="de">Doktorand, TU M&uuml;nchen. H&auml;lt Vorlesung.</p>
-          <p lang="fr" note="outdated">Principalement inoffensif</p>
-          <p lang="it" note="outdated">Principalmente inoffensivo</p>
-          <p lang="es" note="outdated">Mayormente inofensivo</p>
+          <img src="team-images/sree-harsha-totakura.jpg" height="240" alt="Sree Harsha Totakura" align="middle">
+          <p>{{ _("PhD Student, TU Munich. Currently teaching.") }}</p>
         </div>
         <div class="col-lg-4">
           <h2><a href="https://fdold.eu">Florian Dold</a></h2>
- 	  <img src="team-images/florian-dold.jpg" height=240 alt="Florian Dold" align="middle">
-          <p lang="en">PhD Student, Inria..</p>
-          <p lang="de">Doktorand, Inria.</p>
-          <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
-          <p lang="es" note="outdated"></p>
+ 	  <img src="team-images/florian-dold.jpg" height="240" alt="Florian Dold" align="middle">
+          <p>{{ _("PhD Student, Inria..") }}</p>
         </div>
 	<div class="col-lg-4">
           <h2>Marcello Stanisci</h2>
-          <img src="team-images/marcello-stanisci.jpg" height=240 alt="Marcello Stanisci" align="middle">
-          <p lang="en">Software engineer.</p>
-          <p lang="it" note="outdated"></p>
-          <p lang="de" note="outdated"></p>
-          <p lang="fr" note="outdated"></p>
-          <p lang="es" note="outdated"></p>
+          <img src="team-images/marcello-stanisci.jpg" height="240" alt="Marcello Stanisci" align="middle">
+          <p>{{ _("Software engineer.") }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4">
           <h2>Dr. Nana Karlstetter</h2>
-          <img src="team-images/nana-karlstetter.jpg" height=240 alt="Nana Karlstetter" align="middle">
-          <p lang="en">Sustainable business development.</p>
-          <p lang="de" note="outdated">Des Grundes wegen</p>
-          <p lang="fr" note="outdated">Basse fréquence</p>
-          <p lang="it" note="outdated">Realizzando pensieri profondi</p>
-          <p lang="es" note="outdated">Concretando pensamiento profundo</p>
+          <img src="team-images/nana-karlstetter.jpg" height="240" alt="Nana Karlstetter" align="middle">
+          <p>{{ _("Sustainable business development.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2>Benedikt M&uuml;ller</h2>
-          <p lang="en">Software engineer. Works on libebics.</p>
-          <p lang="de" note="outdated">EBICS.</p>
-          <p lang="fr" note="outdated">EBICS.</p>
-          <p lang="it" note="outdated">EBICS.</p>
-          <p lang="es" note="outdated">EBICS.</p>
+          <h2>Benedikt Müller</h2>
+          <p>{{ _("Software engineer. Works on libebics.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2>Gabor Toth</a></h2>
-          <p lang="en">Software engineer.</p>
-          <p lang="de" note="outdated"></p>
-          <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
-          <p lang="es" note="outdated"></p>
+          <h2>Gabor Toth</h2>
+          <p>{{ _("Software engineer.") }}</p>
         </div>
       </div>
       <div class="row">
 	<div class="col-lg-4">
           <h2><a href="https://ar.linkedin.com/in/martinolivera">Martín Olivera</a></h2>
-          <p lang="en">Translator (Spanish)</p>
-          <p lang="it" note="outdated">Traduttrici</p>
-          <p lang="de" note="outdated">&Uuml;bersetzer</p>
-          <p lang="fr" note="outdated">Traductrice</p>
-          <p lang="es" note="outdated">Traductoras</p>
+          <p>{{ _("Translator (Spanish)") }}</p>
         </div>
         <div class="col-lg-4">
           <h2>Greta Breveglieri</h2>
-          <p lang="en">Translator (Italian)</p>
-          <p lang="it" note="outdated">Traduttrici</p>
-          <p lang="de" note="outdated">&Uuml;bersetzer</p>
-          <p lang="fr" note="outdated">Traductrice</p>
-          <p lang="es" note="outdated">Traductoras</p>
+          <p>{{ _("Translator (Italian)") }}</p>
         </div>
         <div class="col-lg-4">
           <h2>Ylenia Baldanza</h2>
-          <p lang="en">Translator (Italian)</p>
-          <p lang="it" note="outdated">Traduttrici</p>
-          <p lang="de" note="outdated">&Uuml;bersetzer</p>
-          <p lang="fr" note="outdated">Traductrice</p>
-          <p lang="es" note="outdated">Traductoras</p>
+          <p>{{ _("Translator (Italian)") }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4">
           <h2><a href="https://www.nitrokey.com/">Jan Suhr</a></h2>
-          <p lang="en">Hardware security module</p>
-          <p lang="de">Hardwaresicherheitsmodul</p>
-          <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
-          <p lang="es" note="outdated"></p>
+          <p>{{ _("Hardware security module") }}</p>
         </div>
         <div class="col-lg-4">
           <h2><a href="http://www.goebel-consult.de/">Hartmut Goebel</a></h2>
-          <p lang="en">Risk management</p>
-          <p lang="de">Risikomanagement</p>
-          <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
-          <p lang="es" note="outdated"></p>
+          <p>{{ _("Risk management") }}</p>
         </div>
         <div class="col-lg-4">
           <h2><a href="https://www.sec.in.tum.de/julian-kirsch/">Julian Kirsch</a></h2>
-          <p lang="en">PhD student, TU Munich. Currently teaching.</p>
-          <p lang="de">Doktorand, TU M&uuml;nchen. Currently teaching.</p>
-          <p lang="fr" note="outdated">Linux, FreeBSD, sites Web et en état profond de détente.</p>
-          <p lang="it" note="outdated">Linux, FreeBSD, siti web e il deep state nel tempo libero.</p>
-          <p lang="es" note="outdated">Linux, FreeBSD, sitios web y el gobierno en las sombras, en su tiempo libre.</p>
+          <p>{{ _("PhD student, TU Munich. Currently teaching.") }}</p>
         </div>
       </div>
       <div class="row">
 	<div class="col-lg-4">
-          <h2>Oliver Broome</a></h2>
-          <p lang="en">Software engineer. Works on Android wallet.</p>
-          <p lang="de" note="outdated">Android Geldb&ouml;rse</p>
-          <p lang="fr" note="outdated"></p>
-          <p lang="it" note="outdated"></p>
-          <p lang="es" note="outdated"></p>
+          <h2>Oliver Broome</h2>
+          <p>{{ _("Software engineer. Works on Android wallet.") }}</p>
         </div>
       </div>
       <!--# include file="common/footer.inc" -->

@@ -1,143 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="{{ _('en') }}"><head>
     <meta charset="utf-8">
-    <title>GNU Taler - Taxable Anonymous Libre Electronic Reserves: Governments</title>
+    <title>{{ _("GNU Taler") }} - {{ _("Governments") }}</title>
     <meta name="description" content="">
       <!--# include file="common/header.inc" -->
   </head>
-  <body class="en" onLoad="loadLang();">
+  <body class="en" onload="loadLang();">
     <div class="container">
       <!--# include file="common/navigation.inc" -->
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1 lang="en">Advantages for governments</h1>
-        <h1 lang="de">Vorteile f&uuml;r Regierungen</h1>
-        <h1 lang="fr">Avantage pour les gouvernements</h1>
-        <h1 lang="it">Vantaggi per i governi</h1>
-        <h1 lang="es">Ventajas para los gobiernos</h1>
+        <h1>{{ _("Advantages for governments") }}</h1>
         <!-- p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p -->
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-6">
-          <h2 lang="en">Taxable</h2>
-          <h2 lang="de">Besteuerbar</h2>
-          <h2 lang="fr">Taxable</h2>
-          <h2 lang="it">Tassabile</h2>
-          <h2 lang="es">Imponible</h2>
-          <p lang="en">Taler is an electronic payment system that was built with the goal of supporting taxation.
+          <h2>{{ _("Taxable") }}</h2>
+
+          <p>{{ _("Taler is an electronic payment system that was built with the goal of supporting taxation.
              With Taler, the receiver of any form of payment is known, and the payment information comes
              attached with some details about what the payment was made for (but not the identity of the customer).  Thus, governments can use this
              data to tax buisnesses and individuals based on their income, making tax evasion and
-             black markets less viable.</p>
-	  <p lang="de">Taler ist ein elektronisches Zahlungssystem, welches die Besteuerung einzelner
-	     Transaktionen erm&ouml;glicht. Im System sind die Empf&auml;nger f&uuml;r jeden Zahlungsvorgang
-	     bekannt, genauso wie bestimmte Details &uuml;ber den Zweck der Transaktion (aber nicht die Identit&auml;t des Kunden). Dadurch
-	     erm&ouml;glicht Taler es Regierungen, sowohl Firmen als auch Privatpersonen auf Basis
-	     ihres Einkommens zu besteuern und erschwert gleichzeitig noch Steuervermeidungen sowie den
-	     Schwarzmarkthandel.</p>
-	  <p lang="fr">Taler est un système de paiement électronique qui a été créé dans le but d'aide à la taxation. Avec Taler, le créditeur de toute forme de paiement est connu, et les informations du paiement arrivent avec les détails concernant le motif du paiement. Donc, les gouvernements peuvent utiliser cette donnée pour taxer les entreprises et les particuliers en se basant sur leurs revenus, permettant ainsi de diminuer l'évasion fiscale et le marché noir.</p>
-	  <p lang="it">Taler è un sistema di pagamento elettronico ideato con lo scopo di supportare la tassazione.
-	     Con Taler, il ricevitore di qualsiasi forma di pagamento è conosciuto, e le informazioni del pagamento
-	     arrivano con l'aggiunta di dettagli riguardo al perché sia stato effettuato. Quindi i governi possono usare
-	     questi dati per tazzare aziende e individui in base al loro reddito, così da rendere evasione fiscale
-	     e mercato nero meno usufruibili.</p>
-    <p lang="es">Taler es un sistema de pago electrónico construido con el objetivo de dar soporte impositivo.
-       Con Taler, el receptor de cualquier forma de pago es conocido, y la información del pago viene adjunta
-       con algunos detalles respecto a cómo fue hecho el pago (pero sin la identidad del cliente). De este modo,
-       los gobiernos pueden usar estos datos para cobrar impuestos a empresas e individuos en base a sus ingresos,
-       haciendo que la evasión impositiva y los mercados negros sean menos viables.</p>
+             black markets less viable.") }}</p>
         </div>
         <div class="col-lg-6">
-          <h2 lang="en">Secure</h2>
-	  <h2 lang="de">Sicher</h2>
-          <h2 lang="fr">Sûr</h2>
-          <h2 lang="it">Sicuro</h2>
-          <h2 lang="es">Seguro</h2>
-          <p lang="en">Taler's payments are cryptographically secured. Thus, customers, merchants and
+          <h2>{{ _("Secure") }}</h2>
+
+          <p>{{ _("Taler's payments are cryptographically secured. Thus, customers, merchants and
              the exchange can mathematically demonstrate their lawful behavior in court in case
              of disputes. Financial damages are strictly limited, improving economic security
              for individuals, merchants, the exchange and the state.  Most importantly, an
              independent auditor can ensure that there is no &quot;bad exchange&quot;
-             within the Taler system who might threaten the economy due to fraud.</p>
-	  <p lang="de">Talers Zahlvorg&auml;nge sind kryptographisch gesichert.
-	     Dieser Umstand erm&ouml;glicht es Kunden, H&auml;ndlern und der Wecheslstube,
-	     wenn n&ouml;tig ihre Gesetzm&auml;&szlig;igkeit in einem Gerichtsprozess mathematisch
-	     nachzuweisen. Finanzielle Sch&auml;den sind streng
-	     begrenzt, was der &ouml;konomischen Sicherheit von Privatpersonen,
-	     H&auml;ndlern und der Wechselstube entgegen kommt. Herauszuheben ist auch die
-	     Tatsache, dass ein unabh&auml;ngiger Rechnungspr&uuml;fer in der Lage
-	     ist, die Existenz einer veruntreuenden Bank innerhalb des Taler-Systems
-	     auszuschlie&szlig;en.</p>
-	  <p lang="fr">Les paiements Taler sont sécurisés cryptographiquement. Ainsi, les clients, les commerçants et les fabricants de monnaies peuvent mathématiquement prouver la légalité de leurs activités en cas de litiges. Les dommages financiers sont strictement limités, améliorant la sécurité économique pour les particuliers, les commerçants, la monnaie et l'état. Plus important, un auditeur indépendant peut s'assurer qu'il n'y a pas de &quot;fausse monnaie&quot; à l'intérieur du système Taler qui pourrait menacer l'économie en raison de fraude.</p>
-	  <p lang="it">I pagamenti fatti con Taler sono crittograficamente sicuri. In questo modo, clienti, venditori
-	     e il conio possono matematicamente dimostrare il loro comportamento legittimo in un processo, in
-	     caso di controversie. I danni finanziari sono molto limitati attraverso l'incremento di sicurezza
-	     economica per l'individuo, il venditore, il conio e lo stato. Ancora più importante è il fatto che un
-	     qualsiasi revisore di conti indipendente possa assicurare che non ci sia un "conio cattivo" all'interno
-	     del sistema di Taler che potrebbe minacciare l'economia attraverso frodi fiscali.</p>
-    <p lang="es">Los pagos Taler están asegurados criptográficamente. Así, los clientes, comerciantes y la casa
-       de cambio pueden demostrar matemáticamente su comportamiento legal en la Justicia en caso de disputas.
-       Los daños financieros están estrictamente limitados, mejorando la seguridad económica para individuos,
-       comerciantes, la casa de cambio y el Estado. Lo más importante, un auditor independiente puede asegurar
-       que no hay &quot;mala casa de cambio&quot; dentro del sistema Taler, que pueda amenazar la economía
-       debido al fraude.</p>
+             within the Taler system who might threaten the economy due to fraud.") }}</p>
        </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h2 lang="en">Libre</h2>
-          <h2 lang="de">Freie Software</h2>
-	  <h2 lang="fr">Libre</h2>
-	  <h2 lang="it">Libero</h2>
-	  <h2 lang="es">Libre</h2>
-          <p lang="en">Taler is free software implementing an open protocol standard.  Thus, Taler will
+          <h2>{{ _("Libre") }}</h2>
+
+          <p>{{ _("Taler is free software implementing an open protocol standard.  Thus, Taler will
              enable competition and avoid the monopolization of payment systems that threatens
-             global political and financial stability today.</p>
-	  <p lang="de">Taler ist freie Software, welche einen offenen
-	     Protokollstandard implementiert. Taler erm&ouml;glicht daher einen
-	     offenen Wettbewerb und vermeidet das Problem der Monopolisierung von
-	     Zahlungssystemen, welche heute in globalem Ausma&szlig; die politische
-	     sowie aber auch die finanzielle Stabilit&auml;t bedroht.</p>
-	  <p lang="fr">Taler est un logiciel libre exécutant un protocol standard ouvert. Ainsi, Taler permettra la concurrence et interdira le monopole de système de paiement qui menace la stabilité politique et financière globale actuellement.</p>
-	  <p lang="it">Taler è un free software che implementa standard di protocollo aperto. Quindi Taler
-	     abiliterà la competizione ed eviterà la monopolizzazione dei sistemi di pagamento che oggigiorno
-	     minacciano la politica globale e la stabilità finanziaria.</p>
-    <p lang="es">Taler es software libre implementando un protocolo abierto estándar. Así, Taler habilitará la
-       competencia y evitará la monopolización de los sistemas de pago que amenaza la estabilidad política y
-       financiera global hoy día.</p>
+             global political and financial stability today.") }}</p>
         </div>
         <div class="col-lg-6">
-          <h2 lang="en">Efficient</h2>
-          <h2 lang="de">Effizient</h2>
-	  <h2 lang="fr">Efficace</h2>
-	  <h2 lang="it">Efficiente</h2>
-	  <h2 lang="es">Eficiente</h2>
-          <p lang="en">Taler is designed to be efficient.  Unlike timeline-based payment systems like
+          <h2>{{ _("Efficient") }}</h2>
+
+          <p>{{ _("Taler is designed to be efficient.  Unlike timeline-based payment systems like
              BitCoin, Taler will not threaten the availability of national electric grids or
-             (significantly) contribute to environmental pollution.</p>
-	  <p lang="de">Taler wurde im Gedanken der Effizienz erschaffen. Anders
-	     als Zeitachsen-basierte Bezahlsysteme wie BitCoin bedroht Taler
-	     nicht die Verf&uuml;gbarkeit nationaler Energieversorgungsnetze und
-	     wird auch nicht (signifikant) zur Umweltverschmutzung beitragen.</p>
-	  <p lang="fr">Taler est conçu pour être efficace. Contrairement à des systèmes de paiement chronologiques comme BitCoin, Taler ne menacera pas la disponibilité des réseaux électriques nationaux ou (de manière siginifcative) ne participera pas à la pollution environnementale.</p>
-	  <p lang="it">Taler è progettato per essere efficiente. A differenza dei sistemi di pagamento come
-	     BitCoin, Taler non minaccerà la disponibilità della rete elettrica nazionale o contribuirà ad incrementare
-	     (in modo significativo) l'inquinamento.</p>
-    <p lang="es">Taler se diseñó para ser eficiente. A diferencia de los sistemas de pago basados en una línea
-       de tiempo como BitCoin, Taler no amenaza la disponibilidad de las redes eléctricas nacionales ni
-       contribuye (significativamente) a la contaminación ambiental.</p>
+             (significantly) contribute to environmental pollution.") }}</p>
         </div>
       </div>
       <div class="col-lg-12">
-        <h2 lang="en" id="overview">Taler as seen by governments</h1>
-        <h2 lang="de">Taler aus Regierungsperspektive</h1>
-        <h2 lang="fr">Taler, du point de vu des gouvernements</h2>
-        <h2 lang="it">Taler dal punto di vista dai governi</h2>
-        <h2 lang="es">Taler desde el punto de vista del gobierno</h2>
-        <p lang="en">Governments can observe traditional wire
+        <h2 id="overview">{{ _("Taler as seen by governments") }}</h2>
+
+        <p>{{ _("Governments can observe traditional wire
           transfers entering and leaving the Taler system, and
           require merchants and exchange operators to provide certain
           information during financial audits.  Exchange operators
@@ -145,116 +62,28 @@
           while merchants may be required to reveal information
           during regular tax audits.
           Information available to the government includes:
-        </p>
-        <p lang="de" note="outdated">Regierungen sehen die
-          Bank&uuml;berweisungen von und an die Wechselstube
-          und k&ouml;nnen von H&auml;ndlern und Wechselstubenbetreibern
-          weitere Informationen bei Betriebspr&uuml;fungen verlangen.
-          Wechselstubenbetreiber werden dauernd &uuml;berpr&uuml;ft,
-          wohingegen H&auml;ndler im Wesentlichen bei der Steuerpr&uuml;fung
-          weitere Informationen bereistellen.  Informationen die der
-          Regierung bereitgestellt werden k&ouml;nnen sind:</p>
-        <p lang="fr">Les gouvernements peuvent observer les transfères traditionels
-          entrant et sortant du system Taler, et requierent des marchantes et des
-          opérateurs du bureau de change qu'ils fournissent certaines informations
-          lors d'audits financiers. Les opérateur du bureau de change doivent être constamment
-          surveillé par les auditeurs, tandis que l'on peut demander
-          aux marchants de révéler des informations suplémentaires lors
-          des vérification fiscales.
-          Les informations disponibles aux gouvernements incluent :
-        </p>
-        <p lang="it">Organi quali gli Stati potranno osservare i trasferimenti
-	bancari in ingresso e in uscita dal sistema Taler, e richiedere ai venditori
-	e alla zecca le informazioni necessarie nelle ispezioni finanziarie.
-	Gli operatori della zecca dovranno aspettarsi ripetitivi controlli da
-	parte degli ispettori, mentre ai negozianti sarà richiesto di rivelare
-	le informazioni necessarie soltanto durante la riscossione delle tasse.
-	Le informazini disponibili ai governi includono:</p>
-        <p lang="es">Los gobiernos pueden observar las transferencias bancarias tradicionales
-          entrando y saliendo del sistema Taler, y requerir que los comerciantes y operadores
-          de casas de cambio presenten cierta información durante las auditorías financieras.
-          Los operadores de casa de cambio deberían ser continuamente auditados, mientras que
-          se puede requerir a los comerciantes que revelen información durante las auditorías
-          impositivas regulares.
-          La información disponible para el gobierno incluye:
-        </p>
+        ") }}</p>
         <p>
           <img src="images/government.svg" alt="government perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-          <ul>
-            <li lang="en">From the banking system:
+          </p><ul>
+            <li>{{ _("From the banking system:
               The total amount of digital currency
               obtained by a customer. The government could impose
               limits on how many digital coins a customer may
-              withdraw within a given timeframe.</li>
-             <li lang="de">Vom Bankensystem:
-              Der Gesamtbetrag an digitalen M&uuml;nzen den
-              ein Kunde abgehoben hat. Die Regierung kann den
-              Betrag digitaler M&uuml;nzen den ein Kunde in einem
-              bestimmten Zeitraum abheben kann beschr&auml;nken.</li>
-             <li lang="fr">Depuis le systeme banquaire :
-              Le montant total de monaie virtuelle acquise par un client.
-              Le gouvernement pourrait imposer une limite sur la valeure maximale
-              de pièces numériques qu'un client peut retirer dans un certain délais.
-             </li>
-             <li lang="it">Dal sistema bancario:
-	     l'ammonto totale dei gettoni digitali in possesso
-	     di un certo cliente. Lo Stato potrebbe imporre un limite
-	     alla quantità di moneta digitale che un cliente può ritirare
-	     in un certo lasso di tempo.</li>
-            <li lang="es">Del sistema bancario:
-       El monto total de dinero digital obtenido por un cliente. El gobierno podría imponer
-       límites a la cantidad de dinero digital que un cliente puede retirar en un periodo determinado.</li>
+              withdraw within a given timeframe.") }}</li>
 
-             <li lang="en">From the banking system:
+             <li>{{ _("From the banking system:
                The total amount of income received
-               by any merchant via the Taler system.</li>
-             <li lang="de">Vom Bankensystem:
-               Das Gesamteinkommen jedes H&auml;ndlers
-               welches durch Taler vermittelt wurde.</li>
-             <li lang="fr">Depuis le système banquaire:
-               Le montant total reçu par chaque marchant via le système Taler</li>
-             <li lang="it">Dal sistema bancario:
-	     La somma totale delle entrate di un negoziante attraverso
-	     Taler.</li>
-             <li lang="es">Del sistema bancario:
-               El monto total de ingresos recibidos por cualquier comerciante
-               a través del sistema Taler.</li>
+               by any merchant via the Taler system.") }}</li>
 
-             <li lang="en">From auditing the exchange:
+             <li>{{ _("From auditing the exchange:
                The amounts of digital coins legitimately withdrawn by
                customers from the exchange, the value of non-redeemed digital coins
                in customer's wallets, the value and corresponding wire details
                of deposit operations performed by merchants with the exchange, and
-               the income of the exchange from transaction fees.</li>
-             <li lang="de">Durch Pr&uuml;fung bei der Wecheslstube:
-               Der Gesamtbetrag an digitalen M&uuml;nzen der legitim von
-               Kunden abgehoben wurde, der Wert noch nicht eingereichter
-               digitaler M&uuml;nzen in Geldb&ouml;rsen von Kunden, der
-               Wert und die dazugeh&ouml;rigen Banktransaktionsdaten
-               aus Einzahlungen von H&auml;ndlern, sowie das Einkommen des
-               Wechselstubenbetreibers aus Transaktionsgeb&uuml;hren.
-               </li>
-             <li lang="fr">Depuis les audits du bureau de change :
-               Le montant total des pièces électroniques retirées légalement
-               par les clients auprès du bureau de change, la valeur des pièces dans les
-               porte-monnaie des clients, la valeur et les tranfères correspondants.
-             </li>
-             <li lang="it">Dalle ispezioni alla ufficio cambi:
-	     La somma di gettoni digitali ritirati dai clienti alla ufficio cambi,
-	     il valore dei gettoni ancora custoditi nei portafogli virtuali
-	     dei clienti (chiamati anche "gettoni non riscattati"), il valore
-	     e i dettagli dei bonifici che i mercanti hanno ricevuti in seguito
-	     alla operazione di "deposito" (ossia quando le monete virtuali vengono
-	     riscattate dai mercanti) effettuata presso la ufficio cambi, e le entrate
-	     della ufficio cambi dovute alle tariffe applicate ai suoi servizi</li>
-             <li lang="es"> Al auditar la casa de cambio:
-               La cantidad de monedas digitales emitidas legítimamente por los clientes,
-       el valor de las monedas digitales no canjeadas en las billeteras de los clientes,
-       el valor y los correspondientes detalles de las operaciones de depósitos realizadas
-       por los comerciantes con la casa de cambio, y el ingreso de la casa de cambio por
-       las tasas de transacción realizadas.</li>
+               the income of the exchange from transaction fees.") }}</li>
 
-            <li lang="en">From auditing merchants:
+            <li>{{ _("From auditing merchants:
                For each deposit operation, the exact details of the
                underlying contract that was signed between
                customer and merchant.  However, this information would
@@ -263,49 +92,9 @@
                transaction (i.e. in court when suing the merchant if the
                merchant failed to deliver on the contract),
                merchant, exchange and government cannot find out the customer's
-               identity from the information that Taler collects.</li>
-             <li lang="de" note="outdated">Aus Betriebspr&uuml;fungen bei H&auml;ndlern:
-               F&uuml;r jede Einzahlung bei der Wecheslstube, den
-               dazugeh&ouml;rigen vom Kunden gezeichneten
-               Vertragsabschluss.  Allerdings ist die Identit&auml;t des
-               Kunden normalerweise nicht Bestandteil des Vertrages.
-               Der Kunde kann sich jedoch entscheiden, seine Anonymit&auml;t
-               aufzugeben um z.B. den H&auml;ndler vor Gericht zu verklagen,
-               falls der H&auml;ndler den Vertrag nicht erf&uuml;llt.
-               H&auml;ndler und Regierung k&ouml;nnen ihrerseits jedoch
-               den Kunden nicht allein auf Grundlage der von Taler
-               gesammelten Informationen ermitteln.</li>
-             <li lang="fr">Grace à l'audit des marchands :
-               Pour chaque opération de dépos, les détails exacts du contrat
-               qui à été signé entre le marchant et le client. Néanmoins, cette
-               information n'inclurais pas, en général, l'identité du client.
-               Il est bon de notter que le client peut décider de prouver qu'il
-               s'agit bien d'une transaction qu'il à effectué (par exemple dans un tribunal
-               si le marchant n'a pas remplis sa part du contrat). Le marchant, le bureau de change et
-               le gouvernement ne peuvent pas retrouver l'identité du client via les
-               données collectées par Taler. </li>
-             <li lang="it">Dalle ispezioni ai negozianti:
-	     Per ogni operazione di deposito, i dettagli del contratto,
-	     firmato da cliente e negoziante, da cui questa è stata
-	     originata. Tipicamente, questa informazione non include
-	     l'identità del cliente. Si noti che l'identità del cliente
-	     può essere resa nota solo se questi decide volontariamente di
-	     rivelare i suoi estremi (ad esempio, nel caso ritenga di dover
-	     procedere per vie legali per risolvere
-	     un disputa con un negoziante), in quanto ufficio cambi, negozianti
-	     e ispettore fiscale non possono risalire a tale informazione
-	     sulla sola base dei dati raccoli da Taler.</li>
-            <li lang="es">Al auditar a los comerciantes:
-               Por cada operación de depósito, los detalles exactos de cada contrato
-       respectivamente firmado entre cliente y comerciante. Sin embargo esta información
-       no incluiría la identidad del cliente. Nótese que mientras el cliente puede
-       decidir probar que fue suya una transacción (por ej. frente a la Justicia
-       reclamando al comerciante si hubiera un problema en el producto o servicio
-       acordado en el contrato), ni el comerciante, ni la casa de cambio ni el gobierno
-       pueden descubrir la identidad del cliente a partir de la información que
-       recolecta Taler.</li>
+               identity from the information that Taler collects.") }}</li>
           </ul>
-        </p>
+        <p></p>
       </div>
       <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->

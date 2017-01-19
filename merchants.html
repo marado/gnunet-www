@@ -1,74 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="{{ _('en') }}"><head>
     <meta charset="utf-8">
-    <title>GNU Taler - Merchants</title>
+    <title>{{ _("GNU Taler") }} - {{ _("Merchants") }}</title>
     <meta name="description" content="">
       <!--# include file="common/header.inc" -->
   </head>
-  <body class="en" onLoad="loadLang();">
+  <body class="en" onload="loadLang();">
     <div class="container">
       <!--# include file="common/navigation.inc" -->
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1 lang="en">Advantages for merchants</h1>
-        <h1 lang="de">Vorteile f&uuml;r H&auml;ndler</h1>
-        <h1 lang="fr">Avantages pour les marchandes</h1>
-        <h1 lang="it">Vantaggi per i mercanti</h1>
-        <h1 lang="es">Ventajas para comerciantes</h1>
+        <h1>{{ _("Advantages for merchants") }}</h1>
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <h2 lang="en">Fast</h2>
-          <h2 lang="de">Schnell</h2>
-          <h2 lang="fr">Rapide</h2>
-          <h2 lang="it">Veloce</h2>
-          <h2 lang="es">Rápido</h2>
-	  <p lang="en">Processing transactions with Taler is fast, allowing you
+          <h2>{{ _("Fast") }}</h2>
+
+	  <p>{{ _("Processing transactions with Taler is fast, allowing you
 	     to confirm the transaction with your customer virtually immediately.
 	     Your customers will appreciate that they do not have to type in credit
-	     card information and play the "verified by" game.  By making payments
+	     card information and play the &quot;verified by&quot; game.  By making payments
 	     significantly more convenient for your customers, you may be able to
 	     use Taler for small transactions that would not work with credit card
-	     payments due to the mental overhead for customers.</p>
-          <p lang="de">Das Verarbeiten von Transaktionen mit Taler ist sehr
-	     schnell, was das Best&auml;tigen von Transaktionen mit dem Kunden
-	     nahezu in Echtzeit erm&ouml;glicht. Ihre Kunden werden es Ihnen
-	     danken, dass sie keinerlei Kreditkarteninformationen angeben
-	     m&uuml;ssen und dass l&auml;stige "verified by"-Spielereien entfallen.
-	     Indem Sie Bezahlvorg&auml;nge signifikant bequemer gestalten
-	     k&ouml;nnen, sind Sie in der Lage, Taler auch f&uuml;r kleine
-	     Transaktionen zu verwenden, welche beim Verwenden herk&ouml;mmlicher
-	     Kreditkarten aufgrund psychologischen Mehraufwands auf Seiten des
-	     Kunden kaum durchf&uuml;hrbar w&auml;ren.</p>
-	  <p lang="fr">Effectuer des transactions avec Taler est rapide, vous
-	     permettant de confirmer la transaction avec votre client virtuellement
-	     immédiatement. Vos clients apprécieront de ne pas avoir à donner leurs
-	     coordonnées bancaires et d'effectuer le jeu des &quot;vérifié
-	     par&quot;. En rendant les paiements significativement plus aisés pour
-	     vos clients, vous aurez la possibilité d'utiliser Taler pour de
-	     petites transactions qui ne sont pas possibles par carte de crédit
-	     pour des raisons culturelles ou sociologiques pour vos clients.</p>
-	  <p lang="it">L'elaborazione delle transazioni con Taler è veloce, e ti permette di confermare virtualmente
-	     la transazione con il tuo cliente immediatamente. Il cliente apprezzerà di non dover inserire
-	     informazioni sulla carta di credito e giocare il gioco del "verificato da". Rendendo
-	     i pagamenti significativamente più convenienti per i tuoi clienti, potrai usare Taler per
-	     piccole transazioni che non funzionerebbero con pagamenti a carta di credito, a causa
-	     del sovraccarico mentale per i clienti.</p>
-	  <p lang="es">Procesar transacciones con Taler es rápido, permitiendo confirmar la transacción
-             con el cliente inmediatamente. Sus clientes valorarán que no necesitan ingresar información
-             de sus tarjetas de crédito y jugar al juego de "Verificado por".
-             Al hacer los pagos más fáciles para sus clientes, podrá usar Taler
-             para pequeñas transacciones que no se concretarían con tarjetas de crédito
-             debido a la complicación que representaría para los clientes.</p>
+	     payments due to the mental overhead for customers.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Secure</h2>
-          <h2 lang="de">Sicher</h2>
-          <h2 lang="fr">Sûr</h2>
-          <h2 lang="it">Sicuro</h2>
-          <h2 lang="es">Seguro</h2>
-	  <p lang="en">You never learn sensitive customer information. You need
+          <h2>{{ _("Secure") }}</h2>
+
+	  <p>{{ _("You never learn sensitive customer information. You need
 	     to ensure that your website provides the correct account information
 	     for your business, and that you correctly validate the payment
 	     confirmations from the Taler exchange.  As a result, you will have
@@ -78,344 +36,93 @@
 	     undergo any particular security audits, processes or procedures, as
 	     you never handle sensitive customer information.  Your systems will
 	     have cryptographically signed contracts which you can use in court in
-	     case of disputes.</p>
-          <p lang="de">H&auml;ndler erhalten keine sensitiven Informationen
-	     &uuml;ber ihre Kunden. Sie m&uuml;ssen lediglich sicherstellen, dass
-	     Ihre Internetseite die korrekten Accountinformationen f&uuml;r Ihr
-	     Unternehmen zur Verf&uuml;gung stellt und dass Sie die
-	     Zahlungsbest&auml;tigungen der Taler-Wechselstube korrekt
-	     validieren. Auf diese Weise stellen Sie sicher, dass sie sowohl einen
-	     kryptographischen Beweis &uuml;ber die Korrektheit der Transaktion im
-	     mit dem Kunden eingegangenen Vertrag, als auch eine
-	     kryptographische Signatur &uuml;ber die Existenz des bei der
-	     Wechselstube eingelagerten Transaktionsvolumens erhalten. Zur
-	     Verwendung von Taler m&uuml;ssen keine Akkreditierungen jeglicher
-	     Form erlangt werden, da Ihre Systeme niemals mit den sensitiven
-	     Daten des Kunden in Kontakt kommen. Stattdessen arbeiten Sie mit
-	     kryptographisch signierten Vertr&auml;gen, welche im Falle von
-	     Streitigkeiten vor Gericht geltend gemacht werden k&ouml;nnen.</p>
-	  <p lang="fr">Vous n'aurez pas accès aux données sensibles du client.
-	     Vous devez vous assurer que votre site internet fournit les
-	     informations bancaires correctes pour votre business, et que vous
-	     validez correctement les confirmations de paiement à partire de la
-	     monnaie Taler. Vous aurez comme résultat une preuve de paiement
-	     cryptographiée pour les contrats spécifiques que vous aurez passé avec
-	     votre client, et les confirmations signées cryptographiquement par la
-	     monnaie Taler concernant les dépots. Taler ne vous oblige pas à suivre
-	     des audits, des process ou des vérifications de sécurité particuliers,
-	     puisque nous ne détenez aucune donnée sensible du client. Votre
-	     système aura signé cryptographiquement des contrats que vous pourrez
-	     utiliser en cas de litige auprès d'un tribunal.</p>
-	  <p lang="it">Non verrai mai a conoscenza di informazioni sensibili sui tuoi clienti.
-	     Dovrai assicurare che il tuo sito offra le corrette informazioni account per il tuo
-	     business, e che le conferme di pagamento dalla ufficio cambi di Taler vengano correttamente validate.
-	     Come risultato, avrai la prova crittografica del pagamento per lo specifico contratto che hai
-	     stipulato con i suoi clienti, e conferma crittograticamente firmate dalla ufficio cambi di Taler
-	     riguardo ai versamenti. Taler non ti richiede di sottoporti a particolari controlli o prodecure
-	     di sicurezza, poiché non dovrai mai gestire informazioni sensibili sui clienti.
-	     I tuoi sistemi avranno contratti crittograficamente firmati che potrai usare in tribunale
-	     in caso di controversie.</p>
-	  <p lang="es">Ud. nunca verá información sensible del cliente. Sólo debe asegurarse
-             que su sitio web provee la información correcta de cuentas para su negocio, y que
-             valida correctamente las confirmaciones de pago de la casa de cambio Taler con la que opere.
-             Como conrapartida, tendrá una prueba criptográfica de los pagos recibidos por los contratos
-             que Ud. acordó con sus clientes, confirmados mediante firma digital de la casa de cambio
-             Taler respecto de sus depósitos. Taler no necesita que Ud. realize auditorías
-             de seguridad o procedimientos específicos, y nunca deberá manejar datos sensibles de sus clientes.
-             Sus sistemas tendrán contratos firmados digitalmente que Ud. puede usar en la Justicia en caso de
-             disputas.</p>
+	     case of disputes.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Free Software</h2>
-          <h2 lang="de">Freie Software</h2>
-          <h2 lang="fr">Logiciel Libre</h2>
-          <h2 lang="it">Free Software</h2>
-          <h2 lang="es">Software Libre</h2>
-	  <p lang="en">Taler is free software, and you can use the
+          <h2>{{ _("Free Software") }}</h2>
+
+	  <p>{{ _("Taler is free software, and you can use the
 	     liberally-licensed reference code as a starting point to integrate
 	     Taler into your services. To use Taler, you do not need to pay license
 	     fees, and the free software development model will ensure that you can
 	     select from many competent developers to help you with your
-	     integration.</p>
-          <p lang="de">Taler ist freie Software, weswegen Sie die sehr liberal
-	     lizenzierte Referenzimplementierung als Ausgangspunkt verwenden
-	     k&ouml;nnen, um Taler-Transaktionen in Ihrem System
-	     zu erm&ouml;glichen. Durch die Verwendung von Taler fallen keine
-	     Lizenzgeb&uuml;hren an und das Entwicklungsmodell freier Software
-	     stellt sicher, dass Sie zahlreiche kompetente Entwickler zurate
-	     ziehen k&ouml;nnen, welche Ihnen beim Integrationsvorgang zur
-	     Seite stehen.</p>
-	  <p lang="fr">Taler est un logiciel libre, et vous pouvez utiliser un
-	     code de réféence licence libre comme point de départ pour intégrer
-	     Taler dans vos services. Pour utiliser Taler, vous n'avez pas besoin
-	     de payer de licence et le modèle de développement de licence libre
-	     vous garanti de pouvoir sélectionner des développeurs compétents pour
-	     vous aider dans l'intégration.</p>
-	  <p lang="it">Taler si basa su un free software, e potrai utilizzare il codice
-	     di riferimento sotto licenza libera come punto di partenza per integrare
-	     Taler nei tuoi sistemi. Per usare Taler, non servirà pagare i diritti di
-	     licenza, e il modello di sviluppo del free software assicurerà che tu possa
-	     selezionare molti sviluppatori compententi per aiutarti con l'implementazione.</p>
-	  <p lang="es">Taler es software libre, y puedes usar el código de referencia con licencia
-             libre como punto de partida para integrar Taler en tus servicios.
-             Para usar Taler, no se necesita pagar gastos de licencia y el modelo de desarrollo
-             del software libre garantiza el poder seleccionar muchos programadores competentes
-             que ayuden con su integración.</p>
+	     integration.") }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4">
-          <h2 lang="en">Low Fees</h2>
-          <h2 lang="de">Niedrige Geb&uuml;hren</h2>
-          <h2 lang="fr">Faible Coût </h2>
-          <h2 lang="it">Prezzi bassi</h2>
-          <h2 lang="es">Bajo costo</h2>
-	  <p lang="en">Taler is designed to minimize the work the exchange needs to
+          <h2>{{ _("Low Fees") }}</h2>
+
+	  <p>{{ _("Taler is designed to minimize the work the exchange needs to
 	     perform.  Combined with Taler's strong security which prevents fraud,
 	     exchanges can operate with very low overhead and thus low transaction
 	     fees.  Given Taler's free software exchange reference implementation,
 	     competition among exchanges will ensure fair, low transaction fees for
-	     merchants.</p>
-          <p lang="de">Taler wurde konzipiert, die Arbeit der
-	     M&uuml;nzanstalt m&ouml;glichst gering zu halten. Zusammen mit den
-	     Konzepten starker Kryptographie, die Missbrauch und Betrug vorbeugt,
-	     k&ouml;nnen M&uuml;nzanstalten mit sehr geringem Mehraufwand operieren,
-	     was den Transaktionskosten zugute kommt. Aufgrund der als freie
-	     Software zug&auml;nglich gemachten Referenzimplementierung einer
-	     M&uuml;nzanstalt sorgt der Wettbewerb f&uuml;r faire, niedrige
-	     Transaktionsgeb&uuml;hren gegen&uuml;ber H&auml;ndlern.</p>
-	  <p lang="fr">Taler est construit pour minimiser le temps d'éxécution
-	     de la monnaie. Couplé avec le haut système de sécurité de Taler qui
-	     permet d'éviter les fraudes, les monnaies génèrent des coûts de
-	     gestion et de frais très bas. L'installation via un logiciel libre de
-	     la monnaie Taler, la compétition entre monnaies permettra des coûts de
-	     transactions honnêtes et faibles pour les commerçants.</p>
-	  <p lang="it">Taler è progettato per minimizzare il lavoro che la "banca" (exchange)
-	     ha necessità di eseguire. Combinate con la forte sicurezza di Taler che previene
-	     la frode, le "banche" (exchanges) possono operare con spese molto basse e quindi bassi
-	     costi di transazione. Considerata l'implementazione free-software di riferimento della "banca" (exchange)
-	     la competizione tra "banche" (exchanges) garantirà costi di transazione giusti e bassi per
-	     i mercanti.</p>
-	  <p lang="es">Taler esta diseñado para minimizar el trabajo de la Casa de Moneda.
-             Combinado con la fuerte seguridad de Taler que previene el fraude, las casas de moneda
-             pueden operar con costos muy bajos y por lo tanto con bajas tasas de servicio.
-             Puesto que se implementa la casa de moneda de Taler con software libre,
-             seguramente se estimulará la competencia entre casas de moneda para ofrecer
-             bajos cargos por el servicio a los comerciantes.</p>
+	     merchants.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Flexible</h2>
-          <h2 lang="de">Flexibel</h2>
-          <h2 lang="fr">Flexible</h2>
-          <h2 lang="it">Flessibile</h2>
-          <h2 lang="es">Flexible</h2>
-	  <p lang="en">Taler can be used for different currencies (such as Euros
+          <h2>{{ _("Flexible") }}</h2>
+
+	  <p>{{ _("Taler can be used for different currencies (such as Euros
 	     or US Dollars) and different payment models limited only by what the
-	     exchange supports in its interactions.</p>
-          <p lang="de">Taler kann unabh&auml;ngig von verschiedenen
-	     W&auml;hrungen (wie zum Beispiel Euro oder US-Dollar) und
-	     Bezahlmodellen eingesetzt werden. Die einzige Beschr&auml;nkung
-	     stellt hierbei der Interaktionsreichtum der M&uuml;nzanstalt dar.</p>
-	  <p lang="fr">Taler est construit pour minimiser le temps d'éxécution
-	     de la monnaie. Couplé avec le haut système de sécurité de Taler qui
-	     permet d'éviter les fraudes, les monnaies génèrent des coûts de
-	     gestion et de frais très bas. L'installation via un logiciel libre de
-	     la monnaie Taler, la compétition entre monnaies permettra des coûts de
-	     transactions honnêtes et faibles pour les commerçants.</p>
-	  <p lang="it">Taler può essere usato per diverse valute (come Euro o dollari americani)
-	     e diversi modelli di pagamento limitati solamente da quello che la "banca" (exchange)
-	     supporta nelle sue interazioni.</p>
-	  <p lang="es">Taler se puede usar con diferentes monedas (como Euros o Dólares) y
-             diferentes modelos de pago sólo limitado por las interacciones a las que dé soporte
-             la casa de moneda elegida.</p>
+	     exchange supports in its interactions.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2 lang="en">Ethical</h2>
-          <h2 lang="de">Ethisch</h2>
-          <h2 lang="fr">Ethique</h2>
-          <h2 lang="it">Etico</h2>
-          <h2 lang="es">Ético</h2>
-          <p lang="en">Taler does not support tax evasion or money laundering, and is
+          <h2>{{ _("Ethical") }}</h2>
+
+          <p>{{ _("Taler does not support tax evasion or money laundering, and is
              also not a pyramid scheme or speculative investment.  Taler's
              protocols are efficient and do not waste energy. Taler encourages
              competition by providing an open standard and free software
-             reference implementations.</p>
-          <p lang="de">Taler unterst&uuml;tzt weder Steuervermeidung noch
-	     Geldw&auml;sche, ist kein Schneeballsystem und fungiert ebensowenig als
-	     eine spekulative Wertanlage. Die Taler zugrunde liegenden Protokolle
-	     sind effizient und verbrauchen nicht mehr Energie, als n&ouml;tig.
-	     Au&szlig;erdem unterst&uuml;tzt Taler den Wettbewerb durch das
-	     Bereitstellen einer Referenzimplementierung auf Basis einer freien
-	     Software-Lizenz.</p>
-	  <p lang="fr">Taler ne permet pas l'évasion fiscale ou le blanchiment
-	     d'argent, et n'est pas non plus un schéma d'investissement pyramidal
-	     ou spéculatif. Les protocoles Taler son efficaces et ne gaspillent pas
-	     d'énergie. Taler encourage la concurrence en fournissant un standard
-	     ouvert et des références d'installations de logiciels libres.</p>
-	  <p lang="it">Taler non supporta l'evasione fiscale o il riciclaggio di denaro,
-	     e non è nemmeno a schema piramidale o un investimento speculativo. I protocolli
-	     di Taler sono efficienti e non sprecano energia. Taler incoraggia la competizione
-	     fornendo standard aperti e implementazioni di riferimento in free-software.</p>
-          <p lang="es">Taler no da soporte a la evasión de impuestos o el lavado de dinero, y tampoco
-             promueve un sistema piramidal o de inversión especulativa. Los protocolos de Taler
-             son eficientes y no derrochan energía. Taler fomenta la competencia proveyendo
-             un estándar abierto e implementaciones de software libre.</p>
+             reference implementations.") }}</p>
         </div>
       </div>
      <div class="col-lg-12">
-        <h2 lang="en" id="overview">Taler as seen by merchants</h1>
-        <h2 lang="de">Taler aus H&auml;ndlerperspektive</h1>
-        <h2 lang="fr">Taler du poit de vu des marchants</h2>
-        <h2 lang="it">Come i negozianti vedono Taler</h2>
-        <h2 lang="es">Taler desde el punto de vista del comerciante</h1>
-        <p lang="en">Merchants supporting the Taler system need to integrate
+        <h2 id="overview">{{ _("Taler as seen by merchants") }}</h2>
+
+        <p>{{ _("Merchants supporting the Taler system need to integrate
           some relatively simple logic into their transaction processing
           system.
           Typical steps performed by the merchant system are:
-        </p>
-        <p lang="de">H&auml;nder die Taler als Bezahlsystem
-          anbieten wollen, m&uuml;ssen ein paar relativ einfache Erweiterungen
-          an ihrem Transaktionssystem vornehmen. Die typischen Schritte die
-          ein H&auml;ndler bei Taler durchf&uuml;ren muss sind:</p>
-        <p lang="fr" note="outdated"></p>
-        <p lang="it">Al fine di supportare Taler, i negozianti
-	dovranno integrare alcune semplici procedure nei loro sistemi di ricezione
-	dei pagamenti</p>
-        <p>
-        <p lang="es">Los comerciantes que trabajen con el sistema Taler necesitan integrar
-          cierta lógica relativamente simple en su sistema de procesamiento de transacciones.
-          Los pasos típicos que realiza el comerciante son:
-        </p>
+        ") }}</p>
 
+        <p>
           <img src="images/merchant.svg" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
-            <li lang="en">The new logic detects when a customer's system
+            <li>{{ _("The new logic detects when a customer's system
               supports Taler and then needs to send a cryptographically signed
               version of the proposed contract in a simple JSON format to
               the customer.
               The message also includes salted, hashed wire details for
               the merchant, as well as restrictions as to which exchange operators
-              the merchant is willing to deal with.</li>
-             <li lang="de">Die H&auml;ndlerwebseite muss
-              pr&uuml;fen ob der Kunde eine Taler Geldb&ouml;rsenanwendung
-              benutzt und dieser einen kryptographisch unterzeichneten
-              Vertragstext in einem JSON-Format &uuml;bertragen.  Der
-              Vertragstext muss auch einen Hash der Kontoinformationen
-              des H&auml;ndlers sowie Restriktionen f&uuml;r die vom
-              H&auml;ndler unterst&uuml;tzten M&uuml;nzanstalten beinhalten.
-              </li>
-             <li lang="fr" note="outdated"></li>
-             <li lang="it">La nuova procedura rileva il caso in cui un cliente
-	     supporta Taler, e procede ad inviarvi un contratto digitale firmato
-	     in un semplice formato JSON.
-	     Il messaggio include anche le coordinate bancarie del negoziante
-	     fissate in un "hashcode" assieme ad un numero casuale, nonché la
-	     lista delle zecche con cui il negoziante è disposto a trattare.</li>
-            <li lang="es">La nueva lógica detecta que el sistema de un cliente soporta Taler
-              y necesita enviarle una versión firmadaa digitalmente del contrato propuesto
-              al cliente en un simple formato JSON.
-              El mensaje incluye también detalles de la cuenta bancaria del comerciante,
-              junto a las restricciones con las que opera la casa de moneda con la que
-              desea operar el comerciante.</li>
+              the merchant is willing to deal with.") }}</li>
 
-            <li lang="en">The customer sends a signed response which states
+            <li>{{ _("The customer sends a signed response which states
                that certain digital coins now belong to the merchant to both
                signal acceptance of the deal as well as to pay the respective
-               amount (bottom).</li>
-             <li lang="de">Der Kunde schickt eine kryptografisch
-               signierte Antwort die besagt, dass der Wert bestimmter digitaler
-               M&uuml;nzen jetzt dem H&auml;ndler geh&ouml;rt. Dadurch erfolgen
-               die Akzeptanz des Vertrages als auch die
-               Bezahlung der Rechnung immer gleichzeitig (unten).</li>
-             <li lang="fr">Le client envoid une réponse signée qui stipule
-               que certaines pièces numériques apartienent désormais au marchand.
-               Cette signature sert à la fois de payement et de validation
-               du contrat.</li>
-             <li lang="it">Il cliente invia una risposta firmata che attesta
-	     che un certo numero di gettoni ora appartiene al negoziante, così
-	     da segnalare sia l'accettazione dello scambio che il suo impegno
-	     a pagare il prezzo dovuto (in basso).
-	     </li>
-            <li lang="es">El cliente envía una respuesta firmada que establece
-               que ciertas monedas electrónicas ahora pertenecen al comerciante
-               como señal de aceptación del acuerdo y que sirven asimismo de
-               pago por el monto respectivo (abajo).</li>
+               amount (bottom).") }}</li>
 
-             <li lang="en">The merchant then forwards the signed messages
+             <li>{{ _("The merchant then forwards the signed messages
                received from the customer to the exchange, together with its
                wire details and the salt (without hashing).  The exchange verifies
                the details and sends a signed confirmation (or an error
                message) to the merchant.  The merchant checks that the
                exchange's signature is valid, sends a confirmation to the
-               customer and executes the contract-specific business logic.</li>
-             <li lang="de">Der H&auml;ndler leitet dann die
-               Unterschriften weiter an die M&uuml;nzanstalt, zusammen mit seinen
-               ungehashten Kontodaten.  Diese pr&uuml;ft die Daten und antwortet
-               mit einer kryptografisch signierten Best&auml;tigung (oder einer
-               Fehlernachricht).  Der H&auml;ndler pr&uumml;ft seinerseits die
-               Signatur, schickt eine Best&auml;tigung an den Kunden und
-               f&uuml;hrt seine vertragsspezifische Gesch&auml;ftslogik aus.</li>
-             <li lang="fr">Le marchand transfère ensuite le message signé
-               reçu du client au exchange, avec ses détails banquaires et le sel (sans hashage).
-               Le exchange vérifie les détails et envoie une confirmation (ou un message d'erreur).
-               au marchand. Le marchand verifie que la signature du exchange est valide, envoi
-               la confirmation au client et execute le contrat.</li>
-             <li lang="it">Il negoziante inoltra tale messaggio firmato appena
-	     ricevuto del cliente alla zecca, insieme alle sue coordinata bancarie
-	     e al numero casuale usato in precedenza per produrre l'"hash" dei due.
-	     La zecca verifica le coordinate e manda una conferma (o un messaggio
-	     d'errore) firmata al negoziante. A questo punto, il negoziante controlla
-	     che la firma della zecca sia valida, manda una conferma al cliente,
-	     e procede ad assolvere quanto indicato nel contratto.</li>
-             <li lang="es">El comerciante entonces reenvía los mensajes firmados del cliente
-               a la casa de moneda, junto al identificador de transacción (sin encriptar).
-               La casa de moneda verifica los detalles y responde al comerciante con una
-               confirmación firmada (o un mensaje de error).
-               El comerciante revisa la validez de la firma de la casa de moneda y a su vez
-               envía confirmación al cliente y ejecuta la lógica de negocio específica del contrato.</li>
+               customer and executes the contract-specific business logic.") }}</li>
 
-             <li lang="en">The exchange performs wire transfers corresponding to
+             <li>{{ _("The exchange performs wire transfers corresponding to
                the claims deposited by the merchant. Note that the exchange may
                charge fees for the deposit operation, hence merchants may
                impose limits restricting the set of exchange operators they are
                willing to deal with, for example by imposing a bound on
-               deposit fees.</li>
-             <li lang="de">Die M&uuml;nzanstalt &uuml;berweist
-               dem H&auml;ndler die Betr&auml;ge aus dem Vertrag. Da die
-               M&uuml;nzanstalt f&uuml;r diese Dienstleistung Geb&uuml;hren
-               einbehalten kann, ist es wichtig dass die H&auml;ndler ihre
-               Zusammenarbeit auf eine Menge von M&uuml;nzanstalten
-               einschr&auml;nken k&ouml;nnen, z.B. durch Angabe einer Obergrenze
-               f&uuml;r die Transaktionskosten.</li>
-             <li lang="fr">Le exchange effectue le virement banquaire correspondant
-               au dépos effectué par le marchant. Nottez que le exchange peut charger des
-               frais pour l'opération de dépos, les marchands peuvent donc imposer
-               des restrictions sur les exchanges avec lesquels il acceptent de travailler,
-               par exemple en imposant des limites sur les frais qu'ils acceptent.</li>
-             <li lang="it">Per ogni deposito (od opzionalmente per ogni
-	     raggruppamento di depositi) ricevuto da un certo negoziante,
-	     la zecca procederà con il versamento verso il conto in banca di
-	     quest'ultimo. La zecca potrebbe anche prevedere delle tariffe
-	     per l'operazione di deposito, da cui è plausibile che alcuni
-	     mercanti impongano delle restrizioni su quali siano le zecche
-	     con cui essi vogliano trattare.</li>
-             <li lang="es">La casa de moneda realiza las transferenciaas bancarias
-               correspondientes a las solicitudes depositadas por el comerciante.
-               Nótese que la casa de moneda puede cobrar comisiones por la operación de
-               depósito, por eso los comerciantes pueden imponer límites a los posibles
-               operadores de casa de moneda con los que desean operar, por ejemplo definiendo
-               un límite máximo a las comisiones por depósito.</li>
+               deposit fees.") }}</li>
           </ol>
         </p>
      </div>
       <div class="col-lg-12">
-        <h2 lang="en" id="documentation">Manuals for merchants</h1>
-        <h2 lang="de">Handb&uuml;cher f&uuml;r H&auml;ndler</h1>
-        <h2 lang="fr" note="outdated">Documentation</h2>
-        <h2 lang="it" note="outdated">Documentation</h2>
-        <h2 lang="es" note="outdated">Documentation</h2>
+        <h2 id="documentation">{{ _("Manuals for merchants") }}</h2>
         <p>
-          <ul>
+          </p><ul>
             <li>The GNU Taler merchant backend operator tutorial
               (<a href="https://docs.taler.net/current/merchant-backend/tutorial.html">html</a>,
                <a href="https://docs.taler.net/current/merchant-backend/tutorial.pdf">pdf</a>)</li>
@@ -423,7 +130,7 @@
               (<a href="https://docs.taler.net/current/merchant-shop/php/tutorial.html">html</a>,
                <a href="https://docs.taler.net/current/merchant-shop/php/tutorial.pdf">pdf</a>)</li>
           </ul>
-        </p>
+        <p></p>
       </div>
       <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->

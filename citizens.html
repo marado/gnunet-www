@@ -1,276 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="{{ _('en') }}"><head>
     <meta charset="utf-8">
-    <title>GNU Taler - Citizens</title>
+    <title>{{ _("GNU Taler") }} - {{ _("Citizens") }}</title>
     <meta name="description" content="">
       <!--# include file="common/header.inc" -->
   </head>
-  <body class="en" onLoad="loadLang();">
+  <body class="en" onload="loadLang();">
     <div class="container">
       <!--# include file="common/navigation.inc" -->
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1 lang="en">Advantages for citizens</h1>
-        <h1 lang="de">Vorteile f&uuml;r B&uuml;rger</h1>
-        <h1 lang="fr">Avantages pour les citoyens</h1>
-        <h1 lang="it">Vantaggi per i cittadini</h1>
-        <h1 lang="es">Ventajas para los ciudadanos</h1>
+        <h1>{{ _("Advantages for citizens") }}</h1>
         <!-- p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p -->
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-6">
-          <h2 lang="en">Security</h2>
-	  <h2 lang="de">Sicherheit</h2>
-	  <h2 lang="fr">Sécurité</h2>
-	  <h2 lang="it">Sicurezza</h2>
-	  <h2 lang="es">Seguridad</h2>
-          <p lang="en">Taler is the electronic equivalent of cash, except harder to fake.
+          <h2>{{ _("Security") }}</h2>
+
+          <p>{{ _("Taler is the electronic equivalent of cash, except harder to fake.
              If your digital wallet is lost -- say because
              your computer is irreparably damaged or compromised -- only the amount of coin
              stored in your wallet will be lost. Unlike a physical wallet, you can make
              backups of your digital wallet which can provide security against data loss.
              So your digital wallet works mostly just like
-             a physical wallet, except online and without the need to manually count coins.</p>
-	  <p lang="de">Taler ist das elektronische &Auml;quivalent zu f&auml;lschungssicherem
-	     Bargeld. Beim Verlust der digitalen Geldb&ouml;rse, sei es durch
-	     Sch&auml;den am Rechner oder durch einen gezielten Angriff, geht nur genau der
-	     Betrag verloren, der sich in der Geldb&ouml;rse befand. Allerdings ist die digitale
-	     Ausgabe einer Geldb&ouml;rse ungleich einfacher gegen Verlust zu sichern, indem
-	     regelm&auml;&szlig;ig ein Backup angefertigt wird. Zusammengefasst
-	     bedeutet das, dass die digitale Geldb&ouml;rse nahezu wie ihr
-	     aus dem Alltag bekannter Bruder funktioniert, au&szlig;er dass sie
-	     sich online befindet und dass das l&auml;stige M&uuml;nzenz&auml;hlen
-	     bis auf Weiteres entf&auml;llt.</p>
-	  <p lang="fr">Taler est l’équivalent  électronique de la monnaie, sauf
-	     qu’il est plus difficile de le falsifier. Si vous  perdez votre
-	     portefeuille électronique -- parce que votre ordinateur est
-	     totalement HS ou en panne -- seul le  montant de la monnaie stockée
-	     dans votre portefeuille sera perdu. Contrairement  à un portefeuille
-	     classique, vous pouvez faire des mises à jour de votre  portefeuille
-             numérique qui sécurise contre la perte de données. Donc votre
-             portefeuille numérique fonctionne comme un portefeuille classique, mais en
-             ligne et sans avoir à compter manuellement votre monnaie. </p>
-          <p lang="it">Taler è l'equivalente elettronico dei contanti, tranne per il fatto
-             che è più difficile da falsificare. Se il tuo portafoglio digitale va perso
-             (ad esempio, perché il tuo computer è stato danneggiato irreparabilmente o
-             compromesso), solo l'ammontare di denaro contenuto in esso andrà perduto a sua
-             volta. A differenza di un portafoglio reale, è possibile fare un backup di
-             quello digitale, così da garantire sicurezza contro la perdita dei dati. Quindi
-             il tuo portafoglio digitale funziona per lo più come quello reale, eccetto il
-             fatto che sia online ed eviti di contare manualmente le monete.</p>
-          <p lang="es">Taler es el equivalente electrónico del dinero en efectivo, salvo que
-             es más difícil de falsificar. Si pierdes tu billetera electrónica -- digamos
-             que tu computadora se ha dañado de modo irreparable -- sólo pierdes la cantidad de dinero
-             que estaba en esa billetera. A diferencia de una billetera física, puedes hacer
-             copias de seguridad de tu billetera digital lo que te garantiza seguridad frente a
-             la pérdida de datos. Así que tu billetera electrónica funciona más o menos como una
-             billetera física, sólo que está conectada y que no necesitas contar a mano las monedas.
-          </p>
+             a physical wallet, except online and without the need to manually count coins.") }}</p>
         </div>
         <div class="col-lg-6">
-          <h2 lang="en">Privacy</h2>
-          <h2 lang="de">Privatsph&auml;re</h2>
-	  <h2 lang="fr">Confidentialité</h2>
-	  <h2 lang="it">Privacy</h2>
-	  <h2 lang="es">Privacidad</h2>
-          <p lang="en">Your transactions are private, neither the exchange nor merchant needs to
+          <h2>{{ _("Privacy") }}</h2>
+
+          <p>{{ _("Your transactions are private, neither the exchange nor merchant needs to
              learn your identity. There is no need to give our credit card numbers or
              other sensitive information, and the merchant will only be able to do
-             exactly the transaction you confirmed using your digital wallet.</p>
-	  <p lang="de">Von Ihnen durchgef&uuml;hrte Transaktionen sind generell
-	     privat, weder die Wechselstube noch der H&auml;ndler kennt
-	     Ihre Identit&auml;t. Weder Kreditkartennummern, noch andere
-	     sensitive Informationen m&uuml;ssen herausgegeben werden, und der
-	     H&auml;ndler ist in der Lage, einzig von Ihnen best&auml;tigte
-	     Transaktionen durchzuf&uuml;hren.</p>
-	  <p lang="fr">Vos transactions sont privées, ni la bureau de change, ni les
-	     commerçants n'ont besoin de connaitre votre identité. Vous n'avez pas
-	     besoin de communiquer votre numéro de carte de crédit ou tout autre
-	     information sensible, et le commerçant ne pourra qu'effectuer la
-	     transaction que vous aurez confirmée en utilisant votre portefeuille
-	     numérique.</p>
-	  <p lang="it">Le tue transazioni sono private, né la ufficio cambi, né il venditore
-	     hanno bisogno di conoscere la tua identità. Non c'è necessità di rivelare il
-	     numero di carta di credito o altre informazioni riservate, e il venditore sarà
-	     solo in grado di fare l'esatta transazione che tu hai confermato usando il tuo
-	     portafoglio digitale.</p>
-          <p lang="es">Tus transacciones son privadas, ni el casa de cambio
-             ni el comerciante necesitan conocer tu identidad. No es necesario dar
-             nuestros números de tarjeta de crédito u otra información sensible,
-             y el comerciante sólo será capaz de realizar exactamente la transacción que
-             confirmaste usando tu billetera electrónica.</p>
+             exactly the transaction you confirmed using your digital wallet.") }}</p>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h2 lang="en">Convenience</h2>
-          <h2 lang="de">Bequeme Einrichtung</h2>
-          <h2 lang="fr">Avantage</h2>
-          <h2 lang="it">Convenienza</h2>
-          <h2 lang="es">Conveniencia</h2>
-          <p lang="en">You will be able to withdraw digital coins to replenish your wallet using
+          <h2>{{ _("Convenience") }}</h2>
+
+          <p>{{ _("You will be able to withdraw digital coins to replenish your wallet using
              your credit card or SEPA transactions, similar to how you pay or withdraw
-             cash today.</p>
-	  <p lang="de">Um Geld in Ihre digitale Geldb&ouml;rse zu transferieren
-	     verwenden Sie wie gewohnt entweder Ihre Kreditkarte oder alternativ
-	     eine SEPA-&Uuml;berweisung.</p>
-	  <p lang="fr">Vous pourrez retirer de la monnaie numérique pour
-	     recharger votre portefeuille en utilisant votre carte de crédit ou des
-	     transactions SEPA, de la même manière que vous payez ou retirer du
-	     liquide aujourd'hui.</p>
-	  <p lang="it">Potrai prelevare le tue monete digitali per riempire il portafoglio
-	     usando la carta di credito o transazioni SEPA, simili al modo in cui paghi o
-	     prelevi contanti normalmente al giorno d'oggi.</p>
-    <p lang="es">Podrás retirar billetes digitales para recargar tu billetera usando tu
-       tarjeta de crédito o transacciones SEPA (transferencias bancarias europeas),
-       similar a como pagas o retiras efectivo hoy en día.</p>
+             cash today.") }}</p>
         </div>
         <div class="col-lg-6">
-          <h2 lang="en">Stability </h2>
-	  <h2 lang="de">Stabilit&auml;t</h2>
-	  <h2 lang="fr">Stabilité</h2>
-	  <h2 lang="it">Stabilità</h2>
-	  <h2 lang="es">Estabilidad</h2>
-          <p lang="en">Coins in your digital wallet will be of the same denomination as the
+          <h2>{{ _("Stability ") }}</h2>
+
+          <p>{{ _("Coins in your digital wallet will be of the same denomination as the
              cash in your physical wallet. So you will not have to worry about
              currency fluctuations or conversion rates. Like a physical wallet,
              you can carry digital coins of different currencies in your digital
-             wallet at the same time.</p>
-	  <p lang="de">M&uuml;nzen in Ihrer digitalen Geldb&ouml;rse besitzen
-	     die gleichen Nennwerte wie das Geld in Ihrer echten Geldb&ouml;rse.
-	     Auf diese Weise m&uuml;ssen Sie sich nicht um
-	     W&auml;hrungsschwankungen oder Wechselkurse sorgen. Wie auch im
-	     echten Leben k&ouml;nnen Sie digitale M&uuml;nzen verschiedener
-	     W&auml;hrungen in Ihrer digitalen Geldb&ouml;rse mit sich f&uuml;hren.</p>
-	  <p lang="fr">La dénomination de votre monnaie dans votre portefeuille
-	     numérique sera la même que celle de votre portefeuille classique. Vous
-	     n'aurez donc pas à vous inquiéter des fluctuations des cours des
-	     monnaies ou des taux de conversion. Comme un portefeuille classique,
-	     vous pouvez avoir en même temps des monnaies de différentes devises
-	     dans votre portefeuille numérique.</p>
-	  <p lang="it">Il denaro nel tuo portafoglio digitale sarà sotto la stessa
-	     denominazione di quello nel portafoglio reale, così da non doverti preoccupare
-	     per la svalutazione della valuta o per le tariffe di conversione. Come in un
-	     portafoglio normale, puoi avere allo stesso tempo monete digitali di diverse
-	     valute nel tuo portafoglio digitale.</p>
-    <p lang="es">Las monedas en tu billetera digital serán de la misma denominación
-       que el efectivo en tu billetera física. Es decir que no deberás preocuparte
-       por las fluctuaciones de las monedas o las tasas de conversión.
-       Como en una billetera física, en tu billetera digital puedes tener dinero
-       de diferentes tipos de moneda al mismo tiempo.</p>
+             wallet at the same time.") }}</p>
         </div>
       </div>
       <div class="col-lg-12">
-        <h2 lang="en" id="overview">Taler as seen by customers</h1>
-        <h2 lang="de">Taler aus Kundensicht</h1>
-        <h2 lang="fr">Taler du point de vu des clients</h2>
-        <h2 lang="it">Come i clienti vedono Taler</h2>
-        <h2 lang="es">Taler visto por sus clientes</h2>
-        <p lang="en">Customers interact with the Taler system mostly using
+        <h2 id="overview">{{ _("Taler as seen by customers") }}</h2>
+
+        <p>{{ _("Customers interact with the Taler system mostly using
           a free wallet implementation, which may be an extension or plugin
           to their browser or a custom application on their computer(s).
           Typical steps performed by customers are:
-        </p>
-        <p lang="de">Um Taler zu verwenden, benutzen Kunden eine Geldb&ouml;rsen, die als Browsererweiterung oder eigenst&auml;ndige Anwendung auf dem Kundencomputer l&auml;uft.  Typische Schritte die Kunden durchf&uuml;ren sind:</p>
-        <p lang="fr">Les clients intéragessent avec Taler pricipalement à l'aide
-        d'une implémentation libre du porte-monnaie, qui peut être un plugin ou extension pour navigateur
-        ou une application dédiée sur leur ordinateur.</p>
-        <p lang="it">I cliente interagiscono con Taler principalmente utilizzando
-	un portafoglio elettronico gratuito, che può presentarsi sia come una
-	estensione per il loro browser, sia come una applicazione dedicata.
-	Le tipiche operazioni fatte da un cliente sono:</p>
+        ") }}</p>
         <p>
-        <p lang="es">Los clientes interactúan con el sistema Taler básicamente
-          usando una implementación libre de una billetera, que puede ser una
-          extensión o plugin en sus navegadores o una aplicación específica
-          en su/s computadora/s.
-          Los pasos típicos que realizan los clientes son:
         </p>
           <img src="images/customer.svg" alt="customer perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
-            <li lang="en">The customer selects an exchange (i.e. by visiting the
+            <li>{{ _("The customer selects an exchange (i.e. by visiting the
               respective website or selecting from a list of exchanges in the
               application) and asks the wallet to create bank transfer
               instructions to withdraw a certain amount of electronic cash.
               The bank transfer instructions will contain an
               access code that must be included in the subject of the
               transaction, as well as the wire details for the exchange (i.e.
-              a SEPA account number).</li>
-             <li lang="de">Der Kunde w&auml;hlt eine Wechselstube
-             (z.B. durch Besuch der entsprechenden Webseite oder durch Wahl aus einer
-              Liste in der Geldb&ouml;rsenanwendung) und fordert dann seine
-              Geldb&ouml;rsenanwendung auf, Instruktionen f&uuml;r das abheben eines
-              bestimmten Betrages zu generieren.  Das Ergebnis k&ouml;nnten dann
-              z.B. SEPA &Uuml;berweisungsdaten sein, wo ein bestimmter Zugangscode
-              im Betreff der &Uuml;berweisung stehen muss.</li>
-             <li lang="fr">Le client choisit un bureau de change (en visitant le son site ou
-             en le choisissant parmis une liste fournie par le porte-monnaie) et demande
-             au porte-monnaie de préparer un virement banquaire pour retirer une certaine
-             quantité d'argent électronique.
-             Les instructions de transfer de la banque contiennent un code d'acces qui doit
-             être inclus dans le sujet du transfere, de même que dans les détails du
-             virement du bureau de change.</li>
-             <li lang="it">Il cliente seleziona una ufficio cambi (visitandone il
-	     sito o selezionandola da una lista nel caso egli usi l'applicazione
-	     dedicata) e chiede al suo portafoglio di creare le istruzioni per un
-	     bonifico che avrà come effetto finale quello di ottenere gettoni elettronci.
-	     Tali istruzioni conterranno un codice d'accesso che dovrà essere incluso
-	     nella causale del bonifico, nonché le coordinate bancarie della ufficio cambi
-	     (che sarà un conto compatibile con SEPA).</li>
-            <li lang="es">El cliente selecciona un casa de cambio (por ejemplo
-			visitando el sitio correspondiente o seleccionando de una lista de Casas
-      de Moneda en la aplicación) y pide que se cree una transferencia bancaria
-      para extraer una cierta cantidad de dinero electrónico.
-      Las instrucciones de la transferencia bancaria contendrán un código de acceso
-      que debe incluirse en el objeto de la transacción, como también los detalles
-      de la emisión (por ej. un número de cuenta SEPA, o CBU).</li>
+              a SEPA account number).") }}</li>
 
-             <li lang="en">The customer then instructs his <b>bank</b> to
+             <li>{{ _("The customer then instructs his <b>bank</b> to
                transfer funds from his account to the Taler exchange using
-               these instructions provided by the wallet (top left).</li>
-             <li lang="de">Der Kunde weist dann seine
-               Bank an, den entsprechenden Geldtransfer auf Basis dieser
-               Instruktionen zu veranlassen.</li>
-             <li lang="fr">Le client demande ensuite à sa <b>banque</b>
-             de transfèrer les fonds de son compte vers le bureau de change en utilisant
-             les informations fournies par le porte-monnaie (en haur à gauche).</li>
-             <li lang="it">Il cliente si rivolge alla sua <b>banca</b> per
-	     trasferire fondi dal suo conto a quello della ufficio cambi, utilizzando
-	     le istruzioni create dal suo portafoglio (in alto a sinistra).</li>
-             <li lang="es">El cliente entonces solicita a su <b>banco</b> que
-               transfiera fondos de su cuenta a la casa de cambio Taler
-               con las instrucciones provistas por la billetera (arriba a la izquierda).</li>
+               these instructions provided by the wallet (top left).") }}</li>
 
-             <li lang="en">Once the funds have arrived, the wallet will
+             <li>{{ _("Once the funds have arrived, the wallet will
                automatically withdraw the electronic coins.  The
                customer can use the wallet to review his remaining balance
                at any time. He can also make backups to secure his digital
-               coins against hardware failures.</li>
-             <li lang="de">Sobald die &Uuml;berweisung
-               angekommen ist, hebt die Geldb&ouml;rse automatisch die
-               elektronischen M&uuml;nzen ab.  Der Kunde kann seinen
-               akutellen elektronischen Barbestand jederzeit &uuml;ber
-               die Geldb&ouml;rsenanwendung &uuml;berpr&uuml;fen. Es
-               ist auch m&ouml;glich, die Daten aus der Geldb&ouml;rse
-               per Backup zu sichern.</li>
-             <li lang="fr">Une fois que les fonds sont arrivés, le porte-monnaie
-               retirera automatiquement les pièces électroniques. Le client peut
-               utiliser le porte-monnaie à tout moment pour connaitre son contenu.</li>
-             <li lang="it">Una volta che i fondi sono arrivati alla zecca,
-	     il portafoglio ritirerà automaticamente il corrispettivo in gettoni
-	     elettronici. Il cliente può sempre usare il portafogli per controllare
-	     il suo bilancio. Può anche effettuare copie di sicurezza come
-	     prevenzione verso malfunzionamenti o danni alla sua macchina.</li>
-             <li lang="es">Una vez recibidos los fondos, la billetera
-               contendrá automáticamente las monedas electrónicas. El cliente
-               puede revisar el balance en su billetera en cualquier momento.
-               También puede hacer copias de seguridad de su dinero electrónico
-               previendo fallas de hardware.</li>
+               coins against hardware failures.") }}</li>
 
-             <li lang="en">When visiting a merchant that supports Taler,
+             <li>{{ _("When visiting a merchant that supports Taler,
                an additional payment option for Taler is enabled in the checkout system.
                If the customer selects payments via Taler, the wallet
                displays the secured contract from the merchant and asks
@@ -278,45 +92,9 @@
                to provide any identity information to the merchant.
                Transaction histories and digitally
                signed contracts can be preserved in the wallet for future
-               review by the customer, or even use in court.</li>
-             <li lang="de">Beim Besuch eines H&auml;ndlers
-               der Taler unterst&uuml;tzt, wird Taler als zus&auml;tzliche
-               Bezahloption angezeigt.  Wenn der Kunde diese ausw&auml;hlt,
-               zeigt die Geldb&ouml;rsenanwendung einen
-               vom H&auml;ndler sicher &uuml;bertragnen Vertragstext an
-               und fragt den Kunden diesen zu best&auml;tigen.  Taler
-               &uuml;lbermittelt in beim Vertragsabschluss keine
-               personenbezogenen Daten. Historische Transaktionsinformationen
-               und der dazugeh&ouml;rige Vertragstext k&ouml;nnen von der
-               Geldb&ouml;rse lokal gespeichert werden, unter anderem zur
-               sp&auml;tern Durchsetzung von Vertr&auml;gen vor Gericht.</li>
-             <li lang="fr">Lorsqu'un un marchand qui supporte
-               Taler comme système de payement est visité une option de payement
-               supplémentaire est visible. Si le client choisit cette option,
-               le porte-monnaie affiche le contract du marchant et demande
-               une confirmation. Taler ne requiert pas du client qu'il
-               fournisse des informations sur son identité au marchant.
-               Les historiques de transactions et les contracts signés
-               numériquement sont stockés dans le porte-monnaie pour pouvoir
-               être revu par le client plus tard, ou même dans un tribunal.</li>
-             <li lang="it">Se un certo venditore supporta Taler, il suo
-	     sito mostrerà una nuova opzione di pagamento. Se il cliente
-	     sceglie Taler, il portafoglio mostrerà, previo controllo di
-	     sicurezza, il contratto del venditore e chiederà una conferma.
-	     Taler non richiede che il cliente riveli alcun dato personale
-	     al venditore. Gli storici delle transazioni e i contratti possono
-	     essere mantenuti nel portafoglio per future revisioni da parte
-	     del cliente o persino per essere mostrati durante una causa.</li>
-             <li lang="es">Al visitar un comerciante que soporta Taler,
-               se habilita en el sistema de pago la opción adicional de
-       pagar con Taler. Si el clente selecciona esta opción, la billetera
-       muestra el contrato proveniente del comerciante, y pide
-       una confirmación. Taler no necesita que el cliente entregue ninguna
-       información de identidad al comerciante. El registro de las transacciones
-       y los contratos firmados digitalmente pueden preservarse en la
-       billetera para una revisión posterior del cliente, o incluso ante la Justicia.</li>
+               review by the customer, or even use in court.") }}</li>
           </ol>
-        </p>
+        <p></p>
       </div>
       <!--# include file="common/footer.inc" -->
     </div> <!-- /container -->
