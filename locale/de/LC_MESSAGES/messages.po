@@ -757,11 +757,7 @@ msgstr "Vorteile für Regierungen"
 #: governments.html.j2:19 index.html.j2:23
 #, fuzzy
 msgid "Taxable"
-msgstr ""
-"#-#-#-#-#  index.de.po  #-#-#-#-#\n"
-"Taxierbar\n"
-"#-#-#-#-#  governments.de.po  #-#-#-#-#\n"
-"Besteuerbar"
+msgstr "Taxierbar"
 
 #: governments.html.j2:21
 msgid ""
@@ -824,11 +820,7 @@ msgstr ""
 #: governments.html.j2:40 index.html.j2:37
 #, fuzzy
 msgid "Libre"
-msgstr ""
-"#-#-#-#-#  index.de.po  #-#-#-#-#\n"
-"Liberal\n"
-"#-#-#-#-#  governments.de.po  #-#-#-#-#\n"
-"Freie Software"
+msgstr "Liberal"
 
 #: governments.html.j2:42
 msgid ""
