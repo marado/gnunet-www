@@ -1,4 +1,4 @@
-all: template
+all: locale template
 	cd web-common && tsc taler-wallet-lib.ts
 
 locale/messages.pot: *.j2 common/*.j2
@@ -11,14 +11,14 @@ locale-update: locale/messages.pot
 	pybabel update -i locale/messages.pot -d locale -l it --previous
 	pybabel update -i locale/messages.pot -d locale -l es --previous
 
-locale-compile: locale-update
+locale-compile:
 	pybabel compile -d locale -l en --use-fuzzy
 	pybabel compile -d locale -l de --use-fuzzy
 	pybabel compile -d locale -l fr --use-fuzzy
 	pybabel compile -d locale -l it --use-fuzzy
 	pybabel compile -d locale -l es --use-fuzzy
 
-locale: locale-compile
+locale: locale-update locale-compile
 
-template: locale
+template: locale-compile
 	./template.sh
