@@ -11,6 +11,8 @@ locale-update: locale/messages.pot
 	pybabel update -i locale/messages.pot -d locale -l it --previous
 	pybabel update -i locale/messages.pot -d locale -l es --previous
 
+	if grep -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
+
 locale-compile:
 	pybabel compile -d locale -l en --use-fuzzy
 	pybabel compile -d locale -l de --use-fuzzy
