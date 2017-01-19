@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-19 18:48+0100\n"
+"POT-Creation-Date: 2017-01-19 19:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -14,9 +14,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: about.html.j2:1 citizens.html.j2:1 developers.html.j2:1
-#: governments.html.j2:1 index.html.j2:1 investors.html.j2:1
-#: merchants.html.j2:1 news.html.j2:1
+#: about.html.j2:1 about.html.j2:5 about.html.j2:9 about.html.j2:116
+#: citizens.html.j2:1 citizens.html.j2:5 citizens.html.j2:9 citizens.html.j2:99
+#: developers.html.j2:1 developers.html.j2:5 developers.html.j2:9
+#: developers.html.j2:214 financial-news.html.j2:7 financial-news.html.j2:11
+#: financial-news.html.j2:203 governments.html.j2:1 governments.html.j2:5
+#: governments.html.j2:9 governments.html.j2:99 index.html.j2:1 index.html.j2:5
+#: index.html.j2:9 index.html.j2:80 investors.html.j2:1 investors.html.j2:5
+#: investors.html.j2:9 investors.html.j2:78 merchants.html.j2:1
+#: merchants.html.j2:5 merchants.html.j2:9 merchants.html.j2:135 news.html.j2:1
+#: news.html.j2:5 news.html.j2:9 news.html.j2:115 wallet.html.j2:7
+#: wallet.html.j2:112 wallet.html.j2:194
 msgid "en"
 msgstr "de"
 
