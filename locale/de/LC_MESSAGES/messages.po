@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-19 20:05+0100\n"
+"POT-Creation-Date: 2017-01-19 20:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -1069,6 +1069,10 @@ msgstr ""
 "\t     Währungen, wie zum Beispiel Euro, US-Dollar oder auch BitCoin.\n"
 "          "
 
+#: index.html.j2:59 news.html.j2:3 news.html.j2:12
+msgid "News"
+msgstr ""
+
 #: index.html.j2:60
 msgid "Taler Web payments paper published."
 msgstr "Taler Web Bezahldienste Publikation erschienen."
@@ -1552,10 +1556,6 @@ msgstr ""
 #: merchants.html.j2:123
 msgid "Manuals for merchants"
 msgstr "Handbücher für Händler"
-
-#: news.html.j2:3 news.html.j2:12
-msgid "News"
-msgstr ""
 
 #: wallet.html.j2:5
 msgid "Wallet"
