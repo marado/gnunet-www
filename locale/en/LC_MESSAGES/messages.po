@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-19 19:36+0100\n"
+"POT-Creation-Date: 2017-01-19 20:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -13,44 +13,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
-
-#: common/footer.inc.j2:3
-msgid ""
-"This page was created using <a href='https://www.gnu.org/'>Free "
-"Software</a> only."
-msgstr ""
-
-#: common/navigation.inc.j2:12
-msgid "Home"
-msgstr ""
-
-#: common/navigation.inc.j2:13
-msgid "Demo"
-msgstr ""
-
-#: common/navigation.inc.j2:14
-msgid "Citizens"
-msgstr ""
-
-#: common/navigation.inc.j2:15
-msgid "Merchants"
-msgstr ""
-
-#: common/navigation.inc.j2:16
-msgid "Governments"
-msgstr ""
-
-#: common/navigation.inc.j2:17
-msgid "Operators"
-msgstr ""
-
-#: common/navigation.inc.j2:18
-msgid "Developers"
-msgstr ""
-
-#: common/navigation.inc.j2:19
-msgid "About&nbsp;us"
-msgstr ""
 
 #: about.html.j2:1 about.html.j2:5 about.html.j2:9 about.html.j2:116
 #: citizens.html.j2:1 citizens.html.j2:5 citizens.html.j2:9 citizens.html.j2:99
@@ -148,7 +110,7 @@ msgstr ""
 msgid "Software engineer. Works on Android wallet."
 msgstr ""
 
-#: citizens.html.j2:3
+#: citizens.html.j2:3 common/navigation.inc.j2:14
 msgid "Citizens"
 msgstr ""
 
@@ -283,7 +245,7 @@ msgid ""
 "               review by the customer, or even use in court."
 msgstr ""
 
-#: developers.html.j2:3
+#: common/navigation.inc.j2:18 developers.html.j2:3
 msgid "Developers"
 msgstr ""
 
@@ -542,7 +504,7 @@ msgstr ""
 msgid "Financial News"
 msgstr ""
 
-#: governments.html.j2:3
+#: common/navigation.inc.j2:16 governments.html.j2:3
 msgid "Governments"
 msgstr ""
 
@@ -886,7 +848,7 @@ msgid ""
 "               correct operation for audits by financial regulators."
 msgstr ""
 
-#: merchants.html.j2:3
+#: common/navigation.inc.j2:15 merchants.html.j2:3
 msgid "Merchants"
 msgstr ""
 
@@ -1074,3 +1036,26 @@ msgstr ""
 #: wallet.html.j2:5
 msgid "Wallet"
 msgstr ""
+
+#: common/footer.inc.j2:3
+msgid ""
+"This page was created using <a href='https://www.gnu.org/'>Free "
+"Software</a> only."
+msgstr ""
+
+#: common/navigation.inc.j2:12
+msgid "Home"
+msgstr ""
+
+#: common/navigation.inc.j2:13
+msgid "Demo"
+msgstr ""
+
+#: common/navigation.inc.j2:17
+msgid "Operators"
+msgstr ""
+
+#: common/navigation.inc.j2:19
+msgid "About&nbsp;us"
+msgstr ""
+

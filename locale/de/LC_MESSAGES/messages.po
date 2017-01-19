@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-19 19:36+0100\n"
+"POT-Creation-Date: 2017-01-19 20:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -13,38 +13,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
-
-#: common/navigation.inc.j2:12
-msgid "Home"
-msgstr "Home"
-
-#: common/navigation.inc.j2:13
-msgid "Demo"
-msgstr "Demo"
-
-#: common/navigation.inc.j2:14
-msgid "Citizens"
-msgstr "Bürger"
-
-#: common/navigation.inc.j2:15
-msgid "Merchants"
-msgstr "Händler"
-
-#: common/navigation.inc.j2:16
-msgid "Governments"
-msgstr "Regierungen"
-
-#: common/navigation.inc.j2:17
-msgid "Operators"
-msgstr "Betreiber"
-
-#: common/navigation.inc.j2:18
-msgid "Developers"
-msgstr "Entwickler"
-
-#: common/navigation.inc.j2:19
-msgid "About&nbsp;us"
-msgstr "Über uns"
 
 #: about.html.j2:1 about.html.j2:5 about.html.j2:9 about.html.j2:116
 #: citizens.html.j2:1 citizens.html.j2:5 citizens.html.j2:9 citizens.html.j2:99
@@ -154,9 +122,9 @@ msgstr "Doktorand, TU München. Currently teaching."
 msgid "Software engineer. Works on Android wallet."
 msgstr "Android Geldbörse"
 
-#: citizens.html.j2:3
+#: citizens.html.j2:3 common/navigation.inc.j2:14
 msgid "Citizens"
-msgstr ""
+msgstr "Bürger"
 
 #: citizens.html.j2:12
 msgid "Advantages for citizens"
@@ -354,9 +322,9 @@ msgstr ""
 "               Geldbörse lokal gespeichert werden, unter anderem zur\n"
 "               spätern Durchsetzung von Verträgen vor Gericht."
 
-#: developers.html.j2:3
+#: common/navigation.inc.j2:18 developers.html.j2:3
 msgid "Developers"
-msgstr ""
+msgstr "Entwickler"
 
 #: developers.html.j2:12
 msgid "Taler for developers"
@@ -786,9 +754,9 @@ msgstr ""
 msgid "Financial News"
 msgstr ""
 
-#: governments.html.j2:3
+#: common/navigation.inc.j2:16 governments.html.j2:3
 msgid "Governments"
-msgstr ""
+msgstr "Regierungen"
 
 #: governments.html.j2:12
 msgid "Advantages for governments"
@@ -1308,9 +1276,9 @@ msgstr ""
 "              zum korrekten Verhalten der Wechselstube zwecks\n"
 "              Überprüfung durch die Finanzaufsicht."
 
-#: merchants.html.j2:3
+#: common/navigation.inc.j2:15 merchants.html.j2:3
 msgid "Merchants"
-msgstr ""
+msgstr "Händler"
 
 #: merchants.html.j2:12
 msgid "Advantages for merchants"
@@ -1600,3 +1568,20 @@ msgid ""
 msgstr ""
 "Diese Seite wurde allein durch Einsatz von <a "
 "href='https://www.gnu.org/'>Freier Software</a> erstellt."
+
+#: common/navigation.inc.j2:12
+msgid "Home"
+msgstr "Home"
+
+#: common/navigation.inc.j2:13
+msgid "Demo"
+msgstr "Demo"
+
+#: common/navigation.inc.j2:17
+msgid "Operators"
+msgstr "Betreiber"
+
+#: common/navigation.inc.j2:19
+msgid "About&nbsp;us"
+msgstr "Über uns"
+

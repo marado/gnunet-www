@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-19 19:36+0100\n"
+"POT-Creation-Date: 2017-01-19 20:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -13,45 +13,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
-
-#: common/footer.inc.j2:3
-msgid ""
-"This page was created using <a href='https://www.gnu.org/'>Free "
-"Software</a> only."
-msgstr ""
-
-#: common/navigation.inc.j2:12
-msgid "Home"
-msgstr "Accueil"
-
-#: common/navigation.inc.j2:13
-msgid "Demo"
-msgstr "Démo"
-
-#: common/navigation.inc.j2:14
-msgid "Citizens"
-msgstr "Citoyens"
-
-#: common/navigation.inc.j2:15
-msgid "Merchants"
-msgstr "Commerçants"
-
-#: common/navigation.inc.j2:16
-msgid "Governments"
-msgstr "Gouvernements"
-
-#: common/navigation.inc.j2:17
-#, fuzzy
-msgid "Operators"
-msgstr "Investisseurs"
-
-#: common/navigation.inc.j2:18
-msgid "Developers"
-msgstr "Développeurs"
-
-#: common/navigation.inc.j2:19
-msgid "About&nbsp;us"
-msgstr "À&nbsp;propos"
 
 #: about.html.j2:1 about.html.j2:5 about.html.j2:9 about.html.j2:116
 #: citizens.html.j2:1 citizens.html.j2:5 citizens.html.j2:9 citizens.html.j2:99
@@ -166,9 +127,9 @@ msgstr "Linux, FreeBSD, sites Web et en état profond de détente."
 msgid "Software engineer. Works on Android wallet."
 msgstr ""
 
-#: citizens.html.j2:3
+#: citizens.html.j2:3 common/navigation.inc.j2:14
 msgid "Citizens"
-msgstr ""
+msgstr "Citoyens"
 
 #: citizens.html.j2:12
 msgid "Advantages for citizens"
@@ -378,9 +339,9 @@ msgstr ""
 "               être revu par le client plus tard, ou même dans un "
 "tribunal."
 
-#: developers.html.j2:3
+#: common/navigation.inc.j2:18 developers.html.j2:3
 msgid "Developers"
-msgstr ""
+msgstr "Développeurs"
 
 #: developers.html.j2:12
 msgid "Taler for developers"
@@ -792,9 +753,9 @@ msgstr ""
 msgid "Financial News"
 msgstr ""
 
-#: governments.html.j2:3
+#: common/navigation.inc.j2:16 governments.html.j2:3
 msgid "Governments"
-msgstr ""
+msgstr "Gouvernements"
 
 #: governments.html.j2:12
 msgid "Advantages for governments"
@@ -1316,9 +1277,9 @@ msgstr ""
 "              des opérations requises pour les audits pes les authorités "
 "financières."
 
-#: merchants.html.j2:3
+#: common/navigation.inc.j2:15 merchants.html.j2:3
 msgid "Merchants"
-msgstr ""
+msgstr "Commerçants"
 
 #: merchants.html.j2:12
 msgid "Advantages for merchants"
@@ -1596,3 +1557,27 @@ msgstr ""
 #: wallet.html.j2:5
 msgid "Wallet"
 msgstr ""
+
+#: common/footer.inc.j2:3
+msgid ""
+"This page was created using <a href='https://www.gnu.org/'>Free "
+"Software</a> only."
+msgstr ""
+
+#: common/navigation.inc.j2:12
+msgid "Home"
+msgstr "Accueil"
+
+#: common/navigation.inc.j2:13
+msgid "Demo"
+msgstr "Démo"
+
+#: common/navigation.inc.j2:17
+#, fuzzy
+msgid "Operators"
+msgstr "Investisseurs"
+
+#: common/navigation.inc.j2:19
+msgid "About&nbsp;us"
+msgstr "À&nbsp;propos"
+
