@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <title>{{ _("GNU Taler") }} - {{ _("Wallet") }}</title>
     <meta name="description" content=""/>
-    <!--# include file="common/header.{{ _("en") }}.inc" -->
+    {% include "common/header.j2.inc" %}
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/millncjiddlpgdmkklmhfadpacifaonc" />
     <script src="web-common/taler-wallet-lib.js" type="text/javascript"></script>
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', onLoad);
 
   <body>
     <div class="container">
-      <!--# include file="common/navigation.{{ _("en") }}.inc" -->
+      {% include "common/navigation.j2.inc" %}
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1 lang="en">Taler Wallet</h1>
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', onLoad);
 
       </div> <!-- /row -->
 
-      <!--# include file="common/footer.{{ _("en") }}.inc" -->
+    {% include "common/footer.j2.inc" %}
     </div> <!-- /container -->
   </body>
 </html>

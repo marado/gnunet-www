@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>{{ _("GNU Taler") }} - {{ _("Financial News") }}</title>
     <meta name="description" content="">
-      <!--# include file="common/header.{{ _("en") }}.inc" -->
+      {% include "common/header.j2.inc" %}
   </head>
   <body>
     <div class="container">
-      <!--# include file="common/navigation.{{ _("en") }}.inc" -->
+      {% include "common/navigation.j2.inc" %}
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1 lang="en">{{ _("Financial News") }}</h1>
@@ -200,7 +200,7 @@
           <p><a class="btn btn-info" href="http://www.spiegel.de/international/world/spiegel-exclusive-nsa-spies-on-international-bank-transactions-a-922276.html" role="button">Source</a></p>
         </div>
      </div>
-      <!--# include file="common/footer.{{ _("en") }}.inc" -->
+      {% include "common/footer.j2.inc" %}
     </div> <!-- /container -->
   </body>
 </html>

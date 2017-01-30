@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-30 19:48+0100\n"
+"POT-Creation-Date: 2017-01-30 21:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -14,17 +14,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-#: about.html.j2:2 about.html.j2:7 about.html.j2:11 about.html.j2:118
-#: citizens.html.j2:2 citizens.html.j2:7 citizens.html.j2:11
-#: citizens.html.j2:101 developers.html.j2:2 developers.html.j2:7
-#: developers.html.j2:11 developers.html.j2:216 financial-news.html.j2:7
-#: financial-news.html.j2:11 financial-news.html.j2:203 governments.html.j2:2
-#: governments.html.j2:7 governments.html.j2:11 governments.html.j2:101
-#: index.html.j2:2 investors.html.j2:2 investors.html.j2:7 investors.html.j2:11
-#: investors.html.j2:80 merchants.html.j2:2 merchants.html.j2:7
-#: merchants.html.j2:11 merchants.html.j2:137 news.html.j2:2 news.html.j2:7
-#: news.html.j2:11 news.html.j2:117 wallet.html.j2:2 wallet.html.j2:7
-#: wallet.html.j2:112 wallet.html.j2:194
+#: about.html.j2:2 about.html.j2:118 citizens.html.j2:2 developers.html.j2:2
+#: governments.html.j2:2 governments.html.j2:7 governments.html.j2:11
+#: governments.html.j2:101 investors.html.j2:2 investors.html.j2:7
+#: investors.html.j2:11 investors.html.j2:80 merchants.html.j2:2
+#: merchants.html.j2:7 merchants.html.j2:11 merchants.html.j2:137
+#: news.html.j2:2 wallet.html.j2:2 wallet.html.j2:7 wallet.html.j2:112
+#: wallet.html.j2:194
 msgid "en"
 msgstr "fr"
 
@@ -1560,4 +1556,9 @@ msgstr ""
 
 #~ msgid "About&nbsp;us"
 #~ msgstr "À&nbsp;propos"
+
+#~ msgid ""
+#~ "This page was created using <a "
+#~ "href='https://www.gnu.org/'>Free Software</a> only."
+#~ msgstr ""
 

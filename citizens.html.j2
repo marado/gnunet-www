@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <title>{{ _("GNU Taler") }} - {{ _("Citizens") }}</title>
     <meta name="description" content=""/>
-      <!--# include file="common/header.{{ _("en") }}.inc" -->
+      {% include "common/header.j2.inc" %}
   </head>
   <body>
     <div class="container">
-      <!--# include file="common/navigation.{{ _("en") }}.inc" -->
+      {% include "common/navigation.j2.inc" %}
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>{{ _("Advantages for citizens") }}</h1>
@@ -65,7 +65,7 @@
         ") }}</p>
         <p>
         </p>
-          <img src="/images/customer.svg" alt="customer perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
+        <img src="{{ url('images/customer.svg') }}" alt="customer perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           <ol>
             <li>{{ _("The customer selects an exchange (i.e. by visiting the
               respective website or selecting from a list of exchanges in the
@@ -98,7 +98,7 @@
           </ol>
         <p></p>
       </div>
-      <!--# include file="common/footer.{{ _("en") }}.inc" -->
+      {% include "common/footer.j2.inc" %}
     </div> <!-- /container -->
   </body>
 </html>

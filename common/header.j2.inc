@@ -30,14 +30,14 @@
     <!--    <link rel="icon" href="../../favicon.ico"> -->
 
     <!-- Bootstrap core CSS -->
-    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/justified-nav.css" rel="stylesheet">
-    <link href="/styles.css" rel="stylesheet">
+    <link href="{{ url('justified-nav.css') }}" rel="stylesheet">
+    <link href="{{ url('styles.css') }}" rel="stylesheet">
 
-    <script src="/menu.js"></script>
-    <script src="/dist/js/jquery-1.11.1.min.js"></script>
-    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="{{ url('menu.js') }}"></script>
+    <script src="{{ url('dist/js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ url('dist/js/bootstrap.min.js') }}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
