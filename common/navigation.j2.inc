@@ -9,12 +9,12 @@
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="nav nav-justified">
-            <li class="m_index"><a href=".">{{ _("Home") }}</a></li>
+            <li class="m_index"><a href="{{ url_localized('index.html') }}">{{ _("Home") }}</a></li>
             <li class="m_demo btn btn-outline-success"><a href="https://demo.taler.net/" target="_blank">{{ _("Demo") }}</a></li>
 	    <li class="m_citizens"><a href="{{ url_localized('citizens.html') }}">{{ _("Citizens") }}</a></li>
             <li class="m_merchants"><a href="{{ url_localized('merchants.html') }}">{{ _("Merchants") }}</a></li>
             <li class="m_governments"><a href="{{ url_localized('governments.html') }}">{{ _("Governments") }}</a></li>
-            <li class="m_investors"><a href="{{ url_localized('operators.html') }}">{{ _("Operators") }}</a></li>
+            <li class="m_investors"><a href="{{ url_localized('investors.html') }}">{{ _("Operators") }}</a></li>
             <li class="m_developers"><a href="{{ url_localized('developers.html') }}">{{ _("Developers") }}</a></li>
             <li class="m_about"><a href="{{ url_localized('about.html') }}">{{ _("About&nbsp;us") }}</a></li>
           </ul>

@@ -25,19 +25,21 @@ env.install_gettext_translations(tr, newstyle=True)
 
 tmpl = env.get_template(in_file)
 
-def self_localized(x):
-    return ".".join((name, x, ext))
+def self_localized(other_locale):
+    """
+    Return URL for the current page in another locale.
+    """
+    return "../" + other_locale + "/" + in_file.rstrip(".j2")
 
-def url_localized(my_file):
-    my_name, my_ext = re.match(r"(.*)\.([^.]+)$", my_file).groups()
-    return ".".join((my_name, locale, my_ext))
+def url_localized(filename):
+    return "../" + locale + "/" + filename
 
 def url(x):
     # TODO: look at the app root environment variable
     # TODO: check if file exists
-    return x
+    return "../" + x
 
 import codecs
-f = codecs.open(".".join((name, locale, ext)), "w", "utf-8")
+f = codecs.open("./" + locale + "/" + in_file.rstrip(".j2"), "w", "utf-8")
 f.write(tmpl.render(lang=locale, url=url, self_localized=self_localized, url_localized=url_localized))
 f.close()

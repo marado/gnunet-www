@@ -3,6 +3,7 @@
 for f in $(git ls-files *.j2); do
     for ld in locale/*/; do
 	l=$(basename $ld)
+        mkdir -p $(basename $l)
 	echo "$f: $l"
 	python template.py $f $l
     done
