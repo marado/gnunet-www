@@ -23,7 +23,12 @@ env.install_gettext_translations(tr, newstyle=True)
 
 tmpl = env.get_template(in_file)
 
+def url(x):
+    # TODO: look at the app root environment variable
+    # TODO: check if file exists
+    return x
+
 import codecs
 f = codecs.open(out_file, "w", "utf-8")
-f.write(tmpl.render())
+f.write(tmpl.render(lang=locale, url=url))
 f.close()

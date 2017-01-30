@@ -1,7 +1,7 @@
 all: locale template
 	cd web-common && tsc
 
-locale/messages.pot: *.j2 common/*.j2
+locale/messages.pot: *.j2
 	pybabel extract -F locale/babel.map -o locale/messages.pot .
 
 locale-update: locale/messages.pot
