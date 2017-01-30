@@ -1,5 +1,5 @@
 all: locale template
-	cd web-common && tsc taler-wallet-lib.ts
+	cd web-common && tsc
 
 locale/messages.pot: *.j2 common/*.j2
 	pybabel extract -F locale/babel.map -o locale/messages.pot .
