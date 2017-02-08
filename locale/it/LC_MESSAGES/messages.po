@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-08 06:20+0100\n"
+"POT-Creation-Date: 2017-02-08 09:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: it\n"
@@ -15,122 +15,104 @@ msgstr ""
 "Generated-By: Babel 2.3.4\n"
 
 #: about.html.j2:2 citizens.html.j2:2 developers.html.j2:2
-#: governments.html.j2:2 investors.html.j2:2 merchants.html.j2:2 news.html.j2:2
+#: governments.html.j2:2 investors.html.j2:2 merchants.html.j2:2
 #: wallet.html.j2:2
 msgid "en"
-msgstr "it"
+msgstr ""
 
 #: about.html.j2:5 citizens.html.j2:5 developers.html.j2:5
-#: financial-news.html.j2:5 governments.html.j2:5 index.html.j2:5
-#: investors.html.j2:5 merchants.html.j2:5 news.html.j2:5 wallet.html.j2:5
+#: governments.html.j2:5 index.html.j2:5 investors.html.j2:5
+#: merchants.html.j2:5 wallet.html.j2:5
 msgid "GNU Taler"
 msgstr ""
 
 #: about.html.j2:5 about.html.j2:14
 msgid "About us"
-msgstr "Chi siamo"
+msgstr ""
 
 #: about.html.j2:22
-#, fuzzy
 msgid ""
 "GNU maintainer. Network security &amp; privacy researcher. Software "
 "architect."
 msgstr ""
-"Megalomane locale. Intendo, chi creerebbe un nuovo sistema di pagamento e"
-" una nuova Internet?"
 
 #: about.html.j2:27
-#, fuzzy
 msgid ""
 "Entrepreneur, Investor, Fortune 100 CIO, IT company director in different"
 " industries, …."
 msgstr ""
 
 #: about.html.j2:32
-#, fuzzy
 msgid "CFO"
-msgstr "CFO"
+msgstr ""
 
 #: about.html.j2:39
-#, fuzzy
 msgid "Applied cryptography. Contact to W3c &amp; Tor."
-msgstr "Matematico"
+msgstr ""
 
 #: about.html.j2:44
-#, fuzzy
 msgid "Theoretical foundations."
-msgstr "Teoricamente mortale"
+msgstr ""
 
 #: about.html.j2:49
-#, fuzzy
 msgid "Founder of the GNU project. Ethical guidance and licensing."
-msgstr "Entusiasta di etica"
+msgstr ""
 
 #: about.html.j2:56
-#, fuzzy
 msgid "PhD Student, TU Munich. Currently teaching."
-msgstr "Principalmente inoffensivo"
+msgstr ""
 
 #: about.html.j2:61
-#, fuzzy
 msgid "PhD Student, Inria.."
 msgstr ""
 
 #: about.html.j2:66 about.html.j2:81
-#, fuzzy
 msgid "Software engineer."
 msgstr ""
 
 #: about.html.j2:73
 msgid "Sustainable business development."
-msgstr "Realizzando pensieri profondi"
+msgstr ""
 
 #: about.html.j2:77
-#, fuzzy
 msgid "Software engineer. Works on libebics."
-msgstr "EBICS."
+msgstr ""
 
 #: about.html.j2:87
-#, fuzzy
 msgid "Translator (Spanish)"
-msgstr "Traduttrici"
+msgstr ""
 
 #: about.html.j2:91 about.html.j2:95
-#, fuzzy
 msgid "Translator (Italian)"
-msgstr "Traduttrici"
+msgstr ""
 
 #: about.html.j2:101
-#, fuzzy
 msgid "Hardware security module"
 msgstr ""
 
 #: about.html.j2:105
-#, fuzzy
 msgid "Risk management"
 msgstr ""
 
 #: about.html.j2:109
-#, fuzzy
 msgid "PhD student, TU Munich. Currently teaching."
-msgstr "Linux, FreeBSD, siti web e il deep state nel tempo libero."
+msgstr ""
 
 #: about.html.j2:115
-#, fuzzy
 msgid "Software engineer. Works on Android wallet."
 msgstr ""
 
 #: citizens.html.j2:5
 msgid "Citizens"
-msgstr "Cittadini"
+msgstr ""
 
 #: citizens.html.j2:14
 msgid "Advantages for citizens"
-msgstr "Vantaggi per i cittadini"
+msgstr ""
 
 #: citizens.html.j2:21
 msgid "Security"
-msgstr "Sicurezza"
+msgstr ""
 
 #: citizens.html.j2:23
 msgid ""
@@ -146,25 +128,10 @@ msgid ""
 "             a physical wallet, except online and without the need to "
 "manually count coins."
 msgstr ""
-"Taler è l'equivalente elettronico dei contanti, tranne per il fatto\n"
-"             che è più difficile da falsificare. Se il tuo portafoglio "
-"digitale va perso\n"
-"             (ad esempio, perché il tuo computer è stato danneggiato "
-"irreparabilmente o\n"
-"             compromesso), solo l'ammontare di denaro contenuto in esso "
-"andrà perduto a sua\n"
-"             volta. A differenza di un portafoglio reale, è possibile "
-"fare un backup di\n"
-"             quello digitale, così da garantire sicurezza contro la "
-"perdita dei dati. Quindi\n"
-"             il tuo portafoglio digitale funziona per lo più come quello "
-"reale, eccetto il\n"
-"             fatto che sia online ed eviti di contare manualmente le "
-"monete."
 
 #: citizens.html.j2:32
 msgid "Privacy"
-msgstr "Privacy"
+msgstr ""
 
 #: citizens.html.j2:34
 msgid ""
@@ -177,18 +144,10 @@ msgid ""
 "             exactly the transaction you confirmed using your digital "
 "wallet."
 msgstr ""
-"Le tue transazioni sono private, né la ufficio cambi, né il venditore\n"
-"\t     hanno bisogno di conoscere la tua identità. Non c'è necessità di "
-"rivelare il\n"
-"\t     numero di carta di credito o altre informazioni riservate, e il "
-"venditore sarà\n"
-"\t     solo in grado di fare l'esatta transazione che tu hai confermato "
-"usando il tuo\n"
-"\t     portafoglio digitale."
 
 #: citizens.html.j2:42
 msgid "Convenience"
-msgstr "Convenienza"
+msgstr ""
 
 #: citizens.html.j2:44
 msgid ""
@@ -198,14 +157,10 @@ msgid ""
 "pay or withdraw\n"
 "             cash today."
 msgstr ""
-"Potrai prelevare le tue monete digitali per riempire il portafoglio\n"
-"\t     usando la carta di credito o transazioni SEPA, simili al modo in "
-"cui paghi o\n"
-"\t     prelevi contanti normalmente al giorno d'oggi."
 
 #: citizens.html.j2:49
-msgid "Stability "
-msgstr "Stabilità"
+msgid "Stability"
+msgstr ""
 
 #: citizens.html.j2:51
 msgid ""
@@ -218,18 +173,10 @@ msgid ""
 "digital\n"
 "             wallet at the same time."
 msgstr ""
-"Il denaro nel tuo portafoglio digitale sarà sotto la stessa\n"
-"\t     denominazione di quello nel portafoglio reale, così da non doverti"
-" preoccupare\n"
-"\t     per la svalutazione della valuta o per le tariffe di conversione. "
-"Come in un\n"
-"\t     portafoglio normale, puoi avere allo stesso tempo monete digitali "
-"di diverse\n"
-"\t     valute nel tuo portafoglio digitale."
 
 #: citizens.html.j2:59
 msgid "Taler as seen by customers"
-msgstr "Come i clienti vedono Taler"
+msgstr ""
 
 #: citizens.html.j2:61
 msgid ""
@@ -240,10 +187,6 @@ msgid ""
 "          Typical steps performed by customers are:\n"
 "        "
 msgstr ""
-"I cliente interagiscono con Taler principalmente utilizzando\n"
-"\tun portafoglio elettronico gratuito, che può presentarsi sia come una\n"
-"\testensione per il loro browser, sia come una applicazione dedicata.\n"
-"\tLe tipiche operazioni fatte da un cliente sono:"
 
 #: citizens.html.j2:70
 msgid ""
@@ -259,18 +202,6 @@ msgid ""
 "(i.e.\n"
 "              a SEPA account number)."
 msgstr ""
-"Il cliente seleziona una ufficio cambi (visitandone il\n"
-"\t     sito o selezionandola da una lista nel caso egli usi "
-"l'applicazione\n"
-"\t     dedicata) e chiede al suo portafoglio di creare le istruzioni per "
-"un\n"
-"\t     bonifico che avrà come effetto finale quello di ottenere gettoni "
-"elettronci.\n"
-"\t     Tali istruzioni conterranno un codice d'accesso che dovrà essere "
-"incluso\n"
-"\t     nella causale del bonifico, nonché le coordinate bancarie della "
-"ufficio cambi\n"
-"\t     (che sarà un conto compatibile con SEPA)."
 
 #: citizens.html.j2:79
 msgid ""
@@ -279,10 +210,6 @@ msgid ""
 "using\n"
 "               these instructions provided by the wallet (top left)."
 msgstr ""
-"Il cliente si rivolge alla sua <b>banca</b> per\n"
-"\t     trasferire fondi dal suo conto a quello della ufficio cambi, "
-"utilizzando\n"
-"\t     le istruzioni create dal suo portafoglio (in alto a sinistra)."
 
 #: citizens.html.j2:83
 msgid ""
@@ -294,13 +221,6 @@ msgid ""
 "digital\n"
 "               coins against hardware failures."
 msgstr ""
-"Una volta che i fondi sono arrivati alla zecca,\n"
-"\t     il portafoglio ritirerà automaticamente il corrispettivo in "
-"gettoni\n"
-"\t     elettronici. Il cliente può sempre usare il portafogli per "
-"controllare\n"
-"\t     il suo bilancio. Può anche effettuare copie di sicurezza come\n"
-"\t     prevenzione verso malfunzionamenti o danni alla sua macchina."
 
 #: citizens.html.j2:89
 msgid ""
@@ -316,26 +236,18 @@ msgid ""
 "\n"
 "               review by the customer, or even use in court."
 msgstr ""
-"Se un certo venditore supporta Taler, il suo\n"
-"\t     sito mostrerà una nuova opzione di pagamento. Se il cliente\n"
-"\t     sceglie Taler, il portafoglio mostrerà, previo controllo di\n"
-"\t     sicurezza, il contratto del venditore e chiederà una conferma.\n"
-"\t     Taler non richiede che il cliente riveli alcun dato personale\n"
-"\t     al venditore. Gli storici delle transazioni e i contratti possono\n"
-"\t     essere mantenuti nel portafoglio per future revisioni da parte\n"
-"\t     del cliente o persino per essere mostrati durante una causa."
 
 #: developers.html.j2:5
 msgid "Developers"
-msgstr "Sviluppatori"
+msgstr ""
 
 #: developers.html.j2:14
 msgid "Taler for developers"
-msgstr "Taler per programmatori"
+msgstr ""
 
 #: developers.html.j2:20
 msgid "Free"
-msgstr "Free"
+msgstr ""
 
 #: developers.html.j2:22
 msgid ""
@@ -352,23 +264,10 @@ msgid ""
 "            the adoption of this libre payment platform.\n"
 "          "
 msgstr ""
-"Taler è un free software che utilizza un\n"
-"\t    protocollo aperto. Chiunque è benvenuto per esaminare il\n"
-"\t    nostro codice e integrare le nostre implementazioni di\n"
-"\t    riferimento nelle loro applicazioni. Diversi componenti di\n"
-"\t    Taler sono stati resi disponibili sotto diverse\n"
-"\t    licenze. Affero GPLv3+ è usata per la exchange, LGPLv3+\n"
-"\t    per il codice di riferimento che mostra l'integrazione con\n"
-"\t    la piattaforma del venditore, e licenze come\n"
-"\t    Apache/Mozilla/GPLv3+ sono usate per i portafogli e i\n"
-"\t    relativi software di interfaccia dei clienti. Siamo aperti\n"
-"\t    a suggerimenti costruttivi per massimizzare l'adozione di\n"
-"\t    questa piattaforma di pagamento free.\n"
-"          "
 
 #: developers.html.j2:36
 msgid "RESTful"
-msgstr "RESTful"
+msgstr ""
 
 #: developers.html.j2:38
 msgid ""
@@ -384,23 +283,10 @@ msgid ""
 "\t    in detail <a href='https://api.taler.net/'>here</a>.\n"
 "          "
 msgstr ""
-"Taler è progettato per funzionare su\n"
-"\t    Internet. Per assicurare che i pagamenti in Taler possano\n"
-"\t    funzionare con configurazioni di rete ristrette, Taler usa\n"
-"\t    un protocollo RESTful su HTTP o HTTPS. La sicurezza di\n"
-"\t    Taler non dipende dall'uso di HTTPS, ma ovviamente i\n"
-"\t    venditori possono scegliere di offrire HTTPS per maggior\n"
-"\t    compattenza e perché è generalmente migliore per la\n"
-"\t    privacy se paragonato a HTTP.  Taler usa JSON per\n"
-"\t    codificare i dati di struttura, rendendo facile integrare\n"
-"\t    Taler con le già esistenti applicazioni web. Il protocollo\n"
-"\t    usato da Taler è documentato nel\n"
-"\t    dettaglio <a href='https://api.taler.net/'>qui</a>.\n"
-"          "
 
 #: developers.html.j2:53
 msgid "Code"
-msgstr "Codice"
+msgstr ""
 
 #: developers.html.j2:55
 msgid ""
@@ -414,20 +300,10 @@ msgid ""
 "\t    our <a href='https://git.taler.net/'>GitWeb</a>.\n"
 "          "
 msgstr ""
-"Attualmente Taler è principalmente sviluppato\n"
-"\t    da un team di ricercatori di Inria e TU Munich. Comunque,\n"
-"\t    sono ben accetti contributi da parte di chiunque.  Le\n"
-"\t    nostre repository di Git possono essere clonate applicando\n"
-"\t    il metodo d'accesso di Git e HTTP su questo\n"
-"\t    link <tt>git.taler.net</tt>, con il nome della\n"
-"\t    corrispettiva repository. Una lista delle repository\n"
-"\t    pubbiche può essere trovata al nostro\n"
-"\t    <a href='https://git.taler.net/'>GitWeb</a>.\n"
-"          "
 
 #: developers.html.j2:66
 msgid "Documentation"
-msgstr "Documentazione"
+msgstr ""
 
 #: developers.html.j2:68
 msgid ""
@@ -439,17 +315,10 @@ msgid ""
 "            soon.\n"
 "          "
 msgstr ""
-"Oltre a questo sito,\n"
-"\t    il <a href='https://git.taler.net/'>codice\n"
-"\t    documentato</a>, e\n"
-"\t    la <a href='https://api.taler.net/'>documentazione API</a>,\n"
-"\t    siamo preparando un documento integrale di progettazione\n"
-"\t    che sarà presto pubblicato qui.\n"
-"          "
 
 #: developers.html.j2:77
 msgid "Discussion"
-msgstr "Discussione"
+msgstr ""
 
 #: developers.html.j2:79
 msgid ""
@@ -458,14 +327,10 @@ msgid ""
 "            <a "
 "href='http://lists.gnu.org/mailman/listinfo/taler'>http://lists.gnu.org/mailman/listinfo/taler</a>."
 msgstr ""
-"We have a mailinglist for developer discussions.\n"
-"            You can subscribe to it or read the list archive at\n"
-"            <a "
-"href='http://lists.gnu.org/mailman/listinfo/taler'>http://lists.gnu.org/mailman/listinfo/taler</a>."
 
 #: developers.html.j2:87
 msgid "Regression Testing"
-msgstr "Test delle regressioni"
+msgstr ""
 
 #: developers.html.j2:89
 msgid ""
@@ -477,17 +342,10 @@ msgid ""
 "\n"
 "          "
 msgstr ""
-"E' disponibile\n"
-"\t    un <a href='https://buildbot.net/'>Buildbot</a>\n"
-"\t    dedicato a test automatici per individuare regressioni e\n"
-"\t    controllare la portabilità, alla\n"
-"\t    pagina <a "
-"href='https://buildbot.taler.net/'>buildbot.taler.net</a>.\n"
-"          "
 
 #: developers.html.j2:97
 msgid "Code Coverage Analysis"
-msgstr "Analisi della copertura del codice"
+msgstr ""
 
 #: developers.html.j2:99
 msgid ""
@@ -499,17 +357,10 @@ msgid ""
 "            at <a href='https://lcov.taler.net/'>lcov.taler.net</a>.\n"
 "          "
 msgstr ""
-"I test effettuati sul software Taler subiscono\n"
-"\t    la misurazione della loro 'copertura'\n"
-"\t    da <a href='http://ltp.sourceforge.net/coverage/lcov.php'>LCOV</a>;"
-"\n"
-"\t    inoltre, tali risultati sono disponibili alla\n"
-"\t    pagina <a href='https://lcov.taler.net/'>lcov.taler.net</a>.\n"
-"          "
 
 #: developers.html.j2:107
 msgid "Performance Analysis"
-msgstr "Analisi delle prestazioni"
+msgstr ""
 
 #: developers.html.j2:109
 msgid ""
@@ -519,15 +370,10 @@ msgid ""
 "            at <a href='https://gauger.taler.net/'>gauger.taler.net</a>.\n"
 "          "
 msgstr ""
-"Le prestazioni della ufficio cambi sono misurate attraverso\n"
-"\t    <a href='https://gnunet.org/gauger'>Gauger</a>, e i\n"
-"\t    risultati disponibili alla pagina\n"
-"\t    <a href='https://gauger.taler.net/'>gauger.taler.net</a>.\n"
-"          "
 
 #: developers.html.j2:118
 msgid "Taler system overview"
-msgstr "Schema generale del sistema Taler"
+msgstr ""
 
 #: developers.html.j2:120
 msgid ""
@@ -538,12 +384,6 @@ msgid ""
 "          transactions involve the following steps:\n"
 "        "
 msgstr ""
-"Taler usa <a href='https://www.fsf.org/'>software\n"
-"\t  libero</a> per realizzare i protocolli finalizzati alla\n"
-"\t  comunicazione tra i vari partecipanti come illustrato nella\n"
-"\t  figura a destra.  La tipica transazione nel modello Taler si\n"
-"\t  compone dei seguenti passaggi:\n"
-"        "
 
 #: developers.html.j2:129
 msgid ""
@@ -555,17 +395,6 @@ msgid ""
 "               customer creates a reserve at the exchange.\n"
 "             "
 msgstr ""
-"Un cliente chiede alla sua <b>banca</b> di\n"
-"\t       trasferire fondi dal suo conto a quello della\n"
-"\t       ufficio cambi Taler (in alto a destra).  La causale di\n"
-"\t       questo trasferimento includerà l'informazione\n"
-"\t       necessaria, generata dal portafoglio elettronico\n"
-"\t       (<b>wallet</b>) compatibile col sistema Taler, ad\n"
-"\t       autenticare il cliente alla ufficio cambi (nota anche\n"
-"\t       come &quot;exchange&quot;).  Nella terminologia adeguata, si "
-"dirà\n"
-"\t       che il cliente ha creato una riserva.\n"
-"             "
 
 #: developers.html.j2:137
 msgid ""
@@ -583,21 +412,6 @@ msgid ""
 "               exchange may charge for the service).\n"
 "             "
 msgstr ""
-"In seguito alla ricezione del trasferimento\n"
-"\t       da parte della ufficio cambi, il cliente\n"
-"\t       potrà <b>ritirare</b> i suoi gettoni elettronici.  Tali\n"
-"\t       gettoni sono rappresentazioni digitali dell'ammonto che\n"
-"\t       il cliente ha trasferitto alla ufficio cambi. E'\n"
-"\t       fondamentale notare che in questo processo la\n"
-"\t       ufficio cambi non apprende nessun &quot;numero seriale&quot; dei"
-"\n"
-"\t       gettoni coinvolti, in modo tale da non poter a\n"
-"\t       posteriori associare un certo cliente ad un certo\n"
-"\t       acquisto. Taler non interferisce dunque né con la\n"
-"\t       valuta né con l'ammonto presente nella riserva. L'unica\n"
-"\t       modifca apportata da Taler alla riserva è la\n"
-"\t       sottrazione da questa della tariffa del servizio.\n"
-"             "
 
 #: developers.html.j2:150
 msgid ""
@@ -618,27 +432,6 @@ msgid ""
 "               customers getting change).\n"
 "             "
 msgstr ""
-"Con i gettoni elettronici nel portafogli,\n"
-"\t       il cliente può <b>spendere</b> presso tutti i venditori\n"
-"\t       che accettano Taler tra i loro sistemi di pagamento, e\n"
-"\t       che sono disponibili a finalizzare l'operazione con la\n"
-"\t       stessa ufficio cambi che ha dato i gettoni al cliente\n"
-"\t       (freccia in basso).  Tecnicamente, ciò comporta la\n"
-"\t       creazione di un certificato firmato d'ambo le parti:\n"
-"\t       dal venditore e dalla chiave corrispondente al gettone\n"
-"\t       speso (vale la pena notare che un gettone, altro non è,\n"
-"\t       che una coppia di chiavi pubblica e privata). Assumendo\n"
-"\t       che i tribunali accettino firme elettroniche, un\n"
-"\t       cliente può utilizzare tale certificato per mostrare i\n"
-"\t       suoi termini esatti e che egli ha pagato la somma\n"
-"\t       dovuta. Ancora, il cliente non viene mai a conoscenza\n"
-"\t       degli estremi bancari del negoziante e, allo stesso\n"
-"\t       modo, Taler non richiede che il negoziante debba\n"
-"\t       conoscere l'identità del cliente. Naturalmente, il\n"
-"\t       cliente può anche spendere una frazione di uno dei suoi\n"
-"\t       gettoni, grazie alla facoltà che Taler ha di restituire\n"
-"\t       il cambio.\n"
-"\t     "
 
 #: developers.html.j2:167
 msgid ""
@@ -659,19 +452,6 @@ msgid ""
 "               (and do not engage in illegal contracts).\n"
 "             "
 msgstr ""
-"Contemporaneamente alla firma dei contratti\n"
-"\t       viene creata una ricevuta che il negoziante\n"
-"\t       può <b>depositare</b> alla ufficio cambi al fine di\n"
-"\t       riavere indietro il corrispettivo in denaro del gettone\n"
-"\t       che ha ricevuto dal cliente. Il deposito non mette la\n"
-"\t       ufficio cambi nelle condizioni di apprendere i dettagli\n"
-"\t       del contratto tra il negoziante e il cliente, né\n"
-"\t       l'identità stessa del cliente. Ad ogni modo, la\n"
-"\t       ufficio cambi potrà (e dovrà) conoscere l'identità del\n"
-"\t       negoziante, dal momento che essa necessità dei suoi\n"
-"\t       estremi bancari necessari a finalizzare il\n"
-"\t       processo.\n"
-"             "
 
 #: developers.html.j2:184
 msgid ""
@@ -685,15 +465,6 @@ msgid ""
 "               deposited.\n"
 "             "
 msgstr ""
-"Infine, la ufficio cambi trascferirà fondi\n"
-"\t       della stessa cifra dei gettoni riscattati dal negoziate\n"
-"\t       verso il conto in <b>banca</b> di quest' ultimo. Nulla\n"
-"\t       impedisce alla zezza di combinare molteplici piccole\n"
-"\t       transazioni in un unico bonifico verso il conto del\n"
-"\t       negoziante. Il negoziante può in ogni momento\n"
-"\t       interrogare la ufficio cambi sullo stato dei bonifici\n"
-"\t       che egli ha diritto a ricevere.\n"
-"\t     "
 
 #: developers.html.j2:194
 msgid ""
@@ -707,16 +478,6 @@ msgid ""
 "               remaining coins in circulation.\n"
 "             "
 msgstr ""
-"E' importante notare che la ufficio cambi\n"
-"\t       mantiene prove crittografiche che le permettono di\n"
-"\t       dimostrare la sua buona fede verso terze\n"
-"\t       parti. Nell'architettura di Taler è prevista la\n"
-"\t       presenza di un <b>ispettore</b> esterno, come ad\n"
-"\t       esempio un apparato statale del fisco, che controlla\n"
-"\t       costantemente i database della ufficio cambi per\n"
-"\t       verificare che il suo bilancio corrisponda sempre alla\n"
-"\t       quantità di gettoni ancora in circolazione.\n"
-"             "
 
 #: developers.html.j2:204
 msgid ""
@@ -730,32 +491,18 @@ msgid ""
 "               compromise.\n"
 "             "
 msgstr ""
-"L'assenza di taler ispettore metterebbe i\n"
-"\t       gestori della ufficio cambi nelle condizioni di\n"
-"\t       appropriarsi del denaro presente nelle sue riserve.\n"
-"\t       Clienti e negozianti non hanno la possibilità di\n"
-"\t       frodarsi a vicenda, né di frodare la ufficio cambi. Se\n"
-"\t       il computer di qualcuna delle parti viene compromesso,\n"
-"\t       la perdita finananziaria non tocca le altre parti ed è\n"
-"\t       proporzionale ai fondi che tale computer ha in\n"
-"\t       circolazione durante il periodo della compromissione.\n"
-"\t     "
-
-#: financial-news.html.j2:5 financial-news.html.j2:14
-msgid "Financial News"
-msgstr ""
 
 #: governments.html.j2:5
 msgid "Governments"
-msgstr "Governi"
+msgstr ""
 
 #: governments.html.j2:14
 msgid "Advantages for governments"
-msgstr "Vantaggi per i governi"
+msgstr ""
 
 #: governments.html.j2:21 index.html.j2:25
 msgid "Taxable"
-msgstr "Tassabile"
+msgstr ""
 
 #: governments.html.j2:23
 msgid ""
@@ -770,21 +517,30 @@ msgid ""
 "income, making tax evasion and\n"
 "             black markets less viable."
 msgstr ""
-"Taler è un sistema di pagamento elettronico ideato con lo scopo di "
-"supportare la tassazione.\n"
-"\t     Con Taler, il ricevitore di qualsiasi forma di pagamento è "
-"conosciuto, e le informazioni del pagamento\n"
-"\t     arrivano con l'aggiunta di dettagli riguardo al perché sia stato "
-"effettuato. Quindi i governi possono usare\n"
-"\t     questi dati per tazzare aziende e individui in base al loro "
-"reddito, così da rendere evasione fiscale\n"
-"\t     e mercato nero meno usufruibili."
 
-#: governments.html.j2:30 investors.html.j2:28 merchants.html.j2:29
+#: governments.html.j2:28
+msgid ""
+"Thus, while one of the key goals of Taler is to provide anonymity for\n"
+"             citizens spending digital cash to buy goods and services, we"
+" also ensure that the state can\n"
+"             observe incoming transactions to ensure businesses engage "
+"only in\n"
+"             legal activities, and do not evade taxes (such as income "
+"tax,\n"
+"             sales tax or value-added tax).  However, this observational "
+"capability does not\n"
+"             extend to the immediate personal domain.  In particular, "
+"sharing access to funds \n"
+"             within a family or copying coins between multiple devices is"
+" not subject to\n"
+"             monitoring."
+msgstr ""
+
+#: governments.html.j2:39 investors.html.j2:28 merchants.html.j2:29
 msgid "Secure"
-msgstr "Sicuro"
+msgstr ""
 
-#: governments.html.j2:32
+#: governments.html.j2:41
 msgid ""
 "Taler's payments are cryptographically secured. Thus, customers, "
 "merchants and\n"
@@ -799,25 +555,12 @@ msgid ""
 "             within the Taler system who might threaten the economy due "
 "to fraud."
 msgstr ""
-"I pagamenti fatti con Taler sono crittograficamente sicuri. In questo "
-"modo, clienti, venditori\n"
-"\t     e il conio possono matematicamente dimostrare il loro "
-"comportamento legittimo in un processo, in\n"
-"\t     caso di controversie. I danni finanziari sono molto limitati "
-"attraverso l'incremento di sicurezza\n"
-"\t     economica per l'individuo, il venditore, il conio e lo stato. "
-"Ancora più importante è il fatto che un\n"
-"\t     qualsiasi revisore di conti indipendente possa assicurare che non "
-"ci sia un &quot;conio cattivo&quot; all'interno\n"
-"\t     del sistema di Taler che potrebbe minacciare l'economia attraverso"
-" frodi fiscali."
 
-#: governments.html.j2:42 index.html.j2:39
-#, fuzzy
+#: governments.html.j2:51 index.html.j2:39
 msgid "Libre"
-msgstr "Libero"
+msgstr ""
 
-#: governments.html.j2:44
+#: governments.html.j2:53
 msgid ""
 "Taler is free software implementing an open protocol standard.  Thus, "
 "Taler will\n"
@@ -825,17 +568,12 @@ msgid ""
 "systems that threatens\n"
 "             global political and financial stability today."
 msgstr ""
-"Taler è un free software che implementa standard di protocollo aperto. "
-"Quindi Taler\n"
-"\t     abiliterà la competizione ed eviterà la monopolizzazione dei "
-"sistemi di pagamento che oggigiorno\n"
-"\t     minacciano la politica globale e la stabilità finanziaria."
 
-#: governments.html.j2:49 investors.html.j2:18
+#: governments.html.j2:58 investors.html.j2:18
 msgid "Efficient"
-msgstr "Efficiente"
+msgstr ""
 
-#: governments.html.j2:51
+#: governments.html.j2:60
 msgid ""
 "Taler is designed to be efficient.  Unlike timeline-based payment systems"
 " like\n"
@@ -843,17 +581,12 @@ msgid ""
 "national electric grids or\n"
 "             (significantly) contribute to environmental pollution."
 msgstr ""
-"Taler è progettato per essere efficiente. A differenza dei sistemi di "
-"pagamento come\n"
-"\t     BitCoin, Taler non minaccerà la disponibilità della rete elettrica"
-" nazionale o contribuirà ad incrementare\n"
-"\t     (in modo significativo) l'inquinamento."
 
-#: governments.html.j2:57
+#: governments.html.j2:66
 msgid "Taler as seen by governments"
-msgstr "Taler dal punto di vista dai governi"
+msgstr ""
 
-#: governments.html.j2:59
+#: governments.html.j2:68
 msgid ""
 "Governments can observe traditional wire\n"
 "          transfers entering and leaving the Taler system, and\n"
@@ -865,17 +598,8 @@ msgid ""
 "          Information available to the government includes:\n"
 "        "
 msgstr ""
-"Organi quali gli Stati potranno osservare i trasferimenti\n"
-"\tbancari in ingresso e in uscita dal sistema Taler, e richiedere ai "
-"venditori\n"
-"\te alla zecca le informazioni necessarie nelle ispezioni finanziarie.\n"
-"\tGli operatori della zecca dovranno aspettarsi ripetitivi controlli da\n"
-"\tparte degli ispettori, mentre ai negozianti sarà richiesto di rivelare\n"
-"\tle informazioni necessarie soltanto durante la riscossione delle tasse."
-"\n"
-"\tLe informazini disponibili ai governi includono:"
 
-#: governments.html.j2:71
+#: governments.html.j2:80
 msgid ""
 "From the banking system:\n"
 "              The total amount of digital currency\n"
@@ -883,23 +607,15 @@ msgid ""
 "              limits on how many digital coins a customer may\n"
 "              withdraw within a given timeframe."
 msgstr ""
-"Dal sistema bancario:\n"
-"\t     l'ammonto totale dei gettoni digitali in possesso\n"
-"\t     di un certo cliente. Lo Stato potrebbe imporre un limite\n"
-"\t     alla quantità di moneta digitale che un cliente può ritirare\n"
-"\t     in un certo lasso di tempo."
 
-#: governments.html.j2:77
+#: governments.html.j2:86
 msgid ""
 "From the banking system:\n"
 "               The total amount of income received\n"
 "               by any merchant via the Taler system."
 msgstr ""
-"Dal sistema bancario:\n"
-"\t     La somma totale delle entrate di un negoziante attraverso\n"
-"\t     Taler."
 
-#: governments.html.j2:81
+#: governments.html.j2:90
 msgid ""
 "From auditing the exchange:\n"
 "               The amounts of digital coins legitimately withdrawn by\n"
@@ -911,21 +627,8 @@ msgid ""
 "exchange, and\n"
 "               the income of the exchange from transaction fees."
 msgstr ""
-"Dalle ispezioni alla ufficio cambi:\n"
-"\t     La somma di gettoni digitali ritirati dai clienti alla ufficio "
-"cambi,\n"
-"\t     il valore dei gettoni ancora custoditi nei portafogli virtuali\n"
-"\t     dei clienti (chiamati anche &quot;gettoni non riscattati&quot;), "
-"il valore\n"
-"\t     e i dettagli dei bonifici che i mercanti hanno ricevuti in seguito"
-"\n"
-"\t     alla operazione di &quot;deposito&quot; (ossia quando le monete "
-"virtuali vengono\n"
-"\t     riscattate dai mercanti) effettuata presso la ufficio cambi, e le "
-"entrate\n"
-"\t     della ufficio cambi dovute alle tariffe applicate ai suoi servizi"
 
-#: governments.html.j2:88
+#: governments.html.j2:97
 msgid ""
 "From auditing merchants:\n"
 "               For each deposit operation, the exact details of the\n"
@@ -940,31 +643,23 @@ msgid ""
 "customer's\n"
 "               identity from the information that Taler collects."
 msgstr ""
-"Dalle ispezioni ai negozianti:\n"
-"\t     Per ogni operazione di deposito, i dettagli del contratto,\n"
-"\t     firmato da cliente e negoziante, da cui questa è stata\n"
-"\t     originata. Tipicamente, questa informazione non include\n"
-"\t     l'identità del cliente. Si noti che l'identità del cliente\n"
-"\t     può essere resa nota solo se questi decide volontariamente di\n"
-"\t     rivelare i suoi estremi (ad esempio, nel caso ritenga di dover\n"
-"\t     procedere per vie legali per risolvere\n"
-"\t     un disputa con un negoziante), in quanto ufficio cambi, negozianti"
-"\n"
-"\t     e ispettore fiscale non possono risalire a tale informazione\n"
-"\t     sulla sola base dei dati raccoli da Taler."
+
+#: index.html.j2:6
+msgid "Taxable Anonymous Libre Electronic Reserves"
+msgstr ""
 
 #: index.html.j2:17
 msgid "Electronic payments for a liberal society!"
-msgstr "Pagamenti elettronici per una società libera!"
+msgstr ""
 
 #: index.html.j2:18
 msgid ""
 "Taler is a new electronic payment system under development\n"
-"\t   at <a href=\"http://www.inria.fr/\">Inria</a>.  Today, this website "
-"only\n"
-"\t    presents the advantages our system is expected to provide.  We "
+"\t   at <a href=\"http://www.inria.fr/\">Inria</a>.  This community Web "
+"site\n"
+"            provides extensive documentation about the system, which we "
 "expect to\n"
-"\t    make the payment system operational in 2017."
+"\t    make operational in 2017."
 msgstr ""
 
 #: index.html.j2:26
@@ -976,31 +671,19 @@ msgid ""
 "the\n"
 "\t     mainstream economy, and not the black market."
 msgstr ""
-"A differenza di BitCoin o del pagamento in contanti, Taler\n"
-"\t     assicura che i govrni possano facilmente tracciare il reddito dei "
-"loro\n"
-"\t     cittadini e di conseguenza riscuotere vendite, IVA o tasse. Taler "
-"è quindi\n"
-"\t     una valuta per un'economia tradizionale, e non per il mercato nero."
 
 #: index.html.j2:32
 msgid "Anonymous"
-msgstr "Anonimo"
+msgstr ""
 
 #: index.html.j2:33
 msgid ""
 "When you pay with Taler, your identity does not have to\n"
 "\t     be revealed to the merchant. The bank, government and exchange "
 "will also\n"
-"\t     never learn how you spent your electronic money. However, you can\n"
-"\t     prove that you paid in court if necessary."
+"\t     never learn how you spent your electronic cash. However, you have\n"
+"\t     proof that you paid for use in court if necessary."
 msgstr ""
-"Quando paghi usando Taler, la tua identità non deve essere\n"
-"\t     rivelata al venditore. Anche la banca, il governo e la ufficio "
-"cambi non sapranno\n"
-"\t     come spendi i tuoi soldi elettronici. Comunque, se necessario, è "
-"possibile\n"
-"\t     dimostrante durante un processo di aver pagato."
 
 #: index.html.j2:40
 msgid ""
@@ -1008,115 +691,62 @@ msgid ""
 "project</a> implementing an open protocol.\n"
 "\t     Anybody is welcome to inspect our code and integrate our reference"
 "\n"
-"\t     implementation into their applications."
+"\t     implementation into their applications. The payment system will\n"
+"             thus foster competition instead of putting some vendor in "
+"control."
 msgstr ""
 
-#: index.html.j2:47
-msgid "Electronic"
-msgstr "Elettronico"
-
 #: index.html.j2:48
+msgid "Electronic"
+msgstr ""
+
+#: index.html.j2:49
 msgid ""
 "Taler is designed to work on the Internet. Using a\n"
 "\t    so-called RESTful protocol over HTTP or HTTPS, Taler is easy to\n"
-"\t    integrate with existing Web applications."
+"\t    integrate with existing Web applications. Taler requires\n"
+"            participants to be online when they make payments."
 msgstr ""
-"Taler è progettato per funzionare su Internet. Usando un cosiddetto\n"
-"\t    protocollo RESTful su HTTP o HTTPS, Taler è facile da integrare con"
-" applicazioni\n"
-"\t    web già esistenti."
 
-#: index.html.j2:53
+#: index.html.j2:55
 msgid "Reserves"
-msgstr "Riserva"
+msgstr ""
 
-#: index.html.j2:54
+#: index.html.j2:56
 msgid ""
-"Taler uses an electronic exchange holding financial\n"
-"             reserves in existing currencies. This means that Taler is "
-"not\n"
-"\t     a new currency with the inherent currency fluctuation risks, but\n"
-"\t     instead the cryptographic coins correspond to existing currencies,"
-" such as\n"
+"Taler uses payment providers which hold financial\n"
+"             reserves in escrow accounts denominated in existing "
+"currencies. \n"
+"             This means that Taler does not introduce\n"
+"\t     a new currency with the inherent currency fluctuation risks.\n"
+"\t     Taler's cryptographic coins correspond to existing currencies, "
+"such as\n"
 "\t     US Dollars, Euros or even BitCoins."
 msgstr ""
-"\n"
-"\t     E' importante notare che Taler non è una nuova valuta, "
-"allontanandosi dunque da tutti i\n"
-"\t     rischi di fluttuazione che questo comporterebbe. La sua ufficio "
-"cambi funziona come una riserva,\n"
-"\t     ossia un tramite che fa corrispondere gettoni criptati a vere "
-"valute come Euro, Dollaro\n"
-"\t     Americano o anche Bitcoin."
 
-#: index.html.j2:61 news.html.j2:5 news.html.j2:14
-msgid "News"
+#: index.html.j2:64
+msgid "Latest Videos"
 msgstr ""
 
-#: index.html.j2:62
-#, fuzzy
-msgid "Taler Web payments paper published."
-msgstr "Taler 0.0.0."
-
-#: index.html.j2:63
-msgid "More news »"
-msgstr "Scopri di più »"
-
-#: index.html.j2:67
-msgid "Taler technology: About taxability, change and privacy"
-msgstr "La tecnologia Taler: tassabilità, cambio e privacy"
-
-#: index.html.j2:68
-msgid ""
-"One of the key goals of Taler is to provide anonymity for\n"
-"           citizens buying goods and services, while ensuring that the "
-"state can\n"
-"           observe incoming transactions to ensure businesses engage only"
-" in\n"
-"           legal activities and do not evade taxes (such as income tax,\n"
-"           sales tax or value-added tax).  However, we also want to stay\n"
-"           out of the immediate personal domain, so sharing funds within "
-"a\n"
-"           family or copying coins between devices should not be subject "
-"to\n"
-"           monitoring by the state.\n"
-"         "
+#: index.html.j2:65
+msgid "Florian Dold talks about Taler at 50p!"
 msgstr ""
-"Uno dei principali obbiettivi di Taler è quello\n"
-"  \t   di fornire anonimato ai cittadini nel momento in cui questi "
-"effettuano acquisti\n"
-"\t   di beni e servizi. Allo stesso tempo, si vuole dare allo Stato uno "
-"strumento che sia\n"
-"\t   in grado di prevenire evasione fiscale (salvaguardando, ad esempio, "
-"IVA e imposta sul\n"
-"\t   reddito) e attività illegali. Ad ogni modo, Taler non vuole "
-"intervenire nelle relazioni\n"
-"\t   interpersonali, cosicché la condivisione di fondi tra membri di una "
-"famiglia o la\n"
-"\t   copia di gettoni tra più dispositivi non sarà soggetta a "
-"monitoraggio statale.\n"
-"\t "
 
-#: index.html.j2:77
-msgid ""
-"As a result, Taler does not intrude into the\n"
-"           personal economic domain, offers good privacy, taxability\n"
-"           for transactions and the ability to give change.\n"
-"         "
+#: index.html.j2:75
+msgid "Taler News"
 msgstr ""
-"Ne deriva che Taler non entra nella gestione economica personale,\n"
-"\t offre privacy affidabile, tassabilità per le transazioni e la "
-"possibilità di dare\n"
-"\t il cambio"
+
+#: index.html.j2:79
+msgid "Financial News"
+msgstr ""
 
 #: investors.html.j2:5
 msgid "Investors"
 msgstr ""
 
 #: investors.html.j2:14
-#, fuzzy
 msgid "Operate a Taler exchange!"
-msgstr "Investi in Taler!"
+msgstr ""
 
 #: investors.html.j2:20
 msgid ""
@@ -1131,14 +761,6 @@ msgid ""
 "appropriate\n"
 "             transaction volume)."
 msgstr ""
-"Taler utilizza efficienti algoritmi crittografici di base (come RSA 2048\n"
-"\t     e EdDSA) e quindi dovrebbe essere in grado di gestire transazioni "
-"di grande volume,\n"
-"\t     limitato solamente dalle capacità di input/output del database. "
-"Quindi, usare un conio\n"
-"\t     di Taler dovrebbe essere redditizio anche con un prezzo di "
-"transazione molto basso\n"
-"\t     (meno di 1 cent) in relazione al volume di transazione appropriato."
 
 #: investors.html.j2:30
 msgid ""
@@ -1153,22 +775,10 @@ msgid ""
 "             detection of compromised systems or the demonstration that\n"
 "             participants were honest."
 msgstr ""
-"Tutte le transazioni in Taler sono rese sicure usando la moderna\n"
-"\t     crittografia e la fiducia in tutte le varie parti coinvolte è "
-"tenuta al minimo.\n"
-"\t     Il danno finanziario è limitato (sia per il cliente, il mercante e"
-" la valuta)\n"
-"\t     and in caso il sistema venisse compromesso e le chiavi private "
-"rubate.\n"
-"\t     I database possono essere controllati per coerenza, facendo sì che"
-" vengano evidenziate\n"
-"\t     sia la scoperta di sistemi compromessi, sia la dimostrazione che i"
-" partecipanti sono stati\n"
-"\t     onesti."
 
 #: investors.html.j2:39
 msgid "Business model"
-msgstr "Modello business"
+msgstr ""
 
 #: investors.html.j2:41
 msgid ""
@@ -1185,23 +795,10 @@ msgid ""
 "             fees (to the customer, merchant or both) to facilitate the "
 "transactions."
 msgstr ""
-"Il modello business di base per Taler è l'operazione di un ufficio cambi."
-"\n"
-"\t     La ufficio cambi converte i soldi da un sistema di pagamento "
-"tradizionale (Mastercard,\n"
-"\t     SEPA, Visa, BitCoin, ACH, SWIFT, ecc.) a monete elettroniche "
-"anonime nella stessa\n"
-"\t     valuta. Il cliente può allora restituire le monete elettroniche ad"
-" un mercante,\n"
-"\t     che può scambiarle alla ufficio cambi ccon monete rappresentate "
-"dal sistema di\n"
-"\t     pagamento tradizionale. La ufficio cambi può quindi tassare (il "
-"cliente, il mercante\n"
-"\t     o entrambi) per facilitare le transazioni."
 
 #: investors.html.j2:50
 msgid "Taler as seen by the exchange operator"
-msgstr "Come opera la ufficio cambi di Taler"
+msgstr ""
 
 #: investors.html.j2:52
 msgid ""
@@ -1215,71 +812,46 @@ msgid ""
 "          Key interactions of the exchange include:\n"
 "        "
 msgstr ""
-"Chi gestisce la ufficio cambi dovrà offrire un portale\n"
-"\tWeb e mantenere vari database in cui custodire dettagli circa "
-"transazioni\n"
-"\te certificati criptografici. I suoi costi dipenderanno dunque da quanto"
-" e come\n"
-"\tessa si interfaccerà col sistema bancario, e dalla sua infrastruttura "
-"informatica.\n"
-"\tDall'altro lato, i suoi guadagni saranno basati sulle tariffe applicate"
-" alle\n"
-"\tvarie operazioni offerte. Tali operazioni offerte comprendono:\n"
-"\t"
 
 #: investors.html.j2:64
 msgid ""
 "Create a <b>reserve</b> based on an incoming\n"
 "              wire transfer from a customer."
 msgstr ""
-"Creazione di una <b>riserva</b> in seguito\n"
-"\t    alla ricezione di un bonifico bancario da parte di un cliente"
 
 #: investors.html.j2:67
 msgid ""
 "Allow customers to withdraw (and refresh)\n"
 "               digital coins from their reserve."
 msgstr ""
-"Permettere ai clienti di ritirare e cambiare gettoni posseduti\n"
-"\t    con gettoni nuovi (attraverso una operazione chiamata "
-"<b>refresh</b>)\n"
-"\t    i gettoni digitali dalla loro riserva."
 
 #: investors.html.j2:70
 msgid "Accept and validate deposits from merchants."
 msgstr ""
-"Accettare e validare depositi di gettoni elettronici\n"
-"\t    da parte dei venditori."
 
 #: investors.html.j2:72
 msgid ""
 "Execute wire transfers to merchants in\n"
 "               response to validated deposits."
 msgstr ""
-"Eseguire bonifici verso i conti dei venditori in seguito\n"
-"\t    a depositi (di gettoni elettronici) andati a buon fine"
 
 #: investors.html.j2:75
 msgid ""
 "Preserve and provide cryptographic proofs of\n"
 "               correct operation for audits by financial regulators."
 msgstr ""
-"Preservare e fornire prove crittografiche delle\n"
-"\t    varie operazioni al fine di permettere controlli da parte di organi"
-"\n"
-"\t    finanziari"
 
 #: merchants.html.j2:5
 msgid "Merchants"
-msgstr "Venditori"
+msgstr ""
 
 #: merchants.html.j2:14
 msgid "Advantages for merchants"
-msgstr "Vantaggi per i mercanti"
+msgstr ""
 
 #: merchants.html.j2:18
 msgid "Fast"
-msgstr "Veloce"
+msgstr ""
 
 #: merchants.html.j2:20
 msgid ""
@@ -1296,17 +868,6 @@ msgid ""
 "card\n"
 "\t     payments due to the mental overhead for customers."
 msgstr ""
-"L'elaborazione delle transazioni con Taler è veloce, e ti permette di "
-"confermare virtualmente\n"
-"\t     la transazione con il tuo cliente immediatamente. Il cliente "
-"apprezzerà di non dover inserire\n"
-"\t     informazioni sulla carta di credito e giocare il gioco del "
-"&quot;verificato da&quot;. Rendendo\n"
-"\t     i pagamenti significativamente più convenienti per i tuoi clienti,"
-" potrai usare Taler per\n"
-"\t     piccole transazioni che non funzionerebbero con pagamenti a carta "
-"di credito, a causa\n"
-"\t     del sovraccarico mentale per i clienti."
 
 #: merchants.html.j2:31
 msgid ""
@@ -1330,26 +891,10 @@ msgid ""
 " in\n"
 "\t     case of disputes."
 msgstr ""
-"Non verrai mai a conoscenza di informazioni sensibili sui tuoi clienti.\n"
-"\t     Dovrai assicurare che il tuo sito offra le corrette informazioni "
-"account per il tuo\n"
-"\t     business, e che le conferme di pagamento dalla ufficio cambi di "
-"Taler vengano correttamente validate.\n"
-"\t     Come risultato, avrai la prova crittografica del pagamento per lo "
-"specifico contratto che hai\n"
-"\t     stipulato con i suoi clienti, e conferma crittograticamente "
-"firmate dalla ufficio cambi di Taler\n"
-"\t     riguardo ai versamenti. Taler non ti richiede di sottoporti a "
-"particolari controlli o prodecure\n"
-"\t     di sicurezza, poiché non dovrai mai gestire informazioni sensibili"
-" sui clienti.\n"
-"\t     I tuoi sistemi avranno contratti crittograficamente firmati che "
-"potrai usare in tribunale\n"
-"\t     in caso di controversie."
 
 #: merchants.html.j2:44
 msgid "Free Software"
-msgstr "Free Software"
+msgstr ""
 
 #: merchants.html.j2:46
 msgid ""
@@ -1363,19 +908,10 @@ msgid ""
 "\t     select from many competent developers to help you with your\n"
 "\t     integration."
 msgstr ""
-"Taler si basa su un free software, e potrai utilizzare il codice\n"
-"\t     di riferimento sotto licenza libera come punto di partenza per "
-"integrare\n"
-"\t     Taler nei tuoi sistemi. Per usare Taler, non servirà pagare i "
-"diritti di\n"
-"\t     licenza, e il modello di sviluppo del free software assicurerà che"
-" tu possa\n"
-"\t     selezionare molti sviluppatori compententi per aiutarti con "
-"l'implementazione."
 
 #: merchants.html.j2:56
 msgid "Low Fees"
-msgstr "Prezzi bassi"
+msgstr ""
 
 #: merchants.html.j2:58
 msgid ""
@@ -1390,21 +926,10 @@ msgid ""
 " for\n"
 "\t     merchants."
 msgstr ""
-"Taler è progettato per minimizzare il lavoro che la &quot;banca&quot; "
-"(exchange)\n"
-"\t     ha necessità di eseguire. Combinate con la forte sicurezza di "
-"Taler che previene\n"
-"\t     la frode, le &quot;banche&quot; (exchanges) possono operare con "
-"spese molto basse e quindi bassi\n"
-"\t     costi di transazione. Considerata l'implementazione free-software "
-"di riferimento della &quot;banca&quot; (exchange)\n"
-"\t     la competizione tra &quot;banche&quot; (exchanges) garantirà costi"
-" di transazione giusti e bassi per\n"
-"\t     i mercanti."
 
 #: merchants.html.j2:66
 msgid "Flexible"
-msgstr "Flessibile"
+msgstr ""
 
 #: merchants.html.j2:68
 msgid ""
@@ -1413,15 +938,10 @@ msgid ""
 "the\n"
 "\t     exchange supports in its interactions."
 msgstr ""
-"Taler può essere usato per diverse valute (come Euro o dollari americani)"
-"\n"
-"\t     e diversi modelli di pagamento limitati solamente da quello che la"
-" &quot;banca&quot; (exchange)\n"
-"\t     supporta nelle sue interazioni."
 
 #: merchants.html.j2:73
 msgid "Ethical"
-msgstr "Etico"
+msgstr ""
 
 #: merchants.html.j2:75
 msgid ""
@@ -1433,17 +953,10 @@ msgid ""
 "             competition by providing an open standard and free software\n"
 "             reference implementations."
 msgstr ""
-"Taler non supporta l'evasione fiscale o il riciclaggio di denaro,\n"
-"\t     e non è nemmeno a schema piramidale o un investimento speculativo."
-" I protocolli\n"
-"\t     di Taler sono efficienti e non sprecano energia. Taler incoraggia "
-"la competizione\n"
-"\t     fornendo standard aperti e implementazioni di riferimento in free-"
-"software."
 
 #: merchants.html.j2:83
 msgid "Taler as seen by merchants"
-msgstr "Come i negozianti vedono Taler"
+msgstr ""
 
 #: merchants.html.j2:85
 msgid ""
@@ -1453,10 +966,6 @@ msgid ""
 "          Typical steps performed by the merchant system are:\n"
 "        "
 msgstr ""
-"Al fine di supportare Taler, i negozianti\n"
-"\tdovranno integrare alcune semplici procedure nei loro sistemi di "
-"ricezione\n"
-"\tdei pagamenti"
 
 #: merchants.html.j2:94
 msgid ""
@@ -1471,14 +980,6 @@ msgid ""
 "operators\n"
 "              the merchant is willing to deal with."
 msgstr ""
-"La nuova procedura rileva il caso in cui un cliente\n"
-"\t     supporta Taler, e procede ad inviarvi un contratto digitale "
-"firmato\n"
-"\t     in un semplice formato JSON.\n"
-"\t     Il messaggio include anche le coordinate bancarie del negoziante\n"
-"\t     fissate in un &quot;hashcode&quot; assieme ad un numero casuale, "
-"nonché la\n"
-"\t     lista delle zecche con cui il negoziante è disposto a trattare."
 
 #: merchants.html.j2:102
 msgid ""
@@ -1489,11 +990,6 @@ msgid ""
 "respective\n"
 "               amount (bottom)."
 msgstr ""
-"Il cliente invia una risposta firmata che attesta\n"
-"\t     che un certo numero di gettoni ora appartiene al negoziante, così\n"
-"\t     da segnalare sia l'accettazione dello scambio che il suo impegno\n"
-"\t     a pagare il prezzo dovuto (in basso).\n"
-"\t     "
 
 #: merchants.html.j2:107
 msgid ""
@@ -1508,18 +1004,6 @@ msgid ""
 "\n"
 "               customer and executes the contract-specific business logic."
 msgstr ""
-"Il negoziante inoltra tale messaggio firmato appena\n"
-"\t     ricevuto del cliente alla zecca, insieme alle sue coordinata "
-"bancarie\n"
-"\t     e al numero casuale usato in precedenza per produrre "
-"l'&quot;hash&quot; dei due.\n"
-"\t     La zecca verifica le coordinate e manda una conferma (o un "
-"messaggio\n"
-"\t     d'errore) firmata al negoziante. A questo punto, il negoziante "
-"controlla\n"
-"\t     che la firma della zecca sia valida, manda una conferma al "
-"cliente,\n"
-"\t     e procede ad assolvere quanto indicato nel contratto."
 
 #: merchants.html.j2:115
 msgid ""
@@ -1533,18 +1017,14 @@ msgid ""
 "               willing to deal with, for example by imposing a bound on\n"
 "               deposit fees."
 msgstr ""
-"Per ogni deposito (od opzionalmente per ogni\n"
-"\t     raggruppamento di depositi) ricevuto da un certo negoziante,\n"
-"\t     la zecca procederà con il versamento verso il conto in banca di\n"
-"\t     quest'ultimo. La zecca potrebbe anche prevedere delle tariffe\n"
-"\t     per l'operazione di deposito, da cui è plausibile che alcuni\n"
-"\t     mercanti impongano delle restrizioni su quali siano le zecche\n"
-"\t     con cui essi vogliano trattare."
 
 #: merchants.html.j2:125
-#, fuzzy
 msgid "Manuals for merchants"
-msgstr "Documentation"
+msgstr ""
+
+#: news.html.j2:1
+msgid "1-2017: Taler Documentation pages updated"
+msgstr ""
 
 #: wallet.html.j2:5
 msgid "Wallet"
@@ -1564,4 +1044,220 @@ msgstr ""
 
 #~ msgid "About&nbsp;us"
 #~ msgstr "Chi siamo"
+
+#~ msgid "Stability "
+#~ msgstr "Stabilità"
+
+#~ msgid "Taler Web payments paper published."
+#~ msgstr "Taler 0.0.0."
+
+#~ msgid "More news »"
+#~ msgstr "Scopri di più »"
+
+#~ msgid "Taler technology: About taxability, change and privacy"
+#~ msgstr "La tecnologia Taler: tassabilità, cambio e privacy"
+
+#~ msgid "en"
+#~ msgstr "it"
+
+#~ msgid "GNU Taler"
+#~ msgstr ""
+
+#~ msgid "About us"
+#~ msgstr "Chi siamo"
+
+#~ msgid "CFO"
+#~ msgstr "CFO"
+
+#~ msgid "Applied cryptography. Contact to W3c &amp; Tor."
+#~ msgstr "Matematico"
+
+#~ msgid "Theoretical foundations."
+#~ msgstr "Teoricamente mortale"
+
+#~ msgid "Founder of the GNU project. Ethical guidance and licensing."
+#~ msgstr "Entusiasta di etica"
+
+#~ msgid "PhD Student, TU Munich. Currently teaching."
+#~ msgstr "Principalmente inoffensivo"
+
+#~ msgid "PhD Student, Inria.."
+#~ msgstr ""
+
+#~ msgid "Software engineer."
+#~ msgstr ""
+
+#~ msgid "Sustainable business development."
+#~ msgstr "Realizzando pensieri profondi"
+
+#~ msgid "Software engineer. Works on libebics."
+#~ msgstr "EBICS."
+
+#~ msgid "Translator (Spanish)"
+#~ msgstr "Traduttrici"
+
+#~ msgid "Translator (Italian)"
+#~ msgstr "Traduttrici"
+
+#~ msgid "Hardware security module"
+#~ msgstr ""
+
+#~ msgid "Risk management"
+#~ msgstr ""
+
+#~ msgid "PhD student, TU Munich. Currently teaching."
+#~ msgstr "Linux, FreeBSD, siti web e il deep state nel tempo libero."
+
+#~ msgid "Software engineer. Works on Android wallet."
+#~ msgstr ""
+
+#~ msgid "Citizens"
+#~ msgstr "Cittadini"
+
+#~ msgid "Advantages for citizens"
+#~ msgstr "Vantaggi per i cittadini"
+
+#~ msgid "Security"
+#~ msgstr "Sicurezza"
+
+#~ msgid "Privacy"
+#~ msgstr "Privacy"
+
+#~ msgid "Convenience"
+#~ msgstr "Convenienza"
+
+#~ msgid "Stability"
+#~ msgstr ""
+
+#~ msgid "Taler as seen by customers"
+#~ msgstr "Come i clienti vedono Taler"
+
+#~ msgid "Developers"
+#~ msgstr "Sviluppatori"
+
+#~ msgid "Taler for developers"
+#~ msgstr "Taler per programmatori"
+
+#~ msgid "Free"
+#~ msgstr "Free"
+
+#~ msgid "RESTful"
+#~ msgstr "RESTful"
+
+#~ msgid "Code"
+#~ msgstr "Codice"
+
+#~ msgid "Documentation"
+#~ msgstr "Documentazione"
+
+#~ msgid "Discussion"
+#~ msgstr "Discussione"
+
+#~ msgid "Regression Testing"
+#~ msgstr "Test delle regressioni"
+
+#~ msgid "Code Coverage Analysis"
+#~ msgstr "Analisi della copertura del codice"
+
+#~ msgid "Performance Analysis"
+#~ msgstr "Analisi delle prestazioni"
+
+#~ msgid "Taler system overview"
+#~ msgstr "Schema generale del sistema Taler"
+
+#~ msgid "Financial News"
+#~ msgstr ""
+
+#~ msgid "Governments"
+#~ msgstr "Governi"
+
+#~ msgid "Advantages for governments"
+#~ msgstr "Vantaggi per i governi"
+
+#~ msgid "Taxable"
+#~ msgstr "Tassabile"
+
+#~ msgid "Secure"
+#~ msgstr "Sicuro"
+
+#~ msgid "Libre"
+#~ msgstr "Libero"
+
+#~ msgid "Efficient"
+#~ msgstr "Efficiente"
+
+#~ msgid "Taler as seen by governments"
+#~ msgstr "Taler dal punto di vista dai governi"
+
+#~ msgid "Taxable Anonymous Libre Electronic Reserves"
+#~ msgstr ""
+
+#~ msgid "Electronic payments for a liberal society!"
+#~ msgstr "Pagamenti elettronici per una società libera!"
+
+#~ msgid "Anonymous"
+#~ msgstr "Anonimo"
+
+#~ msgid "Electronic"
+#~ msgstr "Elettronico"
+
+#~ msgid "Reserves"
+#~ msgstr "Riserva"
+
+#~ msgid "Latest Videos"
+#~ msgstr ""
+
+#~ msgid "Florian Dold talks about Taler at 50p!"
+#~ msgstr ""
+
+#~ msgid "Taler News"
+#~ msgstr ""
+
+#~ msgid "Investors"
+#~ msgstr ""
+
+#~ msgid "Operate a Taler exchange!"
+#~ msgstr "Investi in Taler!"
+
+#~ msgid "Business model"
+#~ msgstr "Modello business"
+
+#~ msgid "Taler as seen by the exchange operator"
+#~ msgstr "Come opera la ufficio cambi di Taler"
+
+#~ msgid "Accept and validate deposits from merchants."
+#~ msgstr ""
+
+#~ msgid "Merchants"
+#~ msgstr "Venditori"
+
+#~ msgid "Advantages for merchants"
+#~ msgstr "Vantaggi per i mercanti"
+
+#~ msgid "Fast"
+#~ msgstr "Veloce"
+
+#~ msgid "Free Software"
+#~ msgstr "Free Software"
+
+#~ msgid "Low Fees"
+#~ msgstr "Prezzi bassi"
+
+#~ msgid "Flexible"
+#~ msgstr "Flessibile"
+
+#~ msgid "Ethical"
+#~ msgstr "Etico"
+
+#~ msgid "Taler as seen by merchants"
+#~ msgstr "Come i negozianti vedono Taler"
+
+#~ msgid "Manuals for merchants"
+#~ msgstr "Documentation"
+
+#~ msgid "News"
+#~ msgstr ""
+
+#~ msgid "Wallet"
+#~ msgstr ""
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <title>{{ _("GNU Taler") }}</title>
-    <meta name="description" content="Anonymous electronic payments for civil society"/>
+    <meta name="description" content="{{ _('Taxable Anonymous Libre Electronic Reserves') }}" />
       {% include "common/header.j2.inc" %}
   </head>
   <body>
@@ -16,9 +16,9 @@
       <div class="jumbotron">
          <h1>{{ _("Electronic payments for a liberal society!") }}</h1>
 	 <p>{{ _("Taler is a new electronic payment system under development
-	   at <a href=\"http://www.inria.fr/\">Inria</a>.  Today, this website only
-	    presents the advantages our system is expected to provide.  We expect to
-	    make the payment system operational in 2017.") }}</p>
+	   at <a href=\"http://www.inria.fr/\">Inria</a>.  This community Web site
+            provides extensive documentation about the system, which we expect to
+	    make operational in 2017.") }}</p>
       </div>
       <div class="row">
         <div class="col-lg-4">
@@ -32,14 +32,15 @@
           <h2>{{ _("Anonymous") }}</h2>
 	  <p>{{ _("When you pay with Taler, your identity does not have to
 	     be revealed to the merchant. The bank, government and exchange will also
-	     never learn how you spent your electronic money. However, you can
-	     prove that you paid in court if necessary.") }}</p>
+	     never learn how you spent your electronic cash. However, you have
+	     proof that you paid for use in court if necessary.") }}</p>
         </div>
         <div class="col-lg-4">
           <h2>{{ _("Libre") }}</h2>
 	  <p>{{ _("Taler is free software from <a href=\"http://www.gnu.org/\">the GNU project</a> implementing an open protocol.
 	     Anybody is welcome to inspect our code and integrate our reference
-	     implementation into their applications.") }}</p>
+	     implementation into their applications. The payment system will
+             thus foster competition instead of putting some vendor in control.") }}</p>
         </div>
       </div>
       <div class="row">
@@ -47,38 +48,38 @@
           <h2>{{ _("Electronic") }}</h2>
 	  <p>{{ _("Taler is designed to work on the Internet. Using a
 	    so-called RESTful protocol over HTTP or HTTPS, Taler is easy to
-	    integrate with existing Web applications.") }}</p>
+	    integrate with existing Web applications. Taler requires
+            participants to be online when they make payments.") }}</p>
         </div>
         <div class="col-lg-4">
           <h2>{{ _("Reserves") }}</h2>
-	  <p>{{ _("Taler uses an electronic exchange holding financial
-             reserves in existing currencies. This means that Taler is not
-	     a new currency with the inherent currency fluctuation risks, but
-	     instead the cryptographic coins correspond to existing currencies, such as
+	  <p>{{ _("Taler uses payment providers which hold financial
+             reserves in escrow accounts denominated in existing currencies. 
+             This means that Taler does not introduce
+	     a new currency with the inherent currency fluctuation risks.
+	     Taler's cryptographic coins correspond to existing currencies, such as
 	     US Dollars, Euros or even BitCoins.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2>{{ _("News") }}</h2>
-	  <p>{{ _("Taler Web payments paper published.") }}</p>
-          <p><a class="btn btn-primary" href="news" role="button">{{ _("More news »") }}</a></p>
+          <h2>{{ _("Latest Videos") }}</h2>
+	  <p>{{ _("Florian Dold talks about Taler at 50p!") }}</p>
+	  <video id="video" poster="/videos/dold50p.png" autobuffer="" height="180" width="320" controls="controls">
+            <source src="/videos/dold50p.webm" type="video/webm">
+            <source src="/videos/dold50p.ogv=216" type="video/ogv">
+          </video>
+          <a rel="license" href="https://creativecommons.org/licenses/by-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/ccby.png"></a><br>"<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GNU Taler</span>" by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Florian Dold, produced by 50p</span> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nd/3.0/deed.en_US">Creative Commons Attribution NoDerivatives 3.0 Unported License</a>.
         </div>
       </div>
-       <div class="col-lg-12">
-         <h2 id="taxability">{{ _("Taler technology: About taxability, change and privacy") }}</h2>
-         <p>{{ _("One of the key goals of Taler is to provide anonymity for
-           citizens buying goods and services, while ensuring that the state can
-           observe incoming transactions to ensure businesses engage only in
-           legal activities and do not evade taxes (such as income tax,
-           sales tax or value-added tax).  However, we also want to stay
-           out of the immediate personal domain, so sharing funds within a
-           family or copying coins between devices should not be subject to
-           monitoring by the state.
-         ") }}</p>
-         <p>{{ _("As a result, Taler does not intrude into the
-           personal economic domain, offers good privacy, taxability
-           for transactions and the ability to give change.
-         ") }}</p>
-       </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>{{ _("Taler News") }}</h2>
+	  {% include "news.html.j2" %}
+	</div>
+        <div class="col-lg-6">
+          <h2>{{ _("Financial News") }}</h2>
+	  {% include "financial-news.html.j2" %}
+	</div>	
+      </div>
       {% include "common/footer.j2.inc" %}
     </div> <!-- /container -->
   </body>
