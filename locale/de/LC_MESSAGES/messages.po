@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-30 23:16+0100\n"
+"POT-Creation-Date: 2017-02-08 06:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -24,7 +24,7 @@ msgstr "de"
 #: financial-news.html.j2:5 governments.html.j2:5 index.html.j2:5
 #: investors.html.j2:5 merchants.html.j2:5 news.html.j2:5 wallet.html.j2:5
 msgid "GNU Taler"
-msgstr ""
+msgstr "GNU Taler"
 
 #: about.html.j2:5 about.html.j2:14
 msgid "About us"
@@ -46,7 +46,6 @@ msgid ""
 msgstr ""
 
 #: about.html.j2:32
-#, fuzzy
 msgid "CFO"
 msgstr "CFO"
 
@@ -73,9 +72,8 @@ msgid "PhD Student, Inria.."
 msgstr "Doktorand, Inria."
 
 #: about.html.j2:66 about.html.j2:81
-#, fuzzy
 msgid "Software engineer."
-msgstr ""
+msgstr "Softwareentwickler"
 
 #: about.html.j2:73
 #, fuzzy
@@ -83,14 +81,12 @@ msgid "Sustainable business development."
 msgstr "Des Grundes wegen"
 
 #: about.html.j2:77
-#, fuzzy
 msgid "Software engineer. Works on libebics."
-msgstr "EBICS."
+msgstr "Softwareentwickler. Arbeitet an libebics."
 
 #: about.html.j2:87
-#, fuzzy
 msgid "Translator (Spanish)"
-msgstr "Übersetzer"
+msgstr "Übersetzer (Spanisch)"
 
 #: about.html.j2:91 about.html.j2:95
 #, fuzzy
@@ -112,7 +108,7 @@ msgstr "Doktorand, TU München. Currently teaching."
 #: about.html.j2:115
 #, fuzzy
 msgid "Software engineer. Works on Android wallet."
-msgstr "Android Geldbörse"
+msgstr "Softwareentwickler. Arbeitet an der Android Geldbörse"
 
 #: citizens.html.j2:5
 msgid "Citizens"
@@ -178,7 +174,7 @@ msgstr ""
 
 #: citizens.html.j2:42
 msgid "Convenience"
-msgstr "Bequeme Einrichtung"
+msgstr "Bequemlichkeit"
 
 #: citizens.html.j2:44
 msgid ""
@@ -194,7 +190,7 @@ msgstr ""
 "\t     eine SEPA-Überweisung."
 
 #: citizens.html.j2:49
-msgid "Stability "
+msgid "Stability"
 msgstr "Stabilität"
 
 #: citizens.html.j2:51
@@ -818,9 +814,8 @@ msgstr ""
 "\t     auszuschließen."
 
 #: governments.html.j2:42 index.html.j2:39
-#, fuzzy
 msgid "Libre"
-msgstr "Liberal"
+msgstr "Libre"
 
 #: governments.html.j2:44
 msgid ""
@@ -1115,7 +1110,7 @@ msgstr ""
 
 #: investors.html.j2:5
 msgid "Investors"
-msgstr ""
+msgstr "Investoren"
 
 #: investors.html.j2:14
 msgid "Operate a Taler exchange!"

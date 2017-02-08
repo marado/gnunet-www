@@ -1,5 +1,12 @@
 #!/usr/bin/env python
-
+# This file is in the public domain.
+#
+# This script runs the jinga2 templating engine on an input template-file
+# using the specified locale for gettext translations, and outputs
+# the resulting (HTML) ouptut-file.
+#
+# Note that the gettext files need to be prepared first. This script
+# is thus to be invoked via the Makefile.
 import os
 import sys
 import re
