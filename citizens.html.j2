@@ -11,8 +11,17 @@
       {% include "common/navigation.j2.inc" %}
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>{{ _("Advantages for citizens") }}</h1>
+        <h1>{{ _("Advantages for Citizens") }}</h1>
         <!-- p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p -->
+        <div class="col-lg-12">
+
+	  <p>{{ _("Taler largely functions like digital cash.  You
+	           withdraw money from your bank account into your
+	           electronic wallet, and can henceforth spend digital
+	           cash.  The electronic wallet can carry multiple
+	           currencies.") }}</p>
+
+	</div>
       </div>
 
       <!-- Example row of columns -->
@@ -20,81 +29,100 @@
         <div class="col-lg-6">
           <h2>{{ _("Security") }}</h2>
 
-          <p>{{ _("Taler is the electronic equivalent of cash, except harder to fake.
-             If your digital wallet is lost -- say because
-             your computer is irreparably damaged or compromised -- only the amount of coin
-             stored in your wallet will be lost. Unlike a physical wallet, you can make
-             backups of your digital wallet which can provide security against data loss.
-             So your digital wallet works mostly just like
-             a physical wallet, except online and without the need to manually count coins.") }}</p>
+          <p>{{ _("Taler uses modern cryptography, ensuring that there
+                   is no counterfeit.  Your digital wallet is safer
+                   than your physical wallet.  At most, you can lose
+                   its contents because your computer or mobile is
+                   irreparably damaged or compromised.  Unlike a
+                   physical wallet, you can make backups to secure
+                   against data loss.") }}</p>
+
         </div>
         <div class="col-lg-6">
           <h2>{{ _("Privacy") }}</h2>
 
-          <p>{{ _("Your transactions are private, neither the exchange nor merchant needs to
-             learn your identity. There is no need to give our credit card numbers or
-             other sensitive information, and the merchant will only be able to do
-             exactly the transaction you confirmed using your digital wallet.") }}</p>
+          <p>{{ _("Your transactions are private, neither the exchange
+                   nor merchant needs to learn your identity. There is
+                   no need to give out credit card numbers or other
+                   sensitive information. The merchant will only be
+                   able to do exactly the transaction you agreed to.")
+                   }}</p>
+
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
           <h2>{{ _("Convenience") }}</h2>
 
-          <p>{{ _("You will be able to withdraw digital coins to replenish your wallet using
-             your credit card or SEPA transactions, similar to how you pay or withdraw
-             cash today.") }}</p>
+          <p>{{ _("You will be able to withdraw money to replenish the
+                   digital coins in your wallet using your credit card
+                   or wire transfers.  Afterwards you can pay with
+                   one-click using the Taler wallet, which optionally
+                   keeps your transaction history on your computer.")
+                   }}</p>
+
         </div>
         <div class="col-lg-6">
           <h2>{{ _("Stability") }}</h2>
 
-          <p>{{ _("Coins in your digital wallet will be of the same denomination as the
-             cash in your physical wallet. So you will not have to worry about
-             currency fluctuations or conversion rates. Like a physical wallet,
-             you can carry digital coins of different currencies in your digital
-             wallet at the same time.") }}</p>
+          <p>{{ _("Coins in your digital wallet will be of the same
+                   denomination as the cash in your physical wallet.
+                   Taler is not a crypto-currency, so you do not have
+                   to worry about cryto-currency related value
+                   fluctuations.  Banking with Taler is subject to the
+                   usual government protections for finanical
+                   services.") }}</p>
+
         </div>
       </div>
       <div class="col-lg-12">
         <h2 id="overview">{{ _("Taler as seen by customers") }}</h2>
 
         <p>{{ _("Customers interact with the Taler system mostly using
-          a free wallet implementation, which may be an extension or plugin
-          to their browser or a custom application on their computer(s).
-          Typical steps performed by customers are:
-        ") }}</p>
+                 a free wallet implementation, which may be an
+                 extension or plugin to their browser or a custom
+                 application on their computer(s).  Typical steps
+                 performed by customers are: ") }}</p>
+	
         <p>
         </p>
         <img src="{{ url('images/customer.svg') }}" alt="customer perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-          <ol>
-            <li>{{ _("The customer selects an exchange (i.e. by visiting the
-              respective website or selecting from a list of exchanges in the
-              application) and asks the wallet to create bank transfer
-              instructions to withdraw a certain amount of electronic cash.
-              The bank transfer instructions will contain an
-              access code that must be included in the subject of the
-              transaction, as well as the wire details for the exchange (i.e.
-              a SEPA account number).") }}</li>
+        <ol>
+	  
+            <li>{{ _("The customer selects an exchange (i.e. by
+                      visiting the respective website or selecting
+                      from a list of exchanges in the application) and
+                      asks the wallet to create bank transfer
+                      instructions to withdraw a certain amount of
+                      electronic cash.  The bank transfer instructions
+                      will contain an access code that must be
+                      included in the subject of the transaction, as
+                      well as the wire details for the exchange (i.e.
+                      a SEPA account number).") }}</li>
 
              <li>{{ _("The customer then instructs his <b>bank</b> to
-               transfer funds from his account to the Taler exchange using
-               these instructions provided by the wallet (top left).") }}</li>
+                       transfer funds from his account to the Taler
+                       exchange using these instructions provided by
+                       the wallet (top left).") }}</li>
 
              <li>{{ _("Once the funds have arrived, the wallet will
-               automatically withdraw the electronic coins.  The
-               customer can use the wallet to review his remaining balance
-               at any time. He can also make backups to secure his digital
-               coins against hardware failures.") }}</li>
+                       automatically withdraw the electronic coins.
+                       The customer can use the wallet to review his
+                       remaining balance at any time. He can also make
+                       backups to secure his digital coins against
+                       hardware failures.") }}</li>
 
              <li>{{ _("When visiting a merchant that supports Taler,
-               an additional payment option for Taler is enabled in the checkout system.
-               If the customer selects payments via Taler, the wallet
-               displays the secured contract from the merchant and asks
-               for confirmation.  Taler does not require the customer
-               to provide any identity information to the merchant.
-               Transaction histories and digitally
-               signed contracts can be preserved in the wallet for future
-               review by the customer, or even use in court.") }}</li>
+                       an additional payment option for Taler is
+                       enabled in the checkout system.  If the
+                       customer selects payments via Taler, the wallet
+                       displays the secured contract from the merchant
+                       and asks for confirmation.  Taler does not
+                       require the customer to provide any identity
+                       information to the merchant.  Transaction
+                       histories and digitally signed contracts can be
+                       preserved in the wallet for future review by
+                       the customer, or even use in court.") }}</li>
           </ol>
         <p></p>
       </div>

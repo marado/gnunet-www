@@ -11,69 +11,88 @@
       {% include "common/navigation.j2.inc" %}
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>{{ _("Operate a Taler exchange!") }}</h1>
-      </div>
+        <h1>{{ _("Invest in Taler!") }}</h1>
+        <div class="col-lg-12">
+	  <p>{{ _("We have created a company, Taler Systems SA in 
+                   Luxemburgh.<br>
+                   Please contact <tt>invest@taler.net</tt>
+                   if you want to invest in Taler.") }}</p>
+	</div>
+      </div>	
       <div class="row">
         <div class="col-lg-4">
-          <h2>{{ _("Efficient") }}</h2>
+          <h2>{{ _("The Team") }}</h2>
 
-          <p>{{ _("Taler uses efficient cryptographic primitives (such as RSA 2048 and
-             EdDSA) and is thus expected to be able to handle large transaction
-             volumes, only limited by the input/output capabilities of the
-             database. Thus, running a Taler exchange should be profitable even
-             with very low (less than 1 cent) transaction fees (at appropriate
-             transaction volume).") }}</p>
+          <p>{{ _("Our team combines world-class business leaders,
+                   cryptographers, software engineers, civil-rights
+                   activits and academics. We are unified by a vision
+                   of how payments should work and the goal of
+                   imposing this vision upon the world.") }}</p>
+
+	  <p>{{ _("We are currently supported by Inria, the French
+                   national institute for research in informatics and
+                   automation, and the Renewable Freedom Foundation.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2>{{ _("Secure") }}</h2>
+          <h2>{{ _("The Technology") }}</h2>
 
-          <p>{{ _("All transactions in Taler are secured using modern cryptography and
-             trust in all parties is minimized. Financial damage is bounded
-             (for customers, merchants and the exchange) even
-             in the case that systems are compromised and private keys are stolen.
-             Databases can be audited for consistency, resulting in either the
-             detection of compromised systems or the demonstration that
-             participants were honest.") }}</p>
+          <p>{{ _("All transactions in Taler are secured using modern
+                   cryptography and trust in all parties is
+                   minimized. Financial damage is bounded (for
+                   customers, merchants and the exchange) even in the
+                   case that systems are compromised and private keys
+                   are stolen.  Databases can be audited for
+                   consistency, resulting in either the detection of
+                   compromised systems or the demonstration that
+                   participants were honest. Actual transaction costs
+                   are fractions of a cent.") }}</p>
         </div>
         <div class="col-lg-4">
-          <h2>{{ _("Business model") }}</h2>
+          <h2>{{ _("The Business") }}</h2>
 
-          <p>{{ _("The basic business model for Taler is the operation of an exchange.  An exchange converts money from traditional payment systems (Mastercard,
-             SEPA, Visa, BitCoin, ACH, SWIFT, etc.) to anonymous electronic
-             coins in the same currency. The customer can then redeem the electronic
-             coins at a merchant, who can exchange them for money represented using
-             traditional payment systems at the exchange.  The exchange can then charge
-             fees (to the customer, merchant or both) to facilitate the transactions.") }}</p>
+          <p>{{ _("The scalable business model for Taler is the operation
+                   of the payment service provider, which converts money from
+                   traditional payment systems (Mastercard, SEPA,
+                   Visa, BitCoin, ACH, SWIFT, etc.) to anonymous
+                   electronic coins in the same currency. The customer
+                   can then redeem the electronic coins at a merchant,
+                   who can exchange them for money represented using
+                   traditional payment systems at the exchange.  The
+                   exchange charges fees (to the customer,
+                   merchant or both) to facilitate the transactions.")
+            }}</p>
         </div>
       </div>
       <div class="col-lg-12">
-        <h2 id="overview">{{ _("Taler as seen by the exchange operator") }}</h2>
+        <h2 id="overview">{{ _("Taler as seen by the payment service operator") }}</h2>
 
-        <p>{{ _("The exchange operator primarily operates a Web service
-          portal and keeps databases with transaction details and
-          cryptographic proofs.  Its operational expenses are thus related to
-          its interactions with the banking system and the operation of
-          the computing infrastructure, while its income is based on
-          transaction fees it may charge for the various interactions.
-          Key interactions of the exchange include:
-        ") }}</p>
+        <p>{{ _("The payment service operator runs a <em>Taler
+                 exchange</em>, which is a Web service portal that
+                 keeps databases with transaction details and
+                 cryptographic proofs.  Its operational expenses are
+                 thus related to its interactions with the banking
+                 system and the operation of the computing
+                 infrastructure, while its income is based on
+                 transaction fees it may charge for the various
+                 interactions.  Key interactions of the exchange
+                 include: ") }}</p>
 
         <p>
           <img src="{{ url('images/exchange.svg') }}" alt="operator perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
           </p><ul>
             <li>{{ _("Create a <b>reserve</b> based on an incoming
-              wire transfer from a customer.") }}</li>
+                      wire transfer from a customer.") }}</li>
 
             <li>{{ _("Allow customers to withdraw (and refresh)
-               digital coins from their reserve.") }}</li>
+                      digital coins from their reserve.") }}</li>
 
             <li>{{ _("Accept and validate deposits from merchants.") }}</li>
 
             <li>{{ _("Execute wire transfers to merchants in
-               response to validated deposits.") }}</li>
+                      response to validated deposits.") }}</li>
 
             <li>{{ _("Preserve and provide cryptographic proofs of
-               correct operation for audits by financial regulators.") }}</li>
+                      correct operation for audits by financial regulators.") }}</li>
           </ul>
         <p></p>
       </div>
