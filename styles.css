@@ -16,3 +16,15 @@ html {
 .c_intro {
   height: 100vh;
 }
+
+/* don't show the language selector in the dropdown on mobile devices,
+ * since it's in the top bar already.
+ */
+.in .nav-lang {
+  display: none;
+}
+
+.mobile-lang {
+  margin-left:5px;
+  margin-top: 8px;
+}
