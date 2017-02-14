@@ -42,6 +42,10 @@ body {
   background-color: #ddd;
 }
 
+.nav-justified > li > a:hover {
+  transition: background-color 0.3s;
+}
+
 .nav-justified > .m_demo > a {
   font-weight: bold;
 }
