@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-14 21:16+0100\n"
+"POT-Creation-Date: 2017-02-15 00:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -21,8 +21,8 @@ msgid "en"
 msgstr "fr"
 
 #: about.html.j2:5 citizens.html.j2:5 developers.html.j2:5
-#: governments.html.j2:5 investors.html.j2:5 merchants.html.j2:5
-#: wallet.html.j2:5
+#: governments.html.j2:5 index.html.j2:5 investors.html.j2:5
+#: merchants.html.j2:5 wallet.html.j2:5
 msgid "GNU Taler"
 msgstr ""
 
@@ -687,6 +687,109 @@ msgid ""
 "                      that Taler collects."
 msgstr ""
 
+#: index.html.j2:6
+msgid "Taxable Anonymous Libre Electronic Reserves"
+msgstr ""
+
+#: index.html.j2:17
+msgid "Independent One-Click Payments!"
+msgstr ""
+
+#: index.html.j2:19
+msgid ""
+"Taler is an electronic payment system under\n"
+"\t          development\n"
+"\t          at <a href=\"http://www.inria.fr/\">Inria</a>.  We expect to "
+"make it operational in 2017.\n"
+"                  Meanwhile you can learn about Taler on this website, "
+"try the <a href=\"https://demo.taler.net\">demo</a>\n"
+"                  and look at our <a "
+"href=\"https://docs.taler.net\">developer</a> and <a "
+"href=\"https://api.taler.net\">API</a> documentation.\n"
+"\t          "
+msgstr ""
+
+#: index.html.j2:35
+msgid "<b>T</b>axable"
+msgstr ""
+
+#: index.html.j2:37
+msgid ""
+"Unlike Bitcoin or cash payments, Taler ensures that\n"
+"\t           governments can learn their citizen's total income\n"
+"\t           and thus collect sales, value-added or income\n"
+"\t           taxes. Taler is a currency for the mainstream\n"
+"\t           economy, and not the black market."
+msgstr ""
+
+#: index.html.j2:45
+msgid "<b>A</b>nonymous"
+msgstr ""
+
+#: index.html.j2:47
+msgid ""
+"When you pay with Taler, your identity does not\n"
+"\t           have to be revealed to the merchant. Just like\n"
+"\t           payments in cash, nobody else can track how you\n"
+"\t           spent your electronic money. However, you obtain a\n"
+"\t           legally valid proof of payment."
+msgstr ""
+
+#: index.html.j2:55
+msgid "<b>L</b>ibre"
+msgstr ""
+
+#: index.html.j2:57
+msgid ""
+"Taler is free software\n"
+"\t           from <a href=\"http://www.gnu.org/\">the GNU\n"
+"\t           project</a> implementing an open protocol.  Anybody\n"
+"\t           is welcome to inspect our code and integrate our\n"
+"\t           reference implementation into their applications."
+msgstr ""
+
+#: index.html.j2:68
+msgid "<b>E</b>lectronic"
+msgstr ""
+
+#: index.html.j2:70
+msgid ""
+"Taler is easy to integrate with existing Web\n"
+"\t           applications. Payments are cryptographically\n"
+"\t           secured and are confirmed within milliseconds with\n"
+"\t           extremely low transaction costs."
+msgstr ""
+
+#: index.html.j2:77
+msgid "<b>R</b>eserves"
+msgstr ""
+
+#: index.html.j2:79
+msgid ""
+"Taler does not introduce a new currency with\n"
+"\t           fluctuation risks, and instead uses a digital\n"
+"\t           wallet holding coins in reserve. Taler's\n"
+"\t           cryptographic coins correspond to existing\n"
+"\t           currencies, such as US Dollars, Euros or even\n"
+"\t           Bitcoins."
+msgstr ""
+
+#: index.html.j2:95
+msgid "Latest Videos"
+msgstr ""
+
+#: index.html.j2:96
+msgid "Florian Dold talks about Taler at 50p!"
+msgstr ""
+
+#: index.html.j2:106
+msgid "Taler News"
+msgstr ""
+
+#: index.html.j2:110
+msgid "Financial News"
+msgstr ""
+
 #: investors.html.j2:5
 msgid "Investors"
 msgstr ""
@@ -697,7 +800,7 @@ msgstr ""
 
 #: investors.html.j2:16
 msgid ""
-"We have created a company, Taler Systems SA in \n"
+"We have created a company, Taler Systems SA in\n"
 "                   Luxemburg.<br>\n"
 "                   Please contact <tt>invest@taler.net</tt>\n"
 "                   if you want to invest in Taler."
@@ -1053,82 +1156,25 @@ msgstr ""
 #~ msgid "Taler as seen by the exchange operator"
 #~ msgstr "Taler du point de vu de l'exploitant"
 
-#~ msgid ""
-#~ "Taler has an efficient design.  Unlike\n"
-#~ "                   timeline-based payment systems, such as BitCoin,\n"
-#~ "                   Taler will not threaten the availability of\n"
-#~ "                   national electric grids or (significantly)\n"
-#~ "                   contribute to environmental pollution."
-#~ msgstr ""
-
 #~ msgid "Taxable Anonymous Libre Electronic Reserves"
 #~ msgstr ""
 
 #~ msgid "Independent One-Click Payments!"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "Taler is an electronic payment system under\n"
-#~ "\t          development\n"
-#~ "\t          at <a href=\"http://www.inria.fr/\">Inria</a>.  This\n"
-#~ "\t          community Web site provides extensive documentation\n"
-#~ "\t          about the system, which we expect to make\n"
-#~ "\t          operational in 2017."
-#~ msgstr ""
-
 #~ msgid "<b>T</b>axable"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Unlike BitCoin or cash payments, Taler ensures that\n"
-#~ "\t           governments can learn their citizen's total income\n"
-#~ "\t           and thus collect sales, value-added or income\n"
-#~ "\t           taxes. Taler is a currency for the mainstream\n"
-#~ "\t           economy, and not the black market."
 #~ msgstr ""
 
 #~ msgid "<b>A</b>nonymous"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "When you pay with Taler, your identity does not\n"
-#~ "\t           have to be revealed to the merchant. Just like\n"
-#~ "\t           payments in cash, nobody else can track how you\n"
-#~ "\t           spent your electronic money. However, you obtain a\n"
-#~ "\t           legally valid proof of payment."
-#~ msgstr ""
-
 #~ msgid "<b>L</b>ibre"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Taler is free software\n"
-#~ "\t           from <a href=\"http://www.gnu.org/\">the GNU\n"
-#~ "\t           project</a> implementing an open protocol.  Anybody\n"
-#~ "\t           is welcome to inspect our code and integrate our\n"
-#~ "\t           reference implementation into their applications."
 #~ msgstr ""
 
 #~ msgid "<b>E</b>lectronic"
 #~ msgstr ""
 
-#~ msgid ""
-#~ "Taler is easy to integrate with existing Web\n"
-#~ "\t           applications. Payments are cryptographically\n"
-#~ "\t           secured and are confirmed within milliseconds with\n"
-#~ "\t           extremely low transaction costs."
-#~ msgstr ""
-
 #~ msgid "<b>R</b>eserves"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Taler does not introduce a new currency with\n"
-#~ "\t           fluctuation risks, and instead uses a digital\n"
-#~ "\t           wallet holding coins in reserve. Taler's\n"
-#~ "\t           cryptographic coins correspond to existing\n"
-#~ "\t           currencies, such as US Dollars, Euros or even\n"
-#~ "\t           BitCoins."
 #~ msgstr ""
 
 #~ msgid "Latest Videos"
@@ -1145,31 +1191,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "We have created a company, Taler Systems SA in \n"
-#~ "                   Luxemburgh.<br>\n"
+#~ "                   Luxemburg.<br>\n"
 #~ "                   Please contact <tt>invest@taler.net</tt>\n"
 #~ "                   if you want to invest in Taler."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The scalable business model for Taler is the operation\n"
-#~ "                   of the payment service "
-#~ "provider, which converts money from\n"
-#~ "                   traditional payment systems (Mastercard, SEPA,\n"
-#~ "                   Visa, BitCoin, ACH, SWIFT, etc.) to anonymous\n"
-#~ "                   electronic coins in the "
-#~ "same currency. The customer\n"
-#~ "                   can then redeem the "
-#~ "electronic coins at a merchant,\n"
-#~ "                   who can exchange them for money represented using\n"
-#~ "                   traditional payment systems at the exchange.  The\n"
-#~ "                   exchange charges fees (to the customer,\n"
-#~ "                   merchant or both) to facilitate the transactions."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Taler can be used for different currencies (such as\n"
-#~ "\t           Euros, US Dollars or BitCoins) and different\n"
-#~ "\t           payment models limited only by what the payment\n"
-#~ "\t           service provider supports in its interactions."
 #~ msgstr ""
 

@@ -1,6 +1,6 @@
       <div class="navbar navbar-fixed-top navbar-taler" role="navigation">
         <div class="navbar-header">
-                <button class="btn btn-default dropdown-toggle mobile-lang" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <button class="navbar-toggle btn btn-default dropdown-toggle mobile-lang" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   <img src="{{ url('images/'+lang+'.png') }}"/></img>
                   <span class="caret"></span>
                 </button>
