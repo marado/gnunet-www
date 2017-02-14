@@ -8,3 +8,11 @@
 html {
 	overflow-y: scroll;
 }
+
+.c_acronym {
+  background-color: #c9ffe2;
+}
+
+.c_intro {
+  height: 100vh;
+}
