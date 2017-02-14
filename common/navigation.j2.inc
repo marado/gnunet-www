@@ -1,4 +1,4 @@
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-fixed-top navbar-taler" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="nav nav-justified">
             <li class="m_index"><a href="{{ url_localized('index.html') }}">{{ _("Home") }}</a></li>
-            <li class="m_demo btn btn-outline-success"><a href="https://demo.taler.net/" target="_blank">{{ _("Demo") }}</a></li>
+            <li class="m_demo"><a href="https://demo.taler.net/" target="_blank">{{ _("Demo") }}</a></li>
 	    <li class="m_citizens"><a href="{{ url_localized('citizens.html') }}">{{ _("Citizens") }}</a></li>
             <li class="m_merchants"><a href="{{ url_localized('merchants.html') }}">{{ _("Merchants") }}</a></li>
             <li class="m_governments"><a href="{{ url_localized('governments.html') }}">{{ _("Governments") }}</a></li>
