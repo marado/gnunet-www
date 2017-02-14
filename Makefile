@@ -33,4 +33,4 @@ locale: locale-update locale-compile
 # Run the jinga2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
-	./template.sh
+	./template.py
