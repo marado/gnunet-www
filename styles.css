@@ -14,7 +14,7 @@ html {
 }
 
 .c_intro {
-  height: 97vh;
+  min-height: 97vh;
 }
 
 /* don't show the language selector in the dropdown on mobile devices,
