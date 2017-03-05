@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # This file is in the public domain.
 #
 # This script runs the jinga2 templating engine on an input template-file
@@ -15,6 +15,7 @@ import gettext
 import jinja2
 import glob
 import codecs
+import os
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
                          extensions=["jinja2.ext.i18n"],
@@ -51,5 +52,6 @@ for in_file in glob.glob("*.j2"):
 
         content = tmpl.render(lang=locale, url=url, self_localized=self_localized, url_localized=url_localized)
         out_name = "./" + locale + "/" + in_file.rstrip(".j2")
+        os.makedirs("./" + locale, exist_ok=True)
         with codecs.open(out_name, "w", "utf-8") as f:
             f.write(content)
