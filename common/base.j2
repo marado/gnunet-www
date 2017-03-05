@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>{{ _("GNU Taler") }}</title>
+    <meta name="description" content="{{ _('Taxable Anonymous Libre Electronic Reserves') }}" />
+      {% include "common/header.j2.inc" %}
+  </head>
+  <body>
+    {% include "common/navigation.j2.inc" %}
+    {% block body_content %}{% endblock %}
+    <div class="container-fluid">
+      <div class="container">
+      {% include "common/footer.j2.inc" %}
+      </div>
+    </div>
+  </body>
+</html>
