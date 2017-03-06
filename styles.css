@@ -87,3 +87,8 @@ footer {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
+#body_content {
+  /* push footer down */
+  min-height: 80vh;
+}
