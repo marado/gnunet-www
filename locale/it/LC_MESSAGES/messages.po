@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-06 22:45+0100\n"
+"POT-Creation-Date: 2017-03-06 23:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: it\n"
@@ -281,6 +281,66 @@ msgid ""
 "                   histories and digitally signed contracts can be\n"
 "                   preserved in the wallet for future review by\n"
 "                   the customer, or even use in court."
+msgstr ""
+
+#: contact.html.j2:6
+msgid "Contact information"
+msgstr ""
+
+#: contact.html.j2:13
+msgid "The mailinglist"
+msgstr ""
+
+#: contact.html.j2:15
+msgid ""
+"\n"
+"            An archived, public mailinglist for GNU Taler is\n"
+"            hosted at\n"
+"            <a "
+"href=\"https://lists.gnu.org/mailman/listinfo/taler\">https://lists.gnu.org/mailman/listinfo/taler</a>."
+"  You can send messages to the list\n"
+"            at <a href=\"mailto:taler@gnu.org\">taler@gnu.org</a>.\n"
+"        "
+msgstr ""
+
+#: contact.html.j2:25
+msgid "Contacting individuals"
+msgstr ""
+
+#: contact.html.j2:27
+msgid ""
+"\n"
+"             Team members are generally reachable at\n"
+"             <tt>LASTNAME@taler.net</tt>.  All of us\n"
+"             support receiving GnuPG encrypted e-mails.\n"
+"        "
+msgstr ""
+
+#: contact.html.j2:36
+msgid "Reporting bugs"
+msgstr ""
+
+#: contact.html.j2:38
+msgid ""
+"\n"
+"             We track open feature requests and bugs in our\n"
+"             <a href=\"https://gnunet.org/bugs/\">Bug tracker</a>,\n"
+"             which is shared with the GNUnet project.\n"
+"             You can also report bugs or feature requests to the\n"
+"             mailinglist.\n"
+"        "
+msgstr ""
+
+#: contact.html.j2:49
+msgid "Executive team"
+msgstr ""
+
+#: contact.html.j2:51
+msgid ""
+"\n"
+"             For non-technical commercial requests, please contact\n"
+"             <tt>ceo AT taler.net</tt>.\n"
+"        "
 msgstr ""
 
 #: developers.html.j2:5

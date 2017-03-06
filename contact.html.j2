@@ -1,0 +1,59 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>{{ _("Contact information") }}</h1>
+  </div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-6">
+    <h2>{{ _("The mailinglist") }}</h2>
+      <p>
+        {% trans %}
+            An archived, public mailinglist for GNU Taler is
+            hosted at
+            <a href="https://lists.gnu.org/mailman/listinfo/taler">https://lists.gnu.org/mailman/listinfo/taler</a>.  You can send messages to the list
+            at <a href="mailto:taler@gnu.org">taler@gnu.org</a>.
+        {% endtrans %}
+      </p>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>{{ _("Contacting individuals") }}</h2>
+    <p>
+        {% trans %}
+             Team members are generally reachable at
+             <tt>LASTNAME@taler.net</tt>.  All of us
+             support receiving GnuPG encrypted e-mails.
+        {% endtrans %}
+    </p>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>{{ _("Reporting bugs") }}</h2>
+    <p>
+        {% trans %}
+             We track open feature requests and bugs in our
+             <a href="https://gnunet.org/bugs/">Bug tracker</a>,
+             which is shared with the GNUnet project.
+             You can also report bugs or feature requests to the
+             mailinglist.
+        {% endtrans %}
+    </p>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>{{ _("Executive team") }}</h2>
+    <p>
+        {% trans %}
+             For non-technical commercial requests, please contact
+             <tt>ceo AT taler.net</tt>.
+        {% endtrans %}
+    </p>
+  </div>
+</div>
+</div>
+{% endblock body_content %}
