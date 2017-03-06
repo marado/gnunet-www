@@ -1,0 +1,18 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>{{ _("Taler System Architecture") }}</h1>
+    <p>
+      {% trans %}
+      {% endtrans %}
+    </p>
+  </div>
+
+</div>
+
+<div class="container">
+  <img width="100%" src="{{ url('taler-arch-full.svg') }}"></img>
+</div>
+{% endblock body_content %}
