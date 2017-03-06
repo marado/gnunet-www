@@ -1,0 +1,34 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="container">
+<h1>{{ _("GNU Taler Bibliography")}}</h1>
+
+<h2>Blind Signatures for Untraceable Payments</h2>
+<p>
+<a href="{{ url('papers/chaum-blind-signatures.pdf') }}"><img border=0 align=right alt="PDF" width=32 height=32 src="{{ url('images/pdf.svg') }}"></a>
+{{_("by")}} David Chaum<br>
+CRYPTO '82<br>
+</p>
+
+<h2>The One-More-RSA-Inversion Problems and the Security of Chaum's Blind Signature Scheme</h2>
+<p>
+<a href="{{ url('papers/bellare_blindsigs_proof.pdf') }}"><img border=0 align=right alt="PDF" width=32 height=32 src="{{ url('images/pdf.svg') }}"></a>
+{{_("by")}} M. Bellare, C. Namprempre, D. Pointcheval {{ _("and") }} M. Semanko<br>
+Financial Cryptography '01<br>
+</p>
+
+<h2>Enabling Secure Web Payments with GNU Taler</h2>
+<p>
+<a href="{{ url('papers/taler2016space.pdf') }}"><img border=0 align=right width=32 height=32 alt="PDF" src="{{ url('images/pdf.svg') }}"></a>
+{{_("by")}} Jeff Burdges, Florian Dold, Christian Grothoff {{ _("and") }} Marcello Stanisci<br>
+SPACE 2016<br>
+</p>
+
+<h2>Refreshing Coins for Giving Change and Refunds in Chaum-style Anonymous Payment Systems</h2>
+<p>
+{{_("by")}} Florian Dold, Sree Harsha Totakura, Benedikt M&uuml;ller, Jeff Burdges {{ _("and") }} Christian Grothoff<br>
+<em>{{_("available upon request")}}</em><br>
+</p>
+
+</div>
+{% endblock body_content %}
