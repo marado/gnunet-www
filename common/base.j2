@@ -9,10 +9,6 @@
   <body id="mybody">
     {% include "common/navigation.j2.inc" %}
     {% block body_content %}{% endblock %}
-    <div class="container-fluid">
-      <div class="container">
-      {% include "common/footer.j2.inc" %}
-      </div>
-    </div>
+    {% include "common/footer.j2.inc" %}
   </body>
 </html>

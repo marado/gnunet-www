@@ -38,3 +38,7 @@ html {
   /* override ugly bootstrap defaults */
   color: black;
 }
+
+footer {
+  margin-top: 2em;
+}
