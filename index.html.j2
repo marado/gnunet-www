@@ -1,33 +1,34 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-  <div class="container c_intro">
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-      <img align="middle" alt="Taler logo" width="33%" src="{{ url('taler-big.svg') }}" style="margin: 0px 0px -120px 0px;">
-    </div>
-    <div class="jumbotron">
-       <h1>{{ _("Independent One-Click Payments!") }}</h1>
-
-       <p>
-         {% trans %}
-         Taler is an electronic payment system under
-         development
-         at <a href="http://www.inria.fr/">Inria</a>.  We expect to make it operational in 2017.
-         Meanwhile you can learn about Taler on this website, try the <a href="https://demo.taler.net\">demo</a>
-         and look at our <a href="https://docs.taler.net\">developer</a> and <a href="https://api.taler.net">API</a> documentation.
-         {% endtrans %}
-        </p>
-       
-    </div>
-
+<div class="container c_intro">
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <img align="middle" alt="Taler logo" width="33%" src="{{ url('taler-big.svg') }}" style="margin: 0px 0px -120px 0px;">
   </div>
+  <div class="jumbotron">
+     <h1>{{ _("Independent One-Click Payments!") }}</h1>
+
+     <p>
+       {% trans %}
+       Taler is an electronic payment system under
+       development
+       at <a href="http://www.inria.fr/">Inria</a>.  We expect to make it operational in 2017.
+       Meanwhile you can learn about Taler on this website, try the <a href="https://demo.taler.net\">demo</a>
+       and look at our <a href="https://docs.taler.net\">developer</a> and <a href="https://api.taler.net">API</a> documentation.
+       {% endtrans %}
+      </p>
+     
+  </div>
+</div>
 
   <div class="contianer-fluid c_acronym">
   <div class="container">
 
+    <h2>Advantages of Taler</h2>
+
     <div class="row">
       <div class="col-lg-4">
-        <h2>{{ _("Taxable") }}</h2>
+        <strong>{{ _("Taxable") }}</strong>
 
         <p>
           {% trans %}
@@ -39,8 +40,7 @@
 
       </div>
       <div class="col-lg-4">
-        <h2>{{ _("Privacy-friendly") }}</h2>
-
+        <strong>{{ _("Privacy-friendly") }}</strong>
         <p>
           {% trans %}
           When you pay with Taler, your identity does not
@@ -53,15 +53,15 @@
 
       </div>
       <div class="col-lg-4">
-        <h2>{{ _("<b>L</b>ibre") }}</h2>
+        <strong>{{ _("Libre") }}</strong>
 
         <p>
           {% trans %}
-          Taler is free software
-          from <a href="http://www.gnu.org/">the GNU project</a>
-          implementing an open protocol.  Anybody
-          is welcome to inspect our code and integrate our
-          reference implementation into their applications.
+          Taler provides protocols and reference implementations that in
+          principle enables everybody to run their own payment infrastructure,
+          be it individuals, organizations or whole countries.  Since the
+          reference implementation is a <a href="http://www.gnu.org/">GNU</a>
+          package, it will always remain free software.
           {% endtrans %}
         </p>
 
@@ -69,7 +69,7 @@
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <h2>{{ _("<b>E</b>lectronic") }}</h2>
+        <strong>{{ _("Practical") }}</strong>
         
         <p>
           {% trans %}
@@ -82,7 +82,7 @@
 
       </div>
       <div class="col-lg-4">
-        <h2>{{ _("<b>R</b>eserves") }}</h2>
+        <strong>{{ _("Stable") }}</strong>
 
         <p>
           {% trans %}
@@ -96,8 +96,24 @@
         </p>
         
       </div>
+      <div class="col-lg-4">
+        <strong>{{ _("Security-focused") }}</strong>
+
+        <p>
+          {% trans %}
+          By design Taler does not suffer from many classes
+          of security problems such as phishing or conterfeit.
+          Despite its security features, Taler never rejects a legitimate
+          customer due to a fraud-detection false positive.
+          {% endtrans %}
+        </p>
+        
+      </div>
     </div>
   </div>
+  </div>
+  <div class="container">
+    <h2>How it works</h2>
   </div>
 
   <div class="container">
