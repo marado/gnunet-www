@@ -93,12 +93,23 @@ footer {
   min-height: 80vh;
 }
 
-.adorn_bracket h3::before {
+.adorn_h3_bracket h3::before {
   content: "❬";
   color: #aa3939;
 }
 
-.adorn_bracket h3::after {
+.adorn_h3_bracket h3::after {
   content: "❭";
   color: #aa3939;
+}
+.taler_home::before {
+  content: "❬";
+  color: #aa3939;
+}
+.taler_home::after {
+  content: "❭";
+  color: #aa3939;
+}
+.taler_home {
+  font-family: 'Lucida Console', Monaco, monospace;
 }
