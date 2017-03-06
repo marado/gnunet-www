@@ -7,4 +7,4 @@
 	     by establishing a commons that protects critical infrastructure
 	     from domination by a handful of global players.
           </p>
-          <p><a class="btn btn-info" href="http://www.nfcworld.com/2016/10/24/347979/alipay-gains-acceptance-us-europe/?utm_content=buffer16d78&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer" role="button">Source</a></p>
+          <p><a class="btn btn-info" href="http://www.nfcworld.com/2016/10/24/347979/alipay-gains-acceptance-us-europe/" role="button">Source</a></p>
