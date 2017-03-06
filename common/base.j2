@@ -4,7 +4,8 @@
     <meta charset="UTF-8"/>
     <title>{{ _("GNU Taler") }}</title>
     <meta name="description" content="{{ _('Taxable Anonymous Libre Electronic Reserves') }}" />
-      {% include "common/header.j2.inc" %}
+    {% include "common/header.j2.inc" %}
+    {% block head_content %}{% endblock %}
   </head>
   <body id="mybody">
     {% include "common/navigation.j2.inc" %}
