@@ -2,7 +2,9 @@
 {% block body_content %}
 <!-- Jumbotron -->
 <div class="jumbotron">
-  <img alt="Taler logo" width="25%" class="center-block" src="{{ url('taler-dold-2.png') }}"></img>
+  <div style="height: 40vh">
+    <img alt="Taler logo" style="object-fit:contain;width:100%;height:100%" class="center-block" src="{{ url('taler-dold-2.png') }}"></img>
+  </div>
 
   <div class="container text-center">
     <h1>{{ _("Independent One-Click Payments!") }}</h1>
