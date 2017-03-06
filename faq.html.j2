@@ -2,9 +2,26 @@
 {% block body_content %}
 <div class="container">
 <h2>How is Taler related to Bitcoin or Blockchains?</h2>
+<p>
+Taler does not use any Blockchain technology or Bitcoin directly.  Taler is not
+based on proof-of-work or any other distributed consensus mechanism.  Instead
+Taler is based on blind signatures.</p>
+
+<p>It would be possible, however, withdraw Bitcoins into a Taler wallet (with an approproate exchange),
+which would give some benefits ofer plain Bitcoin, such as instant confirmation times.</p>
 
 <h2>Where is the balance in my wallet stored?</h2>
+<p>Your wallet stores tokens that are blindly signed by an exchange.
+Until your spend balance with a merchant, the exchange holds it in escrow.</p>
 
 <h2>What if my wallet gets lost?</h2>
+<p>Since the digital tokens of value in your wallet are anonymized,
+the exchange can not assist you in restoring a lost or stolen wallet.  Just
+like with a physical wallet for cash, you are responsible for keeping it safe.</p>
+
+<p>The risk of losing a wallet can be mitigated by backups or keeping the balance reasonably low.</p>
+
+<p>In case of a compromise of one of your devices, an attacker that spends coins on your behalf will
+make it possible for you to know that you've been compromised, which can be an advantage.</p>
 </div>
 {% endblock body_content %}
