@@ -1,19 +1,18 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li class="{{ 'active' if filename == 'index.html' else '' }}"><a class="taler_home" href="index.html">taler</a></li>
-      <li class="{{ 'active' if filename == 'investors.html' else '' }}"><a href="investors.html">Investors</a></li>
+      <li class="{{ 'active' if filename == 'index.html' else '' }}"><a class="taler_home" href="index.html">Taler</a></li>
+      <li class="{{ 'active' if filename == 'citizens.html' else '' }}"><a href="citizens.html">Citizens</a></li>
+      <li class="{{ 'active' if filename == 'merchants.html' else '' }}"><a href="merchants.html">Merchants</a></li>
+      <li class="{{ 'active' if filename == 'governments.html' else '' }}"><a href="governments.html">Governments</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="architecture.html">System Architecture</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="governments.html">Taler for Governments</a></li>
-          <li><a href="developers.html">Taler for Developers</a></li>
-          <li><a href="merchants.html">Taler for Merchants</a></li>
+          <li><a href="developers.html">Developer Introduction</a></li>
         </ul>
       </li>
-      <li class="{{ 'active' if filename == 'about.html' else '' }}"><a href="about.html">Team</a></li>
     </ul>
     <ul class="nav navbar-right navbar-form">
       <li>
