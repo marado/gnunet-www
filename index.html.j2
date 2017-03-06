@@ -1,34 +1,32 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<div class="container c_intro">
-  <!-- Jumbotron -->
-  <div class="jumbotron">
-    <img align="middle" alt="Taler logo" width="33%" src="{{ url('taler-big.svg') }}" style="margin: 0px 0px -120px 0px;">
-  </div>
-  <div class="jumbotron">
-     <h1>{{ _("Independent One-Click Payments!") }}</h1>
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <img alt="Taler logo" width="25%" class="center-block" src="{{ url('taler-dold-2.png') }}"></img>
 
-     <p>
-       {% trans %}
-       Taler is an electronic payment system under
-       development
-       at <a href="http://www.inria.fr/">Inria</a>.  We expect to make it operational in 2017.
-       Meanwhile you can learn about Taler on this website, try the <a href="https://demo.taler.net\">demo</a>
-       and look at our <a href="https://docs.taler.net\">developer</a> and <a href="https://api.taler.net">API</a> documentation.
-       {% endtrans %}
-      </p>
-     
+  <div class="container text-center">
+    <h1>{{ _("Independent One-Click Payments!") }}</h1>
+    <p>
+      {% trans %}
+      Taler is an electronic payment system under
+      development
+      at <a href="http://www.inria.fr/">Inria</a>.  We expect to make it operational in 2017.
+      Meanwhile you can learn about Taler on this website, try the <a href="https://demo.taler.net\">demo</a>
+      and look at our <a href="https://docs.taler.net\">developer</a> and <a href="https://api.taler.net">API</a> documentation.
+      {% endtrans %}
+    </p>
   </div>
+
 </div>
 
   <div class="contianer-fluid c_acronym">
   <div class="container">
 
-    <h2>Advantages of Taler</h2>
+    <h2>Design goals of Taler</h2>
 
     <div class="row">
       <div class="col-lg-4">
-        <strong>{{ _("Taxable") }}</strong>
+        <h3>{{ _("Taxable") }}</h3>
 
         <p>
           {% trans %}
@@ -40,7 +38,7 @@
 
       </div>
       <div class="col-lg-4">
-        <strong>{{ _("Privacy-friendly") }}</strong>
+        <h3>{{ _("Privacy-friendly") }}</h3>
         <p>
           {% trans %}
           When you pay with Taler, your identity does not
@@ -53,7 +51,7 @@
 
       </div>
       <div class="col-lg-4">
-        <strong>{{ _("Libre") }}</strong>
+        <h3>{{ _("Libre") }}</h3>
 
         <p>
           {% trans %}
@@ -69,7 +67,7 @@
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <strong>{{ _("Practical") }}</strong>
+        <h3>{{ _("Practical") }}</h3>
         
         <p>
           {% trans %}
@@ -82,7 +80,7 @@
 
       </div>
       <div class="col-lg-4">
-        <strong>{{ _("Stable") }}</strong>
+        <h3>{{ _("Stable") }}</h3>
 
         <p>
           {% trans %}
@@ -97,7 +95,7 @@
         
       </div>
       <div class="col-lg-4">
-        <strong>{{ _("Security-focused") }}</strong>
+        <h3>{{ _("Security-focused") }}</h3>
 
         <p>
           {% trans %}
@@ -112,6 +110,7 @@
     </div>
   </div>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -122,7 +121,10 @@
       </div>
       <div class="col-lg-6">
       <h2>Receiving payments with Taler</h2>
-      TODO
+      To receive Taler payments, a merchant only needs a bank account (or
+      any other kind of payment address) in the desired currency.  We provide an
+      SDK in various languages that makes the integration into a merchant's store
+      painless.
       </div>
     </div>
     <h2>Learn more</h2>

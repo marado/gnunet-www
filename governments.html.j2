@@ -1,155 +1,144 @@
-3<!DOCTYPE html>
-<html lang="{{ _('en') }}">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>{{ _("GNU Taler") }} - {{ _("Governments") }}</title>
-    <meta name="description" content=""/>
-    {% include "common/header.j2.inc" %}
-  </head>
-  <body>
-    <div class="container">
-      {% include "common/navigation.j2.inc" %}
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>{{ _("Advantages for Governments") }}</h1>
-        <!-- p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p -->
-	<div class="col-lg-12">
+{% extends "common/base.j2" %}
+{% block body_content %}
 
-          <p>{{ _("Taler provides accountability to ensure business
-                   accepting payments operate legally, while also
-                   respecting civil liberties of citizens spending
-                   digital cash.  Taler is a commons, a payment system
-                   based on open standards and free software.  Taler
-                   needs governments to set a financial framework and
-                   to act as trusted regulators.  Taler contributes to
-                   digital sovereignty in the critial financial
-                   infrastructure.") }}</p>
+<div class="jumbotron">
+  <div class="container text-center">
+  <h1>{{ _("Advantages for Governments") }}</h1>
+    <p>{{ _("Taler provides accountability to ensure business
+             accepting payments operate legally, while also
+             respecting civil liberties of citizens spending
+             digital cash.  Taler is a commons, a payment system
+             based on open standards and free software.  Taler
+             needs governments to set a financial framework and
+             to act as trusted regulators.  Taler contributes to
+             digital sovereignty in the critial financial
+             infrastructure.") }}</p>
+  </div>
+</div>
 
-        </div>
-      </div>
+<div class="container">
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>{{ _("Taxable") }}</h2>
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-lg-6">
+    <h2>{{ _("Taxable") }}</h2>
 
-          <p>{{ _("Taler was
-	           built with the goal of fighting corruption and supporting taxation.  
-	           With Taler, the receiver of any form of payment is
-	           easily identified by the government, and the merchant
-                   can be compelled to provide the contract that was accepted
-                   by the customer.  Governments can use this data to
-	           tax businesses and individuals based on their
-	           income, making tax evasion and black markets less
-	           viable.") }}</p>
+    <p>{{ _("Taler was
+             built with the goal of fighting corruption and supporting taxation.  
+             With Taler, the receiver of any form of payment is
+             easily identified by the government, and the merchant
+             can be compelled to provide the contract that was accepted
+             by the customer.  Governments can use this data to
+             tax businesses and individuals based on their
+             income, making tax evasion and black markets less
+             viable.") }}</p>
 
-          <p>{{ _("Thus, despite offering anonymity for citizens
-                   spending digital cash to buy goods and services,
-                   Taler also ensures that the state can observe
-                   incoming funds. This can be used to ensure
-                   businesses engage only in legal activities, and do
-                   not evade income tax, sales tax or value-added tax.
-                   However, this observational capability does not
-                   extend to the immediate personal domain.  In
-                   particular, sharing access to funds within a family
-                   or synchronizing wallets across multiple devices is not
-                   subject to monitoring.")  }}</p> </div>
+    <p>{{ _("Thus, despite offering anonymity for citizens
+             spending digital cash to buy goods and services,
+             Taler also ensures that the state can observe
+             incoming funds. This can be used to ensure
+             businesses engage only in legal activities, and do
+             not evade income tax, sales tax or value-added tax.
+             However, this observational capability does not
+             extend to the immediate personal domain.  In
+             particular, sharing access to funds within a family
+             or synchronizing wallets across multiple devices is not
+             subject to monitoring.")  }}</p> </div>
 
-	<div class="col-lg-6">
-          <h2>{{ _("Secure") }}</h2>
+  <div class="col-lg-6">
+    <h2>{{ _("Secure") }}</h2>
 
-          <p>{{ _("Taler's payments are cryptographically
-                   secured. Thus, customers, merchants and the
-                   exchange can mathematically demonstrate their
-                   lawful behavior in court in case of
-                   disputes. Financial damages are strictly limited,
-                   improving economic security for individuals,
-                   merchants, the exchange and the state.") }}
+    <p>{{ _("Taler's payments are cryptographically
+             secured. Thus, customers, merchants and the
+             exchange can mathematically demonstrate their
+             lawful behavior in court in case of
+             disputes. Financial damages are strictly limited,
+             improving economic security for individuals,
+             merchants, the exchange and the state.") }}
 
-	  <p>{{ _("By design, the Taler payment service provider is
-                   subject to financial regulation. Financial
-                   regulation and regular audits are critical to
-                   establish trust. In particular, the Taler design
-                   mandates the existence of an independent auditor
-                   who checks cryptographic proofs that accumulate at
-                   the payment service provider to ensure that the
-                   escrow account is managed honestly.  This ensures
-                   that the payment service provider does not threaten
-                   the economy due to fraud.") }}</p> </div> </div>
-                   <div class="row"> <div class="col-lg-6"> <h2>{{
-                   _("Libre") }}</h2>
+    <p>{{ _("By design, the Taler payment service provider is
+             subject to financial regulation. Financial
+             regulation and regular audits are critical to
+             establish trust. In particular, the Taler design
+             mandates the existence of an independent auditor
+             who checks cryptographic proofs that accumulate at
+             the payment service provider to ensure that the
+             escrow account is managed honestly.  This ensures
+             that the payment service provider does not threaten
+             the economy due to fraud.") }}</p> </div> </div>
+             <div class="row"> <div class="col-lg-6"> <h2>{{
+             _("Libre") }}</h2>
 
-          <p>{{ _("Taler is free software implementing an open
-                   protocol standard.  Thus, Taler will enable
-                   competition and avoid the monopolization of payment
-                   systems that threatens global political and
-                   financial stability today.") }}</p>
+    <p>{{ _("Taler is free software implementing an open
+             protocol standard.  Thus, Taler will enable
+             competition and avoid the monopolization of payment
+             systems that threatens global political and
+             financial stability today.") }}</p>
 
 
-        </div>
-        <div class="col-lg-6">
-          <h2>{{ _("Efficient") }}</h2>
+  </div>
+  <div class="col-lg-6">
+    <h2>{{ _("Efficient") }}</h2>
 
-          <p>{{ _("Taler has an efficient design.  Unlike
-                   timeline-based payment systems, such as Bitcoin,
-                   Taler will not threaten the availability of
-                   national electric grids or (significantly)
-                   contribute to environmental pollution.") }}</p>
+    <p>{{ _("Taler has an efficient design.  Unlike
+             timeline-based payment systems, such as Bitcoin,
+             Taler will not threaten the availability of
+             national electric grids or (significantly)
+             contribute to environmental pollution.") }}</p>
 
-        </div>
-      </div>
-      <div class="col-lg-12">
-        <h2 id="overview">{{ _("Taler as seen by governments") }}</h2>
+  </div>
+</div>
+<div class="col-lg-12">
+  <h2 id="overview">{{ _("Taler as seen by governments") }}</h2>
 
-        <p>{{ _("Governments can observe traditional wire transfers
-                 entering and leaving the Taler system, and require
-                 merchants and exchange operators to provide certain
-                 information during financial audits.  Exchange
-                 operators are expected to be permanently checked by
-                 auditors, while merchants may be required to reveal
-                 information during regular tax audits.  Information
-                 available to the government includes: ") }}</p>
-	
-        <p>
-          <img src="{{ url('images/government.svg') }}" alt="government perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-          </p><ul>
-	  
-            <li>{{ _("From the banking system: The total amount of
-  	              digital currency obtained by a customer. The
-  	              government could impose limits on how many
-  	              digital coins a customer may withdraw within a
-  	              given timeframe.") }}</li>
+  <p>{{ _("Governments can observe traditional wire transfers
+           entering and leaving the Taler system, and require
+           merchants and exchange operators to provide certain
+           information during financial audits.  Exchange
+           operators are expected to be permanently checked by
+           auditors, while merchants may be required to reveal
+           information during regular tax audits.  Information
+           available to the government includes: ") }}</p>
+  
+  <p>
+    <img src="{{ url('images/government.svg') }}" alt="government perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
+    </p><ul>
+    
+      <li>{{ _("From the banking system: The total amount of
+                digital currency obtained by a customer. The
+                government could impose limits on how many
+                digital coins a customer may withdraw within a
+                given timeframe.") }}</li>
 
-             <li>{{ _("From the banking system: The total amount of
-                       income received by any merchant via the Taler
-                       system.") }}</li>
+       <li>{{ _("From the banking system: The total amount of
+                 income received by any merchant via the Taler
+                 system.") }}</li>
 
-             <li>{{ _("From auditing the exchange: The amounts of
-                       digital coins legitimately withdrawn by
-                       customers from the exchange, the value of
-                       non-redeemed digital coins in customer's
-                       wallets, the value and corresponding wire
-                       details of deposit operations performed by
-                       merchants with the exchange, and the income of
-                       the exchange from transaction fees.") }}</li>
+       <li>{{ _("From auditing the exchange: The amounts of
+                 digital coins legitimately withdrawn by
+                 customers from the exchange, the value of
+                 non-redeemed digital coins in customer's
+                 wallets, the value and corresponding wire
+                 details of deposit operations performed by
+                 merchants with the exchange, and the income of
+                 the exchange from transaction fees.") }}</li>
 
-            <li>{{ _("From auditing merchants: For each deposit
-                      operation, the exact details of the underlying
-                      contract that was signed between customer and
-                      merchant.  However, this information would
-                      typically not include the identity of the
-                      customer.  Note that while the customer can
-                      decide to prove that it was his transaction
-                      (i.e. in court when suing the merchant if the
-                      merchant failed to deliver on the contract),
-                      merchant, exchange and government cannot find
-                      out the customer's identity from the information
-                      that Taler collects.") }}</li>
+      <li>{{ _("From auditing merchants: For each deposit
+                operation, the exact details of the underlying
+                contract that was signed between customer and
+                merchant.  However, this information would
+                typically not include the identity of the
+                customer.  Note that while the customer can
+                decide to prove that it was his transaction
+                (i.e. in court when suing the merchant if the
+                merchant failed to deliver on the contract),
+                merchant, exchange and government cannot find
+                out the customer's identity from the information
+                that Taler collects.") }}</li>
 
-          </ul>
-        <p></p>
-      </div>
-      {% include "common/footer.j2.inc" %}
-    </div> <!-- /container -->
-  </body>
-</html>
+    </ul>
+  <p></p>
+</div>
+</div>
+
+{% endblock body_content %}

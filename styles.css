@@ -1,3 +1,8 @@
+body .jumbotron {
+  background-color: white;
+}
+
+
 .lang-slector {
 	float: right;
 	padding-top: 2mm;
@@ -27,4 +32,9 @@ html {
 .mobile-lang {
   margin-left:5px;
   margin-top: 8px;
+}
+
+#mybody {
+  /* override ugly bootstrap defaults */
+  color: black;
 }

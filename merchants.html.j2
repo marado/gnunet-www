@@ -1,169 +1,157 @@
-<!DOCTYPE html>
-<html lang="{{ _('en') }}">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>{{ _("GNU Taler") }} - {{ _("Merchants") }}</title>
-    <meta name="description" content=""/>
-    {% include "common/header.j2.inc" %}
-  </head>
-  <body>
-    <div class="container">
-    {% include "common/navigation.j2.inc" %}
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>{{ _("Advantages for Merchants") }}</h1>
-        <div class="col-lg-12">
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>{{ _("Advantages for Merchants") }}</h1>
+    <p>{{ _("Taler is a cost-effective electronic payment system
+             which provides you with cryptographic proof that
+             the payment worked correctly within milliseconds.
+             Your Web customers pay with previously unknown
+             levels of convenience without risk of fraud.")
+             }}</p>
+  </div>
+</div>
 
-	  <p>{{ _("Taler is a cost-effective electronic payment system
-	           which provides you with cryptographic proof that
-	           the payment worked correctly within milliseconds.
-	           Your Web customers pay with previously unknown
-	           levels of convenience without risk of fraud.")
-	           }}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>{{ _("Fast") }}</h2>
 
-	</div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>{{ _("Fast") }}</h2>
+      <p>{{ _("Processing transactions with Taler is fast,
+               allowing you to confirm the transaction with your
+               customer virtually immediately.  Your customers
+               will appreciate that they do not have to type in
+               credit card information and play the &quot;verified
+               by&quot; game.  By making payments significantly
+               more convenient for your customers, you may be able
+               to use Taler for small transactions that would not
+               work with credit card payments due to the mental
+               overhead for customers.") }}</p>
 
-	  <p>{{ _("Processing transactions with Taler is fast,
-	           allowing you to confirm the transaction with your
-	           customer virtually immediately.  Your customers
-	           will appreciate that they do not have to type in
-	           credit card information and play the &quot;verified
-	           by&quot; game.  By making payments significantly
-	           more convenient for your customers, you may be able
-	           to use Taler for small transactions that would not
-	           work with credit card payments due to the mental
-	           overhead for customers.") }}</p>
+    </div>
+    <div class="col-lg-4">
+      <h2>{{ _("Secure") }}</h2>
 
-        </div>
-        <div class="col-lg-4">
-          <h2>{{ _("Secure") }}</h2>
+      <p>{{ _("You will have cryptographic proof of payment from
+               the Taler payment service provider. Taler does not
+               require you to undergo any particular security
+               audits (such as PCI DSS), processes or procedures,
+               as you never handle sensitive customer account
+               information.  Your systems will have customer
+               contracts wih qualified signatures for all
+               transactions which you can use in court in case of
+               disputes.") }}</p>
 
-	  <p>{{ _("You will have cryptographic proof of payment from
-	           the Taler payment service provider. Taler does not
-	           require you to undergo any particular security
-	           audits (such as PCI DSS), processes or procedures,
-	           as you never handle sensitive customer account
-	           information.  Your systems will have customer
-	           contracts wih qualified signatures for all
-	           transactions which you can use in court in case of
-	           disputes.") }}</p>
+    </div>
+    <div class="col-lg-4">
+      <h2>{{ _("Free Software") }}</h2>
 
-        </div>
-        <div class="col-lg-4">
-          <h2>{{ _("Free Software") }}</h2>
+      <p>{{ _("Taler is free software, and you can use the
+               liberally-licensed reference code as a starting
+               point to integrate Taler into your services. To use
+               Taler, you do not need to pay license fees, and the
+               free software development model will ensure that
+               you can select from many competent integrators for
+               support.") }}</p>
 
-	  <p>{{ _("Taler is free software, and you can use the
-	           liberally-licensed reference code as a starting
-	           point to integrate Taler into your services. To use
-	           Taler, you do not need to pay license fees, and the
-	           free software development model will ensure that
-	           you can select from many competent integrators for
-	           support.") }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>{{ _("Low Fees") }}</h2>
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>{{ _("Low Fees") }}</h2>
+      <p>{{ _("Taler is designed to minimize the work the exchange
+               needs to perform.  Combined with Taler's strong
+               security which prevents fraud, payment service
+               providers can operate with very low overhead and
+               thus low transaction fees.") }}</p>
 
-	  <p>{{ _("Taler is designed to minimize the work the exchange
-	           needs to perform.  Combined with Taler's strong
-	           security which prevents fraud, payment service
-	           providers can operate with very low overhead and
-	           thus low transaction fees.") }}</p>
+    </div>
+    <div class="col-lg-4">
+      <h2>{{ _("Flexible") }}</h2>
 
-        </div>
-        <div class="col-lg-4">
-          <h2>{{ _("Flexible") }}</h2>
+      <p>{{ _("Taler can be used for different currencies (such as
+               Euros, US Dollars or Bitcoins) and different
+               payment models limited only by what the payment
+               service provider supports in its interactions.")
+               }}</p>
 
-	  <p>{{ _("Taler can be used for different currencies (such as
-	           Euros, US Dollars or Bitcoins) and different
-	           payment models limited only by what the payment
-	           service provider supports in its interactions.")
-	           }}</p>
+    </div>
+    <div class="col-lg-4">
+      <h2>{{ _("Ethical") }}</h2>
 
-        </div>
-        <div class="col-lg-4">
-          <h2>{{ _("Ethical") }}</h2>
+      <p>{{ _("Taler prevents tax evasion and money laundering.
+               Taler's protocols are efficient and do not waste
+               energy. Taler encourages transparency by providing
+               an open standard and free software reference
+               implementations.") }}</p>
 
-          <p>{{ _("Taler prevents tax evasion and money laundering.
-                   Taler's protocols are efficient and do not waste
-                   energy. Taler encourages transparency by providing
-                   an open standard and free software reference
-                   implementations.") }}</p>
+    </div>
+  </div>
+ <div class="col-lg-12">
+    <h2 id="overview">{{ _("Taler as seen by merchants") }}</h2>
 
-        </div>
-      </div>
-     <div class="col-lg-12">
-        <h2 id="overview">{{ _("Taler as seen by merchants") }}</h2>
+    <p>{{ _("Merchants supporting the Taler system need to
+             integrate some relatively simple logic into their
+             transaction processing system.  Typical steps
+             performed by the merchant system are: ") }}</p>
 
-        <p>{{ _("Merchants supporting the Taler system need to
-                 integrate some relatively simple logic into their
-                 transaction processing system.  Typical steps
-                 performed by the merchant system are: ") }}</p>
+    <p>
+    <img src="{{ url('images/merchant.svg') }}" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
+      <ol>
+      
+        <li>{{ _("The new logic detects when a customer's system
+                  supports Taler and then needs to send a
+                  cryptographically signed version of the proposed
+                  contract in a simple JSON format to the
+                  customer.  The message also includes salted,
+                  hashed wire details for the merchant, as well as
+                  restrictions as to which exchange operators the
+                  merchant is willing to deal with.") }}</li>
 
-        <p>
-        <img src="{{ url('images/merchant.svg') }}" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-          <ol>
-	  
-            <li>{{ _("The new logic detects when a customer's system
-                      supports Taler and then needs to send a
-                      cryptographically signed version of the proposed
-                      contract in a simple JSON format to the
-                      customer.  The message also includes salted,
-                      hashed wire details for the merchant, as well as
-                      restrictions as to which exchange operators the
-                      merchant is willing to deal with.") }}</li>
+        <li>{{ _("The customer sends a signed response which
+                  states that certain digital coins now belong to
+                  the merchant to both signal acceptance of the
+                  deal as well as to pay the respective amount
+                  (bottom).") }}</li>
 
-            <li>{{ _("The customer sends a signed response which
-                      states that certain digital coins now belong to
-                      the merchant to both signal acceptance of the
-                      deal as well as to pay the respective amount
-                      (bottom).") }}</li>
+         <li>{{ _("The merchant then forwards the signed messages
+                   received from the customer to the exchange,
+                   together with its wire details and the salt
+                   (without hashing).  The exchange verifies the
+                   details and sends a signed confirmation (or an
+                   error message) to the merchant.  The merchant
+                   checks that the exchange's signature is valid,
+                   sends a confirmation to the customer and
+                   executes the contract-specific business
+                   logic.") }}</li>
 
-             <li>{{ _("The merchant then forwards the signed messages
-                       received from the customer to the exchange,
-                       together with its wire details and the salt
-                       (without hashing).  The exchange verifies the
-                       details and sends a signed confirmation (or an
-                       error message) to the merchant.  The merchant
-                       checks that the exchange's signature is valid,
-                       sends a confirmation to the customer and
-                       executes the contract-specific business
-                       logic.") }}</li>
-
-             <li>{{ _("The exchange performs wire transfers
-                       corresponding to the claims deposited by the
-                       merchant. Note that the exchange may charge
-                       fees for the deposit operation, hence merchants
-                       may impose limits restricting the set of
-                       exchange operators they are willing to deal
-                       with, for example by imposing a bound on
-                       deposit fees.") }}</li>
-          </ol>
-        </p>
-     </div>
-      <div class="col-lg-12">
-        <h2 id="documentation">{{ _("Manuals for merchants") }}</h2>
-        <p>
-          </p><ul>
-            <li>{{ _("The GNU Taler merchant backend operator manual") }}
-              (<a href="https://docs.taler.net/current/merchant-backend/manual.html">html</a>,
-               <a href="https://docs.taler.net/current/merchant-backend/manual.pdf">pdf</a>)</li>
-            <li>{{ _("The GNU Taler Web shop integration tutorial (PHP)") }}
-              (<a href="https://docs.taler.net/current/merchant-shop/php/tutorial.html">html</a>,
-               <a href="https://docs.taler.net/current/merchant-shop/php/tutorial.pdf">pdf</a>)</li>
-            <li>{{ _("The GNU Taler Web shop integration tutorial (Python)") }}
-              (<a href="https://docs.taler.net/current/merchant-shop/python/tutorial.html">html</a>,
-               <a href="https://docs.taler.net/current/merchant-shop/python/tutorial.pdf">pdf</a>)</li>
-          </ul>
-        <p></p>
-      </div>
-      {% include "common/footer.j2.inc" %}
-    </div> <!-- /container -->
-  </body>
-</html>
+         <li>{{ _("The exchange performs wire transfers
+                   corresponding to the claims deposited by the
+                   merchant. Note that the exchange may charge
+                   fees for the deposit operation, hence merchants
+                   may impose limits restricting the set of
+                   exchange operators they are willing to deal
+                   with, for example by imposing a bound on
+                   deposit fees.") }}</li>
+      </ol>
+    </p>
+ </div>
+  <div class="col-lg-12">
+    <h2 id="documentation">{{ _("Manuals for merchants") }}</h2>
+    <p>
+      </p><ul>
+        <li>{{ _("The GNU Taler merchant backend operator manual") }}
+          (<a href="https://docs.taler.net/current/merchant-backend/manual.html">html</a>,
+           <a href="https://docs.taler.net/current/merchant-backend/manual.pdf">pdf</a>)</li>
+        <li>{{ _("The GNU Taler Web shop integration tutorial (PHP)") }}
+          (<a href="https://docs.taler.net/current/merchant-shop/php/tutorial.html">html</a>,
+           <a href="https://docs.taler.net/current/merchant-shop/php/tutorial.pdf">pdf</a>)</li>
+        <li>{{ _("The GNU Taler Web shop integration tutorial (Python)") }}
+          (<a href="https://docs.taler.net/current/merchant-shop/python/tutorial.html">html</a>,
+           <a href="https://docs.taler.net/current/merchant-shop/python/tutorial.pdf">pdf</a>)</li>
+      </ul>
+    <p></p>
+  </div>
+</div> <!-- /container -->
+{% endblock body_content %}

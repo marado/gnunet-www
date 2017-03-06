@@ -1,116 +1,100 @@
-<!DOCTYPE html>
-<html lang="{{ _('en') }}">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>{{ _("GNU Taler") }} - {{ _("About us") }}</title>
-    <meta name="description" content=""/>
-    {% include "common/header.j2.inc" %}
-  </head>
-  <body>
-    <div class="container">
-      {% include "common/navigation.j2.inc" %}
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>{{ _("About us") }}</h1>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2><a href="http://grothoff.org/christian/">Dr. Christian Grothoff</a></h2>
-          <img src="{{ url('team-images/christian-grothoff.jpg') }}" height="240" alt="Christian Grothoff" align="middle">
-          <p>{{ _("GNU maintainer. Network security &amp; privacy researcher. Software architect.") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2><a href="http://www.digitalekho.com/about-us/index.html">Leon Schumacher</a></h2>
-          <img src="{{ url('team-images/leon-schumacher.jpg') }}" height="240" alt="Leon Schumacher" align="middle">
-          <p>{{ _("Entrepreneur, Investor, Fortune 100 CIO, IT company director in different industries, ….") }}</p>
-        </div>
-      </div>
-      <div class="row">
-	<div class="col-lg-4">
-          <h2>Dr. Jeffrey Burdges</h2>
-          <img src="{{ url('team-images/jeff-burdges.jpg') }}" height="240" alt="Jeffrey Burdges" align="middle">
-          <p>{{ _("Applied cryptography. Contact to W3c &amp; Tor.") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2><a href="http://www.onete.net/">Dr. Cristina Onete</a></h2>
-          <img src="{{ url('team-images/cristina-onete.jpg') }}" height="240" alt="Cristina Onete" align="middle">
-          <p>{{ _("Theoretical foundations.") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2><a href="https://www.stallman.org/">Dr. Richard M. Stallman</a></h2>
-          <img src="{{ url('team-images/richard-stallman.jpg') }}" height="240" alt="Richard Stallman" align="middle">
-          <p>{{ _("Founder of the GNU project. Ethical guidance and licensing.") }}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <h2><a href="http://sreeharsha.totakura.in/">Sree Harsha Totakura</a></h2>
-          <img src="{{ url('team-images/sree-harsha-totakura.jpg') }}" height="240" alt="Sree Harsha Totakura" align="middle">
-          <p>{{ _("PhD Student, TU Munich. Currently teaching.") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2><a href="https://fdold.eu">Florian Dold</a></h2>
-          <img src="{{ url('team-images/florian-dold.jpg') }}" height="240" alt="Florian Dold" align="middle">
-          <p>{{ _("PhD Student, Inria..") }}</p>
-        </div>
-	<div class="col-lg-4">
-          <h2>Marcello Stanisci</h2>
-          <img src="{{ url('team-images/marcello-stanisci.jpg') }}" height="240" alt="Marcello Stanisci" align="middle">
-          <p>{{ _("Software engineer.") }}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Dr. Nana Karlstetter</h2>
-          <img src="{{ url('team-images/nana-karlstetter.jpg') }}" height="240" alt="Nana Karlstetter" align="middle">
-          <p>{{ _("Sustainable business development.") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Benedikt Müller</h2>
-          <p>{{ _("Software engineer. Works on libebics.") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Gabor Toth</h2>
-          <p>{{ _("Software engineer.") }}</p>
-        </div>
-      </div>
-      <div class="row">
-	<div class="col-lg-4">
-          <h2><a href="https://ar.linkedin.com/in/martinolivera">Martín Olivera</a></h2>
-          <p>{{ _("Translator (Spanish)") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Greta Breveglieri</h2>
-          <p>{{ _("Translator (Italian)") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Ylenia Baldanza</h2>
-          <p>{{ _("Translator (Italian)") }}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <h2><a href="https://www.nitrokey.com/">Jan Suhr</a></h2>
-          <p>{{ _("Hardware security module") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2><a href="http://www.goebel-consult.de/">Hartmut Goebel</a></h2>
-          <p>{{ _("Risk management") }}</p>
-        </div>
-        <div class="col-lg-4">
-          <h2><a href="https://www.sec.in.tum.de/julian-kirsch/">Julian Kirsch</a></h2>
-          <p>{{ _("PhD student, TU Munich. Currently teaching.") }}</p>
-        </div>
-      </div>
-      <div class="row">
-	<div class="col-lg-4">
-          <h2>Oliver Broome</h2>
-          <p>{{ _("Software engineer. Works on Android wallet.") }}</p>
-        </div>
-      </div>
-      {% include "common/footer.j2.inc" %}
-    </div> <!-- /container -->
-  </body>
-</html>
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="container">
+<div class="row">
+  <div class="col-lg-4">
+    <h2><a href="http://grothoff.org/christian/">Dr. Christian Grothoff</a></h2>
+    <img src="{{ url('team-images/christian-grothoff.jpg') }}" height="240" alt="Christian Grothoff" align="middle">
+    <p>{{ _("GNU maintainer. Network security &amp; privacy researcher. Software architect.") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2><a href="http://www.digitalekho.com/about-us/index.html">Leon Schumacher</a></h2>
+    <img src="{{ url('team-images/leon-schumacher.jpg') }}" height="240" alt="Leon Schumacher" align="middle">
+    <p>{{ _("Entrepreneur, Investor, Fortune 100 CIO, IT company director in different industries, ….") }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <h2>Dr. Jeffrey Burdges</h2>
+    <img src="{{ url('team-images/jeff-burdges.jpg') }}" height="240" alt="Jeffrey Burdges" align="middle">
+    <p>{{ _("Applied cryptography. Contact to W3c &amp; Tor.") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2><a href="http://www.onete.net/">Dr. Cristina Onete</a></h2>
+    <img src="{{ url('team-images/cristina-onete.jpg') }}" height="240" alt="Cristina Onete" align="middle">
+    <p>{{ _("Theoretical foundations.") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2><a href="https://www.stallman.org/">Dr. Richard M. Stallman</a></h2>
+    <img src="{{ url('team-images/richard-stallman.jpg') }}" height="240" alt="Richard Stallman" align="middle">
+    <p>{{ _("Founder of the GNU project. Ethical guidance and licensing.") }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <h2><a href="http://sreeharsha.totakura.in/">Sree Harsha Totakura</a></h2>
+    <img src="{{ url('team-images/sree-harsha-totakura.jpg') }}" height="240" alt="Sree Harsha Totakura" align="middle">
+    <p>{{ _("PhD Student, TU Munich. Currently teaching.") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2><a href="https://fdold.eu">Florian Dold</a></h2>
+    <img src="{{ url('team-images/florian-dold.jpg') }}" height="240" alt="Florian Dold" align="middle">
+    <p>{{ _("PhD Student, Inria..") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Marcello Stanisci</h2>
+    <img src="{{ url('team-images/marcello-stanisci.jpg') }}" height="240" alt="Marcello Stanisci" align="middle">
+    <p>{{ _("Software engineer.") }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <h2>Dr. Nana Karlstetter</h2>
+    <img src="{{ url('team-images/nana-karlstetter.jpg') }}" height="240" alt="Nana Karlstetter" align="middle">
+    <p>{{ _("Sustainable business development.") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Benedikt Müller</h2>
+    <p>{{ _("Software engineer. Works on libebics.") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Gabor Toth</h2>
+    <p>{{ _("Software engineer.") }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <h2><a href="https://ar.linkedin.com/in/martinolivera">Martín Olivera</a></h2>
+    <p>{{ _("Translator (Spanish)") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Greta Breveglieri</h2>
+    <p>{{ _("Translator (Italian)") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Ylenia Baldanza</h2>
+    <p>{{ _("Translator (Italian)") }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <h2><a href="https://www.nitrokey.com/">Jan Suhr</a></h2>
+    <p>{{ _("Hardware security module") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2><a href="http://www.goebel-consult.de/">Hartmut Goebel</a></h2>
+    <p>{{ _("Risk management") }}</p>
+  </div>
+  <div class="col-lg-4">
+    <h2><a href="https://www.sec.in.tum.de/julian-kirsch/">Julian Kirsch</a></h2>
+    <p>{{ _("PhD student, TU Munich. Currently teaching.") }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <h2>Oliver Broome</h2>
+    <p>{{ _("Software engineer. Works on Android wallet.") }}</p>
+  </div>
+</div>
+</div>
+{% endblock body_content %}

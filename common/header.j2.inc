@@ -32,7 +32,6 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ url('dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{{ url('justified-nav.css') }}" rel="stylesheet">
     <link href="{{ url('styles.css') }}" rel="stylesheet">
 
     <script src="{{ url('menu.js') }}"></script>

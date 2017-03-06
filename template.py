@@ -50,7 +50,12 @@ for in_file in glob.glob("*.j2"):
         env.install_gettext_translations(tr, newstyle=True)
 
 
-        content = tmpl.render(lang=locale, url=url, self_localized=self_localized, url_localized=url_localized)
+        content = tmpl.render(
+                lang=locale,
+                url=url,
+                self_localized=self_localized,
+                url_localized=url_localized,
+                filename=name + "." + ext)
         out_name = "./" + locale + "/" + in_file.rstrip(".j2")
         os.makedirs("./" + locale, exist_ok=True)
         with codecs.open(out_name, "w", "utf-8") as f:
