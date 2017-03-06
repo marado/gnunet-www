@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="{{ 'active' if filename == 'index.html' else '' }}"><a href="index.html">Home</a></li>
@@ -17,7 +17,7 @@
     </ul>
     <ul class="nav navbar-right navbar-form">
       <li>
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           <img src="{{ url('images/'+lang+'.png') }}"/></img>
           <span class="caret"></span>
         </button>
