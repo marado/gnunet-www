@@ -8,7 +8,9 @@
   </head>
   <body id="mybody">
     {% include "common/navigation.j2.inc" %}
+    <div id="body_content">
     {% block body_content %}{% endblock %}
+    </div>
     {% include "common/footer.j2.inc" %}
   </body>
 </html>

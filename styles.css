@@ -15,7 +15,19 @@ html {
 }
 
 .c_acronym {
-  background-color: #c9ffe2;
+  background-color: #7A9F35;
+}
+
+
+#body_content a,
+#body_content a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
+#body_content a:hover {
+  transition: background-color 0.3s;
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 .c_intro {
