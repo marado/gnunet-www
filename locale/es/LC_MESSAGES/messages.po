@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-06 23:50+0100\n"
+"POT-Creation-Date: 2017-03-07 00:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -600,15 +600,15 @@ msgid ""
 "             infrastructure."
 msgstr ""
 
-#: governments.html.j2:24 index.html.j2:30
+#: governments.html.j2:23 index.html.j2:73
 msgid "Taxable"
 msgstr "Imponible"
 
-#: governments.html.j2:26
+#: governments.html.j2:25
 msgid ""
 "Taler was\n"
 "             built with the goal of fighting corruption and supporting "
-"taxation.  \n"
+"taxation.\n"
 "             With Taler, the receiver of any form of payment is\n"
 "             easily identified by the government, and the merchant\n"
 "             can be compelled to provide the contract that was accepted\n"
@@ -618,7 +618,7 @@ msgid ""
 "             viable."
 msgstr ""
 
-#: governments.html.j2:36
+#: governments.html.j2:35
 msgid ""
 "Thus, despite offering anonymity for citizens\n"
 "             spending digital cash to buy goods and services,\n"
@@ -633,11 +633,11 @@ msgid ""
 "             subject to monitoring."
 msgstr ""
 
-#: governments.html.j2:49 merchants.html.j2:33
+#: governments.html.j2:48 merchants.html.j2:33
 msgid "Secure"
 msgstr "Seguro"
 
-#: governments.html.j2:51
+#: governments.html.j2:50
 msgid ""
 "Taler's payments are cryptographically\n"
 "             secured. Thus, customers, merchants and the\n"
@@ -648,7 +648,7 @@ msgid ""
 "             merchants, the exchange and the state."
 msgstr ""
 
-#: governments.html.j2:59
+#: governments.html.j2:58
 msgid ""
 "By design, the Taler payment service provider is\n"
 "             subject to financial regulation. Financial\n"
@@ -662,11 +662,11 @@ msgid ""
 "             the economy due to fraud."
 msgstr ""
 
-#: governments.html.j2:70 index.html.j2:55
+#: governments.html.j2:72 index.html.j2:99
 msgid "Libre"
 msgstr "Libre"
 
-#: governments.html.j2:72
+#: governments.html.j2:74
 msgid ""
 "Taler is free software implementing an open\n"
 "             protocol standard.  Thus, Taler will enable\n"
@@ -675,11 +675,11 @@ msgid ""
 "             financial stability today."
 msgstr ""
 
-#: governments.html.j2:81
+#: governments.html.j2:83
 msgid "Efficient"
 msgstr "Eficiente"
 
-#: governments.html.j2:83
+#: governments.html.j2:85
 msgid ""
 "Taler has an efficient design.  Unlike\n"
 "             timeline-based payment systems, such as Bitcoin,\n"
@@ -688,11 +688,55 @@ msgid ""
 "             contribute to environmental pollution."
 msgstr ""
 
-#: governments.html.j2:92
+#: governments.html.j2:99
+msgid "Taler and regulation"
+msgstr ""
+
+#: governments.html.j2:101
+msgid "Anti-money laundering (AML)"
+msgstr ""
+
+#: governments.html.j2:102
+msgid ""
+"With Taler, income is visible and can be tied to the contract signed by "
+"both parties."
+msgstr ""
+
+#: governments.html.j2:103
+msgid "Know-your-customer (KYC)"
+msgstr ""
+
+#: governments.html.j2:104
+msgid ""
+"In Taler, payer and payee are known by their bank accounts when "
+"withdrawing or depositing coins respectively"
+msgstr ""
+
+#: governments.html.j2:105
+msgid "Privacy-by-design (GDPR)"
+msgstr ""
+
+#: governments.html.j2:106
+msgid ""
+"Taler cryptographically protects citizen's privacy, and by design "
+"implements data minimization and privacy by default."
+msgstr ""
+
+#: governments.html.j2:107
+msgid "Competitive banking (PSD2)"
+msgstr ""
+
+#: governments.html.j2:108
+msgid ""
+"Taler provides an open standard with public APIs contributing to a level "
+"playing field."
+msgstr ""
+
+#: governments.html.j2:116
 msgid "Taler as seen by governments"
 msgstr "Taler desde el punto de vista del gobierno"
 
-#: governments.html.j2:94
+#: governments.html.j2:118
 msgid ""
 "Governments can observe traditional wire transfers\n"
 "           entering and leaving the Taler system, and require\n"
@@ -704,7 +748,7 @@ msgid ""
 "           available to the government includes: "
 msgstr ""
 
-#: governments.html.j2:107
+#: governments.html.j2:131
 msgid ""
 "From the banking system: The total amount of\n"
 "                digital currency obtained by a customer. The\n"
@@ -713,14 +757,14 @@ msgid ""
 "                given timeframe."
 msgstr ""
 
-#: governments.html.j2:113
+#: governments.html.j2:137
 msgid ""
 "From the banking system: The total amount of\n"
 "                 income received by any merchant via the Taler\n"
 "                 system."
 msgstr ""
 
-#: governments.html.j2:117
+#: governments.html.j2:141
 msgid ""
 "From auditing the exchange: The amounts of\n"
 "                 digital coins legitimately withdrawn by\n"
@@ -732,7 +776,7 @@ msgid ""
 "                 the exchange from transaction fees."
 msgstr ""
 
-#: governments.html.j2:126
+#: governments.html.j2:150
 msgid ""
 "From auditing merchants: For each deposit\n"
 "                operation, the exact details of the underlying\n"
@@ -766,21 +810,66 @@ msgid ""
 "      "
 msgstr ""
 
+#: index.html.j2:30
+msgid "Practical"
+msgstr ""
+
 #: index.html.j2:33
 msgid ""
 "\n"
-"        When using Taler, merchants can't hide their income from tax\n"
-"        collection authorities.  Unlike cash and most digital currencies,"
-"\n"
-"        Taler helps preventing black markets.\n"
+"        Taler is easy to integrate with existing Web\n"
+"        applications. Payments are cryptographically\n"
+"        secured and are confirmed within milliseconds with\n"
+"        extremely low transaction costs.\n"
 "        "
 msgstr ""
 
-#: index.html.j2:42
+#: index.html.j2:43
+msgid "Stable"
+msgstr ""
+
+#: index.html.j2:46
+msgid ""
+"\n"
+"        Taler does not introduce a new currency with\n"
+"        fluctuation risks, and instead uses a digital\n"
+"        wallet holding coins in reserve. Taler's\n"
+"        cryptographic coins correspond to existing\n"
+"        currencies, such as US Dollars, Euros or even\n"
+"        Bitcoins.\n"
+"        "
+msgstr ""
+
+#: index.html.j2:58
+msgid "Security-focused"
+msgstr ""
+
+#: index.html.j2:61
+msgid ""
+"\n"
+"        By design Taler does not suffer from many classes\n"
+"        of security problems such as phishing or conterfeit.\n"
+"        Despite its security features, Taler never rejects a legitimate\n"
+"        customer due to a fraud-detection false positive.\n"
+"        "
+msgstr ""
+
+#: index.html.j2:76
+msgid ""
+"\n"
+"        When using Taler, merchants cannot hide their income from tax\n"
+"        collection authorities.  Unlike cash and most digital currencies,"
+"\n"
+"        Taler helps prevent black markets.  Taler is not suitable for\n"
+"        illegal activities.\n"
+"        "
+msgstr ""
+
+#: index.html.j2:86
 msgid "Privacy-friendly"
 msgstr ""
 
-#: index.html.j2:44
+#: index.html.j2:88
 msgid ""
 "\n"
 "        When you pay with Taler, your identity does not\n"
@@ -791,7 +880,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: index.html.j2:58
+#: index.html.j2:102
 msgid ""
 "\n"
 "        Taler provides protocols and reference implementations that in\n"
@@ -804,55 +893,46 @@ msgid ""
 "        "
 msgstr ""
 
-#: index.html.j2:71
-msgid "Practical"
+#: index.html.j2:119
+msgid "Paying with Taler"
 msgstr ""
 
-#: index.html.j2:74
+#: index.html.j2:120
 msgid ""
 "\n"
-"        Taler is easy to integrate with existing Web\n"
-"        applications. Payments are cryptographically\n"
-"        secured and are confirmed within milliseconds with\n"
-"        extremely low transaction costs.\n"
-"        "
+"    <p>To pay with Taler, customers install an electronic wallet\n"
+"    on their device.  Before the first payment, the wallet's balance must"
+"\n"
+"    be charged in the desired currency by some other means of "
+"payment.</p>\n"
+"    <p>Once the wallet is charged, payments on websites take only one "
+"click,\n"
+"    are never falsely rejected by fraud detection and do not post any "
+"risk\n"
+"    of phishing or identity theft.</p>\n"
+"    "
 msgstr ""
 
-#: index.html.j2:84
-msgid "Stable"
+#: index.html.j2:130
+msgid "Receiving payments with Taler"
 msgstr ""
 
-#: index.html.j2:87
+#: index.html.j2:131
 msgid ""
 "\n"
-"        Taler does not introduce a new currency with\n"
-"        fluctuation risks, and instead uses a digital\n"
-"        wallet holding coins in reserve. Taler's\n"
-"        cryptographic coins correspond to existing\n"
-"        currencies, such as US Dollars, Euros or even\n"
-"        Bitcoins.\n"
-"        "
-msgstr ""
-
-#: index.html.j2:99
-msgid "Security-focused"
-msgstr ""
-
-#: index.html.j2:102
-msgid ""
-"\n"
-"        By design Taler does not suffer from many classes\n"
-"        of security problems such as phishing or conterfeit.\n"
-"        Despite its security features, Taler never rejects a legitimate\n"
-"        customer due to a fraud-detection false positive.\n"
-"        "
-msgstr ""
-
-#: index.html.j2:141
-msgid "Taler News"
+"    <p>To receive Taler payments, a merchant needs a bank account\n"
+"    in the desired currency.  We provide\n"
+"    SDKs in various languages to makes the integration painless.\n"
+"    The merchant's backend for Taler transaction processing can run\n"
+"    on the mechant's premises or hosted.</p>\n"
+"    "
 msgstr ""
 
 #: index.html.j2:145
+msgid "Taler News"
+msgstr ""
+
+#: index.html.j2:149
 msgid "Financial News"
 msgstr ""
 
@@ -1087,62 +1167,35 @@ msgid "The GNU Taler Web shop integration tutorial (Python)"
 msgstr ""
 
 #: merchants.html.j2:116
-msgid "Taler as seen by merchants"
-msgstr "Taler desde el punto de vista del comerciante"
+msgid "The GNU Taler Merchant Backend"
+msgstr ""
 
 #: merchants.html.j2:118
+msgid "Merchants process payments using the Taler backend:"
+msgstr ""
+
+#: merchants.html.j2:122
 msgid ""
-"Merchants supporting the Taler system need to\n"
-"             integrate some relatively simple logic into their\n"
-"             transaction processing system.  Typical steps\n"
-"             performed by the merchant system are: "
+"The backend <b>signs</b> and <b>stores</b>\n"
+"                  proposals made by the merchant to customers.\n"
+"                  For this, the merchant's frontend needs to give the\n"
+"                  customer's order in a JSON format to the backend."
 msgstr ""
 
 #: merchants.html.j2:127
 msgid ""
-"The new logic detects when a customer's system\n"
-"                  supports Taler and then needs to send a\n"
-"                  cryptographically signed version of the proposed\n"
-"                  contract in a simple JSON format to the\n"
-"                  customer.  The message also includes salted,\n"
-"                  hashed wire details for the merchant, as well as\n"
-"                  restrictions as to which exchange operators the\n"
-"                  merchant is willing to deal with."
+"The backend <b>validates</b> and <b>executes</b>\n"
+"                  payments received from the wallet.  The frontend\n"
+"                  must pass the payment request through to the backend\n"
+"                  and checks the HTTP status code that is returned."
 msgstr ""
 
-#: merchants.html.j2:136
+#: merchants.html.j2:132
 msgid ""
-"The customer sends a signed response which\n"
-"                  states that certain digital coins now belong to\n"
-"                  the merchant to both signal acceptance of the\n"
-"                  deal as well as to pay the respective amount\n"
-"                  (bottom)."
-msgstr ""
-
-#: merchants.html.j2:142
-msgid ""
-"The merchant then forwards the signed messages\n"
-"                   received from the customer to the exchange,\n"
-"                   together with its wire details and the salt\n"
-"                   (without hashing).  The exchange verifies the\n"
-"                   details and sends a signed confirmation (or an\n"
-"                   error message) to the merchant.  The merchant\n"
-"                   checks that the exchange's signature is valid,\n"
-"                   sends a confirmation to the customer and\n"
-"                   executes the contract-specific business\n"
-"                   logic."
-msgstr ""
-
-#: merchants.html.j2:153
-msgid ""
-"The exchange performs wire transfers\n"
-"                   corresponding to the claims deposited by the\n"
-"                   merchant. Note that the exchange may charge\n"
-"                   fees for the deposit operation, hence merchants\n"
-"                   may impose limits restricting the set of\n"
-"                   exchange operators they are willing to deal\n"
-"                   with, for example by imposing a bound on\n"
-"                   deposit fees."
+"The backend can <b>list</b> completed transactions\n"
+"                  and <b>map</b> aggregated wire transfers to individual\n"
+"                  business transactions including the exact terms of\n"
+"                  the contract."
 msgstr ""
 
 #: common/base.j2:5
@@ -1287,4 +1340,19 @@ msgstr ""
 
 #~ msgid "Taler as seen by customers"
 #~ msgstr "Taler visto por sus clientes"
+
+#~ msgid "Taler as seen by merchants"
+#~ msgstr "Taler desde el punto de vista del comerciante"
+
+#~ msgid "Tax-friendly"
+#~ msgstr ""
+
+#~ msgid "Open access (PSD2): Taler provides an open standard with public APIs"
+#~ msgstr ""
+
+#~ msgid "Taler complies with regulation"
+#~ msgstr ""
+
+#~ msgid "Open access (PSD2)"
+#~ msgstr ""
 

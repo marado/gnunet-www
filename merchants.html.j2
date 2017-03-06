@@ -12,10 +12,10 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container adorn_h3_bracket">
   <div class="row">
     <div class="col-lg-4">
-      <h2>{{ _("Fast") }}</h2>
+      <h3>{{ _("Fast") }}</h3>
 
       <p>{{ _("Processing transactions with Taler is fast,
                allowing you to confirm the transaction with your
@@ -30,7 +30,7 @@
 
     </div>
     <div class="col-lg-4">
-      <h2>{{ _("Secure") }}</h2>
+      <h3>{{ _("Secure") }}</h3>
 
       <p>{{ _("You will have cryptographic proof of payment from
                the Taler payment service provider. Taler does not
@@ -44,7 +44,7 @@
 
     </div>
     <div class="col-lg-4">
-      <h2>{{ _("Free Software") }}</h2>
+      <h3>{{ _("Free Software") }}</h3>
 
       <p>{{ _("Taler is free software, and you can use the
                liberally-licensed reference code as a starting
@@ -58,7 +58,7 @@
   </div>
   <div class="row">
     <div class="col-lg-4">
-      <h2>{{ _("Low Fees") }}</h2>
+      <h3>{{ _("Low Fees") }}</h3>
 
       <p>{{ _("Taler is designed to minimize the work the exchange
                needs to perform.  Combined with Taler's strong
@@ -68,7 +68,7 @@
 
     </div>
     <div class="col-lg-4">
-      <h2>{{ _("Flexible") }}</h2>
+      <h3>{{ _("Flexible") }}</h3>
 
       <p>{{ _("Taler can be used for different currencies (such as
                Euros, US Dollars or Bitcoins) and different
@@ -78,7 +78,7 @@
 
     </div>
     <div class="col-lg-4">
-      <h2>{{ _("Ethical") }}</h2>
+      <h3>{{ _("Ethical") }}</h3>
 
       <p>{{ _("Taler prevents tax evasion and money laundering.
                Taler's protocols are efficient and do not waste
@@ -112,54 +112,33 @@
 
 <div class="container">
 
- <div class="col-lg-12">
-    <h2 id="overview">{{ _("Taler as seen by merchants") }}</h2>
+ <div class="col-lg-6">
+    <h2 id="overview">{{ _("The GNU Taler Merchant Backend") }}</h2>
 
-    <p>{{ _("Merchants supporting the Taler system need to
-             integrate some relatively simple logic into their
-             transaction processing system.  Typical steps
-             performed by the merchant system are: ") }}</p>
-
+    <p>{{ _("Merchants process payments using the Taler backend:") }}</p>
     <p>
-    <img src="{{ url('images/merchant.svg') }}" alt="merchant perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-      <ol>
-      
-        <li>{{ _("The new logic detects when a customer's system
-                  supports Taler and then needs to send a
-                  cryptographically signed version of the proposed
-                  contract in a simple JSON format to the
-                  customer.  The message also includes salted,
-                  hashed wire details for the merchant, as well as
-                  restrictions as to which exchange operators the
-                  merchant is willing to deal with.") }}</li>
+      <ul>
 
-        <li>{{ _("The customer sends a signed response which
-                  states that certain digital coins now belong to
-                  the merchant to both signal acceptance of the
-                  deal as well as to pay the respective amount
-                  (bottom).") }}</li>
+        <li>{{ _("The backend <b>signs</b> and <b>stores</b>
+                  proposals made by the merchant to customers.
+                  For this, the merchant's frontend needs to give the
+                  customer's order in a JSON format to the backend.") }}</li>
 
-         <li>{{ _("The merchant then forwards the signed messages
-                   received from the customer to the exchange,
-                   together with its wire details and the salt
-                   (without hashing).  The exchange verifies the
-                   details and sends a signed confirmation (or an
-                   error message) to the merchant.  The merchant
-                   checks that the exchange's signature is valid,
-                   sends a confirmation to the customer and
-                   executes the contract-specific business
-                   logic.") }}</li>
+        <li>{{ _("The backend <b>validates</b> and <b>executes</b>
+                  payments received from the wallet.  The frontend
+                  must pass the payment request through to the backend
+                  and checks the HTTP status code that is returned.") }}</li>
 
-         <li>{{ _("The exchange performs wire transfers
-                   corresponding to the claims deposited by the
-                   merchant. Note that the exchange may charge
-                   fees for the deposit operation, hence merchants
-                   may impose limits restricting the set of
-                   exchange operators they are willing to deal
-                   with, for example by imposing a bound on
-                   deposit fees.") }}</li>
-      </ol>
+        <li>{{ _("The backend can <b>list</b> completed transactions
+                  and <b>map</b> aggregated wire transfers to individual
+                  business transactions including the exact terms of
+                  the contract.") }} </li>
+
+      </ul>
     </p>
  </div>
+  <div class="col-lg-6">
+    <img src="{{ url('images/backend.svg') }}" alt="customer perspective" style="float: right; margin: 5px 5px 5px 5px;" width="100%">
+  </div>
 </div> <!-- /container -->
 {% endblock body_content %}

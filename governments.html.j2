@@ -16,15 +16,14 @@
   </div>
 </div>
 
-<div class="container">
-
 <!-- Example row of columns -->
-<div class="row">
+<div class="container adorn_h3_bracket">
+ <div class="row">
   <div class="col-lg-6">
-    <h2>{{ _("Taxable") }}</h2>
+    <h3>{{ _("Taxable") }}</h3>
 
     <p>{{ _("Taler was
-             built with the goal of fighting corruption and supporting taxation.  
+             built with the goal of fighting corruption and supporting taxation.
              With Taler, the receiver of any form of payment is
              easily identified by the government, and the merchant
              can be compelled to provide the contract that was accepted
@@ -43,10 +42,10 @@
              extend to the immediate personal domain.  In
              particular, sharing access to funds within a family
              or synchronizing wallets across multiple devices is not
-             subject to monitoring.")  }}</p> </div>
-
+             subject to monitoring.")  }}</p>
+  </div>
   <div class="col-lg-6">
-    <h2>{{ _("Secure") }}</h2>
+    <h3>{{ _("Secure") }}</h3>
 
     <p>{{ _("Taler's payments are cryptographically
              secured. Thus, customers, merchants and the
@@ -65,9 +64,12 @@
              the payment service provider to ensure that the
              escrow account is managed honestly.  This ensures
              that the payment service provider does not threaten
-             the economy due to fraud.") }}</p> </div> </div>
-             <div class="row"> <div class="col-lg-6"> <h2>{{
-             _("Libre") }}</h2>
+             the economy due to fraud.") }}</p>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-lg-6">
+    <h3>{{ _("Libre") }}</h3>
 
     <p>{{ _("Taler is free software implementing an open
              protocol standard.  Thus, Taler will enable
@@ -78,7 +80,7 @@
 
   </div>
   <div class="col-lg-6">
-    <h2>{{ _("Efficient") }}</h2>
+    <h3>{{ _("Efficient") }}</h3>
 
     <p>{{ _("Taler has an efficient design.  Unlike
              timeline-based payment systems, such as Bitcoin,
@@ -87,7 +89,29 @@
              contribute to environmental pollution.") }}</p>
 
   </div>
+ </div>
 </div>
+
+
+
+<div class="contianer-fluid c_acronym">
+  <div class="container">
+    <h2 id="documentation">{{ _("Taler and regulation") }}</h2>
+    <dl>
+      <dt>{{ _("Anti-money laundering (AML)")}}</dt>
+      <dd>{{ _("With Taler, income is visible and can be tied to the contract signed by both parties.") }}</li>
+      <dt>{{ _("Know-your-customer (KYC)")}}</dt>
+      <dd>{{ _("In Taler, payer and payee are known by their bank accounts when withdrawing or depositing coins respectively") }}</dd>
+      <dt>{{ _("Privacy-by-design (GDPR)")}}</dt>
+      <dd>{{ _("Taler cryptographically protects citizen's privacy, and by design implements data minimization and privacy by default.") }}</dd>
+      <dt>{{ _("Competitive banking (PSD2)")}}</dt>
+      <dd>{{ _("Taler provides an open standard with public APIs contributing to a level playing field.") }}</dt>
+    </dl>
+  </div>
+</div>
+
+
+<div class="container">
 <div class="col-lg-12">
   <h2 id="overview">{{ _("Taler as seen by governments") }}</h2>
 
@@ -99,11 +123,11 @@
            auditors, while merchants may be required to reveal
            information during regular tax audits.  Information
            available to the government includes: ") }}</p>
-  
+
   <p>
     <img src="{{ url('images/government.svg') }}" alt="government perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
     </p><ul>
-    
+
       <li>{{ _("From the banking system: The total amount of
                 digital currency obtained by a customer. The
                 government could impose limits on how many
