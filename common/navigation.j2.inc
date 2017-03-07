@@ -11,6 +11,7 @@
           <li><a href="architecture.html">System Architecture</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="developers.html">Developer Introduction</a></li>
+          <li><a href="bibliography.html">Bibliography</a></li>
         </ul>
       </li>
     </ul>

@@ -20,6 +20,7 @@
           <ul class="footer-list">
             <li><p><a href="developers.html">{{ _("Developer Resources") }}</a></p></li>
             <li><p><a href="faq.html">{{ _("FAQ") }}</a></p></li>
+            <li><p><a href="bibliography.html">{{ _("Bibliography") }}</a></p></li>
           </ul>
         </div>
       </div>
