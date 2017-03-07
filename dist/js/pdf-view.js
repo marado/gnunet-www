@@ -44,9 +44,6 @@ function renderPage(canvas,num) {
       }
     });
   });
-
-  // Update page counters
-  document.getElementById('page_num').textContent = pageNum;
 }
 
 /**
@@ -96,5 +93,6 @@ PDFJS.getDocument(url).then(function(pdfDoc_) {
   pdfDoc = pdfDoc_;
 
   // Initial/first page rendering
-  renderPage(pageNum);
+  renderPage(canvasLeft,pageNum);
+  renderPage(canvasRight,pageNum + 1);
 });
