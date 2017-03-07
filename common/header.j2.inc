@@ -24,6 +24,12 @@
         */
     </script>
 
+    <link rel="alternate" hreflang="en" href="{{ self_localized('en') }}" />
+    <link rel="alternate" hreflang="de" href="{{ self_localized('de') }}" />
+    <link rel="alternate" hreflang="fr" href="{{ self_localized('fr') }}" />
+    <link rel="alternate" hreflang="es" href="{{ self_localized('es') }}" />
+    <link rel="alternate" hreflang="it" href="{{ self_localized('it') }}" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
