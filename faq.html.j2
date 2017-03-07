@@ -7,7 +7,7 @@ Taler does not use any Blockchain technology or Bitcoin directly.  Taler is not
 based on proof-of-work or any other distributed consensus mechanism.  Instead
 Taler is based on blind signatures.</p>
 
-<p>It would be possible, however, withdraw Bitcoins into a Taler wallet (with an approproate exchange),
+<p>It would be possible, however, to withdraw Bitcoins into a Taler wallet (with an approproate exchange),
 which would give some benefits ofer plain Bitcoin, such as instant confirmation times.</p>
 
 <h2>Where is the balance in my wallet stored?</h2>
@@ -25,13 +25,21 @@ like with a physical wallet for cash, you are responsible for keeping it safe.</
 make it possible for you to know that you've been compromised, which can be an advantage.</p>
 
 <h2>Can I send money to my friend with Taler?</h2>
-<p>You can <emph>share</emh> coins in your wallet with people you trust, like
+<p>You can <em>share</em> coins in your wallet with people you trust, like
 family or friends.  Whenever these shared coins are spent, the other copies
 become invalid.  Sharing coins this does not constitute a transaction, is not taxable
 and requires trust between the sharing parties.</p>
 
 <p>If your friend provides goods or services for you in exchange for a payment,
 they can easily set up a Taler merchant and receive the payment on their bank account.</p>
+
+<h2>How does Taler handle payments in different currencies?</h2>
+<p>Taler wallets can store digital coins corresponding to multiple diffent
+currencies such as the Euro, US Dollars or even Bitcoins.</p>
+
+<p>Automatic currency converstion is currently not our focus, but could be made
+available in the future, either with exchanges that handle multiple
+currencies, or other means of multi-currency payment routing.</p>
 
 </div>
 {% endblock body_content %}
