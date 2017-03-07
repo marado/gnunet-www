@@ -3,16 +3,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-07 00:44+0100\n"
+"POT-Creation-Date: 2017-03-07 16:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
 "Language-Team: de <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n!=1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.3.4\n"
+"Generated-By: Babel 1.3\n"
 
 #: about.html.j2:8
 msgid ""
@@ -323,9 +322,10 @@ msgstr "Taler für Entwickler"
 msgid "Free"
 msgstr "Frei"
 
-#: developers.html.j2:14
+#: developers.html.j2:15
 msgid ""
-"Taler is free software implementing an open\n"
+"\n"
+"               Taler is free software implementing an open\n"
 "               protocol. Anybody is welcome to inspect our code\n"
 "               and integrate our reference implementation into\n"
 "               their applications.  Different components of Taler\n"
@@ -337,16 +337,18 @@ msgid ""
 "               for wallets and related customer-facing software.\n"
 "               We are open for constructive suggestions for\n"
 "               maximizing the adoption of this libre payment\n"
-"               platform.  "
+"               platform.\n"
+"        "
 msgstr ""
 
-#: developers.html.j2:30
+#: developers.html.j2:34
 msgid "RESTful"
 msgstr "REST-basiert"
 
-#: developers.html.j2:32
+#: developers.html.j2:37
 msgid ""
-"Taler is designed to work on the Internet.  To\n"
+"\n"
+"               Taler is designed to work on the Internet.  To\n"
 "               ensure that Taler payments can work with\n"
 "               restrictive network setups, Taler uses a RESTful\n"
 "               protocol over HTTP or HTTPS. Taler's security does\n"
@@ -357,17 +359,18 @@ msgid ""
 "               structure data, making it easy to integrate Taler\n"
 "               with existing Web applications.  Taler's protocol\n"
 "               is documented in\n"
-"               detail <a href='https://api.taler.net/'>here</a>.\n"
-"               "
+"               detail <a href=\"https://api.taler.net/\">here</a>.\n"
+"        "
 msgstr ""
 
-#: developers.html.j2:54
+#: developers.html.j2:60
 msgid "Code"
 msgstr "Code"
 
-#: developers.html.j2:56
+#: developers.html.j2:63
 msgid ""
-"Taler is currently primarily developed by a\n"
+"\n"
+"               Taler is currently primarily developed by a\n"
 "               research team at Inria and GNUnet e.V. However,\n"
 "               contributions from anyone are welcome.  Our Git\n"
 "               repositories can be cloned using the Git and HTTP\n"
@@ -375,29 +378,31 @@ msgid ""
 "               the name of the respective repository. A list of\n"
 "               public repositories can be found in\n"
 "               our <a href='https://git.taler.net/'>GitWeb</a>.\n"
-"               "
+"         "
 msgstr ""
 
-#: developers.html.j2:68
+#: developers.html.j2:76
 msgid "Documentation"
 msgstr "Dokumentation"
 
-#: developers.html.j2:70
+#: developers.html.j2:79
 msgid ""
-"In addition to this website,\n"
-"               the <a href='https://git.taler.net/'>documented\n"
+"\n"
+"               In addition to this website,\n"
+"               the <a href=\"https://git.taler.net/\">documented\n"
 "               code</a> and\n"
-"               the <a href='https://api.taler.net/'>API\n"
+"               the <a href=\"https://api.taler.net/\">API\n"
 "               documentation</a>, we are in the process of\n"
 "               preparing a comprehensive design document which\n"
-"               will be published here soon.  "
+"               will be published here soon.\n"
+"       "
 msgstr ""
 
-#: developers.html.j2:79
+#: developers.html.j2:91
 msgid "Discussion"
 msgstr "Diskussion"
 
-#: developers.html.j2:81
+#: developers.html.j2:93
 msgid ""
 "We have a mailinglist for developer discussions.\n"
 "               You can subscribe to it or read the list archive at\n"
@@ -405,11 +410,11 @@ msgid ""
 "href='http://lists.gnu.org/mailman/listinfo/taler'>http://lists.gnu.org/mailman/listinfo/taler</a>."
 msgstr ""
 
-#: developers.html.j2:88
+#: developers.html.j2:100
 msgid "Regression Testing"
 msgstr "Regressionstests"
 
-#: developers.html.j2:90
+#: developers.html.j2:102
 msgid ""
 "We have\n"
 "               <a href='https://buildbot.net/'>Buildbot</a>\n"
@@ -419,11 +424,11 @@ msgid ""
 "      "
 msgstr ""
 
-#: developers.html.j2:98
+#: developers.html.j2:110
 msgid "Code Coverage Analysis"
 msgstr "Testabdeckungsanalyse"
 
-#: developers.html.j2:100
+#: developers.html.j2:112
 msgid ""
 "We use\n"
 "               <a "
@@ -434,11 +439,11 @@ msgid ""
 "               "
 msgstr ""
 
-#: developers.html.j2:108
+#: developers.html.j2:120
 msgid "Performance Analysis"
 msgstr "Performanzanalyse"
 
-#: developers.html.j2:110
+#: developers.html.j2:122
 msgid ""
 "We\n"
 "               use <a href='https://gnunet.org/gauger'>Gauger</a>\n"
@@ -449,11 +454,11 @@ msgid ""
 "               "
 msgstr ""
 
-#: developers.html.j2:124
+#: developers.html.j2:136
 msgid "Taler system overview"
 msgstr "Das Taler-System im Überblick"
 
-#: developers.html.j2:126
+#: developers.html.j2:138
 msgid ""
 "The Taler system consists of protocols executed among\n"
 "             a number of actors with the help\n"
@@ -462,7 +467,7 @@ msgid ""
 "             Typical transactions involve the following steps: "
 msgstr ""
 
-#: developers.html.j2:135
+#: developers.html.j2:147
 msgid ""
 "A customer instructs his <b>bank</b> to\n"
 "                   transfer funds from his account to the Taler\n"
@@ -473,7 +478,7 @@ msgid ""
 "                   reserve at the exchange.  "
 msgstr ""
 
-#: developers.html.j2:143
+#: developers.html.j2:155
 msgid ""
 "Once the exchange has received the wire\n"
 "                   transfer, it allows the customer's electronic\n"
@@ -490,7 +495,7 @@ msgid ""
 "                   exchange may charge for the service).  "
 msgstr ""
 
-#: developers.html.j2:158
+#: developers.html.j2:170
 msgid ""
 "Once the customer has the digital coins in his\n"
 "                   wallet, the wallet can be used to <b>spend</b>\n"
@@ -511,7 +516,7 @@ msgid ""
 "                   care of customers getting change).  "
 msgstr ""
 
-#: developers.html.j2:176
+#: developers.html.j2:188
 msgid ""
 "Merchants receiving digital\n"
 "                   coins <b>deposit</b> the respective receipts\n"
@@ -533,7 +538,7 @@ msgid ""
 "                   contracts).  "
 msgstr ""
 
-#: developers.html.j2:195
+#: developers.html.j2:207
 msgid ""
 "Finally, the exchange transfers funds\n"
 "                   corresponding to the digital coins redeemed by\n"
@@ -546,7 +551,7 @@ msgid ""
 "                   deposited.  "
 msgstr ""
 
-#: developers.html.j2:205
+#: developers.html.j2:217
 msgid ""
 "Most importantly, the exchange keeps\n"
 "                   cryptographic proofs that allow it to\n"
@@ -560,7 +565,7 @@ msgid ""
 "                   circulation.  "
 msgstr ""
 
-#: developers.html.j2:216
+#: developers.html.j2:228
 msgid ""
 "Without the auditor, the exchange operators\n"
 "                   could embezzle funds they are holding in\n"
@@ -724,40 +729,43 @@ msgid ""
 msgstr ""
 
 #: governments.html.j2:116
-msgid "Taler as seen by governments"
-msgstr "Taler aus Regierungsperspektive"
+msgid "Taler provides privacy and accountability"
+msgstr ""
 
 #: governments.html.j2:118
 msgid ""
-"Governments can observe traditional wire transfers\n"
-"           entering and leaving the Taler system, and require\n"
-"           merchants and exchange operators to provide certain\n"
-"           information during financial audits.  Exchange\n"
-"           operators are expected to be permanently checked by\n"
-"           auditors, while merchants may be required to reveal\n"
-"           information during regular tax audits.  Information\n"
-"           available to the government includes: "
+"Taler assumes governments can observe traditional wire transfers\n"
+"           entering and leaving the Taler payment system.  Starting with "
+"the\n"
+"           wire transfers, governments can obtain: "
+msgstr ""
+
+#: governments.html.j2:123
+msgid ""
+"The total amount of digital currency withdrawn by a\n"
+"                customer. The government can impose limits on how much\n"
+"                digital cash a customer can withdraw within a\n"
+"                given timeframe."
+msgstr ""
+
+#: governments.html.j2:128
+msgid ""
+"The income received by any merchant via the Taler\n"
+"                 system."
 msgstr ""
 
 #: governments.html.j2:131
 msgid ""
-"From the banking system: The total amount of\n"
-"                digital currency obtained by a customer. The\n"
-"                government could impose limits on how many\n"
-"                digital coins a customer may withdraw within a\n"
-"                given timeframe."
+"The exact details of the underlying\n"
+"                contract that was signed between customer and\n"
+"                merchant.  However, this information would\n"
+"                typically not include the identity of the\n"
+"                customer."
 msgstr ""
 
 #: governments.html.j2:137
 msgid ""
-"From the banking system: The total amount of\n"
-"                 income received by any merchant via the Taler\n"
-"                 system."
-msgstr ""
-
-#: governments.html.j2:141
-msgid ""
-"From auditing the exchange: The amounts of\n"
+"The amounts of\n"
 "                 digital coins legitimately withdrawn by\n"
 "                 customers from the exchange, the value of\n"
 "                 non-redeemed digital coins in customer's\n"
@@ -765,22 +773,6 @@ msgid ""
 "                 details of deposit operations performed by\n"
 "                 merchants with the exchange, and the income of\n"
 "                 the exchange from transaction fees."
-msgstr ""
-
-#: governments.html.j2:150
-msgid ""
-"From auditing merchants: For each deposit\n"
-"                operation, the exact details of the underlying\n"
-"                contract that was signed between customer and\n"
-"                merchant.  However, this information would\n"
-"                typically not include the identity of the\n"
-"                customer.  Note that while the customer can\n"
-"                decide to prove that it was his transaction\n"
-"                (i.e. in court when suing the merchant if the\n"
-"                merchant failed to deliver on the contract),\n"
-"                merchant, exchange and government cannot find\n"
-"                out the customer's identity from the information\n"
-"                that Taler collects."
 msgstr ""
 
 #: index.html.j2:10
@@ -919,11 +911,11 @@ msgid ""
 "    "
 msgstr ""
 
-#: index.html.j2:145
+#: index.html.j2:147
 msgid "Taler News"
 msgstr ""
 
-#: index.html.j2:149
+#: index.html.j2:151
 msgid "Financial News"
 msgstr ""
 
@@ -941,11 +933,11 @@ msgid ""
 "        "
 msgstr ""
 
-#: investors.html.j2:25
+#: investors.html.j2:24
 msgid "The Team"
 msgstr ""
 
-#: investors.html.j2:27
+#: investors.html.j2:26
 msgid ""
 "Our team combines world-class business leaders,\n"
 "             cryptographers, software engineers, civil-rights\n"
@@ -954,18 +946,18 @@ msgid ""
 "             imposing this vision upon the world."
 msgstr ""
 
-#: investors.html.j2:33
+#: investors.html.j2:32
 msgid ""
 "We are currently supported by Inria, the French\n"
 "             national institute for research in informatics and\n"
 "             automation, and the Renewable Freedom Foundation."
 msgstr ""
 
-#: investors.html.j2:38
+#: investors.html.j2:37
 msgid "The Technology"
 msgstr ""
 
-#: investors.html.j2:40
+#: investors.html.j2:39
 msgid ""
 "All transactions in Taler are secured using modern\n"
 "             cryptography and trust in all parties is\n"
@@ -979,11 +971,11 @@ msgid ""
 "             are fractions of a cent."
 msgstr ""
 
-#: investors.html.j2:52
+#: investors.html.j2:51
 msgid "The Business"
 msgstr ""
 
-#: investors.html.j2:54
+#: investors.html.j2:53
 msgid ""
 "The scalable business model for Taler is the operation\n"
 "             of the payment service provider, which converts money from\n"
@@ -997,50 +989,51 @@ msgid ""
 "             merchant or both) to facilitate the transactions."
 msgstr ""
 
-#: investors.html.j2:68
-msgid "Taler as seen by the payment service operator"
+#: investors.html.j2:71
+msgid "The Business Case"
 msgstr ""
 
-#: investors.html.j2:70
-msgid ""
-"The payment service operator runs a <em>Taler\n"
-"           exchange</em>, which is a Web service portal that\n"
-"           keeps databases with transaction details and\n"
-"           cryptographic proofs.  Its operational expenses are\n"
-"           thus related to its interactions with the banking\n"
-"           system and the operation of the computing\n"
-"           infrastructure, while its income is based on\n"
-"           transaction fees it may charge for the various\n"
-"           interactions.  Key interactions of the exchange\n"
-"           include: "
+#: investors.html.j2:93
+msgid "Running a Taler payment service operator"
 msgstr ""
 
-#: investors.html.j2:84
+#: investors.html.j2:96
 msgid ""
-"Create a <b>reserve</b> based on an incoming\n"
-"                wire transfer from a customer."
+"\n"
+"       The payment service operator runs the <em>Taler exchange</em>.\n"
+"       The exchange charges <b>transaction fees</b> to customers or "
+"merchants.\n"
+"       Its operational expenses are from wire transfers with the banking\n"
+"       system and the operation of the computing infrastructure.\n"
+"    "
 msgstr ""
 
-#: investors.html.j2:87
+#: investors.html.j2:106
 msgid ""
-"Allow customers to withdraw (and refresh)\n"
-"                digital coins from their reserve."
+"Cryptographic operations, bandwidth and storage costs are less than 0.01 "
+"cent per transaction."
 msgstr ""
 
-#: investors.html.j2:90
-msgid "Accept and validate deposits from merchants."
-msgstr "Annahme und Validierung von Einzahlungen durch Händler."
-
-#: investors.html.j2:92
+#: investors.html.j2:108
 msgid ""
-"Execute wire transfers to merchants in\n"
-"                response to validated deposits."
+"Multiple Taler transactions can be aggregated into larger wire transfers "
+"to merchants to minimize wire transfer costs."
 msgstr ""
 
-#: investors.html.j2:95
+#: investors.html.j2:110
 msgid ""
-"Preserve and provide cryptographic proofs of\n"
-"                correct operation for audits by financial regulators."
+"Correct operation can be automatically assessed by verifying "
+"cryptographic proofs in the database."
+msgstr ""
+
+#: investors.html.j2:112
+msgid ""
+"Protocol allows the exchange to charge fees for any expensive operation "
+"(withdraw, deposit, refresh, refund or aggregated wire transfers)."
+msgstr ""
+
+#: investors.html.j2:114
+msgid "Financial risk is bounded even if keys are compromised."
 msgstr ""
 
 #: merchants.html.j2:5
@@ -1341,5 +1334,32 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Open access (PSD2)"
+#~ msgstr ""
+
+#~ msgid "Taler as seen by governments"
+#~ msgstr "Taler aus Regierungsperspektive"
+
+#~ msgid "Previous"
+#~ msgstr ""
+
+#~ msgid "Next"
+#~ msgstr ""
+
+#~ msgid "Accept and validate deposits from merchants."
+#~ msgstr "Annahme und Validierung von Einzahlungen durch Händler."
+
+#~ msgid "Taler as seen by the payment service operator"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cryptographic operations, bandwidth and "
+#~ "storage are less than 0.01 cent "
+#~ "per transaction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Multiple Taler transactions are "
+#~ "<b>aggregated</b> into larger wire transfers"
+#~ " to merchants."
 #~ msgstr ""
 

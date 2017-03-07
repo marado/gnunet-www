@@ -18,11 +18,10 @@
 </div>
 
 
-
-<div class="container">
-<div class="row">
+<div class="container adorn_h3_bracket">
+ <div class="row">
   <div class="col-lg-4">
-    <h2>{{ _("The Team") }}</h2>
+    <h3>{{ _("The Team") }}</h3>
 
     <p>{{ _("Our team combines world-class business leaders,
              cryptographers, software engineers, civil-rights
@@ -35,7 +34,7 @@
              automation, and the Renewable Freedom Foundation.") }}</p>
   </div>
   <div class="col-lg-4">
-    <h2>{{ _("The Technology") }}</h2>
+    <h3>{{ _("The Technology") }}</h3>
 
     <p>{{ _("All transactions in Taler are secured using modern
              cryptography and trust in all parties is
@@ -49,7 +48,7 @@
              are fractions of a cent.") }}</p>
   </div>
   <div class="col-lg-4">
-    <h2>{{ _("The Business") }}</h2>
+    <h3>{{ _("The Business") }}</h3>
 
     <p>{{ _("The scalable business model for Taler is the operation
              of the payment service provider, which converts money from
@@ -63,39 +62,59 @@
              merchant or both) to facilitate the transactions.")
       }}</p>
   </div>
+ </div>
 </div>
-<div class="col-lg-12">
-  <h2 id="overview">{{ _("Taler as seen by the payment service operator") }}</h2>
 
-  <p>{{ _("The payment service operator runs a <em>Taler
-           exchange</em>, which is a Web service portal that
-           keeps databases with transaction details and
-           cryptographic proofs.  Its operational expenses are
-           thus related to its interactions with the banking
-           system and the operation of the computing
-           infrastructure, while its income is based on
-           transaction fees it may charge for the various
-           interactions.  Key interactions of the exchange
-           include: ") }}</p>
+
+<div class="contianer-fluid c_acronym">
+ <div class="container">
+   <h2>{{ _("The Business Case") }}</h2>
+  <div class="row">
+   <div class="col-lg-4">
+     <a href="{{ url('presentations/investors2017.pdf') }}"><img border=0 class="center-block" width=64 height=64 alt="PDF" src="{{ url('images/pdf.svg') }}"><br><p align="center">Download</p></a>
+
+   </div>
+   <div class="col-lg-4" id="canvas-left" style="display:none">
+     <canvas id="the-canvas-right"></canvas>
+   </div>
+   <div class="col-lg-4" id="canvas-right" style="display:none">
+    <canvas id="the-canvas-left"></canvas>
+   </div>
+   <script type="text/javascript" src="{{ url('dist/js/pdf.min.js') }}"></script>
+   <script type="text/javascript" src="{{ url('dist/js/pdf-view.js') }}"></script>
+  </div>
+ </div>
+</div>
+
+
+<div class="container">
+ <div class="row">
+  <div class="col-lg-12">
+   <h2 id="overview">{{ _("Running a Taler payment service operator") }}</h2>
 
   <p>
-    <img src="{{ url('images/exchange.svg') }}" alt="operator perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-    </p><ul>
-      <li>{{ _("Create a <b>reserve</b> based on an incoming
-                wire transfer from a customer.") }}</li>
+    {% trans %}
+       The payment service operator runs the <em>Taler exchange</em>.
+       The exchange charges <b>transaction fees</b> to customers or merchants.
+       Its operational expenses are from wire transfers with the banking
+       system and the operation of the computing infrastructure.
+    {% endtrans %}
+  </p>
 
-      <li>{{ _("Allow customers to withdraw (and refresh)
-                digital coins from their reserve.") }}</li>
+  <p>
+    <ul>
+    <li>{{ _("Cryptographic operations, bandwidth and storage costs are less than 0.01 cent per transaction.") }}</li>
 
-      <li>{{ _("Accept and validate deposits from merchants.") }}</li>
+    <li>{{ _("Multiple Taler transactions can be aggregated into larger wire transfers to merchants to minimize wire transfer costs.") }}</li>
 
-      <li>{{ _("Execute wire transfers to merchants in
-                response to validated deposits.") }}</li>
+    <li>{{ _("Correct operation can be automatically assessed by verifying cryptographic proofs in the database.") }}</li>
 
-      <li>{{ _("Preserve and provide cryptographic proofs of
-                correct operation for audits by financial regulators.") }}</li>
+    <li>{{ _("Protocol allows the exchange to charge fees for any expensive operation (withdraw, deposit, refresh, refund or aggregated wire transfers).") }}</li>
+
+    <li>{{ _("Financial risk is bounded even if keys are compromised.") }}</li>
+
     </ul>
-  <p></p>
-</div>
+  </div>
+ </div>
 </div>
 {% endblock body_content %}
