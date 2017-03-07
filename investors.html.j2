@@ -23,21 +23,31 @@
   <div class="col-lg-4">
     <h3>{{ _("The Team") }}</h3>
 
-    <p>{{ _("Our team combines world-class business leaders,
+    <p>
+       {% trans %}
+             Our <a href="about.html">team</a> combines world-class business leaders,
              cryptographers, software engineers, civil-rights
              activits and academics. We are unified by a vision
              of how payments should work and the goal of
-             imposing this vision upon the world.") }}</p>
+             imposing this vision upon the world.
+        {% endtrans %}
+    </p>
 
-    <p>{{ _("We are currently supported by Inria, the French
+    <p>
+        {% trans %}
+             We are currently supported by Inria, the French
              national institute for research in informatics and
-             automation, and the Renewable Freedom Foundation.") }}</p>
+             automation, and the Renewable Freedom Foundation.
+        {% endtrans %}
+    </p>
   </div>
   <div class="col-lg-4">
     <h3>{{ _("The Technology") }}</h3>
 
-    <p>{{ _("All transactions in Taler are secured using modern
-             cryptography and trust in all parties is
+    <p>
+        {% trans %}
+             All transactions in Taler are secured using <a href="bibliography.html">modern
+             cryptography</a> and trust in all parties is
              minimized. Financial damage is bounded (for
              customers, merchants and the exchange) even in the
              case that systems are compromised and private keys
@@ -45,12 +55,16 @@
              consistency, resulting in either the detection of
              compromised systems or the demonstration that
              participants were honest. Actual transaction costs
-             are fractions of a cent.") }}</p>
+             are fractions of a cent.
+        {% endtrans %}
+     </p>
   </div>
   <div class="col-lg-4">
     <h3>{{ _("The Business") }}</h3>
 
-    <p>{{ _("The scalable business model for Taler is the operation
+    <p>
+        {% trans %}
+             The scalable business model for Taler is the operation
              of the payment service provider, which converts money from
              traditional payment systems (Mastercard, SEPA,
              Visa, Bitcoin, ACH, SWIFT, etc.) to anonymous
@@ -58,9 +72,9 @@
              can then redeem the electronic coins at a merchant,
              who can exchange them for money represented using
              traditional payment systems at the exchange.  The
-             exchange charges fees (to the customer,
-             merchant or both) to facilitate the transactions.")
-      }}</p>
+             exchange charges fees to facilitate the transactions.
+       {% endtrans %}
+    </p>
   </div>
  </div>
 </div>
@@ -107,11 +121,11 @@
 
     <li>{{ _("Multiple Taler transactions can be aggregated into larger wire transfers to merchants to minimize wire transfer costs.") }}</li>
 
-    <li>{{ _("Correct operation can be automatically assessed by verifying cryptographic proofs in the database.") }}</li>
-
     <li>{{ _("Protocol allows the exchange to charge fees for any expensive operation (withdraw, deposit, refresh, refund or aggregated wire transfers).") }}</li>
 
-    <li>{{ _("Financial risk is bounded even if keys are compromised.") }}</li>
+    <li>{{ _("Partnership with banks establishes consumer trust.") }}</li>
+
+    <li>{{ _("Partnership with free software community enables rapid deployment.") }}</li>
 
     </ul>
   </div>

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-03-07 16:25+0100\n"
+"POT-Creation-Date: 2017-03-07 16:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -946,30 +946,37 @@ msgstr ""
 msgid "The Team"
 msgstr ""
 
-#: investors.html.j2:26
+#: investors.html.j2:27
 msgid ""
-"Our team combines world-class business leaders,\n"
+"\n"
+"             Our <a href=\"about.html\">team</a> combines world-class "
+"business leaders,\n"
 "             cryptographers, software engineers, civil-rights\n"
 "             activits and academics. We are unified by a vision\n"
 "             of how payments should work and the goal of\n"
-"             imposing this vision upon the world."
-msgstr ""
-
-#: investors.html.j2:32
-msgid ""
-"We are currently supported by Inria, the French\n"
-"             national institute for research in informatics and\n"
-"             automation, and the Renewable Freedom Foundation."
+"             imposing this vision upon the world.\n"
+"        "
 msgstr ""
 
 #: investors.html.j2:37
+msgid ""
+"\n"
+"             We are currently supported by Inria, the French\n"
+"             national institute for research in informatics and\n"
+"             automation, and the Renewable Freedom Foundation.\n"
+"        "
+msgstr ""
+
+#: investors.html.j2:45
 msgid "The Technology"
 msgstr ""
 
-#: investors.html.j2:39
+#: investors.html.j2:48
 msgid ""
-"All transactions in Taler are secured using modern\n"
-"             cryptography and trust in all parties is\n"
+"\n"
+"             All transactions in Taler are secured using <a "
+"href=\"bibliography.html\">modern\n"
+"             cryptography</a> and trust in all parties is\n"
 "             minimized. Financial damage is bounded (for\n"
 "             customers, merchants and the exchange) even in the\n"
 "             case that systems are compromised and private keys\n"
@@ -977,16 +984,18 @@ msgid ""
 "             consistency, resulting in either the detection of\n"
 "             compromised systems or the demonstration that\n"
 "             participants were honest. Actual transaction costs\n"
-"             are fractions of a cent."
+"             are fractions of a cent.\n"
+"        "
 msgstr ""
 
-#: investors.html.j2:51
+#: investors.html.j2:63
 msgid "The Business"
 msgstr ""
 
-#: investors.html.j2:53
+#: investors.html.j2:66
 msgid ""
-"The scalable business model for Taler is the operation\n"
+"\n"
+"             The scalable business model for Taler is the operation\n"
 "             of the payment service provider, which converts money from\n"
 "             traditional payment systems (Mastercard, SEPA,\n"
 "             Visa, Bitcoin, ACH, SWIFT, etc.) to anonymous\n"
@@ -994,19 +1003,19 @@ msgid ""
 "             can then redeem the electronic coins at a merchant,\n"
 "             who can exchange them for money represented using\n"
 "             traditional payment systems at the exchange.  The\n"
-"             exchange charges fees (to the customer,\n"
-"             merchant or both) to facilitate the transactions."
+"             exchange charges fees to facilitate the transactions.\n"
+"       "
 msgstr ""
 
-#: investors.html.j2:71
+#: investors.html.j2:85
 msgid "The Business Case"
 msgstr ""
 
-#: investors.html.j2:93
+#: investors.html.j2:107
 msgid "Running a Taler payment service operator"
 msgstr ""
 
-#: investors.html.j2:96
+#: investors.html.j2:110
 msgid ""
 "\n"
 "       The payment service operator runs the <em>Taler exchange</em>.\n"
@@ -1017,32 +1026,30 @@ msgid ""
 "    "
 msgstr ""
 
-#: investors.html.j2:106
+#: investors.html.j2:120
 msgid ""
 "Cryptographic operations, bandwidth and storage costs are less than 0.01 "
 "cent per transaction."
 msgstr ""
 
-#: investors.html.j2:108
+#: investors.html.j2:122
 msgid ""
 "Multiple Taler transactions can be aggregated into larger wire transfers "
 "to merchants to minimize wire transfer costs."
 msgstr ""
 
-#: investors.html.j2:110
-msgid ""
-"Correct operation can be automatically assessed by verifying "
-"cryptographic proofs in the database."
-msgstr ""
-
-#: investors.html.j2:112
+#: investors.html.j2:124
 msgid ""
 "Protocol allows the exchange to charge fees for any expensive operation "
 "(withdraw, deposit, refresh, refund or aggregated wire transfers)."
 msgstr ""
 
-#: investors.html.j2:114
-msgid "Financial risk is bounded even if keys are compromised."
+#: investors.html.j2:126
+msgid "Partnership with banks establishes consumer trust."
+msgstr ""
+
+#: investors.html.j2:128
+msgid "Partnership with free software community enables rapid deployment."
 msgstr ""
 
 #: merchants.html.j2:5
@@ -1365,14 +1372,52 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Cryptographic operations, bandwidth and "
-#~ "storage are less than 0.01 cent "
-#~ "per transaction."
+#~ "Our team combines world-class business leaders,\n"
+#~ "             cryptographers, software engineers, civil-rights\n"
+#~ "             activits and academics. We are unified by a vision\n"
+#~ "             of how payments should work and the goal of\n"
+#~ "             imposing this vision upon the world."
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Multiple Taler transactions are "
-#~ "<b>aggregated</b> into larger wire transfers"
-#~ " to merchants."
+#~ "We are currently supported by Inria, the French\n"
+#~ "             national institute for research in informatics and\n"
+#~ "             automation, and the Renewable Freedom Foundation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All transactions in Taler are secured using modern\n"
+#~ "             cryptography and trust in all parties is\n"
+#~ "             minimized. Financial damage is bounded (for\n"
+#~ "             customers, merchants and the exchange) even in the\n"
+#~ "             case that systems are compromised and private keys\n"
+#~ "             are stolen.  Databases can be audited for\n"
+#~ "             consistency, resulting in either the detection of\n"
+#~ "             compromised systems or the demonstration that\n"
+#~ "             participants were honest. Actual transaction costs\n"
+#~ "             are fractions of a cent."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The scalable business model for Taler is the operation\n"
+#~ "             of the payment service "
+#~ "provider, which converts money from\n"
+#~ "             traditional payment systems (Mastercard, SEPA,\n"
+#~ "             Visa, Bitcoin, ACH, SWIFT, etc.) to anonymous\n"
+#~ "             electronic coins in the same currency. The customer\n"
+#~ "             can then redeem the electronic coins at a merchant,\n"
+#~ "             who can exchange them for money represented using\n"
+#~ "             traditional payment systems at the exchange.  The\n"
+#~ "             exchange charges fees (to the customer,\n"
+#~ "             merchant or both) to facilitate the transactions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Correct operation can be automatically "
+#~ "assessed by verifying cryptographic proofs "
+#~ "in the database."
+#~ msgstr ""
+
+#~ msgid "Financial risk is bounded even if keys are compromised."
 #~ msgstr ""
 
