@@ -18,7 +18,7 @@
     <ul class="nav navbar-right navbar-form">
       <li>
         <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <img src="{{ url('images/'+lang+'.png') }}" />
+          <img src="{{ url('images/'+lang+'.png') }}" alt="{{lang}}" />
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
