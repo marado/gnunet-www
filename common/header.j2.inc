@@ -40,7 +40,6 @@
     <!-- Custom styles for this template -->
     <link href="{{ url('styles.css') }}" rel="stylesheet">
 
-    <script src="{{ url('menu.js') }}"></script>
     <script src="{{ url('dist/js/jquery-1.11.1.min.js') }}"></script>
     <script src="{{ url('dist/js/bootstrap.min.js') }}"></script>
 
