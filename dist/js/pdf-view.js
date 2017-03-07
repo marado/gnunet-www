@@ -84,6 +84,7 @@ function onNextPage() {
 document.getElementById('canvas-right').addEventListener('click', onNextPage);
 
 document.getElementById('canvas-left').style.display = 'block';
+document.getElementById('canvas-right').style.display = 'block';
 
 /**
  * Asynchronously downloads PDF.
