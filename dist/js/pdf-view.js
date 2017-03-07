@@ -88,6 +88,14 @@ document.getElementById('canvas-right').addEventListener('click', onNextPage);
 document.getElementById('canvas-left').style.display = 'block';
 document.getElementById('canvas-right').style.display = 'block';
 
+
+function onMouseDown(event) {
+  event.preventDefault();
+}
+
+document.getElementById('canvas-left').addEventListener('mousedown', onMouseDown);
+document.getElementById('canvas-right').addEventListener('mousedown', onMouseDown);
+
 /**
  * Asynchronously downloads PDF.
  */
