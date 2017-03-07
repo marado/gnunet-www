@@ -11,7 +11,9 @@
     <div class="col-lg-6">
       <h2>{{ _("Free") }}</h2>
 
-      <p>{{ _("Taler is free software implementing an open
+      <p>
+        {% trans %}
+               Taler is free software implementing an open
                protocol. Anybody is welcome to inspect our code
                and integrate our reference implementation into
                their applications.  Different components of Taler
@@ -23,13 +25,17 @@
                for wallets and related customer-facing software.
                We are open for constructive suggestions for
                maximizing the adoption of this libre payment
-               platform.  ") }}</p>
+               platform.
+        {% endtrans %}
+      </p>
 
     </div>
     <div class="col-lg-6">
       <h2>{{ _("RESTful") }}</h2>
 
-      <p>{{ _("Taler is designed to work on the Internet.  To
+      <p>
+        {% trans %}
+               Taler is designed to work on the Internet.  To
                ensure that Taler payments can work with
                restrictive network setups, Taler uses a RESTful
                protocol over HTTP or HTTPS. Taler's security does
@@ -40,9 +46,9 @@
                structure data, making it easy to integrate Taler
                with existing Web applications.  Taler's protocol
                is documented in
-               detail <a href='https://api.taler.net/'>here</a>.
-               ") }}</p>
-      
+               detail <a href="https://api.taler.net/">here</a>.
+        {% endtrans %}
+      </p>
     </div>
   </div>
 </div>
@@ -53,7 +59,9 @@
     <div class="col-lg-4">
       <h2>{{ _("Code") }}</h2>
 
-      <p>{{ _("Taler is currently primarily developed by a
+      <p>
+        {% trans %}
+               Taler is currently primarily developed by a
                research team at Inria and GNUnet e.V. However,
                contributions from anyone are welcome.  Our Git
                repositories can be cloned using the Git and HTTP
@@ -61,19 +69,23 @@
                the name of the respective repository. A list of
                public repositories can be found in
                our <a href='https://git.taler.net/'>GitWeb</a>.
-               ") }}</p>
-
+         {% endtrans %}
+     </p>
     </div>
     <div class="col-lg-4">
       <h2>{{ _("Documentation") }}</h2>
 
-      <p>{{ _("In addition to this website,
-               the <a href='https://git.taler.net/'>documented
+      <p>
+        {% trans %}
+               In addition to this website,
+               the <a href="https://git.taler.net/">documented
                code</a> and
-               the <a href='https://api.taler.net/'>API
+               the <a href="https://api.taler.net/">API
                documentation</a>, we are in the process of
                preparing a comprehensive design document which
-               will be published here soon.  ") }}</p>
+               will be published here soon.
+       {% endtrans %}
+      </p>
     </div>
      <div class="col-lg-4">
       <h2>{{ _("Discussion") }}</h2>
