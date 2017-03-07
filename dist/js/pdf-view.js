@@ -3,7 +3,7 @@
  * documentation of pdf.js (which is under Apache License v2.0)
  */
 
-PDFJS.workerSrc = 'dist/js/pdf.worker.min.js';
+PDFJS.workerSrc = '/dist/js/pdf.worker.min.js';
 
 var url = 'presentations/investors2017.pdf';
 
