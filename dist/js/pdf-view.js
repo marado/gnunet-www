@@ -62,7 +62,8 @@ function queueRenderPage(num) {
 /**
  * Displays previous page.
  */
-function onPrevPage() {
+function onPrevPage(event) {
+  event.preventDefault();
   if (pageNum <= 1) {
     return;
   }
@@ -74,7 +75,8 @@ document.getElementById('canvas-left').addEventListener('click', onPrevPage);
 /**
  * Displays next page.
  */
-function onNextPage() {
+function onNextPage(event) {
+  event.preventDefault();
   if (pageNum >= pdfDoc.numPages - 1) {
     return;
   }
