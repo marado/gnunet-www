@@ -5,7 +5,7 @@
 
 PDFJS.workerSrc = '/dist/js/pdf.worker.min.js';
 
-var url = 'presentations/investors2017.pdf';
+var url = '/presentations/investors2017.pdf';
 
 var pdfDoc = null,
     pageNum = 1,
