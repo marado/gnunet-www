@@ -11,9 +11,9 @@
         </div>
         <div class="col-xs-12 col-sm-4">
           <ul class="footer-list">
-            <li><p><a href="governments.html">{{ _("Governments") }} </a></p></li>
-            <li><p><a href="merchants.html">{{ _("Merchants") }}</a></p></li>
             <li><p><a href="citizens.html">{{ _("Citizens")}} </a></p></li>
+            <li><p><a href="merchants.html">{{ _("Merchants") }}</a></p></li>
+            <li><p><a href="governments.html">{{ _("Governments") }} </a></p></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-4">

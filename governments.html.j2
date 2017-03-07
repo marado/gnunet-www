@@ -113,32 +113,28 @@
 
 <div class="container">
 <div class="col-lg-12">
-  <h2 id="overview">{{ _("Taler as seen by governments") }}</h2>
+  <h2 id="overview">{{ _("Taler provides privacy and accountability") }}</h2>
 
-  <p>{{ _("Governments can observe traditional wire transfers
-           entering and leaving the Taler system, and require
-           merchants and exchange operators to provide certain
-           information during financial audits.  Exchange
-           operators are expected to be permanently checked by
-           auditors, while merchants may be required to reveal
-           information during regular tax audits.  Information
-           available to the government includes: ") }}</p>
+  <p>{{ _("Taler assumes governments can observe traditional wire transfers
+           entering and leaving the Taler payment system.  Starting with the
+           wire transfers, governments can obtain: ") }}</p>
+  <ul>
 
-  <p>
-    <img src="{{ url('images/government.svg') }}" alt="government perspective" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-    </p><ul>
-
-      <li>{{ _("From the banking system: The total amount of
-                digital currency obtained by a customer. The
-                government could impose limits on how many
-                digital coins a customer may withdraw within a
+      <li>{{ _("The total amount of digital currency withdrawn by a
+                customer. The government can impose limits on how much
+                digital cash a customer can withdraw within a
                 given timeframe.") }}</li>
 
-       <li>{{ _("From the banking system: The total amount of
-                 income received by any merchant via the Taler
+       <li>{{ _("The income received by any merchant via the Taler
                  system.") }}</li>
 
-       <li>{{ _("From auditing the exchange: The amounts of
+      <li>{{ _("The exact details of the underlying
+                contract that was signed between customer and
+                merchant.  However, this information would
+                typically not include the identity of the
+                customer.") }}</li>
+
+       <li>{{ _("The amounts of
                  digital coins legitimately withdrawn by
                  customers from the exchange, the value of
                  non-redeemed digital coins in customer's
@@ -146,19 +142,6 @@
                  details of deposit operations performed by
                  merchants with the exchange, and the income of
                  the exchange from transaction fees.") }}</li>
-
-      <li>{{ _("From auditing merchants: For each deposit
-                operation, the exact details of the underlying
-                contract that was signed between customer and
-                merchant.  However, this information would
-                typically not include the identity of the
-                customer.  Note that while the customer can
-                decide to prove that it was his transaction
-                (i.e. in court when suing the merchant if the
-                merchant failed to deliver on the contract),
-                merchant, exchange and government cannot find
-                out the customer's identity from the information
-                that Taler collects.") }}</li>
 
     </ul>
   <p></p>
