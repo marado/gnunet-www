@@ -1,4 +1,4 @@
-          <h3>12-2016: Christian Grothoff's explains Taler at hasgeek in Bangalore</h3>
+          <h3>12-2016: Christian Grothoff explains Taler at hasgeek in Bangalore</h3>
           <p>
            <video id="video" poster="/videos/grothoff2016bangalore.png" autobuffer="" height="180" width="320" controls="controls">
            <source src="/videos/grothoff2016bangalore.webm" type="video/webm">
