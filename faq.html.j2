@@ -1,45 +1,61 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <div class="container">
-<h2>How is Taler related to Bitcoin or Blockchains?</h2>
-<p>
-Taler does not use any Blockchain technology or Bitcoin directly.  Taler is not
-based on proof-of-work or any other distributed consensus mechanism.  Instead
-Taler is based on blind signatures.</p>
 
-<p>It would be possible, however, to withdraw Bitcoins into a Taler wallet (with an appropriate exchange),
-which would give some benefits over plain Bitcoin, such as instant confirmation times.</p>
+<h2>{{ _("How is Taler related to Bitcoin or Blockchains?") }}</h2>
+{% trans %}
+<p>Taler does not use any Blockchain technology or Bitcoin directly.
+Taler is not based on proof-of-work or any other distributed consensus
+mechanism.  Instead Taler is based on blind signatures.</p>
 
-<h2>Where is the balance in my wallet stored?</h2>
-<p>Your wallet stores tokens that are blindly signed by an exchange.
-Until your spend balance with a merchant, the exchange holds it in escrow.</p>
+<p>It would be possible, however, to withdraw Bitcoins into a Taler
+wallet (with an appropriate exchange), which would give some benefits
+over plain Bitcoin, such as instant confirmation times.</p>
 
-<h2>What if my wallet gets lost?</h2>
-<p>Since the digital tokens of value in your wallet are anonymized,
-the exchange can not assist you in restoring a lost or stolen wallet.  Just
-like with a physical wallet for cash, you are responsible for keeping it safe.</p>
 
-<p>The risk of losing a wallet can be mitigated by backups or keeping the balance reasonably low.</p>
+<h2>{{ _("Where is the balance in my wallet stored?") }}</h2>
+<p>Your wallet stores digital coins that were blindly signed by an
+exchange, and thus ultimately your computer holds your balance.  The
+exchange keeps funds matching all unspent coins in an escrow bank
+account.</p>
+{% endtrans %}
 
-<p>In case of a compromise of one of your devices, an attacker that spends coins on your behalf will
-make it possible for you to know that you've been compromised, which can be an advantage.</p>
 
-<h2>Can I send money to my friend with Taler?</h2>
-<p>You can <em>share</em> coins in your wallet with people you trust, like
-family or friends.  Whenever these shared coins are spent, the other copies
-become invalid.  Sharing coins this does not constitute a transaction, is not taxable
-and requires trust between the sharing parties.</p>
+<h2>{{ _("What if my wallet is lost?") }}</h2>
+{% trans %}
+<p>Since the digital coins of value in your wallet are anonymized, the
+exchange can not assist you in recovering a lost or stolen wallet.
+Just like with a physical wallet for cash, you are responsible for
+keeping it safe.</p>
 
-<p>If your friend provides goods or services for you in exchange for a payment,
-they can easily set up a Taler merchant and receive the payment on their bank account.</p>
+<p>The risk of losing a wallet can be mitigated by making backups or
+keeping the balance reasonably low.</p>
 
-<h2>How does Taler handle payments in different currencies?</h2>
-<p>Taler wallets can store digital coins corresponding to multiple different
-currencies such as the Euro, US Dollars or even Bitcoins.</p>
+<p>In case of a compromise of one of your devices, an attacker that
+spends coins on your behalf will allow you to detect that your device
+has been compromised.</p>
+{% endtrans %}
 
-<p>Automatic currency conversion is currently not our focus, but could be made
-available in the future, either with exchanges that handle multiple
-currencies, or other means of multi-currency payment routing.</p>
+
+<h2>{{ _("Can I send money to my friend with Taler?") }}</h2>
+{% trans %}
+<p>If your friend provides goods or services for you in exchange for a
+payment, they can easily set up a Taler merchant and receive the
+payment in their bank account.</p>
+
+<p>Future versions of the Taler wallet may allow exchanging coins
+among friends directly as well.</p>
+{% endtrans %}
+
+
+<h2>{{ _("How does Taler handle payments in different currencies?") }}</h2>
+{% trans %}
+<p>Taler wallets can store digital coins corresponding to multiple
+different currencies such as the Euro, US Dollars or Bitcoins.</p>
+
+<p>Taler currently does not offer conversion between currencies.</p>
+{% endtrans %}
+
 
 </div>
 {% endblock body_content %}
