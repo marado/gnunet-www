@@ -3,12 +3,16 @@
 <div class="jumbotron">
   <div class="container text-center">
     <h1>{{ _("Advantages for Merchants") }}</h1>
-    <p>{{ _("Taler is a cost-effective electronic payment system
+
+      <p>
+         {% trans %}
+             Taler is a cost-effective electronic payment system
              which provides you with cryptographic proof that
              the payment worked correctly within milliseconds.
              Your Web customers pay with previously unknown
-             levels of convenience without risk of fraud.")
-             }}</p>
+             levels of convenience without risk of fraud.
+         {% endtrans %}
+       </p>
   </div>
 </div>
 
@@ -17,7 +21,9 @@
     <div class="col-lg-4">
       <h3>{{ _("Fast") }}</h3>
 
-      <p>{{ _("Processing transactions with Taler is fast,
+      <p>
+         {% trans %}
+               Processing transactions with Taler is fast,
                allowing you to confirm the transaction with your
                customer virtually immediately.  Your customers
                will appreciate that they do not have to type in
@@ -26,33 +32,42 @@
                more convenient for your customers, you may be able
                to use Taler for small transactions that would not
                work with credit card payments due to the mental
-               overhead for customers.") }}</p>
+               overhead for customers.
+         {% endtrans %}
+       </p>
 
     </div>
     <div class="col-lg-4">
       <h3>{{ _("Secure") }}</h3>
 
-      <p>{{ _("You will have cryptographic proof of payment from
-               the Taler payment service provider. Taler does not
-               require you to undergo any particular security
-               audits (such as PCI DSS), processes or procedures,
-               as you never handle sensitive customer account
-               information.  Your systems will have customer
+      <p>
+         {% trans %}
+               You will have cryptographic proof of payment from the
+               Taler payment service provider. With Taler you never
+               handle sensitive customer account information and thus
+               do not have to undergo any particular security audits
+               (such as PCI DSS).  Your systems will have customer
                contracts with qualified signatures for all
                transactions which you can use in court in case of
-               disputes.") }}</p>
+               disputes.
+         {% endtrans %}
+       </p>
 
     </div>
     <div class="col-lg-4">
       <h3>{{ _("Free") }}</h3>
 
-      <p>{{ _("Taler is free software, and you can use the
+      <p>
+         {% trans %}
+               Taler is free software, and you can use the
                liberally-licensed reference code as a starting
                point to integrate Taler into your services. To use
                Taler, you do not need to pay license fees, and the
                free software development model will ensure that
-               you can select from many competent integrators for
-               support.") }}</p>
+               you can select from many competing integrators for
+               support.
+         {% endtrans %}
+       </p>
 
     </div>
   </div>
@@ -60,31 +75,40 @@
     <div class="col-lg-4">
       <h3>{{ _("Cheap") }}</h3>
 
-      <p>{{ _("Taler is designed to minimize the work the exchange
-               needs to perform.  Combined with Taler's strong
-               security which prevents fraud, payment service
+      <p>
+         {% trans %}
+               Taler is uses efficient cryptographic constructions with low
+               bandwidth and storage requirements.  Combined with Taler's strong
+               security which makes fraud impossible, Taler payment service
                providers can operate with very low overhead and
-               thus low transaction fees.") }}</p>
-
+               thus offer low transaction fees.
+         {% endtrans %}
+       </p>
     </div>
     <div class="col-lg-4">
       <h3>{{ _("Flexible") }}</h3>
 
-      <p>{{ _("Taler can be used for different currencies (such as
-               Euros, US Dollars or Bitcoins) and different
-               payment models limited only by what the payment
-               service provider supports in its interactions.")
-               }}</p>
-
+      <p>
+         {% trans %}
+               Taler can be used for different currencies (such as
+               Euros, US Dollars or Bitcoins) and any amount, limited
+               only by applicable regulatation and what denominations
+               the payment service provider supports.
+         {% endtrans %}
+      </p>
     </div>
     <div class="col-lg-4">
       <h3>{{ _("Ethical") }}</h3>
 
-      <p>{{ _("Taler prevents tax evasion and money laundering.
-               Taler's protocols are efficient and do not waste
-               energy. Taler encourages transparency by providing
-               an open standard and free software reference
-               implementations.") }}</p>
+      <p>
+         {% trans %}
+               Taler prevents tax evasion and money laundering.
+               Taler's protocols are efficient and do not use wasteful
+               proof-of-work calculations. Taler encourages
+               transparency by providing an open standard and free
+               software reference implementations.
+         {% endtrans %}
+      </p>
 
     </div>
   </div>
@@ -119,20 +143,34 @@
     <p>
       <ul>
 
-        <li>{{ _("The backend <b>signs</b> and <b>stores</b>
-                  proposals made by the merchant to customers.
+        <li>
+             {% trans %}
+                  The backend <b>signs</b> and <b>stores</b> the
+                  complete terms of offers made by the merchant to customers.
                   For this, the merchant's frontend needs to give the
-                  customer's order in a JSON format to the backend.") }}</li>
+                  customer's order in a JSON format to the backend.
+             {% endtrans %}
+        </li>
 
-        <li>{{ _("The backend <b>validates</b> and <b>executes</b>
-                  payments received from the wallet.  The frontend
-                  must pass the payment request through to the backend
-                  and checks the HTTP status code that is returned.") }}</li>
+        <li>
+             {% trans %}
+                  The backend <b>validates</b> payments received from
+                  the wallet and <b>executes</b> them with the Taler
+                  payment service provider (the exchange).  For this,
+                  the merchant's frontend must pass the payment
+                  request through to the Taler backend and check the
+                  HTTP status code that is returned.
+             {% endtrans %}
+        </li>
 
-        <li>{{ _("The backend can <b>list</b> completed transactions
-                  and <b>map</b> aggregated wire transfers to individual
-                  business transactions including the exact terms of
-                  the contract.") }} </li>
+        <li>
+             {% trans %}
+                  The backend can <b>list</b> completed transactions
+                  and <b>map</b> wire transfers to sets of business
+                  transactions, including the exact terms of each
+                  contract.
+             {% endtrans %}
+        </li>
 
       </ul>
     </p>
