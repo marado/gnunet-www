@@ -4,15 +4,17 @@
 <div class="jumbotron">
   <div class="container text-center">
   <h1>{{ _("Advantages for Governments") }}</h1>
-    <p>{{ _("Taler provides accountability to ensure business
-             accepting payments operate legally, while also
-             respecting civil liberties of citizens spending
-             digital cash.  Taler is a commons, a payment system
-             based on open standards and free software.  Taler
-             needs governments to set a financial framework and
-             to act as trusted regulators.  Taler contributes to
-             digital sovereignty in the critical financial
-             infrastructure.") }}</p>
+    <p>
+        {% trans %}
+             Taler provides accountability to ensure business operate
+             legally, while also respecting civil liberties of
+             citizens.  Taler is a payment system based on
+             open standards and free software.  Taler needs
+             governments as they set a financial framework and act as
+             trusted regulators.  Taler contributes to digital
+             sovereignty in the critical financial infrastructure.
+         {% endtrans %}
+      </p>
   </div>
 </div>
 
@@ -22,72 +24,91 @@
   <div class="col-lg-6">
     <h3>{{ _("Taxable") }}</h3>
 
-    <p>{{ _("Taler was
-             built with the goal of fighting corruption and supporting taxation.
-             With Taler, the receiver of any form of payment is
-             easily identified by the government, and the merchant
-             can be compelled to provide the contract that was accepted
-             by the customer.  Governments can use this data to
-             tax businesses and individuals based on their
-             income, making tax evasion and black markets less
-             viable.") }}</p>
+    <p>
+        {% trans %}
+             Taler was built with the goal of fighting corruption and
+             supporting taxation.  With Taler, the receiver of any
+             form of payment is easily identified by the government,
+             and the merchant can be compelled to provide the contract
+             that was accepted by the customer.  Governments can use
+             this data to tax businesses and individuals based on
+             their income, making tax evasion and black markets less
+             viable.
+        {% endtrans %}
+      </p>
 
-    <p>{{ _("Thus, despite offering anonymity for citizens
-             spending digital cash to buy goods and services,
-             Taler also ensures that the state can observe
-             incoming funds. This can be used to ensure
-             businesses engage only in legal activities, and do
-             not evade income tax, sales tax or value-added tax.
-             However, this observational capability does not
-             extend to the immediate personal domain.  In
-             particular, sharing access to funds within a family
-             or synchronizing wallets across multiple devices is not
-             subject to monitoring.")  }}</p>
+    <p>
+        {% trans %}
+             Thus, despite offering anonymity for citizens spending
+             digital cash to buy goods and services, Taler also
+             ensures that the state can observe incoming funds. This
+             can be used to ensure businesses engage only in legal
+             activities, and do not evade income tax, sales tax or
+             value-added tax.  However, this observational capability
+             does not extend to the immediate personal domain.  In
+             particular, monitoring does not cover shared access to
+             funds with trusted friends and family, or synchronizing
+             wallets across multiple devices.
+        {% endtrans %}
+      </p>
+
+    </p>
   </div>
   <div class="col-lg-6">
     <h3>{{ _("Secure") }}</h3>
 
-    <p>{{ _("Taler's payments are cryptographically
-             secured. Thus, customers, merchants and the
-             exchange can mathematically demonstrate their
-             lawful behavior in court in case of
+    <p>
+        {% trans %}
+             Taler's payments are cryptographically secured. Thus,
+             customers, merchants and the Taler payment service provider
+             (the exchange) can mathematically
+             demonstrate their lawful behavior in court in case of
              disputes. Financial damages are strictly limited,
-             improving economic security for individuals,
-             merchants, the exchange and the state.") }}
+             improving economic security for individuals, merchants,
+             the exchange and the state.
+        {% endtrans %}
+      </p>
 
-    <p>{{ _("By design, the Taler payment service provider is
-             subject to financial regulation. Financial
-             regulation and regular audits are critical to
-             establish trust. In particular, the Taler design
-             mandates the existence of an independent auditor
-             who checks cryptographic proofs that accumulate at
-             the payment service provider to ensure that the
-             escrow account is managed honestly.  This ensures
-             that the payment service provider does not threaten
-             the economy due to fraud.") }}</p>
+    <p>
+        {% trans %}
+             As a payment service provider, the Taler exchange is
+             subject to financial regulation. Financial regulation and
+             regular audits are critical to establish trust. In
+             particular, the Taler design mandates the existence of an
+             independent auditor who checks cryptographic proofs that
+             accumulate at the exchange to ensure that the escrow
+             account is managed honestly.  This ensures that the
+             exchange does not threaten the economy due to fraud.
+        {% endtrans %}
+      </p>
   </div>
  </div>
  <div class="row">
   <div class="col-lg-6">
     <h3>{{ _("Libre") }}</h3>
 
-    <p>{{ _("Taler is free software implementing an open
-             protocol standard.  Thus, Taler will enable
-             competition and avoid the monopolization of payment
-             systems that threatens global political and
-             financial stability today.") }}</p>
-
+    <p>
+        {% trans %}
+             Taler is free software implementing an open protocol
+             standard.  Thus, Taler will enable competition and avoid
+             the monopolization of payment systems that threatens
+             global political and financial stability today.
+        {% endtrans %}
+     </p>
 
   </div>
   <div class="col-lg-6">
     <h3>{{ _("Efficient") }}</h3>
 
-    <p>{{ _("Taler has an efficient design.  Unlike
-             timeline-based payment systems, such as Bitcoin,
+    <p>
+        {% trans %}
+             Taler has an efficient design.  Unlike
+             Blockchain-based payment systems, such as Bitcoin,
              Taler will not threaten the availability of
              national electric grids or (significantly)
-             contribute to environmental pollution.") }}</p>
-
+             contribute to environmental pollution.
+        {% endtrans %}
+    </p>
   </div>
  </div>
 </div>
@@ -98,14 +119,14 @@
   <div class="container">
     <h2 id="documentation">{{ _("Taler and regulation") }}</h2>
     <dl>
-      <dt>{{ _("Anti-money laundering (AML)")}}</dt>
+      <dt>{{ _("Anti money laundering (AML)")}}</dt>
       <dd>{{ _("With Taler, income is visible and can be tied to the contract signed by both parties.") }}</li>
-      <dt>{{ _("Know-your-customer (KYC)")}}</dt>
+      <dt>{{ _("Know your customer (KYC)")}}</dt>
       <dd>{{ _("In Taler, payer and payee are known by their bank accounts when withdrawing or depositing coins respectively") }}</dd>
-      <dt>{{ _("Privacy-by-design (GDPR)")}}</dt>
+      <dt>{{ _("General Data Protection Regulation (GDPR)")}}</dt>
       <dd>{{ _("Taler cryptographically protects citizen's privacy, and by design implements data minimization and privacy by default.") }}</dd>
-      <dt>{{ _("Competitive banking (PSD2)")}}</dt>
-      <dd>{{ _("Taler provides an open standard with public APIs contributing to a level playing field.") }}</dt>
+      <dt>{{ _("Payment Services Directive (PSD2)")}}</dt>
+      <dd>{{ _("Taler provides an open standard with public APIs contributing to a competitive banking sector.") }}</dt>
     </dl>
   </div>
 </div>
@@ -115,36 +136,52 @@
 <div class="col-lg-12">
   <h2 id="overview">{{ _("Taler provides privacy and accountability") }}</h2>
 
-  <p>{{ _("Taler assumes governments can observe traditional wire transfers
+  <p>
+      {% trans %}
+           Taler assumes governments can observe traditional wire transfers
            entering and leaving the Taler payment system.  Starting with the
-           wire transfers, governments can obtain: ") }}</p>
-  <ul>
+           wire transfers, governments can obtain:
+      {% endtrans %}
+      <ul>
 
-      <li>{{ _("The total amount of digital currency withdrawn by a
+      <li>
+         {% trans %}
+                The total amount of digital currency withdrawn by a
                 customer. The government can impose limits on how much
                 digital cash a customer can withdraw within a
-                given time frame.") }}</li>
+                given time frame.
+         {% endtrans %}
+       </li>
 
-       <li>{{ _("The income received by any merchant via the Taler
-                 system.") }}</li>
+       <li>
+         {% trans %}
+                 The income received by any merchant via the Taler
+                 system.
+         {% endtrans %}
+      </li>
 
-      <li>{{ _("The exact details of the underlying
-                contract that was signed between customer and
-                merchant.  However, this information would
-                typically not include the identity of the
-                customer.") }}</li>
+       <li>
+          {% trans %}
 
-       <li>{{ _("The amounts of
-                 digital coins legitimately withdrawn by
-                 customers from the exchange, the value of
-                 non-redeemed digital coins in customer's
-                 wallets, the value and corresponding wire
-                 details of deposit operations performed by
-                 merchants with the exchange, and the income of
-                 the exchange from transaction fees.") }}</li>
+                The exact details of the underlying contract that was
+                signed between customer and merchant.  However, this
+                information would typically not include the identity
+                of the customer.
+        {% endtrans %}
+       </li>
 
+       <li>
+         {% trans %}
+                 The amounts of digital coins legitimately withdrawn
+                 by customers from the exchange, the value of
+                 non-redeemed digital coins in customer's wallets, the
+                 value and corresponding wire details of deposit
+                 operations performed by merchants with the exchange,
+                 and the income of the exchange from transaction fees.
+        {% endtrans %}
+       </li>
     </ul>
-  <p></p>
+  </p>
 </div>
 </div>
 

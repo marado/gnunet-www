@@ -27,7 +27,8 @@
     </div>
   </div>
   <div class="container text-center">
-    <p>&copy; <a href="https://gnunet.org/ev">GNUnet e.V.</a> {{_("and") }} Inria 2015, 2016, 2017</p>
+    <p>&copy; <a href="https://gnunet.org/ev">GNUnet e.V.</a> {{_("and") }}
+              <a href="http://inria.fr/">Inria</a> 2015, 2016, 2017</p>
     <p>{{ _("This page was created using <a href='https://www.gnu.org/'>Free Software</a> only.") }}</p>
   </div>
 </footer>
