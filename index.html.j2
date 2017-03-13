@@ -7,7 +7,7 @@
   </div>
 
   <div class="container text-center">
-    <h1>{{ _("Independent One-Click Payments!") }}</h1>
+    <h1>{{ _("One-Click Cash Payments!") }}</h1>
     <p>
       {% trans %}
       Taler is an electronic payment system under
@@ -40,18 +40,17 @@
 
       <p>
         {% trans %}
-        Taler does not introduce a new currency with
-        fluctuation risks, and instead uses a digital
-        wallet holding coins in reserve. Taler's
-        cryptographic coins correspond to existing
-        currencies, such as US Dollars, Euros or even
-        Bitcoins.
+        Taler does not introduce a new currency. Taler
+        uses a digital wallet storing coins and payment service
+        providers with escrow accounts in existing currencies.
+        Thus, Taler's cryptographic coins correspond to existing
+        currencies, such as US Dollars, Euros or even Bitcoins.
         {% endtrans %}
       </p>
 
     </div>
     <div class="col-lg-4">
-      <h3>{{ _("Security-focused") }}</h3>
+      <h3>{{ _("Secure") }}</h3>
 
       <p>
         {% trans %}
@@ -70,7 +69,7 @@
 
       <p>
         {% trans %}
-        When using Taler, merchants cannot hide their income from tax
+        When using Taler, merchant's revenue is transparent for tax
         collection authorities.  Unlike cash and most digital currencies,
         Taler helps prevent black markets.  Taler is not suitable for
         illegal activities.
@@ -79,7 +78,7 @@
 
     </div>
     <div class="col-lg-4">
-      <h3>{{ _("Privacy-friendly") }}</h3>
+      <h3>{{ _("Private") }}</h3>
       <p>
         {% trans %}
         When you pay with Taler, your identity does not
@@ -118,7 +117,7 @@
     on their device.  Before the first payment, the wallet's balance must
     be charged in the desired currency by some other means of payment.</p>
     <p>Once the wallet is charged, payments on websites take only one click,
-    are never falsely rejected by fraud detection and do not post any risk
+    are never falsely rejected by fraud detection and do not pose any risk
     of phishing or identity theft.</p>
     {% endtrans %}
     </div>
@@ -126,10 +125,10 @@
     <h2>{{ _("Receiving payments with Taler") }}</h2>
     {% trans %}
     <p>To receive Taler payments, a merchant needs a bank account
-    in the desired currency.  We provide
-    SDKs in various languages to makes the integration painless.
+    in the desired currency.  We provide supporting software
+    in various programming languages to make the integration painless.
     The merchant's backend for Taler transaction processing can run
-    on the merchant's premises or hosted.</p>
+    on the merchant's premises or be hosted by a third party.</p>
     {% endtrans %}
     </div>
   </div>
