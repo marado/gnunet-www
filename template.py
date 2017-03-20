@@ -19,6 +19,9 @@ import os
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
                          extensions=["jinja2.ext.i18n"],
+                         lstrip_blocks=True,
+                         trim_blocks=True,
+                         undefined=jinja2.StrictUndefined,
                          autoescape=False)
 
 

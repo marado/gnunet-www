@@ -13,20 +13,18 @@
 
       <p>
         {% trans %}
-               Taler is free software implementing an open
-               protocol. Anybody is welcome to inspect our code
-               and integrate our reference implementation into
-               their applications.  Different components of Taler
-               are being made available under different
-               licenses. The Affero GPLv3+ is used for the
+               GNU Taler is free software implementing an open
+               protocol. Anybody is welcome to integrate our reference
+               implementation into their applications.  Different
+               components of Taler are being made available under
+               different licenses. The Affero GPLv3+ is used for the
                exchange, the LGPLv3+ is used for reference code
-               demonstrating integration with merchant platforms,
-               and licenses like Apache/Mozilla/GPLv3+ are used
-               for wallets and related customer-facing software.
-               We are open for constructive suggestions for
-               maximizing the adoption of this libre payment
-               platform.
-        {% endtrans %}
+               demonstrating integration with merchant platforms, and
+               licenses like GPLv3+ are used for
+               wallets and related customer-facing software.  We are
+               open for constructive suggestions for maximizing the
+               adoption of this payment platform.
+         {% endtrans %}
       </p>
 
     </div>
@@ -46,7 +44,7 @@
                structure data, making it easy to integrate Taler
                with existing Web applications.  Taler's protocol
                is documented in
-               detail <a href="https://api.taler.net/">here</a>.
+               detail at <a href="https://api.taler.net/">api.taler.net</a>.
         {% endtrans %}
       </p>
     </div>
@@ -62,13 +60,14 @@
       <p>
         {% trans %}
                Taler is currently primarily developed by a
-               research team at Inria and GNUnet e.V. However,
+               research team at <a href="http://www.inria.fr/">Inria</a> and
+               <a href="https://gnunet.org/">GNUnet</a>. However,
                contributions from anyone are welcome.  Our Git
                repositories can be cloned using the Git and HTTP
                access methods against <tt>git.taler.net</tt> with
                the name of the respective repository. A list of
-               public repositories can be found in
-               our <a href='https://git.taler.net/'>GitWeb</a>.
+               repositories can be found in
+               our <a href="https://git.taler.net/">GitWeb</a>.
          {% endtrans %}
      </p>
     </div>
@@ -77,54 +76,64 @@
 
       <p>
         {% trans %}
-               In addition to this website,
-               the <a href="https://git.taler.net/">documented
-               code</a> and
+               In addition to this website, the <a
+               href="https://git.taler.net/">documented code</a> and
                the <a href="https://api.taler.net/">API
-               documentation</a>, we are in the process of
-               preparing a comprehensive design document which
-               will be published here soon.
+               documentation</a>.  Technical papers can be found in
+               our <a href="bibliography.html">bibliography</a>.
        {% endtrans %}
       </p>
     </div>
      <div class="col-lg-4">
       <h2>{{ _("Discussion") }}</h2>
 
-      <p>{{ _("We have a mailing list for developer discussions.
-               You can subscribe to it or read the list archive at
-               <a href='http://lists.gnu.org/mailman/listinfo/taler'>http://lists.gnu.org/mailman/listinfo/taler</a>.") }}</p>
+      <p>
+        {% trans %}
+               We have a mailing list for developer discussions.
+               You can subscribe to or read the list archive at
+               <a href="http://lists.gnu.org/mailman/listinfo/taler">http://lists.gnu.org/mailman/listinfo/taler</a>.
+        {% endtrans %}
+      </p>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-4">
       <h2>{{ _("Regression Testing") }}</h2>
 
-      <p>{{ _("We have
-               <a href='https://buildbot.net/'>Buildbot</a>
-               automation tests to detect regressions and check
-               for portability at
-        <a href='https://buildbot.taler.net/'>buildbot.taler.net</a>.
-      ") }}</p>
+      <p>
+         {% trans %}
+               We have <a href="https://buildbot.net/">Buildbot</a>
+               automation tests to detect regressions and check for
+               portability at <a
+               href="https://buildbot.taler.net/">buildbot.taler.net</a>.
+        {% endtrans %}
+       </p>
     </div>
     <div class="col-lg-4" note="not yet operational">
       <h2>{{ _("Code Coverage Analysis") }}</h2>
 
-      <p>{{ _("We use
-               <a href='http://ltp.sourceforge.net/coverage/lcov.php'>LCOV</a>
+      <p>
+         {% trans %}
+               We use
+               <a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a>
                to analyze the code coverage of our tests, the
                results are available
-               at <a href='https://lcov.taler.net/'>lcov.taler.net</a>.
-               ") }}</p>
+               at <a href="https://lcov.taler.net/">lcov.taler.net</a>.
+        {% endtrans %}
+      </p>
     </div>
     <div class="col-lg-4">
       <h2>{{ _("Performance Analysis") }}</h2>
 
-      <p>{{ _("We
-               use <a href='https://gnunet.org/gauger'>Gauger</a>
+      <p>
+         {% trans %}
+               We
+               use <a href="https://gnunet.org/gauger">Gauger</a>
                for performance regression analysis of the exchange
                backend
-               at <a href='https://gauger.taler.net/'>gauger.taler.net</a>.
-               ") }}</p>
+               at <a href="https://gauger.taler.net/">gauger.taler.net</a>.
+        {% endtrans %}
+      </p>
     </div>
   </div>
 </div>
@@ -135,24 +144,31 @@
   <div class="col-lg-12">
     <h2 id="overview">{{ _("Taler system overview") }}</h2>
 
-    <p>{{ _("The Taler system consists of protocols executed among
-             a number of actors with the help
-             of <a href='https://www.fsf.org/'>Free Software</a>
-             as illustrated in the illustration on the right.
-             Typical transactions involve the following steps: ")
-             }}</p>
+    <p>
+        {% trans %}
+             The Taler system consists of protocols executed among
+             a number of actors as illustrated in the illustration on the right.
+             Typical transactions involve the following steps:
+        {% endtrans %}
+     </p>
 
       <img src="{{ url('images/system.svg') }}" alt="system overview" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
       <ol>
-         <li>{{ _("A customer instructs his <b>bank</b> to
+         <li>
+               {% trans %}
+                   A customer instructs his <b>bank</b> to
                    transfer funds from his account to the Taler
                    exchange (top left).  In the subject of the
                    transaction, he includes an authentication
                    token from his electronic <b>wallet</b>. In
                    Taler terminology, the customer creates a
-                   reserve at the exchange.  ") }}</li>
+                   reserve at the exchange.
+               {% endtrans %}
+            </li>
 
-         <li>{{ _("Once the exchange has received the wire
+         <li>
+               {% trans %}
+                   Once the exchange has received the wire
                    transfer, it allows the customer's electronic
                    wallet to <b>withdraw</b> electronic coins.
                    The electronic coins are digital
@@ -164,10 +180,13 @@
                    purchased what at which merchant.  The use of
                    Taler does not change the currency or the total
                    value of the funds (except for fees which the
-                   exchange may charge for the service).  ")
-                   }}</li>
+                   exchange may charge for the service).
+               {% endtrans %}
+            </li>
 
-         <li>{{ _("Once the customer has the digital coins in his
+         <li>
+               {% trans %}
+                   Once the customer has the digital coins in his
                    wallet, the wallet can be used to <b>spend</b>
                    the coins with merchant portals that support
                    the Taler payment system and accept the
@@ -183,10 +202,14 @@
                    merchant to learn the identity of the
                    customer. Naturally, the customer can spend any
                    fraction of his digital coins (the system takes
-                   care of customers getting change).  ") }}</li>
+                   care of customers getting change).
+               {% endtrans %}
+            </li>
 
-         <li>{{ _("Merchants receiving digital
-                   coins <b>deposit</b> the respective receipts
+         <li>
+               {% trans %}
+                   Merchants receiving digital
+                   coins <b>deposit</b> the respective claims
                    that resulted from the contract signing with
                    the customer at the exchange to redeem the
                    coins.  The deposit step does not reveal the
@@ -202,9 +225,13 @@
                    the customer. Thus, the exchange's database
                    allows the state to enforce that merchants pay
                    applicable taxes (and do not engage in illegal
-                   contracts).  ") }}</li>
+                   contracts).
+               {% endtrans %}
+            </li>
 
-         <li>{{ _("Finally, the exchange transfers funds
+         <li>
+               {% trans %}
+                   Finally, the exchange transfers funds
                    corresponding to the digital coins redeemed by
                    the merchants to the merchant's <b>bank</b>
                    account. The exchange may combine multiple
@@ -212,9 +239,13 @@
                    transfer.  The merchant can query the exchange
                    about the relationship between the bank
                    transfers and the individual claims that were
-                   deposited.  ") }}</li>
+                   deposited.
+               {% endtrans %}
+            </li>
 
-         <li>{{ _("Most importantly, the exchange keeps
+         <li>
+               {% trans %}
+                   Most importantly, the exchange keeps
                    cryptographic proofs that allow it to
                    demonstrate that it is operating correctly to
                    third parties.  The system requires an
@@ -223,9 +254,13 @@
                    to frequently verify the exchange's databases
                    and check that its bank balance matches the
                    total value of the remaining coins in
-                   circulation.  ") }}</li>
+                   circulation.
+               {% endtrans %}
+            </li>
 
-         <li>{{ _("Without the auditor, the exchange operators
+         <li>
+               {% trans %}
+                   Without the auditor, the exchange operators
                    could embezzle funds they are holding in
                    reserve. Customers and merchants cannot cheat
                    each other or the exchange. If any party's
@@ -233,7 +268,9 @@
                    is limited to the respective party and
                    proportional to the funds they have in
                    circulation during the period of the
-                   compromise.  ") }}</li>
+                   compromise.
+               {% endtrans %}
+            </li>
       </ol>
     <p></p>
   </div>

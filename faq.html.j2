@@ -7,20 +7,20 @@
 <p>Taler does not use any Blockchain technology or Bitcoin directly.
 Taler is not based on proof-of-work or any other distributed consensus
 mechanism.  Instead Taler is based on blind signatures.</p>
-
-<p>It would be possible, however, to withdraw Bitcoins into a Taler
-wallet (with an appropriate exchange), which would give some benefits
-over plain Bitcoin, such as instant confirmation times.</p>
+{% endtrans %}
+{% trans %}
+<p>It would be possible, however, to withdraw coins denominated in
+Bitcoin into a Taler wallet (with an appropriate exchange), which
+would give some benefits over plain Bitcoin, such as instant
+confirmation times.</p>
 {% endtrans %}
 
 <h2>{{ _("Where is the balance in my wallet stored?") }}</h2>
 {% trans %}
-<p>Your wallet stores digital coins that were blindly signed by an
-exchange, and thus ultimately your computer holds your balance.  The
-exchange keeps funds matching all unspent coins in an escrow bank
-account.</p>
+<p>Your wallet stores digital coins and thus ultimately your computer
+holds your balance. The exchange keeps funds matching all unspent
+coins in an escrow bank account.</p>
 {% endtrans %}
-
 
 <h2>{{ _("What if my wallet is lost?") }}</h2>
 {% trans %}
@@ -28,22 +28,26 @@ account.</p>
 exchange can not assist you in recovering a lost or stolen wallet.
 Just like with a physical wallet for cash, you are responsible for
 keeping it safe.</p>
-
+{% endtrans %}
+{% trans %}
 <p>The risk of losing a wallet can be mitigated by making backups or
 keeping the balance reasonably low.</p>
-
-<p>In case of a compromise of one of your devices, an attacker that
-spends coins on your behalf will allow you to detect that your device
-has been compromised.</p>
 {% endtrans %}
 
+<h2>{{ _("What if my computer is hacked?") }}</h2>
+{% trans %}
+<p>In case of a compromise of one of your devices, an attacker can
+spend coins from your wallet. Checking your balance might reveal
+to you that your device has been compromised.</p>
+{% endtrans %}
 
 <h2>{{ _("Can I send money to my friend with Taler?") }}</h2>
 {% trans %}
 <p>If your friend provides goods or services for you in exchange for a
 payment, they can easily set up a Taler merchant and receive the
 payment in their bank account.</p>
-
+{% endtrans %}
+{% trans %}
 <p>Future versions of the Taler wallet may allow exchanging coins
 among friends directly as well.</p>
 {% endtrans %}
@@ -53,10 +57,21 @@ among friends directly as well.</p>
 {% trans %}
 <p>Taler wallets can store digital coins corresponding to multiple
 different currencies such as the Euro, US Dollars or Bitcoins.</p>
-
+{% endtrans %}
+{% trans %}
 <p>Taler currently does not offer conversion between currencies.</p>
 {% endtrans %}
 
+<h2>{{ _("How does Taler protect my privacy?") }}</h2>
+{% trans %}
+
+<p>Your wallet stores digital coins that are <a
+href="https://en.wikipedia.org/wiki/Blind_signature">blindly
+signed</a> by an exchange.  The use of a blind signature protects your
+privacy as it prevents the exchange from knowing which coin it signed
+for which customer.</p>
+
+{% endtrans %}
 
 </div>
 {% endblock body_content %}
