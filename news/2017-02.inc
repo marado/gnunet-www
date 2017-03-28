@@ -1,4 +1,4 @@
-          <h3>02-2016: Florian Dold explains Taler at 50p in Bangalore</h3>
+          <h3>02-2017: Florian Dold explains Taler at 50p in Bangalore</h3>
           <p>
            <video id="video" poster="/videos/dold50p.png" autobuffer="" height="180" width="320" controls="controls">
            <source src="/videos/dold50p.webm" type="video/webm">
