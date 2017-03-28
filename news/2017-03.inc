@@ -1,4 +1,4 @@
-          <h3>03-2016: Sva explains GNU Taler at FOSSASIA in Singapore</h3>
+          <h3>03-2017: Sva explains GNU Taler at FOSSASIA in Singapore</h3>
           <p>
            <video id="video" poster="/videos/taler2017fossasia.png" autobuffer="" height="180" width="320" controls="controls">
            <source src="/videos/taler2017fossasia.webm" type="video/webm">
