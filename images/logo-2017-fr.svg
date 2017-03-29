@@ -1,14 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-50 -50 100 100"
      xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    .ts1 { fill: #aa3939; letter-spacing:0; }
+    .ts2 { letter-spacing:0; }
+  </style>
+
   <circle cx="0" cy="0" r="40" stroke="black" stroke-width="7.5" fill="none" />
   <circle cx="0" cy="0" r="45" stroke="black" stroke-width="1" fill="none" />
-  <rect x="-20" y="-17" width="40" height="4"/>
-  <rect x="-20" y="-12" width="40" height="1"/>
-  <rect x="-4" y="-17" width="8" height="54"/>
+  <!-- big horizontal T stroke -->
+  <rect x="-30" y="-14" width="60" height="4"/>
+  <rect x="-30" y="-9" width="60" height="1"/>
+  <rect x="-4" y="-14" width="8" height="54"/>
 
 
-  <text font-family="Verdana" font-weight="bold" font-size="8" color="red" x="0" y="-20" text-anchor="middle" letter-spacing="0.25em">
-    Taler
+
+  <text font-family="'Lucida Console', Monaco, monospace" font-weight="bold" font-size="9" color="red" x="0" y="-18" text-anchor="middle" letter-spacing="0.20em">
+    <tspan class="ts1">&#10092;</tspan>Tale<tspan class="ts2">r<tspan class="ts1">&#10093;</tspan></tspan>
   </text>
 
 
@@ -34,4 +41,4 @@
       Électronique Réserve
     </textPath>
   </text>
-</svg> 
+</svg>
