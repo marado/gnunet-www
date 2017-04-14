@@ -1,3 +1,4 @@
+{% include "news/2017-04.inc" %}
 {% include "news/2017-03.inc" %}
 {% include "news/2017-02.inc" %}
 {% include "news/2017-01.inc" %}
