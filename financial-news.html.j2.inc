@@ -1,3 +1,5 @@
+{% include "financial-news/2017-04-04.inc" %}
+{% include "financial-news/2017-04-03.inc" %}
 {% include "financial-news/2016-10-26.inc" %}
 {% include "financial-news/2016-10-24.inc" %}
 {% include "financial-news/2016-10-21.inc" %}
