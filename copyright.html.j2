@@ -1,0 +1,29 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>{{ _("Copyright Assignment") }}</h1>
+{% trans %}
+    <p>Contributors to GNU Taler with Git access must sign the
+    <a href="pdf/copyright.pdf">copyright assignment</a> to
+    ensure that the GNUnet e.V. --- Taler Systems SA agreement
+    on licensing and collaborative development of the GNUnet and
+    GNU Taler projects is satisfied.</p>
+{% endtrans %}
+{% trans %}
+    <p>The agreements ensure that the code will continue to be made
+    available under free software licenses, but gives us the freedom
+    to move code between GNUnet and GNU Taler and the ability to
+    dual-license.</p>
+{% endtrans %}
+{% trans %}
+    <p>Minor contributions (basically, anyone without Git access) do
+    not require copyright assignment. Pseudonymous contributions are
+    accepted, in this case simply sign the agreement with your
+    pseudonym. Scanned copies are sufficient, but snail mail is
+    preferred.</p>
+{% endtrans %}
+  </div>
+</div>
+{% endblock body_content %}

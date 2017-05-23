@@ -12,6 +12,7 @@
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="glossary.html">Glossary</a></li>
           <li><a href="developers.html">Developer Introduction</a></li>
+          <li><a href="copyright.html">Copyright for Contributors</a></li>
           <li><a href="bibliography.html">Bibliography</a></li>
         </ul>
       </li>
