@@ -25,19 +25,19 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
           <li>
-           <a href="{{ self_localized('en') }}"><img src="{{ url('images/gb.png') }}" height="15" width="23" alt="English">English</a>
+           <a href="{{ self_localized('en') }}"><img src="{{ url('images/gb.png') }}" height="15" width="23" alt="English"> English</a>
           </li>
           <li>
-           <a href="{{ self_localized('de') }}"><img src="{{ url('images/de.png') }}" height="15" width="25" alt="Deutsch">Deutsch</a>
+           <a href="{{ self_localized('de') }}"><img src="{{ url('images/de.png') }}" height="15" width="25" alt="Deutsch"> Deutsch</a>
           </li>
           <li>
-           <a href="{{ self_localized('fr') }}"><img src="{{ url('images/fr.png') }}" height="15" width="22" alt="Français">Français</a>
+           <a href="{{ self_localized('fr') }}"><img src="{{ url('images/fr.png') }}" height="15" width="22" alt="Français"> Français</a>
           </li>
           <li>
-           <a href="{{ self_localized('it') }}"><img src="{{ url('images/it.png') }}" height="15" width="22" alt="Italiano">Italiano</a>
+           <a href="{{ self_localized('it') }}"><img src="{{ url('images/it.png') }}" height="15" width="22" alt="Italiano"> Italiano</a>
           </li>
           <li>
-           <a href="{{ self_localized('es') }}"><img src="{{ url('images/es.png') }}" height="15" width="23" alt="Español">Español</a>
+           <a href="{{ self_localized('es') }}"><img src="{{ url('images/es.png') }}" height="15" width="23" alt="Español"> Español</a>
           </li>
         </ul>
       </li>
