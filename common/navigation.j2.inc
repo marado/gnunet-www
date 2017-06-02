@@ -17,27 +17,27 @@
         </ul>
       </li>
     </ul>
-    <ul class="nav navbar-right navbar-form">
+    <ul class="nav navbar-right">
       <li>
         <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <img src="{{ url('images/'+lang+'.png') }}" alt="{{lang}}" />
+          <img  src="{{ url('images/languageicon.svg') }}" height="35" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}]
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
           <li>
-           <a href="{{ self_localized('en') }}"><img src="{{ url('images/gb.png') }}" height="15" width="23" alt="English"> English</a>
+           <a href="{{ self_localized('en') }}">English [en]</a>
           </li>
           <li>
-           <a href="{{ self_localized('de') }}"><img src="{{ url('images/de.png') }}" height="15" width="25" alt="Deutsch"> Deutsch</a>
+           <a href="{{ self_localized('de') }}">Deutsch [de]</a>
           </li>
           <li>
-           <a href="{{ self_localized('fr') }}"><img src="{{ url('images/fr.png') }}" height="15" width="22" alt="Français"> Français</a>
+           <a href="{{ self_localized('fr') }}">Français [fr]</a>
           </li>
           <li>
-           <a href="{{ self_localized('it') }}"><img src="{{ url('images/it.png') }}" height="15" width="22" alt="Italiano"> Italiano</a>
+           <a href="{{ self_localized('it') }}">Italiano [it]</a>
           </li>
           <li>
-           <a href="{{ self_localized('es') }}"><img src="{{ url('images/es.png') }}" height="15" width="23" alt="Español"> Español</a>
+           <a href="{{ self_localized('es') }}">Español [es]</a>
           </li>
         </ul>
       </li>

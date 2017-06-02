@@ -25,6 +25,8 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__
                          undefined=jinja2.StrictUndefined,
                          autoescape=False)
 
+langs_full = {"en": "English", "fr": "Français", "it": "Italiano", "es": "Español", "de": "Deutsch"}
+
 for in_file in glob.glob("*.j2"):
     name, ext = re.match(r"(.*)\.([^.]+)$", in_file.rstrip(".j2")).groups()
     tmpl = env.get_template(in_file)
@@ -57,6 +59,7 @@ for in_file in glob.glob("*.j2"):
 
         content = tmpl.render(
                 lang=locale,
+                lang_full=langs_full[locale],
                 url=url,
                 self_localized=self_localized,
                 url_localized=url_localized,
