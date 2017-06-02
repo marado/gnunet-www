@@ -12,10 +12,10 @@ locale/messages.pot: *.j2
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
 	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot 
-	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
-	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
-	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
-	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
+	msgmerge -U -m --previous locale/de/LC_MESSAGES/messages.po locale/messages.pot
+	msgmerge -U -m --previous locale/fr/LC_MESSAGES/messages.po locale/messages.pot
+	msgmerge -U -m --previous locale/es/LC_MESSAGES/messages.po locale/messages.pot
+	msgmerge -U -m --previous locale/it/LC_MESSAGES/messages.po locale/messages.pot
 
 	if grep -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
 
