@@ -21,7 +21,6 @@ def babel_extract(fileobj, keywords, comment_tags, options):
     res = jinja2.ext.babel_extract(fileobj, keywords, comment_tags, options)
     for lineno, funcname, message, comments in res:
         message = normalize(message)
-        print("extracting", repr(message))
         yield lineno, funcname, message, comments
 
 def wrap_gettext(f):
@@ -30,6 +29,5 @@ def wrap_gettext(f):
     """
     def wrapper(message):
         message = normalize(message)
-        print("translating", repr(message))
         return f(message)
     return wrapper
