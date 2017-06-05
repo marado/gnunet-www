@@ -49,7 +49,7 @@ msgstr "Doktorand, Inria."
 
 #: about.html.j2:47 about.html.j2:62
 msgid "Software engineer."
-msgstr "Software-Ingenieur."
+msgstr "Softwareentwickler."
 
 #: about.html.j2:54
 msgid "Sustainable business development."
@@ -57,7 +57,7 @@ msgstr "Nachhaltige Unternehmensentwicklung."
 
 #: about.html.j2:58
 msgid "Software engineer. Works on libebics."
-msgstr "Software-Ingenieur. Arbeitet an libebics."
+msgstr "Softwareentwickler. Arbeitet an libebics."
 
 #: about.html.j2:68
 msgid "Translator (Spanish)"
@@ -81,7 +81,7 @@ msgstr "Doktorand an der TU München. Zurzeit lehrend tätig."
 
 #: about.html.j2:96
 msgid "Software engineer. Works on Android wallet."
-msgstr "Software-Ingenieur. Arbeitet an einer Android-Wallet."
+msgstr "Softwareentwickler. Arbeitet an einer Android-Wallet."
 
 #: architecture.html.j2:6
 msgid "Taler System Architecture"
@@ -106,7 +106,7 @@ msgstr "erhältlich auf Anfrage"
 
 #: citizens.html.j2:5
 msgid "Advantages for Citizens"
-msgstr "Vorteile für Taler-Nutzer"
+msgstr "Vorteile für Bürger"
 
 #: citizens.html.j2:9
 msgid ""
@@ -325,7 +325,7 @@ msgstr ""
 
 #: copyright.html.j2:6
 msgid "Copyright Assignment"
-msgstr ""
+msgstr "Copyrightübertragung"
 
 #: copyright.html.j2:8
 msgid ""
@@ -849,7 +849,7 @@ msgstr ""
 
 #: glossary.html.j2:6
 msgid "auditor"
-msgstr ""
+msgstr "Prüfer"
 
 #: glossary.html.j2:8
 msgid ""
@@ -858,7 +858,7 @@ msgstr ""
 
 #: glossary.html.j2:12
 msgid "bank"
-msgstr ""
+msgstr "Bank"
 
 #: glossary.html.j2:14
 msgid ""
@@ -868,7 +868,7 @@ msgstr ""
 
 #: glossary.html.j2:18
 msgid "coin"
-msgstr ""
+msgstr "Münze"
 
 #: glossary.html.j2:20
 msgid ""
@@ -878,7 +878,7 @@ msgstr ""
 
 #: glossary.html.j2:24
 msgid "contract"
-msgstr ""
+msgstr "Vertrag"
 
 #: glossary.html.j2:26
 msgid "the proposal signed by the wallet."
@@ -907,7 +907,7 @@ msgstr ""
 
 #: glossary.html.j2:42
 msgid "deposit"
-msgstr ""
+msgstr "Einlage"
 
 #: glossary.html.j2:44
 msgid ""
@@ -917,7 +917,7 @@ msgstr ""
 
 #: glossary.html.j2:48
 msgid "dirty"
-msgstr ""
+msgstr "dreckig"
 
 #: glossary.html.j2:50
 msgid ""
@@ -928,7 +928,7 @@ msgstr ""
 
 #: glossary.html.j2:54
 msgid "exchange"
-msgstr ""
+msgstr "Wechselstube"
 
 #: glossary.html.j2:56
 msgid ""
@@ -938,7 +938,7 @@ msgstr ""
 
 #: glossary.html.j2:60
 msgid "extension"
-msgstr ""
+msgstr "Erweiterung"
 
 #: glossary.html.j2:62
 msgid "implementation of a `wallet` for browsers"
@@ -946,7 +946,7 @@ msgstr ""
 
 #: glossary.html.j2:66
 msgid "fresh coin"
-msgstr ""
+msgstr "frische Münze"
 
 #: glossary.html.j2:68
 msgid "a `coin` is fresh if its public key is only known to the customer"
@@ -986,7 +986,7 @@ msgstr ""
 
 #: glossary.html.j2:95
 msgid "owner"
-msgstr ""
+msgstr "Besitzer"
 
 #: glossary.html.j2:97
 msgid "a `coin` is owned by the entity that knows the private key of the coin"
@@ -994,7 +994,7 @@ msgstr ""
 
 #: glossary.html.j2:101
 msgid "proof"
-msgstr ""
+msgstr "Beweis"
 
 #: glossary.html.j2:103
 msgid ""
@@ -1023,7 +1023,7 @@ msgstr ""
 
 #: glossary.html.j2:119
 msgid "refreshing"
-msgstr ""
+msgstr "auffrischen"
 
 #: glossary.html.j2:121
 msgid ""
@@ -1033,7 +1033,7 @@ msgstr ""
 
 #: glossary.html.j2:125
 msgid "refund"
-msgstr ""
+msgstr "Rückerstattung"
 
 #: glossary.html.j2:127
 msgid ""
@@ -1044,7 +1044,7 @@ msgstr ""
 
 #: glossary.html.j2:131
 msgid "sharing"
-msgstr ""
+msgstr "teilen"
 
 #: glossary.html.j2:133
 msgid ""
@@ -1062,7 +1062,7 @@ msgstr ""
 
 #: glossary.html.j2:143
 msgid "spending"
-msgstr ""
+msgstr "ausgeben"
 
 #: glossary.html.j2:145
 msgid ""
@@ -1072,7 +1072,7 @@ msgstr ""
 
 #: glossary.html.j2:149
 msgid "transfer"
-msgstr ""
+msgstr "Überweisung"
 
 #: glossary.html.j2:151
 msgid "method of sending funds between `bank` accounts"
@@ -1080,7 +1080,7 @@ msgstr ""
 
 #: glossary.html.j2:155
 msgid "transaction"
-msgstr ""
+msgstr "Transaktion"
 
 #: glossary.html.j2:157
 msgid ""
@@ -1090,7 +1090,7 @@ msgstr ""
 
 #: glossary.html.j2:161
 msgid "transaction id"
-msgstr ""
+msgstr "Transaktionsnummer"
 
 #: glossary.html.j2:163
 msgid "unique number by which a merchant identifies a `transaction`"
@@ -1107,15 +1107,15 @@ msgstr ""
 
 #: glossary.html.j2:173
 msgid "wire transfer"
-msgstr ""
+msgstr "Banküberweisung"
 
 #: glossary.html.j2:175
 msgid "see `transfer`"
-msgstr ""
+msgstr "siehe `Überweisung`"
 
 #: glossary.html.j2:179
 msgid "wire transfer identifier"
-msgstr ""
+msgstr "Überweisungsbetreff"
 
 #: glossary.html.j2:181
 msgid ""
@@ -1125,7 +1125,7 @@ msgstr ""
 
 #: glossary.html.j2:185
 msgid "withdrawal"
-msgstr ""
+msgstr "Abheben"
 
 #: glossary.html.j2:187
 msgid ""
@@ -1134,7 +1134,7 @@ msgstr ""
 
 #: governments.html.j2:6
 msgid "Advantages for Governments"
-msgstr "Vorteile für Staatsregierungen"
+msgstr "Vorteile für Regierungen"
 
 #: governments.html.j2:8
 msgid ""
@@ -1148,7 +1148,7 @@ msgstr ""
 "legale Geschäfte betreiben und gleichzeitig die Persönlichkeitsrechte und "
 "Privatsphäre der Menschen respektieren. Taler ist ein Bezahlsystem, das auf "
 "einem offenen Standard und freier Software basiert. Taler braucht "
-"Staatregierungen, die finanzrechtliche Rahmenbedingungen schaffen und als "
+"Regierungen, die finanzrechtliche Rahmenbedingungen schaffen und als "
 "zuverlässige Kontrollorgane auftreten. Damit trägt dieses Bezahlsystem auch "
 "zur digitalen Selbstbestimmung von Einzelpersonen im Finanzsektor bei."
 
@@ -1171,10 +1171,10 @@ msgstr ""
 "eindeutig identifizierbar und ist demnach gezwungen, sich steuerlich zu "
 "veranlagen. Den Nachweis des Umsatzes können Verkäufer erbringen mithilfe "
 "des digital signierten Kaufvertrags, den ihre Kunden mit ihnen geschlossen "
-"haben. Staatsregierungen haben dadurch die Möglichkeit, die digitalen "
-"Kaufverträge von Handelsunternehmen bzw. die Einkommen von einzelnen "
-"privaten Verkäufern als Grundlage der Besteuerung heranzuziehen. Auf diese "
-"Weise haben Steuerflucht und Schwarzmarktgeschäfte nur noch eine minimale "
+"haben. Regierungen haben dadurch die Möglichkeit, die digitalen Kaufverträge "
+"von Handelsunternehmen bzw. die Einkommen von einzelnen privaten Verkäufern "
+"als Grundlage der Besteuerung heranzuziehen. Auf diese Weise haben "
+"Steuerflucht und Schwarzmarktgeschäfte nur noch eine minimale "
 "Wahrscheinlichkeit."
 
 #: governments.html.j2:41
@@ -1190,7 +1190,7 @@ msgid ""
 msgstr ""
 "Auf der einen Seite versichert Taler als digitales Bezahlsystem die "
 "vollständige Anonymität der Käufer, die Waren und Dienstleistungen kaufen "
-"und bezahlen, auf der anderen Seite liefert Taler den Staatsregierungen eine "
+"und bezahlen, auf der anderen Seite liefert Taler den Regierungen eine "
 "sichere Besteuerungsgrundlage, mit der sie ihre öffentlichen Güter "
 "finanzieren können. Dieses Verfahren stellt gleichzeitig sicher, dass "
 "Handelsunternehmen nur legale Geschäfte abschließen und keine Steuern "
@@ -1332,7 +1332,7 @@ msgid ""
 "and leaving the Taler payment system. Starting with the wire transfers, "
 "governments can obtain:"
 msgstr ""
-"Taler beruht auf der Annahme, dass Staatsregierungen die herkömmlichen "
+"Taler beruht auf der Annahme, dass Regierungen die herkömmlichen "
 "Bankverbindungen nachverfolgen können, wenn Überweisungen zwischen dem Taler-"
 "Bezahlsystem und den Geschäftsbanken stattfinden (Aufladungen der Taler-"
 "Geldbörse und Erstattung von Ansprüchen aus Geschäften). Regierungen "
@@ -1605,7 +1605,7 @@ msgstr ""
 
 #: investors.html.j2:63
 msgid "The Business"
-msgstr "Das Geschäftsmodell des Taler-Bezahlsystems"
+msgstr "Das Geschäftsmodell"
 
 #: investors.html.j2:66
 msgid ""
@@ -1860,7 +1860,7 @@ msgstr "Taler in den Medien"
 
 #: common/base.j2:5
 msgid "GNU Taler"
-msgstr "Das Taler-Bezahlsystem"
+msgstr "GNU Taler"
 
 #: common/base.j2:6
 msgid "Taxable Anonymous Libre Electronic Reserves"
