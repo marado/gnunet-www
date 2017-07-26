@@ -99,35 +99,37 @@ msgstr "Programmatore. Attualmente dedicato al portafoglio Android."
 
 #: architecture.html.j2:6
 msgid "Taler System Architecture"
-msgstr ""
+msgstr "Architettura Taler"
 
 #: bibliography.html.j2:4
 msgid "GNU Taler Bibliography"
-msgstr ""
+msgstr "Bibliografia GNU Taler"
 
 #: bibliography.html.j2:9 bibliography.html.j2:16 bibliography.html.j2:23
 #: bibliography.html.j2:29
 msgid "by"
-msgstr ""
+msgstr "di"
 
 #: bibliography.html.j2:16 bibliography.html.j2:23 bibliography.html.j2:29
 msgid "and"
-msgstr ""
+msgstr "e"
 
 #: bibliography.html.j2:30
-msgid "available upon request"
+msgid "disponibile su richiesta"
 msgstr ""
 
 #: citizens.html.j2:5
 msgid "Advantages for Citizens"
-msgstr ""
+msgstr "Vantaggi per il cittadino"
 
 #: citizens.html.j2:9
 msgid ""
 "Taler largely functions like digital cash. You withdraw money from your bank "
 "account into your electronic wallet, and can henceforth spend digital cash. "
 "The electronic wallet can carry multiple currencies."
-msgstr ""
+msgstr "Taler realizza un sistema di contante digitale. Il contante va infatti "
+"ritirato dal conto in banca del cliente e tenuto nel portafoglio elettronico, "
+"da cui potrà essere speso. Il portafoglio può contenere moneta di diverse valute."
 
 #: citizens.html.j2:25 governments.html.j2:58 index.html.j2:56
 #: merchants.html.j2:41
@@ -142,10 +144,15 @@ msgid ""
 "compromised. Unlike a physical wallet, you can make backups to secure "
 "against data loss."
 msgstr ""
+"Taler usa crittografia moderna, minimizzando il richio di contraffazione. Il "
+"portafoglio elettronico è più sicuro di quello fisico. Nel caso pessimo - si pensi
+alla compromissione del proprio computer, o ad un grave danno fisico -, la perdita "
+" è limitata dalla somma presente nel portafoglio. Tuttavia, Taler permette di effettuare "
+"copie di sicurezza del portafoglio, per ovviare a tali perdite di dati."
 
 #: citizens.html.j2:37 index.html.j2:84
 msgid "Private"
-msgstr ""
+msgstr "Privato"
 
 #: citizens.html.j2:39
 msgid ""
@@ -154,10 +161,15 @@ msgid ""
 "card numbers or other sensitive information. The merchant will only be able "
 "to do exactly the transaction you agreed to."
 msgstr ""
+"Le transazioni Taler sono interamente private, né il venditore né il servizio "
+"di cambio apprenderanno l'identità dell'utente. Al momento di un acquisto, non "
+"è in nessun modo richiesto di fornire dati di carte di credito o altre informazioni "
+"sensibili. Il venditore non potrà in nessun modo ottenere informazioni sul cliente "
+"che non siano state fornite dal cliente stesso."
 
 #: citizens.html.j2:50
 msgid "Convenient"
-msgstr ""
+msgstr "Comodo"
 
 #: citizens.html.j2:52
 msgid ""
@@ -166,10 +178,14 @@ msgid ""
 "one-click using the Taler wallet, which optionally keeps your transaction "
 "history on your computer."
 msgstr ""
+"Il portafoglio potrà essere ricaricato di contante mediante carta di credito "
+"o bonifico bancario. Successivamente, sarà possibile effettuare pagamenti Taler "
+"mediante un singolo click. Il portafoglio terrà inoltre una lista di tutte "
+"le transazioni Taler che avete effettuato."
 
 #: citizens.html.j2:61 index.html.j2:42
 msgid "Stable"
-msgstr ""
+msgstr "Stabile"
 
 #: citizens.html.j2:63
 msgid ""
@@ -178,10 +194,14 @@ msgid ""
 "worry about cryto-currency related value fluctuations. Banking with Taler is "
 "subject to the usual government protections for financial services."
 msgstr ""
+"I gettoni presenti nel vostro portafoglio Taler, avranno gli stessi tagli "
+"di quelli presenti nel vostro portafogli fisico. Taler non è una nuova valuta,
+dunque non risente delle fluttuazioni a cui le nuove critto-valute sono tipicamente "
+"soggette."
 
 #: citizens.html.j2:79
 msgid "Wallet Browser Extension"
-msgstr ""
+msgstr "Portafoglio: un'estensione del browser."
 
 #: citizens.html.j2:81
 msgid ""
@@ -189,24 +209,30 @@ msgid ""
 "for Chromium, Chrome, Firefox, Opera and Edge. Wallets for mobile phones and "
 "other platforms will be available in the future."
 msgstr ""
+"Il portafoglio che forniamo al momento è una <a href=\"wallet.html\">estensione"
+" per browser</a>. I browser supportati sono: Chromium, Chrome, Firefox, Opera e Edge."
+" Portafogli per smartphones e altre piattaforme sono in via di sviluppo."
+
 
 #: citizens.html.j2:88
 msgid "Taler Demo"
-msgstr ""
+msgstr "Dimostrazione di Taler"
 
 #: citizens.html.j2:90
 msgid ""
 "You can see how Taler works in practice by visiting our <a href=\"https://"
 "demo.taler.net\">demo page</a>."
 msgstr ""
+"è possibile vedere Taler in azione visitando la nostra <a href=\"https://"
+"demo.taler.net\">pagina dimostrativa</a>."
 
 #: citizens.html.j2:103
 msgid "The Taler Wallet for customers"
-msgstr ""
+msgstr "I clienti e il portafoglio"
 
 #: citizens.html.j2:105
 msgid "Customers interact with the Taler system using the Taler wallet:"
-msgstr ""
+msgstr "I clienti interagiscono con Taler usando il portafoglio"
 
 #: citizens.html.j2:110
 msgid ""
@@ -216,6 +242,12 @@ msgid ""
 "the wire transfer is complete, the wallet will automatically withdraw the "
 "coins from the exchange."
 msgstr ""
+"Per <b>ritirare</b> gettoni, il cliente trasferisce la somma desiderata "
+"dal suo conto in banca a quello dell'ufficio di cambio (chiamato anche "
+"\"exchange\"). La causale del bonifico dovrà contenere un numero che identifica "
+"il portafoglio del cliente. Una volta che il bonifico diventa effettivo, il "
+"portafoglio inizierà automaticamente a ritirare i gettoni dall'ufficio di cambio."
+
 
 #: citizens.html.j2:118
 msgid ""
@@ -224,6 +256,13 @@ msgid ""
 "one-click confirmation. Payment is then instant. Transaction histories and "
 "digitally signed contracts can be preserved by the wallet."
 msgstr ""
+"Per <b>spendere</b> i gettoni, quando il cliente seleziona un articolo di "
+"suo interesse presso il sito del venditore, quest'ultimo piloterà il portafoglio "
+"per far visualizzare al cliente un resoconto di ciò che sta per essere acquistato. "
+"Tale resoconto - detto anche \"contratto\" - è una pagina Web gestita interamente "
+"dal portafoglio, nella quale il cliente può confermare, con un solo click, il suo acquisto. "
+"Lo storico delle transazioni e i contratti che il portafoglio firma per il cliente "
+"possono essere conservati dal portafoglio."
 
 #: citizens.html.j2:125
 msgid ""
@@ -232,14 +271,18 @@ msgid ""
 "can make backups of the wallet to secure its contents against hardware "
 "failures."
 msgstr ""
+"Attraverso il portafoglio, il cliente può <b>rivedere</b> il suo bilancio. Il "
+"portafoglio può contenere diverse valute, e può essere condiviso da più dispositivi. "
+"Il cliente può fare copie di sicurezza del proprio portafoglio per proteggersi "
+"contro guasti del proprio hardware."
 
 #: contact.html.j2:6
 msgid "Contact information"
-msgstr ""
+msgstr "Contatti"
 
 #: contact.html.j2:13
 msgid "The mailing list"
-msgstr ""
+msgstr "La mailing list"
 
 #: contact.html.j2:15
 msgid ""
@@ -248,20 +291,26 @@ msgid ""
 "mailman/listinfo/taler</a>. You can send messages to the list at <a href="
 "\"mailto:taler@gnu.org\">taler@gnu.org</a>."
 msgstr ""
+"L'archivio della mailing list di GNU Taler è disponibile all'indirizzo <a href="
+"\"https://lists.gnu.org/mailman/listinfo/taler\">https://lists.gnu.org/"
+"mailman/listinfo/taler</a>. I messaggi per la lista vanno inviati a <a href="
+"\"mailto:taler@gnu.org\">taler@gnu.org</a>."
 
 #: contact.html.j2:25
 msgid "Contacting individuals"
-msgstr ""
+msgstr "Contattare membri del gruppo"
 
 #: contact.html.j2:27
 msgid ""
 "Team members are generally reachable at <tt>LASTNAME@taler.net</tt>. All of "
 "us support receiving GnuPG encrypted e-mails."
 msgstr ""
+"Ogni membro è generalmente raggiungibile all'indirizzo <tt>LASTNAME@taler.net</tt>"
+" Sono particolarmente gradite e-mail criptate via GnuPG."
 
 #: contact.html.j2:36
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Riporta un bug"
 
 #: contact.html.j2:38
 msgid ""
@@ -269,20 +318,25 @@ msgid ""
 "bugs/\">Bug tracker</a>, which is shared with the GNUnet project. You can "
 "also report bugs or feature requests to the mailing list."
 msgstr ""
+"Tracciamo bugs e proposte per nuove funzionalità nel nostro <a href=\"https://gnunet.org/"
+"bugs/\">Bug tracker</a>, che serve anche il progetto GNUnet. Bugs e nuove "
+"funzionalità possono essere riportate anche nella mailing-list."
 
 #: contact.html.j2:49
 msgid "Executive team"
-msgstr ""
+msgstr "Dirigenza"
 
 #: contact.html.j2:51
 msgid ""
 "For non-technical commercial requests, please contact <tt>ceo AT taler.net</"
 "tt>."
 msgstr ""
+"Per richieste di natura commerciale, si prega di contattare <tt>ceo AT taler.net</"
+"tt>."
 
 #: copyright.html.j2:6
 msgid "Copyright Assignment"
-msgstr ""
+msgstr "Diritti d'autore"
 
 #: copyright.html.j2:8
 msgid ""
