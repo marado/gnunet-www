@@ -19,78 +19,83 @@ msgid ""
 "GNU maintainer. Network security &amp; privacy researcher. Software "
 "architect."
 msgstr ""
-"Megalomane locale. Intendo, chi creerebbe un nuovo sistema di pagamento e "
-"una nuova Internet?"
+"Ricercatore in reti e sicurezza, ingegnere del software; autore di "
+"software GNU"
 
 #: about.html.j2:13
 msgid ""
 "Entrepreneur, Investor, Fortune 100 CIO, IT company director in different "
 "industries, …."
 msgstr ""
+"Imprenditore, Investitore, Fortune 100 CIO. Direttore di aziende IT in "
+"diversi settori"
 
 #: about.html.j2:20
 #, fuzzy
 msgid "Applied cryptography. Contact to W3c &amp; Tor."
-msgstr "Matematico"
+msgstr "Matematico e crittografo. Attivo nel W3C &amp; Tor"
 
 #: about.html.j2:25
 #, fuzzy
 msgid "Theoretical foundations."
-msgstr "Teoricamente mortale"
+msgstr "Teorica della sicurezza dei protocolli"
 
 #: about.html.j2:30
 #, fuzzy
 msgid "Founder of the GNU project. Ethical guidance and licensing."
-msgstr "Entusiasta di etica"
+msgstr "Fondatore del progetto GNU. Guida etica e esperto di licenze."
 
 #: about.html.j2:37
 #, fuzzy
 msgid "PhD Student, TU Munich. Currently teaching."
-msgstr "Principalmente inoffensivo"
+msgstr "Dottorando alla TU di Monaco di Baviera. Programmatore."
 
 #: about.html.j2:42
 msgid "PhD Student, Inria.."
 msgstr ""
+"Dottorando a Inria Rennes.. Programmatore e architetto "
+"del protocollo Taler."
 
 #: about.html.j2:47 about.html.j2:62
 msgid "Software engineer."
-msgstr ""
+msgstr "Programmatore."
 
 #: about.html.j2:54
 msgid "Sustainable business development."
-msgstr "Realizzando pensieri profondi"
+msgstr "Sviluppo di business sostenibile."
 
 #: about.html.j2:58
 #, fuzzy
 msgid "Software engineer. Works on libebics."
-msgstr "EBICS."
+msgstr "Programmatore. Attualmente coinvolto in libebics."
 
 #: about.html.j2:68
 #, fuzzy
 msgid "Translator (Spanish)"
-msgstr "Traduttrici"
+msgstr "Traduttore per lo spagnolo."
 
 #: about.html.j2:72 about.html.j2:76
 #, fuzzy
 msgid "Translator (Italian)"
-msgstr "Traduttrici"
+msgstr "Traduttrice per l'italiano."
 
 #: about.html.j2:82
 msgid "Hardware security module"
-msgstr ""
+msgstr "Sicurezza hardware."
 
 #: about.html.j2:86
 msgid "Risk management"
-msgstr ""
+msgstr "Gestione del rischio."
 
 #: about.html.j2:90
 #, fuzzy
 msgid "PhD student, TU Munich. Currently teaching."
-msgstr "Linux, FreeBSD, siti web e il deep state nel tempo libero."
+msgstr "Dottorando alla TU di Monaco di Baviera. "
+"Linux, FreeBSD, siti web e il deep state nel tempo libero."
 
 #: about.html.j2:96
 msgid "Software engineer. Works on Android wallet."
-msgstr ""
+msgstr "Programmatore. Attualmente dedicato al portafoglio Android."
 
 #: architecture.html.j2:6
 msgid "Taler System Architecture"
