@@ -352,6 +352,11 @@ msgid ""
 "\">GNUnet e.V. --- Taler Systems SA agreement on licensing and collaborative "
 "development</a> of the GNUnet and GNU Taler projects is satisfied.</p>"
 msgstr ""
+"<p>I collaboratori di GNU Taler con accesso a Git devono firmare l'<a href=\"/ "
+"pdf/copyright.pdf\">attribuzione del diritto d'autore</a> per far sì che l'<a href="
+"\"https://gnunet.org/git/gnunet-ev.git/tree/gnunet_taler_agreement.tex\">accordo GNUnet "
+"e.V. --- Taler Systems Sa sulle licenze e lo sviluppo collaborativo</a> "
+"dei progetti GNUnet e GNU Taler sia soddisfatto.</p>"  
 
 #: copyright.html.j2:17
 msgid ""
