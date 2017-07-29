@@ -125,3 +125,8 @@ footer {
 .cushion-below {
   padding-bottom: 2em;
 }
+
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}

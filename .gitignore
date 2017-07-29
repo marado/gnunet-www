@@ -13,3 +13,6 @@ de/
 fr/
 it/
 es/
+
+__pycache__
+*.pyc
