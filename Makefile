@@ -6,7 +6,7 @@ all: locale template
 	cd web-common && tsc
 
 # Extract translateable strings from jinga2 templates.
-locale/messages.pot: *.j2
+locale/messages.pot: *.j2 common/*.j2 common/*.j2.inc
 	env PYTHONPATH="." pybabel extract -F locale/babel.map -o locale/messages.pot .
 
 # Update translation (.po) files with new strings.
