@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-06-05 16:54+0200\n"
+"POT-Creation-Date: 2017-08-02 22:36+0200\n"
 "PO-Revision-Date: 2017-06-03 14:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: es <LL@li.org>\n"
@@ -107,6 +107,7 @@ msgid "by"
 msgstr ""
 
 #: bibliography.html.j2:16 bibliography.html.j2:23 bibliography.html.j2:29
+#: common/footer.j2.inc:30
 msgid "and"
 msgstr ""
 
@@ -1382,4 +1383,67 @@ msgstr ""
 
 #: common/base.j2:6
 msgid "Taxable Anonymous Libre Electronic Reserves"
+msgstr ""
+
+#: common/footer.j2.inc:7
+msgid "About"
+msgstr ""
+
+#: common/footer.j2.inc:8
+msgid "Contact"
+msgstr ""
+
+#: common/footer.j2.inc:9
+msgid "For Investors"
+msgstr ""
+
+#: common/footer.j2.inc:14 common/navigation.j2.inc:5
+msgid "Citizens"
+msgstr ""
+
+#: common/footer.j2.inc:15 common/navigation.j2.inc:6
+#, fuzzy
+msgid "Merchants"
+msgstr "Documentation"
+
+#: common/footer.j2.inc:16 common/navigation.j2.inc:7
+msgid "Governments"
+msgstr ""
+
+#: common/footer.j2.inc:21
+msgid "Developer Resources"
+msgstr ""
+
+#: common/footer.j2.inc:22 common/navigation.j2.inc:12
+msgid "FAQ"
+msgstr ""
+
+#: common/footer.j2.inc:23 common/navigation.j2.inc:16
+msgid "Bibliography"
+msgstr ""
+
+#: common/footer.j2.inc:32
+msgid ""
+"This page was created using <a href='https://www.gnu.org/'>Free Software</a> "
+"only."
+msgstr ""
+
+#: common/navigation.j2.inc:9
+msgid "Resources"
+msgstr ""
+
+#: common/navigation.j2.inc:11
+msgid "System Architecture"
+msgstr ""
+
+#: common/navigation.j2.inc:13
+msgid "Glossary"
+msgstr ""
+
+#: common/navigation.j2.inc:14
+msgid "Developer Introduction"
+msgstr ""
+
+#: common/navigation.j2.inc:15
+msgid "Copyright for Contributors"
 msgstr ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-29 21:52+0200\n"
+"POT-Creation-Date: 2017-08-02 22:36+0200\n"
 "PO-Revision-Date: 2017-06-02 09:46+0100\n"
 "Last-Translator: Stefan Kügel <skuegel@web.de>\n"
 "Language-Team: de <LL@li.org, de@taler.net>\n"
@@ -98,6 +98,7 @@ msgid "by"
 msgstr "von"
 
 #: bibliography.html.j2:16 bibliography.html.j2:23 bibliography.html.j2:29
+#: common/footer.j2.inc:30
 msgid "and"
 msgstr "und"
 
@@ -2396,6 +2397,78 @@ msgstr "Das Taler-Bezahlsystem"
 msgid "Taxable Anonymous Libre Electronic Reserves"
 msgstr "Taxierbare Anonyme Liberale Elektronische Reserven"
 
+#: common/footer.j2.inc:7
+#, fuzzy
+#| msgid "About us"
+msgid "About"
+msgstr "Über uns"
+
+#: common/footer.j2.inc:8
+msgid "Contact"
+msgstr ""
+
+#: common/footer.j2.inc:9
+#, fuzzy
+#| msgid "Investors"
+msgid "For Investors"
+msgstr "Investoren"
+
+#: common/footer.j2.inc:14 common/navigation.j2.inc:5
+msgid "Citizens"
+msgstr "Bürger"
+
+#: common/footer.j2.inc:15 common/navigation.j2.inc:6
+msgid "Merchants"
+msgstr "Händler"
+
+#: common/footer.j2.inc:16 common/navigation.j2.inc:7
+msgid "Governments"
+msgstr "Regierungen"
+
+#: common/footer.j2.inc:21
+#, fuzzy
+#| msgid "Developers"
+msgid "Developer Resources"
+msgstr "Entwickler"
+
+#: common/footer.j2.inc:22 common/navigation.j2.inc:12
+msgid "FAQ"
+msgstr ""
+
+#: common/footer.j2.inc:23 common/navigation.j2.inc:16
+#, fuzzy
+#| msgid "GNU Taler Bibliography"
+msgid "Bibliography"
+msgstr "Bibliografie von GNU Taler"
+
+#: common/footer.j2.inc:32
+msgid ""
+"This page was created using <a href='https://www.gnu.org/'>Free Software</a> "
+"only."
+msgstr ""
+
+#: common/navigation.j2.inc:9
+msgid "Resources"
+msgstr ""
+
+#: common/navigation.j2.inc:11
+#, fuzzy
+#| msgid "Taler System Architecture"
+msgid "System Architecture"
+msgstr "Systemarchitektur von Taler"
+
+#: common/navigation.j2.inc:13
+msgid "Glossary"
+msgstr ""
+
+#: common/navigation.j2.inc:14
+msgid "Developer Introduction"
+msgstr ""
+
+#: common/navigation.j2.inc:15
+msgid "Copyright for Contributors"
+msgstr ""
+
 #~ msgid "Demo"
 #~ msgstr "Demo"
 
@@ -2411,23 +2484,5 @@ msgstr "Taxierbare Anonyme Liberale Elektronische Reserven"
 #~ msgid "Latest Videos"
 #~ msgstr "Neuste Videos"
 
-#~ msgid "About us"
-#~ msgstr "Über uns"
-
-#~ msgid "Developers"
-#~ msgstr "Entwickler"
-
-#~ msgid "Governments"
-#~ msgstr "Regierungen"
-
-#~ msgid "Investors"
-#~ msgstr "Investoren"
-
-#~ msgid "Merchants"
-#~ msgstr "Händler"
-
 #~ msgid "Wallet"
 #~ msgstr "Geldbörse"
-
-#~ msgid "Citizens"
-#~ msgstr "Bürger"
