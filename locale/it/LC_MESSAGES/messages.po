@@ -673,7 +673,7 @@ msgstr ""
 "che detengono in riserva. Clienti e commercianti non possono imbrogliare "
 "né l'un l'altro né il cambio. Se i computer di una delle parti sono compromessi, "
 "il danno finanziario è limitato alla rispettiva parte ed è proporzionale "
-"ai fondi in circolazione durante quel periodo.
+"ai fondi in circolazione durante quel periodo."
 
 #: faq.html.j2:5
 msgid "How is Taler related to Bitcoin or Blockchains?"
