@@ -603,7 +603,7 @@ msgstr ""
 "pagato. Il cliente non conosce i dettagli bancari del commerciante, e Taler non "
 "richiede al commerciante di conoscere l'identità del cliente. Naturalmente, "
 "il cliente può spendere ogni piccola parte delle sue monete digitali (il sistema "
-"non trascura i clienti che acquistano spiccioli)."
+"pensa ai clienti che ricevono del resto)."
 
 #: developers.html.j2:210
 msgid ""
@@ -678,6 +678,7 @@ msgstr ""
 #: faq.html.j2:5
 msgid "How is Taler related to Bitcoin or Blockchains?"
 msgstr ""
+"Com'è correlato Taler a Bitcoin o Blockchains?"
 
 #: faq.html.j2:6
 msgid ""
@@ -685,6 +686,9 @@ msgid ""
 "is not based on proof-of-work or any other distributed consensus mechanism. "
 "Instead Taler is based on blind signatures.</p>"
 msgstr ""
+"<p>Taler non utilizza in maniera diretta nessuna tecnologia Blockchain o Bitcoin. "
+"Taler non si basa su proof-of-work o qualsiasi altro modello di consenso "
+"distribuito. Al contrario, esso è basato sulle firme cieche (blind signatures).</p>"
 
 #: faq.html.j2:11
 msgid ""
@@ -692,10 +696,14 @@ msgid ""
 "into a Taler wallet (with an appropriate exchange), which would give some "
 "benefits over plain Bitcoin, such as instant confirmation times.</p>"
 msgstr ""
+"<p>Sarebbe possibile, comunque, prelevare monete espresse in Bitcoin verso un "
+"portafoglio Taler (con un cambio appropriato), il quale darebbe alcuni vantaggi "
+"rispetto al semplice Bitcoin, come ad esempio i tempi di conferma immediati.</p>"
 
 #: faq.html.j2:18
 msgid "Where is the balance in my wallet stored?"
 msgstr ""
+"Dov'è conservato il saldo nel mio portafoglio?"	
 
 #: faq.html.j2:19
 msgid ""
@@ -703,10 +711,14 @@ msgid ""
 "your balance. The exchange keeps funds matching all unspent coins in an "
 "escrow bank account.</p>"
 msgstr ""
+"<p>Il tuo portafoglio contiene monete digitali, così in sostanza è il tuo "
+"computer a conservare il tuo saldo. Il cambio mette da parte i fondi che "
+"corrispondono a tutte le monete non spese in un conto bancario di garanzia.</p>"
 
 #: faq.html.j2:25
 msgid "What if my wallet is lost?"
 msgstr ""
+"Cosa accade se il mio portafoglio si perde? "
 
 #: faq.html.j2:26
 msgid ""
@@ -714,16 +726,23 @@ msgid ""
 "exchange can not assist you in recovering a lost or stolen wallet. Just like "
 "with a physical wallet for cash, you are responsible for keeping it safe.</p>"
 msgstr ""
+"<p>Poiché nel tuo portafoglio le monete digitali di valore vengono rese "
+"anonime, il cambio non può aiutarti a recuperare un portafoglio perso o rubato. "
+"Proprio come accade con un portafoglio materiale per denaro contante, sei tu "
+"responsabile per tenerlo al sicuro.</p>"
 
 #: faq.html.j2:32
 msgid ""
 "<p>The risk of losing a wallet can be mitigated by making backups or keeping "
 "the balance reasonably low.</p>"
 msgstr ""
+"<p>Il rischio di perdere un portafoglio puà essere ridotto facendo backup o "
+"mantenendo il saldo ragionevolmente basso.</p> "
 
 #: faq.html.j2:37
 msgid "What if my computer is hacked?"
 msgstr ""
+"Cosa accade se il mio computer viene attaccato?"
 
 #: faq.html.j2:38
 msgid ""
@@ -731,10 +750,14 @@ msgid ""
 "coins from your wallet. Checking your balance might reveal to you that your "
 "device has been compromised.</p>"
 msgstr ""
+"<p>In caso di compromissione di uno dei tuoi dispositivi, un aggressore può "
+"spendere le monete del tuo portafoglio. Controllare il tuo saldo potrebbe "
+"rivelarti se il tuo dispositivo è stato compromesso.</p>"
 
 #: faq.html.j2:44
 msgid "Can I send money to my friend with Taler?"
 msgstr ""
+"Posso inviare denaro ai miei amici con Taler?"
 
 #: faq.html.j2:45
 msgid ""
@@ -742,30 +765,40 @@ msgid ""
 "payment, they can easily set up a Taler merchant and receive the payment in "
 "their bank account.</p>"
 msgstr ""
+"<p>Se i tuoi amici ti forniscono beni o servizi in cambio di un pagamento, "
+"possono facilmente creare un commerciante Taler e ricevere il pagamento "
+"nel loro conto bancario.</p>"
 
 #: faq.html.j2:50
 msgid ""
 "<p>Future versions of the Taler wallet may allow exchanging coins among "
 "friends directly as well.</p>"
 msgstr ""
+"<p>Le versioni future del portafoglio Taler potranno consentire lo scambio "
+"di monete anche direttamente tra amici.</p>"
 
 #: faq.html.j2:56
 msgid "How does Taler handle payments in different currencies?"
 msgstr ""
+"Come gestisce Taler i pagamenti in valute diverse?"
 
 #: faq.html.j2:57
 msgid ""
 "<p>Taler wallets can store digital coins corresponding to multiple different "
 "currencies such as the Euro, US Dollars or Bitcoins.</p>"
 msgstr ""
+"<p>I portafogli Taler possono contenere monete digitali corrispondenti a "
+"più valute diverse, come l'Euro, il Dollaro americano o i Bitcoin.</p> "
 
 #: faq.html.j2:61
 msgid "<p>Taler currently does not offer conversion between currencies.</p>"
 msgstr ""
+"<p>Al momento Taler non offre la conversione tra le valute.</p> "
 
 #: faq.html.j2:65
 msgid "How does Taler protect my privacy?"
 msgstr ""
+"Come protegge Taler la mia privacy?"
 
 #: faq.html.j2:66
 msgid ""
@@ -774,52 +807,70 @@ msgid ""
 "blind signature protects your privacy as it prevents the exchange from "
 "knowing which coin it signed for which customer.</p>"
 msgstr ""
+"<p>Il tuo portafoglio contiene monete digitali che sono <a href=\"https://en."
+"wikipedia.org/wiki/Blind_signature\">firmate ciecamente</a> da un cambio. "
+"L'uso della blind signature protegge la tua privacy in quanto impedisce "
+"al cambio di sapere quale moneta ha firmato e per quale cliente.</p> "
 
 #: glossary.html.j2:6
 msgid "auditor"
 msgstr ""
+"revisore"
 
 #: glossary.html.j2:8
 msgid ""
 "trusted third party that verifies that the `exchange` is operating correctly"
 msgstr ""
+"affidabile terza parte che verifica che il 'cambio' stia operando "
+"correttamente "
 
 #: glossary.html.j2:12
 msgid "bank"
 msgstr ""
+"banca"
 
 #: glossary.html.j2:14
 msgid ""
 "traditional financial service provider who offers wire `transfers` between "
 "accounts"
 msgstr ""
+"tradizionale fornitore di servizi finanziari che offre 'trasferimenti' tra "
+"conti"
 
 #: glossary.html.j2:18
 msgid "coin"
 msgstr ""
+"moneta"
 
 #: glossary.html.j2:20
 msgid ""
 "coins are individual token representing a certain amount of value, also "
 "known as the `denomination` of the coin"
 msgstr ""
+"le monete sono un token individuale che rappresenta una certa quantità "
+"di valore, nota anche come 'denominazione' della moneta "
 
 #: glossary.html.j2:24
 msgid "contract"
 msgstr ""
+"contratto"
 
 #: glossary.html.j2:26
 msgid "the proposal signed by the wallet."
 msgstr ""
+"la proposta firmata dal portafoglio"
 
 #: glossary.html.j2:30
 msgid "denomination"
 msgstr ""
+"denominazione"
 
 #: glossary.html.j2:32
 msgid ""
 "unit of currency, specifies both the currency and the face value of a `coin`"
 msgstr ""
+"unità di valuta, specifica sia la valuta che il valore nominale "
+"di una 'moneta' "
 
 #: glossary.html.j2:36
 msgid "denomination key"
