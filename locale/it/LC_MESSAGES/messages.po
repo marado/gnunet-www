@@ -834,7 +834,7 @@ msgid ""
 "traditional financial service provider who offers wire `transfers` between "
 "accounts"
 msgstr ""
-"tradizionale fornitore di servizi finanziari che offre 'trasferimenti' tra "
+"tradizionale fornitore di servizi finanziari che consente 'bonifici' tra "
 "conti"
 
 #: glossary.html.j2:18
@@ -875,26 +875,34 @@ msgstr ""
 #: glossary.html.j2:36
 msgid "denomination key"
 msgstr ""
+"chiave di denominazione"
 
 #: glossary.html.j2:38
 msgid ""
 "RSA key used by the exchange to certify that a given `coin` is valid and of "
 "a particular `denomination`"
 msgstr ""
+"chiave RSA usata dal cambio per certificare che una data 'moneta' sia valida "
+"e sia di una particolare 'denominazione' " 
 
 #: glossary.html.j2:42
 msgid "deposit"
 msgstr ""
+"deposito"
 
 #: glossary.html.j2:44
 msgid ""
 "operation by which a merchant passes coins to an exchange, expecting the "
 "exchange to credit his `bank` account in the future using a wire `transfer`"
 msgstr ""
+"operazione attraverso la quale un commerciante trasferisce monete ad un "
+"cambio, prevedendo che il cambio possa accreditare in futuro il conto della "
+"sua 'banca' utilizzando un 'bonifico' "
 
 #: glossary.html.j2:48
 msgid "dirty"
 msgstr ""
+"sporco"
 
 #: glossary.html.j2:50
 msgid ""
@@ -902,54 +910,74 @@ msgid ""
 "customer, thereby creating the danger of some entity being able to link "
 "multiple transactions of coin's owner if the coin is not refreshed first"
 msgstr ""
+"la 'moneta' è sporca se la sua chiave pubblica può essere conosciuta "
+"da un'entità diversa dal cliente, creando così il pericolo che, se la "
+"moneta non viene aggiornata prima, una certa entità sia in grado di collegare "
+"più transazioni del possessore della moneta "
 
 #: glossary.html.j2:54
 msgid "exchange"
 msgstr ""
+"cambio"
 
 #: glossary.html.j2:56
 msgid ""
 "Taler's payment service provider. Issues eletronic `coins` during "
 "`withdrawal` and redeems them when they are `deposited` by merchants."
 msgstr ""
+"il fornitore dei servizi di pagamento di Taler. Emette le 'monete' "
+"elettroniche durante il 'prelievo' e le riscatta quando vengono "
+" 'depositate' dai commercianti"
 
 #: glossary.html.j2:60
 msgid "extension"
 msgstr ""
+"estensione"
 
 #: glossary.html.j2:62
 msgid "implementation of a `wallet` for browsers"
 msgstr ""
+"implementazione di un 'portafoglio' per i browsers"
 
 #: glossary.html.j2:66
 msgid "fresh coin"
 msgstr ""
+"moneta fresca"
 
 #: glossary.html.j2:68
 msgid "a `coin` is fresh if its public key is only known to the customer"
 msgstr ""
+"la 'moneta' è fresca se la sua chiave pubblica è conosciuta soltanto dal cliente"
+
 
 #: glossary.html.j2:72
 msgid "master key"
 msgstr ""
+"chiave master"
 
 #: glossary.html.j2:74
 msgid ""
 "offline key used by the exchange to certify denomination keys and message "
 "signing keys"
 msgstr ""
+"chiave offline utilizzata dal cambio per certificare le chiavi di "
+"denominazione e le chiavi di firma dei messaggi "
 
 #: glossary.html.j2:78
 msgid "message signing key"
 msgstr ""
+"chiave di firma del messaggio"
 
 #: glossary.html.j2:80
 msgid "key used by the exchange to sign online messages, other than coins"
 msgstr ""
+"chiave utilizzata dal cambio per firmare messaggi online, diversi "
+"dalle monete "
 
 #: glossary.html.j2:84
 msgid "offer"
 msgstr ""
+"offerta"
 
 #: glossary.html.j2:86
 msgid ""
@@ -960,36 +988,52 @@ msgid ""
 "In other words, after the backend adds the missing information to the offer "
 "and signs it, it becomes a proposal."
 msgstr ""
+"descrizione dei dettagli di una transazione, specifica gli obblighi di "
+"pagamento per il cliente (cioè l'importo), i prodotti finali del "
+"commerciante ed altre informazioni correlate, come scadenze o sedi; "
+"tuttavia, manca di alcune informazioni che il backend dovrebbe fornire. "
+"In altre parole, dopo che il backend aggiunge le informazioni mancanti "
+"all'offerta e la firma, essa diventa una proposta."
+
 
 #: glossary.html.j2:95
 msgid "owner"
 msgstr ""
+"possessore"
 
 #: glossary.html.j2:97
 msgid "a `coin` is owned by the entity that knows the private key of the coin"
 msgstr ""
+"la 'moneta' è di proprietà dell'entità che conosce la chiave privata "
+"della moneta"
 
 #: glossary.html.j2:101
 msgid "proof"
 msgstr ""
+"prova"
 
 #: glossary.html.j2:103
 msgid ""
 "message that cryptographically demonstrates that a particular claim is "
 "correct"
 msgstr ""
+"messaggio che dimostra crittograficamente che una particolare "
+"richiesta di risarchimento è corretta "
 
 #: glossary.html.j2:107
 msgid "proposal"
 msgstr ""
+"proposta"
 
 #: glossary.html.j2:109
 msgid "a sketch that has been completed and signed by the merchant backend."
 msgstr ""
+"una bozza completata e firmata dal backend del commerciante"
 
 #: glossary.html.j2:113
 msgid "reserve"
 msgstr ""
+"riserva"
 
 #: glossary.html.j2:115
 msgid ""
@@ -997,20 +1041,27 @@ msgid ""
 "exchange ready for `withdrawal`, or the funds kept in the exchange's bank "
 "account to cover obligations from coins in circulation"
 msgstr ""
+"fondi destinati all'uso futuro; sia il saldo di un cliente al cambio "
+"pronto per il 'prelievo', sia i fondi conservati sul conto bancario del "
+"cambio per coprire gli obblighi derivanti dalle monete in circolazione "
 
 #: glossary.html.j2:119
 msgid "refreshing"
 msgstr ""
+"aggiornamento"
 
 #: glossary.html.j2:121
 msgid ""
 "operation by which a `dirty` `coin` is converted into one or more `fresh` "
 "coins"
 msgstr ""
+"operazione mediante la quale una moneta 'sporca' viene convertita "
+"in una o più monete 'fresche' "
 
 #: glossary.html.j2:125
 msgid "refund"
 msgstr ""
+"rimborso"
 
 #: glossary.html.j2:127
 msgid ""
@@ -1018,96 +1069,127 @@ msgid ""
 "obtained from a `deposit` operation, giving the right to the funds back to "
 "the customer"
 msgstr ""
+"operazione con cui un commerciante fa un passo indietro dal diritto di "
+"ottenere i fondi da un operazione di 'deposito', resitituendo il diritto "
+"ai fondi al cliente"
 
 #: glossary.html.j2:131
 msgid "sharing"
 msgstr ""
+"condivisione"
 
 #: glossary.html.j2:133
 msgid ""
 "users can share ownership of a `coin` by sharing access to the coin's "
 "private key, thereby allowing all co-owners to spend the coin at any time."
 msgstr ""
+"gli utenti possono condividere la proprietà della 'moneta' condividendo "
+"l'accesso alla chiave privata della moneta, consentendo così a tutti i "
+"co-possessori di spendere la moneta in qualsiasi momento"
 
 #: glossary.html.j2:137
 msgid "signing key"
 msgstr ""
+"chiave di firma"
 
 #: glossary.html.j2:139
 msgid "see message signing key."
 msgstr ""
+"vedi 'chiave di firma del messaggio' "
 
 #: glossary.html.j2:143
 msgid "spending"
 msgstr ""
+"spesa"
 
 #: glossary.html.j2:145
 msgid ""
 "operation by which a customer gives a merchant the right to `deposit` coins "
 "in return for merchandise"
 msgstr ""
+"operazione mediante la quale un cliente dà ad un commerciante il diritto "
+"di 'depositare le monete in cambio di merce"
 
 #: glossary.html.j2:149
 msgid "transfer"
 msgstr ""
+"trasferimento"
 
 #: glossary.html.j2:151
 msgid "method of sending funds between `bank` accounts"
 msgstr ""
+"metodo per l'invio di fondi tra conti 'bancari' "
 
 #: glossary.html.j2:155
 msgid "transaction"
 msgstr ""
+"transazione"
 
 #: glossary.html.j2:157
 msgid ""
 "method by which ownership is exclusively transferred from one entity to "
 "another"
 msgstr ""
+"metodo in base al quale la proprietà è trasferita esclusivamente "
+"da un'entità ad un'altra "
 
 #: glossary.html.j2:161
 msgid "transaction id"
 msgstr ""
+"ID di transazione"
 
 #: glossary.html.j2:163
 msgid "unique number by which a merchant identifies a `transaction`"
 msgstr ""
+"numero univoco con il quale un commerciante identifica una "
+" 'transazione' "
 
 #: glossary.html.j2:167
 msgid "wallet"
 msgstr ""
+"portafoglio"
 
 #: glossary.html.j2:169
 msgid ""
 "software running on a customer's computer; withdraws, stores and spends coins"
 msgstr ""
+"software in esecuzione sul computer di un cliente; prelieva, conserva e "
+"spende monete"
 
 #: glossary.html.j2:173
 msgid "wire transfer"
 msgstr ""
+"bonifico bancario"
 
 #: glossary.html.j2:175
 msgid "see `transfer`"
 msgstr ""
+"vedi 'trasferimento' "
 
 #: glossary.html.j2:179
 msgid "wire transfer identifier"
 msgstr ""
+"identificatore del bonifico bancario"
 
 #: glossary.html.j2:181
 msgid ""
 "subject of a wire `transfer`; usually a random string to uniquely identify "
 "the `transfer`"
 msgstr ""
+"oggetto di un 'bonifico bancario'; solitamente una stringa casuale "
+"per identificare in modo univoco il 'trasferimento' "
 
 #: glossary.html.j2:185
 msgid "withdrawal"
 msgstr ""
+"prelievo"
 
 #: glossary.html.j2:187
 msgid ""
 "operation by which a `wallet` can convert funds from a reserve to fresh coins"
 msgstr ""
+"operazione mediante la quale un 'portafoglio' può convertire i fondi "
+"da una riserva a monete fresche"
 
 #: governments.html.j2:6
 msgid "Advantages for Governments"
