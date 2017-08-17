@@ -1709,7 +1709,7 @@ msgstr ""
 "El procesamiento de transacciones con Taler es rápido, lo que le permite "
 "confirmar la transacción con su cliente de forma casi inmediata. Sus "
 "clientes apreciarán no tener que escribir la información de la tarjeta de "
-"crédito y jugar el juego del & quot;verificado por& quot. Al hacer que los "
+"crédito y jugar el juego del &quot;verificado por&quot;. Al hacer que los "
 "pagos sean mucho más fáciles para sus clientes, puede usar Taler para "
 "transacciones pequeñas para las que no vale la pena usar la tarjeta de "
 "crédito debido a la sobrecarga mental que esto representa para sus clientes."
@@ -1798,15 +1798,15 @@ msgstr "Manual para comerciantes"
 
 #: merchants.html.j2:122
 msgid "The GNU Taler merchant backend operator manual"
-msgstr "Manual de operaciones del comerciante de GNU Taler"
+msgstr "Manual de operaciones del comerciante de GNU Taler [en]"
 
 #: merchants.html.j2:125
 msgid "The GNU Taler Web shop integration tutorial (PHP)"
-msgstr "Tutorial de integración de la tienda web GNU Taler (PHP)"
+msgstr "Tutorial de integración de la tienda web GNU Taler (PHP) [en]"
 
 #: merchants.html.j2:128
 msgid "The GNU Taler Web shop integration tutorial (Python)"
-msgstr "Tutorial de integración de la tienda web GNU Taler (Python)"
+msgstr "Tutorial de integración de la tienda web GNU Taler (Python) [en]"
 
 #: merchants.html.j2:140
 msgid "The GNU Taler Merchant Backend"
@@ -1836,7 +1836,7 @@ msgid ""
 msgstr ""
 "El backend <b>valida</b> los pagos recibidos de la billetera y los "
 "<b>ejecuta</b> con el proveedor de servicios de pago de Taler (el proveedor "
-"de intercambios). Para ello, la interfaz del comerciante debe transferir la "
+"de intercambios). Para ello, la interfaz del comerciante debe entregar la "
 "solicitud de pago a través del backend de Taler y comprobar el estado del "
 "protocolo HTTP que retorna."
 
@@ -1846,9 +1846,9 @@ msgid ""
 "transfers to sets of business transactions, including the exact terms of "
 "each contract."
 msgstr ""
-"El backend puede <b>listar</b> las transacciones completadas y <b>mapear</b> "
-"las transferencias electrónicas en conjuntos de transacciones comerciales, "
-"incluyendo los términos exactos de cada contrato."
+"El backend puede <b>listar</b> los pagos (transacciones) realizados y "
+"<b>relacionar</b> las transferencias bancarias con los pagos electrónicos "
+"correspondientes, incluyendo los términos exactos de cada contrato."
 
 #: press.html.j2:4
 msgid "GNU Taler in the Press"
