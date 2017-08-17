@@ -1678,7 +1678,7 @@ msgstr ""
 
 #: merchants.html.j2:5
 msgid "Advantages for Merchants"
-msgstr "Ventajas para los Comerciantes"
+msgstr "Ventajas para los comerciantes"
 
 #: merchants.html.j2:8
 msgid ""
