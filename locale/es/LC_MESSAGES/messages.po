@@ -290,7 +290,7 @@ msgstr ""
 
 #: contact.html.j2:25
 msgid "Contacting individuals"
-msgstr "Contacto con personas"
+msgstr "Contacto con los miembros del equipo"
 
 #: contact.html.j2:27
 msgid ""
@@ -298,8 +298,8 @@ msgid ""
 "us support receiving GnuPG encrypted e-mails."
 msgstr ""
 "Generalmente los miembros del equipo pueden ser contactados utilizando el "
-"siguiente formato: <tt> APELLIDO@taler.net </tt>. Estamos disponibles a "
-"recibir correos electrónicos cifrados con GnuPG."
+"siguiente formato: <tt>APELLIDO@taler.net</tt>. Todos aceptamos correos "
+"electrónicos cifrados con GnuPG."
 
 #: contact.html.j2:36
 msgid "Reporting bugs"
@@ -311,10 +311,10 @@ msgid ""
 "bugs/\">Bug tracker</a>, which is shared with the GNUnet project. You can "
 "also report bugs or feature requests to the mailing list."
 msgstr ""
-"Monitoreamos las solicitudes de función abiertas y los bugs en nuestro <a "
-"href=\"https://gnunet.org/bugs/\">Rastreador de Bugs</a>, que se comparte "
-"con el proyecto GNUnet. También puede reportar bugs o solicitudes a través "
-"de la lista de correo."
+"Registramos públicamente las solicitudes de funcionalidades y los bugs en "
+"nuestro <a href=\"https://gnunet.org/bugs/\">sistema de seguimiento de "
+"bugs</a>, que se comparte con el proyecto GNUnet. También puede reportar bugs "
+"o solicitudes a través de la lista de correo."
 
 #: contact.html.j2:49
 msgid "Executive team"
