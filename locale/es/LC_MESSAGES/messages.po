@@ -44,7 +44,7 @@ msgstr "Fundador del proyecto GNU. Orientación ética y licencias."
 
 #: about.html.j2:37
 msgid "PhD Student, TU Munich. Currently teaching."
-msgstr "Estudiante de doctorado, TU Munich. Actualmente es profesor."
+msgstr "Estudiante de doctorado, TU Múnich. Actualmente es profesor."
 
 #: about.html.j2:42
 msgid "PhD Student, Inria.."
@@ -80,7 +80,7 @@ msgstr "Gestión de riesgos"
 
 #: about.html.j2:90
 msgid "PhD student, TU Munich. Currently teaching."
-msgstr "Estudiante de doctorado, TU Munich. Actualmente es profesor."
+msgstr "Estudiante de doctorado, TU Múnich. Actualmente es profesor."
 
 #: about.html.j2:96
 msgid "Software engineer. Works on Android wallet."
