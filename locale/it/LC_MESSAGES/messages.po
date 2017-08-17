@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-02 22:36+0200\n"
+"POT-Creation-Date: 2017-08-17 13:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -147,12 +147,12 @@ msgid ""
 "compromised. Unlike a physical wallet, you can make backups to secure "
 "against data loss."
 msgstr ""
-"Taler usa crittografia moderna, minimizzando il rischio di contraffazione. Il "
-"portafoglio elettronico è più sicuro di quello fisico. Nel caso pessimo - si "
-"pensi alla compromissione del proprio computer, o ad un grave danno fisico "
-"-, la perdita  è limitata dalla somma presente nel portafoglio. Tuttavia, "
-"Taler permette di effettuare copie di sicurezza del portafoglio, per ovviare "
-"a tali perdite di dati."
+"Taler usa crittografia moderna, minimizzando il rischio di contraffazione. "
+"Il portafoglio elettronico è più sicuro di quello fisico. Nel caso pessimo - "
+"si pensi alla compromissione del proprio computer, o ad un grave danno "
+"fisico -, la perdita  è limitata dalla somma presente nel portafoglio. "
+"Tuttavia, Taler permette di effettuare copie di sicurezza del portafoglio, "
+"per ovviare a tali perdite di dati."
 
 #: citizens.html.j2:37 index.html.j2:84
 msgid "Private"
@@ -368,10 +368,10 @@ msgid ""
 "stores that are hostile to free software).</p>"
 msgstr ""
 "<p>Gli accordi garantiscono che il codice continui ad essere disponibile "
-"sotto licenze di software libero, dando ai programmatori la libertà di spostare "
-"il codice tra GNUnet e GNU Taler senza preoccuparsi delle licenze e alla società "
-"la capacità di doppia licenza (ad esempio, in modo da poter distribuire " 
-"attraverso App-store ostili al software libero).</p>"
+"sotto licenze di software libero, dando ai programmatori la libertà di "
+"spostare il codice tra GNUnet e GNU Taler senza preoccuparsi delle licenze e "
+"alla società la capacità di doppia licenza (ad esempio, in modo da poter "
+"distribuire attraverso App-store ostili al software libero).</p>"
 
 #: copyright.html.j2:25
 msgid ""
@@ -380,11 +380,11 @@ msgid ""
 "simply sign the agreement with your pseudonym. Scanned copies are "
 "sufficient, but snail mail is preferred.</p>"
 msgstr ""
-"<p>Le collaborazioni minori (fondamentalmente, chiunque non abbia accesso a Git) "
-"non richiedono l'attribuzione del diritto d'autore. Le collaborazioni sotto "
-"pseudonimo sono accettate, in tal caso firmando semplicemente l'accordo con il "
-"tuo pseudonimo. Sono sufficienti copie scansionate, ma è preferibile attraverso "
-"posta ordinaria.</p>"
+"<p>Le collaborazioni minori (fondamentalmente, chiunque non abbia accesso a "
+"Git) non richiedono l'attribuzione del diritto d'autore. Le collaborazioni "
+"sotto pseudonimo sono accettate, in tal caso firmando semplicemente "
+"l'accordo con il tuo pseudonimo. Sono sufficienti copie scansionate, ma è "
+"preferibile attraverso posta ordinaria.</p>"
 
 #: developers.html.j2:5
 msgid "Taler for developers"
@@ -405,20 +405,31 @@ msgid ""
 "open for constructive suggestions for maximizing the adoption of this "
 "payment platform."
 msgstr ""
-"</p>GNU Tale è un software libero che implementa un protocollo aperto. Chiunque "
-"è il benvenuto ad integrare la nostra implementazione di riferimento nelle "
-"proprie applicazioni. Le diverse componenti di Taler sono disponibili sotto "
-"licenze diverse. La licenza Affero GPLv3+ è usata per lo scambio, la LGPLv3+ è "
-"utilizzata per il codice di riferimento che dimostra l'integrazione con le "
-"piattaforme commerciali, e licenze come GPLv3+ sono usate per i portafogli e per "
-"il software correlato al cliente. Siamo aperti a suggerimenti costruttivi per "
-"massimizzare l'adozione di questa piattaforma di pagamento."
+"</p>GNU Tale è un software libero che implementa un protocollo aperto. "
+"Chiunque è il benvenuto ad integrare la nostra implementazione di "
+"riferimento nelle proprie applicazioni. Le diverse componenti di Taler sono "
+"disponibili sotto licenze diverse. La licenza Affero GPLv3+ è usata per lo "
+"scambio, la LGPLv3+ è utilizzata per il codice di riferimento che dimostra "
+"l'integrazione con le piattaforme commerciali, e licenze come GPLv3+ sono "
+"usate per i portafogli e per il software correlato al cliente. Siamo aperti "
+"a suggerimenti costruttivi per massimizzare l'adozione di questa piattaforma "
+"di pagamento."
 
 #: developers.html.j2:32
 msgid "RESTful"
 msgstr "RESTful"
 
 #: developers.html.j2:35
+#, fuzzy
+#| msgid ""
+#| "Taler is designed to work on the Internet. To ensure that Taler payments "
+#| "can work with restrictive network setups, Taler uses a RESTful protocol "
+#| "over HTTP or HTTPS. Taler's security does not depend upon the use of "
+#| "HTTPS, but obviously merchants may choose to offer HTTPS for consistency "
+#| "and because it generally is better for privacy compared to HTTP. Taler "
+#| "uses JSON to encode structure data, making it easy to integrate Taler "
+#| "with existing Web applications. Taler's protocol is documented in detail "
+#| "at <a href=\"https://api.taler.net/\">api.taler.net</a>."
 msgid ""
 "Taler is designed to work on the Internet. To ensure that Taler payments can "
 "work with restrictive network setups, Taler uses a RESTful protocol over "
@@ -427,17 +438,18 @@ msgid ""
 "generally is better for privacy compared to HTTP. Taler uses JSON to encode "
 "structure data, making it easy to integrate Taler with existing Web "
 "applications. Taler's protocol is documented in detail at <a href=\"https://"
-"api.taler.net/\">api.taler.net</a>."
+"docs.taler.net/\">docs.taler.net</a>."
 msgstr ""
 "Taler è progettato per funzionare su Internet. Per garantire che i pagamenti "
-"con Taler funzionino con configurazioni di rete restrittive, Taler utilizza un "
-"protocollo REST su HTTP o HTTPS. La sicurezza di Taler non dipende dall'utilizzo "
-"di HTTPS, ma ovviamente i commercianti possono decidere di offrire il "
-"protocollo HTTPS per la consistenza e perché, paragonato al protocollo HTTP, in "
-"generale è migliore per la privacy. Taler utilizza il formato JSON per "
-"codificare le strutture dati, rendendo semplice l'integrazione di Taler con"
-"le applicazioni Web esistenti. Il protocollo di Taler è documentato in dettaglio "
-"al <a href=\"https://api.taler.net/\">api.taler.net</a>."
+"con Taler funzionino con configurazioni di rete restrittive, Taler utilizza "
+"un protocollo REST su HTTP o HTTPS. La sicurezza di Taler non dipende "
+"dall'utilizzo di HTTPS, ma ovviamente i commercianti possono decidere di "
+"offrire il protocollo HTTPS per la consistenza e perché, paragonato al "
+"protocollo HTTP, in generale è migliore per la privacy. Taler utilizza il "
+"formato JSON per codificare le strutture dati, rendendo semplice "
+"l'integrazione di Taler conle applicazioni Web esistenti. Il protocollo di "
+"Taler è documentato in dettaglio al <a href=\"https://api.taler.net/\">api."
+"taler.net</a>."
 
 #: developers.html.j2:58
 msgid "Code"
@@ -453,13 +465,13 @@ msgid ""
 "repositories can be found in our <a href=\"https://git.taler.net/\">GitWeb</"
 "a>."
 msgstr ""
-"Attualmente Taler è sviluppato principalmente da un team di ricerca presso "
-" <a href=\"http://www.inria.fr/\">Inria</a> e <a href=\"https://gnunet.org/"
+"Attualmente Taler è sviluppato principalmente da un team di ricerca presso  "
+"<a href=\"http://www.inria.fr/\">Inria</a> e <a href=\"https://gnunet.org/"
 "\">GNUnet</a>. Tuttavia, sono benvenuti i contributi di chiunque. I nostri "
 "repository Git possono essere clonati utilizzando i metodi di accesso Git e "
-"HTTP rispetto a <tt>git.taler.net</tt> con il nome del rispettivo repository. "
-"E' possibile trovare un elenco di repository sul nostro <a href=\"https://git."
-"taler.net/\">GitWeb</a>."
+"HTTP rispetto a <tt>git.taler.net</tt> con il nome del rispettivo "
+"repository. E' possibile trovare un elenco di repository sul nostro <a href="
+"\"https://git.taler.net/\">GitWeb</a>."
 
 #: developers.html.j2:75
 msgid "Documentation"
@@ -473,8 +485,8 @@ msgid ""
 "\"bibliography.html\">bibliography</a>."
 msgstr ""
 "Oltre a questo sito web, il <a href=\"https://git.taler.net/\">codice "
-"documentato</a> e la <a href=\"https://api.taler.net/\">documentazione "
-"API</a>. Si possono trovare i documenti tecnici nella nostra <a href="
+"documentato</a> e la <a href=\"https://api.taler.net/\">documentazione API</"
+"a>. Si possono trovare i documenti tecnici nella nostra <a href="
 "\"bibliography.html\">bibliografia</a>."
 
 #: developers.html.j2:88
@@ -487,9 +499,10 @@ msgid ""
 "read the list archive at <a href=\"http://lists.gnu.org/mailman/listinfo/"
 "taler\">http://lists.gnu.org/mailman/listinfo/taler</a>."
 msgstr ""
-"Abbiamo una mailing list per le discussioni tra i programmatori. Puoi iscriverti o "
-"leggere l'archivio al seguente link <a href=\"http://lists.gnu.org/mailman "
-"/listinfo/taler\">http://lists.gnu.org/mailman/listinfo/taler</a>."
+"Abbiamo una mailing list per le discussioni tra i programmatori. Puoi "
+"iscriverti o leggere l'archivio al seguente link <a href=\"http://lists.gnu."
+"org/mailman /listinfo/taler\">http://lists.gnu.org/mailman/listinfo/taler</"
+"a>."
 
 #: developers.html.j2:101
 msgid "Regression Testing"
@@ -501,9 +514,9 @@ msgid ""
 "detect regressions and check for portability at <a href=\"https://buildbot."
 "taler.net/\">buildbot.taler.net</a>."
 msgstr ""
-"Disponiamo di test di automazione <a href=\"https://buildbot.net/\">Buildbot</a> "
-"per rilevare regressioni e verificare la portabilità al seguente link <a href="
-"\"https://buildbot.taler.net/\">buildbot.taler.net</a>."
+"Disponiamo di test di automazione <a href=\"https://buildbot.net/"
+"\">Buildbot</a> per rilevare regressioni e verificare la portabilità al "
+"seguente link <a href=\"https://buildbot.taler.net/\">buildbot.taler.net</a>."
 
 #: developers.html.j2:113
 msgid "Code Coverage Analysis"
@@ -515,9 +528,10 @@ msgid ""
 "analyze the code coverage of our tests, the results are available at <a href="
 "\"https://lcov.taler.net/\">lcov.taler.net</a>."
 msgstr ""
-"Utilizziamo <a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</a> "
-"per analizzare la copertura del codice dei nostri test, i risultati sono "
-"disponibili al seguente link <a href=\"https://lcov.taler.net/\">lcov.taler.net</a>."
+"Utilizziamo <a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</"
+"a> per analizzare la copertura del codice dei nostri test, i risultati sono "
+"disponibili al seguente link <a href=\"https://lcov.taler.net/\">lcov.taler."
+"net</a>."
 
 #: developers.html.j2:126
 msgid "Performance Analysis"
@@ -571,13 +585,14 @@ msgid ""
 "the exchange may charge for the service)."
 msgstr ""
 "Una volta che il cambio ha ricevuto il bonifico bancario, consentirà al "
-"portafoglio elettronico del cliente di <b>prelevare</b> le monete elettroniche. "
-"Le monete elettroniche sono rappresentazioni digitali della valuta originale "
-"dal trasferimento. E' importante notare che il cambio non apprende i "
-"&quot;numeri seriali&quot; delle monete create in questo processo, in modo da "
-"non sapere in seguito quale cliente ha acquistato cosa presso quale commerciante. "
-"L'utilizzo di Taler non modifica la valuta o il valore totale dei fondi (ad "
-"eccezione delle commissioni che il cambio può addebitare per il servizio)."
+"portafoglio elettronico del cliente di <b>prelevare</b> le monete "
+"elettroniche. Le monete elettroniche sono rappresentazioni digitali della "
+"valuta originale dal trasferimento. E' importante notare che il cambio non "
+"apprende i &quot;numeri seriali&quot; delle monete create in questo "
+"processo, in modo da non sapere in seguito quale cliente ha acquistato cosa "
+"presso quale commerciante. L'utilizzo di Taler non modifica la valuta o il "
+"valore totale dei fondi (ad eccezione delle commissioni che il cambio può "
+"addebitare per il servizio)."
 
 #: developers.html.j2:188
 msgid ""
@@ -594,16 +609,17 @@ msgid ""
 "change)."
 msgstr ""
 "Quando il cliente avrà le monete digitali nel suo portafoglio, quest'ultimo "
-"potrà essere utilizzato per <b>spendere</b> le monete presso portali commerciali "
-"che supportano il sistema di pagamento Taler e accettano il rispettivo cambio "
-"come partner commerciale (freccia in basso). Ciò dà vita ad un contratto "
-"digitale firmato dalle monete del cliente e dal commerciante. Se necessario, "
-"in futuro il cliente potrà utilizzare in un tribunale questo contratto firmato "
-"digitalmente per dimostrare i termini esatti dell'accordo e il rispettivo importo "
-"pagato. Il cliente non conosce i dettagli bancari del commerciante, e Taler non "
-"richiede al commerciante di conoscere l'identità del cliente. Naturalmente, "
-"il cliente può spendere ogni piccola parte delle sue monete digitali (il sistema "
-"pensa ai clienti che ricevono del resto)."
+"potrà essere utilizzato per <b>spendere</b> le monete presso portali "
+"commerciali che supportano il sistema di pagamento Taler e accettano il "
+"rispettivo cambio come partner commerciale (freccia in basso). Ciò dà vita "
+"ad un contratto digitale firmato dalle monete del cliente e dal "
+"commerciante. Se necessario, in futuro il cliente potrà utilizzare in un "
+"tribunale questo contratto firmato digitalmente per dimostrare i termini "
+"esatti dell'accordo e il rispettivo importo pagato. Il cliente non conosce i "
+"dettagli bancari del commerciante, e Taler non richiede al commerciante di "
+"conoscere l'identità del cliente. Naturalmente, il cliente può spendere ogni "
+"piccola parte delle sue monete digitali (il sistema pensa ai clienti che "
+"ricevono del resto)."
 
 #: developers.html.j2:210
 msgid ""
@@ -619,16 +635,16 @@ msgid ""
 "that merchants pay applicable taxes (and do not engage in illegal contracts)."
 msgstr ""
 "I commercianti che ricevono monete digitali <b>depositano</b> le rispettive "
-"richieste di risarcimento derivanti dalla firma del contratto con il cliente presso "
-"il cambio per riscattare le monete. Lo step del deposito non rivela in alcun "
-"modo al cambio i dettagli del contratto tra il cliente e il commerciante o "
-"l'identità del cliente. Tuttavia, il cambio apprende l'identità del "
-"commerciante tramite le coordinate bancarie fornite. Ad esempio, se obbligato "
-"dallo Stato per la tassazione, il commerciante può fornire delle informazioni che "
-"collegano il deposito individuale al corrispettivo contratto sottoscritto dal "
-"cliente. In questo modo, il database del cambio consente allo Stato di far "
-"rispettare ai commercianti di pagare le imposte vigenti (e di non impegnarsi "
-"in contratti illegali)."
+"richieste di risarcimento derivanti dalla firma del contratto con il cliente "
+"presso il cambio per riscattare le monete. Lo step del deposito non rivela "
+"in alcun modo al cambio i dettagli del contratto tra il cliente e il "
+"commerciante o l'identità del cliente. Tuttavia, il cambio apprende "
+"l'identità del commerciante tramite le coordinate bancarie fornite. Ad "
+"esempio, se obbligato dallo Stato per la tassazione, il commerciante può "
+"fornire delle informazioni che collegano il deposito individuale al "
+"corrispettivo contratto sottoscritto dal cliente. In questo modo, il "
+"database del cambio consente allo Stato di far rispettare ai commercianti di "
+"pagare le imposte vigenti (e di non impegnarsi in contratti illegali)."
 
 #: developers.html.j2:233
 msgid ""
@@ -639,11 +655,11 @@ msgid ""
 "the bank transfers and the individual claims that were deposited."
 msgstr ""
 "Infine, il cambio trasferisce i fondi corrispondenti alle monete digitali "
-"riscattate dai commercianti sul conto <b>bancario</b> del commerciante. "
-"Il cambio può combinare diverse piccole transazioni in un unico trasferimento "
-"bancario più grande. Il commerciante può interrogare il cambio sulla relazione "
-"tra i trasferimenti bancari e le singole richieste di risarcimento che erano " 
-"state depositate." 
+"riscattate dai commercianti sul conto <b>bancario</b> del commerciante. Il "
+"cambio può combinare diverse piccole transazioni in un unico trasferimento "
+"bancario più grande. Il commerciante può interrogare il cambio sulla "
+"relazione tra i trasferimenti bancari e le singole richieste di risarcimento "
+"che erano state depositate."
 
 #: developers.html.j2:247
 msgid ""
@@ -656,10 +672,10 @@ msgid ""
 msgstr ""
 "Ancor più importante, il cambio mantiente prove crittografiche che gli "
 "consentono di dimostrare a terzi che sta operando correttamente. Il sistema "
-"richiede ad un <b>revisore</b> esterno, ad esempio un organismo di regolamentazione "
-"finanziaria nominato dal governo, di verificare frequentemente i database "
-"del cambio e controllare che il suo saldo bancario corrisponda al valore totale "
-"delle monete restanti in circolazione."
+"richiede ad un <b>revisore</b> esterno, ad esempio un organismo di "
+"regolamentazione finanziaria nominato dal governo, di verificare "
+"frequentemente i database del cambio e controllare che il suo saldo bancario "
+"corrisponda al valore totale delle monete restanti in circolazione."
 
 #: developers.html.j2:262
 msgid ""
@@ -669,16 +685,15 @@ msgid ""
 "limited to the respective party and proportional to the funds they have in "
 "circulation during the period of the compromise."
 msgstr ""
-"Senza il revisore, gli operatori del cambio potrebbero approfittare dei fondi "
-"che detengono in riserva. Clienti e commercianti non possono imbrogliare "
-"né l'un l'altro né il cambio. Se i computer di una delle parti sono compromessi, "
-"il danno finanziario è limitato alla rispettiva parte ed è proporzionale "
-"ai fondi in circolazione durante quel periodo."
+"Senza il revisore, gli operatori del cambio potrebbero approfittare dei "
+"fondi che detengono in riserva. Clienti e commercianti non possono "
+"imbrogliare né l'un l'altro né il cambio. Se i computer di una delle parti "
+"sono compromessi, il danno finanziario è limitato alla rispettiva parte ed è "
+"proporzionale ai fondi in circolazione durante quel periodo."
 
 #: faq.html.j2:5
 msgid "How is Taler related to Bitcoin or Blockchains?"
-msgstr ""
-"Com'è correlato Taler a Bitcoin o Blockchains?"
+msgstr "Com'è correlato Taler a Bitcoin o Blockchains?"
 
 #: faq.html.j2:6
 msgid ""
@@ -686,9 +701,10 @@ msgid ""
 "is not based on proof-of-work or any other distributed consensus mechanism. "
 "Instead Taler is based on blind signatures.</p>"
 msgstr ""
-"<p>Taler non utilizza in maniera diretta nessuna tecnologia Blockchain o Bitcoin. "
-"Taler non si basa su proof-of-work o qualsiasi altro modello di consenso "
-"distribuito. Al contrario, esso è basato sulle firme cieche (blind signatures).</p>"
+"<p>Taler non utilizza in maniera diretta nessuna tecnologia Blockchain o "
+"Bitcoin. Taler non si basa su proof-of-work o qualsiasi altro modello di "
+"consenso distribuito. Al contrario, esso è basato sulle firme cieche (blind "
+"signatures).</p>"
 
 #: faq.html.j2:11
 msgid ""
@@ -696,14 +712,14 @@ msgid ""
 "into a Taler wallet (with an appropriate exchange), which would give some "
 "benefits over plain Bitcoin, such as instant confirmation times.</p>"
 msgstr ""
-"<p>Sarebbe possibile, comunque, prelevare monete espresse in Bitcoin verso un "
-"portafoglio Taler (con un cambio appropriato), il quale darebbe alcuni vantaggi "
-"rispetto al semplice Bitcoin, come ad esempio i tempi di conferma immediati.</p>"
+"<p>Sarebbe possibile, comunque, prelevare monete espresse in Bitcoin verso "
+"un portafoglio Taler (con un cambio appropriato), il quale darebbe alcuni "
+"vantaggi rispetto al semplice Bitcoin, come ad esempio i tempi di conferma "
+"immediati.</p>"
 
 #: faq.html.j2:18
 msgid "Where is the balance in my wallet stored?"
-msgstr ""
-"Dov'è conservato il saldo nel mio portafoglio?"	
+msgstr "Dov'è conservato il saldo nel mio portafoglio?"
 
 #: faq.html.j2:19
 msgid ""
@@ -713,12 +729,12 @@ msgid ""
 msgstr ""
 "<p>Il tuo portafoglio contiene monete digitali, così in sostanza è il tuo "
 "computer a conservare il tuo saldo. Il cambio mette da parte i fondi che "
-"corrispondono a tutte le monete non spese in un conto bancario di garanzia.</p>"
+"corrispondono a tutte le monete non spese in un conto bancario di garanzia.</"
+"p>"
 
 #: faq.html.j2:25
 msgid "What if my wallet is lost?"
-msgstr ""
-"Cosa accade se il mio portafoglio si perde? "
+msgstr "Cosa accade se il mio portafoglio si perde? "
 
 #: faq.html.j2:26
 msgid ""
@@ -727,9 +743,9 @@ msgid ""
 "with a physical wallet for cash, you are responsible for keeping it safe.</p>"
 msgstr ""
 "<p>Poiché nel tuo portafoglio le monete digitali di valore vengono rese "
-"anonime, il cambio non può aiutarti a recuperare un portafoglio perso o rubato. "
-"Proprio come accade con un portafoglio materiale per denaro contante, sei tu "
-"responsabile per tenerlo al sicuro.</p>"
+"anonime, il cambio non può aiutarti a recuperare un portafoglio perso o "
+"rubato. Proprio come accade con un portafoglio materiale per denaro "
+"contante, sei tu responsabile per tenerlo al sicuro.</p>"
 
 #: faq.html.j2:32
 msgid ""
@@ -741,8 +757,7 @@ msgstr ""
 
 #: faq.html.j2:37
 msgid "What if my computer is hacked?"
-msgstr ""
-"Cosa accade se il mio computer viene attaccato?"
+msgstr "Cosa accade se il mio computer viene attaccato?"
 
 #: faq.html.j2:38
 msgid ""
@@ -756,8 +771,7 @@ msgstr ""
 
 #: faq.html.j2:44
 msgid "Can I send money to my friend with Taler?"
-msgstr ""
-"Posso inviare denaro ai miei amici con Taler?"
+msgstr "Posso inviare denaro ai miei amici con Taler?"
 
 #: faq.html.j2:45
 msgid ""
@@ -766,8 +780,8 @@ msgid ""
 "their bank account.</p>"
 msgstr ""
 "<p>Se i tuoi amici ti forniscono beni o servizi in cambio di un pagamento, "
-"possono facilmente creare un commerciante Taler e ricevere il pagamento "
-"nel loro conto bancario.</p>"
+"possono facilmente creare un commerciante Taler e ricevere il pagamento nel "
+"loro conto bancario.</p>"
 
 #: faq.html.j2:50
 msgid ""
@@ -779,26 +793,23 @@ msgstr ""
 
 #: faq.html.j2:56
 msgid "How does Taler handle payments in different currencies?"
-msgstr ""
-"Come gestisce Taler i pagamenti in valute diverse?"
+msgstr "Come gestisce Taler i pagamenti in valute diverse?"
 
 #: faq.html.j2:57
 msgid ""
 "<p>Taler wallets can store digital coins corresponding to multiple different "
 "currencies such as the Euro, US Dollars or Bitcoins.</p>"
 msgstr ""
-"<p>I portafogli Taler possono contenere monete digitali corrispondenti a "
-"più valute diverse, come l'Euro, il Dollaro americano o i Bitcoin.</p> "
+"<p>I portafogli Taler possono contenere monete digitali corrispondenti a più "
+"valute diverse, come l'Euro, il Dollaro americano o i Bitcoin.</p> "
 
 #: faq.html.j2:61
 msgid "<p>Taler currently does not offer conversion between currencies.</p>"
-msgstr ""
-"<p>Al momento Taler non offre la conversione tra le valute.</p> "
+msgstr "<p>Al momento Taler non offre la conversione tra le valute.</p> "
 
 #: faq.html.j2:65
 msgid "How does Taler protect my privacy?"
-msgstr ""
-"Come protegge Taler la mia privacy?"
+msgstr "Come protegge Taler la mia privacy?"
 
 #: faq.html.j2:66
 msgid ""
@@ -809,13 +820,12 @@ msgid ""
 msgstr ""
 "<p>Il tuo portafoglio contiene monete digitali che sono <a href=\"https://en."
 "wikipedia.org/wiki/Blind_signature\">firmate ciecamente</a> da un cambio. "
-"L'uso della blind signature protegge la tua privacy in quanto impedisce "
-"al cambio di sapere quale moneta ha firmato e per quale cliente.</p> "
+"L'uso della blind signature protegge la tua privacy in quanto impedisce al "
+"cambio di sapere quale moneta ha firmato e per quale cliente.</p> "
 
 #: glossary.html.j2:6
 msgid "auditor"
-msgstr ""
-"revisore"
+msgstr "revisore"
 
 #: glossary.html.j2:8
 msgid ""
@@ -826,8 +836,7 @@ msgstr ""
 
 #: glossary.html.j2:12
 msgid "bank"
-msgstr ""
-"banca"
+msgstr "banca"
 
 #: glossary.html.j2:14
 msgid ""
@@ -839,43 +848,38 @@ msgstr ""
 
 #: glossary.html.j2:18
 msgid "coin"
-msgstr ""
-"moneta"
+msgstr "moneta"
 
 #: glossary.html.j2:20
 msgid ""
 "coins are individual token representing a certain amount of value, also "
 "known as the `denomination` of the coin"
 msgstr ""
-"le monete sono un token individuale che rappresenta una certa quantità "
-"di valore, nota anche come 'denominazione' della moneta "
+"le monete sono un token individuale che rappresenta una certa quantità di "
+"valore, nota anche come 'denominazione' della moneta "
 
 #: glossary.html.j2:24
 msgid "contract"
-msgstr ""
-"contratto"
+msgstr "contratto"
 
 #: glossary.html.j2:26
 msgid "the proposal signed by the wallet."
-msgstr ""
-"la proposta firmata dal portafoglio"
+msgstr "la proposta firmata dal portafoglio"
 
 #: glossary.html.j2:30
 msgid "denomination"
-msgstr ""
-"denominazione"
+msgstr "denominazione"
 
 #: glossary.html.j2:32
 msgid ""
 "unit of currency, specifies both the currency and the face value of a `coin`"
 msgstr ""
-"unità di valuta, specifica sia la valuta che il valore nominale "
-"di una 'moneta' "
+"unità di valuta, specifica sia la valuta che il valore nominale di una "
+"'moneta' "
 
 #: glossary.html.j2:36
 msgid "denomination key"
-msgstr ""
-"chiave di denominazione"
+msgstr "chiave di denominazione"
 
 #: glossary.html.j2:38
 msgid ""
@@ -883,12 +887,11 @@ msgid ""
 "a particular `denomination`"
 msgstr ""
 "chiave RSA usata dal cambio per certificare che una data 'moneta' sia valida "
-"e sia di una particolare 'denominazione' " 
+"e sia di una particolare 'denominazione' "
 
 #: glossary.html.j2:42
 msgid "deposit"
-msgstr ""
-"deposito"
+msgstr "deposito"
 
 #: glossary.html.j2:44
 msgid ""
@@ -901,8 +904,7 @@ msgstr ""
 
 #: glossary.html.j2:48
 msgid "dirty"
-msgstr ""
-"sporco"
+msgstr "sporco"
 
 #: glossary.html.j2:50
 msgid ""
@@ -910,15 +912,14 @@ msgid ""
 "customer, thereby creating the danger of some entity being able to link "
 "multiple transactions of coin's owner if the coin is not refreshed first"
 msgstr ""
-"la 'moneta' è sporca se la sua chiave pubblica può essere conosciuta "
-"da un'entità diversa dal cliente, creando così il pericolo che, se la "
-"moneta non viene aggiornata prima, una certa entità sia in grado di collegare "
-"più transazioni del possessore della moneta "
+"la 'moneta' è sporca se la sua chiave pubblica può essere conosciuta da "
+"un'entità diversa dal cliente, creando così il pericolo che, se la moneta "
+"non viene aggiornata prima, una certa entità sia in grado di collegare più "
+"transazioni del possessore della moneta "
 
 #: glossary.html.j2:54
 msgid "exchange"
-msgstr ""
-"cambio"
+msgstr "cambio"
 
 #: glossary.html.j2:56
 msgid ""
@@ -926,34 +927,30 @@ msgid ""
 "`withdrawal` and redeems them when they are `deposited` by merchants."
 msgstr ""
 "il fornitore dei servizi di pagamento di Taler. Emette le 'monete' "
-"elettroniche durante il 'prelievo' e le riscatta quando vengono "
-" 'depositate' dai commercianti"
+"elettroniche durante il 'prelievo' e le riscatta quando vengono  "
+"'depositate' dai commercianti"
 
 #: glossary.html.j2:60
 msgid "extension"
-msgstr ""
-"estensione"
+msgstr "estensione"
 
 #: glossary.html.j2:62
 msgid "implementation of a `wallet` for browsers"
-msgstr ""
-"implementazione di un 'portafoglio' per i browsers"
+msgstr "implementazione di un 'portafoglio' per i browsers"
 
 #: glossary.html.j2:66
 msgid "fresh coin"
-msgstr ""
-"moneta fresca"
+msgstr "moneta fresca"
 
 #: glossary.html.j2:68
 msgid "a `coin` is fresh if its public key is only known to the customer"
 msgstr ""
-"la 'moneta' è fresca se la sua chiave pubblica è conosciuta soltanto dal cliente"
-
+"la 'moneta' è fresca se la sua chiave pubblica è conosciuta soltanto dal "
+"cliente"
 
 #: glossary.html.j2:72
 msgid "master key"
-msgstr ""
-"chiave master"
+msgstr "chiave master"
 
 #: glossary.html.j2:74
 msgid ""
@@ -965,19 +962,17 @@ msgstr ""
 
 #: glossary.html.j2:78
 msgid "message signing key"
-msgstr ""
-"chiave di firma del messaggio"
+msgstr "chiave di firma del messaggio"
 
 #: glossary.html.j2:80
 msgid "key used by the exchange to sign online messages, other than coins"
 msgstr ""
-"chiave utilizzata dal cambio per firmare messaggi online, diversi "
-"dalle monete "
+"chiave utilizzata dal cambio per firmare messaggi online, diversi dalle "
+"monete "
 
 #: glossary.html.j2:84
 msgid "offer"
-msgstr ""
-"offerta"
+msgstr "offerta"
 
 #: glossary.html.j2:86
 msgid ""
@@ -991,49 +986,43 @@ msgstr ""
 "descrizione dei dettagli di una transazione, specifica gli obblighi di "
 "pagamento per il cliente (cioè l'importo), i prodotti finali del "
 "commerciante ed altre informazioni correlate, come scadenze o sedi; "
-"tuttavia, manca di alcune informazioni che il backend dovrebbe fornire. "
-"In altre parole, dopo che il backend aggiunge le informazioni mancanti "
+"tuttavia, manca di alcune informazioni che il backend dovrebbe fornire. In "
+"altre parole, dopo che il backend aggiunge le informazioni mancanti "
 "all'offerta e la firma, essa diventa una proposta."
-
 
 #: glossary.html.j2:95
 msgid "owner"
-msgstr ""
-"possessore"
+msgstr "possessore"
 
 #: glossary.html.j2:97
 msgid "a `coin` is owned by the entity that knows the private key of the coin"
 msgstr ""
-"la 'moneta' è di proprietà dell'entità che conosce la chiave privata "
-"della moneta"
+"la 'moneta' è di proprietà dell'entità che conosce la chiave privata della "
+"moneta"
 
 #: glossary.html.j2:101
 msgid "proof"
-msgstr ""
-"prova"
+msgstr "prova"
 
 #: glossary.html.j2:103
 msgid ""
 "message that cryptographically demonstrates that a particular claim is "
 "correct"
 msgstr ""
-"messaggio che dimostra crittograficamente che una particolare "
-"richiesta di risarchimento è corretta "
+"messaggio che dimostra crittograficamente che una particolare richiesta di "
+"risarchimento è corretta "
 
 #: glossary.html.j2:107
 msgid "proposal"
-msgstr ""
-"proposta"
+msgstr "proposta"
 
 #: glossary.html.j2:109
 msgid "a sketch that has been completed and signed by the merchant backend."
-msgstr ""
-"una bozza completata e firmata dal backend del commerciante"
+msgstr "una bozza completata e firmata dal backend del commerciante"
 
 #: glossary.html.j2:113
 msgid "reserve"
-msgstr ""
-"riserva"
+msgstr "riserva"
 
 #: glossary.html.j2:115
 msgid ""
@@ -1041,27 +1030,25 @@ msgid ""
 "exchange ready for `withdrawal`, or the funds kept in the exchange's bank "
 "account to cover obligations from coins in circulation"
 msgstr ""
-"fondi destinati all'uso futuro; sia il saldo di un cliente al cambio "
-"pronto per il 'prelievo', sia i fondi conservati sul conto bancario del "
-"cambio per coprire gli obblighi derivanti dalle monete in circolazione "
+"fondi destinati all'uso futuro; sia il saldo di un cliente al cambio pronto "
+"per il 'prelievo', sia i fondi conservati sul conto bancario del cambio per "
+"coprire gli obblighi derivanti dalle monete in circolazione "
 
 #: glossary.html.j2:119
 msgid "refreshing"
-msgstr ""
-"aggiornamento"
+msgstr "aggiornamento"
 
 #: glossary.html.j2:121
 msgid ""
 "operation by which a `dirty` `coin` is converted into one or more `fresh` "
 "coins"
 msgstr ""
-"operazione mediante la quale una moneta 'sporca' viene convertita "
-"in una o più monete 'fresche' "
+"operazione mediante la quale una moneta 'sporca' viene convertita in una o "
+"più monete 'fresche' "
 
 #: glossary.html.j2:125
 msgid "refund"
-msgstr ""
-"rimborso"
+msgstr "rimborso"
 
 #: glossary.html.j2:127
 msgid ""
@@ -1070,13 +1057,12 @@ msgid ""
 "the customer"
 msgstr ""
 "operazione con cui un commerciante fa un passo indietro dal diritto di "
-"ottenere i fondi da un operazione di 'deposito', resitituendo il diritto "
-"ai fondi al cliente"
+"ottenere i fondi da un operazione di 'deposito', resitituendo il diritto ai "
+"fondi al cliente"
 
 #: glossary.html.j2:131
 msgid "sharing"
-msgstr ""
-"condivisione"
+msgstr "condivisione"
 
 #: glossary.html.j2:133
 msgid ""
@@ -1084,70 +1070,61 @@ msgid ""
 "private key, thereby allowing all co-owners to spend the coin at any time."
 msgstr ""
 "gli utenti possono condividere la proprietà della 'moneta' condividendo "
-"l'accesso alla chiave privata della moneta, consentendo così a tutti i "
-"co-possessori di spendere la moneta in qualsiasi momento"
+"l'accesso alla chiave privata della moneta, consentendo così a tutti i co-"
+"possessori di spendere la moneta in qualsiasi momento"
 
 #: glossary.html.j2:137
 msgid "signing key"
-msgstr ""
-"chiave di firma"
+msgstr "chiave di firma"
 
 #: glossary.html.j2:139
 msgid "see message signing key."
-msgstr ""
-"vedi 'chiave di firma del messaggio' "
+msgstr "vedi 'chiave di firma del messaggio' "
 
 #: glossary.html.j2:143
 msgid "spending"
-msgstr ""
-"spesa"
+msgstr "spesa"
 
 #: glossary.html.j2:145
 msgid ""
 "operation by which a customer gives a merchant the right to `deposit` coins "
 "in return for merchandise"
 msgstr ""
-"operazione mediante la quale un cliente dà ad un commerciante il diritto "
-"di 'depositare le monete in cambio di merce"
+"operazione mediante la quale un cliente dà ad un commerciante il diritto di "
+"'depositare le monete in cambio di merce"
 
 #: glossary.html.j2:149
 msgid "transfer"
-msgstr ""
-"trasferimento"
+msgstr "trasferimento"
 
 #: glossary.html.j2:151
 msgid "method of sending funds between `bank` accounts"
-msgstr ""
-"metodo per l'invio di fondi tra conti 'bancari' "
+msgstr "metodo per l'invio di fondi tra conti 'bancari' "
 
 #: glossary.html.j2:155
 msgid "transaction"
-msgstr ""
-"transazione"
+msgstr "transazione"
 
 #: glossary.html.j2:157
 msgid ""
 "method by which ownership is exclusively transferred from one entity to "
 "another"
 msgstr ""
-"metodo in base al quale la proprietà è trasferita esclusivamente "
-"da un'entità ad un'altra "
+"metodo in base al quale la proprietà è trasferita esclusivamente da "
+"un'entità ad un'altra "
 
 #: glossary.html.j2:161
 msgid "transaction id"
-msgstr ""
-"ID di transazione"
+msgstr "ID di transazione"
 
 #: glossary.html.j2:163
 msgid "unique number by which a merchant identifies a `transaction`"
 msgstr ""
-"numero univoco con il quale un commerciante identifica una "
-" 'transazione' "
+"numero univoco con il quale un commerciante identifica una  'transazione' "
 
 #: glossary.html.j2:167
 msgid "wallet"
-msgstr ""
-"portafoglio"
+msgstr "portafoglio"
 
 #: glossary.html.j2:169
 msgid ""
@@ -1158,38 +1135,34 @@ msgstr ""
 
 #: glossary.html.j2:173
 msgid "wire transfer"
-msgstr ""
-"bonifico bancario"
+msgstr "bonifico bancario"
 
 #: glossary.html.j2:175
 msgid "see `transfer`"
-msgstr ""
-"vedi 'trasferimento' "
+msgstr "vedi 'trasferimento' "
 
 #: glossary.html.j2:179
 msgid "wire transfer identifier"
-msgstr ""
-"identificatore del bonifico bancario"
+msgstr "identificatore del bonifico bancario"
 
 #: glossary.html.j2:181
 msgid ""
 "subject of a wire `transfer`; usually a random string to uniquely identify "
 "the `transfer`"
 msgstr ""
-"oggetto di un 'bonifico bancario'; solitamente una stringa casuale "
-"per identificare in modo univoco il 'trasferimento' "
+"oggetto di un 'bonifico bancario'; solitamente una stringa casuale per "
+"identificare in modo univoco il 'trasferimento' "
 
 #: glossary.html.j2:185
 msgid "withdrawal"
-msgstr ""
-"prelievo"
+msgstr "prelievo"
 
 #: glossary.html.j2:187
 msgid ""
 "operation by which a `wallet` can convert funds from a reserve to fresh coins"
 msgstr ""
-"operazione mediante la quale un 'portafoglio' può convertire i fondi "
-"da una riserva a monete fresche"
+"operazione mediante la quale un 'portafoglio' può convertire i fondi da una "
+"riserva a monete fresche"
 
 #: governments.html.j2:6
 msgid "Advantages for Governments"
