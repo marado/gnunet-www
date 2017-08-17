@@ -32,7 +32,7 @@ msgstr ""
 
 #: about.html.j2:20
 msgid "Applied cryptography. Contact to W3c &amp; Tor."
-msgstr "Criptografía aplicada. Contacto para W3c &amp; Tor."
+msgstr "Criptografía aplicada. Contacto para W3C &amp; Tor."
 
 #: about.html.j2:25
 msgid "Theoretical foundations."
