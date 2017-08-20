@@ -17,7 +17,7 @@
    version="1.1"
    id="SVGRoot"
    sodipodi:docname="citizen.es.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   inkscape:version="0.92.2pre0 (973e216, 2017-07-25)">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="872.63816"
-     inkscape:cy="594.30003"
+     inkscape:cx="476.65836"
+     inkscape:cy="578.13759"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g12739"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
@@ -18749,11 +18749,15 @@
            id="tspan56508"
            y="234.83055"
            x="-514.14331"
-           sodipodi:role="line">1. pago al proveedor</tspan><tspan
+           sodipodi:role="line">1. pago a la</tspan><tspan
            y="298.83057"
            x="-514.14331"
            sodipodi:role="line"
-           id="tspan4701">de intercambio</tspan></text>
+           id="tspan4683">plataforma de</tspan><tspan
+           y="362.83057"
+           x="-514.14331"
+           sodipodi:role="line"
+           id="tspan4701">intercambio</tspan></text>
       <path
          inkscape:connector-curvature="0"
          id="path10891"
@@ -19276,15 +19280,15 @@
          sodipodi:role="line"
          x="961.81677"
          y="284.97491"
-         id="tspan56438">Banco del</tspan><tspan
+         id="tspan56438">Banco de la</tspan><tspan
          sodipodi:role="line"
          x="961.81677"
          y="329.97491"
-         id="tspan4689">proveedor de</tspan><tspan
+         id="tspan4689">plataforma de</tspan><tspan
          sodipodi:role="line"
          x="961.81677"
          y="374.97491"
-         id="tspan4691">intercambios</tspan></text>
+         id="tspan4691">intercambio</tspan></text>
     <g
        transform="matrix(0.31078808,0,0,0.31078808,865.48029,54.081622)"
        id="g7071-3">
@@ -19336,11 +19340,11 @@
          sodipodi:role="line"
          id="tspan56450"
          x="961.83929"
-         y="831.83722">Proveedor de</tspan><tspan
+         y="831.83722">Plataforma de</tspan><tspan
          sodipodi:role="line"
          x="961.83929"
          y="911.83722"
-         id="tspan4703">intercambios</tspan></text>
+         id="tspan4703">intercambio</tspan></text>
     <rect
        style="opacity:1;fill:#51ff15;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.67037106;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect57860-2"

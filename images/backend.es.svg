@@ -17,7 +17,7 @@
    version="1.1"
    id="SVGRoot"
    sodipodi:docname="backend.es.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   inkscape:version="0.92.2pre0 (973e216, 2017-07-25)">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="1147.952"
-     inkscape:cy="449.12446"
+     inkscape:cx="743.89098"
+     inkscape:cy="441.04324"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -19262,11 +19262,11 @@
          sodipodi:role="line"
          x="963.8371"
          y="820.17303"
-         id="tspan8390">Proveedor de</tspan><tspan
+         id="tspan8390">Plataforma de</tspan><tspan
          sodipodi:role="line"
          x="963.8371"
          y="865.17303"
-         id="tspan8392">intercambios</tspan></text>
+         id="tspan8392">intercambio</tspan></text>
     <g
        transform="matrix(0.31078808,0,0,0.31078808,865.48029,54.081622)"
        id="g7071-3">
@@ -19385,14 +19385,14 @@
          sodipodi:role="line"
          x="964.19849"
          y="296.56921"
-         id="tspan56438-4">Banco del</tspan><tspan
+         id="tspan56438-4">Banco de la</tspan><tspan
          sodipodi:role="line"
          x="964.19849"
          y="341.56921"
-         id="tspan8390-8">proveedor de</tspan><tspan
+         id="tspan8390-8">plataforma de</tspan><tspan
          sodipodi:role="line"
          x="964.19849"
          y="386.56921"
-         id="tspan8392-2">intercambios</tspan></text>
+         id="tspan8392-2">intercambio</tspan></text>
   </g>
 </svg>
