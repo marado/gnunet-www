@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-17 13:10+0200\n"
+"POT-Creation-Date: 2017-08-22 21:13+0200\n"
 "PO-Revision-Date: 2017-06-02 09:46+0100\n"
 "Last-Translator: Stefan Kügel <skuegel@web.de>\n"
 "Language-Team: de <LL@li.org, de@taler.net>\n"
@@ -60,27 +60,33 @@ msgstr "Nachhaltige Unternehmensentwicklung."
 msgid "Software engineer. Works on libebics."
 msgstr "Software-Ingenieur. Arbeitet an libebics."
 
-#: about.html.j2:68
+#: about.html.j2:68 about.html.j2:72 about.html.j2:76
 msgid "Translator (Spanish)"
 msgstr "Übersetzer (Spanisch)."
 
-#: about.html.j2:72 about.html.j2:76
+#: about.html.j2:82 about.html.j2:86
 msgid "Translator (Italian)"
 msgstr "Übersetzer (Italienisch)."
 
-#: about.html.j2:82
+#: about.html.j2:90
+#, fuzzy
+#| msgid "Translator (Spanish)"
+msgid "Translator (Deutsch)"
+msgstr "Übersetzer (Spanisch)."
+
+#: about.html.j2:96
 msgid "Hardware security module"
 msgstr "Hardware-Sicherheitsmodul"
 
-#: about.html.j2:86
+#: about.html.j2:100
 msgid "Risk management"
 msgstr "Risikomanagement"
 
-#: about.html.j2:90
+#: about.html.j2:104
 msgid "PhD student, TU Munich. Currently teaching."
 msgstr "Doktorand an der TU München. Zurzeit lehrend tätig."
 
-#: about.html.j2:96
+#: about.html.j2:110
 msgid "Software engineer. Works on Android wallet."
 msgstr "Software-Ingenieur. Arbeitet an einer Android-Geldbörse."
 
@@ -344,6 +350,10 @@ msgstr ""
 "Endgeräten angezeigt werden. Es ist möglich, mehrere Kopien der Taler-"
 "Geldbörse zu speichern, um sie auch bei einem Geräteausfall oder Verlust der "
 "Hardware stets gesichert zu haben."
+
+#: citizens.html.j2:137 merchants.html.j2:179
+msgid "customer perspective"
+msgstr ""
 
 #: contact.html.j2:6
 msgid "Contact information"
@@ -696,6 +706,12 @@ msgid ""
 msgstr ""
 "Das Taler-Bezahlsystem verwendet Protokolle für den Geldfluss zwischen den "
 "Beteiligten. Die grundlegenden Transaktionen sind in der Grafik dargestellt:"
+
+#: developers.html.j2:155
+#, fuzzy
+#| msgid "Taler system overview"
+msgid "system overview"
+msgstr "Das Taler-System im Überblick"
 
 #: developers.html.j2:158
 #, fuzzy
@@ -1732,6 +1748,12 @@ msgstr ""
 "von Verkäufern und deren Rückerstattung durch Banküberweisung von den "
 "Wechselstuben an Geschäftsbanken sowie die Einkünfte der Wechselstuben aus "
 "Transaktionsgebühren"
+
+#: index.html.j2:6
+#, fuzzy
+#| msgid "GNU Taler"
+msgid "GNU Taler logo"
+msgstr "Das Taler-Bezahlsystem"
 
 #: index.html.j2:10
 msgid "One-Click Cash Payments!"

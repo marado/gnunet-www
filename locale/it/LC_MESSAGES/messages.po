@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-17 13:10+0200\n"
+"POT-Creation-Date: 2017-08-22 21:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -68,32 +68,37 @@ msgstr "Sviluppo di business sostenibile."
 msgid "Software engineer. Works on libebics."
 msgstr "Programmatore. Attualmente coinvolto in libebics."
 
-#: about.html.j2:68
+#: about.html.j2:68 about.html.j2:72 about.html.j2:76
 #, fuzzy
 msgid "Translator (Spanish)"
 msgstr "Traduttore per lo spagnolo."
 
-#: about.html.j2:72 about.html.j2:76
+#: about.html.j2:82 about.html.j2:86
 #, fuzzy
 msgid "Translator (Italian)"
 msgstr "Traduttrice per l'italiano."
 
-#: about.html.j2:82
+#: about.html.j2:90
+#, fuzzy
+msgid "Translator (Deutsch)"
+msgstr "Traduttore per lo spagnolo."
+
+#: about.html.j2:96
 msgid "Hardware security module"
 msgstr "Sicurezza hardware."
 
-#: about.html.j2:86
+#: about.html.j2:100
 msgid "Risk management"
 msgstr "Gestione del rischio."
 
-#: about.html.j2:90
+#: about.html.j2:104
 #, fuzzy
 msgid "PhD student, TU Munich. Currently teaching."
 msgstr ""
 "Dottorando alla TU di Monaco di Baviera. Linux, FreeBSD, siti web e il deep "
 "state nel tempo libero."
 
-#: about.html.j2:96
+#: about.html.j2:110
 msgid "Software engineer. Works on Android wallet."
 msgstr "Programmatore. Attualmente dedicato al portafoglio Android."
 
@@ -281,6 +286,10 @@ msgstr ""
 "Il portafoglio può contenere diverse valute, e può essere condiviso da più "
 "dispositivi. Il cliente può fare copie di sicurezza del proprio portafoglio "
 "per proteggersi contro guasti del proprio hardware."
+
+#: citizens.html.j2:137 merchants.html.j2:179
+msgid "customer perspective"
+msgstr ""
 
 #: contact.html.j2:6
 msgid "Contact information"
@@ -560,6 +569,12 @@ msgstr ""
 "Il sistema Taler è costituito da protocolli eseguiti tra diversi attori come "
 "mostrato nell'illustrazione a destra. Le transazioni tipiche comportano le "
 "seguenti operazioni:"
+
+#: developers.html.j2:155
+#, fuzzy
+#| msgid "Taler system overview"
+msgid "system overview"
+msgstr "Panoramica del sistema Taler"
 
 #: developers.html.j2:158
 msgid ""
@@ -1326,6 +1341,12 @@ msgid ""
 "merchants with the exchange, and the income of the exchange from transaction "
 "fees."
 msgstr ""
+
+#: index.html.j2:6
+#, fuzzy
+#| msgid "GNU Taler Bibliography"
+msgid "GNU Taler logo"
+msgstr "Bibliografia GNU Taler"
 
 #: index.html.j2:10
 msgid "One-Click Cash Payments!"
