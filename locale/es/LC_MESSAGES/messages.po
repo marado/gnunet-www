@@ -276,7 +276,7 @@ msgstr ""
 
 #: citizens.html.j2:137 merchants.html.j2:179
 msgid "customer perspective"
-msgstr ""
+msgstr "Perspectiva del consumidor"
 
 #: contact.html.j2:6
 msgid "Contact information"
