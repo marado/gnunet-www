@@ -71,10 +71,8 @@ msgid "Translator (Italian)"
 msgstr "Traductora (italiano)"
 
 #: about.html.j2:90
-#, fuzzy
-#| msgid "Translator (Spanish)"
 msgid "Translator (Deutsch)"
-msgstr "Traductor (español)"
+msgstr "Traductor (alemán)"
 
 #: about.html.j2:96
 msgid "Hardware security module"
@@ -343,14 +341,6 @@ msgid "Copyright Assignment"
 msgstr "Asignación de derechos de autor"
 
 #: copyright.html.j2:8
-#, fuzzy
-#| msgid ""
-#| "<p>Contributors to GNU Taler with Git access must sign the <a href=\"pdf/"
-#| "copyright.pdf\">copyright assignment</a> to ensure that the <a href="
-#| "\"https://gnunet.org/git/gnunet-ev.git/tree/gnunet_taler_agreement.tex"
-#| "\">GNUnet e.V. --- Taler Systems SA agreement on licensing and "
-#| "collaborative development</a> of the GNUnet and GNU Taler projects is "
-#| "satisfied.</p>"
 msgid ""
 "<p>Contributors to GNU Taler with Git access must sign the <a href=\"/pdf/"
 "copyright.pdf\">copyright assignment</a> to ensure that the <a href="
@@ -427,16 +417,6 @@ msgid "RESTful"
 msgstr "Basado en REST"
 
 #: developers.html.j2:35
-#, fuzzy
-#| msgid ""
-#| "Taler is designed to work on the Internet. To ensure that Taler payments "
-#| "can work with restrictive network setups, Taler uses a RESTful protocol "
-#| "over HTTP or HTTPS. Taler's security does not depend upon the use of "
-#| "HTTPS, but obviously merchants may choose to offer HTTPS for consistency "
-#| "and because it generally is better for privacy compared to HTTP. Taler "
-#| "uses JSON to encode structure data, making it easy to integrate Taler "
-#| "with existing Web applications. Taler's protocol is documented in detail "
-#| "at <a href=\"https://api.taler.net/\">api.taler.net</a>."
 msgid ""
 "Taler is designed to work on the Internet. To ensure that Taler payments can "
 "work with restrictive network setups, Taler uses a RESTful protocol over "
@@ -455,7 +435,7 @@ msgstr ""
 "la privacidad en comparación con HTTP. Taler utiliza JSON para codificar "
 "datos de estructura, facilitando la integración de Taler con las "
 "aplicaciones web existentes. El protocolo de Taler está documentado en "
-"detalle en <a href=\"https://api.taler.net/\">api.taler.net</a>."
+"detalle en <a href=\"https://docs.taler.net/\">docs.taler.net</a>."
 
 #: developers.html.j2:58
 msgid "Code"
@@ -568,10 +548,8 @@ msgstr ""
 "involucran los siguientes pasos:"
 
 #: developers.html.j2:155
-#, fuzzy
-#| msgid "Taler system overview"
 msgid "system overview"
-msgstr "Diagrama general del sistema Taler"
+msgstr "Diagrama general del sistema"
 
 #: developers.html.j2:158
 msgid ""
@@ -1414,10 +1392,8 @@ msgstr ""
 "la plataforma de intercambio."
 
 #: index.html.j2:6
-#, fuzzy
-#| msgid "GNU Taler"
 msgid "GNU Taler logo"
-msgstr "GNU Taler"
+msgstr "Logotipo de GNU Taler"
 
 #: index.html.j2:10
 msgid "One-Click Cash Payments!"
@@ -1905,8 +1881,6 @@ msgid "Citizens"
 msgstr "Ciudadanos"
 
 #: common/footer.j2.inc:15 common/navigation.j2.inc:6
-#, fuzzy
-#| msgid "Manuals for merchants"
 msgid "Merchants"
 msgstr "Comerciantes"
 
@@ -1923,10 +1897,8 @@ msgid "FAQ"
 msgstr "Preguntas frecuentes"
 
 #: common/footer.j2.inc:23 common/navigation.j2.inc:16
-#, fuzzy
-#| msgid "GNU Taler Bibliography"
 msgid "Bibliography"
-msgstr "Bibliografía de GNU Taler"
+msgstr "Bibliografía"
 
 #: common/footer.j2.inc:32
 msgid ""
@@ -1941,10 +1913,8 @@ msgid "Resources"
 msgstr "Recursos"
 
 #: common/navigation.j2.inc:11
-#, fuzzy
-#| msgid "Taler System Architecture"
 msgid "System Architecture"
-msgstr "Arquitectura del Sistema Taler"
+msgstr "Arquitectura del sistema"
 
 #: common/navigation.j2.inc:13
 msgid "Glossary"
