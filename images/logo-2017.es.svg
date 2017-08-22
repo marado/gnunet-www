@@ -1,140 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   viewBox="-50 -50 100 100"
-   id="svg36"
-   sodipodi:docname="logo-2017.es.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
-  <metadata
-     id="metadata40">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     id="namedview38"
-     showgrid="false"
-     inkscape:zoom="2.36"
-     inkscape:cx="50.847458"
-     inkscape:cy="50"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg36" />
-  <style
-     id="style2">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-50 -50 100 100"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
     .ts1 { fill: #aa3939; letter-spacing:0; }
     .ts2 { letter-spacing:0; }
   </style>
-  <circle
-     cx="0"
-     cy="0"
-     r="40"
-     stroke="black"
-     stroke-width="7.5"
-     fill="none"
-     id="circle4" />
-  <circle
-     cx="0"
-     cy="0"
-     r="45"
-     stroke="black"
-     stroke-width="1"
-     fill="none"
-     id="circle6" />
+
+  <circle cx="0" cy="0" r="40" stroke="black" stroke-width="7.5" fill="none" />
+  <circle cx="0" cy="0" r="45" stroke="black" stroke-width="1" fill="none" />
   <!-- big horizontal T stroke -->
-  <rect
-     x="-30"
-     y="-14"
-     width="60"
-     height="4"
-     id="rect8" />
-  <rect
-     x="-30"
-     y="-9"
-     width="60"
-     height="1"
-     id="rect10" />
-  <rect
-     x="-4"
-     y="-14"
-     width="8"
-     height="54"
-     id="rect12" />
-  <text
-     font-family="'Lucida Console', Monaco, monospace"
-     font-weight="bold"
-     font-size="9"
-     color="red"
-     x="0"
-     y="-18"
-     text-anchor="middle"
-     letter-spacing="0.20em"
-     id="text20"><tspan
-   class="ts1"
-   id="tspan14">❬</tspan>
-Tale<tspan
-   class="ts2"
-   id="tspan18">r<tspan
-   class="ts1"
-   id="tspan16">❭</tspan>
-</tspan>
-</text>
-  <defs
-     id="defs23">
-    <path
-       id="MyPath1"
-       d="M -38 0 A 38 38 1 0 1 38 0" />
-  </defs>
-  <defs
-     id="defs26">
-    <path
-       id="MyPath2"
-       d="M 0 42 A 42 42 1 0 0 0 -42" />
-  </defs>
-  <text
-     font-family="Verdana"
-     font-size="6"
-     color="red"
-     fill="white"
-     id="text30"
-     style="-inkscape-font-specification:'Verdana, Normal';font-family:Verdana;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:6px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">
-    <textPath
-       xlink:href="#MyPath1"
-       id="textPath28">Reservas Electrónicas</textPath>
+  <rect x="-30" y="-14" width="60" height="4"/>
+  <rect x="-30" y="-9" width="60" height="1"/>
+  <rect x="-4" y="-14" width="8" height="54"/>
+
+  <text font-family="'Lucida Console', Monaco, monospace" font-weight="bold" font-size="9" color="red" x="0" y="-18" text-anchor="middle" letter-spacing="0.20em">
+    <tspan class="ts1">&#10092;</tspan>Tale<tspan class="ts2">r<tspan class="ts1">&#10093;</tspan></tspan>
   </text>
-  <text
-     font-family="Verdana"
-     font-size="6"
-     color="red"
-     fill="white"
-     id="text34"
-     style="-inkscape-font-specification:'Verdana, Normal';font-family:Verdana;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:6px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;">
-    <textPath
-       xlink:href="#MyPath2"
-       id="textPath32">Imponibles Anónimas Libres</textPath>
+
+
+  <defs>
+    <path id="MyPath1"
+          d="M -38 0 A 38 38 1 0 1 38 0" />
+  </defs>
+
+  <defs>
+    <path id="MyPath2"
+          d="M 0 42 A 42 42 1 0 0 0 -42" />
+  </defs>
+
+
+  <text font-family="Verdana" font-size="6" color="red" fill="white">
+    <textPath xlink:href="#MyPath1">
+      Imponibles Anónimas Libres
+    </textPath>
+  </text>
+
+  <text font-family="Verdana" font-size="6" color="red" fill="white">
+    <textPath xlink:href="#MyPath2">
+      Reservas Electrónicas
+    </textPath>
   </text>
 </svg>
