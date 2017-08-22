@@ -40,6 +40,13 @@ for in_file in glob.glob("*.j2"):
     def url_localized(filename):
         return "../" + locale + "/" + filename
 
+    def svg_localized(filename):
+        lf = filename + "." + locale + ".svg"
+        if "en" == locale or not os.path.isfile (lf):
+            return "../" + filename + ".svg"
+        else:
+            return "../" + lf
+
     def url(x):
         # TODO: look at the app root environment variable
         # TODO: check if file exists
@@ -63,6 +70,7 @@ for in_file in glob.glob("*.j2"):
                 url=url,
                 self_localized=self_localized,
                 url_localized=url_localized,
+                svg_localized=svg_localized,
                 filename=name + "." + ext)
         out_name = "./" + locale + "/" + in_file.rstrip(".j2")
         os.makedirs("./" + locale, exist_ok=True)
