@@ -85,8 +85,15 @@
    <h2>{{ _("The Business Case") }}</h2>
   <div class="row">
    <div class="col-lg-4">
-     <a href="{{ url('presentations/investors2017.pdf') }}"><img border=0 class="center-block" width=64 height=64 alt="PDF" src="{{ url('images/pdf.svg') }}"><br><p align="center">Download</p></a>
+     <a href="{{ url('presentations/investors2017.pdf') }}"><img border=0 class="center-block" width=64 height=64 alt="PDF" src="{{ url('images/pdf.svg') }}"><br><p align="center">{{ _("Download") }}</p></a>
 
+     <p>
+       {% trans %}
+         Our <a href="financial-news.html">financial news</a> page
+         explains in English how Taler can impact current developments in
+         the global payment market.
+       {% endtrans %}
+     </p>
    </div>
    <div class="col-lg-4" id="canvas-left" style="display:none">
      <canvas id="the-canvas-left"></canvas>
@@ -131,4 +138,6 @@
   </div>
  </div>
 </div>
+
+
 {% endblock body_content %}

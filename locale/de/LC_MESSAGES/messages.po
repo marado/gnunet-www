@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-22 21:13+0200\n"
+"POT-Creation-Date: 2017-08-23 11:10+0200\n"
 "PO-Revision-Date: 2017-06-02 09:46+0100\n"
 "Last-Translator: Stefan Kügel <skuegel@web.de>\n"
 "Language-Team: de <LL@li.org, de@taler.net>\n"
@@ -1137,6 +1137,16 @@ msgstr ""
 "privaten Daten, weil die Taler-Wechselstube dadurch keine Kenntnis davon "
 "erlangt, welche der Münzen von welchen Käufern sie signiert."
 
+#: financial-news.html.j2:6
+msgid "Financial News"
+msgstr "Nachrichten aus der Finanzwelt"
+
+#: financial-news.html.j2:9
+msgid ""
+"This page explains (only in English) how Taler can change ongoing "
+"developments in the financial industry."
+msgstr ""
+
 #: glossary.html.j2:6
 msgid "auditor"
 msgstr ""
@@ -1959,10 +1969,6 @@ msgstr ""
 msgid "Taler News"
 msgstr "Taler-News"
 
-#: index.html.j2:149
-msgid "Financial News"
-msgstr "Nachrichten aus der Finanzwelt"
-
 #: investors.html.j2:6
 msgid "Invest in Taler!"
 msgstr "In Taler investieren!"
@@ -2099,11 +2105,22 @@ msgstr ""
 msgid "The Business Case"
 msgstr "Der Businessplan"
 
-#: investors.html.j2:107
+#: investors.html.j2:88
+msgid "Download"
+msgstr ""
+
+#: investors.html.j2:91
+msgid ""
+"Our <a href=\"financial-news.html\">financial news</a> page explains in "
+"English how Taler can impact current developments in the global payment "
+"market."
+msgstr ""
+
+#: investors.html.j2:114
 msgid "Running a Taler payment service operator"
 msgstr "Ein Taler-Bezahlsystem als Serviceanbieter betreiben"
 
-#: investors.html.j2:110
+#: investors.html.j2:117
 #, fuzzy
 #| msgid ""
 #| "The payment service operator runs the <em>Taler exchange</em>.\n"
@@ -2122,7 +2139,7 @@ msgstr ""
 "Banküberweisungen von und zu Geschäftsbanken und für den Betrieb der IT-"
 "Infrastruktur."
 
-#: investors.html.j2:120
+#: investors.html.j2:127
 msgid ""
 "Cryptographic operations, bandwidth and storage costs are less than 0.01 "
 "cent per transaction."
@@ -2130,7 +2147,7 @@ msgstr ""
 "Die Kosten für die kryptographischen Berechnungen, die Bandbreite und "
 "Datenspeicherung betragen weniger als 0,01 Eurocent pro Transaktion."
 
-#: investors.html.j2:122
+#: investors.html.j2:129
 msgid ""
 "Multiple Taler transactions can be aggregated into larger wire transfers to "
 "merchants to minimize wire transfer costs."
@@ -2139,7 +2156,7 @@ msgstr ""
 "können mehrere kleine Überweisungen auf das Girokonto der Verkäufer in einer "
 "Transaktion zusammengefasst und übertragen werden."
 
-#: investors.html.j2:124
+#: investors.html.j2:131
 msgid ""
 "Protocol allows the exchange to charge fees for any expensive operation "
 "(withdraw, deposit, refresh, refund or aggregated wire transfers)."
@@ -2149,11 +2166,11 @@ msgstr ""
 "Geldbörse, Deponieren von Münzen, Refresh-Funktion, Erstattungen und "
 "aggregierte Überweisungen an Geschäftsbanken."
 
-#: investors.html.j2:126
+#: investors.html.j2:133
 msgid "Partnership with banks establishes consumer trust."
 msgstr "Partnerschaften mit Banken erhöhen das Kundenvertrauen."
 
-#: investors.html.j2:128
+#: investors.html.j2:135
 msgid "Partnership with free software community enables rapid deployment."
 msgstr ""
 "Partnerschaften mit der Free-Software-Bewegung ermöglichen eine rasche "

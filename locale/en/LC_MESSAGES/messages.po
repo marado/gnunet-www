@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-22 21:13+0200\n"
+"POT-Creation-Date: 2017-08-23 11:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -602,6 +602,16 @@ msgid ""
 "knowing which coin it signed for which customer.</p>"
 msgstr ""
 
+#: financial-news.html.j2:6
+msgid "Financial News"
+msgstr ""
+
+#: financial-news.html.j2:9
+msgid ""
+"This page explains (only in English) how Taler can change ongoing "
+"developments in the financial industry."
+msgstr ""
+
 #: glossary.html.j2:6
 msgid "auditor"
 msgstr ""
@@ -1144,10 +1154,6 @@ msgstr ""
 msgid "Taler News"
 msgstr ""
 
-#: index.html.j2:149
-msgid "Financial News"
-msgstr ""
-
 #: investors.html.j2:6
 msgid "Invest in Taler!"
 msgstr ""
@@ -1212,11 +1218,22 @@ msgstr ""
 msgid "The Business Case"
 msgstr ""
 
-#: investors.html.j2:107
+#: investors.html.j2:88
+msgid "Download"
+msgstr ""
+
+#: investors.html.j2:91
+msgid ""
+"Our <a href=\"financial-news.html\">financial news</a> page explains in "
+"English how Taler can impact current developments in the global payment "
+"market."
+msgstr ""
+
+#: investors.html.j2:114
 msgid "Running a Taler payment service operator"
 msgstr ""
 
-#: investors.html.j2:110
+#: investors.html.j2:117
 msgid ""
 "The payment service operator runs the <em>Taler exchange</em>. The exchange "
 "charges <b>transaction fees</b> to customers or merchants. Its operational "
@@ -1224,29 +1241,29 @@ msgid ""
 "of the computing infrastructure."
 msgstr ""
 
-#: investors.html.j2:120
+#: investors.html.j2:127
 msgid ""
 "Cryptographic operations, bandwidth and storage costs are less than 0.01 "
 "cent per transaction."
 msgstr ""
 
-#: investors.html.j2:122
+#: investors.html.j2:129
 msgid ""
 "Multiple Taler transactions can be aggregated into larger wire transfers to "
 "merchants to minimize wire transfer costs."
 msgstr ""
 
-#: investors.html.j2:124
+#: investors.html.j2:131
 msgid ""
 "Protocol allows the exchange to charge fees for any expensive operation "
 "(withdraw, deposit, refresh, refund or aggregated wire transfers)."
 msgstr ""
 
-#: investors.html.j2:126
+#: investors.html.j2:133
 msgid "Partnership with banks establishes consumer trust."
 msgstr ""
 
-#: investors.html.j2:128
+#: investors.html.j2:135
 msgid "Partnership with free software community enables rapid deployment."
 msgstr ""
 

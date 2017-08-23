@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-22 21:13+0200\n"
+"POT-Creation-Date: 2017-08-23 11:10+0200\n"
 "PO-Revision-Date: 2017-08-10 06:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: es <LL@li.org>\n"
@@ -822,6 +822,16 @@ msgstr ""
 "ya que impide que se conozcan las monedas utilizadas o los clientes "
 "involucrados.</p>"
 
+#: financial-news.html.j2:6
+msgid "Financial News"
+msgstr "Noticias Financieras"
+
+#: financial-news.html.j2:9
+msgid ""
+"This page explains (only in English) how Taler can change ongoing "
+"developments in the financial industry."
+msgstr ""
+
 #: glossary.html.j2:6
 msgid "auditor"
 msgstr "Auditor"
@@ -1530,10 +1540,6 @@ msgstr ""
 msgid "Taler News"
 msgstr "Noticias de Taler"
 
-#: index.html.j2:149
-msgid "Financial News"
-msgstr "Noticias Financieras"
-
 #: investors.html.j2:6
 msgid "Invest in Taler!"
 msgstr "¡Invierta en Taler!"
@@ -1625,11 +1631,22 @@ msgstr ""
 msgid "The Business Case"
 msgstr "El Caso de los Negocios"
 
-#: investors.html.j2:107
+#: investors.html.j2:88
+msgid "Download"
+msgstr ""
+
+#: investors.html.j2:91
+msgid ""
+"Our <a href=\"financial-news.html\">financial news</a> page explains in "
+"English how Taler can impact current developments in the global payment "
+"market."
+msgstr ""
+
+#: investors.html.j2:114
 msgid "Running a Taler payment service operator"
 msgstr "Operar una plataforma de servicio de pago de Taler"
 
-#: investors.html.j2:110
+#: investors.html.j2:117
 msgid ""
 "The payment service operator runs the <em>Taler exchange</em>. The exchange "
 "charges <b>transaction fees</b> to customers or merchants. Its operational "
@@ -1642,7 +1659,7 @@ msgstr ""
 "transferencias electrónicas y del funcionamiento de la infraestructura "
 "informática."
 
-#: investors.html.j2:120
+#: investors.html.j2:127
 msgid ""
 "Cryptographic operations, bandwidth and storage costs are less than 0.01 "
 "cent per transaction."
@@ -1650,7 +1667,7 @@ msgstr ""
 "Las operaciones criptográficas, el ancho de banda y los costes de "
 "almacenamiento son inferiores a 0.01 centavos por transacción."
 
-#: investors.html.j2:122
+#: investors.html.j2:129
 msgid ""
 "Multiple Taler transactions can be aggregated into larger wire transfers to "
 "merchants to minimize wire transfer costs."
@@ -1659,7 +1676,7 @@ msgstr ""
 "electrónicas más grandes de los comerciantes para reducir al mínimo los "
 "costes de la transferencia bancaria."
 
-#: investors.html.j2:124
+#: investors.html.j2:131
 msgid ""
 "Protocol allows the exchange to charge fees for any expensive operation "
 "(withdraw, deposit, refresh, refund or aggregated wire transfers)."
@@ -1668,11 +1685,11 @@ msgstr ""
 "cualquier operación que tenga un coste (retirar, depositar, actualizar, "
 "reembolsar o realizar transferencias electrónicas agrupadas)."
 
-#: investors.html.j2:126
+#: investors.html.j2:133
 msgid "Partnership with banks establishes consumer trust."
 msgstr "La asociación con bancos consolida la confianza del consumidor."
 
-#: investors.html.j2:128
+#: investors.html.j2:135
 msgid "Partnership with free software community enables rapid deployment."
 msgstr ""
 "La asociación con la comunidad de software libre permite un despliegue "
