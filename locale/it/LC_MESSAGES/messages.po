@@ -1192,6 +1192,7 @@ msgstr ""
 #: governments.html.j2:6
 msgid "Advantages for Governments"
 msgstr ""
+"Vantaggi per le Pubbliche Amministrazioni"
 
 #: governments.html.j2:8
 msgid ""
@@ -1201,6 +1202,12 @@ msgid ""
 "financial framework and act as trusted regulators. Taler contributes to "
 "digital sovereignty in the critical financial infrastructure."
 msgstr ""
+"Taler si fa responsabile di garantire che le imprese operino legalmente, "
+"pur rispettando le libertà civili dei cittadini. Taler è un sistema di "
+"pagamento basato su standard aperti e software libero. Taler ha bisogno "
+"delle Amministrazioni affinché stabiliscano un quadro finanziario e agiscano "
+"come autorità di controllo di fiducia. Taler contribuisce alla sovranità "
+"digitale nella critica infrastruttura finanziaria. "
 
 #: governments.html.j2:25 index.html.j2:71
 msgid "Taxable"
@@ -1215,6 +1222,13 @@ msgid ""
 "data to tax businesses and individuals based on their income, making tax "
 "evasion and black markets less viable."
 msgstr ""
+"Taler è stato sviluppato con l'obiettivo di combattere la corruzione e "
+"sostenere la tassazione. Con Taler, il destinatario di qualsiasi forma di "
+"pagamento è facilmente identificabile dal Governo, e il commerciante può "
+"essere costretto a fornire il contratto che era stato accettato dal "
+"cliente. Le Amministrazioni possono utilizzare questi dati per tassare "
+"le imprese e gli individui in base al loro reddito, rendendo meno "
+"sostenibili l'evasione fiscale e i mercati neri. "
 
 #: governments.html.j2:41
 msgid ""
@@ -1227,6 +1241,17 @@ msgid ""
 "funds with trusted friends and family, or synchronizing wallets across "
 "multiple devices."
 msgstr ""
+"Pertanto, nonostante l'offerta di anonimato per i cittadini che spendono "
+"denaro digitale per l'acquisto di beni e servizi, Taler assicura anche "
+"che lo Stato possa tenere sotto osservazione i fondi in entrata. Questo "
+"può essere utilizzato per garantire che le imprese siano coinvolte "
+"soltanto in attività legali, e non evadano le imposte sul reddito, "
+"sulle vendite o sul valore aggiunto. Tuttavia, questa capacità di "
+"osservazione non si estende al dominio personale immediato. In particolare, "
+"il monitoraggio non include l'accesso condiviso ai fondi con amici "
+"fidati e familiari, o la sincronizzazione dei portafogli tra più "
+"dispositivi. "
+
 
 #: governments.html.j2:61
 msgid ""
@@ -1236,6 +1261,12 @@ msgid ""
 "damages are strictly limited, improving economic security for individuals, "
 "merchants, the exchange and the state."
 msgstr ""
+"I pagamenti di Taler sono protetti da crittografia. Pertanto, i clienti, "
+"i commercianti e il provider di servici di pagamento di Taler (il cambio) "
+"possono dimostrare matematicamente la loro condotta legale in tribunale "
+"in caso di controversie. I danni finanziari sono strettamente limitati, "
+"migliorando la sicurezza economica per gli individui, i commercianti, "
+"il cambio e lo Stato. "
 
 #: governments.html.j2:73
 msgid ""
@@ -1246,6 +1277,13 @@ msgid ""
 "the exchange to ensure that the escrow account is managed honestly. This "
 "ensures that the exchange does not threaten the economy due to fraud."
 msgstr ""
+"In quanto fornitore di servizi di pagamento, il cambio di Taler è "
+"soggetto a regolamentazione finanziaria. Una regolamentazione "
+"finanziaria e controlli regolari sono fondamentali per instaurare fiducia. "
+"In particolare, il progetto di Taler prevede l'esistenza di un revisore "
+"indipendente che controlla le prove crittografiche raccolte al cambio "
+"per assicurare che il conto di garanzia sia gestito onestamente. Ciò "
+"garantisce che il cambio non minacci l'economia per via fraudolenta. "
 
 #: governments.html.j2:88 index.html.j2:97
 #, fuzzy
@@ -1258,6 +1296,10 @@ msgid ""
 "will enable competition and avoid the monopolization of payment systems that "
 "threatens global political and financial stability today."
 msgstr ""
+"Taler è un software libero che implementa uno standard di protocollo aperto. "
+"In tal modo, Taler permetterà la concorrenza ed eviterò la monopolizzazione "
+"dei sistemi di pagamento che oggi minaccia la stabilità politica e "
+"finanziaria globale. "
 
 #: governments.html.j2:101
 msgid "Efficient"
@@ -1269,54 +1311,73 @@ msgid ""
 "as Bitcoin, Taler will not threaten the availability of national electric "
 "grids or (significantly) contribute to environmental pollution."
 msgstr ""
+"Taler ha una progettazione efficiente. A differenza dei sistemi di pagamento "
+"basati su Blockchain, come Bitcoin, Taler non sarà una minaccia per la "
+"disponibilità di reti elettriche nazionali e non contribuirà (in modo "
+"significativo) all'inquinamento ambientale. "
 
 #: governments.html.j2:120
 msgid "Taler and regulation"
 msgstr ""
+"Taler e la regolamentazione"
 
 #: governments.html.j2:122
 msgid "Anti money laundering (AML)"
 msgstr ""
+"Antiriciclaggio (AML) "
 
 #: governments.html.j2:123
 msgid ""
 "With Taler, income is visible and can be tied to the contract signed by both "
 "parties."
 msgstr ""
+"Con Taler, il reddito è visibile e può essere collegato al contratto "
+"firmato da entrambe le parti. "
 
 #: governments.html.j2:124
 msgid "Know your customer (KYC)"
 msgstr ""
+"Conosci il tuo cliente (KYC) "
 
 #: governments.html.j2:125
 msgid ""
 "In Taler, payer and payee are known by their bank accounts when withdrawing "
 "or depositing coins respectively"
 msgstr ""
+"In Taler, il pagatore e il beneficiario sono conosciuti dai loro conti "
+"bancari quando rispettivamente prelevano o depositano monete. "
 
 #: governments.html.j2:126
 msgid "General Data Protection Regulation (GDPR)"
 msgstr ""
+"Regolamento generale sulla protezione dei dati (GDPR) "
 
 #: governments.html.j2:127
 msgid ""
 "Taler cryptographically protects citizen's privacy, and by design implements "
 "data minimization and privacy by default."
 msgstr ""
+"Taler protegge crittograficamente la privacy dei cittadini, e sin dalla "
+"progettazione implementa la minimizzazione dei dati e la privacy per "
+"impostazione predefinita. "
 
 #: governments.html.j2:128
 msgid "Payment Services Directive (PSD2)"
 msgstr ""
+"Direttiva sui servizi di pagamento (PSD2) "
 
 #: governments.html.j2:129
 msgid ""
 "Taler provides an open standard with public APIs contributing to a "
 "competitive banking sector."
 msgstr ""
+"Taler fornisce uno standard aperto con API pubbliche che contribuiscono "
+"a un settore bancario competitivo. "
 
 #: governments.html.j2:137
 msgid "Taler provides privacy and accountability"
 msgstr ""
+"Taler offre privacy e responsabilità "
 
 #: governments.html.j2:140
 msgid ""
@@ -1324,6 +1385,9 @@ msgid ""
 "and leaving the Taler payment system. Starting with the wire transfers, "
 "governments can obtain:"
 msgstr ""
+"Taler assume che le Amministrazioni possano tenere sotto osservazione "
+"i tradizionali bonifici bancari che entrano ed escono dal sistema di "
+"pagamento di Taler. A partire dai bonifici, i Governi possono ottenere: "
 
 #: governments.html.j2:148
 msgid ""
@@ -1331,10 +1395,15 @@ msgid ""
 "can impose limits on how much digital cash a customer can withdraw within a "
 "given time frame."
 msgstr ""
+"L'importo totale della moneta digitale prelevata da un cliente. Il Governo "
+"può imporre dei limiti su quanto denaro digitale un cliente può prelevare "
+"entro un determinato intervallo di tempo. "
 
 #: governments.html.j2:157
 msgid "The income received by any merchant via the Taler system."
 msgstr ""
+"Il reddito ricevuto da qualsiasi commerciante attraverso il "
+"sistema Taler. "
 
 #: governments.html.j2:164
 msgid ""
@@ -1342,6 +1411,9 @@ msgid ""
 "customer and merchant. However, this information would typically not include "
 "the identity of the customer."
 msgstr ""
+"I dettagli esatti del sottostante contratto firmato tra cliente e "
+"commerciante. Tuttavia, queste informazioni non includono solitamente "
+"l'identità del cliente. "
 
 #: governments.html.j2:174
 msgid ""
@@ -1351,6 +1423,11 @@ msgid ""
 "merchants with the exchange, and the income of the exchange from transaction "
 "fees."
 msgstr ""
+"Le quantità di monete digitali legittimamente ritirate dai clienti dal "
+"cambio, il valore delle monete digitali non riscattate nei portafogli dei "
+"clienti, il valore e i dettagli sul corrispondente trasferimento delle "
+"operazioni di deposito effettuate dai commercianti con il cambio, e il profitto "
+"del cambio dalle spese di transazione. "
 
 #: index.html.j2:6
 #, fuzzy
