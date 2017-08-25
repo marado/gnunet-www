@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-23 11:10+0200\n"
+"POT-Creation-Date: 2017-08-25 22:17+0200\n"
 "PO-Revision-Date: 2017-06-02 09:46+0100\n"
 "Last-Translator: Stefan Kügel <skuegel@web.de>\n"
 "Language-Team: de <LL@li.org, de@taler.net>\n"
@@ -2423,6 +2423,20 @@ msgstr ""
 "Das Backend kann die erfolgreich abgewickelten Transaktionen auflisten und "
 "die Überweisungen an Girokonten der Geschäftsbanken mit den genauen "
 "Bedingungen jedes Kaufvertrags und nach Geschäftsvorfällen geordnet anzeigen."
+
+#: news.html.j2.inc:7
+msgid "More news"
+msgstr ""
+
+#: old-news.html.j2:6
+#, fuzzy
+#| msgid "Taler News"
+msgid "Older News"
+msgstr "Taler-News"
+
+#: old-news.html.j2:9
+msgid "This page documents the GNU Taler history."
+msgstr ""
 
 #: press.html.j2:4
 msgid "GNU Taler in the Press"

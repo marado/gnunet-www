@@ -3,13 +3,5 @@
 {% include "news/2017-03.inc" %}
 {% include "news/2017-02.inc" %}
 {% include "news/2017-01.inc" %}
-{% include "news/2016-12.inc" %}
-{% include "news/2016-10.inc" %}
-{% include "news/2016-09.inc" %}
-{% include "news/2016-08.inc" %}
-{% include "news/2016-06.inc" %}
-{% include "news/2015-12.inc" %}
-{% include "news/2015-11.inc" %}
-{% include "news/2015-02.inc" %}
-{% include "news/2014-12.inc" %}
-{% include "news/2014-11.inc" %}
+
+<a href="old-news.html"><h3>{{ _("More news")}}</h3></a>
