@@ -1442,7 +1442,7 @@ msgstr ""
 "<a href=\"http://www.inria.fr/\">Inria</a>. Ci aspettiamo di renderlo "
 "operativo nel 2017. Puoi conoscere Taler su questo sito web, provare la "
 "<a href=\"https://demo.taler.net\">demo</a> e dare uno sguardo alla nostra "
-"documentazione per gli <a href=\"https://docs.taler.net"\">sviluppatori</a> "
+"documentazione per gli <a href=\"https://docs.taler.net\">sviluppatori</a> "
 "e <a href=\"https://api.taler.net\">API</a>. "
 
 #: index.html.j2:29
