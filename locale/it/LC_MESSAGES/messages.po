@@ -1582,6 +1582,7 @@ msgstr ""
 #: investors.html.j2:24
 msgid "The Team"
 msgstr ""
+"La Squadra"
 
 #: investors.html.j2:27
 msgid ""
@@ -1590,6 +1591,11 @@ msgid ""
 "are unified by a vision of how payments should work and the goal of imposing "
 "this vision upon the world."
 msgstr ""
+"Il nostro <a href=\"about.html\">team</a> comprende leader di aziende di livello "
+"internazionale, crittografi, ingegneri del software, attivisti per i diritti "
+"civili e accademici. Ciò che ci accomuna è la visione del modo in cui i "
+"pagamenti dovrebbero realizzarsi e l'obiettivo di imporre questa visione "
+"al mondo. "
 
 #: investors.html.j2:37
 msgid ""
@@ -1598,10 +1604,15 @@ msgid ""
 "and the <a href=\"https://renewablefreedom.org/\">Renewable Freedom "
 "Foundation</a>."
 msgstr ""
+"Attualmente siamo supportati da <a href=\"http://www.inria.fr/\">Inria</a>, "
+"l'istituto nazionale francese per la ricerca in informatica e automazione, "
+"e dalla <a href=\"https://renewablefreedom.org/\"Renewable Freedom "
+"Foundation</a>. "
 
 #: investors.html.j2:45
 msgid "The Technology"
 msgstr ""
+"La Tecnologia"
 
 #: investors.html.j2:48
 msgid ""
@@ -1613,10 +1624,20 @@ msgid ""
 "systems or the demonstration that participants were honest. Actual "
 "transaction costs are fractions of a cent."
 msgstr ""
+"Tutte le transazioni in Taler sono garantite utilizzando la "
+"<a href=\"bibliography.html\">crittografia moderna</a> e gli accordi "
+"fiduciari tra le parti sono ridotti al minimo. Il danno finanziario è "
+"limitato (per clienti, commercianti e cambio) anche nel caso in cui i "
+"sistemi siano compromessi e le chiavi private vengano rubate. I database "
+"possono essere sottoposti a controlli di coerenza, i quali rilevano sistemi"
+"compromessi o dimostrano che i partecipanti sono stati onesti. I costi "
+"effettivi di transazione sono frazioni di un centesimo. "
 
 #: investors.html.j2:63
 msgid "The Business"
 msgstr ""
+"Il Business"
+
 
 #: investors.html.j2:66
 msgid ""
@@ -1628,14 +1649,23 @@ msgid ""
 "using traditional payment systems at the exchange. The exchange charges fees "
 "to facilitate the transactions."
 msgstr ""
+"Il modello di business scalabile per Taler è l'attività di fornitore di "
+"servizi di pagamento, che converte denaro da sistemi di pagamento tradizionali "
+"(MasterCard, SEPA, UPI, Visa, Bitcoin, ACH, SWIFT, ecc.) ad anonime monete "
+"elettroniche nella stessa valuta. Il cliente può in seguito riscattare le "
+"monete elettroniche presso un commerciante, il quale può scambiarle per denaro "
+"al cambio utilizzando i sistemi di pagamento tradizionali. Il cambio addebita "
+"delle spese per facilitare le transazioni. "
 
 #: investors.html.j2:85
 msgid "The Business Case"
 msgstr ""
+"Il Caso Aziendale"
 
 #: investors.html.j2:88
 msgid "Download"
 msgstr ""
+"Scarica"
 
 #: investors.html.j2:91
 msgid ""
@@ -1643,10 +1673,15 @@ msgid ""
 "English how Taler can impact current developments in the global payment "
 "market."
 msgstr ""
+"La nostra pagina di <a href=\"financial-news.html\">notizie finanziarie</a> "
+"chiarisce in inglese come Taler può influenzare gli sviluppi attuali nel "
+"mercato dei pagamenti globali. "
 
 #: investors.html.j2:114
 msgid "Running a Taler payment service operator"
 msgstr ""
+"Funzionamento di un operatore dei servizi di pagamento Taler "
+
 
 #: investors.html.j2:117
 msgid ""
@@ -1655,32 +1690,47 @@ msgid ""
 "expenses are from wire transfers with the banking system and the operation "
 "of the computing infrastructure."
 msgstr ""
+"L'operatore dei servizi di pagamento gestisce il <em>cambio di Taler</em>. "
+"Il cambio addebita le <b>spese di transazione</b> ai clienti o ai commercianti. "
+"Le sue spese di gestione sono dovute ai trasferimenti tramite bonifici "
+"con il sistema bancario e al funzionamento dell'infrastruttura di calcolo. "
 
 #: investors.html.j2:127
 msgid ""
 "Cryptographic operations, bandwidth and storage costs are less than 0.01 "
 "cent per transaction."
 msgstr ""
+"Le operazioni di crittografia, la larghezza di banda e i costi di "
+"archiviazione sono inferiori a 0,01 centesimi per transazione. "
 
 #: investors.html.j2:129
 msgid ""
 "Multiple Taler transactions can be aggregated into larger wire transfers to "
 "merchants to minimize wire transfer costs."
 msgstr ""
+"Le transazioni multiple di Taler possono essere aggregate in trasferimenti "
+"di denaro più grandi ai commercianti per ridurre al minimo i costi dei bonifici "
+"bancari."
 
 #: investors.html.j2:131
 msgid ""
 "Protocol allows the exchange to charge fees for any expensive operation "
 "(withdraw, deposit, refresh, refund or aggregated wire transfers)."
 msgstr ""
+"Il protocollo consente al cambio di addebitare spese per qualsiasi "
+"operazione costosa (prelievo, deposito, aggiornamento, rimborso o bonifici "
+"bancari aggregati. "
 
 #: investors.html.j2:133
 msgid "Partnership with banks establishes consumer trust."
 msgstr ""
+"La partnership con le banche instaura fiducia nei consumatori. "
 
 #: investors.html.j2:135
 msgid "Partnership with free software community enables rapid deployment."
 msgstr ""
+"La partnership con la comunità del software libero consente una "
+"rapida implementazione. "
 
 #: merchants.html.j2:5
 msgid "Advantages for Merchants"
