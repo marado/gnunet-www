@@ -457,7 +457,7 @@ msgstr ""
 "protocollo HTTP, in generale è migliore per la privacy. Taler utilizza il "
 "formato JSON per codificare le strutture dati, rendendo semplice "
 "l'integrazione di Taler conle applicazioni Web esistenti. Il protocollo di "
-"Taler è documentato in dettaglio al <a href=\"https://api.taler.net/\">api."
+"Taler è documentato in dettaglio sul sito <a href=\"https://docs.taler.net/\">docs."
 "taler.net</a>."
 
 #: developers.html.j2:58
@@ -574,7 +574,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Taler system overview"
 msgid "system overview"
-msgstr "Panoramica del sistema Taler"
+msgstr "Panoramica del sistema"
 
 #: developers.html.j2:158
 msgid ""
@@ -1423,7 +1423,7 @@ msgstr ""
 #, fuzzy
 #| msgid "GNU Taler Bibliography"
 msgid "GNU Taler logo"
-msgstr "Bibliografia GNU Taler"
+msgstr "Logo GNU Taler"
 
 #: index.html.j2:10
 msgid "One-Click Cash Payments!"
@@ -1735,6 +1735,7 @@ msgstr ""
 #: merchants.html.j2:5
 msgid "Advantages for Merchants"
 msgstr ""
+"Vantaggi per i Commercianti"
 
 #: merchants.html.j2:8
 msgid ""
@@ -1743,6 +1744,10 @@ msgid ""
 "Your Web customers pay with previously unknown levels of convenience without "
 "risk of fraud."
 msgstr ""
+"Taler è un sistema di pagamento elettronico vantaggioso che ti fornisce una "
+"prova crittografica che il pagamento è avvenuto correttamente entro "
+"alcuni millisecondi. I tuoi clienti Web pagano con livelli di comodità "
+"precedentemente sconosciuti senza rischio di frode. "
 
 #: merchants.html.j2:22
 msgid "Fast"
@@ -1758,6 +1763,14 @@ msgid ""
 "transactions that would not work with credit card payments due to the mental "
 "overhead for customers."
 msgstr ""
+"Elaborare transazioni con Taler è veloce, consentendoti di confermare la "
+"transazione con il tuo cliente praticamente subito. I tuoi clienti "
+"apprezzeranno il fatto di non dover digitare informazioni sulla carta "
+"di credito e partecipare al gioco &quot;verified by&quot;. Rendendo "
+"i pagamenti significativamente più comodi per i tuoi clienti, potrai essere "
+"in grado di utilizzare Taler per quelle piccole transazioni che non "
+"si realizzerebbero con pagamenti con carta di credito a causa del "
+"sovraccarico mentale per i clienti. "
 
 #: merchants.html.j2:44
 msgid ""
@@ -1767,6 +1780,12 @@ msgid ""
 "DSS). Your systems will have customer contracts with qualified signatures "
 "for all transactions which you can use in court in case of disputes."
 msgstr ""
+"Riceverai prova crittografica del pagamento dal fornitore dei servizi "
+"di pagamento di Taler. Con Taler non tratterai mai le informazioni sensibili "
+"del conto del cliente, pertanto non dovrai essere sottoposto a nessuna "
+"particolare verifica di sicurezza (come ad esempio PCI DSS). I tuoi sistemi "
+"avranno contratti con i clienti con firme qualificate per tutte le "
+"transazioni, che potrai utilizzare in tribunale in caso di controversie. "
 
 #: merchants.html.j2:61
 msgid ""
@@ -1776,10 +1795,17 @@ msgid ""
 "development model will ensure that you can select from many competing "
 "integrators for support."
 msgstr ""
+"Taler è un software libero, e puoi utilizzare il codice di riferimento "
+"liberamente concesso in licenza come punto di partenza per integrare "
+"Taler nei tuoi servizi. Per usare Taler non è necessario pagare diritti "
+"di licenza, e il modello di sviluppo del software libero garantirà "
+"la possibilità di scegliere tra molti integratori concorrenti per "
+"assistenza. "
 
 #: merchants.html.j2:76
 msgid "Cheap"
 msgstr ""
+"Conveniente"
 
 #: merchants.html.j2:79
 msgid ""
@@ -1788,6 +1814,11 @@ msgid ""
 "fraud impossible, Taler payment service providers can operate with very low "
 "overhead and thus offer low transaction fees."
 msgstr ""
+"Taler utilizza efficienti costruzioni crittografiche con bassi requisiti di "
+"larghezza di banda ed archiviazione. In combinazione con la solida "
+"sicurezza di Taler che rende impossibile la frode, i fornitori dei servizi "
+"di pagamento di Taler possono operare a costi molto bassi ed offrire così " 
+"spese di transazione modeste. " 
 
 #: merchants.html.j2:89
 msgid "Flexible"
@@ -1796,9 +1827,13 @@ msgstr "Flessibile"
 #: merchants.html.j2:92
 msgid ""
 "Taler can be used for different currencies (such as Euros, US Dollars or "
-"Bitcoins) and any amount, limited only by applicable regulatation and what "
+"Bitcoins) and any amount, limited only by applicable regulation and what "
 "denominations the payment service provider supports."
 msgstr ""
+"Taler può essere utilizzato per diverse valute (come Euro, Dollari USA o "
+"Bitcoins) e per qualsiasi importo, limitato soltanto dalla normativa "
+"valida e dalle denominazioni che il fornitore dei servizi di pagamento "
+"supporta. "
 
 #: merchants.html.j2:101
 msgid "Ethical"
@@ -1811,31 +1846,43 @@ msgid ""
 "encourages transparency by providing an open standard and free software "
 "reference implementations."
 msgstr ""
+"Taler impedisce l'evasione fiscale e il riciclaggio di denaro. I "
+"protocolli di Taler sono efficienti e non utilizzano dispendiosi calcoli "
+"proof-of-work. Taler incoraggia la trasparenza fornendo uno standard "
+"aperto ed implementazioni di riferimento del software libero. "
 
 #: merchants.html.j2:119
 #, fuzzy
 msgid "Manuals for merchants"
-msgstr "Documentation"
+msgstr ""
+"Manuali per i commercianti"
 
 #: merchants.html.j2:122
 msgid "The GNU Taler merchant backend operator manual"
 msgstr ""
+"Il manuale dell'operatore del backend del commerciante "
+"GNU Taler "
 
 #: merchants.html.j2:125
 msgid "The GNU Taler Web shop integration tutorial (PHP)"
 msgstr ""
+"Il tutorial di integrazione del negozio Web GNU Taler (PHP) "
 
 #: merchants.html.j2:128
 msgid "The GNU Taler Web shop integration tutorial (Python)"
 msgstr ""
+"Il tutorial di integrazione del negozio Web GNU Taler (Python) "
 
 #: merchants.html.j2:140
 msgid "The GNU Taler Merchant Backend"
 msgstr ""
+"Il backend del commerciante GNU Taler"
 
 #: merchants.html.j2:142
 msgid "Merchants process payments using the Taler backend:"
 msgstr ""
+"I commercianti effettuano pagamenti utilizzando il backend di Taler: "
+
 
 #: merchants.html.j2:147
 msgid ""
@@ -1843,6 +1890,9 @@ msgid ""
 "by the merchant to customers. For this, the merchant's frontend needs to "
 "give the customer's order in a JSON format to the backend."
 msgstr ""
+"Il backend <b>sottoscrive</b> ed <b>archivia</b> le condizioni finali delle "
+"offerte fatte dal commerciante ai clienti. Per questo, il frontend del "
+"commerciante deve dare l'ordine del cliente al backend in un formato JSON. "
 
 #: merchants.html.j2:156
 msgid ""
@@ -1851,6 +1901,11 @@ msgid ""
 "For this, the merchant's frontend must pass the payment request through to "
 "the Taler backend and check the HTTP status code that is returned."
 msgstr ""
+"Il backend <b>convalida</b> i pagamenti ricevuti dal portafoglio e li "
+"<b>esegue</b> con il provider dei servizi di pagamento di Taler (il "
+"cambio). Per questo, il frontend del commerciante deve passare la "
+"richiesta di pagamento al backend di Taler e controllare il codice di "
+"stato HTTP che viene restituito. "
 
 #: merchants.html.j2:167
 msgid ""
@@ -1858,94 +1913,117 @@ msgid ""
 "transfers to sets of business transactions, including the exact terms of "
 "each contract."
 msgstr ""
+"Il backend può <b>elencare</b> le transazioni completate e <b>mappare</b> "
+"i bonifici a set di transazioni commerciali, includendo i termini esatti "
+"di ogni contratto. "
 
 #: news.html.j2.inc:7
 msgid "More news"
 msgstr ""
+"Altre notizie"
 
 #: old-news.html.j2:6
 msgid "Older News"
 msgstr ""
+"Notizie precedenti"
 
 #: old-news.html.j2:9
 msgid "This page documents the GNU Taler history."
 msgstr ""
+"Questa pagina documenta la storia di GNU Taler. "
 
 #: press.html.j2:4
 msgid "GNU Taler in the Press"
 msgstr ""
+"GNU Taler nella Stampa"
 
 #: common/base.j2:5
 msgid "GNU Taler"
 msgstr ""
+"GNU Taler"
 
 #: common/base.j2:6
 msgid "Taxable Anonymous Libre Electronic Reserves"
 msgstr ""
+"Tassabili Anonime Libere Elettroniche Riserve"
 
 #: common/footer.j2.inc:7
 msgid "About"
 msgstr ""
+"Chi siamo"
 
 #: common/footer.j2.inc:8
 msgid "Contact"
 msgstr ""
+"Contatti"
 
 #: common/footer.j2.inc:9
 msgid "For Investors"
 msgstr ""
+"Per gli investitori"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:5
 msgid "Citizens"
 msgstr ""
+"Cittadini"
 
 #: common/footer.j2.inc:15 common/navigation.j2.inc:6
 #, fuzzy
 msgid "Merchants"
-msgstr "Documentation"
+msgstr ""
+"Commercianti"
 
 #: common/footer.j2.inc:16 common/navigation.j2.inc:7
 msgid "Governments"
 msgstr ""
+"Pubbliche Amministrazioni"
 
 #: common/footer.j2.inc:21
 msgid "Developer Resources"
 msgstr ""
+"Risorse per i programmatori"
 
 #: common/footer.j2.inc:22 common/navigation.j2.inc:12
 msgid "FAQ"
 msgstr ""
+"FAQ"
 
 #: common/footer.j2.inc:23 common/navigation.j2.inc:16
 #, fuzzy
 #| msgid "GNU Taler Bibliography"
 msgid "Bibliography"
-msgstr "Bibliografia GNU Taler"
+msgstr "Bibliografia"
 
 #: common/footer.j2.inc:32
 msgid ""
 "This page was created using <a href='https://www.gnu.org/'>Free Software</a> "
 "only."
 msgstr ""
+"Questa pagina è stata creata utilizzando solo <a href='https://www.gnu.org/'>Software "
+"Libero</a>. "
 
 #: common/navigation.j2.inc:9
 msgid "Resources"
 msgstr ""
+"Risorse"
 
 #: common/navigation.j2.inc:11
 #, fuzzy
 #| msgid "Taler System Architecture"
 msgid "System Architecture"
-msgstr "Architettura Taler"
+msgstr "Architettura di sistema"
 
 #: common/navigation.j2.inc:13
 msgid "Glossary"
 msgstr ""
+"Glossario"
 
 #: common/navigation.j2.inc:14
 msgid "Developer Introduction"
 msgstr ""
+"Introduzione per i programmatori"
 
 #: common/navigation.j2.inc:15
 msgid "Copyright for Contributors"
 msgstr ""
+"Diritti d'autore per i collaboratori"
