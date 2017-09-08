@@ -71,8 +71,8 @@ msgstr "Übersetzer (Italienisch)."
 #: about.html.j2:90
 #, fuzzy
 #| msgid "Translator (Spanish)"
-msgid "Translator (Deutsch)"
-msgstr "Übersetzer (Spanisch)."
+msgid "Translator (German)"
+msgstr "Übersetzer (Deutsch)."
 
 #: about.html.j2:96
 msgid "Hardware security module"

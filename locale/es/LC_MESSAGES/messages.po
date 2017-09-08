@@ -71,7 +71,7 @@ msgid "Translator (Italian)"
 msgstr "Traductora (italiano)"
 
 #: about.html.j2:90
-msgid "Translator (Deutsch)"
+msgid "Translator (German)"
 msgstr "Traductor (alemán)"
 
 #: about.html.j2:96

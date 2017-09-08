@@ -80,7 +80,7 @@ msgstr "Traduttrice per l'italiano."
 
 #: about.html.j2:90
 #, fuzzy
-msgid "Translator (Deutsch)"
+msgid "Translator (German)"
 msgstr "Traduttore per lo spagnolo."
 
 #: about.html.j2:96
