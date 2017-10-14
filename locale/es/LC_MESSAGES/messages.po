@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-25 22:17+0200\n"
+"POT-Creation-Date: 2017-10-14 11:45+0200\n"
 "PO-Revision-Date: 2017-08-10 06:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: es <LL@li.org>\n"
@@ -66,27 +66,27 @@ msgstr "Ingeniero de Software. Trabaja en libebics."
 msgid "Translator (Spanish)"
 msgstr "Traductor (español)"
 
-#: about.html.j2:82 about.html.j2:86
+#: about.html.j2:82 about.html.j2:86 about.html.j2:90
 msgid "Translator (Italian)"
 msgstr "Traductora (italiano)"
 
-#: about.html.j2:90
+#: about.html.j2:94
 msgid "Translator (German)"
 msgstr "Traductor (alemán)"
 
-#: about.html.j2:96
+#: about.html.j2:100
 msgid "Hardware security module"
 msgstr "Módulo de seguridad de hardware"
 
-#: about.html.j2:100
+#: about.html.j2:104
 msgid "Risk management"
 msgstr "Gestión de riesgos"
 
-#: about.html.j2:104
+#: about.html.j2:108
 msgid "PhD student, TU Munich. Currently teaching."
 msgstr "Estudiante de doctorado, TU Múnich. Actualmente es profesor."
 
-#: about.html.j2:110
+#: about.html.j2:114
 msgid "Software engineer. Works on Android wallet."
 msgstr "Ingeniero de Software. Trabaja en la Android Wallet."
 
@@ -127,7 +127,7 @@ msgstr ""
 "entonces puede utilizar dinero efectivo electrónico. La billetera "
 "electrónica es compatible con diferentes tipos de monedas."
 
-#: citizens.html.j2:25 governments.html.j2:58 index.html.j2:56
+#: citizens.html.j2:25 governments.html.j2:58 index.html.j2:55
 #: merchants.html.j2:41
 msgid "Secure"
 msgstr "Seguro"
@@ -147,7 +147,7 @@ msgstr ""
 "comprometidos. A diferencia de una billetera física, puede realizar copias "
 "de seguridad para protegerse contra la pérdida de datos."
 
-#: citizens.html.j2:37 index.html.j2:84
+#: citizens.html.j2:37 index.html.j2:83
 msgid "Private"
 msgstr "Privado"
 
@@ -179,7 +179,7 @@ msgstr ""
 "puede pagar con un solo clic usando la billetera Taler, que opcionalmente "
 "guarda el historial de transacciones en su computadora."
 
-#: citizens.html.j2:61 index.html.j2:42
+#: citizens.html.j2:61 index.html.j2:41
 msgid "Stable"
 msgstr "Estable"
 
@@ -1190,7 +1190,7 @@ msgstr ""
 "como reguladores de confianza. Taler contribuye a la soberanía digital en la "
 "infraestructura financiera crítica."
 
-#: governments.html.j2:25 index.html.j2:71
+#: governments.html.j2:25 index.html.j2:70
 msgid "Taxable"
 msgstr "Imponible"
 
@@ -1265,7 +1265,7 @@ msgstr ""
 "garantía se gestiona honestamente. Esto asegura que la plataforma de "
 "intercambio no amenace la economía mediante el fraude."
 
-#: governments.html.j2:88 index.html.j2:97
+#: governments.html.j2:88 index.html.j2:96
 msgid "Libre"
 msgstr "Libre"
 
@@ -1415,20 +1415,19 @@ msgid ""
 "\"http://www.inria.fr/\">Inria</a>. We expect to make it operational in "
 "2017. You can learn about Taler on this website, try the <a href=\"https://"
 "demo.taler.net\">demo</a> and look at our <a href=\"https://docs.taler.net"
-"\">developer</a> and <a href=\"https://api.taler.net\">API</a> documentation."
+"\">documentation</a>."
 msgstr ""
 "GNU Taler es un sistema de pago electrónico que está siendo desarrollado en "
 "<a href=\"http://www.inria.fr/\">Inria</a>. Esperamos hacerla operativa en "
 "2017. Puede aprender sobre Taler en este sitio web, pruebe la <a href="
 "\"https://demo.taler.net\">demo</a> y eche un vistazo a nuestro <a href="
-"\"https://docs.taler.net\">desarrollo</a> y a la documentación de la <a href="
-"\"https://api.taler.net\">API</a>."
+"\"https://docs.taler.net\">documentación</a>."
 
-#: index.html.j2:29
+#: index.html.j2:28
 msgid "Practical"
 msgstr "Práctico"
 
-#: index.html.j2:32
+#: index.html.j2:31
 msgid ""
 "Taler is easy to integrate with existing Web applications. Payments are "
 "cryptographically secured and are confirmed within milliseconds with "
@@ -1438,7 +1437,7 @@ msgstr ""
 "asegurados criptográficamente y se confirman en milisegundos con costos de "
 "transacción extremadamente bajos."
 
-#: index.html.j2:45
+#: index.html.j2:44
 msgid ""
 "Taler does not introduce a new currency. Taler uses a digital wallet storing "
 "coins and payment service providers with escrow accounts in existing "
@@ -1451,7 +1450,7 @@ msgstr ""
 "corresponden a monedas existentes, tales como dólares estadounidenses, euros "
 "o incluso bitcoins."
 
-#: index.html.j2:59
+#: index.html.j2:58
 msgid ""
 "By design Taler does not suffer from many classes of security problems such "
 "as phishing or counterfeit. Thanks to its security features, Taler never "
@@ -1462,7 +1461,7 @@ msgstr ""
 "rechaza a un cliente legítimo debido a un falso positivo en la detección de "
 "fraude."
 
-#: index.html.j2:74
+#: index.html.j2:73
 msgid ""
 "When using Taler, merchant's revenue is transparent for tax collection "
 "authorities. Unlike cash and most digital currencies, Taler helps prevent "
@@ -1473,7 +1472,7 @@ msgstr ""
 "mayoría de las monedas electrónicas, Taler ayuda a prevenir los mercados "
 "negros. Taler no es adecuado para actividades ilegales."
 
-#: index.html.j2:86
+#: index.html.j2:85
 msgid ""
 "When you pay with Taler, your identity does not have to be revealed. Just "
 "like payments in cash, nobody else can track how you spent your electronic "
@@ -1483,7 +1482,7 @@ msgstr ""
 "pagos en efectivo, nadie puede rastrear cómo gasta su dinero electrónico. "
 "Sin embargo, obtiene una prueba de pago legalmente válida."
 
-#: index.html.j2:100
+#: index.html.j2:99
 msgid ""
 "Taler provides protocols and reference implementations that in principle "
 "enables anybody to run their own payment infrastructure, be it individuals, "
@@ -1497,16 +1496,24 @@ msgstr ""
 "referencia es un paquete <a href=\"http://www.gnu.org/\">GNU</a>, siempre "
 "permanecerá como software libre."
 
-#: index.html.j2:117
+#: index.html.j2:116
 msgid "Paying with Taler"
 msgstr "Pagando con Taler"
 
-#: index.html.j2:118
+#: index.html.j2:117
+#, fuzzy
+#| msgid ""
+#| "<p>To pay with Taler, customers install an electronic wallet on their "
+#| "device. Before the first payment, the wallet's balance must be charged in "
+#| "the desired currency by some other means of payment.</p> <p>Once the "
+#| "wallet is charged, payments on websites take only one click, are never "
+#| "falsely rejected by fraud detection and do not pose any risk of phishing "
+#| "or identity theft.</p>"
 msgid ""
 "<p>To pay with Taler, customers install an electronic wallet on their "
-"device. Before the first payment, the wallet's balance must be charged in "
-"the desired currency by some other means of payment.</p> <p>Once the wallet "
-"is charged, payments on websites take only one click, are never falsely "
+"device. Before the first payment, the desired currency must be added to the "
+"wallet's balance by some other means of payment.</p> <p>Once the wallet is "
+"charged, payments on websites take only one click, are never falsely "
 "rejected by fraud detection and do not pose any risk of phishing or identity "
 "theft.</p>"
 msgstr ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-08-25 22:17+0200\n"
+"POT-Creation-Date: 2017-10-14 11:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -70,29 +70,30 @@ msgstr "EBICS."
 msgid "Translator (Spanish)"
 msgstr "Traductrice"
 
-#: about.html.j2:82 about.html.j2:86
+#: about.html.j2:82 about.html.j2:86 about.html.j2:90
 #, fuzzy
 msgid "Translator (Italian)"
 msgstr "Traductrice"
 
-#: about.html.j2:90
-msgid "Translator (Deutsch)"
-msgstr "Traducteur"
+#: about.html.j2:94
+#, fuzzy
+msgid "Translator (German)"
+msgstr "Traductrice"
 
-#: about.html.j2:96
+#: about.html.j2:100
 msgid "Hardware security module"
 msgstr ""
 
-#: about.html.j2:100
+#: about.html.j2:104
 msgid "Risk management"
 msgstr ""
 
-#: about.html.j2:104
+#: about.html.j2:108
 #, fuzzy
 msgid "PhD student, TU Munich. Currently teaching."
 msgstr "Linux, FreeBSD, sites Web et en état profond de détente."
 
-#: about.html.j2:110
+#: about.html.j2:114
 msgid "Software engineer. Works on Android wallet."
 msgstr ""
 
@@ -129,7 +130,7 @@ msgid ""
 "The electronic wallet can carry multiple currencies."
 msgstr ""
 
-#: citizens.html.j2:25 governments.html.j2:58 index.html.j2:56
+#: citizens.html.j2:25 governments.html.j2:58 index.html.j2:55
 #: merchants.html.j2:41
 msgid "Secure"
 msgstr "Sûr"
@@ -143,7 +144,7 @@ msgid ""
 "against data loss."
 msgstr ""
 
-#: citizens.html.j2:37 index.html.j2:84
+#: citizens.html.j2:37 index.html.j2:83
 msgid "Private"
 msgstr ""
 
@@ -167,7 +168,7 @@ msgid ""
 "history on your computer."
 msgstr ""
 
-#: citizens.html.j2:61 index.html.j2:42
+#: citizens.html.j2:61 index.html.j2:41
 msgid "Stable"
 msgstr ""
 
@@ -921,7 +922,7 @@ msgid ""
 "digital sovereignty in the critical financial infrastructure."
 msgstr ""
 
-#: governments.html.j2:25 index.html.j2:71
+#: governments.html.j2:25 index.html.j2:70
 msgid "Taxable"
 msgstr "Taxable"
 
@@ -966,7 +967,7 @@ msgid ""
 "ensures that the exchange does not threaten the economy due to fraud."
 msgstr ""
 
-#: governments.html.j2:88 index.html.j2:97
+#: governments.html.j2:88 index.html.j2:96
 msgid "Libre"
 msgstr "Libre"
 
@@ -1084,21 +1085,21 @@ msgid ""
 "\"http://www.inria.fr/\">Inria</a>. We expect to make it operational in "
 "2017. You can learn about Taler on this website, try the <a href=\"https://"
 "demo.taler.net\">demo</a> and look at our <a href=\"https://docs.taler.net"
-"\">developer</a> and <a href=\"https://api.taler.net\">API</a> documentation."
+"\">documentation</a>."
 msgstr ""
 
-#: index.html.j2:29
+#: index.html.j2:28
 msgid "Practical"
 msgstr ""
 
-#: index.html.j2:32
+#: index.html.j2:31
 msgid ""
 "Taler is easy to integrate with existing Web applications. Payments are "
 "cryptographically secured and are confirmed within milliseconds with "
 "extremely low transaction costs."
 msgstr ""
 
-#: index.html.j2:45
+#: index.html.j2:44
 msgid ""
 "Taler does not introduce a new currency. Taler uses a digital wallet storing "
 "coins and payment service providers with escrow accounts in existing "
@@ -1106,28 +1107,28 @@ msgid ""
 "currencies, such as US Dollars, Euros or even Bitcoins."
 msgstr ""
 
-#: index.html.j2:59
+#: index.html.j2:58
 msgid ""
 "By design Taler does not suffer from many classes of security problems such "
 "as phishing or counterfeit. Thanks to its security features, Taler never "
 "rejects a legitimate customer due to a fraud-detection false positive."
 msgstr ""
 
-#: index.html.j2:74
+#: index.html.j2:73
 msgid ""
 "When using Taler, merchant's revenue is transparent for tax collection "
 "authorities. Unlike cash and most digital currencies, Taler helps prevent "
 "black markets. Taler is not suitable for illegal activities."
 msgstr ""
 
-#: index.html.j2:86
+#: index.html.j2:85
 msgid ""
 "When you pay with Taler, your identity does not have to be revealed. Just "
 "like payments in cash, nobody else can track how you spent your electronic "
 "money. However, you obtain a legally valid proof of payment."
 msgstr ""
 
-#: index.html.j2:100
+#: index.html.j2:99
 msgid ""
 "Taler provides protocols and reference implementations that in principle "
 "enables anybody to run their own payment infrastructure, be it individuals, "
@@ -1136,16 +1137,16 @@ msgid ""
 "software."
 msgstr ""
 
-#: index.html.j2:117
+#: index.html.j2:116
 msgid "Paying with Taler"
 msgstr ""
 
-#: index.html.j2:118
+#: index.html.j2:117
 msgid ""
 "<p>To pay with Taler, customers install an electronic wallet on their "
-"device. Before the first payment, the wallet's balance must be charged in "
-"the desired currency by some other means of payment.</p> <p>Once the wallet "
-"is charged, payments on websites take only one click, are never falsely "
+"device. Before the first payment, the desired currency must be added to the "
+"wallet's balance by some other means of payment.</p> <p>Once the wallet is "
+"charged, payments on websites take only one click, are never falsely "
 "rejected by fraud detection and do not pose any risk of phishing or identity "
 "theft.</p>"
 msgstr ""
@@ -1493,3 +1494,6 @@ msgstr ""
 #: common/navigation.j2.inc:15
 msgid "Copyright for Contributors"
 msgstr ""
+
+#~ msgid "Translator (Deutsch)"
+#~ msgstr "Traducteur"
