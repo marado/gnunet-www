@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-14 11:45+0200\n"
+"POT-Creation-Date: 2017-12-28 20:16+0100\n"
 "PO-Revision-Date: 2017-08-10 06:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: es <LL@li.org>\n"
@@ -1876,7 +1876,7 @@ msgstr ""
 "<b>relacionar</b> las transferencias bancarias con los pagos electrónicos "
 "correspondientes, incluyendo los términos exactos de cada contrato."
 
-#: news.html.j2.inc:7
+#: news.html.j2.inc:8
 msgid "More news"
 msgstr ""
 

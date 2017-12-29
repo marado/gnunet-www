@@ -5,7 +5,7 @@
 all: locale template
 	cd web-common && tsc
 
-# Extract translateable strings from jinga2 templates.
+# Extract translateable strings from jinja2 templates.
 locale/messages.pot: *.j2 common/*.j2 common/*.j2.inc
 	env PYTHONPATH="." pybabel extract -F locale/babel.map -o locale/messages.pot .
 
@@ -16,6 +16,7 @@ locale-update: locale/messages.pot
 	msgmerge -U -m --previous locale/fr/LC_MESSAGES/messages.po locale/messages.pot
 	msgmerge -U -m --previous locale/es/LC_MESSAGES/messages.po locale/messages.pot
 	msgmerge -U -m --previous locale/it/LC_MESSAGES/messages.po locale/messages.pot
+	msgmerge -U -m --previous locale/ru/LC_MESSAGES/messages.po locale/messages.pot
 
 	if grep -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
 
@@ -26,11 +27,12 @@ locale-compile:
 	pybabel compile -d locale -l fr --use-fuzzy
 	pybabel compile -d locale -l it --use-fuzzy
 	pybabel compile -d locale -l es --use-fuzzy
+	pybabel compile -d locale -l ru --use-fuzzy
 
 # Process everything related to gettext translations.
 locale: locale-update locale-compile
 
-# Run the jinga2 templating engine to expand templates to HTML
+# Run the jinja2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
 	./template.py

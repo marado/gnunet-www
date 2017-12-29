@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-14 11:45+0200\n"
+"POT-Creation-Date: 2017-12-28 20:16+0100\n"
 "PO-Revision-Date: 2017-06-02 09:46+0100\n"
 "Last-Translator: Stefan Kügel <skuegel@web.de>\n"
 "Language-Team: de <LL@li.org, de@taler.net>\n"
@@ -580,8 +580,8 @@ msgid ""
 msgstr ""
 "Neben dieser Webseite bestehen die <a href=\"https://git.taler.net/\">Code-"
 "Dokumentation</a>, die <a href=\"https://docs.taler.net"
-"\">Entwicklerdokumentation</a>.  Wissenschaftliche Literatur findet "
-"man in der <a href=\"bibliography.html\">Bibliographie</a>."
+"\">Entwicklerdokumentation</a>.  Wissenschaftliche Literatur findet man in "
+"der <a href=\"bibliography.html\">Bibliographie</a>."
 
 #: developers.html.j2:88
 msgid "Discussion"
@@ -1758,8 +1758,8 @@ msgstr ""
 "Taler ist ein elektronisches Bezahlsystem, das bei <a href=\"http://www."
 "inria.fr/\">Inria</a> entwickelt wird. Wir rechnen mit seiner Einführung im "
 "Jahr 2017. Auf der <a href=\"https://demo.taler.net\">Demo-Seite</a> kann "
-"man die Funktionsweise von Taler kennenlernen. Weitere Informationen sind in der"
-"<a href=\"https://docs.taler.net\">Entwicklerdokumentation</a>."
+"man die Funktionsweise von Taler kennenlernen. Weitere Informationen sind in "
+"der<a href=\"https://docs.taler.net\">Entwicklerdokumentation</a>."
 
 #: index.html.j2:28
 msgid "Practical"
@@ -2390,7 +2390,7 @@ msgstr ""
 "die Überweisungen an Girokonten der Geschäftsbanken mit den genauen "
 "Bedingungen jedes Kaufvertrags und nach Geschäftsvorfällen geordnet anzeigen."
 
-#: news.html.j2.inc:7
+#: news.html.j2.inc:8
 msgid "More news"
 msgstr ""
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # This file is in the public domain.
 #
-# This script runs the jinga2 templating engine on an input template-file
+# This script runs the jinja2 templating engine on an input template-file
 # using the specified locale for gettext translations, and outputs
 # the resulting (HTML) ouptut-file.
 #
@@ -25,7 +25,12 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__
                          undefined=jinja2.StrictUndefined,
                          autoescape=False)
 
-langs_full = {"en": "English", "fr": "Français", "it": "Italiano", "es": "Español", "de": "Deutsch"}
+langs_full = {"en": "English",
+              "fr": "Français",
+              "it": "Italiano",
+              "es": "Español",
+              "de": "Deutsch",
+              "ru": "Ру́сский язы́к"}
 
 for in_file in glob.glob("*.j2"):
     name, ext = re.match(r"(.*)\.([^.]+)$", in_file.rstrip(".j2")).groups()

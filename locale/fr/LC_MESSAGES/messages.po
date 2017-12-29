@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-10-14 11:53+0200\n"
+"POT-Creation-Date: 2017-12-28 20:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -1408,7 +1408,7 @@ msgid ""
 "each contract."
 msgstr ""
 
-#: news.html.j2.inc:7
+#: news.html.j2.inc:8
 msgid "More news"
 msgstr ""
 
