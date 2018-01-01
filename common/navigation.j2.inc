@@ -1,19 +1,15 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li class="{{ 'active' if filename == 'index.html' else '' }}"><a class="taler_home" href="index.html">Taler</a></li>
-      <li class="{{ 'active' if filename == 'citizens.html' else '' }}"><a href="citizens.html">{{ _("Citizens") }} </a></li>
-      <li class="{{ 'active' if filename == 'merchants.html' else '' }}"><a href="merchants.html">{{ _("Merchants") }} </a></li>
-      <li class="{{ 'active' if filename == 'governments.html' else '' }}"><a href="governments.html">{{ _("Governments") }}</a></li>
+      <li class="{{ 'active' if filename == 'index.html' else '' }}"><a class="gnunet_home" href="index.html">GNUnet</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Resources") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a href="faq.html">{{ _("FAQ") }}</a></li>
           <li><a href="glossary.html">{{ _("Glossary") }}</a></li>
-          <li><a href="developers.html">{{ _("Developer Introduction") }} </a></li>
           <li><a href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
-          <li><a href="bibliography.html">{{ _("Bibliography") }}</a></li>
+          <li><a href="https://bibliography.gnunet.org/">{{ _("Bibliography") }}</a></li>
         </ul>
       </li>
     </ul>

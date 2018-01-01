@@ -3,7 +3,7 @@
         @licstart  The following is the entire license notice for the
         JavaScript code in this page.
 
-        Copyright (C) 2014, 2015, 2016 GNUnet e.V.
+        Copyright (C) 2014-2017 GNUnet e.V.
 
         The JavaScript code in this page is free software: you can
         redistribute it and/or modify it under the terms of the GNU
