@@ -10,6 +10,7 @@ Extract translations from a Jinja2 template, stripping leading newlines.
 import jinja2.ext
 import re
 
+
 def normalize(message):
     message = message.strip()
     # collapse whitespaces (including newlines) into one space.
@@ -22,6 +23,7 @@ def babel_extract(fileobj, keywords, comment_tags, options):
     for lineno, funcname, message, comments in res:
         message = normalize(message)
         yield lineno, funcname, message, comments
+
 
 def wrap_gettext(f):
     """
