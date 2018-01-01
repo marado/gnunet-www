@@ -66,12 +66,12 @@ footer a:hover {
 }
 
 .btn-dark {
-  background-color: #9d9d9d; 
+  background-color: #9d9d9d;
 }
 
 
 #mybody nav {
- border-radius: 0px; 
+ border-radius: 0px;
 }
 
 footer {
@@ -96,22 +96,6 @@ footer {
 .adorn_h3_bracket h3::before {
   content: "❬";
   color: #aa3939;
-}
-
-.adorn_h3_bracket h3::after {
-  content: "❭";
-  color: #aa3939;
-}
-.taler_home::before {
-  content: "❬";
-  color: #aa3939;
-}
-.taler_home::after {
-  content: "❭";
-  color: #aa3939;
-}
-.taler_home {
-  font-family: 'Lucida Console', Monaco, monospace;
 }
 
 .footer-list {
