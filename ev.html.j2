@@ -1,0 +1,108 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>{{ _("Verein zur Förderung von GNUnet e.V.") }}</h1>
+
+    <p>
+      {% trans %}
+        On December 27th 2013 a group of GNUnet hackers met at 30c3
+        to create the "Verein zur Förderung von GNUnet e.V.", an
+        association under German law to support GNUnet development.
+        The Amtsgericht München registered the association on the
+        7th of March under VR 205287.
+      {% endtrans %}
+    </p>
+    <p>
+      {% trans %}
+        The association is officially dedicated to supporting research,
+        development and education in the area of secure decentralized
+        networking in general, and GNUnet specifically.  This is the
+        official website for the association.
+      {% endtrans %}
+    </p>
+  </div>
+</div>
+
+<div class="container adorn_h3_bracket">
+  <div class="row">
+    <div class="col-lg-4">
+      <h3>{{ _("Governance") }}</h3>
+
+      <p>
+        {% trans %}
+          You can find our "Satzung", and the list of members under
+          <a href="/git/gnunet-ev.git/tree/satzung.tex">https://gnunet.org/git/gnunet-ev.git/tree/satzung.tex</a>.
+          The current board consists of:
+          <dl><dt>Vorsitz</dt>
+            <dd><a href="http://grothoff.org/christian/">Christian Grothoff</a></dd>
+            <dt>stellvertretender Vorsitz</dt>
+            <dd>Matthias Wachs</dd>
+            <dt>Kassenwart</dt>
+            <dd>Florian Dold</dd>
+            <dt>Beisitzer</dt>
+            <dd>Sree Harsha Totakura, Lurchi</dd>
+          </dl>
+        {% endtrans %}
+      </p>
+
+      <h3>{{ _("Becoming a Member of GNUnet e.V.") }}</h3>
+      <p>
+        {% trans %}
+          GNUnet developers with git (write) access can become
+          members to participate in the decision process and
+          formally support GNUnet e.V.  For this, all you have
+          to do is update the <tt>members.txt</tt> file in the
+          <a href="/git/gnunet-ev.git/">gnunet-ev</a> repository.
+          There are no membership dues; however, members are required
+          to support GNUnet e.V. and in particularly contribute to the
+          technical development within their means. For further
+          details, we refer to the
+          <a href="/git/gnunet-ev.git/">Satzung</a>
+          (currently only available in German).
+        {% endtrans %}
+      </p>
+
+      <h3>{{ _("Support Us!") }}</h3>
+      <p>
+        {% trans %}
+          Everybody is welcome to support us via donations. For
+          financial contributions, Europeans are able to donate via
+          SEPA. We hope to setup accounts in other major currency areas
+          in the future.  You can also donate via Bitcoin, routing
+          details are given below.  Please note that we are unable to
+          provide receipts for your donations.  If you are planning to
+          donate a significant amount of money, please contact us first
+          as it might be better to come to a custom arrangement.
+
+          <dl><dt>BitCoin</dt>
+            <dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd>
+            <dt>SEPA/IBAN</dt>
+            <dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd>
+          </dl>
+        {% endtrans %}
+      </p>
+
+      <h3>{{ _("Official Meeting Notes") }}</h3>
+      <p>
+        <ul>
+          <li>{{ _("2013-12 (constitutional meeting)") }}
+            (<a href="/git/gnunet-ev.git/tree/minutes/2013-12-27.txt">txt</a>)
+          </li>
+          <li>{{ _("2014-12") }}
+            (<a href="/git/gnunet-ev.git/tree/minutes/2014-12-28.txt">txt</a>)
+          </li>
+          <li>{{ _("2015-12") }}
+            (<a href="/git/gnunet-ev.git/tree/minutes/2015-12-29.txt">txt</a>)
+          </li>
+          <li>{{ _("2016-12") }}
+            (<a href="/git/gnunet-ev.git/tree/minutes/2016-12-29.txt">txt</a>)
+          </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</div>
+
+</div> <!-- /container -->
+{% endblock body_content %}
