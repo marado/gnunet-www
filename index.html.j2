@@ -3,21 +3,23 @@
 <!-- Jumbotron -->
 <div class="jumbotron">
   <div style="height: 40vh">
-    <img alt="{{ _("GNU Taler logo")}}" style="object-fit:contain;width:100%;height:100%" class="center-block" src="{{ svg_localized('images/logo-2017') }}" />
+    <img alt="{{ _("GNUnet logo")}}" style="object-fit:contain;width:100%;height:100%" class="center-block" src="{{ url('images/gnunet-logo.svg') }}" />
   </div>
 
   <div class="container text-center">
-    <h1>{{ _("One-Click Cash Payments!") }}</h1>
+    <h1>{{ _("GNU's Framework for Secure Peer-to-Peer Networking!") }}</h1>
 
     <p>
       {% trans %}
-      GNU Taler is an electronic payment system under development at
-      <a href="http://www.inria.fr/">Inria</a>.  We expect to make it
-      operational in 2017.  You can learn about Taler on this website,
-      try the <a href="https://demo.taler.net">demo</a> and look at
-      our <a href="https://docs.taler.net">documentation</a>.
+      GNUnet is an alternative network stack for
+      building secure, decentralized and privacy-preserving
+      distributed applications. Our goal is to replace the old
+      insecure Internet protocol stack. Starting from an application
+      for secure publication of files, GNUnet has grown to include all
+      kinds of basic protocol components and applications towards the
+      creation of a GNU internet.
       {% endtrans %}
-    </p>
+     </p>
 
   </div>
 </div>
@@ -25,124 +27,102 @@
 <div class="container adorn_h3_bracket">
   <div class="row">
     <div class="col-lg-4">
-      <h3>{{ _("Practical") }}</h3>
-
+      <h3>{{ _("GNU Taler") }}</h3>
+      
       <p>
         {% trans %}
-        Taler is easy to integrate with existing Web
-        applications. Payments are cryptographically
+        <a href="https://taler.net/">GNU Taler</a>
+	is a new privacy-preserving electronic payment system.
+	Payments are cryptographically
         secured and are confirmed within milliseconds with
         extremely low transaction costs.
         {% endtrans %}
       </p>
-
     </div>
+    
     <div class="col-lg-4">
-      <h3>{{ _("Stable") }}</h3>
+      <h3>{{ _("The GNU Name System") }}</h3>
 
       <p>
         {% trans %}
-        Taler does not introduce a new currency. Taler
-        uses a digital wallet storing coins and payment service
-        providers with escrow accounts in existing currencies.
-        Thus, Taler's cryptographic coins correspond to existing
-        currencies, such as US Dollars, Euros or even Bitcoins.
+        The GNU Name System (GNS) is a fully decentralized replacement
+	for the Domain Name System (DNS).  Instead of using a
+	hierarchy, GNS uses a directed graph.  Naming conventions
+	are similar to DNS, but queries and replies are private even
+	with respect to peers providing the answers.  The integrity of
+	records is cryptographically secured.  GNS integrates
+	a robust, efficient and instant key revocation mechanism.
         {% endtrans %}
       </p>
 
     </div>
     <div class="col-lg-4">
-      <h3>{{ _("Secure") }}</h3>
+      <h3>{{ _("secushare") }}</h3>
 
       <p>
         {% trans %}
-        By design Taler does not suffer from many classes
-        of security problems such as phishing or counterfeit.
-        Thanks to its security features, Taler never rejects a legitimate
-        customer due to a fraud-detection false positive.
+        <a href="http://secushare.org/">secushare</a>
+	is creating a decentralized social networking
+	application on top of GNUnet.  Using overlay
+	multicast and the extensible PSYC protocol, notifications are
+	distributed end-to-end encrypted to authorized users only.
         {% endtrans %}
       </p>
-
     </div>
   </div>
+  
   <div class="row">
     <div class="col-lg-4">
-      <h3>{{ _("Taxable") }}</h3>
+      <h3>{{ _("pretty Easy privacy") }}</h3>
 
       <p>
         {% trans %}
-        When using Taler, merchant's revenue is transparent for tax
-        collection authorities.  Unlike cash and most digital currencies,
-        Taler helps prevent black markets.  Taler is not suitable for
-        illegal activities.
+        pretty Easy privacy (PEP) is creating a usable 
+	usable end-to-end encrypted e-mail solution using
+	opportunistic key exchange.
+	PEP will use GNUnet to protect meta data and exploit new
+	cryptographic protocols to create a privacy-preserving version
+	of the Web-of-Trust.
+        {% endtrans %}
+      </p>
+    </div>
+    
+    <div class="col-lg-4">
+      <h3>{{ _("Foundations") }}</h3>
+      <p>
+        {% trans %}
+        The foundation of GNUnet are a distributed hash
+	table (R5N), an SCTP-like end-to-end encrypted
+	messaging layer (CADET) and a pluggable transport
+	system (TRANSPORT).  Using public keys for addresses
+	and self-organized decentralized routing algorithms,
+	these subsystems replace the traditional TCP/IP stack.
         {% endtrans %}
       </p>
 
     </div>
     <div class="col-lg-4">
-      <h3>{{ _("Private") }}</h3>
-      <p>
-        {% trans %}
-        When you pay with Taler, your identity does not
-        have to be revealed. Just like
-        payments in cash, nobody else can track how you
-        spent your electronic money. However, you obtain a
-        legally valid proof of payment.
-        {% endtrans %}
-      </p>
-
-    </div>
-    <div class="col-lg-4">
-      <h3>{{ _("Libre") }}</h3>
+      <h3>{{ _("Security") }}</h3>
 
       <p>
         {% trans %}
-        Taler provides protocols and reference implementations that in
-        principle enables anybody to run their own payment infrastructure,
-        be it individuals, organizations or whole countries.  Since the
-        reference implementation is a <a href="http://www.gnu.org/">GNU</a>
-        package, it will always remain free software.
+        GNUnet is implemented using a multi-process architecture.
+	Each subsystem runs as a separate process, providing
+	fault-isolation and enabling tight permissions to be
+	granted to each subsystem.  Naturally, the
+        implementation is a <a href="http://www.gnu.org/">GNU</a>
+        package, and will always remain free software.
         {% endtrans %}
       </p>
-
     </div>
   </div>
-</div>
-
-<div class="container-fluid c_acronym">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-    <h2>{{ _("Paying with Taler") }}</h2>
-    {% trans %}
-    <p>To pay with Taler, customers install an electronic wallet
-    on their device.  Before the first payment, the desired currency
-    must be added to the wallet's balance
-    by some other means of payment.</p>
-    <p>Once the wallet is charged, payments on websites take only one click,
-    are never falsely rejected by fraud detection and do not pose any risk
-    of phishing or identity theft.</p>
-    {% endtrans %}
-    </div>
-    <div class="col-lg-6">
-    <h2>{{ _("Receiving payments with Taler") }}</h2>
-    {% trans %}
-    <p>To receive Taler payments, a merchant needs a bank account
-    in the desired currency.  We provide supporting software
-    in various programming languages to make the integration painless.
-    The merchant's backend for Taler transaction processing can run
-    on the merchant's premises or be hosted by a third party.</p>
-    {% endtrans %}
-    </div>
-  </div>
-</div>
 </div>
 
 
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h2>{{ _("Taler News") }}</h2>
+      <h2>{{ _("GNUnet News") }}</h2>
       {% include "news.html.j2.inc" %}
     </div>
   </div>
