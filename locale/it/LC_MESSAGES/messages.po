@@ -177,8 +177,8 @@ msgid "GNUnet logo"
 msgstr ""
 
 #: index.html.j2:10
-msgid "GNU's Framework for Secure Peer-to-Peer Networking!"
-msgstr ""
+msgid "_project_title"
+msgstr "Stack di protocolli GNU per un nuovo Internet etico"
 
 #: index.html.j2:13
 msgid ""
@@ -274,10 +274,6 @@ msgstr ""
 
 #: common/base.j2:5 common/base.j2.inc:5 common/base.j2.inc:6
 msgid "GNUnet"
-msgstr ""
-
-#: common/base.j2:6
-msgid "GNU's Framework for Secure Peer-to-Peer Networking"
 msgstr ""
 
 #: common/footer.j2.inc:7

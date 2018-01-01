@@ -1,0 +1,4 @@
+#: index.html.j2:10
+msgid "_project_title"
+msgstr "GNU's Protocol Stack for a New Ethical Internet"
+
