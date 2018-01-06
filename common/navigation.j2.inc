@@ -9,7 +9,7 @@
           <li><a href="faq.html">{{ _("FAQ") }}</a></li>
           <li><a href="glossary.html">{{ _("Glossary") }}</a></li>
           <li><a href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
-          <li><a href="https://bibliography.gnunet.org/">{{ _("Bibliography") }}</a></li>
+          <li><a href="https://old.gnunet.org/bibliography">{{ _("Bibliography") }}</a></li>
         </ul>
       </li>
     </ul>

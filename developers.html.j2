@@ -2,52 +2,7 @@
 {% block body_content %}
 <div class="jumbotron">
   <div class="text-center">
-    <h1>{{ _("Taler for developers") }}</h1>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <h3>{{ _("Free") }}</h3>
-
-      <p>
-        {% trans %}
-               GNU Taler is free software implementing an open
-               protocol. Anybody is welcome to integrate our reference
-               implementation into their applications.  Different
-               components of Taler are being made available under
-               different licenses. The Affero GPLv3+ is used for the
-               exchange, the LGPLv3+ is used for reference code
-               demonstrating integration with merchant platforms, and
-               licenses like GPLv3+ are used for
-               wallets and related customer-facing software.  We are
-               open for constructive suggestions for maximizing the
-               adoption of this payment platform.
-         {% endtrans %}
-      </p>
-
-    </div>
-    <div class="col-lg-6">
-      <h3>{{ _("RESTful") }}</h3>
-
-      <p>
-        {% trans %}
-               Taler is designed to work on the Internet.  To
-               ensure that Taler payments can work with
-               restrictive network setups, Taler uses a RESTful
-               protocol over HTTP or HTTPS. Taler's security does
-               not depend upon the use of HTTPS, but obviously
-               merchants may choose to offer HTTPS for consistency
-               and because it generally is better for privacy
-               compared to HTTP.  Taler uses JSON to encode
-               structure data, making it easy to integrate Taler
-               with existing Web applications.  Taler's protocol
-               is documented in
-               detail at <a href="https://docs.taler.net/">docs.taler.net</a>.
-        {% endtrans %}
-      </p>
-    </div>
+    <h1>{{ _("GNUnet for developers") }}</h1>
   </div>
 </div>
 
@@ -55,32 +10,23 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-      <h3>{{ _("Code") }}</h3>
+      <h3>{{ _("Git") }}</h3>
 
       <p>
         {% trans %}
-               Taler is currently primarily developed by a
-               research team at <a href="http://www.inria.fr/">Inria</a> and
-               <a href="https://gnunet.org/">GNUnet</a>. However,
-               contributions from anyone are welcome.  Our Git
-               repositories can be cloned using the Git and HTTP
-               access methods against <tt>git.taler.net</tt> with
-               the name of the respective repository. A list of
+               A list of our Git
                repositories can be found in
-               our <a href="https://git.taler.net/">GitWeb</a>.
+               our <a href="https://gnunet.org/git/">GitWeb</a>.
          {% endtrans %}
      </p>
     </div>
     <div class="col-lg-4">
-      <h3>{{ _("Documentation") }}</h3>
+      <h3>{{ _("Bibliography") }}</h3>
 
       <p>
         {% trans %}
-               In addition to this website, the <a
-               href="https://git.taler.net/">documented code</a> and
-               the <a href="https://docs.taler.net/">API
-               documentation</a>.  Technical papers can be found in
-               our <a href="bibliography.html">bibliography</a>.
+               Technical papers can be found in
+               our <a href="https://old.gnunet.org/bibliography">bibliography</a>.
        {% endtrans %}
       </p>
     </div>
@@ -91,7 +37,7 @@
         {% trans %}
                We have a mailing list for developer discussions.
                You can subscribe to or read the list archive at
-               <a href="http://lists.gnu.org/mailman/listinfo/taler">http://lists.gnu.org/mailman/listinfo/taler</a>.
+               <a href="http://lists.gnu.org/mailman/listinfo/gnunet-developers">http://lists.gnu.org/mailman/listinfo/gnunet-developers</a>.
         {% endtrans %}
       </p>
     </div>
@@ -105,7 +51,7 @@
                We have <a href="https://buildbot.net/">Buildbot</a>
                automation tests to detect regressions and check for
                portability at <a
-               href="https://buildbot.taler.net/">buildbot.taler.net</a>.
+               href="https://gnunet.org/buildbot/gnunet/">https://gnunet.org/buildbot/gnunet/</a>.
         {% endtrans %}
        </p>
     </div>
@@ -118,7 +64,7 @@
                <a href="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</a>
                to analyze the code coverage of our tests, the
                results are available
-               at <a href="https://lcov.taler.net/">lcov.taler.net</a>.
+               at <a href="https://gnunet.org/coverage/">https://gnunet.org/coverage/</a>.
         {% endtrans %}
       </p>
     </div>
@@ -131,7 +77,7 @@
                use <a href="https://gnunet.org/gauger">Gauger</a>
                for performance regression analysis of the exchange
                backend
-               at <a href="https://gauger.taler.net/">gauger.taler.net</a>.
+               at <a href="https://gnunet.org/gauger/">https://gnunet.org/gauger/</a>.
         {% endtrans %}
       </p>
     </div>
@@ -139,140 +85,4 @@
 </div>
 </div>
 
-<div class="container">
-
-  <div class="col-lg-12">
-    <h3 id="overview">{{ _("Taler system overview") }}</h3>
-
-    <p>
-        {% trans %}
-             The Taler system consists of protocols executed among
-             a number of actors as illustrated in the illustration on the right.
-             Typical transactions involve the following steps:
-        {% endtrans %}
-     </p>
-
-      <img src="{{ svg_localized('images/system') }}" alt="{{_("system overview")}}" style="float: right; margin: 50px 5px 5px 5px;" width="50%">
-      <ol>
-         <li>
-               {% trans %}
-                   A customer instructs his <b>bank</b> to
-                   transfer funds from his account to the Taler
-                   exchange (top left).  In the subject of the
-                   transaction, he includes an authentication
-                   token from his electronic <b>wallet</b>. In
-                   Taler terminology, the customer creates a
-                   reserve at the exchange.
-               {% endtrans %}
-            </li>
-
-         <li>
-               {% trans %}
-                   Once the exchange has received the wire
-                   transfer, it allows the customer's electronic
-                   wallet to <b>withdraw</b> electronic coins.
-                   The electronic coins are digital
-                   representations of the original currency from
-                   the transfer. It is important to note that the
-                   exchange does not learn the &quot;serial
-                   numbers&quot; of the coins created in this
-                   process, so it cannot tell later which customer
-                   purchased what at which merchant.  The use of
-                   Taler does not change the currency or the total
-                   value of the funds (except for fees which the
-                   exchange may charge for the service).
-               {% endtrans %}
-            </li>
-
-         <li>
-               {% trans %}
-                   Once the customer has the digital coins in his
-                   wallet, the wallet can be used to <b>spend</b>
-                   the coins with merchant portals that support
-                   the Taler payment system and accept the
-                   respective exchange as a business partner
-                   (bottom arrow). This creates a digital contract
-                   signed by the customer's coins and the
-                   merchant.  If necessary, the customer can later
-                   use this digitally signed contract in a court
-                   of law to prove the exact terms of the contract
-                   and that he paid the respective amount. The
-                   customer does not learn the banking details of
-                   the merchant, and Taler does not require the
-                   merchant to learn the identity of the
-                   customer. Naturally, the customer can spend any
-                   fraction of his digital coins (the system takes
-                   care of customers getting change).
-               {% endtrans %}
-            </li>
-
-         <li>
-               {% trans %}
-                   Merchants receiving digital
-                   coins <b>deposit</b> the respective claims
-                   that resulted from the contract signing with
-                   the customer at the exchange to redeem the
-                   coins.  The deposit step does not reveal the
-                   details of the contract between the customer
-                   and the merchant or the identity of the
-                   customer to the exchange in any way. However,
-                   the exchange does learn the identity of the
-                   merchant via the provided bank routing
-                   information.  The merchant can, for example
-                   when compelled by the state for taxation,
-                   provide information linking the individual
-                   deposit to the respective contract signed by
-                   the customer. Thus, the exchange's database
-                   allows the state to enforce that merchants pay
-                   applicable taxes (and do not engage in illegal
-                   contracts).
-               {% endtrans %}
-            </li>
-
-         <li>
-               {% trans %}
-                   Finally, the exchange transfers funds
-                   corresponding to the digital coins redeemed by
-                   the merchants to the merchant's <b>bank</b>
-                   account. The exchange may combine multiple
-                   small transactions into one larger bank
-                   transfer.  The merchant can query the exchange
-                   about the relationship between the bank
-                   transfers and the individual claims that were
-                   deposited.
-               {% endtrans %}
-            </li>
-
-         <li>
-               {% trans %}
-                   Most importantly, the exchange keeps
-                   cryptographic proofs that allow it to
-                   demonstrate that it is operating correctly to
-                   third parties.  The system requires an
-                   external <b>auditor</b>, such as a
-                   government-appointed financial regulatory body,
-                   to frequently verify the exchange's databases
-                   and check that its bank balance matches the
-                   total value of the remaining coins in
-                   circulation.
-               {% endtrans %}
-            </li>
-
-         <li>
-               {% trans %}
-                   Without the auditor, the exchange operators
-                   could embezzle funds they are holding in
-                   reserve. Customers and merchants cannot cheat
-                   each other or the exchange. If any party's
-                   computers are compromised, the financial damage
-                   is limited to the respective party and
-                   proportional to the funds they have in
-                   circulation during the period of the
-                   compromise.
-               {% endtrans %}
-            </li>
-      </ol>
-    <p></p>
-  </div>
-</div> <!-- /container -->
 {% endblock body_content %}
