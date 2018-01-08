@@ -312,11 +312,11 @@ msgid ""
 "Internet protocols."
 msgstr ""
 
-#: index.html.j2:24
+#: index.html.j2:25
 msgid "The Internet is broken"
 msgstr ""
 
-#: index.html.j2:27
+#: index.html.j2:28
 msgid ""
 "Protocols from Ethernet and IP to BGP and X.509 PKI fail by being unsecure-"
 "by-default: protecting against address forgery, routers learning metadata, "
@@ -327,11 +327,11 @@ msgid ""
 "hoc designs in place today."
 msgstr ""
 
-#: index.html.j2:35
+#: index.html.j2:36
 msgid "Developing decentralized applications is hard"
 msgstr ""
 
-#: index.html.j2:38
+#: index.html.j2:39
 msgid ""
 "It seems like every other P2P project develops its own library stack, "
 "covering transports, stream muxing, discovery and others. This divides "
@@ -341,11 +341,11 @@ msgid ""
 "years of research."
 msgstr ""
 
-#: index.html.j2:48
+#: index.html.j2:49
 msgid "Metadata leaks en masse"
 msgstr ""
 
-#: index.html.j2:51
+#: index.html.j2:52
 msgid ""
 "Even though transport encryption is increasingly being deployed in the "
 "Internet, it can only do so much: sender and receiver, times, frequency and "
@@ -356,11 +356,11 @@ msgid ""
 "analysis, layered encryption, Sybil-resistant routing, and others."
 msgstr ""
 
-#: index.html.j2:59
+#: index.html.j2:60
 msgid "Users freedoms are not respected"
 msgstr ""
 
-#: index.html.j2:62
+#: index.html.j2:63
 msgid ""
 "Today, monitoring infrastructure, proprietary implementations, traffic "
 "shapers and firewalls restrict all of the <a href=\"https://www.gnu.org/"
@@ -371,22 +371,22 @@ msgid ""
 "applications (modify)."
 msgstr ""
 
-#: index.html.j2:75
+#: index.html.j2:76
 msgid "GNU Taler"
 msgstr ""
 
-#: index.html.j2:78
+#: index.html.j2:79
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
 
-#: index.html.j2:89
+#: index.html.j2:90
 msgid "The GNU Name System"
 msgstr ""
 
-#: index.html.j2:92
+#: index.html.j2:93
 msgid ""
 "The GNU Name System (GNS) is a fully decentralized replacement for the "
 "Domain Name System (DNS). Instead of using a hierarchy, GNS uses a directed "
@@ -396,11 +396,11 @@ msgid ""
 "instant key revocation mechanism."
 msgstr ""
 
-#: index.html.j2:105
+#: index.html.j2:106
 msgid "secushare"
 msgstr ""
 
-#: index.html.j2:108
+#: index.html.j2:109
 msgid ""
 "<a href=\"http://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
@@ -408,11 +408,11 @@ msgid ""
 "encrypted to authorized users only."
 msgstr ""
 
-#: index.html.j2:121
+#: index.html.j2:122
 msgid "pretty Easy privacy"
 msgstr ""
 
-#: index.html.j2:124
+#: index.html.j2:125
 msgid ""
 "pretty Easy privacy (PEP) is creating a usable usable end-to-end encrypted e-"
 "mail solution using opportunistic key exchange. PEP will use GNUnet to "
@@ -420,11 +420,11 @@ msgid ""
 "privacy-preserving version of the Web-of-Trust."
 msgstr ""
 
-#: index.html.j2:136
+#: index.html.j2:137
 msgid "Foundations"
 msgstr ""
 
-#: index.html.j2:138
+#: index.html.j2:139
 msgid ""
 "The foundation of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET) and a pluggable transport "
@@ -433,11 +433,11 @@ msgid ""
 "TCP/IP stack."
 msgstr ""
 
-#: index.html.j2:150
+#: index.html.j2:151
 msgid "Security"
 msgstr ""
 
-#: index.html.j2:153
+#: index.html.j2:154
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -446,7 +446,7 @@ msgid ""
 "free software."
 msgstr ""
 
-#: index.html.j2:170
+#: index.html.j2:171
 msgid "GNUnet News"
 msgstr ""
 
