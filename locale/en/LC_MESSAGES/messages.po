@@ -1,4 +1,460 @@
-#: index.html.j2:10
+#: about.html.j2:9
+msgid "GNU maintainer."
+msgstr ""
+
+#: about.html.j2:14
+msgid "Continuous Integration, SecuShare, packaging (Guix)."
+msgstr ""
+
+#: about.html.j2:19
+msgid "Set, Consensus, Voting."
+msgstr ""
+
+#: about.html.j2:26
+msgid "Mix networking."
+msgstr ""
+
+#: about.html.j2:31
+msgid "Random peer sampling."
+msgstr ""
+
+#: about.html.j2:36
+msgid "SecuShare, Social, PSYC, Multicast, Data Protection Theory."
+msgstr ""
+
+#: about.html.j2:42
+msgid "GNU Name System, Identity Management, ABE."
+msgstr ""
+
+#: about.html.j2:47
+msgid "Testbed, voice."
+msgstr ""
+
+#: about.html.j2:52 about.html.j2:64
+msgid "SecuShare, Social, PSYC, Multicast."
+msgstr ""
+
+#: about.html.j2:59
+msgid "Web site, packaging (Nix/Guix)."
+msgstr ""
+
+#: about.html.j2:70
+msgid "NSE, CADET."
+msgstr ""
+
+#: about.html.j2:74 about.html.j2:78
+msgid "W32 port."
+msgstr ""
+
+#: about.html.j2:84
+msgid "Documentation, packaging (Guix), System Integration"
+msgstr ""
+
+#: about.html.j2:88
+msgid "Multicast."
+msgstr ""
+
+#: architecture.html.j2:6
+msgid "GNUnet System Architecture"
+msgstr ""
+
+#: contact.html.j2:6
+msgid "Contact information"
+msgstr ""
+
+#: contact.html.j2:13
+msgid "The mailing list"
+msgstr ""
+
+#: contact.html.j2:15
+msgid ""
+"An archived, public mailing list for GNUnet is hosted at <a href=\"https://"
+"lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists.gnu.org/"
+"mailman/listinfo/gnunet-developers</a>. You can send messages to the list at "
+"<a href=\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
+msgstr ""
+
+#: contact.html.j2:25
+msgid "Contacting individuals"
+msgstr ""
+
+#: contact.html.j2:27
+msgid ""
+"GNUnet developers are generally reachable at <tt>PSEUDONYM@gnunet.org</tt>. "
+"All of us support receiving GnuPG encrypted e-mails."
+msgstr ""
+
+#: contact.html.j2:36
+msgid "Reporting bugs"
+msgstr ""
+
+#: contact.html.j2:38
+msgid ""
+"We track open feature requests and bugs in our <a href=\"https://gnunet.org/"
+"bugs/\">Bug tracker</a>, which is shared with the GNUnet project. You can "
+"also report bugs or feature requests to the mailing list."
+msgstr ""
+
+#: common/footer.j2.inc:20 copyright.html.j2:6
+msgid "Copyright Assignment"
+msgstr ""
+
+#: copyright.html.j2:8
+msgid ""
+"<p>Contributors to GNUnet with Git access must sign the <a href=\"/pdf/"
+"copyright.pdf\">copyright assignment</a> to ensure that the <a href="
+"\"https://gnunet.org/git/gnunet-ev.git/tree/gnunet_taler_agreement.tex"
+"\">GNUnet e.V. --- Taler Systems SA agreement on licensing and collaborative "
+"development</a> of the GNUnet and GNU Taler projects is satisfied.</p>"
+msgstr ""
+
+#: copyright.html.j2:17
+msgid ""
+"<p>The agreements ensure that the code will continue to be made available "
+"under free software licenses, but gives developers the freedom to move code "
+"between GNUnet and GNU Taler without worrying about licenses and the company "
+"the ability to dual-license (for example, so that we can distribute via App-"
+"stores that are hostile to free software).</p>"
+msgstr ""
+
+#: copyright.html.j2:25
+msgid ""
+"<p>Minor contributions (basically, anyone without Git access) do not require "
+"copyright assignment. Pseudonymous contributions are accepted, in this case "
+"simply sign the agreement with your pseudonym. Scanned copies are "
+"sufficient, but snail mail is preferred.</p>"
+msgstr ""
+
+#: developers.html.j2:5
+msgid "GNUnet for developers"
+msgstr ""
+
+#: developers.html.j2:13
+msgid "Git"
+msgstr ""
+
+#: developers.html.j2:16
+msgid ""
+"A list of our Git repositories can be found in our <a href=\"https://gnunet."
+"org/git/\">GitWeb</a>."
+msgstr ""
+
+#: common/footer.j2.inc:22 common/navigation.j2.inc:12 developers.html.j2:24
+msgid "Bibliography"
+msgstr ""
+
+#: developers.html.j2:27
+msgid ""
+"Technical papers can be found in our <a href=\"https://old.gnunet.org/"
+"bibliography\">bibliography</a>."
+msgstr ""
+
+#: developers.html.j2:34
+msgid "Discussion"
+msgstr ""
+
+#: developers.html.j2:37
+msgid ""
+"We have a mailing list for developer discussions. You can subscribe to or "
+"read the list archive at <a href=\"http://lists.gnu.org/mailman/listinfo/"
+"gnunet-developers\">http://lists.gnu.org/mailman/listinfo/gnunet-developers</"
+"a>."
+msgstr ""
+
+#: developers.html.j2:47
+msgid "Regression Testing"
+msgstr ""
+
+#: developers.html.j2:50
+msgid ""
+"We have <a href=\"https://buildbot.net/\">Buildbot</a> automation tests to "
+"detect regressions and check for portability at <a href=\"https://gnunet.org/"
+"buildbot/gnunet/\">https://gnunet.org/buildbot/gnunet/</a>."
+msgstr ""
+
+#: developers.html.j2:59
+msgid "Code Coverage Analysis"
+msgstr ""
+
+#: developers.html.j2:62
+msgid ""
+"We use <a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</a> to "
+"analyze the code coverage of our tests, the results are available at <a href="
+"\"https://gnunet.org/coverage/\">https://gnunet.org/coverage/</a>."
+msgstr ""
+
+#: developers.html.j2:72
+msgid "Performance Analysis"
+msgstr ""
+
+#: developers.html.j2:75
+msgid ""
+"We use <a href=\"https://gnunet.org/gauger\">Gauger</a> for performance "
+"regression analysis of the exchange backend at <a href=\"https://gnunet.org/"
+"gauger/\">https://gnunet.org/gauger/</a>."
+msgstr ""
+
+#: ev.html.j2:5
+msgid "Verein zur Frderung von GNUnet e.V."
+msgstr ""
+
+#: ev.html.j2:8
+msgid ""
+"On December 27th 2013 a group of GNUnet hackers met at 30c3 to create the "
+"\"Verein zur Frderung von GNUnet e.V.\", an association under German law to "
+"support GNUnet development. The Amtsgericht Mnchen registered the "
+"association on the 7th of March under VR 205287."
+msgstr ""
+
+#: ev.html.j2:17
+msgid ""
+"The association is officially dedicated to supporting research, development "
+"and education in the area of secure decentralized networking in general, and "
+"GNUnet specifically. This is the official website for the association."
+msgstr ""
+
+#: ev.html.j2:30
+msgid "Governance"
+msgstr ""
+
+#: ev.html.j2:33
+msgid ""
+"You can find our \"Satzung\", and the list of members under <a href=\"/git/"
+"gnunet-ev.git/tree/satzung.tex\">https://gnunet.org/git/gnunet-ev.git/tree/"
+"satzung.tex</a>. The current board consists of: <dl><dt>Vorsitz</dt> <dd><a "
+"href=\"http://grothoff.org/christian/\">Christian Grothoff</a></dd> "
+"<dt>stellvertretender Vorsitz</dt> <dd>Matthias Wachs</dd> <dt>Kassenwart</"
+"dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd>Sree Harsha Totakura, "
+"Lurchi</dd> </dl>"
+msgstr ""
+
+#: ev.html.j2:49
+msgid "Becoming a Member of GNUnet e.V."
+msgstr ""
+
+#: ev.html.j2:51
+msgid ""
+"GNUnet developers with git (write) access can become members to participate "
+"in the decision process and formally support GNUnet e.V. For this, all you "
+"have to do is update the <tt>members.txt</tt> file in the <a href=\"/git/"
+"gnunet-ev.git/\">gnunet-ev</a> repository. There are no membership dues; "
+"however, members are required to support GNUnet e.V. and in particularly "
+"contribute to the technical development within their means. For further "
+"details, we refer to the <a href=\"/git/gnunet-ev.git/\">Satzung</a> "
+"(currently only available in German)."
+msgstr ""
+
+#: ev.html.j2:66
+msgid "Support Us!"
+msgstr ""
+
+#: ev.html.j2:68
+msgid ""
+"Everybody is welcome to support us via donations. For financial "
+"contributions, Europeans are able to donate via SEPA. We hope to setup "
+"accounts in other major currency areas in the future. You can also donate "
+"via Bitcoin, routing details are given below. Please note that we are unable "
+"to provide receipts for your donations. If you are planning to donate a "
+"significant amount of money, please contact us first as it might be better "
+"to come to a custom arrangement. <dl><dt>BitCoin</dt> "
+"<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
+"<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
+msgstr ""
+
+#: ev.html.j2:86
+msgid "Official Meeting Notes"
+msgstr ""
+
+#: ev.html.j2:89
+msgid "2013-12 (constitutional meeting)"
+msgstr ""
+
+#: ev.html.j2:92
+msgid "2014-12"
+msgstr ""
+
+#: ev.html.j2:95
+msgid "2015-12"
+msgstr ""
+
+#: ev.html.j2:98
+msgid "2016-12"
+msgstr ""
+
+#: faq.html.j2:5
+msgid "Q?"
+msgstr ""
+
+#: faq.html.j2:6 faq.html.j2:11
+msgid "<p> A: </p>"
+msgstr ""
+
+#: glossary.html.j2:6
+msgid "term"
+msgstr ""
+
+#: glossary.html.j2:8
+msgid "explanation"
+msgstr ""
+
+#: index.html.j2:6
+msgid "GNUnet logo"
+msgstr ""
+
+#: common/base.j2:6 index.html.j2:10
 msgid "_project_title"
 msgstr "GNU's Protocol Stack for a New Ethical Internet"
 
+#: index.html.j2:13
+msgid ""
+"GNUnet is an alternative network stack for building secure, decentralized "
+"and privacy-preserving distributed applications. Our goal is to replace the "
+"old insecure Internet protocol stack. Starting from an application for "
+"secure publication of files, GNUnet has grown to include all kinds of basic "
+"protocol components and applications towards the creation of a GNU internet."
+msgstr ""
+
+#: index.html.j2:30
+msgid "GNU Taler"
+msgstr ""
+
+#: index.html.j2:33
+msgid ""
+"<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
+"electronic payment system. Payments are cryptographically secured and are "
+"confirmed within milliseconds with extremely low transaction costs."
+msgstr ""
+
+#: index.html.j2:44
+msgid "The GNU Name System"
+msgstr ""
+
+#: index.html.j2:47
+msgid ""
+"The GNU Name System (GNS) is a fully decentralized replacement for the "
+"Domain Name System (DNS). Instead of using a hierarchy, GNS uses a directed "
+"graph. Naming conventions are similar to DNS, but queries and replies are "
+"private even with respect to peers providing the answers. The integrity of "
+"records is cryptographically secured. GNS integrates a robust, efficient and "
+"instant key revocation mechanism."
+msgstr ""
+
+#: index.html.j2:60
+msgid "secushare"
+msgstr ""
+
+#: index.html.j2:63
+msgid ""
+"<a href=\"http://secushare.org/\">secushare</a> is creating a decentralized "
+"social networking application on top of GNUnet. Using overlay multicast and "
+"the extensible PSYC protocol, notifications are distributed end-to-end "
+"encrypted to authorized users only."
+msgstr ""
+
+#: index.html.j2:76
+msgid "pretty Easy privacy"
+msgstr ""
+
+#: index.html.j2:79
+msgid ""
+"pretty Easy privacy (PEP) is creating a usable usable end-to-end encrypted e-"
+"mail solution using opportunistic key exchange. PEP will use GNUnet to "
+"protect meta data and exploit new cryptographic protocols to create a "
+"privacy-preserving version of the Web-of-Trust."
+msgstr ""
+
+#: index.html.j2:91
+msgid "Foundations"
+msgstr ""
+
+#: index.html.j2:93
+msgid ""
+"The foundation of GNUnet are a distributed hash table (R5N), an SCTP-like "
+"end-to-end encrypted messaging layer (CADET) and a pluggable transport "
+"system (TRANSPORT). Using public keys for addresses and self-organized "
+"decentralized routing algorithms, these subsystems replace the traditional "
+"TCP/IP stack."
+msgstr ""
+
+#: index.html.j2:105
+msgid "Security"
+msgstr ""
+
+#: index.html.j2:108
+msgid ""
+"GNUnet is implemented using a multi-process architecture. Each subsystem "
+"runs as a separate process, providing fault-isolation and enabling tight "
+"permissions to be granted to each subsystem. Naturally, the implementation "
+"is a <a href=\"http://www.gnu.org/\">GNU</a> package, and will always remain "
+"free software."
+msgstr ""
+
+#: index.html.j2:125
+msgid "GNUnet News"
+msgstr ""
+
+#: news.html.j2.inc:1
+msgid "More news"
+msgstr ""
+
+#: old-news.html.j2:6
+msgid "Older News"
+msgstr ""
+
+#: old-news.html.j2:9
+msgid "This page documents the GNUnet history."
+msgstr ""
+
+#: common/base.j2:5
+msgid "GNUnet"
+msgstr ""
+
+#: common/footer.j2.inc:7
+msgid "About"
+msgstr ""
+
+#: common/footer.j2.inc:8
+msgid "Contact"
+msgstr ""
+
+#: common/footer.j2.inc:9
+msgid "GNUnet e.V."
+msgstr ""
+
+#: common/footer.j2.inc:14
+msgid "Bug Tracker"
+msgstr ""
+
+#: common/footer.j2.inc:15
+msgid "IRC logs"
+msgstr ""
+
+#: common/footer.j2.inc:21
+msgid "Continuous Integration"
+msgstr ""
+
+#: common/footer.j2.inc:30
+msgid ""
+"This page was created using <a href='https://www.gnu.org/'>Free Software</a> "
+"only."
+msgstr ""
+
+#: common/navigation.j2.inc:6
+msgid "Resources"
+msgstr ""
+
+#: common/navigation.j2.inc:8
+msgid "System Architecture"
+msgstr ""
+
+#: common/navigation.j2.inc:9
+msgid "FAQ"
+msgstr ""
+
+#: common/navigation.j2.inc:10
+msgid "Glossary"
+msgstr ""
+
+#: common/navigation.j2.inc:11
+msgid "Copyright for Contributors"
+msgstr ""
