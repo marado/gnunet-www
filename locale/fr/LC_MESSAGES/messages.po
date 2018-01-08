@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-08 13:57+0100\n"
+"POT-Creation-Date: 2018-01-08 13:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -327,29 +327,86 @@ msgstr ""
 
 #: index.html.j2:13
 msgid ""
-"GNUnet is an alternative network stack for building secure, decentralized "
-"and privacy-preserving distributed applications. Our goal is to replace the "
-"old insecure Internet protocol stack. Starting from an application for "
-"secure publication of files, GNUnet has grown to include all kinds of basic "
-"protocol components and applications towards the creation of a GNU internet."
+"An alternative P2P network stack to build secure, decentralized and privacy-"
+"preserving distributed applications; built to replace the old insecure "
+"Internet protocols."
 msgstr ""
 
-#: index.html.j2:30
+#: index.html.j2:24
+msgid "The Internet is broken"
+msgstr ""
+
+#: index.html.j2:27
+msgid ""
+"Protocols from Ethernet and IP to BGP and X.509 PKI fail by being unsecure-"
+"by-default: protecting against address forgery, routers learning metadata, "
+"or choosing really trusted CAs is nontrivial and sometimes nigh impossible. "
+"<br><br> GNUnet is an Internet <a href=\"https://www.w3.org/2014/strint/"
+"papers/65.pdf\">secure-by-design</a>, addressing addressing, routing, naming "
+"and content distribution in a technically robust manner - as opposed to ad-"
+"hoc designs in place today."
+msgstr ""
+
+#: index.html.j2:35
+msgid "Developing decentralized applications is hard"
+msgstr ""
+
+#: index.html.j2:38
+msgid ""
+"It seems like every other P2P project develops its own library stack, "
+"covering transports, stream muxing, discovery and others. This divides "
+"effort and multiplies bug count. <br><br> GNUnet is a metadata-preserving "
+"foundation for your application covering areas from addressing to reliable "
+"bidirectional Axolotl-encrypted channels, with advanced routing and based on "
+"years of research."
+msgstr ""
+
+#: index.html.j2:48
+msgid "Metadata leaks en masse"
+msgstr ""
+
+#: index.html.j2:51
+msgid ""
+"Even though transport encryption is increasingly being deployed in the "
+"Internet, it can only do so much: sender and receiver, times, frequency and "
+"the volume of communication are all revealed, which enables reverse "
+"engineering pages visited and website fingerprinting, as demonstrated with "
+"Tor. <br><br> GNUnet addresses these concerns with Perfect Forward Secrecy "
+"via ephemeral public key addressing, fixed packet size to hinder traffic "
+"analysis, layered encryption, Sybil-resistant routing, and others."
+msgstr ""
+
+#: index.html.j2:59
+msgid "Users’ freedoms are not respected"
+msgstr ""
+
+#: index.html.j2:62
+msgid ""
+"Today, monitoring infrastructure, proprietary implementations, traffic "
+"shapers and firewalls restrict all of the <a href=\"https://www.gnu.org/"
+"philosophy/free-sw.html\">essential freedoms</a> to some degree. <br><br> "
+"GNUnet gives users freedoms to securely access information (“run” the "
+"network), to study all aspects of the network’s operation (“access the "
+"code”), to distribute information (“copy”), as well as the freedom to deploy "
+"new applications (“modify”)."
+msgstr ""
+
+#: index.html.j2:75
 msgid "GNU Taler"
 msgstr ""
 
-#: index.html.j2:33
+#: index.html.j2:78
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
 
-#: index.html.j2:44
+#: index.html.j2:89
 msgid "The GNU Name System"
 msgstr ""
 
-#: index.html.j2:47
+#: index.html.j2:92
 msgid ""
 "The GNU Name System (GNS) is a fully decentralized replacement for the "
 "Domain Name System (DNS). Instead of using a hierarchy, GNS uses a directed "
@@ -359,11 +416,11 @@ msgid ""
 "instant key revocation mechanism."
 msgstr ""
 
-#: index.html.j2:60
+#: index.html.j2:105
 msgid "secushare"
 msgstr ""
 
-#: index.html.j2:63
+#: index.html.j2:108
 msgid ""
 "<a href=\"http://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
@@ -371,11 +428,11 @@ msgid ""
 "encrypted to authorized users only."
 msgstr ""
 
-#: index.html.j2:76
+#: index.html.j2:121
 msgid "pretty Easy privacy"
 msgstr ""
 
-#: index.html.j2:79
+#: index.html.j2:124
 msgid ""
 "pretty Easy privacy (PEP) is creating a usable usable end-to-end encrypted e-"
 "mail solution using opportunistic key exchange. PEP will use GNUnet to "
@@ -383,11 +440,11 @@ msgid ""
 "privacy-preserving version of the Web-of-Trust."
 msgstr ""
 
-#: index.html.j2:91
+#: index.html.j2:136
 msgid "Foundations"
 msgstr ""
 
-#: index.html.j2:93
+#: index.html.j2:138
 msgid ""
 "The foundation of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET) and a pluggable transport "
@@ -396,11 +453,11 @@ msgid ""
 "TCP/IP stack."
 msgstr ""
 
-#: index.html.j2:105
+#: index.html.j2:150
 msgid "Security"
 msgstr ""
 
-#: index.html.j2:108
+#: index.html.j2:153
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -409,7 +466,7 @@ msgid ""
 "free software."
 msgstr ""
 
-#: index.html.j2:125
+#: index.html.j2:170
 msgid "GNUnet News"
 msgstr ""
 
