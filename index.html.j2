@@ -2,10 +2,6 @@
 {% block body_content %}
 <!-- Jumbotron -->
 <div class="jumbotron">
-  <div style="height: 40vh">
-    <img alt="{{ _("GNUnet logo")}}" style="object-fit:contain;width:100%;height:100%" class="center-block" src="{{ url('images/gnunet-logo.svg') }}" />
-  </div>
-
   <div class="container text-center">
     <h1>{{ _("_project_title") }}</h1>
 
@@ -187,9 +183,13 @@
 <div class="container text-center">
   <a class="btn btn-dark" href="https://grothoff.org/christian/habil.pdf">
     {% trans %}
-    Read the whitepaper
+    Read the overview whitepaper
     {% endtrans %}
   </a>
+  <br>
+  {% trans %}
+  (More in <a href="https://old.gnunet.org/bibliography">bibliography</a>)
+  {% endtrans %}
 </div>
 
 <div class="container">
