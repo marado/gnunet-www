@@ -2,11 +2,14 @@
 
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
+
+PYTHONPATH="$PYTHONPATH:$(pwd)"
+
 all: locale template
 
 # Extract translateable strings from jinga2 templates.
 locale/messages.pot: *.j2 common/*.j2.inc
-	env PYTHONPATH="$PYTHONPATH:." pybabel extract -F locale/babel.map -o locale/messages.pot .
+	pybabel extract -F locale/babel.map -o locale/messages.pot .
 
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
