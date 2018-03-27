@@ -7,7 +7,23 @@
 
     <p>
       {% trans %}
-      An alternative P2P network stack to build secure, decentralized and privacy-preserving distributed applications;  built to replace the old insecure Internet protocols.
+<!-- GNUnet is neither just P2P nor just a framework.
+     It's a new Internet protocol stack.
+     Also: it makes no sense to always update/regenerate
+     the locale files if we are not agreeing on the
+     content of these web pages, yet.
+ -->
+GNUnet is a new network stack for building secure, decentralized and
+privacy-preserving distributed applications. Our goal is to replace the
+old insecure Internet protocol stack.
+<!--
+  Why did this part get removed?
+
+Starting from an application
+for secure publication of files, GNUnet has grown to include all
+kinds of basic protocol components and applications towards the
+creation of a GNU Internet.
+ -->
       {% endtrans %}
      </p>
 
@@ -45,7 +61,7 @@
 
       <p>
         {% trans %}
-        It seems like every other P2P project develops its own library stack, covering transports, stream muxing, discovery and others. This divides effort and multiplies bug count.
+        It seems like every other distributed or P2P project develops its own library stack, covering transports, stream muxing, discovery and others. This divides effort and multiplies bug count.
         <br><br>
         GNUnet is a metadata-preserving foundation for your application, covering areas from addressing to reliable bidirectional Axolotl-encrypted channels, with advanced routing.  Our work is based on continuous research spanning almost two decades.
         {% endtrans %}
