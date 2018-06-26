@@ -81,6 +81,11 @@ footer {
   color: white;
 }
 
+.logo {
+  background-color: #000;
+  width: 100%;
+  margin: 2em;
+}
 
 #body_content .container {
   margin-bottom: 2em;

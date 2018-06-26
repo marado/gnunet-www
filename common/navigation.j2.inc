@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+view_all_bug_page.php?refresh=true<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="{{ 'active' if filename == 'index.html' else '' }}"><a class="gnunet_home" href="index.html">GNUnet</a></li>
@@ -8,8 +8,12 @@
           <li><a href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a href="faq.html">{{ _("FAQ") }}</a></li>
           <li><a href="glossary.html">{{ _("Glossary") }}</a></li>
+	  <li><a href="https://old.gnunet.org/handbooks">{{ _("Documentation") }}</a></li>
           <li><a href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
           <li><a href="https://old.gnunet.org/bibliography">{{ _("Bibliography") }}</a></li>
+	  <li><a href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
+	  <li><a href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC") }}</a></li>
+	  <li><a href="https://old.gnunet.org/bugs">{{ _("Bugtracker") }}</a></li>
         </ul>
       </li>
     </ul>
