@@ -1,1 +1,5 @@
 Sourcecode for https://gnunet.org created from the https://taler.net code base.
+
+Requires python3-jinja2 and python3-babel.
+
+Run "make" to build the HTML.
