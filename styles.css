@@ -81,10 +81,15 @@ footer {
   color: white;
 }
 
-.logo {
+.indexlogo {
   background-color: #000;
   width: 100%;
   margin: 2em;
+}
+
+.smalllogo {
+  background-color: #000;
+  margin: 8px;
 }
 
 #body_content .container {
