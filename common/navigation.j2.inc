@@ -1,6 +1,6 @@
 <nav class="navbar navbar-inverse">
   <div class="{{ 'active' if filename == 'index.html' else '' }}">
-    <div class="index-logo">
+    <div class="{{ 'index-logo' if filename == 'index.html' else 'hidden' }}">
       <img src="../images/gnunet-logo.svg" />
     </div>
   </div>
@@ -8,7 +8,7 @@
     <ul class="nav navbar-nav">
       </a>
       </li>
-      <li class="{{ 'active' if filename != 'index.html' else '' }}">
+      <li class="{{ '' if filename != 'index.html' else '' }}">
         <a href="index.html"><img src="../images/gnunet-logo_notext.svg" width="35" /></a>
       </li>
       <li class="dropdown">
