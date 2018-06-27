@@ -4,27 +4,4 @@ Requires python3-jinja2 and python3-babel.
 
 Run "make" to build the HTML.
 
-*** Bug report:
-
-pybabel extract -F locale/babel.map -o locale/messages.pot .
-extracting messages from about.html.j2 (lstrip_blocks="True", trim_blocks="True", encoding="utf-8")
-Traceback (most recent call last):
-  File "/usr/lib/python-exec/python3.5/pybabel", line 11, in <module>
-    load_entry_point('Babel==2.5.3', 'console_scripts', 'pybabel')()
-  File "/usr/lib64/python3.5/site-packages/babel/messages/frontend.py", line 908, in main
-    return CommandLineInterface().run(sys.argv)
-  File "/usr/lib64/python3.5/site-packages/babel/messages/frontend.py", line 832, in run
-    return cmdinst.run()
-  File "/usr/lib64/python3.5/site-packages/babel/messages/frontend.py", line 467, in run
-    for filename, lineno, message, comments, context in extracted:
-  File "/usr/lib64/python3.5/site-packages/babel/messages/extract.py", line 157, in extract_from_dir
-    dirpath=absname,
-  File "/usr/lib64/python3.5/site-packages/babel/messages/extract.py", line 212, in check_and_call_extract_file
-    strip_comment_tags=strip_comment_tags
-  File "/usr/lib64/python3.5/site-packages/babel/messages/extract.py", line 241, in extract_from_file
-    strip_comment_tags))
-  File "/usr/lib64/python3.5/site-packages/babel/messages/extract.py", line 294, in extract
-    func = getattr(__import__(module, {}, {}, [attrname]), attrname)
-ImportError: No module named 'i18nfix'
-make: *** [Makefile:12: locale/messages.pot] Error 1
 

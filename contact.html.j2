@@ -22,6 +22,17 @@
   </div>
 
   <div class="col-lg-6">
+    <h2>{{ _("The IRC channel") }}</h2>
+      <p>
+        {% trans %}
+            #gnunet is reachable via irc.freenode.net. There is also an <a href="https://gnunet.org/bot/log/gnunet">archive</a> availabe.
+        {% endtrans %}
+      </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
     <h2>{{ _("Contacting individuals") }}</h2>
     <p>
         {% trans %}
@@ -45,7 +56,6 @@
         {% endtrans %}
     </p>
   </div>
-
 </div>
 </div>
 {% endblock body_content %}
