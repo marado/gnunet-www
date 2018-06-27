@@ -23,7 +23,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Development") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="architecture.html">{{ _("System Architecture") }}</a></li>
-          <li><a href="https://gnunet.org/bugs">{{ _("Bugtracker") }}</a></li>
+          <li><a href="https://gnunet.org/bugs/my_view_page.php">{{ _("Bugtracker") }}</a></li>
           <li><a href="https://gnunet.org/git">{{ _("Source Code") }}</a></li>
           <li><a href="https://gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></li>
         </ul>
