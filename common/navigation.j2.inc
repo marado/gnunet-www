@@ -1,8 +1,8 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li class="{{ 'active' if filename == 'index.html' else '' }}">
-      <a class="smalllogo" href="index.html">
+      <li> 
+      <a href="index.html">
 	<img src="../images/gnunet-logo_notext.svg" width="35" />
       </a>
       </li>
