@@ -1,9 +1,9 @@
 <nav class="navbar navbar-inverse">
+  <a class="navbar-brand mr-0 mr-md-2" href="index.html">
+	<img src="../images/gnunet-smaller-logo.png" width="30" />
+      </a>
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li class="{{ 'active' if filename == 'index.html' else '' }}"><a class="smalllogo" href="index.html">
-	<img src="../images/gnunet-smaller-logo.png" width="15" />
-      </a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
