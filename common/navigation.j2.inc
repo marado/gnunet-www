@@ -1,9 +1,8 @@
-view_all_bug_page.php?refresh=true<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="{{ 'active' if filename == 'index.html' else '' }}"><a class="smalllogo" href="index.html">
-	<img src="images/gnunet-smaller-logo.png" />
-	<img src="images/gnunet-anonymous-schriftzug.png" />
+	<img src="../images/gnunet-smaller-logo.png" width="15" />
       </a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Resources") }} <span class="caret"></span></a>

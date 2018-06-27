@@ -3,23 +3,28 @@
 <!-- Jumbotron -->
 <div class="jumbotron">
   <div class="container text-center">
-    <div class="logo">
       <img src="../images/gnunet-small-logo.png" />
-    </div>
-
+  </div>
+  <div class="container text-center">
     <p>
       {% trans %}
-GNUnet is a new network stack for building secure, decentralized and
-privacy-preserving applications. Our goal is to replace the
-old insecure Internet protocol stack. <!--It emerges from academic research on improving privacy on the internet.--> It has strong roots in academic research.
-<br><br>
-GNUnet uses the physical Internet infrastructure as a basis for a 100% peer-to-peer framework for applications to run on [link to GNUnet layer grafic].
-<br><br>
-GNUnet is made for an open society: GNUnet is a self-organizing network, it's free software, as in freedom [link free software]. GNUnet puts you in control of your data. You determine which data to share with whom.
-<br><br>
-If you want to participate join <a href="ev.html">us</a>.
+      GNUnet is a new network stack for building secure, decentralized and
+      privacy-preserving applications. Our goal is to replace the
+      old insecure Internet protocol stack. <!--It emerges from academic research on improving privacy on the internet.--> It has strong roots in academic research.
       {% endtrans %}
-     </p>
+      <br><br>
+      {% trans %}
+      GNUnet uses the physical Internet infrastructure as a basis for a 100% peer-to-peer framework for applications to run on [link to GNUnet layer grafic].
+      {% endtrans %}
+      <br><br>
+      {% trans %}
+      GNUnet is made for an open society: GNUnet is a self-organizing network, it's free software, as in freedom [link free software]. GNUnet puts you in control of your data. You determine which data to share with whom.
+      {% endtrans %}
+      <br><br>
+      {% trans %}
+      If you want to participate join <a href="ev.html">us</a>.
+      {% endtrans %}
+    </p>
 
     <a class="btn btn-dark" href="https://gitlab.secushare.org/GNUnet/tutorials/blob/master/README.md">
       {% trans %}
@@ -32,13 +37,15 @@ If you want to participate join <a href="ev.html">us</a>.
 <div class="container text-center">
   <div class="container">
     <div class="row">
-    {% trans %}
-    The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long ugly arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
-    <br><br>
-    <h3>
+      {% trans %}
+      The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long ugly arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
+      {% endtrans %}
+      <br><br>
+      <h3>
+      {% trans %}
       The Internet of tomorrow needs GNUnet today.
       {% endtrans %}
-    </h3>
+      </h3>
     </div>
   </div>
 </div>
@@ -194,7 +201,9 @@ If you want to participate join <a href="ev.html">us</a>.
       <h3>{{ _("Conversation") }}</h3>
       <p>
         {% trans %}
-        Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        GNUnet conversation is an application that provides secure voice communication
+        in a fully decentralized way by employing GNUnet for routing and transport, hence it is a
+        Voice over GNUnet application.
         {% endtrans %}
       </p>
 
