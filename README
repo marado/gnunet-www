@@ -4,4 +4,5 @@ Requires python3-jinja2 and python3-babel.
 
 Run "make" to build the HTML.
 
+Expect it to show up in en/ and other language folders, NOT in the root dir.
 

@@ -1,11 +1,16 @@
 <nav class="navbar navbar-inverse">
+  <div class="{{ 'active' if filename == 'index.html' else '' }}">
+    <div class="index-logo">
+      <img src="../images/gnunet-logo.svg" />
+    </div>
+  </div>
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li> 
-      <a href="index.html">
-	<img src="../images/gnunet-logo_notext.svg" width="35" />
       </a>
       </li>
+<!--  <li class="{{ 'active' if filename != 'index.html' else '' }}">
+        <a class="smalllogo" href="index.html"><img src="../images/gnunet-logo_notext.svg" width="35" /></a>
+      </li> -->
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -59,4 +64,6 @@
       </li>
     </ul>
   </div>
+</div>
+
 </nav>

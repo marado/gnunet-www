@@ -16,9 +16,8 @@ html {
 }
 
 .c_acronym {
-  background-color: #A5C663;
+	background-color: #A5C663;
 }
-
 
 #body_content a,
 #body_content a:link,
@@ -71,7 +70,11 @@ footer a:hover {
 
 
 #mybody nav {
- border-radius: 0px;
+	border-radius: 0px;
+	padding: 10px;
+}
+.index-logo {
+	text-align: center;
 }
 
 footer {
@@ -79,17 +82,6 @@ footer {
   margin-top: 2em;
   background-color: #222;
   color: white;
-}
-
-.indexlogo {
-  background-color: #000;
-  width: 100%;
-  margin: 2em;
-}
-
-.smalllogo {
-  background-color: #000;
-  margin: 8px;
 }
 
 #body_content .container {

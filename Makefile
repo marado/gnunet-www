@@ -36,3 +36,5 @@ locale: locale-update locale-compile
 # incorporating translations.
 template: locale-compile
 	./template.py
+
+it: template
