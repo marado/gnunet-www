@@ -5,18 +5,30 @@
 	<img src="../images/gnunet-smaller-logo.png" width="15" />
       </a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Resources") }} <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }} <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
+          <li><a href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
+	  <li><a href="https://gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Development") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="architecture.html">{{ _("System Architecture") }}</a></li>
-          <li><a href="faq.html">{{ _("FAQ") }}</a></li>
-          <li><a href="glossary.html">{{ _("Glossary") }}</a></li>
-	  <li><a href="https://old.gnunet.org/handbooks">{{ _("Documentation") }}</a></li>
-          <li><a href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
-          <li><a href="https://old.gnunet.org/bibliography">{{ _("Bibliography") }}</a></li>
-	  <li><a href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
-	  <li><a href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC") }}</a></li>
-	  <li><a href="https://old.gnunet.org/bugs">{{ _("Bugtracker") }}</a></li>
+          <li><a href="https://gnunet.org/bugs">{{ _("Bugtracker") }}</a></li>
+          <li><a href="https://gnunet.org/git">{{ _("Source Code") }}</a></li>
+          <li><a href="https://gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></li>
         </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Documentation") }} <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="glossary.html">{{ _("Glossary") }}</a></li>
+	  <li><a href="https://gnunet.org/handbooks">{{ _("Handbook") }}</a></li>
+          <li><a href="faq.html">{{ _("FAQ") }}</a></li>
+          <li><a href="https://gnunet.org/bibliography">{{ _("Bibliography") }}</a></li>
+	</ul>
       </li>
     </ul>
     <ul class="nav navbar-right">
