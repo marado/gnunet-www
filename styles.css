@@ -5,9 +5,22 @@
     color: black;
 }
 
+.btn a,
+.btn a:link,
+.btn a:visited {
+    text-decoration: none;
+    color: white;
+}
+
 #body_content a:hover {
   transition: background-color 0.3s;
   background-color: rgba(200, 200, 200, 0.5);
+}
+
+.btn a:hover {
+  transition: background-color 0.3s;
+  background-color: rgba(200, 200, 200, 0.5);
+  color: black;
 }
 
 body .banner {
@@ -126,4 +139,8 @@ footer {
 .invert {
   -webkit-filter: invert(100%);
   filter: invert(100%);
+}
+
+#body_content .jumbotron {
+    background-color: white;
 }

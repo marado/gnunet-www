@@ -1,20 +1,12 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-
 <!-- Jumbotron -->
-<div class="jumbotron banner">
-  <!-- div class="container text-center">
+<div class="jumbotron banner text-center">
       <img src="../images/gnunet-logo_bright.svg" />
-  </div -->
-  <div class"container-fluid dark">
-    <div class="{{ 'active' if filename == 'index.html' else '' }}">
-      <div class="{{ 'index-logo' if filename == 'index.html' else 'hidden' }}">
-        <img src="../images/gnunet-logo.svg" />
-      </div>
-    </div>
-  </div>
+</div>
+<div class="jumbotron">
   <div class="container text-center">
-    <p>
+  <p>
       {% trans %}
       GNUnet is a new network stack for building secure, decentralized and
       privacy-preserving applications. Our goal is to replace the
@@ -22,28 +14,29 @@
       {% endtrans %}
       <br><br>
       {% trans %}
-      GNUnet uses the physical Internet infrastructure as a basis for a 100% <a href="architecture.html">peer-to-peer framework</a> for applications to run on.
+      GNUnet uses the physical Internet infrastructure as a basis for a pure <a href="architecture.html">peer-to-peer framework</a> for applications to run on.
       {% endtrans %}
       <br><br>
       {% trans %}
       GNUnet is made for an open society: GNUnet is a self-organizing network, it's <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>, as in freedom. GNUnet puts you in control of your data. You determine which data to share with whom.
       {% endtrans %}
-      <br><br>
-      {% trans %}
-      If you want to participate join <a href="ev.html">us</a>.
-      {% endtrans %}
     </p>
     <p> 
       <a class="btn btn-primary btn-lg" href="https://gnunet.org/git/">
       {% trans %}
-      Download it!
+      Download GNUnet
+      {% endtrans %}
+      </a>
+      <a class="btn btn-primary btn-lg" href="ev.html">
+      {% trans %}
+      Join &amp; support us!
       {% endtrans %}
       </a>
     </p>
   </div>
 </div>
 
-<div class="container-fluid adorn_h3_bracket">
+<div class="container-fluid adorn_h3_bracket c_acronym">
   <div class="container">
     <div class="row">
       <div class="container text-center">
@@ -59,7 +52,7 @@
         <h3>{{ _("Imagine...") }}</h3>
         <p>
         {% trans %}
-        The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long ugly arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
+        The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
         {% endtrans %}
         </p>
       </div>
@@ -68,17 +61,17 @@
 
         <p>
           {% trans %}
-          Protocols from Ethernet and IP to BGP and X.509 PKI fail by being unsecure-by-default: protecting against address forgery, routers learning metadata, or choosing really trusted CAs is nontrivial and sometimes nigh impossible.
+          Protocols from Ethernet and IP to BGP and X.509 PKI are insecure-by-default: protecting against address forgery, routers learning metadata, or choosing trustworthy CAs is nontrivial and sometimes impossible.
           {% endtrans %}
         </p>
         <p>
           {% trans %}
-          GNUnet is an Internet <a href="https://www.w3.org/2014/strint/papers/65.pdf">secure-by-design</a>, improving addressing, routing, naming and content distribution in a technically robust manner - as opposed to ad-hoc designs in place today.
+          GNUnet provides <a href="https://www.w3.org/2014/strint/papers/65.pdf">privacy-by-design</a>, improving addressing, routing, naming and content distribution in a technically robust manner - as opposed to ad-hoc designs in place today.
           {% endtrans %}
         </p>
       </div>
       <div class="col-lg-4">
-        <h3>{{ _("Developing decentralized applications is hard") }}</h3>
+        <h3>{{ _("Decentralization is hard") }}</h3>
 
         <p>
           {% trans %}
@@ -91,22 +84,22 @@
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <h3>{{ _("Metadata leaks en masse") }}</h3>
+        <h3>{{ _("Metadata is exposed") }}</h3>
 
         <p>
           {% trans %}
-          Even though transport encryption is increasingly being deployed in the Internet, it can only do so much: sender and receiver, times, frequency and the volume of communication are all revealed, which enables reverse engineering pages visited and website fingerprinting, as demonstrated with Tor.
+          Even though transport encryption is increasingly being deployed on the Internet, it can only do so much: sender and receiver, times, frequency and the volume of communication are still revealed, which <a href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables reverse engineering pages visited via website fingerprinting</a>.
           <br><br>
-          GNUnet addresses these concerns with Perfect Forward Secrecy via ephemeral public key addressing, fixed packet size to hinder traffic analysis, layered encryption, Sybil-resistant routing, and others. 
+          GNUnet addresses these concerns with perfect forward secrecy via ephemeral public key addressing, fixed packet size to hinder traffic analysis, layered encryption, Sybil-resistant routing, and others. 
           {% endtrans %}
         </p>
       </div>
       <div class="col-lg-4">
-        <h3>{{ _("Users’ freedoms are not respected") }}</h3>
+        <h3>{{ _("Freedoms are not respected") }}</h3>
 
         <p>
           {% trans %}
-          Today, monitoring infrastructure, proprietary implementations, traffic shapers and firewalls restrict all of the <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a> to some degree.
+          Today, monitoring increasingly centralized infrastructure, proprietary implementations, traffic shapers and firewalls restrict all of the <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a> to various degrees.
           {% endtrans %}
         </p>
         <p>
@@ -196,12 +189,10 @@
 
       <p>
         {% trans %}
-        <a href="https://pep.foundation/">pretty Easy privacy (p&#8801;p)</a> is creating a usable
-	usable end-to-end encrypted e-mail solution using
+        <a href="https://pep.foundation/">pretty Easy privacy (p&#8801;p)</a> is creating a usable end-to-end encrypted e-mail solution using
 	opportunistic key exchange.
-	p&#8801;p will use GNUnet to protect meta data and exploit new
-	cryptographic protocols to create a privacy-preserving version
-	of the Web-of-Trust.
+	p&#8801;p will use GNUnet to protect metadata and exploit new
+	cryptographic protocols to verify keys.
         {% endtrans %}
       </p>
     </div>
@@ -209,7 +200,7 @@
       <h3>{{ _("Filesharing") }}</h3>
       <p>
         {% trans %}
-        GNUnet Filesharing is an application that provides
+        GNUnet filesharing is an application that provides
         censorship-resistant, anonymous filesharing. It also supports
         non-anonymous filesharing that can provide better performance.
         {% endtrans %}
@@ -221,8 +212,7 @@
       <p>
         {% trans %}
         GNUnet conversation is an application that provides secure voice communication
-        in a fully decentralized way by employing GNUnet for routing and transport, hence it is a
-        Voice over GNUnet application.
+        in a fully decentralized way by employing GNUnet for routing and transport.
         {% endtrans %}
       </p>
 
@@ -233,7 +223,7 @@
 <div class="container adorn_h3_bracket">
   <div class="row">
     <div class="container text-center">
-      <h1>{{ _("Featured Applications") }}</h1>
+      <h1>{{ _("News") }}</h1>
     </div>
   </div>
   <div class="row">

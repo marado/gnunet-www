@@ -1,12 +1,10 @@
 <nav class="navbar navbar-inverse static-top">
   <div class="container-fluid">
-    <ul class="nav navbar-nav">
+   <a class="navbar-brand mr-0 mr-md-2" href="index.html">
+       <img src="../images/gnunet-smaller-logo.png" width="30" />
       </a>
-      </li>
-      <li class="{{ '' if filename != 'index.html' else '' }}">
-        <a href="index.html"><img src="../images/gnunet-logo_notext.svg" width="35" /></a>
-      </li>
-      <li class="dropdown">
+    <ul class="nav navbar-nav">
+       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
