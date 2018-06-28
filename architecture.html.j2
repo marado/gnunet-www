@@ -1,7 +1,7 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <!-- Jumbotron -->
-<div class="jumbotron">
+<div class="container-fluid">
   <div class="container text-center">
     <h1>{{ _("GNUnet System Architecture") }}</h1>
     <p>
@@ -9,9 +9,9 @@
   </div>
 </div>
 <div class="container">
-  <img width="100%" src="../images/gnunet-arch-full.svg"></img><br><br>
-
-
+  <div class="text-center">
+    <img class="img-fluid" style="width:100%" src="../images/gnunet-arch-full.svg">
+  </div>
   <div class="row">
     <div class="col-lg-6">
       <h2>{{ _("Foundations") }}</h2>
