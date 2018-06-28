@@ -18,11 +18,11 @@
       {% trans %}
       GNUnet is a new network stack for building secure, decentralized and
       privacy-preserving applications. Our goal is to replace the
-      old insecure Internet protocol stack. <!--It emerges from academic research on improving privacy on the internet.--> It has strong roots in academic research.
+      old insecure Internet protocol stack. It has strong roots in academic <a href="bibliography.html">research</a>.
       {% endtrans %}
       <br><br>
       {% trans %}
-      GNUnet uses the physical Internet infrastructure as a basis for a 100% peer-to-peer framework for applications to run on [link to GNUnet layer grafic].
+      GNUnet uses the physical Internet infrastructure as a basis for a 100% <a href="architecture.html">peer-to-peer framework</a> for applications to run on.
       {% endtrans %}
       <br><br>
       {% trans %}
@@ -43,38 +43,20 @@
   </div>
 </div>
 
-<div class="container-fluid">
-  <div class="container text-center">
-    <div class="row">
-      <h3>
-      </h3>
-    </div>
-    <!--
-    <div class="row">
-      <div class="container text-center bg-primary">
-      <h3>
-      {% trans %}
-      The Internet of tomorrow needs GNUnet today.
-      {% endtrans %}
-      </h3>
-      </div>
-    </div>
-    //-->
-  </div>
-
+<div class="container-fluid adorn_h3_bracket">
   <div class="container">
     <div class="row">
-      <div class="container">
-          <h2>
+      <div class="container text-center">
+          <h1>
           {% trans %}
-          The Internet of tomorrow needs GNUnet today.
+          The Internet of tomorrow needs GNUnet today
           {% endtrans %}
-          </h2>
+          </h1>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <h3>Imagine...</h3>
+        <h3>{{ _("Imagine...") }}</h3>
         <p>
         {% trans %}
         The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long ugly arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
@@ -154,12 +136,12 @@
 
 <div class="container adorn_h3_bracket">
   <div class="row">
-    <div class="container">
-      <h2>
+    <div class="container text-center">
+      <h1>
         {% trans %}
         Featured Applications
         {% endtrans %}
-      </h2>
+      </h1>
     </div>
   </div>
   <div class="row">
@@ -248,10 +230,14 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container adorn_h3_bracket">
+  <div class="row">
+    <div class="container text-center">
+      <h1>{{ _("Featured Applications") }}</h1>
+    </div>
+  </div>
   <div class="row">
     <div class="col-lg-12">
-      <h2>{{ _("GNUnet News") }}</h2>
       {% include "news.html.j2.inc" %}
     </div>
   </div>

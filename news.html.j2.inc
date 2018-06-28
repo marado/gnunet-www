@@ -1,6 +1,6 @@
 <!-- a href="old-news.html"><h3>{{ _("More news")}}</h3></a -->
 
-<h3>Second GNUnet Hacker Meeting 2018 at Decentrale, Swiss</h3>
+<h3>Second GNUnet Hacker Meeting 2018 at Decentrale, Switzerland</h3>
 
 <p>The GNUnet hackers met for the second time this year. The primary goal was
 to squash bugs to bring out a new release. Aside from this we worked hard on
