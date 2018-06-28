@@ -5,11 +5,11 @@
     color: black;
 }
 
-.btn a,
-.btn a:link,
-.btn a:visited {
-    text-decoration: none;
-    color: white;
+a.btn,
+a.btn:link,
+a.btn:visited {
+    text-decoration: none !important;
+    color: white !important;
 }
 
 #body_content a:hover {
@@ -17,10 +17,10 @@
   background-color: rgba(200, 200, 200, 0.5);
 }
 
-.btn a:hover {
+a.btn:hover {
   transition: background-color 0.3s;
   background-color: rgba(200, 200, 200, 0.5);
-  color: black;
+  color: black !important;
 }
 
 body .banner {
