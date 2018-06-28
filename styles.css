@@ -1,3 +1,11 @@
+.static-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 3;
+}
+
 #body_content a,
 #body_content a:link,
 #body_content a:visited {
@@ -24,10 +32,10 @@ a.btn:hover {
 }
 
 body .banner {
-  margin-top: -20px;
-  background-color: rgb(60,60,60);
+  padding-top: 100px;
+  background-color: black;
   color: white;
-  margin-bottom: -20px;
+  padding-bottom: 20px;
 }
 #body_content .banner a {
   color: white;
@@ -109,9 +117,12 @@ footer {
 }
 
 #body_content .container {
-  margin-bottom: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+	margin-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left:  2em;
+	padding-right: 2em;
+	max-width: 50em;
 }
 
 #body_content {
