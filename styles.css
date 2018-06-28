@@ -21,19 +21,21 @@ a.btn:visited {
 	color: white !important;
 }
 #body_content a:hover {
-	transition: background-color 0.3s;
-	background-color: rgba(200, 200, 200, 0.5);
+	transition: background-color 0.7s;
+	background-color: #d00;
+	border-color: #fff;
+	color: white !important;
 }
 .btn-primary {
 	color: #fff;
-	background-color: #5a8;
-	border-color: #7da;
+	background-color: #678;
+	border-color: #68a;
 }
 a.btn:hover {
-	transition: background-color 0.3s;
-	background-color: rgba(200, 200, 200, 0.5);
-	color: black !important;
-	border-color: #ccc;
+	transition: background-color 0.7s;
+	background-color: #d00;
+	border-color: #fff;
+	color: white !important;
 }
 
 
@@ -64,7 +66,8 @@ html {
 }
 
 .c_acronym {
-	background-color: #7da;
+	background-color: #68a;
+	color: white;
 }
 
 
@@ -145,8 +148,9 @@ footer {
 }
 
 .adorn_h3_bracket h3::before {
-  content: "❬";
-  color: #aa3939;
+  content: "⊛";
+  color: #d00;
+  margin-right: 1em;
 }
 
 .footer-list {

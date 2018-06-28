@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse static-top">
   <div class="container-fluid">
    <a class="navbar-brand mr-0 mr-md-2" href="index.html">
-       <img src="../images/gnunet-smaller-logo.png" width="30" />
+       <img src="../images/gnunet-icon.png" />
       </a>
     <ul class="nav navbar-nav">
        <li class="dropdown">
