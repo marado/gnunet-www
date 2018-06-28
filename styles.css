@@ -32,9 +32,9 @@ a.btn:hover {
 }
 
 body .banner {
-  padding-top: 100px;
   background-color: black;
   color: white;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 #body_content .banner a {
@@ -116,6 +116,13 @@ footer {
   color: white;
 }
 
+#body_content .container-wide {
+	margin-bottom: 2em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left:  2em;
+	padding-right: 2em;
+}
 #body_content .container {
 	margin-bottom: 2em;
 	padding-top: 1em;
@@ -128,6 +135,8 @@ footer {
 #body_content {
   /* push footer down */
   min-height: 80vh;
+  /* space for the nav */
+  padding-top: 70px;
 }
 
 .adorn_h3_bracket h3::before {
