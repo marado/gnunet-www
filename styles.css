@@ -1,5 +1,23 @@
-body .jumbotron {
-  background-color: white;
+#body_content a,
+#body_content a:link,
+#body_content a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
+#body_content a:hover {
+  transition: background-color 0.3s;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+body .banner {
+  margin-top: -20px;
+  background-color: rgb(60,60,60);
+  color: white;
+  margin-bottom: -20px;
+}
+#body_content .banner a {
+  color: white;
 }
 
 
@@ -15,21 +33,14 @@ html {
 	overflow-y: scroll;
 }
 
+.dark {
+        background-color: rgb(34,34,34); 
+}
+
 .c_acronym {
 	background-color: #A5C663;
 }
 
-#body_content a,
-#body_content a:link,
-#body_content a:visited {
-    text-decoration: underline;
-    color: black;
-}
-
-#body_content a:hover {
-  transition: background-color 0.3s;
-  background-color: rgba(200, 200, 200, 0.5);
-}
 
 footer a,
 footer a:link,

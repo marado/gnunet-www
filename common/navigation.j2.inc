@@ -1,9 +1,4 @@
-<nav class="navbar navbar-inverse">
-  <div class="{{ 'active' if filename == 'index.html' else '' }}">
-    <div class="{{ 'index-logo' if filename == 'index.html' else 'hidden' }}">
-      <img src="../images/gnunet-logo.svg" />
-    </div>
-  </div>
+<nav class="navbar navbar-inverse static-top">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       </a>
@@ -41,7 +36,7 @@
     <ul class="nav navbar-right">
       <li>
         <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <img  src="{{ url('images/languageicon.svg') }}" height="35" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}]
+          <img  src="{{ url('images/languageicon.svg') }}" height="15" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}]
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -62,8 +57,6 @@
           </li>
         </ul>
       </li>
-    </ul>
+      </ul>
   </div>
-</div>
-
 </nav>

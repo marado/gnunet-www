@@ -2,10 +2,17 @@
 {% block body_content %}
 
 <!-- Jumbotron -->
-<div class="jumbotron">
+<div class="jumbotron banner">
   <!-- div class="container text-center">
       <img src="../images/gnunet-logo_bright.svg" />
   </div -->
+  <div class"container-fluid dark">
+    <div class="{{ 'active' if filename == 'index.html' else '' }}">
+      <div class="{{ 'index-logo' if filename == 'index.html' else 'hidden' }}">
+        <img src="../images/gnunet-logo.svg" />
+      </div>
+    </div>
+  </div>
   <div class="container text-center">
     <p>
       {% trans %}
@@ -26,24 +33,23 @@
       If you want to participate join <a href="ev.html">us</a>.
       {% endtrans %}
     </p>
-    
+    <p> 
       <a class="btn btn-primary btn-lg" href="https://gnunet.org/git/">
       {% trans %}
       Download it!
       {% endtrans %}
       </a>
+    </p>
   </div>
 </div>
 
-<div class="container-fluid bg-primary">
+<div class="container-fluid">
   <div class="container text-center">
     <div class="row">
       <h3>
-      {% trans %}
-      The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long ugly arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
-      {% endtrans %}
       </h3>
     </div>
+    <!--
     <div class="row">
       <div class="container text-center bg-primary">
       <h3>
@@ -53,10 +59,29 @@
       </h3>
       </div>
     </div>
+    //-->
   </div>
+
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="container">
+          <h2>
+          {% trans %}
+          The Internet of tomorrow needs GNUnet today.
+          {% endtrans %}
+          </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <h3>Imagine...</h3>
+        <p>
+        {% trans %}
+        The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long ugly arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
+        {% endtrans %}
+        </p>
+      </div>
+      <div class="col-lg-4">
         <h3>{{ _("The Internet is broken") }}</h3>
 
         <p>
@@ -70,7 +95,7 @@
           {% endtrans %}
         </p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h3>{{ _("Developing decentralized applications is hard") }}</h3>
 
         <p>
@@ -83,7 +108,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h3>{{ _("Metadata leaks en masse") }}</h3>
 
         <p>
@@ -94,7 +119,7 @@
           {% endtrans %}
         </p>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h3>{{ _("Users’ freedoms are not respected") }}</h3>
 
         <p>
@@ -110,6 +135,7 @@
       </div>
     </div>
   </div>
+  <!--
   <div class="container">
     <div class="row">
       <div class="container text-center bg-primary">
@@ -121,6 +147,7 @@
       </div>
     </div>
   </div>
+  //-->
 </div>
 
 
