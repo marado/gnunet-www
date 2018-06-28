@@ -6,33 +6,38 @@
 	z-index: 3;
 }
 
+
+/* hyperlinks and buttons */
 #body_content a,
 #body_content a:link,
 #body_content a:visited {
     text-decoration: underline;
     color: black;
 }
-
 a.btn,
 a.btn:link,
 a.btn:visited {
-    text-decoration: none !important;
-    color: white !important;
+	text-decoration: none !important;
+	color: white !important;
 }
-
 #body_content a:hover {
-  transition: background-color 0.3s;
-  background-color: rgba(200, 200, 200, 0.5);
+	transition: background-color 0.3s;
+	background-color: rgba(200, 200, 200, 0.5);
+}
+.btn-primary {
+	color: #fff;
+	background-color: #5a8;
+	border-color: #7da;
+}
+a.btn:hover {
+	transition: background-color 0.3s;
+	background-color: rgba(200, 200, 200, 0.5);
+	color: black !important;
+	border-color: #ccc;
 }
 
-a.btn:hover {
-  transition: background-color 0.3s;
-  background-color: rgba(200, 200, 200, 0.5);
-  color: black !important;
-}
 
 body .banner {
-  background-color: black;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -55,11 +60,11 @@ html {
 }
 
 .dark {
-        background-color: rgb(34,34,34); 
+        background-color: #333;
 }
 
 .c_acronym {
-	background-color: #A5C663;
+	background-color: #7da;
 }
 
 
@@ -97,7 +102,7 @@ footer a:hover {
 }
 
 .btn-dark {
-  background-color: #9d9d9d;
+	background-color: #999;
 }
 
 
@@ -110,10 +115,10 @@ footer a:hover {
 }
 
 footer {
-  padding-top: 2em;
-  margin-top: 2em;
-  background-color: #222;
-  color: white;
+	padding-top: 2em;
+	margin-top: 2em;
+	background-color: #333;
+	color: white;
 }
 
 #body_content .container-wide {
