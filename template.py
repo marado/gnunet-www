@@ -17,7 +17,7 @@ import glob
 import codecs
 import os
 sys.path.append(os.getcwd())
-import i18nfix
+from . import i18nfix
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
                          extensions=["jinja2.ext.i18n"],

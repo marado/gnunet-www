@@ -1,5 +1,5 @@
 ;;; This file is part of GNUnet.
-;;; Copyright (C) 2017 GNUnet e.V.
+;;; Copyright (C) 2017, 2018 GNUnet e.V.
 ;;;
 ;;; GNUnet is free software; you can redistribute it and/or modify
 ;;; it under the terms of the GNU General Public License as published
@@ -66,12 +66,10 @@
  (gnu packages xiph)
  ((guix licenses) #:prefix license:))
 
-;; Named "guix-env", but not really "env" yet.
-
 (define %source-dir (dirname (current-filename)))
 
 (define gnunet-website-git
-  (let* ((revision "1"))
+  (let* ((revision "2"))
     (package
       (name "gnunet-website-git")
       (version (string-append "0.0.0-" revision "." "dev"))
