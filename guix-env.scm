@@ -63,6 +63,7 @@
  (gnu packages upnp)
  (gnu packages video)
  (gnu packages web)
+ (gnu packages version-control)
  (gnu packages xiph)
  ((guix licenses) #:prefix license:))
 
@@ -78,11 +79,16 @@
                    #:recursive? #t))
       ;; FIXME: Switch to python-build-system!
       (build-system gnu-build-system)
-      (native-inputs
+      (inputs
        `(("python-jinja2" ,python-jinja2)
          ("python-babel" ,python-babel)
          ("gettext-minimal" ,gettext-minimal)
-         ("python" ,python)))
+         ("python" ,python)
+         ("coreutils" ,coreutils)
+         ("which" ,which)
+         ("git" ,git)
+         ("automake" ,automake)
+         ("autoconf" ,autoconf-wrapper)))
       (arguments
        `(#:phases
          (modify-phases %standard-phases
