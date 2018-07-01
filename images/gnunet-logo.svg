@@ -31,7 +31,7 @@
      inkscape:showpageshadow="false"
      borderlayer="true"
      inkscape:zoom="1.6857143"
-     inkscape:cx="172.72886"
+     inkscape:cx="80.483098"
      inkscape:cy="138.05767"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -133,7 +133,7 @@
          id="stop4706-8" />
     </linearGradient>
     <color-profile
-       id="color-profile27"
+       id="color-profile28"
        xlink:href="/usr/share/color/icc/ghostscript/ps_cmyk.icc"
        name="Artifex-PS-CMYK-Profile" />
     <linearGradient
@@ -792,7 +792,7 @@
      inkscape:groupmode="layer"
      id="g1533"
      inkscape:label="vertices cyan"
-     style="display:none"
+     style="display:inline"
      transform="translate(0,-67.278107)"
      sodipodi:insensitive="true">
     <path
@@ -916,7 +916,7 @@
   </g>
   <g
      transform="translate(0,-67.278107)"
-     style="display:none"
+     style="display:inline"
      inkscape:label="nodes cyan"
      id="g1491"
      inkscape:groupmode="layer"
@@ -1214,7 +1214,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="vertices red"
-     style="display:inline"
+     style="display:none"
      transform="translate(0,-67.278107)"
      sodipodi:insensitive="true">
     <path
@@ -1338,7 +1338,7 @@
   </g>
   <g
      transform="translate(0,-67.278107)"
-     style="display:inline"
+     style="display:none"
      inkscape:label="nodes red"
      id="g325"
      inkscape:groupmode="layer"

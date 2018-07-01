@@ -17,7 +17,9 @@ import glob
 import codecs
 import os
 sys.path.append(os.getcwd())
-from . import i18nfix
+# ImportError: attempted relative import with no known parent package
+#from . import i18nfix
+import i18nfix
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
                          extensions=["jinja2.ext.i18n"],
