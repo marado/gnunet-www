@@ -61,6 +61,7 @@
  (gnu packages tex)
  (gnu packages tls)
  (gnu packages upnp)
+ (gnu packages openstack)
  (gnu packages video)
  (gnu packages web)
  (gnu packages version-control)
@@ -82,6 +83,7 @@
       (inputs
        `(("python-jinja2" ,python-jinja2)
          ("python-babel" ,python-babel)
+         ("python-oslo.i18n" ,python-oslo.i18n)
          ("gettext-minimal" ,gettext-minimal)
          ("python" ,python)
          ("coreutils" ,coreutils)
