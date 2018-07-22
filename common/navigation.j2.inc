@@ -25,7 +25,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Documentation") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="glossary.html">{{ _("Glossary") }}</a></li>
-	  <li><a href="https://gnunet.org/handbooks">{{ _("Handbook") }}</a></li>
+	  <li><a href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
           <li><a href="faq.html">{{ _("FAQ") }}</a></li>
           <li><a href="https://gnunet.org/bibliography">{{ _("Bibliography") }}</a></li>
 	</ul>
