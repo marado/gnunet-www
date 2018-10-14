@@ -7,8 +7,8 @@ Extract translations from a Jinja2 template, stripping leading newlines.
 @author Florian Dold
 """
 
-import jinja2.ext
 import re
+import jinja2.ext
 
 
 def normalize(message):

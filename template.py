@@ -7,19 +7,31 @@
 #
 # Note that the gettext files need to be prepared first. This script
 # is thus to be invoked via the Makefile.
+#
+# We import unicode_literals until people have understood how unicode
+# with bytes and strings changed in python2->python3.
+from __future__ import unicode_literals
 import os
 import os.path
 import sys
 import re
 import gettext
-import jinja2
 import glob
 import codecs
-import os
-sys.path.append(os.getcwd())
-# ImportError: attempted relative import with no known parent package
-#from . import i18nfix
-import i18nfix
+import jinja2
+
+# FIXME: lint will complain about this. Do NOT! fix this by writing
+# import i18nfix again, send an email to our developer list if you
+# have a problem with your system specific python integration!
+# PACKAGE_PARENT = '..'
+# SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+# sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+# sys.path.append(os.getcwd())
+#from www import i18nfix
+try:
+    from . import i18nfix
+except ImportError:
+    import i18nfix
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
                          extensions=["jinja2.ext.i18n"],
@@ -27,6 +39,7 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__
                          trim_blocks=True,
                          undefined=jinja2.StrictUndefined,
                          autoescape=False)
+print(sys.path)
 
 langs_full = {"en": "English", "fr": "Français", "it": "Italiano", "es": "Español", "de": "Deutsch"}
 
@@ -45,7 +58,7 @@ for in_file in glob.glob("*.j2"):
 
     def svg_localized(filename):
         lf = filename + "." + locale + ".svg"
-        if "en" == locale or not os.path.isfile(lf):
+        if locale == "en" or not os.path.isfile(lf):
             return "../" + filename + ".svg"
         else:
             return "../" + lf
@@ -66,15 +79,14 @@ for in_file in glob.glob("*.j2"):
 
         env.install_gettext_translations(tr, newstyle=True)
 
-        content = tmpl.render(
-                lang=locale,
-                lang_full=langs_full[locale],
-                url=url,
-                self_localized=self_localized,
-                url_localized=url_localized,
-                svg_localized=svg_localized,
-                filename=name + "." + ext)
+        content = tmpl.render(lang=locale,
+                              lang_full=langs_full[locale],
+                              url=url,
+                              self_localized=self_localized,
+                              url_localized=url_localized,
+                              svg_localized=svg_localized,
+                              filename=name + "." + ext)
         out_name = "./" + locale + "/" + in_file.rstrip(".j2")
         os.makedirs("./" + locale, exist_ok=True)
-        with codecs.open(out_name, "w", "utf-8") as f:
+        with codecs.open(out_name, "w", encoding='utf-8') as f:
             f.write(content)
