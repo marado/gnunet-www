@@ -38,3 +38,9 @@ template: locale-compile
 	$(PYTHON) ./template.py
 
 it: template
+
+current_dir = $(shell pwd)
+
+run: all
+	@[ "$(BROWSER)" ] || ( echo "You need to export the environment variable 'BROWSER' to run this."; exit 1 )
+	$(RUN_BROWSER) $(current_dir)/en/index.html

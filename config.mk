@@ -3,3 +3,5 @@
 DEBUG=0
 
 PYTHON=python3
+
+RUN_BROWSER=$(BROWSER)
