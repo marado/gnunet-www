@@ -1,0 +1,13 @@
+[REFACTORING]
+disable=no-else-return
+
+[REPORTS]
+reports=yes
+evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / statement) * 10)
+
+[MISCELLANEOUS]
+notes=FIXME,XXX,xxx,todo,fixme,TODO,\\todo,@todo
+
+[FORMAT]
+max-line-length=80
+max-module-lines=1000
