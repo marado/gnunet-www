@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # This file is in the public domain.
 #
-# This script runs the jinga2 templating engine on an input template-file
+# This script runs the jinja2 templating engine on an input template-file
 # using the specified locale for gettext translations, and outputs
 # the resulting (HTML) ouptut-file.
 #
