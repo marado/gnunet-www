@@ -6,3 +6,11 @@ Run "make" to build the HTML.
 
 Expect it to show up in en/ and other language folders, NOT in the root dir.
 
+Commentary:
+This website has been tested with python 3.6.5 and jinja2 2.9.6.
+Since python development in collaborative environments with
+a whole range of possibilities in what your environment looks
+like, please state problems on the mailinglist instead of just
+fixing what *could* work for you.
+
+Thanks!
