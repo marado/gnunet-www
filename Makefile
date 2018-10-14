@@ -3,17 +3,17 @@
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
 
-PYTHONPATH="$PYTHONPATH:$(pwd)"
+include config.mk
 
 all: locale template
 
-# Extract translateable strings from jinga2 templates.
+# Extract translateable strings from jinja2 templates.
 locale/messages.pot: *.j2 common/*.j2.inc
 	pybabel extract -F locale/babel.map -o locale/messages.pot .
 
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
-	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot 
+	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
 	msgmerge -U -m --previous locale/de/LC_MESSAGES/messages.po locale/messages.pot
 	msgmerge -U -m --previous locale/fr/LC_MESSAGES/messages.po locale/messages.pot
 	msgmerge -U -m --previous locale/es/LC_MESSAGES/messages.po locale/messages.pot
@@ -32,9 +32,9 @@ locale-compile:
 # Process everything related to gettext translations.
 locale: locale-update locale-compile
 
-# Run the jinga2 templating engine to expand templates to HTML
+# Run the jinja2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
-	./template.py
+	$(PYTHON) ./template.py
 
 it: template

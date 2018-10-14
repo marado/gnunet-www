@@ -1,0 +1,5 @@
+#PYTHONPATH="$PYTHONPATH:$(pwd)"
+
+DEBUG=0
+
+PYTHON=python3

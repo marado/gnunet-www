@@ -33,9 +33,11 @@
  (gnu packages base)
  (gnu packages compression)
  (gnu packages curl)
+ (gnu packages check)
  (gnu packages databases)
  (gnu packages file)
  (gnu packages gettext)
+ (gnu packages less)
  (gnu packages glib)
  (gnu packages gnome)
  (gnu packages gnunet)
@@ -83,11 +85,14 @@
       (inputs
        `(("python-jinja2" ,python-jinja2)
          ("python-babel" ,python-babel)
+         ("python-pylint" ,python-pylint)
          ("python-oslo.i18n" ,python-oslo.i18n)
+         ("python-future" ,python-future)
          ("gettext-minimal" ,gettext-minimal)
          ("python" ,python)
          ("coreutils" ,coreutils)
          ("which" ,which)
+         ("less" ,less)
          ("git" ,git)
          ("automake" ,automake)
          ("autoconf" ,autoconf-wrapper)))
@@ -100,18 +105,18 @@
                (for-each (lambda (po)
                            (chmod po #o666))
                          (find-files "." "\\.po$"))))
-           (replace 'configure
-             (lambda* (#:key outputs inputs #:allow-other-keys)
-               (let ((pystore (assoc-ref inputs "python"))
-                     (pyver ,(version-major+minor (package-version python))))
-                 (substitute* "Makefile"
-                   (("env PYTHONPATH=\".\"")
-                    (string-append
-                     "env PYTHONPATH=\""
-                     (getenv "PYTHONPATH")
-                     ":"
-                     "."
-                     "\""))))))
+           ;; (replace 'configure
+           ;;   (lambda* (#:key outputs inputs #:allow-other-keys)
+           ;;     (let ((pystore (assoc-ref inputs "python"))
+           ;;           (pyver ,(version-major+minor (package-version python))))
+           ;;       (substitute* "Makefile"
+           ;;         (("env PYTHONPATH=\".\"")
+           ;;          (string-append
+           ;;           "env PYTHONPATH=\""
+           ;;           (getenv "PYTHONPATH")
+           ;;           ":"
+           ;;           "."
+           ;;           "\""))))))
            ;; FIXME: Implement small testsuite.
            (delete 'check))))
       (synopsis "GNUnet website generation")
