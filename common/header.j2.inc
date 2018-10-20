@@ -42,6 +42,7 @@
 
     <script src="{{ url('dist/js/jquery-1.11.1.min.js') }}"></script>
     <script src="{{ url('dist/js/bootstrap.min.js') }}"></script>
+    <link href="{{ url('navbar.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
