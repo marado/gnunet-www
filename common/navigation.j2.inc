@@ -1,9 +1,11 @@
 <nav class="navbar navbar-inverse static-top">
   <div class="container-fluid">
-   <a class="navbar-brand mr-0 mr-md-2" href="index.html">
-       <img src="../images/gnunet-icon.png" />
-      </a>
     <ul class="nav navbar-nav">
+       <li class="nav navbar-left">
+         <a class="navbar-brand mr-0 mr-md-2" href="index.html">
+           <img src="../images/gnunet-icon.png" />
+         </a>
+       </li>
        <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }} <span class="caret"></span></a>
         <ul class="dropdown-menu">
