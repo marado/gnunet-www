@@ -310,7 +310,7 @@ about what GNS is about, but now let's use it with a browser, to make it actuall
 $ gnunet-gns-proxy-setup-ca 
 </code></p>
 
-<p>Enter <b>gnunet-gns-proxy</b>. It's a proxy service that the browser can send DNS and HTTP traffic to. It will try to resolve names with GNS first and forward the rest of the DNS traffic to the system's DNS resolver. It will also take care of the HTTP traffic, so the browser gets valid certificates and the web server will not be confused by our GNS hostnames. Our GNS namestore doesn't know about any DNS hostnames yet, so we have to store them, too. For our "ccc" A record, we have to store a LEHO (legacy hostname) record, too. It must contain the website's original DNS hostname:</p>
+<p>GNUnet provides a proxy service (gnunet-gns-proxy) that the browser can send DNS and HTTP traffic to. It will try to resolve names with GNS first and forward the rest of the DNS traffic to the system's DNS resolver. It will also take care of the HTTP traffic, so the browser gets valid certificates and the web server will not be confused by our GNS hostnames. Our GNS namestore doesn't know about any DNS hostnames yet, so we have to store them, too. For our "ccc" A record, we have to store a LEHO (legacy hostname) record, too. It must contain the website's original DNS hostname:</p>
 
 <p><code>
 $ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -C www.ccc.de
@@ -319,7 +319,7 @@ $ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -C www.ccc.de
 <p>Now let's start gnunet-gns-proxy.</p>
 
 <p><code>
-$ gnunet-gns-proxy
+$ /usr/lib/gnunet/libexec/gnunet-gns-proxy
 </code></p>
 
 <p>Our browser has to be configured so it uses our proxy. In Firefox we have to set theese options under "about:config":</p>
