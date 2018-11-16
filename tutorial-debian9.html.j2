@@ -81,7 +81,7 @@ production version.</p>
  $ sudo addgroup gnunetdns<br>
  $ sudo adduser --system --group --disabled-login --home /var/lib/gnunet gnunet<br>
  $ make -j$(nproc || echo -n 1)<br>
- $ sudo make install<br>
+ $ sudo make install
 </code></p>
 
 <h4>{{ _("Option 2: GNUnet for development") }}</h4>
@@ -92,7 +92,7 @@ $ export GNUNET_PREFIX=/usr<br>
 $ export CFLAGS="-g -Wall -O0"<br>
 $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose --with-microhttpd=/opt/libmicrohttpd<br>
 $ make -j$(nproc || echo -n 1)<br>
-$ sudo make install<br>
+$ sudo make install
 </p></code>
 
 <!--<h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
@@ -328,7 +328,7 @@ $ gnunet-gns-proxy
 network.proxy.socks:		localhost<br>
 network.proxy.socks_port: 	7777<br>
 network.proxy.socks_remote_dns	true<br>
-network.proxy.socks.type:	1<br>
+network.proxy.socks.type:	1
 </code></p>
 
 <p>Now we should be able to resolve our GNS names in the browser! We just have to type "https://ccc.myself" into the address bar. If our friend Bob prepared his system, too, he can resolve our record by typing "ccc.alice.myself".</p>
@@ -351,7 +351,7 @@ $ sudo userdel -r gnunet<br>
 $ sudo groupdel gnunet<br>
 $ sudo groupdel gnunetdns<br>
 $ sudo mv /etc/nsswitch.conf.original /etc/nsswitch.conf<br>
-$ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2<br>
+$ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
 </p></code>
 
 
