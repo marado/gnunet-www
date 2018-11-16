@@ -5,6 +5,9 @@
 
 - Do we need ALL the boilerplate of bootstrap css?
 
+* Layout / CSS:
+- Firefox Reader Mode does not display all of our pages in full.
+
 - architecture-page:
   * The graph image does not really display well on small screens.
 
