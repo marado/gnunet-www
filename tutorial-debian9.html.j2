@@ -26,7 +26,7 @@ painlessly. Optional dependencies are listed in Appendix A. They are required
 for some experimental GNUnet features.</p>
 
 <p><code>
-$ sudo apt install git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev
+$ sudo apt install git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev openssl
 </code></p>
 
 <h3>{{ _("Make an installation directory") }}</h3>
@@ -40,8 +40,10 @@ $ mkdir ~/gnunet_installation
 <h3>{{ _("Get the source code") }}</h3>
 
 <p>We download the GNUnet source code using git. On Debian 9 we need the
-sources of another library (libmicrohttpd). There exists a Debian 9 package for
-libmicrohttpd too, but it is too old.</p>
+sources of another library (libmicrohttpd).</p>
+
+<p><b>Attention: The official libmicrohttpsd package for Debian 9 is too old, we need
+at least version 0.9.52.</b></p>
 
 <p><code>
 $ cd ~/gnunet_installation<br>
@@ -51,11 +53,8 @@ $ git clone --depth 1 https://gnunet.org/git/libmicrohttpd.git
 
 <h3>{{ _("Compile and Install") }}</h3>
 
-<p>Installing GNUnet is not hard, it only requires one little nasty step which
-involves modifying an important config file of the operating system. So we'll
-pay extra attention while doing this.</p>
 
-<p>Before we can compile GNUnet, we compile and install libmicrohttpd.</p>
+<p>Before we can compile GNUnet on Debian 9, we compile and install libmicrohttp</p>
 
 <p><code>
 $ cd ~/gnunet_installation/libmicrohttpd<br>
@@ -66,7 +65,7 @@ $ make -j$(nproc || echo -n 1)<br>
 $ sudo make install<br>
 </code></p>
 
-<p>Now it's finally time to compile and install GNUnet. We have two options:
+<p>Installing GNUnet is not hard. We have two options:
 installing a *production version* and installing a *development version*. If
 you want to start writing GNUnet applications or join the GNUnet development
 choose the development version (it will print more debug output and contains
@@ -96,7 +95,7 @@ $ make -j$(nproc || echo -n 1)<br>
 $ sudo make install<br>
 </p></code>
 
-<h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
+<!--<h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
 So now it gets a bit nasty. It's not so bad. All we have to do is copy a file and edit another one. The file we need to copy is GNUnet's plugin for the Name Service Switch (NSS) in unix systems. Different unixes expect it in different locations and GNUnet's build system does not try to guess. On Debian 9 we have to do
 
 <p><code>
@@ -131,7 +130,7 @@ $ sudo sed -i -E 's/^(hosts:.*) dns/\1 gns [NOTFOUND=return] dns/' /etc/nsswitch
 hosts: files mdns4_minimal [NOTFOUND=return] gns [NOTFOUND=return] dns
 </p></code>
 
-<p>That's it. It wasn't that nasty, was it?</p>
+<p>That's it. It wasn't that nasty, was it?</p>-->
 
 <h3>{{ _("Configuration") }}</h3>
 Congratulations! GNUnet is now installed! Before we start it we need to create a configuration file. By default GNUnet looks in our home directory for the file `~/.gnunet/gnunet.conf`. We can start with an empty file for now:
@@ -184,48 +183,22 @@ $ gnunet-arm -e
 
 <h3>{{ _("Make sure it works") }}</h3>
 
-<p>Let's try some of GNUnet's components: gns, filesharing, CADET and VPN.</p>
+<p>Let's try out some of GNUnet's use cases. Some should be done before others:
 
-<h4>{{ _("GNS") }}</h4>
+<ul>
+  <li>filesharing (easy)</li>
+  <li>A simple chat using CADET</li>
+  <li>Name resolution using GNS on the command line</li>
+  <li>Name resolution using GNS with a browser (do it on the command line first)</li>
+  <li>Serving a website using VPN (do name resolution with a browser first)</li>
+</ul>
 
-<p>First let's try out GNS, the GNU name service. We'll publish an IP address
-in a GNS record and try to resolve it using our browser. First we need an
-identity which is the equivalent to a zone in DNS. We'll call it "myself" and
-create it using the `gnunet-identity` command line tool. 
-Instead of "myself" you can surely use your nick or any other name. </p>
+</p>
 
-<p><code>
-$ gnunet-identity -C myself
-</p></code>
-
-<p>We can check if it worked using the same tool. We expect the name of our identity and the corresponding public key to be displayed.</p>
-
-<p><code>
-$ gnunet-identity -d<br>
-myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
-</p></code>
-
-<p>Now we add a public `A` record to our zone. It has the name "ccc", a value
-of "195.54.164.39" and it never expires.</p>
-<p><code>
-$ gnunet-namestore -z myself -a -e never -p -t A -n ccc -V 195.54.164.39
-</p></code>
-
-<p>Now we can query that record using the command line tool `gnunet-gns`.</p>
-
-<p><code>
-$ gnunet-gns -u ccc.myself<br>
-ccc.myself:<br>
-Got `A' record: 195.54.164.39
-</p></code>
-
-<p>So it worked! Now you can try to type "ccc.myself" into your browser and see
-what website is behind the IP address. (If it doesnt work use the IP directly
-;p)</p>
 
 <h4>{{ _("filesharing") }}</h4>
 
-<p>Let's publish a file in the GNUnet filesharing network. We use tow keywords
+<p>Let's publish a file in the GNUnet filesharing network. We use the keywords
 ("commons" and "state") so other people will be able to search for the file.
 </p>
 
@@ -272,6 +245,94 @@ $ gnunet-cadet -o my-secret-port
 <p><code>
 $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
 </p></code>
+
+
+<h4>{{ _("Name resolution using GNS on the command line") }}</h4>
+
+<p>GNS is the GNU name service, a fully decentralized alternatice to DNS. We'll publish an IP address in a GNS record try to resolve it on the command line. First we need an identity which is the
+equivalent to a zone in DNS. We'll call it "myself" and create it using the
+`gnunet-identity` command line tool. Instead of "myself" you can surely use your
+nick or any other name. </p>
+
+<p><code>
+$ gnunet-identity -C myself
+</code></p>
+
+<p>We can check if it worked using the same tool. We expect the name of our identity and the corresponding public key to be displayed.</p>
+
+<p><code>
+$ gnunet-identity -d<br>
+myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
+</code></p>
+
+<p>Now we add a public `A` record to our zone. It has the name "ccc", a value
+of "195.54.164.39" and it expires after one day.</p>
+<p><code>
+$ gnunet-namestore -z myself -a -e "1 d" -p -t A -n ccc -V 195.54.164.39
+</code></p>
+
+<p>Now we can query that record using the command line tool `gnunet-gns`.</p>
+
+<p><code>
+$ gnunet-gns -u ccc.myself<br>
+ccc.myself:<br>
+Got `A' record: 195.54.164.39
+</code></p>
+
+<p>So it worked! But only resolving our own records is boring. So we can give our
+identity (the public key of it to be precise) to someone else so they can try to 
+resolve our records, too. The other person (Bob) has to add it to his namestore like
+this:<p>
+
+<p><code>
+$ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
+</code></p>
+
+<p>Our identity in Bobs namestore is a public record (-p) and never expires (-e never). Now Bob (let's assume he has called his identity myself, too) should be able to resolve our "ccc" record, too!</p>
+
+<p><code>
+$ gnunet-gns -u ccc.alice.myself
+ccc.alice.myself:
+Got `A' record: 195.54.164.39 
+</code></p>
+
+<p>It can continue like this. A friend of Bob would be able to resolve our records too because Bob published our identity in a public record. Bobs friend would simply use "ccc.alice.bob.myself" to resolve our "ccc" record.
+
+
+<h4>{{ _("Name resolution using GNS with a browser") }}</h4>
+
+<p>In the previous use case "Name resolution using GNS on the command line" we got an idea
+about what GNS is about, but now let's use it with a browser, to make it actually useful. Currently Firefox is known to work.</p>
+
+<p>Many websites enforce HTTPS and thus provide certificates for their hostnames (and not our GNS names). Browsers don't like wrong hostnames in certificates and will present error messages. So GNUnet has to trick them by generating own certificates for our GNS names. This means we need to create our own certificate authority and tell our browser about it. Luckily there's a script for it:</p>
+
+<p><code>
+$ gnunet-gns-proxy-setup-ca 
+</code></p>
+
+<p>Enter <b>gnunet-gns-proxy</b>. It's a proxy service that the browser can send DNS and HTTP traffic to. It will try to resolve names with GNS first and forward the rest of the DNS traffic to the system's DNS resolver. It will also take care of the HTTP traffic, so the browser gets valid certificates and the web server will not be confused by our GNS hostnames. Our GNS namestore doesn't know about any DNS hostnames yet, so we have to store them, too. For our "ccc" A record, we have to store a LEHO (legacy hostname) record, too. It must contain the website's original DNS hostname:</p>
+
+<p><code>
+$ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -C www.ccc.de
+</code></p>
+
+Now let's start gnunet-gns-proxy.
+
+<p><code>
+$ gnunet-gns-proxy
+</code></p>
+
+<p>Our browser has to be configured so it uses our proxy. In firefox we have to set theese options under "about:config":</p>
+
+<p><code>
+network.proxy.socks:		localhost
+network.proxy.socks_port: 	7777
+network.proxy.socks_remote_dns	true
+network.proxy.socks.type:	1
+</code></p>
+
+<p>Now we should be able to resolve our GNS names in the browser! We just have to type "https://ccc.myself" into the address bar. If our friend Bob prepared his system, too, he can resolve our record by typing "ccc.alice.myself".</p>
+
 
 <h4>{{ _("VPN") }}</h4>
 
