@@ -291,9 +291,9 @@ $ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNV
 <p>Our identity in Bobs namestore is a public record (-p) and never expires (-e never). Now Bob (let's assume he has called his identity myself, too) should be able to resolve our "ccc" record, too!</p>
 
 <p><code>
-$ gnunet-gns -u ccc.alice.myself
-ccc.alice.myself:
-Got `A' record: 195.54.164.39 
+$ gnunet-gns -u ccc.alice.myself<br>
+ccc.alice.myself:<br>
+Got `A' record: 195.54.164.39
 </code></p>
 
 <p>It can continue like this. A friend of Bob would be able to resolve our records too because Bob published our identity in a public record. Bobs friend would simply use "ccc.alice.bob.myself" to resolve our "ccc" record.
@@ -316,19 +316,19 @@ $ gnunet-gns-proxy-setup-ca
 $ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -C www.ccc.de
 </code></p>
 
-Now let's start gnunet-gns-proxy.
+<p>Now let's start gnunet-gns-proxy.</p>
 
 <p><code>
 $ gnunet-gns-proxy
 </code></p>
 
-<p>Our browser has to be configured so it uses our proxy. In firefox we have to set theese options under "about:config":</p>
+<p>Our browser has to be configured so it uses our proxy. In Firefox we have to set theese options under "about:config":</p>
 
 <p><code>
-network.proxy.socks:		localhost
-network.proxy.socks_port: 	7777
-network.proxy.socks_remote_dns	true
-network.proxy.socks.type:	1
+network.proxy.socks:		localhost<br>
+network.proxy.socks_port: 	7777<br>
+network.proxy.socks_remote_dns	true<br>
+network.proxy.socks.type:	1<br>
 </code></p>
 
 <p>Now we should be able to resolve our GNS names in the browser! We just have to type "https://ccc.myself" into the address bar. If our friend Bob prepared his system, too, he can resolve our record by typing "ccc.alice.myself".</p>
