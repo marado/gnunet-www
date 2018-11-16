@@ -325,10 +325,10 @@ $ /usr/lib/gnunet/libexec/gnunet-gns-proxy
 <p>Our browser has to be configured so it uses our proxy. In Firefox we have to set these options under "about:config":</p>
 
 <p><code>
-network.proxy.socks:		localhost<br>
-network.proxy.socks_port: 	7777<br>
-network.proxy.socks_remote_dns	true<br>
-network.proxy.socks.type:	1
+network.proxy.socks:            localhost<br>
+network.proxy.socks_port:       7777<br>
+network.proxy.socks_remote_dns  true<br>
+network.proxy.type:             1
 </code></p>
 
 <p>Now we should be able to resolve our GNS names in the browser! We just have to type "https://ccc.myself" into the address bar. If our friend Bob prepared his system, too, he can resolve our record by typing "ccc.alice.myself".</p>
