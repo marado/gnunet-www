@@ -302,7 +302,7 @@ Got `A' record: 195.54.164.39
 <h4>{{ _("Name resolution using GNS with a browser") }}</h4>
 
 <p>In the previous use case "Name resolution using GNS on the command line" we got an idea
-about what GNS is about, but now let's use it with a browser, to make it actually useful. Currently Firefox is known to work.</p>
+about what GNS is about, but now let's use it with a browser, to make it actually useful. Currently Firefox and Chromium are known to work.</p>
 
 <p>Many websites enforce HTTPS and thus provide certificates for their hostnames (and not our GNS names). Browsers don't like wrong hostnames in certificates and will present error messages. So GNUnet has to trick them by generating own certificates for our GNS names. This means we need to create our own certificate authority and tell our browser about it. Luckily there's a script for it:</p>
 
@@ -331,6 +331,12 @@ network.proxy.socks:            localhost<br>
 network.proxy.socks_port:       7777<br>
 network.proxy.socks_remote_dns  true<br>
 network.proxy.type:             1
+</code></p>
+
+<p>To tell Chromium to use the proxy, it has to be started with the "--proxy-server" command line option:</p>
+
+<p><code>
+$ chromium --proxy-server="socks5://127.0.0.1:7777"
 </code></p>
 
 <p>Now we should be able to resolve our GNS names in the browser! We just have to type "https://ccc.myself" into the address bar. If our friend Bob prepared his system, too, he can resolve our record by typing "ccc.alice.myself".</p>
