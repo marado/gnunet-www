@@ -257,7 +257,7 @@ $ gnunet-namestore -z myself -a -e "1 d" -p -t A -n ccc -V 195.54.164.39
 <p>Now we can query that record using the command line tool `gnunet-gns`.</p>
 
 <p><code>
-$ gnunet-gns -u ccc.myself<br>
+$ gnunet-gns -t A -u ccc.myself<br>
 ccc.myself:<br>
 Got `A' record: 195.54.164.39
 </code></p>
@@ -274,7 +274,7 @@ $ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNV
 <p>Our identity in Bobs namestore is a public record (-p) and never expires (-e never). Now Bob (let's assume he has called his identity myself, too) should be able to resolve our "ccc" record, too!</p>
 
 <p><code>
-$ gnunet-gns -u ccc.alice.myself<br>
+$ gnunet-gns -t A -u ccc.alice.myself<br>
 ccc.alice.myself:<br>
 Got `A' record: 195.54.164.39
 </code></p>
