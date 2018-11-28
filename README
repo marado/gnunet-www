@@ -6,6 +6,17 @@ Run "make" to build the HTML.
 
 Expect it to show up in en/ and other language folders, NOT in the root dir.
 
+Alternatively, creating an ad-hoc development environment containing all of
+the necessary software needed to build the HTML files can be easily done
+using the GNU Guix functional package manager.
+
+This can be achieved with the following command:
+
+`guix environment --ad-hoc coreutils bash python python-babel python-jinja2 gettext-minimal make -- bash`
+
+After installing the packages, this will drop you into a bash environment
+from which you can proceed to run "make".
+
 Commentary:
 This website has been tested with python 3.6.5 and jinja2 2.9.6.
 Since python development in collaborative environments with
