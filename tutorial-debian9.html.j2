@@ -135,51 +135,59 @@ hosts: files mdns4_minimal [NOTFOUND=return] gns [NOTFOUND=return] dns
 <h3>{{ _("Configuration") }}</h3>
 Congratulations! GNUnet is now installed! Before we start it we need to create a configuration file. By default GNUnet looks in our home directory for the file `~/.gnunet/gnunet.conf`. We can start with an empty file for now:
 
-<p><code>
-$ touch ~/.config/gnunet.conf
-</p></code>
+<p>
+	<code>
+	$ touch ~/.config/gnunet.conf
+	</code>
+</p>
 
 <p>Now we can start it with the command line tool `gnunet-arm` (Automatic Restart Manager).</p>
 
-<p><code>
-$ gnunet-arm -s
-</p></code>
+<p>
+	<code>
+	$ gnunet-arm -s
+	</code>
+</p>
 
 <p>It starts the default GNUnet services. We can list them with the `-I` option:</p>
 
-<p><code>
-$ gnunet-arm -I<br>
-Running services:<br>
-ats (gnunet-service-ats)<br>
-revocation (gnunet-service-revocation)<br>
-set (gnunet-service-set)<br>
-nat (gnunet-service-nat)<br>
-transport (gnunet-service-transport)<br>
-peerstore (gnunet-service-peerstore)<br>
-hostlist (gnunet-daemon-hostlist)<br>
-identity (gnunet-service-identity)<br>
-namecache (gnunet-service-namecache)<br>
-peerinfo (gnunet-service-peerinfo)<br>
-datastore (gnunet-service-datastore)<br>
-zonemaster (gnunet-service-zonemaster)<br>
-zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
-nse (gnunet-service-nse)<br>
-cadet (gnunet-service-cadet)<br>
-dht (gnunet-service-dht)<br>
-core (gnunet-service-core)<br>
-gns (gnunet-service-gns)<br>
-statistics (gnunet-service-statistics)<br>
-topology (gnunet-daemon-topology)<br>
-fs (gnunet-service-fs)<br>
-namestore (gnunet-service-namestore)<br>
-vpn (gnunet-service-vpn)
-</p></code>
+<p>
+	<code>
+	$ gnunet-arm -I<br>
+	Running services:<br>
+	ats (gnunet-service-ats)<br>
+	revocation (gnunet-service-revocation)<br>
+	set (gnunet-service-set)<br>
+	nat (gnunet-service-nat)<br>
+	transport (gnunet-service-transport)<br>
+	peerstore (gnunet-service-peerstore)<br>
+	hostlist (gnunet-daemon-hostlist)<br>
+	identity (gnunet-service-identity)<br>
+	namecache (gnunet-service-namecache)<br>
+	peerinfo (gnunet-service-peerinfo)<br>
+	datastore (gnunet-service-datastore)<br>
+	zonemaster (gnunet-service-zonemaster)<br>
+	zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
+	nse (gnunet-service-nse)<br>
+	cadet (gnunet-service-cadet)<br>
+	dht (gnunet-service-dht)<br>
+	core (gnunet-service-core)<br>
+	gns (gnunet-service-gns)<br>
+	statistics (gnunet-service-statistics)<br>
+	topology (gnunet-daemon-topology)<br>
+	fs (gnunet-service-fs)<br>
+	namestore (gnunet-service-namestore)<br>
+	vpn (gnunet-service-vpn)
+	</code>
+</p>
 
 <p>For stopping GNUnet again we can use the `-e` option.</p>
 
-<p><code>
-$ gnunet-arm -e
-</p></code>
+<p>
+	<code>
+	$ gnunet-arm -e
+	</code>
+</p>
 
 <h3>{{ _("Make sure it works") }}</h3>
 
@@ -205,19 +213,23 @@ $ gnunet-arm -e
 <p>We can choose any file and describe it with meaningful keywords (using the
 `-k` command line option).</p>
 
-<p><code>
-$ gnunet-publish -k commons -k state ostrom.pdf<br>
-Publishing `/home/myself/ostrom.pdf' done.<br>
-URI is `gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237'.
-</p></code>
+<p>
+	<code>
+	$ gnunet-publish -k commons -k state ostrom.pdf<br>
+	Publishing `/home/myself/ostrom.pdf' done.<br>
+	URI is `gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237'.
+	</code>
+</p>
 
 <p>Finding the file by keyword works with `gnunet-search`.</p>
 
-<p><code>
-$ gnunet-search commons<br>
-#1:<br>
-gnunet-download -o "ostrom.pdf" gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237
-</p></code>
+<p>
+	<code>
+	$ gnunet-search commons<br>
+	#1:<br>
+	gnunet-download -o "ostrom.pdf" gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237
+	</code>
+</p>
 
 <p>It gives us the command line call to download the file (and store it as
 ostrom.pdf)!</p>
@@ -229,22 +241,28 @@ ostrom.pdf)!</p>
 another machine connect to this port and chat or transfer data. First we need
 our *peer ID* of the GNUnet peer opening the port.</p>
 
-<p><code>
-$ gnunet-peerinfo -s<br>
-I am peer `P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG'.
-</p></code>
+<p>
+	<code>
+	$ gnunet-peerinfo -s<br>
+	I am peer `P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG'.
+	</code>
+</p>
 
 <p>Now we open the port (it can be any string!):</p>
 
-<p><code>
-$ gnunet-cadet -o my-secret-port
-</p></code>
+<p>
+	<code>
+	$ gnunet-cadet -o my-secret-port
+	</code>
+</p>
 
 <p>On the other machine we can connect using the peer ID and the port and start chatting!</p>
 
-<p><code>
-$ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
-</p></code>
+<p>
+	<code>
+	$ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
+	</code>
+</p>
 
 
 <h4>{{ _("Name resolution using GNS on the command line") }}</h4>
@@ -254,16 +272,20 @@ equivalent to a zone in DNS. We'll call it "myself" and create it using the
 `gnunet-identity` command line tool. Instead of "myself" you can surely use your
 nick or any other name. </p>
 
-<p><code>
-$ gnunet-identity -C myself
-</code></p>
+<p>
+	<code>
+	$ gnunet-identity -C myself
+	</code>
+</p>
 
 <p>We can check if it worked using the same tool. We expect the name of our identity and the corresponding public key to be displayed.</p>
 
-<p><code>
-$ gnunet-identity -d<br>
-myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
-</code></p>
+<p>
+	<code>
+	$ gnunet-identity -d<br>
+	myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
+	</code>
+</p>
 
 <p>Now we add a public `A` record to our zone. It has the name "ccc", a value
 of "195.54.164.39" and it expires after one day.</p>
@@ -360,7 +382,7 @@ $ sudo groupdel gnunet<br>
 $ sudo groupdel gnunetdns<br>
 $ sudo mv /etc/nsswitch.conf.original /etc/nsswitch.conf<br>
 $ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
-</p></code>
+</code></p>
 
 
 <h3>{{ _("Appendix A: Optional GNUnet features") }}</h3>
@@ -378,7 +400,7 @@ computer.</p>
 
 <p><code>
 $ gnunet-peerinfo -gn
-</p></code>
+</code></p>
 
 <p>We can now pass this string to our friends "out of band" (using whatever
 existing chat or messaging technology). If the string contains some private IP
@@ -389,7 +411,7 @@ this:</p>
 
 <p><code>
 gnunet-peerinfo -p <string>
- </p></code>
+</code></p>
      
 <p>Now our GNUnet nodes can attempt reaching each other directly. This may
 still fail due to NAT traversal issues.</p>
@@ -402,7 +424,7 @@ running GNUnet.</p>
 
 <p><code>
 $ cp /etc/nsswitch.conf.original /etc/nsswitch.conf
-</p></code>-->
+</code></p>-->
 
 </div>
 {% endblock body_content %}
