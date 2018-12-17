@@ -85,50 +85,68 @@ production version.</p>
 </code></p>
 
 <h4>{{ _("Option 2: GNUnet for development") }}</h4>
-<p><code>
-$ cd ~/gnunet_installation/gnunet<br>
-$ ./bootstrap<br>
-$ export GNUNET_PREFIX=/usr<br>
-$ export CFLAGS="-g -Wall -O0"<br>
-$ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose --with-microhttpd=/opt/libmicrohttpd<br>
-$ make -j$(nproc || echo -n 1)<br>
-$ sudo make install
-</p></code>
+<p>
+	<code>
+	$ cd ~/gnunet_installation/gnunet<br>
+	$ ./bootstrap<br>
+	$ export GNUNET_PREFIX=/usr<br>
+	$ export CFLAGS="-g -Wall -O0"<br>
+	$ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose --with-microhttpd=/opt/libmicrohttpd<br>
+	$ make -j$(nproc || echo -n 1)<br>
+	$ sudo make install
+	</code>
+</p>
 
 <!--<h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
-So now it gets a bit nasty. It's not so bad. All we have to do is copy a file and edit another one. The file we need to copy is GNUnet's plugin for the Name Service Switch (NSS) in unix systems. Different unixes expect it in different locations and GNUnet's build system does not try to guess. On Debian 9 we have to do
+<p>
+	So now it gets a bit nasty. It's not so bad. All we have to do
+	is copy a file and edit another one. The file we need to copy
+	is GNUnet's plugin for the Name Service Switch (NSS) in unix
+	systems. Different unixes expect it in different locations and
+	GNUnet's build system does not try to guess. On Debian 9 we
+	have to do
+	<code>
+	$ sudo cp /usr/lib/gnunet/nss/libnss_gns.so.2 /lib/$(uname -m)-linux-gnu/
+	</code>
+</p>
 
-<p><code>
-$ sudo cp /usr/lib/gnunet/nss/libnss_gns.so.2 /lib/$(uname -m)-linux-gnu/
-</p></code>
+<p>
+	The next step is activating the GNUnet plugin we just copied
+	in the NSS config. It is located in `/etc/nsswitch.conf`. It should
+	contain a line starting with "hosts" similar to this (at least "files"
+	and "dns" should be there):
+</p>
 
-<p>The next step is activating the GNUnet plugin we just copied in the NSS
-config. It is located in `/etc/nsswitch.conf`. It should contain a line
-starting with "hosts" similar to this (at least "files" and "dns" should be
-there):</p>
+<p>
+	<code>
+	$ cat /etc/nsswitch.conf<br>
+	hosts: files mdns4_minimal [NOTFOUND=return] dns
+	</code>
+</p>
 
-<p><code>
-$ cat /etc/nsswitch.conf<br>
-hosts: files mdns4_minimal [NOTFOUND=return] dns
-</p></code>
-
-<p><b>Attention: Once we modified `etc/nsswitch.conf` DNS resolution will only
-be possible as long as is GNUnet is running. We can leave the next step out,
-but then we will not be able to use GNUnet's name resolution in external
-applications.</b></p>
+<p>
+	<b>Attention: Once we modified `etc/nsswitch.conf` DNS resolution will only
+	be possible as long as is GNUnet is running. We can leave the next step out,
+	but then we will not be able to use GNUnet's name resolution in external
+	applications.</b>
+</p>
 
 <p>We save a copy of the original file and then modify the line using sed:</p>
 
-<p><code>
-$ sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.original<br>
-$ sudo sed -i -E 's/^(hosts:.*) dns/\1 gns [NOTFOUND=return] dns/' /etc/nsswitch.conf 
-</p></code>
+<p>
+	<code>
+	$ sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.original<br>
+	$ sudo sed -i -E 's/^(hosts:.*) dns/\1 gns [NOTFOUND=return] dns/' /etc/nsswitch.conf
+	</code>
+</p>
 
 <p>Now in the line starting with "hosts" should contain an entry "gns [NOTFOUND=return]" before the "dns" entry like this:</p>
 
-<p><code>
-hosts: files mdns4_minimal [NOTFOUND=return] gns [NOTFOUND=return] dns
-</p></code>
+<p>
+	<code>
+	hosts: files mdns4_minimal [NOTFOUND=return] gns [NOTFOUND=return] dns
+	</code>
+</p>
 
 <p>That's it. It wasn't that nasty, was it?</p>-->
 
@@ -191,27 +209,31 @@ Congratulations! GNUnet is now installed! Before we start it we need to create a
 
 <h3>{{ _("Make sure it works") }}</h3>
 
-<p>Let's try out some of GNUnet's use cases. Some should be done before others:
+<p>
+	Let's try out some of GNUnet's use cases. Some should be done
+	before others:
 
-<ul>
-  <li>filesharing</li>
-  <li>A simple chat using CADET</li>
-  <li>Name resolution using GNS on the command line</li>
-  <li>Name resolution using GNS with a browser (do it on the command line first)</li>
-  <li>Serving a website using VPN (do name resolution with a browser first)</li>
-</ul>
-
+	<ul>
+		<li>filesharing</li>
+		<li>A simple chat using CADET</li>
+		<li>Name resolution using GNS on the command line</li>
+		<li>Name resolution using GNS with a browser (do it on the command line first)</li>
+		<li>Serving a website using VPN (do name resolution with a browser first)</li>
+	</ul>
 </p>
 
 
 <h4>{{ _("filesharing") }}</h4>
 
-<p>Let's publish a file in the GNUnet filesharing network. We use the keywords
+<p>
+Let's publish a file in the GNUnet filesharing network. We use the keywords
 ("commons" and "state") so other people will be able to search for the file.
 </p>
 
-<p>We can choose any file and describe it with meaningful keywords (using the
-`-k` command line option).</p>
+<p>
+We can choose any file and describe it with meaningful keywords (using the
+`-k` command line option).
+</p>
 
 <p>
 	<code>
@@ -409,9 +431,11 @@ networks we don't want to share, we can carefully edit them out.</p>
 <p>Once we receive such strings from our friends, we can add them like
 this:</p>
 
-<p><code>
-gnunet-peerinfo -p <string>
-</code></p>
+<p>
+	<code>
+	gnunet-peerinfo -p <string>
+	</code>
+</p>
      
 <p>Now our GNUnet nodes can attempt reaching each other directly. This may
 still fail due to NAT traversal issues.</p>
