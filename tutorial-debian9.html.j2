@@ -33,11 +33,9 @@
     for some experimental GNUnet features.
   </p>
 
-  <p>
-    <code>
-      $ sudo apt install git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev openssl libnss3-tools
-    </code>
-  </p>
+  <code>
+    $ sudo apt install git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev openssl libnss3-tools
+  </code>
 
   <h3>{{ _("Make an installation directory") }}</h3>
 
@@ -49,11 +47,9 @@
     dependencies*).
   </p>
 
-  <p>
-    <code>
-      $ mkdir ~/gnunet_installation
-    </code>
-  </p>
+  <code>
+    $ mkdir ~/gnunet_installation
+  </code>
 
   <h3>{{ _("Get the source code") }}</h3>
 
@@ -67,13 +63,11 @@
       at least version 0.9.52.</b>
   </p>
 
-  <p>
-    <code>
-      $ cd ~/gnunet_installation<br>
-      $ git clone --depth 1 https://gnunet.org/git/gnunet.git<br>
-      $ git clone --depth 1 https://gnunet.org/git/libmicrohttpd.git
-    </code>
-  </p>
+  <code>
+    $ cd ~/gnunet_installation<br>
+    $ git clone --depth 1 https://gnunet.org/git/gnunet.git<br>
+    $ git clone --depth 1 https://gnunet.org/git/libmicrohttpd.git
+  </code>
 
   <h3>{{ _("Compile and Install") }}</h3>
 
@@ -82,16 +76,14 @@
     Before we can compile GNUnet on Debian 9, we compile and install libmicrohttp
   </p>
 
-  <p>
-    <code>
-      $ cd ~/gnunet_installation/libmicrohttpd<br>
-      $ autoreconf -fi<br>
-      $ sudo apt install libgnutls28-dev<br>
-      $ ./configure --disable-doc --prefix=/opt/libmicrohttpd<br>
-      $ make -j$(nproc || echo -n 1)<br>
-      $ sudo make install<br>
-    </code>
-  </p>
+  <code>
+    $ cd ~/gnunet_installation/libmicrohttpd<br>
+    $ autoreconf -fi<br>
+    $ sudo apt install libgnutls28-dev<br>
+    $ ./configure --disable-doc --prefix=/opt/libmicrohttpd<br>
+    $ make -j$(nproc || echo -n 1)<br>
+    $ sudo make install<br>
+  </code>
 
   <p>
     Installing GNUnet is not hard. We have two options:
@@ -104,32 +96,28 @@
   
   <h4>{{ _("Option 1: GNUnet for production / usage") }}</h4>
 
-  <p>
-    <code>
-      $ cd ~/gnunet_installation/gnunet<br>
-      $ ./bootstrap<br>
-      $ export GNUNET_PREFIX=/usr<br>
-      $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --with-microhttpd=/opt/libmicrohttpd<br>
-      $ sudo addgroup gnunetdns<br>
-      $ sudo adduser --system --group --disabled-login --home /var/lib/gnunet gnunet<br>
-      $ make -j$(nproc || echo -n 1)<br>
-      $ sudo make install
-    </code>
-  </p>
+  <code>
+    $ cd ~/gnunet_installation/gnunet<br>
+    $ ./bootstrap<br>
+    $ export GNUNET_PREFIX=/usr<br>
+    $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --with-microhttpd=/opt/libmicrohttpd<br>
+    $ sudo addgroup gnunetdns<br>
+    $ sudo adduser --system --group --disabled-login --home /var/lib/gnunet gnunet<br>
+    $ make -j$(nproc || echo -n 1)<br>
+    $ sudo make install
+  </code>
 
   <h4>{{ _("Option 2: GNUnet for development") }}</h4>
 
-  <p>
-    <code>
-      $ cd ~/gnunet_installation/gnunet<br>
-      $ ./bootstrap<br>
-      $ export GNUNET_PREFIX=/usr<br>
-      $ export CFLAGS="-g -Wall -O0"<br>
-      $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose --with-microhttpd=/opt/libmicrohttpd<br>
-      $ make -j$(nproc || echo -n 1)<br>
-      $ sudo make install
-    </code>
-  </p>
+  <code>
+    $ cd ~/gnunet_installation/gnunet<br>
+    $ ./bootstrap<br>
+    $ export GNUNET_PREFIX=/usr<br>
+    $ export CFLAGS="-g -Wall -O0"<br>
+    $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose --with-microhttpd=/opt/libmicrohttpd<br>
+    $ make -j$(nproc || echo -n 1)<br>
+    $ sudo make install
+  </code>
 
 <!--
   <h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
@@ -195,83 +183,75 @@
     start with an empty file for now:
   </p>
 
-  <p>
-    <code>
-      $ touch ~/.config/gnunet.conf
-    </code>
-  </p>
+  <code>
+    $ touch ~/.config/gnunet.conf
+  </code>
 
   <p>
     Now we can start it with the command line tool
     `gnunet-arm` (Automatic Restart Manager).
   </p>
 
-  <p>
-    <code>
-      $ gnunet-arm -s
-    </code>
-  </p>
+  <code>
+    $ gnunet-arm -s
+  </code>
 
   <p>
     It starts the default GNUnet services. We can list them with the
     `-I` option:
   </p>
 
-  <p>
-    <code>
-      $ gnunet-arm -I<br>
-      Running services:<br>
-      ats (gnunet-service-ats)<br>
-      revocation (gnunet-service-revocation)<br>
-      set (gnunet-service-set)<br>
-      nat (gnunet-service-nat)<br>
-      transport (gnunet-service-transport)<br>
-      peerstore (gnunet-service-peerstore)<br>
-      hostlist (gnunet-daemon-hostlist)<br>
-      identity (gnunet-service-identity)<br>
-      namecache (gnunet-service-namecache)<br>
-      peerinfo (gnunet-service-peerinfo)<br>
-      datastore (gnunet-service-datastore)<br>
-      zonemaster (gnunet-service-zonemaster)<br>
-      zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
-      nse (gnunet-service-nse)<br>
-      cadet (gnunet-service-cadet)<br>
-      dht (gnunet-service-dht)<br>
-      core (gnunet-service-core)<br>
-      gns (gnunet-service-gns)<br>
-      statistics (gnunet-service-statistics)<br>
-      topology (gnunet-daemon-topology)<br>
-      fs (gnunet-service-fs)<br>
-      namestore (gnunet-service-namestore)<br>
-      vpn (gnunet-service-vpn)
-    </code>
-  </p>
+  <code>
+    $ gnunet-arm -I<br>
+    Running services:<br>
+    ats (gnunet-service-ats)<br>
+    revocation (gnunet-service-revocation)<br>
+    set (gnunet-service-set)<br>
+    nat (gnunet-service-nat)<br>
+    transport (gnunet-service-transport)<br>
+    peerstore (gnunet-service-peerstore)<br>
+    hostlist (gnunet-daemon-hostlist)<br>
+    identity (gnunet-service-identity)<br>
+    namecache (gnunet-service-namecache)<br>
+    peerinfo (gnunet-service-peerinfo)<br>
+    datastore (gnunet-service-datastore)<br>
+    zonemaster (gnunet-service-zonemaster)<br>
+    zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
+    nse (gnunet-service-nse)<br>
+    cadet (gnunet-service-cadet)<br>
+    dht (gnunet-service-dht)<br>
+    core (gnunet-service-core)<br>
+    gns (gnunet-service-gns)<br>
+    statistics (gnunet-service-statistics)<br>
+    topology (gnunet-daemon-topology)<br>
+    fs (gnunet-service-fs)<br>
+    namestore (gnunet-service-namestore)<br>
+    vpn (gnunet-service-vpn)
+  </code>
 
   <p>
     For stopping GNUnet again we can use the `-e` option.
   </p>
 
-  <p>
-    <code>
-      $ gnunet-arm -e
-    </code>
-  </p>
+  <code>
+    $ gnunet-arm -e
+  </code>
+
 
   <h3>{{ _("Make sure it works") }}</h3>
 
   <p>
     Let's try out some of GNUnet's use cases. Some should be done
     before others:
-
-    <ul>
-      <li>filesharing</li>
-      <li>A simple chat using CADET</li>
-      <li>Name resolution using GNS on the command line</li>
-      <li>Name resolution using GNS with a browser (do it on the command line first)</li>
-      <li>Serving a website using VPN (do name resolution with a browser first)</li>
-    </ul>
   </p>
 
+  <ul>
+    <li>filesharing</li>
+    <li>A simple chat using CADET</li>
+    <li>Name resolution using GNS on the command line</li>
+    <li>Name resolution using GNS with a browser (do it on the command line first)</li>
+    <li>Serving a website using VPN (do name resolution with a browser first)</li>
+  </ul>
 
   <h4>{{ _("filesharing") }}</h4>
 
@@ -285,23 +265,20 @@
     `-k` command line option).
   </p>
 
-  <p>
-    <code>
-      $ gnunet-publish -k commons -k state ostrom.pdf<br>
-      Publishing `/home/myself/ostrom.pdf' done.<br>
-      URI is `gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237'.
-    </code>
-  </p>
+  <code>
+    $ gnunet-publish -k commons -k state ostrom.pdf<br>
+    Publishing `/home/myself/ostrom.pdf' done.<br>
+    URI is `gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237'.
+  </code>
+
 
   <p>Finding the file by keyword works with `gnunet-search`.</p>
 
-  <p>
-    <code>
-      $ gnunet-search commons<br>
-      #1:<br>
-      gnunet-download -o "ostrom.pdf" gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237
-    </code>
-  </p>
+  <code>
+    $ gnunet-search commons<br>
+    #1:<br>
+    gnunet-download -o "ostrom.pdf" gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237
+  </code>
 
   <p>
     It gives us the command line call to download the file (and store it as
@@ -316,34 +293,28 @@
     our *peer ID* of the GNUnet peer opening the port.
   </p>
 
-  <p>
-    <code>
-      $ gnunet-peerinfo -s<br>
-      I am peer `P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG'.
-    </code>
-  </p>
+  <code>
+    $ gnunet-peerinfo -s<br>
+    I am peer `P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG'.
+  </code>
+
 
   <p>
     Now we open the port (it can be any string!):
   </p>
 
-  <p>
-    <code>
-      $ gnunet-cadet -o my-secret-port
-    </code>
-  </p>
+  <code>
+    $ gnunet-cadet -o my-secret-port
+  </code>
 
   <p>
     On the other machine we can connect using the peer ID and the port
     and start chatting!
   </p>
 
-  <p>
-    <code>
-      $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
-    </code>
-  </p>
-
+  <code>
+    $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
+  </code>
 
   <h4>{{ _("Name resolution using GNS on the command line") }}</h4>
 
@@ -356,11 +327,9 @@
     you can surely use your nick or any other name.
   </p>
 
-  <p>
-    <code>
-      $ gnunet-identity -C myself
-    </code>
-  </p>
+  <code>
+    $ gnunet-identity -C myself
+  </code>
 
   <p>
     We can check if it worked using the same tool. We expect the name
@@ -368,35 +337,29 @@
     displayed.
   </p>
 
-  <p>
-    <code>
-      $ gnunet-identity -d<br>
-      myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
-    </code>
-  </p>
+  <code>
+    $ gnunet-identity -d<br>
+    myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
+  </code>
 
   <p>
     Now we add a public `A` record to our zone. It has the name "ccc", a value
     of "195.54.164.39" and it expires after one day.
   </p>
 
-  <p>
-    <code>
-      $ gnunet-namestore -z myself -a -e "1 d" -p -t A -n ccc -V 195.54.164.39
-    </code>
-  </p>
+  <code>
+    $ gnunet-namestore -z myself -a -e "1 d" -p -t A -n ccc -V 195.54.164.39
+  </code>
 
   <p>
     Now we can query that record using the command line tool `gnunet-gns`.
   </p>
 
-  <p>
-    <code>
-      $ gnunet-gns -t A -u ccc.myself<br>
-      ccc.myself:<br>
-      Got `A' record: 195.54.164.39
-    </code>
-  </p>
+  <code>
+    $ gnunet-gns -t A -u ccc.myself<br>
+    ccc.myself:<br>
+    Got `A' record: 195.54.164.39
+  </code>
 
   <p>
     So it worked! But only resolving our own records is boring. So we
@@ -405,11 +368,9 @@
     other person (Bob) has to add it to his namestore like this:
   <p>
 
-  <p>
-    <code>
-      $ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
-    </code>
-  </p>
+  <code>
+    $ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
+  </code>
 
   <p>
     Our identity in Bobs namestore is a public record (-p) and never
@@ -417,13 +378,11 @@
     myself, too) should be able to resolve our "ccc" record, too!
   </p>
 
-  <p>
-    <code>
-      $ gnunet-gns -t A -u ccc.alice.myself<br>
-      ccc.alice.myself:<br>
-      Got `A' record: 195.54.164.39
-    </code>
-  </p>
+  <code>
+    $ gnunet-gns -t A -u ccc.alice.myself<br>
+    ccc.alice.myself:<br>
+    Got `A' record: 195.54.164.39
+  </code>
 
   <p>
     It can continue like this. A friend of Bob would be able to
@@ -452,11 +411,9 @@
     for it:
   </p>
 
-  <p>
-    <code>
-      $ gnunet-gns-proxy-setup-ca 
-    </code>
-  </p>
+  <code>
+    $ gnunet-gns-proxy-setup-ca 
+  </code>
 
   <p>
     After executing this script the Browser has to be restarted.
@@ -475,46 +432,38 @@
     hostname:
   </p>
 
-  <p>
-    <code>
-      $ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -V www.ccc.de
-    </code>
-  </p>
+  <code>
+    $ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -V www.ccc.de
+  </code>
 
   <p>
     Now let's start gnunet-gns-proxy.
   </p>
 
-  <p>
-    <code>
-      $ /usr/lib/gnunet/libexec/gnunet-gns-proxy
-    </code>
-  </p>
+  <code>
+    $ /usr/lib/gnunet/libexec/gnunet-gns-proxy
+  </code>
 
   <p>
     Our browser has to be configured so it uses our proxy. In Firefox
     we have to set these options under "about:config":
   </p>
 
-  <p>
-    <code>
-      network.proxy.socks:            localhost<br>
-      network.proxy.socks_port:       7777<br>
-      network.proxy.socks_remote_dns  true<br>
-      network.proxy.type:             1
-    </code>
-  </p>
+  <code>
+    network.proxy.socks:            localhost<br>
+    network.proxy.socks_port:       7777<br>
+    network.proxy.socks_remote_dns  true<br>
+    network.proxy.type:             1
+  </code>
 
   <p>
     To tell Chromium to use the proxy, it has to be started with the
     "--proxy-server" command line option:
   </p>
 
-  <p>
-    <code>
-      $ chromium --proxy-server="socks5://127.0.0.1:7777"
-    </code>
-  </p>
+  <code>
+    $ chromium --proxy-server="socks5://127.0.0.1:7777"
+  </code>
 
   <p>
     Now we should be able to resolve our GNS names in the browser! We
@@ -532,21 +481,19 @@
 
   <h3>{{ _("Uninstall GNUnet and its dependencies") }}</h3>
 
-  <p>
-    <code>
-      $ cd ~/gnunet_installation/gnunet<br>
-      $ sudo make uninstall<br>
-      $ cd ~/gnunet_installation/libmicrohttpd<br>
-      $ sudo make uninstall<br>
-      $ sudo apt remove git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev<br>
-      $ sudo apt autoremove<br>
-      $ sudo userdel -r gnunet<br>
-      $ sudo groupdel gnunet<br>
-      $ sudo groupdel gnunetdns<br>
-      $ sudo mv /etc/nsswitch.conf.original /etc/nsswitch.conf<br>
-      $ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
-    </code>
-  </p>
+  <code>
+    $ cd ~/gnunet_installation/gnunet<br>
+    $ sudo make uninstall<br>
+    $ cd ~/gnunet_installation/libmicrohttpd<br>
+    $ sudo make uninstall<br>
+    $ sudo apt remove git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev<br>
+    $ sudo apt autoremove<br>
+    $ sudo userdel -r gnunet<br>
+    $ sudo groupdel gnunet<br>
+    $ sudo groupdel gnunetdns<br>
+    $ sudo mv /etc/nsswitch.conf.original /etc/nsswitch.conf<br>
+    $ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
+  </code>
 
   <h3>{{ _("Appendix A: Optional GNUnet features") }}</h3>
 
@@ -565,11 +512,9 @@
     computer.
   </p>
 
-  <p>
-    <code>
-      $ gnunet-peerinfo -gn
-    </code>
-  </p>
+  <code>
+    $ gnunet-peerinfo -gn
+  </code>
 
   <p>
     We can now pass this string to our friends "out of band" (using
@@ -583,11 +528,10 @@
     like this:
   </p>
 
-  <p>
-    <code>
-      gnunet-peerinfo -p <string>
-    </code>
-  </p>
+  <code>
+    gnunet-peerinfo -p <string>
+  </code>
+
   
   <p>
     Now our GNUnet nodes can attempt reaching each other directly. This may
@@ -604,11 +548,9 @@
     running GNUnet.
   </p>
 
-  <p>
     <code>
       $ cp /etc/nsswitch.conf.original /etc/nsswitch.conf
     </code>
-  </p>
 -->
 
 </div>
