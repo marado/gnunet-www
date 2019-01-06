@@ -25,9 +25,18 @@ This can be achieved with the following command:
 After installing the packages, this will drop you into a bash environment
 from which you can proceed to run "make".
 
+Alternative Build Method: Docker
+================================
 
-Notes
-=====
+Run "make docker" to generate the HTML using a docker container-image (which 
+will be built from the included ./Dockerfile).
+
+This could be useful if, for example, you are unable to install the required 
+packages on your system, because it will use the container to install and run
+all of the required packages.
+
+Additional Notes
+================
 
 This website has been tested with python 3.6.5 and jinja2 2.9.6.
 Since python development in collaborative environments with
