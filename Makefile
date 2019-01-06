@@ -44,3 +44,16 @@ current_dir = $(shell pwd)
 run: all
 	@[ "$(BROWSER)" ] || ( echo "You need to export the environment variable 'BROWSER' to run this."; exit 1 )
 	$(RUN_BROWSER) $(current_dir)/en/index.html
+
+
+# docker-all: Build using a docker image which contains all the needed packages.
+
+docker: docker-all
+
+docker-all:
+	docker build -t gnunet-www-builder .
+	# Importing via the shell like this is hacky, 
+	# but after trying lots of other ways, this works most reliably...
+	python3 -c 'import i18nfix'
+	docker run --rm -v $$(pwd):/tmp/ --user $$(id -u):$$(id -g) gnunet-www-builder
+
