@@ -5,13 +5,14 @@
     <h1>{{ _("gnurl / libgnurl") }}</h1>
     <p>
       {% trans %}
-      libgnurl is a fork of libcurl, which is mostly for GNUnet but it might
-      be usable for others, hence we're releasing the code on this website
-      to the general public. Please read the README for instructions, as you
+      libgnurl is a micro fork of libcurl, which is mostly for GNUnet
+      but it might
+      be usable for others, hence we're releasing the code
+      to the general public. libgnurl is released under the same
+      license as libcurl. Please read the README for instructions, as you
       must supply the correct options to configure to get a proper build of
-      libgnurl. In addition to the source as a TAR, we also offer the
-      changes we made against libcurl's Git repository to create
-      libgnurl. In the following, I will explain the motiviations behind
+      libgnurl.
+      In the following, I will explain the motiviations behind
       this fork.
       {% endtrans %}
     </p>
@@ -98,28 +99,18 @@
     release.
       {% endtrans %}
     </p>
-    <h3>{{_("Summary") }}</h3>
-    <p>
-      {% trans %}
-      At this point, developers that don't want to rebuild an entire
-      distribution from scratch get grumpy. Grumpy developers do silly
-      things, like forking code to fix it. I called the fork gnurl (to be
-      pronounced with a grumpy voice and an emphasis on the R) as it is bits
-      of cURL, a bit more GNUish, for GnuNet, and gnurl can be pronounced to
-      indicate the grumpy origins.
-      {% endtrans %}
-    </p>
     <h3>{{_("Using libgnurl") }}</h3>
     <p>
       {% trans %}
       Projects that use cURL only for HTTP/HTTPS and that would work
       with GnuTLS should be able to switch to libgnurl by changing
       "-lcurl" to "-lgnurl". That's it. No changes to the source code
-      should be required. Continue to read the cURL documentation ---
+      should be required,
       as libgnurl strives for bug-for-bug compatibility with the
-      HTTP/HTTPS/GnuTLS subset of cURL. However, we're happy to add
-      new features relating to this core subset and might be easier to
-      convince than the cURL developers.
+      HTTP/HTTPS/GnuTLS subset of cURL.
+      We might add new features relating to this core subset if they
+      are proposed, but so far we have kept our changes minimal and
+      no additions to the original curl source have been written.
       {% endtrans %}
     </p>
     <p>
@@ -140,7 +131,7 @@
       <p>
         {% trans %}
 	You can get the Gnurl Git repository using:
-	git clone https://git.taler.net/gnurl.git/
+	<code>git clone https://git.taler.net/gnurl.git</code>
 	The versions are checked in as signed git tags.
         {% endtrans %}
       </p>
@@ -152,10 +143,10 @@
 	Releases are published on <a href="https://ftp.gnu.org/gnu/gnunet/">ftp.gnu.org/gnu/gnunet</a>.
 	gnURL is available from within a variety of distributions and package managers.
 	Package Managers which include gnurl are:
-        GNU Guix (available as "gnurl"),
-	Gentoo through the collaborative ebuild collection (<a href="https://overlays.gentoo.org">overlay</a>)
+        <a href="https://gnu.org/s/guix">GNU Guix</a> (available as "gnurl"),
+	<a href="https://gentoo.org">Gentoo</a> through the collaborative ebuild collection
 	<a href="https://gnunet.org/git/youbroketheinternet-overlay.git/">youbroketheinternet</a>,
-        Nix, and pkgsrc.
+        <a href=https://nixos.org/nix">Nix</a>, and <a href="http://pkgsrc.org">pkgsrc</a>.
         {% endtrans %}
       </p>
     </div>
@@ -176,7 +167,7 @@
       <h3>{{ _("Maintainer and Cryptographic signatures") }}</h3>
       <p>
         {% trans %}
-	libgnurl is maintained by ng0.
+	gnur/libgnurl is maintained by ng0.
 	Releases are signed
 	with the OpenPG Key <b>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</b>,
 	with the key fingerprint <b>A88C 8ADD 1298 28D7 EAC0  2E52 E22F 9BBF EE34 8588</b>.
