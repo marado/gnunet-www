@@ -2,24 +2,27 @@
 {% block body_content %}
 <div class="container-fluid">
   <div class="container text-center">
-    <h1>{{ _("gnurl / libgnurl") }}</h1>
+    <h1>{{ _("gnurl (libgnurl)") }}</h1>
     <p>
       {% trans %}
-      libgnurl is a micro fork of libcurl, which is mostly for GNUnet
-      but it might
-      be usable for others, hence we're releasing the code
-      to the general public. libgnurl is released under the same
+      libgnurl is a micro fork of libcurl. The goal of libgnurl
+      is to support only HTTP and HTTPS (and only HTTP 1.x) with
+      a single crypto backend (GnuTLS) to ensure a small footprint
+      and uniform experience for developers regardless of how
+      libcurl was compiled.<br>
+      Our main usecase is for GNUnet, but it might be usable for
+      others, hence we're releasing the code
+      to the general public.<br>
+      libgnurl is released under the same
       license as libcurl. Please read the README for instructions, as you
       must supply the correct options to configure to get a proper build of
       libgnurl.
-      In the following, I will explain the motiviations behind
-      this fork.
       {% endtrans %}
     </p>
     <h3>{{_("Motivation") }}</h3>
     <p>
       {% trans %}
-      cURL supports a bunch of crypto backends. GNUnet requires the use of
+      cURL supports many crypto backends. GNUnet requires the use of
       GnuTLS, but other variants are used by some distributions. Supporting
       other crypto backends would again expose us to a wider array of
       security issues, may create licensing issues and most importantly
@@ -71,16 +74,6 @@
       </p>
       <h3>{{_("Rename to fix") }}</h3>
     <p>
-      {% trans %}
-      At this point, developers that don't want to rebuild an entire
-      distribution from scratch get grumpy. Grumpy developers do silly
-      things, like forking code to fix it. I called the fork gnurl (to be
-      pronounced with a grumpy voice and an emphasis on the R) as it is bits
-      of cURL, a bit more GNUish, for GnuNet, and gnurl can be pronounced to
-      indicate the grumpy origins.
-      {% endtrans %}
-    </p>
-    <p>
     {% trans %}
     How does forking fix it? Easy. First, we can get rid of all of the
     compatibility issues --- if you use libgnurl, you state that you don't
@@ -113,6 +106,7 @@
       no additions to the original curl source have been written.
       {% endtrans %}
     </p>
+    <h4>{{_("Gotchas") }}</h4>
     <p>
       {% trans %}
       libgnurl and gnurl are not intended to be used as a replacement
