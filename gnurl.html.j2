@@ -151,9 +151,11 @@
         {% trans %}
 	Releases are published on <a href="https://ftp.gnu.org/gnu/gnunet/">ftp.gnu.org/gnu/gnunet</a>.
 	gnURL is available from within a variety of distributions and package managers.
-	To some extent officially supported and maintained is gnURL within GNU Guix, the package manager (available as "gnurl"),
-	as well as the collaborative Gentoo ebuild collection (<a href="https://overlays.gentoo.org">overlay</a>)
-	<a href="https://gnunet.org/git/youbroketheinternet-overlay.git/">youbroketheinternet</a>.
+	Package Managers which include gnurl are:
+        GNU Guix (available as "gnurl"),
+	Gentoo through the collaborative ebuild collection (<a href="https://overlays.gentoo.org">overlay</a>)
+	<a href="https://gnunet.org/git/youbroketheinternet-overlay.git/">youbroketheinternet</a>,
+        Nix, and pkgsrc.
         {% endtrans %}
       </p>
     </div>
@@ -174,7 +176,7 @@
       <h3>{{ _("Maintainer and Cryptographic signatures") }}</h3>
       <p>
         {% trans %}
-	libgnurl is maintained by Nils Gillmann.
+	libgnurl is maintained by ng0.
 	Releases are signed
 	with the OpenPG Key <b>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</b>,
 	with the key fingerprint <b>A88C 8ADD 1298 28D7 EAC0  2E52 E22F 9BBF EE34 8588</b>.
