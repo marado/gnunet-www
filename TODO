@@ -27,3 +27,6 @@ template.py:
     various corner cases for relative imports in the 3.x series!).
     The mechanism is currently like an USB cable, 1st attempt fails,
     second succeeds. reproducible, annoying, maybe don't fix it. 
+
+news:
+  * should be presented in an easier format as per inclusion / presentation.
