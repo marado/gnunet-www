@@ -1,4 +1,4 @@
-<!-- a href="old-news.html"><h3>{{ _("More news")}}</h3></a -->
+<a href="old-news.html"><h3>{{ _("More news")}}</h3></a> 
 
 <h3>Second GNUnet Hacker Meeting 2018 at <a href="https://decentrale.ch/">La Décentrale</a>, Switzerland</h3>
 
