@@ -6,7 +6,9 @@ Sourcecode for https://gnunet.org created from the https://taler.net code base.
 
 Requires python3-jinja2, python3-babel, and gettext.
 
-Run "make" to build the HTML.
+Run "make" or "gmake" to build the HTML.
+In old USB fashion, run make or gmake again if it fails (we might fix this
+eventually).
 
 Expect it to show up in en/ and other language folders, NOT in the root dir.
 
@@ -38,7 +40,9 @@ all of the required packages.
 Additional Notes
 ================
 
-This website has been tested with python 3.6.5 and jinja2 2.9.6.
+This website has been tested with:
+* python 3.6.5 and jinja2 2.9.6.
+* python 3.7.1, Babel 2.6.0, py-jinja2 2.10 (pkgsrc, NetBSD 8.0)
 Since python development in collaborative environments with
 a whole range of possibilities in what your environment looks
 like, please state problems on the mailinglist instead of just
