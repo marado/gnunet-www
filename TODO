@@ -13,3 +13,15 @@
 
 - branding / navigation:
   * Can we get a hover image for the navbar logo?
+
+- Makefile:
+  * conditionally without gmake extensions pick up values for BABEL and
+    PYTHON. They can be python3, python2, python2.7, pybabel, pybabel-2.7
+    etc.
+  * Ideally don't require gmake to run make.
+
+template.py:
+  * it is currently broken with python2.7. Since I use python3.7 and
+    2.7 is on its way out: person who cares enough for 2.7, step up
+    to fix this in a portable way (in other words, do not break
+    various corner cases for relative imports in the 3.x series!) 
