@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# coding: utf-8
 # This file is in the public domain.
 #
 # This script runs the jinja2 templating engine on an input template-file
