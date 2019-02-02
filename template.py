@@ -20,19 +20,7 @@ import gettext
 import glob
 import codecs
 import jinja2
-
-# FIXME: lint will complain about this. Do NOT! fix this by writing
-# import i18nfix again, send an email to our developer list if you
-# have a problem with your system specific python integration!
-# PACKAGE_PARENT = '..'
-# SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
-# sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
-# sys.path.append(os.getcwd())
-#from www import i18nfix
-try:
-    from . import i18nfix
-except ImportError:
-    import i18nfix
+import i18nfix
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
                          extensions=["jinja2.ext.i18n"],
