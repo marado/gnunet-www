@@ -15,7 +15,7 @@ all: locale template
 
 # Extract translateable strings from jinja2 templates.
 locale/messages.pot: *.j2 common/*.j2.inc
-	PYTHONPATH=$(PYTHONPATH) $(BABEL) extract -F locale/babel.map -o locale/messages.pot .
+	$(BABEL) extract -F locale/babel.map -o locale/messages.pot .
 
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
