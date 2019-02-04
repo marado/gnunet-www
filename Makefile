@@ -66,4 +66,4 @@ docker-all:
 clean:
 	rm -rf __pycache__
 	rm -rf en/ de/ fr/ it/ es/ ru/
-	rm -rf *.pyc
+	rm -rf *.pyc *~
