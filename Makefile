@@ -63,3 +63,7 @@ docker-all:
 	$(PYTHON) -c 'import i18nfix'
 	docker run --rm -v $$(pwd):/tmp/ --user $$(id -u):$$(id -g) gnunet-www-builder
 
+clean:
+	rm -rf __pycache__
+	rm -rf en/ de/ fr/ it/ es/ ru/
+	rm -rf *.pyc
