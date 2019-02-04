@@ -3,6 +3,12 @@
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
 
+# Hardly anyone seems to read README files anymore, so keep this note here:
+# Don't remove the variables for python etc. They exist
+# because one system sticks with PEPs, and others opt
+# for installing every version side-by-side,
+# Same goes for babel.
+
 include config.mk
 
 all: locale template
@@ -54,6 +60,6 @@ docker-all:
 	docker build -t gnunet-www-builder .
 	# Importing via the shell like this is hacky, 
 	# but after trying lots of other ways, this works most reliably...
-	python3 -c 'import i18nfix'
+	$(PYTHON) -c 'import i18nfix'
 	docker run --rm -v $$(pwd):/tmp/ --user $$(id -u):$$(id -g) gnunet-www-builder
 
