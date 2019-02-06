@@ -3,7 +3,7 @@
     <ul class="nav navbar-nav">
        <li class="nav navbar-left">
          <a class="navbar-brand mr-0 mr-md-2" href="index.html">
-           <img src="../images/gnunet-icon.png" alt="The GNUnet logo: A stylized, abstract Gnu head represented by interconnected parts of a mesh-network." />
+           <img src="../images/gnunet-icon.png" alt="" />
          </a>
        </li>
        <li class="dropdown">
