@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
   <div class="container-fluid cushion-below">
     <div class="container">
       <div class="row">
@@ -28,5 +28,6 @@
   <div class="container text-center">
     <p>&copy; <a href="ev.html">GNUnet e.V.</a> 2015, 2016, 2017, 2018, 2019</p>
     <p>{{ _("This page was created using <a href='https://www.gnu.org/'>Free Software</a> only.") }}</p>
+    <p>{{ _("Report issues with this website to <a href='contact.html'>us</a>.") }}</p>
   </div>
 </footer>

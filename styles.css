@@ -6,6 +6,34 @@
 	z-index: 3;
 }
 
+.skip {
+	display:none!important;
+}
+
+.skip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: .857143em;
+}
+
+.skip li {
+	position:absolute;
+	z-index:1;
+	margin:0;
+}
+.skip a {
+	position:absolute;
+	left:-9999px;
+}
+.skip a:active,
+.skip a:focus {
+ display:block;
+ position:static;
+ left:0;
+ padding:.25em 1em;
+}
 
 /* hyperlinks and buttons */
 #body_content a,
@@ -20,6 +48,12 @@ a.btn:visited {
 	text-decoration: none !important;
 	color: white !important;
 }
+/* For reference if bootstrap does not cover the main-Element issue in IE9-11 */
+/*
+main {
+	display:block;
+}
+*/
 #body_content a:hover {
 	transition: background-color 0.7s;
 	background-color: #d00;

@@ -1,3 +1,12 @@
+<!--
+<div id="header" class="">
+       <ul class="skip">
+         <!-- <li><a href="#nav">jump to main navigation</a></li> -->
+         <li><a href="#content">jump to main content</a></li>
+         <li><a href="#footer">jump to footer</a></li>
+       </ul>
+</div>
+-->
 <nav class="navbar navbar-inverse navbar-default">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
