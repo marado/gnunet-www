@@ -3,7 +3,7 @@
     <ul class="nav navbar-nav">
        <li class="nav navbar-left">
          <a class="navbar-brand mr-0 mr-md-2" href="index.html">
-           <img src="../images/gnunet-icon.png" />
+           <img src="../images/gnunet-icon.png" alt="The GNUnet logo: A stylized, abstract Gnu head represented by interconnected parts of a mesh-network." />
          </a>
        </li>
        <li class="dropdown">
@@ -49,13 +49,13 @@
            <a href="{{ self_localized('de') }}">Deutsch [de]</a>
           </li>
           <li>
-           <a href="{{ self_localized('fr') }}">Français [fr]</a>
+           <a href="{{ self_localized('fr') }}">Fran&ccedil;ais [fr]</a>
           </li>
           <li>
            <a href="{{ self_localized('it') }}">Italiano [it]</a>
           </li>
           <li>
-           <a href="{{ self_localized('es') }}">Español [es]</a>
+           <a href="{{ self_localized('es') }}">Espa&ntilde;ol [es]</a>
           </li>
         </ul>
       </li>
