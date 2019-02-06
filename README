@@ -40,6 +40,8 @@ all of the required packages.
 Additional Notes
 ================
 
+Please use HTML codes, not international signs as found on your keyboard.
+
 This website has been tested with:
 * python 3.6.5 and jinja2 2.9.6.
 * python 3.7.1, Babel 2.6.0, py-jinja2 2.10 (pkgsrc, NetBSD 8.0)
