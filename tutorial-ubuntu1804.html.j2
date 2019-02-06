@@ -1,38 +1,36 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<div class="container">
-
+<article class="container">
+<!--<article> -->
+<header>
   <h2>{{ _("Tutorial: GNUnet on Ubuntu 18.04") }}</h2>
-
+</header>
+<section>
   <h3>{{ _("Introduction") }}</h3>
-
   <p>
-    Welcome to the hopefully painless GNUnet tutorial for Ubuntu 18.04! It provides
-    very concrete instructions on how to compile, install and configure a current
-    version of GNUnet. The goal is to support newcomers, either end users or
-    developers, who want to get in touch with GNUnet for the first time. After
-    installing GNUnet we will make sure that out new GNUnet installation is working
-    correctly.
+  Welcome to the hopefully painless GNUnet tutorial for Ubuntu 18.04!
+  It provides very concrete instructions on how to compile, install
+  and configure a current version of GNUnet. The goal is to support
+  newcomers, either end users or developers, who want to get in touch
+  with GNUnet for the first time. After installing GNUnet we will make
+  sure that out new GNUnet installation is working correctly.
   </p>
-
   <p>
-    <b>Attention: If you came across the official gnunet package for Ubuntu 18.04,
-      ignore it! It is ancient and not compatible with current GNUnet
-      installations.</b>
+  <b>Attention: If you came across the official gnunet package for
+     Ubuntu 18.04, ignore it! It is ancient and not compatible with
+     current GNUnet installations.</b>
   </p>
-
   <p>
-    Now let's start!
+  Now let's start!
   </p>
-
+</section>
+<section>
   <h3>{{ _("Requirements") }}</h3>
-
   <p>
-    First let's install the following Ubuntu 18.04 packages to use GNUnet
-    painlessly. Optional dependencies are listed in Appendix A. They are required
-    for some experimental GNUnet features.
+    First let's install the following Ubuntu 18.04 packages to use
+    GNUnet painlessly. Optional dependencies are listed in Appendix
+    A. They are required for some experimental GNUnet features.
   </p>
-
   <code>
       $ sudo apt install git libtool autoconf autopoint \<br>
       build-essential libgcrypt-dev libidn11-dev zlib1g-dev \<br>
@@ -40,9 +38,9 @@
       libjansson-dev libcurl4-gnutls-dev libsqlite3-dev openssl \<br>
       libnss3-tools libmicrohttpd-dev
   </code>
-
+</section>
+<section>
   <h3>{{ _("Make an installation directory") }}</h3>
-
   <p>
     Next we create a directory in our home directory where we store
     the source code later. We should keep this directory after
@@ -50,24 +48,22 @@
     uninstalling GNUnet again (see chapter *Uninstall GNUnet and its
     dependencies*).
   </p>
-
   <code>
     $ mkdir ~/gnunet_installation
   </code>
-
+</section>
+<section>
   <h3>{{ _("Get the source code") }}</h3>
-
   <p>
     We download the GNUnet source code using git.
   </p>
-
   <code>
     $ cd ~/gnunet_installation<br>
     $ git clone --depth 1 https://gnunet.org/git/gnunet.git<br>
   </code>
-
+</section>
+<section>
   <h3>{{ _("Compile and Install") }}</h3>
-
   <p>
     Installing GNUnet is not hard. We have two options:
     installing a *production version* and installing a *development version*. If
@@ -76,9 +72,9 @@
     debug symbols that can be displayed with a debugger). Otherwise choose the
     production version.
   </p>
-  
+</section>
+<section>
   <h4>{{ _("Option 1: GNUnet for production / usage") }}</h4>
-
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
     $ ./bootstrap<br>
@@ -89,7 +85,8 @@
     $ make -j$(nproc || echo -n 1)<br>
     $ sudo make install
   </code>
-
+</section>
+<section>
   <h4>{{ _("Option 2: GNUnet for development") }}</h4>
 
   <code>
@@ -102,7 +99,8 @@
     $ sudo make install
   </code>
 
-  <!--<h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
+  <!--
+<h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
       So now it gets a bit nasty. It's not so bad. All we have to do is copy a file and edit another one. The file we need to copy is GNUnet's plugin for the Name Service Switch (NSS) in unix systems. Different unixes expect it in different locations and GNUnet's build system does not try to guess. On Ubuntu 18.04 we have to do
 
       <code>
@@ -137,8 +135,10 @@
       hosts: files mdns4_minimal [NOTFOUND=return] gns [NOTFOUND=return] dns
   </code>
 
-  <p>That's it. It wasn't that nasty, was it?</p> -->
-  
+  <p>That's it. It wasn't that nasty, was it?</p>
+-->
+</section>
+<section>
   <h3>{{ _("Configuration") }}</h3>
 
   <p>
@@ -200,7 +200,8 @@
   <code>
     $ gnunet-arm -e
   </code>
-
+</section>
+<section>
   <h3>{{ _("Make sure it works") }}</h3>
 
   <p>
@@ -214,7 +215,8 @@
     <li>Name resolution using GNS with a browser (do it on the command line first)</li>
     <li>Serving a website using VPN (do name resolution with a browser first)</li>
   </ul>
-
+</section>
+<section>
   <h4>{{ _("filesharing") }}</h4>
 
   <p>
@@ -247,7 +249,8 @@
     It gives us the command line call to download the file (and store it as
     ostrom.pdf)!
   </p>
-
+</section>
+<section>
   <h4>{{ _("CADET (and Chat)") }}</h4>
 
   <p>
@@ -274,8 +277,8 @@
   <code>
     $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
   </code>
-
-
+</section>
+<section>
   <h4>{{ _("Name resolution using GNS on the command line") }}</h4>
 
   <p>GNS is the GNU name service, a fully decentralized alternatice to DNS. We'll publish an IP address in a GNS record try to resolve it on the command line. First we need an identity which is the
@@ -341,8 +344,8 @@
     public record. Bobs friend would simply use "ccc.alice.bob.myself"
     to resolve our "ccc" record.
   </p>
-
-
+</section>
+<section>
   <h4>{{ _("Name resolution using GNS with a browser") }}</h4>
 
   <p>
@@ -415,14 +418,15 @@
     our friend Bob prepared his system, too, he can resolve our record
     by typing "ccc.alice.myself".
   </p>
-
-
+</section>
+<section>
   <h4>{{ _("VPN") }}</h4>
 
   <p>
     TBD
   </p>
-
+</section>
+<section>
   <h3>{{ _("Uninstall GNUnet and its dependencies") }}</h3>
 
   <code>
@@ -438,16 +442,18 @@
     $ sudo mv /etc/nsswitch.conf.original /etc/nsswitch.conf<br>
     $ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
   </code>
-
-
+</section>
+<section>
   <h3>{{ _("Appendix A: Optional GNUnet features") }}</h3>
 
   <p>
     TBD
   </p>
-
+</section>
+<section>
   <h3>{{ _("Troubleshooting") }}</h3>
-
+</section>
+<section>
   <h4>{{ _("You can't reach other people's nodes") }}</h4>
 
   <p>
@@ -488,6 +494,6 @@
       <code>
 	$ cp /etc/nsswitch.conf.original /etc/nsswitch.conf
       </code>-->
-
-</div>
+</section>
+</article>
 {% endblock body_content %}
