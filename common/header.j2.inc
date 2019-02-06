@@ -32,7 +32,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
+    <meta name="author" content="Contributors to the GNUnet website">
     <!--    <link rel="icon" href="../../favicon.ico"> -->
 
     <!-- Bootstrap core CSS -->
