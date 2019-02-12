@@ -2,17 +2,45 @@
 {% block body_content %}
 <div class="container">
 
+<h2>{{ _("I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. Should I worry?") }}</h2>
+{% trans %}
+<p>
+A: Right now, this is expected and a known cause for high latency in GNUnet.
+We have started a major rewrite to address this and other problems, but
+until the Transport Next Generation (TNG) is ready, these warnings are expected.
+</p>
+{% endtrans %}
+
+<h2>{{ _("Is there a graphical user interface?") }}</h2>
+{% trans %}
+<p>
+A: gnunet-gtk is a separate download. The package contains various GTK+ based graphical interfaces, including
+a graphical tool for configuration.
+</p>
+{% endtrans %}
+
+<!--
 <h2>{{ _("Q?") }}</h2>
 {% trans %}
 <p>
 A:
 </p>
 {% endtrans %}
+
+<h2>{{ _("Q?") }}</h2>
 {% trans %}
 <p>
 A:
 </p>
 {% endtrans %}
+
+<h2>{{ _("Q?") }}</h2>
+{% trans %}
+<p>
+A:
+</p>
+{% endtrans %}
+-->
 
 </div>
 {% endblock body_content %}
