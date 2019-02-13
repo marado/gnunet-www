@@ -16,15 +16,23 @@
       {% endtrans %}
       <br><br>
       {% trans %}
-      GNUnet is typically run as an <a href="https://en.wikipedia.org/wiki/Overlay_network">overlay network</a>
-      on top of the the existing Internet infrastructure forming the basis of a hybrid
+      GNUnet is typically run as an
+      <a href="https://en.wikipedia.org/wiki/Overlay_network">overlay network</a>
+      on top of the the existing Internet infrastructure forming the
+      basis of a hybrid
       <a href="architecture.html">peer-to-peer mesh and relay backbone</a>
-      for applications to run on. It could just as well be run independently of the Internet, over
+      for applications to run on. It could just as well be run
+      independently of the Internet, over
       <a href="https://en.wikipedia.org/wiki/Physical_layer">dedicated radio and cable</a>.
       {% endtrans %}
       <br><br>
       {% trans %}
-      GNUnet is made for an open society: It's a self-organizing network and it's <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a> as in freedom. GNUnet puts you in control of your data. You determine which data to share with whom, and you're not pressured to accept compromises.
+      GNUnet is made for an open society: It's a self-organizing
+      network and it is
+      <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>
+      as in freedom. GNUnet puts you in control of your data. You
+      determine which data to share with whom, and you're not
+      pressured to accept compromises.
       {% endtrans %}
     </p>
     <p> 
@@ -54,7 +62,14 @@
         <h3>{{ _("Imagine...") }}</h3>
         <p>
         {% trans %}
-        The conventional Internet is currently like a system of roads with deep potholes and highwaymen all over the place. Even if you still can use the roads (e.g. send emails, or browse websites) your vehicle might get hijacked, damaged, or long arms might reach into its back and steal your items (data) to use it against you and sell it to others - while you can't even notice the thievery nor accuse and hold the scroungers accountable.
+        The conventional Internet is currently like a system of roads
+        with deep potholes and highwaymen all over the place. Even if
+        you still can use the roads (e.g. send emails, or browse
+        websites) your vehicle might get hijacked, damaged, or long
+        arms might reach into its back and steal your items (data) to
+        use it against you and sell it to others - while you can't
+        even notice the thievery nor accuse and hold the scroungers
+        accountable.
         {% endtrans %}
         </p>
       </div>
@@ -63,12 +78,19 @@
 
         <p>
           {% trans %}
-          Protocols from Ethernet and IP to BGP and X.509 PKI are insecure by default: protecting against address forgery, routers learning metadata, or choosing trustworthy CAs is nontrivial and sometimes impossible.
+          Protocols from Ethernet and IP to BGP and X.509 PKI are
+          insecure by default: protecting against address forgery,
+          routers learning metadata, or choosing trustworthy CAs is
+          nontrivial and sometimes impossible.
           {% endtrans %}
         </p>
         <p>
           {% trans %}
-          GNUnet provides <a href="https://www.w3.org/2014/strint/papers/65.pdf">privacy by design</a>, improving addressing, routing, naming and content distribution in a technically robust manner - as opposed to ad-hoc designs in place today.
+          GNUnet provides
+	  <a href="https://www.w3.org/2014/strint/papers/65.pdf">privacy by design</a>,
+	  improving addressing, routing, naming and
+          content distribution in a technically robust manner - as
+          opposed to ad-hoc designs in place today.
           {% endtrans %}
         </p>
       </div>
@@ -77,9 +99,18 @@
 
         <p>
           {% trans %}
-          It seems as if every other distributed or P2P project develops its own library stack, covering transports, stream muxing, discovery and others. This divides effort and multiplies bug count.
-          <br><br>
-          GNUnet is a metadata-preserving foundation for your application, covering areas from addressing to reliable bidirectional Axolotl-encrypted channels, with advanced routing.  Our work is based on continuous research spanning almost two decades.
+          It seems as if every other distributed or P2P project
+          develops its own library stack, covering transports, stream
+          muxing, discovery and others. This divides effort and
+          multiplies bug count.
+	  {% endtrans %}
+	<p>
+	  {% trans %}
+          GNUnet is a metadata-preserving foundation for your
+          application, covering areas from addressing to reliable
+          bidirectional Axolotl-encrypted channels, with advanced
+          routing.  Our work is based on continuous research spanning
+          almost two decades.
           {% endtrans %}
         </p>
       </div>
@@ -89,23 +120,46 @@
         <h3>{{ _("Metadata is exposed") }}</h3>
         <p>
           {% trans %}
-          Even though transport encryption is increasingly being deployed on the Internet, it still reveals data that can threaten democracy: the identities of senders and receivers, the times, frequency and the volume of communication are all still revealed. <!-- Looks like a weak argumentation to me: which <a href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables reverse-engineering pages visited via website fingerprinting</a>. -->
-          <br><br>
-          <a href="https://secushare.org/anonymity">GNUnet addresses these concerns</a> with perfect forward secrecy via ephemeral public key addressing, fixed packet size to hinder traffic analysis, layered encryption, Sybil-resistant routing, and more. 
+          Even though transport encryption is increasingly being
+          deployed on the Internet, it still reveals data that can
+          threaten democracy: the identities of senders and receivers,
+          the times, frequency and the volume of communication are all
+          still revealed.
+	  <!-- Looks like a weak argumentation to me:
+          which <a
+          href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables
+          reverse-engineering pages visited via website
+          fingerprinting</a>. -->
+	  {% endtrans %}
+	  <p>
+	  {% trans %}
+          GNUnet
+	  <a href="https://secushare.org/anonymity">addresses</a>
+	  these concerns with perfect forward secrecy via ephemeral
+	  public key addressing, fixed packet size to hinder traffic
+	  analysis, layered encryption, Sybil-resistant routing, and
+	  more.
           {% endtrans %}
         </p>
       </div>
       <div class="col-lg-4">
         <h3>{{ _("Freedoms are not respected") }}</h3>
-
         <p>
           {% trans %}
-          Today, monitoring increasingly centralized infrastructure, proprietary implementations, traffic shapers and firewalls restrict all of the <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a> to various degrees.
+	  Today, monitoring increasingly centralized infrastructure,
+	  proprietary implementations, traffic shapers and firewalls
+	  restrict all of the
+	  <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a>
+	  to various degrees.
           {% endtrans %}
         </p>
         <p>
           {% trans %}
-          GNUnet gives users freedoms to securely access information (“run” the network), to study all aspects of the network’s operation (“access the code”), to distribute information (“copy”), as well as the freedom to deploy new applications (“modify”).
+          GNUnet gives users freedoms to securely access information
+          ("run" the network), to study all aspects of the network’s
+          operation ("access the code"), to distribute information
+          ("copy"), as well as the freedom to deploy new applications
+          ("modify").
           {% endtrans %}
         </p>
       </div>
@@ -214,8 +268,9 @@
       <h3>{{ _("Conversation") }}</h3>
       <p>
         {% trans %}
-        GNUnet conversation is an application that provides secure voice communication
-        in a fully decentralized way by employing GNUnet for routing and transport.
+	GNUnet conversation is an application that provides secure
+        voice communication in a fully decentralized way by employing
+        GNUnet for routing and transport.
         {% endtrans %}
       </p>
 
