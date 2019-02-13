@@ -30,7 +30,8 @@ Python 2.7 is reaching its end-of-life, and we want to get rid
 of the dependency on Python. The existing gnunet-qr tool is a
 rather simple wrapper around python-zbar, which itself wraps
 libzbar. The goal of this project is to directly use libzbar
-to scan QR codes for GNUnet / the GNU Name System.
+to scan QR codes for GNUnet / the GNU Name System (see
+also #5562).
 <br>
 Mentor: Christian Grothoff
 </p>
