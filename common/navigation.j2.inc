@@ -13,8 +13,8 @@
 	 TODO: imo this is bad in the navbar. a readable "gnunet" font-logo would
 	 be better for orientation.
       -->
-    <!-- <img src="../images/gnunet-icon.png" alt="" /> -->
-    <img width="70%" height="70%" src="../images/gnunet-logo-dark-only-text.svg" alt="" />
+    <img src="../images/gnunet-icon.png" alt="" />
+    <!-- <img width="70%" height="70%" src="../images/gnunet-logo-dark-only-text.svg" alt="" /> -->
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
