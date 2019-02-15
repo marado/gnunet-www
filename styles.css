@@ -54,6 +54,11 @@ main {
 	display:block;
 }
 */
+/* There's a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+}
+
 #body_content a:hover {
 	transition: background-color 0.7s;
 	background-color: #d00;
