@@ -56,7 +56,7 @@
           <img src="{{ url('images/languageicon.svg') }}" height="15" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}] 
         </button> -->
 	<a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ lang_full }} [{{ lang }}]</a>
-        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ self_localized('en') }}">English [en]</a></li>
           <li><a class="dropdown-item" href="{{ self_localized('de') }}">Deutsch [de]</a></li>
           <li><a class="dropdown-item" href="{{ self_localized('fr') }}">Fran&ccedil;ais [fr]</a></li>
