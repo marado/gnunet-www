@@ -59,12 +59,18 @@ body {
     padding-top: 3.5rem;
 }
 
+/* 
+   Hover effects with this color don't work out!
+   See https://gnunet.org/bugs/view.php?id=5570
+*/
+/*
 #body_content a:hover {
 	transition: background-color 0.7s;
 	background-color: #d00;
 	border-color: #fff;
 	color: white !important;
 }
+*/
 .btn-primary {
 	color: #fff;
 	background-color: #678;
