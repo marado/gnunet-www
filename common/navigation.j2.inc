@@ -13,7 +13,8 @@
 	 TODO: imo this is bad in the navbar. a readable "gnunet" font-logo would
 	 be better for orientation.
       -->
-    <img src="../images/gnunet-icon.png" alt="" />
+    <!-- <img src="../images/gnunet-icon.png" alt="" /> -->
+    <img width="70%" height="70%" src="../images/gnunet-logo-dark-only-text.svg" alt="" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -21,7 +22,7 @@
   <div class="collapse navbar-collapse" id="navbarMain">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-        <a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }}</a>
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
           <li><a class="dropdown-item" href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
@@ -29,7 +30,7 @@
         </ul>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link" href="#" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Development") }}</a>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Development") }}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a class="dropdown-item" href="https://gnunet.org/bugs/my_view_page.php">{{ _("Bugtracker") }}</a></li>
@@ -39,7 +40,7 @@
         </ul>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Documentation") }}</a>
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Documentation") }}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="tutorial.html">{{ _("Tutorial") }}</a></li>
           <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
@@ -55,7 +56,7 @@
         <!--<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           <img src="{{ url('images/languageicon.svg') }}" height="15" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}] 
         </button> -->
-	<a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ lang_full }} [{{ lang }}]</a>
+	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ lang_full }} [{{ lang }}]</a>
         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ self_localized('en') }}">English [en]</a></li>
           <li><a class="dropdown-item" href="{{ self_localized('de') }}">Deutsch [de]</a></li>
