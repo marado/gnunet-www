@@ -26,8 +26,12 @@
     </div>
   </div>
   <div class="container text-center">
-    <p>&copy; <a href="ev.html">GNUnet e.V.</a> 2015, 2016, 2017, 2018, 2019</p>
-    <p>{{ _("This page was created using <a href='https://www.gnu.org/'>Free Software</a> only.") }}</p>
-    <p>{{ _("Report issues with this website to <a href='contact.html'>us</a>.") }}</p>
+    <p>
+    {% trans %}
+    Copyright &copy; <a href="ev.html">GNUnet e.V.</a> 2015, 2016, 2017, 2018, 2019<br>
+    This page was created using <a href='https://www.gnu.org/'>Free Software</a> only.<br>
+    Report issues with this website to <a href='contact.html'>us</a>.
+    {% endtrans %}
+    </p>
   </div>
 </footer>
