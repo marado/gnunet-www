@@ -33,8 +33,8 @@
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a class="dropdown-item" href="https://gnunet.org/bugs/my_view_page.php">{{ _("Bugtracker") }}</a></li>
-          <li><a class="dropdown-item" href="https://gnunet.org/git">{{ _("Source Code") }}</a></li>
-          <li><a class="dropdown-item" href="https://gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://git.gnunet.org">{{ _("Source Code") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></li>
 	  <li><a class="dropdown-item" href="gnurl.html">{{ _("libgnurl") }}</a></li>
         </ul>
       </li>
@@ -43,8 +43,8 @@
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="tutorial.html">{{ _("Tutorial") }}</a></li>
           <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
-	  <li><a class="dropdown-item" href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
-          <li><a class="dropdown-item" href="https://tutorial.gnunet.org/">{{ _("C-Tutorial") }}</a></li>
+	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://tutorial.gnunet.org/">{{ _("C-Tutorial") }}</a></li>
           <li><a class="dropdown-item" href="faq.html">{{ _("FAQ") }}</a></li>
           <li><a class="dropdown-item" href="https://gnunet.org/bibliography">{{ _("Bibliography") }}</a></li>
 	</ul>
