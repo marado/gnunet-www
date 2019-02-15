@@ -1,17 +1,18 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<main>
+<article>
 <div class="container-fluid">
   <div class="container text-center">
+  <header>
     <h1>{{ _("Verein zur F&ouml;rderung von GNUnet e.V.") }}</h1>
-
+  </header>
     <p>
       {% trans %}
-        On December 27th 2013 a group of GNUnet hackers met at 30c3
-        to create the "Verein zur F&ouml;rderung von GNUnet e.V.", an
-        association under German law to support GNUnet development.
-        The Amtsgericht M&uuml;nchen registered the association on the
-        7th of March under VR 205287.
+      On December 27th 2013 a group of GNUnet hackers met at 30c3
+      to create the "Verein zur F&ouml;rderung von GNUnet e.V.", an
+      association under German law to support GNUnet development.
+      The Amtsgericht M&uuml;nchen registered the association on the
+      7th of March under VR 205287.
       {% endtrans %}
     </p>
     <p>
@@ -116,5 +117,5 @@
 </div>
 
 </div> <!-- /container -->
-</main>
+</article>
 {% endblock body_content %}
