@@ -23,7 +23,7 @@
   </p>
 
   <code>
-    $ sudo brew install git autoconf automake gcc gettext gnutls jansson libextractor libgcrypt libffi libidn2 libmicrohttpd libmpc libtool libunistring pkg-config unbound
+    $ sudo brew install git autoconf automake glpk gettext gnutls jansson libextractor libgcrypt libffi libidn2 libmicrohttpd libmpc libtool libunistring pkg-config unbound
   </code>
 
   <h3>{{ _("Make an installation directory") }}</h3>
@@ -84,7 +84,6 @@
   <code>
   $ cd ~/gnunet_src<br>
   $ ./bootstrap<br>
-  $ export CC=gcc-8
   $ export GNUNET_PREFIX=~/gnunet<br>
   $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation<br>
   </code>
