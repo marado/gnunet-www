@@ -43,16 +43,16 @@ reclaimID is a decentralized identity system build on top of the GNU
 Name System.
 Currently, it uses an encryption scheme called attribute-based encryption.
 However, through the clever use of GNS's built in record encryption,
-it is possible to
+it is possible to...
 <ol>
-<li> Improve performance by reducing encryption overhead</li>
-<li> Reduce dependencies</li>
+<li> ... improve performance by reducing encryption overhead.</li>
+<li> ... reduce dependencies.</li>
 </ol>
+<br/>
 This project also includes two separate, smaller tasks:
 <ul>
-<li> Performance improvements to the out-of-band authorization flow (OpenID Connect) to</li>
-<li> Webextension which allows reclaimID to be used without the need of
-a GNS proxy.
+<li> Performance improvements to the out-of-band authorization flow (OpenID Connect)</li>
+<li> A webextension which allows reclaimID to be used without the need of a GNS proxy.
 </ul>
 The two smaller tasks are optional and may be dropped in case the student
 encounters any unforseen complications when implementing the main task.
