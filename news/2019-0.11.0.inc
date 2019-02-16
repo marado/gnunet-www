@@ -8,7 +8,7 @@ This is a major release after about five years of development.  In
 terms of usability, users should be aware that there are still a large
 number of known open issues in particular with respect to ease of use,
 but also some critical privacy issues especially for mobile users.
-Also, the nascent network is tiny (~200 peers) and thus unlikely to
+Also, the nascent network is tiny (about 200 peers) and thus unlikely to
 provide good anonymity or extensive amounts of interesting
 information.  As a result, the 0.11.0 release is still only suitable
 for early adopters with some reasonable pain tolerance.
@@ -33,7 +33,7 @@ stopped using <tt>gnunet-arm -e</tt>.
     <li>The Web site and manuals have undergone significant rework. You can find an
         archive of the old Web site at <a href="https://old.gnunet.org/">old.gnunet.org</a>.</li>
     <li>The code now builds again on MacOS.</li>
-    <li>Build process now works properly with idn2</li>
+    <li>Build process now works properly with libidn2</li>
     <li>Except for <tt>gnunet-qr</tt>, all Python code was migrated to Python 3.7.</li>
     <li>Fixed security issues in secret sharing cryptography logic</li>
     <li>Services running out of file descriptors on <tt>accept()</tt> no longer busy wait</li>
@@ -43,6 +43,7 @@ stopped using <tt>gnunet-arm -e</tt>.
     <li>The experimental SecuShare code is not included in the release, you can
         now find it in the <a href="git://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a>
         Git repository.</li>
+    <li>The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.</a>
   </ul>
   The above is just the short list, our bugtracker lists
   <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
@@ -52,11 +53,11 @@ stopped using <tt>gnunet-arm -e</tt>.
 <h4>Known Issues</h4>
 <p>
   <ul>
-    <li>There are known major design issues in TRANSPORT, ATS and CORE
-        which will need to be addressed for usability, performance
-        and security.</li>
+    <li>There are known major design issues in the TRANSPORT, ATS and CORE subsystems
+        which will need to be addressed in the future to achieve acceptable usability,
+        performance and security.</li>
     <li>There are known moderate implementation limitations in CADET that
-        impact performance.</li>
+        negatively impact performance.</li>
     <li>There are known moderate design issues in FS that also impact
         usability and performance.</li>
     <li>There are minor implementation limitations in SET that create
