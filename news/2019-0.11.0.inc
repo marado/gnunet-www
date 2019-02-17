@@ -1,5 +1,6 @@
+<article>
 <h3>
-<A NAME="gnunet0.11.0">2019-02: GNUnet 0.11.0 released</A>
+<a NAME="gnunet0.11.0">2019-02: GNUnet 0.11.0 released</a>
 </h3>
 
 We are pleased to announce the release of GNUnet 0.11.0. <br>
@@ -42,7 +43,7 @@ stopped using <tt>gnunet-arm -e</tt>.
     <li>GNS responses are now padded to minimize information disclosure from the size</li>
     <li>Fixed API issues and (rare) crash bugs in CADET</li>
     <li>The experimental SecuShare code is not included in the release, you can
-        now find it in the <a href="git://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a>
+        now find it in the <a href="https://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a>
         Git repository.</li>
     <li>The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.</a>
     <li>GNUnet now includes a decentralised identity attribute sharing service:
@@ -90,3 +91,4 @@ Julien Morvan, Adnan H, Lin Tong, Andreas Fuchs, Christian Rupp, jah,
 Alejandra Morales, Matthias Kolja Miehl, Andrew Cann, Antonio Ojea,
 Pascal Mainini, amirouche and hark.
 </p>
+</article>
