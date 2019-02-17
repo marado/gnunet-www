@@ -1,6 +1,8 @@
+<article>
 <h3>
-<A NAME="gsoc2019"></A>2019-02: Topics for GSoC 2019
+<a NAME="gsoc2019"></a>2019-02: Topics for GSoC 2019
 </h3>
+<section>
 <h4>Android Port</h4>
 <p>
 It is time for GNUnet to run properly on Android.  Note that
@@ -9,7 +11,9 @@ GNUnet in Java, but about getting the C code to run on Android.
 <br>
 Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
 </p>
+</section>
 
+<section>
 <h4>Help with Continuous Integration setup</h4>
 <p>
 There is a push for migrating our CI to Gitlab.  The CI should
@@ -23,7 +27,9 @@ discovery (as done by the autotools) is also important.
 <br>
 Mentor: TBD
 </p>
+</section>
 
+<section>
 <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
 <p>
 Python 2.7 is reaching its end-of-life, and we want to get rid
@@ -35,8 +41,9 @@ also <a href="https://gnunet.org/bugs/view.php?id=5562">#5562</a>).
 <br>
 Mentor: Christian Grothoff
 </p>
+</section>
 
-
+<section>
 <h4>reclaimID alternative GNS-based encryption</h4>
 <p>
 reclaimID is a decentralized identity system build on top of the GNU
@@ -59,3 +66,5 @@ encounters any unforseen complications when implementing the main task.
 <br>
 Mentor: Martin Schanzenbach
 </p>
+</section>
+</article>
