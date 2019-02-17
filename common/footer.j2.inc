@@ -21,6 +21,7 @@
             <li><p><a href="copyright.html">{{ _("Copyright Assignment") }}</a></p></li>
             <li><p><a href="https://gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></p></li>
             <li><p><a href="https://old.gnunet.org/bibliography">{{ _("Bibliography") }}</a></p></li>
+            <li><p><a href="https://old.gnunet.org">{{ _("Old Website") }}</a></p></li>
           </ul>
         </div>
       </div>
