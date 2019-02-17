@@ -49,6 +49,11 @@ stopped using <tt>gnunet-arm -e</tt>.
     <li>GNUnet now includes a decentralised identity attribute sharing service:
         reclaimID. A ready-to-use client can be found in an
         <a href="https://gitlab.com/reclaimid/client">external repo</a>.</li>
+    <li>The code now builds again on NetBSD. GNUnet on NetBSD is <i>experimental</i>.
+        While it builds and seems to run fine, full support requires more
+        changes in the core of GNUnet (for example parts of GNUnet relying
+        optionally on iptables, which is part of Linux). It will soon be
+        available via pkgsrc.
   </ul>
   The above is just the short list, our bugtracker lists
   <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
