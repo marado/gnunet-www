@@ -3,8 +3,11 @@
 <a NAME="gnunet0.11.0">2019-02: GNUnet 0.11.0 released</a>
 </h3>
 
-We are pleased to announce the release of GNUnet 0.11.0. <br>
+<p>
+We are pleased to announce the release of GNUnet 0.11.0.
+<p>
 
+<p>
 This is a major release after about five years of development.  In
 terms of usability, users should be aware that there are still a large
 number of known open issues in particular with respect to ease of use,
@@ -13,6 +16,7 @@ Also, the nascent network is tiny (about 200 peers) and thus unlikely to
 provide good anonymity or extensive amounts of interesting
 information.  As a result, the 0.11.0 release is still only suitable
 for early adopters with some reasonable pain tolerance.
+</p>
 
 <h4>Download links</h4>
 <p>
