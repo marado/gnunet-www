@@ -32,7 +32,8 @@ stopped using <tt>gnunet-arm -e</tt>.
   <ul>
     <li>The Web site and manuals have undergone significant rework. You can find an
         archive of the old Web site at <a href="https://old.gnunet.org/">old.gnunet.org</a>.</li>
-    <li>The code now builds again on macOS.</li>
+    <li>The code now builds again on macOS. GNUnet on macOS is <i>experimental</i>.
+        While it builds and seems to run fine, some tests are known to fail.</li>
     <li>Build process now works properly with libidn2</li>
     <li>Except for <tt>gnunet-qr</tt>, all Python code was migrated to Python 3.7.</li>
     <li>Fixed security issues in secret sharing cryptography logic</li>
@@ -44,7 +45,9 @@ stopped using <tt>gnunet-arm -e</tt>.
         now find it in the <a href="git://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a>
         Git repository.</li>
     <li>The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.</a>
-    <li>GNUnet now includes a decentralised identity attribute sharing service: reclaimID. A ready-to-use client can be found in an <a href="https://gitlab.com/reclaimid/client">external repo</a>.</li>
+    <li>GNUnet now includes a decentralised identity attribute sharing service:
+        reclaimID. A ready-to-use client can be found in an
+        <a href="https://gitlab.com/reclaimid/client">external repo</a>.</li>
   </ul>
   The above is just the short list, our bugtracker lists
   <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
