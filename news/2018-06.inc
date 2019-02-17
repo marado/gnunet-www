@@ -1,28 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=us-ascii"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 6.1.4.2 (NetBSD)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2019-01-25T19:49:47.199184900"/>
-	<style type="text/css">
-		h3.cjk { font-family: "Noto Serif CJK SC" }
-		h3.ctl { font-family: "Noto Sans Devanagari" }
-		h4.cjk { font-family: "Noto Serif CJK SC" }
-		h4.ctl { font-family: "Noto Sans Devanagari" }
-	</style>
-</head>
-<body lang="en-US" dir="ltr"><h3 class="western">GNUnet 0.11.0pre66</h3>
+<article>
+<h3>GNUnet 0.11.0pre66</h3>
 <p>Wed, 06/06/2018 - 07:20 - Christian Grothoff 
 </p>
 <p>Download link:
-http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0pre66.tar.gz
-http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0pre66.tar.gz.sig
-http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0pre66.tar.gz
-http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0pre66.tar.gz.sig
-http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0pre66.tar.gz
-http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0pre66.tar.gz.sig 
+<li>http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0pre66.tar.gz
+<li>http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0pre66.tar.gz.sig
+<li>http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0pre66.tar.gz
+<li>http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0pre66.tar.gz.sig
+<li>http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0pre66.tar.gz
+<li>http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0pre66.tar.gz.sig 
 </p>
 <p>We are pleased to announce the release of GNUnet 0.11.0pre66. 
 </p>
@@ -221,5 +207,4 @@ Tong, Andreas Fuchs, Christian Rupp, jah, Alejandra Morales, Matthias
 Kolja Miehl, Andrew Cann, Antonio Ojea, Pascal Mainini, amirouche and
 hark. 
 </p>
-</body>
-</html>
+</article>
