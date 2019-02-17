@@ -14,8 +14,10 @@ include config.mk
 all: locale template
 
 # Extract translateable strings from jinja2 templates.
+# Because of the local i18nfix extractor module we need
+# to set the pythonpath before invoking pybabel.
 locale/messages.pot: *.j2 common/*.j2.inc
-	$(BABEL) extract -F locale/babel.map -o locale/messages.pot .
+	PYTHONPATH=. $(BABEL) -v extract -F locale/babel.map -o locale/messages.pot .
 
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
@@ -29,11 +31,11 @@ locale-update: locale/messages.pot
 
 # Compile translation files for use.
 locale-compile:
-	$(BABEL) compile -d locale -l en --use-fuzzy
-	$(BABEL) compile -d locale -l de --use-fuzzy
-	$(BABEL) compile -d locale -l fr --use-fuzzy
-	$(BABEL) compile -d locale -l it --use-fuzzy
-	$(BABEL) compile -d locale -l es --use-fuzzy
+	$(BABEL) -v compile -d locale -l en --use-fuzzy
+	$(BABEL) -v compile -d locale -l de --use-fuzzy
+	$(BABEL) -v compile -d locale -l fr --use-fuzzy
+	$(BABEL) -v compile -d locale -l it --use-fuzzy
+	$(BABEL) -v compile -d locale -l es --use-fuzzy
 
 # Process everything related to gettext translations.
 locale: locale-update locale-compile
