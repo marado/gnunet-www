@@ -1,8 +1,7 @@
 <article>
-<h3>GNUnet 0.11.0pre66</h3>
+<h3><a name="gnunet-0.11.0pre66-release">GNUnet 0.11.0pre66</a></h3>
 <p>
 Wed, 06/06/2018 - 07:20 - Christian Grothoff<br>
-<a name="gnunet-0.11.0pre66-release"></a>
 </p>
 <p>Download link:
 <li>http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0pre66.tar.gz
