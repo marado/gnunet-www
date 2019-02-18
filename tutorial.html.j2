@@ -1,41 +1,39 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<article>
-  <div class="container-fluid">
+<article class="d-flex flex-column p-2 bd-highlight">
     <header>
       <h1>{{ _("Tutorials") }}</h1>
     </header>
-    <p class="col-lg-3">
+    <p>
       {% trans %}
       This page holds various tutorials for GNUnet. Some of them are not
       complete, but we find them useful regardless of their state.
       {% endtrans %}
     </p>
-    <p class="col-lg-3">
+    <p>
       {% trans %}
       <a href="tutorial-ubuntu1804.html">GNUnet on Ubuntu 18.04</a>
       {% endtrans %}
     </p>
-    <p class="col-lg-3">
+    <p>
       {% trans %}
       <a href="tutorial-archpi.html">GNUnet on Arch-Pi</a>
       {% endtrans %}
     </p>
-    <p class="col-lg-3">
+    <p>
       {% trans %}
       <a href="tutorial-debian9.html">GNUnet on Debian 9</a>
       {% endtrans %}
     </p>
-    <p class="col-lg-3">
+    <p>
       {% trans %}
       <a href="tutorial-macos.html">GNUnet on macOS</a>
       {% endtrans %}
     </p>
-    <p class="col-lg-3">
+    <p>
       {% trans %}
       <a href="https://tutorial.gnunet.org/">C Coding Tutorial for GNUnet</a>
       {% endtrans %}
     </p>
-  </div>
 </article>
 {% endblock body_content %}
