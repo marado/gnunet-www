@@ -35,7 +35,7 @@
           <li><a class="dropdown-item" href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a class="dropdown-item" href="https://gnunet.org/bugs/my_view_page.php">{{ _("Bugtracker") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://git.gnunet.org">{{ _("Source Code") }}</a></li>
-          <li><a class="dropdown-item" target="_blank" href="https://gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://old.gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></li>
 	  <li><a class="dropdown-item" href="gnurl.html">{{ _("libgnurl") }}</a></li>
         </ul>
       </li>
