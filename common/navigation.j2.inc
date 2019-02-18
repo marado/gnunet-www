@@ -26,7 +26,7 @@
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
           <li><a class="dropdown-item" href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
-	  <li><a class="dropdown-item" href="https://gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li>
+	  <li><a class="dropdown-item" href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li>
         </ul>
       </li>
       <li class="nav-item dropdown">
