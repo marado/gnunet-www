@@ -24,6 +24,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Community") }}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="engage.html">{{ _("Discussion") }} </a></li>
           <li><a class="dropdown-item" href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
           <li><a class="dropdown-item" href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
 	  <li><a class="dropdown-item" href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li>
