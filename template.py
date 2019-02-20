@@ -28,7 +28,9 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__
                          trim_blocks=True,
                          undefined=jinja2.StrictUndefined,
                          autoescape=False)
-# DEBUG OUTPUT: print(sys.path)
+# DEBUG OUTPUT:
+if (os.getenv("DEBUG")):
+    print(sys.path)
 
 langs_full = {"en": "English", "fr": "Français", "it": "Italiano", "es": "Español", "de": "Deutsch"}
 
