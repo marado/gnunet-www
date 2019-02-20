@@ -6,8 +6,46 @@
       <h3>{{ _("About GNUnet") }}</h3>
       <p>
 	{% trans %}
-        We still have to write this section. 
+        We still have to write this section.
 	{% endtrans %}
+      </p>
+      <h4>{{ _("Current funding") }}</h3>
+      <p>
+	{% trans %}
+        We currently do not have any grants. All work is done by volunteers.
+	{% endtrans %}
+      </p>
+      <h4>{{ _("Past funding") }}</h3>
+      <p>
+	{% trans %}
+        We are grateful for past funding from the following organizations:
+	{% endtrans %}
+        <ul>
+          <li>
+            <p>
+            <a href="https://renewablefreedom.org/">Renewable Freedom Foundation</a><br>
+            <img src="{{ url('images/rff_logo.png') }}" alt="RFF logo">
+            </p>
+          </li>
+          <li>
+            <p>
+            <a href="https://cordis.europa.eu/fp7/">European Commission (FP7)</a><br>
+            <img src="{{ url('images/fp7_logo.jpg') }}" alt="FP7 logo">
+            </p>
+          </li>
+          <li>
+            <p>
+            <a href="http://www.dfg.de/">Deutsche Forschungsgemeinschaft</a><br>
+            <img src="{{ url('images/dfg_logo.gif') }}" alt="DFG logo">
+            </p>
+          </li>
+          <li>
+            <p>
+            <a href="https://nlnet.nl/">NLnet Foundation</a><br>
+            <img src="{{ url('images/nlnet_logo.gif') }}" alt="NLnet logo">
+            </p>
+          </li>
+        </ul>
       </p>
     </section>
   </article>
