@@ -13,8 +13,8 @@
 	 TODO: imo this is bad in the navbar. a readable "gnunet" font-logo would
 	 be better for orientation.
       -->
-    <img src="../images/gnunet-icon.png" alt="" />
-    <!-- <img width="70%" height="70%" src="../images/gnunet-logo-dark-only-text.svg" alt="" /> -->
+    <img src="{{ url('static/images/gnunet-icon.png') }}" alt="" />
+    <!-- <img width="70%" height="70%" src="../static/images/gnunet-logo-dark-only-text.svg" alt="" /> -->
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@
     <ul class="navbar-nav navbar-right">
       <li class="nav-item dropdown">
         <!--<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <img src="{{ url('images/languageicon.svg') }}" height="15" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}] 
+          <img src="{{ url('static/images/languageicon.svg') }}" height="15" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}] 
         </button> -->
 	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ lang_full }} [{{ lang }}]</a>
         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarMain">

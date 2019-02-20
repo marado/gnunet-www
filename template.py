@@ -34,7 +34,7 @@ if (os.getenv("DEBUG")):
 
 langs_full = {"en": "English", "fr": "Français", "it": "Italiano", "es": "Español", "de": "Deutsch"}
 
-for in_file in glob.glob("*.j2"):
+for in_file in glob.glob("template/*.j2"):
     name, ext = re.match(r"(.*)\.([^.]+)$", in_file.rstrip(".j2")).groups()
     tmpl = env.get_template(in_file)
 
@@ -77,7 +77,7 @@ for in_file in glob.glob("*.j2"):
                               url_localized=url_localized,
                               svg_localized=svg_localized,
                               filename=name + "." + ext)
-        out_name = "./" + locale + "/" + in_file.rstrip(".j2")
-        os.makedirs("./" + locale, exist_ok=True)
+        out_name = "./rendered/" + locale + "/" + in_file.replace('template/', '').rstrip(".j2")
+        os.makedirs("./rendered/" + locale, exist_ok=True)
         with codecs.open(out_name, "w", encoding='utf-8') as f:
             f.write(content)

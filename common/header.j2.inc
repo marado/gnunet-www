@@ -38,11 +38,11 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ url('dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{{ url('styles.css') }}" rel="stylesheet">
+    <link href="{{ url('static/styles.css') }}" rel="stylesheet">
 
     <script src="{{ url('dist/js/jquery-1.11.1.min.js') }}"></script>
     <script src="{{ url('dist/js/bootstrap.min.js') }}"></script>
-    <link href="{{ url('navbar.css') }}" rel="stylesheet">
+    <link href="{{ url('static/navbar.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -51,3 +51,8 @@
     <![endif]-->
     <!-- font awesome, for team page -->
     <link href="{{ url('dist/font-awesome/css/all.css') }}" rel="stylesheet">
+
+    <!-- rss and atom, WIP
+    <link rel="alternate" type="application/rss+xml" href="{{ url('feed.rss') }} title="RSS feed for gnunet.org">
+    <link rel="alternate" type="application/atom+xml" href="{{ url('feed.atom') }} title="Atom feed for gnunet.org">
+    -->

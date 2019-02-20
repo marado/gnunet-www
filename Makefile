@@ -12,11 +12,21 @@
 include config.mk
 
 all: locale template
+	# Consider using pax instead of cp.
+	cp -R dist rendered/
+	cp -R static rendered/
+	cp rendered/static/robots.txt rendered/robots.txt
+	cp rendered/static/robots.txt rendered/dist/robots.txt
+	cp rendered/static/robots.txt rendered/en/robots.txt
+	cp rendered/static/robots.txt rendered/de/robots.txt
+	cp rendered/static/robots.txt rendered/es/robots.txt
+	cp rendered/static/robots.txt rendered/fr/robots.txt
+	cp rendered/static/robots.txt rendered/it/robots.txt
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need
 # to set the pythonpath before invoking pybabel.
-locale/messages.pot: *.j2 common/*.j2.inc
+locale/messages.pot: *.j2 common/*.j2.inc template/*.j2
 	PYTHONPATH=. $(BABEL) -v extract -F locale/babel.map -o locale/messages.pot .
 
 # Update translation (.po) files with new strings.
@@ -51,7 +61,7 @@ current_dir = $(shell pwd)
 
 run: all
 	@[ "$(BROWSER)" ] || ( echo "You need to export the environment variable 'BROWSER' to run this."; exit 1 )
-	$(RUN_BROWSER) $(current_dir)/en/index.html
+	$(RUN_BROWSER) $(current_dir)/rendered/en/index.html
 
 
 # docker-all: Build using a docker image which contains all the needed packages.
@@ -68,4 +78,5 @@ docker-all:
 clean:
 	rm -rf __pycache__
 	rm -rf en/ de/ fr/ it/ es/ ru/
+	rm -rf rendered/
 	rm -rf *.pyc *~ \.*~ \#*\#

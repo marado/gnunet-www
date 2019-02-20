@@ -2,7 +2,7 @@
 {% block body_content %}
 <!-- Jumbotron -->
 <div class="container-logo banner dark text-center">
-      <img src="../images/gnunet-anonymous-logo.png" />
+      <img src="{{ url('static/images/gnunet-anonymous-logo.png') }}" />
 </div>
 <div class="jumbotron">
   <div class="container text-center">
@@ -286,7 +286,7 @@
   </div>
   <div class="row">
     <div class="col-lg-12">
-      {% include "news.html.j2.inc" %}
+      {% include "template/news.html.j2.inc" %}
     </div>
   </div>
 </div> <!-- /container -->
