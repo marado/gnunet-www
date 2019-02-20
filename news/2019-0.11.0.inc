@@ -89,7 +89,7 @@ about 150 more specific issues.
 This release was the work of many people. The following people
 contributed code and were thus easily identified:
 Christian Grothoff, Matthias Wachs, Bart Polot, Sree Harsha Totakura,
-Nathan S. Evans, Martin Schanzenbach, Julius Bünger, Nils Gillmann,
+Nathan S. Evans, Martin Schanzenbach, Julius Bünger, ng0,
 Philipp Tölke, Florian Dold, Руслан Ижбулатов, tg(x), David Barksdale,
 Christian Fuchs, Nils Durner, Omar Tarabai, Maximilian Szengel, Supriti
 Singh, lurchi, David Brodski, xrs, Fabian Oehlmann, Carlo von lynX,
