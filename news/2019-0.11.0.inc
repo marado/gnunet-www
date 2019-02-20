@@ -95,9 +95,10 @@ Christian Fuchs, Nils Durner, Omar Tarabai, Maximilian Szengel, Supriti
 Singh, lurchi, David Brodski, xrs, Fabian Oehlmann, Carlo von lynX,
 Christophe Genevey Metat, Jeffrey Burdges, Safey A.Halim, Daniel Golle,
 Phil, Bruno Cabral, Ji Lu, Heikki Lindholm, Markus Teich, t3sserakt,
-Claudiu Olteanu, Marcello Stanisci, Moon, anryko, Arthur Dewarumez,
-Julien Morvan, Adnan H, Lin Tong, Andreas Fuchs, Christian Rupp, jah,
-Alejandra Morales, Matthias Kolja Miehl, Andrew Cann, Antonio Ojea,
+Claudiu Olteanu, Marcello Stanisci, Moon, Hernani Marques, anryko, Arthur Dewarumez,
+Julien Morvan, Adnan H, rexxnor, Lin Tong, Andreas Fuchs, Christian Rupp, jah,
+Alejandra Morales, Bernd Fix, Feideus, Matthias Kolja Miehl, Andrew Cann, Antonio Ojea,
 Pascal Mainini, amirouche and hark.
+<a href="https://bugs.gnunet.org/view.php?id=5569">Special thanks</a> to Florian Weimer.
 </p>
 </article>
