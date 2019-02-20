@@ -37,7 +37,7 @@ of the dependency on Python. The existing gnunet-qr tool is a
 rather simple wrapper around python-zbar, which itself wraps
 libzbar. The goal of this project is to directly use libzbar
 to scan QR codes for GNUnet / the GNU Name System (see
-also <a href="https://gnunet.org/bugs/view.php?id=5562">#5562</a>).
+also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
 <br>
 Mentor: Christian Grothoff
 </p>
