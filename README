@@ -6,12 +6,30 @@ Sourcecode for https://gnunet.org created from the https://taler.net code base.
 
 Requires python3-jinja2, python3-babel, and gettext.
 
-Run "make" or "gmake" to build the HTML.
-In old USB fashion, run make or gmake again if it fails (we might fix this
-eventually).
+The currently supported python3 version is python 3.7.
 
-Expect it to show up in en/ and other language folders, NOT in the root dir.
+Run "make" to build the HTML.
+If you experience a failure related to a python module, run
+"make" again.
 
+Expect it to show up in rendered/en/ and other language folders.
+
+Layout / how this comes to be
+=============================
+
+config.mk		local variables for values in the Makefile
+static/			contains images, css, PDFs, robots.txt, team-images
+static/navbar.css	CSS for the navigation bar (common/navigation.j2.inc)
+static/styles.css	CSS for the rest of the website
+template/		the flat namespace of html.j2 files
+dist/			3rd party content (bootstrap 4, font-awesome)
+common/			jinja2 templates.
+template.py		operates on template directory and produces
+			output in 'rendered/' directory
+
+The 'dist' and 'static' directories will be copied to the output
+directory ('rendered/') in the 'all' phase of make. robots.txt
+is copied to relevant folders.
 
 Developing with GNU Guix
 ========================
