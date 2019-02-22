@@ -35,6 +35,10 @@
  padding:.25em 1em;
 }
 
+code {
+  margin-bottom: 1em;
+}
+
 /* hyperlinks and buttons */
 #body_content a,
 #body_content a:link,

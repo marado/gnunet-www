@@ -29,22 +29,27 @@
     and put it under the homebrew formula folder:
   </p>
 
-
+  <p>
   <code>
     $ cp gnunet.rb $(brew --repo homebrew/core)/Formula
   </code>
+  </p>
   <br/>
     Then install:
   <br/>
+  <p>
   <code>
     $ brew install gnunet
-  </code><br/>
+  </code>
+  </p>
 
   Alternatively, if you want to install GNUnet from git, execute:
 <br/>
+  <p>
   <code>
     $ brew install --HEAD gnunet
-  </code><br/><br/>
+  </code>
+  </p>
   <br/>
 
   <p>And you're done!. <br/>
@@ -61,25 +66,27 @@
   our home directory for the file `~/.gnunet/gnunet.conf`. We can
   start with an empty file for now:
   </p>
-
+  <p>
   <code>
   $ touch ~/.config/gnunet.conf
   </code>
+  </p>
 
   <p>
   Now we can start it with the command line tool
   `gnunet-arm` (Automatic Restart Manager).
   </p>
-
+  <p>
   <code>
   $ gnunet-arm -s
   </code>
+  </p>
 
   <p>
   It starts the default GNUnet services. We can list them with the
   `-I` option:
   </p>
-
+  <p>
   <code>
   $ gnunet-arm -I<br>
   Running services:<br>
@@ -107,15 +114,15 @@
 namestore (gnunet-service-namestore)<br>
 vpn (gnunet-service-vpn)
   </code>
-
+  </p>
   <p>
   For stopping GNUnet again we can use the `-e` option.
   </p>
-
+  <p>
   <code>
   $ gnunet-arm -e
   </code>
-  <br/>
+  </p>
 
   <h3>{{ _("Alternative: Installation from source") }}</h3>
 
@@ -125,28 +132,30 @@ vpn (gnunet-service-vpn)
     using homebrew (see above).<br/>
     First, install the dependencies:
   </p>
-
+  <p>
   <code>
     $ brew install git autoconf automake glpk gettext gnutls jansson libextractor libgcrypt libffi libidn2 libmicrohttpd libmpc libtool libunistring pkg-config unbound
   </code>
-  <br/>
+  </p>
   <p>
     Next, create a directory in your home. This directory is where we store
     the source code later. You should keep this directory after
     installation because it contains Makefiles that can be used for
     uninstalling GNUnet again.
   </p>
-
+  <p>
   <code>
     $ mkdir ~/gnunet
   </code>
+  </p>
 
   <h4>{{ _("Get the source code") }}</h4>
-
+  <p>
   <code>
     $ cd ~<br>
     $ git clone --depth 1 https://gnunet.org/git/gnunet.git gnunet_src<br>
   </code>
+  </p>
 
   <h4>{{ _("Compile and Install") }}</h4>
 
@@ -162,12 +171,14 @@ vpn (gnunet-service-vpn)
   
   <h5>{{ _("Option 1: GNUnet for production / usage") }}</h5>
 
+  <p>
   <code>
   $ cd ~/gnunet_src<br>
   $ ./bootstrap<br>
   $ export GNUNET_PREFIX=~/gnunet<br>
   $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation<br>
   </code>
+  </p>
   <p>
   You might see configure failing telling you that it ``cannot run C compiled programs.''.
   In this case, you might need to open/run Xcode once and you will be prompted to
@@ -175,17 +186,21 @@ vpn (gnunet-service-vpn)
   Then, you might have to manually install the command line tools from here https://developer.apple.com/download/more/ (you need an Apple ID for this).
   Install those and execute
   </p>
+  <p>
   <code>
   $ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
   </code>
+  </p>
   <p>
     After configure passes, you need to add a 'gnunetdns' group using the macOS system preferences.
   Further, you need to add a user 'gnunet'. Then:
   </p>
+  <p>
   <code>
   $ make<br>
   $ sudo make install
   </code>
+  </p>
 
   <h5>{{ _("Option 2: GNUnet experimental") }}</h5>
 
