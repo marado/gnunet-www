@@ -22,7 +22,7 @@
   </p>
 
 
-  <h3>{{ _("Installation through homebrew") }}</h3>
+  <h3>{{ _("Installation") }}</h3>
   <p>
     GNUnet is not yet in the official homebrew repos (we are working on it).
     So, you need to grab the formula from <a href="https://git.gnunet.org/gnunet.git/tree/contrib/gnunet.rb">here</a>
@@ -45,8 +45,79 @@
   <code>
     $ brew install --HEAD gnunet
   </code><br/><br/>
+  <br/>
 
-  <h3>{{ _("Installation from source") }}</h3>
+  <p>And you're done!. <br/>
+  GNUnet has a number of services and features.
+  Please check <a href="https://docs.gnunnet.org">our documentation</a>
+  to learn how to use them. If you find anything odd or bugs, please
+  <a href="https://gnunet.org/bugs">let us know</a>.
+  </p>
+
+  <h3>{{_(First steps)}}
+  <p>
+  Congratulations! GNUnet is now installed! Before we start it we
+  need to create a configuration file. By default GNUnet looks in
+  our home directory for the file `~/.gnunet/gnunet.conf`. We can
+  start with an empty file for now:
+  </p>
+
+  <code>
+  $ touch ~/.config/gnunet.conf
+  </code>
+
+  <p>
+  Now we can start it with the command line tool
+  `gnunet-arm` (Automatic Restart Manager).
+  </p>
+
+  <code>
+  $ gnunet-arm -s
+  </code>
+
+  <p>
+  It starts the default GNUnet services. We can list them with the
+  `-I` option:
+  </p>
+
+  <code>
+  $ gnunet-arm -I<br>
+  Running services:<br>
+  ats (gnunet-service-ats)<br>
+  revocation (gnunet-service-revocation)<br>
+  set (gnunet-service-set)<br>
+  nat (gnunet-service-nat)<br>
+  transport (gnunet-service-transport)<br>
+  peerstore (gnunet-service-peerstore)<br>
+  hostlist (gnunet-daemon-hostlist)<br>
+  identity (gnunet-service-identity)<br>
+  namecache (gnunet-service-namecache)<br>
+  peerinfo (gnunet-service-peerinfo)<br>
+  datastore (gnunet-service-datastore)<br>
+  zonemaster (gnunet-service-zonemaster)<br>
+  zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
+  nse (gnunet-service-nse)<br>
+  cadet (gnunet-service-cadet)<br>
+  dht (gnunet-service-dht)<br>
+  core (gnunet-service-core)<br>
+  gns (gnunet-service-gns)<br>
+  statistics (gnunet-service-statistics)<br>
+  topology (gnunet-daemon-topology)<br>
+  fs (gnunet-service-fs)<br>
+namestore (gnunet-service-namestore)<br>
+vpn (gnunet-service-vpn)
+  </code>
+
+  <p>
+  For stopping GNUnet again we can use the `-e` option.
+  </p>
+
+  <code>
+  $ gnunet-arm -e
+  </code>
+  <br/>
+
+  <h3>{{ _("Alternative: Installation from source") }}</h3>
 
   <p>
     The following instructions are only really interesting for developers
@@ -122,75 +193,6 @@
   Perform the same steps as for Option 1, but add the configure flat '--enable-experimental'
   </p>
 
-  <p>
-  Congratulations! GNUnet is now installed! Before we start it we
-  need to create a configuration file. By default GNUnet looks in
-  our home directory for the file `~/.gnunet/gnunet.conf`. We can
-  start with an empty file for now:
-  </p>
-
-  <code>
-  $ touch ~/.config/gnunet.conf
-  </code>
-
-  <p>
-  Now we can start it with the command line tool
-  `gnunet-arm` (Automatic Restart Manager).
-  </p>
-
-  <code>
-  $ gnunet-arm -s
-  </code>
-
-  <p>
-  It starts the default GNUnet services. We can list them with the
-  `-I` option:
-  </p>
-
-  <code>
-  $ gnunet-arm -I<br>
-  Running services:<br>
-  ats (gnunet-service-ats)<br>
-  revocation (gnunet-service-revocation)<br>
-  set (gnunet-service-set)<br>
-  nat (gnunet-service-nat)<br>
-  transport (gnunet-service-transport)<br>
-  peerstore (gnunet-service-peerstore)<br>
-  hostlist (gnunet-daemon-hostlist)<br>
-  identity (gnunet-service-identity)<br>
-  namecache (gnunet-service-namecache)<br>
-  peerinfo (gnunet-service-peerinfo)<br>
-  datastore (gnunet-service-datastore)<br>
-  zonemaster (gnunet-service-zonemaster)<br>
-  zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
-  nse (gnunet-service-nse)<br>
-  cadet (gnunet-service-cadet)<br>
-  dht (gnunet-service-dht)<br>
-  core (gnunet-service-core)<br>
-  gns (gnunet-service-gns)<br>
-  statistics (gnunet-service-statistics)<br>
-  topology (gnunet-daemon-topology)<br>
-  fs (gnunet-service-fs)<br>
-namestore (gnunet-service-namestore)<br>
-vpn (gnunet-service-vpn)
-  </code>
-
-  <p>
-  For stopping GNUnet again we can use the `-e` option.
-  </p>
-
-  <code>
-  $ gnunet-arm -e
-  </code>
-  <br/>
-
-  <h3>{{ _("Further information") }}</h3>
-
-  <p>GNUnet has a number of services and features.
-  Please check <a href="https://docs.gnunnet.org">our documentation</a>
-  to learn how to use them. If you find anything odd or bugs, please
-  <a href="https://gnunet.org/bugs">let us know</a>.
-  </p>
 
       </div>
 {% endblock body_content %}
