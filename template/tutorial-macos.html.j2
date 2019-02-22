@@ -8,29 +8,55 @@
 
   <p>
     Welcome to the hopefully painless GNUnet tutorial for macOS Mojave! It provides
-    concrete instructions on how to compile, install and configure a current
+    concrete instructions on how to install a current
     version of GNUnet. The goal is to support newcomers, either end users or
     developers, who want to get in touch with GNUnet for the first time. After
     installing GNUnet we will make sure that out new GNUnet installation is working
     correctly.
   </p>
 
-  <h3>{{ _("Requirements") }}</h3>
+  <h3>{{ _("Installation through homebrew") }}</h3>
+
+
+  <h4>{{ _("Requirements") }}</h4>
 
   <p>
     First, install <a href="https://brew.sh">homebrew</a> and <a href="https://developer.apple.com/xcode/">XCode</a>.
-    Then install the following packages:
+    GNUnet is not yet in the official homebrew repos (we are working on it).
+    So, you need to grab the formula from <a href="https://git.gnunet.org/gnunet.git/tree/contrib/gnunet.rb">here</a>
+    and put it under the homebrew formula folder:
+  </p>
+  <code>
+    $ cp gnunet.rb $(brew --repo homebrew/core)/Formula
+  </code>
+  <p>
+    Then install:
   </p>
 
   <code>
-    $ sudo brew install git autoconf automake glpk gettext gnutls jansson libextractor libgcrypt libffi libidn2 libmicrohttpd libmpc libtool libunistring pkg-config unbound
+    $ brew install gnunet
   </code>
 
-  <h3>{{ _("Make an installation directory") }}</h3>
+  If you want to install GNUnet from git, execute:
+  <code>
+    $ brew install --HEAD gnunet
+  </code>
+
+  <h3>{{ _("Installation from source") }}</h3>
 
   <p>
-    Next we create a directory in our home directory where we store
-    the source code later. We should keep this directory after
+    The following instructions are only really interesting for developers
+    or if you need special build switches as you can install from git
+    using homebrew (see above).<br/>
+    First, install the dependencies:
+  </p>
+
+  <code>
+    $ brew install git autoconf automake glpk gettext gnutls jansson libextractor libgcrypt libffi libidn2 libmicrohttpd libmpc libtool libunistring pkg-config unbound
+  </code>
+  <p>
+    Next, create a directory in your. This directory is where we store
+    the source code later. You should keep this directory after
     installation because it contains Makefiles that can be used for
     uninstalling GNUnet again (see chapter *Uninstall GNUnet and its
     dependencies*).
@@ -46,40 +72,20 @@
     $ cd ~<br>
     $ git clone --depth 1 https://gnunet.org/git/gnunet.git gnunet_src<br>
   </code>
-  <p>
-    In order to have a gnutls with DANE support, you need to edit the formula:
-  </p>
-  <code>
-  $ brew edit gnutls
-  </code>
-  <p>
-    Add the line "depends_on 'unbound'" to the dependencies in the formula.
-    Then in the install function before the configure add:
-  </p>
-  <code>
-    ENV['CFLAGS']='-I/usr/local/Cellar/unbound/1.9.0/include'<br/>
-    ENV['LDFLAGS']='-L/usr/local/Cellar/unbound/1.9.0/lib'
-  </code>
-  <p>
-    Reinstall gnutls from source:
-  </p>
-  <code>
-    $ brew reinstall -s gnutls
-  </code>
 
-  <h3>{{ _("Compile and Install") }}</h3>
+  <h4>{{ _("Compile and Install") }}</h4>
 
 
   <p>
-    We have two options:
-    installing a *production version* and installing a *development version*. If
+    You have a choice between two options:
+    build the *production version* or *development version*. If
     you want to start writing GNUnet applications or join the GNUnet development
     choose the development version (it will print more debug output and contains
     debug symbols that can be displayed with a debugger). Otherwise choose the
     production version.
   </p>
   
-  <h4>{{ _("Option 1: GNUnet for production / usage") }}</h4>
+  <h5>{{ _("Option 1: GNUnet for production / usage") }}</h5>
 
   <code>
   $ cd ~/gnunet_src<br>
@@ -106,24 +112,13 @@
   $ sudo make install
   </code>
 
-  <h4>{{ _("Option 2: GNUnet for development") }}</h4>
+  <h5>{{ _("Option 2: GNUnet experimental") }}</h5>
 
   <p>
   Perform the same steps as for Option 1, but add the configure flat '--enable-experimental'
   </p>
   <!--
   <h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
-  <p>
-  So now it gets a bit nasty. It's not so bad. All we have to do
-  is copy a file and edit another one. The file we need to copy
-  is GNUnet's plugin for the Name Service Switch (NSS) in unix
-  systems. Different unixes expect it in different locations and
-  GNUnet's build system does not try to guess. On Debian 9 we
-  have to do
-  <code>
-  $ sudo cp /usr/lib/gnunet/nss/libnss_gns.so.2 /lib/$(uname -m)-linux-gnu/
-  </code>
-  </p>
 
   <p>
   Congratulations! GNUnet is now installed! Before we start it we
