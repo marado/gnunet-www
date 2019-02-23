@@ -8,9 +8,7 @@
     Welcome to the hopefully painless GNUnet tutorial for macOS Mojave! It provides
     concrete instructions on how to install a current
     version of GNUnet. The goal is to support newcomers, either end users or
-    developers, who want to get in touch with GNUnet for the first time. After
-    installing GNUnet we will make sure that out new GNUnet installation is working
-    correctly.
+    developers, who want to get in touch with GNUnet for the first time.
   </p>
 
   <h3>{{ _("Requirements") }}</h3>
@@ -59,10 +57,11 @@
 
   <h3>{{_("First steps")}}</h3>
   <p>
-  Congratulations! GNUnet is now installed! Before we start it we
-  need to create a configuration file. By default GNUnet looks in
-  our home directory for the file `~/.gnunet/gnunet.conf`. We can
-  start with an empty file for now:
+  Congratulations! GNUnet is now installed! Before starting it you
+  may create a configuration file. By default GNUnet looks in
+  our home directory for the file `~/.gnunet/gnunet.conf`.
+  Creating the configuation file is optional. For now just create an empty
+  file which will remind you of the location later if needed:
   </p>
   <p>
   <code>
@@ -71,8 +70,10 @@
   </p>
 
   <p>
-  Now we can start it with the command line tool
-  `gnunet-arm` (Automatic Restart Manager).
+  GNUnet and its services are managed using the command line tool  `gnunet-arm`
+  (Automatic Restart Manager).
+  <br/>
+  To start GNUnet with its default services execute:
   </p>
   <p>
   <code>
@@ -81,8 +82,7 @@
   </p>
 
   <p>
-  It starts the default GNUnet services. We can list them with the
-  `-I` option:
+  To list the running services use:
   </p>
   <p>
   <code>
@@ -114,7 +114,7 @@ vpn (gnunet-service-vpn)
   </code>
   </p>
   <p>
-  For stopping GNUnet again we can use the `-e` option.
+  To stop all services, use the `-e` option.
   </p>
   <p>
   <code>
@@ -136,7 +136,7 @@ vpn (gnunet-service-vpn)
   </code>
   </p>
   <p>
-    Next, create a directory in your home. This directory is where we store
+    Next, create a directory in your home in order to store
     the source code later. You should keep this directory after
     installation because it contains Makefiles that can be used for
     uninstalling GNUnet again.
