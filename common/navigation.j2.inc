@@ -16,7 +16,7 @@
     <img src="{{ url('static/images/gnunet-icon.png') }}" alt="" />
     <!-- <img width="70%" height="70%" src="../static/images/gnunet-logo-dark-only-text.svg" alt="" /> -->
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarMain">
@@ -41,19 +41,16 @@
         </ul>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Documentation") }}</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li>
-	    <a href="#">{{ _("Tutorials") }}<i class="icon-arrow-right"></i></a>
-	    <ul class="dropdown-menu sub-menu">
-	      <li><a class="dropdown-item" href="tutorial-ubuntu1804.html">{{ _("Tutorial Ubuntu 18.04") }}</a></li>
-	      <li><a class="dropdown-item" href="tutorial-archpi.html">{{ _("Tutorial Archlinux Raspberry Pi 3") }}</a></li>
-	      <li><a class="dropdown-item" href="tutorial-debian9.html">{{ _("Tutorial Debian 9") }}</a></li>
-	      <li><a class="dropdown-item" href="tutorial-macos.html">{{ _("Tutorial macOS") }}</a></li>
-	      <li class="divider"></li>
-	      <li><a class="dropdown-item" href="tutorial.html">{{ _("All tutorials") }}</a></li>
-	    </ul>
-	  </li>
+        <a class="nav-link dropdown-toggle"
+	   href="#"
+	   data-toggle="dropdown"
+	   role="button"
+	   aria-haspopup="true"
+	   aria-expanded="false">
+	  {{ _("Documentation") }}
+	</a>
+	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	  <li><a class="dropdown-item" href="tutorial.html">{{ _("Tutorials") }}</a></li>
           <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://tutorial.gnunet.org/">{{ _("C-Tutorial") }}</a></li>
