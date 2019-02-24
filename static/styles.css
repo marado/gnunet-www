@@ -116,8 +116,11 @@ h6.description {
 
 .profile .img-none {
   border: dashed 1px #eee;
-  color: #eee;
   text-align: center;
+}
+
+.profile .img-none i.fa {
+  color: #eee;
   font-size: 8em;
 }
 
