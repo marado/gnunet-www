@@ -113,6 +113,11 @@ h6.description {
 	top: 0;
 	bottom: 0;
 }
+
+.profile .img-none {
+  border: dashed 1px #eee;
+}
+
 .img-box ul{
 	position: absolute;
 	z-index: 2;
