@@ -648,7 +648,7 @@ msgid ""
 "<b>A88C 8ADD 1298 28D7 EAC0 2E52 E22F 9BBF EE34 8588</b>."
 msgstr ""
 
-#: template/index.html.j2:11
+#: template/index.html.j2:12
 msgid ""
 "GNUnet is a new network protocol stack for building secure, distributed, and "
 "privacy-preserving applications. With strong roots in academic <a href="
@@ -657,7 +657,7 @@ msgid ""
 "a> protocol stack."
 msgstr ""
 
-#: template/index.html.j2:19
+#: template/index.html.j2:20
 msgid ""
 "GNUnet is typically run as an <a href=\"https://en.wikipedia.org/wiki/"
 "Overlay_network\">overlay network</a> on top of the the existing Internet "
@@ -668,7 +668,7 @@ msgid ""
 "a>."
 msgstr ""
 
-#: template/index.html.j2:30
+#: template/index.html.j2:31
 msgid ""
 "GNUnet is made for an open society: It's a self-organizing network and it is "
 "<a href=\"http://www.gnu.org/philosophy/free-sw.html\">free software</a> as "
@@ -684,15 +684,15 @@ msgstr ""
 msgid "Join &amp; support us!"
 msgstr ""
 
-#: template/index.html.j2:60
+#: template/index.html.j2:59
 msgid "The Internet of tomorrow needs GNUnet today"
 msgstr ""
 
-#: template/index.html.j2:66
+#: template/index.html.j2:65
 msgid "Imagine..."
 msgstr ""
 
-#: template/index.html.j2:68
+#: template/index.html.j2:67
 msgid ""
 "The conventional Internet is currently like a system of roads with deep "
 "potholes and highwaymen all over the place. Even if you still can use the "
@@ -702,18 +702,18 @@ msgid ""
 "even notice the thievery nor accuse and hold the scroungers accountable."
 msgstr ""
 
-#: template/index.html.j2:83
+#: template/index.html.j2:82
 msgid "The Internet is broken"
 msgstr ""
 
-#: template/index.html.j2:85
+#: template/index.html.j2:84
 msgid ""
 "Protocols from Ethernet and IP to BGP and X.509 PKI are insecure by default: "
 "protecting against address forgery, routers learning metadata, or choosing "
 "trustworthy CAs is nontrivial and sometimes impossible."
 msgstr ""
 
-#: template/index.html.j2:93
+#: template/index.html.j2:92
 msgid ""
 "GNUnet provides <a href=\"https://www.w3.org/2014/strint/papers/65.pdf"
 "\">privacy by design</a>, improving addressing, routing, naming and content "
@@ -721,18 +721,18 @@ msgid ""
 "in place today."
 msgstr ""
 
-#: template/index.html.j2:105
+#: template/index.html.j2:104
 msgid "Decentralization is hard"
 msgstr ""
 
-#: template/index.html.j2:108
+#: template/index.html.j2:107
 msgid ""
 "It seems as if every other distributed or P2P project develops its own "
 "library stack, covering transports, stream muxing, discovery and others. "
 "This divides effort and multiplies bug count."
 msgstr ""
 
-#: template/index.html.j2:115
+#: template/index.html.j2:114
 msgid ""
 "GNUnet is a metadata-preserving foundation for your application, covering "
 "areas from addressing to reliable bidirectional Axolotl-encrypted channels, "
@@ -740,11 +740,11 @@ msgid ""
 "almost two decades."
 msgstr ""
 
-#: template/index.html.j2:129
+#: template/index.html.j2:128
 msgid "Metadata is exposed"
 msgstr ""
 
-#: template/index.html.j2:131
+#: template/index.html.j2:130
 msgid ""
 "Even though transport encryption is increasingly being deployed on the "
 "Internet, it still reveals data that can threaten democracy: the identities "
@@ -755,7 +755,7 @@ msgid ""
 "visited via website fingerprinting</a>. -->"
 msgstr ""
 
-#: template/index.html.j2:144
+#: template/index.html.j2:143
 msgid ""
 "GNUnet <a href=\"https://secushare.org/anonymity\">addresses</a> these "
 "concerns with perfect forward secrecy via ephemeral public key addressing, "
@@ -763,11 +763,11 @@ msgid ""
 "resistant routing, and more."
 msgstr ""
 
-#: template/index.html.j2:157
+#: template/index.html.j2:156
 msgid "Freedoms are not respected"
 msgstr ""
 
-#: template/index.html.j2:159
+#: template/index.html.j2:158
 msgid ""
 "Today, monitoring increasingly centralized infrastructure, proprietary "
 "implementations, traffic shapers and firewalls restrict all of the <a href="
@@ -775,38 +775,38 @@ msgid ""
 "various degrees."
 msgstr ""
 
-#: template/index.html.j2:168
+#: template/index.html.j2:167
 msgid ""
 "GNUnet gives users freedoms to securely access information (\"run\" the "
-"network), to study all aspects of the networks operation (\"access the code"
+"network), to study all aspects of the network's operation (\"access the code"
 "\"), to distribute information (\"copy\"), as well as the freedom to deploy "
 "new applications (\"modify\")."
 msgstr ""
 
-#: template/index.html.j2:185
+#: template/index.html.j2:184
 msgid "GNUnet aims to enable a secure and ethical Internet."
 msgstr ""
 
-#: template/index.html.j2:203
+#: template/index.html.j2:200
 msgid "Featured Applications"
 msgstr ""
 
-#: template/index.html.j2:212
+#: template/index.html.j2:209
 msgid "GNU Taler"
 msgstr ""
 
-#: template/index.html.j2:215
+#: template/index.html.j2:212
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
 
-#: template/index.html.j2:228
+#: template/index.html.j2:225
 msgid "The GNU Name System"
 msgstr ""
 
-#: template/index.html.j2:231
+#: template/index.html.j2:228
 msgid ""
 "The GNU Name System (GNS) is a fully decentralized replacement for the "
 "Domain Name System (DNS). Instead of using a hierarchy, GNS uses a directed "
@@ -817,11 +817,11 @@ msgid ""
 "mechanism. -->"
 msgstr ""
 
-#: template/index.html.j2:246
+#: template/index.html.j2:243
 msgid "secushare"
 msgstr ""
 
-#: template/index.html.j2:248
+#: template/index.html.j2:245
 msgid ""
 "<a href=\"https://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
@@ -829,11 +829,11 @@ msgid ""
 "encrypted to authorized recipients only."
 msgstr ""
 
-#: template/index.html.j2:263
+#: template/index.html.j2:260
 msgid "pretty Easy privacy"
 msgstr ""
 
-#: template/index.html.j2:265
+#: template/index.html.j2:262
 msgid ""
 "<a href=\"https://pep.foundation/\">pretty Easy privacy</a> (p&#8801;p) is "
 "creating a usable end-to-end encrypted e-mail solution using opportunistic "
@@ -841,29 +841,29 @@ msgid ""
 "cryptographic protocols to verify keys."
 msgstr ""
 
-#: template/index.html.j2:277
+#: template/index.html.j2:274
 msgid "Filesharing"
 msgstr ""
 
-#: template/index.html.j2:279
+#: template/index.html.j2:276
 msgid ""
 "GNUnet filesharing is an application that provides censorship-resistant, "
 "anonymous filesharing. The publisher is empowered to make a gradual choice "
 "between performance and anonymity."
 msgstr ""
 
-#: template/index.html.j2:289
+#: template/index.html.j2:286
 msgid "Conversation"
 msgstr ""
 
-#: template/index.html.j2:291
+#: template/index.html.j2:288
 msgid ""
 "GNUnet conversation is an application that provides secure voice "
 "communication in a fully decentralized way by employing GNUnet for routing "
 "and transport."
 msgstr ""
 
-#: template/index.html.j2:306
+#: template/index.html.j2:303
 msgid "News"
 msgstr ""
 

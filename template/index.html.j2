@@ -1,8 +1,9 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <!-- Jumbotron -->
-<div class="container-logo banner dark text-center">
-      <img src="{{ url('static/images/gnunet-anonymous-logo.png') }}" />
+<div class="container-logo banner dark text-center" id="frontpagefront">
+      <h1>Welcome to GNUnet</h1>
+      <img alt="GNUnet logo" src="{{ url('static/images/gnunet-anonymous-logo.png') }}" />
 </div>
 <article>
 <div class="jumbotron">
@@ -55,7 +56,7 @@
   <div class="container">
     <div class="row">
       <div class="container text-center">
-          <h1>{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</h1>
+          <h2>{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</h2>
       </div>
     </div>
     <div class="row">
@@ -165,7 +166,7 @@
         <p>
           {% trans %}
           GNUnet gives users freedoms to securely access information
-          ("run" the network), to study all aspects of the network’s
+          ("run" the network), to study all aspects of the network's
           operation ("access the code"), to distribute information
           ("copy"), as well as the freedom to deploy new applications
           ("modify").
@@ -195,11 +196,11 @@
 <div class="container adorn_h3_bracket">
   <div class="row">
     <div class="container text-center">
-      <h1>
+      <h2>
         {% trans %}
         Featured Applications
         {% endtrans %}
-      </h1>
+      </h2>
     </div>
   </div>
   <div class="row">
@@ -299,7 +300,7 @@
 <div class="container adorn_h3_bracket">
   <div class="row">
     <div class="container text-center">
-      <h1>{{ _("News") }}</h1>
+      <h2>{{ _("News") }}</h2>
     </div>
   </div>
   <div class="row">
