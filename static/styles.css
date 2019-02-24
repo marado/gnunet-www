@@ -5,10 +5,6 @@
 	left: 0;
 	z-index: 3;
 }
-/* hide h1 tag on front page */
-#frontpagefront h1 {
-    visibility:hidden;
-}
 .skip {
 	display:none!important;
 }
