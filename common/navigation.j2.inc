@@ -21,7 +21,7 @@
 	 TODO: imo this is bad in the navbar. a readable "gnunet" font-logo would
 	 be better for orientation.
       -->
-    <img src="{{ url('static/images/gnunet-icon.png') }}" alt="" />
+    <img src="{{ url('static/images/gnunet-icon.png') }}" alt="GNUnet Home Icon" />
     <!-- <img width="70%" height="70%" src="../static/images/gnunet-logo-dark-only-text.svg" alt="" /> -->
   </a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
