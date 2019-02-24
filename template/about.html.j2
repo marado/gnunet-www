@@ -6,14 +6,73 @@
       <h3>{{ _("About GNUnet") }}</h3>
       <p>
 	{% trans %}
-        We still have to write this section.
+	GNUnet is an alternative network stack for building secure,
+	decentralized and privacy-preserving distributed applications.
+	Our goal is to replace the old insecure Internet protocol stack. Starting
+	from an application for secure publication of files, it has grown to
+	include all kinds of basic protocol components and applications
+	towards the creation of a GNU internet.
 	{% endtrans %}
+	<br>
+	{% trans %}
+	Today, the actual use and thus the social requirements for a global
+	network differs widely from those goals of 1970. While the Internet
+	remains suitable for military use, where the network equipment is
+	operated by a command hierarchy and when necessary isolated from the
+	rest of the world, the situation is less tenable for civil society.
+	{% endtrans %}
+	<br>
+	{% trans %}
+	Due to fundamental Internet design choices, Internet traffic can be
+	misdirected, intercepted, censored and manipulated by hostile routers
+	on the network. And indeed, the modern Internet has evolved exactly
+	to the point where, as Matthew Green put it, ``the network is
+	hostile''.
+	{% endtrans %}
+	<br>	
+	{% trans %}
+	We believe liberal societies need a network architecture that uses the
+	anti-authoritarian decentralized peer-to-peer paradigm and
+	privacy-preserving cryptographic protocols. The goal of the GNUnet
+	project is to provide a Free Software realization of this ideal.
+	{% endtrans %}
+	<br>
+	{% trans %}
+	Specifically, GNUnet tries to follow the following design principles,
+	in order of importance:
+	{% endtrans %}
+	<ol>	
+	<li>		
+	  {% trans %}
+	    GNUnet must be implemented as <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software</a>.
+	  {% endtrans %}
+	</li>
+	<li>{{ _("GNUnet must minimize the amount of personally identifiable information exposed.") }}</li>
+	<li>{{ _("GNUnet must be fully distributed and resilient to external attacks and rogue participants.") }}</li>
+	<li>{{ _("GNUnet must be self-organizing and not depend on administrators or centralized infrastructure.") }}</li>
+	<li>{{ _("GNUnet must inform the user which other participants have to be trusted when establishing private communications.") }}</li>
+	<li>{{ _("GNUnet must be open and permit new peers to join.") }}</li>
+	<li>{{ _("GNUnet must support a diverse range of applications and devices.") }}</li>
+	<li>{{ _("GNUnet must use compartmentalization to protect sensitive information.") }}</li>
+	<li>{{ _("The GNUnet architecture must be resource efficient.") }}</li>
+	<li>{{ _("GNUnet must provide incentives for peers to contribute more resources than they consume.") }}</li>
+	</ol>
       </p>
       <h4>{{ _("Current funding") }}</h3>
       <p>
 	{% trans %}
         We currently do not have any grants. All work is done by volunteers.
 	{% endtrans %}
+	<br>
+	{% trans %}
+        We are grateful for free hosting offered by the following organizations:
+	{% endtrans %}
+        <ul>
+          <li><a href="https://www.tum.de/">Technische Universit&auml;t M&uuml;nchen</a></li>
+          <li><a href="https://www.inria.fr/">Inria</a></li>
+          <li><a href="https://www.bfh.ch/">Berner Fachhochschule</a></li>
+          <li><a href="https://www.gnu.org/">The GNU Project</a></li>
+	</ul>
       </p>
       <h4>{{ _("Past funding") }}</h3>
       <p>
