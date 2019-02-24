@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-02-24 09:48+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-24 17:42+CET\n"
+"Last-Translator: Torsten Grothoff <torsten@grothoff.org>\n"
+"Language-Team: German <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,52 +19,52 @@ msgstr ""
 
 #: common/base.j2:5
 msgid "GNUnet"
-msgstr ""
+msgstr "GNUnet"
 
 #: common/base.j2:6
 msgid "GNU's framework for secure p2p networking"
-msgstr ""
+msgstr "GNU's Architektur für sichere p2p Netzwerke"
 
 #: common/footer.j2.inc:7
 msgid "Developer Team"
-msgstr ""
+msgstr "Entwickelerteam"
 
 #: common/footer.j2.inc:8
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: common/footer.j2.inc:9 common/navigation.j2.inc:37
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "GNUnet e.V."
 
 #: common/footer.j2.inc:10 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr ""
+msgstr "Über GNUnet"
 
 #: common/footer.j2.inc:15
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Fehler Datenbank"
 
 #: common/footer.j2.inc:16
 msgid "IRC logs"
-msgstr ""
+msgstr "IRC Archive"
 
 #: common/footer.j2.inc:21 template/copyright.html.j2:6
 msgid "Copyright Assignment"
-msgstr ""
+msgstr "Copyright Übertragung"
 
 #: common/footer.j2.inc:22 common/navigation.j2.inc:47
 msgid "Continuous Integration"
-msgstr ""
+msgstr "Kontinuierliche Integration"
 
 #: common/footer.j2.inc:23 common/navigation.j2.inc:66
 #: template/developers.html.j2:24
 msgid "Bibliography"
-msgstr ""
+msgstr "Bibliografie"
 
 #: common/footer.j2.inc:24
 msgid "Old Website"
-msgstr ""
+msgstr "Alte Website"
 
 #: common/footer.j2.inc:32
 msgid ""
@@ -73,66 +73,70 @@ msgid ""
 "Software</a> only.<br> Report issues with this website to <a href='contact."
 "html'>us</a>."
 msgstr ""
+"Copyright &copy; <a href=\"ev.html\">GNUnet e.V.</a> 2015, 2016, 2017, 2018, "
+"2019<br> Diese Seite wurde nur mit <a href='https://www.gnu.org/'>Freier "
+"Software</a> erstellt.<br> Probleme bitte <a href='contact."
+"html'>hier</a> melden."
 
 #: common/navigation.j2.inc:33
 msgid "Community"
-msgstr ""
+msgstr "Gemeinschaft"
 
 #: common/navigation.j2.inc:35 template/developers.html.j2:34
 msgid "Discussion"
-msgstr ""
+msgstr "Diskussion"
 
 #: common/navigation.j2.inc:36
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "Copyright für Mitwirkende"
 
 #: common/navigation.j2.inc:38
 msgid "IRC Archive"
-msgstr ""
+msgstr "IRC Archive"
 
 #: common/navigation.j2.inc:42
 msgid "Development"
-msgstr ""
+msgstr "Entwickelung"
 
 #: common/navigation.j2.inc:44
 msgid "System Architecture"
-msgstr ""
+msgstr "System Architekture"
 
 #: common/navigation.j2.inc:45
 msgid "Bugtracker"
-msgstr ""
+msgstr "FehlerDatenbank"
 
 #: common/navigation.j2.inc:46 template/gnurl.html.j2:124
 msgid "Source Code"
-msgstr ""
+msgstr "Quellcode"
 
 #: common/navigation.j2.inc:48
 msgid "libgnurl"
-msgstr ""
+msgstr "libgnurl"
 
 #: common/navigation.j2.inc:58
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentation"
 
 #: common/navigation.j2.inc:61 template/tutorial.html.j2:5
 msgid "Tutorials"
-msgstr ""
+msgstr "Anleitungen"
 
 #: common/navigation.j2.inc:62
 msgid "Glossary"
-msgstr ""
+msgstr "Glossar"
 
 #: common/navigation.j2.inc:63
 msgid "Handbook"
-msgstr ""
+msgstr "Handbuch"
 
 #: common/navigation.j2.inc:64
 msgid "C-Tutorial"
-msgstr ""
+msgstr "C-Anleitung"
 
 #: common/navigation.j2.inc:65
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: template/about.html.j2:8
 msgid "We still have to write this section."
@@ -140,27 +144,27 @@ msgstr ""
 
 #: template/about.html.j2:12
 msgid "Current funding"
-msgstr ""
+msgstr "Aktuelle Finanzierung"
 
 #: template/about.html.j2:14
 msgid "We currently do not have any grants. All work is done by volunteers."
-msgstr ""
+msgstr "Wir haben im moment keine Zuwendung. Die ganze Arbeit wird von Freiwiligen gemacht."
 
 #: template/about.html.j2:18
 msgid "Past funding"
-msgstr ""
+msgstr "Frühere Finanzierung"
 
 #: template/about.html.j2:20
 msgid "We are grateful for past funding from the following organizations:"
-msgstr ""
+msgstr "Wir sind den folgenden Organisatzionen sehr dankbar für ihre frühere Unterstützung:"
 
 #: template/architecture.html.j2:6
 msgid "GNUnet System Architecture"
-msgstr ""
+msgstr "GNUnet Systemarchitektur"
 
 #: template/architecture.html.j2:20
 msgid "Foundations"
-msgstr ""
+msgstr "Grundlagen"
 
 #: template/architecture.html.j2:22
 msgid ""
@@ -170,10 +174,15 @@ msgid ""
 "for addresses and self-organized decentralized routing algorithms, these "
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
+"GNUnet basiert auf einer verteilten Hashtabelle (R5N), einem SCTP ähnlichen "
+"ende-zu-ende verschlüsselter Nachrichtenübertragung (CADET), einer Public-Key-Infrastruktur "
+"(GNS) und einem erweiterbaren Transportsystem (TRANSPORT).<br> Öffentliche Schlüssel werden als Addressen "
+"für selbstorganizierte decentralizierte Routingalgorithmen benutzt. Diese "
+"Komponenten ersetzen das traditionelle Internet (TCP/IP)."
 
 #: template/architecture.html.j2:35
 msgid "Security"
-msgstr ""
+msgstr "Sicherheit"
 
 #: template/architecture.html.j2:38
 msgid ""
@@ -186,11 +195,11 @@ msgstr ""
 
 #: template/contact.html.j2:6
 msgid "Contact information"
-msgstr ""
+msgstr "Kontaktinformation"
 
 #: template/contact.html.j2:13
 msgid "The mailing list"
-msgstr ""
+msgstr "Die Mailingliste"
 
 #: template/contact.html.j2:15
 msgid ""
@@ -202,7 +211,7 @@ msgstr ""
 
 #: template/contact.html.j2:25
 msgid "The IRC channel"
-msgstr ""
+msgstr "Der IRC Kanal"
 
 #: template/contact.html.j2:27
 msgid ""
@@ -212,7 +221,7 @@ msgstr ""
 
 #: template/contact.html.j2:36
 msgid "Contacting individuals"
-msgstr ""
+msgstr "Individuelle Kontaktaufname"
 
 #: template/contact.html.j2:38
 msgid ""
@@ -222,7 +231,7 @@ msgstr ""
 
 #: template/contact.html.j2:47
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Fehler melden"
 
 #: template/contact.html.j2:49
 msgid ""
@@ -261,11 +270,11 @@ msgstr ""
 
 #: template/developers.html.j2:5
 msgid "GNUnet for developers"
-msgstr ""
+msgstr "GNUNet für Entwickeler"
 
 #: template/developers.html.j2:13
 msgid "Repositories"
-msgstr ""
+msgstr "Quellcode"
 
 #: template/developers.html.j2:16
 msgid ""
@@ -289,7 +298,7 @@ msgstr ""
 
 #: template/developers.html.j2:47
 msgid "Regression Testing"
-msgstr ""
+msgstr "Regressionstests"
 
 #: template/developers.html.j2:50
 msgid ""
@@ -300,7 +309,7 @@ msgstr ""
 
 #: template/developers.html.j2:59
 msgid "Code Coverage Analysis"
-msgstr ""
+msgstr "Codeabdeckungsanalyse"
 
 #: template/developers.html.j2:62
 msgid ""
@@ -311,7 +320,7 @@ msgstr ""
 
 #: template/developers.html.j2:72
 msgid "Performance Analysis"
-msgstr ""
+msgstr "Leistungsanalyse"
 
 #: template/developers.html.j2:75
 msgid ""
@@ -322,7 +331,7 @@ msgstr ""
 
 #: template/engage.html.j2:7
 msgid "Talk With Us"
-msgstr ""
+msgstr "Mitmachen"
 
 #: template/engage.html.j2:11
 msgid ""
@@ -351,7 +360,7 @@ msgstr ""
 
 #: template/ev.html.j2:7
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
-msgstr ""
+msgstr "Verein zur Förderung von GNUnet e.V."
 
 #: template/ev.html.j2:10
 msgid ""
@@ -370,7 +379,7 @@ msgstr ""
 
 #: template/ev.html.j2:32
 msgid "Governance"
-msgstr ""
+msgstr "Führung"
 
 #: template/ev.html.j2:34
 msgid ""
@@ -385,7 +394,7 @@ msgstr ""
 
 #: template/ev.html.j2:51
 msgid "Becoming a Member of GNUnet e.V."
-msgstr ""
+msgstr "Ein Mitglied von GNUnet e.V. werden"
 
 #: template/ev.html.j2:53
 msgid ""
@@ -402,7 +411,7 @@ msgstr ""
 
 #: template/ev.html.j2:71
 msgid "Support Us!"
-msgstr ""
+msgstr "Unterstützung anbieten!"
 
 #: template/ev.html.j2:73
 msgid ""
@@ -419,15 +428,15 @@ msgstr ""
 
 #: template/ev.html.j2:92
 msgid "Official Meeting Notes"
-msgstr ""
+msgstr "Offizielle Protokolle"
 
 #: template/ev.html.j2:95
 msgid "2013-12 (constitutional meeting)"
-msgstr ""
+msgstr "2013-12 (Gründungstreffen)"
 
 #: template/ev.html.j2:98
 msgid "2014-12"
-msgstr ""
+msgstr "2014-12"
 
 #: template/ev.html.j2:101
 msgid "2015-12"
@@ -461,7 +470,7 @@ msgstr ""
 
 #: template/faq.html.j2:17
 msgid "Is there a graphical user interface?"
-msgstr ""
+msgstr "Gibt es eine Graphische Benutzeroberfläche?"
 
 #: template/faq.html.j2:19
 msgid ""
@@ -479,29 +488,29 @@ msgstr ""
 
 #: template/glossary.html.j2:7
 msgid "term"
-msgstr ""
+msgstr "Begriff"
 
 #: template/glossary.html.j2:9 template/glossary.html.j2:17
 #: template/glossary.html.j2:24 template/glossary.html.j2:31
 #: template/glossary.html.j2:38
 msgid "explanation"
-msgstr ""
+msgstr "Erklärung"
 
 #: template/glossary.html.j2:15
 msgid "Ego"
-msgstr ""
+msgstr "Ego"
 
 #: template/glossary.html.j2:22
 msgid "Identity"
-msgstr ""
+msgstr "Identität"
 
 #: template/glossary.html.j2:29
 msgid "Pseudonym"
-msgstr ""
+msgstr "Pseudonym"
 
 #: template/glossary.html.j2:36
-msgid "Namespaces (deprecated)"
-msgstr ""
+msgid "Namespaces"
+msgstr "Namensraum"
 
 #: template/gnurl.html.j2:5
 msgid "gnurl (libgnurl)"
@@ -521,7 +530,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:22
 msgid "Motivation"
-msgstr ""
+msgstr "Motivation"
 
 #: template/gnurl.html.j2:24
 msgid ""
@@ -573,7 +582,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:75
 msgid "Rename to fix"
-msgstr ""
+msgstr "Umbenenung als Lösung"
 
 #: template/gnurl.html.j2:77
 #, python-format
@@ -596,7 +605,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:95
 msgid "Using libgnurl"
-msgstr ""
+msgstr "Benutzung von libgnurl"
 
 #: template/gnurl.html.j2:97
 msgid ""
@@ -611,7 +620,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:109
 msgid "Gotchas"
-msgstr ""
+msgstr "Aufgepasst!"
 
 #: template/gnurl.html.j2:111
 msgid ""
@@ -630,7 +639,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:138
 msgid "Downloads"
-msgstr ""
+msgstr "Herunterladen"
 
 #: template/gnurl.html.j2:140
 msgid ""
@@ -647,7 +656,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:154
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "Fehler melden"
 
 #: template/gnurl.html.j2:156
 msgid ""
@@ -697,7 +706,7 @@ msgstr ""
 
 #: template/index.html.j2:42
 msgid "Download GNUnet (via Git)"
-msgstr ""
+msgstr "GNUnet Heruntaladen (durch Git)"
 
 #: template/index.html.j2:47
 msgid "Join &amp; support us!"
