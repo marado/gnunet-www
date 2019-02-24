@@ -13,7 +13,7 @@
         <div class="col-12 col-sm-4">
           <ul class="footer-list">
             <li><p><a href="https://bugs.gnunet.org/">{{ _("Bug Tracker") }}</a></p></li>
-            <li><p><a href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC logs") }}</a></p></li>
+            <li><p><a href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC archive") }}</a></p></li>
           </ul>
         </div>
         <div class="col-12 col-sm-4">
