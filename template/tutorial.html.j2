@@ -1,6 +1,6 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<article class="d-flex flex-column p-2 bd-highlight">
+<article class="d-flex flex-column p-5 bd-highlight">
     <header>
       <h1>{{ _("Tutorials") }}</h1>
     </header>
@@ -12,22 +12,13 @@
     </p>
     <p>
       {% trans %}
-      <a href="tutorial-ubuntu1804.html">GNUnet on Ubuntu 18.04</a>
-      {% endtrans %}
-    </p>
-    <p>
-      {% trans %}
-      <a href="tutorial-archpi.html">GNUnet on Arch-Pi</a>
-      {% endtrans %}
-    </p>
-    <p>
-      {% trans %}
-      <a href="tutorial-debian9.html">GNUnet on Debian 9</a>
-      {% endtrans %}
-    </p>
-    <p>
-      {% trans %}
-      <a href="tutorial-macos.html">GNUnet on macOS</a>
+      GNUnet installation instructions:
+      <ul>
+        <li><a href="tutorial-ubuntu1804.html">Ubuntu 18.04</a></li>
+        <li><a href="tutorial-archpi.html">Arch-Pi</a></li>
+        <li><a href="tutorial-debian9.html">Debian 9</a></li>
+        <li><a href="tutorial-macos.html">macOS</a></li>
+      </ul>
       {% endtrans %}
     </p>
     <p>
