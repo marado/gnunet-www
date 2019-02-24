@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-24 17:43+0100\n"
+"POT-Creation-Date: 2019-02-24 20:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,22 +128,115 @@ msgid "FAQ"
 msgstr ""
 
 #: template/about.html.j2:8
-msgid "We still have to write this section."
+msgid ""
+"GNUnet is an alternative network stack for building secure, decentralized "
+"and privacy-preserving distributed applications. Our goal is to replace the "
+"old insecure Internet protocol stack. Starting from an application for "
+"secure publication of files, it has grown to include all kinds of basic "
+"protocol components and applications towards the creation of a GNU internet."
 msgstr ""
 
-#: template/about.html.j2:12
+#: template/about.html.j2:17
+msgid ""
+"Today, the actual use and thus the social requirements for a global network "
+"differs widely from those goals of 1970. While the Internet remains suitable "
+"for military use, where the network equipment is operated by a command "
+"hierarchy and when necessary isolated from the rest of the world, the "
+"situation is less tenable for civil society."
+msgstr ""
+
+#: template/about.html.j2:25
+msgid ""
+"Due to fundamental Internet design choices, Internet traffic can be "
+"misdirected, intercepted, censored and manipulated by hostile routers on the "
+"network. And indeed, the modern Internet has evolved exactly to the point "
+"where, as Matthew Green put it, ``the network is hostile''."
+msgstr ""
+
+#: template/about.html.j2:33
+msgid ""
+"We believe liberal societies need a network architecture that uses the anti-"
+"authoritarian decentralized peer-to-peer paradigm and privacy-preserving "
+"cryptographic protocols. The goal of the GNUnet project is to provide a Free "
+"Software realization of this ideal."
+msgstr ""
+
+#: template/about.html.j2:40
+msgid ""
+"Specifically, GNUnet tries to follow the following design principles, in "
+"order of importance:"
+msgstr ""
+
+#: template/about.html.j2:46
+msgid ""
+"GNUnet must be implemented as <a href=\"https://www.gnu.org/philosophy/free-"
+"sw.html\">Free Software</a>."
+msgstr ""
+
+#: template/about.html.j2:50
+msgid ""
+"GNUnet must minimize the amount of personally identifiable information "
+"exposed."
+msgstr ""
+
+#: template/about.html.j2:51
+msgid ""
+"GNUnet must be fully distributed and resilient to external attacks and rogue "
+"participants."
+msgstr ""
+
+#: template/about.html.j2:52
+msgid ""
+"GNUnet must be self-organizing and not depend on administrators or "
+"centralized infrastructure."
+msgstr ""
+
+#: template/about.html.j2:53
+msgid ""
+"GNUnet must inform the user which other participants have to be trusted when "
+"establishing private communications."
+msgstr ""
+
+#: template/about.html.j2:54
+msgid "GNUnet must be open and permit new peers to join."
+msgstr ""
+
+#: template/about.html.j2:55
+msgid "GNUnet must support a diverse range of applications and devices."
+msgstr ""
+
+#: template/about.html.j2:56
+msgid "GNUnet must use compartmentalization to protect sensitive information."
+msgstr ""
+
+#: template/about.html.j2:57
+msgid "The GNUnet architecture must be resource efficient."
+msgstr ""
+
+#: template/about.html.j2:58
+msgid ""
+"GNUnet must provide incentives for peers to contribute more resources than "
+"they consume."
+msgstr ""
+
+#: template/about.html.j2:61
 msgid "Current funding"
 msgstr ""
 
-#: template/about.html.j2:14
+#: template/about.html.j2:63
 msgid "We currently do not have any grants. All work is done by volunteers."
 msgstr ""
 
-#: template/about.html.j2:18
+#: template/about.html.j2:67
+msgid ""
+"We are grateful for free hosting offered by the following organizations:"
+msgstr ""
+
+#: template/about.html.j2:77
 msgid "Past funding"
 msgstr ""
 
-#: template/about.html.j2:20
+#: template/about.html.j2:79
 msgid "We are grateful for past funding from the following organizations:"
 msgstr ""
 
@@ -442,30 +535,90 @@ msgid ""
 "based graphical interfaces, including a graphical tool for configuration."
 msgstr ""
 
-#: template/glossary.html.j2:7
-msgid "term"
-msgstr ""
-
-#: template/glossary.html.j2:9 template/glossary.html.j2:17
-#: template/glossary.html.j2:24 template/glossary.html.j2:31
-#: template/glossary.html.j2:38
-msgid "explanation"
-msgstr ""
-
-#: template/glossary.html.j2:15
+#: template/glossary.html.j2:5
 msgid "Ego"
 msgstr ""
 
-#: template/glossary.html.j2:22
+#: template/glossary.html.j2:7
+msgid ""
+"We use the term \"Ego\" to refer to the fact that users in GNUnet can have "
+"multiple unlinkable identities, in the sense of alter egos. The ability to "
+"have more than one identity is crucial, as we may want to keep our egos for "
+"business separate from those we use for political activities or romance.<br> "
+"Egos in GNUnet are technically equivalent to identities (and the code does "
+"not distinguish between them). We simply sometimes use the term \"ego\" to "
+"stress that you can have more than one."
+msgstr ""
+
+#: template/glossary.html.j2:20
 msgid "Identity"
 msgstr ""
 
-#: template/glossary.html.j2:29
+#: template/glossary.html.j2:22
+msgid ""
+"In GNUnet users are identified via a public key, and that public key is then "
+"often referred to as the \"Identity\" of the user. However, the concept is "
+"not as draconian as it often is in real life where many are forced to have "
+"one name, one passport and one unique identification number. <br> As long as "
+"identities in GNUnet are simply public keys, users are free to create any "
+"number of identities, and we call those egos to emphasize the difference. "
+"Even though users can create such egos freely, it is possible to have an ego "
+"certified by some certification authority, resulting in something that more "
+"closely resembles the traditional concept of an identity.<br> For example, a "
+"university may certify the identities of its students such that they can "
+"prove that they are studying. Students may keep their (certified) student "
+"identity separate from other egos that they use for other activities in life."
+msgstr ""
+
+#: template/glossary.html.j2:43
 msgid "Pseudonym"
 msgstr ""
 
-#: template/glossary.html.j2:36
+#: template/glossary.html.j2:45
+msgid ""
+"A pseudonym is an ego that is specifically intended to not be linked to "
+"one's real name. GNUnet users can create many egos, and thus also many "
+"pseudonyms. <br> Repeated uses of the same pseudonym are linkable by "
+"definition, as they involve the same public key. Anonymity requires the use "
+"of either the special \"anonymous\" pseudonym (for GNUnet, this is the "
+"neutral element on the elliptic curve) or a throw-away pseudonym that is "
+"only used once."
+msgstr ""
+
+#: template/glossary.html.j2:59
 msgid "Namespaces"
+msgstr ""
+
+#: template/glossary.html.j2:61
+msgid ""
+"The GNU Name System allows every ego (or identity) to securely and privately "
+"associate any number of label-value pairs with an ego. The values are called "
+"record sets following the terminology of the Domain Name System (DNS). The "
+"mapping of labels to record sets for a given ego is called a namespace. <br> "
+"If records are made public and thus published, it is possible for other "
+"users to lookup the record given the ego's public key and the label. Here, "
+"not only the label can thus act as a passphrase but also the public key -- "
+"which despite its name may not be public knowledge and is never disclosed by "
+"the GNS protocol itself."
+msgstr ""
+
+#: template/glossary.html.j2:77
+msgid "Peer"
+msgstr ""
+
+#: template/glossary.html.j2:79
+msgid ""
+"A \"peer\" is an instance of GNUnet with its own per-instance public key and "
+"network addresses. Technically, it is possible to run multiple peers on the "
+"same host, but this only makes sense for testing. <br> By design GNUnet "
+"supports multiple users to share the same peer, just as UNIX is a multi-user "
+"system. A \"peer\" typically consists of a set of foundational GNUnet "
+"services running as the \"gnunet\" user and allowing all users in the "
+"\"gnunet\" group to utilize the API. On multi-user systems, additional "
+"\"personalized\" services may be required per user. <br> While peers are "
+"also identified by public keys, these public keys are completely unrelated "
+"to egos or identities. Namespaces cannot be associated with a peer, only "
+"with egos."
 msgstr ""
 
 #: template/gnurl.html.j2:7
