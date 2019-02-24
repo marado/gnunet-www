@@ -7,6 +7,14 @@
        </ul>
 </div>
 -->
+<noscript>
+	<style>
+		.collapse
+		{
+			display: block;
+		}
+	</style>
+</noscript>
 <nav class="navbar navbar-toggleable navbar-toggleable-md navbar-expand-md navbar-inverse navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="index.html">
     <!-- 
