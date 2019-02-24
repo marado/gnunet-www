@@ -7,7 +7,7 @@
        </ul>
 </div>
 -->
-<nav class="navbar navbar-expand-md navbar-inverse navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-toggleable navbar-toggleable-md navbar-expand-md navbar-inverse navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="index.html">
     <!-- 
 	 TODO: imo this is bad in the navbar. a readable "gnunet" font-logo would
@@ -44,12 +44,14 @@
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ _("Documentation") }}</a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
           <li>
-	    <a class="dropdown-item" href="tutorial.html">{{ _("Tutorials") }}<i class="icon-arrow-right"></i></a>
+	    <a href="#">{{ _("Tutorials") }}<i class="icon-arrow-right"></i></a>
 	    <ul class="dropdown-menu sub-menu">
 	      <li><a class="dropdown-item" href="tutorial-ubuntu1804.html">{{ _("Tutorial Ubuntu 18.04") }}</a></li>
 	      <li><a class="dropdown-item" href="tutorial-archpi.html">{{ _("Tutorial Archlinux Raspberry Pi 3") }}</a></li>
 	      <li><a class="dropdown-item" href="tutorial-debian9.html">{{ _("Tutorial Debian 9") }}</a></li>
 	      <li><a class="dropdown-item" href="tutorial-macos.html">{{ _("Tutorial macOS") }}</a></li>
+	      <li class="divider"></li>
+	      <li><a class="dropdown-item" href="tutorial.html">{{ _("All tutorials") }}</a></li>
 	    </ul>
 	  </li>
           <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
