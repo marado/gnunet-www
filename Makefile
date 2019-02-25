@@ -61,7 +61,8 @@ current_dir = $(shell pwd)
 
 run: all
 	@[ "$(BROWSER)" ] || ( echo "You need to export the environment variable 'BROWSER' to run this."; exit 1 )
-	$(RUN_BROWSER) $(current_dir)/rendered/en/index.html
+	$(RUN_BROWSER) http://0.0.0.0:8000 &
+	cd rendered && $(PYTHON) -m http.server
 
 
 # docker-all: Build using a docker image which contains all the needed packages.
