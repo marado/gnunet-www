@@ -49,7 +49,7 @@ stopped using <tt>gnunet-arm -e</tt>.
     <li>The experimental SecuShare code is not included in the release, you can
         now find it in the <a href="https://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a>
         Git repository.</li>
-    <li>The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.</p>
+    <li>The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.</li>
     <li>GNUnet now includes a decentralised identity attribute sharing service:
         reclaimID. A ready-to-use client can be found in an
         <a href="https://gitlab.com/reclaimid/client">external repo</a>.</li>
