@@ -19,7 +19,6 @@ for early adopters with some reasonable pain tolerance.
 </p>
 
 <h4>Download links</h4>
-<p>
   <ul>
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz</a></li>
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig</a></li>
@@ -28,12 +27,13 @@ for early adopters with some reasonable pain tolerance.
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz</a></li>
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig</a></li>
   </ul>
+<p>
 Note that GNUnet is now started using <tt>gnunet-arm -s</tt>. GNUnet should be
 stopped using <tt>gnunet-arm -e</tt>.
 </p>
 
 <h4><Noteworthy changes in 0.11.0</h4>
-<p>
+
   <ul>
     <li>The Web site and manuals have undergone significant rework. You can find an
         archive of the old Web site at <a href="https://old.gnunet.org/">old.gnunet.org</a>.</li>
@@ -62,10 +62,8 @@ stopped using <tt>gnunet-arm -e</tt>.
   The above is just the short list, our bugtracker lists
   <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
   over 136 individual issues</a> that were resolved since 0.11.0pre66.
-</p>
 
 <h4>Known Issues</h4>
-<p>
   <ul>
     <li>There are known major design issues in the TRANSPORT, ATS and CORE subsystems
         which will need to be addressed in the future to achieve acceptable usability,
@@ -78,7 +76,7 @@ stopped using <tt>gnunet-arm -e</tt>.
         unnecessary attack surface for availability.</li>
     <li>The RPS subsystem remains experimental.</li>
   </ul>
-
+<p>
 In addition to this list, you may also want to consult our bug tracker
 at <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a> which lists
 about 150 more specific issues.
