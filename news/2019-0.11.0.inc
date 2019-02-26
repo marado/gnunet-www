@@ -61,7 +61,7 @@ stopped using <tt>gnunet-arm -e</tt>.
   </ul>
   The above is just the short list, our bugtracker lists
   <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
-  over 50 individual issues</a> that were resolved since 0.11.0pre66.
+  over 136 individual issues</a> that were resolved since 0.11.0pre66.
 </p>
 
 <h4>Known Issues</h4>
