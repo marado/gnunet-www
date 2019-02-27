@@ -34,7 +34,7 @@
   </p>
 
   <code>
-    $ sudo apt install git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev openssl libnss3-tools
+    $ sudo apt install git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev openssl libnss3-tools3
   </code>
 
   <h3>{{ _("Make an installation directory") }}</h3>
@@ -59,13 +59,14 @@
   </p>
 
   <p>
-    <b>Attention: The official libmicrohttpsd package for Debian 9 is too old, we need
+    <b>Attention: The official libmicrohttpd package for Debian 9 is too old, we need
       at least version 0.9.52.</b>
   </p>
 
   <code>
     $ cd ~/gnunet_installation<br>
     $ git clone --depth 1 https://gnunet.org/git/gnunet.git<br>
+    $ git clone --depth 1 https://gnunet.org/git/gnunet-gtk.git<br>
     $ git clone --depth 1 https://gnunet.org/git/libmicrohttpd.git
   </code>
 
@@ -73,7 +74,7 @@
 
 
   <p>
-    Before we can compile GNUnet on Debian 9, we compile and install libmicrohttp
+    Before we can compile GNUnet on Debian 9, we compile and install libmicrohttpd.
   </p>
 
   <code>
@@ -119,6 +120,22 @@
     $ sudo make install
   </code>
 
+  <h4>{{ _("Option 3: gnunet-gtk") }}</h4>
+  <p>
+    Installing the Gtk+-based graphical user
+    interface can be done on top of either the production or development installation.
+  </p>
+  <code>
+    $ sudo apt install libgtk-3-dev libgladeui-dev libunique-dev libqrencode-dev
+    $ cd ~/gnunet_installation/gnunet-gtk<br>
+    $ ./bootstrap<br>
+    $ export GNUNET_PREFIX=/usr<br>
+    $ export CFLAGS="-g -Wall -O0"<br>
+    $ ./configure --prefix=$GNUNET_PREFIX --with-gnunet=$GNUNET_PREFIX<br>
+    $ make -j$(nproc || echo -n 1)<br>
+    $ sudo make install
+  </code>
+
 <!--
   <h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
       <p>
@@ -148,7 +165,7 @@
   </p>
 
   <p>
-    <b>Attention: Once we modified `etc/nsswitch.conf` DNS resolution will only
+    <b>Attention: Once we modified `/etc/nsswitch.conf` DNS resolution will only
       be possible as long as is GNUnet is running. We can leave the next step out,
       but then we will not be able to use GNUnet's name resolution in external
       applications.</b>
