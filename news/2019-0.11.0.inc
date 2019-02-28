@@ -77,6 +77,8 @@ stopped using <tt>gnunet-arm -e</tt>.
     <li>There are minor implementation limitations in SET that create
         unnecessary attack surface for availability.</li>
     <li>The RPS subsystem remains experimental.</li>
+    <li>Some high-level tests in the test-suite fail non-deterministically due to
+        the low-level TRANSPORT issues.</li>
   </ul>
 <p>
 In addition to this list, you may also want to consult our bug tracker
