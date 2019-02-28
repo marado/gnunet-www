@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-24 20:42+0100\n"
+"POT-Creation-Date: 2019-02-27 20:53+0100\n"
 "PO-Revision-Date: 2018-02-24 17:42\n"
 "Last-Translator: Torsten Grothoff <torsten@grothoff.org>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -480,10 +480,10 @@ msgstr "Führung"
 #: template/ev.html.j2:34
 msgid ""
 "You can find our \"Satzung\", and the list of members under <a href="
-"\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://gnunet."
-"orghttps://git.gnunet.org/gnunet-ev.git/tree/satzung.tex</a>. The current "
-"board consists of: <dl><dt>Vorsitz</dt> <dd><a href=\"https://grothoff.org/"
-"christian/\">Christian Grothoff</a></dd> <dt>stellvertretender Vorsitz</dt> "
+"\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet."
+"org/gnunet-ev.git/tree/satzung.tex</a>. The current board consists of: "
+"<dl><dt>Vorsitz</dt> <dd><a href=\"https://grothoff.org/christian/"
+"\">Christian Grothoff</a></dd> <dt>stellvertretender Vorsitz</dt> "
 "<dd>Matthias Wachs</dd> <dt>Kassenwart</dt> <dd>Florian Dold</dd> "
 "<dt>Beisitzer</dt> <dd>Sree Harsha Totakura, Lurchi</dd> </dl>"
 msgstr ""
@@ -1139,82 +1139,86 @@ msgstr ""
 msgid "Get the source code"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:72 template/tutorial-macos.html.j2:158
+#: template/tutorial-debian9.html.j2:73 template/tutorial-macos.html.j2:158
 #: template/tutorial-ubuntu1804.html.j2:66
 msgid "Compile and Install"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:97 template/tutorial-macos.html.j2:170
+#: template/tutorial-debian9.html.j2:98 template/tutorial-macos.html.j2:170
 #: template/tutorial-ubuntu1804.html.j2:77
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:110
+#: template/tutorial-debian9.html.j2:111
 #: template/tutorial-ubuntu1804.html.j2:90
 msgid "Option 2: GNUnet for development"
 msgstr ""
 
 #: template/tutorial-debian9.html.j2:123
+msgid "Option 3: gnunet-gtk"
+msgstr ""
+
+#: template/tutorial-debian9.html.j2:140
 #: template/tutorial-ubuntu1804.html.j2:103
 msgid "Install GNUnet plugin for name resolution"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:177
+#: template/tutorial-debian9.html.j2:194
 #: template/tutorial-ubuntu1804.html.j2:142
 msgid "Configuration"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:241
+#: template/tutorial-debian9.html.j2:258
 #: template/tutorial-ubuntu1804.html.j2:205
 msgid "Make sure it works"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:256
+#: template/tutorial-debian9.html.j2:273
 #: template/tutorial-ubuntu1804.html.j2:220
 msgid "filesharing"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:288
+#: template/tutorial-debian9.html.j2:305
 #: template/tutorial-ubuntu1804.html.j2:254
 msgid "CADET (and Chat)"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:319
+#: template/tutorial-debian9.html.j2:336
 #: template/tutorial-ubuntu1804.html.j2:282
 msgid "Name resolution using GNS on the command line"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:395
+#: template/tutorial-debian9.html.j2:412
 #: template/tutorial-ubuntu1804.html.j2:349
 msgid "Name resolution using GNS with a browser"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:476
+#: template/tutorial-debian9.html.j2:493
 #: template/tutorial-ubuntu1804.html.j2:423
 msgid "VPN"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:482
+#: template/tutorial-debian9.html.j2:499
 #: template/tutorial-ubuntu1804.html.j2:430
 msgid "Uninstall GNUnet and its dependencies"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:498
+#: template/tutorial-debian9.html.j2:515
 #: template/tutorial-ubuntu1804.html.j2:447
 msgid "Appendix A: Optional GNUnet features"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:504
+#: template/tutorial-debian9.html.j2:521
 #: template/tutorial-ubuntu1804.html.j2:454
 msgid "Troubleshooting"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:506
+#: template/tutorial-debian9.html.j2:523
 #: template/tutorial-ubuntu1804.html.j2:457
 msgid "You can't reach other people's nodes"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:543
+#: template/tutorial-debian9.html.j2:560
 #: template/tutorial-ubuntu1804.html.j2:488
 msgid "OMG you guys broke my internet"
 msgstr ""
@@ -1250,22 +1254,14 @@ msgid ""
 msgstr ""
 
 #: template/tutorial.html.j2:14
-msgid "<a href=\"tutorial-ubuntu1804.html\">GNUnet on Ubuntu 18.04</a>"
+msgid ""
+"GNUnet installation instructions: <ul> <li><a href=\"tutorial-ubuntu1804.html"
+"\">Ubuntu 18.04</a></li> <li><a href=\"tutorial-archpi.html\">Arch-Pi</a></"
+"li> <li><a href=\"tutorial-debian9.html\">Debian 9</a></li> <li><a href="
+"\"tutorial-macos.html\">macOS</a></li> </ul>"
 msgstr ""
 
-#: template/tutorial.html.j2:19
-msgid "<a href=\"tutorial-archpi.html\">GNUnet on Arch-Pi</a>"
-msgstr ""
-
-#: template/tutorial.html.j2:24
-msgid "<a href=\"tutorial-debian9.html\">GNUnet on Debian 9</a>"
-msgstr ""
-
-#: template/tutorial.html.j2:29
-msgid "<a href=\"tutorial-macos.html\">GNUnet on macOS</a>"
-msgstr ""
-
-#: template/tutorial.html.j2:34
+#: template/tutorial.html.j2:25
 msgid ""
 "<a href=\"https://tutorial.gnunet.org/\">C Coding Tutorial for GNUnet</a>"
 msgstr ""
