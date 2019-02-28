@@ -28,6 +28,10 @@ for early adopters with some reasonable pain tolerance.
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig</a></li>
   </ul>
 <p>
+Note that due to mirror synchronization, not all links might be functional
+early after the release. For direct access try <a href="http://ftp.gnu.org/gnu/gnunet/">http://ftp.gnu.org/gnu/gnunet/</a>
+</p>
+<p>
 Note that GNUnet is now started using <tt>gnunet-arm -s</tt>. GNUnet should be
 stopped using <tt>gnunet-arm -e</tt>.
 </p>
