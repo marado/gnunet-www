@@ -32,7 +32,7 @@ Note that GNUnet is now started using <tt>gnunet-arm -s</tt>. GNUnet should be
 stopped using <tt>gnunet-arm -e</tt>.
 </p>
 
-<h4><Noteworthy changes in 0.11.0</h4>
+<h4>Noteworthy changes in 0.11.0</h4>
 
   <ul>
     <li>The Web site and manuals have undergone significant rework. You can find an
