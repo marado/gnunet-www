@@ -71,7 +71,7 @@ stopped using <tt>gnunet-arm -e</tt>.
         which will need to be addressed in the future to achieve acceptable usability,
         performance and security.</li>
     <li>There are known moderate implementation limitations in CADET that
-        negatively impact performance.</li>
+        negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.</li>
     <li>There are known moderate design issues in FS that also impact
         usability and performance.</li>
     <li>There are minor implementation limitations in SET that create
