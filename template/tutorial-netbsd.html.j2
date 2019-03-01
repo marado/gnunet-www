@@ -234,8 +234,17 @@
   <h5>{{ _("Option 2: GNUnet experimental") }}</h5>
 
   <p>
-  Perform the same steps as for Option 1, but add the configure switch '--enable-experimental'
+  Perform the same steps as for Option 1, but add the configure switch
+  <code>--enable-experimental</code>. For even more verbosity you could
+  configure gnunet like this:
   </p>
-
+  <p>
+  <code>
+  $ LDFLAGS=-L/usr/pkg/lib CFLAGS="-g -O0" ./configure --prefix=/home/ng0/opt --enable-logging=verbose
+  </code>
+  </p>
+  <p>
+  This allows you to get more verbose logs when you export GNUNET_FORCE_LOG=";;;;DEBUG" before you run tests.
+  </p>
 </div>
 {% endblock body_content %}
