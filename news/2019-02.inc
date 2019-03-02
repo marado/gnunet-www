@@ -44,6 +44,27 @@ Mentor: Christian Grothoff
 </section>
 
 <section>
+<h4>re:claimID OpenID Connect performance improvements</h4>
+<p>
+reclaimID is a decentralized identity system build on top of the GNU
+Name System.
+Currently, we piggyback a small authorization ticket in an OpenID authorization
+code.
+This ticket is used by a relying party (e.g. website) to retrieve a decryption
+key and user attributes.
+However, the lookups can timeout and fail in GNS due to adverse network conditions or
+empty caches.
+In order to mitigate this issue, this project is meant to investigate and implement how...
+<ol>
+<li> ... decryption keys can be added to an initial exchange in OpenID.</li>
+<li> ... initial set(s) of attributes can be piggybacked in OpenID.</li>
+</ol>
+<br/>
+Mentor: Martin Schanzenbach
+</p>
+</section>
+
+<section>
 <h4>reclaimID alternative GNS-based encryption</h4>
 <p>
 reclaimID is a decentralized identity system build on top of the GNU
@@ -56,14 +77,6 @@ it is possible to...
 <li> ... reduce dependencies.</li>
 </ol>
 <br/>
-This project also includes two separate, smaller tasks:
-<ul>
-<li> Performance improvements to the out-of-band authorization flow (OpenID Connect)</li>
-<li> A webextension which allows reclaimID to be used without the need of a GNS proxy.
-</ul>
-The two smaller tasks are optional and may be dropped in case the student
-encounters any unforseen complications when implementing the main task.
-<br>
 Mentor: Martin Schanzenbach
 </p>
 </section>
