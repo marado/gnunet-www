@@ -92,10 +92,8 @@ for platforms.
 On the other hand, GNS supports record data encryption using symmetric keys as
 labels.
 If we make the access control layer of re:claimID more generic in order to
-support both ABE and GNS encryption, we could reduce the require depenencies.
+support both ABE and GNS encryption, we could reduce the required depenencies.
 This would result in gnunet packages to include re:claimID by default.
-In combination with the browser plugin above, this would immensly ease dissemination.
-
 
 In short, the goals are to...
 <ol>
