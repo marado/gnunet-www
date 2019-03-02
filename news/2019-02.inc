@@ -48,12 +48,20 @@ Mentor: Christian Grothoff
 <p>
 reclaimID is a decentralized identity system build on top of the GNU
 Name System.
-Currently, we piggyback a small authorization ticket in an OpenID authorization
-code.
-This ticket is used by a relying party (e.g. website) to retrieve a decryption
-key and user attributes.
-However, the lookups can timeout and fail in GNS due to adverse network conditions or
-empty caches.
+Upon authorization, the user provides a requesting party (RP) such as a website
+with an authorization ticket (e.g. piggybacked in an OpenID authorization code).
+The RP uses information contained in this ticket to
+<ol>
+<li> Retrieve the decryption key from GNS</li>
+<li> Retrieve the user attributes from GNS</li>
+</ol>
+The GNS lookups ensure that the RP receives up-to-date attributes and functional
+decryption keys. However, in particular the RP-specific encryption key
+resolution can be slow and even fail depending on the network topology.
+We propose that in an initial exchange, in particular OpenID authorization code
+flows, we try to incorporate key and maybe even an attribute set in the ticket
+exchange.
+
 In order to mitigate this issue, this project is meant to investigate and implement how...
 <ol>
 <li> ... decryption keys can be added to an initial exchange in OpenID.</li>
@@ -65,13 +73,31 @@ Mentor: Martin Schanzenbach
 </section>
 
 <section>
-<h4>reclaimID alternative GNS-based encryption</h4>
+<h4>re:claimID alternative GNS-based encryption</h4>
 <p>
-reclaimID is a decentralized identity system build on top of the GNU
+re:claimID is a decentralized identity system build on top of the GNU
 Name System.
-Currently, it uses an encryption scheme called attribute-based encryption.
-However, through the clever use of GNS's built in record encryption,
-it is possible to...
+The initial design and implementation of re:claimID includes an attribute-based
+encryption module in order to prevent unauthorized access to attributes in the
+name system.
+Our motivation for re:claimID was for it to be name system agnostic, which
+means the design theoretically also works for other name systems such as
+namecoin.
+Other name systems often do not have built-in mechanisms in order to do this.
+Hence, we implemented an ABE access control layer. Our ABE implementation
+requires two third party libraries: libpbc and libgabe. While we could merge
+libgabe into the gnunet service implementation of re:claimID, libpbc is a
+rather large, third party library which lacks packaging in distributions and
+for platforms.
+On the other hand, GNS supports record data encryption using symmetric keys as
+labels.
+If we make the access control layer of re:claimID more generic in order to
+support both ABE and GNS encryption, we could reduce the require depenencies.
+This would result in gnunet packages to include re:claimID by default.
+In combination with the browser plugin above, this would immensly ease dissemination.
+
+
+In short, the goals are to...
 <ol>
 <li> ... improve performance by reducing encryption overhead.</li>
 <li> ... reduce dependencies.</li>
