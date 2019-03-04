@@ -16,5 +16,7 @@
 # For syntax checking, see:
 # http://www.frobee.com/robots-txt-check
 
+Sitemap: https://gnunet.org/en/sitemap.xml
+
 User-agent: *
 Crawl-delay: 10
