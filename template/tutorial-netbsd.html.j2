@@ -45,6 +45,14 @@
    <li>MKREPRO=yes
   </ul>
   <p>
+    As we rely on ImageMagick somewhere down our dependency chain
+    (it is one of libextractor's dependencies), you need to set
+    the following (as of 2019-03-06) as well:
+  </p>
+  <ul>
+    <li>IGNORE_URL+=https://nvd.nist.gov/vuln/detail/CVE-2018-15607
+  </ul>
+  <p>
    The build process can involve manual installation interruptions for
    dependencies!
   </p> 
