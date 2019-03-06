@@ -17,9 +17,14 @@
   <h3>{{ _("Requirements") }}</h3>
 
   <p>
-    As a bare minimum, we recommend you install <a href="http://pkgsrc.org">pkgsrc</a>. This tutorial assumes you have the CURRENT version checked out. Additionally you might want to install <code>devel/git-base</code> and git clone <a href="http://pkgsrc.org/wip/">pkgsrc-wip</a> into a <code>wip</code> folder in your pkgsrc folder.
+    As a bare minimum, we recommend you install <a href="http://pkgsrc.org">pkgsrc</a>. This tutorial assumes you have the CURRENT version checked out. Additionally you might want to install <code>devel/git-base</code> and git clone <a href="http://pkgsrc.org/wip/">pkgsrc-wip</a> into the <code>wip</code> folder in your pkgsrc folder:
   </p>
-
+  <p>
+    <code>
+      $ cd /usr/pkgsrc<br>
+      git clone git://wip.pkgsrc.org/pkgsrc-wip.git wip
+    </code>
+  </p>
   <h3>{{ _("Installation") }}</h3>
   <p>
   Note: $ stands for commands run as unprivileged user, # for commands run as root user.
@@ -27,7 +32,6 @@
   <p>
     GNUnet is not yet in the pkgsrc tree, it's still in the pkgsrc-wip repository. So if you checked out pkgsrc-wip into <code>/usr/pksrc/wip</code>:
   </p>
-
   <p>
   <code>
     $ cd /usr/pkgsrc/wip/gnunet
