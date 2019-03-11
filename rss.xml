@@ -10,74 +10,74 @@
       <title>GNUnet Hacker Meeting 2018 at La Decentrale</title>
       <link>https://gnunet.org/#gnunet-hacker-meeting-2018-2</link>
       <description>
-        <a name="gnunet-hacker-meeting-2018-2"></a>
-        <h3>Second GNUnet Hacker Meeting 2018 at <a href="https://decentrale.ch/">La Décentrale</a>, Switzerland</h3>
-        <p>
+        &lt;a name=&quot;gnunet-hacker-meeting-2018-2&quot;&gt;&lt;/a&gt;
+        &lt;h3&gt;Second GNUnet Hacker Meeting 2018 at &lt;a href=&quot;https://decentrale.ch/&quot;&gt;La Décentrale&lt;/a&gt;, Switzerland&lt;/h3&gt;
+        &lt;p&gt;
           The GNUnet hackers met for the second time this year. The primary goal
           was to squash bugs to bring out a new release. Aside from this we
           worked hard on improving the documentation and to launch this new
           website.
-        </p>
+        &lt;/p&gt;
       </description>
     </item>
     <item>
       <title>2019-02: Topics for GSoC 2019</title>
       <link>https://gnunet.org/#gsoc2019</link>
       <description>
-          <h3>
-            <a NAME="gsoc2019"></a>2019-02: Topics for GSoC 2019
-          </h3>
-            <h4>Android Port</h4>
-            <p>
+          &lt;h3&gt;
+            &lt;a NAME=&quot;gsoc2019&quot;&gt;&lt;/a&gt;2019-02: Topics for GSoC 2019
+          &lt;/h3&gt;
+            &lt;h4&gt;Android Port&lt;/h4&gt;
+            &lt;p&gt;
               It is time for GNUnet to run properly on Android.  Note that
               GNUnet is written in C, and this is not about rewriting
               GNUnet in Java, but about getting the C code to run on Android.
-            </p>
-            <p>
-              Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
-            </p>
+            &lt;/p&gt;
+            &lt;p&gt;
+              Mentor: &lt;a href=&quot;https://www.goebel-consult.de/&quot;&gt;Hartmut Goebel&lt;/a&gt;
+            &lt;/p&gt;
 
-              <h4>Help with Continuous Integration setup</h4>
-              <p>
+              &lt;h4&gt;Help with Continuous Integration setup&lt;/h4&gt;
+              &lt;p&gt;
                 There is a push for migrating our CI to Gitlab.  The CI should
-                eventually not just run "make check" on various platforms, but also
+                eventually not just run &quot;make check&quot; on various platforms, but also
                 perform tests with multiple peers running in different VMs with
                 specific network topologies (i.e. NAT) between them being simulated.
                 The CI should also be integrated with Gauger for performance
                 regression analysis.  Running jobs only when dependencies have changed
                 and scripting more granular triggers or ideally automatic dependency
                 discovery (as done by the autotools) is also important.
-              </p>
-              <p>
+              &lt;/p&gt;
+              &lt;p&gt;
                 Mentor: TBD
-              </p>
+              &lt;/p&gt;
 
 
 
-                <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
-                <p>
+                &lt;h4&gt;Migrate gnunet-qr from Python 2.7 to C using libzbar&lt;/h4&gt;
+                &lt;p&gt;
                   Python 2.7 is reaching its end-of-life, and we want to get rid
                   of the dependency on Python. The existing gnunet-qr tool is a
                   rather simple wrapper around python-zbar, which itself wraps
                   libzbar. The goal of this project is to directly use libzbar
                   to scan QR codes for GNUnet / the GNU Name System (see
-                  also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
-                </p>
-                <p>
+                  also &lt;a href=&quot;https://bugs.gnunet.org/view.php?id=5562&quot;&gt;#5562&lt;/a&gt;).
+                &lt;/p&gt;
+                &lt;p&gt;
                     Mentor: Christian Grothoff
-                </p>
+                &lt;/p&gt;
 
-                  <h4>re:claimID OpenID Connect performance improvements</h4>
-                  <p>
+                  &lt;h4&gt;re:claimID OpenID Connect performance improvements&lt;/h4&gt;
+                  &lt;p&gt;
                     reclaimID is a decentralized identity system build on top of the GNU
                     Name System.
                     Upon authorization, the user provides a requesting party (RP) such as a website
                     with an authorization ticket (e.g. piggybacked in an OpenID authorization code).
                     The RP uses information contained in this ticket to
-                    <ol>
-                      <li> Retrieve the decryption key from GNS</li>
-                      <li> Retrieve the user attributes from GNS</li>
-                    </ol>
+                    &lt;ol&gt;
+                      &lt;li&gt; Retrieve the decryption key from GNS&lt;/li&gt;
+                      &lt;li&gt; Retrieve the user attributes from GNS&lt;/li&gt;
+                    &lt;/ol&gt;
                     The GNS lookups ensure that the RP receives up-to-date attributes and functional
                     decryption keys. However, in particular the RP-specific encryption key
                     resolution can be slow and even fail depending on the network topology.
@@ -86,16 +86,16 @@
                     exchange.
 
                     In order to mitigate this issue, this project is meant to investigate and implement how...
-                    <ol>
-                      <li> ... decryption keys can be added to an initial exchange in OpenID.</li>
-                      <li> ... initial set(s) of attributes can be piggybacked in OpenID.</li>
-                    </ol>
-                    <br/>
+                    &lt;ol&gt;
+                      &lt;li&gt; ... decryption keys can be added to an initial exchange in OpenID.&lt;/li&gt;
+                      &lt;li&gt; ... initial set(s) of attributes can be piggybacked in OpenID.&lt;/li&gt;
+                    &lt;/ol&gt;
+                    &lt;br/&gt;
                     Mentor: Martin Schanzenbach
-                  </p>
+                  &lt;/p&gt;
 
-                  <h4>re:claimID alternative GNS-based encryption</h4>
-                  <p>
+                  &lt;h4&gt;re:claimID alternative GNS-based encryption&lt;/h4&gt;
+                  &lt;p&gt;
                     re:claimID is a decentralized identity system build on top of the GNU
                     Name System.
                     The initial design and implementation of re:claimID includes an attribute-based
@@ -117,28 +117,28 @@
                     This would result in gnunet packages to include re:claimID by default.
 
                     In short, the goals are to...
-                    <ol>
-                      <li> ... improve performance by reducing encryption overhead.</li>
-                      <li> ... reduce dependencies.</li>
-                    </ol>
-                    <br/>
+                    &lt;ol&gt;
+                      &lt;li&gt; ... improve performance by reducing encryption overhead.&lt;/li&gt;
+                      &lt;li&gt; ... reduce dependencies.&lt;/li&gt;
+                    &lt;/ol&gt;
+                    &lt;br/&gt;
                     Mentor: Martin Schanzenbach
-                  </p>
+                  &lt;/p&gt;
       </description>
     </item>
     <item>
       <title>2019-02: GNUnet 0.11.0 released</title>
       <link>https://gnunet.org/#gnunet-0.11.0-release</link>
       <description>
-          <h3>
-            <a name="gnunet-0.11.0-release">2019-02: GNUnet 0.11.0 released</a>
-          </h3>
+          &lt;h3&gt;
+            &lt;a name=&quot;gnunet-0.11.0-release&quot;&gt;2019-02: GNUnet 0.11.0 released&lt;/a&gt;
+          &lt;/h3&gt;
 
-          <p>
+          &lt;p&gt;
             We are pleased to announce the release of GNUnet 0.11.0.
-          </p>
+          &lt;/p&gt;
 
-              <p>
+              &lt;p&gt;
                 This is a major release after about five years of development.  In
                 terms of usability, users should be aware that there are still a large
                 number of known open issues in particular with respect to ease of use,
@@ -147,112 +147,112 @@
                 provide good anonymity or extensive amounts of interesting
                 information.  As a result, the 0.11.0 release is still only suitable
                 for early adopters with some reasonable pain tolerance.
-              </p>
+              &lt;/p&gt;
 
-              <h4>Download links</h4>
-              <ul>
-                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz</a></li>
-                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig</a></li>
-                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz</a></li>
-                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig</a></li>
-                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz</a></li>
-                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig</a></li>
-              </ul>
-              <p>
+              &lt;h4&gt;Download links&lt;/h4&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;p&gt;
                 Note that due to mirror synchronization, not all links might be functional
-                early after the release. For direct access try <a href="http://ftp.gnu.org/gnu/gnunet/">http://ftp.gnu.org/gnu/gnunet/</a>
-              </p>
-              <p>
-                Note that GNUnet is now started using <tt>gnunet-arm -s</tt>. GNUnet should be
-                stopped using <tt>gnunet-arm -e</tt>.
-              </p>
+                early after the release. For direct access try &lt;a href=&quot;http://ftp.gnu.org/gnu/gnunet/&quot;&gt;http://ftp.gnu.org/gnu/gnunet/&lt;/a&gt;
+              &lt;/p&gt;
+              &lt;p&gt;
+                Note that GNUnet is now started using &lt;tt&gt;gnunet-arm -s&lt;/tt&gt;. GNUnet should be
+                stopped using &lt;tt&gt;gnunet-arm -e&lt;/tt&gt;.
+              &lt;/p&gt;
 
-              <h4>Noteworthy changes in 0.11.0</h4>
+              &lt;h4&gt;Noteworthy changes in 0.11.0&lt;/h4&gt;
 
-              <ul>
-                <li>
+              &lt;ul&gt;
+                &lt;li&gt;
                   The Web site and manuals have undergone significant rework. You can find an
-                  archive of the old Web site at <a href="https://old.gnunet.org/">old.gnunet.org</a>.
-                </li>
-                <li>
-                  The code now builds again on macOS. GNUnet on macOS is <i>experimental</i>.
+                  archive of the old Web site at &lt;a href=&quot;https://old.gnunet.org/&quot;&gt;old.gnunet.org&lt;/a&gt;.
+                &lt;/li&gt;
+                &lt;li&gt;
+                  The code now builds again on macOS. GNUnet on macOS is &lt;i&gt;experimental&lt;/i&gt;.
                   While it builds and seems to run fine, some tests are known to fail.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   Build process now works properly with libidn2
-                </li>
-                <li>
-                  Except for <tt>gnunet-qr</tt>, all Python code was migrated to Python 3.7.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
+                  Except for &lt;tt&gt;gnunet-qr&lt;/tt&gt;, all Python code was migrated to Python 3.7.
+                &lt;/li&gt;
+                &lt;li&gt;
                   Fixed security issues in secret sharing cryptography logic
-                </li>
-                <li>
-                  Services running out of file descriptors on <tt>accept()</tt> no longer busy wait
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
+                  Services running out of file descriptors on &lt;tt&gt;accept()&lt;/tt&gt; no longer busy wait
+                &lt;/li&gt;
+                &lt;li&gt;
                   Fixed crash in gnunet-gns2dns proxy
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   GNS responses are now padded to minimize information disclosure from the size
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   Fixed API issues and (rare) crash bugs in CADET
-                </li>
-                <li>
-                  The experimental SecuShare code is not included in the release, you can now find it in the <a href="https://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a> Git repository.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
+                  The experimental SecuShare code is not included in the release, you can now find it in the &lt;a href=&quot;https://git.gnunet.org/gnunet-secushare/&quot;&gt;gnunet-secushare&lt;/a&gt; Git repository.
+                &lt;/li&gt;
+                &lt;li&gt;
                   The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.
-                </li>
-                <li>
-                  GNUnet now includes a decentralised identity attribute sharing service: reclaimID. A ready-to-use client can be found in an <a href="https://gitlab.com/reclaimid/client">external repo</a>.
-                </li>
-                <li>
-                  The code now builds again on NetBSD. GNUnet on NetBSD is <i>experimental</i>. While it builds and seems to run fine, full support requires more changes in the core of GNUnet It will soon be available via pkgsrc.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
+                  GNUnet now includes a decentralised identity attribute sharing service: reclaimID. A ready-to-use client can be found in an &lt;a href=&quot;https://gitlab.com/reclaimid/client&quot;&gt;external repo&lt;/a&gt;.
+                &lt;/li&gt;
+                &lt;li&gt;
+                  The code now builds again on NetBSD. GNUnet on NetBSD is &lt;i&gt;experimental&lt;/i&gt;. While it builds and seems to run fine, full support requires more changes in the core of GNUnet It will soon be available via pkgsrc.
+                &lt;/li&gt;
+                &lt;li&gt;
                   Many things changed on the build system side. If you package GNUnet for an operating system or otherwise package manager, make sure that you read the README.
-                </li>
-              </ul>
-              <p>
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;p&gt;
                 The above is just the short list, our bugtracker lists
-              <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
-                over 100 individual issues</a> that were resolved since 0.11.0pre66.
-              </p>
+              &lt;a href=&quot;https://bugs.gnunet.org/changelog_page.php?version_id=258&quot;&gt;
+                over 100 individual issues&lt;/a&gt; that were resolved since 0.11.0pre66.
+              &lt;/p&gt;
 
-              <h4>Known Issues</h4>
-              <ul>
-                <li>
+              &lt;h4&gt;Known Issues&lt;/h4&gt;
+              &lt;ul&gt;
+                &lt;li&gt;
                   There are known major design issues in the TRANSPORT, ATS and CORE subsystems
                   which will need to be addressed in the future to achieve acceptable usability,
                   performance and security.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   There are known moderate implementation limitations in CADET that
                   negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   There are known moderate design issues in FS that also impact
                   usability and performance.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   There are minor implementation limitations in SET that create
                   unnecessary attack surface for availability.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   The RPS subsystem remains experimental.
-                </li>
-                <li>
+                &lt;/li&gt;
+                &lt;li&gt;
                   Some high-level tests in the test-suite fail non-deterministically due to
                   the low-level TRANSPORT issues.
-                </li>
-              </ul>
-              <p>
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;p&gt;
                 In addition to this list, you may also want to consult our bug tracker
-                at <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a> which lists
+                at &lt;a href=&quot;https://bugs.gnunet.org/&quot;&gt;bugs.gnunet.org&lt;/a&gt; which lists
                 about 150 more specific issues.
-              </p>
+              &lt;/p&gt;
       </description>
     </item>
   </channel>
