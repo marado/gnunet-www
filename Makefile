@@ -24,6 +24,12 @@ all: locale template
 	cp rendered/static/robots.txt rendered/it/robots.txt
 	/bin/sh make_sitemap.sh
 	cp rendered/sitemap.xml rendered/en/sitemap.xml
+	cp rss.xml rendered/rss.xml
+	cp rss.xml rendered/en/rss.xml
+	cp rss.xml rendered/de/rss.xml
+	cp rss.xml rendered/es/rss.xml
+	cp rss.xml rendered/fr/rss.xml
+	cp rss.xml rendered/it/rss.xml
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need

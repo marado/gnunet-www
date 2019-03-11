@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>GNUnet.org</title>
+    <link>https://gnunet.org</link>
+    <description>News from GNUnet</description>
+    <item>
+      <title>GNUnet Hacker Meeting 2018 at La Decentrale</title>
+      <link>https://gnunet.org/#gnunet-hacker-meeting-2018-2</link>
+      <description>
+        Second GNUnet Hacker Meeting 2018 at La Decentrale (https://decentrale.ch/), Switzerland
+
+        The GNUnet hackers met for the second time this year. The primary goal was
+        to squash bugs to bring out a new release. Aside from this we worked hard on
+        improving the documentation and to launch this new website.
+      </description>
+    </item>
+    <item>
+      <title>2019-02: Topics for GSoC 2019</title>
+      <link>https://gnunet.org/#gsoc2019</link>
+      <description>
+        2019-02: Topics for GSoC 2019
+Android Port
+
+It is time for GNUnet to run properly on Android.  Note that
+GNUnet is written in C, and this is not about rewriting
+GNUnet in Java, but about getting the C code to run on Android.
+
+Mentor: Hartmut Goebel (https://www.goebel-consult.de/)
+
+Help with Continuous Integration setup
+
+There is a push for migrating our CI to Gitlab.  The CI should
+eventually not just run "make check" on various platforms, but also
+perform tests with multiple peers running in different VMs with
+specific network topologies (i.e. NAT) between them being simulated.
+The CI should also be integrated with Gauger for performance
+regression analysis.  Running jobs only when dependencies have changed
+and scripting more granular triggers or ideally automatic dependency
+discovery (as done by the autotools) is also important.
+
+Mentor: TBD
+
+Migrate gnunet-qr from Python 2.7 to C using libzbar
+
+Python 2.7 is reaching its end-of-life, and we want to get rid
+of the dependency on Python. The existing gnunet-qr tool is a
+rather simple wrapper around python-zbar, which itself wraps
+libzbar. The goal of this project is to directly use libzbar
+to scan QR codes for GNUnet / the GNU Name System (see
+also #5562 (https://bugs.gnunet.org/view.php?id=5562).
+
+Mentor: Christian Grothoff
+
+reclaimID alternative GNS-based encryption
+
+reclaimID is a decentralized identity system build on top of the GNU
+Name System.
+Currently, it uses an encryption scheme called attribute-based encryption.
+However, through the clever use of GNS's built in record encryption,
+it is possible to...
+
+... improve performance by reducing encryption overhead.
+... reduce dependencies.
+
+This project also includes two separate, smaller tasks:
+
+* Performance improvements to the out-of-band authorization flow (OpenID Connect)
+* A webextension which allows reclaimID to be used without the need of a GNS proxy.
+
+The two smaller tasks are optional and may be dropped in case the student
+encounters any unforseen complications when implementing the main task.
+
+Mentor: Martin Schanzenbach
+      </description>
+    </item>
+    <item>
+      <title>2019-02: GNUnet 0.11.0 released</title>
+      <link>https://gnunet.org/#gnunet-0.11.0-release</link>
+      <description>
+        2019-02: GNUnet 0.11.0 released
+
+        We are pleased to announce the release of GNUnet 0.11.0.
+
+        This is a major release after about five years of development. In terms of usability, users should be aware that there are still a large number of known open issues in particular with respect to ease of use, but also some critical privacy issues especially for mobile users. Also, the nascent network is tiny (about 200 peers) and thus unlikely to provide good anonymity or extensive amounts of interesting information. As a result, the 0.11.0 release is still only suitable for early adopters with some reasonable pain tolerance.
+Download links
+
+    http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz
+    http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig
+    http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz
+    http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig
+    http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz
+    http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig
+
+Note that due to mirror synchronization, not all links might be functional early after the release. For direct access try http://ftp.gnu.org/gnu/gnunet/
+
+Note that GNUnet is now started using gnunet-arm -s. GNUnet should be stopped using gnunet-arm -e.
+Noteworthy changes in 0.11.0
+
+    The Web site and manuals have undergone significant rework. You can find an archive of the old Web site at old.gnunet.org.
+    The code now builds again on macOS. GNUnet on macOS is experimental. While it builds and seems to run fine, some tests are known to fail.
+    Build process now works properly with libidn2
+    Except for gnunet-qr, all Python code was migrated to Python 3.7.
+    Fixed security issues in secret sharing cryptography logic
+    Services running out of file descriptors on accept() no longer busy wait
+    Fixed crash in gnunet-gns2dns proxy
+    GNS responses are now padded to minimize information disclosure from the size
+    Fixed API issues and (rare) crash bugs in CADET
+    The experimental SecuShare code is not included in the release, you can now find it in the gnunet-secushare Git repository.
+    The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.
+    GNUnet now includes a decentralised identity attribute sharing service: reclaimID. A ready-to-use client can be found in an external repo.
+    The code now builds again on NetBSD. GNUnet on NetBSD is experimental. While it builds and seems to run fine, full support requires more changes in the core of GNUnet It will soon be available via pkgsrc.
+    Many things changed on the build system side. If you package GNUnet for an operating system or otherwise package manager, make sure that you read the README.
+
+The above is just the short list, our bugtracker lists over 100 individual issues that were resolved since 0.11.0pre66.
+Known Issues
+
+    There are known major design issues in the TRANSPORT, ATS and CORE subsystems which will need to be addressed in the future to achieve acceptable usability, performance and security.
+    There are known moderate implementation limitations in CADET that negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.
+    There are known moderate design issues in FS that also impact usability and performance.
+    There are minor implementation limitations in SET that create unnecessary attack surface for availability.
+    The RPS subsystem remains experimental.
+    Some high-level tests in the test-suite fail non-deterministically due to the low-level TRANSPORT issues.
+
+In addition to this list, you may also want to consult our bug tracker at bugs.gnunet.org which lists about 150 more specific issues.
+      </description>
+    </item>
+  </channel>
+</rss>
