@@ -1,34 +1,32 @@
-<?xml version="1.0"?>
-<rss version="2.0">
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xml:base="https://gnunet.org/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GNUnet.org</title>
     <link>https://gnunet.org</link>
     <description>News from GNUnet</description>
+    <language>en</language>
+    <atom:link href="https://gnunet.org/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GNUnet Hacker Meeting 2018 at La Decentrale</title>
       <link>https://gnunet.org/#gnunet-hacker-meeting-2018-2</link>
       <description>
-        <article>
-          <a name="gnunet-hacker-meeting-2018-2"></a>
-          <h3>Second GNUnet Hacker Meeting 2018 at <a href="https://decentrale.ch/">La Décentrale</a>, Switzerland</h3>
-          <p>
-            The GNUnet hackers met for the second time this year. The primary goal
-            was to squash bugs to bring out a new release. Aside from this we
-            worked hard on improving the documentation and to launch this new
-            website.
-          </p>
-        </article>
+        <a name="gnunet-hacker-meeting-2018-2"></a>
+        <h3>Second GNUnet Hacker Meeting 2018 at <a href="https://decentrale.ch/">La Décentrale</a>, Switzerland</h3>
+        <p>
+          The GNUnet hackers met for the second time this year. The primary goal
+          was to squash bugs to bring out a new release. Aside from this we
+          worked hard on improving the documentation and to launch this new
+          website.
+        </p>
       </description>
     </item>
     <item>
       <title>2019-02: Topics for GSoC 2019</title>
       <link>https://gnunet.org/#gsoc2019</link>
       <description>
-        <article>
           <h3>
             <a NAME="gsoc2019"></a>2019-02: Topics for GSoC 2019
           </h3>
-          <section>
             <h4>Android Port</h4>
             <p>
               It is time for GNUnet to run properly on Android.  Note that
@@ -38,9 +36,7 @@
             <p>
               Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
             </p>
-            </section>
 
-            <section>
               <h4>Help with Continuous Integration setup</h4>
               <p>
                 There is a push for migrating our CI to Gitlab.  The CI should
@@ -55,9 +51,9 @@
               <p>
                 Mentor: TBD
               </p>
-              </section>
 
-              <section>
+
+
                 <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
                 <p>
                   Python 2.7 is reaching its end-of-life, and we want to get rid
@@ -70,9 +66,7 @@
                 <p>
                     Mentor: Christian Grothoff
                 </p>
-                </section>
 
-                <section>
                   <h4>re:claimID OpenID Connect performance improvements</h4>
                   <p>
                     reclaimID is a decentralized identity system build on top of the GNU
@@ -99,9 +93,7 @@
                     <br/>
                     Mentor: Martin Schanzenbach
                   </p>
-                </section>
 
-                <section>
                   <h4>re:claimID alternative GNS-based encryption</h4>
                   <p>
                     re:claimID is a decentralized identity system build on top of the GNU
@@ -132,15 +124,12 @@
                     <br/>
                     Mentor: Martin Schanzenbach
                   </p>
-                </section>
-              </article>
       </description>
     </item>
     <item>
       <title>2019-02: GNUnet 0.11.0 released</title>
       <link>https://gnunet.org/#gnunet-0.11.0-release</link>
       <description>
-        <article>
           <h3>
             <a name="gnunet-0.11.0-release">2019-02: GNUnet 0.11.0 released</a>
           </h3>
@@ -264,7 +253,6 @@
                 at <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a> which lists
                 about 150 more specific issues.
               </p>
-            </article>
       </description>
     </item>
   </channel>
