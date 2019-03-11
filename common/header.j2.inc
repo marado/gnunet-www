@@ -52,6 +52,9 @@
     <!-- font awesome, for team page -->
     <link href="{{ url('dist/font-awesome/css/all.css') }}" rel="stylesheet">
 
+    <!-- handwritten rss -->
+    <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="rss.xml" />
+
     <!-- rss and atom, WIP
     <link rel="alternate" type="application/rss+xml" href="{{ url('feed.rss') }} title="RSS feed for gnunet.org">
     <link rel="alternate" type="application/atom+xml" href="{{ url('feed.atom') }} title="Atom feed for gnunet.org">
