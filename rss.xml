@@ -34,9 +34,10 @@
               It is time for GNUnet to run properly on Android.  Note that
               GNUnet is written in C, and this is not about rewriting
               GNUnet in Java, but about getting the C code to run on Android.
-              <br>
-                Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
-              </p>
+            </p>
+            <p>
+              Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
+            </p>
             </section>
 
             <section>
@@ -50,9 +51,10 @@
                 regression analysis.  Running jobs only when dependencies have changed
                 and scripting more granular triggers or ideally automatic dependency
                 discovery (as done by the autotools) is also important.
-                <br>
-                  Mentor: TBD
-                </p>
+              </p>
+              <p>
+                Mentor: TBD
+              </p>
               </section>
 
               <section>
@@ -64,9 +66,10 @@
                   libzbar. The goal of this project is to directly use libzbar
                   to scan QR codes for GNUnet / the GNU Name System (see
                   also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
-                  <br>
+                </p>
+                <p>
                     Mentor: Christian Grothoff
-                  </p>
+                </p>
                 </section>
 
                 <section>
