@@ -8,121 +8,228 @@
       <title>GNUnet Hacker Meeting 2018 at La Decentrale</title>
       <link>https://gnunet.org/#gnunet-hacker-meeting-2018-2</link>
       <description>
-        Second GNUnet Hacker Meeting 2018 at La Decentrale (https://decentrale.ch/), Switzerland
-
-        The GNUnet hackers met for the second time this year. The primary goal was
-        to squash bugs to bring out a new release. Aside from this we worked hard on
-        improving the documentation and to launch this new website.
+        <article>
+          <a name="gnunet-hacker-meeting-2018-2"></a>
+          <h3>Second GNUnet Hacker Meeting 2018 at <a href="https://decentrale.ch/">La Décentrale</a>, Switzerland</h3>
+          <p>
+            The GNUnet hackers met for the second time this year. The primary goal
+            was to squash bugs to bring out a new release. Aside from this we
+            worked hard on improving the documentation and to launch this new
+            website.
+          </p>
+        </article>
       </description>
     </item>
     <item>
       <title>2019-02: Topics for GSoC 2019</title>
       <link>https://gnunet.org/#gsoc2019</link>
       <description>
-        2019-02: Topics for GSoC 2019
-Android Port
+        <article>
+          <h3>
+            <a NAME="gsoc2019"></a>2019-02: Topics for GSoC 2019
+          </h3>
+          <section>
+            <h4>Android Port</h4>
+            <p>
+              It is time for GNUnet to run properly on Android.  Note that
+              GNUnet is written in C, and this is not about rewriting
+              GNUnet in Java, but about getting the C code to run on Android.
+              <br>
+                Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
+              </p>
+            </section>
 
-It is time for GNUnet to run properly on Android.  Note that
-GNUnet is written in C, and this is not about rewriting
-GNUnet in Java, but about getting the C code to run on Android.
+            <section>
+              <h4>Help with Continuous Integration setup</h4>
+              <p>
+                There is a push for migrating our CI to Gitlab.  The CI should
+                eventually not just run "make check" on various platforms, but also
+                perform tests with multiple peers running in different VMs with
+                specific network topologies (i.e. NAT) between them being simulated.
+                The CI should also be integrated with Gauger for performance
+                regression analysis.  Running jobs only when dependencies have changed
+                and scripting more granular triggers or ideally automatic dependency
+                discovery (as done by the autotools) is also important.
+                <br>
+                  Mentor: TBD
+                </p>
+              </section>
 
-Mentor: Hartmut Goebel (https://www.goebel-consult.de/)
+              <section>
+                <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
+                <p>
+                  Python 2.7 is reaching its end-of-life, and we want to get rid
+                  of the dependency on Python. The existing gnunet-qr tool is a
+                  rather simple wrapper around python-zbar, which itself wraps
+                  libzbar. The goal of this project is to directly use libzbar
+                  to scan QR codes for GNUnet / the GNU Name System (see
+                  also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
+                  <br>
+                    Mentor: Christian Grothoff
+                  </p>
+                </section>
 
-Help with Continuous Integration setup
+                <section>
+                  <h4>re:claimID OpenID Connect performance improvements</h4>
+                  <p>
+                    reclaimID is a decentralized identity system build on top of the GNU
+                    Name System.
+                    Upon authorization, the user provides a requesting party (RP) such as a website
+                    with an authorization ticket (e.g. piggybacked in an OpenID authorization code).
+                    The RP uses information contained in this ticket to
+                    <ol>
+                      <li> Retrieve the decryption key from GNS</li>
+                      <li> Retrieve the user attributes from GNS</li>
+                    </ol>
+                    The GNS lookups ensure that the RP receives up-to-date attributes and functional
+                    decryption keys. However, in particular the RP-specific encryption key
+                    resolution can be slow and even fail depending on the network topology.
+                    We propose that in an initial exchange, in particular OpenID authorization code
+                    flows, we try to incorporate key and maybe even an attribute set in the ticket
+                    exchange.
 
-There is a push for migrating our CI to Gitlab.  The CI should
-eventually not just run "make check" on various platforms, but also
-perform tests with multiple peers running in different VMs with
-specific network topologies (i.e. NAT) between them being simulated.
-The CI should also be integrated with Gauger for performance
-regression analysis.  Running jobs only when dependencies have changed
-and scripting more granular triggers or ideally automatic dependency
-discovery (as done by the autotools) is also important.
+                    In order to mitigate this issue, this project is meant to investigate and implement how...
+                    <ol>
+                      <li> ... decryption keys can be added to an initial exchange in OpenID.</li>
+                      <li> ... initial set(s) of attributes can be piggybacked in OpenID.</li>
+                    </ol>
+                    <br/>
+                    Mentor: Martin Schanzenbach
+                  </p>
+                </section>
 
-Mentor: TBD
+                <section>
+                  <h4>re:claimID alternative GNS-based encryption</h4>
+                  <p>
+                    re:claimID is a decentralized identity system build on top of the GNU
+                    Name System.
+                    The initial design and implementation of re:claimID includes an attribute-based
+                    encryption module in order to prevent unauthorized access to attributes in the
+                    name system.
+                    Our motivation for re:claimID was for it to be name system agnostic, which
+                    means the design theoretically also works for other name systems such as
+                    namecoin.
+                    Other name systems often do not have built-in mechanisms in order to do this.
+                    Hence, we implemented an ABE access control layer. Our ABE implementation
+                    requires two third party libraries: libpbc and libgabe. While we could merge
+                    libgabe into the gnunet service implementation of re:claimID, libpbc is a
+                    rather large, third party library which lacks packaging in distributions and
+                    for platforms.
+                    On the other hand, GNS supports record data encryption using symmetric keys as
+                    labels.
+                    If we make the access control layer of re:claimID more generic in order to
+                    support both ABE and GNS encryption, we could reduce the required depenencies.
+                    This would result in gnunet packages to include re:claimID by default.
 
-Migrate gnunet-qr from Python 2.7 to C using libzbar
-
-Python 2.7 is reaching its end-of-life, and we want to get rid
-of the dependency on Python. The existing gnunet-qr tool is a
-rather simple wrapper around python-zbar, which itself wraps
-libzbar. The goal of this project is to directly use libzbar
-to scan QR codes for GNUnet / the GNU Name System (see
-also #5562 (https://bugs.gnunet.org/view.php?id=5562).
-
-Mentor: Christian Grothoff
-
-reclaimID alternative GNS-based encryption
-
-reclaimID is a decentralized identity system build on top of the GNU
-Name System.
-Currently, it uses an encryption scheme called attribute-based encryption.
-However, through the clever use of GNS's built in record encryption,
-it is possible to...
-
-... improve performance by reducing encryption overhead.
-... reduce dependencies.
-
-This project also includes two separate, smaller tasks:
-
-* Performance improvements to the out-of-band authorization flow (OpenID Connect)
-* A webextension which allows reclaimID to be used without the need of a GNS proxy.
-
-The two smaller tasks are optional and may be dropped in case the student
-encounters any unforseen complications when implementing the main task.
-
-Mentor: Martin Schanzenbach
+                    In short, the goals are to...
+                    <ol>
+                      <li> ... improve performance by reducing encryption overhead.</li>
+                      <li> ... reduce dependencies.</li>
+                    </ol>
+                    <br/>
+                    Mentor: Martin Schanzenbach
+                  </p>
+                </section>
+              </article>
       </description>
     </item>
     <item>
       <title>2019-02: GNUnet 0.11.0 released</title>
       <link>https://gnunet.org/#gnunet-0.11.0-release</link>
       <description>
-        2019-02: GNUnet 0.11.0 released
+        <article>
+          <h3>
+            <a name="gnunet-0.11.0-release">2019-02: GNUnet 0.11.0 released</a>
+          </h3>
 
-        We are pleased to announce the release of GNUnet 0.11.0.
+          <p>
+            We are pleased to announce the release of GNUnet 0.11.0.
+            <p>
 
-        This is a major release after about five years of development. In terms of usability, users should be aware that there are still a large number of known open issues in particular with respect to ease of use, but also some critical privacy issues especially for mobile users. Also, the nascent network is tiny (about 200 peers) and thus unlikely to provide good anonymity or extensive amounts of interesting information. As a result, the 0.11.0 release is still only suitable for early adopters with some reasonable pain tolerance.
-Download links
+              <p>
+                This is a major release after about five years of development.  In
+                terms of usability, users should be aware that there are still a large
+                number of known open issues in particular with respect to ease of use,
+                but also some critical privacy issues especially for mobile users.
+                Also, the nascent network is tiny (about 200 peers) and thus unlikely to
+                provide good anonymity or extensive amounts of interesting
+                information.  As a result, the 0.11.0 release is still only suitable
+                for early adopters with some reasonable pain tolerance.
+              </p>
 
-    http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz
-    http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig
-    http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz
-    http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig
-    http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz
-    http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig
+              <h4>Download links</h4>
+              <ul>
+                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz</a></li>
+                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig</a></li>
+                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz</a></li>
+                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig</a></li>
+                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz</a></li>
+                <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig</a></li>
+              </ul>
+              <p>
+                Note that due to mirror synchronization, not all links might be functional
+                early after the release. For direct access try <a href="http://ftp.gnu.org/gnu/gnunet/">http://ftp.gnu.org/gnu/gnunet/</a>
+              </p>
+              <p>
+                Note that GNUnet is now started using <tt>gnunet-arm -s</tt>. GNUnet should be
+                stopped using <tt>gnunet-arm -e</tt>.
+              </p>
 
-Note that due to mirror synchronization, not all links might be functional early after the release. For direct access try http://ftp.gnu.org/gnu/gnunet/
+              <h4>Noteworthy changes in 0.11.0</h4>
 
-Note that GNUnet is now started using gnunet-arm -s. GNUnet should be stopped using gnunet-arm -e.
-Noteworthy changes in 0.11.0
+              <ul>
+                <li>The Web site and manuals have undergone significant rework. You can find an
+                archive of the old Web site at <a href="https://old.gnunet.org/">old.gnunet.org</a>.</li>
+                <li>The code now builds again on macOS. GNUnet on macOS is <i>experimental</i>.
+                While it builds and seems to run fine, some tests are known to fail.</li>
+                <li>Build process now works properly with libidn2</li>
+                <li>Except for <tt>gnunet-qr</tt>, all Python code was migrated to Python 3.7.</li>
+                <li>Fixed security issues in secret sharing cryptography logic</li>
+                <li>Services running out of file descriptors on <tt>accept()</tt> no longer busy wait</li>
+                <li>Fixed crash in gnunet-gns2dns proxy</li>
+                <li>GNS responses are now padded to minimize information disclosure from the size</li>
+                <li>Fixed API issues and (rare) crash bugs in CADET</li>
+                <li>The experimental SecuShare code is not included in the release, you can
+                now find it in the <a href="https://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a>
+                Git repository.</li>
+                <li>The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.</li>
+                <li>GNUnet now includes a decentralised identity attribute sharing service:
+                reclaimID. A ready-to-use client can be found in an
+                <a href="https://gitlab.com/reclaimid/client">external repo</a>.</li>
+                <li>The code now builds again on NetBSD. GNUnet on NetBSD is <i>experimental</i>.
+                While it builds and seems to run fine, full support requires more
+                changes in the core of GNUnet
+                It will soon be available via pkgsrc.
+                <li>Many things changed on the build system side. If you package
+                GNUnet for an operating system or otherwise package manager,
+                make sure that you read the README.</li>
+              </ul>
+              The above is just the short list, our bugtracker lists
+              <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
+                over 100 individual issues</a> that were resolved since 0.11.0pre66.
 
-    The Web site and manuals have undergone significant rework. You can find an archive of the old Web site at old.gnunet.org.
-    The code now builds again on macOS. GNUnet on macOS is experimental. While it builds and seems to run fine, some tests are known to fail.
-    Build process now works properly with libidn2
-    Except for gnunet-qr, all Python code was migrated to Python 3.7.
-    Fixed security issues in secret sharing cryptography logic
-    Services running out of file descriptors on accept() no longer busy wait
-    Fixed crash in gnunet-gns2dns proxy
-    GNS responses are now padded to minimize information disclosure from the size
-    Fixed API issues and (rare) crash bugs in CADET
-    The experimental SecuShare code is not included in the release, you can now find it in the gnunet-secushare Git repository.
-    The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.
-    GNUnet now includes a decentralised identity attribute sharing service: reclaimID. A ready-to-use client can be found in an external repo.
-    The code now builds again on NetBSD. GNUnet on NetBSD is experimental. While it builds and seems to run fine, full support requires more changes in the core of GNUnet It will soon be available via pkgsrc.
-    Many things changed on the build system side. If you package GNUnet for an operating system or otherwise package manager, make sure that you read the README.
-
-The above is just the short list, our bugtracker lists over 100 individual issues that were resolved since 0.11.0pre66.
-Known Issues
-
-    There are known major design issues in the TRANSPORT, ATS and CORE subsystems which will need to be addressed in the future to achieve acceptable usability, performance and security.
-    There are known moderate implementation limitations in CADET that negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.
-    There are known moderate design issues in FS that also impact usability and performance.
-    There are minor implementation limitations in SET that create unnecessary attack surface for availability.
-    The RPS subsystem remains experimental.
-    Some high-level tests in the test-suite fail non-deterministically due to the low-level TRANSPORT issues.
-
-In addition to this list, you may also want to consult our bug tracker at bugs.gnunet.org which lists about 150 more specific issues.
+                <h4>Known Issues</h4>
+                <ul>
+                  <li>There are known major design issues in the TRANSPORT, ATS and CORE subsystems
+                  which will need to be addressed in the future to achieve acceptable usability,
+                  performance and security.</li>
+                  <li>There are known moderate implementation limitations in CADET that
+                  negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.</li>
+                  <li>There are known moderate design issues in FS that also impact
+                  usability and performance.</li>
+                  <li>There are minor implementation limitations in SET that create
+                  unnecessary attack surface for availability.</li>
+                  <li>The RPS subsystem remains experimental.</li>
+                  <li>Some high-level tests in the test-suite fail non-deterministically due to
+                  the low-level TRANSPORT issues.</li>
+                </ul>
+                <p>
+                  In addition to this list, you may also want to consult our bug tracker
+                  at <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a> which lists
+                  about 150 more specific issues.
+                </p>
+              </p>
+            </article>
       </description>
     </item>
   </channel>
