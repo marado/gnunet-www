@@ -95,8 +95,8 @@ about 150 more specific issues.
 This release was the work of many people. The following people
 contributed code and were thus easily identified:
 Christian Grothoff, Matthias Wachs, Bart Polot, Sree Harsha Totakura,
-Nathan S. Evans, Martin Schanzenbach, Julius Bünger, ng0,
-Philipp Tölke, Florian Dold, Руслан Ижбулатов, tg(x), David Barksdale,
+Nathan S. Evans, Martin Schanzenbach, Julius B&#xFC;nger, ng0,
+Philipp T&#xF6;lke, Florian Dold, &#x420;&#x443;&#x441;&#x43B;&#x430;&#x43D; &#x418;&#x436;&#x431;&#x443;&#x43B;&#x430;&#x442;&#x43E;&#x432;, tg(x), David Barksdale,
 Christian Fuchs, Nils Durner, Omar Tarabai, Maximilian Szengel, Supriti
 Singh, lurchi, David Brodski, xrs, Fabian Oehlmann, Carlo von lynX,
 Christophe Genevey Metat, Jeffrey Burdges, Safey A.Halim, Daniel Golle,
