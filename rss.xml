@@ -147,7 +147,7 @@
 
           <p>
             We are pleased to announce the release of GNUnet 0.11.0.
-            <p>
+          </p>
 
               <p>
                 This is a major release after about five years of development.  In
@@ -181,56 +181,88 @@
               <h4>Noteworthy changes in 0.11.0</h4>
 
               <ul>
-                <li>The Web site and manuals have undergone significant rework. You can find an
-                archive of the old Web site at <a href="https://old.gnunet.org/">old.gnunet.org</a>.</li>
-                <li>The code now builds again on macOS. GNUnet on macOS is <i>experimental</i>.
-                While it builds and seems to run fine, some tests are known to fail.</li>
-                <li>Build process now works properly with libidn2</li>
-                <li>Except for <tt>gnunet-qr</tt>, all Python code was migrated to Python 3.7.</li>
-                <li>Fixed security issues in secret sharing cryptography logic</li>
-                <li>Services running out of file descriptors on <tt>accept()</tt> no longer busy wait</li>
-                <li>Fixed crash in gnunet-gns2dns proxy</li>
-                <li>GNS responses are now padded to minimize information disclosure from the size</li>
-                <li>Fixed API issues and (rare) crash bugs in CADET</li>
-                <li>The experimental SecuShare code is not included in the release, you can
-                now find it in the <a href="https://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a>
-                Git repository.</li>
-                <li>The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.</li>
-                <li>GNUnet now includes a decentralised identity attribute sharing service:
-                reclaimID. A ready-to-use client can be found in an
-                <a href="https://gitlab.com/reclaimid/client">external repo</a>.</li>
-                <li>The code now builds again on NetBSD. GNUnet on NetBSD is <i>experimental</i>.
-                While it builds and seems to run fine, full support requires more
-                changes in the core of GNUnet
-                It will soon be available via pkgsrc.
-                <li>Many things changed on the build system side. If you package
-                GNUnet for an operating system or otherwise package manager,
-                make sure that you read the README.</li>
+                <li>
+                  The Web site and manuals have undergone significant rework. You can find an
+                  archive of the old Web site at <a href="https://old.gnunet.org/">old.gnunet.org</a>.
+                </li>
+                <li>
+                  The code now builds again on macOS. GNUnet on macOS is <i>experimental</i>.
+                  While it builds and seems to run fine, some tests are known to fail.
+                </li>
+                <li>
+                  Build process now works properly with libidn2
+                </li>
+                <li>
+                  Except for <tt>gnunet-qr</tt>, all Python code was migrated to Python 3.7.
+                </li>
+                <li>
+                  Fixed security issues in secret sharing cryptography logic
+                </li>
+                <li>
+                  Services running out of file descriptors on <tt>accept()</tt> no longer busy wait
+                </li>
+                <li>
+                  Fixed crash in gnunet-gns2dns proxy
+                </li>
+                <li>
+                  GNS responses are now padded to minimize information disclosure from the size
+                </li>
+                <li>
+                  Fixed API issues and (rare) crash bugs in CADET
+                </li>
+                <li>
+                  The experimental SecuShare code is not included in the release, you can now find it in the <a href="https://git.gnunet.org/gnunet-secushare/">gnunet-secushare</a> Git repository.
+                </li>
+                <li>
+                  The Ascension tool (separate download) now allows importing DNS zones into GNS via AXFR.
+                </li>
+                <li>
+                  GNUnet now includes a decentralised identity attribute sharing service: reclaimID. A ready-to-use client can be found in an <a href="https://gitlab.com/reclaimid/client">external repo</a>.
+                </li>
+                <li>
+                  The code now builds again on NetBSD. GNUnet on NetBSD is <i>experimental</i>. While it builds and seems to run fine, full support requires more changes in the core of GNUnet It will soon be available via pkgsrc.
+                </li>
+                <li>
+                  Many things changed on the build system side. If you package GNUnet for an operating system or otherwise package manager, make sure that you read the README.
+                </li>
               </ul>
-              The above is just the short list, our bugtracker lists
+              <p>
+                The above is just the short list, our bugtracker lists
               <a href="https://bugs.gnunet.org/changelog_page.php?version_id=258">
                 over 100 individual issues</a> that were resolved since 0.11.0pre66.
+              </p>
 
-                <h4>Known Issues</h4>
-                <ul>
-                  <li>There are known major design issues in the TRANSPORT, ATS and CORE subsystems
+              <h4>Known Issues</h4>
+              <ul>
+                <li>
+                  There are known major design issues in the TRANSPORT, ATS and CORE subsystems
                   which will need to be addressed in the future to achieve acceptable usability,
-                  performance and security.</li>
-                  <li>There are known moderate implementation limitations in CADET that
-                  negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.</li>
-                  <li>There are known moderate design issues in FS that also impact
-                  usability and performance.</li>
-                  <li>There are minor implementation limitations in SET that create
-                  unnecessary attack surface for availability.</li>
-                  <li>The RPS subsystem remains experimental.</li>
-                  <li>Some high-level tests in the test-suite fail non-deterministically due to
-                  the low-level TRANSPORT issues.</li>
-                </ul>
-                <p>
-                  In addition to this list, you may also want to consult our bug tracker
-                  at <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a> which lists
-                  about 150 more specific issues.
-                </p>
+                  performance and security.
+                </li>
+                <li>
+                  There are known moderate implementation limitations in CADET that
+                  negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.
+                </li>
+                <li>
+                  There are known moderate design issues in FS that also impact
+                  usability and performance.
+                </li>
+                <li>
+                  There are minor implementation limitations in SET that create
+                  unnecessary attack surface for availability.
+                </li>
+                <li>
+                  The RPS subsystem remains experimental.
+                </li>
+                <li>
+                  Some high-level tests in the test-suite fail non-deterministically due to
+                  the low-level TRANSPORT issues.
+                </li>
+              </ul>
+              <p>
+                In addition to this list, you may also want to consult our bug tracker
+                at <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a> which lists
+                about 150 more specific issues.
               </p>
             </article>
       </description>
