@@ -19,6 +19,7 @@
           website.
         &lt;/p&gt;
       </description>
+      <pubDate>Fri, 01 June 2018 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>2019-02: Topics for GSoC 2019</title>
@@ -124,7 +125,8 @@
                     &lt;br/&gt;
                     Mentor: Martin Schanzenbach
                   &lt;/p&gt;
-      </description>
+                </description>
+                <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>2019-02: GNUnet 0.11.0 released</title>
@@ -253,7 +255,8 @@
                 at &lt;a href=&quot;https://bugs.gnunet.org/&quot;&gt;bugs.gnunet.org&lt;/a&gt; which lists
                 about 150 more specific issues.
               &lt;/p&gt;
-      </description>
+            </description>
+            <pubDate>Thu, 28 February 2018 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
