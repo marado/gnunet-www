@@ -30,6 +30,7 @@ all: locale template
 	cp rss.xml rendered/es/rss.xml
 	cp rss.xml rendered/fr/rss.xml
 	cp rss.xml rendered/it/rss.xml
+	cp static/moved.html rendered/frontpage.html
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need
