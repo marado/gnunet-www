@@ -31,6 +31,7 @@ all: locale template
 	cp rss.xml rendered/fr/rss.xml
 	cp rss.xml rendered/it/rss.xml
 	cp static/moved.html rendered/frontpage.html
+	cd rendered; ln -s frontpage.html frontpage
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need
