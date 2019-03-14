@@ -15,16 +15,19 @@
     }
   </style>
 </noscript>
-<nav class="navbar navbar-toggleable navbar-toggleable-md navbar-expand-md navbar-inverse navbar-dark fixed-top bg-dark">
+<!-- <nav class="navbar navbar-toggleable navbar-toggleable-md navbar-expand-md navbar-inverse navbar-dark fixed-top bg-dark"> -->
+<!--<nav class="navbar navbar-expand-md navar-inverse navbar-dark bg-dark fixed-top"> -->
+<nav class="navbar navbar-expand-md fixed-top">
   <a class="navbar-brand" href="index.html">
     <!-- 
       TODO: imo this is bad in the navbar.
       a readable "gnunet" font-logo would
       be better for orientation.
       -->
-    <img src="{{ url('static/images/gnunet-icon.png') }}" alt="GNUnet Home Icon" />
-    <!-- <img width="70%" height="70%" src="../static/images/gnunet-logo-dark-only-text.svg" alt="" /> -->
+      <img src="{{ url('static/images/gnunet-icon.png') }}" alt="GNUnet Home Icon" />
   </a>
+
+  <!-- menu button -->
   <button class="navbar-toggler navbar-toggler-right custom-toggler"
           type="button"
           data-toggle="collapse"
@@ -32,10 +35,13 @@
           aria-controls="navbarMain"
           aria-expanded="false"
           aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
   </button>
+  <!-- /menu button -->
+
+  <!-- navbar -->
   <div class="collapse navbar-collapse" id="navbarMain">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto nav">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
            role="button" aria-haspopup="true" aria-expanded="false">
@@ -69,7 +75,7 @@
 	   role="button"
 	   aria-haspopup="true"
 	   aria-expanded="false">
-	  {{ _("Documentation") }}
+	   {{ _("Documentation") }}
 	</a>
 	<ul class="dropdown-menu" aria-labelledby="navbarMain">
 	  <li><a class="dropdown-item" href="tutorial.html">{{ _("Tutorials") }}</a></li>
@@ -81,18 +87,13 @@
 	</ul>
       </li>
     </ul>
-    <ul class="navbar-nav navbar-right">
+    <ul class="navbar-nav navbar-right nav">
       <li class="nav-item dropdown">
-        <!--
-          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            <img src="{{ url('static/images/languageicon.svg') }}" height="15" alt="[{{lang}}]" /> {{ lang_full }} [{{ lang }}] 
-          </button>
-          -->
-	  <a class="nav-link dropdown-toggle" href="#"
-             data-toggle="dropdown" role="button"
-             aria-haspopup="true" aria-expanded="false">
-             {{ lang_full }} [{{ lang }}]
-          </a>
+	<a class="nav-link dropdown-toggle" href="#"
+           data-toggle="dropdown" role="button"
+           aria-haspopup="true" aria-expanded="false">
+           {{ lang_full }} [{{ lang }}]
+        </a>
         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ self_localized('en') }}">English [en]</a></li>
           <li><a class="dropdown-item" href="{{ self_localized('de') }}">Deutsch [de]</a></li>
@@ -100,7 +101,7 @@
           <li><a class="dropdown-item" href="{{ self_localized('it') }}">Italiano [it]</a></li>
           <li><a class="dropdown-item" href="{{ self_localized('es') }}">Espa&ntilde;ol [es]</a></li>
         </ul>
-      </li>
-    </ul>
-  </div>
+      </li> <!-- /navbar-right dropdown -->
+    </ul> <!-- /navbar-right -->
+  </div> <!-- /navbar -->
 </nav>
