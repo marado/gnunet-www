@@ -108,18 +108,10 @@ Mentor: Martin Schanzenbach
 <section>
 <h4>Enable all networking applications to run over GNUnet out of the box</h4>
 <p>
-One great problem of the current Internet is the lack of disintermediation. When people want to talk they need a chat service. When they want to share files they need a file transfer service. Although GNUnet already possesses quite advanced integration into Linux networking, a little extra work is needed for existing applications like irc, www, ftp, rsh, nntpd to run over it in a peer-to-peer way, simply by using a GNS hostname like friend.gnu. Once people have added a person to their GNS they can immediately message, exchange files and suchlike directly, with nothing but the GNUnet in the middle, using applications that have been distributed with unix systems ever since the 1980's. We can produce an OS distribution where these things work out of the box with the nicknames of people instead of cloud services. We discussed this topic at the 2018 GNUnet Hacker Meeting, and concluded that it will take the following:
-</p>
-<ol>
-<li>Deterministic allocation of IP addresses in exit range by PeerId AND CADET port.</li>
-<li>Change of exit daemon to exit service, with new APIs to (a) export mapping of allocated IP addresses to PeerID and CADET port (and eventually also dynamic adding/removing of exit maps)</li>
-<li>New service that hijacks DNS reverse lookups in the exit range, mapping them to its own GNS zone where labels are mapped to VPN records with the information from (2), and the label.zone is returned for the reverse lookup.</li>
-</ol>
-<p>
-For more information and context, read <a href="https://bugs.gnunet.org/view.php?id=4625">bug id 4625</a>.
+One great problem of the current Internet is the lack of disintermediation. When people want to talk they need a chat service. When they want to share files they need a file transfer service. Although GNUnet already possesses quite advanced integration into Linux networking, a little extra work is needed for existing applications like irc, www, ftp, rsh, nntpd to run over it in a peer-to-peer way, simply by using a GNS hostname like friend.gnu. Once people have added a person to their GNS they can immediately message, exchange files and suchlike directly, with nothing but the GNUnet in the middle, using applications that have been distributed with unix systems ever since the 1980's. We can produce an OS distribution where these things work out of the box with the nicknames of people instead of cloud services. For more information and context, read <a href="https://bugs.gnunet.org/view.php?id=4625">bug id 4625</a>.
 </p>
 <p>
-Mentors: lynX, dvn
+Mentors: lynX &amp; dvn
 </p>
 </section>
 </article>
