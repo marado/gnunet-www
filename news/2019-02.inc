@@ -119,7 +119,7 @@ One great problem of the current Internet is the lack of disintermediation. When
 For more information and context, read <a href="https://bugs.gnunet.org/view.php?id=4625">bug id 4625</a>.
 </p>
 <p>
-Mentor: lynX
+Mentors: lynX, dvn
 </p>
 </section>
 </article>
