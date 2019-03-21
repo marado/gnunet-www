@@ -1,0 +1,204 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+  <article class="d-flex flex-column p-2 bd-highlight">
+    <div class="container">
+      <div class="text-center">
+        <header>
+          <h1>{{ _("GNUnet's Google Summer of Code projects") }}</h1>
+        </header>
+        <p>
+          {% trans %}
+            As a GNU project, GNUnet has participated in the
+            Google Summer of Code (GSoC) for a number of years.
+            This page lists all current, past, and finished
+            projects.
+          {% endtrans %}
+        </p>
+      </div>
+        <h2>{{ _("Current projects (2019)") }}</h2>
+        <section>
+          <h4>Android Port</h4>
+          <p>
+            {% trans %}
+              It is time for GNUnet to run properly on Android.  Note that
+              GNUnet is written in C, and this is not about rewriting
+              GNUnet in Java, but about getting the C code to run on Android.
+              <br>
+              Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
+            {% endtrans %}
+          </p>
+        </section>
+
+        <section>
+          <h4>Help with Continuous Integration setup</h4>
+          <p>
+            {% trans %}
+              There is a push for migrating our CI to Gitlab.  The CI should
+              eventually not just run "make check" on various platforms, but also
+              perform tests with multiple peers running in different VMs with
+              specific network topologies (i.e. NAT) between them being simulated.
+              The CI should also be integrated with Gauger for performance
+              regression analysis.  Running jobs only when dependencies have changed
+              and scripting more granular triggers or ideally automatic dependency
+              discovery (as done by the autotools) is also important.
+              <br>
+              Mentor: TBD
+            {% endtrans %}
+          </p>
+        </section>
+
+        <section>
+          <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
+          <p>
+            {% trans %}
+              Python 2.7 is reaching its end-of-life, and we want to get rid
+              of the dependency on Python. The existing gnunet-qr tool is a
+              rather simple wrapper around python-zbar, which itself wraps
+              libzbar. The goal of this project is to directly use libzbar
+              to scan QR codes for GNUnet / the GNU Name System (see
+              also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
+              <br>
+              Mentor: Christian Grothoff
+            {% endtrans %}
+          </p>
+        </section>
+
+        <section>
+          <h4>re:claimID OpenID Connect performance improvements</h4>
+          <p>
+            {% trans %}
+              reclaimID is a decentralized identity system build on top of the GNU
+              Name System.
+              Upon authorization, the user provides a requesting party (RP) such as a website
+              with an authorization ticket (e.g. piggybacked in an OpenID authorization code).
+              The RP uses information contained in this ticket to
+              <ol>
+                <li> Retrieve the decryption key from GNS</li>
+                <li> Retrieve the user attributes from GNS</li>
+              </ol>
+              The GNS lookups ensure that the RP receives up-to-date attributes and functional
+              decryption keys. However, in particular the RP-specific encryption key
+              resolution can be slow and even fail depending on the network topology.
+              We propose that in an initial exchange, in particular OpenID authorization code
+              flows, we try to incorporate key and maybe even an attribute set in the ticket
+              exchange.
+
+              In order to mitigate this issue, this project is meant to investigate and implement how...
+              <ol>
+                <li> ... decryption keys can be added to an initial exchange in OpenID.</li>
+                <li> ... initial set(s) of attributes can be piggybacked in OpenID.</li>
+              </ol>
+              <br/>
+              Mentor: Martin Schanzenbach
+            {% endtrans %}
+          </p>
+        </section>
+
+        <section>
+          <h4>re:claimID alternative GNS-based encryption</h4>
+          <p>
+            {% trans %}
+              re:claimID is a decentralized identity system build on top of the GNU
+              Name System.
+              The initial design and implementation of re:claimID includes an attribute-based
+              encryption module in order to prevent unauthorized access to attributes in the
+              name system.
+              Our motivation for re:claimID was for it to be name system agnostic, which
+              means the design theoretically also works for other name systems such as
+              namecoin.
+              Other name systems often do not have built-in mechanisms in order to do this.
+              Hence, we implemented an ABE access control layer. Our ABE implementation
+              requires two third party libraries: libpbc and libgabe. While we could merge
+              libgabe into the gnunet service implementation of re:claimID, libpbc is a
+              rather large, third party library which lacks packaging in distributions and
+              for platforms.
+              On the other hand, GNS supports record data encryption using symmetric keys as
+              labels.
+              If we make the access control layer of re:claimID more generic in order to
+              support both ABE and GNS encryption, we could reduce the required depenencies.
+              This would result in gnunet packages to include re:claimID by default.
+
+              In short, the goals are to...
+              <ol>
+                <li> ... improve performance by reducing encryption overhead.</li>
+                <li> ... reduce dependencies.</li>
+              </ol>
+              <br/>
+              Mentor: Martin Schanzenbach
+            {% endtrans %}
+          </p>
+        </section>
+
+        <section>
+          <h4>Enable all networking applications to run over GNUnet out of the box</h4>
+          <p>
+            {% trans %}
+              One great problem of the current Internet is the lack of
+              disintermediation. When people want to talk they need a
+              chat service. When they want to share files they need a
+              file transfer service. Although GNUnet already possesses
+              quite advanced integration into Linux networking, a little
+              extra work is needed for existing applications like irc,
+              www, ftp, rsh, nntpd to run over it in a peer-to-peer way,
+              simply by using a GNS hostname like friend.gnu. Once
+              people have added a person to their GNS they can
+              immediately message, exchange files and suchlike directly,
+              with nothing but the GNUnet in the middle, using
+              applications that have been distributed with unix systems
+              ever since the 1980's. We can produce an OS distribution
+              where these things work out of the box with the nicknames
+              of people instead of cloud services. We have discussed
+              about this topic at the 2018 GNUnet Hacker Meeting, and
+              concluded that this will take
+            {% endtrans %}
+          </p>
+          <ol>
+            <li>
+              {% trans %}
+                deterministic allocation of IP addresses in exit range
+                by PeerId AND CADET port.
+              {% endtrans %}
+            </li>
+            <li>
+              {% trans %}
+                change of exit daemon to exit service, with new APIs to
+                (a) export mapping of allocated IP addresses to PeerID
+                and CADET port (and eventually also dynamic
+                adding/removing of exit maps)
+              {% endtrans %}
+            </li>
+            <li>
+              {% trans %}
+                new service that hijacks DNS reverse lookups in the exit
+                range, mapping them to its own GNS zone where labels are
+                mapped to VPN records with the information from (2), and
+                the label.zone is returned for the reverse lookup.
+              {% endtrans %}
+            </li>
+          </ol>
+          <p>
+            {% trans %}
+              For more information and context,
+              read
+              <a href="https://bugs.gnunet.org/view.php?id=4625">bug id 4625</a>.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentors: lynX, dvn
+            {% endtrans %}
+          </p>
+        </section>
+        <!--
+          Past projects: Previously proposed, but left
+          unfinished. Inspiration for students.
+        -->
+        <!-- <h2>{{ _("Past projects") }}</h2> -->
+        <!--
+          Commentary: Finished projects, descriptions and
+          Links to write-ups about them.
+        -->
+        <!-- <h2>{{ _("Finished projects") }}</h2> -->
+      </div>
+  </article>
+{% endblock body_content %}
