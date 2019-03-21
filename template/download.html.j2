@@ -1,0 +1,43 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+  <article class="d-flex flex-column p-2 bd-highlight">
+    <div class="container">
+      <div class="text-center">
+        <header>
+          <h1>{{ _("Downloads") }}</h1>
+        </header>
+        <br />
+        <p>
+          {% trans %}
+            Here you can download releases of our software and
+            find links to the various versions.
+          {% endtrans %}
+        </p>
+      </div>
+      <h2>{{ _("0.11.x series") }}</h2>
+      <h3>{{ _("tarball") }}</h3>
+      <p>
+        {% trans %}
+          The tarball of version 0.11.0 can be obtained from
+          GNU FTP and its mirrors.
+        {% endtrans %}
+      </p>
+      <ul>
+        <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz">gnunet-0.11.0.tar.gz</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.0.tar.gz.sig">electronic signature</a>)</li>
+        <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz">gnunet-gtk-0.11.0.tar.gz</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig">electronic signature</a>)</li>
+        <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz">gnunet-fuse-0.11.0.tar.gz</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">electronic signature</a>)</li>
+      </ul>
+      <h3>{{ _("git") }}</h3>
+      <p>
+        {% trans %}
+          You can fetch the git tag of version 0.11.0 from our development server:
+        {% endtrans %}
+      </p>
+      <ul>
+        <li>git clone --branch v0.11.0 https://gnunet.org/git/gnunet.git</li>
+        <li>git clone --branch v0.11.0 https://gnunet.org/git/gnunet-gtk.git</li>
+        <li>git clone --branch v0.11.0 https://gnunet.org/git/gnunet-fuse.git</li>
+      </ul>
+    </div>
+  </article>
+{% endblock body_content %}
