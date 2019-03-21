@@ -6,7 +6,7 @@
 <p>
 GNUnet is participating in the Google Summer of Code
 again through GNU. If you are interested in any of
-there projects, reach out to us!
+these projects, reach out to us!
 </p>
 <section>
 <h4>Android Port</h4>
