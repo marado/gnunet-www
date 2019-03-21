@@ -104,4 +104,36 @@ In short, the goals are to...
 Mentor: Martin Schanzenbach
 </p>
 </section>
+
+<section>
+<h4>Enable all networking applications to run over GNUnet out of the box</h4>
+<p>
+For many kinds of applications we need to authenticate incoming
+connections as coming from a certain person or at least from a
+certain peer.
+The GNUnet exit daemon is currently not providing a way to
+find out who is calling.
+Resolving the virtual IP number would be the most backward
+compatible method. Best if it resolves to the same "hostname"
+as the matching outgoing <nickname>.gnu, or even uses the
+same virtual IP as an outgoing VPN tunnel would use.
+
+We have discussed about this topic at the 2018 GNUnet Hacker
+Meeting, and concluded that this will take
+</p>
+<ol>
+<li>deterministic allocation of IP addresses in exit range by PeerId AND CADET port.</li>
+<li>change of exit daemon to exit service, with new APIs to (a) export mapping of allocated IP addresses to PeerID and CADET port (and eventually also dynamic adding/removing of exit maps)</li>
+<li>new service that hijacks DNS reverse lookups in the exit range, mapping them to its own GNS zone where labels are mapped to VPN records with the information from (2), and the label.zone is returned for the reverse lookup.</li>
+</ol>
+<p>
+If we implement this, all networking applications will be able to use
+GNUnet out of the box. Instead of implementing gnunet-native solutions
+over and over again, existing ones can be reused.<br>
+For more information and context, read <a href="https://bugs.gnunet.org/view.php?id=4625">bug id 4625</a>.
+</p>
+<p>
+Mentor: TBD
+</p>
+</section>
 </article>
