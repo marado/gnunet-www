@@ -23,7 +23,10 @@
               It is time for GNUnet to run properly on Android.  Note that
               GNUnet is written in C, and this is not about rewriting
               GNUnet in Java, but about getting the C code to run on Android.
-              <br>
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
               Mentor: <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
             {% endtrans %}
           </p>
@@ -41,7 +44,10 @@
               regression analysis.  Running jobs only when dependencies have changed
               and scripting more granular triggers or ideally automatic dependency
               discovery (as done by the autotools) is also important.
-              <br>
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
               Mentor: TBD
             {% endtrans %}
           </p>
@@ -158,16 +164,321 @@
             {% endtrans %}
           </p>
         </section>
+        <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
+        <h2>{{ _("Past projects") }}</h2>
+        <section>
+          <h4>Rust APIs for GNUnet services</h4>
+          <p>
+            {% trans %}
+              There are a variety of GNUNet APIs that should be
+              exposed in the Rust wrappers.  Implementing these will
+              require extending the port of GNUNet utils written by
+              Andrew Cann and Kelong Cong.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              As an introduction to the code base, we suggest that the
+              student and Jeff Burdges together update the
+              asynchronous IO system from gjio to futures-rs or
+              another layer built upon it.  Jeff Burdges is expected
+              to concurrently be implementing a GNUNet API for his own
+              mix network work.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentors: Jeff Burdges
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: Rust
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: low
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h3>Tor compatibility for GNUnet</h3>
+          <p>
+            {% trans %}
+              Implement the AnycastExit spec to enable GNUnet clients
+              to connect over Tor.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentor: Jeff Burdges
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Note: There was a Special TLDs spec to allow Tor to
+              resolve domain names using GNS over Tor too, but
+              currently that's on hold until folks think more about
+              how names should be moved around the local system. We're
+              calling this more collaborative approach NSS2 for now.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: C
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: medium
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h3>Android compatibility for GNUnet</h3>
+          <p>
+            {% trans %}
+              Implement rudimentary Android compatibility for GNUnet,
+              in part by porting the GNUnet utils scheduler to act as
+              a thin wrapper over libuv.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentors: Jeff Burdges and Christian Grothoff
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h3>Implementation of a replacement for PANDA</h3>
+          <p>
+            {% trans %}
+              Implementation of a replacement for PANDA (see Pond)
+              with better security, and maybe integration with the GNU
+              Name System for key exchange.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentor: Jeff Burdges
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: Rust or C, crypto
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: high
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h3>GNUnet Web-based User Interface</h3>
+          <p>
+            {% trans %}
+              Implementation of a Web-based UI for GNUnet similar to
+              GNUnet-Gtk with a yet to be determined framework such as
+              Angular2. This includes the design and implementation of
+              not yet existing <a href="http://jsonapi.org/">REST APIs</a>
+              that expose the
+              <a href="https://gnunet.org/doxygen/modules.html">GNUnet API</a>.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentor: Martin Schanzenbach
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: C, JavaScript, CSS
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: medium
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h3>secushare: Implement social networking features on top of pubsub channels</h3>
+          <p>
+            {% trans %}
+              Implement different place types and file sharing by
+              creating a new place for the shared content.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Place types to be implemented:
+            {% endtrans %}
+          </p>
+          {% trans %}
+          <ul>
+            <li>File: generic file with comments</li>
+            <li>Image: display an image with comments referencing a region of the image</li>
+            <li>Sound: play a sound file with comments referencing a timestamp</li>
+            <li>Directory/Album: pointers to File / Image / Sound places</li>
+            <li>Event: with RSVP</li>
+            <li>Survey: ask your social neighborhood questions in a structured form</li>
+          </ul>
+          {% endtrans %}
+          <p>
+            {% trans %}
+              Also provide the following UI functionality:
+            {% endtrans %}
+          </p>
+          {% trans %}
+          <ul>
+            <li>Fork existing channels, reorganize people into new chatrooms or channels.</li>
+            <li>Share a post (edit and repost something elsewhere, on a fan page for example).</li>
+            <li>Edit a previously published post + offer edit history to readers.</li>
+            <li>Control expiry of channel history.</li>
+          </ul>
+          {% endtrans %}
+          <p>
+            {% trans %}
+              See also <a href="http://secushare.org/features">http://secushare.org/features</a>
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentors: lynX
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: C/C++
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: high
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h4>secushare: Implement a Social Graph API for adoption and more</h4>
+          <p>
+            {% trans %}
+              Implement aggregation of distributed state from
+              various channels
+              in order to provide for a powerful social graph API capable of
+              producing social network profiles, dashboards,
+              a calendar out of
+              upcoming event invitations (if available),
+              social search functionality
+              and most of all to make it easy for users to
+              adopt cryptographic
+              identities of their contacts/friends simply by finding
+              them in the
+              social graph of their
+              existing contacts ("This is Linda. You have 11
+              contacts in common with her. [ADD]").
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Related to
+              <a href="http://secushare.org/rendezvous">secushare.org/rendezvous</a>
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentors: t3sserakt, lynX
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: C
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: high
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h4>secushare: Implement integration with tradition e-mail</h4>
+          {% trans %}
+            <ul>
+              <li>
+                Emulate IMAP/SMTP protocols as necessary to transform
+                traditional mail clients into secushare user
+                interfaces.
+              </li>
+              <li>
+                Think of ways to map e-mail addresses to secushare
+                identities.
+              </li>
+              <li>
+                Encode or translate various e-mail features into
+                secushare equivalents.
+              </li>
+              <li>
+                Parts of secushare are currently written in Rust,
+                therefore Rust is preferred for this task but it is
+                not an requirement.
+              </li>
+            </ul>
+          {% endtrans %}
+          <p>
+            {% trans %}
+              Mentors: t3sserakt, lynX
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: C
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: high
+            {% endtrans %}
+          </p>
+        </section>
+        <section>
+          <h4>GNUnet auction</h4>
+          <p>
+            {% trans %}
+              Implementation of the GNUnet auction system described in
+              Chapter 3 of
+              <a href="https://gnunet.org/libbrand-thesis">this thesis</a>.
+              Specific tasks are adding smart
+              contract creation and round time enforcement to
+              libbrandt as well as creating the
+              GNUnet auction service, library and the three user interface
+              programs create, info and join.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Mentors: mate, cg
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Required Skills: C
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Difficulty level: medium
+            {% endtrans %}
+          </p>
+        </section>
         <!--
-          Past projects: Previously proposed, but left
-          unfinished. Inspiration for students.
-        -->
-        <!-- <h2>{{ _("Past projects") }}</h2> -->
+          <h2>{{ _("Finished projects") }}</h2>
+          -->
         <!--
-          Commentary: Finished projects, descriptions and
-          Links to write-ups about them.
-        -->
-        <!-- <h2>{{ _("Finished projects") }}</h2> -->
+            Commentary: Finished projects, descriptions and
+            Links to write-ups about them.
+            -->
       </div>
   </article>
 {% endblock body_content %}
