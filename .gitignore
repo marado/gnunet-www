@@ -19,6 +19,8 @@ ru/
 __pycache__
 *.pyc
 
+sitemap.html
+
 *~
 \#*\#
 futility_engine_loader.sh
