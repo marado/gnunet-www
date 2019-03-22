@@ -1,0 +1,117 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+  <article class="d-flex flex-column p-2 bd-highlight">
+    <div class="container">
+      <div class="text-center">
+        <header>
+          <h1>{{ _("GSoC 2018: GNUnet WebUI") }}</h1>
+        </header>
+        <br />
+        <p>
+          {% trans %}
+            Tue, 08/14/2018 - 07:55, Phil Buschmann
+          {% endtrans %}
+        </p>
+      </div>
+      <p>
+        {% trans %}
+          <strong>What was done?</strong><br />
+          In the context of Google Summer of Code 2018, my mentor
+          (Martin Schanzenbach) and I have worked on creating and
+          extending the REST API of GNUnet. Currently, we mirrored
+          the functionality of following commands:
+        {% endtrans %}
+      </p>
+      <p>
+        gnunet-identity<br />
+        gnunet-namestore<br />
+        gnunet-gns<br />
+        gnunet-peerinfo
+      </p>
+      <p>
+        {% trans %}
+          Additionally, we developed a website with the Javascript
+          framework Angular 6 and the design framework iotaCSS to use
+          the new REST API. The REST API of GNUnet is now documented
+          with Sphinx.
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          <strong>Why did we create a REST API?</strong><br />
+          ... when you can use the command line tools?<br />
+          We need to keep in mind, that everyone has the right to stay secure
+          and private but not everyone feels comfortable using a terminal. The
+          further developed REST access to GNUnet APIs in addition to the new
+          web application allows new users to interact with GNUnet over a well
+          known tool: their browsers. This addition to the C API and the command
+          line tools may attract new users and developers.
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          <strong>How can we use it?</strong><br />
+          1. The REST API developed in GNUnet<br /> The REST API is
+          already merged into the gnunet.git repository
+          (<a href="https://gnunet.org/git/gnunet.git/">GNUnet Main Git</a>).<br />
+          To use the new features, clone the repository
+          and follow the <a href="https://gnunet.org/installation">Installation</a>
+          on gnunet.org. Then, start the rest service with "gnunet-arm -i rest".
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          2. The Web Application<br />
+          The web application is available under the gnunet-webui.git
+          repository
+          (<a href="https://gnunet.org/git/gnunet-webui.git/">GNUnet WebUI Git</a>).<br />
+          You need to install the newest version of 'node' and
+          'yarn'. Dependent on your system, you may need to download
+          newer versions and install them manually and not over your
+          packet manager. After the installation succeeded, you need to
+          clone the repository. Then, you need to run "yarn install" and
+          "yarn start" for testing purposes. To deploy the website (keep
+          in mind, that this website communicates with another localhost
+          instance) use "yarn build" for building the web application
+          and use the output in the 'dist' directory.
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          3. The Documentation<br />
+          The documentation is available under the gnunet-rest-api.git
+          repository
+          (<a href="https://gnunet.org/git/gnunet-rest-api.git/">GNUnet REST API Docmentation Git</a>).<br />
+          Clone the repository
+          and "make html". Then open the 'index.html' under
+          'build/html/'.
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          Please, give it a try and contact me, if you find any
+          bugs or unintentional features. ;)
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          <strong>What can be improved?</strong><br />
+          Right now, the build process of the web application may be a
+          little too complex for a casual user. We may be able to solve
+          this by using docker.<br />  Additionally, the web application
+          does not prevent wrong inputs but responds with error
+          messages. Adding GNUnet Records is currently only usable for
+          people, who know how a GNS Record looks like. This can be
+          adapted to each record type.<br />
+          Last but not least, additional features, design changes,
+          etc...
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          Thanks for reading.
+        {% endtrans %}
+      </p>
+    </div>
+  </article>
+{% endblock body_content %}
