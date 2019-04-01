@@ -226,12 +226,16 @@
   </p>
   
   <h5>{{ _("Option 1: GNUnet for production / usage") }}</h5>
-
+  <p>
+    We are assuming a shell and environment which exports $HOME.
+    If $HOME is not exported, do so or replace $HOME accordingly
+    in the instructions given below.
+  </p>
   <p>
   <code>
   $ cd ~/src/gnunet/gnunet<br>
   $ sh ./bootstrap<br>
-  $ LDFLAGS=-L/usr/pkg/lib ./configure --prefix=~/gnunet
+  $ LDFLAGS=-L/usr/pkg/lib ./configure --prefix=$HOME/gnunet
   </code>
   </p>
   <p>
@@ -255,7 +259,7 @@
   </p>
   <p>
   <code>
-  $ LDFLAGS=-L/usr/pkg/lib CFLAGS="-g -O0" ./configure --prefix=~/gnunet --enable-logging=verbose
+  $ LDFLAGS=-L/usr/pkg/lib CFLAGS="-g -O0" ./configure --prefix=$HOME/gnunet --enable-logging=verbose
   </code>
   </p>
   <p>
