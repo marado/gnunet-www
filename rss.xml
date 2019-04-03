@@ -157,5 +157,90 @@
       </description>
       <pubDate>Thu, 28 Feb 2019 00:00:00 UT</pubDate>
     </item>
+    <item>
+      <title>2019-04-03: GNUnet 0.11.1 released</title>
+      <link>https://gnunet.org/#gsoc2019</link>
+      <description>
+        &lt;h3&gt;
+          &lt;a name=&quot;gnunet-0.11.1-release&quot;&gt;2019-04-03: GNUnet 0.11.1 released&lt;/a&gt;
+        &lt;/h3&gt;
+        &lt;p&gt;
+          We are pleased to announce the release of GNUnet 0.11.1.
+        &lt;/p&gt;
+        &lt;p&gt;
+          This is a bugfix release for 0.11.0, mostly fixing minor bugs,
+          improving documentation and fixing various build issues.  In
+          terms of usability, users should be aware that there are still a large
+          number of known open issues in particular with respect to ease of use,
+          but also some critical privacy issues especially for mobile users.
+          Also, the nascent network is tiny (about 200 peers) and thus unlikely to
+          provide good anonymity or extensive amounts of interesting
+          information.  As a result, the 0.11.1 release is still only suitable
+          for early adopters with some reasonable pain tolerance.
+        &lt;/p&gt;
+        &lt;h4&gt;Download links&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;
+          (gnunet-gtk and gnunet-fuse were not released again, as there were no
+          changes and the 0.11.0 versions are expected to continue to work fine
+          with gnunet-0.11.1.)
+        &lt;/p&gt;
+        &lt;p&gt;
+          Note that due to mirror synchronization, not all links might be functional
+          early after the release. For direct access try &lt;a href=&quot;http://ftp.gnu.org/gnu/gnunet/&quot;&gt;http://ftp.gnu.org/gnu/gnunet/&lt;/a&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+          Note that GNUnet is now started using &lt;tt&gt;gnunet-arm -s&lt;/tt&gt;. GNUnet should be
+          stopped using &lt;tt&gt;gnunet-arm -e&lt;/tt&gt;.
+        &lt;/p&gt;
+        &lt;h4&gt;Noteworthy changes in 0.11.1&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;gnunet-qr was rewritten in C, removing our last dependency on Python 2.x&lt;/li&gt;
+          &lt;li&gt;REST and GNS proxy configuration options for address binding were added&lt;/li&gt;
+          &lt;li&gt;gnunet-publish by default no longer includes creation time&lt;/li&gt;
+          &lt;li&gt;Unreliable message ordering logic in CADET was fixed&lt;/li&gt;
+          &lt;li&gt;Various improvements to build system and documentation&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;
+          The above is just the short list, our bugtracker lists
+          &lt;a href=&quot;https://bugs.gnunet.org/changelog_page.php?version_id=312&quot;&gt;
+            14 individual issues&lt;/a&gt; that were resolved since 0.11.0.
+        &lt;/p&gt;
+        &lt;h4&gt;Known Issues&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;There are known major design issues in the TRANSPORT, ATS and CORE subsystems
+          which will need to be addressed in the future to achieve acceptable usability,
+          performance and security.&lt;/li&gt;
+          &lt;li&gt;There are known moderate implementation limitations in CADET that
+          negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.&lt;/li&gt;
+          &lt;li&gt;There are known moderate design issues in FS that also impact
+          usability and performance.&lt;/li&gt;
+          &lt;li&gt;There are minor implementation limitations in SET that create
+          unnecessary attack surface for availability.&lt;/li&gt;
+          &lt;li&gt;The RPS subsystem remains experimental.&lt;/li&gt;
+          &lt;li&gt;Some high-level tests in the test-suite fail non-deterministically due to
+          the low-level TRANSPORT issues.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;
+          In addition to this list, you may also want to consult our bug tracker
+          at &lt;a href=&quot;https://bugs.gnunet.org/&quot;&gt;bugs.gnunet.org&lt;/a&gt; which lists
+          about 190 more specific issues.
+        &lt;/p&gt;
+        &lt;h4&gt;Thanks&lt;/h4&gt;
+        &lt;p&gt;
+          This release was the work of many people. The following people
+          contributed code and were thus easily identified:
+          ng0, Christian Grothoff, Hartmut Goebel, Martin Schanzenbach, Devan Carpenter, Naomi Phillips and Julius B&#252;nger.
+        &lt;/p&gt;
+      </description>
+      <pubDate>Wed, 04 Apr 2019 16:00:00 UT</pubDate>
+    </item>
   </channel>
 </rss>
