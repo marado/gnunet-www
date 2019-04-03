@@ -1,6 +1,6 @@
 <article>
 <h3>
-<a name="gnunet-0.11.1-release">2019-02: GNUnet 0.11.1 released</a>
+<a name="gnunet-0.11.1-release">2019-04-03: GNUnet 0.11.1 released</a>
 </h3>
 
 <p>
