@@ -158,14 +158,14 @@
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>2019-04-03: GNUnet 0.11.1 released</title>
-      <link>https://gnunet.org/#gnunet-0.11.1-release</link>
+      <title>2019-04-04: GNUnet 0.11.2 released</title>
+      <link>https://gnunet.org/#gnunet-0.11.2-release</link>
       <description>
         &lt;h3&gt;
-          &lt;a name=&quot;gnunet-0.11.1-release&quot;&gt;2019-04-03: GNUnet 0.11.1 released&lt;/a&gt;
+          &lt;a name=&quot;gnunet-0.11.2-release&quot;&gt;2019-04-03: GNUnet 0.11.2 released&lt;/a&gt;
         &lt;/h3&gt;
         &lt;p&gt;
-          We are pleased to announce the release of GNUnet 0.11.1.
+          We are pleased to announce the release of GNUnet 0.11.2.
         &lt;/p&gt;
         &lt;p&gt;
           This is a bugfix release for 0.11.0, mostly fixing minor bugs,
@@ -175,13 +175,13 @@
           but also some critical privacy issues especially for mobile users.
           Also, the nascent network is tiny (about 200 peers) and thus unlikely to
           provide good anonymity or extensive amounts of interesting
-          information.  As a result, the 0.11.1 release is still only suitable
+          information.  As a result, the 0.11.2 release is still only suitable
           for early adopters with some reasonable pain tolerance.
         &lt;/p&gt;
         &lt;h4&gt;Download links&lt;/h4&gt;
         &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.1.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.2.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.2.tar.gz&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.2.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.2.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.0.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
@@ -190,7 +190,7 @@
         &lt;p&gt;
           (gnunet-gtk and gnunet-fuse were not released again, as there were no
           changes and the 0.11.0 versions are expected to continue to work fine
-          with gnunet-0.11.1.)
+          with gnunet-0.11.2.)
         &lt;/p&gt;
         &lt;p&gt;
           Note that due to mirror synchronization, not all links might be functional
@@ -200,7 +200,7 @@
           Note that GNUnet is now started using &lt;tt&gt;gnunet-arm -s&lt;/tt&gt;. GNUnet should be
           stopped using &lt;tt&gt;gnunet-arm -e&lt;/tt&gt;.
         &lt;/p&gt;
-        &lt;h4&gt;Noteworthy changes in 0.11.1&lt;/h4&gt;
+        &lt;h4&gt;Noteworthy changes in 0.11.2&lt;/h4&gt;
         &lt;ul&gt;
           &lt;li&gt;gnunet-qr was rewritten in C, removing our last dependency on Python 2.x&lt;/li&gt;
           &lt;li&gt;REST and GNS proxy configuration options for address binding were added&lt;/li&gt;
