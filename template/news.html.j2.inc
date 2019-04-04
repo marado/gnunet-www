@@ -1,4 +1,5 @@
 {% include "news/2019-0.11.2.inc" %}
+{% include "news/2019-0.11.1.inc" %}
 {% include "news/2019-0.11.0.inc" %}
 {% include "news/2019-02.inc" %}
 {% include "news/2018-07.inc" %}
