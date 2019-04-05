@@ -32,6 +32,7 @@
     {% trans %}
     Copyright &copy; <a href="ev.html">GNUnet e.V.</a> 2015, 2016, 2017, 2018, 2019<br>
     This page was created using <a href='https://www.gnu.org/'>Free Software</a> only.<br>
+    <a href='https://git.gnunet.org/www.git'>Source code of this site.</a><br />
     Report issues with this website to <a href='contact.html'>us</a>.
     {% endtrans %}
     </p>
