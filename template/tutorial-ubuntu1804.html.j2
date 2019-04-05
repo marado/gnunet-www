@@ -147,11 +147,24 @@
     our home directory for the file `~/.gnunet/gnunet.conf`. We can
     start with an empty file for now:
   </p>
-
+ <br />
   <code>
     $ touch ~/.config/gnunet.conf
   </code>
-
+ <br />
+  <p>
+    It's reccomended that you increase your bandwidth restrictions
+    from the acutely low defaults. The example below sets the WAN
+    and LAN limits to the value "unlimited".
+  </p>
+ <br />
+  <code>
+    $ gnunet-config -s ats -o WAN_QUOTA_IN -V unlimited<br />
+    $ gnunet-config -s ats -o WAN_QUOTA_OUT -V unlimited<br /> 
+    $ gnunet-config -s ats -o LAN_QUOTA_IN -V unlimited<br />
+    $ gnunet-config -s ats -o LAN_QUOTA_OUT -V unlimited<br /> 
+  </code>
+ <br />
   <p>
     Now we can start it with the command line tool `gnunet-arm`
     (Automatic Restart Manager).
