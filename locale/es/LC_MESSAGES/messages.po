@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-03 15:17+0200\n"
+"POT-Creation-Date: 2019-04-08 23:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,8 @@ msgstr ""
 msgid ""
 "Copyright &copy; <a href=\"ev.html\">GNUnet e.V.</a> 2015, 2016, 2017, 2018, "
 "2019<br> This page was created using <a href='https://www.gnu.org/'>Free "
-"Software</a> only.<br> Report issues with this website to <a href='contact."
+"Software</a> only.<br> <a href='https://git.gnunet.org/www.git'>Source code "
+"of this site.</a><br /> Report issues with this website to <a href='contact."
 "html'>us</a>."
 msgstr ""
 
@@ -809,9 +810,9 @@ msgstr ""
 
 #: template/gnurl.html.j2:167
 msgid ""
-"gnurl/libgnurl is maintained by ng0. Releases are signed with the OpenPG Key "
-"<b>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</b>, with the key fingerprint "
-"<b>A88C 8ADD 1298 28D7 EAC0 2E52 E22F 9BBF EE34 8588</b>."
+"gnurl/libgnurl is maintained by ng0. Releases are signed with the OpenPGP "
+"Key <b>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</b>, with the key "
+"fingerprint <b>A88C 8ADD 1298 28D7 EAC0 2E52 E22F 9BBF EE34 8588</b>."
 msgstr ""
 
 #: template/gsoc-2018-gnunet-webui.html.j2:7
@@ -1484,7 +1485,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: template/news.html.j2.inc:5
+#: template/news.html.j2.inc:7
 msgid "More news"
 msgstr ""
 
@@ -1580,11 +1581,11 @@ msgstr ""
 msgid "Run"
 msgstr ""
 
-#: template/tutorial-archpi.html.j2:108
+#: template/tutorial-archpi.html.j2:121
 msgid "Make sure, it works!"
 msgstr ""
 
-#: template/tutorial-archpi.html.j2:121
+#: template/tutorial-archpi.html.j2:134
 msgid "Chat the cat"
 msgstr ""
 
@@ -1600,18 +1601,18 @@ msgstr ""
 msgid "Make an installation directory"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:54 template/tutorial-macos.html.j2:131
-#: template/tutorial-netbsd.html.j2:209 template/tutorial-ubuntu1804.html.j2:56
+#: template/tutorial-debian9.html.j2:54 template/tutorial-macos.html.j2:144
+#: template/tutorial-netbsd.html.j2:222 template/tutorial-ubuntu1804.html.j2:56
 msgid "Get the source code"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:73 template/tutorial-macos.html.j2:139
-#: template/tutorial-netbsd.html.j2:217 template/tutorial-ubuntu1804.html.j2:66
+#: template/tutorial-debian9.html.j2:73 template/tutorial-macos.html.j2:152
+#: template/tutorial-netbsd.html.j2:230 template/tutorial-ubuntu1804.html.j2:66
 msgid "Compile and Install"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:98 template/tutorial-macos.html.j2:151
-#: template/tutorial-netbsd.html.j2:227 template/tutorial-ubuntu1804.html.j2:77
+#: template/tutorial-debian9.html.j2:98 template/tutorial-macos.html.j2:164
+#: template/tutorial-netbsd.html.j2:240 template/tutorial-ubuntu1804.html.j2:77
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
@@ -1634,58 +1635,58 @@ msgstr ""
 msgid "Configuration"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:258
-#: template/tutorial-ubuntu1804.html.j2:205
+#: template/tutorial-debian9.html.j2:271
+#: template/tutorial-ubuntu1804.html.j2:218
 msgid "Make sure it works"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:273
-#: template/tutorial-ubuntu1804.html.j2:220
+#: template/tutorial-debian9.html.j2:286
+#: template/tutorial-ubuntu1804.html.j2:233
 msgid "filesharing"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:305
-#: template/tutorial-ubuntu1804.html.j2:254
+#: template/tutorial-debian9.html.j2:318
+#: template/tutorial-ubuntu1804.html.j2:267
 msgid "CADET (and Chat)"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:336
-#: template/tutorial-ubuntu1804.html.j2:282
+#: template/tutorial-debian9.html.j2:349
+#: template/tutorial-ubuntu1804.html.j2:295
 msgid "Name resolution using GNS on the command line"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:412
-#: template/tutorial-ubuntu1804.html.j2:349
+#: template/tutorial-debian9.html.j2:425
+#: template/tutorial-ubuntu1804.html.j2:362
 msgid "Name resolution using GNS with a browser"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:493
-#: template/tutorial-ubuntu1804.html.j2:423
+#: template/tutorial-debian9.html.j2:506
+#: template/tutorial-ubuntu1804.html.j2:436
 msgid "VPN"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:499
-#: template/tutorial-ubuntu1804.html.j2:430
+#: template/tutorial-debian9.html.j2:512
+#: template/tutorial-ubuntu1804.html.j2:443
 msgid "Uninstall GNUnet and its dependencies"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:515
-#: template/tutorial-ubuntu1804.html.j2:447
+#: template/tutorial-debian9.html.j2:528
+#: template/tutorial-ubuntu1804.html.j2:460
 msgid "Appendix A: Optional GNUnet features"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:521
-#: template/tutorial-ubuntu1804.html.j2:454
+#: template/tutorial-debian9.html.j2:534
+#: template/tutorial-ubuntu1804.html.j2:467
 msgid "Troubleshooting"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:523
-#: template/tutorial-ubuntu1804.html.j2:457
+#: template/tutorial-debian9.html.j2:536
+#: template/tutorial-ubuntu1804.html.j2:470
 msgid "You can't reach other people's nodes"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:560
-#: template/tutorial-ubuntu1804.html.j2:488
+#: template/tutorial-debian9.html.j2:573
+#: template/tutorial-ubuntu1804.html.j2:501
 msgid "OMG you guys broke my internet"
 msgstr ""
 
@@ -1701,11 +1702,11 @@ msgstr ""
 msgid "First steps"
 msgstr ""
 
-#: template/tutorial-macos.html.j2:106 template/tutorial-netbsd.html.j2:167
+#: template/tutorial-macos.html.j2:119 template/tutorial-netbsd.html.j2:180
 msgid "Alternative: Installation from source"
 msgstr ""
 
-#: template/tutorial-macos.html.j2:184 template/tutorial-netbsd.html.j2:252
+#: template/tutorial-macos.html.j2:197 template/tutorial-netbsd.html.j2:265
 msgid "Option 2: GNUnet experimental"
 msgstr ""
 
