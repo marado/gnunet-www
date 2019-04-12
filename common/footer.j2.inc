@@ -13,14 +13,14 @@
         <div class="col-12 col-sm-4">
           <ul class="footer-list">
             <li><p><a href="https://bugs.gnunet.org/">{{ _("Bug Tracker") }}</a></p></li>
-            <li><p><a href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC archive") }}</a></p></li>
+            <li><p><a href="https://irc.gnunet.org/gnunet">{{ _("IRC archive") }}</a></p></li>
           </ul>
         </div>
         <div class="col-12 col-sm-4">
           <ul class="footer-list">
             <li><p><a href="copyright.html">{{ _("Copyright Assignment") }}</a></p></li>
-            <li><p><a href="https://old.gnunet.org/buildbot/">{{ _("Continuous Integration") }}</a></p></li>
-            <li><p><a href="https://old.gnunet.org/bibliography">{{ _("Bibliography") }}</a></p></li>
+            <li><p><a href="https://gitlab.gnunet.org/">{{ _("Continuous Integration") }}</a></p></li>
+            <li><p><a href="https://bib.gnunet.org/">{{ _("Bibliography") }}</a></p></li>
           </ul>
         </div>
       </div>
