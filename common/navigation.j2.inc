@@ -84,7 +84,7 @@
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://tutorial.gnunet.org/">{{ _("C-Tutorial") }}</a></li>
           <li><a class="dropdown-item" href="faq.html">{{ _("FAQ") }}</a></li>
-          <li><a class="dropdown-item" href="https://old.gnunet.org/bibliography">{{ _("Bibliography") }}</a></li>
+          <li><a class="dropdown-item" href="https://bib.gnunet.org/">{{ _("Bibliography") }}</a></li>
 	</ul>
       </li>
     </ul>
