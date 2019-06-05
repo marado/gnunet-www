@@ -8,7 +8,10 @@
   <p>
     This is a bugfix release for 0.11.4, mostly fixing a few
     minor bugs and improving performance, in particular for
-    identity management with a large number of egos.  In
+    identity management with a large number of egos.
+    In the wake of this release, we also launched the 
+    <a href="https://rest.gnunet.org">REST API documentation</a>.
+    In
     terms of usability, users should be aware that there are still a large
     number of known open issues in particular with respect to ease of use,
     but also some critical privacy issues especially for mobile users.
