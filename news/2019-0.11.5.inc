@@ -40,7 +40,7 @@
     Note that due to mirror synchronization, not all links might be functional
     early after the release. For direct access try <a href="http://ftp.gnu.org/gnu/gnunet/">http://ftp.gnu.org/gnu/gnunet/</a>
   </p>
-  <h4>Noteworthy changes in 0.11.5 (since 0.11.3)</h4>
+  <h4>Noteworthy changes in 0.11.5 (since 0.11.4)</h4>
   <ul>
     <li>
       <tt>gnunet-identity</tt> is much faster when creating or deleting
