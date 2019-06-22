@@ -298,8 +298,8 @@ footer {
 
 .adorn_h3_bracket h3::before {
     content: "⊛";
-    color: #d00;
-    margin-right: 1em;
+    color: #333;
+    margin-right: 0.5em;
 }
 
 .footer-list {
