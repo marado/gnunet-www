@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-27 00:23+0200\n"
+"POT-Creation-Date: 2019-06-27 00:43+0200\n"
 "PO-Revision-Date: 2018-02-24 17:42\n"
 "Last-Translator: Torsten Grothoff <torsten@grothoff.org>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -124,7 +124,7 @@ msgid "Tutorials"
 msgstr "Anleitungen"
 
 #: common/navigation.j2.inc:83
-msgid "Videos"
+msgid "Talks (videos)"
 msgstr ""
 
 #: common/navigation.j2.inc:84
@@ -262,7 +262,7 @@ msgid ""
 "There are much more ressources to learn about GNUnet besides the <a href="
 "\"https://docs.gnunet.org\">main handbook</a>, such as the <a href=\"https://"
 "bib.gnunet.org/\">bibliography</a>, lots of <a href=\"https://gnunet.org/en/"
-"videos.html\">videos</a> or a <a href=\"https://gnunet.org/en/glossary.html"
+"video.html\">videos</a> or a <a href=\"https://gnunet.org/en/glossary.html"
 "\">glossary</a>. You are very welcome to <a href=\"https://gnunet.org/en/"
 "engage.html\">get engaged into the conversation</a>, <a href=\"https://"
 "gnunet.org/en/tutorial.html\">install GNUnet</a>, <a href=\"https://gnunet."
@@ -1671,77 +1671,77 @@ msgstr ""
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:111
-#: template/tutorial-ubuntu1804.html.j2:90
+#: template/tutorial-debian9.html.j2:110
+#: template/tutorial-ubuntu1804.html.j2:89
 msgid "Option 2: GNUnet for development"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:123
+#: template/tutorial-debian9.html.j2:122
 msgid "Option 3: gnunet-gtk"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:140
-#: template/tutorial-ubuntu1804.html.j2:103
+#: template/tutorial-debian9.html.j2:139
+#: template/tutorial-ubuntu1804.html.j2:102
 msgid "Install GNUnet plugin for name resolution"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:194
-#: template/tutorial-ubuntu1804.html.j2:142
+#: template/tutorial-debian9.html.j2:193
+#: template/tutorial-ubuntu1804.html.j2:141
 msgid "Configuration"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:271
-#: template/tutorial-ubuntu1804.html.j2:218
+#: template/tutorial-debian9.html.j2:270
+#: template/tutorial-ubuntu1804.html.j2:217
 msgid "Make sure it works"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:286
-#: template/tutorial-ubuntu1804.html.j2:233
+#: template/tutorial-debian9.html.j2:285
+#: template/tutorial-ubuntu1804.html.j2:232
 msgid "filesharing"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:318
-#: template/tutorial-ubuntu1804.html.j2:267
+#: template/tutorial-debian9.html.j2:317
+#: template/tutorial-ubuntu1804.html.j2:266
 msgid "CADET (and Chat)"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:349
-#: template/tutorial-ubuntu1804.html.j2:295
+#: template/tutorial-debian9.html.j2:348
+#: template/tutorial-ubuntu1804.html.j2:294
 msgid "Name resolution using GNS on the command line"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:425
-#: template/tutorial-ubuntu1804.html.j2:362
+#: template/tutorial-debian9.html.j2:424
+#: template/tutorial-ubuntu1804.html.j2:361
 msgid "Name resolution using GNS with a browser"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:506
-#: template/tutorial-ubuntu1804.html.j2:436
+#: template/tutorial-debian9.html.j2:505
+#: template/tutorial-ubuntu1804.html.j2:435
 msgid "VPN"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:512
-#: template/tutorial-ubuntu1804.html.j2:443
+#: template/tutorial-debian9.html.j2:511
+#: template/tutorial-ubuntu1804.html.j2:442
 msgid "Uninstall GNUnet and its dependencies"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:528
-#: template/tutorial-ubuntu1804.html.j2:460
+#: template/tutorial-debian9.html.j2:527
+#: template/tutorial-ubuntu1804.html.j2:459
 msgid "Appendix A: Optional GNUnet features"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:534
-#: template/tutorial-ubuntu1804.html.j2:467
+#: template/tutorial-debian9.html.j2:533
+#: template/tutorial-ubuntu1804.html.j2:466
 msgid "Troubleshooting"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:536
-#: template/tutorial-ubuntu1804.html.j2:470
+#: template/tutorial-debian9.html.j2:535
+#: template/tutorial-ubuntu1804.html.j2:469
 msgid "You can't reach other people's nodes"
 msgstr ""
 
-#: template/tutorial-debian9.html.j2:573
-#: template/tutorial-ubuntu1804.html.j2:501
+#: template/tutorial-debian9.html.j2:572
+#: template/tutorial-ubuntu1804.html.j2:500
 msgid "OMG you guys broke my internet"
 msgstr ""
 
@@ -1813,9 +1813,12 @@ msgstr ""
 msgid ""
 "Once the installation is done, please head over to the <a href=\"https://"
 "gnunet.org/en/use\">\"How to use GNUnet\"-page</a> to get a brief intro on "
-"what can be done with your installation. <br> If you have any queries about "
-"the installation or the usage, please <a href=\"https://gnunet.org/en/engage."
-"html\">get in touch!</a>"
+"what can be done with your installation. <br> As usual get much more "
+"detailled instructions and information in the <a href=\"https://docs.gnunet."
+"org/#toc-Using-GNUnet-1\">according section</a> of the <a href=\"https://"
+"docs.gnunet.org/\">handbook</a>. If you have any queries about the "
+"installation or the usage, please <a href=\"https://gnunet.org/en/engage.html"
+"\">get in touch!</a>"
 msgstr ""
 
 #: template/video.html.j2:8
