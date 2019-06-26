@@ -212,7 +212,15 @@ html {
 
 .dark {
     background-color: #333;
+    color: white;
 }
+.dark a,
+.dark a:link,
+.dark a:visited 
+{
+  color: white; 
+}
+
 
 .c_acronym {
     background-color: #68a;
@@ -320,5 +328,5 @@ footer {
 }
 
 #body_content .jumbotron {
-    background-color: white;
+    background-color: #333;
 }

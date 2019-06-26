@@ -1,43 +1,46 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <!-- Jumbotron -->
-<div class="container-logo banner dark text-center" id="frontpagefront">
-    <h1>
-      <img src="{{ url('static/images/gnunet-anonymous-logo.png') }}"  alt="GNUnet" />
-    </h1>
-</div>
-<article>
-<div class="jumbotron">
+<div class="jumbotron dark">
+  <div class="container dark">
+    <div class="row">
+      <div class="col-lg-6">
+        <center><img src="{{ url('static/images/gnunet-anonymous-logo.png') }}"  alt="GNUnet" /></center>
+      </div>
+      <div class="col-lg-6">
+      <p>
+        {% trans %}
+        GNUnet is a new network protocol stack for building secure, distributed,
+        and privacy-preserving applications. With strong roots in academic
+        <a href="https://old.gnunet.org/bibliography">research</a>, our goal is to replace the
+        <a href="https://secushare.org/broken-internet">old insecure Internet</a>
+        protocol stack.
+        {% endtrans %}
+        <br><br>
+        {% trans %}
+        GNUnet is typically run as an
+        <a href="https://en.wikipedia.org/wiki/Overlay_network">overlay network</a>
+        on top of the existing Internet infrastructure forming the
+        basis of a hybrid
+        <a href="architecture.html">peer-to-peer mesh and relay backbone</a>
+        for applications to run on. It could just as well be run
+        independently of the Internet, over
+        <a href="https://en.wikipedia.org/wiki/Physical_layer">dedicated radio and cable</a>.
+        {% endtrans %}
+        <br><br>
+        {% trans %}
+        GNUnet is made for an open society: It's a self-organizing
+        network and it is
+        <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>
+        as in freedom. GNUnet puts you in control of your data. You
+        determine which data to share with whom, and you're not
+        pressured to accept compromises.
+        {% endtrans %}
+      </p>
+      </div>
+    </div>
+  </div>
   <div class="container text-center">
-    <p>
-      {% trans %}
-      GNUnet is a new network protocol stack for building secure, distributed,
-      and privacy-preserving applications. With strong roots in academic
-      <a href="https://old.gnunet.org/bibliography">research</a>, our goal is to replace the
-      <a href="https://secushare.org/broken-internet">old insecure Internet</a>
-      protocol stack.
-      {% endtrans %}
-      <br><br>
-      {% trans %}
-      GNUnet is typically run as an
-      <a href="https://en.wikipedia.org/wiki/Overlay_network">overlay network</a>
-      on top of the existing Internet infrastructure forming the
-      basis of a hybrid
-      <a href="architecture.html">peer-to-peer mesh and relay backbone</a>
-      for applications to run on. It could just as well be run
-      independently of the Internet, over
-      <a href="https://en.wikipedia.org/wiki/Physical_layer">dedicated radio and cable</a>.
-      {% endtrans %}
-      <br><br>
-      {% trans %}
-      GNUnet is made for an open society: It's a self-organizing
-      network and it is
-      <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>
-      as in freedom. GNUnet puts you in control of your data. You
-      determine which data to share with whom, and you're not
-      pressured to accept compromises.
-      {% endtrans %}
-    </p>
     <p> 
       <a class="btn btn-primary btn-lg" href="about.html">
       {% trans %}
@@ -46,17 +49,19 @@
       </a>
       <a class="btn btn-primary btn-lg" href="download.html">
       {% trans %}
-      Download GNUnet
+      Install
       {% endtrans %}
       </a>
       <a class="btn btn-primary btn-lg" href="ev.html">
       {% trans %}
-      Join &amp; support us!
+      Join!
       {% endtrans %}
       </a>
     </p>
   </div>
 </div>
+
+<article>
 
 <div class="container-fluid adorn_h3_bracket c_acronym">
   <div class="container">
