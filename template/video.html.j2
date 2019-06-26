@@ -1,31 +1,45 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>{{ _("Media related to GNUnet") }}</h1>
-
-    <p>
-      {% trans %}
-      Over the years we've given a couple of talks, workshops and other presentations
-      which have been recorded.  The list below is neither chronological in order, nor
-      complete.
-      {% endtrans %}
-    </p>
-  </div>
-</div>
-
 <div class="container adorn_h3_bracket">
-  <div class="row">
-    <div class="col-lg-4">
+<div class="container adorn_h3_bracket">
+    <div class="container">
+      <div class="text-center">
+        <header>
+          <h1>{{ _("Talks related to GNUnet") }}</h1>
+        </header>
+      </div>
+    </div>
 
-      <h3>{{ _("2017") }}</h3>
-      <h3>{{ _("2016") }}</h3>
+  <div class="row">
+    <div class="col-lg-12">
+
       <h3>{{ _("2015") }}</h3>
+      <ul>
+        <li><a href="https://web.archive.org/web/20160507034806/https://gnunet.org/guix2015video">Reproducible Software Deployment with GNU Guix</a></li> 
+      </ul>
       <h3>{{ _("2014") }}</h3>
+      <ul>
+        <li><a href="/web/20160507034806/https://gnunet.org/31c3videos">31c3 "We fix the net" workshop talks</a></li>
+        <li><a href="/web/20160507034806/https://gnunet.org/ghm2014knock">Julian Kirsch on "Knocking down the HACIENDA"</a> at GHM 2014</li>
+        <li><a href="/web/20160507034806/https://gnunet.org/schaar2014tum">Peter Schaar on "Technik, Recht und Überwachung"</a> at TUM</li>
+        <li><a href="/web/20160507034806/https://gnunet.org/oxford2014grothoff">Christian Grothoff on "A Public Key Infrastructure for Social Movements in the Age of Universal Surveillance"</a> at the Univeristy of Oxford</li>
+        <li><a href="/web/20160507034806/https://gnunet.org/coe">Jacob Appelbaum, Douwe Korff and Christian Grothoff on "After Snowden: using law and technology to counter snooping" at Counsil of Europe </a></li>
+      </ul>
       <h3>{{ _("2013") }}</h3>
+      <ul>
+        <li><a href="/web/20160507034806/https://gnunet.org/bart2013ccc">Bart Polot on "GNUnet CADET and GNUnet Conversation" at YBTI/30c3</a></li>
+        <li><a href="/web/20160507034806/https://gnunet.org/video-30c3-talk-gnu-name-system">2013: Christian Grothoff on "The GNU Name System" at 30c3</a></li>
+        <li><a href="/web/20160507034806/https://gnunet.org/markus2013bsdefense">Markus Teich on "Monkey - Generating Useful Bug Reports Automatically" at TUM</a></li>
+        <li><a href="/web/20160507034806/https://gnunet.org/videoghm2013">Christian Grothoff "The GNU Name System and the Future of Social Networking with GNUnet" at GHM</a></li>
+        <li><a href="/web/20160507034806/https://gnunet.org/internetistschuld">Christian Grothoff, Carlo von Lynx, Jacob Appelbaum and Richard Stallman: "You broke the Internet. We're making ourselves a GNU one."</a> in Berlin</li>
+        <li><a href="/web/20160507034806/https://gnunet.org/tor2013tum-video">Roger Dingledine and Jacob Appelbaum: "Q &amp; A" at TUM</a></li>
+        <li><a href="/web/20160507034806/https://gnunet.org/regex-max-defense">Maximilian Szengel on "Decentralized Evaluation of Regular Expressions for Capability Discovery in Peer-to-Peer Networks" at TUM</a></li>
+      </ul>
       <h3>{{ _("2012") }}</h3>
-      <h3>{{ _("2011") }}</h3>
-      <h3>{{ _("2010") }}</h3>
+      <ul>
+        <li><a href="/web/20160507034806/https://gnunet.org/martin-ms-defense-gads">Martin Schanzenbach on "A Censorship-Resistant and Fully Decentralized Naming System" at TUM</a></li>
+        <li><a href="/web/20160507034806/https://gnunet.org/rms2012tum">Richard Stallman on "Copyright vs. Community" at TUM</a></li>
+      </ul>
     </div>
   </div>
 </div>
