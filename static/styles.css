@@ -61,6 +61,7 @@ main {
 /* There's a fixed navbar that is 3.5rem tall */
 body {
     padding-top: 3.5rem;
+    background-color: #cccccc;
 }
 
 /* 
@@ -182,7 +183,7 @@ i.red {
 }
 a.btn:hover {
     transition: background-color 0.7s;
-    background-color: #d00;
+    background-color: #419edb;
     border-color: #fff;
     color: white !important;
 }
@@ -211,15 +212,13 @@ html {
 }
 
 .dark {
-    background-color: #333;
-    color: white;
+    background-color: #cccccc;
 }
 
 .c_acronym {
     background-color: #68a;
     color: white;
 }
-
 
 footer a,
 footer a:link,
@@ -296,6 +295,10 @@ footer {
     /* space for the nav */
     padding-top: 70px;
 }
+#body_content .jumbotron {
+    background-color: #cccccc;
+    margin-bottom: 0px;
+}
 
 .adorn_h3_bracket h3::before {
     content: "⊛";
@@ -320,7 +323,3 @@ footer {
     filter: invert(100%);
 }
 
-#body_content .jumbotron {
-    background-color: #333;
-    margin-bottom: 0px;
-}
