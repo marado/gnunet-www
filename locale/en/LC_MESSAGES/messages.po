@@ -38,7 +38,7 @@ msgstr ""
 msgid "Continuous Integration"
 msgstr ""
 
-#: common/footer.j2.inc:23 common/navigation.j2.inc:88
+#: common/footer.j2.inc:23 common/navigation.j2.inc:89
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr ""
@@ -88,27 +88,31 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: common/navigation.j2.inc:82 template/tutorial.html.j2:5
+#: common/navigation.j2.inc:82
 msgid "Tutorials"
 msgstr ""
 
 #: common/navigation.j2.inc:83
-msgid "Glossary"
+msgid "Videos"
 msgstr ""
 
 #: common/navigation.j2.inc:84
-msgid "Handbook"
+msgid "Glossary"
 msgstr ""
 
 #: common/navigation.j2.inc:85
-msgid "REST API"
+msgid "Handbook"
 msgstr ""
 
 #: common/navigation.j2.inc:86
-msgid "C-Tutorial"
+msgid "REST API"
 msgstr ""
 
 #: common/navigation.j2.inc:87
+msgid "C-Tutorial"
+msgstr ""
+
+#: common/navigation.j2.inc:88
 msgid "FAQ"
 msgstr ""
 
@@ -1724,13 +1728,27 @@ msgstr ""
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
 msgstr ""
 
-#: template/tutorial.html.j2:8
-msgid ""
-"This page holds various tutorials for GNUnet. Some of them are not complete, "
-"but we find them useful regardless of their state."
+#: template/tutorial.html.j2:5
+msgid "Install-Tutorials"
 msgstr ""
 
-#: template/tutorial.html.j2:14
+#: template/tutorial.html.j2:8
+msgid ""
+"This page holds various simplified step-by-step tutorials for GNUnet. <br> "
+"Some of them are not complete, but we find them useful regardless of their "
+"state. <br> Find much more detailled documentation of the installation "
+"options in the <a href=\"https://docs.gnunet.org/#toc-Installing-"
+"GNUnet-1\">according section</a> of the <a href=\"https://docs.gnunet.org/"
+"\">handbook</a>."
+msgstr ""
+
+#: template/tutorial.html.j2:15
+msgid ""
+"Please note that the installation process will get much easier once we have "
+"proper packages again."
+msgstr ""
+
+#: template/tutorial.html.j2:20
 msgid ""
 "GNUnet installation instructions: <ul> <li><a href=\"tutorial-ubuntu1804.html"
 "\">Ubuntu 18.04</a></li> <li><a href=\"tutorial-archpi.html\">Arch-Pi</a></"
@@ -1739,52 +1757,38 @@ msgid ""
 "\">NetBSD</a></li> </ul>"
 msgstr ""
 
-#: template/tutorial.html.j2:26
+#: template/tutorial.html.j2:32
 msgid ""
 "<a href=\"https://tutorial.gnunet.org/\">C Coding Tutorial for GNUnet</a>"
 msgstr ""
 
-#: template/video.html.j2:5
-msgid "Media related to GNUnet"
+#: template/tutorial.html.j2:37
+msgid ""
+"Once the installation is done, please head over to the <a href=\"https://"
+"gnunet.org/en/use\">\"How to use GNUnet\"-page</a> to get a brief intro on "
+"what can be done with your installation. <br> If you have any queries about "
+"the installation or the usage, please <a href=\"https://gnunet.org/en/engage."
+"html\">get in touch!</a>"
 msgstr ""
 
 #: template/video.html.j2:8
-msgid ""
-"Over the years we've given a couple of talks, workshops and other "
-"presentations which have been recorded. The list below is neither "
-"chronological in order, nor complete."
+msgid "Talks related to GNUnet"
 msgstr ""
 
-#: template/video.html.j2:21
-msgid "2017"
-msgstr ""
-
-#: template/video.html.j2:22
-msgid "2016"
-msgstr ""
-
-#: template/video.html.j2:23
+#: template/video.html.j2:16
 msgid "2015"
 msgstr ""
 
-#: template/video.html.j2:24
+#: template/video.html.j2:20
 msgid "2014"
 msgstr ""
 
-#: template/video.html.j2:25
+#: template/video.html.j2:28
 msgid "2013"
 msgstr ""
 
-#: template/video.html.j2:26
+#: template/video.html.j2:38
 msgid "2012"
-msgstr ""
-
-#: template/video.html.j2:27
-msgid "2011"
-msgstr ""
-
-#: template/video.html.j2:28
-msgid "2010"
 msgstr ""
 
 #~ msgid "_project_title"

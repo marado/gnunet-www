@@ -2,12 +2,18 @@
 {% block body_content %}
 <article class="d-flex flex-column p-5 bd-highlight">
     <header>
-      <h1>{{ _("Tutorials") }}</h1>
+      <h1>{{ _("Install-Tutorials") }}</h1>
     </header>
     <p>
       {% trans %}
-      This page holds various tutorials for GNUnet. Some of them are not
-      complete, but we find them useful regardless of their state.
+      This page holds various simplified step-by-step tutorials for GNUnet. <br>
+	Some of them are not complete, but we find them useful regardless of their state. <br>
+	Find much more detailled documentation of the installation options in the <a href="https://docs.gnunet.org/#toc-Installing-GNUnet-1">according section</a> of the <a href="https://docs.gnunet.org/">handbook</a>. 
+      {% endtrans %}
+    </p>
+    <p>
+      {% trans %}
+      Please note that the installation process will get much easier once we have proper packages again. 
       {% endtrans %}
     </p>
     <p>
@@ -25,6 +31,12 @@
     <p>
       {% trans %}
       <a href="https://tutorial.gnunet.org/">C Coding Tutorial for GNUnet</a>
+      {% endtrans %}
+    </p>
+    <p>
+      {% trans %}
+	Once the installation is done, please head over to the <a href="https://gnunet.org/en/use">"How to use GNUnet"-page</a> to get a brief intro on what can be done with your installation. <br>
+	If you have any queries about the installation or the usage, please <a href="https://gnunet.org/en/engage.html">get in touch!</a>
       {% endtrans %}
     </p>
 </article>
