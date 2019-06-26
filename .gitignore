@@ -2,8 +2,7 @@
 common/*.inc
 
 *.mo
-locale/*/
-locale/messages.pot
+locale/**
 
 videos/grothoff2014fossa.webm
 videos/grothoff2014fossa.ogv
