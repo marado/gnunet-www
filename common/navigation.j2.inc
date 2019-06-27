@@ -79,8 +79,8 @@
 	   {{ _("Documentation") }}
 	</a>
 	<ul class="dropdown-menu" aria-labelledby="navbarMain">
-	  <li><a class="dropdown-item" href="tutorial.html">{{ _("Tutorials") }}</a></li>
-	  <li><a class="dropdown-item" href="video.html">{{ _("Talks (videos)") }}</a></li>
+	  <li><a class="dropdown-item" href="install.html">{{ _("Install") }}</a></li>
+	  <li><a class="dropdown-item" href="video.html">{{ _("Videos") }}</a></li>
           <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
     <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org">{{ _("REST API") }}</a></li>
