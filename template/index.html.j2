@@ -1,11 +1,11 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <!-- Jumbotron -->
-<div class="jumbotron bg-near-black near-white">
+<div class="jumbotron">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <center><img src="{{ url('static/images/gnunet-anonymous-logo.png') }}"  alt="GNUnet" /></center>
+        <center><img src="{{ url('static/images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" /></center>
       </div>
       <div class="col-lg-6">
       <p>
@@ -47,11 +47,15 @@
       About 
       {% endtrans %}
       </a>
+      &nbsp;
+      &nbsp;
       <a class="btn btn-primary btn-lg" href="install.html">
       {% trans %}
       Install
       {% endtrans %}
       </a>
+      &nbsp;
+      &nbsp;
       <a class="btn btn-primary btn-lg" href="engage.html">
       {% trans %}
       Join
