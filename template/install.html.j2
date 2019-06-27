@@ -1,0 +1,70 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="container">
+  <div class="row">
+    <div class="container">
+      <header>
+        <h1 class="text-center">{{ _("Install") }}</h1>
+      </header>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 offset-md-2">
+      {% trans %}
+      <p>The following GNUnet installation instructions help you building from source for your distribution.</p> 
+      <p><i>Please note that the installation process will get much easier once we have proper packages again (planned for winter 2019).</i></p>
+      {% endtrans %}
+    </div>
+    <div class="col-lg-4">
+      {% trans %}
+      <p>Once the installation is done, please head over to the <a href="https://gnunet.org/en/use">"How to use GNUnet"-page</a> to get a brief intro on what can be done with your installation.</p>
+      <p>Further information is available in our  <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">handbook</a>.</p>
+      <p>If you have any queries about the installation or the usage, please <a href="https://gnunet.org/en/engage.html">get in touch!</a></p>
+      {% endtrans %}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 text-center">
+      IMAGE here<br> 
+      <a href="install-on-ubuntu1804.html">Ubuntu 18.04</a>
+    </div>
+    <div class="col-lg-6 text-center">
+      IMAGE here<br> 
+      <a href="install-on-debian9.html">Debian 9</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 text-center">
+      IMAGE here<br> 
+      <a href="install-on-macos.html">macOS</a>
+    </div>
+    <div class="col-lg-6 text-center">
+      IMAGE here<br> 
+      <a href="install-on-netbsd.html">NetBSD</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 text-center">
+      IMAGE here<br> 
+      <a href="https://tutorial.gnunet.org/">C Coding Tutorial for GNUnet</a>
+    </div>
+    <div class="col-lg-6 text-center">
+      <a href="install-on-archpi.html">Arch-Pi</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+  </div>
+</div>
+
+</article>
+{% endblock body_content %}
