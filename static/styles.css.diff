@@ -58,6 +58,10 @@ a.btn {
   color: white !important; }
   a.btn:link, a.btn:visited {
     text-decoration: none !important;
+<<<<<<< HEAD
+    color: white !important; }
+
+=======
     color: white !important;
 }
 /* For reference if bootstrap does not cover the main-Element issue in IE9-11 */
@@ -84,6 +88,7 @@ body {
 	color: white !important;
 }
 */
+>>>>>>> 0eb332372d64ace1092b65e9e9df88441d91b2b1
 .team {
   padding: 75px 0; }
 
@@ -179,6 +184,11 @@ i.red {
   color: #BC0213; }
 
 .btn-primary {
+<<<<<<< HEAD
+  color: #fff;
+  background-color: #678;
+  border-color: #68a; }
+=======
     color: #fff;
     background-color: #678;
     border-color: #68a;
@@ -189,6 +199,7 @@ a.btn:hover {
     border-color: #fff;
     color: white !important;
 }
+>>>>>>> 0eb332372d64ace1092b65e9e9df88441d91b2b1
 
 a.btn:hover {
   transition: background-color 0.7s;
@@ -215,6 +226,19 @@ html {
   overflow-y: scroll; }
 
 .dark {
+<<<<<<< HEAD
+  background-color: #333;
+  color: white; }
+
+.c_acronym {
+  background-color: #68a;
+  color: white; }
+
+footer a {
+  text-decoration: underline;
+  color: white; }
+  footer a:link, footer a:visited {
+=======
     background-color: #cccccc;
 }
 
@@ -226,6 +250,7 @@ html {
 footer a,
 footer a:link,
 footer a:visited {
+>>>>>>> 0eb332372d64ace1092b65e9e9df88441d91b2b1
     text-decoration: underline;
     color: white; }
   footer a:hover {
@@ -272,6 +297,11 @@ footer {
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
+<<<<<<< HEAD
+    max-width: 80em; }
+  #body_content .jumbotron {
+    margin-bottom: 0px; }
+=======
     max-width: 80em;
 }
 
@@ -286,6 +316,7 @@ footer {
     background-image: radial-gradient(circle, #baddef, #baddef, #349fd7);
     margin-bottom: 0px;
 }
+>>>>>>> 0eb332372d64ace1092b65e9e9df88441d91b2b1
 
 .adorn_h3_bracket h3::before {
   content: "#";
@@ -302,6 +333,10 @@ footer {
   padding-bottom: 2em; }
 
 .invert {
+<<<<<<< HEAD
+  -webkit-filter: invert(100%);
+  filter: invert(100%); }
+=======
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
@@ -309,3 +344,4 @@ footer {
 .row {
   min-widht: 50%;
 }
+>>>>>>> 0eb332372d64ace1092b65e9e9df88441d91b2b1

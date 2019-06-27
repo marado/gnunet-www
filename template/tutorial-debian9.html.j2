@@ -34,7 +34,11 @@
   </p>
 
   <code>
-    $ sudo apt install git libtool autoconf autopoint build-essential libgcrypt-dev libidn11-dev zlib1g-dev libunistring-dev libglpk-dev miniupnpc libextractor-dev libjansson-dev libcurl4-gnutls-dev libsqlite3-dev openssl libnss3-tools
+      $ sudo apt install git libtool autoconf autopoint \<br>
+      build-essential libgcrypt-dev libidn11-dev zlib1g-dev \<br>
+      libunistring-dev libglpk-dev miniupnpc libextractor-dev \<br>
+      libjansson-dev libcurl4-gnutls-dev gnutls-bin libsqlite3-dev \<br>
+      openssl libnss3-tools libopus-dev libpulse-dev libogg-dev
   </code>
 
   <h3>{{ _("Make an installation directory") }}</h3>
@@ -100,7 +104,6 @@
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
     $ ./bootstrap<br>
-    $ export GNUNET_PREFIX=/usr<br>
     $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --with-microhttpd=/opt/libmicrohttpd<br>
     $ sudo addgroup gnunetdns<br>
     $ sudo adduser --system --group --disabled-login --home /var/lib/gnunet gnunet<br>
