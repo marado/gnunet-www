@@ -26,7 +26,7 @@
       be better for orientation.
       -->
       <!-- <img src="{{ url('static/images/gnunet-icon.png') }}" alt="GNUnet Home Icon" /> -->
-    <h1>GNUnet</h1>
+      <img src="{{ url('static/images/gnunet-anonymous-schriftzug.png') }}" alt="GNUnet Home Icon" height="25px" />
   </a>
 
   <!-- menu button -->
