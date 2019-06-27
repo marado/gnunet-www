@@ -19,6 +19,8 @@ ru/
 __pycache__
 *.pyc
 
+static/styles.css
+
 sitemap.html
 
 *~
