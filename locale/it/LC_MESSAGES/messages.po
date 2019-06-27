@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-27 20:29+0200\n"
+"POT-Creation-Date: 2019-06-27 21:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1468,7 +1468,7 @@ msgid ""
 "standardized protocols (OpenID Connect)."
 msgstr ""
 
-#: template/index.html.j2:274
+#: template/index.html.j2:274 template/use.html.j2:45
 msgid "Filesharing"
 msgstr ""
 
@@ -1479,7 +1479,7 @@ msgid ""
 "between performance and anonymity."
 msgstr ""
 
-#: template/index.html.j2:286
+#: template/index.html.j2:286 template/use.html.j2:315
 msgid "Conversation"
 msgstr ""
 
@@ -1527,8 +1527,8 @@ msgid "Tutorial: GNUnet on Archlinux/Pi"
 msgstr ""
 
 #: template/install-on-archpi.html.j2:12 template/install-on-debian9.html.j2:28
-#: template/install-on-netbsd.html.j2:17
-#: template/install-on-ubuntu1804.html.j2:28 template/tutorial-macos.html.j2:14
+#: template/install-on-macos.html.j2:14 template/install-on-netbsd.html.j2:17
+#: template/install-on-ubuntu1804.html.j2:28
 msgid "Requirements"
 msgstr ""
 
@@ -1542,10 +1542,6 @@ msgstr ""
 
 #: template/install-on-archpi.html.j2:121
 msgid "Make sure, it works!"
-msgstr ""
-
-#: template/install-on-archpi.html.j2:134
-msgid "Chat the cat"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:5
@@ -1562,24 +1558,21 @@ msgstr ""
 msgid "Make an installation directory"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:58
+#: template/install-on-debian9.html.j2:58 template/install-on-macos.html.j2:144
 #: template/install-on-netbsd.html.j2:222
 #: template/install-on-ubuntu1804.html.j2:57
-#: template/tutorial-macos.html.j2:144
 msgid "Get the source code"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:77
+#: template/install-on-debian9.html.j2:77 template/install-on-macos.html.j2:152
 #: template/install-on-netbsd.html.j2:230
 #: template/install-on-ubuntu1804.html.j2:67
-#: template/tutorial-macos.html.j2:152
 msgid "Compile and Install"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:102
-#: template/install-on-netbsd.html.j2:240
+#: template/install-on-macos.html.j2:164 template/install-on-netbsd.html.j2:240
 #: template/install-on-ubuntu1804.html.j2:78
-#: template/tutorial-macos.html.j2:164
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
@@ -1588,93 +1581,67 @@ msgstr ""
 msgid "Option 2: GNUnet for development"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:126
+#: template/install-on-debian9.html.j2:125
 msgid "Option 3: gnunet-gtk"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:143
-#: template/install-on-ubuntu1804.html.j2:103
+#: template/install-on-debian9.html.j2:141
+#: template/install-on-ubuntu1804.html.j2:102
 msgid "Install GNUnet plugin for name resolution"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:197
-#: template/install-on-ubuntu1804.html.j2:142
+#: template/install-on-debian9.html.j2:195
+#: template/install-on-ubuntu1804.html.j2:141
 msgid "Configuration"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:274
-#: template/install-on-ubuntu1804.html.j2:218
-msgid "Make sure it works"
+#: template/install-on-debian9.html.j2:272
+#: template/install-on-ubuntu1804.html.j2:217
+msgid "Use GNUnet!"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:289
-#: template/install-on-ubuntu1804.html.j2:233 template/use.html.j2:25
-msgid "filesharing"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:321
-#: template/install-on-ubuntu1804.html.j2:267 template/use.html.j2:59
-msgid "CADET (and Chat)"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:352
-#: template/install-on-ubuntu1804.html.j2:295 template/use.html.j2:87
-msgid "Name resolution using GNS on the command line"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:428
-#: template/install-on-ubuntu1804.html.j2:362 template/use.html.j2:154
-msgid "Name resolution using GNS with a browser"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:509
-#: template/install-on-ubuntu1804.html.j2:436 template/use.html.j2:228
-msgid "VPN"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:515
-#: template/install-on-ubuntu1804.html.j2:443
+#: template/install-on-debian9.html.j2:278
+#: template/install-on-ubuntu1804.html.j2:224
 msgid "Uninstall GNUnet and its dependencies"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:531
-#: template/install-on-ubuntu1804.html.j2:460
-msgid "Appendix A: Optional GNUnet features"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:537
-#: template/install-on-ubuntu1804.html.j2:467
+#: template/install-on-debian9.html.j2:294
+#: template/install-on-ubuntu1804.html.j2:242
 msgid "Troubleshooting"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:539
-#: template/install-on-ubuntu1804.html.j2:470
+#: template/install-on-debian9.html.j2:296
+#: template/install-on-ubuntu1804.html.j2:245
 msgid "You can't reach other people's nodes"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:576
-#: template/install-on-ubuntu1804.html.j2:501
+#: template/install-on-debian9.html.j2:332
+#: template/install-on-ubuntu1804.html.j2:276
 msgid "OMG you guys broke my internet"
+msgstr ""
+
+#: template/install-on-macos.html.j2:5
+msgid "Tutorial: GNUnet on macOS 10.14 (Mojave)"
+msgstr ""
+
+#: template/install-on-macos.html.j2:21 template/install-on-netbsd.html.j2:28
+msgid "Installation"
+msgstr ""
+
+#: template/install-on-macos.html.j2:39 template/install-on-netbsd.html.j2:100
+msgid "First steps"
+msgstr ""
+
+#: template/install-on-macos.html.j2:119 template/install-on-netbsd.html.j2:180
+msgid "Alternative: Installation from source"
+msgstr ""
+
+#: template/install-on-macos.html.j2:197 template/install-on-netbsd.html.j2:265
+msgid "Option 2: GNUnet experimental"
 msgstr ""
 
 #: template/install-on-netbsd.html.j2:5
 msgid "Tutorial: GNUnet on NetBSD 8.0 CURRENT"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:28 template/tutorial-macos.html.j2:21
-msgid "Installation"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:100 template/tutorial-macos.html.j2:39
-msgid "First steps"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:180 template/tutorial-macos.html.j2:119
-msgid "Alternative: Installation from source"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:265 template/tutorial-macos.html.j2:197
-msgid "Option 2: GNUnet experimental"
 msgstr ""
 
 #: template/install-on-ubuntu1804.html.j2:6
@@ -1777,16 +1744,36 @@ msgstr ""
 msgid "Web site, packaging (Nix/Guix)."
 msgstr ""
 
-#: template/tutorial-macos.html.j2:5
-msgid "Tutorial: GNUnet on macOS 10.14 (Mojave)"
-msgstr ""
-
 #: template/use.html.j2:6
 msgid "How to use GNUnet - in a nutshell"
 msgstr ""
 
-#: template/use.html.j2:10
+#: template/use.html.j2:13
 msgid "Make sure your GNUnet installation works..."
+msgstr ""
+
+#: template/use.html.j2:28
+msgid "... and play around with it."
+msgstr ""
+
+#: template/use.html.j2:86
+msgid "CADET (and Chat)"
+msgstr ""
+
+#: template/use.html.j2:120
+msgid "Chatting with a (simple) client"
+msgstr ""
+
+#: template/use.html.j2:160
+msgid "Name resolution using GNS on the command line"
+msgstr ""
+
+#: template/use.html.j2:232
+msgid "Name resolution using GNS with a browser"
+msgstr ""
+
+#: template/use.html.j2:309
+msgid "VPN"
 msgstr ""
 
 #: template/video.html.j2:8
