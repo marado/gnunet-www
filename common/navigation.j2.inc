@@ -17,14 +17,16 @@
 </noscript>
 <!-- <nav class="navbar navbar-toggleable navbar-toggleable-md navbar-expand-md navbar-inverse navbar-dark fixed-top bg-dark"> -->
 <!--<nav class="navbar navbar-expand-md navar-inverse navbar-dark bg-dark fixed-top"> -->
-<nav class="navbar navbar-expand-md fixed-top">
+  <!-- <nav class="navbar navbar-expand-md fixed-top"> -->
+<nav class="navbar navbar-expand-md bg-near-black">
   <a class="navbar-brand" href="index.html">
     <!-- 
       TODO: imo this is bad in the navbar.
       a readable "gnunet" font-logo would
       be better for orientation.
       -->
-      <img src="{{ url('static/images/gnunet-icon.png') }}" alt="GNUnet Home Icon" />
+      <!-- <img src="{{ url('static/images/gnunet-icon.png') }}" alt="GNUnet Home Icon" /> -->
+    <h1>GNUnet</h1>
   </a>
 
   <!-- menu button -->
@@ -40,7 +42,7 @@
   <!-- /menu button -->
 
   <!-- navbar -->
-  <div class="collapse navbar-collapse" id="navbarMain">
+  <div class="collapse navbar-collapse bg-near-black" id="navbarMain">
     <ul class="navbar-nav mr-auto nav">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"

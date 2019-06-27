@@ -4,15 +4,24 @@ GNUnet Website
 
 Sourcecode for https://gnunet.org created from the https://taler.net code base.
 
-Requires python3-jinja2, python3-babel, and gettext.
+Requirements
+------------
+- python3 modules:
+  - python3-jinja2, python3-babel
+- python3 interpreter:
+  - python 3.7 (although any 3.x version should work)
+- gettext
+- sassc, to compile the stylesheets
 
-The currently supported python3 version is python 3.7.
 
 Run "make" to build the HTML.
 If you experience a failure related to a python module, run
 "make" again.
 
 Expect it to show up in rendered/en/ and other language folders.
+
+Run the following to start a python webserver:
+BROWSER=firefox make run
 
 Layout / how this comes to be
 =============================

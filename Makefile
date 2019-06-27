@@ -11,8 +11,7 @@
 
 include config.mk
 
-all: locale template
-	# Consider using pax instead of cp.
+all: css locale template
 	cp -R dist rendered/
 	cp -R static rendered/
 	cp rendered/static/robots.txt rendered/robots.txt
@@ -48,6 +47,10 @@ locale-update: locale/messages.pot
 	msgmerge -U -m --previous locale/it/LC_MESSAGES/messages.po locale/messages.pot
 
 	if grep -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
+
+# sass preprocessor
+css:
+	sassc static/styles.sass static/styles.css
 
 # Compile translation files for use.
 locale-compile:

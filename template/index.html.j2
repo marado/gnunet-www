@@ -1,14 +1,14 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <!-- Jumbotron -->
-<div class="jumbotron dark">
-  <div class="container dark">
-    <div class="row">
+<div class="jumbotron bg-near-black">
+  <div class="container bg-near-black">
+    <div class="row bg-near-black">
       <div class="col-lg-6">
         <center><img src="{{ url('static/images/gnunet-anonymous-logo.png') }}"  alt="GNUnet" /></center>
       </div>
-      <div class="col-lg-6">
-      <p class="dark">
+      <div class="col-lg-6 near-white bg-near-black">
+      <p>
         {% trans %}
         GNUnet is a new network protocol stack for building secure, distributed,
         and privacy-preserving applications. With strong roots in academic
@@ -66,13 +66,13 @@
   </div>
 </div>
 
-<!--<article>-->
 
-<div class="container-fluid adorn_h3_bracket c_acronym">
+
+<div class="container-fluid c_acronym">
   <div class="container">
     <div class="row">
       <div class="container text-center">
-          <h2>{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</h2>
+          <h1>{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</h1>
       </div>
     </div>
     <div class="row">
@@ -153,7 +153,8 @@
           which <a
           href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables
           reverse-engineering pages visited via website
-          fingerprinting</a>. -->
+          fingerprinting</a>.
+          -->
 	  {% endtrans %}
 	  <p>
 	  {% trans %}
@@ -192,35 +193,23 @@
       </div>
     </div>
   </div>
-  <!--
-  <div class="container">
-    <div class="row">
-      <div class="container text-center bg-primary">
-        <h3>
-          {% trans %}
-          GNUnet aims to enable a secure and ethical Internet.
-          {% endtrans %}
-        </h3>
-      </div>
-    </div>
-  </div>
-  //-->
 </div>
 
 
 
-<div class="container adorn_h3_bracket">
-  <div class="row">
-    <div class="container text-center">
-      <h2>
-        {% trans %}
-        Featured Applications
-        {% endtrans %}
-      </h2>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="container text-center">
+        <h1>
+          {% trans %}
+            Featured Applications
+          {% endtrans %}
+        </h1>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4">
+    <div class="row">
+      <div class="col-lg-4">
       <section>
       <h3>{{ _("GNU Taler") }}</h3>
       <p>
@@ -292,51 +281,56 @@
       </section>
     </div>
   </div>
-</div>
-
-<div class="container adorn_h3_bracket">
-  <div class="row">
-    <div class="container text-center">
-      <h2>
-        {% trans %}
-        Upcoming Applications
-        {% endtrans %}
-      </h2>
-    </div>
-      <div class="col-lg-6">
-      <section>
-      <h3>{{ _("secushare") }}</h3>
-      <p>
-        {% trans %}
-        <a href="https://secushare.org/">secushare</a>
-	is creating a decentralized social networking
-	application on top of GNUnet.  Using overlay
-	multicast and the extensible PSYC protocol, notifications are
-	distributed end-to-end encrypted to authorized recipients only.
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
-    <div class="col-lg-6">
-      <section>
-      <h3>{{ _("pretty Easy privacy") }}</h3>
-      <p>
-        {% trans %}
-        <a href="https://pep.foundation/">pretty Easy privacy</a> (p&#8801;p)
-        is creating a usable end-to-end encrypted e-mail solution using
-	opportunistic key exchange.
-	p&#8801;p will use GNUnet to protect metadata and exploit new
-	cryptographic protocols to verify keys.
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
   </div>
 </div>
 
-<!--</article>-->
+<div class="container-fluid bg-dark text-white">
+    <div class="container">
+      <div class="row bg-dark">
+        <div class="container bg-dark text-center">
+          <h1>
+            {% trans %}
+              Upcoming Applications
+            {% endtrans %}
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <section>
+            <h3>{{ _("secushare") }}</h3>
+            <p>
+              {% trans %}
+                <a href="https://secushare.org/">secushare</a>
+	        is creating a decentralized social networking
+	        application on top of GNUnet.  Using overlay
+	        multicast and the extensible PSYC protocol, notifications are
+	        distributed end-to-end encrypted to authorized recipients only.
+              {% endtrans %}
+            </p>
+          </section>
+        </div>
+        <div class="col-lg-4">
+          <section>
+            <h3>{{ _("pretty Easy privacy") }}</h3>
+            <p>
+              {% trans %}
+                <a href="https://pep.foundation/">pretty Easy privacy</a> (p&#8801;p)
+                is creating a usable end-to-end encrypted e-mail solution using
+	        opportunistic key exchange.
+	        p&#8801;p will use GNUnet to protect metadata and exploit new
+	        cryptographic protocols to verify keys.
+              {% endtrans %}
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+</div>
 
-<div class="container adorn_h3_bracket">
+
+
+<div class="container">
   <div class="row">
     <div class="container text-center">
       <h2>{{ _("News") }}</h2>
