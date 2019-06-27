@@ -61,7 +61,7 @@ main {
 /* There's a fixed navbar that is 3.5rem tall */
 body {
     padding-top: 3.5rem;
-    background-color: #cccccc;
+    background-color: #baddef;
 }
 
 /* 
@@ -216,7 +216,7 @@ html {
 }
 
 .c_acronym {
-    background-color: #68a;
+    background-color: #217fae;
     color: white;
 }
 
@@ -296,7 +296,8 @@ footer {
     padding-top: 70px;
 }
 #body_content .jumbotron {
-    background-color: #cccccc;
+    /* background-color: #cccccc;*/
+    background-image: radial-gradient(circle, #baddef, #baddef, #349fd7);
     margin-bottom: 0px;
 }
 
@@ -323,3 +324,6 @@ footer {
     filter: invert(100%);
 }
 
+.row {
+  min-widht: 50%;
+}
