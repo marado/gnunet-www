@@ -9,16 +9,16 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-4 offset-md-2">
+    <div class="col-lg-4 offset-lg-2 col-md-6">
       {% trans %}
       <p>The following GNUnet installation instructions help you building from source for your distribution.</p> 
       <p><i>Please note that the installation process will get much easier once we have proper packages again (planned for winter 2019).</i></p>
       {% endtrans %}
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-6">
       {% trans %}
-      <p>Once the installation is done, please head over to the <a href="https://gnunet.org/en/use">"How to use GNUnet"-page</a> to get a brief intro on what can be done with your installation.</p>
-      <p>Further information is available in our  <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">handbook</a>.</p>
+      <p>You have already installed GNUnet and want to use it? <a href="https://gnunet.org/en/use">Check this out!</a></p>
+      <p>Further information is available in our <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">handbook</a>.</p>
       <p>If you have any queries about the installation or the usage, please <a href="https://gnunet.org/en/engage.html">get in touch!</a></p>
       {% endtrans %}
     </div>
@@ -27,37 +27,40 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 text-center">
-      IMAGE here<br> 
-      <a href="install-on-ubuntu1804.html">Ubuntu 18.04</a>
+    <div class="col-lg-4 offset-lg-2 col-md-6 text-center">
+      <p><a href="install-on-ubuntu1804.html"><img src="{{ url('static/images/ubuntu-logo32.png') }}" class="distro-logo"></a></p>
+      <h3>Ubuntu 18.04</h3>
     </div>
-    <div class="col-lg-6 text-center">
-      IMAGE here<br> 
-      <a href="install-on-debian9.html">Debian 9</a>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 text-center">
-      IMAGE here<br> 
-      <a href="install-on-macos.html">macOS</a>
-    </div>
-    <div class="col-lg-6 text-center">
-      IMAGE here<br> 
-      <a href="install-on-netbsd.html">NetBSD</a>
+    <div class="col-lg-4 col-md-6 text-center">
+      <p><a href="install-on-debian9.html"><img src="{{ url('static/images/debian-logo.svg') }}" class="distro-logo"></a></p>
+      <h3>Debian 9</h3>
     </div>
   </div>
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 text-center">
-      IMAGE here<br> 
-      <a href="https://tutorial.gnunet.org/">C Coding Tutorial for GNUnet</a>
+    <div class="col-lg-4 offset-lg-2 col-md-6 text-center">
+      <p><a href="install-on-macos.html"><img src="{{ url('static/images/apple-logo.svg') }}" class="distro-logo"></a></p>
+      <h3>macOS</h3>
     </div>
-    <div class="col-lg-6 text-center">
-      <a href="install-on-archpi.html">Arch-Pi</a>
+    <div class="col-lg-4 col-md-6 text-center">
+      <p><a href="install-on-netbsd.html"><img src="{{ url('static/images/netbsd-logo.png') }}" class="distro-logo"></a></p>
+      <h3>NetBSD</h3>
     </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 offset-lg-2 col-md-6 text-center">
+      <p><a href="install-on-archpi.html"><img src="{{ url('static/images/archlinux-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
+      <h3>Arch-Pi</h3>
+    </div>
+    <!--
+    <div class="col-lg-4 col-md-6 text-center">
+      <p><a href="https://tutorial.gnunet.org/"><img src="{{ url('static/images/gnunet-logo-dark-text.png') }}" class="distro-logo" alt="GNUnet" /></a></p>
+      <h3>C Coding Tutorial for GNUnet</h3>
+    </div>
+    -->
   </div>
 </div>
 
