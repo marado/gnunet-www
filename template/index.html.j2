@@ -42,7 +42,7 @@
   </div>
   <div class="container text-center">
     <p> 
-      <a class="btn btn-primary btn-lg" href="about.html">
+      <a class="btn btn-primary btn-lg" href="#about">
       {% trans %}
       About 
       {% endtrans %}
@@ -71,7 +71,7 @@
   <div class="container">
     <div class="row">
       <div class="container text-center">
-          <h1>{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</h1>
+        <h1><a name="about">{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</a></h1>
       </div>
     </div>
     <div class="row">
@@ -200,6 +200,16 @@
           operation ("access the code"), to distribute information
           ("copy"), as well as the freedom to deploy new applications
           ("modify").
+          {% endtrans %}
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-4">
+        <section>
+        <h3>{{ _("Learn about the GNUnet") }}</h3>
+        <p>
+          {% trans %}
+          If you want to know more about the GNUnet please continue reading <a href="about.html">here</a>.
           {% endtrans %}
         </p>
         </section>
