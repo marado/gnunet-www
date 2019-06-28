@@ -26,7 +26,7 @@
       be better for orientation.
       -->
       <!-- <img src="{{ url('static/images/gnunet-icon.png') }}" alt="GNUnet Home Icon" /> -->
-      <img src="{{ url('static/images/gnunet-anonymous-schriftzug.png') }}" alt="GNUnet Home Icon" height="25px" />
+      <img src="{{ url('static/images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet Home Icon" height="25px" />
   </a>
 
   <!-- menu button -->
@@ -50,10 +50,10 @@
            {{ _("Community") }}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
-          <li><a class="dropdown-item" href="engage.html">{{ _("Discussion") }} </a></li>
+          <li><a class="dropdown-item" href="engage.html">{{ _("Engage") }} </a></li>
           <li><a class="dropdown-item" href="gsoc.html">{{ _("GSoC Projects") }}</a></li>
-          <li><a class="dropdown-item" href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
           <li><a class="dropdown-item" href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
+          <li><a class="dropdown-item" href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
 	  <!-- li><a class="dropdown-item" href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li -->
         </ul>
       </li>
