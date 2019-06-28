@@ -81,6 +81,7 @@
 	   {{ _("Documentation") }}
 	</a>
 	<ul class="dropdown-menu" aria-labelledby="navbarMain">
+	  <li><a class="dropdown-item" href="about.html">{{ _("About") }}</a></li>
 	  <li><a class="dropdown-item" href="install.html">{{ _("Install") }}</a></li>
 	  <li><a class="dropdown-item" href="use.html">{{ _("Use") }}</a></li>
 	  <li><a class="dropdown-item" href="video.html">{{ _("Videos") }}</a></li>
