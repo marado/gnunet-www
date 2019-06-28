@@ -1,3 +1,5 @@
+{% include "news/2019-06-DSTJ.inc" %}
+{% include "news/2019-06.inc" %}
 {% include "news/2019-0.11.5.inc" %}
 {% include "news/2019-0.11.4.inc" %}
 {% include "news/2019-0.11.3.inc" %}
