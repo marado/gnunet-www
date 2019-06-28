@@ -92,7 +92,6 @@
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
     $ ./bootstrap<br>
-    $ export GNUNET_PREFIX=/usr<br>
     $ export CFLAGS="-g -Wall -O0"<br>
     $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose <br>
     $ make -j$(nproc || echo -n 1)<br>
@@ -215,230 +214,12 @@
   </code>
 </section>
 <section>
-  <h3>{{ _("Make sure it works") }}</h3>
-
-  <p>
-    Let's try out some of GNUnet's use cases. Some should be done before others:
-  </p>
-
-  <ul>
-    <li>filesharing</li>
-    <li>A simple chat using CADET</li>
-    <li>Name resolution using GNS on the command line</li>
-    <li>Name resolution using GNS with a browser (do it on the command line first)</li>
-    <li>Serving a website using VPN (do name resolution with a browser first)</li>
-  </ul>
+  <h3>{{ _("Use GNUnet!") }}</h3>
+   <p>
+	Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
+   <p>
 </section>
-<section>
-  <h4>{{ _("filesharing") }}</h4>
 
-  <p>
-    Let's publish a file in the GNUnet filesharing network. We use the keywords
-    ("commons" and "state") so other people will be able to search for the file.
-  </p>
-
-  <p>
-    We can choose any file and describe it with meaningful keywords (using the
-    `-k` command line option).
-  </p>
-
-  <code>
-    $ gnunet-publish -k commons -k state ostrom.pdf<br>
-    Publishing `/home/myself/ostrom.pdf' done.<br>
-    URI is `gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237'.
-  </code>
-
-  <p>
-    Finding the file by keyword works with `gnunet-search`.
-  </p>
-
-  <code>
-    $ gnunet-search commons<br>
-    #1:<br>
-    gnunet-download -o "ostrom.pdf" gnunet://fs/chk/M57SXDJ72EWS25CT6307KKJ8K0GCNSPTAZ649NA1NS10MJB4A1GZ9EN4Y02KST9VA5BHE8B335RPXQVBWVZ587Y83WQ7J3DHMBX30Q8.DHNGBN4CB2DBX1QRZ1R0B1Q18WTEAK4R94S9D57C9JMJJ3H7SSQDCV4D1218C4S2VP085AMQQSMG18FCP6NQMZQZJ91XR5NBX7YF0V0.42197237
-  </code>
-
-  <p>
-    It gives us the command line call to download the file (and store it as
-    ostrom.pdf)!
-  </p>
-</section>
-<section>
-  <h4>{{ _("CADET (and Chat)") }}</h4>
-
-  <p>
-    We can use the `gnunet-cadet` command line tool to open a port and from
-    another machine connect to this port and chat or transfer data. First we need
-    our *peer ID* of the GNUnet peer opening the port.
-  </p>
-
-  <code>
-    $ gnunet-peerinfo -s<br>
-    I am peer `P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG'.
-  </code>
-
-  <p>
-    Now we open the port (it can be any string!):
-  </p>
-
-  <code>
-    $ gnunet-cadet -o my-secret-port
-  </code>
-
-  <p>On the other machine we can connect using the peer ID and the port and start chatting!</p>
-
-  <code>
-    $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
-  </code>
-</section>
-<section>
-  <h4>{{ _("Name resolution using GNS on the command line") }}</h4>
-
-  <p>GNS is the GNU name service, a fully decentralized alternatice to DNS. We'll publish an IP address in a GNS record try to resolve it on the command line. First we need an identity which is the
-    equivalent to a zone in DNS. We'll call it "myself" and create it using the
-    `gnunet-identity` command line tool. Instead of "myself" you can surely use your
-    nick or any other name. </p>
-
-  <code>
-    $ gnunet-identity -C myself
-  </code>
-
-  <p>We can check if it worked using the same tool. We expect the name of our identity and the corresponding public key to be displayed.</p>
-
-  <code>
-    $ gnunet-identity -d<br>
-    myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
-  </code>
-
-  <p>
-    Now we add a public `A` record to our zone. It has the name "ccc", a value
-    of "195.54.164.39" and it expires after one day.
-  </p>
-
-  <code>
-    $ gnunet-namestore -z myself -a -e "1 d" -p -t A -n ccc -V 195.54.164.39
-  </code>
-
-  <p>Now we can query that record using the command line tool `gnunet-gns`.</p>
-
-  <code>
-    $ gnunet-gns -t A -u ccc.myself<br>
-    ccc.myself:<br>
-    Got `A' record: 195.54.164.39
-  </code>
-
-  <p>
-    So it worked! But only resolving our own records is boring. So we
-    can give our identity (the public key of it to be precise) to
-    someone else so they can try to resolve our records, too. The
-    other person (Bob) has to add it to his namestore like this:
-  </p>
-
-  <code>
-    $ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
-  </code>
-
-  <p>
-    Our identity in Bobs namestore is a public record (-p) and never
-    expires (-e never). Now Bob (let's assume he has called his
-    identity myself, too) should be able to resolve our "ccc" record,
-    too!
-  </p>
-
-  <code>
-    $ gnunet-gns -t A -u ccc.alice.myself<br>
-    ccc.alice.myself:<br>
-    Got `A' record: 195.54.164.39
-  </code>
-
-  <p>
-    It can continue like this. A friend of Bob would be able to
-    resolve our records too because Bob published our identity in a
-    public record. Bobs friend would simply use "ccc.alice.bob.myself"
-    to resolve our "ccc" record.
-  </p>
-</section>
-<section>
-  <h4>{{ _("Name resolution using GNS with a browser") }}</h4>
-
-  <p>
-    In the previous use case "Name resolution using GNS on the command line" we got an idea
-    about what GNS is about, but now let's use it with a browser, to make it actually useful. Currently Firefox and Chromium are known to work.
-  </p>
-
-  <p>
-    Many websites enforce HTTPS and thus provide certificates for
-    their hostnames (and not our GNS names). Browsers don't like wrong
-    hostnames in certificates and will present error messages. So GNUnet
-    has to trick them by generating own certificates for our GNS
-    names. This means we need to create our own certificate authority
-    and tell our browser about it. Luckily there's a script for it:
-  </p>
-
-  <code>
-    $ gnunet-gns-proxy-setup-ca 
-  </code>
-
-  <p>After executing this script the Browser has to be restarted.</p>
-
-  <p>
-    GNUnet provides a proxy service (gnunet-gns-proxy) that the
-    browser can send DNS and HTTP traffic to. It will try to resolve
-    names with GNS first and forward the rest of the DNS traffic to
-    the system's DNS resolver. It will also take care of the HTTP
-    traffic, so the browser gets valid certificates and the web server
-    will not be confused by our GNS hostnames. Our GNS namestore
-    doesn't know about any DNS hostnames yet, so we have to store
-    them, too. For our "ccc" A record, we have to store a LEHO (legacy
-    hostname) record, too. It must contain the website's original DNS
-    hostname:
-  </p>
-
-  <code>
-    $ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -V www.ccc.de
-  </code>
-
-  <p>Now let's start gnunet-gns-proxy.</p>
-
-  <code>
-    $ /usr/lib/gnunet/libexec/gnunet-gns-proxy
-  </code>
-
-  <p>
-    Our browser has to be configured so it uses our proxy. In Firefox
-    we have to set these options under "about:config":
-  </p>
-
-  <code>
-    network.proxy.socks:            localhost<br>
-    network.proxy.socks_port:       7777<br>
-    network.proxy.socks_remote_dns  true<br>
-    network.proxy.type:             1
-  </code>
-
-  <p>
-    To tell Chromium to use the proxy, it has to be started with the
-    "--proxy-server" command line option:
-  </p>
-
-  <code>
-    $ chromium --proxy-server="socks5://127.0.0.1:7777"
-  </code>
-
-  <p>
-    Now we should be able to resolve our GNS names in the browser! We
-    just have to type "https://ccc.myself" into the address bar. If
-    our friend Bob prepared his system, too, he can resolve our record
-    by typing "ccc.alice.myself".
-  </p>
-</section>
-<section>
-  <h4>{{ _("VPN") }}</h4>
-
-  <p>
-    TBD
-  </p>
-</section>
 <section>
   <h3>{{ _("Uninstall GNUnet and its dependencies") }}</h3>
 
@@ -456,13 +237,7 @@
     $ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
   </code>
 </section>
-<section>
-  <h3>{{ _("Appendix A: Optional GNUnet features") }}</h3>
 
-  <p>
-    TBD
-  </p>
-</section>
 <section>
   <h3>{{ _("Troubleshooting") }}</h3>
 </section>

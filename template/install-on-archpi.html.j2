@@ -119,45 +119,10 @@ vpn (gnunet-service-vpn)<br>
 </code></p>
 
 <h3>{{ _("Make sure, it works!") }}</h3>
-
-After starting GNUnet you should make sure that your peer is connecting to the
-P2P-network. By typing gnunet-core you should see something like this:
-
-<p><code>
-> gnunet-core<br>
-Tue Oct 30 19:58:48 2018: connection established         DSTJ (timeout in  293 s)<br>
-Tue Oct 30 19:58:48 2018: connection established         A4MK (timeout in  292 s)<br>
-Tue Oct 30 19:58:48 2018: connection established         7WRD (timeout in  299 s)<br>
-Tue Oct 30 19:58:48 2018: connection established         5WBG (timeout in  299 s)<br>
-</code></p>
-
-<h3>{{ _("Chat the cat") }}</h3>
-
-<p>To be able to chat, we need to install and compile additional
-software.</p>
-
-<p><code>
-> git clone https://gnunet.org/git/gnunet-nim.git<br>
-> cd gnunet-nim/examples<br>
-> nim c groupchat.nim
-</code></p>
-
-<p>Fine! We can now try to enter a chat server running on another GNUnet node. 
-
-<p><code>
-> LD_LIBRARY_PATH=/path/to/gnunetlibs ./groupchat --config=/path/to/gnunet.conf --server=YV6G9EP9K3X41BM3FJ3D29BDZR6358XNZ6KDZVV7DFW729YB0KCG --port=welcome --nick=YOURNICK
-</code></p>
-
-<p>You should now see something like this:</p>
-
-<p><code>
-> 2018-10-30 19:50:10 Welcome 8Q2T! participants: @[] <br>
-Hello GNUnet!<br>
-2018-10-30 19:52:53 [8Q2T] Hello GNUnet!
-</code></p>
-
-<p>Here we have typed "Hello gnunet!" to standard in which is then written out
-to standard out after having been sent back from GNUnet.</p>
+   <p>
+	Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
+   <p>
+</section>
 
 </div>
 {% endblock body_content %}

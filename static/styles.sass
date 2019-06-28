@@ -27,8 +27,9 @@
 
 // text colors
 
+// blunt-force priority, works for now.
 .near-white
-  color: #f4f4f4
+  color: #f4f4f4  !important
 
 .near-black
   color: #111
@@ -46,6 +47,12 @@
 
 .bg-near-black
   background-color: #111
+
+// links
+
+.link-white
+  a
+    @extend .near-white
 
 code
   margin-bottom: 1em
@@ -256,12 +263,8 @@ footer
     max-width: 80em
   .jumbotron
     margin-bottom: 0px
-    // background-color: #cccccc;
-    // background-image: radial-gradient(circle, #baddef, #baddef, #349fd7);
   // push footer down
   min-height: 80vh
-  // space for the nav
-  // padding-top: 70px;
 
 .adorn_h3_bracket h3::before
   content: "#"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-27 20:23+0200\n"
+"POT-Creation-Date: 2019-06-27 21:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
-#: common/navigation.j2.inc:84 template/index.html.j2:51
+#: common/navigation.j2.inc:84 template/index.html.j2:53
 #: template/install.html.j2:7
 msgid "Install"
 msgstr ""
@@ -1310,19 +1310,19 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: template/index.html.j2:56
+#: template/index.html.j2:60
 msgid "Join"
 msgstr ""
 
-#: template/index.html.j2:70
+#: template/index.html.j2:74
 msgid "The Internet of tomorrow needs GNUnet today"
 msgstr ""
 
-#: template/index.html.j2:76
+#: template/index.html.j2:80
 msgid "Imagine..."
 msgstr ""
 
-#: template/index.html.j2:78
+#: template/index.html.j2:82
 msgid ""
 "The conventional Internet is currently like a system of roads with deep "
 "potholes and highwaymen all over the place. Even if you still can use the "
@@ -1339,11 +1339,11 @@ msgid ""
 "central data base. -->"
 msgstr ""
 
-#: template/index.html.j2:100
+#: template/index.html.j2:104
 msgid "The Internet is broken"
 msgstr ""
 
-#: template/index.html.j2:102
+#: template/index.html.j2:106
 msgid ""
 "Protocols from Ethernet and IP to BGP and X.509 PKI are insecure by default: "
 "protecting against address forgery, routers learning metadata, or choosing "
@@ -1354,7 +1354,7 @@ msgid ""
 "multiple attacks massively threatening our freedom. -->"
 msgstr ""
 
-#: template/index.html.j2:114
+#: template/index.html.j2:118
 msgid ""
 "GNUnet provides <a href=\"https://www.w3.org/2014/strint/papers/65.pdf"
 "\">privacy by design</a>, improving addressing, routing, naming and content "
@@ -1364,18 +1364,18 @@ msgid ""
 "routing, naming and content distribution in a technically robust manner. -->"
 msgstr ""
 
-#: template/index.html.j2:129
+#: template/index.html.j2:133
 msgid "Decentralization is hard"
 msgstr ""
 
-#: template/index.html.j2:132
+#: template/index.html.j2:136
 msgid ""
 "It seems as if every other distributed or P2P project develops its own "
 "library stack, covering transports, stream muxing, discovery and others. "
 "This divides effort and multiplies bug count."
 msgstr ""
 
-#: template/index.html.j2:139
+#: template/index.html.j2:143
 msgid ""
 "GNUnet is a metadata-preserving foundation for your application, covering "
 "areas from addressing to reliable bidirectional Axolotl-encrypted channels, "
@@ -1383,11 +1383,11 @@ msgid ""
 "almost two decades."
 msgstr ""
 
-#: template/index.html.j2:153
+#: template/index.html.j2:157
 msgid "Metadata is exposed"
 msgstr ""
 
-#: template/index.html.j2:155
+#: template/index.html.j2:159
 msgid ""
 "Even though transport encryption is increasingly being deployed on the "
 "Internet, it still reveals data that can threaten democracy: the identities "
@@ -1398,7 +1398,7 @@ msgid ""
 "visited via website fingerprinting</a>. -->"
 msgstr ""
 
-#: template/index.html.j2:169
+#: template/index.html.j2:173
 msgid ""
 "GNUnet <a href=\"https://secushare.org/anonymity\">addresses</a> these "
 "concerns with perfect forward secrecy via ephemeral public key addressing, "
@@ -1406,11 +1406,11 @@ msgid ""
 "resistant routing, and more."
 msgstr ""
 
-#: template/index.html.j2:182
+#: template/index.html.j2:186
 msgid "Freedoms are not respected"
 msgstr ""
 
-#: template/index.html.j2:184
+#: template/index.html.j2:188
 msgid ""
 "Today, monitoring increasingly centralized infrastructure, proprietary "
 "implementations, traffic shapers and firewalls restrict all of the <a href="
@@ -1418,7 +1418,7 @@ msgid ""
 "various degrees."
 msgstr ""
 
-#: template/index.html.j2:193
+#: template/index.html.j2:197
 msgid ""
 "GNUnet gives users freedoms to securely access information (\"run\" the "
 "network), to study all aspects of the network's operation (\"access the code"
@@ -1426,26 +1426,26 @@ msgid ""
 "new applications (\"modify\")."
 msgstr ""
 
-#: template/index.html.j2:214
+#: template/index.html.j2:218
 msgid "Featured Applications"
 msgstr ""
 
-#: template/index.html.j2:223
+#: template/index.html.j2:227
 msgid "GNU Taler"
 msgstr ""
 
-#: template/index.html.j2:225
+#: template/index.html.j2:229
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
 
-#: template/index.html.j2:237
+#: template/index.html.j2:241
 msgid "The GNU Name System"
 msgstr ""
 
-#: template/index.html.j2:240
+#: template/index.html.j2:244
 msgid ""
 "The GNU Name System (GNS) is a fully decentralized replacement for the "
 "Domain Name System (DNS). Instead of using a hierarchy, GNS uses a directed "
@@ -1456,11 +1456,11 @@ msgid ""
 "mechanism. -->"
 msgstr ""
 
-#: template/index.html.j2:255
+#: template/index.html.j2:259
 msgid "re:claimID"
 msgstr ""
 
-#: template/index.html.j2:257
+#: template/index.html.j2:261
 msgid ""
 "<a href=\"https://reclaim-identity.io/\">re:claimID</a> is a decentralized "
 "Identity Provider (IdP) service built in top of the GNU Name System. It "
@@ -1468,37 +1468,37 @@ msgid ""
 "standardized protocols (OpenID Connect)."
 msgstr ""
 
-#: template/index.html.j2:270
+#: template/index.html.j2:274 template/use.html.j2:45
 msgid "Filesharing"
 msgstr ""
 
-#: template/index.html.j2:272
+#: template/index.html.j2:276
 msgid ""
 "GNUnet filesharing is an application that provides censorship-resistant, "
 "anonymous filesharing. The publisher is empowered to make a gradual choice "
 "between performance and anonymity."
 msgstr ""
 
-#: template/index.html.j2:282
+#: template/index.html.j2:286 template/use.html.j2:315
 msgid "Conversation"
 msgstr ""
 
-#: template/index.html.j2:284
+#: template/index.html.j2:288
 msgid ""
 "GNUnet conversation is an application that provides secure voice "
 "communication in a fully decentralized way by employing GNUnet for routing "
 "and transport."
 msgstr ""
 
-#: template/index.html.j2:301
+#: template/index.html.j2:305
 msgid "Upcoming Applications"
 msgstr ""
 
-#: template/index.html.j2:310
+#: template/index.html.j2:314
 msgid "secushare"
 msgstr ""
 
-#: template/index.html.j2:312
+#: template/index.html.j2:316
 msgid ""
 "<a href=\"https://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
@@ -1506,11 +1506,11 @@ msgid ""
 "encrypted to authorized recipients only."
 msgstr ""
 
-#: template/index.html.j2:324
+#: template/index.html.j2:328
 msgid "pretty Easy privacy"
 msgstr ""
 
-#: template/index.html.j2:326
+#: template/index.html.j2:330
 msgid ""
 "<a href=\"https://pep.foundation/\">pretty Easy privacy</a> (p&#8801;p) is "
 "creating a usable end-to-end encrypted e-mail solution using opportunistic "
@@ -1518,7 +1518,7 @@ msgid ""
 "cryptographic protocols to verify keys."
 msgstr ""
 
-#: template/index.html.j2:345
+#: template/index.html.j2:349
 msgid "News"
 msgstr ""
 
@@ -1527,8 +1527,8 @@ msgid "Tutorial: GNUnet on Archlinux/Pi"
 msgstr ""
 
 #: template/install-on-archpi.html.j2:12 template/install-on-debian9.html.j2:28
-#: template/install-on-netbsd.html.j2:17
-#: template/install-on-ubuntu1804.html.j2:28 template/tutorial-macos.html.j2:14
+#: template/install-on-macos.html.j2:14 template/install-on-netbsd.html.j2:17
+#: template/install-on-ubuntu1804.html.j2:28
 msgid "Requirements"
 msgstr ""
 
@@ -1542,10 +1542,6 @@ msgstr ""
 
 #: template/install-on-archpi.html.j2:121
 msgid "Make sure, it works!"
-msgstr ""
-
-#: template/install-on-archpi.html.j2:134
-msgid "Chat the cat"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:5
@@ -1562,24 +1558,21 @@ msgstr ""
 msgid "Make an installation directory"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:58
+#: template/install-on-debian9.html.j2:58 template/install-on-macos.html.j2:144
 #: template/install-on-netbsd.html.j2:222
 #: template/install-on-ubuntu1804.html.j2:57
-#: template/tutorial-macos.html.j2:144
 msgid "Get the source code"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:77
+#: template/install-on-debian9.html.j2:77 template/install-on-macos.html.j2:152
 #: template/install-on-netbsd.html.j2:230
 #: template/install-on-ubuntu1804.html.j2:67
-#: template/tutorial-macos.html.j2:152
 msgid "Compile and Install"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:102
-#: template/install-on-netbsd.html.j2:240
+#: template/install-on-macos.html.j2:164 template/install-on-netbsd.html.j2:240
 #: template/install-on-ubuntu1804.html.j2:78
-#: template/tutorial-macos.html.j2:164
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
@@ -1588,93 +1581,67 @@ msgstr ""
 msgid "Option 2: GNUnet for development"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:126
+#: template/install-on-debian9.html.j2:125
 msgid "Option 3: gnunet-gtk"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:143
-#: template/install-on-ubuntu1804.html.j2:103
+#: template/install-on-debian9.html.j2:141
+#: template/install-on-ubuntu1804.html.j2:102
 msgid "Install GNUnet plugin for name resolution"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:197
-#: template/install-on-ubuntu1804.html.j2:142
+#: template/install-on-debian9.html.j2:195
+#: template/install-on-ubuntu1804.html.j2:141
 msgid "Configuration"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:274
-#: template/install-on-ubuntu1804.html.j2:218
-msgid "Make sure it works"
+#: template/install-on-debian9.html.j2:272
+#: template/install-on-ubuntu1804.html.j2:217
+msgid "Use GNUnet!"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:289
-#: template/install-on-ubuntu1804.html.j2:233 template/use.html.j2:25
-msgid "filesharing"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:321
-#: template/install-on-ubuntu1804.html.j2:267 template/use.html.j2:59
-msgid "CADET (and Chat)"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:352
-#: template/install-on-ubuntu1804.html.j2:295 template/use.html.j2:87
-msgid "Name resolution using GNS on the command line"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:428
-#: template/install-on-ubuntu1804.html.j2:362 template/use.html.j2:154
-msgid "Name resolution using GNS with a browser"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:509
-#: template/install-on-ubuntu1804.html.j2:436 template/use.html.j2:228
-msgid "VPN"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:515
-#: template/install-on-ubuntu1804.html.j2:443
+#: template/install-on-debian9.html.j2:278
+#: template/install-on-ubuntu1804.html.j2:224
 msgid "Uninstall GNUnet and its dependencies"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:531
-#: template/install-on-ubuntu1804.html.j2:460
-msgid "Appendix A: Optional GNUnet features"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:537
-#: template/install-on-ubuntu1804.html.j2:467
+#: template/install-on-debian9.html.j2:294
+#: template/install-on-ubuntu1804.html.j2:242
 msgid "Troubleshooting"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:539
-#: template/install-on-ubuntu1804.html.j2:470
+#: template/install-on-debian9.html.j2:296
+#: template/install-on-ubuntu1804.html.j2:245
 msgid "You can't reach other people's nodes"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:576
-#: template/install-on-ubuntu1804.html.j2:501
+#: template/install-on-debian9.html.j2:332
+#: template/install-on-ubuntu1804.html.j2:276
 msgid "OMG you guys broke my internet"
+msgstr ""
+
+#: template/install-on-macos.html.j2:5
+msgid "Tutorial: GNUnet on macOS 10.14 (Mojave)"
+msgstr ""
+
+#: template/install-on-macos.html.j2:21 template/install-on-netbsd.html.j2:28
+msgid "Installation"
+msgstr ""
+
+#: template/install-on-macos.html.j2:39 template/install-on-netbsd.html.j2:100
+msgid "First steps"
+msgstr ""
+
+#: template/install-on-macos.html.j2:119 template/install-on-netbsd.html.j2:180
+msgid "Alternative: Installation from source"
+msgstr ""
+
+#: template/install-on-macos.html.j2:197 template/install-on-netbsd.html.j2:265
+msgid "Option 2: GNUnet experimental"
 msgstr ""
 
 #: template/install-on-netbsd.html.j2:5
 msgid "Tutorial: GNUnet on NetBSD 8.0 CURRENT"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:28 template/tutorial-macos.html.j2:21
-msgid "Installation"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:100 template/tutorial-macos.html.j2:39
-msgid "First steps"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:180 template/tutorial-macos.html.j2:119
-msgid "Alternative: Installation from source"
-msgstr ""
-
-#: template/install-on-netbsd.html.j2:265 template/tutorial-macos.html.j2:197
-msgid "Option 2: GNUnet experimental"
 msgstr ""
 
 #: template/install-on-ubuntu1804.html.j2:6
@@ -1691,9 +1658,8 @@ msgstr ""
 
 #: template/install.html.j2:19
 msgid ""
-"<p>Once the installation is done, please head over to the <a href=\"https://"
-"gnunet.org/en/use\">\"How to use GNUnet\"-page</a> to get a brief intro on "
-"what can be done with your installation.</p> <p>Further information is "
+"<p>You have already installed GNUnet and want to use it? <a href=\"https://"
+"gnunet.org/en/use\">Check this out!</a></p> <p>Further information is "
 "available in our <a href=\"https://docs.gnunet.org/#toc-Using-"
 "GNUnet-1\">handbook</a>.</p> <p>If you have any queries about the "
 "installation or the usage, please <a href=\"https://gnunet.org/en/engage.html"
@@ -1778,16 +1744,36 @@ msgstr ""
 msgid "Web site, packaging (Nix/Guix)."
 msgstr ""
 
-#: template/tutorial-macos.html.j2:5
-msgid "Tutorial: GNUnet on macOS 10.14 (Mojave)"
-msgstr ""
-
 #: template/use.html.j2:6
 msgid "How to use GNUnet - in a nutshell"
 msgstr ""
 
-#: template/use.html.j2:10
+#: template/use.html.j2:13
 msgid "Make sure your GNUnet installation works..."
+msgstr ""
+
+#: template/use.html.j2:28
+msgid "... and play around with it."
+msgstr ""
+
+#: template/use.html.j2:86
+msgid "CADET (and Chat)"
+msgstr ""
+
+#: template/use.html.j2:120
+msgid "Chatting with a (simple) client"
+msgstr ""
+
+#: template/use.html.j2:160
+msgid "Name resolution using GNS on the command line"
+msgstr ""
+
+#: template/use.html.j2:232
+msgid "Name resolution using GNS with a browser"
+msgstr ""
+
+#: template/use.html.j2:309
+msgid "VPN"
 msgstr ""
 
 #: template/video.html.j2:8
