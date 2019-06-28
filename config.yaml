@@ -1,0 +1,13 @@
+domain: stage.gnunet.org
+url: https://stage.gnunet.org
+
+output_dir: rendered
+template_dir: template
+
+blog_prefix: news/
+content_dir: rendered/
+blog_root: rendered/
+
+author: GNUnet
+
+feed_url: https://stage.gnunet.org/en/rss.xml

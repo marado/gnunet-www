@@ -1,0 +1,14 @@
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  {% include "post_heading.html" %}
+  <div class="entry-content" itemprop="articleBody">
+    {% if teaser_only %}
+      {{ post.teaser }}
+      <p>
+        <a href="{{ post.relative_url }}">Read on &rarr;</a>
+      </p>
+    {% else %}
+      {{ post.body }}
+      {% include "post_footer.html" %}
+    {% endif %}
+  </div>
+</article>

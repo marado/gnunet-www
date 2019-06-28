@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div>
+    <h1 class="entry-title">News Archive</h1>
+    <h2>2012</h2>
+    <div id="blog-archives">
+      {% for post in all_posts %}
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+          {% set header_class="small" %}
+          {% include "post_heading.html" %}
+          <footer>
+            <p>posted in 
+              {% for category in post.categories %}
+                <a href='/news/categories/{{ category }}/'><span itemprop="about">{{ category }}</span></a>,
+              {% endfor %}
+          </footer>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

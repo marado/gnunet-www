@@ -1,0 +1,25 @@
+{% extends 'common/base.j2' %}
+{% block content %}
+  <div class="article-list">
+    {% for post in current_posts %} 
+      <div itemprop="blogPost">
+        {% set teaser_only=true %}
+        {% include 'post.html' %}
+        <hr>
+      </div>
+    {% endfor %}  
+  </div>
+  <div class="bottom-nav">
+    {% if next_page %}
+      <p>
+        <a class="prev pull-left"
+           href="/news/page/{{ next_page }}/">
+           &larr; Older
+        </a>
+      </p>
+    {% endif %}
+    <p>
+      <a href="/news/archives">News Archives</a>
+    </p>
+  </div>
+{% endblock %}

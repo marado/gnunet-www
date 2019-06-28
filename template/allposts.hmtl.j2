@@ -1,0 +1,16 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="container">
+  <article>
+    <h1>All News</h1>
+    <section>
+      {% for post in posts %}
+        <p>
+          <h2>{{ loop.index }}: <a href="posts/{{ post.slug }}/">{{ post.title }}</a> <small>{{ post.date }}</small></h2>
+          {{ post.summary }}
+        </p>
+      {% endfor %}
+    </section>
+  </article>
+</div>
+{% endblock body_content %}

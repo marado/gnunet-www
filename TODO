@@ -1,0 +1,7 @@
+* news-system:
+  - tagging support
+  - search
+  - metadata is extracted with html comments, this is not good.
+  - our news should not require article + section, or at least
+    get the firefox reader support right out of the box.
+    currently they can look broken.
