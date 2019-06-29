@@ -10,8 +10,9 @@
   </div>
 </div>
 <div class="container">
-  <article>
-    <section>
+  <div class="row">
+    <div class="col">
+      <h3>{{ _("What is GNUnet?") }}</h3>
       <p>
 	{% trans %}
 	GNUnet is an alternative network stack for building secure,
@@ -90,7 +91,9 @@
 	{% endtrans %}
 	<br>
       </p>
-      <h4>{{ _("Current funding") }}</h3>
+    </div>
+    <div class="col">
+      <h3>{{ _("Current funding") }}</h3>
       <p>
 	{% trans %}
         We currently do not have any grants. All work is done by volunteers.
@@ -106,7 +109,7 @@
           <li><a href="https://www.gnu.org/">The GNU Project</a></li>
 	</ul>
       </p>
-      <h4>{{ _("Past funding") }}</h3>
+      <h3>{{ _("Past funding") }}</h3>
       <p>
 	{% trans %}
         We are grateful for past funding from the following organizations:
@@ -137,7 +140,7 @@
           </li>
         </ul>
       </p>
-    </section>
-  </article>
-</div>
+    </div><!-- END:col -->
+  </div><!-- END:row -->
+</div><!-- END:container -->
 {% endblock body_content %}
