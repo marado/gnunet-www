@@ -20,7 +20,7 @@
   <!-- <nav class="navbar navbar-expand-md fixed-top"> -->
 <nav class="navbar navbar-expand-md bg-near-black">
   <a class="navbar-brand" href="index.html">
-      <img src="{{ url('static/images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet Home Icon" height="25px" />
+      <img src="{{ url('static/images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet" height="25px" />
   </a>
 
   <!-- menu button -->
