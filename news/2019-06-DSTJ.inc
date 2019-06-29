@@ -6,7 +6,7 @@
   <p>
     <ol>
       <li><code>$ find / -name DSTJBRRKZ8TBW3FGK6B0M5QXWT9WYNZ45H5MCV4HY7ST64Q8T9F0</code></li>
-      <li><code>$ locate -name DSTJBRRKZ8TBW3FGK6B0M5QXWT9WYNZ45H5MCV4HY7ST64Q8T9F0</code></li>
+      <li><code>$ locate DSTJBRRKZ8TBW3FGK6B0M5QXWT9WYNZ45H5MCV4HY7ST64Q8T9F0</code></li>
     </ol>
   </p>
 </article>
