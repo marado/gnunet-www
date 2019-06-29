@@ -15,10 +15,7 @@
     }
   </style>
 </noscript>
-<!-- <nav class="navbar navbar-toggleable navbar-toggleable-md navbar-expand-md navbar-inverse navbar-dark fixed-top bg-dark"> -->
-<!--<nav class="navbar navbar-expand-md navar-inverse navbar-dark bg-dark fixed-top"> -->
-  <!-- <nav class="navbar navbar-expand-md fixed-top"> -->
-<nav class="navbar navbar-expand-md bg-near-black">
+<nav class="navbar sticky-top navbar-expand-md bg-near-black">
   <a class="navbar-brand" href="index.html">
       <img src="{{ url('static/images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet" height="25px" />
   </a>
