@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-29 16:13+0200\n"
+"POT-Creation-Date: 2019-06-29 17:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,11 +301,11 @@ msgstr ""
 msgid "GNUnet System Architecture"
 msgstr ""
 
-#: template/architecture.html.j2:21
+#: template/architecture.html.j2:20
 msgid "Foundations"
 msgstr ""
 
-#: template/architecture.html.j2:23
+#: template/architecture.html.j2:22
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -314,17 +314,25 @@ msgid ""
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
 
-#: template/architecture.html.j2:36
+#: template/architecture.html.j2:35
 msgid "Security"
 msgstr ""
 
-#: template/architecture.html.j2:39
+#: template/architecture.html.j2:38
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
 "permissions to be granted to each subsystem. Naturally, the implementation "
 "is a <a href=\"https://www.gnu.org/\">GNU</a> package, and will always "
 "remain free software."
+msgstr ""
+
+#: template/architecture.html.j2:51
+msgid "System architecture"
+msgstr ""
+
+#: template/architecture.html.j2:57
+msgid "Services"
 msgstr ""
 
 #: template/contact.html.j2:6
@@ -654,11 +662,11 @@ msgid ""
 "only used once."
 msgstr ""
 
-#: template/glossary.html.j2:68
+#: template/glossary.html.j2:71
 msgid "Namespaces"
 msgstr ""
 
-#: template/glossary.html.j2:70
+#: template/glossary.html.j2:73
 msgid ""
 "The GNU Name System allows every ego (or identity) to securely and privately "
 "associate any number of label-value pairs with an ego. The values are called "
@@ -671,11 +679,11 @@ msgid ""
 "the GNS protocol itself."
 msgstr ""
 
-#: template/glossary.html.j2:86
+#: template/glossary.html.j2:89
 msgid "Peer"
 msgstr ""
 
-#: template/glossary.html.j2:88
+#: template/glossary.html.j2:91
 msgid ""
 "A \"peer\" is an instance of GNUnet with its own per-instance public key and "
 "network addresses. Technically, it is possible to run multiple peers on the "

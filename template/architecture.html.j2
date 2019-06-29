@@ -1,51 +1,65 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<!-- Jumbotron -->
-<div class="container-fluid">
-  <div class="container text-center">
+<article class="container">
+
+  <header>
     <h1>{{ _("GNUnet System Architecture") }}</h1>
     <h2><i>This page is a work-in-progress</i></h2>
-    <p>
-    </p>
-  </div>
-</div>
-<!-- TODO: This image is too big, it should scale dynamically -->
-<div class="container-wide">
-  <div class="text-center">
-    <img class="img-fluid" style="width:auto" style="border:1px solid #222" src="../static/images/gnunet-arch-full.svg">
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <h2>{{ _("Foundations") }}</h2>
-      <p>
-        {% trans %}
-        The foundations of GNUnet are a distributed hash
-	table (R5N), an SCTP-like end-to-end encrypted
-	messaging layer (CADET), a public key infrastructure
-	(GNS) and a pluggable transport system (TRANSPORT).<br>
-	Using public keys for addresses
-	and self-organized decentralized routing algorithms,
-	these subsystems replace the traditional TCP/IP stack.
-        {% endtrans %}
-      </p>
+  </header>
 
-    </div>
-    <div class="col-lg-6">
-      <h2>{{ _("Security") }}</h2>
-
-      <p>
-        {% trans %}
-        GNUnet is implemented using a multi-process architecture.
-	Each subsystem runs as a separate process, providing
-        fault-isolation and enabling tight permissions to be
-	granted to each subsystem.  Naturally, the
-        implementation is a <a href="https://www.gnu.org/">GNU</a>
-        package, and will always remain free software.
-        {% endtrans %}
-      </p>
+  <!-- TODO: This image is too big, it should scale dynamically -->
+  <div class="container-wide">
+    <div class="text-center">
+      <img class="img-fluid" src="../static/images/gnunet-arch-full.svg">
     </div>
   </div>
-</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2>{{ _("Foundations") }}</h2>
+        <p>
+          {% trans %}
+          The foundations of GNUnet are a distributed hash
+          table (R5N), an SCTP-like end-to-end encrypted
+          messaging layer (CADET), a public key infrastructure
+          (GNS) and a pluggable transport system (TRANSPORT).<br>
+          Using public keys for addresses
+          and self-organized decentralized routing algorithms,
+          these subsystems replace the traditional TCP/IP stack.
+          {% endtrans %}
+        </p>
+
+      </div>
+      <div class="col">
+        <h2>{{ _("Security") }}</h2>
+
+        <p>
+          {% trans %}
+          GNUnet is implemented using a multi-process architecture.
+          Each subsystem runs as a separate process, providing
+          fault-isolation and enabling tight permissions to be
+          granted to each subsystem.  Naturally, the
+          implementation is a <a href="https://www.gnu.org/">GNU</a>
+          package, and will always remain free software.
+          {% endtrans %}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2>{{ _("System architecture") }}</h2>
+        <p>
+        Read more about the system architecure in the respective section of our <a href="https://docs.gnunet.org/#System-Architecture" target="_blank">handbook</a>.
+        </p>
+      </div>
+      <div class="col">
+        <h2>{{ _("Services") }}</h2>
+        <p>
+        Read more about the services in the respective section of our <a href="https://docs.gnunet.org/#Code-overview" target="_blank">handbook</a>.
+        </p>
+      </div>
+  </div>
+
+</article>
 {% endblock body_content %}
