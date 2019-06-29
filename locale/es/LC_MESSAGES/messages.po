@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-29 17:41+0200\n"
+"POT-Creation-Date: 2019-06-29 21:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,40 +28,40 @@ msgstr ""
 
 #: common/footer.j2.inc:7
 msgid "Developer Team"
-msgstr ""
+msgstr "Equipo de desarrollo"
 
 #: common/footer.j2.inc:8
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #: common/footer.j2.inc:9 common/navigation.j2.inc:55
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "GNUnet a. r."
 
 #: common/footer.j2.inc:10 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr ""
+msgstr "Sobre GNUnet"
 
 #: common/footer.j2.inc:15 common/navigation.j2.inc:68
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Herramienta de seguimiento de errores"
 
 #: common/footer.j2.inc:16
 msgid "IRC archive"
-msgstr ""
+msgstr "Archivo IRC"
 
 #: common/footer.j2.inc:21 template/copyright.html.j2:6
 msgid "Copyright Assignment"
-msgstr ""
+msgstr "Transmisión de derechos de autor"
 
 #: common/footer.j2.inc:22 common/navigation.j2.inc:70
 msgid "Continuous Integration"
-msgstr ""
+msgstr "Integración continua"
 
 #: common/footer.j2.inc:23 common/navigation.j2.inc:92
 #: template/developers.html.j2:24
 msgid "Bibliography"
-msgstr ""
+msgstr "Bibliografía"
 
 #: common/footer.j2.inc:31
 msgid ""
@@ -74,84 +74,84 @@ msgstr ""
 
 #: common/navigation.j2.inc:42 template/index.html.j2:46
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #: common/navigation.j2.inc:45 template/index.html.j2:357
 msgid "News"
-msgstr ""
+msgstr "Nuevo"
 
 #: common/navigation.j2.inc:50
 msgid "Community"
-msgstr ""
+msgstr "Comunidad"
 
 #: common/navigation.j2.inc:53 template/index.html.j2:58
 msgid "Engage"
-msgstr ""
+msgstr "Participa"
 
 #: common/navigation.j2.inc:54
 msgid "GSoC Projects"
-msgstr ""
+msgstr "Projectos de GSoC"
 
 #: common/navigation.j2.inc:56
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "Derecho de autor para contributores"
 
 #: common/navigation.j2.inc:57
 msgid "IRC Archive"
-msgstr ""
+msgstr "Archivo de IRC"
 
 #: common/navigation.j2.inc:64
 msgid "Development"
-msgstr ""
+msgstr "Desarrollo"
 
 #: common/navigation.j2.inc:67
 msgid "System Architecture"
-msgstr ""
+msgstr "Architectura del sistema"
 
 #: common/navigation.j2.inc:69 template/gnurl.html.j2:124
 msgid "Source Code"
-msgstr ""
+msgstr "Códico fuente"
 
 #: common/navigation.j2.inc:81
 msgid "Documentation"
-msgstr ""
+msgstr "Documentación"
 
 #: common/navigation.j2.inc:84 template/index.html.j2:52
 #: template/install.html.j2:6
 msgid "Install"
-msgstr ""
+msgstr "Instala"
 
 #: common/navigation.j2.inc:85
 msgid "Use"
-msgstr ""
+msgstr "Usa"
 
 #: common/navigation.j2.inc:86
 msgid "Videos"
-msgstr ""
+msgstr "Videos"
 
 #: common/navigation.j2.inc:87 template/glossary.html.j2:6
 msgid "Glossary"
-msgstr ""
+msgstr "Glosario"
 
 #: common/navigation.j2.inc:88
 msgid "Handbook"
-msgstr ""
+msgstr "Manual"
 
 #: common/navigation.j2.inc:89
 msgid "REST API"
-msgstr ""
+msgstr "REST API"
 
 #: common/navigation.j2.inc:90
 msgid "C-Tutorial"
-msgstr ""
+msgstr "Tutorial de C"
 
 #: common/navigation.j2.inc:91
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
-msgstr ""
+msgstr "Qué es GNUnet?"
 
 #: template/about.html.j2:13
 msgid ""
@@ -301,11 +301,15 @@ msgstr ""
 msgid "GNUnet System Architecture"
 msgstr ""
 
-#: template/architecture.html.j2:20
+#: template/architecture.html.j2:15
+msgid "Legend"
+msgstr ""
+
+#: template/architecture.html.j2:55
 msgid "Foundations"
 msgstr ""
 
-#: template/architecture.html.j2:22
+#: template/architecture.html.j2:57
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -314,11 +318,11 @@ msgid ""
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
 
-#: template/architecture.html.j2:35
+#: template/architecture.html.j2:70
 msgid "Security"
 msgstr ""
 
-#: template/architecture.html.j2:38
+#: template/architecture.html.j2:73
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -327,12 +331,20 @@ msgid ""
 "remain free software."
 msgstr ""
 
-#: template/architecture.html.j2:51
+#: template/architecture.html.j2:87
 msgid "System architecture"
 msgstr ""
 
-#: template/architecture.html.j2:57
-msgid "Services"
+#: template/architecture.html.j2:93
+msgid "Subsystems"
+msgstr ""
+
+#: template/architecture.html.j2:102
+msgid "libgnunetutil"
+msgstr ""
+
+#: template/architecture.html.j2:108
+msgid "APIs"
 msgstr ""
 
 #: template/contact.html.j2:6

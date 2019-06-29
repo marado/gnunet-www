@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-29 17:41+0200\n"
+"POT-Creation-Date: 2019-06-29 21:51+0200\n"
 "PO-Revision-Date: 2018-02-24 17:42\n"
 "Last-Translator: Torsten Grothoff <torsten@grothoff.org>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr "Über GNUnet"
 
 #: common/footer.j2.inc:15 common/navigation.j2.inc:68
 msgid "Bug Tracker"
-msgstr "Fehler Datenbank"
+msgstr "Fehlerdatenbank"
 
 #: common/footer.j2.inc:16
 #, fuzzy
@@ -85,23 +85,23 @@ msgstr ""
 
 #: common/navigation.j2.inc:42 template/index.html.j2:46
 msgid "About"
-msgstr ""
+msgstr "Über GNUnet"
 
 #: common/navigation.j2.inc:45 template/index.html.j2:357
 msgid "News"
-msgstr ""
+msgstr "Neues"
 
 #: common/navigation.j2.inc:50
 msgid "Community"
-msgstr "Gemeinschaft"
+msgstr "Community"
 
 #: common/navigation.j2.inc:53 template/index.html.j2:58
 msgid "Engage"
-msgstr ""
+msgstr "Mach mit!"
 
 #: common/navigation.j2.inc:54
 msgid "GSoC Projects"
-msgstr ""
+msgstr "GSoC Projekte"
 
 #: common/navigation.j2.inc:56
 msgid "Copyright for Contributors"
@@ -109,19 +109,19 @@ msgstr "Copyright für Mitwirkende"
 
 #: common/navigation.j2.inc:57
 msgid "IRC Archive"
-msgstr "IRC Archive"
+msgstr "IRC Archiv"
 
 #: common/navigation.j2.inc:64
 msgid "Development"
-msgstr "Entwickelung"
+msgstr "Entwicklung"
 
 #: common/navigation.j2.inc:67
 msgid "System Architecture"
-msgstr "System Architekture"
+msgstr "Systemarchitektur"
 
 #: common/navigation.j2.inc:69 template/gnurl.html.j2:124
 msgid "Source Code"
-msgstr "Quellcode"
+msgstr "Quellkode"
 
 #: common/navigation.j2.inc:81
 msgid "Documentation"
@@ -130,15 +130,15 @@ msgstr "Dokumentation"
 #: common/navigation.j2.inc:84 template/index.html.j2:52
 #: template/install.html.j2:6
 msgid "Install"
-msgstr ""
+msgstr "Installieren"
 
 #: common/navigation.j2.inc:85
 msgid "Use"
-msgstr ""
+msgstr "Nutzen"
 
 #: common/navigation.j2.inc:86
 msgid "Videos"
-msgstr ""
+msgstr "Videos"
 
 #: common/navigation.j2.inc:87 template/glossary.html.j2:6
 msgid "Glossary"
@@ -150,7 +150,7 @@ msgstr "Handbuch"
 
 #: common/navigation.j2.inc:89
 msgid "REST API"
-msgstr ""
+msgstr "REST API"
 
 #: common/navigation.j2.inc:90
 msgid "C-Tutorial"
@@ -322,11 +322,15 @@ msgstr ""
 msgid "GNUnet System Architecture"
 msgstr "GNUnet Systemarchitektur"
 
-#: template/architecture.html.j2:20
+#: template/architecture.html.j2:15
+msgid "Legend"
+msgstr ""
+
+#: template/architecture.html.j2:55
 msgid "Foundations"
 msgstr "Grundlagen"
 
-#: template/architecture.html.j2:22
+#: template/architecture.html.j2:57
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -341,11 +345,11 @@ msgstr ""
 "decentralizierte Routingalgorithmen benutzt. Diese Komponenten ersetzen das "
 "traditionelle Internet (TCP/IP)."
 
-#: template/architecture.html.j2:35
+#: template/architecture.html.j2:70
 msgid "Security"
 msgstr "Sicherheit"
 
-#: template/architecture.html.j2:38
+#: template/architecture.html.j2:73
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -354,14 +358,24 @@ msgid ""
 "remain free software."
 msgstr ""
 
-#: template/architecture.html.j2:51
+#: template/architecture.html.j2:87
 #, fuzzy
 #| msgid "System Architecture"
 msgid "System architecture"
 msgstr "System Architekture"
 
-#: template/architecture.html.j2:57
-msgid "Services"
+#: template/architecture.html.j2:93
+msgid "Subsystems"
+msgstr ""
+
+#: template/architecture.html.j2:102
+#, fuzzy
+#| msgid "libgnurl"
+msgid "libgnunetutil"
+msgstr "libgnurl"
+
+#: template/architecture.html.j2:108
+msgid "APIs"
 msgstr ""
 
 #: template/contact.html.j2:6
@@ -1907,9 +1921,6 @@ msgstr ""
 
 #~ msgid "Bugtracker"
 #~ msgstr "FehlerDatenbank"
-
-#~ msgid "libgnurl"
-#~ msgstr "libgnurl"
 
 #~ msgid "2014-12"
 #~ msgstr "2014-12"
