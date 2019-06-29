@@ -6,7 +6,9 @@
   <h2>{{ _("How to use GNUnet - in a nutshell") }}</h2>
 </header>
   <p>
-   This document is just a brief intro on what can be done with GNUnet. Find much more in our <a ref="https://docs.gnunet.org/">handbook / reference manual</a>, e.g. in the section <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">"using GNUnet"</a>. 
+   This document is just a brief intro on what can be done with GNUnet. Find much more in our <a ref="https://docs.gnunet.org/">handbook / reference manual</a>, e.g. in the section <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">"using GNUnet"</a>.
+
+   The configuration in the handbook / reference manual is done with the UI interface gnunet-gtk. 
   </p>
 
 <section>
@@ -228,7 +230,7 @@ See the <a href="https://docs.gnunet.org/#First-steps-_002d-Using-the-GNU-Name-S
 </section>
 
 
-<section>
+<section id='gns_proxy'>
   <h4>{{ _("Name resolution using GNS with a browser") }}</h4>
 
   <p>
@@ -308,7 +310,47 @@ See the <a href="https://docs.gnunet.org/#First-steps-_002d-Using-the-GNU-Name-S
 <section>
   <h4>{{ _("VPN") }}</h4>
   <p>
-     TBD, see <a href="https://docs.gnunet.org/#Configuring-the-GNUnet-VPN">chapter "Configuring the GNUnet VPN" in the handbook.</a>
+	VPN can be used to share your Internet connection (yes, this may be dangerous, just as running a Tor exit node) or to provide access to services on your host (this should be less dangerous, as long as those services are secure).
+
+    In this tutorial we concentrate on providing access to services on your host.
+
+    For documentation to share your Internet connection have a look into <a href="https://docs.gnunet.org/#Configuring-the-GNUnet-VPN">chapter "Configuring the GNUnet VPN" in the handbook.</a>
+
+    First you have to edit your gnunet.conf and add this section.
+
+    <code>
+    [exit]
+    START_ON_DEMAND = YES
+    </code>
+
+    This is necessary to start the exit daemon.
+
+    Furthermore you need to add a section for your service.
+
+    <code>
+    [http.gnunet.]
+    TCP_REDIRECTS = 80:169.254.86.1:80 
+    </code>
+
+    Here a service named 'http' is configured to be accessed on a remote and local host on port 80. The IP address is the default IP address for the exit interface. If you like to change to another private IP address range you can use can change
+
+    <code>
+    IPV4ADDR = 169.254.86.1
+    </code>
+
+    in section 'exit'.
+
+    Now we have to add a GNS record to the namestore.
+
+    <code>
+    gnunet-namestore -z myself -a -e "1 d" -p -t VPN -n www -V "1 PKEY http"
+    </code>
+
+    Where myself is the name of the zone we already used <a href='#gns_proxy'>above</a>, but now we are adding a record of type VPN, and the value is a string containing three values. A boolean indicating the use of TCP or UDP (TCP in the example above), the public key of your node and the identifier of the service we used <a href='#'>above</a> ([http.gnunet.].
+
+    After we added this record we should be able to access www.myself like we did ccc.myself via the browser <a href='#gns_proxy'>above</a>.
+
+    The UI version of this Tutorial can be find in Chapter <a href='https://docs.gnunet.org/#First-steps-_002d-Using-the-GNUnet-VPN'>Using the GNUnet VPN</a> in the handbook.
   </p>
 </section>
 <section>
