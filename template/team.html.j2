@@ -1,32 +1,28 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("The developer team working on GNUnet") }}</h1>
+  </header>
+
   <section class="team">
     <!-- list alphabetical -->
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
 	  <div class="col-lg-12">
-	    <h6 class="description">The developer team working on GNUnet</h6>
 	    <div class="row pt-md">
               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>Bart Polot</h1>
 		<h2>{{ _("NSE, CADET.") }}</h2>
 		<p></p>
 	      </div>
               <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		    <a href="http://my.pages.de"><li><i class="fas fa-home"></i></li></a>
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>carlo von lynX</h1>
-		<h2>{{ _("secushare, PSYC, multicast, advocacy, sights and sounds, UX.") }}</h2>
+		<h2>{{ _("Secushare, PSYC, multicast, advocacy, sights and sounds, UX.") }}</h2>
 		<p></p>
 	      </div>
 	      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
@@ -40,24 +36,10 @@
 		<h2>{{ _("GNU maintainer.") }}</h2>
 		<p></p>
 	      </div>
-	      <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
-		<h1>Christian K&uuml;hne</h1>
-		<h2>{{ _("secushare, Social, PSYC, Multicast, data protection theory.") }}</h2>
-		<p></p>
-	      </div>
 	      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>dvn</h1>
-		<h2>{{ _("Continuous Integration, secushare, packaging (Guix).") }}</h2>
+		<h2>{{ _("Continuous Integration, Secushare, packaging (Guix).") }}</h2>
 		<p></p>
 	      </div>
 	      <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
@@ -82,33 +64,21 @@
 		<p></p>
 	      </div>
 	      <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>Julius B&uuml;nger</h1>
 		<h2>{{ _("Random peer sampling") }}</h2>
 		<p></p>
 	      </div>
               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>LRN</h1>
 		<h2>{{ _("W32 port.") }}</h2>
 		<p></p>
 	      </div>
 	      <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>lurchi</h1>
-		<h2>{{ _("secushare, Social, PSYC, Multicast") }}</h2>
+		<h2>{{ _("Secushare, Social, PSYC, Multicast") }}</h2>
 		<p></p>
 	      </div>
 	      <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
@@ -134,11 +104,7 @@
 		<p></p>
 	      </div>
               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>Nils Durner</h1>
 		<h2>{{ _("W32 port.") }}</h2>
 		<p></p>
@@ -161,27 +127,25 @@
 		  </ul>
 		</div>
 		<h1>t3sserakt</h1>
-		<h2>{{ _("secushare, Social, PSYC, Multicast.") }}</h2>
+		<h2>{{ _("Secushare, Social, PSYC, Multicast.") }}</h2>
 		<p></p>
 	      </div>
               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>tg</h1>
 		<h2>{{ _("Multicast.") }}</h2>
 		<p></p>
 	      </div>
 	      <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
-		<div class="img-box img-none">
-                  <i class="fa fa-user"></i>
-		  <ul class="text-center">
-		  </ul>
-		</div>
+                <img src="{{ url('static/team-images/no-foto.svg') }}" alt="lynX" class="img-fluid">
 		<h1>wldhx</h1>
 		<h2>{{ _("Web site, packaging (Nix/Guix).") }}</h2>
+		<p></p>
+	      </div>
+	      <div class="col-lg-3 col-md-3 col-sm-4 col-12 profile">
+                <img src="{{ url('static/team-images/xrs.jpg') }}" alt="xrs" class="img-fluid">
+		<h1>xrs</h1>
+		<h2>{{ _("Secushare, Data Protection Theory, Computer Science &amp; Society.") }}</h2>
 		<p></p>
 	      </div>
 	    </div>
@@ -190,4 +154,5 @@
       </div>
     </div>
   </section>
+</article>
 {% endblock body_content %}
