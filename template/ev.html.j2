@@ -1,32 +1,33 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<article>
-<div class="container-fluid">
-  <div class="container text-center">
+<article class="container">
+
   <header>
     <h1>{{ _("Verein zur F&ouml;rderung von GNUnet e.V.") }}</h1>
   </header>
-    <p>
-      {% trans %}
-      On December 27th 2013 a group of GNUnet hackers met at 30c3
-      to create the "Verein zur F&ouml;rderung von GNUnet e.V.", an
-      association under German law to support GNUnet development.
-      The Amtsgericht M&uuml;nchen registered the association on the
-      7th of March under VR 205287.
-      {% endtrans %}
-    </p>
-    <p>
-      {% trans %}
-        The association is officially dedicated to supporting research,
-        development and education in the area of secure decentralized
-        networking in general, and GNUnet specifically.  This is the
-        official website for the association.
-      {% endtrans %}
-    </p>
-  </div>
-</div>
 
-<div class="container">
+  <div class="row container justify-content-center">
+    <div class="col-6">
+      <p>
+        {% trans %}
+        On December 27th 2013 a group of GNUnet hackers met at 30c3
+        to create the "Verein zur F&ouml;rderung von GNUnet e.V.", an
+        association under German law to support GNUnet development.
+        The Amtsgericht M&uuml;nchen registered the association on the
+        7th of March under VR 205287.
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          The association is officially dedicated to supporting research,
+          development and education in the area of secure decentralized
+          networking in general, and GNUnet specifically.  This is the
+          official website for the association.
+        {% endtrans %}
+      </p>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-lg-6">
       <h3>{{ _("Governance") }}</h3>
@@ -65,7 +66,8 @@
         {% endtrans %}
       </p>
     </div>
-  </div>
+  </div><!-- END:row -->
+
   <div class="row">
     <div class="col-lg-6">
       <h3>{{ _("Support Us!") }}</h3>
@@ -113,8 +115,7 @@
         </ul>
       </p>
     </div>
-  </div>
-</div>
+  </div><!-- END:row -->
 
 </div> <!-- /container -->
 </article>

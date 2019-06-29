@@ -1,9 +1,12 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
+<article class="container">
 
-<div class="container-fluid">
+  <header>
+    <h1>{{ _("Copyright Assignment") }}</h1>
+  </header>
+
   <div class="container text-center">
-    <h1>{{ _("Copyright Assignment") }}</h1><br><br>
     <!-- Note: source of the pdf/copyright.pdf is in gitolite-admin/ -->
     {% trans %}
     <p>
