@@ -1,9 +1,17 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <div class="container">
+  <div class="row">
+    <div class="container">
+      <header>
+        <h1 class="text-center">{{ _("About GNUnet") }}</h1>
+      </header>
+    </div>
+  </div>
+</div>
+<div class="container">
   <article>
     <section>
-      <h3>{{ _("About GNUnet") }}</h3>
       <p>
 	{% trans %}
 	GNUnet is an alternative network stack for building secure,
@@ -13,7 +21,8 @@
 	include all kinds of basic protocol components and applications
 	towards the creation of a GNU internet.
 	{% endtrans %}
-	<br>
+      </p>
+      <p>
 	{% trans %}
 	Today, the actual use and thus the social requirements for a global
 	network differs widely from those goals of 1970. While the Internet
@@ -21,7 +30,8 @@
 	operated by a command hierarchy and when necessary isolated from the
 	rest of the world, the situation is less tenable for civil society.
 	{% endtrans %}
-	<br>
+      </p>
+      <p>
 	{% trans %}
 	Due to fundamental Internet design choices, Internet traffic can be
 	misdirected, intercepted, censored and manipulated by hostile routers
@@ -29,19 +39,21 @@
 	to the point where, as Matthew Green put it, ``the network is
 	hostile''.
 	{% endtrans %}
-	<br>	
+      </p>
+      <p>
 	{% trans %}
 	We believe liberal societies need a network architecture that uses the
 	anti-authoritarian decentralized peer-to-peer paradigm and
 	privacy-preserving cryptographic protocols. The goal of the GNUnet
 	project is to provide a Free Software realization of this ideal.
 	{% endtrans %}
-	<br>
-	<br>
+      </p>
+      <p>
 	{% trans %}
 	Specifically, GNUnet tries to follow the following design principles,
 	in order of importance:
 	{% endtrans %}
+      </p>
 	<ol>	
 	<li>		
 	  {% trans %}
@@ -102,7 +114,6 @@
         <ul>
           <li>
             <p>
-            <a href="https://renewablefreedom.org/">Renewable Freedom Foundation</a><br>
             <img src="{{ url('static/images/rff_logo.png') }}" alt="RFF logo">
             </p>
           </li>

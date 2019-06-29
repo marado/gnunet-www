@@ -42,12 +42,11 @@
   </div>
   <div class="container text-center">
     <p> 
-      <a class="btn btn-primary btn-lg" href="about.html">
+      <a class="btn btn-primary btn-lg" href="#about">
       {% trans %}
       About 
       {% endtrans %}
       </a>
-      &nbsp;
       &nbsp;
       <a class="btn btn-primary btn-lg" href="install.html">
       {% trans %}
@@ -55,10 +54,9 @@
       {% endtrans %}
       </a>
       &nbsp;
-      &nbsp;
       <a class="btn btn-primary btn-lg" href="engage.html">
       {% trans %}
-      Join
+      Engage
       {% endtrans %}
       </a>
     </p>
@@ -71,7 +69,7 @@
   <div class="container">
     <div class="row">
       <div class="container text-center">
-          <h1>{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</h1>
+        <h1><a name="about">{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</a></h1>
       </div>
     </div>
     <div class="row">
@@ -204,6 +202,16 @@
         </p>
         </section>
       </div>
+      <div class="col-lg-4">
+        <section>
+        <h3>{{ _("Learn about the GNUnet") }}</h3>
+        <p>
+          {% trans %}
+          If you want to know more about the GNUnet please continue reading <a href="about.html">here</a>.
+          {% endtrans %}
+        </p>
+        </section>
+      </div>
     </div>
   </div>
 </div>
@@ -271,10 +279,10 @@
   <div class="row">
     <div class="col-lg-4">
       <section>
-      <h3>{{ _("Filesharing") }}</h3>
+      <h3>{{ _("Filesharing (Alpha)") }}</h3>
       <p>
         {% trans %}
-        GNUnet filesharing is an application that provides
+        GNUnet filesharing is an application that aims to provide
         censorship-resistant, anonymous filesharing. The publisher is
 	empowered to make a gradual choice between performance and anonymity.
         {% endtrans %}
@@ -283,7 +291,7 @@
     </div>
     <div class="col-lg-4">
       <section>
-      <h3>{{ _("Conversation") }}</h3>
+      <h3>{{ _("Conversation (Pre-Alpha)") }}</h3>
       <p>
         {% trans %}
 	GNUnet conversation is an application that provides secure
@@ -346,7 +354,7 @@
 <div class="container">
   <div class="row">
     <div class="container text-center">
-      <h2>{{ _("News") }}</h2>
+      <h1>{{ _("News") }}<a name="news"></a></h1>
     </div>
   </div>
   <div class="row">

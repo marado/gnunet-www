@@ -48,23 +48,18 @@
 .bg-near-black
   background-color: #111
 
-// links
-
-.link-white
-  a
-    @extend .near-white
-
 code
   margin-bottom: 1em
+  word-wrap: break-word
 
 // hyperlinks and buttons
 
-#body_content a
-  text-decoration: underline
-  color: #357edd
-  &:link, &:visited
-    text-decoration: underline
-    color: #357edd
+//#body_content a
+//  text-decoration: underline
+//  color: #357edd
+//  &:link, &:visited
+//    text-decoration: underline
+//    color: #357edd
 
 a.btn
   text-decoration: none !important
@@ -202,8 +197,11 @@ html
   color: white
 
 .c_acronym
-  background-color: #217fae
+  background-color: #3498db
   color: white
+  a
+   &:link &:visited
+   color: #c1d9f5
 
 footer a
   text-decoration: underline
