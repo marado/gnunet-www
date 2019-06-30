@@ -119,7 +119,8 @@
 	  improving addressing, routing, naming and
           content distribution in a technically robust manner - as
           opposed to ad-hoc designs in place today.
-	<!-- Proposal from fabian gerlach: GNUnet is built "privacy by design" and
+	<!-- Proposal from fabian gerlach: GNUnet is built 
+	<a href="https://www.w3.org/2014/strint/papers/65.pdf">"privacy by design"</> and
 	"distributed by design". This improves addressing, routing, naming and
 	content distribution in a technically robust manner. -->
           {% endtrans %}
@@ -132,17 +133,19 @@
 
         <p>
           {% trans %}
-          It seems as if every other distributed or P2P project
+          <!-- replaced with Proposal from Fabian Gerlach: 
+	It seems as if every other distributed or P2P project
           develops its own library stack, covering transports, stream
           muxing, discovery and others. This divides effort and
-          multiplies bug count.
+          multiplies bug count.-->
+	Instead of sharing common components and tools for building P2P systems, every P2P project seems to re-invent the wheel. That highens effort and number of vulnerabilities.
 	  {% endtrans %}
 	<p>
 	  {% trans %}
           GNUnet is a metadata-preserving foundation for your
           application, covering areas from addressing to reliable
           bidirectional Axolotl-encrypted channels, with advanced
-          routing.  Our work is based on continuous research spanning
+          routing. Our work is based on continuous research spanning
           almost two decades.
           {% endtrans %}
         </p>
@@ -155,20 +158,18 @@
         <h3>{{ _("Metadata is exposed") }}</h3>
         <p>
           {% trans %}
+	Your metadata is just as revealing as the actual content; and it gets exposed on the internet.<br>
           Even though transport encryption is increasingly being
           deployed on the Internet, it still reveals data that can
           threaten democracy: the identities of senders and receivers,
           the times, frequency and the volume of communication are all
-          still revealed.
+          still revealed.<br>
 	  <!-- Looks like a weak argumentation to me:
           which <a
           href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables
           reverse-engineering pages visited via website
           fingerprinting</a>.
           -->
-	  {% endtrans %}
-	  <p>
-	  {% trans %}
           GNUnet
 	  <a href="https://secushare.org/anonymity">addresses</a>
 	  these concerns with perfect forward secrecy via ephemeral
@@ -204,7 +205,7 @@
       </div>
       <div class="col-lg-4">
         <section>
-        <h3>{{ _("Learn more about the GNUnet") }}</h3>
+        <h3>{{ _("Learn more about GNUnet") }}</h3>
         <p>
           {% trans %}
           If you want to know more about the GNUnet please continue reading 
@@ -220,11 +221,7 @@
 	get engaged into the conversation</a>, 
 	<a href="https://gnunet.org/en/install.html">install GNUnet</a>, 
 	<a href="https://gnunet.org/en/use.html">use it</a> and 
-	<a href="https://gnunet.org/en/contribute.html">contribute</a>. 
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
+	<a href="https://gnunet.org/en/contribute.html">contribute</a>. <br>
 	Be aware that this project is still in an early alpha stage when it comes 
 	to software – its not an easy task to rewrite the whole Internet!
           {% endtrans %}
