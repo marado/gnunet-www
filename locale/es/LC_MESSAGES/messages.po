@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-29 21:51+0200\n"
+"POT-Creation-Date: 2019-06-30 13:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "Equipo de desarrollo"
 msgid "Contact"
 msgstr "Contacto"
 
-#: common/footer.j2.inc:9 common/navigation.j2.inc:55
+#: common/footer.j2.inc:9 common/navigation.j2.inc:52
 msgid "GNUnet e.V."
 msgstr "GNUnet a. r."
 
@@ -42,7 +42,7 @@ msgstr "GNUnet a. r."
 msgid "About GNUnet"
 msgstr "Sobre GNUnet"
 
-#: common/footer.j2.inc:15 common/navigation.j2.inc:68
+#: common/footer.j2.inc:15 common/navigation.j2.inc:65
 msgid "Bug Tracker"
 msgstr "Herramienta de seguimiento de errores"
 
@@ -54,11 +54,11 @@ msgstr "Archivo IRC"
 msgid "Copyright Assignment"
 msgstr "Transmisión de derechos de autor"
 
-#: common/footer.j2.inc:22 common/navigation.j2.inc:70
+#: common/footer.j2.inc:22 common/navigation.j2.inc:67
 msgid "Continuous Integration"
 msgstr "Integración continua"
 
-#: common/footer.j2.inc:23 common/navigation.j2.inc:92
+#: common/footer.j2.inc:23 common/navigation.j2.inc:89
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr "Bibliografía"
@@ -72,80 +72,80 @@ msgid ""
 "href='contact.html'>Report issues with this website</a>."
 msgstr ""
 
-#: common/navigation.j2.inc:42 template/index.html.j2:46
+#: common/navigation.j2.inc:39 template/index.html.j2:46
 msgid "About"
 msgstr "Sobre"
 
-#: common/navigation.j2.inc:45 template/index.html.j2:357
+#: common/navigation.j2.inc:42 template/index.html.j2:357
 msgid "News"
 msgstr "Nuevo"
 
-#: common/navigation.j2.inc:50
+#: common/navigation.j2.inc:47
 msgid "Community"
 msgstr "Comunidad"
 
-#: common/navigation.j2.inc:53 template/index.html.j2:58
+#: common/navigation.j2.inc:50 template/index.html.j2:58
 msgid "Engage"
 msgstr "Participa"
 
-#: common/navigation.j2.inc:54
+#: common/navigation.j2.inc:51
 msgid "GSoC Projects"
 msgstr "Projectos de GSoC"
 
-#: common/navigation.j2.inc:56
+#: common/navigation.j2.inc:53
 msgid "Copyright for Contributors"
 msgstr "Derecho de autor para contributores"
 
-#: common/navigation.j2.inc:57
+#: common/navigation.j2.inc:54
 msgid "IRC Archive"
 msgstr "Archivo de IRC"
 
-#: common/navigation.j2.inc:64
+#: common/navigation.j2.inc:61
 msgid "Development"
 msgstr "Desarrollo"
 
-#: common/navigation.j2.inc:67
+#: common/navigation.j2.inc:64
 msgid "System Architecture"
 msgstr "Architectura del sistema"
 
-#: common/navigation.j2.inc:69 template/gnurl.html.j2:124
+#: common/navigation.j2.inc:66 template/gnurl.html.j2:124
 msgid "Source Code"
 msgstr "Códico fuente"
 
-#: common/navigation.j2.inc:81
+#: common/navigation.j2.inc:78
 msgid "Documentation"
 msgstr "Documentación"
 
-#: common/navigation.j2.inc:84 template/index.html.j2:52
+#: common/navigation.j2.inc:81 template/index.html.j2:52
 #: template/install.html.j2:6
 msgid "Install"
 msgstr "Instala"
 
-#: common/navigation.j2.inc:85
+#: common/navigation.j2.inc:82
 msgid "Use"
 msgstr "Usa"
 
-#: common/navigation.j2.inc:86
+#: common/navigation.j2.inc:83
 msgid "Videos"
 msgstr "Videos"
 
-#: common/navigation.j2.inc:87 template/glossary.html.j2:6
+#: common/navigation.j2.inc:84 template/glossary.html.j2:6
 msgid "Glossary"
 msgstr "Glosario"
 
-#: common/navigation.j2.inc:88
+#: common/navigation.j2.inc:85
 msgid "Handbook"
 msgstr "Manual"
 
-#: common/navigation.j2.inc:89
+#: common/navigation.j2.inc:86
 msgid "REST API"
 msgstr "REST API"
 
-#: common/navigation.j2.inc:90
+#: common/navigation.j2.inc:87
 msgid "C-Tutorial"
 msgstr "Tutorial de C"
 
-#: common/navigation.j2.inc:91
+#: common/navigation.j2.inc:88
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -280,20 +280,23 @@ msgstr ""
 msgid "Current funding"
 msgstr ""
 
-#: template/about.html.j2:94
-msgid "We currently do not have any grants. All work is done by volunteers."
+#: template/about.html.j2:97
+msgid ""
+"We're receiving funding from NLnet's Next Generation Internet funding line "
+"to document and implement the GNU Name System protocol in a way suitable for "
+"the IETF standardization process."
 msgstr ""
 
-#: template/about.html.j2:98
+#: template/about.html.j2:109
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
 
-#: template/about.html.j2:108
+#: template/about.html.j2:118
 msgid "Past funding"
 msgstr ""
 
-#: template/about.html.j2:110
+#: template/about.html.j2:120
 msgid "We are grateful for past funding from the following organizations:"
 msgstr ""
 
@@ -351,11 +354,11 @@ msgstr ""
 msgid "Contact information"
 msgstr ""
 
-#: template/contact.html.j2:13
+#: template/contact.html.j2:11
 msgid "The mailing list"
 msgstr ""
 
-#: template/contact.html.j2:15
+#: template/contact.html.j2:13
 msgid ""
 "An archived, public mailing list for GNUnet is hosted at <a href=\"https://"
 "lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists.gnu.org/"
@@ -363,31 +366,31 @@ msgid ""
 "<a href=\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
 msgstr ""
 
-#: template/contact.html.j2:25
+#: template/contact.html.j2:23
 msgid "The IRC channel"
 msgstr ""
 
-#: template/contact.html.j2:27
+#: template/contact.html.j2:25
 msgid ""
 "#gnunet is reachable via irc.freenode.net. There is also an <a href="
 "\"https://old.gnunet.org/bot/log/gnunet\">archive</a> availabe."
 msgstr ""
 
-#: template/contact.html.j2:36
+#: template/contact.html.j2:34
 msgid "Contacting individuals"
 msgstr ""
 
-#: template/contact.html.j2:38
+#: template/contact.html.j2:36
 msgid ""
 "GNUnet developers are generally reachable at <tt>PSEUDONYM@gnunet.org</tt>. "
 "Most of us support receiving GnuPG encrypted Emails."
 msgstr ""
 
-#: template/contact.html.j2:47
+#: template/contact.html.j2:45
 msgid "Reporting bugs"
 msgstr ""
 
-#: template/contact.html.j2:49
+#: template/contact.html.j2:47
 msgid ""
 "We track open feature requests and bugs for projects within GNUnet in our <a "
 "href=\"https://bugs.gnunet.org/\">Bug tracker</a>. You can also report bugs "
@@ -964,24 +967,38 @@ msgid ""
 "finished projects."
 msgstr ""
 
-#: template/gsoc.html.j2:20
+#: template/gsoc.html.j2:23
+#, fuzzy
+#| msgid "GSoC Projects"
+msgid "Current projects"
+msgstr "Projectos de GSoC"
+
+#: template/gsoc.html.j2:24 template/gsoc.html.j2:180
+msgid "Past projects"
+msgstr ""
+
+#: template/gsoc.html.j2:25 template/gsoc.html.j2:568
+msgid "Finished projects"
+msgstr ""
+
+#: template/gsoc.html.j2:30
 msgid "Current projects (2019)"
 msgstr ""
 
-#: template/gsoc.html.j2:24
+#: template/gsoc.html.j2:34
 msgid ""
 "It is time for GNUnet to run properly on Android. Note that GNUnet is "
 "written in C, and this is not about rewriting GNUnet in Java, but about "
 "getting the C code to run on Android."
 msgstr ""
 
-#: template/gsoc.html.j2:31
+#: template/gsoc.html.j2:41
 msgid ""
 "<strong>Mentors:</strong> <a href=\"https://www.goebel-consult.de/\">Hartmut "
 "Goebel</a>"
 msgstr ""
 
-#: template/gsoc.html.j2:40
+#: template/gsoc.html.j2:50
 msgid ""
 "There is a push for migrating our CI to Gitlab. The CI should eventually not "
 "just run \"make check\" on various platforms, but also perform tests with "
@@ -992,11 +1009,11 @@ msgid ""
 "automatic dependency discovery (as done by the autotools) is also important."
 msgstr ""
 
-#: template/gsoc.html.j2:52
+#: template/gsoc.html.j2:62
 msgid "<strong>Mentors:</strong> TBD"
 msgstr ""
 
-#: template/gsoc.html.j2:61
+#: template/gsoc.html.j2:71
 msgid ""
 "Python 2.7 is reaching its end-of-life, and we want to get rid of the "
 "dependency on Python. The existing gnunet-qr tool is a rather simple wrapper "
@@ -1006,7 +1023,7 @@ msgid ""
 "<br> <strong>Mentors:</strong> Christian Grothoff"
 msgstr ""
 
-#: template/gsoc.html.j2:77
+#: template/gsoc.html.j2:87
 msgid ""
 "reclaimID is a decentralized identity system build on top of the GNU Name "
 "System. Upon authorization, the user provides a requesting party (RP) such "
@@ -1025,7 +1042,7 @@ msgid ""
 "ol> <br/> <strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
 
-#: template/gsoc.html.j2:108
+#: template/gsoc.html.j2:118
 msgid ""
 "re:claimID is a decentralized identity system build on top of the GNU Name "
 "System. The initial design and implementation of re:claimID includes an "
@@ -1047,7 +1064,7 @@ msgid ""
 "<strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
 
-#: template/gsoc.html.j2:143
+#: template/gsoc.html.j2:153
 msgid ""
 "One great problem of the current Internet is the lack of disintermediation. "
 "When people want to talk they need a chat service. When they want to share "
@@ -1063,22 +1080,18 @@ msgid ""
 "more information and context, read"
 msgstr ""
 
-#: template/gsoc.html.j2:164
+#: template/gsoc.html.j2:174
 msgid "<strong>Mentors:</strong> lynX &amp; dvn"
 msgstr ""
 
-#: template/gsoc.html.j2:170
-msgid "Past projects"
-msgstr ""
-
-#: template/gsoc.html.j2:174
+#: template/gsoc.html.j2:184
 msgid ""
 "There are a variety of GNUNet APIs that should be exposed in the Rust "
 "wrappers. Implementing these will require extending the port of GNUNet utils "
 "written by Andrew Cann and Kelong Cong."
 msgstr ""
 
-#: template/gsoc.html.j2:182
+#: template/gsoc.html.j2:192
 msgid ""
 "As an introduction to the code base, we suggest that the student and Jeff "
 "Burdges together update the asynchronous IO system from gjio to futures-rs "
@@ -1086,26 +1099,26 @@ msgid ""
 "implementing a GNUNet API for his own mix network work."
 msgstr ""
 
-#: template/gsoc.html.j2:192 template/gsoc.html.j2:216
-#: template/gsoc.html.j2:270 template/gsoc.html.j2:300
-#: template/gsoc.html.j2:544
+#: template/gsoc.html.j2:202 template/gsoc.html.j2:226
+#: template/gsoc.html.j2:280 template/gsoc.html.j2:310
+#: template/gsoc.html.j2:554
 msgid "<strong>Mentors:</strong> Jeff Burdges"
 msgstr ""
 
-#: template/gsoc.html.j2:197
+#: template/gsoc.html.j2:207
 msgid "Required Skills: Rust"
 msgstr ""
 
-#: template/gsoc.html.j2:202
+#: template/gsoc.html.j2:212
 msgid "Difficulty level: low"
 msgstr ""
 
-#: template/gsoc.html.j2:210
+#: template/gsoc.html.j2:220
 msgid ""
 "Implement the AnycastExit spec to enable GNUnet clients to connect over Tor."
 msgstr ""
 
-#: template/gsoc.html.j2:221
+#: template/gsoc.html.j2:231
 msgid ""
 "Note: There was a Special TLDs spec to allow Tor to resolve domain names "
 "using GNS over Tor too, but currently that's on hold until folks think more "
@@ -1113,17 +1126,17 @@ msgid ""
 "more collaborative approach NSS2 for now."
 msgstr ""
 
-#: template/gsoc.html.j2:230 template/gsoc.html.j2:404
-#: template/gsoc.html.j2:444 template/gsoc.html.j2:474
+#: template/gsoc.html.j2:240 template/gsoc.html.j2:414
+#: template/gsoc.html.j2:454 template/gsoc.html.j2:484
 msgid "Required Skills: C"
 msgstr ""
 
-#: template/gsoc.html.j2:235 template/gsoc.html.j2:479
-#: template/gsoc.html.j2:584
+#: template/gsoc.html.j2:245 template/gsoc.html.j2:489
+#: template/gsoc.html.j2:594
 msgid "Difficulty level: medium"
 msgstr ""
 
-#: template/gsoc.html.j2:243
+#: template/gsoc.html.j2:253
 msgid ""
 "Design and implementation of <a href=\"http://jsonapi.org/\">REST APIs</a> "
 "that expose the <a href=\"https://gnunet.org/doxygen/modules.html\">GNUnet "
@@ -1131,11 +1144,11 @@ msgid ""
 "UIs will be much easier to create on top of REST APIs."
 msgstr ""
 
-#: template/gsoc.html.j2:254 template/gsoc.html.j2:574
+#: template/gsoc.html.j2:264 template/gsoc.html.j2:584
 msgid "<strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
 
-#: template/gsoc.html.j2:262
+#: template/gsoc.html.j2:272
 msgid ""
 "Improve the Rust implementation of GNUnet utils, possibly including adding "
 "support for asynchronous IO using mio, or perhaps a higher level "
@@ -1143,42 +1156,42 @@ msgid ""
 "gj."
 msgstr ""
 
-#: template/gsoc.html.j2:278
+#: template/gsoc.html.j2:288
 msgid ""
 "Implement rudimentary Android compatibility for GNUnet, in part by porting "
 "the GNUnet utils scheduler to act as a thin wrapper over libuv."
 msgstr ""
 
-#: template/gsoc.html.j2:285
+#: template/gsoc.html.j2:295
 msgid "<strong>Mentors:</strong> Jeff Burdges and Christian Grothoff"
 msgstr ""
 
-#: template/gsoc.html.j2:293 template/gsoc.html.j2:537
+#: template/gsoc.html.j2:303 template/gsoc.html.j2:547
 msgid ""
 "Implementation of a replacement for PANDA (see Pond) with better security, "
 "and maybe integration with the GNU Name System for key exchange."
 msgstr ""
 
-#: template/gsoc.html.j2:305
+#: template/gsoc.html.j2:315
 msgid "Required Skills: Rust or C, crypto"
 msgstr ""
 
-#: template/gsoc.html.j2:310 template/gsoc.html.j2:367
-#: template/gsoc.html.j2:409 template/gsoc.html.j2:449
+#: template/gsoc.html.j2:320 template/gsoc.html.j2:377
+#: template/gsoc.html.j2:419 template/gsoc.html.j2:459
 msgid "Difficulty level: high"
 msgstr ""
 
-#: template/gsoc.html.j2:318
+#: template/gsoc.html.j2:328
 msgid ""
 "Implement different place types and file sharing by creating a new place for "
 "the shared content."
 msgstr ""
 
-#: template/gsoc.html.j2:324
+#: template/gsoc.html.j2:334
 msgid "Place types to be implemented:"
 msgstr ""
 
-#: template/gsoc.html.j2:328
+#: template/gsoc.html.j2:338
 msgid ""
 "<ul> <li>File: generic file with comments</li> <li>Image: display an image "
 "with comments referencing a region of the image</li> <li>Sound: play a sound "
@@ -1188,11 +1201,11 @@ msgid ""
 "</ul>"
 msgstr ""
 
-#: template/gsoc.html.j2:339
+#: template/gsoc.html.j2:349
 msgid "Also provide the following UI functionality:"
 msgstr ""
 
-#: template/gsoc.html.j2:343
+#: template/gsoc.html.j2:353
 msgid ""
 "<ul> <li>Fork existing channels, reorganize people into new chatrooms or "
 "channels.</li> <li>Share a post (edit and repost something elsewhere, on a "
@@ -1201,21 +1214,21 @@ msgid ""
 "ul>"
 msgstr ""
 
-#: template/gsoc.html.j2:352
+#: template/gsoc.html.j2:362
 msgid ""
 "See also <a href=\"http://secushare.org/features\">http://secushare.org/"
 "features</a>"
 msgstr ""
 
-#: template/gsoc.html.j2:357
+#: template/gsoc.html.j2:367
 msgid "<strong>Mentors:</strong> lynX"
 msgstr ""
 
-#: template/gsoc.html.j2:362
+#: template/gsoc.html.j2:372
 msgid "Required Skills: C/C++"
 msgstr ""
 
-#: template/gsoc.html.j2:375
+#: template/gsoc.html.j2:385
 msgid ""
 "Implement aggregation of distributed state from various channels in order to "
 "provide for a powerful social graph API capable of producing social network "
@@ -1226,17 +1239,17 @@ msgid ""
 "Linda. You have 11 contacts in common with her. [ADD]\")."
 msgstr ""
 
-#: template/gsoc.html.j2:393
+#: template/gsoc.html.j2:403
 msgid ""
 "Related to <a href=\"http://secushare.org/rendezvous\">secushare.org/"
 "rendezvous</a>"
 msgstr ""
 
-#: template/gsoc.html.j2:399 template/gsoc.html.j2:439
+#: template/gsoc.html.j2:409 template/gsoc.html.j2:449
 msgid "<strong>Mentors:</strong> t3sserakt, lynX"
 msgstr ""
 
-#: template/gsoc.html.j2:416
+#: template/gsoc.html.j2:426
 msgid ""
 "<ul> <li> Emulate IMAP/SMTP protocols as necessary to transform traditional "
 "mail clients into secushare user interfaces. </li> <li> Think of ways to map "
@@ -1246,7 +1259,7 @@ msgid ""
 "this task but it is not an requirement. </li> </ul>"
 msgstr ""
 
-#: template/gsoc.html.j2:457
+#: template/gsoc.html.j2:467
 msgid ""
 "Implementation of the GNUnet auction system described in Chapter 3 of <a "
 "href=\"https://gnunet.org/libbrand-thesis\">this thesis</a>. Specific tasks "
@@ -1255,33 +1268,33 @@ msgid ""
 "interface programs create, info and join."
 msgstr ""
 
-#: template/gsoc.html.j2:469
+#: template/gsoc.html.j2:479
 msgid "<strong>Mentors:</strong> mate, cg"
 msgstr ""
 
-#: template/gsoc.html.j2:487
+#: template/gsoc.html.j2:497
 msgid ""
 "Implementation of additional transports to make GNUnet communication more "
 "robust in the presence of problematic networks: GNUnet-over-SMTP, GNUnet-"
 "over-DNS"
 msgstr ""
 
-#: template/gsoc.html.j2:494 template/gsoc.html.j2:508
+#: template/gsoc.html.j2:504 template/gsoc.html.j2:518
 msgid "<strong>Mentors:</strong> Matthias Wachs"
 msgstr ""
 
-#: template/gsoc.html.j2:502
+#: template/gsoc.html.j2:512
 msgid ""
 "Implementation of ALG-based NAT traversal methods (FTP/SIP-based hole "
 "punching, better STUN support)"
 msgstr ""
 
-#: template/gsoc.html.j2:516
+#: template/gsoc.html.j2:526
 msgid ""
 "<strong>Mentors:</strong> Matthias Wachs, Christian Grothoff, Jeff Burdges"
 msgstr ""
 
-#: template/gsoc.html.j2:524
+#: template/gsoc.html.j2:534
 msgid ""
 "Improving libaboss to make computation on shared secrets (including repeated "
 "multiplication) based on <a href=\"https://dl.acm.org/citation.cfm?"
@@ -1289,17 +1302,13 @@ msgid ""
 "moving libaboss to bignums (gcry_mpi)."
 msgstr ""
 
-#: template/gsoc.html.j2:552
+#: template/gsoc.html.j2:562
 msgid ""
 "Please refer to the description for this project listed under GNU Guix "
 "project ideas."
 msgstr ""
 
-#: template/gsoc.html.j2:558
-msgid "Finished projects"
-msgstr ""
-
-#: template/gsoc.html.j2:564
+#: template/gsoc.html.j2:574
 msgid ""
 "Implementation of a Web-based UI for GNUnet similar to GNUnet-Gtk with a yet "
 "to be determined framework such as Angular2. This includes the design and "
@@ -1308,11 +1317,11 @@ msgid ""
 "\">GNUnet API</a>."
 msgstr ""
 
-#: template/gsoc.html.j2:579
+#: template/gsoc.html.j2:589
 msgid "Required Skills: C, JavaScript, CSS"
 msgstr ""
 
-#: template/gsoc.html.j2:589
+#: template/gsoc.html.j2:599
 msgid ""
 "Report: <a href=\"gsoc-2018-gnunet-webui.html\">GSoC 2018: GNUnet WebUI</a>"
 msgstr ""
@@ -1321,9 +1330,9 @@ msgstr ""
 msgid ""
 "GNUnet is a new network protocol stack for building secure, distributed, and "
 "privacy-preserving applications. With strong roots in academic <a href="
-"\"https://old.gnunet.org/bibliography\">research</a>, our goal is to replace "
-"the <a href=\"https://secushare.org/broken-internet\">old insecure Internet</"
-"a> protocol stack."
+"\"https://bib.gnunet.org\">research</a>, our goal is to replace the <a href="
+"\"https://secushare.org/broken-internet\">old insecure Internet</a> protocol "
+"stack."
 msgstr ""
 
 #: template/index.html.j2:20
@@ -1473,7 +1482,7 @@ msgid "Featured Applications"
 msgstr ""
 
 #: template/index.html.j2:235
-msgid "GNU Taler"
+msgid "GNU Taler (Alpha)"
 msgstr ""
 
 #: template/index.html.j2:237
