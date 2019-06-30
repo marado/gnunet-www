@@ -51,8 +51,8 @@
 	in order of importance:
 	{% endtrans %}
       </p>
-	<ol>	
-	<li>		
+	<ol>
+	<li>
 	  {% trans %}
 	    GNUnet must be implemented as <a href="https://www.gnu.org/philosophy/free-sw.html">Free Software</a>.
 	  {% endtrans %}
@@ -79,11 +79,11 @@
 	<li><a href="https://docs.gnunet.org/#Deniability">Deniability</a></li>
 	<li><a href="https://docs.gnunet.org/#Peer-Identities">Peer Identities</a></li>
 	<li><a href="https://docs.gnunet.org/#Zones-in-the-GNU-Name-System-_0028GNS-Zones_0029">Zones in the GNU Name System (GNS Zones)</a></li>
-	<li><a href="https://docs.gnunet.org/#Egos">Egos</a></li>	
+	<li><a href="https://docs.gnunet.org/#Egos">Egos</a></li>
         </ul>
 	{% endtrans %}
 	{% trans %}
-	There are much more ressources to learn about GNUnet besides the <a href="https://docs.gnunet.org">main handbook</a>, such as the <a href="https://bib.gnunet.org/">bibliography</a>, lots of <a href="https://gnunet.org/en/video.html">videos</a> or a <a href="https://gnunet.org/en/glossary.html">glossary</a>. You are very welcome to <a href="https://gnunet.org/en/engage.html">get engaged into the conversation</a>, <a href="https://gnunet.org/en/tutorial.html">install GNUnet</a>, <a href="https://gnunet.org/en/use.html">use it</a> and <a href="https://gnunet.org/en/contribute.html">contribute</a>. 
+	There are much more ressources to learn about GNUnet besides the <a href="https://docs.gnunet.org">main handbook</a>, such as the <a href="https://bib.gnunet.org/">bibliography</a>, lots of <a href="https://gnunet.org/en/video.html">videos</a> or a <a href="https://gnunet.org/en/glossary.html">glossary</a>. You are very welcome to <a href="https://gnunet.org/en/engage.html">get engaged into the conversation</a>, <a href="https://gnunet.org/en/tutorial.html">install GNUnet</a>, <a href="https://gnunet.org/en/use.html">use it</a> and <a href="https://gnunet.org/en/contribute.html">contribute</a>.
 	{% endtrans %}
 	<br>
       </p>
@@ -92,7 +92,20 @@
       <h3>{{ _("Current funding") }}</h3>
       <p>
 	{% trans %}
-        We currently do not have any grants. All work is done by volunteers.
+        <ul>
+          <li>
+            <p>
+            {% trans %}
+            We're receiving funding from NLnet's Next Generation Internet
+            funding line to document and implement
+            the GNU Name System protocol in a way suitable for the
+            IETF standardization process.
+            {% endtrans %}
+            <a href="https://nlnet.nl/">NLnet Foundation</a><br>
+            <img src="{{ url('static/images/nlnet_logo.gif') }}" alt="NLnet logo">
+            </p>
+          </li>
+        <ul>
 	{% endtrans %}
 	<br>
 	{% trans %}
@@ -100,7 +113,6 @@
 	{% endtrans %}
         <ul>
           <li><a href="https://www.tum.de/">Technische Universit&auml;t M&uuml;nchen</a></li>
-          <li><a href="https://www.inria.fr/">Inria</a></li>
           <li><a href="https://www.bfh.ch/">Berner Fachhochschule</a></li>
           <li><a href="https://www.gnu.org/">The GNU Project</a></li>
 	</ul>
