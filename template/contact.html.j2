@@ -1,61 +1,59 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
+<article class="container">
 
-<div class="jumbotron">
-  <div class="container text-center">
+  <header>
     <h1>{{ _("Contact information") }}</h1>
-  </div>
-</div>
+  </header>
 
-<div class="container">
-<div class="row">
-  <div class="col-lg-6">
-    <h2>{{ _("The mailing list") }}</h2>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>{{ _("The mailing list") }}</h2>
+        <p>
+          {% trans %}
+              An archived, public mailing list for GNUnet is
+              hosted at
+              <a href="https://lists.gnu.org/mailman/listinfo/gnunet-developers">https://lists.gnu.org/mailman/listinfo/gnunet-developers</a>.  You can send messages to the list
+              at <a href="mailto:gnunet-developers@gnu.org">gnunet-developers@gnu.org</a>.
+          {% endtrans %}
+        </p>
+    </div>
+
+    <div class="col-lg-6">
+      <h2>{{ _("The IRC channel") }}</h2>
+        <p>
+          {% trans %}
+              #gnunet is reachable via irc.freenode.net. There is also an <a href="https://old.gnunet.org/bot/log/gnunet">archive</a> availabe.
+          {% endtrans %}
+        </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>{{ _("Contacting individuals") }}</h2>
       <p>
-        {% trans %}
-            An archived, public mailing list for GNUnet is
-            hosted at
-            <a href="https://lists.gnu.org/mailman/listinfo/gnunet-developers">https://lists.gnu.org/mailman/listinfo/gnunet-developers</a>.  You can send messages to the list
-            at <a href="mailto:gnunet-developers@gnu.org">gnunet-developers@gnu.org</a>.
-        {% endtrans %}
+          {% trans %}
+               GNUnet developers are generally reachable at
+               <tt>PSEUDONYM@gnunet.org</tt>.  Most of us
+               support receiving GnuPG encrypted Emails.
+          {% endtrans %}
       </p>
-  </div>
+    </div>
 
-  <div class="col-lg-6">
-    <h2>{{ _("The IRC channel") }}</h2>
+    <div class="col-lg-6">
+      <h2>{{ _("Reporting bugs") }}</h2>
       <p>
-        {% trans %}
-            #gnunet is reachable via irc.freenode.net. There is also an <a href="https://old.gnunet.org/bot/log/gnunet">archive</a> availabe.
-        {% endtrans %}
+          {% trans %}
+               We track open feature requests and bugs for projects
+               within GNUnet in our
+               <a href="https://bugs.gnunet.org/">Bug tracker</a>.
+               You can also report bugs or feature requests to the
+               <a href="https://lists.gnu.org/mailman/listinfo/bug-gnunet">bug-gnunet</a>
+               mailing list.  The mailinglist requires no subscription.
+          {% endtrans %}
       </p>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="col-lg-6">
-    <h2>{{ _("Contacting individuals") }}</h2>
-    <p>
-        {% trans %}
-             GNUnet developers are generally reachable at
-             <tt>PSEUDONYM@gnunet.org</tt>.  Most of us
-             support receiving GnuPG encrypted Emails.
-        {% endtrans %}
-    </p>
-  </div>
-
-  <div class="col-lg-6">
-    <h2>{{ _("Reporting bugs") }}</h2>
-    <p>
-        {% trans %}
-             We track open feature requests and bugs for projects
-             within GNUnet in our
-             <a href="https://bugs.gnunet.org/">Bug tracker</a>.
-             You can also report bugs or feature requests to the
-             <a href="https://lists.gnu.org/mailman/listinfo/bug-gnunet">bug-gnunet</a>
-             mailing list.  The mailinglist requires no subscription.
-        {% endtrans %}
-    </p>
-  </div>
-</div>
-</div>
+</article>
 {% endblock body_content %}
