@@ -10,13 +10,13 @@
     <p>
      This document is just a brief intro on what can be done with GNUnet. Find much more in our <a ref="https://docs.gnunet.org/">handbook / reference manual</a>, e.g. in the section <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">"using GNUnet"</a>.
 
-     The configuration in the handbook / reference manual is done with the UI interface gnunet-gtk. 
+     The configuration in the handbook / reference manual is done with the UI interface gnunet-gtk.
     </p>
   </section>
 
   <section>
     <h3>{{ _("Make sure your GNUnet installation works...") }}</h3>
-     <p>After installing and starting GNUnet you should make sure that your peer is connecting 
+     <p>After installing and starting GNUnet you should make sure that your peer is connecting
 	  to the P2P-network. By typing gnunet-core you should see something like this:
     </p>
      <p>
@@ -47,7 +47,7 @@
 
 
   <section>
-    <h4>{{ _("Filesharing") }}</h4>
+    <h4><a name="fs"></a>{{ _("Filesharing") }}</h4>
 
     <p>
       Let's publish a file in the GNUnet filesharing network. We use the keywords
@@ -81,7 +81,7 @@
     </p>
     <p>
       Please also refer to the chapter on <a href="=> https://docs.gnunet.org/#File_002dsharing
-  ">filesharing in the handbook</a>. 
+  ">filesharing in the handbook</a>.
 
   </section>
 
@@ -124,10 +124,10 @@
   <section>
     <h4>{{ _("Chatting with a (simple) client") }}</h4>
      <p>
-	  To chat a tiny bit prettier, we need to install and compile additional software. 
-	  If you join the chat mentioned below and no one is there, feel free to ping on 
-	  IRC/freenode #gnunet and ask if someone can join to test with you! (But we are 
-	  trying to be there as often as possible). 
+	  To chat a tiny bit prettier, we need to install and compile additional software.
+	  If you join the chat mentioned below and no one is there, feel free to ping on
+	  IRC/freenode #gnunet and ask if someone can join to test with you! (But we are
+	  trying to be there as often as possible).
      </p>
      <p>
      <code>
@@ -164,7 +164,7 @@
 
 
   <section>
-    <h4>{{ _("Name resolution using GNS on the command line") }}</h4>
+    <h4><a name="gns"></a>{{ _("Name resolution using GNS on the command line") }}</h4>
 
     <p>GNS is the GNU name service, a fully decentralized alternatice to DNS. We'll publish an IP address in a GNS record try to resolve it on the command line. First we need an identity which is the
       equivalent to a zone in DNS. We'll call it "myself" and create it using the
@@ -253,7 +253,7 @@
     </p>
     <p>
     <code>
-      $ gnunet-gns-proxy-setup-ca 
+      $ gnunet-gns-proxy-setup-ca
     </code>
     </p>
     <p>After executing this script the Browser has to be restarted.</p>
@@ -341,7 +341,7 @@
     <p>
       <code>
       [http.gnunet.]</br>
-      TCP_REDIRECTS = 80:169.254.86.1:80 
+      TCP_REDIRECTS = 80:169.254.86.1:80
       </code>
     </p>
     <p>
