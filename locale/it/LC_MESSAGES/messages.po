@@ -76,7 +76,7 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: common/navigation.j2.inc:42 template/index.html.j2:357
+#: common/navigation.j2.inc:42 template/index.html.j2:375
 msgid "News"
 msgstr ""
 
@@ -263,37 +263,56 @@ msgid ""
 "#Egos\">Egos</a></li> </ul>"
 msgstr ""
 
-#: template/about.html.j2:85
-msgid ""
-"There are much more ressources to learn about GNUnet besides the <a href="
-"\"https://docs.gnunet.org\">main handbook</a>, such as the <a href=\"https://"
-"bib.gnunet.org/\">bibliography</a>, lots of <a href=\"https://gnunet.org/en/"
-"video.html\">videos</a> or a <a href=\"https://gnunet.org/en/glossary.html"
-"\">glossary</a>. You are very welcome to <a href=\"https://gnunet.org/en/"
-"engage.html\">get engaged into the conversation</a>, <a href=\"https://"
-"gnunet.org/en/tutorial.html\">install GNUnet</a>, <a href=\"https://gnunet."
-"org/en/use.html\">use it</a> and <a href=\"https://gnunet.org/en/contribute."
-"html\">contribute</a>."
+#: template/about.html.j2:88
+msgid "More Resources"
 msgstr ""
 
-#: template/about.html.j2:92
+#: template/about.html.j2:90
+msgid ""
+"There are much more resources to learn about GNUnet besides the <a href="
+"\"https://docs.gnunet.org\">main handbook / reference manual</a>, such as "
+"the <a href=\"https://bib.gnunet.org/\">bibliography</a> with papers from "
+"all stages, lots of <a href=\"https://gnunet.org/en/video.html\">videos</a> "
+"or a brief <a href=\"https://gnunet.org/en/glossary.html\">glossary</a>."
+msgstr ""
+
+#: template/about.html.j2:95
+msgid ""
+"You are most welcome to <a href=\"https://gnunet.org/en/engage.html\">get "
+"engaged into the conversation</a>, <a href=\"https://gnunet.org/en/install."
+"html\">install GNUnet</a>, <a href=\"https://gnunet.org/en/use.html\">use "
+"it</a> and <a href=\"https://gnunet.org/en/contribute.html\">contribute</a> "
+"in various ways."
+msgstr ""
+
+#: template/about.html.j2:100
+msgid ""
+"Please be aware that this project is (despite of it's age) still in an early "
+"alpha stage when it comes to software – its not an easy task to rewrite the "
+"whole Internet!"
+msgstr ""
+
+#: template/about.html.j2:105
 msgid "Current funding"
 msgstr ""
 
-#: template/about.html.j2:94
-msgid "We currently do not have any grants. All work is done by volunteers."
+#: template/about.html.j2:110
+msgid ""
+"We're receiving funding from NLnet's Next Generation Internet funding line "
+"to document and implement the GNU Name System protocol in a way suitable for "
+"the IETF standardization process."
 msgstr ""
 
-#: template/about.html.j2:98
+#: template/about.html.j2:123
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
 
-#: template/about.html.j2:108
+#: template/about.html.j2:132
 msgid "Past funding"
 msgstr ""
 
-#: template/about.html.j2:110
+#: template/about.html.j2:134
 msgid "We are grateful for past funding from the following organizations:"
 msgstr ""
 
@@ -1395,23 +1414,27 @@ msgid ""
 "GNUnet provides <a href=\"https://www.w3.org/2014/strint/papers/65.pdf"
 "\">privacy by design</a>, improving addressing, routing, naming and content "
 "distribution in a technically robust manner - as opposed to ad-hoc designs "
-"in place today. <!-- Proposal from fabian gerlach: GNUnet is built \"privacy "
-"by design\" and \"distributed by design\". This improves addressing, "
-"routing, naming and content distribution in a technically robust manner. -->"
+"in place today. <!-- Proposal from fabian gerlach: GNUnet is built <a href="
+"\"https://www.w3.org/2014/strint/papers/65.pdf\">\"privacy by design\"</> "
+"and \"distributed by design\". This improves addressing, routing, naming and "
+"content distribution in a technically robust manner. -->"
 msgstr ""
 
-#: template/index.html.j2:131
+#: template/index.html.j2:132
 msgid "Decentralization is hard"
 msgstr ""
 
-#: template/index.html.j2:134
+#: template/index.html.j2:135
 msgid ""
-"It seems as if every other distributed or P2P project develops its own "
-"library stack, covering transports, stream muxing, discovery and others. "
-"This divides effort and multiplies bug count."
+"<!-- replaced with Proposal from Fabian Gerlach: It seems as if every other "
+"distributed or P2P project develops its own library stack, covering "
+"transports, stream muxing, discovery and others. This divides effort and "
+"multiplies bug count.--> Instead of sharing common components and tools for "
+"building P2P systems, every P2P project seems to re-invent the wheel. That "
+"highens effort and number of vulnerabilities."
 msgstr ""
 
-#: template/index.html.j2:141
+#: template/index.html.j2:144
 msgid ""
 "GNUnet is a metadata-preserving foundation for your application, covering "
 "areas from addressing to reliable bidirectional Axolotl-encrypted channels, "
@@ -1419,34 +1442,31 @@ msgid ""
 "almost two decades."
 msgstr ""
 
-#: template/index.html.j2:155
+#: template/index.html.j2:158
 msgid "Metadata is exposed"
 msgstr ""
 
-#: template/index.html.j2:157
+#: template/index.html.j2:160
 msgid ""
-"Even though transport encryption is increasingly being deployed on the "
-"Internet, it still reveals data that can threaten democracy: the identities "
-"of senders and receivers, the times, frequency and the volume of "
-"communication are all still revealed. <!-- Looks like a weak argumentation "
-"to me: which <a href=\"https://www.freehaven.net/anonbib/cache/"
-"websitefingerprinting-pets2016.pdf\">enables reverse-engineering pages "
-"visited via website fingerprinting</a>. -->"
+"Your metadata is just as revealing as the actual content; and it gets "
+"exposed on the internet.<br> Even though transport encryption is "
+"increasingly being deployed on the Internet, it still reveals data that can "
+"threaten democracy: the identities of senders and receivers, the times, "
+"frequency and the volume of communication are all still revealed.<br> <!-- "
+"Looks like a weak argumentation to me: which <a href=\"https://www.freehaven."
+"net/anonbib/cache/websitefingerprinting-pets2016.pdf\">enables reverse-"
+"engineering pages visited via website fingerprinting</a>. --> GNUnet <a href="
+"\"https://secushare.org/anonymity\">addresses</a> these concerns with "
+"perfect forward secrecy via ephemeral public key addressing, fixed packet "
+"size to hinder traffic analysis, layered encryption, Sybil-resistant "
+"routing, and more."
 msgstr ""
 
-#: template/index.html.j2:171
-msgid ""
-"GNUnet <a href=\"https://secushare.org/anonymity\">addresses</a> these "
-"concerns with perfect forward secrecy via ephemeral public key addressing, "
-"fixed packet size to hinder traffic analysis, layered encryption, Sybil-"
-"resistant routing, and more."
-msgstr ""
-
-#: template/index.html.j2:184
+#: template/index.html.j2:185
 msgid "Freedoms are not respected"
 msgstr ""
 
-#: template/index.html.j2:186
+#: template/index.html.j2:187
 msgid ""
 "Today, monitoring increasingly centralized infrastructure, proprietary "
 "implementations, traffic shapers and firewalls restrict all of the <a href="
@@ -1454,7 +1474,7 @@ msgid ""
 "various degrees."
 msgstr ""
 
-#: template/index.html.j2:195
+#: template/index.html.j2:196
 msgid ""
 "GNUnet gives users freedoms to securely access information (\"run\" the "
 "network), to study all aspects of the network's operation (\"access the code"
@@ -1462,51 +1482,64 @@ msgid ""
 "new applications (\"modify\")."
 msgstr ""
 
-#: template/index.html.j2:207
-msgid "Learn about the GNUnet"
+#: template/index.html.j2:208
+msgid "Learn more about GNUnet"
 msgstr ""
 
-#: template/index.html.j2:209
+#: template/index.html.j2:210
 msgid ""
-"If you want to know more about the GNUnet please continue reading <a href="
-"\"about.html\">here</a>."
+"If you want to know more about the GNUnet please continue reading the <a "
+"href=\"about.html\">about page</a>. There are much more ressources, such as "
+"the <a href=\"https://docs.gnunet.org\">main handbook / reference manual</"
+"a>, a <a href=\"https://bib.gnunet.org/\">bibliography</a> and <a href="
+"\"https://gnunet.org/en/video.html\">videos</a>."
 msgstr ""
 
-#: template/index.html.j2:226
+#: template/index.html.j2:219
+msgid ""
+"You are very welcome to <a href=\"https://gnunet.org/en/engage.html\"> get "
+"engaged into the conversation</a>, <a href=\"https://gnunet.org/en/install."
+"html\">install GNUnet</a>, <a href=\"https://gnunet.org/en/use.html\">use "
+"it</a> and <a href=\"https://gnunet.org/en/contribute.html\">contribute</a>. "
+"<br> Be aware that this project is still in an early alpha stage when it "
+"comes to software – its not an easy task to rewrite the whole Internet!"
+msgstr ""
+
+#: template/index.html.j2:242
 msgid "Featured Applications"
 msgstr ""
 
-#: template/index.html.j2:235
-msgid "GNU Taler"
+#: template/index.html.j2:251
+msgid "GNU Taler (Alpha)"
 msgstr ""
 
-#: template/index.html.j2:237
+#: template/index.html.j2:253
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
 
-#: template/index.html.j2:249
+#: template/index.html.j2:265
 msgid "The GNU Name System"
 msgstr ""
 
-#: template/index.html.j2:252
+#: template/index.html.j2:268
 msgid ""
-"The GNU Name System (GNS) is a fully decentralized replacement for the "
-"Domain Name System (DNS). Instead of using a hierarchy, GNS uses a directed "
-"graph. Naming conventions are similar to DNS, but queries and replies are "
-"private even with respect to peers providing the answers. The integrity of "
-"records and privacy of look-ups is cryptographically secured. <!-- Too "
-"technical: GNS integrates a robust, efficient and instant key revocation "
-"mechanism. -->"
+"The <a href=\"use.html#gns\">GNU Name System (GNS)</a> is a fully "
+"decentralized replacement for the Domain Name System (DNS). Instead of using "
+"a hierarchy, GNS uses a directed graph. Naming conventions are similar to "
+"DNS, but queries and replies are private even with respect to peers "
+"providing the answers. The integrity of records and privacy of look-ups is "
+"cryptographically secured. <!-- Too technical: GNS integrates a robust, "
+"efficient and instant key revocation mechanism. -->"
 msgstr ""
 
-#: template/index.html.j2:267
+#: template/index.html.j2:284
 msgid "re:claimID"
 msgstr ""
 
-#: template/index.html.j2:269
+#: template/index.html.j2:286
 msgid ""
 "<a href=\"https://reclaim-identity.io/\">re:claimID</a> is a decentralized "
 "Identity Provider (IdP) service built in top of the GNU Name System. It "
@@ -1514,37 +1547,37 @@ msgid ""
 "standardized protocols (OpenID Connect)."
 msgstr ""
 
-#: template/index.html.j2:282
+#: template/index.html.j2:299
 msgid "Filesharing (Alpha)"
 msgstr ""
 
-#: template/index.html.j2:284
+#: template/index.html.j2:301
 msgid ""
-"GNUnet filesharing is an application that aims to provide censorship-"
-"resistant, anonymous filesharing. The publisher is empowered to make a "
-"gradual choice between performance and anonymity."
+"GNUnet <a href=\"use.html#fs\">filesharing</a> is an application that aims "
+"to provide censorship-resistant, anonymous filesharing. The publisher is "
+"empowered to make a gradual choice between performance and anonymity."
 msgstr ""
 
-#: template/index.html.j2:294
+#: template/index.html.j2:312
 msgid "Conversation (Pre-Alpha)"
 msgstr ""
 
-#: template/index.html.j2:296
+#: template/index.html.j2:314
 msgid ""
 "GNUnet conversation is an application that provides secure voice "
 "communication in a fully decentralized way by employing GNUnet for routing "
 "and transport."
 msgstr ""
 
-#: template/index.html.j2:313
+#: template/index.html.j2:331
 msgid "Upcoming Applications"
 msgstr ""
 
-#: template/index.html.j2:322
+#: template/index.html.j2:340
 msgid "secushare"
 msgstr ""
 
-#: template/index.html.j2:324
+#: template/index.html.j2:342
 msgid ""
 "<a href=\"https://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
@@ -1552,11 +1585,11 @@ msgid ""
 "encrypted to authorized recipients only."
 msgstr ""
 
-#: template/index.html.j2:336
+#: template/index.html.j2:354
 msgid "pretty Easy privacy"
 msgstr ""
 
-#: template/index.html.j2:338
+#: template/index.html.j2:356
 msgid ""
 "<a href=\"https://pep.foundation/\">pretty Easy privacy</a> (p&#8801;p) is "
 "creating a usable end-to-end encrypted e-mail solution using opportunistic "
@@ -1701,8 +1734,11 @@ msgstr ""
 #: template/install.html.j2:15
 msgid ""
 "<p>You have already installed GNUnet and want to use it? <a href=\"https://"
-"gnunet.org/en/use\">Check this out!</a></p> <p>Further information is "
-"available in our <a href=\"https://docs.gnunet.org/#toc-Using-"
+"gnunet.org/en/use\">Check this out!</a> </p> <p>Please be aware that this "
+"project is still in an early alpha stage when it comes to running software – "
+"its not an easy task to rewrite the whole Internet! We are happy to get your "
+"<a href=\"engage.html\">helping hand</a> anytime!</p> <p>Further information "
+"is available in our <a href=\"https://docs.gnunet.org/#toc-Using-"
 "GNUnet-1\">handbook</a>.</p> <p>If you have any queries about the "
 "installation or the usage, please <a href=\"engage.html\">get in touch!</a></"
 "p>"

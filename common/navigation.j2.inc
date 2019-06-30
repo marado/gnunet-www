@@ -91,8 +91,8 @@
       </li>
     </ul>
     <ul class="navbar-nav navbar-right nav">
-      <li class="nav-item dropdown">
-	<a class="nav-link dropdown-toggle" href="#"
+<!--      <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#"
            data-toggle="dropdown" role="button"
            aria-haspopup="true" aria-expanded="false">
            {{ lang_full }} [{{ lang }}]
@@ -104,7 +104,8 @@
           <li><a class="dropdown-item" href="{{ self_localized('it') }}">Italiano [it]</a></li>
           <li><a class="dropdown-item" href="{{ self_localized('es') }}">Espa&ntilde;ol [es]</a></li>
         </ul>
-      </li> <!-- /navbar-right dropdown -->
+      </li> DISABLE FOR NOW FOR LACK OF EXISTING TRANSLATIONS -->
+      <!-- /navbar-right dropdown -->
     </ul> <!-- /navbar-right -->
   </div> <!-- /navbar -->
 </nav>
