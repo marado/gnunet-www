@@ -268,8 +268,8 @@ msgstr ""
 #: template/about.html.j2:100
 msgid ""
 "Please be aware that this project is (despite of it's age) still in an early "
-"alpha stage when it comes to software  its not an easy task to rewrite the "
-"whole Internet!"
+"alpha stage when it comes to software &#8211; its not an easy task to "
+"rewrite the whole Internet!"
 msgstr ""
 
 #: template/about.html.j2:105
@@ -1486,7 +1486,7 @@ msgid ""
 "html\">install GNUnet</a>, <a href=\"https://gnunet.org/en/use.html\">use "
 "it</a> and <a href=\"https://gnunet.org/en/contribute.html\">contribute</a>. "
 "<br> Be aware that this project is still in an early alpha stage when it "
-"comes to software  its not an easy task to rewrite the whole Internet!"
+"comes to software &#8211; its not an easy task to rewrite the whole Internet!"
 msgstr ""
 
 #: template/index.html.j2:242
@@ -1719,12 +1719,12 @@ msgstr ""
 #: template/install.html.j2:19
 msgid ""
 "<p>Please be aware that this project is still in an early alpha stage when "
-"it comes to running software  its not an easy task to rewrite the whole "
-"Internet! We are happy to get your <a href=\"engage.html\">helping hand</a> "
-"anytime!</p> <p>Further information is available in our <a href=\"https://"
-"docs.gnunet.org/#toc-Using-GNUnet-1\">handbook</a>.</p> <p>If you have any "
-"queries about the installation or the usage, please <a href=\"engage.html"
-"\">get in touch!</a></p>"
+"it comes to running software &#8211; its not an easy task to rewrite the "
+"whole Internet! We are happy to get your <a href=\"engage.html\">helping "
+"hand</a> anytime!</p> <p>Further information is available in our <a href="
+"\"https://docs.gnunet.org/#toc-Using-GNUnet-1\">handbook</a>.</p> <p>If you "
+"have any queries about the installation or the usage, please <a href="
+"\"engage.html\">get in touch!</a></p>"
 msgstr ""
 
 #: template/news.html.j2.inc:11
