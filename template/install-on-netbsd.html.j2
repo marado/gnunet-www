@@ -1,8 +1,10 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<div class="container">
+<article class="container">
 
-  <h2>{{ _("Tutorial: GNUnet on NetBSD 8.0 CURRENT") }}</h2>
+  <header>
+    <h1>{{ _("Tutorial: GNUnet on NetBSD 8.0 CURRENT") }}</h1>
+  </header>
 
   <p>
     Welcome to the GNUnet tutorial for NetBSD!
@@ -14,7 +16,7 @@
     developers, who want to get in touch with GNUnet for the first time.
   </p>
 
-  <h3>{{ _("Requirements") }}</h3>
+  <h2>{{ _("Requirements") }}</h2>
 
   <p>
     As a bare minimum, we recommend you install <a href="http://pkgsrc.org">pkgsrc</a>. This tutorial assumes you have the CURRENT version checked out. Additionally you might want to install <code>devel/git-base</code> and git clone <a href="http://pkgsrc.org/wip/">pkgsrc-wip</a> into the <code>wip</code> folder in your pkgsrc folder:
@@ -25,7 +27,7 @@
       $ git clone git://wip.pkgsrc.org/pkgsrc-wip.git wip
     </code>
   </p>
-  <h3>{{ _("Installation") }}</h3>
+  <h2>{{ _("Installation") }}</h2>
   <p>
   Note: $ stands for commands run as unprivileged user, # for commands run as root user.
   </p>
@@ -97,7 +99,7 @@
   Note that the rc.d file which is installed is not yet functional.
   </p>
 
-  <h3>{{_("First steps")}}</h3>
+  <h2>{{_("First steps")}}</h2>
   <p>
   Congratulations! GNUnet is now installed! Before starting it you
   may create a configuration file. By default GNUnet looks in
@@ -177,7 +179,7 @@
   </code>
   </p>
 
-  <h3>{{ _("Alternative: Installation from source") }}</h3>
+  <h2>{{ _("Alternative: Installation from source") }}</h2>
 
   <p>
     The following instructions are only really interesting for developers
@@ -219,7 +221,7 @@
   </ul>
   </p>
 
-  <h4>{{ _("Get the source code") }}</h4>
+  <h3>{{ _("Get the source code") }}</h3>
   <p>
   <code>
     $ cd ~<br>
@@ -227,7 +229,7 @@
   </code>
   </p>
 
-  <h4>{{ _("Compile and Install") }}</h4>
+  <h3>{{ _("Compile and Install") }}</h3>
   <p>
     You have a choice between two options:
     build the *production version* or *development version*. If
@@ -277,5 +279,5 @@
   <p>
   This allows you to get more verbose logs when you export GNUNET_FORCE_LOG=";;;;DEBUG" before you run tests.
   </p>
-</div>
+</article>
 {% endblock body_content %}
