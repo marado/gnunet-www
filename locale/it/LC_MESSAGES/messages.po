@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-06-30 09:10+0200\n"
+"POT-Creation-Date: 2019-07-01 20:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: common/footer.j2.inc:31
 msgid ""
-"Copyright &copy; <a href=\"ev.html\">GNUnet e.V.</a> 2015 &mdash; 2019. <!-- "
+"Copyright &copy; <a href=\"ev.html\">GNUnet e.V.</a> 2001 &mdash; 2019. <!-- "
 "This just takes up space no one is interested in: --> <!-- This page was "
 "created using <a href='https://www.gnu.org/'>Free Software</a> only.<br> --> "
 "<a href='https://git.gnunet.org/www.git'>Source code of this site.</a> <a "
@@ -1728,20 +1728,19 @@ msgid ""
 "<p>The following GNUnet installation instructions help you building from "
 "source for your distribution.</p> <p><i>Please note that the installation "
 "process will get much easier once we have proper packages again (planned for "
-"winter 2019).</i></p>"
+"winter 2019).</i></p> <p>You have already installed GNUnet and want to use "
+"it? <a href=\"https://gnunet.org/en/use\">Check this out!</a> </p>"
 msgstr ""
 
-#: template/install.html.j2:15
+#: template/install.html.j2:19
 msgid ""
-"<p>You have already installed GNUnet and want to use it? <a href=\"https://"
-"gnunet.org/en/use\">Check this out!</a> </p> <p>Please be aware that this "
-"project is still in an early alpha stage when it comes to running software – "
-"its not an easy task to rewrite the whole Internet! We are happy to get your "
-"<a href=\"engage.html\">helping hand</a> anytime!</p> <p>Further information "
-"is available in our <a href=\"https://docs.gnunet.org/#toc-Using-"
-"GNUnet-1\">handbook</a>.</p> <p>If you have any queries about the "
-"installation or the usage, please <a href=\"engage.html\">get in touch!</a></"
-"p>"
+"<p>Please be aware that this project is still in an early alpha stage when "
+"it comes to running software – its not an easy task to rewrite the whole "
+"Internet! We are happy to get your <a href=\"engage.html\">helping hand</a> "
+"anytime!</p> <p>Further information is available in our <a href=\"https://"
+"docs.gnunet.org/#toc-Using-GNUnet-1\">handbook</a>.</p> <p>If you have any "
+"queries about the installation or the usage, please <a href=\"engage.html"
+"\">get in touch!</a></p>"
 msgstr ""
 
 #: template/news.html.j2.inc:11
@@ -1830,40 +1829,56 @@ msgstr ""
 msgid "How to use GNUnet - in a nutshell"
 msgstr ""
 
-#: template/use.html.j2:18
-msgid "Make sure your GNUnet installation works..."
-msgstr ""
-
-#: template/use.html.j2:33
-msgid "... and play around with it."
-msgstr ""
-
-#: template/use.html.j2:50
+#: template/use.html.j2:12 template/use.html.j2:64
 msgid "Filesharing"
 msgstr ""
 
-#: template/use.html.j2:91
-msgid "CADET (and Chat)"
+#: template/use.html.j2:13
+msgid "CADET"
 msgstr ""
 
-#: template/use.html.j2:125
-msgid "Chatting with a (simple) client"
+#: template/use.html.j2:14
+msgid "Minimal Groupchat"
 msgstr ""
 
-#: template/use.html.j2:167
-msgid "Name resolution using GNS on the command line"
+#: template/use.html.j2:15
+msgid "GNS with CLI"
 msgstr ""
 
-#: template/use.html.j2:239
-msgid "Name resolution using GNS with a browser"
+#: template/use.html.j2:16
+msgid "GNS with Browser"
 msgstr ""
 
-#: template/use.html.j2:316
+#: template/use.html.j2:17 template/use.html.j2:330
 msgid "VPN"
 msgstr ""
 
-#: template/use.html.j2:377
+#: template/use.html.j2:18 template/use.html.j2:391
 msgid "Conversation"
+msgstr ""
+
+#: template/use.html.j2:32
+msgid "Make sure your GNUnet installation works..."
+msgstr ""
+
+#: template/use.html.j2:47
+msgid "... and play around with it."
+msgstr ""
+
+#: template/use.html.j2:105
+msgid "CADET (and Chat)"
+msgstr ""
+
+#: template/use.html.j2:139
+msgid "Chatting with a (simple) client"
+msgstr ""
+
+#: template/use.html.j2:181
+msgid "Name resolution using GNS on the command line"
+msgstr ""
+
+#: template/use.html.j2:253
+msgid "Name resolution using GNS with a browser"
 msgstr ""
 
 #: template/video.html.j2:6

@@ -29,7 +29,7 @@
   <div class="container text-center">
     <p>
     {% trans %}
-      Copyright &copy; <a href="ev.html">GNUnet e.V.</a> 2015 &mdash; 2019.
+      Copyright &copy; <a href="ev.html">GNUnet e.V.</a> 2001 &mdash; 2019.
       <!-- This just takes up space no one is interested in: -->
     <!-- This page was created using <a href='https://www.gnu.org/'>Free Software</a> only.<br> -->
     <a href='https://git.gnunet.org/www.git'>Source code of this site.</a>
