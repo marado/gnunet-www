@@ -31,7 +31,8 @@ all: css locale template
 	cp rss.xml rendered/it/rss.xml
 	cp static/moved.html rendered/frontpage.html
 	cd rendered; ln -fs frontpage.html frontpage
-	cd rendered; ln -fs en/gsoc.html gsoc
+	cp static/moved_gsoc.html rendered/gsoc.html
+	cd rendered; ln -fs gsoc.html gsoc
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need
