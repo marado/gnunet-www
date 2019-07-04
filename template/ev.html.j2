@@ -6,8 +6,9 @@
     <h1>{{ _("Verein zur F&ouml;rderung von GNUnet e.V.") }}</h1>
   </header>
 
-  <div class="row container justify-content-center">
-    <div class="col-6">
+  <div class="row">
+    <div class="col-md">
+      <h3>{{ _("About GNUnet e.V.") }}</h3>
       <p>
         {% trans %}
         On December 27th 2013 a group of GNUnet hackers met at 30c3
@@ -26,29 +27,7 @@
         {% endtrans %}
       </p>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-6">
-      <h3>{{ _("Governance") }}</h3>
-      <p>
-        {% trans %}
-          You can find our "Satzung", and the list of members under
-          <a href="https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex">https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex</a>.
-          The current board consists of:
-          <dl><dt>Vorsitz</dt>
-            <dd><a href="https://grothoff.org/christian/">Christian Grothoff</a></dd>
-            <dt>stellvertretender Vorsitz</dt>
-            <dd>xrs</dd>
-            <dt>Kassenwart</dt>
-            <dd>Florian Dold</dd>
-            <dt>Beisitzer</dt>
-            <dd>Lurchi</dd>
-          </dl>
-        {% endtrans %}
-      </p>
-    </div>
-    <div class="col-lg-6">
+    <div class="col-md">
       <h3>{{ _("Becoming a Member of GNUnet e.V.") }}</h3>
       <p>
         {% trans %}
@@ -69,28 +48,26 @@
   </div><!-- END:row -->
 
   <div class="row">
-    <div class="col-lg-6">
-      <h3>{{ _("Support Us!") }}</h3>
+    <div class="col-md">
+      <h3>{{ _("Governance") }}</h3>
       <p>
         {% trans %}
-          Everybody is welcome to support us via donations. For
-          financial contributions, Europeans are able to donate via
-          SEPA. We hope to setup accounts in other major currency areas
-          in the future.  You can also donate via Bitcoin, routing
-          details are given below.  Please note that we are unable to
-          provide receipts for your donations.  If you are planning to
-          donate a significant amount of money, please contact us first
-          as it might be better to come to a custom arrangement.
-
-          <dl><dt>BitCoin</dt>
-            <dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd>
-            <dt>SEPA/IBAN</dt>
-            <dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd>
+          You can find our "Satzung", and the list of members under
+          <a href="https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex">https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex</a>.
+          The current board consists of:
+          <dl><dt>Vorsitz</dt>
+            <dd><a href="https://grothoff.org/christian/">Christian Grothoff</a></dd>
+            <dt>stellvertretender Vorsitz</dt>
+            <dd>xrs</dd>
+            <dt>Kassenwart</dt>
+            <dd>Florian Dold</dd>
+            <dt>Beisitzer</dt>
+            <dd>Lurchi</dd>
           </dl>
         {% endtrans %}
       </p>
     </div>
-    <div class="col-lg-6">
+    <div class="col-md">
       <h3>{{ _("Official Meeting Notes") }}</h3>
       <p>
         <ul>
@@ -114,6 +91,32 @@
           </li>
         </ul>
       </p>
+    </div>
+  </div><!-- END:row -->
+
+  <div class="row">
+    <div class="col-md">
+      <h3>{{ _("Support Us!") }}</h3>
+      <p>
+        {% trans %}
+          Everybody is welcome to support us via donations. For
+          financial contributions, Europeans are able to donate via
+          SEPA. We hope to setup accounts in other major currency areas
+          in the future.  You can also donate via Bitcoin, routing
+          details are given below.  Please note that we are unable to
+          provide receipts for your donations.  If you are planning to
+          donate a significant amount of money, please contact us first
+          as it might be better to come to a custom arrangement.
+
+          <dl><dt>BitCoin</dt>
+            <dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd>
+            <dt>SEPA/IBAN</dt>
+            <dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd>
+          </dl>
+        {% endtrans %}
+      </p>
+    </div>
+    <div class="col">
     </div>
   </div><!-- END:row -->
 

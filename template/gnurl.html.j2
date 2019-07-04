@@ -1,8 +1,12 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<div class="container-fluid">
-  <article>
+<article class="container">
+
+  <header>
     <h1>gnurl (libgnurl)</h1>
+  </header>
+
+  <div class="container">
     <p>
       {% trans %}
       libgnurl is a micro fork of libcurl. The goal of libgnurl
@@ -115,12 +119,10 @@
       viceversa.
       {% endtrans %}
     </p>
-  </article>
-</div>
+  </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6">
+  <div class="row container">
+    <div class="col-md">
       <h3>{{ _("Source Code") }}</h3>
       <p>
         {% trans %}
@@ -134,7 +136,7 @@
         {% endtrans %}
       </p>
     </div>
-    <div class="col-lg-6">
+    <div class="col-md">
       <h3>{{ _("Downloads") }}</h3>
       <p>
         {% trans %}
@@ -149,8 +151,9 @@
       </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-6">
+
+  <div class="row container">
+    <div class="col-md">
       <h3>{{ _("Reporting Bugs") }}</h3>
       <p>
         {% trans %}
@@ -161,7 +164,7 @@
         {% endtrans %}
       </p>
     </div>
-    <div class="col-lg-6">
+    <div class="col-md">
       <h3>{{ _("Maintainer and Cryptographic signatures") }}</h3>
       <p>
         {% trans %}
@@ -173,7 +176,6 @@
       </p>
     </div>
   </div>
-</div>
 
-</div> <!-- /container -->
+</article> <!-- /container -->
 {% endblock body_content %}
