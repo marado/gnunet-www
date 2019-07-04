@@ -1779,7 +1779,7 @@ msgstr ""
 msgid "Random peer sampling"
 msgstr ""
 
-#: template/team.html.j2:75 template/team.html.j2:109
+#: template/team.html.j2:75 template/team.html.j2:110
 msgid "W32 port."
 msgstr ""
 
@@ -1791,29 +1791,29 @@ msgstr ""
 msgid "GNU Name System, Identity Management, ABE."
 msgstr ""
 
-#: template/team.html.j2:103
+#: template/team.html.j2:104
 msgid ""
 "Documentation, Website, libgnurl maintainer, System Integration, Build "
 "System, some admin roles, packaging (NetBSD pkgsrc, Guix, Gentoo)."
 msgstr ""
 
-#: template/team.html.j2:120
+#: template/team.html.j2:121
 msgid "Testbed, voice."
 msgstr ""
 
-#: template/team.html.j2:130
+#: template/team.html.j2:131
 msgid "Secushare, Social, PSYC, Multicast."
 msgstr ""
 
-#: template/team.html.j2:136
+#: template/team.html.j2:137
 msgid "Multicast."
 msgstr ""
 
-#: template/team.html.j2:142
+#: template/team.html.j2:143
 msgid "Web site, packaging (Nix/Guix)."
 msgstr ""
 
-#: template/team.html.j2:148
+#: template/team.html.j2:149
 msgid "Secushare, Data Protection Theory, Computer Science &amp; Society."
 msgstr ""
 
