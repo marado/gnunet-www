@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-07-04 17:41+0000\n"
+"POT-Creation-Date: 2019-07-05 16:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,11 +54,11 @@ msgstr ""
 msgid "Copyright Assignment"
 msgstr ""
 
-#: common/footer.j2.inc:22 common/navigation.j2.inc:69
+#: common/footer.j2.inc:22 common/navigation.j2.inc:70
 msgid "Continuous Integration"
 msgstr ""
 
-#: common/footer.j2.inc:23 common/navigation.j2.inc:92
+#: common/footer.j2.inc:23 common/navigation.j2.inc:93
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr ""
@@ -112,40 +112,44 @@ msgstr ""
 msgid "Source Code"
 msgstr ""
 
-#: common/navigation.j2.inc:71
+#: common/navigation.j2.inc:67
+msgid "Source Code Documentation"
+msgstr ""
+
+#: common/navigation.j2.inc:72
 msgid "Development Tutorial"
 msgstr ""
 
-#: common/navigation.j2.inc:82
+#: common/navigation.j2.inc:83
 msgid "Documentation"
 msgstr ""
 
-#: common/navigation.j2.inc:85 template/index.html.j2:52
+#: common/navigation.j2.inc:86 template/index.html.j2:52
 #: template/install.html.j2:6
 msgid "Install"
 msgstr ""
 
-#: common/navigation.j2.inc:86
+#: common/navigation.j2.inc:87
 msgid "Use"
 msgstr ""
 
-#: common/navigation.j2.inc:87
+#: common/navigation.j2.inc:88
 msgid "Videos"
 msgstr ""
 
-#: common/navigation.j2.inc:88 template/glossary.html.j2:6
+#: common/navigation.j2.inc:89 template/glossary.html.j2:6
 msgid "Glossary"
 msgstr ""
 
-#: common/navigation.j2.inc:89
+#: common/navigation.j2.inc:90
 msgid "Handbook"
 msgstr ""
 
-#: common/navigation.j2.inc:90
+#: common/navigation.j2.inc:91
 msgid "REST API"
 msgstr ""
 
-#: common/navigation.j2.inc:91
+#: common/navigation.j2.inc:92
 msgid "FAQ"
 msgstr ""
 
@@ -390,25 +394,28 @@ msgstr ""
 
 #: template/contact.html.j2:25
 msgid ""
-"#gnunet is reachable via irc.freenode.net. There is also an <a href="
-"\"https://old.gnunet.org/bot/log/gnunet\">archive</a> availabe."
+"<tt>#gnunet</tt> is reachable via <a href=\"https://freenode.net\">irc."
+"freenode.net</a>. There is also an <a href=\"https://old.gnunet.org/bot/log/"
+"gnunet\">archive</a> available (currently unavailable, we are working on "
+"restoring access to it)."
 msgstr ""
 
-#: template/contact.html.j2:34
+#: template/contact.html.j2:38
 msgid "Contacting individuals"
 msgstr ""
 
-#: template/contact.html.j2:36
+#: template/contact.html.j2:40
 msgid ""
-"GNUnet developers are generally reachable at <tt>PSEUDONYM@gnunet.org</tt>. "
-"Most of us support receiving GnuPG encrypted Emails."
+"GNUnet developers are generally reachable at either <tt>PSEUDONYM@gnunet."
+"org</tt> or <tt>LASTNAME@gnunet.org</tt>. Most of us support receiving GnuPG "
+"encrypted Emails."
 msgstr ""
 
-#: template/contact.html.j2:45
+#: template/contact.html.j2:50
 msgid "Reporting bugs"
 msgstr ""
 
-#: template/contact.html.j2:47
+#: template/contact.html.j2:52
 msgid ""
 "We track open feature requests and bugs for projects within GNUnet in our <a "
 "href=\"https://bugs.gnunet.org/\">Bug tracker</a>. You can also report bugs "
@@ -1925,10 +1932,10 @@ msgstr ""
 msgid "2013"
 msgstr ""
 
-#: template/video.html.j2:72
+#: template/video.html.j2:71
 msgid "2012"
 msgstr ""
 
-#: template/video.html.j2:77
+#: template/video.html.j2:75
 msgid "2010"
 msgstr ""
