@@ -64,6 +64,7 @@
           <li><a class="dropdown-item" href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a class="dropdown-item" href="https://bugs.gnunet.org" target="_blank">{{ _("Bug Tracker") }}</a></li>
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://doxygen.gnunet.org">{{ _("Source Code Documentation") }}</a></li>
           <!-- 
           /* Until there is no functional CI we don't show this */
           <li><a class="dropdown-item" href="https://gitlab.gnunet.org/" target="_blank">{{ _("Continuous Integration") }}</a></li>
