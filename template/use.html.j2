@@ -158,7 +158,7 @@
                $ LD_LIBRARY_PATH=/path/to/gnunetlibs ./groupchat --config=/path/to/gnunet.conf --server=88RXABKJNMT426FY81N2DXN0M2X37SW5Q1NR005YPDZ1Q7A22CHG --port=t3ss --nick=YOURNICK<br>
          </code>
          <p>
-              (or as alternative server "YV6G9EP9K3X41BM3FJ3D29BDZR6358XNZ6KDZVV7DFW729YB0KCG" and port "welcome")
+              (or as alternative server "QYYZ9S0GMRS5GJGA415YEFB29RM1E4NJ4NX8DG0T8GYFDJVYHNJ0" and port "welcome")
          </p>
          <p>
               The peer and port in this example should work in real, because that peer is almost always online and running groupchat on that port.
@@ -361,15 +361,12 @@
           </code>
         </p>
         <p>
-          Here a service named 'http' is configured to be accessed on a remote and local host on port 80. The IP address is the default IP address for the exit interface. If you like to change to another private IP address range you can use can change
+          Here a service named 'http' is configured to be accessed on a remote and local host on port 80. The IP address is the default IP address for the exit interface. If you like to change to another private IP address range you can change the option in section 'exit':
         </p>
         <p>
           <code>
           IPV4ADDR = 169.254.86.1
           </code>
-        </p>
-        <p>
-          in section 'exit'.
         </p>
         <p>
           Now we have to add a GNS record to the namestore.
