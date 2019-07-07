@@ -64,7 +64,12 @@
           <li><a class="dropdown-item" href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a class="dropdown-item" href="https://bugs.gnunet.org" target="_blank">{{ _("Bug Tracker") }}</a></li>
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://doxygen.gnunet.org">{{ _("Source Code Documentation") }}</a></li>
+          <!-- 
+          /* Until there is no functional CI we don't show this */
           <li><a class="dropdown-item" href="https://gitlab.gnunet.org/" target="_blank">{{ _("Continuous Integration") }}</a></li>
+          -->
+          <li><a class="dropdown-item" target="_blank" href="https://tutorial.gnunet.org/">{{ _("Development Tutorial") }}</a></li>
 	  <li><a class="dropdown-item" href="gnurl.html">libgnurl</a></li>
         </ul>
       </li>
@@ -84,15 +89,14 @@
           <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
     <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org">{{ _("REST API") }}</a></li>
-          <li><a class="dropdown-item" target="_blank" href="https://tutorial.gnunet.org/">{{ _("C-Tutorial") }}</a></li>
           <li><a class="dropdown-item" href="faq.html">{{ _("FAQ") }}</a></li>
-          <li><a class="dropdown-item" href="https://bib.gnunet.org/" target="_blank">{{ _("Bibliography") }}</a></li>
+          <li><a class="dropdown-item" href="https://bib.gnunet.org/date.html" target="_blank">{{ _("Bibliography") }}</a></li>
 	</ul>
       </li>
     </ul>
     <ul class="navbar-nav navbar-right nav">
-      <li class="nav-item dropdown">
-	<a class="nav-link dropdown-toggle" href="#"
+<!--      <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#"
            data-toggle="dropdown" role="button"
            aria-haspopup="true" aria-expanded="false">
            {{ lang_full }} [{{ lang }}]
@@ -104,7 +108,8 @@
           <li><a class="dropdown-item" href="{{ self_localized('it') }}">Italiano [it]</a></li>
           <li><a class="dropdown-item" href="{{ self_localized('es') }}">Espa&ntilde;ol [es]</a></li>
         </ul>
-      </li> <!-- /navbar-right dropdown -->
+      </li> DISABLE FOR NOW FOR LACK OF EXISTING TRANSLATIONS -->
+      <!-- /navbar-right dropdown -->
     </ul> <!-- /navbar-right -->
   </div> <!-- /navbar -->
 </nav>

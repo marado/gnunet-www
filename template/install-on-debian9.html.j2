@@ -1,11 +1,12 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<div class="container">
+<article class="container">
 
-  <h2>{{ _("Tutorial: GNUnet on Debian 9") }}</h2>
+  <header>
+    <h1>{{ _("Tutorial: GNUnet on Debian 9") }}</h1>
+  </header>
 
-  <h3>{{ _("Introduction") }}</h3>
-
+  <h2>{{ _("Introduction") }}</h2>
   <p>
     Welcome to the hopefully painless GNUnet tutorial for Debian 9! It provides
     very concrete instructions on how to compile, install and configure a current
@@ -25,7 +26,7 @@
     Now let's start!
   </p>
 
-  <h3>{{ _("Requirements") }}</h3>
+  <h2>{{ _("Requirements") }}</h2>
 
   <p>
     First let's install the following Debian 9 packages to use GNUnet
@@ -41,7 +42,7 @@
       openssl libnss3-tools libopus-dev libpulse-dev libogg-dev
   </code>
 
-  <h3>{{ _("Make an installation directory") }}</h3>
+  <h2>{{ _("Make an installation directory") }}</h2>
 
   <p>
     Next we create a directory in our home directory where we store
@@ -55,7 +56,7 @@
     $ mkdir ~/gnunet_installation
   </code>
 
-  <h3>{{ _("Get the source code") }}</h3>
+  <h2>{{ _("Get the source code") }}</h2>
 
   <p>
     We download the GNUnet source code using git. On Debian 9 we need the
@@ -74,7 +75,7 @@
     $ git clone --depth 1 https://gnunet.org/git/libmicrohttpd.git
   </code>
 
-  <h3>{{ _("Compile and Install") }}</h3>
+  <h2>{{ _("Compile and Install") }}</h2>
 
 
   <p>
@@ -99,7 +100,7 @@
     production version.
   </p>
   
-  <h4>{{ _("Option 1: GNUnet for production / usage") }}</h4>
+  <h3>{{ _("Option 1: GNUnet for production / usage") }}</h3>
 
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
@@ -111,7 +112,7 @@
     $ sudo make install
   </code>
 
-  <h4>{{ _("Option 2: GNUnet for development") }}</h4>
+  <h3>{{ _("Option 2: GNUnet for development") }}</h3>
 
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
@@ -122,7 +123,7 @@
     $ sudo make install
   </code>
 
-  <h4>{{ _("Option 3: gnunet-gtk") }}</h4>
+  <h3>{{ _("Option 3: gnunet-gtk") }}</h3>
   <p>
     Installing the Gtk+-based graphical user
     interface can be done on top of either the production or development installation.
@@ -138,7 +139,7 @@
   </code>
 
 <!--
-  <h4>{{ _("Install GNUnet plugin for name resolution") }}</h4>
+  <h3>{{ _("Install GNUnet plugin for name resolution") }}</h3>
       <p>
 	So now it gets a bit nasty. It's not so bad. All we have to do
 	is copy a file and edit another one. The file we need to copy
@@ -192,7 +193,7 @@
   <p>That's it. It wasn't that nasty, was it?</p>
 -->
 
-  <h3>{{ _("Configuration") }}</h3>
+  <h2>{{ _("Configuration") }}</h2>
 
   <p>
     Congratulations! GNUnet is now installed! Before we start it we
@@ -268,14 +269,12 @@
     $ gnunet-arm -e
   </code>
 
-<section>
-  <h3>{{ _("Use GNUnet!") }}</h3>
-   <p>
-	Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
-   <p>
-</section>
+  <h2>{{ _("Use GNUnet!") }}</h2>
+  <p>
+      Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
+  <p>
 
-  <h3>{{ _("Uninstall GNUnet and its dependencies") }}</h3>
+  <h2>{{ _("Uninstall GNUnet and its dependencies") }}</h2>
 
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
@@ -291,9 +290,9 @@
     $ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
   </code>
 
-  <h3>{{ _("Troubleshooting") }}</h3>
+  <h2>{{ _("Troubleshooting") }}</h2>
 
-  <h4>{{ _("You can't reach other people's nodes") }}</h4>
+  <h3>{{ _("You can't reach other people's nodes") }}</h3>
 
   <p>
     Should our computer not have reached the open GNUnet network automatically,
@@ -329,7 +328,7 @@
 
 
 <!--
-  <h4>{{ _("OMG you guys broke my internet") }}</h4>
+  <h3>{{ _("OMG you guys broke my internet") }}</h3>
 
   <p>
     We can replace `/etc/nsswitch.conf` with the backup we made earlier
@@ -342,5 +341,5 @@
     </code>
 -->
 
-</div>
+</article>
 {% endblock body_content %}
