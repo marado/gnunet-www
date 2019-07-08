@@ -64,12 +64,12 @@
           <li><a class="dropdown-item" href="architecture.html">{{ _("System Architecture") }}</a></li>
           <li><a class="dropdown-item" href="https://bugs.gnunet.org" target="_blank">{{ _("Bug Tracker") }}</a></li>
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
-          <li><a class="dropdown-item" target="_blank" href="https://doxygen.gnunet.org">{{ _("Source Code Documentation") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/doxygen/">{{ _("Source Code Documentation") }}</a></li>
           <!-- 
           /* Until there is no functional CI we don't show this */
           <li><a class="dropdown-item" href="https://gitlab.gnunet.org/" target="_blank">{{ _("Continuous Integration") }}</a></li>
           -->
-          <li><a class="dropdown-item" target="_blank" href="https://tutorial.gnunet.org/">{{ _("Development Tutorial") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/tutorial/gnunet-tutorial.html">{{ _("Development Tutorial") }}</a></li>
 	  <li><a class="dropdown-item" href="gnurl.html">libgnurl</a></li>
         </ul>
       </li>
@@ -87,8 +87,8 @@
 	  <li><a class="dropdown-item" href="use.html">{{ _("Use") }}</a></li>
 	  <li><a class="dropdown-item" href="video.html">{{ _("Videos") }}</a></li>
           <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
-	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org">{{ _("Handbook") }}</a></li>
-    <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org">{{ _("REST API") }}</a></li>
+	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/handbook/gnunet.html">{{ _("Handbook") }}</a></li>
+    <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org/">{{ _("REST API") }}</a></li>
           <li><a class="dropdown-item" href="faq.html">{{ _("FAQ") }}</a></li>
           <li><a class="dropdown-item" href="https://bib.gnunet.org/date.html" target="_blank">{{ _("Bibliography") }}</a></li>
 	</ul>
