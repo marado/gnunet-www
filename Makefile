@@ -15,6 +15,7 @@ all: css locale template
 	cp -R dist rendered/
 	cp -R static rendered/
 	cp rendered/static/robots.txt rendered/robots.txt
+	cp rendered/static/stage.robots.txt rendered/stage.robots.txt
 	cp rendered/static/robots.txt rendered/dist/robots.txt
 	cp rendered/static/robots.txt rendered/en/robots.txt
 	cp rendered/static/robots.txt rendered/de/robots.txt
