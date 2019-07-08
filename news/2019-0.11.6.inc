@@ -93,6 +93,6 @@
   <p>
     This release was the work of many people. The following people
     contributed code and were thus easily identified:
-    Christian Grothoff, Florian Dold, Marcello Stanisci, ng0, Martin Schanzenbach and Bernd Fix.
+    Martin Schanzenbach, Julius B&uuml;nger, ng0, Christian Grothoff, Alexia Pagkopoulou, rexxnor, xrs, lurchi and t3sserakt.
   </p>
 </article>
