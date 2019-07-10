@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-07-05 16:54+0000\n"
+"POT-Creation-Date: 2019-07-10 09:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -258,18 +258,19 @@ msgstr ""
 #: template/about.html.j2:72
 msgid ""
 "To get know and learn more, please check our <a href=\"https://docs.gnunet."
-"org\">handbook</a>, especially the <a href=\"https://docs.gnunet.org/#Key-"
-"Concepts\">chapter on \"Key Concepts\"</a>, explaining the fundamental "
-"concepts of GNUnet: <ul> <li><a href=\"https://docs.gnunet.org/"
-"#Authentication\">Authentication</a></li> <li><a href=\"https://docs.gnunet."
-"org/#Accounting-to-Encourage-Resource-Sharing\">Accounting to Encourage "
-"Resource Sharing</a></li> <li><a href=\"https://docs.gnunet.org/"
-"#Confidentiality\">Confidentiality</a></li> <li><a href=\"https://docs."
-"gnunet.org/#Anonymity\">Anonymity</a></li> <li><a href=\"https://docs.gnunet."
-"org/#Deniability\">Deniability</a></li> <li><a href=\"https://docs.gnunet."
-"org/#Peer-Identities\">Peer Identities</a></li> <li><a href=\"https://docs."
-"gnunet.org/#Zones-in-the-GNU-Name-System-_0028GNS-Zones_0029\">Zones in the "
-"GNU Name System (GNS Zones)</a></li> <li><a href=\"https://docs.gnunet.org/"
+"org/handbook/\">handbook</a>, especially the <a href=\"https://docs.gnunet."
+"org/handbook/#Key-Concepts\">chapter on \"Key Concepts\"</a>, explaining the "
+"fundamental concepts of GNUnet: <ul> <li><a href=\"https://docs.gnunet.org/"
+"handbook/#Authentication\">Authentication</a></li> <li><a href=\"https://"
+"docs.gnunet.org/handbook/#Accounting-to-Encourage-Resource-Sharing"
+"\">Accounting to Encourage Resource Sharing</a></li> <li><a href=\"https://"
+"docs.gnunet.org/handbook/#Confidentiality\">Confidentiality</a></li> <li><a "
+"href=\"https://docs.gnunet.org/handbook/#Anonymity\">Anonymity</a></li> "
+"<li><a href=\"https://docs.gnunet.org/handbook/#Deniability\">Deniability</"
+"a></li> <li><a href=\"https://docs.gnunet.org/handbook/#Peer-Identities"
+"\">Peer Identities</a></li> <li><a href=\"https://docs.gnunet.org/handbook/"
+"#Zones-in-the-GNU-Name-System-_0028GNS-Zones_0029\">Zones in the GNU Name "
+"System (GNS Zones)</a></li> <li><a href=\"https://docs.gnunet.org/handbook/"
 "#Egos\">Egos</a></li> </ul>"
 msgstr ""
 
@@ -288,11 +289,10 @@ msgstr ""
 
 #: template/about.html.j2:95
 msgid ""
-"You are most welcome to <a href=\"https://gnunet.org/en/engage.html\">get "
-"engaged into the conversation</a>, <a href=\"https://gnunet.org/en/install."
-"html\">install GNUnet</a>, <a href=\"https://gnunet.org/en/use.html\">use "
-"it</a> and <a href=\"https://gnunet.org/en/contribute.html\">contribute</a> "
-"in various ways."
+"You are most welcome to <a href=\"engage.html\">get engaged into the "
+"conversation</a>, <a href=\"install.html\">install GNUnet</a>, <a href=\"use."
+"html\">use it</a> and <a href=\"contribute.html\">contribute</a> in various "
+"ways."
 msgstr ""
 
 #: template/about.html.j2:100
@@ -1452,7 +1452,7 @@ msgid ""
 "transports, stream muxing, discovery and others. This divides effort and "
 "multiplies bug count.--> Instead of sharing common components and tools for "
 "building P2P systems, every P2P project seems to re-invent the wheel. That "
-"highens effort and number of vulnerabilities."
+"heightens effort and number of vulnerabilities."
 msgstr ""
 
 #: template/index.html.j2:144
@@ -1470,7 +1470,7 @@ msgstr ""
 #: template/index.html.j2:160
 msgid ""
 "Your metadata is just as revealing as the actual content; and it gets "
-"exposed on the internet.<br> Even though transport encryption is "
+"exposed on the Internet.<br> Even though transport encryption is "
 "increasingly being deployed on the Internet, it still reveals data that can "
 "threaten democracy: the identities of senders and receivers, the times, "
 "frequency and the volume of communication are all still revealed.<br> <!-- "
@@ -1512,7 +1512,7 @@ msgstr "Sobre GNUnet"
 #: template/index.html.j2:210
 msgid ""
 "If you want to know more about the GNUnet please continue reading the <a "
-"href=\"about.html\">about page</a>. There are much more ressources, such as "
+"href=\"about.html\">about page</a>. There are much more resources, such as "
 "the <a href=\"https://docs.gnunet.org\">main handbook / reference manual</"
 "a>, a <a href=\"https://bib.gnunet.org/\">bibliography</a> and <a href="
 "\"https://gnunet.org/en/video.html\">videos</a>."
@@ -1878,11 +1878,11 @@ msgstr ""
 msgid "GNS with Browser"
 msgstr ""
 
-#: template/use.html.j2:17 template/use.html.j2:332
+#: template/use.html.j2:17 template/use.html.j2:326
 msgid "VPN"
 msgstr ""
 
-#: template/use.html.j2:18 template/use.html.j2:393
+#: template/use.html.j2:18 template/use.html.j2:384
 msgid "Conversation"
 msgstr ""
 
@@ -1894,19 +1894,19 @@ msgstr ""
 msgid "... and play around with it."
 msgstr ""
 
-#: template/use.html.j2:105
+#: template/use.html.j2:103
 msgid "CADET (and Chat)"
 msgstr ""
 
-#: template/use.html.j2:139
+#: template/use.html.j2:136
 msgid "Chatting with a (simple) client"
 msgstr ""
 
-#: template/use.html.j2:183
+#: template/use.html.j2:178
 msgid "Name resolution using GNS on the command line"
 msgstr ""
 
-#: template/use.html.j2:255
+#: template/use.html.j2:249
 msgid "Name resolution using GNS with a browser"
 msgstr ""
 
