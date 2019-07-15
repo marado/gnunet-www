@@ -1,3 +1,4 @@
+{% include "news/2019-07-GHM_Aug_2019.inc" %}
 {% include "news/2019-06-DSTJ.inc" %}
 {% include "news/2019-06.inc" %}
 {% include "news/2019-0.11.5.inc" %}
