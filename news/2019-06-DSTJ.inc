@@ -9,4 +9,5 @@
       <li><tt>$ find / -name DSTJBRRKZ8TBW3FGK6B0M5QXWT9WYNZ45H5MCV4HY7ST64Q8T9F0</tt></li>
     </ol>
   </p>
+  <p>Update: DSTJ has now been blacklisted. Please update your GNUnet peer.</p>
 </article>
