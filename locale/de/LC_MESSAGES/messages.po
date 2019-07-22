@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-07-11 13:55+0000\n"
+"POT-Creation-Date: 2019-07-22 01:13+0000\n"
 "PO-Revision-Date: 2018-02-24 17:42\n"
 "Last-Translator: Torsten Grothoff <torsten@grothoff.org>\n"
 "Language-Team: German <LL@li.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: common/base.j2:5
@@ -1656,9 +1656,8 @@ msgstr ""
 msgid "Tutorial: GNUnet on Archlinux/Pi"
 msgstr ""
 
-#: template/install-on-archpi.html.j2:15
-#: template/install-on-debian9.html.j2:29 template/install-on-macos.html.j2:17
-#: template/install-on-netbsd.html.j2:19
+#: template/install-on-archpi.html.j2:15 template/install-on-debian9.html.j2:29
+#: template/install-on-macos.html.j2:17 template/install-on-netbsd.html.j2:19
 #: template/install-on-ubuntu1804.html.j2:26
 msgid "Requirements"
 msgstr ""
@@ -1689,23 +1688,20 @@ msgstr ""
 msgid "Make an installation directory"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:59
-#: template/install-on-macos.html.j2:147
+#: template/install-on-debian9.html.j2:59 template/install-on-macos.html.j2:147
 #: template/install-on-netbsd.html.j2:224
 #: template/install-on-ubuntu1804.html.j2:53
 msgid "Get the source code"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:78
-#: template/install-on-macos.html.j2:155
+#: template/install-on-debian9.html.j2:78 template/install-on-macos.html.j2:155
 #: template/install-on-netbsd.html.j2:232
 #: template/install-on-ubuntu1804.html.j2:61
 msgid "Compile and Install"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:103
-#: template/install-on-macos.html.j2:167
-#: template/install-on-netbsd.html.j2:242
+#: template/install-on-macos.html.j2:167 template/install-on-netbsd.html.j2:242
 #: template/install-on-ubuntu1804.html.j2:70
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
@@ -1768,13 +1764,11 @@ msgstr ""
 msgid "First steps"
 msgstr ""
 
-#: template/install-on-macos.html.j2:122
-#: template/install-on-netbsd.html.j2:182
+#: template/install-on-macos.html.j2:122 template/install-on-netbsd.html.j2:182
 msgid "Alternative: Installation from source"
 msgstr ""
 
-#: template/install-on-macos.html.j2:200
-#: template/install-on-netbsd.html.j2:267
+#: template/install-on-macos.html.j2:200 template/install-on-netbsd.html.j2:267
 msgid "Option 2: GNUnet experimental"
 msgstr ""
 
@@ -1806,7 +1800,7 @@ msgid ""
 "\"engage.html\">get in touch!</a></p>"
 msgstr ""
 
-#: template/news.html.j2.inc:11
+#: template/news.html.j2.inc:12
 msgid "More news"
 msgstr ""
 
@@ -1912,11 +1906,11 @@ msgstr ""
 msgid "GNS with Browser"
 msgstr ""
 
-#: template/use.html.j2:17 template/use.html.j2:326
+#: template/use.html.j2:17 template/use.html.j2:331
 msgid "VPN"
 msgstr ""
 
-#: template/use.html.j2:18 template/use.html.j2:384
+#: template/use.html.j2:18 template/use.html.j2:389
 #, fuzzy
 #| msgid "Motivation"
 msgid "Conversation"
@@ -1938,11 +1932,11 @@ msgstr ""
 msgid "Chatting with a (simple) client"
 msgstr ""
 
-#: template/use.html.j2:178
+#: template/use.html.j2:183
 msgid "Name resolution using GNS on the command line"
 msgstr ""
 
-#: template/use.html.j2:249
+#: template/use.html.j2:254
 msgid "Name resolution using GNS with a browser"
 msgstr ""
 
@@ -1950,39 +1944,39 @@ msgstr ""
 msgid "Videos related to GNUnet"
 msgstr ""
 
-#: template/video.html.j2:15
+#: template/video.html.j2:34
 msgid "2019"
 msgstr ""
 
-#: template/video.html.j2:19
+#: template/video.html.j2:38
 msgid "2018"
 msgstr ""
 
-#: template/video.html.j2:25
+#: template/video.html.j2:44
 msgid "2017"
 msgstr ""
 
-#: template/video.html.j2:32
+#: template/video.html.j2:51
 msgid "2016"
 msgstr ""
 
-#: template/video.html.j2:38
+#: template/video.html.j2:57
 msgid "2015"
 msgstr ""
 
-#: template/video.html.j2:47
+#: template/video.html.j2:66
 msgid "2014"
 msgstr ""
 
-#: template/video.html.j2:61
+#: template/video.html.j2:80
 msgid "2013"
 msgstr ""
 
-#: template/video.html.j2:71
+#: template/video.html.j2:90
 msgid "2012"
 msgstr ""
 
-#: template/video.html.j2:75
+#: template/video.html.j2:94
 msgid "2010"
 msgstr ""
 
