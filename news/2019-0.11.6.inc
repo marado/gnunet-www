@@ -6,18 +6,20 @@
     We are pleased to announce the release of GNUnet 0.11.6.
   </p>
   <p>
-    This is a bugfix release for 0.11.5, mostly fixing a few
-    minor bugs and improving performance, in particular for
-    identity management with a large number of egos.
-    In this release, we improved the webpage and updated our documentation.
+    This is a bugfix release for 0.11.5, fixing a lot of
+    minor bugs, improving stability and code quality. Further, our videos are
+    back on the homepage.
+    In this release, we again improved the webpage in general and updated our
+    documentation.
 
-    In terms of usability, users should be aware that there are still a large
-    number of known open issues in particular with respect to ease of use,
+    <i>As always:</i>
+    In terms of usability, users should be aware that there are still <b>a large
+    number of known open issues</b> in particular with respect to ease of use,
     but also some critical privacy issues especially for mobile users.
     Also, the nascent network is tiny (about 200 peers) and thus unlikely to
     provide good anonymity or extensive amounts of interesting
-    information.  As a result, the 0.11.6 release is still only suitable
-    for early adopters with some reasonable pain tolerance.
+    information.  As a result, the 0.11.6 release is still <b>only suitable
+    for early adopters with some reasonable pain tolerance</b>.
   </p>
   <h4>Download links</h4>
   <ul>
@@ -43,14 +45,24 @@
       <tt>gnunet-identity</tt> can now print private keys.
     </li>
     <li>
-      The REST service can be configured to echo the HTTP Origin header value for CORS.
+      The <tt>REST</tt> service can be configured to echo the HTTP Origin header value
+      for Cross-Origin-Resource-Sharing (CORS) when it is called by a browser
+      plugin. Optionally, a CORS Origin to echo can be also be directly
+      configured.
     </li>
     <li>
-      re:claimID tickets are now re-used whenever possible.
+      <tt>re:claimID</tt> tickets are now re-used whenever possible.
     </li>
     <li>
       SUID binary detection mechanisms implemented to improve compatiblity with
       some distributions.
+    </li>
+    <li>
+      <tt>TRANSPORT</tt>, <tt>TESTBED</tt> and <tt>CADET</tt> tests now pass again on macOS.
+    </li>
+    <li>
+      The GNS proxy Certification Authority is now generated using gnutls-certtool,
+      if available, with opennssl/certtool as fallback.
     </li>
     <li>
       Documentation, comments and code quality was improved.
