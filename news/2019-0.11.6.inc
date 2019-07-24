@@ -25,8 +25,8 @@
   <ul>
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.6.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.6.tar.gz</a></li>
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.11.6.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-0.11.6.tar.gz.sig</a></li>
-    <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.5.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.5.tar.gz</a></li>
-    <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.5.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.5.tar.gz.sig</a></li>
+    <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.6.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.6.tar.gz</a></li>
+    <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.6.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.6.tar.gz.sig</a></li>
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz</a></li>
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig</a></li>
   </ul>
