@@ -31,7 +31,7 @@
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig</a></li>
   </ul>
   <p>
-    gnunet-gtk and gnunet-fuse were not released again, as there were no
+    gnunet-fuse was not released again, as there were no
     changes and the 0.11.0 versions are expected to continue to work fine
     with gnunet-0.11.6.
   </p>
