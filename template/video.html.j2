@@ -12,92 +12,399 @@
 	- some links are missing
 	- most of the videos are loaded from git which is a bottleneck for performance. idea: replace some with orginal sources (media.ccc.de, ...)
       -->
-      <div class="text-center">
-        <video width="80%" id="video" controls>
-        Your browser does not support the video tag.
-      </video>
-      <script>
-        var video = document.getElementById('video');
-        var source = document.createElement('source');
-        video.appendChild(source);
-        source.setAttribute('src', 'https://git.gnunet.org/gnunet-videos-2015.git/plain/psc2015/grothoff.webm');
-        function loadvideo(url)
-        {
-          source.setAttribute('src', url);
-          console.log(url);
-          video.load();
-          video.play();
-        }
-      </script>
+      <!-- ##### TEMPLATE #####
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+
+        </div>
       </div>
+      -->
+
+      <h2>{{ _("2019") }}</h2>
       <hr>
-      <h3>{{ _("2019") }}</h3>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2019.git/plain/IETF104/GNU_Name_System_-_2019_Edition_IETF104__Christian_Grothoff.mkv" type="video/x-matroska">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">Christian Grothoff, GNU Name System, IETF
+        </div>
+      </div>
+
+      <h2>{{ _("2018") }}</h2>
+      <hr>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2018.git/plain/Datenspuren2018/DS2018-9337-deu-State_of_the_GNUnet_webm-hd.webm" type="video/webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          t3sserakt, State of the GNUnet, Datenspuren 2018
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2018.git/plain/hack.lu/Hack.lu_2018_LT_-_GNUnet_-_You_Broke_The_Internet_Lets_Make_A_GNU_One__sva.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          sva, You Broke The Internet - Lets Make A GNU One, hack.lu
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2018.git/plain/GNS_-_The_GNU_Name_System_-_Overview.mkv">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Christian Grofhoff, GNS - The GNU Name System - Overview
+        </div>
+      </div>
+
+      <h2>{{ _("2017") }}</h2>
+      <hr>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-1-eng-Three_Ways_to_Enhance_Metadata_Protection_Beyond_Tor_-_secushareorg_webm-hd.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          lynX, Three Ways to Enhance Metadata Protection Beyond Tor, 34C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-2-eng-Modeling_Trust_in_a_Distributed_Private_Social_Network_-_secushareorg_webm-hd.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          t3sserakt, Modeling Trust in a Distributed Private Social Network, 34C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-7-eng-Scalable_and_privacy-respectful_distributed_systems_-_Our_chance_to_avoid_cloud_computing_webm-hd.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          lynX, Scalable and privacy-respectful distributed systems - Our chance to avoid cloud computing, 34C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-6-eng-Privacy-Oriented_Distributed_Networking_for_an_Ethical_Internet_-_including_50_subsystems_of_GNUnet_webm-hd.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          lynX and Christian Grothoff, Privacy-Oriented Distributed Networking for an Ethical Internet, 34C3
+        </div>
+      </div>
+
+      <h2>{{ _("2016") }}</h2>
+      <hr>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2016.git/plain/Battlemeshv9/Gnunet%20For%20Mesh%20Communities%20-%20Battlemesh%20v9%20(Porto,%20Portugal).mp4">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Daniel Golle, Gnunet For Mesh Communities, Battlemesh v9 (Porto, Portugal)
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2015.git/plain/GHM%202015/expose-GNUJeffBurdges19aout2016.mp4">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Jeff Burdges, Xolotl - A compact mixnet format with stronger forwared secrecy and hybrid anonymity, GNU Hacker Meeting
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2016.git/plain/Datenspuren2016/DS2016-7775-deu-Secushare_webm-hd.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          t3sserakt and xrs, Secushare, Datenspuren 2016
+        </div>
+      </div>
       <ul>
-        <li>Christian Grothoff, GNU Name System, IETF (<a href="https://git.gnunet.org/gnunet-videos-2019.git/plain/IETF104/GNU_Name_System_-_2019_Edition_IETF104__Christian_Grothoff.mkv" download>download</a>)</li> 
       </ul>
-      <h3>{{ _("2018") }}</h3>
+
+      <h2>{{ _("2015") }}</h2>
+      <hr>
+      <!-- FIXME: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
+      <!-- FIXME: source not available. <li><a href="https://git.gnunet.org/gnunet-videos-2015.git/plain/32c3/byzantine-fault-tolerant-set-consensus-with-efficient-set-reconciliation.mp4">Byzantine fault tolerant set consensus with efficient set reconciliation</a>, 32C4 -->
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2015.git/plain/psc2015/grothoff.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Christian Grothoff, The Architecture of the GNUnet: 45 Subsystems in 45 Minutes
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2015.git/plain/Datenspuren2015/datenspuren15-7069-de-EDN_-_Echt_Dezentrales_Netzwerk_webm.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          t3sserakt and demos, Echt Dezentrales Netzwerk, Datenspuren 2015
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2015.git/plain/BattleMeshV8/GNUnet%20in%20Community%20Mesh%20Networks%20+%20Slides%20-%20BattleMeshV8.mkv">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Daniel Golle, GNUnet in Community Networks, BattleMesh 2015
+        </div>
+      </div>
       <ul>
-        <li>Christian Grofhoff, GNS - The GNU Name System - Overview (<a href="https://git.gnunet.org/gnunet-videos-2018.git/plain/GNS_-_The_GNU_Name_System_-_Overview.mkv" download>download</a>)</li> 
-        <li>t3sserakt, State of the GNUnet, Datenspuren 2018 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2018.git/plain/Datenspuren2018/DS2018-9337-deu-State_of_the_GNUnet_webm-hd.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2018.git/plain/Datenspuren2018/DS2018-9337-deu-State_of_the_GNUnet_webm-hd.webm" download>download</a>)</li> 
-        <li>sva, You Broke The Internet - Lets Make A GNU One, hack.lu (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2018.git/plain/hack.lu/Hack.lu_2018_LT_-_GNUnet_-_You_Broke_The_Internet_Lets_Make_A_GNU_One__sva.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2018.git/plain/hack.lu/Hack.lu_2018_LT_-_GNUnet_-_You_Broke_The_Internet_Lets_Make_A_GNU_One__sva.webm" download>download</a>)</li> 
       </ul>
-      <h3>{{ _("2017") }}</h3>
-      <ul>
-        <li>lynX, Three Ways to Enhance Metadata Protection Beyond Tor, 34C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-1-eng-Three_Ways_to_Enhance_Metadata_Protection_Beyond_Tor_-_secushareorg_webm-hd.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-1-eng-Three_Ways_to_Enhance_Metadata_Protection_Beyond_Tor_-_secushareorg_webm-hd.webm" download>download</a>)</li> 
-        <li>t3sserakt, Modeling Trust in a Distributed Private Social Network, 34C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-2-eng-Modeling_Trust_in_a_Distributed_Private_Social_Network_-_secushareorg_webm-hd.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-2-eng-Modeling_Trust_in_a_Distributed_Private_Social_Network_-_secushareorg_webm-hd.webm" download>download</a>)</li> 
-        <li>lynX and Christian Grothoff, Privacy-Oriented Distributed Networking for an Ethical Internet, 34C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-6-eng-Privacy-Oriented_Distributed_Networking_for_an_Ethical_Internet_-_including_50_subsystems_of_GNUnet_webm-hd.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-6-eng-Privacy-Oriented_Distributed_Networking_for_an_Ethical_Internet_-_including_50_subsystems_of_GNUnet_webm-hd.webm" download>download</a>)</li> 
-        <li>lynX, Scalable and privacy-respectful distributed systems - Our chance to avoid cloud computing, 34C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-7-eng-Scalable_and_privacy-respectful_distributed_systems_-_Our_chance_to_avoid_cloud_computing_webm-hd.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-7-eng-Scalable_and_privacy-respectful_distributed_systems_-_Our_chance_to_avoid_cloud_computing_webm-hd.webm" download>download</a>)</li> 
+
+      <h2>{{ _("2014") }}</h2>
+      <hr>
+      <!-- FIXME: no source link on web. <li>Julian Kirsch, <a href="">"Knocking down the HACIENDA"</a>, GNU Hacker Meeting 2014</li> -->
+      <!-- FIXME: no source link on web. <li>Peter Schaar, <a href="">"Technik, Recht und Überwachung"</a>, Technische Universität München</li> -->
+      <!-- FIXME: no source link on web. <li>Christian Grothoff, <a href="">"A Public Key Infrastructure for Social Movements in the Age of Universal Surveillance"</a>, Univeristy of Oxford</li> -->
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/voting-voting.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Florian Dold, Electronic Voting and Key Generation in Distributed Systems, 31C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/freedombox-freedombox.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Markus Sabadello and Suhin Mohan Adapa, FreedomBox Status Update, 31C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/fenrir-fenrir.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Lucas Fulchir, why TLS sucks and what I'm doing about it, 31C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/do-panic-do-panic.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/do-panic-do-panic.webm
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Nicolas Benes, Panic! An approach for home routers to securely erase sensitive data, 31C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/2014-coe.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Jacob Appelbaum, Douwe Korff and Christian Grothoff, After Snowden: using law and technology to counter snooping, Counsil of Europe
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/taler-taler.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Christian Grothoff and Florian Dold, Taler, 31C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/queries-queries.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Markus Benter, Complex Queries in P2P networks, 31C3
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/net2o-net2o.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Bernd Paysan, net2o - Reinventing the internet, 31C3
+        </div>
+      </div>
+
+      <h2>{{ _("2013") }}</h2>
+      <hr>
+      <!-- FIXME: no source link on web. <li>Bart Polot, <a href="">"GNUnet CADET and GNUnet Conversation" at YBTI/30c3</a>, 30C3</li> -->
+      <!-- FIXME: no media link. <li>Roger Dingledine and Jacob Appelbaum, "Q &amp; A", Technische Universität München (<a href="https://archive.org/details/RogerDingledineAndJacobAppelbaumQAMarathon" download>download</a>)</li> -->
+      <!-- FIXME: no source link on web. <li>Maximilian Szengel, <a href="">"Decentralized Evaluation of Regular Expressions for Capability Discovery in Peer-to-Peer Networks"</a>, Technische Universität München</li> -->
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2013.git/plain/you%20broke%20the%20internet/internetistschuld.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Christian Grothoff, Carlo von Lynx, Jacob Appelbaum and Richard Stallman, You broke the Internet. We're making ourselves a GNU one., Berlin
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://audio-video.gnu.org/video/ghm2013/Christian_Grothoff-The_GNU_Name_System_and_the_Future_of_Social_Networking_with_GNUnet_.webm">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Christian Grothoff, The GNU Name System and the Future of Social Networking with GNUnet, GHM
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://media.net.in.tum.de/v/Oberseminar-SS13--Monkey_-_Generating_Useful_Bug_R">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Markus Teich, Monkey, generating Useful Bug Reports Automatically, Technische Universität München
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://cdn.media.ccc.de/congress/2013/mp4-lq/30c3-5212-en-The_GNU_Name_System_h264-iprod.mp4">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Christian Grothoff, The GNU Name System, 30C3
+        </div>
+      </div>
+
+      <h2>{{ _("2012") }}</h2>
+      <hr>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://media.net.in.tum.de/videoarchive/SS12/Oberseminar/2012+09+19_1600+Design+and+Implementation+of+a+Censorship+Resist/priv/camera.mp4">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Martin Schanzenbach, A Censorship-Resistant and Fully Decentralized Naming System, Technische Universität München
+        </div>
+      </div>
       </ul>
-      <h3>{{ _("2016") }}</h3>
-      <ul>
-        <li>Daniel Golle, Gnunet For Mesh Communities, Battlemesh v9 (Porto, Portugal) (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2016.git/plain/Battlemeshv9/Gnunet%20For%20Mesh%20Communities%20-%20Battlemesh%20v9%20(Porto,%20Portugal).mp4')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2016.git/plain/Battlemeshv9/Gnunet%20For%20Mesh%20Communities%20-%20Battlemesh%20v9%20(Porto,%20Portugal).mp4" download>download</a>)</li> 
-        <li>t3sserakt and xrs, Secushare, Datenspuren 2016 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2016.git/plain/Datenspuren2016/DS2016-7775-deu-Secushare_webm-hd.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2016.git/plain/Datenspuren2016/DS2016-7775-deu-Secushare_webm-hd.webm" download>download</a>)</li>
-        <li>Jeff Burdges, Xolotl - A compact mixnet format with stronger forwared secrecy and hybrid anonymity, GNU Hacker Meeting (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2015.git/plain/GHM%202015/expose-GNUJeffBurdges19aout2016.mp4')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2015.git/plain/GHM%202015/expose-GNUJeffBurdges19aout2016.mp4" download>download</a>)</li>
-      </ul>
-      <h3>{{ _("2015") }}</h3>
-      <ul>
-        <!-- FIXME: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
-        <!-- FIXME: source not available. <li><a href="https://git.gnunet.org/gnunet-videos-2015.git/plain/32c3/byzantine-fault-tolerant-set-consensus-with-efficient-set-reconciliation.mp4">Byzantine fault tolerant set consensus with efficient set reconciliation</a>, 32C4 -->
-        <li>Daniel Golle, GNUnet in Community Networks, BattleMesh 2015 (<a href="https://git.gnunet.org/gnunet-videos-2015.git/plain/BattleMeshV8/GNUnet%20in%20Community%20Mesh%20Networks%20+%20Slides%20-%20BattleMeshV8.mkv" download>download</a>)</li>
-        <li>t3sserakt and demos, Echt Dezentrales Netzwerk, Datenspuren 2015 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2015.git/plain/Datenspuren2015/datenspuren15-7069-de-EDN_-_Echt_Dezentrales_Netzwerk_webm.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2015.git/plain/Datenspuren2015/datenspuren15-7069-de-EDN_-_Echt_Dezentrales_Netzwerk_webm.webm">download</a>)</li>
-        <li>Christian Grothoff, The Architecture of the GNUnet: 45 Subsystems in 45 Minutes (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2015.git/plain/psc2015/grothoff.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2015.git/plain/psc2015/grothoff.webm" download>download</a>)</li>
- 	<li>Julian Kirsch and Christian Grothoff, Knocking down the HACIENDA, Eindhoven University of Technology (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2015.git/plain/tue2015/grothoff.webm')"></a>, <a href="https://git.gnunet.org/gnunet-videos-2015.git/plain/tue2015/grothoff.webm" download>download</a>)</li>
-      </ul>
-      <h3>{{ _("2014") }}</h3>
-      <ul>
-        <!-- FIXME: no source link on web. <li>Julian Kirsch, <a href="">"Knocking down the HACIENDA"</a>, GNU Hacker Meeting 2014</li> -->
-        <!-- FIXME: no source link on web. <li>Peter Schaar, <a href="">"Technik, Recht und Überwachung"</a>, Technische Universität München</li> -->
-        <!-- FIXME: no source link on web. <li>Christian Grothoff, <a href="">"A Public Key Infrastructure for Social Movements in the Age of Universal Surveillance"</a>, Univeristy of Oxford</li> -->
-        <li>Jacob Appelbaum, Douwe Korff and Christian Grothoff, After Snowden: using law and technology to counter snooping, Counsil of Europe (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/2014-coe.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2014.git/plain/2014-coe.webm" dowload>dowload</a>)</li>
-	<li>Nicolas Benes, Panic! An approach for home routers to securely erase sensitive data, 31C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/do-panic-do-panic.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/do-panic-do-panic.webm" download>download</a>)</li>
-	<li>Lucas Fulchir, why TLS sucks and what I'm doing about it, 31C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/fenrir-fenrir.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/fenrir-fenrir.webm" download>download</a>)</li>
-	<li>Markus Sabadello and Suhin Mohan Adapa, FreedomBox Status Update, 31C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/freedombox-freedombox.webm')"></a>, <a href="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/freedombox-freedombox.webm" download>download</a>)</li>
-	<li>Bernd Paysan, net2o - Reinventing the internet, 31C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/net2o-net2o.webm')"></a>, <a href="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/net2o-net2o.webm" download>download</a>)</li>
-	<li>Markus Benter, Complex Queries in P2P networks, 31C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/queries-queries.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/queries-queries.webm" download>download</a>)</li>
-	<li>Christian Grothoff and Florian Dold, Taler, 31C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/taler-taler.webm')">play</a>, <a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/taler-taler.webm')" download>download</a>)</li>
-	<li>Florian Dold, Electronic Voting and Key Generation in Distributed Systems, 31C3 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/voting-voting.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/voting-voting.webm" download>download</a>)</li>
-      </ul>
-      <h3>{{ _("2013") }}</h3>
-      <ul>
-        <!-- FIXME: no source link on web. <li>Bart Polot, <a href="">"GNUnet CADET and GNUnet Conversation" at YBTI/30c3</a>, 30C3</li> -->
-        <li>Christian Grothoff, The GNU Name System, 30C3 (<a href="javascript:loadvideo('https://cdn.media.ccc.de/congress/2013/mp4-lq/30c3-5212-en-The_GNU_Name_System_h264-iprod.mp4')">play</a>, <a href="https://cdn.media.ccc.de/congress/2013/mp4-lq/30c3-5212-en-The_GNU_Name_System_h264-iprod.mp4" download>download</a>)</li>
-        <li>Markus Teich, Monkey, generating Useful Bug Reports Automatically, Technische Universität München (<a href="https://media.net.in.tum.de/v/Oberseminar-SS13--Monkey_-_Generating_Useful_Bug_R" download>download</a>)</li>
-        <li>Christian Grothoff, The GNU Name System and the Future of Social Networking with GNUnet, GHM (<a href="javascript:loadvideo('https://audio-video.gnu.org/video/ghm2013/Christian_Grothoff-The_GNU_Name_System_and_the_Future_of_Social_Networking_with_GNUnet_.webm')">play</a>, <a href="https://audio-video.gnu.org/video/ghm2013/Christian_Grothoff-The_GNU_Name_System_and_the_Future_of_Social_Networking_with_GNUnet_.webm">download</a>)</li>
-        <li>Christian Grothoff, Carlo von Lynx, Jacob Appelbaum and Richard Stallman, You broke the Internet. We're making ourselves a GNU one., Berlin (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2013.git/plain/you%20broke%20the%20internet/internetistschuld.webm')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2013.git/plain/you%20broke%20the%20internet/internetistschuld.webm" download>download</a>)</li>
-        <li>Roger Dingledine and Jacob Appelbaum, "Q &amp; A", Technische Universität München (<a href="https://archive.org/details/RogerDingledineAndJacobAppelbaumQAMarathon" download>download</a>)</li>
-        <!-- FIXME: no source link on web. <li>Maximilian Szengel, <a href="">"Decentralized Evaluation of Regular Expressions for Capability Discovery in Peer-to-Peer Networks"</a>, Technische Universität München</li> -->
-      </ul>
-      <h3>{{ _("2012") }}</h3>
-      <ul>
-        <li>Martin Schanzenbach, A Censorship-Resistant and Fully Decentralized Naming System, Technische Universität München (<a href="https://media.net.in.tum.de/v/Oberseminar-SS12--Design_and_Implementation_of_a_C" download>download</a>)</li>
-      </ul>
-      <h3>{{ _("2010") }}</h3>
-      <ul>
-	<!-- FIXME: are the media accessible? -->
-	<li>Matthias Wachs, GNUnet - Transport and Transport Selection, GNU Hacker Meeting 2010 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_-_Transports_and_Transport_Selection.ogv')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_-_Transports_and_Transport_Selection.ogv" download>download</a>)</li>
-	<li>Nathan S. Evans, GNUnet Distributed Data Storage - DHT and Distance Vector Transport, GNU Hacker Meeting 2010 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_Distributed_Data_Storage_-_DHT_and_Distance_Vector_Transport.ogv')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_Distributed_Data_Storage_-_DHT_and_Distance_Vector_Transport.ogv" download>download</a>)</li>
-	<li>Christian Grothoff, Introduction to the GNUnet Peer-to-Peer Framework, GNU Hacker Meeting 2010 (<a href="javascript:loadvideo('https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/Introduction_to_The_GNUnet_Peer-to-Peer_Framework.ogv')">play</a>, <a href="https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/Introduction_to_The_GNUnet_Peer-to-Peer_Framework.ogv" download>download</a>)</li>
-      </ul>
+
+      <h2>{{ _("2010") }}</h2>
+      <hr>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_-_Transports_and_Transport_Selection.ogv">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Matthias Wachs, GNUnet - Transport and Transport Selection, GNU Hacker Meeting 2010
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_Distributed_Data_Storage_-_DHT_and_Distance_Vector_Transport.ogv">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Nathan S. Evans, GNUnet Distributed Data Storage - DHT and Distance Vector Transport, GNU Hacker Meeting 2010
+        </div>
+      </div>
+      <div class="row container">
+        <div class="col-md-5 col-12">
+          <video width="100%" height="100%" controls>
+	    <source src="https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/Introduction_to_The_GNUnet_Peer-to-Peer_Framework.ogv">
+	    Your browser does not support the video tag.
+	  </video>
+        </div>
+        <div class="col">
+          Christian Grothoff, Introduction to the GNUnet Peer-to-Peer Framework, GNU Hacker Meeting 2010
+        </div>
+      </div>
     </div>
   </div>
 </div>
