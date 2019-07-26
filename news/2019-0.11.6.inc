@@ -61,6 +61,9 @@
       <tt>TRANSPORT</tt>, <tt>TESTBED</tt> and <tt>CADET</tt> tests now pass again on macOS.
     </li>
     <li>
+      <tt>CADET</tt>: Replaced enum <tt>GNUNET_CADET_ChannelOption</tt> with <tt>GNUNET_MQ_PriorityPreferences</tt> in preparation of API changed in the future.
+    </li>
+    <li>
       The GNS proxy Certification Authority is now generated using gnutls-certtool,
       if available, with opennssl/certtool as fallback.
     </li>
@@ -77,7 +80,7 @@
     </li>
     <li>
       There are known moderate implementation limitations in CADET that
-      negatively impact performance. Also CADET may unexpectedly deliver messages out-of-order.
+      negatively impact performance.
     </li>
     <li>
       There are known moderate design issues in FS that also impact
