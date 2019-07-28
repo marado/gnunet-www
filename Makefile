@@ -22,6 +22,7 @@ all: css locale template
 	cp rendered/static/robots.txt rendered/es/robots.txt
 	cp rendered/static/robots.txt rendered/fr/robots.txt
 	cp rendered/static/robots.txt rendered/it/robots.txt
+	cp favicon.ico rendered/favicon.ico
 	/bin/sh make_sitemap.sh
 	cp rendered/sitemap.xml rendered/en/sitemap.xml
 	cp rss.xml rendered/rss.xml
