@@ -1,0 +1,130 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("Tutorial: GNUnet on Archlinux/Pi") }}</h1>
+  </header>
+
+
+  Welcome to this GNUnet tutorial for Archlinux on a Raspberry Pi 3. If you want
+  to run a GNUnet node on a separte system, permanently online, with low energy
+  consumption, this might be the thing for you. This tutorial shows you how to
+  install, run, and operate it. 
+
+  <h2>{{ _("Requirements") }}</h2>
+
+  <p>First you need the hardware. This tutorial works with a Raspberry Pi 3. The
+  other Pi versions I haven't tested, but they should probably work, too. To
+  install Archlinux on the Pi3, follow the instructions from <a
+  href="https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3">archlinuxarm.org</a>.</p>
+
+  <p>That was easy, right? Our goal now is to build GNUnet from source. So, let's
+  install the tools for building new software.</p>
+
+  <p><code>
+  > sudo pacman -S base-devel
+  </code></p>
+
+  <p>Now we can continue to install the following Archlinux dependencies to
+  compile GNUnet on our Pi.</p>
+
+  <p><code>
+  $ pacman -Su libmicrohttpd libgcrypt gnurl libunistring gnutls libidn
+  libextractor openssl libltdl sqlite texinfo which gettext zlib
+  pkg-config git miniupnpc libextractor jansson nim
+  </code></p>
+
+  <h2>{{ _("Get the Source Code") }}</h2>
+
+  <p>We are getting closer. Download the GNUnet source code which we will build
+  in the next step:<p>
+
+  <p><code>
+  > git clone https://gnunet.org/git/gnunet.git<br> 
+  </code></p>
+
+  <p>Now it's time to compile GNUnet.</p>
+
+  <p><code>
+  > cd gnunet<br>
+  > ./bootstrap # Run this to generate the configure files.<br>
+  > ./configure # Use --help to see the various flags available to you.<br>
+  > make -j$(nproc || echo -n 1)<br>
+  > sudo make install<br>
+  </code></p>
+
+  <p>Congrats! GNUnet is now installed!</p>
+
+  <h2>{{ _("Run") }}</h2>
+
+  <p>By default GNUnet looks in our home directory for the file
+  ~/.config/gnunet.conf. We can start with an empty file for now:</p>
+
+  <p><code>
+  > touch ~/.config/gnunet.conf
+  </code></p>
+   <br />
+    <p>
+      It's reccomended that you increase your bandwidth restrictions
+      from the acutely low defaults. The example below sets the WAN
+      and LAN limits to the value "unlimited".
+    </p>
+   <br />
+    <code>
+      $ gnunet-config -s ats -o WAN_QUOTA_IN -V unlimited<br />
+      $ gnunet-config -s ats -o WAN_QUOTA_OUT -V unlimited<br /> 
+      $ gnunet-config -s ats -o LAN_QUOTA_IN -V unlimited<br />
+      $ gnunet-config -s ats -o LAN_QUOTA_OUT -V unlimited<br /> 
+    </code>
+   <br />
+  <p>Now we can start it with the commandline tool gnunet-arm (Automatic Restart
+  Manager).</p>
+
+  <p><code>
+  > gnunet-arm -s 
+  </code></p>
+
+  <p>It starts the default GNUnet services. We can list them with the -I option:</p>
+
+  <p><code>
+  > gnunet-arm -I<br>
+  Running services:<br>
+  ats (gnunet-service-ats)<br>
+  revocation (gnunet-service-revocation)<br>
+  set (gnunet-service-set)<br>
+  nat (gnunet-service-nat)<br>
+  transport (gnunet-service-transport)<br>
+  peerstore (gnunet-service-peerstore)<br>
+  hostlist (gnunet-daemon-hostlist)<br>
+  identity (gnunet-service-identity)<br>
+  namecache (gnunet-service-namecache)<br>
+  peerinfo (gnunet-service-peerinfo)<br>
+  datastore (gnunet-service-datastore)<br>
+  zonemaster (gnunet-service-zonemaster)<br>
+  zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
+  nse (gnunet-service-nse)<br>
+  cadet (gnunet-service-cadet)<br>
+  dht (gnunet-service-dht)<br>
+  core (gnunet-service-core)<br>
+  gns (gnunet-service-gns)<br>
+  statistics (gnunet-service-statistics)<br>
+  topology (gnunet-daemon-topology)<br>
+  fs (gnunet-service-fs)<br>
+  namestore (gnunet-service-namestore)<br>
+  vpn (gnunet-service-vpn)<br>
+  </code></p>
+
+  <p>For stopping GNUnet again we can use the -e option.</p>
+
+  <p><code>
+  > gnunet-arm -e
+  </code></p>
+
+  <h2>{{ _("Make sure, it works!") }}</h2>
+   <p>
+        Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
+   <p>
+
+</article>
+{% endblock body_content %}

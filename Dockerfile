@@ -12,7 +12,8 @@ RUN apt-get update && \
       python3 \
       python3-setuptools \
       python3-babel \
-      python3-jinja2 && \
+      python3-jinja2 \
+      sassc && \
     apt-get clean all && \
     apt-get -y autoremove && \
     rm -rf \

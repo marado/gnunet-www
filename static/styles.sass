@@ -27,8 +27,9 @@
 
 // text colors
 
+// blunt-force priority, works for now.
 .near-white
-  color: #f4f4f4
+  color: #f4f4f4  !important
 
 .near-black
   color: #111
@@ -49,15 +50,16 @@
 
 code
   margin-bottom: 1em
+  word-wrap: break-word
 
 // hyperlinks and buttons
 
-#body_content a
-  text-decoration: underline
-  color: #357edd
-  &:link, &:visited
-    text-decoration: underline
-    color: #357edd
+//#body_content a
+//  text-decoration: underline
+//  color: #357edd
+//  &:link, &:visited
+//    text-decoration: underline
+//    color: #357edd
 
 a.btn
   text-decoration: none !important
@@ -65,9 +67,6 @@ a.btn
   &:link, &:visited
     text-decoration: none !important
     color: white !important
-
-.team
-  padding: 75px 0
 
 h6.description
   font-weight: bold
@@ -163,9 +162,12 @@ i.red
   background-color: #678
   border-color: #68a
 
+img.distro-logo
+  height: 150px
+
 a.btn:hover
   transition: background-color 0.7s
-  background-color: #d00
+  background-color: #217fae
   border-color: #fff
   color: white !important
 
@@ -192,8 +194,11 @@ html
   color: white
 
 .c_acronym
-  background-color: #217fae
+  background-color: #419edb
   color: white
+  a
+   &:link &:visited
+   color: #c1d9f5
 
 footer a
   text-decoration: underline
@@ -233,8 +238,7 @@ footer a
   text-align: center
 
 footer
-  padding-top: 2em
-  margin-top: 2em
+  padding: 2em
 
 #body_content
   .container-wide
@@ -251,12 +255,8 @@ footer
     max-width: 80em
   .jumbotron
     margin-bottom: 0px
-    // background-color: #cccccc;
-    // background-image: radial-gradient(circle, #baddef, #baddef, #349fd7);
   // push footer down
   min-height: 80vh
-  // space for the nav
-  // padding-top: 70px;
 
 .adorn_h3_bracket h3::before
   content: "#"
@@ -278,3 +278,19 @@ footer
 
 .row
   min-width: 50%
+
+header
+  text-align: center
+  margin-top: 30px
+  margin-bottom: 50px
+
+// Some docs are too long, thus there is a need for a subnav.
+// Use "subnav" class for the submenu.
+// Use "subnav-anchor" class for the a-tags right before a section title.
+.subnav
+  a.nav-link
+    &:link, &:visited
+      color: #419edb !important
+a.subnav-anchor
+  position: relative
+  top: -80px

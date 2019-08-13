@@ -1,34 +1,54 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<article>
-<div class="container-fluid">
-  <div class="container text-center">
+<article class="container">
+
   <header>
     <h1>{{ _("Verein zur F&ouml;rderung von GNUnet e.V.") }}</h1>
   </header>
-    <p>
-      {% trans %}
-      On December 27th 2013 a group of GNUnet hackers met at 30c3
-      to create the "Verein zur F&ouml;rderung von GNUnet e.V.", an
-      association under German law to support GNUnet development.
-      The Amtsgericht M&uuml;nchen registered the association on the
-      7th of March under VR 205287.
-      {% endtrans %}
-    </p>
-    <p>
-      {% trans %}
-        The association is officially dedicated to supporting research,
-        development and education in the area of secure decentralized
-        networking in general, and GNUnet specifically.  This is the
-        official website for the association.
-      {% endtrans %}
-    </p>
-  </div>
-</div>
 
-<div class="container">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-md">
+      <h3>{{ _("About GNUnet e.V.") }}</h3>
+      <p>
+        {% trans %}
+        On December 27th 2013 a group of GNUnet hackers met at 30c3
+        to create the "Verein zur F&ouml;rderung von GNUnet e.V.", an
+        association under German law to support GNUnet development.
+        The Amtsgericht M&uuml;nchen registered the association on the
+        7th of March under VR 205287.
+        {% endtrans %}
+      </p>
+      <p>
+        {% trans %}
+          The association is officially dedicated to supporting research,
+          development and education in the area of secure decentralized
+          networking in general, and GNUnet specifically.  This is the
+          official website for the association.
+        {% endtrans %}
+      </p>
+    </div>
+    <div class="col-md">
+      <h3>{{ _("Becoming a Member of GNUnet e.V.") }}</h3>
+      <p>
+        {% trans %}
+          GNUnet developers with git (write) access can become
+          members to participate in the decision process and
+          formally support GNUnet e.V.  For this, all you have
+          to do is update the <tt>members.txt</tt> file in the
+          <a href="https://git.gnunet.org/gnunet-ev.git/">gnunet-ev</a> repository.
+          There are no membership dues; however, members are required
+          to support GNUnet e.V. and in particularly contribute to the
+          technical development within their means. For further
+          details, we refer to the
+          <a href="https://git.gnunet.org/gnunet-ev.git/">Satzung</a>
+          (currently only available in German, translations welcome).
+        {% endtrans %}
+      </p>
+    </div>
+  </div><!-- END:row -->
+
+  <div class="row">
+    <div class="col-md">
       <h3>{{ _("Governance") }}</h3>
       <p>
         {% trans %}
@@ -47,48 +67,7 @@
         {% endtrans %}
       </p>
     </div>
-    <div class="col-lg-6">
-      <h3>{{ _("Becoming a Member of GNUnet e.V.") }}</h3>
-      <p>
-        {% trans %}
-          GNUnet developers with git (write) access can become
-          members to participate in the decision process and
-          formally support GNUnet e.V.  For this, all you have
-          to do is update the <tt>members.txt</tt> file in the
-          <a href="https://git.gnunet.org/gnunet-ev.git/">gnunet-ev</a> repository.
-          There are no membership dues; however, members are required
-          to support GNUnet e.V. and in particularly contribute to the
-          technical development within their means. For further
-          details, we refer to the
-          <a href="https://git.gnunet.org/gnunet-ev.git/">Satzung</a>
-          (currently only available in German, translations welcome).
-        {% endtrans %}
-      </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <h3>{{ _("Support Us!") }}</h3>
-      <p>
-        {% trans %}
-          Everybody is welcome to support us via donations. For
-          financial contributions, Europeans are able to donate via
-          SEPA. We hope to setup accounts in other major currency areas
-          in the future.  You can also donate via Bitcoin, routing
-          details are given below.  Please note that we are unable to
-          provide receipts for your donations.  If you are planning to
-          donate a significant amount of money, please contact us first
-          as it might be better to come to a custom arrangement.
-
-          <dl><dt>BitCoin</dt>
-            <dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd>
-            <dt>SEPA/IBAN</dt>
-            <dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd>
-          </dl>
-        {% endtrans %}
-      </p>
-    </div>
-    <div class="col-lg-6">
+    <div class="col-md">
       <h3>{{ _("Official Meeting Notes") }}</h3>
       <p>
         <ul>
@@ -113,8 +92,33 @@
         </ul>
       </p>
     </div>
-  </div>
-</div>
+  </div><!-- END:row -->
+
+  <div class="row">
+    <div class="col-md">
+      <h3>{{ _("Support Us!") }}</h3>
+      <p>
+        {% trans %}
+          Everybody is welcome to support us via donations. For
+          financial contributions, Europeans are able to donate via
+          SEPA. We hope to setup accounts in other major currency areas
+          in the future.  You can also donate via Bitcoin, routing
+          details are given below.  Please note that we are unable to
+          provide receipts for your donations.  If you are planning to
+          donate a significant amount of money, please contact us first
+          as it might be better to come to a custom arrangement.
+
+          <dl><dt>BitCoin</dt>
+            <dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd>
+            <dt>SEPA/IBAN</dt>
+            <dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd>
+          </dl>
+        {% endtrans %}
+      </p>
+    </div>
+    <div class="col">
+    </div>
+  </div><!-- END:row -->
 
 </div> <!-- /container -->
 </article>
