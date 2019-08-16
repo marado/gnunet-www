@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-07-22 01:13+0000\n"
+"POT-Creation-Date: 2019-08-17 01:49+0200\n"
 "PO-Revision-Date: 2018-02-24 17:42\n"
 "Last-Translator: Torsten Grothoff <torsten@grothoff.org>\n"
 "Language-Team: German <LL@li.org>\n"
@@ -294,7 +294,7 @@ msgstr ""
 
 #: template/about.html.j2:90
 msgid ""
-"There are much more resources to learn about GNUnet besides the <a href="
+"There are many more resources to learn about GNUnet besides the <a href="
 "\"https://docs.gnunet.org/handbook/gnunet.html\">handbook</a>, such as the "
 "<a href=\"https://bib.gnunet.org/\">bibliography</a> with papers covering "
 "the various layers, many <a href=\"https://gnunet.org/en/video.html"
@@ -1706,48 +1706,48 @@ msgstr ""
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:115
+#: template/install-on-debian9.html.j2:116
 #: template/install-on-ubuntu1804.html.j2:80
 msgid "Option 2: GNUnet for development"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:126
+#: template/install-on-debian9.html.j2:127
 msgid "Option 3: gnunet-gtk"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:142
+#: template/install-on-debian9.html.j2:143
 #: template/install-on-ubuntu1804.html.j2:92
 msgid "Install GNUnet plugin for name resolution"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:196
+#: template/install-on-debian9.html.j2:197
 #: template/install-on-ubuntu1804.html.j2:129
 msgid "Configuration"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:272
+#: template/install-on-debian9.html.j2:273
 #: template/install-on-ubuntu1804.html.j2:203
 #, fuzzy
 #| msgid "GNUnet"
 msgid "Use GNUnet!"
 msgstr "GNUnet"
 
-#: template/install-on-debian9.html.j2:277
+#: template/install-on-debian9.html.j2:278
 #: template/install-on-ubuntu1804.html.j2:208
 msgid "Uninstall GNUnet and its dependencies"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:293
+#: template/install-on-debian9.html.j2:294
 #: template/install-on-ubuntu1804.html.j2:224
 msgid "Troubleshooting"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:295
+#: template/install-on-debian9.html.j2:296
 #: template/install-on-ubuntu1804.html.j2:225
 msgid "You can't reach other people's nodes"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:331
+#: template/install-on-debian9.html.j2:332
 #: template/install-on-ubuntu1804.html.j2:256
 msgid "OMG you guys broke my internet"
 msgstr ""
@@ -1882,6 +1882,54 @@ msgstr ""
 msgid "Secushare, Data Protection Theory, Computer Science &amp; Society."
 msgstr ""
 
+#: template/tutorial.html.j2:5
+#, fuzzy
+#| msgid "Tutorials"
+msgid "Install-Tutorials"
+msgstr "Anleitungen"
+
+#: template/tutorial.html.j2:8
+msgid ""
+"This page holds various simplified step-by-step tutorials for GNUnet. <br> "
+"Some of them are not complete, but we find them useful regardless of their "
+"state. <br> Find much more detailled documentation of the installation "
+"options in the <a href=\"https://docs.gnunet.org/handbook/gnunet.html#toc-"
+"Installing-GNUnet-1\">according section</a> of the <a href=\"https://docs."
+"gnunet.org/handbook/gnunet.html\">handbook</a>."
+msgstr ""
+
+#: template/tutorial.html.j2:15
+msgid ""
+"Please note that the installation process will get much easier once we have "
+"proper packages again."
+msgstr ""
+
+#: template/tutorial.html.j2:20
+msgid ""
+"GNUnet installation instructions: <ul> <li><a href=\"tutorial-ubuntu1804.html"
+"\">Ubuntu 18.04</a></li> <li><a href=\"tutorial-archpi.html\">Arch-Pi</a></"
+"li> <li><a href=\"tutorial-debian9.html\">Debian 9</a></li> <li><a href="
+"\"tutorial-macos.html\">macOS</a></li> <li><a href=\"tutorial-netbsd.html"
+"\">NetBSD</a></li> </ul>"
+msgstr ""
+
+#: template/tutorial.html.j2:32
+msgid ""
+"<a href=\"https://tutorial.gnunet.org/\">C Coding Tutorial for GNUnet</a>"
+msgstr ""
+
+#: template/tutorial.html.j2:37
+msgid ""
+"Once the installation is done, please head over to the <a href=\"https://"
+"gnunet.org/en/use\">\"How to use GNUnet\"-page</a> to get a brief intro on "
+"what can be done with your installation. <br> As usual get much more "
+"detailled instructions and information in the <a href=\"https://docs.gnunet."
+"org/handbook/gnunet.html#toc-Using-GNUnet-1\">according section</a> of the "
+"<a href=\"https://docs.gnunet.org/handbook/gnunet.html\">handbook</a>. If "
+"you have any queries about the installation or the usage, please <a href="
+"\"https://gnunet.org/en/engage.html\">get in touch!</a>"
+msgstr ""
+
 #: template/use.html.j2:6
 msgid "How to use GNUnet - in a nutshell"
 msgstr ""
@@ -1944,39 +1992,39 @@ msgstr ""
 msgid "Videos related to GNUnet"
 msgstr ""
 
-#: template/video.html.j2:34
+#: template/video.html.j2:29
 msgid "2019"
 msgstr ""
 
-#: template/video.html.j2:38
+#: template/video.html.j2:42
 msgid "2018"
 msgstr ""
 
-#: template/video.html.j2:44
+#: template/video.html.j2:78
 msgid "2017"
 msgstr ""
 
-#: template/video.html.j2:51
+#: template/video.html.j2:136
 msgid "2016"
 msgstr ""
 
-#: template/video.html.j2:57
+#: template/video.html.j2:174
 msgid "2015"
 msgstr ""
 
-#: template/video.html.j2:66
+#: template/video.html.j2:214
 msgid "2014"
 msgstr ""
 
-#: template/video.html.j2:80
+#: template/video.html.j2:308
 msgid "2013"
 msgstr ""
 
-#: template/video.html.j2:90
+#: template/video.html.j2:360
 msgid "2012"
 msgstr ""
 
-#: template/video.html.j2:94
+#: template/video.html.j2:375
 msgid "2010"
 msgstr ""
 
@@ -1987,9 +2035,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Wir haben im moment keine Zuwendung. Die ganze Arbeit wird von "
 #~ "Freiwiligen gemacht."
-
-#~ msgid "Tutorials"
-#~ msgstr "Anleitungen"
 
 #~ msgid "Talk With Us"
 #~ msgstr "Mitmachen"
