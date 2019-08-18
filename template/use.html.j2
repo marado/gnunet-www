@@ -15,7 +15,8 @@
       <a class="nav-link" href="#gns_cli">{{ _("GNS with CLI") }}</a>
       <a class="nav-link" href="#gns_browser">{{ _("GNS with Browser") }}</a>
       <a class="nav-link" href="#vpn">{{ _("VPN") }}</a>
-      <a class="nav-link" href="#conversation">{{ _("Conversation") }}</a>
+      <!-- <a class="nav-link" href="#conversation">{{ _("Conversation") }}</a> -->
+      <a class="nav-link" href="#trouble">{{ _("Trouble Shooting") }}</a>
       </nav>
     </div>
 
@@ -24,9 +25,64 @@
         <p>
          This document is just a brief intro on what can be done with GNUnet. Find much more in our <a ref="https://docs.gnunet.org/">documentation</a>, e.g. in the section <a href="https://docs.gnunet.org/handbook/gnunet.html#toc-Using-GNUnet-1">"using GNUnet"</a> in the handbook.
 
-         The configuration in the handbook is done with the UI interface gnunet-gtk.
+         The configuration in the handbook is done with the UI interface gnunet-gtk. => whats meant with this sentence? I cant see any context...
         </p>
       </section>
+
+<section>
+
+  <h3>{{ _("Get on GNUnet") }}</h3>
+
+  <p>
+    Now we can start it with the command line tool
+    `gnunet-arm` (Automatic Restart Manager) with the -s option; s=start.
+  </p>
+
+  <code>
+    $ gnunet-arm -s
+  </code>
+
+  <p>
+    It starts the default GNUnet services. We can list them with the
+    `-I` option:
+  </p>
+
+  <code>
+    $ gnunet-arm -I<br>
+    Running services:<br>
+    ats (gnunet-service-ats)<br>
+    revocation (gnunet-service-revocation)<br>
+    set (gnunet-service-set)<br>
+    nat (gnunet-service-nat)<br>
+    transport (gnunet-service-transport)<br>
+    peerstore (gnunet-service-peerstore)<br>
+    hostlist (gnunet-daemon-hostlist)<br>
+    identity (gnunet-service-identity)<br>
+    namecache (gnunet-service-namecache)<br>
+    peerinfo (gnunet-service-peerinfo)<br>
+    datastore (gnunet-service-datastore)<br>
+    zonemaster (gnunet-service-zonemaster)<br>
+    zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
+    nse (gnunet-service-nse)<br>
+    cadet (gnunet-service-cadet)<br>
+    dht (gnunet-service-dht)<br>
+    core (gnunet-service-core)<br>
+    gns (gnunet-service-gns)<br>
+    statistics (gnunet-service-statistics)<br>
+    topology (gnunet-daemon-topology)<br>
+    fs (gnunet-service-fs)<br>
+    namestore (gnunet-service-namestore)<br>
+    vpn (gnunet-service-vpn)
+  </code>
+
+  <h3>{{ _("Get off GNUnet") }}</h3>
+  <p>
+    For stopping GNUnet again we can use the `-e` option; e=end.
+  </p>
+
+  <code>
+    $ gnunet-arm -e
+  </code>
 
       <section>
         <h3>{{ _("Make sure your GNUnet installation works...") }}</h3>
@@ -42,7 +98,9 @@
               Tue Oct 30 19:58:48 2018: connection established 5WBG (timeout in 299 s)<br>
               </code>
         </p>
+        There are much more options to see if you are connected and how. E.g. 'gnunet-peerinfo' shows you all peers your peer knows, or with "tail -f ~/.cache/gnunet/*" you'll get to see what's going on with your node.
       </section>
+
       <section>
         <h3>{{ _("... and play around with it.") }}</h3>
         <p>
@@ -50,12 +108,13 @@
         </p>
 
         <ul>
-          <li>filesharing</li>
+          <li>Filesharing</li>
           <li>A simple chat using CADET</li>
           <li>Another simple chat using a nim client</i>
           <li>Name resolution using GNS on the command line</li>
           <li>Name resolution using GNS with a browser (do it on the command line first)</li>
           <li>Serving a website using VPN (do name resolution with a browser first)</li>
+          <!-- <li>Conversation </li> -->
         </ul>
       </section>
 
@@ -70,7 +129,7 @@
 
         <p>
           We can choose any file and describe it with meaningful keywords (using the
-          `-k` command line option).
+          `-k` command line option), in this example these are "commons" and "state".
         </p>
         <p>
         <code>
@@ -94,17 +153,36 @@
           ostrom.pdf)!
         </p>
         <p>
-          Please also refer to the chapter on
-	<a href="https://docs.gnunet.org/handbook/gnunet.html#File_002dsharing">filesharing in the handbook</a>.
+  <p>
+    It's recommended for filesharing that you increase your bandwidth restrictions
+    from the actually pretty low defaults. The example below sets the WAN
+    and LAN limits to the value "unlimited".
+  </p>
+
+  <code>
+    $ gnunet-config -s ats -o WAN_QUOTA_IN -V unlimited<br />
+    $ gnunet-config -s ats -o WAN_QUOTA_OUT -V unlimited<br /> 
+    $ gnunet-config -s ats -o LAN_QUOTA_IN -V unlimited<br />
+    $ gnunet-config -s ats -o LAN_QUOTA_OUT -V unlimited<br /> 
+  </code>
+        </p>
+        <p>
+          Please note that it might take some time (up to some hours) till your peers can see your freshly uploaded files. 
+        </p>
+        <p> Further reading: Please also refer to the chapter on
+    <a href="https://docs.gnunet.org/handbook/gnunet.html#File_002dsharing">filesharing in the handbook</a>.
 
       </section>
+
+
+
       <section>
 
         <h3><a name="cadet" class="subnav-anchor"></a>{{ _("CADET (and Chat)") }}</h3>
         <p>
           We can use the `gnunet-cadet` command line tool to open a port and from
           another machine connect to this port and chat or transfer data. First we need
-          our *peer ID* of the GNUnet peer opening the port.
+          our <b>peer ID</b> of the GNUnet peer opening the port.
         </p>
         <p>
         <code>
@@ -120,30 +198,56 @@
           $ gnunet-cadet -o my-secret-port
         </code>
         </p>
-        <p>On the other machine we can connect using the peer ID and the port and start chatting!</p>
+        <p>On the other machine we can connect using the peer ID and the port and start chatting!  "Other machine can be a friend's one which has GNUnet running, but it can also just be another shell on your machine.</p>
         <p>
         <code>
           $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
         </code>
         </p>
         <p>
-              If you are interested into CADET in detail, please have a look in the <a href="https://docs.gnunet.org/handbook/gnunet.html#CADET-Subsystem">chapter "Cadet-Subsystem" in our handbook</a>.
+              If you are interested into CADET in detail, please have a look in the <a href="https://docs.gnunet.org/handbook/gnunet.html/CADET-Subsystem.html#CADET-Subsystem ">chapter "Cadet-Subsystem" in our handbook</a>.  The CADET subsystem is responsible for secure end-to-end communications between nodes in the GNUnet overlay network; as transport protocol it's somewhat of the heart of the project. 
         </p>
-
       </section>
+
+
 
       <section>
         <h3><a name="groupchat" class="subnav-anchor"></a>{{ _("Chatting with a (simple) client") }}</h3>
          <p>
-              To chat a tiny bit prettier, we need to install and compile additional software.
+              To chat a tiny bit prettier, we can install and compile additional software.
               If you join the chat mentioned below and no one is there, feel free to ping on
               IRC/freenode #gnunet and ask if someone can join to test with you! (But we are
               trying to be there as often as possible).
-	 </p>
-	 <p>
-	      First we have to install Nim either through our package manager or following the
-	      <a href="https://nim-lang.org/install.html">official installation instructions</a>.
-	      Then we download and compile the groupchat application:
+     </p>
+     <p>
+          First we have to install Nim. Please refer to their <a href="https://nim-lang.org/install.html">project site</a> for further details. The preferred method is using our package manager, e.g. for Debian it would look like this: 
+      </p>
+      <code>
+        $ sudo apt install nim
+        $ nim --version
+        Nim Compiler Version 0.20.2 [Linux: amd64]
+        Compiled at 2019-07-17
+        Copyright (c) 2006-2019 by Andreas Rumpf
+
+        active boot switches: -d:release -d:nativeStackTrace
+      </code>
+      <p>
+       If the displayed version is <b>0.19.0 or newer</b>, we have a compatible version and can continue downloading and compiling the groupchat. If the version is older (like on Ubuntu 18.04) we can install Nim using a tool called <i>choosenim</i>:
+      </p>
+      <code>
+          $ curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+      </code>
+      <p>
+      Then we follow the onscreen instructions. More information can be found in the <a href="https://nim-lang.org/install.html">official documentation</a>.
+      </p>
+      <p>In the onscreen instructions you'll be ask to add a line to your bashrc - once you've done that, re-read your bash environment to make the change active: 
+      </p>
+      <code>
+      source ~/.bashrc
+      </code>
+      
+      <p>
+          After we have installed (and maybe upgraded) Nim we download and compile the groupchat application:
          </p>
          <p>
          <code>
@@ -178,6 +282,8 @@
               Here we have typed "Hello gnunet!" to standard in which is then written out to standard out after having been sent back from GNUnet.
          </p>
       </section>
+
+
 
       <section>
         <h3><a name="gns_cli" class="subnav-anchor"></a>{{ _("Name resolution using GNS on the command line") }}</h3>
@@ -248,6 +354,7 @@
       See the <a href="https://docs.gnunet.org/handbook/gnunet.html#First-steps-_002d-Using-the-GNU-Name-System">chapter "Using the GNU Name System" in our handbook</a> for a more detailed documentation.
         </p>
       </section>
+
 
 
       <section id='gns_proxy'>
@@ -327,6 +434,9 @@
          See the <a href="https://docs.gnunet.org/handbook/gnunet.html#Integration-with-Browsers">chapter on Integration with Browsers in our handbook</a> for a more detailed description.
         </p>
       </section>
+
+
+
       <section>
         <h3><a name="vpn" class="subnav-anchor"></a>{{ _("VPN") }}</h3>
         <p>
@@ -385,13 +495,80 @@
           The UI version of this Tutorial can be find in Chapter <a href='https://docs.gnunet.org/handbook/gnunet.html#First-steps-_002d-Using-the-GNUnet-VPN'>Using the GNUnet VPN</a> in the handbook.
         </p>
       </section>
+
+<!--
       <section>
         <h3><a name="conversation" class="subnav-anchor"></a>{{ _("Conversation") }}</h3>
         <p>
           TBD, see <a href="https://docs.gnunet.org/handbook/gnunet.html#First-steps-_002d-Using-GNUnet-Conversation">chapter "Using GNUnet Conversation" in the handbook.</a>
         </p>
       </section>
+-->
+
+
+
+
+      <section>
+        <h3><a name="trouble" class="subnav-anchor"></a>{{ _("Trouble Shooting") }}</h3>
+
+  <h4>{{ _("You can't reach other people's nodes") }}</h3>
+
+  <p>
+    Should our computer not have reached the open GNUnet network automatically,
+    we can manually instruct our node how to reach the nodes of our friends. This
+    works by exchanging HELLO strings. This is how we get a hello string for our
+    computer.
+  </p>
+
+  <code>
+    $ gnunet-peerinfo -gn
+  </code>
+
+  <p>
+    We can now pass this string to our friends "out of band" (using
+    whatever existing chat or messaging technology). If the string
+    contains some private IP networks we don't want to share, we can
+    carefully edit them out.
+  </p>
+
+  <p>
+    Once we receive such strings from our friends, we can add them
+    like this:
+  </p>
+
+  <code>
+    gnunet-peerinfo -p <string>
+  </code>
+
+  <p>
+    Now our GNUnet nodes can attempt reaching each other directly. This may
+    still fail due to NAT traversal issues.
+  </p>
+
+
+<!--
+  <h4>{{ _("OMG you guys broke my internet") }}</h3>
+
+  <p>
+    We can replace `/etc/nsswitch.conf` with the backup we made earlier
+    (`/etc/nsswitch.conf.original`). Now DNS resolution should work again without a
+    running GNUnet.
+  </p>
+
+    <code>
+      $ cp /etc/nsswitch.conf.original /etc/nsswitch.conf
+    </code>
+-->
+
+      </section>
+
+
     </div>
   </div>
 </article>
 {% endblock body_content %}
+
+
+
+
+
