@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-08-17 01:49+0200\n"
+"POT-Creation-Date: 2019-08-18 21:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1662,9 +1662,7 @@ msgid "Compile and Install"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:103
-#: template/install-on-macos.html.j2:167 template/install-on-netbsd.html.j2:242
-#: template/install-on-ubuntu1804.html.j2:70
-msgid "Option 1: GNUnet for production / usage"
+msgid "Option 1: GNUnet for testing / usage"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:116
@@ -1672,43 +1670,27 @@ msgstr ""
 msgid "Option 2: GNUnet for development"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:127
-msgid "Option 3: gnunet-gtk"
+#: template/install-on-debian9.html.j2:130
+msgid "In Addition: gnunet-gtk"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:143
+#: template/install-on-debian9.html.j2:153
 #: template/install-on-ubuntu1804.html.j2:92
 msgid "Install GNUnet plugin for name resolution"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:197
-#: template/install-on-ubuntu1804.html.j2:129
-msgid "Configuration"
+#: template/install-on-debian9.html.j2:207
+msgid "Create configuration file"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:273
+#: template/install-on-debian9.html.j2:227
 #: template/install-on-ubuntu1804.html.j2:203
 msgid "Use GNUnet!"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:278
+#: template/install-on-debian9.html.j2:232
 #: template/install-on-ubuntu1804.html.j2:208
 msgid "Uninstall GNUnet and its dependencies"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:294
-#: template/install-on-ubuntu1804.html.j2:224
-msgid "Troubleshooting"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:296
-#: template/install-on-ubuntu1804.html.j2:225
-msgid "You can't reach other people's nodes"
-msgstr ""
-
-#: template/install-on-debian9.html.j2:332
-#: template/install-on-ubuntu1804.html.j2:256
-msgid "OMG you guys broke my internet"
 msgstr ""
 
 #: template/install-on-macos.html.j2:6
@@ -1727,6 +1709,11 @@ msgstr ""
 msgid "Alternative: Installation from source"
 msgstr ""
 
+#: template/install-on-macos.html.j2:167 template/install-on-netbsd.html.j2:242
+#: template/install-on-ubuntu1804.html.j2:70
+msgid "Option 1: GNUnet for production / usage"
+msgstr ""
+
 #: template/install-on-macos.html.j2:200 template/install-on-netbsd.html.j2:267
 msgid "Option 2: GNUnet experimental"
 msgstr ""
@@ -1737,6 +1724,22 @@ msgstr ""
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
+msgstr ""
+
+#: template/install-on-ubuntu1804.html.j2:129
+msgid "Configuration"
+msgstr ""
+
+#: template/install-on-ubuntu1804.html.j2:224
+msgid "Troubleshooting"
+msgstr ""
+
+#: template/install-on-ubuntu1804.html.j2:225 template/use.html.j2:514
+msgid "You can't reach other people's nodes"
+msgstr ""
+
+#: template/install-on-ubuntu1804.html.j2:256 template/use.html.j2:550
+msgid "OMG you guys broke my internet"
 msgstr ""
 
 #: template/install.html.j2:11
@@ -1891,7 +1894,7 @@ msgstr ""
 msgid "How to use GNUnet - in a nutshell"
 msgstr ""
 
-#: template/use.html.j2:12 template/use.html.j2:64
+#: template/use.html.j2:12 template/use.html.j2:123
 msgid "Filesharing"
 msgstr ""
 
@@ -1911,35 +1914,47 @@ msgstr ""
 msgid "GNS with Browser"
 msgstr ""
 
-#: template/use.html.j2:17 template/use.html.j2:331
+#: template/use.html.j2:17 template/use.html.j2:441
 msgid "VPN"
 msgstr ""
 
-#: template/use.html.j2:18 template/use.html.j2:389
+#: template/use.html.j2:18 template/use.html.j2:501
 msgid "Conversation"
 msgstr ""
 
-#: template/use.html.j2:32
+#: template/use.html.j2:19 template/use.html.j2:512
+msgid "Trouble Shooting"
+msgstr ""
+
+#: template/use.html.j2:34
+msgid "Get on GNUnet"
+msgstr ""
+
+#: template/use.html.j2:78
+msgid "Get off GNUnet"
+msgstr ""
+
+#: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
 msgstr ""
 
-#: template/use.html.j2:47
+#: template/use.html.j2:105
 msgid "... and play around with it."
 msgstr ""
 
-#: template/use.html.j2:103
+#: template/use.html.j2:181
 msgid "CADET (and Chat)"
 msgstr ""
 
-#: template/use.html.j2:136
+#: template/use.html.j2:215
 msgid "Chatting with a (simple) client"
 msgstr ""
 
-#: template/use.html.j2:183
+#: template/use.html.j2:289
 msgid "Name resolution using GNS on the command line"
 msgstr ""
 
-#: template/use.html.j2:254
+#: template/use.html.j2:361
 msgid "Name resolution using GNS with a browser"
 msgstr ""
 
