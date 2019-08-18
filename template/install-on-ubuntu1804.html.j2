@@ -43,8 +43,8 @@
     Next we create a directory in our home directory where we store
     the source code later. We should keep this directory after
     installation because it contains Makefiles that can be used for
-    uninstalling GNUnet again (see chapter *Uninstall GNUnet and its
-    dependencies*).
+    uninstalling GNUnet again (see chapter <b>Uninstall GNUnet and its
+    dependencies</b>).
   </p>
   <code>
     $ mkdir ~/gnunet_installation
@@ -61,19 +61,20 @@
   <h2>{{ _("Compile and Install") }}</h2>
   <p>
     Installing GNUnet is not hard. We have two options:
-    installing a *production version* and installing a *development version*. If
+    installing a <b>production version</b> and installing a <b>development version</b>. If
     you want to start writing GNUnet applications or join the GNUnet development
     choose the development version (it will print more debug output and contains
     debug symbols that can be displayed with a debugger). Otherwise choose the
     production version.
   </p>
-  <h3>{{ _("Option 1: GNUnet for production / usage") }}</h3>
+  <h3>{{ _("Option 1: GNUnet for testing / usage") }}</h3>
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
     $ ./bootstrap<br>
     $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --with-microhttpd=/opt/libmicrohttpd<br>
     $ sudo addgroup gnunetdns<br>
     $ sudo adduser --system --group --disabled-login --home /var/lib/gnunet gnunet<br>
+    $ sudo usermod -aG gnunet $USER
     $ make -j$(nproc || echo -n 1)<br>
     $ sudo make install
   </code>
@@ -82,8 +83,11 @@
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
     $ ./bootstrap<br>
+    $ export GNUNET_PREFIX=/usr/local # for example, other locations possible
     $ export CFLAGS="-g -Wall -O0"<br>
     $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose <br>
+    $ sudo addgroup gnunet<br>
+    $ sudo usermod -aG gnunet $USER
     $ make -j$(nproc || echo -n 1)<br>
     $ sudo make install
   </code>
@@ -93,7 +97,7 @@
       So now it gets a bit nasty. It's not so bad. All we have to do is copy a file and edit another one. The file we need to copy is GNUnet's plugin for the Name Service Switch (NSS) in unix systems. Different unixes expect it in different locations and GNUnet's build system does not try to guess. On Ubuntu 18.04 we have to do
 
       <code>
-	  $ sudo cp /usr/lib/gnunet/nss/libnss_gns.so.2 /lib/$(uname -m)-linux-gnu/
+      $ sudo cp /usr/lib/gnunet/nss/libnss_gns.so.2 /lib/$(uname -m)-linux-gnu/
       </code>
 
   <p>The next step is activating the GNUnet plugin we just copied in the NSS
@@ -126,7 +130,7 @@
 
   <p>That's it. It wasn't that nasty, was it?</p>
 -->
-  <h2>{{ _("Configuration") }}</h2>
+  <h2>{{ _("Create configuration file") }}</h2>
 
   <p>
     Congratulations! GNUnet is now installed! Before we start it we
@@ -136,74 +140,23 @@
   </p>
  <br />
   <code>
+    $ mkdir -p ~/.config
     $ touch ~/.config/gnunet.conf
   </code>
  <br />
+
+  
   <p>
-    It's reccomended that you increase your bandwidth restrictions
-    from the acutely low defaults. The example below sets the WAN
-    and LAN limits to the value "unlimited".
-  </p>
- <br />
-  <code>
-    $ gnunet-config -s ats -o WAN_QUOTA_IN -V unlimited<br />
-    $ gnunet-config -s ats -o WAN_QUOTA_OUT -V unlimited<br /> 
-    $ gnunet-config -s ats -o LAN_QUOTA_IN -V unlimited<br />
-    $ gnunet-config -s ats -o LAN_QUOTA_OUT -V unlimited<br /> 
-  </code>
- <br />
-  <p>
-    Now we can start it with the command line tool `gnunet-arm`
-    (Automatic Restart Manager).
+    Now we created the configuration file. Please check the handbook for a first <a href="https://docs.gnunet.org/handbook/gnunet.html#Minimal-configuration">minimal configuration</a>. But in general, we dont need to configure anything in particular for now.
   </p>
 
-  <code>
-    $ gnunet-arm -s
-  </code>
+To go on, please <a href="https://gnunet.org/en/use.html">move over here</a>: 
 
-  <p>
-    It starts the default GNUnet services. We can list them with the `-I` option:
-  </p>
-
-  <code>
-    $ gnunet-arm -I<br>
-    Running services:<br>
-    ats (gnunet-service-ats)<br>
-    revocation (gnunet-service-revocation)<br>
-    set (gnunet-service-set)<br>
-    nat (gnunet-service-nat)<br>
-    transport (gnunet-service-transport)<br>
-    peerstore (gnunet-service-peerstore)<br>
-    hostlist (gnunet-daemon-hostlist)<br>
-    identity (gnunet-service-identity)<br>
-    namecache (gnunet-service-namecache)<br>
-    peerinfo (gnunet-service-peerinfo)<br>
-    datastore (gnunet-service-datastore)<br>
-    zonemaster (gnunet-service-zonemaster)<br>
-    zonemaster-monitor (gnunet-service-zonemaster-monitor)<br>
-    nse (gnunet-service-nse)<br>
-    cadet (gnunet-service-cadet)<br>
-    dht (gnunet-service-dht)<br>
-    core (gnunet-service-core)<br>
-    gns (gnunet-service-gns)<br>
-    statistics (gnunet-service-statistics)<br>
-    topology (gnunet-daemon-topology)<br>
-    fs (gnunet-service-fs)<br>
-    namestore (gnunet-service-namestore)<br>
-    vpn (gnunet-service-vpn)
-  </code>
-
-  <p>
-    For stopping GNUnet again we can use the `-e` option.
-  </p>
-
-  <code>
-    $ gnunet-arm -e
-  </code>
   <h2>{{ _("Use GNUnet!") }}</h2>
-   <p>
-	Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
-   <p>
+  <p>
+      Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
+  <p>
+
 
   <h2>{{ _("Uninstall GNUnet and its dependencies") }}</h2>
 
@@ -221,46 +174,7 @@
     $ sudo rm /lib/$(uname -m)-linux-gnu/libnss_gns.so.2
   </code>
 
-  <h2>{{ _("Troubleshooting") }}</h2>
-  <h3>{{ _("You can't reach other people's nodes") }}</h3>
 
-  <p>
-    Should our computer not have reached the open GNUnet network automatically,
-    we can manually instruct our node how to reach the nodes of our friends. This
-    works by exchanging HELLO strings. This is how we get a hello string for our
-    computer.
-  </p>
-
-  <code>
-    $ gnunet-peerinfo -gn
-  </code>
-
-  <p>
-    We can now pass this string to our friends "out of band" (using whatever
-    existing chat or messaging technology). If the string contains some private IP
-    networks we don't want to share, we can carefully edit them out.
-  </p>
-
-  <p>
-    Once we receive such strings from our friends, we can add them like
-    this:
-  </p>
-
-  <code>
-    gnunet-peerinfo -p <string>
-  </code>
-  
-  <p>Now our GNUnet nodes can attempt reaching each other directly. This may
-    still fail due to NAT traversal issues.</p>
-
-  <!--<h3>{{ _("OMG you guys broke my internet") }}</h3>
-
-      <p>We can replace `/etc/nsswitch.conf` with the backup we made earlier
-	(`/etc/nsswitch.conf.original`). Now DNS resolution should work again without a
-	running GNUnet.</p>
-
-      <code>
-	$ cp /etc/nsswitch.conf.original /etc/nsswitch.conf
-      </code>-->
 </article>
 {% endblock body_content %}
+
