@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 # coding: utf-8
-# This file is in the public domain.
+#
+# Copyright (C) 2017, 2018, 2019 GNUnet e.V.
+#
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+#
+# ----
 #
 # This script runs the jinja2 templating engine on an input template-file
 # using the specified locale for gettext translations, and outputs

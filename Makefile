@@ -1,4 +1,12 @@
-# This file is in the public domain.
+#
+# Copyright (C) 2017, 2018, 2019 GNUnet e.V.
+#
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+#
+# ----
 
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
@@ -92,7 +100,7 @@ docker: docker-all
 
 docker-all:
 	docker build -t gnunet-www-builder .
-	# Importing via the shell like this is hacky, 
+	# Importing via the shell like this is hacky,
 	# but after trying lots of other ways, this works most reliably...
 	$(PYTHON) -c 'import i18nfix'
 	docker run --rm -v $$(pwd):/tmp/ --user $$(id -u):$$(id -g) gnunet-www-builder
