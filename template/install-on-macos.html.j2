@@ -17,7 +17,7 @@
   <h2>{{ _("Requirements") }}</h2>
 
   <p>
-    As a bare minimum, we recommend you install <a href="https://brew.sh">homebrew</a> and <a href="https://developer.apple.com/xcode/">XCode</a> before reading any further.
+    As a bare minimum, we recommend you install <a href="https://brew.sh">homebrew</a>. If you want to install GNUnet from source you should also install <a href="https://developer.apple.com/xcode/">XCode</a> and follow the specific instructions below.
   </p>
 
 
@@ -52,19 +52,6 @@
   $ touch ~/.config/gnunet.conf
   </code>
   </p>
- <br />
-  <p>
-    It's reccomended that you increase your bandwidth restrictions
-    from the acutely low defaults. The example below sets the WAN
-    and LAN limits to the value "unlimited".
-  </p>
- <br />
-  <code>
-    $ gnunet-config -s ats -o WAN_QUOTA_IN -V unlimited<br />
-    $ gnunet-config -s ats -o WAN_QUOTA_OUT -V unlimited<br /> 
-    $ gnunet-config -s ats -o LAN_QUOTA_IN -V unlimited<br />
-    $ gnunet-config -s ats -o LAN_QUOTA_OUT -V unlimited<br /> 
-  </code>
  <br />
   <p>
   GNUnet and its services are managed using the command line tool  `gnunet-arm`
@@ -163,7 +150,7 @@ vpn (gnunet-service-vpn)
     debug symbols that can be displayed with a debugger). Otherwise choose the
     production version.
   </p>
-  
+
   <h4>{{ _("Option 1: GNUnet for production / usage") }}</h4>
 
   <p>
