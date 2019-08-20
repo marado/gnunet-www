@@ -74,7 +74,7 @@
     $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --with-microhttpd=/opt/libmicrohttpd<br>
     $ sudo addgroup gnunetdns<br>
     $ sudo adduser --system --group --disabled-login --home /var/lib/gnunet gnunet<br>
-    $ sudo usermod -aG gnunet $USER
+    $ sudo usermod -aG gnunet $USER<br>
     $ make -j$(nproc || echo -n 1)<br>
     $ sudo make install
   </code>
@@ -83,11 +83,11 @@
   <code>
     $ cd ~/gnunet_installation/gnunet<br>
     $ ./bootstrap<br>
-    $ export GNUNET_PREFIX=/usr/local # for example, other locations possible
+    $ export GNUNET_PREFIX=/usr/local # for example, other locations possible<br>
     $ export CFLAGS="-g -Wall -O0"<br>
     $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --enable-logging=verbose <br>
     $ sudo addgroup gnunet<br>
-    $ sudo usermod -aG gnunet $USER
+    $ sudo usermod -aG gnunet $USER<br>
     $ make -j$(nproc || echo -n 1)<br>
     $ sudo make install
   </code>
