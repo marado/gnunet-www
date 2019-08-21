@@ -99,7 +99,7 @@
     debug symbols that can be displayed with a debugger). Otherwise choose the
     production version.
   </p>
-  
+
   <h3>{{ _("Option 1: GNUnet for testing / usage") }}</h3>
 
   <code>
@@ -138,11 +138,11 @@
     $ ./bootstrap<br>
     $ export GNUNET_PREFIX=/usr/local # for example, other locations possible</br>
     $ export CFLAGS="-g -Wall -O0"<br>
-    $ ./configure --prefix=$GNUNET_PREFIX --disable-documentation --with-gnunet=$GNUNET_PREFIX<br>
+    $ ./configure --prefix=$GNUNET_PREFIX --with-gnunet=$GNUNET_PREFIX<br>
     $ make -j$(nproc || echo -n 1)<br>
     $ sudo make install
   </code>
-  <p>  
+  <p>
   Since we added our user to the group gnunet, we need to call the following command (or alternatively log out and log in again) to make the membership effective:
   </p>
   <code>
@@ -217,12 +217,12 @@
     $ mkdir -p ~/.config
     $ touch ~/.config/gnunet.conf
   </code>
-  
+
   <p>
     Now we created the configuration file. Please check the handbook for a first <a href="https://docs.gnunet.org/handbook/gnunet.html#Minimal-configuration">minimal configuration</a>. But in general, we dont need to configure anything in particular for now.
   </p>
 
-To go on, please <a href="https://gnunet.org/en/use.html">move over here</a>: 
+To go on, please <a href="https://gnunet.org/en/use.html">move over here</a>:
 
   <h2>{{ _("Use GNUnet!") }}</h2>
   <p>
