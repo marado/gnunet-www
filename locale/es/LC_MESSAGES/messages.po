@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-08-18 21:46+0200\n"
+"POT-Creation-Date: 2019-08-23 14:03-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -293,8 +293,8 @@ msgstr ""
 msgid ""
 "You are most welcome to <a href=\"engage.html\">get engaged into the "
 "conversation</a>, <a href=\"install.html\">install GNUnet</a>, <a href=\"use."
-"html\">use it</a> and <a href=\"contribute.html\">contribute</a> in various "
-"ways."
+"html\">use it</a> and <a href=\"engage.html\">contribute and get engaged</a> "
+"in various ways."
 msgstr ""
 
 #: template/about.html.j2:100
@@ -946,7 +946,7 @@ msgid ""
 "GNUnet<br /> The REST API is already merged into the gnunet.git repository "
 "(<a href=\"https://gnunet.org/git/gnunet.git/\">GNUnet Main Git</a>).<br /> "
 "To use the new features, clone the repository and follow the <a href="
-"\"https://gnunet.org/installation\">Installation</a> on gnunet.org. Then, "
+"\"https://gnunet.org/en/install.html\">Installation</a> on gnunet.org. Then, "
 "start the rest service with \"gnunet-arm -i rest\"."
 msgstr ""
 
@@ -1176,9 +1176,9 @@ msgstr ""
 #: template/gsoc.html.j2:254
 msgid ""
 "Design and implementation of <a href=\"http://jsonapi.org/\">REST APIs</a> "
-"that expose the <a href=\"https://gnunet.org/doxygen/modules.html\">GNUnet "
-"API</a> so that easy, hands-on development is possible. Also, browser-based "
-"UIs will be much easier to create on top of REST APIs."
+"that expose the <a href=\"https://docs.gnunet.org/doxygen/modules.html"
+"\">GNUnet API</a> so that easy, hands-on development is possible. Also, "
+"browser-based UIs will be much easier to create on top of REST APIs."
 msgstr ""
 
 #: template/gsoc.html.j2:265 template/gsoc.html.j2:585
@@ -1299,10 +1299,10 @@ msgstr ""
 #: template/gsoc.html.j2:468
 msgid ""
 "Implementation of the GNUnet auction system described in Chapter 3 of <a "
-"href=\"https://gnunet.org/libbrand-thesis\">this thesis</a>. Specific tasks "
-"are adding smart contract creation and round time enforcement to libbrandt "
-"as well as creating the GNUnet auction service, library and the three user "
-"interface programs create, info and join."
+"href=\"https://grothoff.org/christian/teich2017ms.pdf\">this thesis</a>. "
+"Specific tasks are adding smart contract creation and round time enforcement "
+"to libbrandt as well as creating the GNUnet auction service, library and the "
+"three user interface programs create, info and join."
 msgstr ""
 
 #: template/gsoc.html.j2:480
@@ -1350,8 +1350,8 @@ msgid ""
 "Implementation of a Web-based UI for GNUnet similar to GNUnet-Gtk with a yet "
 "to be determined framework such as Angular2. This includes the design and "
 "implementation of not yet existing <a href=\"http://jsonapi.org/\">REST "
-"APIs</a> that expose the <a href=\"https://gnunet.org/doxygen/modules.html"
-"\">GNUnet API</a>."
+"APIs</a> that expose the <a href=\"https://docs.gnunet.org/doxygen/modules."
+"html\">GNUnet API</a>."
 msgstr ""
 
 #: template/gsoc.html.j2:590
@@ -1526,7 +1526,7 @@ msgid ""
 "You are very welcome to <a href=\"https://gnunet.org/en/engage.html\"> get "
 "engaged into the conversation</a>, <a href=\"https://gnunet.org/en/install."
 "html\">install GNUnet</a>, <a href=\"https://gnunet.org/en/use.html\">use "
-"it</a> and <a href=\"https://gnunet.org/en/contribute.html\">contribute</a>. "
+"it</a> and <a href=\"https://gnunet.org/en/engage.html\">contribute</a>. "
 "<br> Be aware that this project is still in an early alpha stage when it "
 "comes to software &#8211; its not an easy task to rewrite the whole Internet!"
 msgstr ""
@@ -1624,24 +1624,27 @@ msgid ""
 msgstr ""
 
 #: template/install-on-archpi.html.j2:6
-msgid "Tutorial: GNUnet on Archlinux/Pi"
+msgid "Tutorial: GNUnet on Arch Linux/Pi"
 msgstr ""
 
-#: template/install-on-archpi.html.j2:15 template/install-on-debian9.html.j2:29
-#: template/install-on-macos.html.j2:17 template/install-on-netbsd.html.j2:19
-#: template/install-on-ubuntu1804.html.j2:26
-msgid "Requirements"
+#: template/install-on-archpi.html.j2:16
+msgid "Requirements for Raspberry Pi 3"
 msgstr ""
 
-#: template/install-on-archpi.html.j2:38
+#: template/install-on-archpi.html.j2:40
 msgid "Get the Source Code"
 msgstr ""
 
-#: template/install-on-archpi.html.j2:59
+#: template/install-on-archpi.html.j2:62
+#: template/install-on-debian9.html.j2:130
+msgid "In Addition: gnunet-gtk"
+msgstr ""
+
+#: template/install-on-archpi.html.j2:79
 msgid "Run"
 msgstr ""
 
-#: template/install-on-archpi.html.j2:124
+#: template/install-on-archpi.html.j2:131
 msgid "Make sure, it works!"
 msgstr ""
 
@@ -1654,52 +1657,56 @@ msgstr ""
 msgid "Introduction"
 msgstr ""
 
+#: template/install-on-debian9.html.j2:29 template/install-on-macos.html.j2:17
+#: template/install-on-netbsd.html.j2:19
+#: template/install-on-ubuntu1804.html.j2:26
+msgid "Requirements"
+msgstr ""
+
 #: template/install-on-debian9.html.j2:45
 #: template/install-on-ubuntu1804.html.j2:41
 msgid "Make an installation directory"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:59 template/install-on-macos.html.j2:147
+#: template/install-on-debian9.html.j2:59 template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:224
 #: template/install-on-ubuntu1804.html.j2:53
 msgid "Get the source code"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:78 template/install-on-macos.html.j2:155
+#: template/install-on-debian9.html.j2:78 template/install-on-macos.html.j2:142
 #: template/install-on-netbsd.html.j2:232
 #: template/install-on-ubuntu1804.html.j2:61
 msgid "Compile and Install"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:103
+#: template/install-on-ubuntu1804.html.j2:70
 msgid "Option 1: GNUnet for testing / usage"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:116
-#: template/install-on-ubuntu1804.html.j2:80
+#: template/install-on-ubuntu1804.html.j2:82
 msgid "Option 2: GNUnet for development"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:130
-msgid "In Addition: gnunet-gtk"
-msgstr ""
-
 #: template/install-on-debian9.html.j2:153
-#: template/install-on-ubuntu1804.html.j2:92
+#: template/install-on-ubuntu1804.html.j2:97
 msgid "Install GNUnet plugin for name resolution"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:207
+#: template/install-on-ubuntu1804.html.j2:134
 msgid "Create configuration file"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:227
-#: template/install-on-ubuntu1804.html.j2:203
+#: template/install-on-ubuntu1804.html.j2:156
 msgid "Use GNUnet!"
 msgstr ""
 
 #: template/install-on-debian9.html.j2:232
-#: template/install-on-ubuntu1804.html.j2:208
+#: template/install-on-ubuntu1804.html.j2:162
 msgid "Uninstall GNUnet and its dependencies"
 msgstr ""
 
@@ -1715,16 +1722,15 @@ msgstr ""
 msgid "First steps"
 msgstr ""
 
-#: template/install-on-macos.html.j2:122 template/install-on-netbsd.html.j2:182
+#: template/install-on-macos.html.j2:109 template/install-on-netbsd.html.j2:182
 msgid "Alternative: Installation from source"
 msgstr ""
 
-#: template/install-on-macos.html.j2:167 template/install-on-netbsd.html.j2:242
-#: template/install-on-ubuntu1804.html.j2:70
+#: template/install-on-macos.html.j2:154 template/install-on-netbsd.html.j2:242
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
-#: template/install-on-macos.html.j2:200 template/install-on-netbsd.html.j2:267
+#: template/install-on-macos.html.j2:187 template/install-on-netbsd.html.j2:267
 msgid "Option 2: GNUnet experimental"
 msgstr ""
 
@@ -1734,22 +1740,6 @@ msgstr ""
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
-msgstr ""
-
-#: template/install-on-ubuntu1804.html.j2:129
-msgid "Configuration"
-msgstr ""
-
-#: template/install-on-ubuntu1804.html.j2:224
-msgid "Troubleshooting"
-msgstr ""
-
-#: template/install-on-ubuntu1804.html.j2:225 template/use.html.j2:514
-msgid "You can't reach other people's nodes"
-msgstr ""
-
-#: template/install-on-ubuntu1804.html.j2:256 template/use.html.j2:550
-msgid "OMG you guys broke my internet"
 msgstr ""
 
 #: template/install.html.j2:11
@@ -1887,7 +1877,8 @@ msgstr ""
 
 #: template/tutorial.html.j2:32
 msgid ""
-"<a href=\"https://tutorial.gnunet.org/\">C Coding Tutorial for GNUnet</a>"
+"<a href=\"https://docs.gnunet.org/tutorial/gnunet-tutorial.html\">C Coding "
+"Tutorial for GNUnet</a>"
 msgstr ""
 
 #: template/tutorial.html.j2:37
@@ -1972,6 +1963,14 @@ msgstr ""
 
 #: template/use.html.j2:361
 msgid "Name resolution using GNS with a browser"
+msgstr ""
+
+#: template/use.html.j2:514
+msgid "You can't reach other people's nodes"
+msgstr ""
+
+#: template/use.html.j2:550
+msgid "OMG you guys broke my internet"
 msgstr ""
 
 #: template/video.html.j2:6
