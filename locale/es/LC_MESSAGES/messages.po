@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-09-13 10:04+0000\n"
+"POT-Creation-Date: 2019-09-13 10:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr "Desarrollo"
 msgid "System Architecture"
 msgstr "Architectura del sistema"
 
-#: common/navigation.j2.inc:66 template/gnurl.html.j2:126
+#: common/navigation.j2.inc:66 template/gnurl.html.j2:147
 msgid "Source Code"
 msgstr "Códico fuente"
 
@@ -521,7 +521,7 @@ msgid ""
 "org/gauger/\">https://old.gnunet.org/gauger/</a>."
 msgstr ""
 
-#: template/download.html.j2:7 template/gnurl.html.j2:147
+#: template/download.html.j2:7 template/gnurl.html.j2:169
 msgid "Downloads"
 msgstr ""
 
@@ -750,7 +750,7 @@ msgid ""
 "with egos."
 msgstr ""
 
-#: template/gnurl.html.j2:11
+#: template/gnurl.html.j2:20
 msgid ""
 "libgnurl is a micro fork of libcurl. The goal of libgnurl is to support only "
 "HTTP and HTTPS (and only HTTP 1.x) with a single crypto backend (GnuTLS) to "
@@ -762,11 +762,22 @@ msgid ""
 "to get a proper build of libgnurl."
 msgstr ""
 
-#: template/gnurl.html.j2:26
+#: template/gnurl.html.j2:35
+#, fuzzy
+#| msgid "About"
+msgid "About gnurl"
+msgstr "Sobre"
+
+#: template/gnurl.html.j2:37
+msgid ""
+"Large parts of the following 6 paragraphs are old and need to be rewritten."
+msgstr ""
+
+#: template/gnurl.html.j2:43
 msgid "Motivation"
 msgstr ""
 
-#: template/gnurl.html.j2:28
+#: template/gnurl.html.j2:45
 msgid ""
 "cURL supports many crypto backends. GNUnet requires the use of GnuTLS, but "
 "other variants are used by some distributions. Supporting other crypto "
@@ -778,7 +789,7 @@ msgid ""
 "the bugs that arise might be rather subtle."
 msgstr ""
 
-#: template/gnurl.html.j2:41
+#: template/gnurl.html.j2:58
 msgid ""
 "For GNUnet, we also need a particularly modern version of GnuTLS. Thus, it "
 "would anyway be necessary to recompile cURL for GNUnet. But what happens if "
@@ -800,7 +811,7 @@ msgid ""
 "that code."
 msgstr ""
 
-#: template/gnurl.html.j2:65
+#: template/gnurl.html.j2:82
 msgid ""
 "So to use a modern version of GnuTLS, a sane approach is to disable all of "
 "the \"optional\" features of cURL that drag in system libraries that link "
@@ -814,11 +825,11 @@ msgid ""
 "this can really be trivially fixed by the cURL developers."
 msgstr ""
 
-#: template/gnurl.html.j2:79
+#: template/gnurl.html.j2:97
 msgid "Rename to fix"
 msgstr ""
 
-#: template/gnurl.html.j2:81
+#: template/gnurl.html.j2:99
 #, python-format
 msgid ""
 "How does forking fix it? Easy. First, we can get rid of all of the "
@@ -837,11 +848,11 @@ msgid ""
 "new release."
 msgstr ""
 
-#: template/gnurl.html.j2:99
+#: template/gnurl.html.j2:118
 msgid "Using libgnurl"
 msgstr ""
 
-#: template/gnurl.html.j2:101
+#: template/gnurl.html.j2:120
 msgid ""
 "Projects that use cURL only for HTTP/HTTPS and that would work with GnuTLS "
 "should be able to switch to libgnurl by changing \"-lcurl\" to \"-lgnurl\". "
@@ -852,26 +863,26 @@ msgid ""
 "the original curl source have been written."
 msgstr ""
 
-#: template/gnurl.html.j2:113
+#: template/gnurl.html.j2:133
 msgid "Gotchas"
 msgstr ""
 
-#: template/gnurl.html.j2:115
+#: template/gnurl.html.j2:135
 msgid ""
 "libgnurl and gnurl are not intended to be used as a replacement for curl for "
 "users. Since no conflicts in filenames should occur you are not expected to "
 "remove curl to make use of gnurl and viceversa."
 msgstr ""
 
-#: template/gnurl.html.j2:128
+#: template/gnurl.html.j2:149
 msgid "You can get the gnurl git repository using:"
 msgstr ""
 
-#: template/gnurl.html.j2:141
+#: template/gnurl.html.j2:162
 msgid "The versions are checked in as (signed) git tags."
 msgstr ""
 
-#: template/gnurl.html.j2:149
+#: template/gnurl.html.j2:171
 msgid ""
 "Releases are published on <a href=\"https://ftpmirror.gnu.org/gnu/gnunet/"
 "\">ftpmirror.gnu.org/gnu/gnunet</a>. gnurl is available from within a "
@@ -884,11 +895,11 @@ msgid ""
 "pkgsrc.org\">pkgsrc</a>."
 msgstr ""
 
-#: template/gnurl.html.j2:165
+#: template/gnurl.html.j2:188
 msgid "Building gnurl"
 msgstr ""
 
-#: template/gnurl.html.j2:167
+#: template/gnurl.html.j2:190
 msgid ""
 "We suggest to closely follow release announcements, as they might indicate "
 "changes in how gnurl is to be build. <br> If your package manager provides a "
@@ -903,95 +914,95 @@ msgid ""
 "considered to be stable and approved builds."
 msgstr ""
 
-#: template/gnurl.html.j2:188
+#: template/gnurl.html.j2:211
 msgid "Building from the distributed tarball (prefered method)"
 msgstr ""
 
-#: template/gnurl.html.j2:190
+#: template/gnurl.html.j2:213
 msgid ""
 "If you want to verify the signature, install an OpenPGP compatible tool such "
 "as security/gnupgp2 (and set it up). Assuming you use pkgin:"
 msgstr ""
 
-#: template/gnurl.html.j2:204
+#: template/gnurl.html.j2:227
 msgid "Fetch the signature key from"
 msgstr ""
 
-#: template/gnurl.html.j2:208
+#: template/gnurl.html.j2:231
 msgid "or via commandline with gnupg2."
 msgstr ""
 
-#: template/gnurl.html.j2:213
+#: template/gnurl.html.j2:236
 msgid ""
 "Fetch the release, the signature, the checksum file as well as its signature:"
 msgstr ""
 
-#: template/gnurl.html.j2:232
+#: template/gnurl.html.j2:255
 msgid ""
 "verify the signatures, and verify the checksums against the checksums in "
 "the .sum.txt file."
 msgstr ""
 
-#: template/gnurl.html.j2:238
+#: template/gnurl.html.j2:261
 msgid "unpack the tarball:"
 msgstr ""
 
-#: template/gnurl.html.j2:248
+#: template/gnurl.html.j2:271
 msgid "Change into the directory"
 msgstr ""
 
-#: template/gnurl.html.j2:258
+#: template/gnurl.html.j2:281
 msgid "Now you can either run"
 msgstr ""
 
-#: template/gnurl.html.j2:268
+#: template/gnurl.html.j2:291
 msgid "directly (and read configure-gnurl before you do so) or invoke"
 msgstr ""
 
-#: template/gnurl.html.j2:278
+#: template/gnurl.html.j2:301
 msgid ""
 "and pass additional parameters such as a custom PREFIX location. Further "
 "reference can be the"
 msgstr ""
 
-#: template/gnurl.html.j2:283
+#: template/gnurl.html.j2:306
 msgid "Now run"
 msgstr ""
 
-#: template/gnurl.html.j2:293
+#: template/gnurl.html.j2:316
 msgid "(this is optional)"
 msgstr ""
 
-#: template/gnurl.html.j2:302
+#: template/gnurl.html.j2:325
 msgid "and you are done."
 msgstr ""
 
-#: template/gnurl.html.j2:306
+#: template/gnurl.html.j2:329
 msgid "Building from a tagged git commit"
 msgstr ""
 
-#: template/gnurl.html.j2:308
+#: template/gnurl.html.j2:331
 msgid ""
 "Follow the steps above, but instead of downloading the tarball, clone the "
 "git tag you want to build from."
 msgstr ""
 
-#: template/gnurl.html.j2:318
+#: template/gnurl.html.j2:342
 msgid "Reporting Bugs"
 msgstr ""
 
-#: template/gnurl.html.j2:320
+#: template/gnurl.html.j2:344
 msgid ""
 "You can report bugs on our bug tracker: <a href=\"https://bugs.gnunet.org/"
 "\">bugs.gnunet.org</a>. Alternatively you can use our bug mailinglist, but "
 "we prefer to track bugs on the bugtracker."
 msgstr ""
 
-#: template/gnurl.html.j2:329
+#: template/gnurl.html.j2:354
 msgid "Maintainer and Cryptographic signatures"
 msgstr ""
 
-#: template/gnurl.html.j2:331
+#: template/gnurl.html.j2:356
 msgid ""
 "gnurl/libgnurl is maintained by ng0. Releases are signed with the OpenPGP "
 "Key <b>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</b>, with the key "

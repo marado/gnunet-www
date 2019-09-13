@@ -4,6 +4,15 @@
 
     <header>
       <h1>gnurl (libgnurl)</h1>
+      <a href="#motivation">motivation</a>
+      <a href="#rename">rename</a>
+      <a href="#using">using</a>
+      <a href="#gotchas">gotchas</a>
+      <a href="#source">source</a>
+      <a href="#downloads">downloads</a>
+      <a href="#building">building</a>
+      <a href="#reporting">reporting</a>
+      <a href="#maintainer">maintainer</a>
     </header>
 
     <div class="container">
@@ -23,7 +32,15 @@
           libgnurl.
         {% endtrans %}
       </p>
-      <h3>{{_("Motivation") }}</h3>
+      <h3>{{ _("About gnurl") }}</h3>
+      <p>
+        {% trans %}
+          Large parts of the following 6 paragraphs are old and need
+          to be rewritten.
+        {% endtrans %}
+      </p>
+      <a name="motivation"></a>
+      <h4>{{_("Motivation") }}</h4>
       <p>
         {% trans %}
           cURL supports many crypto backends. GNUnet requires the use of
@@ -76,7 +93,8 @@
 	  really be trivially fixed by the cURL developers.
         {% endtrans %}
       </p>
-      <h3>{{_("Rename to fix") }}</h3>
+      <a name="rename"></a>
+      <h4>{{_("Rename to fix") }}</h4>
       <p>
         {% trans %}
           How does forking fix it? Easy. First, we can get rid of all of the
@@ -96,7 +114,8 @@
           release.
         {% endtrans %}
       </p>
-      <h3>{{_("Using libgnurl") }}</h3>
+      <a name="using"></a>
+      <h4>{{_("Using libgnurl") }}</h4>
       <p>
         {% trans %}
           Projects that use cURL only for HTTP/HTTPS and that would work
@@ -110,6 +129,7 @@
           no additions to the original curl source have been written.
         {% endtrans %}
       </p>
+      <a name="gotchas"></a>
       <h4>{{_("Gotchas") }}</h4>
       <p>
         {% trans %}
@@ -123,6 +143,7 @@
 
     <div class="row container">
       <div class="col-md">
+        <a name="source"></a>
         <h3>{{ _("Source Code") }}</h3>
         <p>
           {% trans %}
@@ -144,6 +165,7 @@
         </p>
       </div>
       <div class="col-md">
+        <a name="downloads"></a>
         <h3>{{ _("Downloads") }}</h3>
         <p>
           {% trans %}
@@ -162,6 +184,7 @@
 
     <div class="row container">
       <div class="col-md">
+        <a name="building"></a>
         <h3>{{ _("Building gnurl") }}</h3>
         <p>
           {% trans %}
@@ -315,6 +338,7 @@
 
     <div class="row container">
       <div class="col-md">
+        <a name="reporting"></a>
         <h3>{{ _("Reporting Bugs") }}</h3>
         <p>
           {% trans %}
@@ -326,6 +350,7 @@
         </p>
       </div>
       <div class="col-md">
+        <a name="maintainer"></a>
         <h3>{{ _("Maintainer and Cryptographic signatures") }}</h3>
         <p>
           {% trans %}
