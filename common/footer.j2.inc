@@ -4,7 +4,6 @@
       <div class="row">
         <div class="col-12 col-sm-4">
           <ul class="footer-list">
-            <li><p><a href="team.html">{{ _("Developer Team") }}</a></p></li>
             <li><p><a href="contact.html">{{ _("Contact") }}</a></p></li>
             <li><p><a href="ev.html">{{ _("GNUnet e.V.") }}</a></p></li>
             <li><p><a href="about.html">{{ _("About GNUnet") }}</a></p></li>
