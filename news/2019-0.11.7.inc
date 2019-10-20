@@ -42,6 +42,11 @@
   <h4>Noteworthy changes in 0.11.7 (since 0.11.6)</h4>
   <ul>
     <li>
+     <tt>ARM</tt>: GNUnet CLI tools are now able to detect if gnunet(-arm) is
+     not running and will exit with a warning (before the command would just
+       hang and wait for GNUnet to be started). #5906
+    </li>
+    <li>
       win32 and mingw support were dropped, which resulted in a significant number of lines of
       code to be gone. The code has been unmaintained in our code base
       for many years and there are no known users. For details and further reasons refer to the discussion
@@ -49,7 +54,34 @@
     </li>
     <li>
       Removal of plibc, win32 and mingw support means you can now compile gnunet without requiring a Cxx compiler
-      (you just need a C compiler).
+      (you just need a C compiler). #5877
+    </li>
+    <li>
+    <tt>REST</tt>: The new config endpoints can now be used to read and write
+    the GNUnet config. #5808
+    </li>
+    <li>
+      <tt>REST</tt>: Added tests for namestore and GNS. #5638
+    </li>
+    <li>
+      <tt>re:claimID / OIDC</tt>: Now supports <a href="https://tools.ietf.org/html/rfc7636">PKCE</a>. #5807
+    </li>
+    <li>
+      SUID binary detection mechanisms implemented to improve compatiblity with
+      some distributions.
+    </li>
+    <li>
+      <tt>CREDENTIAL</tt> subsystem reworked and renamed to <tt>ABD</tt>
+      (attribute-based delegation).
+    </li>
+    <li>
+      <a href="https://lists.gnu.org/archive/html/gnunet-developers/2019-10/msg00023.html">Minor TRANSPORT fixes</a> and <a href="https://lists.gnu.org/archive/html/gnunet-developers/2019-10/msg00022.html">NAT changes</a>.
+    </li>
+    <li>
+      <tt>GNS</tt> prepared code for <a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.txt">LSD001 changes</a>. #5920
+    </li>
+    <li>
+      Documentation, comments and code quality was improved.
     </li>
   </ul>
   <h4>Known Issues</h4>
