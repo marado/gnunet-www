@@ -628,5 +628,28 @@
       </description>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
     </item>
+    <item>
+      <title>GNS Technical Specification Milestone 1/4</title>
+      <link>https://gnunet.org/#gnunet-lsd001-p1</link>
+      <description>
+        &lt;article&gt;
+          &lt;h3&gt;
+            &lt;a name="gnunet-lsd-p1"&gt;2019-10-04: GNS Technical Specification Milestone 1/4&lt;/a&gt;
+          &lt;/h3&gt;
+          &lt;p&gt;
+            We are happy to announce the completion of the first milestone for the GNS Specification. The objective is to provide a detailed and comprehensive guide for implementors of the GNU Name System. The initial milestone consists of documenting the cryptographic principles of GNS data structures. This includes the specification of the GNS record wire and serialization formats as well as internationalization. The draft specification LSD001 can be found at:
+          &lt;/p&gt;
+          &lt;ul&gt;
+            &lt;li&gt;Git: &lt;a href="git://gnunet.org/lsd0001.git"&gt;LSD001&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.txt"&gt;Link to TXT version&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.html"&gt;Likn to HTML version&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;
+            The next milestone will bring the resolver logic specification. 
+          &lt;/p&gt;
+        &lt;/article&gt;
+      </description>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+    </item>
   </channel>
 </rss>
