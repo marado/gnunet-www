@@ -1,5 +1,7 @@
 <article>
-  <h3>2019-10-04: GNS Technical Specification Milestone 1/4</h3>
+  <h3>
+    <a name="gnunet-lsd001-p1">2019-10-04: GNS Technical Specification Milestone 1/4</a>
+  </h3>
   <p>
     We are happy to announce the completion of the first milestone for the
     GNS Specification. The objective is to provide a detailed and comprehensive
