@@ -22,4 +22,8 @@
 
     The next milestone will bring the resolver logic specification.
   </p>
+  <p>
+    This work is generously funded by <a href="https://nlnet.nl">NLnet</a> as
+    part of their <a href="https://nlnet.nl/project/GNS/">Search and discovery fund</a>.
+  </p>
 </article>
