@@ -31,9 +31,10 @@
     <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig</a></li>
   </ul>
   <p>
-    gnunet-fuse was not released again, as there were no
+    gnunet-fuse is not released again, as there were no
     changes and the 0.11.0 versions are expected to continue to work fine
     with gnunet-0.11.7.
+    The GPG key used is: <tt>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</tt>
   </p>
   <p>
     Note that due to mirror synchronization, not all links might be functional
