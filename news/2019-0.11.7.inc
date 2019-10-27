@@ -125,6 +125,6 @@
   <p>
     This release was the work of many people. The following people
     contributed code and were thus easily identified:
-    Martin Schanzenbach, ng0, Christian Grothoff, Alexia Pagkopoulou, Corvus Corax, xrs and t3sserakt.
+    Martin Schanzenbach, ng0, Christian Grothoff, Alexia Pagkopoulou, Andreas Ebner, Corvus Corax, xrs and t3sserakt.
   </p>
 </article>
