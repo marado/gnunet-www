@@ -61,6 +61,9 @@
     the GNUnet config. #5808
     </li>
     <li>
+    <tt>REST</tt>: The service is not started per user in multiuser setups.
+    </li>
+    <li>
       <tt>REST</tt>: Added tests for namestore and GNS. #5638
     </li>
     <li>
