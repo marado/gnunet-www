@@ -1,6 +1,6 @@
 <article>
   <h3>
-    <a name="gnunet-0.11.7-release">2019-XX-XX: GNUnet 0.11.7 released</a>
+    <a name="gnunet-0.11.7-release">2019-10-27: GNUnet 0.11.7 released</a>
   </h3>
   <p>
     We are pleased to announce the release of GNUnet 0.11.7.
@@ -34,7 +34,7 @@
     gnunet-fuse is not released again, as there were no
     changes and the 0.11.0 versions are expected to continue to work fine
     with gnunet-0.11.7.
-    The GPG key used is: <tt>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</tt>
+    The GPG key used to sign is: <tt>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</tt>
   </p>
   <p>
     Note that due to mirror synchronization, not all links might be functional
