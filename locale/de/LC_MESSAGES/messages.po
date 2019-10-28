@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-10-20 11:37+0200\n"
+"POT-Creation-Date: 2019-10-28 16:59+0000\n"
 "PO-Revision-Date: 2018-02-24 17:42\n"
 "Last-Translator: Torsten Grothoff <torsten@grothoff.org>\n"
 "Language-Team: German <LL@li.org>\n"
-"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: common/base.j2:5
@@ -370,11 +370,11 @@ msgstr ""
 "decentralizierte Routingalgorithmen benutzt. Diese Komponenten ersetzen das "
 "traditionelle Internet (TCP/IP)."
 
-#: template/architecture.html.j2:70 template/gns.html.j2:27
+#: template/architecture.html.j2:70
 msgid "Security"
 msgstr "Sicherheit"
 
-#: template/architecture.html.j2:73 template/gns.html.j2:29
+#: template/architecture.html.j2:73
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -383,13 +383,13 @@ msgid ""
 "remain free software."
 msgstr ""
 
-#: template/architecture.html.j2:87 template/gns.html.j2:43
+#: template/architecture.html.j2:87
 #, fuzzy
 #| msgid "System Architecture"
 msgid "System architecture"
 msgstr "System Architekture"
 
-#: template/architecture.html.j2:93 template/gns.html.j2:49
+#: template/architecture.html.j2:93
 msgid "Subsystems"
 msgstr ""
 
@@ -775,24 +775,6 @@ msgid ""
 "with egos."
 msgstr ""
 
-#: template/gns.html.j2:6 template/index.html.j2:274
-msgid "The GNU Name System"
-msgstr ""
-
-#: template/gns.html.j2:12 template/gnurl.html.j2:43
-msgid "Motivation"
-msgstr "Motivation"
-
-#: template/gns.html.j2:14
-msgid ""
-"The Domain Name System today enables traffic amplification attacks, "
-"censorship (i.e. China), mass surveillance (MORECOWBELL) and offensive cyber "
-"war (QUANTUMDNS).<br/> Unfortunately, band aid solutions such as DoT, DoH, "
-"DNSSEC, DPRIVE and the like will not fix this. This is why we built the GNU "
-"Name System (GNS), a secure, decentralized name system built on top of "
-"GNUnet."
-msgstr ""
-
 #: template/gnurl.html.j2:20
 msgid ""
 "libgnurl is a micro fork of libcurl. The goal of libgnurl is to support only "
@@ -815,6 +797,10 @@ msgstr "Über GNUnet"
 msgid ""
 "Large parts of the following 6 paragraphs are old and need to be rewritten."
 msgstr ""
+
+#: template/gnurl.html.j2:43
+msgid "Motivation"
+msgstr "Motivation"
 
 #: template/gnurl.html.j2:45
 msgid ""
@@ -1690,6 +1676,10 @@ msgid ""
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
 
+#: template/index.html.j2:274
+msgid "The GNU Name System"
+msgstr ""
+
 #: template/index.html.j2:277
 msgid ""
 "<!-- The <a href=\"use.html#gns\">GNU Name System (GNS)</a> --> The <a href="
@@ -1809,13 +1799,15 @@ msgstr ""
 msgid "Make an installation directory"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:59 template/install-on-macos.html.j2:134
+#: template/install-on-debian9.html.j2:59
+#: template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:224
 #: template/install-on-ubuntu1804.html.j2:53
 msgid "Get the source code"
 msgstr ""
 
-#: template/install-on-debian9.html.j2:78 template/install-on-macos.html.j2:142
+#: template/install-on-debian9.html.j2:78
+#: template/install-on-macos.html.j2:142
 #: template/install-on-netbsd.html.j2:232
 #: template/install-on-ubuntu1804.html.j2:61
 msgid "Compile and Install"
@@ -1865,15 +1857,18 @@ msgstr ""
 msgid "First steps"
 msgstr ""
 
-#: template/install-on-macos.html.j2:109 template/install-on-netbsd.html.j2:182
+#: template/install-on-macos.html.j2:109
+#: template/install-on-netbsd.html.j2:182
 msgid "Alternative: Installation from source"
 msgstr ""
 
-#: template/install-on-macos.html.j2:154 template/install-on-netbsd.html.j2:242
+#: template/install-on-macos.html.j2:154
+#: template/install-on-netbsd.html.j2:242
 msgid "Option 1: GNUnet for production / usage"
 msgstr ""
 
-#: template/install-on-macos.html.j2:187 template/install-on-netbsd.html.j2:267
+#: template/install-on-macos.html.j2:187
+#: template/install-on-netbsd.html.j2:267
 msgid "Option 2: GNUnet experimental"
 msgstr ""
 
@@ -1905,7 +1900,7 @@ msgid ""
 "\"engage.html\">get in touch!</a></p>"
 msgstr ""
 
-#: template/news.html.j2.inc:14
+#: template/news.html.j2.inc:15
 msgid "More news"
 msgstr ""
 
