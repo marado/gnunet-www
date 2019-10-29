@@ -14,4 +14,8 @@
     The meeting will take place in Montreal between 2 - 7 November. The panel
     will tentatively be help on November 6th.
   </p>
+  <p>
+    <b>UPDATE:</b> The panel is on Tueday, November 5th 13:30 EDT with the possibility
+    of remote participation.
+  </p>
 </article>
