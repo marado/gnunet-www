@@ -16,6 +16,6 @@
   </p>
   <p>
     <b>UPDATE:</b> The panel is on Tueday, November 5th 13:30 EDT with the possibility
-    of remote participation.
+    of remote participation: <a href="https://66.schedule.icann.org/meetings/1116895">Link</a>
   </p>
 </article>
