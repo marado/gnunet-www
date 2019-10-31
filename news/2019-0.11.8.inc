@@ -6,11 +6,7 @@
     We are pleased to announce the release of GNUnet 0.11.8.
   </p>
   <p>
-    This is a bugfix release for 0.11.7, fixing a lot of
-    minor bugs, improving stability and code quality. Further, win32 support
-    was removed for reasons you may read below.
-    In this release, we again improved the webpage in general and updated our
-    documentation.
+    This is a hotfix release for 0.11.7.
 
     <i>As always:</i>
     In terms of usability, users should be aware that there are still <b>a large
@@ -48,9 +44,6 @@
     <li>
      <tt>PQ</tt>: Fixed build with postgresql plugin. (Regression introduces
        as part of #5733)
-    </li>
-    <li>
-      Documentation, comments and code quality was improved.
     </li>
   </ul>
   <h4>Known Issues</h4>
