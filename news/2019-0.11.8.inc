@@ -43,6 +43,9 @@
   <h4>Noteworthy changes in 0.11.8 (since 0.11.7)</h4>
   <ul>
     <li>
+      <tt>GNS</tt> Portability fixes.
+    </li>
+    <li>
      <tt>PQ</tt>: Fixed build with postgresql plugin. (Regression introduces
        as part of #5733)
     </li>
@@ -87,6 +90,6 @@
   <p>
     This release was the work of many people. The following people
     contributed code and were thus easily identified:
-    Martin Schanzenbach, ng0, Christian Grothoff, Alexia Pagkopoulou, Andreas Ebner, Corvus Corax, xrs and t3sserakt.
+    ng0, Daniel Golle.
   </p>
 </article>
