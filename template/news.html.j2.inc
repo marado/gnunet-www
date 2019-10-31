@@ -1,3 +1,4 @@
+{% include "news/2019-0.11.8.inc" %}
 {% include "news/2019-0.11.7.inc" %}
 {% include "news/2019-10-ICANNPanel.inc" %}
 {% include "news/2019-10-GNSSpec1.inc" %}
