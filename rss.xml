@@ -809,5 +809,100 @@
       </description>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
     </item>
+    <item>
+      <title>GNUnet 0.11.8 released</title>
+      <link>https://gnunet.org/#gnunet-0.11.8-release</link>
+      <description>
+        &lt;article&gt;
+  &lt;h3&gt;
+    &lt;a name=&quot;gnunet-0.11.8-release&quot;&gt;2019-10-30: GNUnet 0.11.8 released&lt;/a&gt;
+  &lt;/h3&gt;
+  &lt;p&gt;
+    We are pleased to announce the release of GNUnet 0.11.8.
+  &lt;/p&gt;
+  &lt;p&gt;
+    This is a hotfix release for 0.11.7.
+
+    &lt;i&gt;As always:&lt;/i&gt;
+    In terms of usability, users should be aware that there are still &lt;b&gt;a large
+    number of known open issues&lt;/b&gt; in particular with respect to ease of use,
+    but also some critical privacy issues especially for mobile users.
+    Also, the nascent network is tiny (about 200 peers) and thus unlikely to
+    provide good anonymity or extensive amounts of interesting
+    information.  As a result, the 0.11.8 release is still &lt;b&gt;only suitable
+    for early adopters with some reasonable pain tolerance&lt;/b&gt;.
+  &lt;/p&gt;
+  &lt;h4&gt;Download links&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.8.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.8.tar.gz&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.8.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-0.11.8.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig&quot;&gt;http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.0.tar.gz.sig&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;
+    gnunet-fuse and gnunet-gtk were not released again, as there were no
+    changes and the 0.11.0/0.11.7 versions are expected to continue to work fine
+    with gnunet-0.11.8.
+    The GPG key used to sign is: &lt;tt&gt;A88C8ADD129828D7EAC02E52E22F9BBFEE348588&lt;/tt&gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    Note that due to mirror synchronization, not all links might be functional
+    early after the release. For direct access try &lt;a href=&quot;http://ftp.gnu.org/gnu/gnunet/&quot;&gt;http://ftp.gnu.org/gnu/gnunet/&lt;/a&gt;
+  &lt;/p&gt;
+  &lt;h4&gt;Noteworthy changes in 0.11.8 (since 0.11.7)&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;tt&gt;GNS&lt;/tt&gt; Portability fixes.
+    &lt;/li&gt;
+    &lt;li&gt;
+     &lt;tt&gt;PQ&lt;/tt&gt;: Fixed build with postgresql plugin. (Regression introduces
+       as part of #5733)
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;h4&gt;Known Issues&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      There are known major design issues in the TRANSPORT, ATS and CORE subsystems
+      which will need to be addressed in the future to achieve acceptable usability,
+      performance and security.
+    &lt;/li&gt;
+    &lt;li&gt;
+      There are known moderate implementation limitations in CADET that
+      negatively impact performance.
+    &lt;/li&gt;
+    &lt;li&gt;
+      There are known moderate design issues in FS that also impact
+      usability and performance.
+    &lt;/li&gt;
+    &lt;li&gt;
+      There are minor implementation limitations in SET that create
+      unnecessary attack surface for availability.
+    &lt;/li&gt;
+    &lt;li&gt;
+      The RPS subsystem remains experimental.
+    &lt;/li&gt;
+    &lt;li&gt;
+      Some high-level tests in the test-suite fail non-deterministically due to
+      the low-level TRANSPORT issues.
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;
+    In addition to this list, you may also want to consult our bug tracker
+    at &lt;a href=&quot;https://bugs.gnunet.org/&quot;&gt;bugs.gnunet.org&lt;/a&gt; which lists
+    about 190 more specific issues.
+  &lt;/p&gt;
+
+  &lt;h4&gt;Thanks&lt;/h4&gt;
+  &lt;p&gt;
+    This release was the work of many people. The following people
+    contributed code and were thus easily identified:
+    ng0, Daniel Golle.
+  &lt;/p&gt;
+&lt;/article&gt;
+      </description>
+      <pubDate>Wed, 30 Oct 2019 23:59:59 +0000</pubDate>
+    </item>
   </channel>
 </rss>
