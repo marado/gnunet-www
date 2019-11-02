@@ -25,26 +25,34 @@ all: css locale template
 	$(cp) -R ${_dir} rendered/
 .endfor
 .for _lang in ${_LOCALELIST}
-	$(cp) rendered/static/robots.txt rendered/${_lang}
-	$(cp) rendered/static/stage.robots.txt rendered/${_lang}
-	$(cp) rss.xml rendered/${_lang}
+	($(cp) rendered/static/robots.txt rendered/${_lang})
+	($(cp) rendered/static/stage.robots.txt rendered/${_lang})
+	($(cp) rss.xml rendered/${_lang})
 .endfor
-	$(cp) rendered/static/robots.txt rendered/dist/robots.txt
-	$(cp) favicon.ico rendered/
+.for _lang in ${_LOCALELIST}
+	(cd rendered/${_lang}; $(ln) -fs ../dist dist)
+	(cd rendered/${_lang}; $(ln) -fs ../dist/css css)
+	(cd rendered/${_lang}; $(ln) -fs ../static static)
+.endfor
+	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
+	($(cp) favicon.ico rendered/)
 	$(sh) make_sitemap.sh
 .for _lang in ${_LOCALELIST}
-	$(cp) rendered/sitemap.xml rendered/${_lang}
+	($(cp) rendered/sitemap.xml rendered/${_lang})
 .endfor
-	$(cp) static/moved.html rendered/frontpage.html
-	cd rendered; $(ln) -fs frontpage.html frontpage
-	$(cp) static/moved_gsoc.html rendered/gsoc.html
-	cd rendered; $(ln) -fs gsoc.html gsoc
-	$(cp) static/moved_gns.html rendered/gns.html
-	cd rendered; $(ln) -fs gns.html gns
-	$(mkdir) rendered/node ; $(cp) static/moved_about.html rendered/node/about.html
-	cd rendered/node ; $(ln) -fs about.html 397
-	$(cp) static/moved_about.html rendered/about.html
-	cd rendered ; $(ln) -fs about.html philosophy
+	($(cp) static/moved.html rendered/frontpage.html)
+	(cd rendered; $(ln) -fs frontpage.html frontpage)
+	($(cp) static/moved_gsoc.html rendered/gsoc.html)
+	(cd rendered; $(ln) -fs gsoc.html gsoc)
+	($(cp) static/moved_gns.html rendered/gns.html)
+	(cd rendered; $(ln) -fs gns.html gns)
+	($(mkdir) -p rendered/node; $(cp) static/moved_about.html rendered/node/about.html)
+	(cd rendered/node ; $(ln) -fs about.html 397)
+	($(cp) static/moved_about.html rendered/about.html)
+	(cd rendered ; $(ln) -fs about.html philosophy)
+#.for _lang in ${_LOCALELIST}
+#	$(sh) rssg rendered/${_lang}/news/index.html 'title' > rendered/${_lang}/rss.xml
+#.endfor
 
 # Extract translateable strings from jinja2 templates.
 locale/messages.pot: template/*.j2 common/*.j2 common/*.j2.inc
@@ -79,7 +87,7 @@ css:
 
 run:
 .if defined(browser) && !empty(DESTDIR) && !empty(python)
-	$(browser) http://0.0.0.0:8000 &
+	$(browser) http://0.0.0.0:8000/rendered/en/ &
 	$(python) -m http.server
 .endif
 

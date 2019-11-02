@@ -66,7 +66,7 @@
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/doxygen/">{{ _("Source Code Documentation") }}</a></li>
           <!-- 
-          /* Until there is no functional CI we don't show this */
+          /* Until there is no functional CI we don not show this */
           <li><a class="dropdown-item" href="https://gitlab.gnunet.org/" target="_blank">{{ _("Continuous Integration") }}</a></li>
           -->
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/tutorial/gnunet-tutorial.html">{{ _("Development Tutorial") }}</a></li>

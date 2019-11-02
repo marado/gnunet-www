@@ -30,7 +30,10 @@ import codecs
 import jinja2
 import i18nfix
 
-env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+# TODO: Turn repetition into a class.
+
+env = jinja2.Environment(loader=jinja2.FileSystemLoader(
+    os.path.dirname(__file__)),
                          extensions=["jinja2.ext.i18n"],
                          lstrip_blocks=True,
                          trim_blocks=True,
@@ -40,7 +43,13 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__
 if (os.getenv("DEBUG")):
     print(sys.path)
 
-langs_full = {"en": "English", "fr": "Français", "it": "Italiano", "es": "Español", "de": "Deutsch"}
+langs_full = {
+    "en": "English",
+    "fr": "Français",
+    "it": "Italiano",
+    "es": "Español",
+    "de": "Deutsch"
+}
 
 for in_file in glob.glob("template/*.j2"):
     name, ext = re.match(r"(.*)\.([^.]+)$", in_file.rstrip(".j2")).groups()
@@ -50,7 +59,8 @@ for in_file in glob.glob("template/*.j2"):
         """
         Return URL for the current page in another locale.
         """
-        return "../" + other_locale + "/" + in_file.replace('template/', '').rstrip(".j2")
+        return "../" + other_locale + "/" + in_file.replace('template/',
+                                                            '').rstrip(".j2")
 
     def url_localized(filename):
         return "../" + locale + "/" + filename
@@ -85,7 +95,49 @@ for in_file in glob.glob("template/*.j2"):
                               url_localized=url_localized,
                               svg_localized=svg_localized,
                               filename=name + "." + ext)
-        out_name = "./rendered/" + locale + "/" + in_file.replace('template/', '').rstrip(".j2")
+        out_name = "./rendered/" + locale + "/" + in_file.replace(
+            'template/', '').rstrip(".j2")
         os.makedirs("./rendered/" + locale, exist_ok=True)
+        with codecs.open(out_name, "w", encoding='utf-8') as f:
+            f.write(content)
+
+
+for in_file in glob.glob("news/*.j2"):
+    name, ext = re.match(r"(.*)\.([^.]+)$", in_file.rstrip(".j2")).groups()
+    tmpl = env.get_template(in_file)
+
+    def self_localized(other_locale):
+        """
+        Return URL for the current page in another locale.
+        """
+        return "../" + other_locale + "/" + in_file.replace('news/',
+                                                            '').rstrip(".j2")
+
+    def url_localized(filename):
+        return "../" + locale + "/" + filename
+
+    def svg_localized(filename):
+        lf = filename + "." + locale + ".svg"
+        if locale == "en" or not os.path.isfile(lf):
+            return "../" + filename + ".svg"
+        else:
+            return "../" + lf
+
+    def url(x):
+        # TODO: look at the app root environment variable
+        # TODO: check if file exists
+        return "../" + x
+
+    for f in glob.glob("locale/*/"):
+        locale = os.path.basename(f[:-1])
+        content = tmpl.render(lang=locale,
+                              lang_full=langs_full[locale],
+                              url=url,
+                              self_localized=self_localized,
+                              url_localized=url_localized,
+                              svg_localized=svg_localized,
+                              filename=name + "." + ext)
+        out_name = "./rendered/" + locale + "/news/" + in_file.replace('news/', '').rstrip(".j2")
+        os.makedirs("./rendered/" + locale + "/news/", exist_ok=True)
         with codecs.open(out_name, "w", encoding='utf-8') as f:
             f.write(content)
