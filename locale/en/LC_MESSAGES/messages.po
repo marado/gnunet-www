@@ -1835,7 +1835,7 @@ msgid ""
 "\"engage.html\">get in touch!</a></p>"
 msgstr ""
 
-#: template/news.html.j2.inc:15
+#: template/news.html.j2.inc:16
 msgid "More news"
 msgstr ""
 

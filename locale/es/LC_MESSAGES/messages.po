@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-10-28 16:59+0000\n"
+"POT-Creation-Date: 2019-11-02 16:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1867,7 +1867,7 @@ msgid ""
 "\"engage.html\">get in touch!</a></p>"
 msgstr ""
 
-#: template/news.html.j2.inc:15
+#: template/news.html.j2.inc:16
 msgid "More news"
 msgstr ""
 
