@@ -51,8 +51,7 @@ all: css locale template
 	($(cp) static/moved_about.html rendered/about.html)
 	(cd rendered ; $(ln) -fs about.html philosophy)
 .for _lang in ${_LOCALELIST}
-	($(sh) rssg rendered/${_lang}/news/index.html 'GNUnet News' > rendered/${_lang}/rss.xml)
-	(cd rendered/${_lang}/news ; $(ln) -fs ../rss.xml rss.xml)
+	(cd rendered; $(sh) ../rssg ${_lang}/news/index.html 'GNUnet News' > ${_lang}/news/rss.xml)
 .endfor
 
 # Extract translateable strings from jinja2 templates.
