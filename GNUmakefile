@@ -25,20 +25,12 @@ all: css locale template
 	$(cp) rendered/static/robots.txt rendered/robots.txt
 	$(cp) rendered/static/stage.robots.txt rendered/stage.robots.txt
 	$(cp) rendered/static/robots.txt rendered/dist/robots.txt
-	$(cp) rendered/static/robots.txt rendered/en/robots.txt
-	$(cp) rendered/static/robots.txt rendered/de/robots.txt
-	$(cp) rendered/static/robots.txt rendered/es/robots.txt
-	$(cp) rendered/static/robots.txt rendered/fr/robots.txt
-	$(cp) rendered/static/robots.txt rendered/it/robots.txt
+	(for lang in en de es fr it ; do $(cp) rendered/static/robots.txt rendered/$$lang/robots.txt ;done)
 	$(cp) favicon.ico rendered/favicon.ico
 	$(sh) make_sitemap.sh
 	$(cp) rendered/sitemap.xml rendered/en/sitemap.xml
 	$(cp) rss.xml rendered/rss.xml
-	$(cp) rss.xml rendered/en/rss.xml
-	$(cp) rss.xml rendered/de/rss.xml
-	$(cp) rss.xml rendered/es/rss.xml
-	$(cp) rss.xml rendered/fr/rss.xml
-	$(cp) rss.xml rendered/it/rss.xml
+	(for lang in en de es fr it ; do $(cp) rss.xml rendered/$$lang/rss.xml; done)
 	$(cp) static/moved.html rendered/frontpage.html
 	cd rendered; $(ln) -fs frontpage.html frontpage
 	$(cp) static/moved_gsoc.html rendered/gsoc.html
@@ -49,11 +41,10 @@ all: css locale template
 	cd rendered/node ; $(ln) -fs about.html 397
 	$(cp) static/moved_about.html rendered/about.html
 	cd rendered ; $(ln) -fs about.html philosophy
-	$(sh) rssg rendered/en/news/index.html 'GNUnet News' > rendered/en/rss.xml
-	$(sh) rssg rendered/de/news/index.html 'GNUnet News' > rendered/de/rss.xml
-	$(sh) rssg rendered/es/news/index.html 'GNUnet News' > rendered/es/rss.xml
-	$(sh) rssg rendered/fr/news/index.html 'GNUnet News' > rendered/fr/rss.xml
-	$(sh) rssg rendered/it/news/index.html 'GNUnet News' > rendered/it/rss.xml
+	(cd rendered; \
+		for lang in en de es fr it; do \
+			$(sh) ../rssg $$lang/news/index.html 'GNUnet.org' > $$lang/news/rss.xml; \
+		done)
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need
@@ -96,8 +87,8 @@ it: template
 current_dir = $(shell pwd)
 
 run: all
-	$(browser) http://0.0.0.0:8000 &
-	cd rendered && $(PYTHON) -m http.server
+	$(browser) http://0.0.0.0:8000/rendered/en &
+	$(python) -m http.server
 
 
 # docker-all: Build using a docker image which contains all the needed
