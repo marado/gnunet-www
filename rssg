@@ -18,6 +18,7 @@
 #
 set -e
 
+# TODO: Fix date -j for GNU date.
 
 main () {
 	test -n "$1" || usage
