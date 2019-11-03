@@ -29,11 +29,11 @@ all: css locale template
 	($(cp) rendered/static/stage.robots.txt rendered/${_lang})
 	($(cp) rss.xml rendered/${_lang})
 .endfor
-.for _lang in ${_LOCALELIST}
-	(cd rendered/${_lang}; $(ln) -fs ../dist dist)
-	(cd rendered/${_lang}; $(ln) -fs ../dist/css css)
-	(cd rendered/${_lang}; $(ln) -fs ../static static)
-.endfor
+#.for _lang in ${_LOCALELIST}
+#	(cd rendered/${_lang}; $(ln) -fs ../dist dist)
+#	(cd rendered/${_lang}; $(ln) -fs ../dist/css css)
+#	(cd rendered/${_lang}; $(ln) -fs ../static static)
+#.endfor
 	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
 	($(cp) favicon.ico rendered/)
 	$(sh) make_sitemap.sh
@@ -50,9 +50,10 @@ all: css locale template
 	(cd rendered/node ; $(ln) -fs about.html 397)
 	($(cp) static/moved_about.html rendered/about.html)
 	(cd rendered ; $(ln) -fs about.html philosophy)
-#.for _lang in ${_LOCALELIST}
-#	$(sh) rssg rendered/${_lang}/news/index.html 'title' > rendered/${_lang}/rss.xml
-#.endfor
+.for _lang in ${_LOCALELIST}
+	($(sh) rssg rendered/${_lang}/news/index.html 'GNUnet News' > rendered/${_lang}/rss.xml)
+	(cd rendered/${_lang}/news ; $(ln) -fs ../rss.xml rss.xml)
+.endfor
 
 # Extract translateable strings from jinja2 templates.
 locale/messages.pot: template/*.j2 common/*.j2 common/*.j2.inc

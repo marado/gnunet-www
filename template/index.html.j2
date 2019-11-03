@@ -232,7 +232,7 @@
 	<a href="https://gnunet.org/en/use.html">use it</a> and 
 	<a href="https://gnunet.org/en/engage.html">contribute</a>. <br>
 	Be aware that this project is still in an early alpha stage when it comes 
-	to software &#8211; its not an easy task to rewrite the whole Internet!
+	to software &#8211; it is not an easy task to rewrite the whole Internet!
           {% endtrans %}
         </p>
         </section>
@@ -379,7 +379,17 @@
   </div>
   <div class="row">
     <div class="col-lg-12">
-      Read our recent news postings <a href="news/index.html">here</a>.
+      <p>
+        Recent Posts:
+      </p>
+      <ul>
+        {% for item in newsdata[:4] %}
+          <li><a href='news/{{ item["page"] }}' title='{{ item["date"]}}'>{{ item["title"] }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-lg-12">
+      Read more of our recent news postings <a href="news/index.html">here</a>.
     </div>
   </div>
 </div> <!-- /container -->

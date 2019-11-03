@@ -17,7 +17,7 @@
 </noscript>
 <nav class="navbar sticky-top navbar-expand-md bg-near-black">
   <a class="navbar-brand" href="index.html">
-      <img src="{{ url('static/images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet" height="25px" />
+      <img src="{{ url_static('images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet" height="25px" />
   </a>
 
   <!-- menu button -->
@@ -35,22 +35,18 @@
   <!-- navbar -->
   <div class="collapse navbar-collapse bg-near-black" id="navbarMain">
     <ul class="navbar-nav mr-auto nav">
-      <li class="nav-link">
-	<a href="about.html">{{ _("About") }}</a></li>
-      </li>
-      <li class="nav-link">
-	<a href="index.html#news">{{ _("News") }}</a>
-      </li>
+      <li class="nav-link"><a href="{{ url_localized('about.html') }}">{{ _("About") }}</a></li>
+      <li class="nav-link"><a href="{{ url_localized('index.html#news') }}">{{ _("News") }}</a></li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
            role="button" aria-haspopup="true" aria-expanded="false">
            {{ _("Community") }}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
-          <li><a class="dropdown-item" href="engage.html">{{ _("Engage") }} </a></li>
-          <li><a class="dropdown-item" href="gsoc.html">{{ _("GSoC Projects") }}</a></li>
-          <li><a class="dropdown-item" href="ev.html">{{ _("GNUnet e.V.") }}</a></li>
-          <li><a class="dropdown-item" href="copyright.html">{{ _("Copyright for Contributors") }} </a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('engage.html') }}">{{ _("Engage") }} </a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('gsoc.html') }}">{{ _("GSoC Projects") }}</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('ev.html') }}">{{ _("GNUnet e.V.") }}</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('copyright.html') }}">{{ _("Copyright for Contributors") }} </a></li>
 	  <!-- li><a class="dropdown-item" href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li -->
         </ul>
       </li>
@@ -61,7 +57,7 @@
            {{ _("Development") }}
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
-          <li><a class="dropdown-item" href="architecture.html">{{ _("System Architecture") }}</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('architecture.html') }}">{{ _("System Architecture") }}</a></li>
           <li><a class="dropdown-item" href="https://bugs.gnunet.org" target="_blank">{{ _("Bug Tracker") }}</a></li>
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/doxygen/">{{ _("Source Code Documentation") }}</a></li>
@@ -70,7 +66,7 @@
           <li><a class="dropdown-item" href="https://gitlab.gnunet.org/" target="_blank">{{ _("Continuous Integration") }}</a></li>
           -->
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/tutorial/gnunet-tutorial.html">{{ _("Development Tutorial") }}</a></li>
-	  <li><a class="dropdown-item" href="gnurl.html">libgnurl</a></li>
+	  <li><a class="dropdown-item" href="{{ url_localized('gnurl.html') }}">libgnurl</a></li>
         </ul>
       </li>
       <li class="nav-item dropdown">
@@ -83,13 +79,13 @@
 	   {{ _("Documentation") }}
 	</a>
 	<ul class="dropdown-menu" aria-labelledby="navbarMain">
-	  <li><a class="dropdown-item" href="install.html">{{ _("Install") }}</a></li>
-	  <li><a class="dropdown-item" href="use.html">{{ _("Use") }}</a></li>
-	  <li><a class="dropdown-item" href="video.html">{{ _("Videos") }}</a></li>
-          <li><a class="dropdown-item" href="glossary.html">{{ _("Glossary") }}</a></li>
+	  <li><a class="dropdown-item" href="{{ url_localized('install.html') }}">{{ _("Install") }}</a></li>
+	  <li><a class="dropdown-item" href="{{ url_localized('use.html') }}">{{ _("Use") }}</a></li>
+	  <li><a class="dropdown-item" href="{{ url_localized('video.html') }}">{{ _("Videos") }}</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('glossary.html') }}">{{ _("Glossary") }}</a></li>
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/handbook/gnunet.html">{{ _("Handbook") }}</a></li>
-    <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org/">{{ _("REST API") }}</a></li>
-          <li><a class="dropdown-item" href="faq.html">{{ _("FAQ") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org/">{{ _("REST API") }}</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('faq.html') }}">{{ _("FAQ") }}</a></li>
           <li><a class="dropdown-item" href="https://bib.gnunet.org/date.html" target="_blank">{{ _("Bibliography") }}</a></li>
 	</ul>
       </li>

@@ -49,6 +49,11 @@ all: css locale template
 	cd rendered/node ; $(ln) -fs about.html 397
 	$(cp) static/moved_about.html rendered/about.html
 	cd rendered ; $(ln) -fs about.html philosophy
+	$(sh) rssg rendered/en/news/index.html 'GNUnet News' > rendered/en/rss.xml
+	$(sh) rssg rendered/de/news/index.html 'GNUnet News' > rendered/de/rss.xml
+	$(sh) rssg rendered/es/news/index.html 'GNUnet News' > rendered/es/rss.xml
+	$(sh) rssg rendered/fr/news/index.html 'GNUnet News' > rendered/fr/rss.xml
+	$(sh) rssg rendered/it/news/index.html 'GNUnet News' > rendered/it/rss.xml
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need

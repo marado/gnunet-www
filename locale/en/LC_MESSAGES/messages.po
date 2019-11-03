@@ -10,7 +10,7 @@ msgstr ""
 msgid "Contact"
 msgstr ""
 
-#: common/footer.j2.inc:8 common/navigation.j2.inc:52
+#: common/footer.j2.inc:8 common/navigation.j2.inc:48
 msgid "GNUnet e.V."
 msgstr ""
 
@@ -18,114 +18,109 @@ msgstr ""
 msgid "About GNUnet"
 msgstr ""
 
-#: common/footer.j2.inc:14 common/navigation.j2.inc:65
+#: common/footer.j2.inc:14 common/navigation.j2.inc:61
 msgid "Bug Tracker"
 msgstr ""
 
-#: common/footer.j2.inc:15
-msgid "IRC archive"
-msgstr ""
-
-#: common/footer.j2.inc:20 template/copyright.html.j2:6
+#: common/footer.j2.inc:19 template/copyright.html.j2:6
 msgid "Copyright Assignment"
 msgstr ""
 
-#: common/footer.j2.inc:21 common/navigation.j2.inc:70
-msgid "Continuous Integration"
-msgstr ""
-
-#: common/footer.j2.inc:22 common/navigation.j2.inc:93
+#: common/footer.j2.inc:20 common/navigation.j2.inc:89
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr ""
 
-#: common/footer.j2.inc:30
-msgid ""
-"Copyright &copy; <a href=\"ev.html\">GNUnet e.V.</a> 2001 &mdash; 2019. <!-- "
-"This just takes up space no one is interested in: --> <!-- This page was "
-"created using <a href='https://www.gnu.org/'>Free Software</a> only.<br> --> "
-"<a href='https://git.gnunet.org/www.git'>Source code of this site.</a> <a "
-"href='contact.html'>Report issues with this website</a>."
+#: common/footer.j2.inc:31
+msgid "Source code of this site."
 msgstr ""
 
-#: common/navigation.j2.inc:39 template/index.html.j2:52
+#: common/footer.j2.inc:32
+msgid "Report issues with this website."
+msgstr ""
+
+#: common/navigation.j2.inc:38 template/index.html.j2:52
 msgid "About"
 msgstr ""
 
-#: common/navigation.j2.inc:42 template/index.html.j2:377
+#: common/navigation.j2.inc:39 template/index.html.j2:377
 msgid "News"
 msgstr ""
 
-#: common/navigation.j2.inc:47
+#: common/navigation.j2.inc:43
 msgid "Community"
 msgstr ""
 
-#: common/navigation.j2.inc:50 template/index.html.j2:64
+#: common/navigation.j2.inc:46 template/index.html.j2:64
 msgid "Engage"
 msgstr ""
 
-#: common/navigation.j2.inc:51
+#: common/navigation.j2.inc:47
 msgid "GSoC Projects"
 msgstr ""
 
-#: common/navigation.j2.inc:53
+#: common/navigation.j2.inc:49
 msgid "Copyright for Contributors"
 msgstr ""
 
-#: common/navigation.j2.inc:54
+#: common/navigation.j2.inc:50
 msgid "IRC Archive"
 msgstr ""
 
-#: common/navigation.j2.inc:61
+#: common/navigation.j2.inc:57
 msgid "Development"
 msgstr ""
 
-#: common/navigation.j2.inc:64
+#: common/navigation.j2.inc:60
 msgid "System Architecture"
 msgstr ""
 
-#: common/navigation.j2.inc:66 template/gnurl.html.j2:147
+#: common/navigation.j2.inc:62 template/gnurl.html.j2:147
 msgid "Source Code"
 msgstr ""
 
-#: common/navigation.j2.inc:67
+#: common/navigation.j2.inc:63
 msgid "Source Code Documentation"
 msgstr ""
 
-#: common/navigation.j2.inc:72
+#: common/navigation.j2.inc:66
+msgid "Continuous Integration"
+msgstr ""
+
+#: common/navigation.j2.inc:68
 msgid "Development Tutorial"
 msgstr ""
 
-#: common/navigation.j2.inc:83
+#: common/navigation.j2.inc:79
 msgid "Documentation"
 msgstr ""
 
-#: common/navigation.j2.inc:86 template/index.html.j2:58
+#: common/navigation.j2.inc:82 template/index.html.j2:58
 #: template/install.html.j2:6
 msgid "Install"
 msgstr ""
 
-#: common/navigation.j2.inc:87
+#: common/navigation.j2.inc:83
 msgid "Use"
 msgstr ""
 
-#: common/navigation.j2.inc:88
+#: common/navigation.j2.inc:84
 msgid "Videos"
 msgstr ""
 
-#: common/navigation.j2.inc:89 template/glossary.html.j2:6
+#: common/navigation.j2.inc:85 template/glossary.html.j2:6
 msgid "Glossary"
 msgstr ""
 
-#: common/navigation.j2.inc:90
+#: common/navigation.j2.inc:86
 msgid "Handbook"
 msgstr ""
 
-#: common/navigation.j2.inc:91
+#: common/navigation.j2.inc:87
 msgid "REST API"
 msgstr ""
 
-#: common/navigation.j2.inc:92
+#: common/navigation.j2.inc:88
 msgid "FAQ"
 msgstr ""
 
@@ -1595,7 +1590,8 @@ msgid ""
 "html\">install GNUnet</a>, <a href=\"https://gnunet.org/en/use.html\">use "
 "it</a> and <a href=\"https://gnunet.org/en/engage.html\">contribute</a>. "
 "<br> Be aware that this project is still in an early alpha stage when it "
-"comes to software &#8211; its not an easy task to rewrite the whole Internet!"
+"comes to software &#8211; it is not an easy task to rewrite the whole "
+"Internet!"
 msgstr ""
 
 #: template/index.html.j2:250

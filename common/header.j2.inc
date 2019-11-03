@@ -36,13 +36,13 @@
     <!--    <link rel="icon" href="../../favicon.ico"> -->
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url('dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_dist('css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{{ url('static/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_static('styles.css') }}" rel="stylesheet">
 
-    <script src="{{ url('dist/js/jquery-1.11.1.min.js') }}"></script>
-    <script src="{{ url('dist/js/bootstrap.min.js') }}"></script>
-    <link href="{{ url('static/navbar.css') }}" rel="stylesheet">
+    <script src="{{ url_dist('js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ url_dist('js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_static('navbar.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
