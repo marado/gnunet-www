@@ -96,7 +96,6 @@ it: template
 current_dir = $(shell pwd)
 
 run: all
-	@[ "$(BROWSER)" ] || ( echo "You need to export the environment variable 'BROWSER' to run this."; exit 1 )
 	$(browser) http://0.0.0.0:8000 &
 	cd rendered && $(PYTHON) -m http.server
 
