@@ -48,23 +48,11 @@
   </div>
   <div class="container text-center">
     <p>
-      <a class="btn btn-primary btn-lg" href="#about">
-      {% trans %}
-      About
-      {% endtrans %}
-      </a>
+      <a class="btn btn-primary btn-lg" href="{{ url_localized('#about') }}">{{ _("About") }}</a>
       &nbsp;
-      <a class="btn btn-primary btn-lg" href="install.html">
-      {% trans %}
-      Install
-      {% endtrans %}
-      </a>
+      <a class="btn btn-primary btn-lg" href="{{ url_localized('install.html') }}">{{ _("Install") }}</a>
       &nbsp;
-      <a class="btn btn-primary btn-lg" href="engage.html">
-      {% trans %}
-      Engage
-      {% endtrans %}
-      </a>
+      <a class="btn btn-primary btn-lg" href="{{ url_localized('engage.html') }}">{{ _("Engage") }}</a>
     </p>
   </div>
 </div>
