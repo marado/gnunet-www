@@ -186,9 +186,11 @@ def generation_dir(htmldir):
     rm_rf(oldgen)
 
 
-def copy_static (locale, indict):
+def copy_static(locale, indict):
     for key, value in indict.items():
         print(locale + "/" + key + " ...to... " + locale + "/" + value)
+
+
 #    fileop(in, out, "copy")
 
 # At this moment in time, constructing this list dynamically would be
@@ -196,22 +198,101 @@ def copy_static (locale, indict):
 # no real use of jinja yet and furthermore we would be better off
 # just using static html + css + some awk and other base tools.
 newsposts = [
-    {'page': '2019-0.11.8.html', 'date': '2019-10-30', 'title': 'GNUnet 0.11.8'},
-    {'page': '2019-0.11.7.html', 'date': '2019-10-27', 'title': 'GNUnet 0.11.7'},
-    {'page': '2019-10-ICANNPanel.html', 'date': '2019-10-20', 'title': 'ICANN Panel'},
-    {'page': '2019-10-GNSSpec1.html', 'date': '2019-10-04', 'title': 'GNS Spec 1'},
-    {'page': '2019-0.11.6.html', 'date': '2019-07-24', 'title': 'GNUnet 0.11.6'},
-    {'page': '2019-07-GHM_Aug_2019.html', 'date': '2019-07-17', 'title': 'GNUnet Hacker Meeting 2019'},
-    {'page': '2019-06-DSTJ.html', 'date': '2019-06-28', 'title': 'DSTJ'},
-    {'page': '2019-0.11.5.html', 'date': '2019-06-05', 'title': 'GNUnet 0.11.5'},
-    {'page': '2019-06.html', 'date': '2019-06-01', 'title': '2019-06'},
-    {'page': '2019-0.11.4.html', 'date': '2019-05-12', 'title': 'GNUnet 0.11.4'},
-    {'page': '2019-0.11.3.html', 'date': '2019-04-07', 'title': 'GNUnet 0.11.3'},
-    {'page': '2019-0.11.2.html', 'date': '2019-04-04', 'title': 'GNUnet 0.11.2'},
-    {'page': '2019-0.11.1.html', 'date': '2019-04-03', 'title': 'GNUnet 0.11.1'},
-    {'page': '2019-0.11.0.html', 'date': '2019-02-28', 'title': 'GNUnet 0.11.0'},
-    {'page': '2019-02.html', 'date': '2019-02-01', 'title': 'Google Summer of Code 2019'},
-    {'page': '2017-10.html', 'date': '2017-10-01', 'title': 'Launching the new gnunet.org'},
+    {
+        'page': '2019-0.11.8.html',
+        'date': '2019-10-30',
+        'title': 'GNUnet 0.11.8'
+    },
+    {
+        'page': '2019-0.11.7.html',
+        'date': '2019-10-27',
+        'title': 'GNUnet 0.11.7'
+    },
+    {
+        'page': '2019-10-ICANNPanel.html',
+        'date': '2019-10-20',
+        'title': 'ICANN Panel'
+    },
+    {
+        'page': '2019-10-GNSSpec1.html',
+        'date': '2019-10-04',
+        'title': 'GNS Spec 1'
+    },
+    {
+        'page': '2019-0.11.6.html',
+        'date': '2019-07-24',
+        'title': 'GNUnet 0.11.6'
+    },
+    {
+        'page': '2019-07-GHM_Aug_2019.html',
+        'date': '2019-07-17',
+        'title': 'GNUnet Hacker Meeting 2019'
+    },
+    {
+        'page': '2019-06-DSTJ.html',
+        'date': '2019-06-28',
+        'title': 'Peer DSTJ is dead, long live peer Y924'
+    },
+    {
+        'page': '2019-0.11.5.html',
+        'date': '2019-06-05',
+        'title': 'GNUnet 0.11.5'
+    },
+    {
+        'page': '2019-06.html',
+        'date': '2019-06-01',
+        'title': '2019-06'
+    },
+    {
+        'page': '2019-0.11.4.html',
+        'date': '2019-05-12',
+        'title': 'GNUnet 0.11.4'
+    },
+    {
+        'page': '2019-0.11.3.html',
+        'date': '2019-04-07',
+        'title': 'GNUnet 0.11.3'
+    },
+    {
+        'page': '2019-0.11.2.html',
+        'date': '2019-04-04',
+        'title': 'GNUnet 0.11.2'
+    },
+    {
+        'page': '2019-0.11.1.html',
+        'date': '2019-04-03',
+        'title': 'GNUnet 0.11.1'
+    },
+    {
+        'page': '2019-0.11.0.html',
+        'date': '2019-02-28',
+        'title': 'GNUnet 0.11.0'
+    },
+    {
+        'page': '2019-02.html',
+        'date': '2019-02-01',
+        'title': 'Google Summer of Code 2019'
+    },
+    {
+        'page': '2018-08.html',
+        'date': '2018-08-14',
+        'title': 'GSoC 2018 - GNUnet Web-based User Interface'
+    },
+    {
+        'page': '2018-07.html',
+        'date': '2018-07-01',
+        'title': 'Second GNUnet Hacker Meeting 2018'
+    },
+    {
+        'page': '2018-06.html',
+        'date': '2018-06-06',
+        'title': 'GNUnet 0.11.0pre66'
+    },
+    {
+        'page': '2017-10.html',
+        'date': '2017-10-01',
+        'title': 'Launching the new gnunet.org'
+    },
 ]
 
 
@@ -233,13 +314,13 @@ def generate_site(root):
             else:
                 return "../" + locale + "/" + filename
 
-        def url_static (filename):
+        def url_static(filename):
             if root == "news":
                 return "../../static/" + filename
             else:
                 return "../static/" + filename
 
-        def url_dist (filename):
+        def url_dist(filename):
             if root == "news":
                 return "../../dist/" + filename
             else:
@@ -260,7 +341,6 @@ def generate_site(root):
             #else:
             #    return "../" + x
             return "../" + x
-
 
         for l in glob.glob("locale/*/"):
             locale = os.path.basename(l[:-1])
@@ -310,13 +390,14 @@ def main():
     generate_site("template")
     print("generating news")
     generate_site("news")
+
+
 #    for l in glob.glob("locale/*/"):
 #        locale = os.path.basename(l[:-1])
 #        copy_static (locale, staticfiles)
-    # generate_rss
-    #print("running generation")
-    #generation_dir
-
+# generate_rss
+#print("running generation")
+#generation_dir
 
 if __name__ == "__main__":
     main()
