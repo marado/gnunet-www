@@ -119,8 +119,7 @@ rel_to_abs_urls() {
 
 
 date_rfc_822() {
-        DATETEST=$(date -j | grep "invalid option")
-	if test -n "$DATETEST"; then
+	if date --version >/dev/null 2>&1; then
             date '+%a, %d %b %Y %H:%M:%S %z' \
 	         "$(echo "$1"| tr -cd '[:digit:]')0000"
         else
