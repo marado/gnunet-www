@@ -82,7 +82,8 @@ get_title() {
 
 get_url() {
 	grep -i '<link .*rss.xml"' | head -1 |
-	sed 's#.*href="\(.*\)".*#\1#'
+	    sed 's#.*href="\(.*\)".*#\1#' |
+            sed 's#../../#https://gnunet.org/#'
 }
 
 
