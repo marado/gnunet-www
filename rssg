@@ -81,7 +81,7 @@ get_title() {
 
 
 get_url() {
-	grep -i '<a .*rss.xml"' | head -1 |
+	grep -i '<link .*rss.xml"' | head -1 |
 	sed 's#.*href="\(.*\)".*#\1#'
 }
 
