@@ -191,12 +191,19 @@ def copy_static(locale, indict):
         print(locale + "/" + key + " ...to... " + locale + "/" + value)
 
 
-#    fileop(in, out, "copy")
+# TODO: Move the lists elsewhere?
+
+meetingnotes = [
+    { "year": "2013", "date": "2013-12-27" },
+    { "year": "2014", "date": "2014-12-28" },
+    { "year": "2015", "date": "2015-12-29" },
+    { "year": "2016", "date": "2016-12-28" },
+    { "year": "2017", "date": "2017-12-27" },
+    { "year": "2018", "date": "2018-12-27" },
+]
 
 # At this moment in time, constructing this list dynamically would be
-# too much pointless code. In fact all of what we use in jinja is
-# no real use of jinja yet and furthermore we would be better off
-# just using static html + css + some awk and other base tools.
+# too much pointless code.
 newsposts = [
     {
         "page": "2019-0.11.8.html",
@@ -718,6 +725,7 @@ def generate_site(root):
             content = tmpl.render(lang=locale,
                                   lang_full=langs_full[locale],
                                   url=url,
+                                  meetingnotesdata=meetingnotes,
                                   newsdata=newsposts,
                                   videosdata=videoslist,
                                   self_localized=self_localized,
@@ -764,46 +772,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# for in_file in glob.glob("news/*.j2"):
-#     name, ext = re.match(r"(.*)\.([^.]+)$", in_file.rstrip(".j2")).groups()
-#     tmpl = env.get_template(in_file)
-
-#     def self_localized(other_locale):
-#         """
-#         Return URL for the current page in another locale.
-#         """
-#         return "../" + other_locale + "/" + in_file.replace('news/',
-#                                                             '').rstrip(".j2")
-
-#     def url_localized(filename):
-#         return "../" + locale + "/" + filename
-
-#     def svg_localized(filename):
-#         lf = filename + "." + locale + ".svg"
-#         if locale == "en" or not os.path.isfile(lf):
-#             return "../" + filename + ".svg"
-#         else:
-#             return "../" + lf
-
-#     def url(x):
-#         # TODO: look at the app root environment variable
-#         # TODO: check if file exists
-#         return "../" + x
-
-#     for f in glob.glob("locale/*/"):
-#         locale = os.path.basename(f[:-1])
-#         content = tmpl.render(lang=locale,
-#                               lang_full=langs_full[locale],
-#                               url=url,
-#                               self_localized=self_localized,
-#                               url_localized=url_localized,
-#                               svg_localized=svg_localized,
-#                               filename=name + "." + ext)
-#         out_name = "./rendered/" + locale + "/news/" + in_file.replace('news/', '').rstrip(".j2")
-#         outdir = Path("rendered")
-#         langdir = outdir / locale / "news"
-#         langdir.mkdir(parents=True, exist_ok=True)
-#         # os.makedirs("./rendered/" + locale + "/news/", exist_ok=True)
-#         with codecs.open(out_name, "w", encoding='utf-8') as f:
-#             f.write(content)

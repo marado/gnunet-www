@@ -584,15 +584,11 @@ msgstr ""
 msgid "Official Meeting Notes"
 msgstr ""
 
-#: template/ev.html.j2:74
-msgid "2013-12 (constitutional meeting)"
-msgstr ""
-
-#: template/ev.html.j2:99
+#: template/ev.html.j2:84
 msgid "Support Us!"
 msgstr ""
 
-#: template/ev.html.j2:101
+#: template/ev.html.j2:86
 msgid ""
 "Everybody is welcome to support us via donations. For financial "
 "contributions, Europeans are able to donate via SEPA. We hope to setup "

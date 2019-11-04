@@ -69,28 +69,13 @@
     </div>
     <div class="col-md">
       <h3>{{ _("Official Meeting Notes") }}</h3>
-      <p>
-        <ul>
-          <li>{{ _("2013-12 (constitutional meeting)") }}
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2013-12-27.txt">txt</a>)
+      <ul>
+        {% for item in meetingnotesdata %}
+          <li>
+            {{ item['year'] }}: (Protocol: <a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/{{ item['date'] }}.txt">txt</a>)
           </li>
-          <li>2014-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2014-12-28.txt">txt</a>)
-          </li>
-          <li>2015-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2015-12-29.txt">txt</a>)
-          </li>
-          <li>2016-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2016-12-28.txt">txt</a>)
-          </li>
-          <li>2017-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2017-12-27.txt">txt</a>)
-          </li>
-          <li>2018-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2018-12-27.txt">txt</a>)
-          </li>
-        </ul>
-      </p>
+        {% endfor %}
+      </ul>
     </div>
   </div><!-- END:row -->
 
