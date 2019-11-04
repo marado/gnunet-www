@@ -19,17 +19,19 @@
       <section>
         <p>
         {% trans %}
-          As a GNU project, GNUnet has participated in the
-          Google Summer of Code (GSoC) for a number of years.
-          This page lists all current, past, and finished
-          projects.
+          As a GNU project, GNUnet has participated in the Google Summer of Code (GSoC) for a number of years. This page lists all current, past, and finished projects.
         {% endtrans %}
         </p>
       </section>
 
 
-      <h2><a name="current" class="subnav-anchor"></a>{{ _("Current projects (2019)") }}</h2>
-      <section>
+      <h2><a name="current" class="subnav-anchor"></a>{{ _("Current projects") }}</h2>
+      <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
+      <h2><a name="past" class="subnav-anchor"></a>{{ _("Past projects") }}</h2>
+      <p>
+        Past projects: Previously proposed, but left unfinished. Inspiration for students.
+      </p>
+            <section>
         <h4>Android Port</h4>
         <p>
           {% trans %}
@@ -62,22 +64,6 @@
         <p>
           {% trans %}
             <strong>Mentors:</strong> TBD
-          {% endtrans %}
-        </p>
-      </section>
-
-      <section>
-        <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
-        <p>
-          {% trans %}
-            Python 2.7 is reaching its end-of-life, and we want to get rid
-            of the dependency on Python. The existing gnunet-qr tool is a
-            rather simple wrapper around python-zbar, which itself wraps
-            libzbar. The goal of this project is to directly use libzbar
-            to scan QR codes for GNUnet / the GNU Name System (see
-            also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
-            <br>
-            <strong>Mentors:</strong> Christian Grothoff
           {% endtrans %}
         </p>
       </section>
@@ -177,8 +163,6 @@
           {% endtrans %}
         </p>
       </section>
-      <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
-      <h2><a name="past" class="subnav-anchor"></a>{{ _("Past projects") }}</h2>
       <section>
         <h4>Rust APIs for GNUnet services</h4>
         <p>
@@ -568,6 +552,46 @@
       </section>
       <h2><a name="finished" class="subnav-anchor"></a>{{ _("Finished projects") }}</h2>
       <!-- Commentary: Finished projects, descriptions and Links to write-ups about them. -->
+      <h3>2019</h3>
+      <section>
+        <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
+        <p>
+          {% trans %}
+            Python 2.7 is reaching its end-of-life, and we want to get rid
+            of the dependency on Python. The existing gnunet-qr tool is a
+            rather simple wrapper around python-zbar, which itself wraps
+            libzbar. The goal of this project is to directly use libzbar
+            to scan QR codes for GNUnet / the GNU Name System (see
+            also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
+            {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            <strong>Mentors:</strong> Christian Grothoff
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Required Skills:
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Difficulty level:
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Report:
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Unfinished/Abandoned as gnunet-qr was moved to C outside of GSoC.
+          {% endtrans %}
+        </p>
+      </section>
+
       <h3>2018</h3>
       <section>
         <h4>GNUnet Web-based User Interface</h4>

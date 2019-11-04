@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-04 21:10+0000\n"
+"POT-Creation-Date: 2019-11-04 21:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1083,15 +1083,15 @@ msgstr ""
 msgid "GNUnet's Google Summer of Code projects"
 msgstr ""
 
-#: template/gsoc.html.j2:12
+#: template/gsoc.html.j2:12 template/gsoc.html.j2:28
 msgid "Current projects"
 msgstr ""
 
-#: template/gsoc.html.j2:13 template/gsoc.html.j2:181
+#: template/gsoc.html.j2:13 template/gsoc.html.j2:30
 msgid "Past projects"
 msgstr ""
 
-#: template/gsoc.html.j2:14 template/gsoc.html.j2:569
+#: template/gsoc.html.j2:14 template/gsoc.html.j2:553
 msgid "Finished projects"
 msgstr ""
 
@@ -1102,24 +1102,20 @@ msgid ""
 "finished projects."
 msgstr ""
 
-#: template/gsoc.html.j2:31
-msgid "Current projects (2019)"
-msgstr ""
-
-#: template/gsoc.html.j2:35
+#: template/gsoc.html.j2:37
 msgid ""
 "It is time for GNUnet to run properly on Android. Note that GNUnet is "
 "written in C, and this is not about rewriting GNUnet in Java, but about "
 "getting the C code to run on Android."
 msgstr ""
 
-#: template/gsoc.html.j2:42
+#: template/gsoc.html.j2:44
 msgid ""
 "<strong>Mentors:</strong> <a href=\"https://www.goebel-consult.de/\">Hartmut "
 "Goebel</a>"
 msgstr ""
 
-#: template/gsoc.html.j2:51
+#: template/gsoc.html.j2:53
 msgid ""
 "There is a push for migrating our CI to Gitlab. The CI should eventually not "
 "just run \"make check\" on various platforms, but also perform tests with "
@@ -1130,21 +1126,11 @@ msgid ""
 "automatic dependency discovery (as done by the autotools) is also important."
 msgstr ""
 
-#: template/gsoc.html.j2:63
+#: template/gsoc.html.j2:65
 msgid "<strong>Mentors:</strong> TBD"
 msgstr ""
 
-#: template/gsoc.html.j2:72
-msgid ""
-"Python 2.7 is reaching its end-of-life, and we want to get rid of the "
-"dependency on Python. The existing gnunet-qr tool is a rather simple wrapper "
-"around python-zbar, which itself wraps libzbar. The goal of this project is "
-"to directly use libzbar to scan QR codes for GNUnet / the GNU Name System "
-"(see also <a href=\"https://bugs.gnunet.org/view.php?id=5562\">#5562</a>). "
-"<br> <strong>Mentors:</strong> Christian Grothoff"
-msgstr ""
-
-#: template/gsoc.html.j2:88
+#: template/gsoc.html.j2:74
 msgid ""
 "reclaimID is a decentralized identity system build on top of the GNU Name "
 "System. Upon authorization, the user provides a requesting party (RP) such "
@@ -1163,7 +1149,7 @@ msgid ""
 "ol> <br/> <strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
 
-#: template/gsoc.html.j2:119
+#: template/gsoc.html.j2:105
 msgid ""
 "re:claimID is a decentralized identity system build on top of the GNU Name "
 "System. The initial design and implementation of re:claimID includes an "
@@ -1185,7 +1171,7 @@ msgid ""
 "<strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
 
-#: template/gsoc.html.j2:154
+#: template/gsoc.html.j2:140
 msgid ""
 "One great problem of the current Internet is the lack of disintermediation. "
 "When people want to talk they need a chat service. When they want to share "
@@ -1201,18 +1187,18 @@ msgid ""
 "more information and context, read"
 msgstr ""
 
-#: template/gsoc.html.j2:175
+#: template/gsoc.html.j2:161
 msgid "<strong>Mentors:</strong> lynX &amp; dvn"
 msgstr ""
 
-#: template/gsoc.html.j2:185
+#: template/gsoc.html.j2:169
 msgid ""
 "There are a variety of GNUNet APIs that should be exposed in the Rust "
 "wrappers. Implementing these will require extending the port of GNUNet utils "
 "written by Andrew Cann and Kelong Cong."
 msgstr ""
 
-#: template/gsoc.html.j2:193
+#: template/gsoc.html.j2:177
 msgid ""
 "As an introduction to the code base, we suggest that the student and Jeff "
 "Burdges together update the asynchronous IO system from gjio to futures-rs "
@@ -1220,26 +1206,26 @@ msgid ""
 "implementing a GNUNet API for his own mix network work."
 msgstr ""
 
-#: template/gsoc.html.j2:203 template/gsoc.html.j2:227
-#: template/gsoc.html.j2:281 template/gsoc.html.j2:311
-#: template/gsoc.html.j2:555
+#: template/gsoc.html.j2:187 template/gsoc.html.j2:211
+#: template/gsoc.html.j2:265 template/gsoc.html.j2:295
+#: template/gsoc.html.j2:539
 msgid "<strong>Mentors:</strong> Jeff Burdges"
 msgstr ""
 
-#: template/gsoc.html.j2:208
+#: template/gsoc.html.j2:192
 msgid "Required Skills: Rust"
 msgstr ""
 
-#: template/gsoc.html.j2:213
+#: template/gsoc.html.j2:197
 msgid "Difficulty level: low"
 msgstr ""
 
-#: template/gsoc.html.j2:221
+#: template/gsoc.html.j2:205
 msgid ""
 "Implement the AnycastExit spec to enable GNUnet clients to connect over Tor."
 msgstr ""
 
-#: template/gsoc.html.j2:232
+#: template/gsoc.html.j2:216
 msgid ""
 "Note: There was a Special TLDs spec to allow Tor to resolve domain names "
 "using GNS over Tor too, but currently that's on hold until folks think more "
@@ -1247,17 +1233,17 @@ msgid ""
 "more collaborative approach NSS2 for now."
 msgstr ""
 
-#: template/gsoc.html.j2:241 template/gsoc.html.j2:415
-#: template/gsoc.html.j2:455 template/gsoc.html.j2:485
+#: template/gsoc.html.j2:225 template/gsoc.html.j2:399
+#: template/gsoc.html.j2:439 template/gsoc.html.j2:469
 msgid "Required Skills: C"
 msgstr ""
 
-#: template/gsoc.html.j2:246 template/gsoc.html.j2:490
-#: template/gsoc.html.j2:595
+#: template/gsoc.html.j2:230 template/gsoc.html.j2:474
+#: template/gsoc.html.j2:619
 msgid "Difficulty level: medium"
 msgstr ""
 
-#: template/gsoc.html.j2:254
+#: template/gsoc.html.j2:238
 msgid ""
 "Design and implementation of <a href=\"http://jsonapi.org/\">REST APIs</a> "
 "that expose the <a href=\"https://docs.gnunet.org/doxygen/modules.html"
@@ -1265,11 +1251,11 @@ msgid ""
 "browser-based UIs will be much easier to create on top of REST APIs."
 msgstr ""
 
-#: template/gsoc.html.j2:265 template/gsoc.html.j2:585
+#: template/gsoc.html.j2:249 template/gsoc.html.j2:609
 msgid "<strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
 
-#: template/gsoc.html.j2:273
+#: template/gsoc.html.j2:257
 msgid ""
 "Improve the Rust implementation of GNUnet utils, possibly including adding "
 "support for asynchronous IO using mio, or perhaps a higher level "
@@ -1277,42 +1263,42 @@ msgid ""
 "gj."
 msgstr ""
 
-#: template/gsoc.html.j2:289
+#: template/gsoc.html.j2:273
 msgid ""
 "Implement rudimentary Android compatibility for GNUnet, in part by porting "
 "the GNUnet utils scheduler to act as a thin wrapper over libuv."
 msgstr ""
 
-#: template/gsoc.html.j2:296
+#: template/gsoc.html.j2:280
 msgid "<strong>Mentors:</strong> Jeff Burdges and Christian Grothoff"
 msgstr ""
 
-#: template/gsoc.html.j2:304 template/gsoc.html.j2:548
+#: template/gsoc.html.j2:288 template/gsoc.html.j2:532
 msgid ""
 "Implementation of a replacement for PANDA (see Pond) with better security, "
 "and maybe integration with the GNU Name System for key exchange."
 msgstr ""
 
-#: template/gsoc.html.j2:316
+#: template/gsoc.html.j2:300
 msgid "Required Skills: Rust or C, crypto"
 msgstr ""
 
-#: template/gsoc.html.j2:321 template/gsoc.html.j2:378
-#: template/gsoc.html.j2:420 template/gsoc.html.j2:460
+#: template/gsoc.html.j2:305 template/gsoc.html.j2:362
+#: template/gsoc.html.j2:404 template/gsoc.html.j2:444
 msgid "Difficulty level: high"
 msgstr ""
 
-#: template/gsoc.html.j2:329
+#: template/gsoc.html.j2:313
 msgid ""
 "Implement different place types and file sharing by creating a new place for "
 "the shared content."
 msgstr ""
 
-#: template/gsoc.html.j2:335
+#: template/gsoc.html.j2:319
 msgid "Place types to be implemented:"
 msgstr ""
 
-#: template/gsoc.html.j2:339
+#: template/gsoc.html.j2:323
 msgid ""
 "<ul> <li>File: generic file with comments</li> <li>Image: display an image "
 "with comments referencing a region of the image</li> <li>Sound: play a sound "
@@ -1322,11 +1308,11 @@ msgid ""
 "</ul>"
 msgstr ""
 
-#: template/gsoc.html.j2:350
+#: template/gsoc.html.j2:334
 msgid "Also provide the following UI functionality:"
 msgstr ""
 
-#: template/gsoc.html.j2:354
+#: template/gsoc.html.j2:338
 msgid ""
 "<ul> <li>Fork existing channels, reorganize people into new chatrooms or "
 "channels.</li> <li>Share a post (edit and repost something elsewhere, on a "
@@ -1335,21 +1321,21 @@ msgid ""
 "ul>"
 msgstr ""
 
-#: template/gsoc.html.j2:363
+#: template/gsoc.html.j2:347
 msgid ""
 "See also <a href=\"http://secushare.org/features\">http://secushare.org/"
 "features</a>"
 msgstr ""
 
-#: template/gsoc.html.j2:368
+#: template/gsoc.html.j2:352
 msgid "<strong>Mentors:</strong> lynX"
 msgstr ""
 
-#: template/gsoc.html.j2:373
+#: template/gsoc.html.j2:357
 msgid "Required Skills: C/C++"
 msgstr ""
 
-#: template/gsoc.html.j2:386
+#: template/gsoc.html.j2:370
 msgid ""
 "Implement aggregation of distributed state from various channels in order to "
 "provide for a powerful social graph API capable of producing social network "
@@ -1360,17 +1346,17 @@ msgid ""
 "Linda. You have 11 contacts in common with her. [ADD]\")."
 msgstr ""
 
-#: template/gsoc.html.j2:404
+#: template/gsoc.html.j2:388
 msgid ""
 "Related to <a href=\"http://secushare.org/rendezvous\">secushare.org/"
 "rendezvous</a>"
 msgstr ""
 
-#: template/gsoc.html.j2:410 template/gsoc.html.j2:450
+#: template/gsoc.html.j2:394 template/gsoc.html.j2:434
 msgid "<strong>Mentors:</strong> t3sserakt, lynX"
 msgstr ""
 
-#: template/gsoc.html.j2:427
+#: template/gsoc.html.j2:411
 msgid ""
 "<ul> <li> Emulate IMAP/SMTP protocols as necessary to transform traditional "
 "mail clients into secushare user interfaces. </li> <li> Think of ways to map "
@@ -1380,7 +1366,7 @@ msgid ""
 "this task but it is not an requirement. </li> </ul>"
 msgstr ""
 
-#: template/gsoc.html.j2:468
+#: template/gsoc.html.j2:452
 msgid ""
 "Implementation of the GNUnet auction system described in Chapter 3 of <a "
 "href=\"https://grothoff.org/christian/teich2017ms.pdf\">this thesis</a>. "
@@ -1389,33 +1375,33 @@ msgid ""
 "three user interface programs create, info and join."
 msgstr ""
 
-#: template/gsoc.html.j2:480
+#: template/gsoc.html.j2:464
 msgid "<strong>Mentors:</strong> mate, cg"
 msgstr ""
 
-#: template/gsoc.html.j2:498
+#: template/gsoc.html.j2:482
 msgid ""
 "Implementation of additional transports to make GNUnet communication more "
 "robust in the presence of problematic networks: GNUnet-over-SMTP, GNUnet-"
 "over-DNS"
 msgstr ""
 
-#: template/gsoc.html.j2:505 template/gsoc.html.j2:519
+#: template/gsoc.html.j2:489 template/gsoc.html.j2:503
 msgid "<strong>Mentors:</strong> Matthias Wachs"
 msgstr ""
 
-#: template/gsoc.html.j2:513
+#: template/gsoc.html.j2:497
 msgid ""
 "Implementation of ALG-based NAT traversal methods (FTP/SIP-based hole "
 "punching, better STUN support)"
 msgstr ""
 
-#: template/gsoc.html.j2:527
+#: template/gsoc.html.j2:511
 msgid ""
 "<strong>Mentors:</strong> Matthias Wachs, Christian Grothoff, Jeff Burdges"
 msgstr ""
 
-#: template/gsoc.html.j2:535
+#: template/gsoc.html.j2:519
 msgid ""
 "Improving libaboss to make computation on shared secrets (including repeated "
 "multiplication) based on <a href=\"https://dl.acm.org/citation.cfm?"
@@ -1423,13 +1409,42 @@ msgid ""
 "moving libaboss to bignums (gcry_mpi)."
 msgstr ""
 
-#: template/gsoc.html.j2:563
+#: template/gsoc.html.j2:547
 msgid ""
 "Please refer to the description for this project listed under GNU Guix "
 "project ideas."
 msgstr ""
 
-#: template/gsoc.html.j2:575
+#: template/gsoc.html.j2:559
+msgid ""
+"Python 2.7 is reaching its end-of-life, and we want to get rid of the "
+"dependency on Python. The existing gnunet-qr tool is a rather simple wrapper "
+"around python-zbar, which itself wraps libzbar. The goal of this project is "
+"to directly use libzbar to scan QR codes for GNUnet / the GNU Name System "
+"(see also <a href=\"https://bugs.gnunet.org/view.php?id=5562\">#5562</a>)."
+msgstr ""
+
+#: template/gsoc.html.j2:569
+msgid "<strong>Mentors:</strong> Christian Grothoff"
+msgstr ""
+
+#: template/gsoc.html.j2:574
+msgid "Required Skills:"
+msgstr ""
+
+#: template/gsoc.html.j2:579
+msgid "Difficulty level:"
+msgstr ""
+
+#: template/gsoc.html.j2:584
+msgid "Report:"
+msgstr ""
+
+#: template/gsoc.html.j2:589
+msgid "Unfinished/Abandoned as gnunet-qr was moved to C outside of GSoC."
+msgstr ""
+
+#: template/gsoc.html.j2:599
 msgid ""
 "Implementation of a Web-based UI for GNUnet similar to GNUnet-Gtk with a yet "
 "to be determined framework such as Angular2. This includes the design and "
@@ -1438,11 +1453,11 @@ msgid ""
 "html\">GNUnet API</a>."
 msgstr ""
 
-#: template/gsoc.html.j2:590
+#: template/gsoc.html.j2:614
 msgid "Required Skills: C, JavaScript, CSS"
 msgstr ""
 
-#: template/gsoc.html.j2:600
+#: template/gsoc.html.j2:624
 msgid ""
 "Report: <a href=\"gsoc-2018-gnunet-webui.html\">GSoC 2018: GNUnet WebUI</a>"
 msgstr ""
