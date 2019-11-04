@@ -140,6 +140,16 @@ date_rfc_822() {
 }
 
 
+feed_date_rfc_822() {
+         if date --version >/dev/null 2>&1; then
+             date -d "$(echo "$1")" --rfc-822
+	else
+	    date -j '+%a, %d %b %Y %H:%M:%S %z' \
+		 "$(echo "$1"| tr -cd '[:digit:]')0000"
+	fi
+}
+
+
 render_items() {
 	while read -r i
 	do render_item "$1" "$2" "$i"
@@ -200,7 +210,7 @@ render_feed() {
 <language>en</language>
 <description>'"$description"'</description>
 <link>'"$base_url"'/</link>
-<lastBuildDate>'"$(date_rfc_822 date)"'</lastBuildDate>
+<lastBuildDate>'"$(feed_date_rfc_822 date)"'</lastBuildDate>
 '"$(cat)"'
 </channel></rss>'
 }
