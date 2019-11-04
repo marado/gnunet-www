@@ -50,10 +50,4 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- handwritten rss -->
-    <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="rss.xml" />
-
-    <!-- rss and atom, WIP
-    <link rel="alternate" type="application/rss+xml" href="{{ url('feed.rss') }} title="RSS feed for gnunet.org">
-    <link rel="alternate" type="application/atom+xml" href="{{ url('feed.atom') }} title="Atom feed for gnunet.org">
-    -->
+    <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="{{ url_localized('news/rss.xml') }}" />

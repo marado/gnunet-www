@@ -29,8 +29,8 @@ all: css locale template
 	$(cp) favicon.ico rendered/favicon.ico
 	$(sh) make_sitemap.sh
 	$(cp) rendered/sitemap.xml rendered/en/sitemap.xml
-	$(cp) rss.xml rendered/rss.xml
-	(for lang in en de es fr it ; do $(cp) rss.xml rendered/$$lang/rss.xml; done)
+	# $(cp) rss.xml rendered/rss.xml
+	# (for lang in en de es fr it ; do $(cp) rss.xml rendered/$$lang/rss.xml; done)
 	$(cp) static/moved.html rendered/frontpage.html
 	cd rendered; $(ln) -fs frontpage.html frontpage
 	$(cp) static/moved_gsoc.html rendered/gsoc.html
