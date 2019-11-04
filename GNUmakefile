@@ -20,36 +20,36 @@
 include config.mk
 
 all: css locale template
-	$(cp) -R dist rendered/
-	$(cp) -R static rendered/
-	$(cp) rendered/static/robots.txt rendered/robots.txt
-	$(cp) rendered/static/stage.robots.txt rendered/stage.robots.txt
-	$(cp) rendered/static/robots.txt rendered/dist/robots.txt
-	(for lang in en de es fr it ; do $(cp) rendered/static/robots.txt rendered/$$lang/robots.txt ;done)
-	$(cp) favicon.ico rendered/favicon.ico
-	$(sh) make_sitemap.sh
-	$(cp) rendered/sitemap.xml rendered/en/sitemap.xml
-	# $(cp) rss.xml rendered/rss.xml
-	# (for lang in en de es fr it ; do $(cp) rss.xml rendered/$$lang/rss.xml; done)
-	$(cp) static/moved.html rendered/frontpage.html
-	cd rendered; $(ln) -fs frontpage.html frontpage
-	$(cp) static/moved_gsoc.html rendered/gsoc.html
-	cd rendered; $(ln) -fs gsoc.html gsoc
-	$(cp) static/moved_gns.html rendered/gns.html
-	cd rendered; $(ln) -fs gns.html gns
-	$(mkdir) rendered/node ; $(cp) static/moved_about.html rendered/node/about.html
-	cd rendered/node ; $(ln) -fs about.html 397
-	$(cp) static/moved_about.html rendered/about.html
-	cd rendered ; $(ln) -fs about.html philosophy
+	($(cp) -R dist rendered/)
+	($(cp) -R static rendered/)
+	($(cp) rendered/static/robots.txt rendered/robots.txt)
+	($(cp) rendered/static/stage.robots.txt rendered/stage.robots.txt)
+	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
+	(for lang in en de es fr it ; do \
+		$(cp) rendered/static/robots.txt rendered/$$lang/robots.txt ; \
+	done)
+	($(cp) favicon.ico rendered/favicon.ico)
+	($(sh) make_sitemap.sh)
+	($(cp) rendered/sitemap.xml rendered/en/sitemap.xml)
+	($(cp) static/moved.html rendered/frontpage.html)
+	(cd rendered; $(ln) -fs frontpage.html frontpage)
+	($(cp) static/moved_gsoc.html rendered/gsoc.html)
+	(cd rendered; $(ln) -fs gsoc.html gsoc)
+	($(cp) static/moved_gns.html rendered/gns.html)
+	(cd rendered; $(ln) -fs gns.html gns)
+	($(mkdir) -p rendered/node ; $(cp) static/moved_about.html rendered/node/about.html)
+	(cd rendered/node ; $(ln) -fs about.html 397)
+	($(cp) static/moved_about.html rendered/about.html)
+	(cd rendered ; $(ln) -fs about.html philosophy)
 	(cd rendered; \
 		for lang in en de es fr it; do \
 			$(sh) ../rssg $$lang/news/index.html 'GNUnet.org' > $$lang/news/rss.xml; \
 		done)
-	cd rendered/en ; $(ln) -fs news/rss.xml rss.xml
-	cd rendered/de ; $(ln) -fs news/rss.xml rss.xml
-	cd rendered/es ; $(ln) -fs news/rss.xml rss.xml
-	cd rendered/fr ; $(ln) -fs news/rss.xml rss.xml
-	cd rendered/it ; $(ln) -fs news/rss.xml rss.xml
+	(cd rendered/en ; $(ln) -fs news/rss.xml rss.xml)
+	(cd rendered/de ; $(ln) -fs news/rss.xml rss.xml)
+	(cd rendered/es ; $(ln) -fs news/rss.xml rss.xml)
+	(cd rendered/fr ; $(ln) -fs news/rss.xml rss.xml)
+	(cd rendered/it ; $(ln) -fs news/rss.xml rss.xml)
 
 
 # Extract translateable strings from jinja2 templates.
