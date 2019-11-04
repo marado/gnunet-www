@@ -14,7 +14,7 @@
         </p>
         <ul>
           {% for item in newsdata %}
-            <li><a href="{{ item['page'] }}" title="{{ item['date']}}">{{ item['title'] }}</a></li>
+            <li>{{ item['date'] }}: <a href="{{ item['page'] }}" title="{{ item['date']}}">{{ item['title'] }}</a></li>
           {% endfor %}
         </ul>
       </section>
