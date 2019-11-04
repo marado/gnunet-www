@@ -53,10 +53,52 @@ dist/			3rd party content (bootstrap 4, font-awesome)
 common/			jinja2 templates.
 template.py		operates on template directory and produces
 			output in 'rendered/' directory
+news/                   One file per news post. See also "Writing News"
 
 The 'dist' and 'static' directories will be copied to the output
 directory ('rendered/') in the 'all' phase of make. robots.txt
 is copied to relevant folders.
+
+Writing News
+============
+
+Writing news posts for gnunet.org involves a couple of steps.
+If you intend to write a new post, read this carefully.
+
+* Every news post is wrapped in an <article> element, outside
+  of the news post itself.
+
+* Every news post must have its headline in an <h1> element.
+  Ideally you don't use more than 1 <h1> in the news post.
+  This can change in the future. The first h1 is what gets
+  assigned as the title for the rss feed item for this post.
+
+* Every news post must get added as an dict to the newspost list
+  in template.py. If you are not sure what those words mean, search
+  "newsposts" in template.py. There you will find a structure where
+  you have to add a new member including the "," at the end.
+  New posts get added to the top of the list, not at the bottom
+  (this list is also responsible for the 5 newest entries on the
+  frontpage).
+
+  {
+        'page': 'name-of-page.html',
+        'date': '2019-10-31',
+        'title': 'My new post'
+  },
+
+  * page must be the name of the file without the leading news/
+  * date must be a valid date in exactly this format.
+  * title can be any title but preferable equal to the title (<h1>)
+    in the file.
+
+* If you use website internal links in your post, do not use plain
+  href targets. Read template.py and grep for *url* to see what can
+  be used and grep the rest of the pages for examples how to use
+  these functions.
+
+* Last but least build the website locally and check if the news
+  post renderes correctly.
 
 Developing with GNU Guix
 ========================
