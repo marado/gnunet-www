@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-11-03 22:02+0000\n"
+"POT-Creation-Date: 2019-11-04 21:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1927,44 +1927,8 @@ msgstr ""
 msgid "OMG you guys broke my internet"
 msgstr ""
 
-#: template/video.html.j2:6
+#: template/video.html.j2:12
 msgid "Videos related to GNUnet"
-msgstr ""
-
-#: template/video.html.j2:29
-msgid "2019"
-msgstr ""
-
-#: template/video.html.j2:42
-msgid "2018"
-msgstr ""
-
-#: template/video.html.j2:78
-msgid "2017"
-msgstr ""
-
-#: template/video.html.j2:136
-msgid "2016"
-msgstr ""
-
-#: template/video.html.j2:174
-msgid "2015"
-msgstr ""
-
-#: template/video.html.j2:214
-msgid "2014"
-msgstr ""
-
-#: template/video.html.j2:308
-msgid "2013"
-msgstr ""
-
-#: template/video.html.j2:360
-msgid "2012"
-msgstr ""
-
-#: template/video.html.j2:375
-msgid "2010"
 msgstr ""
 
 #~ msgid "_project_title"
