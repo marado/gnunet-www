@@ -45,11 +45,11 @@ all: css locale template
 		for lang in en de es fr it; do \
 			$(sh) ../rssg $$lang/news/index.html 'GNUnet.org' > $$lang/news/rss.xml; \
 		done)
-	cd rendered/en ; $(ln) -fs news/index.html rss.xml
-	cd rendered/de ; $(ln) -fs news/index.html rss.xml
-	cd rendered/es ; $(ln) -fs news/index.html rss.xml
-	cd rendered/fr ; $(ln) -fs news/index.html rss.xml
-	cd rendered/it ; $(ln) -fs news/index.html rss.xml
+	cd rendered/en ; $(ln) -fs news/rss.xml rss.xml
+	cd rendered/de ; $(ln) -fs news/rss.xml rss.xml
+	cd rendered/es ; $(ln) -fs news/rss.xml rss.xml
+	cd rendered/fr ; $(ln) -fs news/rss.xml rss.xml
+	cd rendered/it ; $(ln) -fs news/rss.xml rss.xml
 
 
 # Extract translateable strings from jinja2 templates.
