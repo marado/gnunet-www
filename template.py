@@ -193,14 +193,14 @@ def copy_static(locale, indict):
 
 # TODO: Move the lists elsewhere?
 
-meetingnotes = [
-    { "year": "2013", "date": "2013-12-27" },
-    { "year": "2014", "date": "2014-12-28" },
-    { "year": "2015", "date": "2015-12-29" },
-    { "year": "2016", "date": "2016-12-28" },
-    { "year": "2017", "date": "2017-12-27" },
-    { "year": "2018", "date": "2018-12-27" },
-]
+meetingnotes = {
+    "2013": "2013-12-27",
+    "2014": "2014-12-28",
+    "2015": "2015-12-29",
+    "2016": "2016-12-28",
+    "2017": "2017-12-27",
+    "2018": "2018-12-27",
+}
 
 # At this moment in time, constructing this list dynamically would be
 # too much pointless code.

@@ -70,9 +70,9 @@
     <div class="col-md">
       <h3>{{ _("Official Meeting Notes") }}</h3>
       <ul>
-        {% for item in meetingnotesdata %}
+        {% for year, date in meetingnotesdata.items() %}
           <li>
-            {{ item['year'] }}: (Protocol: <a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/{{ item['date'] }}.txt">txt</a>)
+            {{ year|e }}: (Protocol: <a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/{{ date|e }}.txt">txt</a>)
           </li>
         {% endfor %}
       </ul>
