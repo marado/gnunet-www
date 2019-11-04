@@ -19,6 +19,8 @@
 set -e
 
 # TODO: Fix date -j for GNU date.
+# TODO: Fix base url (get_url)
+# TODO: Fix link OR a in get_url
 
 main () {
 	test -n "$1" || usage

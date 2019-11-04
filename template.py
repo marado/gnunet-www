@@ -211,6 +211,7 @@ newsposts = [
     {'page': '2019-0.11.1.html', 'date': '2019-04-03', 'title': 'GNUnet 0.11.1'},
     {'page': '2019-0.11.0.html', 'date': '2019-02-28', 'title': 'GNUnet 0.11.0'},
     {'page': '2019-02.html', 'date': '2019-02-01', 'title': 'Google Summer of Code 2019'},
+    {'page': '2017-10.html', 'date': '2017-10-01', 'title': 'Launching the new gnunet.org'},
 ]
 
 

@@ -27,7 +27,7 @@ all: css locale template
 .for _lang in ${_LOCALELIST}
 	($(cp) rendered/static/robots.txt rendered/${_lang})
 	($(cp) rendered/static/stage.robots.txt rendered/${_lang})
-	($(cp) rss.xml rendered/${_lang})
+#	($(cp) rss.xml rendered/${_lang})
 .endfor
 #.for _lang in ${_LOCALELIST}
 #	(cd rendered/${_lang}; $(ln) -fs ../dist dist)
