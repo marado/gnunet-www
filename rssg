@@ -21,6 +21,7 @@ set -e
 # TODO: Fix date -j for GNU date.
 # TODO: Fix base url (get_url)
 # TODO: Fix link OR a in get_url
+# TODO: get_title: be more dynamic about where the title can be.
 
 main () {
 	test -n "$1" || usage
@@ -78,7 +79,8 @@ md_to_html() {
 
 
 get_title() {
-	awk 'tolower($0)~/^<h1/{gsub(/<[^>]*>/,"",$0);print;exit}'
+        awk -F '[<>]' '/<h1/ { gsub(/<h1>/, ""); gsub(/<\/h1>/, ""); sub(/ .*/, "", $3); print $0}' | sed 's/^[ \t]*//;s/[ \t]*$//' | awk 'FNR==2'
+	# awk 'tolower($0)~/^<h1/{gsub(/<[^>]*>/,"",$0);print;exit}'
 }
 
 
