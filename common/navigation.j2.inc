@@ -36,7 +36,7 @@
   <div class="collapse navbar-collapse bg-near-black" id="navbarMain">
     <ul class="navbar-nav mr-auto nav">
       <li class="nav-link"><a href="{{ url_localized('about.html') }}">{{ _("About") }}</a></li>
-      <li class="nav-link"><a href="{{ url_localized('index.html#news') }}">{{ _("News") }}</a></li>
+      <li class="nav-link"><a href="{{ url_localized('news/index.html') }}">{{ _("News") }}</a></li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
            role="button" aria-haspopup="true" aria-expanded="false">
