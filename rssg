@@ -135,7 +135,8 @@ date_rfc_822() {
              day=$(echo $in | cut -c7-8)
              hour=$(echo $in | cut -c9-10)
              minute=$(echo $in | cut -c11-12)
-	     date '+%a, %d %b %Y %H:%M:%S %z' "$(echo "$year"-"$month"-"$day" "$hour":"$minute")"
+	     # date '+%a, %d %b %Y %H:%M:%S %z' "$(echo "$year"-"$month"-"$day" "$hour":"$minute")"
+             date -d "$(echo "$year"-"$month"-"$day" "$hour":"$minute")"
 	else
 	    date -j '+%a, %d %b %Y %H:%M:%S %z' \
 		 "$(echo "$1"| tr -cd '[:digit:]')0000"
