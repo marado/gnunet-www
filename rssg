@@ -141,8 +141,9 @@ date_rfc_822() {
 
 
 feed_date_rfc_822() {
-         if date --version >/dev/null 2>&1; then
-             date -d "$(echo "$1")" --rfc-822
+        if date --version >/dev/null 2>&1; then
+            k="$($1)"
+            date -d "$(echo "$k")" --rfc-822
 	else
 	    date -j '+%a, %d %b %Y %H:%M:%S %z' \
 		 "$(echo "$1"| tr -cd '[:digit:]')0000"
