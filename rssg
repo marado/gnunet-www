@@ -79,14 +79,16 @@ md_to_html() {
 
 
 get_title() {
-        awk -F '[<>]' '/<h1/ { gsub(/<h1>/, ""); gsub(/<\/h1>/, ""); sub(/ .*/, "", $3); print $0}' | sed 's/^[ \t]*//;s/[ \t]*$//' | awk 'FNR==2'
+	awk -F '[<>]' '/<h1/ { gsub(/<h1>/, ""); gsub(/<\/h1>/, ""); sub(/ .*/, "", $3); print $0}' |
+	sed 's/^[ \t]*//;s/[ \t]*$//' |
+	awk 'FNR==2'
 }
 
 
 get_url() {
 	grep -i '<link .*rss.xml"' | head -1 |
-	    sed 's#.*href="\(.*\)".*#\1#' |
-            sed 's#../../#https://gnunet.org/#'
+	sed 's#.*href="\(.*\)".*#\1#' |
+	sed 's#../../#https://gnunet.org/#'
 }
 
 
@@ -124,12 +126,12 @@ rel_to_abs_urls() {
 
 date_rfc_822() {
 	if date --version >/dev/null 2>&1; then
-            date '+%a, %d %b %Y %H:%M:%S %z' \
-	         "$(echo "$1"| tr -cd '[:digit:]')0000"
-        else
+	    date '+%a, %d %b %Y %H:%M:%S %z' \
+		 "$(echo "$1"| tr -cd '[:digit:]')0000"
+	else
 	    date -j '+%a, %d %b %Y %H:%M:%S %z' \
-	         "$(echo "$1"| tr -cd '[:digit:]')0000"
-        fi
+		 "$(echo "$1"| tr -cd '[:digit:]')0000"
+	fi
 }
 
 
