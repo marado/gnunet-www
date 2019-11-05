@@ -365,7 +365,7 @@ videoslist = [
         "name": "GNU Name System",
         "source": "https://git.gnunet.org/gnunet-videos-2019.git/plain/IETF104/GNU_Name_System_-_2019_Edition_IETF104__Christian_Grothoff.webm",
         "mirror_source": "",
-        "slides": "",
+        "slides": "https://git.gnunet.org/presentations.git/plain/IETF104/slides-104-dinrg-gnu-name-system-00.pdf",
         "comment": ""
     },
     {
@@ -409,7 +409,7 @@ videoslist = [
         "name": "Big Data, Little Data, No Data",
         "source": "https://git.gnunet.org/gnunet-videos-2017.git/plain/Big_Data-Little_Data-No_Data.mp4",
         "mirror_source": "",
-        "slides": "",
+        "slides": "https://git.gnunet.org/presentations.git/plain/grothoff/grothoff_bigdata-littledata-nomoredata_tum2017.pdf",
         "comment": ""
     },
     {
@@ -464,7 +464,7 @@ videoslist = [
         "name": "GNUnet For Mesh Communities",
         "source": "https://git.gnunet.org/gnunet-videos-2016.git/plain/Battlemeshv9/Gnunet%20For%20Mesh%20Communities%20-%20Battlemesh%20v9%20(Porto,%20Portugal).mp4",
         "mirror_source": "",
-        "slides": "",
+        "slides": "https://git.gnunet.org/presentations.git/plain/GNUnet_For_Mesh_Communities-Daniel_Golle-Battlemeshv9_Portugal.pdf",
         "comment": ""
     },
     {
@@ -474,7 +474,7 @@ videoslist = [
         "description": "",
         "name": "Xolotl - A compact mixnet format with stronger forwared secrecy and hybrid anonymity",
         "source": "https://git.gnunet.org/gnunet-videos-2015.git/plain/GHM%202015/expose-GNUJeffBurdges19aout2016.mp4",
-        "mirror_source": "",
+        "mirror_source": "http://videos.rennes.inria.fr/Workshop-GNUHackersMeetings2016/expose-GNUJeffBurdges19aout2016.mp4",
         "slides": "",
         "comment": ""
     },
@@ -629,8 +629,8 @@ videoslist = [
         "name": "You broke the Internet. We're making ourselves a GNU one.",
         "source": "https://git.gnunet.org/gnunet-videos-2013.git/plain/you%20broke%20the%20internet/internetistschuld.webm",
         "mirror_source": "",
-        "slides": "",
-        "comment": ""
+        "slides": "https://git.gnunet.org/presentations.git/plain/2013-youbroketheinternet-event/grothoff_slides_berlin.pdf",
+        "comment": "<a href='https://git.gnunet.org/presentations.git/plain/2013-youbroketheinternet-event/lynx_slides_secushare.pdf'>slides lynX</a>"
     },
     {
         "year": "2013",
@@ -684,7 +684,7 @@ videoslist = [
         "name": "GNUnet - Transport and Transport Selection",
         "source": "https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_-_Transports_and_Transport_Selection.ogv",
         "mirror_source": "",
-        "slides": "",
+        "slides": "https://git.gnunet.org/presentations.git/plain/wachs_ghm_presentation.pdf",
         "comment": ""
     },
     {
@@ -695,7 +695,7 @@ videoslist = [
         "name": "GNUnet Distributed Data Storage - DHT and Distance Vector Transport",
         "source": "https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_Distributed_Data_Storage_-_DHT_and_Distance_Vector_Transport.ogv",
         "mirror_source": "",
-        "slides": "",
+        "slides": "https://git.gnunet.org/presentations.git/plain/evans_ghm_presentation.pdf",
         "comment": ""
     },
     {
