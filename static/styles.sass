@@ -313,7 +313,22 @@ a.subnav-anchor
   position: relative
   top: -80px
 
-a.item-preview
-   &:link &:visited
-     text-decoration: none
-     color: #212529
+.item-preview
+  &:link &visited
+   text-decoration: none
+   color: #212529
+   display: block
+   padding: 10px 15px
+   text-align: left
+  &:active &:focus &:hover
+    background-color: #F4BB15
+  h3
+    font-size: 1em
+    font-weight: bold
+    margin: 0px
+
+  p
+    word-wrap: break-word
+
+.item-date
+  font-size: 0.9em
