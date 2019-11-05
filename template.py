@@ -242,13 +242,13 @@ newsposts = [
     {
         "page": "2019-10-ICANNPanel.html",
         "date": "2019-10-20",
-        "title": "ICANN Panel",
+        "title": "GNUnet invited to ICANN Panel",
         "abstract": "",
     },
     {
         "page": "2019-10-GNSSpec1.html",
         "date": "2019-10-04",
-        "title": "GNS Spec 1",
+        "title": "GNS Specification Milestone 1/4",
         "abstract": "",
     },
     {
@@ -345,7 +345,7 @@ newsposts = [
 
 for item in newsposts:
     item['abstract'] = abstract_news(item['page'])
-    
+
 
 
 # <!-- FIXME 2015: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
