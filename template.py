@@ -31,6 +31,8 @@ import jinja2
 import i18nfix
 from pathlib import Path
 import hashlib
+from bs4 import BeautifulSoup
+
 
 # TODO: Turn repetition into a class.
 
@@ -202,105 +204,149 @@ meetingnotes = {
     "2018": "2018-12-27",
 }
 
+
+def preview_text(filename):
+    with open(filename) as html:
+        # html = open(filename).read()
+        soup = BeautifulSoup(html, features="lxml")
+        for script in soup(["script", "style"]):
+            script.extract()
+        k = []
+        # for i in soup.findAll('p')[1:3]:
+        for i in soup.findAll('p')[1]:
+            k.append(i)
+        b = ''.join(str(e) for e in k)
+        text = b.replace("\n", "")
+        return(text)
+
+
+def abstract_news(filename):
+    return preview_text("news/" + filename + ".j2")
+
+
 # At this moment in time, constructing this list dynamically would be
 # too much pointless code.
 newsposts = [
     {
         "page": "2019-0.11.8.html",
         "date": "2019-10-30",
-        "title": "GNUnet 0.11.8"
+        "title": "GNUnet 0.11.8",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.7.html",
         "date": "2019-10-27",
-        "title": "GNUnet 0.11.7"
+        "title": "GNUnet 0.11.7",
+        "abstract": "",
     },
     {
         "page": "2019-10-ICANNPanel.html",
         "date": "2019-10-20",
-        "title": "ICANN Panel"
+        "title": "ICANN Panel",
+        "abstract": "",
     },
     {
         "page": "2019-10-GNSSpec1.html",
         "date": "2019-10-04",
-        "title": "GNS Spec 1"
+        "title": "GNS Spec 1",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.6.html",
         "date": "2019-07-24",
-        "title": "GNUnet 0.11.6"
+        "title": "GNUnet 0.11.6",
+        "abstract": "",
     },
     {
         "page": "2019-07-GHM_Aug_2019.html",
         "date": "2019-07-17",
-        "title": "GNUnet Hacker Meeting 2019"
+        "title": "GNUnet Hacker Meeting 2019",
+        "abstract": "",
     },
     {
         "page": "2019-06-DSTJ.html",
         "date": "2019-06-28",
-        "title": "Peer DSTJ is dead, long live peer Y924"
+        "title": "Peer DSTJ is dead, long live peer Y924",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.5.html",
         "date": "2019-06-05",
-        "title": "GNUnet 0.11.5"
+        "title": "GNUnet 0.11.5",
+        "abstract": "",
     },
     {
         "page": "2019-06.html",
         "date": "2019-06-01",
-        "title": "2019-06"
+        "title": "2019-06",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.4.html",
         "date": "2019-05-12",
-        "title": "GNUnet 0.11.4"
+        "title": "GNUnet 0.11.4",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.3.html",
         "date": "2019-04-07",
-        "title": "GNUnet 0.11.3"
+        "title": "GNUnet 0.11.3",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.2.html",
         "date": "2019-04-04",
-        "title": "GNUnet 0.11.2"
+        "title": "GNUnet 0.11.2",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.1.html",
         "date": "2019-04-03",
-        "title": "GNUnet 0.11.1"
+        "title": "GNUnet 0.11.1",
+        "abstract": "",
     },
     {
         "page": "2019-0.11.0.html",
         "date": "2019-02-28",
-        "title": "GNUnet 0.11.0"
+        "title": "GNUnet 0.11.0",
+        "abstract": "",
     },
     {
         "page": "2019-02.html",
         "date": "2019-02-01",
-        "title": "Google Summer of Code 2019"
+        "title": "Google Summer of Code 2019",
+        "abstract": "",
     },
     {
         "page": "2018-08.html",
         "date": "2018-08-14",
-        "title": "GSoC 2018 - GNUnet Web-based User Interface"
+        "title": "GSoC 2018 - GNUnet Web-based User Interface",
+        "abstract": "",
     },
     {
         "page": "2018-07.html",
         "date": "2018-07-01",
-        "title": "Second GNUnet Hacker Meeting 2018"
+        "title": "Second GNUnet Hacker Meeting 2018",
+        "abstract": "",
     },
     {
         "page": "2018-06.html",
         "date": "2018-06-06",
-        "title": "GNUnet 0.11.0pre66"
+        "title": "GNUnet 0.11.0pre66",
+        "abstract": "",
     },
     {
         "page": "2017-10.html",
         "date": "2017-10-01",
-        "title": "Launching the new gnunet.org"
+        "title": "Launching the new gnunet.org",
+        "abstract": "",
     },
 ]
+
+for item in newsposts:
+    item['abstract'] = abstract_news(item['page'])
+    
+
 
 # <!-- FIXME 2015: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Julian Kirsch, <a href="">"Knocking down the HACIENDA"</a>, GNU Hacker Meeting 2014</li> -->
