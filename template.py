@@ -34,11 +34,6 @@ import hashlib
 from bs4 import BeautifulSoup
 from ruamel.yaml import YAML
 
-yaml=YAML(typ='safe')
-site_configfile=Path("www.yml")
-conf=yaml.load(site_configfile)
-
-
 # TODO: Turn repetition into a class.
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(
@@ -48,37 +43,6 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader(
                          trim_blocks=True,
                          undefined=jinja2.StrictUndefined,
                          autoescape=False)
-# DEBUG OUTPUT:
-if (os.getenv("DEBUG")):
-    print(sys.path)
-
-# A construction has:
-# symlinks (dict)
-# staticfiles (dict)
-# robot.txt files (list)
-# locales (list)
-# shells out to siteindex (todo: python siteindex)
-# generation_directories: the one we are building right now
-#                         the one we will be replacing
-#                         other directories get trashed upon successful build
-
-symlinks = {
-    "frontpage.html": "frontpage",
-    "gsoc.html": "gsoc",
-    "about.html": "philosophy",
-    "gns.html": "gns",
-    "node/about.html": "397"
-}
-
-# Mostly from static/ to rendered/
-staticfiles = {
-    "favicon.ico": "favicon.ico",
-    "moved.html": "frontpage.html",
-    "robots.txt": ["static", "dist", list(conf["langs_full"])],
-    "moved_gsoc.html": "gsoc.html",
-    "moved_about.html": "about.html",
-    "moved_gns.html": "gns.html"
-}
 
 
 def localized(filename, locale, *args):
@@ -209,11 +173,7 @@ def abstract_news(filename):
     return preview_text("news/" + filename + ".j2")
 
 
-for item in conf["newsposts"]:
-    item['abstract'] = abstract_news(item['page'])
-
-
-def generate_site(root):
+def generate_site(root, conf):
     for in_file in glob.glob(root + "/*.j2"):
         name, ext = re.match(r"(.*)\.([^.]+)$", in_file.rstrip(".j2")).groups()
         tmpl = env.get_template(in_file)
@@ -298,18 +258,23 @@ def generate_site(root):
                 langdir = outdir / locale
 
             langdir.mkdir(parents=True, exist_ok=True)
-            # os.makedirs("./rendered/" + locale, exist_ok=True)
+
             with codecs.open(out_name, "w", encoding='utf-8') as f:
                 f.write(content)
 
 
 def main():
     # rm_rf("rendered")
-    print("generating template")
-    generate_site("template")
-    print("generating news")
-    generate_site("news")
+    yaml=YAML(typ='safe')
+    site_configfile=Path("www.yml")
+    conf=yaml.load(site_configfile)
 
+    for item in conf["newsposts"]:
+        item['abstract'] = abstract_news(item['page'])
+    print("generating template")
+    generate_site("template", conf)
+    print("generating news")
+    generate_site("news", conf)
 
 #    for l in glob.glob("locale/*/"):
 #        locale = os.path.basename(l[:-1])
