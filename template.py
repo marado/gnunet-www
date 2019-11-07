@@ -166,7 +166,8 @@ def preview_text(filename):
             k.append(i)
         b = ''.join(str(e) for e in k)
         text = b.replace("\n", "")
-        return(text)
+        textreduced = (text[:300] + '...') if len(text) > 300 else (text + '..')
+        return(textreduced)
 
 
 def abstract_news(filename):
