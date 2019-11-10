@@ -115,6 +115,18 @@ newsposts:
 videoslist:
   - year: 2019
     authors:
+      - "Martin Schanzenbach"
+    location: "ICANN66"
+    description: "GNS presented at the ICANN General Meetup in 2019 (ICANN66)."
+    name: "GNU Name System"
+    sources:
+      - "https://git.gnunet.org/gnunet-videos-2019.git/plain/ICANN66/GNU_Name_System_-_2019_ICANN66__Martin_Schanzenbach.webm"
+    mirror_sources:
+    slides:
+      - "https://git.gnunet.org/presentations.git/plain/icann66/20191105_icann66_gns.pdf"
+    comment:
+  - year: 2019
+    authors:
       - Christian Grothoff
     location: IETF
     description: 
