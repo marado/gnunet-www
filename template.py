@@ -359,6 +359,17 @@ for item in newsposts:
 videoslist = [
     {
         "year": "2019",
+        "author": "Martin Schanzenbach",
+        "location": "ICANN66",
+        "description": "GNS presented at the ICANN General Meetup in 2019 (ICANN66).",
+        "name": "GNU Name System",
+        "source": "https://git.gnunet.org/gnunet-videos-2019.git/plain/ICANN66/GNU_Name_System_-_2019_ICANN66__Martin_Schanzenbach.webm",
+        "mirror_source": "",
+        "slides": "https://git.gnunet.org/presentations.git/plain/icann66/20191105_icann66_gns.pdf",
+        "comment": ""
+    },
+    {
+        "year": "2019",
         "author": "Christian Grothoff",
         "location": "IETF",
         "description": "",
