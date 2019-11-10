@@ -29,6 +29,10 @@ meetingnotes:
   2017: 2017-12-27
   2018: 2018-12-27
 newsposts:
+  - page: 2019-11-ICANNUpdate.html
+    date: 2019-11-10
+    title: GNS@ICANN66
+    abstract: 
   - page: 2019-0.11.8.html
     date: 2019-10-30
     title: GNUnet 0.11.8
@@ -117,8 +121,8 @@ videoslist:
     authors:
       - "Martin Schanzenbach"
     location: "ICANN66"
-    description: "GNS presented at the ICANN General Meetup in 2019 (ICANN66)."
-    name: "GNU Name System"
+    description: "GNS presented at the Internet Corporation for Assigned Names and Numbers' General Meetup in 2019 (ICANN66)."
+    name: "GNU Name System at ICANN"
     sources:
       - "https://git.gnunet.org/gnunet-videos-2019.git/plain/ICANN66/GNU_Name_System_-_2019_ICANN66__Martin_Schanzenbach.webm"
     mirror_sources:
