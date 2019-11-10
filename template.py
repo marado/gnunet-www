@@ -154,7 +154,7 @@ def copy_static(locale, indict):
         print(locale + "/" + key + " ...to... " + locale + "/" + value)
 
 
-def preview_text(filename):
+def preview_text(filename, count):
     with open(filename) as html:
         # html = open(filename).read()
         soup = BeautifulSoup(html, features="lxml")
@@ -166,12 +166,12 @@ def preview_text(filename):
             k.append(i)
         b = ''.join(str(e) for e in k)
         text = b.replace("\n", "")
-        textreduced = (text[:800] + '...') if len(text) > 800 else (text + '..')
+        textreduced = (text[:count] + '...') if len(text) > count else (text + '..')
         return(textreduced)
 
 
-def abstract_news(filename):
-    return preview_text("news/" + filename + ".j2")
+def abstract_news(filename, count):
+    return preview_text("news/" + filename + ".j2", count)
 
 
 def generate_site(root, conf):
@@ -271,7 +271,7 @@ def main():
     conf=yaml.load(site_configfile)
 
     for item in conf["newsposts"]:
-        item['abstract'] = abstract_news(item['page'])
+        item['abstract'] = abstract_news(item['page'], 800)
     print("generating template")
     generate_site("template", conf)
     print("generating news")
