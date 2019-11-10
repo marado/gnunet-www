@@ -121,8 +121,8 @@ videoslist:
     authors:
       - "Martin Schanzenbach"
     location: "ICANN66"
-    description: "GNS presented at the ICANN General Meetup in 2019 (ICANN66)."
-    name: "GNU Name System"
+    description: "GNS presented at the Internet Corporation for Assigned Names and Numbers' General Meetup in 2019 (ICANN66)."
+    name: "GNU Name System at ICANN"
     sources:
       - "https://git.gnunet.org/gnunet-videos-2019.git/plain/ICANN66/GNU_Name_System_-_2019_ICANN66__Martin_Schanzenbach.webm"
     mirror_sources:
