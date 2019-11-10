@@ -8,7 +8,10 @@ code base.
 Requirements
 ------------
 - python3 modules:
-  - python3-jinja2, python3-babel
+  - jinja2
+  - babel
+  - ruamel.yaml
+  - BeautifulSoup 4
 - python3 interpreter:
   - python 3.7 or later.
 - gettext

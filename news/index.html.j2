@@ -1,5 +1,6 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
+  {% import 'inc/news.macro.j2' as news %}
   <div class="container-fluid">
     <div class="container">
       <article>
@@ -17,17 +18,7 @@
         <div class="row">
           {% for item in newsdata %}
             <div class="col-lg-4">
-              <section class="item-preview">
-                <header>
-                  <h3>{{ item['title'] }}</h3>
-                  <p class="item-date">
-                    {{ item['date'] }}
-                  </p>
-                </header>
-                <p class="item-abstract">
-                  {{ item['abstract'] }}...[<a href="{{ item['page'] }}">read more</a>]
-                </p>
-              </section>
+              {{ news.newspreview(item) }}
             </div>
           {% endfor %}
         </div>

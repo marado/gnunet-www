@@ -16,27 +16,56 @@
           {% for item in videosdata %}
             <section>
               <header>
-                <h2>{{ item['name'] }} ({{ item['year'] }})</h2>
+                <h2>{{ item['name']|e }} ({{ item['year'] }})</h2>
               </header>
               <div class="row container">
                 <div class="col-md-5 col-12">
                   <video width="100%" height="100%" controls preload="none">
-	            <source src="{{ item['source']}}">
-                      Your web browser does not support the video tag.
+                    {% if item['sources'] %}
+                      {% for video in item['sources'] %}
+	                <source src="{{ video }}">
+                      {% endfor %}
+                    {% else %}
+                      <!-- no video, empty tag because we have no placeholder -->
+                      <source src="">
+                    {% endif %}
+                    Your web browser does not support the video tag.
                   </video>
                 </div>
                 <div class="col">
                   <p>
-                    Name: {{ item['name'] }}<br>
-                    Authors: {{ item['author'] }}<br>
-                    Location: {{ item['location'] }}<br>
-                    Description: {{ item['description'] }}<br>
-                    Year: {{ item['year'] }}<br>
-                    Slides: {% if item['slides'] %}<a href="{{ item['slides'] }}">Slides</a>{% endif %}<br>
-                    Mirror: {% if item['mirror_source'] %}<a href="{{ item['mirror_source'] }}">Mirror Source</a>{% endif %}<br>
-                    {% if item['comment'] %}
-                      Comment: {{ item['comment'] }}
-                    {% endif %}
+                    Name: {% if item['name'] %} {{ item['name']|e }} {% endif %}<br>
+                    Authors:
+                    {% if item['authors'] %}
+                      {% for name in item['authors'] %}
+                        {{ name|e }}
+                        {% if not loop.last %}
+                          ,
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}<br>
+                    Location: {% if item['location'] %} {{ item['location']|e }} {% endif %}<br>
+                    Description: {% if item['description'] %} {{ item['description']|e }} {% endif %}<br>
+                    Year: {% if item['year'] %}{{ item['year'] }}{% endif %}<br>
+                    Slides:
+                    {% if item['slides'] %}
+                      {% for slide in item['slides'] %}
+                        <a href="{{ slide }}">Slide {{ loop.index }}</a>
+                        {% if not loop.last %}
+                          ,
+                        {% endif %}
+                      {% endfor %}
+                    {% endif %}<br>
+                    Mirrors:
+                    {% if item['mirror_sources'] %}
+                      {% for mirror in item['mirror_sources'] %}
+                        <a href="{{ mirror }}">Mirror Source {{ loop.index }}</a>
+                        {% if not loop.last %}
+                          ,
+                          {% endif %}
+                      {% endfor %}
+                    {% endif %}<br>
+                    {% if item['comment'] %} Comment: {{ item['comment']|e }} {% endif %}
                   </p>
                 </div>
               </div>
