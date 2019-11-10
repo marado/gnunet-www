@@ -166,7 +166,7 @@ def preview_text(filename):
             k.append(i)
         b = ''.join(str(e) for e in k)
         text = b.replace("\n", "")
-        textreduced = (text[:800] + '...') if len(text) > 800 else (text + '..')
+        textreduced = (text[:1000] + '...') if len(text) > 1000 else (text + '..')
         return(textreduced)
 
 
