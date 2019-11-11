@@ -33,8 +33,8 @@ from pathlib import Path
 import hashlib
 from bs4 import BeautifulSoup
 from ruamel.yaml import YAML
+import html.parser
 
-# TODO: Turn repetition into a class.
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(
     os.path.dirname(__file__)),
@@ -43,6 +43,22 @@ env = jinja2.Environment(loader=jinja2.FileSystemLoader(
                          trim_blocks=True,
                          undefined=jinja2.StrictUndefined,
                          autoescape=False)
+
+
+class extractText(html.parser.HTMLParser):
+    def __init__(self):
+        super(extractText, self).__init__()
+        self.result = []
+    def handle_data(self, data):
+        self.result.append(data)
+    def text_in(self):
+        return ''.join(self.result)
+
+
+def html2text(html):
+    k = extractText()
+    k.feed(html)
+    return k.text_in()
 
 
 def localized(filename, locale, *args):
@@ -154,7 +170,7 @@ def copy_static(locale, indict):
         print(locale + "/" + key + " ...to... " + locale + "/" + value)
 
 
-def preview_text(filename):
+def preview_text(filename, count):
     with open(filename) as html:
         # html = open(filename).read()
         soup = BeautifulSoup(html, features="lxml")
@@ -165,13 +181,13 @@ def preview_text(filename):
         for i in soup.findAll('p')[1]:
             k.append(i)
         b = ''.join(str(e) for e in k)
-        text = b.replace("\n", "")
-        textreduced = (text[:1000] + '...') if len(text) > 1000 else (text + '..')
+        text = html2text(b.replace("\n", ""))
+        textreduced = (text[:count] + '...') if len(text) > count else (text + '..')
         return(textreduced)
 
 
-def abstract_news(filename):
-    return preview_text("news/" + filename + ".j2")
+def abstract_news(filename, count):
+    return preview_text("news/" + filename + ".j2", count)
 
 
 def generate_site(root, conf):
@@ -271,7 +287,7 @@ def main():
     conf=yaml.load(site_configfile)
 
     for item in conf["newsposts"]:
-        item['abstract'] = abstract_news(item['page'])
+        item['abstract'] = abstract_news(item['page'], 1000)
     print("generating template")
     generate_site("template", conf)
     print("generating news")
