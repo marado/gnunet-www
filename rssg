@@ -29,7 +29,8 @@ main () {
 	test -f "$1" || no_file "$1"
 
 
-	index_file=$(readlink -f "$1")
+	# index_file=$(readlink -f "$1")
+        index_file=$(readlink "$1")
 	test -z "${index_file##*html}" && html=$(cat "$index_file")
 	test -z "${index_file##*md}" && html=$(md_to_html "$index_file")
 	test -n "$html" || usage
