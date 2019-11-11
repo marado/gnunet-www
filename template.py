@@ -271,7 +271,7 @@ def main():
     conf=yaml.load(site_configfile)
 
     for item in conf["newsposts"]:
-        item['abstract'] = abstract_news(item['page'], 800)
+        item['abstract'] = abstract_news(item['page'], 300)
     print("generating template")
     generate_site("template", conf)
     print("generating news")
