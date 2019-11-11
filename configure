@@ -32,7 +32,8 @@
 
 # we invoke configure not as a symlink but as a copy,
 # so we have to use a fixed location for the repository!
-dir=$(dirname "$(readlink -f -- "$0")")/build-system/taler-build-scripts
+# dir=$(dirname "$(readlink -f -- "$0")")/build-system/taler-build-scripts
+dir=$(dirname "$(readlink -- "$0")")/build-system/taler-build-scripts
 . $dir/sh/lib.sh/existence.sh
 . $dir/sh/lib.sh/existence_python.sh
 
