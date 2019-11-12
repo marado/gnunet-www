@@ -1,6 +1,8 @@
 ./*.html
 common/*.inc
 
+old/
+
 *.mo
 locale/*/
 locale/messages.pot
