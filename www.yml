@@ -5,22 +5,40 @@ langs_full: &langs
     es: Español
     de: Deutsch
 symlinks:
-    frontpage.html: frontpage
-    gsoc.html: gsoc
-    about.html: philosophy
-    gns.html: gns
-    node/about.html: "397"
-# Mostly from static/ to rendered/
+    - file: frontpage.html
+      targets:
+        - frontpage
+    - file: gsoc.html
+      targets:
+        - gsoc
+    - file: about.html
+      targets:
+        - philosophy
+    - file: gns.html
+      targets:
+        - gns
+    - file: node/about.html
+      targets:
+        - "397"
 staticfiles:
-    favicon.ico: favicon.ico
-    moved.html: frontpage.html
-    robots.txt:
-      - static
-      - dist
-      - *langs
-    moved_gsoc.html: gsoc.html
-    moved_about.html: about.html
-    moved_gns.html: gns.html
+    - file: favicon.ico
+      targets:
+        - favicon.ico
+    - file: moved.html
+      targets:
+        - frontpage.html
+    - file: robots.txt
+      targets:
+        - robots.txt
+    - file: moved_gsoc.html
+      targets:
+        - gsoc.html
+    - file: moved_about.html
+      targets:
+        - about.html
+    - file: moved_gns.html
+      targets:
+        - gns.html
 meetingnotes:
   2013: 2013-12-27
   2014: 2014-12-28
