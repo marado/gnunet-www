@@ -18,29 +18,50 @@
 # is thus to be invoked via the Makefile.
 
 import jinja2
-import os
+import sys
+from pathlib import Path, PurePath
 from inc.site import gen_site
 from inc.fileproc import copy_files
 
-env = jinja2.Environment(loader=jinja2.FileSystemLoader(os.path.dirname(__file__),"inc"),
+env = jinja2.Environment(loader=jinja2.FileSystemLoader(str(PurePath(__file__).parent)),
                          extensions=["jinja2.ext.i18n"],
                          lstrip_blocks=True,
                          trim_blocks=True,
                          undefined=jinja2.StrictUndefined,
                          autoescape=False)
 
+if len(sys.argv) >= 2 and sys.argv[1] == "-vv":
+    DEBUG=1
+elif len(sys.argv) >= 2 and sys.argv[1] == "-vvv":
+    DEBUG=2
+elif len(sys.argv) >= 2 and sys.argv[1] == "-vvvv":
+    DEBUG=3
+else:
+    DEBUG=0
+
 def main():
     # rm_rf("rendered")
-    x = gen_site()
+    x = gen_site(DEBUG)
     conf = x.load_config("www.yml")
-    print("generating news abstracts...")
     x.gen_abstract(conf, "newsposts", "abstract", "page", 1000)
-    print("generating html from jinja2 templates...")
+    if DEBUG:
+        print("generating html from jinja2 templates...")
     x.run("template", conf, env)
-    print("generating html from jinja2 news templates...")
+    if DEBUG:
+        print(Path.cwd())
+        _ = Path("rendered")
+        for child in _.iterdir():
+            print(child)
+    if DEBUG:
+        print(Path.cwd())
+        print("generating html from jinja2 news templates...")
     x.run("news", conf, env)
     #for lang in conf["langs_full"]:
     #    copy_files("static", conf, lang, "staticfiles", "rendered")
+    if DEBUG:
+        print("copying directories...")
+    x.copy_trees("static")
+    x.copy_trees("dist")
     # print("generating rss...")
     # x.generate_rss()
     # print("generating sitemap...")

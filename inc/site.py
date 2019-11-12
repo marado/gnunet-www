@@ -6,29 +6,51 @@ import gettext
 import glob
 import codecs
 import jinja2
-import hashlib
-from pathlib import Path, PurePosixPath
+from pathlib import Path, PurePosixPath, PurePath
 from ruamel.yaml import YAML
-import inc.i18nfix
+import inc.i18nfix as i18nfix
 from inc.textproc import cut_news_text
-from inc.fileproc import copy_files
+from inc.fileproc import copy_files, copy_tree
 
 
 class gen_site:
+    def __init__(self, debug):
+        self.debug = debug
+
     def load_config(self, name="www.yml"):
         yaml = YAML(typ='safe')
         site_configfile = Path(name)
         return yaml.load(site_configfile)
 
+    def copy_trees(self, directory):
+        """ Take a directory name (string) and pass it to copy_tree() as Path object. """
+        i = Path(directory)
+        o = Path("rendered/" + directory)
+        copy_tree(i, o)
+
     def gen_abstract(self, conf, name, member, pages, length):
+        if self.debug:
+            print("generating abstracts...")
         for item in conf[name]:
             item[member] = cut_news_text(item[pages], length)
+        if self.debug:
+            print("cwd: " + str(Path.cwd()))
+        if self.debug > 1:
+            print(conf["newsposts"])
+        if self.debug:
+            print("[done] generating abstracts")
 
     def run(self, root, conf, env):
-        # os.chdir("..")
-        print(os.getcwd())
-        root = "../" + root
-        for in_file in glob.glob(root + "/*.j2"):
+        # root = "../" + root
+        if self.debug:
+            _ = Path(".")
+            q = list(_.glob("**/*.j2"))
+            print(q)
+        # for in_file in glob.glob(root + "/*.j2"):
+        for in_file in Path(".").glob(root + "/*.j2"):
+            in_file = str(in_file)
+            if self.debug:
+                print(in_file)
             name, ext = re.match(r"(.*)\.([^.]+)$",
                                  in_file.rstrip(".j2")).groups()
             tmpl = env.get_template(in_file)
@@ -74,8 +96,14 @@ class gen_site:
                 #    return "../" + x
                 return "../" + x
 
-            for l in glob.glob("locale/*/"):
-                locale = os.path.basename(l[:-1])
+            # for l in glob.glob("locale/*/"):
+            # https://bugs.python.org/issue22276
+            for l in list(x for x in Path(".").glob("locale/*/") if x.is_dir()):
+                l = str(PurePath(l).name)
+                if self.debug:
+                    print(l)
+                # locale = os.path.basename(l[:-1])
+                locale = l
 
                 tr = gettext.translation("messages",
                                          localedir="locale",
@@ -106,8 +134,6 @@ class gen_site:
                         root + '/', '').rstrip(".j2")
 
                 outdir = Path("rendered")
-                if outdir.exists() is False:
-                    sys.exit(1)
 
                 if root == "news":
                     langdir = outdir / locale / root

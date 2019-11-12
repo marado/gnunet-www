@@ -1,4 +1,17 @@
 from pathlib import Path
+import os
+import shutil
+
+def copy_tree(source, destination):
+    destination.mkdir(parents=True, exist_ok=True)
+    for _ in os.listdir(source):
+        i = source / _
+        o = destination / _
+        if i.is_dir():
+            copy_tree(i, o)
+        else:
+            shutil.copy2(str(i), str(o))
+
 
 def copy_files(kind, conf, locale, inlist, ptarget):
     o = Path(ptarget)

@@ -1,12 +1,15 @@
 import html.parser
 from bs4 import BeautifulSoup
 
+
 class extractText(html.parser.HTMLParser):
     def __init__(self):
         super(extractText, self).__init__()
         self.result = []
+
     def handle_data(self, data):
         self.result.append(data)
+
     def text_in(self):
         return ''.join(self.result)
 
@@ -27,8 +30,9 @@ def cut_text(filename, count):
             k.append(i)
         b = ''.join(str(e) for e in k)
         text = html2text(b.replace("\n", ""))
-        textreduced = (text[:count] + '...') if len(text) > count else (text + '..')
-        return(textreduced)
+        textreduced = (text[:count] + '...') if len(text) > count else (text +
+                                                                        '..')
+        return (textreduced)
 
 
 def cut_news_text(filename, count):

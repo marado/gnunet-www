@@ -1,6 +1,7 @@
 import os
 from pathlib import Path, PurePosixPath
 
+
 def sitemap_tree(path):
     tree = dict(name=PurePosixPath(path).name, children=[])
     try:

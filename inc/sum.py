@@ -31,5 +31,3 @@ def walksum(_):
         traceback.print_exc()
         return -2
     return sha256.hexdigest()
-
-

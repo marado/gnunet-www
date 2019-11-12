@@ -21,9 +21,9 @@ _DIRLIST= dist static
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
 all: css locale template
-.for _dir in ${_DIRLIST}
-	$(cp) -R ${_dir} rendered/
-.endfor
+#.for _dir in ${_DIRLIST}
+#	$(cp) -R ${_dir} rendered/
+#.endfor
 .for _lang in ${_LOCALELIST}
 	($(cp) rendered/static/robots.txt rendered/${_lang})
 	($(cp) rendered/static/stage.robots.txt rendered/${_lang})
@@ -74,7 +74,7 @@ locale: locale-update locale-compile
 # Run the jinja2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
-	$(python) ./make_site.py
+	$(python) ./make_site.py -vvvv
 
 css:
 	$(sassc) static/styles.sass static/styles.css

@@ -6,7 +6,6 @@
 # are permitted in any medium without royalty provided the copyright
 # notice and this notice are preserved.  This file is offered as-is,
 # without any warranty.
-
 """
 Extract translations from a Jinja2 template, stripping leading newlines.
 
@@ -38,4 +37,5 @@ def wrap_gettext(f):
     def wrapper(message):
         message = normalize(message)
         return f(message)
+
     return wrapper

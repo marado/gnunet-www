@@ -28,7 +28,7 @@ all: css locale template
 	(for lang in en de es fr it ; do \
 		$(cp) rendered/static/robots.txt rendered/$$lang/robots.txt ; \
 	done)
-	($(cp) favicon.ico rendered/favicon.ico)
+	#($(cp) favicon.ico rendered/favicon.ico)
 	($(sh) make_sitemap.sh)
 	($(cp) rendered/sitemap.xml rendered/en/sitemap.xml)
 	($(cp) static/moved.html rendered/frontpage.html)
