@@ -29,7 +29,7 @@ all: css locale template
 	($(cp) rendered/static/stage.robots.txt rendered/${_lang})
 .endfor
 	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
-	($(cp) favicon.ico rendered/)
+	# ($(cp) favicon.ico rendered/)
 	$(sh) make_sitemap.sh
 .for _lang in ${_LOCALELIST}
 	($(cp) rendered/sitemap.xml rendered/${_lang})
@@ -74,7 +74,7 @@ locale: locale-update locale-compile
 # Run the jinja2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
-	$(python) ./template.py
+	$(python) ./make_site.py
 
 css:
 	$(sassc) static/styles.sass static/styles.css

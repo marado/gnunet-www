@@ -60,12 +60,9 @@ locale/messages.pot: common/*.j2.inc template/*.j2
 
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/de/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/fr/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/es/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/it/LC_MESSAGES/messages.po locale/messages.pot
-
+	(for lang in en de es fr it; do \
+		$(msgmerge) -q -U -m --previous locale/$$lang/LC_MESSAGES/messages.po locale/messages.pot ; \
+	done)
 	if $(grep) -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
 
 # sass preprocessor
@@ -74,11 +71,9 @@ css:
 
 # Compile translation files for use.
 locale-compile:
-	$(pybabel) -q compile -d locale -l en --use-fuzzy
-	$(pybabel) -q compile -d locale -l de --use-fuzzy
-	$(pybabel) -q compile -d locale -l fr --use-fuzzy
-	$(pybabel) -q compile -d locale -l it --use-fuzzy
-	$(pybabel) -q compile -d locale -l es --use-fuzzy
+	(for lang in en de fr it es; do \
+		$(pybabel) -q compile -d locale -l $$lang --use-fuzzy ; \
+	done)
 
 # Process everything related to gettext translations.
 locale: locale-update locale-compile
@@ -86,7 +81,7 @@ locale: locale-update locale-compile
 # Run the jinja2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
-	$(python) ./template.py
+	$(python) ./make_site.py
 
 it: template
 
