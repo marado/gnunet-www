@@ -11,4 +11,5 @@ if ! git --version >/dev/null; then
 fi
 
 git submodule update --init
-cp build-system/taler-build-scripts/configure ./configure
+cp build-system/taler-build-scripts/configure ./configure || true
+cp build-system/taler-build-scripts/conf/.style.yapf .style.yapf || true
