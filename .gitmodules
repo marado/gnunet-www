@@ -1,8 +1,3 @@
-[submodule "help"]
-	path = help
-	url = git://taler.net/help
-	branch = master
-        ignore = dirty
 [submodule "build-system/taler-build-scripts"]
 	path = build-system/taler-build-scripts
 	url = git://git.taler.net/build-common
