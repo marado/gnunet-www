@@ -20,17 +20,14 @@
 include config.mk
 
 all: css locale template
-	($(cp) -R dist rendered/)
-	($(cp) -R static rendered/)
 	($(cp) rendered/static/robots.txt rendered/robots.txt)
 	($(cp) rendered/static/stage.robots.txt rendered/stage.robots.txt)
 	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
 	(for lang in en de es fr it ; do \
 		$(cp) rendered/static/robots.txt rendered/$$lang/robots.txt ; \
 	done)
-	#($(cp) favicon.ico rendered/favicon.ico)
-	($(sh) make_sitemap.sh)
-	($(cp) rendered/sitemap.xml rendered/en/sitemap.xml)
+	($(python) inc/make_sitemap.py -i rendered)
+	($(cp) sitemap.xml rendered/en/sitemap.xml)
 	($(cp) static/moved.html rendered/frontpage.html)
 	(cd rendered; $(ln) -fs frontpage.html frontpage)
 	($(cp) static/moved_gsoc.html rendered/gsoc.html)
