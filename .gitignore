@@ -33,3 +33,7 @@ futility_engine_loader.sh
 config.mk
 
 *.core
+
+.style.yapf
+help/
+configure
