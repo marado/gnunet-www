@@ -47,13 +47,14 @@ def main():
     if DEBUG:
         print("generating html from jinja2 templates...")
     x.run("template", conf, env)
-    if DEBUG:
+    if DEBUG >= 2:
         print(Path.cwd())
         _ = Path("rendered")
         for child in _.iterdir():
             print(child)
-    if DEBUG:
+    if DEBUG >= 2:
         print(Path.cwd())
+    if DEBUG:
         print("generating html from jinja2 news templates...")
     x.run("news", conf, env)
     #for lang in conf["langs_full"]:

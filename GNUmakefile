@@ -27,6 +27,7 @@ all: css locale template
 		$(cp) rendered/static/robots.txt rendered/$$lang/robots.txt ; \
 	done)
 	($(python) inc/make_sitemap.py -i rendered)
+	($(cp) sitemap.xml rendered/sitemap.xml)
 	($(cp) sitemap.xml rendered/en/sitemap.xml)
 	($(cp) static/moved.html rendered/frontpage.html)
 	(cd rendered; $(ln) -fs frontpage.html frontpage)
