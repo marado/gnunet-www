@@ -45,7 +45,7 @@ staticfiles:
     - file: moved_about.html
       targets:
         - about.html
-    - file: gns.html
+    - file: moved_gns.html
       targets:
         - gns.html
 meetingnotes:
