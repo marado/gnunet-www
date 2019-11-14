@@ -12,7 +12,7 @@
 #
 # This script runs the jinja2 templating engine on an input template-file
 # using the specified locale for gettext translations, and outputs
-# the resulting (HTML) ouptut-file.
+# the resulting (HTML) output-file.
 #
 # Note that the gettext files need to be prepared first. This script
 # is thus to be invoked via the Makefile.
@@ -44,6 +44,10 @@ def main():
     x = gen_site(DEBUG)
     conf = x.load_config("www.yml")
     x.gen_abstract(conf, "newsposts", "abstract", "page", 1000)
+    #    for lang in conf["langs_full"]:
+    #        x.gen_newspost_content(conf, "newsposts", "content", "page", lang)
+    x.gen_newspost_content(conf, "newsposts", "content", "page", "en")
+    x.gen_rss("inc", conf, env)
     if DEBUG:
         print("generating html from jinja2 templates...")
     x.run("template", conf, env)

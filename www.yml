@@ -1,3 +1,12 @@
+siteconf:
+  - baseurl: gnunet.org
+    newsloc: /news/
+    newsdir: news
+    rsstitle: GNUnet.org
+    rssdescr: "News posts published by GNUnet about changes related to GNUnet, releases, and events"
+    rssloc:
+    rsslink:
+    rsslang:
 langs_full: &langs
     en: English
     fr: Français
@@ -50,83 +59,103 @@ newsposts:
   - page: 2019-11-ICANNUpdate.html
     date: 2019-11-10
     title: GNS@ICANN66
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.8.html
     date: 2019-10-30
     title: GNUnet 0.11.8
     abstract:
+    content:
   - page: 2019-0.11.7.html
     date: 2019-10-27
     title: GNUnet 0.11.7
-    abstract: 
+    abstract:
+    content:
   - page: 2019-10-ICANNPanel.html
     date: 2019-10-20
     title: GNUnet invited to ICANN Panel
-    abstract: 
+    abstract:
+    content:
   - page: 2019-10-GNSSpec1.html
     date: 2019-10-04
     title: GNS Specification Milestone 1/4
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.6.html
     date: 2019-07-24
     title: GNUnet 0.11.6
-    abstract: 
+    abstract:
+    content:
   - page: 2019-07-GHM_Aug_2019.html
     date: 2019-07-17
     title: GNUnet Hacker Meeting 2019
-    abstract: 
+    abstract:
+    content:
   - page: 2019-06-DSTJ.html
     date: 2019-06-28
     title: "Peer DSTJ is dead, long live peer Y924"
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.5.html
     date: 2019-06-05
     title: GNUnet 0.11.5
-    abstract: 
+    abstract:
+    content:
   - page: 2019-06.html
     date: 2019-06-01
     title: 2019-06
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.4.html
     date: 2019-05-12
     title: GNUnet 0.11.4
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.3.html
     date: 2019-04-07
     title: GNUnet 0.11.3
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.2.html
     date: 2019-04-04
     title: GNUnet 0.11.2
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.1.html
     date: 2019-04-03
     title: GNUnet 0.11.1
-    abstract: 
+    abstract:
+    content:
   - page: 2019-0.11.0.html
     date: 2019-02-28
     title: GNUnet 0.11.0
-    abstract: 
+    abstract:
+    content:
   - page: 2019-02.html
     date: 2019-02-01
     title: Google Summer of Code 2019
-    abstract: 
+    abstract:
+    content:
   - page: 2018-08.html
     date: 2018-08-14
     title: GSoC 2018 - GNUnet Web-based User Interface
-    abstract: 
+    abstract:
+    content:
   - page: 2018-07.html
     date: 2018-07-01
     title: Second GNUnet Hacker Meeting 2018
     abstract:
+    content:
   - page: 2018-06.html
     date: 2018-06-06
     title: GNUnet 0.11.0pre66
     abstract:
+    content:
   - page: 2017-10.html
     date: 2017-10-01
     title: Launching the new gnunet.org
     abstract:
+    content:
 # <!-- FIXME 2015: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Julian Kirsch, <a href="">"Knocking down the HACIENDA"</a>, GNU Hacker Meeting 2014</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Peter Schaar, <a href="">"Technik, Recht und Überwachung"</a>, Technische Universität München</li> -->
