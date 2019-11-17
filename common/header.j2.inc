@@ -44,6 +44,11 @@
     <script src="{{ url_dist('js/bootstrap.min.js') }}"></script>
     <link href="{{ url_static('navbar.css') }}" rel="stylesheet">
 
+    <link href="{{ url_dist('font-awesome/css/all.css') }}" rel="stylesheet">
+
+    <link href="{{ url_static('scroll.css') }}" rel="stylesheet">
+    <script src="{{ url_static('scroll.js') }}"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

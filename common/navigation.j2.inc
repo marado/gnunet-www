@@ -15,7 +15,7 @@
     }
   </style>
 </noscript>
-<nav class="navbar sticky-top navbar-expand-md bg-near-black">
+<nav class="navbar top navbar-expand-md bg-near-black">
   <a class="navbar-brand" href="{{ url_localized('index.html') }}">
       <img src="{{ url_static('images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet" height="25px" />
   </a>

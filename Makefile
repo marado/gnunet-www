@@ -20,7 +20,7 @@ _DIRLIST= dist static
 
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
-all: css locale template
+all: locale template
 .for _lang in ${_LOCALELIST}
 	($(cp) rendered/static/robots.txt rendered/${_lang})
 	($(cp) rendered/static/stage.robots.txt rendered/${_lang})

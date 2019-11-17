@@ -19,7 +19,7 @@
 
 include config.mk
 
-all: css locale template
+all: locale template
 	($(cp) rendered/static/robots.txt rendered/robots.txt)
 	($(cp) rendered/static/stage.robots.txt rendered/stage.robots.txt)
 	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
