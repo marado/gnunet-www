@@ -39,10 +39,6 @@ all: css locale template
 	(cd rendered/node ; $(ln) -fs about.html 397)
 	($(cp) static/moved_about.html rendered/about.html)
 	(cd rendered ; $(ln) -fs about.html philosophy)
-#	(cd rendered; \
-		for lang in en de es fr it; do \
-			$(sh) ../rssg $$lang/news/index.html 'GNUnet.org' > $$lang/news/rss.xml; \
-		done)
 	(cd rendered; \
 		for lang in en de es fr it; do \
 			$(cp) $$lang/rss.xml $$lang/news/rss.xml; \
@@ -60,10 +56,6 @@ locale-update: locale/messages.pot
 		$(msgmerge) -q -U -m --previous locale/$$lang/LC_MESSAGES/messages.po locale/messages.pot ; \
 	done)
 	if $(grep) -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
-
-# sass preprocessor
-css:
-	$(sassc) static/styles.sass static/styles.css
 
 # Compile translation files for use.
 locale-compile:
