@@ -32,7 +32,9 @@
   Note: $ stands for commands run as unprivileged user, # for commands run as root user.
   </p>
   <p>
-    GNUnet is not yet in the pkgsrc tree, it's still in the pkgsrc-wip repository. So if you checked out pkgsrc-wip into <code>/usr/pksrc/wip</code>:
+    GNUnet is not yet in the pkgsrc tree, it&#39;s still in the
+    pkgsrc-wip repository. So if you checked out pkgsrc-wip
+    into <code>/usr/pksrc/wip</code>:
   </p>
   <p>
   <code>
@@ -40,7 +42,8 @@
   </code>
   </p>
   <p>
-   Before you start building, you might want to review your <code>/etc/mk.conf</code>. I suggest to consider:
+   Before you start building, you might want to review
+   your <code>/etc/mk.conf</code>. I suggest to consider:
   </p>
   <ul>
    <li>WRKOBJDIR=/usr/work
@@ -52,7 +55,7 @@
   </ul>
   <p>
     As we rely on ImageMagick somewhere down our dependency chain
-    (it is one of libextractor's dependencies), you need to set
+    (it is one of libextractor&#39;s dependencies), you need to set
     the following (as of 2019-03-06) as well:
   </p>
   <ul>
@@ -85,18 +88,19 @@
   <p>
   <p>
   <code>
-    # pkg_add /usr/pkgsrc/packages/All/gnunet-0.11.0.tgz
+    # pkg_add /usr/pkgsrc/packages/All/gnunet-0.11.8.tgz
   </code>
   </p>
   <p>
-  And you're done!.<br>
+  And you&#39;re done!.<br>
   GNUnet has a number of services and features.
   Please check <a href="https://docs.gnunet.org/">our documentation</a>
   to learn how to use them. If you find anything odd or bugs, please
   <a href="https://bugs.gnunet.org">let us know</a>.
   </p>
   <p>
-  Note that the rc.d file which is installed is not yet functional.
+    Note that the rc.d file which is installed is not yet fully functional
+    and is getting debugged.
   </p>
 
   <h2>{{_("First steps")}}</h2>
@@ -114,7 +118,7 @@
   </p>
  <br />   
   <p>
-    It's reccomended that you increase your bandwidth restrictions
+    It&#39;s reccomended that you increase your bandwidth restrictions
     from the acutely low defaults. The example below sets the WAN
     and LAN limits to the value "unlimited".
   </p>
