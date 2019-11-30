@@ -27,10 +27,9 @@ all: locale template
 .endfor
 	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
 	# ($(cp) favicon.ico rendered/)
-	$(sh) make_sitemap.sh
-.for _lang in ${_LOCALELIST}
-	($(cp) rendered/sitemap.xml rendered/${_lang})
-.endfor
+	# $(sh) make_sitemap.sh
+	($(cp) sitemap.xml rendered/sitemap.xml)
+	($(cp) rendered/sitemap.xml rendered/en/sitemap.xml)
 	($(cp) static/moved.html rendered/frontpage.html)
 	(cd rendered; $(ln) -fs frontpage.html frontpage)
 	($(cp) static/moved_gsoc.html rendered/gsoc.html)
