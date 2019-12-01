@@ -146,11 +146,6 @@ newsposts:
     title: GNUnet 0.11.0pre66
     abstract:
     content:
-  - page: 2017-10.html
-    date: 2017-10-01
-    title: Launching the new gnunet.org
-    abstract:
-    content:
 # <!-- FIXME 2015: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Julian Kirsch, <a href="">"Knocking down the HACIENDA"</a>, GNU Hacker Meeting 2014</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Peter Schaar, <a href="">"Technik, Recht und Überwachung"</a>, Technische Universität München</li> -->
