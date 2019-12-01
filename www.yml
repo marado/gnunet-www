@@ -136,11 +136,6 @@ newsposts:
     title: Google Summer of Code 2019
     abstract:
     content:
-  - page: 2018-08.html
-    date: 2018-08-14
-    title: GSoC 2018 - GNUnet Web-based User Interface
-    abstract:
-    content:
   - page: 2018-07.html
     date: 2018-07-01
     title: Second GNUnet Hacker Meeting 2018
