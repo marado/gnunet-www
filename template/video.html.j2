@@ -30,6 +30,18 @@
                       <source src="">
                     {% endif %}
                     Your web browser does not support the video tag.
+                    {% if item['sources'] %}
+                      Don&#39;t worry, you can download:
+                      {% for video in item['sources'] %}
+	                <a href="{{ video }}">source</a>
+                        {% if not loop.last %}
+                          ,
+                        {% endif %}
+                      {% endfor %}
+                      or use
+                      git clone https://git.gnunet.org/gnunet-videos-{{ item['year'] }}.git
+                      and watch it in your favorite video player!
+                    {% endif %}
                   </video>
                 </div>
                 <div class="col">
