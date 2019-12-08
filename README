@@ -76,7 +76,7 @@ If you intend to write a new post, read this carefully.
   This can change in the future. The first h1 is what gets
   assigned as the title for the rss feed item for this post.
 
-* Every news post must get added as an dict to the newspost list
+* Every news post must get added as a dict to the newspost list
   in template.py. If you are not sure what those words mean, search
   "newsposts" in template.py. There you will find a structure where
   you have to add a new member including the "," at the end.
@@ -95,13 +95,13 @@ If you intend to write a new post, read this carefully.
   * title can be any title but preferable equal to the title (<h1>)
     in the file.
 
-* If you use website internal links in your post, do not use plain
+* If you use website-internal links in your post, do not use plain
   href targets. Read template.py and grep for *url* to see what can
   be used and grep the rest of the pages for examples how to use
   these functions.
 
 * Last but least build the website locally and check if the news
-  post renderes correctly.
+  post renders correctly.
 
 Developing with GNU Guix
 ========================
