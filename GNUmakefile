@@ -19,18 +19,16 @@
 
 include config.mk
 
-all: css locale template
-	($(cp) -R dist rendered/)
-	($(cp) -R static rendered/)
+all: locale template
 	($(cp) rendered/static/robots.txt rendered/robots.txt)
 	($(cp) rendered/static/stage.robots.txt rendered/stage.robots.txt)
 	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
 	(for lang in en de es fr it ; do \
 		$(cp) rendered/static/robots.txt rendered/$$lang/robots.txt ; \
 	done)
-	($(cp) favicon.ico rendered/favicon.ico)
-	($(sh) make_sitemap.sh)
-	($(cp) rendered/sitemap.xml rendered/en/sitemap.xml)
+	($(python) inc/make_sitemap.py -i rendered)
+	($(cp) sitemap.xml rendered/sitemap.xml)
+	($(cp) sitemap.xml rendered/en/sitemap.xml)
 	($(cp) static/moved.html rendered/frontpage.html)
 	(cd rendered; $(ln) -fs frontpage.html frontpage)
 	($(cp) static/moved_gsoc.html rendered/gsoc.html)
@@ -43,14 +41,8 @@ all: css locale template
 	(cd rendered ; $(ln) -fs about.html philosophy)
 	(cd rendered; \
 		for lang in en de es fr it; do \
-			$(sh) ../rssg $$lang/news/index.html 'GNUnet.org' > $$lang/news/rss.xml; \
+			$(cp) $$lang/rss.xml $$lang/news/rss.xml; \
 		done)
-	(cd rendered/en ; $(ln) -fs news/rss.xml rss.xml)
-	(cd rendered/de ; $(ln) -fs news/rss.xml rss.xml)
-	(cd rendered/es ; $(ln) -fs news/rss.xml rss.xml)
-	(cd rendered/fr ; $(ln) -fs news/rss.xml rss.xml)
-	(cd rendered/it ; $(ln) -fs news/rss.xml rss.xml)
-
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need
@@ -60,25 +52,16 @@ locale/messages.pot: common/*.j2.inc template/*.j2
 
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/de/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/fr/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/es/LC_MESSAGES/messages.po locale/messages.pot
-	$(msgmerge) -q -U -m --previous locale/it/LC_MESSAGES/messages.po locale/messages.pot
-
+	(for lang in en de es fr it; do \
+		$(msgmerge) -q -U -m --previous locale/$$lang/LC_MESSAGES/messages.po locale/messages.pot ; \
+	done)
 	if $(grep) -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
-
-# sass preprocessor
-css:
-	$(sassc) static/styles.sass static/styles.css
 
 # Compile translation files for use.
 locale-compile:
-	$(pybabel) -q compile -d locale -l en --use-fuzzy
-	$(pybabel) -q compile -d locale -l de --use-fuzzy
-	$(pybabel) -q compile -d locale -l fr --use-fuzzy
-	$(pybabel) -q compile -d locale -l it --use-fuzzy
-	$(pybabel) -q compile -d locale -l es --use-fuzzy
+	(for lang in en de fr it es; do \
+		$(pybabel) -q compile -d locale -l $$lang --use-fuzzy ; \
+	done)
 
 # Process everything related to gettext translations.
 locale: locale-update locale-compile
@@ -86,7 +69,7 @@ locale: locale-update locale-compile
 # Run the jinja2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
-	$(python) ./template.py
+	$(python) ./make_site.py
 
 it: template
 

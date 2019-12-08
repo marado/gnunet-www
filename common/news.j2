@@ -10,17 +10,18 @@
   <body id="mybody">
     {% include "common/navigation.j2.inc" %}
     <div id="body_content" class="bg-near-white">
+      <a href="#" id="jump-top" role="button">
+        <i class="fas fa-chevron-up"></i>
+      </a>
         <div class="container-fluid">
           <div class="container text-center">
             <h1>News</h1>
           </div>
         </div>
         <div class="container">
-          <!--BEGIN-->
-          <article>
+          <article id="newspost-content">
             {% block body_content %}{% endblock %}
           </article>
-          <!--END-->
         </div>
     </div>
     {% include "common/footer.j2.inc" %}

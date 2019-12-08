@@ -1,6 +1,8 @@
 ./*.html
 common/*.inc
 
+old/
+
 *.mo
 locale/*/
 locale/messages.pot
@@ -19,9 +21,8 @@ ru/
 __pycache__
 *.pyc
 
-static/styles.css
-
 sitemap.html
+sitemap.xml
 
 *~
 \#*\#
@@ -30,3 +31,7 @@ futility_engine_loader.sh
 config.mk
 
 *.core
+
+.style.yapf
+help/
+configure

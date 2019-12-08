@@ -4,7 +4,7 @@
     <div class="container">
       <div class="text-center">
         <header>
-          <h1>{{ _("GSoC 2018: GNUnet WebUI") }}</h1>
+          <h1>{{ _("GSoC 2018: GNUnet WebUI (GNUnet Web-based User Interface)") }}</h1>
         </header>
         <br />
         <p>
@@ -13,21 +13,21 @@
           {% endtrans %}
         </p>
       </div>
+      <h4>What was done?</h4>
       <p>
         {% trans %}
-          <strong>What was done?</strong><br />
           In the context of Google Summer of Code 2018, my mentor
           (Martin Schanzenbach) and I have worked on creating and
           extending the REST API of GNUnet. Currently, we mirrored
           the functionality of following commands:
         {% endtrans %}
       </p>
-      <p>
-        gnunet-identity<br />
-        gnunet-namestore<br />
-        gnunet-gns<br />
-        gnunet-peerinfo
-      </p>
+      <ul>
+        <li>gnunet-identity</li>
+        <li>gnunet-namestore</li>
+        <li>gnunet-gns</li>
+        <li>gnunet-peerinfo</li>
+      </ul>
       <p>
         {% trans %}
           Additionally, we developed a website with the Javascript
@@ -36,32 +36,33 @@
           with Sphinx.
         {% endtrans %}
       </p>
+      <h4>Why did we create a REST API?</h4>
       <p>
         {% trans %}
-          <strong>Why did we create a REST API?</strong><br />
-          ... when you can use the command line tools?<br />
-          We need to keep in mind, that everyone has the right to stay secure
-          and private but not everyone feels comfortable using a terminal. The
-          further developed REST access to GNUnet APIs in addition to the new
-          web application allows new users to interact with GNUnet over a well
-          known tool: their browsers. This addition to the C API and the command
-          line tools may attract new users and developers.
+          ... when you can use the command line tools?  We need to
+          keep in mind, that everyone has the right to stay secure and
+          private but not everyone feels comfortable using a
+          terminal. The further developed REST access to GNUnet APIs
+          in addition to the new web application allows new users to
+          interact with GNUnet over a well known tool: their
+          browsers. This addition to the C API and the command line
+          tools may attract new users and developers.
         {% endtrans %}
       </p>
-      <p>
+      <h4>How can we use it?</h4>
+      <ol>
         {% trans %}
-          <strong>How can we use it?</strong><br />
-          1. The REST API developed in GNUnet<br /> The REST API is
-          already merged into the gnunet.git repository
-          (<a href="https://gnunet.org/git/gnunet.git/">GNUnet Main Git</a>).<br />
-          To use the new features, clone the repository
-          and follow the <a href="https://gnunet.org/en/install.html">Installation</a>
-          on gnunet.org. Then, start the rest service with "gnunet-arm -i rest".
-        {% endtrans %}
-      </p>
-      <p>
-        {% trans %}
-          2. The Web Application<br />
+          <li>
+            The REST API developed in GNUnet<br> The REST API is
+            already merged into the gnunet.git repository
+            (<a href="https://gnunet.org/git/gnunet.git/">GNUnet Main Git</a>).<br />
+            To use the new features, clone the repository and follow
+            the <a href="https://gnunet.org/en/install.html">Installation</a>
+            on gnunet.org. Then, start the rest service with
+            "gnunet-arm -i rest".
+          </li>
+        <li>
+          The Web Application<br>
           The web application is available under the gnunet-webui.git
           repository
           (<a href="https://gnunet.org/git/gnunet-webui.git/">GNUnet WebUI Git</a>).<br />
@@ -74,28 +75,27 @@
           in mind, that this website communicates with another localhost
           instance) use "yarn build" for building the web application
           and use the output in the 'dist' directory.
-        {% endtrans %}
-      </p>
-      <p>
-        {% trans %}
-          3. The Documentation<br />
+        </li>
+        <li>
+          The Documentation<br />
           The documentation is available under the gnunet-rest-api.git
           repository
           (<a href="https://gnunet.org/git/gnunet-rest-api.git/">GNUnet REST API Docmentation Git</a>).<br />
           Clone the repository
           and "make html". Then open the 'index.html' under
           'build/html/'.
-        {% endtrans %}
-      </p>
+        </li>
+      {% endtrans %}
+      </ol>
       <p>
         {% trans %}
           Please, give it a try and contact me, if you find any
           bugs or unintentional features. ;)
         {% endtrans %}
       </p>
+      <h4>What can be improved?</h4>
       <p>
         {% trans %}
-          <strong>What can be improved?</strong><br />
           Right now, the build process of the web application may be a
           little too complex for a casual user. We may be able to solve
           this by using docker.<br />  Additionally, the web application

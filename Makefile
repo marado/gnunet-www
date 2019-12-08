@@ -12,7 +12,7 @@ DESTDIR=$(prefix)
 _LOCALELIST= en de fr it es
 _DIRLIST= dist static
 
-.PHONY:	all run locale-compile locale install clean css
+.PHONY:	all run locale-compile locale install clean
 
 .OBJDIR=rendered
 
@@ -20,20 +20,16 @@ _DIRLIST= dist static
 
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
-all: css locale template
-.for _dir in ${_DIRLIST}
-	$(cp) -R ${_dir} rendered/
-.endfor
+all: locale template
 .for _lang in ${_LOCALELIST}
 	($(cp) rendered/static/robots.txt rendered/${_lang})
 	($(cp) rendered/static/stage.robots.txt rendered/${_lang})
 .endfor
 	($(cp) rendered/static/robots.txt rendered/dist/robots.txt)
-	($(cp) favicon.ico rendered/)
-	$(sh) make_sitemap.sh
-.for _lang in ${_LOCALELIST}
-	($(cp) rendered/sitemap.xml rendered/${_lang})
-.endfor
+	# ($(cp) favicon.ico rendered/)
+	# $(sh) make_sitemap.sh
+	($(cp) sitemap.xml rendered/sitemap.xml)
+	($(cp) rendered/sitemap.xml rendered/en/sitemap.xml)
 	($(cp) static/moved.html rendered/frontpage.html)
 	(cd rendered; $(ln) -fs frontpage.html frontpage)
 	($(cp) static/moved_gsoc.html rendered/gsoc.html)
@@ -44,9 +40,6 @@ all: css locale template
 	(cd rendered/node ; $(ln) -fs about.html 397)
 	($(cp) static/moved_about.html rendered/about.html)
 	(cd rendered ; $(ln) -fs about.html philosophy)
-.for _lang in ${_LOCALELIST}
-	(cd rendered; $(sh) ../rssg ${_lang}/news/index.html 'GNUnet News' > ${_lang}/news/rss.xml)
-.endfor
 
 # Extract translateable strings from jinja2 templates.
 locale/messages.pot: template/*.j2 common/*.j2 common/*.j2.inc
@@ -74,10 +67,7 @@ locale: locale-update locale-compile
 # Run the jinja2 templating engine to expand templates to HTML
 # incorporating translations.
 template: locale-compile
-	$(python) ./template.py
-
-css:
-	$(sassc) static/styles.sass static/styles.css
+	$(python) ./make_site.py -vvvv
 
 run:
 .if defined(browser) && !empty(DESTDIR) && !empty(python)

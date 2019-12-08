@@ -31,5 +31,10 @@
       <a href="https://git.gnunet.org/www.git">{{ _("Source code of this site.") }}</a>
       <a href="{{ url_localized('contact.html') }}">{{ _("Report issues with this website.") }}</a>
     </p>
+    <noscript>
+      <p>
+        <a href="#">back to top</a>
+      </p>
+    </noscript>
   </div>
 </footer>
