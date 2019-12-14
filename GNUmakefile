@@ -48,7 +48,7 @@ all: locale template
 # Because of the local i18nfix extractor module we need
 # to set the pythonpath before invoking pybabel.
 locale/messages.pot: common/*.j2.inc template/*.j2
-	$(env) PYTHONPATH=. $(pybabel) -q extract -F locale/babel.map -o locale/messages.pot .
+	$(env) PYTHONPATH=".:./inc" $(pybabel) -q extract -F locale/babel.map -o locale/messages.pot .
 
 # Update translation (.po) files with new strings.
 locale-update: locale/messages.pot
