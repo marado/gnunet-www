@@ -14,7 +14,6 @@ RUN apt-get update && \
       python3-babel \
       python3-jinja2 \
       git \
-      sassc && \
     apt-get clean all && \
     apt-get -y autoremove && \
     rm -rf \
