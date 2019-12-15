@@ -77,18 +77,17 @@ If you intend to write a new post, read this carefully.
   assigned as the title for the rss feed item for this post.
 
 * Every news post must get added as a dict to the newspost list
-  in template.py. If you are not sure what those words mean, search
-  "newsposts" in template.py. There you will find a structure where
-  you have to add a new member including the "," at the end.
+  in www.yml. If you are not sure what those words mean, search
+  "newsposts" in www.yml.
+  There you will find a structure where you have to add a new
+  member.
   New posts get added to the top of the list, not at the bottom
   (this list is also responsible for the 5 newest entries on the
   frontpage).
 
-  {
-        'page': 'name-of-page.html',
-        'date': '2019-10-31',
-        'title': 'My new post'
-  },
+  - page: 2019-0.12.0.html
+    date: 2019-12-15
+    title: GNUnet 0.12.0
 
   * page must be the name of the file without the leading news/
   * date must be a valid date in exactly this format.
