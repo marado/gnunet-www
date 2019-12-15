@@ -12,7 +12,7 @@
   In terms of usability, users should be aware that there are still
   <b>a large number of known open issues</b> in particular with respect to ease
   of use, but also some critical privacy issues especially for mobile users.
-  Also, the nascent network is tiny (about 200 peers) and thus unlikely to
+  Also, the nascent network is tiny and thus unlikely to
   provide good anonymity or extensive amounts of interesting information.
   As a result, the 0.12.0 release is still <b>only suitable for early adopters
   with some reasonable pain tolerance</b>.
@@ -21,16 +21,13 @@
 <ul>
   <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.12.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-0.12.0.tar.gz</a></li>
   <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.12.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-0.12.0.tar.gz.sig</a></li>
-  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz</a></li>
-  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.11.7.tar.gz.sig</a></li>
-  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.8.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.8.tar.gz</a></li>
-  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.8.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.11.8.tar.gz.sig</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.12.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.12.0.tar.gz</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.12.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.12.0.tar.gz.sig</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.12.0.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.12.0.tar.gz</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.12.0.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.12.0.tar.gz.sig</a></li>
 </ul>
 <p>
-  gnunet-fuse and gnunet-gtk were not released again, as there were no changes
-  and the 0.11.8/0.11.7 versions are expected to continue to work fine with
-  gnunet-0.12.0. The GPG key used to sign is:
-  <tt>TODO</tt>
+  The GPG key used to sign is: <tt>3D11063C10F98D14BD24D1470B0998EF86F59B6A</tt>
 </p>
 <p>
   Note that due to mirror synchronization, not all links might be functional
@@ -39,15 +36,27 @@
 </p>
 <h4>Noteworthy changes in 0.12.0 (since 0.11.8)</h4>
 <ul>
-  <li><tt>GNS</tt>: Changed key derivation protocols to adhere with <a href="">LSD001</a>. <a href="https://bugs.gnunet.org/view.php?id=5921">#5921</a></li>
+  <li><tt>GNS</tt>: Changed key derivation protocols to adhere with <a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.txt">LSD001</a>. <a href="https://bugs.gnunet.org/view.php?id=5921">#5921</a></li>
   <li><tt>GNS</tt>: GNS names are not expected to be UTF-8 (as opposed to IDNA). <a href="https://bugs.gnunet.org/view.php?id=5922">#5922</a></li>
   <li><tt>GNS</tt>: GNS NSS plugin now properly handles non-standard IDNA names. <a href="https://bugs.gnunet.org/view.php?id=5927">#5927</a></li>
   <li><tt>GNS/NSE</tt>: Zone revocation proof of work algorithm changed to be less susceptible to specialized ASIC hardware.
   <a href="https://bugs.gnunet.org/view.php?id=3795">#3795</a></li>
   <li><tt>TRANSPORT</tt>: UDP plugin moved to experimental as it is known to be unstable.</li>
-  <li><tt>UTIL</tt>: Improved and documented RSA binary format. <a href="https://bugs.gnunet.org/view.php?id=5968">#5968</a></li>
-  <li><tt>UTIL</tt>: Removed redundant hashing in EdDSA signatures. <a href="https://bugs.gnunet.org/view.php?id=5398">#5398</a></li>
-  <li><tt>Buildsystem</tt>: A significant number of build system issued have been fixed and improvements implemented.</li>
+  <li><tt>UTIL</tt>:
+    <ul>
+      <li>Improved and documented RSA binary format. <a href="https://bugs.gnunet.org/view.php?id=5968">#5968</a></li>
+      <li>Removed redundant hashing in EdDSA signatures. <a href="https://bugs.gnunet.org/view.php?id=5398">#5398</a></li>
+      <li>New <tt>gnunet-logread</tt> binary for log auditing (requires perl).</li>
+      <li>Now using <a href="https://tweetnacl.cr.yp.to/">TweetNaCl</a> for ECDH implementation.</li>
+    </ul>
+  </li>
+  <li><tt>Buildsystem</tt>: A significant number of build system issued have been fixed and improvements implemented, including:
+    <ul>
+      <li>GLPK dependency dropped.</li>
+      <li>Fixed guix package definition.</li>
+    </ul>
+  </li>
+  <li><tt>Documentation</tt>: Improvements to the handbook and documentation.</li>
 </ul>
 <h4>Known Issues</h4>
 <ul>
