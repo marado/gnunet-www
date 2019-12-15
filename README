@@ -67,6 +67,8 @@ Writing News
 
 Writing news posts for gnunet.org involves a couple of steps.
 If you intend to write a new post, read this carefully.
+Note that this section will be worked into a separate onboarding
+section in the manual.
 
 * Every news post is wrapped in an <article> element, outside
   of the news post itself.
@@ -132,8 +134,8 @@ Additional Notes
 Please use HTML codes, not international signs as found on your keyboard.
 
 This website has been tested with:
-* python 3.6.5 and jinja2 2.9.6.
 * python 3.7.1, Babel 2.6.0, py-jinja2 2.10 (pkgsrc, NetBSD 8.0)
+
 Since python development in collaborative environments with
 a whole range of possibilities in what your environment looks
 like, please state problems on the mailinglist instead of just
