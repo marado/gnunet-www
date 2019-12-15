@@ -42,6 +42,7 @@
   <li><tt>GNS</tt>: Changed key derivation protocols to adhere with <a href="">LSD001</a>. <a href="https://bugs.gnunet.org/view.php?id=5921">#5921</a></li>
   <li><tt>GNS</tt>: GNS names are not expected to be UTF-8 (as opposed to IDNA). <a href="https://bugs.gnunet.org/view.php?id=5922">#5922</a></li>
   <li><tt>GNS</tt>: GNS NSS plugin now properly handles non-standard IDNA names. <a href="https://bugs.gnunet.org/view.php?id=5927">#5927</a></li>
+  <li><tt>GNS</tt>: GNS NSS plugin will refuse to process requests from root (as GNUnet code should never run as root). <a href="https://bugs.gnunet.org/view.php?id=5927">#5907</a></li>
   <li><tt>GNS/NSE</tt>: Zone revocation proof of work algorithm changed to be less susceptible to specialized ASIC hardware.
   <a href="https://bugs.gnunet.org/view.php?id=3795">#3795</a></li>
   <li><tt>TRANSPORT</tt>: UDP plugin moved to experimental as it is known to be unstable.</li>
