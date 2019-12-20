@@ -23,9 +23,6 @@ symlinks:
     - file: about.html
       targets:
         - philosophy
-    - file: gns.html
-      targets:
-        - gns
     - file: node/about.html
       targets:
         - "397"
@@ -45,9 +42,6 @@ staticfiles:
     - file: moved_about.html
       targets:
         - about.html
-    - file: moved_gns.html
-      targets:
-        - gns.html
 meetingnotes:
   2013: 2013-12-27
   2014: 2014-12-28

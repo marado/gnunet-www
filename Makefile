@@ -33,8 +33,6 @@ all: locale template
 	(cd rendered; $(ln) -fs frontpage.html frontpage)
 	($(cp) static/moved_gsoc.html rendered/gsoc.html)
 	(cd rendered; $(ln) -fs gsoc.html gsoc)
-	($(cp) static/moved_gns.html rendered/gns.html)
-	(cd rendered; $(ln) -fs gns.html gns)
 	($(mkdir) -p rendered/node ; $(cp) static/moved_about.html rendered/node/about.html)
 	(cd rendered/node ; $(ln) -fs about.html 397)
 	($(cp) static/moved_about.html rendered/about.html)
