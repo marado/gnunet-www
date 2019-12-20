@@ -42,6 +42,7 @@
       <li>Names are not expected to be UTF-8 (as opposed to IDNA). <a href="https://bugs.gnunet.org/view.php?id=5922">#5922</a></li>
       <li>NSS plugin now properly handles non-standard IDNA names. <a href="https://bugs.gnunet.org/view.php?id=5927">#5927</a></li>
       <li>NSS plugin will refuse to process requests from root (as GNUnet code should never run as root). <a href="https://bugs.gnunet.org/view.php?id=5927">#5907</a></li>
+      <li>Fixed BOX service/protocol label parsing (for TLSA et al)</li>
     </ul>
   </li>
   <li><tt>GNS/NSE</tt>: Zone revocation proof of work algorithm changed to be less susceptible to specialized ASIC hardware.
@@ -65,8 +66,6 @@
 </ul>
 <h4>Known Issues</h4>
 <ul>
-  <li>MySQL plugin fails to build. If you do not need it, use the configure
-switch <tt>--without-mysql</tt> to build.</li>
   <li>There are known major design issues in the TRANSPORT, ATS and CORE subsystems which will need to be addressed in the future to achieve acceptable usability, performance and security.</li>
   <li>There are known moderate implementation limitations in CADET that negatively impact performance.</li>
   <li>There are known moderate design issues in FS that also impact usability and performance.</li>
