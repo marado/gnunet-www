@@ -67,6 +67,8 @@ Writing News
 
 Writing news posts for gnunet.org involves a couple of steps.
 If you intend to write a new post, read this carefully.
+Note that this section will be worked into a separate onboarding
+section in the manual.
 
 * Every news post is wrapped in an <article> element, outside
   of the news post itself.
@@ -77,18 +79,17 @@ If you intend to write a new post, read this carefully.
   assigned as the title for the rss feed item for this post.
 
 * Every news post must get added as a dict to the newspost list
-  in template.py. If you are not sure what those words mean, search
-  "newsposts" in template.py. There you will find a structure where
-  you have to add a new member including the "," at the end.
+  in www.yml. If you are not sure what those words mean, search
+  "newsposts" in www.yml.
+  There you will find a structure where you have to add a new
+  member.
   New posts get added to the top of the list, not at the bottom
   (this list is also responsible for the 5 newest entries on the
   frontpage).
 
-  {
-        'page': 'name-of-page.html',
-        'date': '2019-10-31',
-        'title': 'My new post'
-  },
+  - page: 2019-0.12.0.html
+    date: 2019-12-15
+    title: GNUnet 0.12.0
 
   * page must be the name of the file without the leading news/
   * date must be a valid date in exactly this format.
@@ -133,8 +134,8 @@ Additional Notes
 Please use HTML codes, not international signs as found on your keyboard.
 
 This website has been tested with:
-* python 3.6.5 and jinja2 2.9.6.
 * python 3.7.1, Babel 2.6.0, py-jinja2 2.10 (pkgsrc, NetBSD 8.0)
+
 Since python development in collaborative environments with
 a whole range of possibilities in what your environment looks
 like, please state problems on the mailinglist instead of just
