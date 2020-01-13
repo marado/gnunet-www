@@ -1,0 +1,28 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+  <h1>GNS Technical Specification Milestone 2/4</h1>
+<p>
+  We are happy to announce the completion of the second milestone for the GNS
+  Specification. The second milestone consists of documenting the GNS name
+  resolution process and record handling.<br>
+  With the release of GNUnet 0.12.x, the currently specified protocol is
+  implemented according to the specification. As before, the draft specification
+  <b>LSD001</b> can be found at:
+</p>
+<ul>
+  <li>Git: <a href="git://gnunet.org/lsd0001.git">LSD001</a></li>
+  <li><a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.txt">Link to TXT version</a></li>
+  <li><a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.html">Link to HTML version</a></li>
+</ul>
+<p>
+  As already announced on the <a href="https://lists.gnu.org/archive/html/gnunet-developers/2020-01/msg00000.html">mailing list</a>,
+  the Go implementation of GNS is also proceeding as planned and implements the
+  specification.
+</p>
+<p>
+  The next and third milestone will cover namespace revocation.
+</p>
+<p>
+  This work is generously funded by <a href="https://nlnet.nl">NLnet</a> as part of their <a href="https://nlnet.nl/project/GNS/">Search and discovery fund</a>.
+</p>
+{% endblock body_content %}
