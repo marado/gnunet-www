@@ -56,11 +56,11 @@ meetingnotes:
   2017: 2017-12-27
   2018: 2018-12-27
 newsposts:
-  - page: 2020-0.12.2.html
+  - page: 2020-01-0.12.2.html
     date: 2020-01-13
     title: GNUnet 0.12.2
   - page: 2020-01-GNSSpec2.html
-    date: 2019-01-12
+    date: 2020-01-12
     title: GNS Specification Milestone 2/4
     abstract:
     content:
