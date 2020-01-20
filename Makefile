@@ -43,6 +43,7 @@ all: locale template
 		for lang in en de es fr it; do \
 			$(cp) $$lang/rss.xml $$lang/news/rss.xml; \
 		done)
+	($(mkdir) -p rendered/.well-known ; $(cp) .well-known/security.txt rendered/.well-known/)
 
 # Extract translateable strings from jinja2 templates.
 # Because of the local i18nfix extractor module we need
