@@ -11,4 +11,4 @@ Disclosure: Full
 
 # Happy to acknowledge once there is something to acknowledge,
 # for now 404 as we had no incidents.
-Acknowledgement: https://taler.net/en/security.html
+Acknowledgement: https://gnunet.org/en/security.html
