@@ -185,7 +185,7 @@ videoslist:
       - "https://video.fosdem.org/2020/UA2.220/dip_gnunet.webm"
       - "https://video.fosdem.org/2020/UA2.220/dip_gnunet.mp4"
     slides:
-      - "https://git.gnunet.org/presentations.git/plain/FOSDEM20/20200202_fosdem20_gnunet.pdf"
+      - "https://git.gnunet.org/presentations.git/plain/fosdem20/20200202_fosdem20_gnunet.pdf"
     comment:
   - year: 2019
     authors:
