@@ -1,0 +1,14 @@
+# Our security address(es). Two just to be safe.
+Contact: grothoff@gnunet.org
+Contact: schanzen@gnunet.org
+
+# Our PGP keys:
+Encryption: https://grothoff.org/christian/grothoff.asc
+Encryption: https://schanzen.eu/schanzen.asc
+
+# Our disclosure policy:
+Disclosure: Full
+
+# Happy to acknowledge once there is something to acknowledge,
+# for now 404 as we had no incidents.
+Acknowledgement: https://gnunet.org/en/security.html
