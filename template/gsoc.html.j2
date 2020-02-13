@@ -9,7 +9,7 @@
   <div class="row">
     <div class="col-2 d-none d-lg-block"><!-- for large viewports show menu for better orientation -->
       <nav class="nav subnav position-fixed flex-column border-right" style="position:fixed">
-      <a class="nav-link" href="#current">{{ _("Current projects") }}</a>
+      <a class="nav-link" href="#current">{{ _("Ideas 2020") }}</a>
       <a class="nav-link" href="#past">{{ _("Past projects") }}</a>
       <a class="nav-link" href="#finished">{{ _("Finished projects") }}</a>
       </nav>
@@ -26,48 +26,6 @@
 
 
       <h2><a name="current" class="subnav-anchor"></a>{{ _("Current projects") }}</h2>
-      <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
-      <h2><a name="past" class="subnav-anchor"></a>{{ _("Past projects") }}</h2>
-      <p>
-        Past projects: Previously proposed, but left unfinished. Inspiration for students.
-      </p>
-            <section>
-        <h4>Android Port</h4>
-        <p>
-          {% trans %}
-            It is time for GNUnet to run properly on Android.  Note that
-            GNUnet is written in C, and this is not about rewriting
-            GNUnet in Java, but about getting the C code to run on Android.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            <strong>Mentors:</strong> <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
-          {% endtrans %}
-        </p>
-      </section>
-
-      <section>
-        <h4>Help with Continuous Integration setup</h4>
-        <p>
-          {% trans %}
-            There is a push for migrating our CI to Gitlab.  The CI should
-            eventually not just run "make check" on various platforms, but also
-            perform tests with multiple peers running in different VMs with
-            specific network topologies (i.e. NAT) between them being simulated.
-            The CI should also be integrated with Gauger for performance
-            regression analysis.  Running jobs only when dependencies have changed
-            and scripting more granular triggers or ideally automatic dependency
-            discovery (as done by the autotools) is also important.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            <strong>Mentors:</strong> TBD
-          {% endtrans %}
-        </p>
-      </section>
-
       <section>
         <h4>re:claimID/GNUnet Browser Plugin</h4>
         <p>
@@ -134,6 +92,49 @@
           {% endtrans %}
         </p>
       </section>
+
+      <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
+      <h2><a name="past" class="subnav-anchor"></a>{{ _("Past projects") }}</h2>
+      <p>
+        Past projects: Previously proposed, but left unfinished. Inspiration for students.
+      </p>
+            <section>
+        <h4>Android Port</h4>
+        <p>
+          {% trans %}
+            It is time for GNUnet to run properly on Android.  Note that
+            GNUnet is written in C, and this is not about rewriting
+            GNUnet in Java, but about getting the C code to run on Android.
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            <strong>Mentors:</strong> <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
+          {% endtrans %}
+        </p>
+      </section>
+
+      <section>
+        <h4>Help with Continuous Integration setup</h4>
+        <p>
+          {% trans %}
+            There is a push for migrating our CI to Gitlab.  The CI should
+            eventually not just run "make check" on various platforms, but also
+            perform tests with multiple peers running in different VMs with
+            specific network topologies (i.e. NAT) between them being simulated.
+            The CI should also be integrated with Gauger for performance
+            regression analysis.  Running jobs only when dependencies have changed
+            and scripting more granular triggers or ideally automatic dependency
+            discovery (as done by the autotools) is also important.
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            <strong>Mentors:</strong> TBD
+          {% endtrans %}
+        </p>
+      </section>
+
 
       <section>
         <h4>Enable all networking applications to run over GNUnet out of the box</h4>
