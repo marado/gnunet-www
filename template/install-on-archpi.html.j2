@@ -50,7 +50,7 @@
 
   <p><code>
   $ cd gnunet<br>
-  $ export GNUNET_PREFIX=/usr # for example, other locations possible<br>
+  $ export GNUNET_PREFIX=/usr/local # for example, other locations possible<br>
   $ ./bootstrap # Run this to generate the configure files.<br>
   $ ./configure --prefix=$GNUNET_PREFIX # Use --help to see the various flags available to you.<br>
   $ make -j$(nproc || echo -n 1)<br>
@@ -72,8 +72,7 @@
   <code>
     $ cd ../gnunet-gtk<br>
     $ ./bootstrap<br>
-    $ export GNUNET_PREFIX=/usr # for example, other locations possible<br>
-    $ export CFLAGS="-g -Wall -O0"<br>
+    $ export GNUNET_PREFIX=/usr/local # for example, other locations possible<br>
     $ ./configure --prefix=$GNUNET_PREFIX --with-gnunet=$GNUNET_PREFIX<br>
     $ make -j$(nproc || echo -n 1)<br>
     $ sudo make install<br>
