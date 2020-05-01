@@ -56,3 +56,21 @@
     <![endif]-->
 
     <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="{{ url_localized('news/rss.xml') }}" />
+
+    <!-- opengraph -->
+    <!--
+      We do not actively use Twitter or endorse it, but people might
+      use our posts there or other websites might conform to the
+      twitter namespace of the opengraph. More opengraph must be
+      implemented in the sitecode.
+      -->
+    <meta name="twitter:card" content="article" />
+    <meta name="twitter:site" content="@gnunet" />
+    <meta name="twitter:creator" content="@gnunet" />
+    {#
+    TODO: Implement the necessary functions.
+    <meta property="og:url" content="{{ url_localized(url) }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ summary }}" />
+    <meta property="og:image" content="" />
+    #}
