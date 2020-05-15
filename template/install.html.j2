@@ -62,7 +62,7 @@ If you have any queries about the installation or the usage, please <a href="eng
     {% trans %}
     Now, you need to decide if you want to install GNUnet from the release
     tarball or from git. If you want to use GNUnet and there is no binary
-    package available for you OS, you should stick with the release tarball.
+    package available for your OS, you should stick with the release tarball.
     If you want to develop using the most recent build, you should go with
     the <a href="https://git.gnunet.org/">git repository</a>.
     {% endtrans %}
@@ -89,11 +89,11 @@ If you have any queries about the installation or the usage, please <a href="eng
    {% endtrans %}
   </p>
   <code class="block">
-    $ export GNUNET_PREFIX=/usr/local/lib # or other directory of your choice<br>
+    $ export GNUNET_PREFIX=/usr/local # or other directory of your choice<br>
     $ sudo addgroup gnunetdns <br>
     $ sudo adduser --system --home "/var/lib/gnunet" --group gnunet --shell /bin/sh<br>
     $ ./bootstrap # only if you install from git <br>
-    $ ./configure --prefix=$GNUNET_PREFIX/ <br>
+    $ ./configure --prefix=$GNUNET_PREFIX <br>
     $ make
   </code>
   <p>
