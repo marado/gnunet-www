@@ -55,6 +55,7 @@ meetingnotes:
   2016: 2016-12-28
   2017: 2017-12-27
   2018: 2018-12-27
+  2019: 2019-12-27
 newsposts:
   - page: 2020-01-0.12.2.html
     date: 2020-01-13
@@ -173,6 +174,20 @@ newsposts:
 # <!-- FIXME 2013: no media link. <li>Roger Dingledine and Jacob Appelbaum, "Q &amp; A", Technische Universität München (<a href="https://archive.org/details/RogerDingledineAndJacobAppelbaumQAMarathon" download>download</a>)</li> -->
 # <!-- FIXME 2013: no source link on web. <li>Maximilian Szengel, <a href="">"Decentralized Evaluation of Regular Expressions for Capability Discovery in Peer-to-Peer Networks"</a>, Technische Universität München</li> -->
 videoslist:
+  - year: 2020
+    authors:
+      - "Martin Schanzenbach"
+    location: "FOSDEM20"
+    description: "GNUnet presented at the Decentralized Internet and Privacy devroom at FOSDEM20 in 2020."
+    name: "GNUnet at FOSDEM20"
+    sources:
+      - "https://git.gnunet.org/gnunet-videos-2020.git/plain/FOSDEM20/dip_gnunet.webm"
+    mirror_sources:
+      - "https://video.fosdem.org/2020/UA2.220/dip_gnunet.webm"
+      - "https://video.fosdem.org/2020/UA2.220/dip_gnunet.mp4"
+    slides:
+      - "https://git.gnunet.org/presentations.git/plain/fosdem20/20200202_fosdem20_gnunet.pdf"
+    comment:
   - year: 2019
     authors:
       - "Martin Schanzenbach"

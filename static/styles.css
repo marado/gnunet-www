@@ -47,6 +47,10 @@ code {
   margin-bottom: 1em;
   word-wrap: break-word; }
 
+code.block {
+  display: block; }
+
+
 a.btn {
   text-decoration: none !important;
   color: white !important;

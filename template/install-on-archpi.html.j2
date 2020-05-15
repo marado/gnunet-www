@@ -16,8 +16,8 @@
   <h2>{{ _("Requirements for Raspberry Pi 3") }}</h2>
 
   <p>First you need the hardware. This tutorial works with a Raspberry Pi 3 or
-  any Arch Linux system. The other Pi versions I haven't tested, but they should
-  probably work, too. To install Arch Linux on the Pi3, follow the instructions
+  any Arch Linux system. The other Pi versions have not been tested, but they
+  should work, too. To install Arch Linux on the Pi3, follow the instructions
   from <a
   href="https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3">archlinuxarm.org</a>.</p>
 
@@ -25,7 +25,7 @@
   install the tools for building new software.</p>
 
   <p><code>
-  > sudo pacman -S base-devel
+  $ sudo pacman -S base-devel
   </code></p>
 
   <p>Now we can continue to install the following Arch Linux dependencies to
@@ -43,18 +43,18 @@
   in the next step:<p>
 
   <p><code>
-  > git clone https://gnunet.org/git/gnunet.git<br>
+  $ git clone https://gnunet.org/git/gnunet.git<br>
   </code></p>
 
   <p>Now it's time to compile and install GNUnet.</p>
 
   <p><code>
-  > cd gnunet<br>
-  > export GNUNET_PREFIX=/usr # for example, other locations possible<br>
-  > ./bootstrap # Run this to generate the configure files.<br>
-  > ./configure --prefix=$GNUNET_PREFIX --disable-documentation # Use --help to see the various flags available to you.<br>
-  > make -j$(nproc || echo -n 1)<br>
-  > sudo make install<br>
+  $ cd gnunet<br>
+  $ export GNUNET_PREFIX=/usr/local # for example, other locations possible<br>
+  $ ./bootstrap # Run this to generate the configure files.<br>
+  $ ./configure --prefix=$GNUNET_PREFIX # Use --help to see the various flags available to you.<br>
+  $ make -j$(nproc || echo -n 1)<br>
+  $ sudo make install<br>
   </code></p>
 
   <p>Congrats! GNUnet is now installed!</p>
@@ -66,14 +66,16 @@
   <p><code>
   $ pacman -Su gtk3 glade
   </code></p>
+  <p><code>
+  $ git clone https://gnunet.org/git/gnunet-gtk.git<br>
+  </code></p>
   <code>
     $ cd ../gnunet-gtk<br>
     $ ./bootstrap<br>
-    $ export GNUNET_PREFIX=/usr # for example, other locations possible
-    $ export CFLAGS="-g -Wall -O0"<br>
+    $ export GNUNET_PREFIX=/usr/local # for example, other locations possible<br>
     $ ./configure --prefix=$GNUNET_PREFIX --with-gnunet=$GNUNET_PREFIX<br>
     $ make -j$(nproc || echo -n 1)<br>
-    $ sudo make install
+    $ sudo make install<br>
   </code>
 
   <h2>{{ _("Run") }}</h2>
@@ -82,20 +84,20 @@
   ~/.config/gnunet.conf. We can start with an empty file for now:</p>
 
   <p><code>
-  > touch ~/.config/gnunet.conf
+  $ touch ~/.config/gnunet.conf
   </code></p>
    <br />
   <p>Now we can start it with the commandline tool gnunet-arm (Automatic Restart
   Manager).</p>
 
   <p><code>
-  > gnunet-arm -s
+  $ gnunet-arm -s
   </code></p>
 
   <p>It starts the default GNUnet services. We can list them with the -I option:</p>
 
   <p><code>
-  > gnunet-arm -I<br>
+  $ gnunet-arm -I<br>
   Running services:<br>
   ats (gnunet-service-ats)<br>
   revocation (gnunet-service-revocation)<br>
@@ -125,7 +127,7 @@
   <p>For stopping GNUnet again we can use the -e option.</p>
 
   <p><code>
-  > gnunet-arm -e
+  $ gnunet-arm -e
   </code></p>
 
   <h2>{{ _("Make sure, it works!") }}</h2>
