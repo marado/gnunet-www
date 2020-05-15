@@ -26,30 +26,31 @@ If you have any queries about the installation or the usage, please <a href="eng
   </div>
 
   <h3>Binary packages</h3><br/>
-  <div class="row container justify-content-center">
-    <div>
-      {% trans %}
-      We recommend to use binary packages provided by the package manager integrated
-      within your Operating System. GNUnet is reportedly available for at least:
+  <p>
+    {% trans %}
+    We recommend to use binary packages provided by the package manager integrated
+    within your Operating System. GNUnet is reportedly available for at least:
 
-      <a href="https://pkgs.alpinelinux.org/package/edge/testing/x86_64/gnunet">Alpine</a>
-      and <a href="https://copr.fedorainfracloud.org/coprs/yosl/gnunet/">Fedora (Copr)</a>.
-      There is also a <a href="https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnunet.rb">Homebrew</a> package available.
+    <a href="https://pkgs.alpinelinux.org/package/edge/testing/x86_64/gnunet">Alpine</a>
+    and <a href="https://copr.fedorainfracloud.org/coprs/yosl/gnunet/">Fedora (Copr)</a>.
+    There is also a <a href="https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnunet.rb">Homebrew</a> package available.
 
-      If GNUnet is available for your Operating System and it is missing,
-      send us feedback so that we can add it to this list. Furthermore, if
-      you are interested in packaging GNUnet for your Operating System,
-      get in touch with us at gnunet-developers@gnu.org if you require
-      help with this job.
+    If GNUnet is available for your Operating System and it is missing,
+    send us feedback so that we can add it to this list. Furthermore, if
+    you are interested in packaging GNUnet for your Operating System,
+    get in touch with us at gnunet-developers@gnu.org if you require
+    help with this job.
 
-      If you were using an Operating System with the apt package manager,
-      GNUnet could be installed as simple as:
-      {% endtrans %}
-      <code>
-      $ apt-get install gnunet
-      </code>
-    </div>
-  </div>
+    If you were using an Operating System with the Alpine package manager,
+    GNUnet could be installed as simple as:
+    {% endtrans %}
+  </p>
+  <code class="block">
+    $ apk add gnunet
+  </code>
+  <p>
+   Please beware that some distributions may include outdated GNUnet packages!
+  </p>
   <h3>From source</h3>
   <p>
     {% trans %}
@@ -79,7 +80,7 @@ If you have any queries about the installation or the usage, please <a href="eng
    To compile GNUnet, execute:
    {% endtrans %}
   </p>
-  <code>
+  <code class="block">
     $ export GNUNET_PREFIX=/usr/local/lib # or other directory of your choice<br>
     # addgroup gnunetdns <br>
     # adduser --system --home "/var/lib/gnunet" --group gnunet --shell /bin/sh<br>
@@ -94,7 +95,7 @@ If you have any queries about the installation or the usage, please <a href="eng
     And finally install GNUnet with:
     {% endtrans %}
   </p>
-  <code>
+  <code class="block">
     # make install
   </code>
   <p>
@@ -102,7 +103,7 @@ If you have any queries about the installation or the usage, please <a href="eng
     You can now start GNUnet by running:
     {% endtrans %}
   </p>
-  <code>
+  <code class="block">
     $ gnunet-arm -s
   </code>
   <p>
