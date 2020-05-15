@@ -85,13 +85,22 @@ If you have any queries about the installation or the usage, please <a href="eng
   </code>
   <p>
    {% trans %}
+   Before building GNUnet, make sure that you setup the required groups and
+   add your user to the group <code>gnunet</code>:
+   {% endtrans %}
+  </p>
+  <code class="block">
+    # addgroup gnunetdns <br>
+    # adduser --system --home "/var/lib/gnunet" --group gnunet --shell /bin/sh<br>
+    # usermod -a -G gnunet &lt;username&gt;
+  </code>
+  <p>
+   {% trans %}
    To compile GNUnet, execute:
    {% endtrans %}
   </p>
   <code class="block">
     $ export GNUNET_PREFIX=/usr/local/lib # or other directory of your choice<br>
-    $ sudo addgroup gnunetdns <br>
-    $ sudo adduser --system --home "/var/lib/gnunet" --group gnunet --shell /bin/sh<br>
     $ ./bootstrap # only if you install from git <br>
     $ ./configure --prefix=$GNUNET_PREFIX/.. <br>
     $ make
