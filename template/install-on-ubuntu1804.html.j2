@@ -30,12 +30,12 @@
     A. They are required for some experimental GNUnet features.
   </p>
   <code>
-      $ sudo apt install git libtool autoconf autopoint \<br>
+      $ sudo apt install git libtool autoconf autopoint libargon2-dev\<br>
       build-essential libgcrypt-dev libidn11-dev zlib1g-dev \<br>
       libunistring-dev libglpk-dev miniupnpc libextractor-dev \<br>
       libjansson-dev libcurl4-gnutls-dev gnutls-bin libsqlite3-dev \<br>
       openssl libnss3-tools libmicrohttpd-dev libopus-dev libpulse-dev \<br>
-      libogg-dev
+      libogg-dev libsodium-dev
   </code>
 
   <h2>{{ _("Make an installation directory") }}</h2>
@@ -120,7 +120,7 @@
 
   <code>
       $ sudo cp /etc/nsswitch.conf /etc/nsswitch.conf.original<br>
-      $ sudo sed -i -E 's/^(hosts:.*) dns/\1 gns [NOTFOUND=return] dns/' /etc/nsswitch.conf 
+      $ sudo sed -i -E 's/^(hosts:.*) dns/\1 gns [NOTFOUND=return] dns/' /etc/nsswitch.conf
   </code>
 
   <p>Now in the line starting with "hosts" should contain an entry "gns [NOTFOUND=return]" before the "dns" entry like this:</p>
@@ -146,12 +146,12 @@
   </code>
  <br />
 
-  
+
   <p>
     Now we created the configuration file. Please check the handbook for a first <a href="https://docs.gnunet.org/handbook/gnunet.html#Minimal-configuration">minimal configuration</a>. But in general, we dont need to configure anything in particular for now.
   </p>
 
-To go on, please <a href="https://gnunet.org/en/use.html">move over here</a>: 
+To go on, please <a href="https://gnunet.org/en/use.html">move over here</a>:
 
   <h2>{{ _("Use GNUnet!") }}</h2>
   <p>
@@ -178,4 +178,3 @@ To go on, please <a href="https://gnunet.org/en/use.html">move over here</a>:
 
 </article>
 {% endblock body_content %}
-
