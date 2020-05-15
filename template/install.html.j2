@@ -77,13 +77,21 @@ If you have any queries about the installation or the usage, please <a href="eng
   </div>
   <p>
    {% trans %}
+   Alternatively, get the sources from git by entering:
+   {% endtrans %}
+  </p>
+  <code class="block">
+    $ git clone https://gnunet.org/git/gnunet.git
+  </code>
+  <p>
+   {% trans %}
    To compile GNUnet, execute:
    {% endtrans %}
   </p>
   <code class="block">
     $ export GNUNET_PREFIX=/usr/local/lib # or other directory of your choice<br>
-    # addgroup gnunetdns <br>
-    # adduser --system --home "/var/lib/gnunet" --group gnunet --shell /bin/sh<br>
+    $ sudo addgroup gnunetdns <br>
+    $ sudo adduser --system --home "/var/lib/gnunet" --group gnunet --shell /bin/sh<br>
     $ ./bootstrap # only if you install from git <br>
     $ ./configure --prefix=$GNUNET_PREFIX/ <br>
     $ make
@@ -91,12 +99,12 @@ If you have any queries about the installation or the usage, please <a href="eng
   <p>
     {% trans %}
     You can find more configuration flags in the
-    <a href="https://git.gnunet.org/gnunet.git/tree/README">README</a>.
-    And finally install GNUnet with:
+    <a href="https://git.gnunet.org/gnunet.git/tree/README">README</a>.<br>
+    Install GNUnet with:
     {% endtrans %}
   </p>
   <code class="block">
-    # make install
+    $ (sudo) make install # you only need sudo if your GNUNET_PREFIX is not writeable by your user
   </code>
   <p>
     {% trans %}
