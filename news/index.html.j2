@@ -16,11 +16,13 @@
           </div>
         </div>
         <div class="row">
+          <ul class="timeline">
           {% for item in newsdata %}
-            <div class="col-lg-4">
+            <li>
               {{ news.newspreview(item) }}
-            </div>
+            </li>
           {% endfor %}
+          </ul>
         </div>
       </article>
     </div>

@@ -1,0 +1,33 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="container text-center">
+        <h1>{{ _("Roadmap") }}</h1>
+        <section>
+          <p>
+           This is our roadmap.
+          </p>
+        </section>
+      </div>
+
+      <ul class="timeline">
+        <li>
+          <b>0.13.0</b>
+          <i>31.6.2020, 2020</i>
+          <p>This release will include...</p>
+        </li>
+        <li>
+          <b>0.14.0</b>
+          <i>2021</i>
+          <p>This release will include...</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-6">
+    </div>
+  </div>
+</div>
+
+{% endblock body_content %}
