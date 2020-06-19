@@ -43,7 +43,7 @@ def main():
     # rm_rf("rendered")
     x = gen_site(DEBUG)
     conf = x.load_config("www.yml")
-    x.gen_abstract(conf, "newsposts", "abstract", "page", 1000)
+    x.gen_abstract(conf, "newsposts", "abstract", "page", 500)
     #    for lang in conf["langs_full"]:
     #        x.gen_newspost_content(conf, "newsposts", "content", "page", lang)
     x.gen_newspost_content(conf, "newsposts", "content", "page", "en")
