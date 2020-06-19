@@ -36,7 +36,6 @@
   <div class="collapse navbar-collapse bg-near-black" id="navbarMain">
     <ul class="navbar-nav mr-auto nav">
       <li class="nav-link"><a href="{{ url_localized('about.html') }}">{{ _("About") }}</a></li>
-      <li class="nav-link"><a href="{{ url_localized('roadmap.html') }}">{{ _("Roadmap") }}</a></li>
 
       <li class="nav-link"><a href="{{ url_localized('news/index.html') }}">{{ _("News") }}</a></li>
       <li class="nav-item dropdown">
@@ -60,6 +59,7 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ url_localized('architecture.html') }}">{{ _("System Architecture") }}</a></li>
+          <li class="nav-link"><a href="{{ url_localized('roadmap.html') }}">{{ _("Roadmap") }}</a></li>
           <li><a class="dropdown-item" href="https://bugs.gnunet.org" target="_blank">{{ _("Bug Tracker") }}</a></li>
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/doxygen/">{{ _("Source Code Documentation") }}</a></li>
