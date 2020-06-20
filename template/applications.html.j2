@@ -4,28 +4,13 @@
   <div class="container">
     <div class="row">
       <div class="container text-center">
-        <h1>{{ _("Featured Applications") }}</h1>
+        <h1>{{ _("Applications provided by GNUnet") }}</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4">
-      <section>
-      <h3>{{ _("GNU Taler (Alpha)") }}</h3>
-      <p>
-        {% trans %}
-        <a href="https://taler.net/">GNU Taler</a>
-	is a new privacy-preserving electronic payment system.
-	Payments are cryptographically
-        secured and are confirmed within milliseconds with
-        extremely low transaction costs.
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
-    <div class="col-lg-4">
-      <section>
-      <h3>{{ _("The GNU Name System") }}</h3>
-
+            <div class="col-lg-6">
+        <section>
+        <h3>{{ _("The GNU Name System") }}</h3>
       <p>
         {% trans %}
           The <a href="https://gnunet.org/en/gns.html">GNU Name System (GNS)</a>
@@ -40,10 +25,17 @@
         {% endtrans %}
       </p>
       </section>
-    </div>
-     <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4">
+        <center><img style="width: 14em" src="{{ url_static('images/gns-logo.png') }}"  alt="GNS" /></center>
+      </div>
+
+  </div>
+  <hr/>
+ <div class="row">
+   <div class="col-lg-6">
       <section>
-      <h3>{{ _("re:claimID") }}</h3>
+      <h3>{{ _("Self-sovereign, decentralized identity provider") }}</h3>
       <p>
         {% trans %}
         <a href="https://reclaim-identity.io/">re:claimID</a>
@@ -54,9 +46,13 @@
       </p>
       </section>
     </div>
-  </div>
-  <div class="row">
     <div class="col-lg-4">
+    <center><img style="width: 14em" src="https://reclaimid.gitlab.io/assets/reclaim_logo.png"  alt="re:claimID" /></center>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+      <div class="col-lg-6">
       <section>
       <h3>{{ _("Filesharing (Alpha)") }}</h3>
       <p>
@@ -68,8 +64,11 @@
         {% endtrans %}
       </p>
       </section>
-    </div>
-    <div class="col-lg-4">
+      </div>
+  </div>
+  <hr/>
+  <div class="row">
+      <div class="col-lg-6">
       <section>
       <h3>{{ _("Conversation (Pre-Alpha)") }}</h3>
       <p>
@@ -80,18 +79,39 @@
         {% endtrans %}
       </p>
       </section>
-    </div>
+      </div>
   </div>
   </div>
 </div>
 
-<div class="container-fluid c_acronym link-white bluebox">
+<div class="container-fluid">
   <div class="container">
     <div class="row">
       <div class="container text-center">
-        <h1>{{ _("Upcoming Applications") }}</h1>
+        <h1>{{ _("Applications utilizing GNUnet") }}</h1>
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-6">
+      <section>
+      <h3>{{ _("GNU Taler (Alpha)") }}</h3>
+      <p>
+        {% trans %}
+        <a href="https://taler.net/">GNU Taler</a>
+        is a new privacy-preserving electronic payment system.
+        Payments are cryptographically
+        secured and are confirmed within milliseconds with
+        extremely low transaction costs.
+        {% endtrans %}
+      </p>
+      </section>
+    </div>
+    <div class="col-lg-4">
+    <center><img style="width: 14em" src="https://taler.net/static/images/logo-2018-dold.svg"  alt="Taler" /></center>
+    </div>
+
+    </div>
+    <hr/>
     <div class="row">
       <div class="col-lg-6">
         <section>
@@ -107,6 +127,13 @@
         </p>
         </section>
       </div>
+    <div class="col-lg-4">
+    <center><img style="width: 14em" src="https://secushare.org/img/secushare-0444.png"  alt="secushare" /></center>
+    </div>
+
+     </div>
+     <hr/>
+     <div class="row">
       <div class="col-lg-6">
         <section>
         <h3>{{ _("pretty Easy privacy") }}</h3>
@@ -120,6 +147,11 @@
           {% endtrans %}
         </p>
         </section>
+      </div>
+    <div class="col-lg-4">
+    <center><img style="width: 14em" src="https://pep.foundation/static/media/uploads/peplogo.svg"  alt="re:claimID" /></center>
+    </div>
+
       </div>
     </div>
   </div>
