@@ -23,15 +23,15 @@
     <div class="col">
       <section>
         <p>
-         This document is just a brief intro on what can be done with GNUnet. Find much more in our <a ref="https://docs.gnunet.org/">documentation</a>, e.g. in the section <a href="https://docs.gnunet.org/handbook/gnunet.html#toc-Using-GNUnet-1">"using GNUnet"</a> in the handbook.
+         This document is just a brief introduction on what can be done with GNUnet. Find out much more in our <a ref="https://docs.gnunet.org/">documentation</a>, e.g. in the section <a href="https://docs.gnunet.org/handbook/gnunet.html#toc-Using-GNUnet-1">"using GNUnet"</a> in the handbook.
 
-         The configuration in the handbook is done with the UI interface gnunet-gtk. 
+          Please note that the handbook / reference manual uses the graphical user interface (UI) gnunet-gtk to configure GNUnet. In this introduction, we use the command line interface (CLI).
         </p>
       </section>
 
 <section>
 
-  <h3>{{ _("Get on GNUnet") }}</h3>
+  <h3>{{ _("Accessing GNUnet") }}</h3>
 
   <p>
     Now we can start it with the command line tool
@@ -75,7 +75,7 @@
     vpn (gnunet-service-vpn)
   </code>
 
-  <h3>{{ _("Get off GNUnet") }}</h3>
+  <h3>{{ _("Leaving GNUnet") }}</h3>
   <p>
     For stopping GNUnet again we can use the `-e` option; e=end.
   </p>
@@ -97,6 +97,8 @@
               Tue Oct 30 19:58:48 2018: connection established 7WRD (timeout in 299 s)<br>
               Tue Oct 30 19:58:48 2018: connection established 5WBG (timeout in 299 s)<br>
               </code>
+              
+            <p>Overtime the list will change as new peers connect or drop out, this is normal.</p>
         </p>
         There are much more options to see if you are connected and how. E.g. 'gnunet-peerinfo' shows you all peers your peer knows, or with "tail -f ~/.cache/gnunet/*" you'll get to see what's going on with your node.
       </section>
@@ -104,7 +106,7 @@
       <section>
         <h3>{{ _("... and play around with it.") }}</h3>
         <p>
-              So let's try out some of GNUnet's use cases. Please mind that some should be done in a particular order, one after another:
+              So let's try out some of GNUnet's most common use-cases to illustrate it's power. Please be mindful that some should be done in a particular order, one after another:
         </p>
 
         <ul>
@@ -139,7 +141,7 @@
         </code>
         </p>
         <p>
-          Finding the file by keyword works with `gnunet-search`.
+          GNUnet users can find the file by using the <code>gnunet-search</code> command.
         </p>
         <p>
         <code>
@@ -149,22 +151,21 @@
         </code>
         </p>
         <p>
-          It gives us the command line call to download the file (and store it as
-          ostrom.pdf)!
+          <code>gnunet-search</code> returns the command line call to download the file (and store it as ostrom.pdf)!
         </p>
         <p>
-  <p>
-    It's recommended for filesharing that you increase your bandwidth restrictions
-    from the actually pretty low defaults. The example below sets the WAN
-    and LAN limits to the value "unlimited".
-  </p>
+        <p>
+            It's recommended for filesharing that you increase GNUnet's bandwidth restrictions
+            from the actually pretty low defaults. The example below sets the WAN
+            and LAN limits to the value "unlimited".
+        </p>
 
-  <code>
-    $ gnunet-config -s ats -o WAN_QUOTA_IN -V unlimited<br />
-    $ gnunet-config -s ats -o WAN_QUOTA_OUT -V unlimited<br /> 
-    $ gnunet-config -s ats -o LAN_QUOTA_IN -V unlimited<br />
-    $ gnunet-config -s ats -o LAN_QUOTA_OUT -V unlimited<br /> 
-  </code>
+        <code>
+            $ gnunet-config -s ats -o WAN_QUOTA_IN -V unlimited<br />
+            $ gnunet-config -s ats -o WAN_QUOTA_OUT -V unlimited<br /> 
+            $ gnunet-config -s ats -o LAN_QUOTA_IN -V unlimited<br />
+            $ gnunet-config -s ats -o LAN_QUOTA_OUT -V unlimited<br /> 
+        </code>
         </p>
         <p>
           Please note that it might take some time (up to some hours) till your peers can see your freshly uploaded files. 
@@ -174,38 +175,41 @@
 
       </section>
 
-
-
       <section>
-
         <h3><a name="cadet" class="subnav-anchor"></a>{{ _("CADET (and Chat)") }}</h3>
+        <p>The CADET subsystem is at the heart of the GNUnet project because it is responsible for secure end-to-end communications between peers (nodes) in the GNUnet overlay network.</p>        
         <p>
-          We can use the `gnunet-cadet` command line tool to open a port and from
-          another machine connect to this port and chat or transfer data. First we need
-          our <b>peer ID</b> of the GNUnet peer opening the port.
-        </p>
+          Users can chat and send files to each other on the GNUnet network using a simple CADET tool. We use the `gnunet-cadet` command line tool to open a port on our local machine and from another peer on the network connect to this port. Users can then chat or transfer files.
+         </p>
+         
+         <p>
+          In the following example, Alice will create a CADET session on her laptop. Bob will then connect to Alice from his desktop. Alice will first need her <b>peer ID</b> of the GNUnet and provide it to Bob.
+          </p>
         <p>
         <code>
-          $ gnunet-peerinfo -s<br>
+          alice@laptop $ gnunet-peerinfo -s<br>
           I am peer `P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG'.
         </code>
         </p>
         <p>
-          Now we open the port (it can be any string!):
+          Now Alice will open a port using the -o option, giving it a name, in this case Alice calls it 'my-secret-port' (it can be any string!):
         </p>
         <p>
         <code>
-          $ gnunet-cadet -o my-secret-port
+          alice@laptop $ gnunet-cadet -o my-secret-port
         </code>
         </p>
-        <p>On the other machine we can connect using the peer ID and the port and start chatting!  "Other machine can be a friend's one which has GNUnet running, but it can also just be another shell on your machine.</p>
+        <p>On Bob's machine he can connect to Alice using her <b>peer ID</b> and the port name. Once connected they can start chatting.</p>
         <p>
         <code>
-          $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
+         bob@desktop $ gnunet-cadet P4T5GHS1PCZ06R82D3KW8Z8J1113BQZWAWGYHTZ8G1ZXMWXQGAVG my-secret-port
         </code>
         </p>
+        
+        <p>It's worth nothing that the other peers can be a friend's machine which has GNUnet running, or it can also just be another shell on your own machine.</p>
+        
         <p>
-              If you are interested into CADET in detail, please have a look in the <a href="https://docs.gnunet.org/handbook/gnunet.html#CADET-Subsystem">chapter "Cadet-Subsystem" in our handbook</a>.  The CADET subsystem is responsible for secure end-to-end communications between nodes in the GNUnet overlay network; as transport protocol it's somewhat of the heart of the project. 
+              If you are interested in the details of CADET, please read the <a href="https://docs.gnunet.org/handbook/gnunet.html#CADET-Subsystem">"Cadet-Subsystem" chapter in the GNUnet handbook</a>. 
         </p>
       </section>
 
@@ -214,25 +218,25 @@
       <section>
         <h3><a name="groupchat" class="subnav-anchor"></a>{{ _("Chatting with a (simple) client") }}</h3>
          <p>
-              To chat a tiny bit prettier, we can install and compile additional software.
-              If you join the chat mentioned below and no one is there, feel free to ping on
-              IRC/freenode #gnunet and ask if someone can join to test with you! (But we are
-              trying to be there as often as possible).
+          To make chatting a tiny bit easier and prettier, we need to install and compile additional software.
+          If you join the chat mentioned below and no one is there, feel free to ping on
+          IRC/freenode #gnunet and ask if someone can join in to test with you! (But we are
+          trying to be there as often as possible).
      </p>
      <p>
-          First we have to install Nim. Please refer to their <a href="https://nim-lang.org/install.html">project site</a> for further details. The preferred method is using our package manager, e.g. for Debian it would look like this: 
+          First we have to install the Nim programming language. Please refer to their <a href="https://nim-lang.org/install.html">project site</a> for further details. The preferred method is using you distributions package manager, e.g. for Debian it would look like this: 
       </p>
       <code>
         $ sudo apt install nim<br>
         $ nim --version<br>
-        Nim Compiler Version 0.20.2 [Linux: amd64]<br>
-        Compiled at 2019-07-17<br>
-        Copyright (c) 2006-2019 by Andreas Rumpf<br>
+        Nim Compiler Version 1.2.2 [Linux: amd64]<br>
+        Compiled at 2020-06-16<br>
+        Copyright (c) 2006-2020 by Andreas Rumpf<br>
         <br>
         active boot switches: -d:release -d:nativeStackTrace<br>
       </code>
       <p>
-       If the displayed version is <b>0.19.0 or newer</b>, we have a compatible version and can continue downloading and compiling the groupchat. If the version is older (like on Ubuntu 18.04) we can install Nim using a tool called <i>choosenim</i>:
+       If the displayed version is <b>1.2.2 or newer</b>, we have a compatible version and can continue downloading and compiling the groupchat. If the version is older (like on Ubuntu 18.04) we can install Nim using a tool called <i>choosenim</i>:
       </p>
       <code>
           $ curl https://nim-lang.org/choosenim/init.sh -sSf | sh
@@ -243,11 +247,11 @@
       <p>In the onscreen instructions you'll be ask to add a line to your bashrc - once you've done that, re-read your bash environment to make the change active: 
       </p>
       <code>
-      source ~/.bashrc
+        $ source ~/.bashrc
       </code>
       
       <p>
-          After we have installed (and maybe upgraded) Nim we download and compile the groupchat application:
+          After we have installed (and maybe upgraded) Nim we download and compile the GNUnet groupchat application:
          </p>
          <p>
          <code>
@@ -257,50 +261,55 @@
          </code>
          <p>
          <p>
-              Fine! We can now try to enter a chat server running on another GNUnet node.
+            We can now try to enter a chat server running on another GNUnet node using the command:
          </p>
          <p>
          <code>
                $ LD_LIBRARY_PATH=/path/to/gnunetlibs ./groupchat --config=/path/to/gnunet.conf --server=88RXABKJNMT426FY81N2DXN0M2X37SW5Q1NR005YPDZ1Q7A22CHG --port=t3ss --nick=YOURNICK<br>
          </code>
          <p>
-              The peer and port in this example should almost always be online and running groupchat on that port.
-         </p>
+              The peer key and port name given in this example should work as they are almost always online and running groupchat on port "t3ss".
+         <p>
       </section>
 
 
 
       <section>
         <h3><a name="gns_cli" class="subnav-anchor"></a>{{ _("Name resolution using GNS on the command line") }}</h3>
-        <p>GNS is the GNU name service, a fully decentralized alternatice to DNS. We'll publish an IP address in a GNS record try to resolve it on the command line. First we need an identity which is the
-          equivalent to a zone in DNS. We'll call it "myself" and create it using the
-          `gnunet-identity` command line tool. Instead of "myself" you can surely use your
-          nick or any other name. </p>
+        <p>The GNU Name Service (GNS) is a fully decentralized alternative to the Domain Name System (DNS). Where GNS does not suffer the same major <a href="https://en.wikipedia.org/wiki/Domain_Name_System#Security_issues">security flaws as DNS</a>.
+        </p>
+        
+        <p>
+        In this example, Alice will save the IP address (195.54.164.39) of the Chaos Computer Club e.V. (CCC) homepage into a GNUnet namestore record and then try to resolve it using GNUnet GNS.
+        
+        
+         <p> First Alice needs to create a GNUnet identity which is the equivalent to a zone in a DNS. We'll call it "myself" and create it using the `gnunet-identity` command line tool. Instead of "myself" you can use your nickname, or any other name. </p>
+
         <p>
         <code>
-          $ gnunet-identity -C myself
+          alice@laptop $ gnunet-identity -C myself
         </code>
         </p>
-        <p>We can check if it worked using the same tool. We expect the name of our identity and the corresponding public key to be displayed.</p>
+        
+        <p>Alice can check to see if it worked using the same tool. The name of her identity and the corresponding public key are displayed.</p>
         <p>
         <code>
-          $ gnunet-identity -d<br>
+          alice@laptop $ gnunet-identity -d<br>
           myself - HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
         </code>
         </p>
         <p>
-          Now we add a public `A` record to our zone. It has the name "ccc", a value
-          of "195.54.164.39" and it expires after one day.
+            Now Alice adds a public `A` record to the zone. We'll call it "ccc" with the value "195.54.164.39" and it expires after one day.
         </p>
         <p>
         <code>
-          $ gnunet-namestore -z myself -a -e "1 d" -p -t A -n ccc -V 195.54.164.39
+          alice@laptop $ gnunet-namestore -z myself -a -e "1 d" -p -t A -n ccc -V 195.54.164.39
         </code>
         </p>
-        <p>Now we can query that record using the command line tool `gnunet-gns`.</p>
+        <p>Now the GNS can be queried using the command line tool `gnunet-gns`.</p>
         <p>
         <code>
-          $ gnunet-gns -t A -u ccc.myself<br>
+          alice@laptop  $ gnunet-gns -t A -u ccc.myself<br>
           ccc.myself:<br>
           Got `A' record: 195.54.164.39
         </code>
@@ -313,13 +322,13 @@
         </p>
         <p>
         <code>
-          $ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
+          bob@desktop $ gnunet-namestore -z myself -a -e never -p -t PKEY -n alice -V HWTYD3P5D77JVFNVMZ1M5T10V4SZYNMY3PCGQCSVENKD6ZCRKPMG
         </code>
         </p>
         <p>
-          Our identity in Bobs namestore is a public record (-p) and never
+          Alices identity in Bobs namestore is a public record (-p) and never
           expires (-e never). Now Bob (let's assume he has called his
-          identity myself, too) should be able to resolve our "ccc" record,
+          identity myself, too) should be able to resolve Alice's "ccc" record,
           too!
         </p>
         <p>
@@ -331,9 +340,9 @@
         </p>
         <p>
           It can continue like this. A friend of Bob would be able to
-          resolve our records too because Bob published our identity in a
+          resolve Alice's records too because Bob published her identity in a
           public record. Bobs friend would simply use "ccc.alice.bob.myself"
-          to resolve our "ccc" record.
+          to resolve Alice's "ccc" record.
         </p>
         <p>
       See the <a href="https://docs.gnunet.org/handbook/gnunet.html#First-steps-_002d-Using-the-GNU-Name-System">chapter "Using the GNU Name System" in our handbook</a> for a more detailed documentation.
@@ -346,18 +355,25 @@
         <h3><a name="gns_browser" class="subnav-anchor"></a>{{ _("Name resolution using GNS with a browser") }}</h3>
 
         <p>
-          In the previous use case "Name resolution using GNS on the command line" we got an idea
-          about what GNS is about, but now let's use it with a browser, to make it actually useful. Currently Firefox and Chromium are known to work.
+          In the previous use-case "Name resolution using GNS on the command line" we saw how we could retrieve a value (e.g. an IP address) associated with a given named record (e.g. a web address). 
+          Now we'll see how GNS can be used with a browser, making it actually useful. Currently Firefox and Chromium are known to work with GNS.
         </p>
 
         <p>
-          Many websites enforce HTTPS and thus provide certificates for
-          their hostnames (and not our GNS names). Browsers don't like wrong
-          hostnames in certificates and will present error messages. So GNUnet
-          has to trick them by generating own certificates for our GNS
-          names. This means we need to create our own certificate authority
-          and tell our browser about it. Luckily there's a script for it:
+          Many websites enforce HTTPS by providing TLS certificates for
+          their hostnames, with the aim of encrypting the web page content between the clients browser and the hostname server, and authenticating the server and client to each other. This is so 
+          that a 3rd party cannot see what is being communicated between the client (browser) and server (website host). This is important, for example, if you are using online banking where you don't want anyone seeing your customer ID and password.
         </p>
+          
+      <p>
+          Unfortunately, if a browser resolves a hostname through the GNS, the TLS certificates will have the original hostname and the browser will present an error message. In the previous example, we resolved "ccc.myself" to 195.54.164.39 but the hostname's TLS certificate refers to the actual hostname as "https://www.ccc.de/"
+          
+          So GNUnet has to trick the browser by generating it's own certificates for the hostnames GNS
+          resolves. This means we need to create our own certificate authority
+          and tell our browser to use this instead. Luckily there's a script to fix this problem:
+       </p> 
+        
+          
         <p>
         <code>
           $ gnunet-gns-proxy-setup-ca
@@ -371,18 +387,19 @@
           names with GNS first and forward the rest of the DNS traffic to
           the system's DNS resolver. It will also take care of the HTTP
           traffic, so the browser gets valid certificates and the web server
-          will not be confused by our GNS hostnames. Our GNS namestore
-          doesn't know about any DNS hostnames yet, so we have to store
-          them, too. For our "ccc" A record, we have to store a LEHO (legacy
-          hostname) record, too. It must contain the website's original DNS
+          will not be confused by the hostnames resolved by GNS instead of the DNS. The GNS namestore
+          does not know about any DNS hostnames yet, so we have to store
+          them, too. For our "ccc" A record, we have to store a LEHO (LEgacy
+          HOstname) record, too. It must contain the website's original DNS
           hostname:
         </p>
+        
         <p>
         <code>
           $ gnunet-namestore -z myself -a -e "1 d" -p -t LEHO -n ccc -V www.ccc.de
         </code>
         </p>
-        <p>Now let's start gnunet-gns-proxy.</p>
+        <p>Now lets start gnunet-gns-proxy.</p>
         <p>
         <code>
           $ /usr/lib/gnunet/libexec/gnunet-gns-proxy
@@ -522,7 +539,7 @@
   </p>
 
   <code>
-    gnunet-peerinfo -p <string>
+    $ gnunet-peerinfo -p <string>
   </code>
 
   <p>
@@ -552,8 +569,3 @@
   </div>
 </article>
 {% endblock body_content %}
-
-
-
-
-
