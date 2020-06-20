@@ -50,7 +50,6 @@ code {
 code.block {
   display: block; }
 
-
 a.btn {
   text-decoration: none !important;
   color: white !important;
@@ -58,6 +57,11 @@ a.btn {
 a.btn:link, a.btn:visited {
     text-decoration: none !important;
     color: white !important;
+}
+
+a.btn.frontpage {
+  font-size: 2em;
+  width: 100%;
 }
 
 .bluebox a:link, .bluebox a:visited {
