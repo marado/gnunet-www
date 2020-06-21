@@ -66,7 +66,6 @@
           <li><a class="dropdown-item" href="https://buildbot.gnunet.org/" target="_blank">{{ _("Continuous Integration") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/tutorial/gnunet-tutorial.html">{{ _("Development Tutorial") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('gnurl.html') }}">libgnurl</a></li>
-          <li><a class="dropdown-item" href="{{ url_localized('gns.html') }}">GNS</a></li>
         </ul>
       </li>
       <li class="nav-item dropdown">
