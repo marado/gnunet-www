@@ -2,8 +2,14 @@
 {% block body_content %}
   {% import 'inc/news.macro.j2' as news %}
 <!-- Jumbotron -->
-<div class="jumbotron">
+<div>
   <div class="container text-center">
+    <div class="row">
+      <div class="container text-center">
+        <h1><a name="about"></a>{{ _("The Internet of tomorrow needs GNUnet today") }}</h1>
+      </div>
+    </div>
+
       <div>
         <img src="{{ url_static('images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" />
       </div>
@@ -21,16 +27,10 @@
       </p>
   </div>
 </div>
-
 <div class="container-fluid c_acronym link-white bluebox">
   <div class="container">
     <div class="row">
-      <div class="container text-center">
-        <h1><a name="about"></a>{{ _("The Internet of tomorrow needs GNUnet today") }}</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-8">
         <section>
         <h3>{{ _("Imagine...") }}</h3>
         <p>
@@ -53,10 +53,22 @@
 	  and save this information in a central data base.
           -->
       {% endtrans %}
-        </section>
         </p>
+        </section>
       </div>
       <div class="col-lg-4">
+        <span class="fa fa-road homepageicon right"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <span class="fas fa-dumpster-fire homepageicon"></span>
+      </div>
+      <div class="col-lg-8">
         <section>
         <h3>{{ _("The Internet is broken") }}</h3>
         <p>
@@ -90,7 +102,13 @@
         </p>
         </section>
       </div>
-      <div class="col-lg-4">
+    </div>
+  </div>
+</div>
+<div class="container-fluid c_acronym bluebox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
         <section>
         <h3>{{ _("Decentralization is hard") }}</h3>
 
@@ -121,9 +139,19 @@
         </p>
         </section>
       </div>
+      <div class="col-lg-4">
+        <span class="fa fa-network-wired homepageicon right"></span>
+      </div>
     </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-lg-4">
+        <span class="fa fa-eye homepageicon"></span>
+      </div>
+      <div class="col-lg-8">
         <section>
         <h3>{{ _("Metadata is exposed") }}</h3>
         <p>
@@ -148,7 +176,13 @@
         </p>
         </section>
       </div>
-      <div class="col-lg-4">
+    </div>
+  </div>
+</div>
+<div class="container-fluid c_acronym bluebox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
         <section>
         <h3>{{ _("Freedoms are not respected") }}</h3>
         <p>
@@ -172,6 +206,18 @@
         </section>
       </div>
       <div class="col-lg-4">
+        <span class="fas fa-dove homepageicon right"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img style="height: 80%;" src="{{ url_static('images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" />
+      </div>
+      <div class="col-lg-8">
         <section>
         <h3>{{ _("Enter the GNUnet") }}</h3>
         <p>
@@ -202,16 +248,16 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
-        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('about.html') }}">{{ _("Learn more") }}</a>
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('about.html') }}"><i class="fas fa-graduation-cap"></i> {{ _("Learn more") }}</a>
       </div>
       <div class="col-lg-3">
-        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('applications.html') }}">{{ _("Applications") }}</a>
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('applications.html') }}"><i class="fas fa-cubes"></i> {{ _("Applications") }}</a>
       </div>
       <div class="col-lg-3">
-        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('engage.html') }}">{{ _("Engage") }}</a>
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('engage.html') }}"><i class="fas fa-users"></i> {{ _("Engage") }}</a>
         </div>
         <div class="col-lg-3">
-        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('install.html') }}">{{ _("Get started") }}</a>
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('install.html') }}"><i class="fas fa-play"></i> {{ _("Get started") }}</a>
         </div>
     </div>
   </div>

@@ -9,6 +9,29 @@
 <div class="container">
   <article>
     <section>
+      <h3>{{ _("Is GNUnet ready for use on production systems?") }}</h3>
+      <p>
+	{% trans %}
+	A: GNUnet is still undergoing major development. It is largely not yet ready
+  for usage beyond developers. Your mileage will vary depending on the
+  functionality you use, but you will always likely run into issues with
+  our current low-level transport system. We are currently in the process of
+  rewriting it (Project &quot;Transport Next Generation [TNG]&quot;)
+	{% endtrans %}
+      </p>
+    </section>
+    <section>
+      <h3>{{ _("Is GNUnet build using distributed ledger technologies?") }}</h3>
+      <p>
+	{% trans %}
+	A: No. GNUnet is a new network protocol stack for building secure,
+  distributed, and privacy-preserving applications.
+  While a ledger could be built using GNUnet, we currently have no plans in
+  doing so.
+	{% endtrans %}
+      </p>
+    </section>
+    <section>
       <h3>{{ _("I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. Should I worry?") }}</h3>
       <p>
 	{% trans %}

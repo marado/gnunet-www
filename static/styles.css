@@ -50,6 +50,14 @@ code {
 code.block {
   display: block; }
 
+.homepageicon {
+  font-size: 10em;
+}
+
+.homepageicon.right {
+  float: right;
+}
+
 a.btn {
   text-decoration: none !important;
   color: white !important;
@@ -274,6 +282,8 @@ footer {
   filter: invert(100%); }
 
 .row {
+  margin-top: 1em;
+  margin-bottom: 1em;
   min-width: 50%; }
 
 header {
