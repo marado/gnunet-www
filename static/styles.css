@@ -60,8 +60,8 @@ code.block {
   float: right;
 }
 
-.c_acronym .homepageicon {
-  color: white;
+.greybox .homepageicon {
+  color: #555;
 }
 
 a.btn {
@@ -81,6 +81,11 @@ a.btn.frontpage {
 .bluebox a:link, .bluebox a:visited {
     text-decoration: underline !important;
     color: #f4f4f4  !important;
+}
+
+.greybox {
+  background-color: #f4f4f4;
+  color: #111;
 }
 
 h6.description {
