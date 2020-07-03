@@ -1,3 +1,14 @@
+a.link:after {
+  font-size: .75em;
+  font-family: 'Font Awesome 5 Free';
+  content: " \f35d";
+  font-weight: 900;
+}
+
+a.link {
+  color: #3355FF; /* contrast for near white bg */
+}
+
 .static-top {
   position: fixed;
   top: 0;
@@ -196,7 +207,8 @@ body .banner {
   padding-bottom: 20px; }
 
 #body_content .banner a {
-  color: white; }
+  color: white;
+}
 
 .lang-slector {
   float: right;
