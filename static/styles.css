@@ -54,10 +54,7 @@ code.block {
 .homepageicon {
   font-size: 8em;
   color: #419edb;
-}
-
-.homepageicon.right {
-  float: right;
+  text-align: center;
 }
 
 .greybox .homepageicon {
