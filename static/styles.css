@@ -37,6 +37,7 @@
 .blue {
   color: #357edd; }
 
+.bg-white {background-color: white;}
 .bg-near-white {
   background-color: #f4f4f4; }
 
@@ -51,11 +52,16 @@ code.block {
   display: block; }
 
 .homepageicon {
-  font-size: 10em;
+  font-size: 8em;
+  color: #419edb;
 }
 
 .homepageicon.right {
   float: right;
+}
+
+.c_acronym .homepageicon {
+  color: white;
 }
 
 a.btn {
@@ -170,8 +176,8 @@ i.red {
 
 .btn-primary {
   color: #fff;
-  background-color: #678;
-  border-color: #68a; }
+  background-color: #419edb;
+  border-color: #419edb; }
 
 img.distro-logo {
   height: 150px; }

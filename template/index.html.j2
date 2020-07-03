@@ -13,26 +13,15 @@
       <div>
         <img src="{{ url_static('images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" />
       </div>
-      <p>
-        {% trans %}
-          GNUnet is a new network protocol stack for building secure,
-          distributed, and privacy-preserving applications.<br/>
-          With
-          strong roots in
-          <a href="https://bib.gnunet.org">academic research</a>, our
-          goal is to replace the
-          <a href="https://secushare.org/broken-internet">old insecure Internet</a>
-          protocol stack.
-        {% endtrans %}
-      </p>
   </div>
 </div>
-<div class="container-fluid c_acronym link-white bluebox">
+<div class="container-fluid c_acronym bluebox">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
         <section>
-        <h3>{{ _("Imagine...") }}</h3>
+        <h3>{{ _("The Internet is broken") }}</h3>
         <p>
         {% trans %}
           The conventional Internet is currently like a system of
@@ -52,31 +41,9 @@
 	  recognize your car license plate, track you everywhere you drive,
 	  and save this information in a central data base.
           -->
-      {% endtrans %}
-        </p>
-        </section>
-      </div>
-      <div class="col-lg-4">
-        <span class="fa fa-road homepageicon right"></span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <span class="fas fa-dumpster-fire homepageicon"></span>
-      </div>
-      <div class="col-lg-8">
-        <section>
-        <h3>{{ _("The Internet is broken") }}</h3>
-        <p>
-          {% trans %}
-          Protocols from Ethernet and IP to BGP and X.509 PKI are
-          insecure by default: protecting against address forgery,
-          routers learning metadata, or choosing trustworthy CAs is
-          nontrivial and sometimes impossible.
+          The Internet was not designed with security in mind: protecting against
+          address forgery, routers learning metadata, or choosing trustworthy
+          third parties is nontrivial and sometimes impossible.
 	<!--
           Proposal from Fabian Gerlach: The Internet is not designed with security in mind:
 	  The network generally learns too much about users; it has insecure
@@ -85,6 +52,77 @@
           -->
       {% endtrans %}
         </p>
+        </section>
+      </div>
+      <div class="col-lg-3">
+        <span class="fas fa-dumpster-fire homepageicon right"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-2">
+        <span class="fas fa-layer-group homepageicon"></span>
+      </div>
+      <div class="col-lg-6">
+      <section>
+        <p>
+          {% trans %}
+            GNUnet is a new network protocol stack for building secure,
+            distributed, and privacy-preserving applications.<br/>
+            With
+            strong roots in
+            <a href="https://bib.gnunet.org">academic research</a>, our
+            goal is to replace the
+            <a href="https://secushare.org/broken-internet">old insecure Internet</a>
+            protocol stack.
+          {% endtrans %}
+        </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid c_acronym bluebox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+        <h3>{{ _("Metadata is exposed") }}</h3>
+        <p>
+          {% trans %}
+	    Your metadata is just as revealing as the actual content; and it gets exposed on the Internet.<br>
+            Even though transport encryption is increasingly being
+            deployed on the Internet, it still reveals data that can
+            threaten democracy: the identities of senders and receivers,
+            the times, frequency and the volume of communication are all
+            still revealed.<br>
+          {% endtrans %}
+            <!--
+            Looks like a weak argumentation to me:
+            which <a href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables reverse-engineering pages visited via website fingerprinting</a>.
+            -->
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-3">
+        <span class="fa fa-eye homepageicon right"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <i class="fas fa-shield-alt homepageicon"></i>
+      </div>
+      <div class="col-lg-6">
+        <section>
         <p>
           {% trans %}
           GNUnet provides
@@ -99,6 +137,58 @@
 	  content distribution in a technically robust manner.
         -->
           {% endtrans %}
+
+        <p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid c_acronym bluebox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+        <h3>{{ _("Freedoms are not respected") }}</h3>
+        <p>
+          {% trans %}
+	    Today, monitoring increasingly centralized infrastructure,
+	    proprietary implementations, traffic shapers and firewalls
+	    restrict all of the
+	    <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a>
+	    to various degrees.
+          {% endtrans %}
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-3">
+        <i class="fas fa-user-lock homepageicon right"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <span class="fas fa-dove homepageicon"></span>
+      </div>
+      <div class="col-lg-6">
+        <section>
+        <p>
+        {% trans %}
+          GNUnet is made for a free and open society: It&#39;s a self-organizing network and it
+          is <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>
+          as in freedom. GNUnet puts you in control of your data.
+          You determine which data to share with whom, and you&#39;re not
+          pressured to accept compromises.
+          It gives users freedoms to securely access information
+            ("run" the network), to study all aspects of the network&#39;s
+            operation ("access the code"), to distribute information
+            ("copy"), as well as the freedom to deploy new applications
+            ("modify").
+          {% endtrans %}
         </p>
         </section>
       </div>
@@ -108,9 +198,10 @@
 <div class="container-fluid c_acronym bluebox">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
         <section>
-        <h3>{{ _("Decentralization is hard") }}</h3>
+        <h3>{{ _("Decentralization is the key, but hard") }}</h3>
 
         <p>
           {% trans %}
@@ -128,7 +219,24 @@
             This heightens the effort and increases the
             potential number of vulnerabilities.
 	  {% endtrans %}
-	<p>
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-3">
+        <span class="fas fa-dharmachakra homepageicon right"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <span class="fas fa-flask homepageicon"></span>
+      </div>
+      <div class="col-lg-6">
+        <section>
+        <p>
 	  {% trans %}
           GNUnet is a metadata-preserving foundation for your
           application, covering areas from addressing to reliable
@@ -139,111 +247,10 @@
         </p>
         </section>
       </div>
-      <div class="col-lg-4">
-        <span class="fa fa-network-wired homepageicon right"></span>
-      </div>
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <span class="fa fa-eye homepageicon"></span>
-      </div>
-      <div class="col-lg-8">
-        <section>
-        <h3>{{ _("Metadata is exposed") }}</h3>
-        <p>
-          {% trans %}
-	    Your metadata is just as revealing as the actual content; and it gets exposed on the Internet.<br>
-            Even though transport encryption is increasingly being
-            deployed on the Internet, it still reveals data that can
-            threaten democracy: the identities of senders and receivers,
-            the times, frequency and the volume of communication are all
-            still revealed.<br>
-	  <!--
-            Looks like a weak argumentation to me:
-            which <a href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables reverse-engineering pages visited via website fingerprinting</a>.
-            -->
-            GNUnet
-	    <a href="https://secushare.org/anonymity">addresses</a>
-	    these concerns with perfect forward secrecy via ephemeral
-	    public key addressing, fixed packet size to hinder traffic
-	    analysis, layered encryption, Sybil-resistant routing, and
-	    more.
-          {% endtrans %}
-        </p>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid c_acronym bluebox">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-        <section>
-        <h3>{{ _("Freedoms are not respected") }}</h3>
-        <p>
-          {% trans %}
-	    Today, monitoring increasingly centralized infrastructure,
-	    proprietary implementations, traffic shapers and firewalls
-	    restrict all of the
-	    <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a>
-	    to various degrees.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            GNUnet gives users freedoms to securely access information
-            ("run" the network), to study all aspects of the network&#39;s
-            operation ("access the code"), to distribute information
-            ("copy"), as well as the freedom to deploy new applications
-            ("modify").
-          {% endtrans %}
-        </p>
-        </section>
-      </div>
-      <div class="col-lg-4">
-        <span class="fas fa-dove homepageicon right"></span>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <img style="height: 80%;" src="{{ url_static('images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" />
-      </div>
-      <div class="col-lg-8">
-        <section>
-        <h3>{{ _("Enter the GNUnet") }}</h3>
-        <p>
-        {% trans %}
-          GNUnet is typically run as an
-          <a href="https://en.wikipedia.org/wiki/Overlay_network">overlay network</a>
-          on top of the existing Internet infrastructure forming the basis of a hybrid
-          <a href="architecture.html">peer-to-peer mesh and relay backbone</a>
-          for applications to run on. It could just as well be run independently of the Internet,
-          over <a href="https://en.wikipedia.org/wiki/Physical_layer">dedicated radio and cable</a>.
-        {% endtrans %}
-        </p>
-        <p>
-        {% trans %}
-          GNUnet is made for a free and open society: It&#39;s a self-organizing network and it
-          is <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>
-          as in freedom. GNUnet puts you in control of your data.
-          You determine which data to share with whom, and you&#39;re not
-          pressured to accept compromises.
-        {% endtrans %}
-        </p>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
+<hr style="padding: 2em;"/>
 <div class="container-fluid">
   <div class="container">
     <div class="row">
