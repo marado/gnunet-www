@@ -1,6 +1,5 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-  {% import 'inc/news.macro.j2' as news %}
   <div class="container-fluid">
     <div class="container">
       <article>
@@ -9,8 +8,12 @@
             <h1>{{ _("News") }}<a name="news"></a></h1>
             <section>
               <p>
-                News posts published by GNUnet about changes related to
-                GNUnet, releases, and events &#8211; <a href="{{ url_localized('rss.xml')}}">subscribe to our RSS feed</a>
+                {% trans %}
+                News posts about changes related to
+                GNU Taler such as releases and events
+                {% endtrans %}
+                &#8211;
+                <a href="{{ url_localized('rss.xml') }}">{{ _("subscribe to our RSS feed") }}</a>
               </p>
             </section>
           </div>
@@ -19,7 +22,18 @@
           <ul class="timeline">
           {% for item in newsdata %}
             <li>
-              {{ news.newspreview(item) }}
+              <section class="item-preview">
+               <header>
+                  <h3>{{ item['title']|e }}</h3>
+                  <p class="item-date">
+                    {{ item['date'] }}
+                  </p>
+                </header>
+                <p class="item-abstract">
+                  {{ item['abstract'] }} <br/>
+                  [<a href="{{ item['page'] }}" title="{{ item['date']}}">{{ _("read more") }}</a>]
+                </p>
+              </section>
             </li>
           {% endfor %}
           </ul>

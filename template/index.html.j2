@@ -1,6 +1,5 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-  {% import 'inc/news.macro.j2' as news %}
 <!-- Jumbotron -->
 <div>
   <div class="container text-center">
@@ -32,7 +31,7 @@
           your items (data) to use it against you and sell it to
           others - while you can&#39;t even notice the thievery nor
           accuse and hold the scroungers accountable.
-	<!-- 
+	<!--
           Proposal from Fabian Gerlach: The conventional Internet is currently like a system of roads
 	  with deep potholes and surveillance cameras all over the place.
 	  Even if you still can use the roads (e.g. send emails, or browse
@@ -132,7 +131,7 @@
           content distribution</a> in a technically robust manner - as
           opposed to ad-hoc designs in place today.
 	<!--
-          Proposal from fabian gerlach: GNUnet is built 
+          Proposal from fabian gerlach: GNUnet is built
 	  <a href="https://www.w3.org/2014/strint/papers/65.pdf">"privacy by design"</a> and
 	  "distributed by design". This improves addressing, routing, naming and
 	  content distribution in a technically robust manner.
@@ -208,7 +207,7 @@
         <p>
           {% trans %}
           <!--
-            replaced with Proposal from Fabian Gerlach: 
+            replaced with Proposal from Fabian Gerlach:
 	    It seems as if every other distributed or P2P project
             develops its own library stack, covering transports, stream
             muxing, discovery and others. This divides effort and
@@ -286,7 +285,7 @@
     {% for item in newsdata[:4] %}
     <div class="row">
         <div class="col-lg-12">
-          {{ news.newspreview(item, prefix="news/") }}
+          <a href="news/{{ item['page'] }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a>
         </div>
     </div>
     {% endfor %}
