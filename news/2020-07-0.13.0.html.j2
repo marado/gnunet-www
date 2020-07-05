@@ -41,10 +41,10 @@
       <li>Aligned with specification <a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.txt">LSD001</a>.
       <li>NSS plugin "block" fixed. <a href="https://bugs.gnunet.org/view.php?id=5782">#5782</a></li>
       <li>Broken set NICK API removed.<a href="https://bugs.gnunet.org/view.php?id=6092">#6092</a></li>
-       <li>New record flags: SUPPLEMENTAL. Records which are not explicitly
+      <li>New record flags: SUPPLEMENTAL. Records which are not explicitly
        configured/published under a specific label but which are still
        informational are returned by the resolver and flagged accordingly. <a href="https://bugs.gnunet.org/view.php?id=6103">#6103</a></li>
-
+      <li><tt>gnunet-namestore</tt> now complains when adding TLSA or SRV records outside of a BOX</li>
     </ul>
   </li>
   <li><tt>GNS/REVOCATION</tt>: Revocation proof of work has function changed to
@@ -58,16 +58,22 @@
       other libraries. Old private keys will no longer work! <a href="https://bugs.gnunet.org/view.php?id=6070">#6070</a></li>
       <li>Now using <a href="https://doc.libsodium.org/">libsodium</a> for EC
       cryptography.</li>
+      <li>Builds against cURL which is not linked against gnutls are now possible but still not recommended.
+      Configure will warn that this will impede the GNS functionality. This change will make hostlist discovery
+      work more reliable for some distributions.</li>
+      <li><tt>GNUNET_free_non_null</tt> removed. <tt>GNUNET_free</tt> changed to not assert that the pointer is not NULL.
+      For reference see the <a href="https://taler.net/papers/codeblau-report-2020-q2.pdf">Taler security audit</a>.</li>
+      <li>AGPL request handlers added GNUnet and extension templates.</li>
     </ul>
   </li>
-  <li><tt>Packaging</tt>: ?</li>
-  <li><tt>GANA Registry</tt>: <a href="https://gana.gnunet.org">GANA</a></li>
-  <li><tt>LSD subdomain and LSD0001 website:</tt>: <a href="https://lsd.gnunet.org/lsd0001">LSD0001</a></li>
-  <li><tt>Continuous integration</tt>: <a href="https://buildbot.gnunet.org">Buildbot</a> set up.</li>
+  <li><b>(NEW) </b><tt>GANA Registry</tt>: <a href="https://gana.gnunet.org">GANA</a></li>
+  <li><b>(NEW) </b><tt>Living Standards</tt>: LSD subdomain and LSD0001 website: <a href="https://lsd.gnunet.org/lsd0001">LSD0001</a></li>
+  <li><b>(NEW) </b><tt>Continuous integration</tt>: <a href="https://buildbot.gnunet.org">Buildbot</a> is back.</li>
   <li><tt>Buildsystem</tt>: A significant number of build system changes:
     <ul>
       <li>libmicrohttpd and libjansson are now required dependencies.</li>
-      <li>New dependencies: <a href="https://github.com/P-H-C/phc-winner-argon2">argon2</a> and <a href="https://doc.libsodium.org/">libsodium</a>.</li>
+      <li>New dependency: <a href="https://doc.libsodium.org/">libsodium</a>.</li>
+      <li>Fixed an issue with libidn(2) detection.</tt>
     </ul>
   </li>
 </ul>
@@ -89,6 +95,6 @@ the <a href="https://bugs.gnunet.org/roadmap_page.php?version_id=338">0.13.0 bug
 <h4>Thanks</h4>
 <p>
   This release was the work of many people. The following people contributed code and were thus easily identified:
-  ng0, Christian Grothoff, Florian Dold, xrs and Martin Schanzenbach.
+  Christian Grothoff, Florian Dold, Jonathan Buchanan, t3sserakt, nikita and Martin Schanzenbach.
 </p>
 {% endblock body_content %}
