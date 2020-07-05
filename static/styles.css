@@ -64,12 +64,12 @@ code.block {
 
 .homepageicon {
   font-size: 6em;
-  color: #419edb;
+  color: #111;
   text-align: center;
 }
 
 .greybox .homepageicon {
-  color: #555;
+  color: #888;
 }
 
 a.btn {
