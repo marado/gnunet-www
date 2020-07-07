@@ -38,7 +38,7 @@
 <ul>
   <li><tt>GNS</tt>:
     <ul>
-      <li>Aligned with specification <a href="https://git.gnunet.org/lsd0001.git/tree/draft-schanzen-gns.txt">LSD001</a>.
+      <li>Aligned with specification <a href="https://lsd.gnunet.org/lsd0001/">LSD001</a>.
       <li>NSS plugin "block" fixed. <a href="https://bugs.gnunet.org/view.php?id=5782">#5782</a></li>
       <li>Broken set NICK API removed.<a href="https://bugs.gnunet.org/view.php?id=6092">#6092</a></li>
       <li>New record flags: SUPPLEMENTAL. Records which are not explicitly
@@ -47,10 +47,12 @@
       <li><tt>gnunet-namestore</tt> now complains when adding TLSA or SRV records outside of a BOX</li>
     </ul>
   </li>
+  <li>
+    <tt>CADET</tt>: Fixed tunnel establishment as well as an outstanding bug regarding tunnel destruction. <a href="https://bugs.gnunet.org/view.php?id=5822">#5822</a>
+  </li>
   <li><tt>GNS/REVOCATION</tt>: Revocation proof of work has function changed to
   argon2 and modified to reduce variance.</li>
   <li><tt>RECLAIM</tt>: Increased ticket length to 256 bit. <a href="https://bugs.gnunet.org/view.php?id=6047">#6047</a></li>
-
   <li><tt>TRANSPORT</tt>: UDP plugin moved to experimental as it is known to be unstable.</li>
   <li><tt>UTIL</tt>:
     <ul>
