@@ -57,6 +57,9 @@ meetingnotes:
   2018: 2018-12-27
   2019: 2019-12-27
 newsposts:
+  - page: 2020-07-0.13.1.html
+    date: 2020-07-12
+    title: GNUnet 0.13.1
   - page: 2020-07-0.13.0.html
     date: 2020-07-07
     title: GNUnet 0.13.0
