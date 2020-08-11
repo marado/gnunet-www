@@ -40,6 +40,20 @@
   </li>
   <li><tt>UTIL</tt>: New string API for percent-encode/decode.</li>
   <li><tt>MYSQL</tt>: Fix version detection and build against mysql-8 and later. <a href="https://bugs.gnunet.org/view.php?id=6465">#6465</a></li>
+  <li><tt>POSTGRESQL</tt>: Ensure postgresql fails hard if there is an error in the SQL. <a href="https://bugs.gnunet.org/view.php?id=6437">#6437</a></li>
+  <li><tt>TNG</tt>: </li>
+  <li><tt>Extensions</tt>:
+    <ul>
+      <li>Load GNSRECORD plugins within GNUnet's context.</li>
+      <li>Add convenience function to return GNUnet's default configuration.</li>
+    </ul>
+  </li>
 </ul>
+
+<h4>Thanks</h4>
+<p>
+  This release was the work of many people. The following people contributed code and were thus easily identified:
+  Christian Grothoff, Florian Dold, Alessio Vanni, t3sserakt, Martin Schanzenbach.
+</p>
 
 {% endblock body_content %}
