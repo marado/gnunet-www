@@ -1,0 +1,45 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+<h1>GNUnet 0.13.2 released</h1>
+<p>
+  This is a bugfix release for gnunet 0.13.1.<br/>
+  It fixes some build issues and contains changes to the REST API
+  implmementation (no change in the API itself) as well as OpenID Connect related
+  fixes to re:claimID.
+</p>
+<h4>Download links</h4>
+<ul>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.13.2.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-0.13.2.tar.gz</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.13.2.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-0.13.2.tar.gz.sig</a></li>
+</ul>
+<p>
+  The GPG key used to sign is: <tt>3D11063C10F98D14BD24D1470B0998EF86F59B6A</tt>
+</p>
+<p>
+  Note that due to mirror synchronization, not all links might be functional
+  early after the release. For direct access try
+  <a href="http://ftp.gnu.org/gnu/gnunet/">http://ftp.gnu.org/gnu/gnunet/</a>
+</p>
+<h4>Noteworthy changes in 0.13.2 (since 0.13.1)</h4>
+<ul>
+  <li><tt>REST</tt>:
+    <ul>
+      <li>Plugins may now handle any namespace. <a href="https://bugs.gnunet.org/view.php?id=6462">#6462</a></li>
+      <li>Fixed incomplete/missing cleanup and teardown of REST plugins.</li>
+    </ul>
+  </li>
+  <li><tt>RECLAIM</tt>:
+    <ul>
+      <li>Support for <tt>/.well-known/openid-configuration</tt>. <a href="https://bugs.gnunet.org/view.php?id=6463">#6463</a></li>
+      <li>Support for standard scope values (<tt>profile, address, email, phone</tt>) and corresponding mapping to standard claim values</li>
+      <li>Correct processing of <tt>claims</tt> parameter for individual claim requests.</li>
+      <li>Support for <tt>POST</tt> token request.</li>
+      <li>Support for public clients (Token request without client secrets).</li>
+      <li>Fixed urlencoding of parameters on redirect</li>
+    </ul>
+  </li>
+  <li><tt>UTIL</tt>: New string API for percent-encode/decode.</li>
+  <li><tt>MYSQL</tt>: Fix version detection and build against mysql-8 and later. <a href="https://bugs.gnunet.org/view.php?id=6465">#6465</a></li>
+</ul>
+
+{% endblock body_content %}
