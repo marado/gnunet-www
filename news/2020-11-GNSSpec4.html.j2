@@ -1,0 +1,44 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+  <h1>GNS Technical Specification Milestone 4/4 and Packaging 1+2</h1>
+<p>
+  We are happy to announce the completion of the fourth and last milestone for the GNS
+  Specification. The fourth milestone consists of involving a broader community
+  for feedback and improvements:
+<p>
+<ul>
+  <li><a href="https://news.ycombinator.com/item?id=23766947">Hacker News</a></li>
+  <li><a href="https://datatracker.ietf.org/meeting/108/session/secdispatch">IETF 108 secdispatch</a>
+  (see also associated discussions on the mailinglist)</li>
+  <li><a href="https://centr.org/news/news/alternative-dns.html">Reporting on IETF secdispatch</a></li>
+  <li><a href="https://mailarchive.ietf.org/arch/msg/din/jkbYgEsyuZCknyYQxN-LxDtWpsY/">IRTF DINRG</a></li>
+  <li>https://lists.gnu.org/archive/html/gnunet-developers/2020-07/msg00043.html</li>
+</ul>
+<p>
+  Based on this and private feedback received, we updated the draft and
+  the implementation.
+  The (protocol breaking) changes will be released as part of GNUnet 0.14.0.
+  The specification document <b>LSD001</b> can be found at:
+</p>
+<ul>
+  <li>Git: <a href="git://gnunet.org/lsd0001.git">LSD001</a></li>
+  <li><a href="https://lsd.gnunet.org/lsd0001/draft-schanzen-gns.txt">Link to TXT version</a></li>
+  <li><a href="https://lsd.gnunet.org/lsd0001/draft-schanzen-gns.html">Link to HTML version</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/draft-schanzen-gns/">Link to IETF Datatracker (updated less frequently)</a></li>
+</ul>
+<p>
+  Further, work on packaging has been done on Alpine (Packaging 1) and Debian (Packaging 2) packages.
+  The packaging for Alpine is complete, the Debian package is in progress as
+  review and final integration is out of our hands. For reference see also:
+</p>
+<ul>
+  <li>Git: <a href="https://pkgs.alpinelinux.org/packages?name=gnunet&branch=edge">Alpine package</a></li>
+  <li><a href="https://salsa.debian.org/debian/gnunet/-/merge_requests/3">Debian package</a></li>
+</ul>
+<p>
+  We will continue to engage with IETF/IRTF as much as possible (online or in-person)
+  including future presentations and discussions at IETF/IRTF.
+  There is still a packaging task open for Fedora (3) which is still work in progress.
+  This work was (and other aspects still are) generously funded by <a href="https://nlnet.nl">NLnet</a> as part of their <a href="https://nlnet.nl/project/GNS/">Search and discovery fund</a>.
+</p>
+{% endblock body_content %}
