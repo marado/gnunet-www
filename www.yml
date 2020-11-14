@@ -57,6 +57,9 @@ meetingnotes:
   2018: 2018-12-27
   2019: 2019-12-27
 newsposts:
+  - page: 2020-11-0.14.0.html
+    date: 2020-11-14
+    title: GNUnet 0.14.0
   - page: 2020-11-GNSSpec4.html
     date: 2020-11-11
     title: GNS Specification Milestone 4/4 and Packaging 1+2
