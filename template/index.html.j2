@@ -9,16 +9,9 @@
       </div>
     </div>
 
-      <div>
-        <img src="{{ url_static('images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" />
-      </div>
-    <div class="row">
-      <div class="container text-center">
-        <a class="link" href="news/{{newsdata[0]['page']}}">{{ newsdata[0]['date'] }}: {{ newsdata[0]['title'] }}</a>
-      </div>
+    <div>
+      <img src="{{ url_static('images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" />
     </div>
-
-
   </div>
 </div>
 <div class="container-fluid greybox">
@@ -259,6 +252,20 @@
       </div>
     </div>
   </div>
+
+  <div class="row mt-5">
+  </div>
+  <div class="container">
+    <div class="col-8">
+      <h2><a href="{{ url_localized('news/index.html')}}">{{ _("News") }}</a></h2>
+    </div>
+    {% for item in newsdata[:3] %}
+    <div class="col-8">
+      <a href="news/{{ item['page'] }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a>
+    </div>
+   {% endfor %}
+  </div>
+
 </div>
 <hr style="padding: 2em;"/>
 <div class="container-fluid">
@@ -279,31 +286,4 @@
     </div>
   </div>
 </div>
-
-
-
-<!--<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="container text-center">
-        <h1>{{ _("News") }}<a name="news"></a></h1>
-      </div>
-    </div>
-    {% for item in newsdata[:4] %}
-    <div class="row">
-        <div class="col-lg-12">
-          <a href="news/{{ item['page'] }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a>
-        </div>
-    </div>
-    {% endfor %}
-    <div class="row">
-      <div class="container text-center">
-        <p>
-          <a class="btn btn-primary btn-lg" href="{{ url_localized('news') }}">{{ _("News Archive") }}</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
--->
 {% endblock body_content %}
