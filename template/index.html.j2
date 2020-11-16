@@ -2,18 +2,42 @@
 {% block body_content %}
 <!-- Jumbotron -->
 <div>
-  <div class="container text-center">
+  <div class="container">
     <div class="row">
       <div class="container text-center">
         <h1>{{ _("The Internet of tomorrow needs GNUnet today") }}</h1>
       </div>
     </div>
 
-    <div>
+    <div class="container text-center">
       <img src="{{ url_static('images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" />
     </div>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <span class="fa fa-bullhorn"></span>
+      </div>
+      <div class="col-lg-6">
+      <section>
+        <h2>{{ _("Latest news") }}</h2>
+        <p>
+        {% for item in newsdata[:3] %}
+        <a class="link" href="news/{{ item['page'] }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a><br/>
+        {% endfor %}
+        <br/>
+        <a class="link" href="{{ url_localized('news/index.html')}}">{{ _("Older news entries") }}</a>
+        </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="container-fluid greybox">
   <div class="container">
     <div class="row">
@@ -251,19 +275,6 @@
         </section>
       </div>
     </div>
-  </div>
-
-  <div class="row mt-5">
-  </div>
-  <div class="container">
-    <div class="col-8">
-      <h2><a href="{{ url_localized('news/index.html')}}">{{ _("News") }}</a></h2>
-    </div>
-    {% for item in newsdata[:3] %}
-    <div class="col-8">
-      <a href="news/{{ item['page'] }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a>
-    </div>
-   {% endfor %}
   </div>
 
 </div>
