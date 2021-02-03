@@ -27,6 +27,84 @@
 
 
       <h2><a name="current" class="subnav-anchor"></a>{{ _("Ideas 2020") }}</h2>
+
+      <section>
+        <h4>Transport Next Generation (TNG): Communicator plugins</h4>
+        <p>
+          {% trans %}
+            The GNUnet team is currently working on a transport layer rewrite
+            in order to fix core issues with connectivity.
+            This new component is currently developed under the name "TNG".
+            What is currently known as "transport plugins" will in the TNG
+            be represented as "communicators".
+
+            Communicators are processes with a well defined API that allow
+            to connect peers over a specific protocol.
+            The primary protocol which are already implemented are UNIX sockets,
+            UDP sockets, and TCP sockets.
+
+            For a truly resilient network, other connectivity options such as
+            WiFi mesh, Bluetooth, HTTP(S), QUIC or even more obscure alternatives
+            such as radio are required.
+
+            In this project, the goal is to select, implement and test new
+            communicators.
+            While TNG is not yet ready, communicators can, by design, be developed
+            and tested against the current API.
+
+            We expect that this project can be worked on by multiple students
+            as there are a lot of protocols to choose from.
+            The tasks would consist of:
+            <ol>
+              <li>Deciding which communicators to implement.</li>
+              <li>Test the communicators.</li>
+              <li>Documentation.</li>
+            </ol>
+            Advantageous skills/languages/frameworks:
+            <ol>
+              <li>C</li>
+              <li>Knowledge of HTTPS, QUIC, Bluetooth or WiFi.</li>
+            </ol>
+            <br/>
+            <strong>Difficulty:</strong> Average, but depends on selected protocols.
+            <br/>
+            <strong>Mentors:</strong> Martin Schanzenbach, t3sserakt
+          {% endtrans %}
+        </p>
+      </section>
+
+      <section>
+        <h4>REST: Multi-user support</h4>
+        <p>
+          {% trans %}
+            The REST API currently only supports a single user system.
+            This is an issue as on multi-user systems, access control
+            must be enfoced on a per-user basis.
+
+            In this project, the REST service must be extended to
+            support user authentication.
+            This includes the correct handling of user context switches.
+            <ol>
+              <li>Implement user authentication.</li>
+              <li>Test the access control.</li>
+              <li>Document the changes to the REST API.</li>
+            </ol>
+            Advantageous skills/languages/frameworks:
+            <ol>
+              <li>C</li>
+              <li>Knowledge of user authentication subsystems on Linux/Unix.</li>
+              <li>REST/HTTP Authentication methods</li>
+            </ol>
+            <br/>
+            <strong>Difficulty:</strong> Easy
+            <br/>
+            <strong>Mentors:</strong> Martin Schanzenbach
+          {% endtrans %}
+        </p>
+      </section>
+
+
+
       <section>
         <h4>re:claimID/GNUnet Browser Plugin</h4>
         <p>
