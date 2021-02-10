@@ -14,6 +14,7 @@ Requirements
   - BeautifulSoup 4
 - python3 interpreter:
   - python 3.7 or later.
+- lxml
 - gettext
 - sassc, to compile the stylesheets
 
