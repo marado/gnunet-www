@@ -3,10 +3,6 @@ common/*.inc
 
 old/
 
-*.mo
-locale/*/
-locale/messages.pot
-
 videos/grothoff2014fossa.webm
 videos/grothoff2014fossa.ogv
 
