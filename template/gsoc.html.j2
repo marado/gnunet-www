@@ -181,6 +181,36 @@
         </p>
       </section>
 
+      <section>
+        <h4>Rust templates for GNUnet services</h4>
+        <p>
+          {% trans %}
+          The goal is to either build upon the (outdated) <a href="https://github.com/canndrew/gnunet-rs">GNUnet Rust
+          bindings</a> or to follow the path of <a href="GNUnet Go">https://github.com/bfix/gnunet-go</a>
+          which tries to reimplement most of the GNUnet stack.
+          The end result should be an extension template for GNUnet in the form
+          of the existing <a href="https://git.gnunet.org/gnunet-ext.git/">C template</a>
+          which allows to quickly start implementing services and libraries
+          for GNUnet.
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            <strong>Mentors:</strong> Martin Schanzenbach
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Required Skills: Solid knowledge of Rust and ideally asynchronuous IO.
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Difficulty level: medium
+          {% endtrans %}
+        </p>
+      </section>
+
       <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
       <!--<h2><a name="past" class="subnav-anchor"></a>{{ _("Past projects") }}</h2>
       <p>
@@ -257,42 +287,6 @@
         <p>
           {% trans %}
             <strong>Mentors:</strong> lynX &amp; dvn
-          {% endtrans %}
-        </p>
-      </section>
-      <section>
-        <h4>Rust APIs for GNUnet services</h4>
-        <p>
-          {% trans %}
-            There are a variety of GNUNet APIs that should be
-            exposed in the Rust wrappers.  Implementing these will
-            require extending the port of GNUNet utils written by
-            Andrew Cann and Kelong Cong.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            As an introduction to the code base, we suggest that the
-            student and Jeff Burdges together update the
-            asynchronous IO system from gjio to futures-rs or
-            another layer built upon it.  Jeff Burdges is expected
-            to concurrently be implementing a GNUNet API for his own
-            mix network work.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            <strong>Mentors:</strong> Jeff Burdges
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            Required Skills: Rust
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            Difficulty level: low
           {% endtrans %}
         </p>
       </section>
