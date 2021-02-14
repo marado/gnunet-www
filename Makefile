@@ -3,7 +3,7 @@
 include build-system/config.mk
 
 # List of all supported languages, add new languages here!
-LANGUAGES="en de"
+LANGUAGES="en de fr it es"
 
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
