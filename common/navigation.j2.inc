@@ -84,6 +84,7 @@
 	  <li><a class="dropdown-item" href="{{ url_localized('video.html') }}">{{ _("Videos") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('glossary.html') }}">{{ _("Glossary") }}</a></li>
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/handbook/gnunet.html">{{ _("Handbook") }}</a></li>
+    <li><a class="dropdown-item" target="_blank" href="{{ url_localized('livingstandards.html') }}">{{ _("Living Standards") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org/">{{ _("REST API") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('faq.html') }}">{{ _("FAQ") }}</a></li>
           <li><a class="dropdown-item" href="https://bib.gnunet.org/date.html" target="_blank">{{ _("Bibliography") }}</a></li>

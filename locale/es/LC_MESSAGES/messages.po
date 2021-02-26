@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-14 19:58+0100\n"
+"POT-Creation-Date: 2021-02-26 18:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr "Herramienta de seguimiento de errores"
 msgid "Copyright Assignment"
 msgstr "Transmisión de derechos de autor"
 
-#: common/footer.j2.inc:20 common/navigation.j2.inc:89
+#: common/footer.j2.inc:20 common/navigation.j2.inc:90
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr "Bibliografía"
@@ -66,6 +66,7 @@ msgid "About"
 msgstr "Sobre"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
+#: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "Nuevo"
 
@@ -149,25 +150,38 @@ msgstr "Glosario"
 msgid "Handbook"
 msgstr "Manual"
 
-#: common/navigation.j2.inc:87
+#: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
+msgid "Living Standards"
+msgstr ""
+
+#: common/navigation.j2.inc:88
 msgid "REST API"
 msgstr "REST API"
 
-#: common/navigation.j2.inc:88
+#: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "FAQ"
 
-#: news/index.html.j2:11
+#: news/index.html.j2:11 news/oldnews-2018.html.j2:16
+#: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
 msgstr ""
 
-#: news/index.html.j2:16
+#: news/index.html.j2:16 news/oldnews-2018.html.j2:21
+#: news/oldnews-2019.html.j2:21
 msgid "subscribe to our RSS feed"
 msgstr ""
 
-#: news/index.html.j2:34
+#: news/index.html.j2:36 news/oldnews-2018.html.j2:40
+#: news/oldnews-2019.html.j2:40
 msgid "read more"
 msgstr ""
+
+#: news/index.html.j2:45
+#, fuzzy
+#| msgid "IRC archive"
+msgid "News archives:"
+msgstr "Archivo IRC"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -1221,10 +1235,10 @@ msgstr ""
 
 #: template/gnurl.html.j2:397
 msgid ""
-"gnurl/libgnurl is maintained by Nikita. Releases after version 7.69.1 are "
-"signed with the OpenPGP Key <b>0xD6B570842F7E7F8D</b> (<a href=\"https://"
-"keys.openpgp.org/search?q=6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys."
-"openpgp.org</a>, <a href=\"https://n0.is/pubkey.asc\">n0.is</a>), with the "
+"gnurl/libgnurl is looking for a new maintainer. Releases after version "
+"7.69.1 and up to version 7.72.0 were signed with the OpenPGP Key "
+"<b>0xD6B570842F7E7F8D</b> (<a href=\"https://keys.openpgp.org/search?"
+"q=6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>), with the "
 "key fingerprint <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E 7F8D</b>."
 msgstr ""
 
@@ -2089,6 +2103,10 @@ msgid ""
 "experience, <a href=\"https://gnunet.org/en/use.html\">continue here</a>."
 msgstr ""
 
+#: template/livingstandards.html.j2:11
+msgid "On this page you can find links to our technical specifications."
+msgstr ""
+
 #: template/use.html.j2:6
 msgid "How to use GNUnet - in a nutshell"
 msgstr ""
@@ -2177,9 +2195,6 @@ msgstr ""
 #~| msgid "What is GNUnet?"
 #~ msgid "Get off GNUnet"
 #~ msgstr "Qué es GNUnet?"
-
-#~ msgid "IRC archive"
-#~ msgstr "Archivo IRC"
 
 #~ msgid "Developer Team"
 #~ msgstr "Equipo de desarrollo"
