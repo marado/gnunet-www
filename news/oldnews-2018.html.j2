@@ -1,11 +1,16 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
+<!-- Simply link to or copy this file as-is (no modifications required)
+     news/oldnews-::year::. This will generate a new news archive page.
+     Note that you may still have to modify the currently displayed
+     year ranges in the index.html.j2.
+-->
   <div class="container-fluid">
     <div class="container">
       <article>
         <div class="row">
           <div class="container text-center">
-            <h1>{{ _("News") }}<a name="news"></a></h1>
+            <h1>{{ _("News") + " " + self._TemplateReference__context.name[13:17] }}<a name="news"></a></h1>
             <section>
               <p>
                 {% trans %}
@@ -19,10 +24,9 @@
           </div>
         </div>
         <div class="row">
-          {% for year, yitem in newsdata|selectattr('date.year', 'gt', 2019)|groupby('date.year') %}
-          <b>{{ year }}</b>
+          <b>{{ self._TemplateReference__context.name[13:17] }}</b>
           <ul class="timeline">
-          {% for item in yitem %}
+          {% for item in newsdata|selectattr('date.year', 'eq', self._TemplateReference__context.name[13:17]|int) %}
           <li>
               <section class="item-preview">
                <header>
@@ -39,18 +43,7 @@
             </li>
           {% endfor %}
           </ul>
-          {% endfor %}
         </div>
-        <h2>
-          {% trans %}
-          News archives:
-          {% endtrans %}
-        </h2>
-        <ul>
-        {% for year, yitem in newsdata|selectattr('date.year', 'lt', 2020)|groupby('date.year')|reverse %}
-          <li><a href="{{ 'oldnews-' + year|string + '.html' }}">{{ year }} ({{yitem|length}})</a></li>
-        {% endfor %}
-        </ul>
       </article>
     </div>
   </div>
