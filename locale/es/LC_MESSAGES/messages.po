@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-01 20:31+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-03-03 18:34+0000\n"
+"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
+"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
+"\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: common/base.j2:5 common/news.j2:5
@@ -26,7 +28,7 @@ msgstr "GNUnet a. r."
 
 #: common/base.j2:6 common/news.j2:6
 msgid "GNU's framework for secure p2p networking"
-msgstr ""
+msgstr "Estructura de GNU para redes p2p seguras"
 
 #: common/footer.j2.inc:7
 msgid "Contact"
@@ -55,11 +57,11 @@ msgstr "Bibliografía"
 
 #: common/footer.j2.inc:31
 msgid "Source code of this site."
-msgstr ""
+msgstr "Código fuente de este sitio."
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
-msgstr ""
+msgstr "Reportar problemas con el sitio web."
 
 #: common/navigation.j2.inc:38
 msgid "About"
@@ -88,7 +90,7 @@ msgstr "Projectos de GSoC"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr "Derecho de autor para contributores"
+msgstr "Derecho de autor para colaboradores"
 
 #: common/navigation.j2.inc:51
 msgid "IRC Archive"
@@ -108,7 +110,7 @@ msgstr ""
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
-msgstr "Códico fuente"
+msgstr "Código fuente"
 
 #: common/navigation.j2.inc:66
 #, fuzzy
@@ -175,7 +177,7 @@ msgstr ""
 #: news/index.html.j2:36 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr ""
+msgstr "leer más"
 
 #: news/index.html.j2:45
 #, fuzzy
@@ -197,6 +199,7 @@ msgid ""
 msgstr ""
 
 #: template/about.html.j2:23
+#, fuzzy
 msgid ""
 "Today, the actual use and thus the social requirements for a global network "
 "differs widely from those goals of 1970. While the Internet remains suitable "
@@ -204,6 +207,11 @@ msgid ""
 "hierarchy and when necessary isolated from the rest of the world, the "
 "situation is less tenable for civil society."
 msgstr ""
+"Hoy, el uso real y, consecuentemente, los requerimientos sociales para una "
+"red global difieren ampliamente de los mismos objetivos de 1970. Mientras "
+"que el internet sigue siendo útil para fines militares, donde el equipo de "
+"la red se opera por una jerarquía de comandos y aislada del resto del mundo "
+"cuando es necesario, la situación es menos sostenible para la sociedad civil."
 
 #: template/about.html.j2:32
 msgid ""
@@ -216,36 +224,49 @@ msgid ""
 msgstr ""
 
 #: template/about.html.j2:41
+#, fuzzy
 msgid ""
 "We believe liberal societies need a network architecture that uses the anti-"
 "authoritarian decentralized peer-to-peer paradigm and privacy-preserving "
 "cryptographic protocols. The goal of the GNUnet project is to provide a Free "
 "Software realization of this ideal."
 msgstr ""
+"Creemos que las sociedades liberales necesitan una arquitectura de red que "
+"utilice el paradigma anti-autoritario, descentralizado «peer to peer» y "
+"protocolos criptográficos de preservación de la privacidad. El objetivo del "
+"projecto GNUnet is proveer un resultado de Software libre de este ideal."
 
 #: template/about.html.j2:49
 msgid ""
 "Specifically, GNUnet tries to follow the following design principles, in "
 "order of importance:"
 msgstr ""
+"Específicamente, GNUnet busca proceder bajo los siguientes principios de "
+"diseño, en orden de importancia:"
 
 #: template/about.html.j2:56
 msgid ""
 "GNUnet must be implemented as <a href=\"https://www.gnu.org/philosophy/free-"
 "sw.html\">Free Software</a>."
 msgstr ""
+"GNUnet debe implementarse como <a href=\"https://www.gnu.org/philosophy/free-"
+"sw.html\">Software libre</a>."
 
 #: template/about.html.j2:60
 msgid ""
 "GNUnet must minimize the amount of personally identifiable information "
 "exposed."
 msgstr ""
+"GNUnet debe minimizar la cantidad de información personal de identificación "
+"expuesta."
 
 #: template/about.html.j2:61
 msgid ""
 "GNUnet must be fully distributed and resilient to external attacks and rogue "
 "participants."
 msgstr ""
+"GNUnet debe ser distribuido completamente, resiliente a ataques externos y "
+"participantes fraudulentos."
 
 #: template/about.html.j2:62
 msgid ""
@@ -258,10 +279,12 @@ msgid ""
 "GNUnet must inform the user which other participants have to be trusted when "
 "establishing private communications."
 msgstr ""
+"GNUnet debe informar al usuario en qué otros participantes tiene que confiar "
+"al establecer comunicaciones privadas."
 
 #: template/about.html.j2:64
 msgid "GNUnet must be open and permit new peers to join."
-msgstr ""
+msgstr "GNUnet debe ser abierto y permitir que nuevos pares se unan."
 
 #: template/about.html.j2:65
 msgid "GNUnet must support a diverse range of applications and devices."
@@ -270,16 +293,20 @@ msgstr ""
 #: template/about.html.j2:66
 msgid "GNUnet must use compartmentalization to protect sensitive information."
 msgstr ""
+"GNUnet debe utilizar compartimentalización para proteger información "
+"confidencial."
 
 #: template/about.html.j2:67
 msgid "The GNUnet architecture must be resource efficient."
-msgstr ""
+msgstr "La arquitectura de GNUnet debe ser eficiente en términos de recursos."
 
 #: template/about.html.j2:68
 msgid ""
 "GNUnet must provide incentives for peers to contribute more resources than "
 "they consume."
 msgstr ""
+"GNUnet debe entregar incentivos para que los pares contribuyan con más "
+"recursos de los que consumen."
 
 #: template/about.html.j2:72
 msgid ""
@@ -303,7 +330,7 @@ msgstr ""
 
 #: template/about.html.j2:88
 msgid "More Resources"
-msgstr ""
+msgstr "Más recursos"
 
 #: template/about.html.j2:90
 msgid ""
@@ -314,6 +341,12 @@ msgid ""
 "\">videos</a> or a brief <a href=\"https://gnunet.org/en/glossary.html"
 "\">glossary</a>."
 msgstr ""
+"Hay muchos más recursos disponibles para aprender sobre GNUnet fuera del <a "
+"href=\"https://docs.gnunet.org/handbook/gnunet.html\">manual</a>, como <a "
+"href=\"https://bib.gnunet.org/\">bibliografía</a> con artículos que cubren "
+"las diversas capas, muchos <a href=\"https://gnunet.org/en/video.html\""
+">videos</a> o un corto <a href=\"https://gnunet.org/en/glossary.html\""
+">glosario</a>."
 
 #: template/about.html.j2:95
 msgid ""
@@ -322,6 +355,9 @@ msgid ""
 "html\">use it</a> and <a href=\"engage.html\">contribute and get engaged</a> "
 "in various ways."
 msgstr ""
+"Lo invitamos a <a href=\"engage.html\"> unirse a la conversación </a><a href="
+"\"install.html\">instalar GNUnet </a><a href=\"use.html\">usarlo</a>y<a href="
+"\"engage.html\">contribuir e involucrarse</a>de diversas maneras."
 
 #: template/about.html.j2:100
 msgid ""
@@ -329,10 +365,13 @@ msgid ""
 "alpha stage when it comes to software &#8211; its not an easy task to "
 "rewrite the whole Internet!"
 msgstr ""
+"Por favor tenga en cuenta que este proyecto está (a pesar de su edad) aún en "
+"una etapa temprana alfa en términos de software &#8211; y ¡no es tarea "
+"sencilla reescribir todo Internet!"
 
 #: template/about.html.j2:105
 msgid "Current funding"
-msgstr ""
+msgstr "Financiamiento actual"
 
 #: template/about.html.j2:110
 msgid ""
@@ -340,8 +379,12 @@ msgid ""
 "to document and implement the GNU Name System protocol in a way suitable for "
 "the IETF standardization process."
 msgstr ""
+"Recibimos financiamiento de la línea de NLnet Nest Generation para "
+"documentar e implementar el protocolo GNU Name System de una manera acorde "
+"al proceso IETF de estandarización."
 
 #: template/about.html.j2:123
+#, fuzzy
 msgid ""
 "This project has received funding from the European Union’s Horizon 2020 "
 "research and innovation programme under the NGI_TRUST grant agreement no "
@@ -351,19 +394,28 @@ msgid ""
 "providers. The project is called \"Decentralized Identities for Self-"
 "Sovereign End-users\" (DISSENS)."
 msgstr ""
+"Este proyecto ha recibido financiamiento del fondo de investigación e "
+"innovación Horizonte 2020 de la Unión Europea bajo el convenio de subvención "
+"NGI_TRUST n. 825618. El proyecto busca integrar re:claimID con el sistema de "
+"pago de GNU Taler en un proyecto piloto para así demostrar la factibilidad "
+"práctica y los beneficios de las tecnologías potenciadoras de la privacidad "
+"para usuarios y proveedores de servicios comerciales. Este proyecto se llama "
+"\"Identidad descentralizada para usuario final soberano(DISSENS)\""
 
 #: template/about.html.j2:141
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
+"Agradecemos el alojamiento gratuito brindado por las siguientes "
+"organizaciones:"
 
 #: template/about.html.j2:150
 msgid "Past funding"
-msgstr ""
+msgstr "Financiamiento pasado"
 
 #: template/about.html.j2:152
 msgid "We are grateful for past funding from the following organizations:"
-msgstr ""
+msgstr "Agradecemos el financiamiento pasado de las siguientes organizaciones:"
 
 #: template/applications.html.j2:7
 msgid "Applications provided by GNUnet"
