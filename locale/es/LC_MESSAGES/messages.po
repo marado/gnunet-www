@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-01 20:31+0100\n"
 "PO-Revision-Date: 2021-03-03 18:34+0000\n"
-"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
+"Last-Translator: Erika Fombella <fombellaerika@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -74,7 +74,7 @@ msgstr "Nuevo"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
@@ -106,27 +106,23 @@ msgstr "Architectura del sistema"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
 msgid "Roadmap"
-msgstr ""
+msgstr "Mapa de ruta"
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
 msgstr "Código fuente"
 
 #: common/navigation.j2.inc:66
-#, fuzzy
-#| msgid "Documentation"
 msgid "Source Code Documentation"
-msgstr "Documentación"
+msgstr "Documentación de código de fuente"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
 msgstr "Integración continua"
 
 #: common/navigation.j2.inc:68
-#, fuzzy
-#| msgid "Development"
 msgid "Development Tutorial"
-msgstr "Desarrollo"
+msgstr "Tutorial de desarrollo"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
