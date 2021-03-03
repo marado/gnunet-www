@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-01 20:31+0100\n"
+"POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-02-17 15:13+0000\n"
 "Last-Translator: Weblate Admin <admin@example.com>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/"
@@ -497,15 +497,11 @@ msgstr ""
 msgid "GNUnet System Architecture"
 msgstr "GNUnet Systemarchitektur"
 
-#: template/architecture.html.j2:15
-msgid "Legend"
-msgstr ""
-
-#: template/architecture.html.j2:60
+#: template/architecture.html.j2:20
 msgid "Foundations"
 msgstr "Grundlagen"
 
-#: template/architecture.html.j2:62
+#: template/architecture.html.j2:22
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -520,11 +516,11 @@ msgstr ""
 "decentralizierte Routingalgorithmen benutzt. Diese Komponenten ersetzen das "
 "traditionelle Internet (TCP/IP)."
 
-#: template/architecture.html.j2:75
+#: template/architecture.html.j2:35
 msgid "Security"
 msgstr "Sicherheit"
 
-#: template/architecture.html.j2:78
+#: template/architecture.html.j2:38
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -533,24 +529,28 @@ msgid ""
 "remain free software."
 msgstr ""
 
-#: template/architecture.html.j2:92
+#: template/architecture.html.j2:52
 #, fuzzy
 #| msgid "System Architecture"
 msgid "System architecture"
 msgstr "System Architekture"
 
-#: template/architecture.html.j2:98
+#: template/architecture.html.j2:58
 msgid "Subsystems"
 msgstr ""
 
-#: template/architecture.html.j2:107
+#: template/architecture.html.j2:67
 #, fuzzy
 #| msgid "libgnurl"
 msgid "libgnunetutil"
 msgstr "libgnurl"
 
-#: template/architecture.html.j2:113
+#: template/architecture.html.j2:73
 msgid "APIs"
+msgstr ""
+
+#: template/architecture.html.j2:86
+msgid "Legend"
 msgstr ""
 
 #: template/contact.html.j2:6

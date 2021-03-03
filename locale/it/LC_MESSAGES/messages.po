@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-01 20:31+0100\n"
+"POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -477,15 +477,11 @@ msgstr ""
 msgid "GNUnet System Architecture"
 msgstr ""
 
-#: template/architecture.html.j2:15
-msgid "Legend"
-msgstr ""
-
-#: template/architecture.html.j2:60
+#: template/architecture.html.j2:20
 msgid "Foundations"
 msgstr ""
 
-#: template/architecture.html.j2:62
+#: template/architecture.html.j2:22
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -494,11 +490,11 @@ msgid ""
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
 
-#: template/architecture.html.j2:75
+#: template/architecture.html.j2:35
 msgid "Security"
 msgstr ""
 
-#: template/architecture.html.j2:78
+#: template/architecture.html.j2:38
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -507,20 +503,24 @@ msgid ""
 "remain free software."
 msgstr ""
 
-#: template/architecture.html.j2:92
+#: template/architecture.html.j2:52
 msgid "System architecture"
 msgstr ""
 
-#: template/architecture.html.j2:98
+#: template/architecture.html.j2:58
 msgid "Subsystems"
 msgstr ""
 
-#: template/architecture.html.j2:107
+#: template/architecture.html.j2:67
 msgid "libgnunetutil"
 msgstr ""
 
-#: template/architecture.html.j2:113
+#: template/architecture.html.j2:73
 msgid "APIs"
+msgstr ""
+
+#: template/architecture.html.j2:86
+msgid "Legend"
 msgstr ""
 
 #: template/contact.html.j2:6
