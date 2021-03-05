@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-03 18:34+0000\n"
-"Last-Translator: Erika Fombella <fombellaerika@hotmail.com>\n"
-"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/"
-">\n"
+"PO-Revision-Date: 2021-03-05 22:52+0000\n"
+"Last-Translator: April Espindola <apriespindola@gmail.com>\n"
+"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
+"\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -192,6 +192,12 @@ msgid ""
 "secure publication of files, it has grown to include all kinds of basic "
 "protocol components and applications towards the creation of a GNU internet."
 msgstr ""
+"GNUnet es una pila de red alternativa para crear aplicaciones distribuidas "
+"seguras, descentralizadas y que preservan la privacidad. Nuestra meta es "
+"reemplazar la vieja pila de protocolo de internet inseguro. Comenzando por "
+"una aplicación para publicación segura de archivos, ah crecido para incluir "
+"todo tipo de componentes de protocolo básico y aplicaciones hacia la "
+"creación de una internet GNU."
 
 #: template/about.html.j2:23
 #, fuzzy
@@ -217,6 +223,12 @@ msgid ""
 "cryptographyengineering.com/2015/08/16/the-network-is-hostile/\">\"the "
 "network is hostile\"</a>."
 msgstr ""
+"Debido a las elecciones fundamentales de diseño de Internet, el trafico de "
+"internet puede ser desviado, interceptado, censurado y manipulado por "
+"enrutadores hostiles en la red. Y por supuesto, el internet moderno ha "
+"evolucionado exactamente hasta el punto en que , como Matthew Green lo puso, "
+"<a href=\"https://blog.cryptographyengineering.com/2015/08/16/"
+"the-network-is-hostile/\">\"La red es hostil\"</a>."
 
 #: template/about.html.j2:41
 #, fuzzy
@@ -268,6 +280,8 @@ msgid ""
 "GNUnet must be self-organizing and not depend on administrators or "
 "centralized infrastructure."
 msgstr ""
+"GNUnet debe ser auto-organizado y no depender de administradores o "
+"infraestructura centralizada."
 
 #: template/about.html.j2:63
 msgid ""
@@ -283,7 +297,7 @@ msgstr "GNUnet debe ser abierto y permitir que nuevos pares se unan."
 
 #: template/about.html.j2:65
 msgid "GNUnet must support a diverse range of applications and devices."
-msgstr ""
+msgstr "GNUnet debe suportar un rango diverso de aplicaciones y dispositivos."
 
 #: template/about.html.j2:66
 msgid "GNUnet must use compartmentalization to protect sensitive information."
@@ -322,6 +336,23 @@ msgid ""
 "Zones_0029\">Zones in the GNU Name System (GNS Zones)</a></li> <li><a href="
 "\"https://docs.gnunet.org/handbook/gnunet.html#Egos\">Egos</a></li> </ul>"
 msgstr ""
+"Para tener conocimiento y aprendes más, por favor chequé nuestro <a href="
+"\"https://docs.gnunet.org/handbook/gnunet.html\">manual</a>,especialmente el "
+"<a href=\"https://docs.gnunet.org/handbook/gnunet.html#Key-Concepts\""
+">capitulo en \"conceptos clave\"</a>, explicando los conceptos fundamentales "
+"de GNUnet: <ul> <li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#"
+"Authentication\">Auntenticación</a></li> <li><a href=\"https://docs.gnunet."
+"org/handbook/gnunet.html#Accounting-to-Encourage-Resource-Sharing\""
+">Contabilidad para fomentar el intercambio de recursos</a></li> <li><a href="
+"\"https://docs.gnunet.org/handbook/gnunet.html#Confidentiality\""
+">Confidencialidad</a></li> <li><a href=\"https://docs.gnunet.org/handbook/"
+"gnunet.html#Anonymity\">Anonimato</a></li> <li><a href=\"https://docs.gnunet."
+"org/handbook/gnunet.html#Deniability\">Negación</a></li> <li><a href=\"https"
+"://docs.gnunet.org/handbook/gnunet.html#Peer-Identities\">Identidades de "
+"compañeros</a></li> <li><a href=\"https://docs.gnunet.org/handbook/gnunet."
+"html#Zones-in-the-GNU-Name-System-_0028GNS-Zones_0029\">Zonas en el nombre "
+"del sistema GNU</a></li> <li><a href=\"https://docs.gnunet.org/handbook/"
+"gnunet.html#Egos\">Egos</a></li> </ul>"
 
 #: template/about.html.j2:88
 msgid "More Resources"
@@ -417,7 +448,7 @@ msgstr "Aplicaciones que ofrece GNUnet"
 
 #: template/applications.html.j2:13 template/gns.html.j2:7
 msgid "The GNU Name System"
-msgstr ""
+msgstr "El sistema de nombres GNU"
 
 #: template/applications.html.j2:15
 msgid ""
@@ -429,10 +460,18 @@ msgid ""
 "cryptographically secured. <!-- Too technical: GNS integrates a robust, "
 "efficient and instant key revocation mechanism. -->"
 msgstr ""
+"El <a href=\"gns.html\">sistema de nombre GNU(GNS)</a> es un reemplazo "
+"totalmente descentralizado por el Sistema de Nombre de Domino (DNS). En "
+"lugar de usar un jerarquía, GNS usa un grafico dirigido. El convenio de "
+"denominaciones es similar a DNS, pero las consultas y respuestas son privada "
+"incluso con respecto a otros que brindas la respuesta- La integridad de "
+"registros y la privacidad de de las búsquedas esta protegida "
+"criptográficamente. <!-- Too technical: GNS integrates a robust, efficient "
+"and instant key revocation mechanism. -->"
 
 #: template/applications.html.j2:38
 msgid "Self-sovereign, decentralized identity provider"
-msgstr ""
+msgstr "Proveedor de identidad descentralizado y autónomo"
 
 #: template/applications.html.j2:40
 msgid ""
@@ -441,6 +480,11 @@ msgid ""
 "allows users to securely share personal information with websites using "
 "standardized protocols (OpenID Connect)."
 msgstr ""
+"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> es un servicio de "
+"proveedor de Identidad descentralizada(IdP) integrado en la parte superior "
+"del sistema de nombres GNU. Esto permite a los usuarios de forma segura "
+"compartir información personal con sitios web utilizando protocolos "
+"estandarizados (OpenID Connect)."
 
 #: template/applications.html.j2:57
 #, fuzzy
@@ -520,6 +564,11 @@ msgid ""
 "key exchange. p&#8801;p will use GNUnet to protect metadata and exploit new "
 "cryptographic protocols to verify keys."
 msgstr ""
+"<a href=\"https://pep.foundation/\">Privacidad muy fácil</a> (p&#8801;p)esta "
+"creando una solución de correo electrónico encriptado de extremo a extremo, "
+"utilizable mediante el intercambio de clave oportunista. p&#8801;p usará GNU "
+"para proteger metadatos y explotar nuevos protocolos criptográficos para "
+"verificar claves."
 
 #: template/applications.html.j2:160
 msgid "Cadet-GTK"
@@ -549,6 +598,10 @@ msgid ""
 "subsystem. It is developed using nim. Cadet-GTK and groupchat are planned to "
 "be compatible."
 msgstr ""
+"<a href=\"https://git.gnunet.org/groupchat.git/\">grupo de chat</a>es una "
+"interfaz de usuario terminal que proporciona mensajería utilizando "
+"especialmente el subsistema CADET. Es desarrollado usando nim. SE planea que "
+"Cadet-GTK y grupos de chat sean compatibles."
 
 #: template/architecture.html.j2:6
 msgid "GNUnet System Architecture"
@@ -586,6 +639,11 @@ msgid ""
 "is a <a href=\"https://www.gnu.org/\">GNU</a> package, and will always "
 "remain free software."
 msgstr ""
+"GNUnet es implementado utilizando múltiples procesos de arquitectura. Cada "
+"subsistema se ejecuta como un procesos separado, proporcionando aislamiento "
+"de fallas y permitiendo que se otorguen permisos estrictos a cada "
+"subsistema. Naturalmente, la implementación es un <a href=\"https://www.gnu."
+"org/\">GNU</a> paquete y siempre será de software libre."
 
 #: template/architecture.html.j2:52
 #, fuzzy
@@ -607,7 +665,7 @@ msgstr ""
 
 #: template/architecture.html.j2:86
 msgid "Legend"
-msgstr ""
+msgstr "Leyenda"
 
 #: template/contact.html.j2:6
 #, fuzzy
@@ -617,7 +675,7 @@ msgstr "Integración continua"
 
 #: template/contact.html.j2:11
 msgid "The mailing list"
-msgstr ""
+msgstr "Lista de correo"
 
 #: template/contact.html.j2:13
 msgid ""
