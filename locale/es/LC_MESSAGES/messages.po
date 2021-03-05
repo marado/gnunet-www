@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-05 22:52+0000\n"
-"Last-Translator: April Espindola <apriespindola@gmail.com>\n"
+"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -653,25 +653,23 @@ msgstr "Architectura del sistema"
 
 #: template/architecture.html.j2:58
 msgid "Subsystems"
-msgstr ""
+msgstr "Subsistemas"
 
 #: template/architecture.html.j2:67
 msgid "libgnunetutil"
-msgstr ""
+msgstr "libgnunetutil"
 
 #: template/architecture.html.j2:73
 msgid "APIs"
-msgstr ""
+msgstr "APIs"
 
 #: template/architecture.html.j2:86
 msgid "Legend"
 msgstr "Leyenda"
 
 #: template/contact.html.j2:6
-#, fuzzy
-#| msgid "Continuous Integration"
 msgid "Contact information"
-msgstr "Integración continua"
+msgstr "Información de contacto"
 
 #: template/contact.html.j2:11
 msgid "The mailing list"
