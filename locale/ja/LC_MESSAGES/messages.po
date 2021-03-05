@@ -8,175 +8,179 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-05 22:52+0000\n"
+"Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
+"Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
+">\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: common/base.j2:5 common/news.j2:5
 msgid "GNUnet"
-msgstr ""
+msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
+#, fuzzy
 msgid "GNU's framework for secure p2p networking"
-msgstr ""
+msgstr "安全な P2P ネットワーキングを可能にする GNU のフレームワーク"
 
 #: common/footer.j2.inc:7
 msgid "Contact"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: common/footer.j2.inc:8 common/navigation.j2.inc:49
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "GNUnet e.V."
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr ""
+msgstr "GNUnet について"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
 msgid "Bug Tracker"
-msgstr ""
+msgstr "バグトラッカー"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
 msgid "Copyright Assignment"
-msgstr ""
+msgstr "著作権譲渡書"
 
 #: common/footer.j2.inc:20 common/navigation.j2.inc:90
 #: template/developers.html.j2:24
 msgid "Bibliography"
-msgstr ""
+msgstr "参考文献"
 
 #: common/footer.j2.inc:31
 msgid "Source code of this site."
-msgstr ""
+msgstr "本サイトのソースコードはこちら。"
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
-msgstr ""
+msgstr "このウェブサイトの問題を報告する。"
 
 #: common/navigation.j2.inc:38
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
-msgstr ""
+msgstr "更新情報"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
-msgstr ""
+msgstr "アプリケーション"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
-msgstr ""
+msgstr "コミュニティ"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
 msgid "Engage"
-msgstr ""
+msgstr "参加する"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
-msgstr ""
+msgstr "GSoC プロジェクト"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "貢献者の著作権"
 
 #: common/navigation.j2.inc:51
 msgid "IRC Archive"
-msgstr ""
+msgstr "IRC アーカイブ"
 
 #: common/navigation.j2.inc:58
 msgid "Development"
-msgstr ""
+msgstr "開発"
 
 #: common/navigation.j2.inc:61
 msgid "System Architecture"
-msgstr ""
+msgstr "システム アーキテクチャ"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
 msgid "Roadmap"
-msgstr ""
+msgstr "ロードマップ"
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
-msgstr ""
+msgstr "ソースコード"
 
 #: common/navigation.j2.inc:66
 msgid "Source Code Documentation"
-msgstr ""
+msgstr "ドキュメンテーション"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
-msgstr ""
+msgstr "継続的なインテグレーション"
 
 #: common/navigation.j2.inc:68
 msgid "Development Tutorial"
-msgstr ""
+msgstr "チュートリアル"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
-msgstr ""
+msgstr "資料"
 
 #: common/navigation.j2.inc:82 template/install.html.j2:6
 msgid "Install"
-msgstr ""
+msgstr "インストール"
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
 msgid "Use"
-msgstr ""
+msgstr "利用"
 
 #: common/navigation.j2.inc:84
 msgid "Videos"
-msgstr ""
+msgstr "動画"
 
 #: common/navigation.j2.inc:85 template/glossary.html.j2:6
 msgid "Glossary"
-msgstr ""
+msgstr "用語集"
 
 #: common/navigation.j2.inc:86
 msgid "Handbook"
-msgstr ""
+msgstr "ハンドブック"
 
 #: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
 msgid "Living Standards"
-msgstr ""
+msgstr "規格や標準"
 
 #: common/navigation.j2.inc:88
 msgid "REST API"
-msgstr ""
+msgstr "REST API"
 
 #: common/navigation.j2.inc:89
 msgid "FAQ"
-msgstr ""
+msgstr "よくある質問"
 
 #: news/index.html.j2:11 news/oldnews-2018.html.j2:16
 #: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr ""
+msgstr "リリースやイベントなど、GNUnet 関連の各種変更についての情報を掲載しています"
 
 #: news/index.html.j2:16 news/oldnews-2018.html.j2:21
 #: news/oldnews-2019.html.j2:21
 msgid "subscribe to our RSS feed"
-msgstr ""
+msgstr "RSS フィードに登録"
 
 #: news/index.html.j2:36 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr ""
+msgstr "詳細"
 
 #: news/index.html.j2:45
 msgid "News archives:"
-msgstr ""
+msgstr "アーカイブ"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
-msgstr ""
+msgstr "GNUnet とは"
 
 #: template/about.html.j2:13
 msgid ""
@@ -187,6 +191,10 @@ msgid ""
 "basic protocol components and applications towards the creation of a GNU "
 "internet."
 msgstr ""
+"GNUnet とは、安全、脱一元化、プライバシー保護を実現する分散型プリケーションを構築するための代替ネットワーク スタックであり、"
+"従来型の安全性に欠くインターネット プロトコル "
+"スタックを置き換えることを目的としています。各種ファイルを安全に公開できるアプリケーションとしてスタートし、現在は、あらゆる種類の基本プロトコル "
+"コンポーネントやアプリケーションなどを含め、GNU インターネットの創造を目指しています。"
 
 #: template/about.html.j2:23
 msgid ""
@@ -196,6 +204,8 @@ msgid ""
 "operated by a command hierarchy and when necessary isolated from the rest"
 " of the world, the situation is less tenable for civil society."
 msgstr ""
+"今日、グローバル ネットワークの実利用、つまり社会的要件は 1970 年の目標とは大きく異なります。ネットワーク機器はコマンド階層によって運用され、必要に"
+"応じて一部のみ切り離すことができるという点で、インターネットは軍事利用に適しているものの、現状では一般市民による利用に適しているとはいえません。"
 
 #: template/about.html.j2:32
 msgid ""
@@ -206,6 +216,9 @@ msgid ""
 "href=\"https://blog.cryptographyengineering.com/2015/08/16/the-network-"
 "is-hostile/\">\"the network is hostile\"</a>."
 msgstr ""
+"インターネットの基本設計は、ネットワーク上の悪意あるルーターを経由したトラフィックの誤ダイレクト、傍受、検閲、操作などを可能にしています。実際に現代のイン"
+"ターネットは、マシュー・グリーンによる<a href=\"https://blog.cryptographyengineering.com/2015/"
+"08/16/the-network-is-hostile/\">「ネットワークには敵意がある」</a>という表現を正に体現するに至ったと言えます。"
 
 #: template/about.html.j2:41
 msgid ""
@@ -214,64 +227,68 @@ msgid ""
 "preserving cryptographic protocols. The goal of the GNUnet project is to "
 "provide a Free Software realization of this ideal."
 msgstr ""
+"自由主義社会には、権威から独立した分散型ピアツーピア パラダイムとプライバシー保護のための暗号プロトコルを使用するネットワーク "
+"アーキテクチャが必要であると私たちは考えます。こうした理想を実現する自由ソフトウェアを提供することが GNUnet プロジェクトの目的です。"
 
 #: template/about.html.j2:49
 msgid ""
 "Specifically, GNUnet tries to follow the following design principles, in "
 "order of importance:"
-msgstr ""
+msgstr "具体的には、GNUnet の設計は次の原則に則っています（重要度の高い順）。"
 
 #: template/about.html.j2:56
 msgid ""
 "GNUnet must be implemented as <a href=\"https://www.gnu.org/philosophy"
 "/free-sw.html\">Free Software</a>."
 msgstr ""
+"GNUnet は<a href=\"https://www.gnu.org/philosophy/free-sw.html\""
+">自由ソフトウェア</a>として実装される。"
 
 #: template/about.html.j2:60
 msgid ""
 "GNUnet must minimize the amount of personally identifiable information "
 "exposed."
-msgstr ""
+msgstr "公開される PII（個人を特定できる情報）を最小限に抑える。"
 
 #: template/about.html.j2:61
 msgid ""
 "GNUnet must be fully distributed and resilient to external attacks and "
 "rogue participants."
-msgstr ""
+msgstr "GNUnet は完全な分散型であり、外部からの攻撃や悪質な参加者に対して回復力がなければならない。"
 
 #: template/about.html.j2:62
 msgid ""
 "GNUnet must be self-organizing and not depend on administrators or "
 "centralized infrastructure."
-msgstr ""
+msgstr "GNUnet は自律した組織化構造を持ち、管理者や中央一元型インフラストラクチャに依存してはならない。"
 
 #: template/about.html.j2:63
 msgid ""
 "GNUnet must inform the user which other participants have to be trusted "
 "when establishing private communications."
-msgstr ""
+msgstr "GNUnet は、プライベート通信を確立する際、信頼すべき他の参加者をユーザーに通知する。"
 
 #: template/about.html.j2:64
 msgid "GNUnet must be open and permit new peers to join."
-msgstr ""
+msgstr "GNUnet はオープンであり、新しい参加者を受け入れなければならない。"
 
 #: template/about.html.j2:65
 msgid "GNUnet must support a diverse range of applications and devices."
-msgstr ""
+msgstr "GNUnet は、さまざまなアプリケーションやデバイスに対応しなければならない。"
 
 #: template/about.html.j2:66
 msgid "GNUnet must use compartmentalization to protect sensitive information."
-msgstr ""
+msgstr "GNUnet は、機密情報を保護するために区分化されなければならない。"
 
 #: template/about.html.j2:67
 msgid "The GNUnet architecture must be resource efficient."
-msgstr ""
+msgstr "GNUnet アーキテクチャはリソース効率が高くなければならない。"
 
 #: template/about.html.j2:68
 msgid ""
 "GNUnet must provide incentives for peers to contribute more resources "
 "than they consume."
-msgstr ""
+msgstr "GNUnet は、リソースの消費を超える貢献をしてもらうため、ピアを動機づけしなければならない。"
 
 #: template/about.html.j2:72
 msgid ""
@@ -297,10 +314,24 @@ msgid ""
 "href=\"https://docs.gnunet.org/handbook/gnunet.html#Egos\">Egos</a></li> "
 "</ul>"
 msgstr ""
+"詳細は<a href=\"https://docs.gnunet.org/handbook/gnunet.html\">ハンドブック</a>中の、特に "
+"GNUnet の基本概念を説明する<a href=\"https://docs.gnunet.org/handbook/gnunet.html#Key-"
+"Concepts\">「主要概念」の章</a>を参照してください。<ul><li><a href=\"https://docs.gnunet.org/"
+"handbook/gnunet.html#Authentication\">認証</a></li><li><a href=\"https://docs."
+"gnunet.org/handbook/gnunet.html#Accounting-to-Encourage-Resource-Sharing\""
+">リソース共有の奨励</a></li><li><a href=\"https://docs.gnunet.org/handbook/gnunet."
+"html#Confidentiality\">守秘義務</a></li><li><a href=\"https://docs.gnunet.org/"
+"handbook/gnunet.html#Anonymity\">匿名性</a></li><li><a href=\"https://docs."
+"gnunet.org/handbook/gnunet.html#Deniability\">否認権</a></li><li><a href=\"https"
+"://docs.gnunet.org/handbook/gnunet.html#Peer-Identities\">ピア ID</a></"
+"li><li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#Zones-in-the-"
+"GNU-Name-System-_0028GNS-Zones_0029\">GNU ネーム システムのゾーン（GNS ゾーン）</a></"
+"li><li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#Egos\""
+">Egos</a></li></ul>"
 
 #: template/about.html.j2:88
 msgid "More Resources"
-msgstr ""
+msgstr "その他のリソース"
 
 #: template/about.html.j2:90
 msgid ""
