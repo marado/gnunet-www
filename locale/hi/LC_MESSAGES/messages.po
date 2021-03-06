@@ -8,51 +8,53 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-03-07 03:10+0000\n"
+"Last-Translator: Jigisha Sharma <jigishas38@gmail.com>\n"
+"Language-Team: Hindi <http://weblate.taler.net/projects/gnunet/website/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: common/base.j2:5 common/news.j2:5
 msgid "GNUnet"
-msgstr ""
+msgstr "कम्प्यूटिंग नेट"
 
 #: common/base.j2:6 common/news.j2:6
 msgid "GNU's framework for secure p2p networking"
-msgstr ""
+msgstr "कम्प्यूटिंग का ढाँचा सुरक्षित पीयर टू पीयर नेटवर्क के लिए"
 
 #: common/footer.j2.inc:7
 msgid "Contact"
-msgstr ""
+msgstr "सम्पर्क"
 
 #: common/footer.j2.inc:8 common/navigation.j2.inc:49
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "कम्प्यूटिंग नेट ई.वी."
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr ""
+msgstr "कप्यूटिंग नेट के बारे में"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
 msgid "Bug Tracker"
-msgstr ""
+msgstr "बग ट्रैकेर"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
 msgid "Copyright Assignment"
-msgstr ""
+msgstr "कौपीराईट कार्य"
 
 #: common/footer.j2.inc:20 common/navigation.j2.inc:90
 #: template/developers.html.j2:24
 msgid "Bibliography"
-msgstr ""
+msgstr "ग्रन्थसूची"
 
 #: common/footer.j2.inc:31
 msgid "Source code of this site."
-msgstr ""
+msgstr "सूत्र नियमसंग्रह"
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
