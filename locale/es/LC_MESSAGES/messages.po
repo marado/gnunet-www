@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-07 03:10+0000\n"
-"Last-Translator: April Espindola <apriespindola@gmail.com>\n"
+"Last-Translator: Juan Pablo González <jnpgonzal@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -21,10 +21,8 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 #: common/base.j2:5 common/news.j2:5
-#, fuzzy
-#| msgid "GNUnet e.V."
 msgid "GNUnet"
-msgstr "GNUnet a. r."
+msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
 msgid "GNU's framework for secure p2p networking"
@@ -150,7 +148,7 @@ msgstr "Manual"
 
 #: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
 msgid "Living Standards"
-msgstr "Niveles de vida"
+msgstr "Estándares de vida"
 
 #: common/navigation.j2.inc:88
 msgid "REST API"
