@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-07 03:10+0000\n"
-"Last-Translator: Juan Pablo González <jnpgonzal@gmail.com>\n"
+"PO-Revision-Date: 2021-03-08 04:37+0000\n"
+"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -270,8 +270,8 @@ msgid ""
 "GNUnet must be fully distributed and resilient to external attacks and rogue "
 "participants."
 msgstr ""
-"GNUnet debe ser distribuido completamente, resiliente a ataques externos y "
-"participantes fraudulentos."
+"GNUnet debe ser plenamente distribuido con resistencia hacia ataques "
+"externos y a participantes fraudulentos."
 
 #: template/about.html.j2:62
 msgid ""
@@ -719,7 +719,7 @@ msgstr ""
 
 #: template/contact.html.j2:53
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Reporte de bugs"
 
 #: template/contact.html.j2:55
 msgid ""
