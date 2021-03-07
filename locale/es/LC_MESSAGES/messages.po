@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-08 04:37+0000\n"
-"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
+"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -729,6 +729,11 @@ msgid ""
 "bug-gnunet\">bug-gnunet</a> mailing list. The mailinglist requires no "
 "subscription."
 msgstr ""
+"Rastreamos solicitudes de funciones abiertas y \"bugs\" de proyectos dentro "
+"de GNUnet en nuestro <a href=\"https://bugs.gnunet.org/\">Bug tracker</a>. "
+"También puede reportar \"bugs\" o solicitudes de funciones a la lista de "
+"correo <a href=\"https://lists.gnu.org/mailman/listinfo/bug-gnunet\">bug-"
+"gnunet</a>. La lista no requiere suscripción."
 
 #: template/copyright.html.j2:11
 msgid ""
@@ -738,6 +743,12 @@ msgid ""
 "\">GNUnet e.V. --- Taler Systems SA agreement on licensing and collaborative "
 "development</a> of the GNUnet and GNU Taler projects is satisfied. </p>"
 msgstr ""
+"<p>Los contribuyentes de GNUnet con acceso Git deben firmar la <a href=\"/"
+"static/pdf/copyright.pdf\">asignación de derechos de autor</a>para asegurar "
+"que <a href=\"https://git.gnunet.org/gnunet-ev.git/tree/"
+"gnunet_taler_agreement.tex\">se satisfaga el acuerdo GNUnet e.V. --- Taler "
+"Systems SA sobre desarrollo colaborativo y de licencia</a> de los proyectos "
+"GNUnet y GNU Taler.</p>"
 
 #: template/copyright.html.j2:22
 msgid ""
@@ -747,6 +758,12 @@ msgid ""
 "company the ability to dual-license (for example, so that we can distribute "
 "via App-stores that are hostile to free software).</p>"
 msgstr ""
+"<p>Los acuerdos aseguran que el código permanecerá disponible bajo licencias "
+"de software libre, pero le da a los desarrolladores la libertad para mover "
+"el código entre GNUnet y GNU Taler sin preocuparse por las licencias, y "
+"habilita a la compañía con la doble licencia(por ejemplo, para poder "
+"distribuirla por medio de tiendas de aplicaciones que son hostiles al "
+"software libre).</p>"
 
 #: template/copyright.html.j2:30
 msgid ""
@@ -755,26 +772,34 @@ msgid ""
 "simply sign the agreement with your pseudonym. Scanned copies are "
 "sufficient, but snail mail is preferred.</p>"
 msgstr ""
+"<p>Las contribuciones menores (básicamente de cualquiera sin acceso Git) no "
+"requieren asignación de derechos de autor. Aceptamos las contribuciones bajo "
+"pseudónimo, para lo cual simplemente se firma el acuerdo con su pseudónimo. "
+"Las copias escaneadas son suficientes, pero preferimos el correo regular.</p>"
 
 #: template/developers.html.j2:5
 msgid "GNUnet for developers"
-msgstr ""
+msgstr "GNUnet para desarrolladores"
 
 #: template/developers.html.j2:13
 msgid "Repositories"
-msgstr ""
+msgstr "Repositorios"
 
 #: template/developers.html.j2:16
 msgid ""
 "A list of our Git repositories can be found on our our <a href=\"https://git."
 "gnunet.org/\">Git Server</a>."
 msgstr ""
+"En nuestro<a href=\"https://git.gnunet.org/\"> Git Server </a> se encuentra "
+"una lista de nuestros repositorios Git."
 
 #: template/developers.html.j2:27
 msgid ""
 "Technical papers can be found in our <a href=\"https://old.gnunet.org/"
 "bibliography\">bibliography</a>."
 msgstr ""
+"En nuestra <a href=\"https://old.gnunet.org/bibliography\">bibliografía</"
+"a>se encuentran nuestros papeles técnicos."
 
 #: template/developers.html.j2:34
 msgid "Discussion"
