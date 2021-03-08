@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-08 04:37+0000\n"
+"PO-Revision-Date: 2021-03-08 22:24+0000\n"
 "Last-Translator: Sabino Miani <sbn.miani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
@@ -59,127 +59,129 @@ msgstr "Il codice sorgente di questo sito."
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
-msgstr ""
+msgstr "Segnalare problemi con questo sito."
 
 #: common/navigation.j2.inc:38
 msgid "About"
-msgstr ""
+msgstr "Per quanto riguarda"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
-msgstr ""
+msgstr "Notizia"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
-msgstr ""
+msgstr "Applicazioni"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
-msgstr ""
+msgstr "Comunità"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
 msgid "Engage"
-msgstr ""
+msgstr "Impegnare"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
-msgstr ""
+msgstr "Progetti GSoC"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "Diritti per i Contributori"
 
 #: common/navigation.j2.inc:51
 msgid "IRC Archive"
-msgstr ""
+msgstr "Archivio IRC"
 
 #: common/navigation.j2.inc:58
 msgid "Development"
-msgstr ""
+msgstr "Sviluppo"
 
 #: common/navigation.j2.inc:61
 msgid "System Architecture"
-msgstr ""
+msgstr "Architettura di Sistema"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
 msgid "Roadmap"
-msgstr ""
+msgstr "Tabella di marcia"
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
-msgstr ""
+msgstr "Codice Sorgente"
 
 #: common/navigation.j2.inc:66
 msgid "Source Code Documentation"
-msgstr ""
+msgstr "Documentazione del Codice Sorgente"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
-msgstr ""
+msgstr "Integrazione Continua"
 
 #: common/navigation.j2.inc:68
 msgid "Development Tutorial"
-msgstr ""
+msgstr "Esercitazione di Sviluppo"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
-msgstr ""
+msgstr "Documentazione"
 
 #: common/navigation.j2.inc:82 template/install.html.j2:6
 msgid "Install"
-msgstr ""
+msgstr "Installare"
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
 msgid "Use"
-msgstr ""
+msgstr "Utilizzo"
 
 #: common/navigation.j2.inc:84
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: common/navigation.j2.inc:85 template/glossary.html.j2:6
 msgid "Glossary"
-msgstr ""
+msgstr "Glossario"
 
 #: common/navigation.j2.inc:86
 msgid "Handbook"
-msgstr ""
+msgstr "Manuale"
 
 #: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
 msgid "Living Standards"
-msgstr ""
+msgstr "Standard di vita"
 
 #: common/navigation.j2.inc:88
 msgid "REST API"
-msgstr ""
+msgstr "REST API"
 
 #: common/navigation.j2.inc:89
 msgid "FAQ"
-msgstr ""
+msgstr "Domande Frequenti"
 
 #: news/index.html.j2:11 news/oldnews-2018.html.j2:16
 #: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
 msgstr ""
+"Annunci di notizie legate ai cambiamenti di GNUnet come comunicati stampa ed "
+"eventi"
 
 #: news/index.html.j2:16 news/oldnews-2018.html.j2:21
 #: news/oldnews-2019.html.j2:21
 msgid "subscribe to our RSS feed"
-msgstr ""
+msgstr "Fai la sottoscrizione alla nostra bacheca RSS"
 
 #: news/index.html.j2:36 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr ""
+msgstr "Per saperne di più"
 
 #: news/index.html.j2:45
 msgid "News archives:"
-msgstr ""
+msgstr "Archivi di notizie:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
-msgstr ""
+msgstr "Cos'è GNUnet?"
 
 #: template/about.html.j2:13
 msgid ""
@@ -189,6 +191,13 @@ msgid ""
 "secure publication of files, it has grown to include all kinds of basic "
 "protocol components and applications towards the creation of a GNU internet."
 msgstr ""
+"GNUnet è una rete alternativa per la costruzione di applicazioni distribuite "
+"che siano sicure, decentralizzate e che tutelino la privacy. Il nostro "
+"obiettivo è quello di sostituire il precedente protocollo, in quanto datato "
+"e non sicuro. Il tutto è cominciato da un' applicazione utilizzata per la "
+"pubblicazione sicura di documenti, ed è cresciuta fino ad includere tutte le "
+"tipologie di componenti base ed applicazioni dei protocolli verso la "
+"creazione di un internet GNU."
 
 #: template/about.html.j2:23
 msgid ""
@@ -198,6 +207,11 @@ msgid ""
 "hierarchy and when necessary isolated from the rest of the world, the "
 "situation is less tenable for civil society."
 msgstr ""
+"Oggigiorno, l'uso effettivo e di conseguenza i requisiti sociali per una "
+"rete globale differiscono molto da quelli esistenti nel 1970. Mentre "
+"l'utilizzo di Internet per scopi militari resta idoneo, poiché il materiale "
+"di rete viene svolto da una gerarchia di comandi e quando necessario isolato "
+"dal resto del mondo, la situazione è meno sostenibile per una società civile."
 
 #: template/about.html.j2:32
 msgid ""
@@ -208,6 +222,13 @@ msgid ""
 "cryptographyengineering.com/2015/08/16/the-network-is-hostile/\">\"the "
 "network is hostile\"</a>."
 msgstr ""
+"A causa di scelte importanti di progetto Internet, il traffico Internet può "
+"essere mal indirizzato, intercettato, censurato e manipolato da router "
+"ostili presenti nella rete. \n"
+"Inoltre, l'internet dei giorni nostri si è evoluto al punto che, come "
+"sottolineato da Matthew Green, \n"
+"<a href=\"https://blog.cryptographyengineering.com/2015/08/16/"
+"the-network-is-hostile/\">\"la rete è ostile\"</a>."
 
 #: template/about.html.j2:41
 msgid ""
@@ -216,64 +237,88 @@ msgid ""
 "cryptographic protocols. The goal of the GNUnet project is to provide a Free "
 "Software realization of this ideal."
 msgstr ""
+"Crediamo che società liberali abbiano bisogno di un architettura di rete che "
+"sfrutti paradigmi decentralizzati e anti autoritari da pari a pari e "
+"protocolli criptografici che tutelino la privacy. L' obiettivo del progetto "
+"GNUnet è quello di fornire una realizzazione Software gratuita di questo "
+"ideale."
 
 #: template/about.html.j2:49
 msgid ""
 "Specifically, GNUnet tries to follow the following design principles, in "
 "order of importance:"
 msgstr ""
+"Nello specifico, GNUnet cerca di adoperare i seguenti principi di progetti, "
+"in ordine di importanza:"
 
 #: template/about.html.j2:56
 msgid ""
 "GNUnet must be implemented as <a href=\"https://www.gnu.org/philosophy/free-"
 "sw.html\">Free Software</a>."
 msgstr ""
+"GNUnet deve essere implementato come un <a href=\"https://www.gnu.org/"
+"philosophy/free-sw.html\">Software Gratuito</a>."
 
 #: template/about.html.j2:60
 msgid ""
 "GNUnet must minimize the amount of personally identifiable information "
 "exposed."
 msgstr ""
+"GNUnet deve minimizzare la quantità di informazioni di identificazione "
+"personale che vengono esposte."
 
 #: template/about.html.j2:61
 msgid ""
 "GNUnet must be fully distributed and resilient to external attacks and rogue "
 "participants."
 msgstr ""
+"GNUnet deve essere distribuito in maniera integrale e deve essere resistente "
+"ad attacchi esterni ed a collaboratori disonesti."
 
 #: template/about.html.j2:62
 msgid ""
 "GNUnet must be self-organizing and not depend on administrators or "
 "centralized infrastructure."
 msgstr ""
+"GNUnet deve auto organizzarsi e non dipendere da amministratori o "
+"infrastrutture centralizzate."
 
 #: template/about.html.j2:63
 msgid ""
 "GNUnet must inform the user which other participants have to be trusted when "
 "establishing private communications."
 msgstr ""
+"GNUnet deve informare l'utente su quali altri collaboratori possano essere "
+"considerati di fiducia nel momento in cui vengano stabilite comunicazioni "
+"private."
 
 #: template/about.html.j2:64
 msgid "GNUnet must be open and permit new peers to join."
-msgstr ""
+msgstr "GNUnet deve essere aperto e lasciare che nuovi colleghi possano unirsi."
 
 #: template/about.html.j2:65
 msgid "GNUnet must support a diverse range of applications and devices."
-msgstr ""
+msgstr "GNUnet deve supportare una vasta gamma di applicazioni e dispositivi."
 
 #: template/about.html.j2:66
 msgid "GNUnet must use compartmentalization to protect sensitive information."
 msgstr ""
+"GNUnet deve sfruttare la ripartizione in modo tale da proteggere "
+"informazioni sensibili."
 
 #: template/about.html.j2:67
 msgid "The GNUnet architecture must be resource efficient."
 msgstr ""
+"L'architettura GNUnet deve essere efficiente dal punto di vista delle "
+"risorse."
 
 #: template/about.html.j2:68
 msgid ""
 "GNUnet must provide incentives for peers to contribute more resources than "
 "they consume."
 msgstr ""
+"GNUnet deve fornire incentivi per colleghi in modo tale che contribuiscano "
+"con più risorse di quante ne consumino."
 
 #: template/about.html.j2:72
 msgid ""
@@ -294,10 +339,20 @@ msgid ""
 "Zones_0029\">Zones in the GNU Name System (GNS Zones)</a></li> <li><a href="
 "\"https://docs.gnunet.org/handbook/gnunet.html#Egos\">Egos</a></li> </ul>"
 msgstr ""
+"Per conoscere ed approfondire, si prega di controllare il nostro manuale, in "
+"particolare il capitolo sui \"Concetti Chiave\", che spiega il concetto "
+"fondamentale di GNUnet: \n"
+".Autenticazione.\n"
+"Contabilità per incoraggiare la condivisione delle risorse.\n"
+"Confidenzialità.\n"
+"Anonimato.\n"
+"Negabilità.\n"
+"Identità dei colleghi.\n"
+"Reparti nel Sistema Nomi di GNU (Zone GNS) Egos."
 
 #: template/about.html.j2:88
 msgid "More Resources"
-msgstr ""
+msgstr "Più Risorse"
 
 #: template/about.html.j2:90
 msgid ""
