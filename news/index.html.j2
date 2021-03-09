@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="row">
-          {% for year, yitem in newsdata|selectattr('date.year', 'gt', 2019)|groupby('date.year') %}
+          {% for year, yitem in newsdata|selectattr('date.year', 'gt', 2019)|groupby('date.year')|reverse %}
           <b>{{ year }}</b>
           <ul class="timeline">
           {% for item in yitem %}

@@ -58,6 +58,9 @@ meetingnotes:
   2019: 2019-12-27
   2020: 2020-12-30
 newsposts:
+  - page: 2021-03-gsoc-update.html
+    date: 2021-03-09
+    title: No GSoC projects in 2021
   - page: 2020-11-0.14.0.html
     date: 2020-11-14
     title: GNUnet 0.14.0
