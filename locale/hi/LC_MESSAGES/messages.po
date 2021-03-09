@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-07 03:10+0000\n"
+"PO-Revision-Date: 2021-03-09 18:35+0000\n"
 "Last-Translator: Jigisha Sharma <jigishas38@gmail.com>\n"
 "Language-Team: Hindi <http://weblate.taler.net/projects/gnunet/website/hi/>\n"
 "Language: hi\n"
@@ -54,131 +54,131 @@ msgstr "ग्रन्थसूची"
 
 #: common/footer.j2.inc:31
 msgid "Source code of this site."
-msgstr "सूत्र नियमसंग्रह"
+msgstr "सूत्र संहिता इस स्थल का."
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
-msgstr ""
+msgstr "दर्ज करे समस्या वेबसाईट के."
 
 #: common/navigation.j2.inc:38
 msgid "About"
-msgstr ""
+msgstr "जानकारी"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
-msgstr ""
+msgstr "समाचार"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
-msgstr ""
+msgstr "प्रार्थनापत्र"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
-msgstr ""
+msgstr "समुदाय"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
 msgid "Engage"
-msgstr ""
+msgstr "संलग्न"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
-msgstr ""
+msgstr "ग स ओ क परियोजनाओं"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "सर्वाधिकार योगदानकर्ताओं के लिए"
 
 #: common/navigation.j2.inc:51
 msgid "IRC Archive"
-msgstr ""
+msgstr "इ र च पुरालेख"
 
 #: common/navigation.j2.inc:58
 msgid "Development"
-msgstr ""
+msgstr "विकास"
 
 #: common/navigation.j2.inc:61
 msgid "System Architecture"
-msgstr ""
+msgstr "प्रणाली स्थापत्य"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
 msgid "Roadmap"
-msgstr ""
+msgstr "नक्शा"
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
-msgstr ""
+msgstr "सूत्र संहिता"
 
 #: common/navigation.j2.inc:66
 msgid "Source Code Documentation"
-msgstr ""
+msgstr "सूत्र संहिता प्रलेखन"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
-msgstr ""
+msgstr "लगातार एकीकरण"
 
 #: common/navigation.j2.inc:68
 msgid "Development Tutorial"
-msgstr ""
+msgstr "विकास उदाहरण"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
-msgstr ""
+msgstr "प्रलेखन"
 
 #: common/navigation.j2.inc:82 template/install.html.j2:6
 msgid "Install"
-msgstr ""
+msgstr "स्थापित"
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
 msgid "Use"
-msgstr ""
+msgstr "इस्तमाल"
 
 #: common/navigation.j2.inc:84
 msgid "Videos"
-msgstr ""
+msgstr "वीडियोज़"
 
 #: common/navigation.j2.inc:85 template/glossary.html.j2:6
 msgid "Glossary"
-msgstr ""
+msgstr "शब्दकोष"
 
 #: common/navigation.j2.inc:86
 msgid "Handbook"
-msgstr ""
+msgstr "पुस्तिका"
 
 #: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
 msgid "Living Standards"
-msgstr ""
+msgstr "जीवन स्तर"
 
 #: common/navigation.j2.inc:88
 msgid "REST API"
-msgstr ""
+msgstr "र.ई.एस.टी ए .पी .इ"
 
 #: common/navigation.j2.inc:89
 msgid "FAQ"
-msgstr ""
+msgstr "अकसर पूछे जाने वाले सवाल"
 
 #: news/index.html.j2:11 news/oldnews-2018.html.j2:16
 #: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr ""
+msgstr "समाचार पत्र बदलाव जी॰एन॰यू॰ नेट को लेकर घटना और प्रकाशित के उदाहरण"
 
 #: news/index.html.j2:16 news/oldnews-2018.html.j2:21
 #: news/oldnews-2019.html.j2:21
 msgid "subscribe to our RSS feed"
-msgstr ""
+msgstr "अभिदाता बने हमारे रस्स वेब फ़ीड पर"
 
 #: news/index.html.j2:36 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr ""
+msgstr "और पड़े"
 
 #: news/index.html.j2:45
 msgid "News archives:"
-msgstr ""
+msgstr "समाचार पुरालेख:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
-msgstr ""
+msgstr "क्या हे जी॰ एन॰यू॰ नेट?"
 
 #: template/about.html.j2:13
 msgid ""
