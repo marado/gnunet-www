@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-05 22:52+0000\n"
+"PO-Revision-Date: 2021-03-09 18:35+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
 ">\n"
@@ -25,7 +25,6 @@ msgid "GNUnet"
 msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
-#, fuzzy
 msgid "GNU's framework for secure p2p networking"
 msgstr "安全な P2P ネットワーキングを可能にする GNU のフレームワーク"
 
@@ -342,6 +341,10 @@ msgid ""
 "href=\"https://gnunet.org/en/video.html\">videos</a> or a brief <a "
 "href=\"https://gnunet.org/en/glossary.html\">glossary</a>."
 msgstr ""
+"GNUnet の詳細については、<a href=\"https://docs.gnunet.org/handbook/gnunet.html\""
+">ハンドブック</a>以外にも多くのリソースがあり、一例としては、多角的な視点での論文を集めた<a href=\"https://bib.gnunet."
+"org/\">参考文献</a>、各種<a href=\"https://gnunet.org/en/video.html\">動画</a>、簡潔な<a "
+"href=\"https://gnunet.org/en/glossary.html\">用語集</a>などが挙げられます。"
 
 #: template/about.html.j2:95
 msgid ""
@@ -350,17 +353,20 @@ msgid ""
 "href=\"use.html\">use it</a> and <a href=\"engage.html\">contribute and "
 "get engaged</a> in various ways."
 msgstr ""
+"<a href=\"engage.html\">会話に参加する</a>、<a href=\"install.html\">GNUnet "
+"をインストールする</a>、<a href=\"use.html\">実際に利用する</a>、<a href=\"engage.html\""
+">貢献して参加する</a>など、さまざまな方法で活用いただけます。"
 
 #: template/about.html.j2:100
 msgid ""
 "Please be aware that this project is (despite of it's age) still in an "
 "early alpha stage when it comes to software &#8211; its not an easy task "
 "to rewrite the whole Internet!"
-msgstr ""
+msgstr "このプロジェクトは、ソフトウェア&#8211;に関してまだ初期のアルファ段階にあり、インターネット全体の書き換えはまだ現実的ではありません。"
 
 #: template/about.html.j2:105
 msgid "Current funding"
-msgstr ""
+msgstr "現在の資金調達"
 
 #: template/about.html.j2:110
 msgid ""
@@ -368,6 +374,8 @@ msgid ""
 "line to document and implement the GNU Name System protocol in a way "
 "suitable for the IETF standardization process."
 msgstr ""
+"NLnet の次世代インターネット資金ラインから支援を受け、IETF 標準化プロセスに適合させる形で GNU "
+"ネームシステムプロトコルを文書化し、実装しています。"
 
 #: template/about.html.j2:123
 msgid ""
@@ -379,26 +387,31 @@ msgid ""
 "commercial service providers. The project is called \"Decentralized "
 "Identities for Self-Sovereign End-users\" (DISSENS)."
 msgstr ""
+"このプロジェクトは、欧州連合の「Horizon 2020」研究・イノベーションプログラムから NGI_TRUST 補助金契約 No. 825618 "
+"に基づき資金を受け取っています。本プロジェクトは、re:claimID および、試験段階にある GNU Taler 支払いシステムを統合することで、ユーザ"
+"ーと商用サービスプロバイダーに向け、実用への可能性とプライバシー向上技術の利点を証明することを目指しています。プロジェクトは「Decentralized "
+"Identities for Self-Sovereign End-uers（DISSENS：自己主権を持つエンドユーザーのための脱中央型 "
+"ID）」と呼ばれます。"
 
 #: template/about.html.j2:141
 msgid "We are grateful for free hosting offered by the following organizations:"
-msgstr ""
+msgstr "次の組織により無料でホスティングを提供いただいています。"
 
 #: template/about.html.j2:150
 msgid "Past funding"
-msgstr ""
+msgstr "過去の資金提供"
 
 #: template/about.html.j2:152
 msgid "We are grateful for past funding from the following organizations:"
-msgstr ""
+msgstr "これまで資金援助いただいた組織は次の通りです。"
 
 #: template/applications.html.j2:7
 msgid "Applications provided by GNUnet"
-msgstr ""
+msgstr "GNUnet が提供するアプリケーション"
 
 #: template/applications.html.j2:13 template/gns.html.j2:7
 msgid "The GNU Name System"
-msgstr ""
+msgstr "GNU ネームシステム"
 
 #: template/applications.html.j2:15
 msgid ""
@@ -410,10 +423,15 @@ msgid ""
 "look-ups is cryptographically secured. <!-- Too technical: GNS integrates"
 " a robust, efficient and instant key revocation mechanism. -->"
 msgstr ""
+"<a href=\"gns.html\">GNU "
+"ネームシステム（GNS）</a>は、ドメインネームシステム（DNS）が完全に分散されたもので、その代替です。GNU "
+"は階層構造に代わり有向グラフを使用します。命名規則は DNS に類似していますが、クエリと応答は、回答をするピアに関してもプライベートです。レコードの完全"
+"性とルックアップのプライバシーはセキュアに暗号化されます。<!-- Too technical: GNS integrates a robust, "
+"efficient and instant key revocation mechanism. -->"
 
 #: template/applications.html.j2:38
 msgid "Self-sovereign, decentralized identity provider"
-msgstr ""
+msgstr "自己主権型、脱中央型の IdP"
 
 #: template/applications.html.j2:40
 msgid ""
@@ -422,10 +440,14 @@ msgid ""
 "allows users to securely share personal information with websites using "
 "standardized protocols (OpenID Connect)."
 msgstr ""
+"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> は分散型のアイデンティティ "
+"プロバイダ（IdP）サービスであり、GNU "
+"ネームシステムの上位に組み込まれています。これによりユーザーは、標準化されたプロトコルを使い、ウェブサイトから個人情報を安全に共有することができます（"
+"OpenID Connect）。"
 
 #: template/applications.html.j2:57
 msgid "Filesharing (Alpha)"
-msgstr ""
+msgstr "ファイル共有（アルファ）"
 
 #: template/applications.html.j2:59
 msgid ""
@@ -434,10 +456,12 @@ msgid ""
 "publisher is empowered to make a gradual choice between performance and "
 "anonymity."
 msgstr ""
+"GNUnet の<a href=\"use.html#fs\">ファイル共有</a>は、検閲耐性と匿名性を備えたファイル共有を目指すアプリケーションです。"
+"発行者は、パフォーマンスと匿名性の度合いを自在に選択することができます。"
 
 #: template/applications.html.j2:73
 msgid "Conversation (Pre-Alpha)"
-msgstr ""
+msgstr "カンバセーション（プレアルファ）"
 
 #: template/applications.html.j2:75
 msgid ""
@@ -445,14 +469,16 @@ msgid ""
 "communication in a fully decentralized way by employing GNUnet for "
 "routing and transport."
 msgstr ""
+"GNUnet カンバセーションは、ルーティングとトランスポートに GNUnet "
+"を採用することにより、完全分散型の安全な音声通話を提供するアプリケーションです。"
 
 #: template/applications.html.j2:91
 msgid "Applications utilizing GNUnet"
-msgstr ""
+msgstr "GNUnet を利用するアプリケーション"
 
 #: template/applications.html.j2:97
 msgid "GNU Taler (Alpha)"
-msgstr ""
+msgstr "GNU Taler（アルファ）"
 
 #: template/applications.html.j2:99
 msgid ""
@@ -460,10 +486,12 @@ msgid ""
 "electronic payment system. Payments are cryptographically secured and are"
 " confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
+"<a href=\"https://taler.net/\">GNU Taler</a> "
+"は、プライバシーを保護する新しい電子決済システムです。決済はセキュアに暗号化され、数ミリ秒で完了、トランザクションも大変低コストです。"
 
 #: template/applications.html.j2:118
 msgid "secushare"
-msgstr ""
+msgstr "secushare"
 
 #: template/applications.html.j2:120
 msgid ""
@@ -472,10 +500,13 @@ msgid ""
 "overlay multicast and the extensible PSYC protocol, notifications are "
 "distributed end-to-end encrypted to authorized recipients only."
 msgstr ""
+"<a href=\"https://secushare.org/\">secushare</a> は、GNUnet 上に分散型ソーシャルネットワーキング "
+"アプリケーションを作成しています。オーバーレイ マルチキャスト、拡張可能な PSYC "
+"プロトコル、通知機能がエンドツーエンドで暗号化され、承認済みの受信者にのみ配信されます。"
 
 #: template/applications.html.j2:139
 msgid "pretty Easy privacy"
-msgstr ""
+msgstr "pretty Easy privacy"
 
 #: template/applications.html.j2:141
 msgid ""
@@ -484,10 +515,13 @@ msgid ""
 "opportunistic key exchange. p&#8801;p will use GNUnet to protect metadata"
 " and exploit new cryptographic protocols to verify keys."
 msgstr ""
+"<a href=\"https://pep.foundation/\">pretty Easy privacy</a>（p&#8801;p）は、日和見鍵交"
+"換を使用して、実用性のあるエンドツーエンドで暗号化された電子メールソリューションを作成しています。p&#8801;p は GNUnet "
+"によりメタデータを保護し、新たな暗号化プロトコルで鍵を検証します。"
 
 #: template/applications.html.j2:160
 msgid "Cadet-GTK"
-msgstr ""
+msgstr "Cadet-GTK"
 
 #: template/applications.html.j2:162
 msgid ""
@@ -496,10 +530,13 @@ msgid ""
 "messaging using especially the CADET subsystem. It is developed using GTK"
 " and libhandy for a convergent design."
 msgstr ""
+"<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> は、"
+"高い利便性と豊富な機能を備えたグラフィカル アプリケーションで、特に CADET サブシステムを使用してメッセージ機能を提供します。GTK と "
+"libhandy を利用して開発されいます。"
 
 #: template/applications.html.j2:180
 msgid "groupchat"
-msgstr ""
+msgstr "groupchat"
 
 #: template/applications.html.j2:182
 msgid ""
@@ -508,14 +545,17 @@ msgid ""
 "subsystem. It is developed using nim. Cadet-GTK and groupchat are planned"
 " to be compatible."
 msgstr ""
+"<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> は、主に CADET "
+"サブシステムを使用してメッセージ機能を提供するターミナル ユーザーインターフェースです。開発言語は Nim で、将来的には Cadet-GTK と "
+"groupchat と互換性を持つ予定です。"
 
 #: template/architecture.html.j2:6
 msgid "GNUnet System Architecture"
-msgstr ""
+msgstr "GNUnet システム アーキテクチャ"
 
 #: template/architecture.html.j2:20
 msgid "Foundations"
-msgstr ""
+msgstr "基盤"
 
 #: template/architecture.html.j2:22
 msgid ""
@@ -525,10 +565,14 @@ msgid ""
 "Using public keys for addresses and self-organized decentralized routing "
 "algorithms, these subsystems replace the traditional TCP/IP stack."
 msgstr ""
+"GNUnet の基盤は、分散ハッシュ テーブル（R5N）、SCTP に類似したエンド ツー "
+"エンドの暗号化メッセージング層（CADET）、公開鍵基盤（GNS）、プラグ可能なトランスポート "
+"システム（TRANSPORT）です。<br>これらのサブシステムは、アドレスや自己組織する分散型ルーティング アルゴリズムに公開鍵を使用し、従来の "
+"TCP/IP スタックに代替するものです。"
 
 #: template/architecture.html.j2:35
 msgid "Security"
-msgstr ""
+msgstr "セキュリティ"
 
 #: template/architecture.html.j2:38
 msgid ""
@@ -538,34 +582,37 @@ msgid ""
 "implementation is a <a href=\"https://www.gnu.org/\">GNU</a> package, and"
 " will always remain free software."
 msgstr ""
+"GNUnet はマルチプロセス "
+"アーキテクチャを使用して実装されます。各サブシステムは別々のプロセスとして実行され、問題の切り分けや厳格な権限付与がサブシステム毎に可能です。そのため、"
+"実装は<a href=\"https://www.gnu.org/\"> GNU</a> パッケージであり、その後も自由ソフトウェアであり続けます。"
 
 #: template/architecture.html.j2:52
 msgid "System architecture"
-msgstr ""
+msgstr "システム アーキテクチャ"
 
 #: template/architecture.html.j2:58
 msgid "Subsystems"
-msgstr ""
+msgstr "サブシステム"
 
 #: template/architecture.html.j2:67
 msgid "libgnunetutil"
-msgstr ""
+msgstr "libgnunetutil"
 
 #: template/architecture.html.j2:73
 msgid "APIs"
-msgstr ""
+msgstr "API"
 
 #: template/architecture.html.j2:86
 msgid "Legend"
-msgstr ""
+msgstr "凡例"
 
 #: template/contact.html.j2:6
 msgid "Contact information"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: template/contact.html.j2:11
 msgid "The mailing list"
-msgstr ""
+msgstr "メーリングリスト"
 
 #: template/contact.html.j2:13
 msgid ""
@@ -575,10 +622,14 @@ msgid ""
 "developers</a>. You can send messages to the list at <a href=\"mailto"
 ":gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
 msgstr ""
+"GNUnet の公開メーリング リストのアーカイブは<a href=\"https://lists.gnu.org/mailman/listinfo/"
+"gnunet-developers\">https://lists.gnu.org/mailman/listinfo/gnunet-"
+"developers</a>にホストされています。このリストへのメッセージは<a href=\"mailto:gnunet-developers@gnu."
+"org\">gnunet-developers@gnu.org</a>から送信できます。"
 
 #: template/contact.html.j2:23
 msgid "The IRC channel"
-msgstr ""
+msgstr "IRC チャネル"
 
 #: template/contact.html.j2:25
 msgid ""
@@ -587,10 +638,13 @@ msgid ""
 "href=\"https://view.matrix.org/room/!IjaAfLiruzjxFFzKAV:matrix.org/\">archive</a>"
 " available."
 msgstr ""
+"<tt>#gnune</tt>は<a href=\"https://freenode.net\">irc.freenode."
+"net</a>からアクセスできます。また、<a href=\"https://view.matrix.org/room/"
+"!IjaAfLiruzjxFFzKAV:matrix.org/\">アーカイブ</a>はこちらです。"
 
 #: template/contact.html.j2:38
 msgid "Contacting individuals"
-msgstr ""
+msgstr "個人へのお問い合わせ"
 
 #: template/contact.html.j2:40
 msgid ""
@@ -600,10 +654,14 @@ msgid ""
 "issues may be addressed to the GNU maintainers <tt>schanzen</tt> and "
 "<tt>grothoff</tt>."
 msgstr ""
+"GNUnet 開発者へのご連絡は、通常 <tt>PSEUDONYM@gnunet.org</tt> または <tt>LASTNAME@gnunet."
+"org</tt> から可能です。ほとんどのメンバーは GnuPG "
+"暗号化メールの受信に対応しています。緊急の場合や機密性の高いセキュリティ関連の問題については、GNU 保守を担当する <tt> schanzen</"
+"tt> および <tt> grothoff</tt> までご連絡ください。"
 
 #: template/contact.html.j2:53
 msgid "Reporting bugs"
-msgstr ""
+msgstr "バグの報告"
 
 #: template/contact.html.j2:55
 msgid ""
@@ -613,6 +671,9 @@ msgid ""
 "href=\"https://lists.gnu.org/mailman/listinfo/bug-gnunet\">bug-gnunet</a>"
 " mailing list. The mailinglist requires no subscription."
 msgstr ""
+"GNUnet 内の各種プロジェクトの公開機能リクエストやバグは、<a href=\"https://bugs.gnunet.org/\">バグ "
+"トラッカー</a>で管理しています。バグの報告や機能リクエストは、<a href=\"https://lists.gnu.org/mailman/"
+"listinfo/bug-gnunet\">bug-gnunet</a> のメーリングリストからも送信できます。メーリングリストへの登録は必要ありません。"
 
 #: template/copyright.html.j2:11
 msgid ""
@@ -623,6 +684,10 @@ msgid ""
 " agreement on licensing and collaborative development</a> of the GNUnet "
 "and GNU Taler projects is satisfied. </p>"
 msgstr ""
+"<p>GNUnet の参加者で Git を使われている場合、<a href=\"/static/pdf/copyright.pdf\""
+">著作権譲渡書</a>に合意し、GNUnet および GNU Taler プロジェクトの「<a href=\"https://git.gnunet."
+"org/gnunet-ev.git/tree/gnunet_taler_agreement.tex\">GNUnet e.V. --- "
+"ライセンスと共同開発についての Taler システム SA 合意</a>」に順守することが必要となります。</p>"
 
 #: template/copyright.html.j2:22
 msgid ""
@@ -632,6 +697,8 @@ msgid ""
 "give the company the ability to dual-license (for example, so that we can"
 " distribute via App-stores that are hostile to free software).</p>"
 msgstr ""
+"<p>本合意により、今後も自由ソフトウェア ライセンスのもとでコードの公開が可能となり、開発者は GNUnet と GNU Taler の両方の許諾を得な"
+"くても双方でプログラムのコードを使うことができます。（例えば、自由ソフトウェアに好意的でないアプリストアを通じた配布も可能となります。）</p>"
 
 #: template/copyright.html.j2:30
 msgid ""
@@ -640,30 +707,34 @@ msgid ""
 " this case simply sign the agreement with your pseudonym. Scanned copies "
 "are sufficient, but snail mail is preferred.</p>"
 msgstr ""
+"<p>Git アクセス権のない方のご協力については、著作権譲渡書は不要です。偽名でご協力いただくことも可能ですが、著作権譲渡書も同じ偽名で署名してください"
+"。スキャンしたコピーも受け付けていますが、郵送を推奨しています。</p>"
 
 #: template/developers.html.j2:5
 msgid "GNUnet for developers"
-msgstr ""
+msgstr "開発者向け GNUnet"
 
 #: template/developers.html.j2:13
 msgid "Repositories"
-msgstr ""
+msgstr "レポジトリ"
 
 #: template/developers.html.j2:16
 msgid ""
 "A list of our Git repositories can be found on our our <a "
 "href=\"https://git.gnunet.org/\">Git Server</a>."
 msgstr ""
+"Git レポジトリのリストは <a href=\"https://git.gnunet.org/\">Git Server</a> "
+"からご確認いただけます。"
 
 #: template/developers.html.j2:27
 msgid ""
 "Technical papers can be found in our <a "
 "href=\"https://old.gnunet.org/bibliography\">bibliography</a>."
-msgstr ""
+msgstr "技術論文は<a href=\"https://old.gnunet.org/bibliography\">参考文献</a>に掲載しています。"
 
 #: template/developers.html.j2:34
 msgid "Discussion"
-msgstr ""
+msgstr "ディスカッション"
 
 #: template/developers.html.j2:37
 msgid ""
@@ -672,10 +743,13 @@ msgid ""
 "/gnunet-developers\">http://lists.gnu.org/mailman/listinfo/gnunet-"
 "developers</a>."
 msgstr ""
+"開発者向けディスカッション用にメーリングリストを用意しています。登録やアーカイブの閲覧は、<a href=\"http://lists.gnu.org/"
+"mailman/listinfo/gnunet-developers\">http://lists.gnu.org/mailman/listinfo/"
+"gnunet-developers</a> から可能です。"
 
 #: template/developers.html.j2:47
 msgid "Regression Testing"
-msgstr ""
+msgstr "回帰テスト"
 
 #: template/developers.html.j2:50
 msgid ""
@@ -683,10 +757,13 @@ msgid ""
 "to detect regressions and check for portability at <a "
 "href=\"https://old.gnunet.org/buildbot/gnunet/\">https://old.gnunet.org/buildbot/gnunet/</a>."
 msgstr ""
+"リグレッションの検出と移植性の確認のため、<a href=\"https://old.gnunet.org/buildbot/gnunet/\""
+">https://old.gnunet.org/buildbot/gnunet/</a> で <a href=\"https://buildbot."
+"net/\">Buildbot</a> 自動テストを実施しています。"
 
 #: template/developers.html.j2:59
 msgid "Code Coverage Analysis"
-msgstr ""
+msgstr "コード カバレッジ分析"
 
 #: template/developers.html.j2:62
 msgid ""
@@ -695,10 +772,13 @@ msgid ""
 "<a "
 "href=\"https://old.gnunet.org/coverage/\">https://old.gnunet.org/coverage/</a>."
 msgstr ""
+"<a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</a> によりテストのコード "
+"カバレッジを分析しており、結果は <a href=\"https://old.gnunet.org/coverage/\">https://old."
+"gnunet.org/coverage/</a> から参照可能です。"
 
 #: template/developers.html.j2:72
 msgid "Performance Analysis"
-msgstr ""
+msgstr "パフォーマンス分析"
 
 #: template/developers.html.j2:75
 msgid ""
