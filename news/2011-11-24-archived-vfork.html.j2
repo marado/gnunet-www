@@ -1,0 +1,62 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+  <h1>vfork and the signal race</h1>
+<p>
+  <b>This is an imported news item from the old Drupal GNUnet homepage.</b>
+</p>
+<p>
+Many articles uniformly claim that using vfork should be
+<a href="https://web.archive.org/web/20150924082249/http://tldp.org/HOWTO/Secure-Programs-HOWTO/avoid-vfork.html">avoided</a>
+and that the only difference between vfork and fork is (or used-to-be)
+<a href="https://web.archive.org/web/20150924082249/http://www.unixguide.net/unix/programming/1.1.2.shtml">performance</a>
+and that thus vfork is
+<a href="https://web.archive.org/web/20150924082249/http://stackoverflow.com/questions/4856255/the-difference-between-fork-vfork-exec-and-clone">obsolete</a>.
+Here, I wanted to document a technical case where vfork is actually required and where using fork instead of vfork (or operating system implementors implementing vfork as an alias for fork) causes a hard-to-find data race.
+</p>
+<p>
+GNUnet uses a hypervisor process (gnunet-service-arm) to control the peer's service processes. Services are started (vfork+exec) on-demand. The hypervisor is also responsible for stopping the services and sends a SIGTERM signal to the services to stop them. SIGTERM must be used to allow the services to shutdown gracefully. Naturally, after shutting down a service with a signal, the hypervisor waits for SIGCHILD and then cleans up with waitpid. Once all services processes have completed, the hypervisor can exit as well. It should also be noted that the hypervisor handles SIGTERM (by shutting down all services), so a signal handler is installed for that signal.
+</p>
+<p>
+The reason why we must use vfork is the following. After the hypervisor has started the service, it might be asked to stop the service at any time. We've actually managed (by scripting it) to reliably trigger a case where the hypervisor would start a service (fork) and then receive a request to terminate the service and issues the SIGTERM signal to the child before the child process had a chance to call exec. As a result, the SIGTERM would go to the (existing) handler of the hypervisor's code, then the child process would be exec'ed and essentially the signal was thereby lost in the race between kill and exec:
+</p>
+<p>
+If exec wins, the signal either kills the process hard during the service startup phase, which is fine, or the service process might handle it normally and terminate --- also fine).
+</p>
+<p>
+If kill wins the race, the signal would be lost and the hypervisor would wait 'forever' for the child to terminate.
+</p>
+<p>
+The solution with vfork is elegant and simple: by blocking the parent, vexec guarantees that the parent's signal handler is no longer active (and replaced by default handlers or the child's custom handlers) by the time the parent is able to issue a 'kill'.
+</p>
+<p>
+In conclusion, with parents that issue 'kill' on child processes, the use of vfork can make an important semantic difference and not only (possibly) offer performance advantages. The situation above cannot be easily fixed by other means and thus vfork is an important POSIX call that should be supported properly by all quality implementations. A possible hack to work around a lack of vfork would be to create a pipe in the parent, set it to close-on-exec, fork the child, close the write end and then do a blocking read from the read end. Once you get a read error, the child has exec'ed. Rather ugly in my opinion.
+</p>
+<p>
+Currently, gnunet-service-arm can hang indefinitely on systems that do not provide a correct implementation of vfork (however, in practice normal users should never encounter this).
+</p>
+<p>
+<b>better suggestion from Thomas Bushnell</b>
+<br>
+I just got an alternative suggestion to using either a pipe and vfork from Thomas Bushnell, which I like and will use:
+
+"The hypervisor at start creates a global variable hypervisor_pid, initialized from getpid().
+
+The signal handler in the hypervisor then does this:
+<br>
+<code class="block">
+if getpid() == hypervisor_pid<br>
+  kill_all_children_and_exit();<br>
+else<br>
+  exit();<br>
+</code>
+
+In this way, if the child is between fork and exec when the parent gets its kill, and then it tries to kill the child, and the kill happens before the child execs (the problematic case you describe), then the child simply enters the hypervisor's signal handler, notices that it's not the hypervisor, and exits.
+<br>
+Thomas"
+<br>
+Thanks for the suggestion!
+</p>
+<p>
+Thomas's suggestion is all fine and well, except that it doesn't work on OS X. As the attached simple program "killing-child-kills-parent.c" demonstrates, OS X manages to sometimes either deliver the signal to the wrong process (?) or not update getpid() between fork+exec or is otherwise generally broken. The program simply installs a signal handler in the parent with the guard suggested by Thomas, then forks + exec's "sleep" and then immediately kills the child. So we expect the signal to either reach our signal handler (child between fork+exec), causing the child to 'exit', or to reach 'sleep' which should also die. Somehow instead the "Should NEVER get this signal!" message is printed. Well, OS X is known to be a pile of crap, so no surprise. Using 'vfork' instead of fork gets us the desired behavor -- howver, this is clearly just a hack. So vfork is back (on OS X) as of SVN 25495.
+</p>
+{% endblock body_content %}
