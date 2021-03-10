@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-10 21:17+0000\n"
-"Last-Translator: Paulina Teran <pau_teran@hotmail.com>\n"
+"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1129,7 +1129,7 @@ msgstr ""
 
 #: template/glossary.html.j2:50
 msgid "Pseudonym"
-msgstr ""
+msgstr "Pseudónimo"
 
 #: template/glossary.html.j2:52
 msgid ""
