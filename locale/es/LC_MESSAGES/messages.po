@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-09 18:35+0000\n"
-"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
+"PO-Revision-Date: 2021-03-10 21:17+0000\n"
+"Last-Translator: Paulina Teran <pau_teran@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -950,10 +950,20 @@ msgid ""
 "git/\">Satzung</a> (currently only available in German, translations "
 "welcome)."
 msgstr ""
+"Los desarrolladores de GNUnet con acceso a git (escritura) pueden "
+"convertirse en miembros para participar en el proceso de decisión y apoyar "
+"formalmente a GNUnet e.V. Para ello, todo lo que tienes que hacer es acceder "
+"al repositorio y actualizar el archivo <tt> members.txt </tt> en <a href="
+"\"https://git.gnunet.org/gnunet-ev.git/\"> gnunet-ev </a>. No hay cuotas de "
+"membresía; sin embargo, se invita a que los miembros apoyen GNUnet e.V. y en "
+"particular que contribuyan al desarrollo técnico dentro de sus "
+"posibilidades. Para obtener más detalles, consulte el <a href=\"https://git."
+"gnunet.org/gnunet-ev.git/\"> Satzung </a> (actualmente solo está disponible "
+"en alemán, las traducciones son bienvenidas)."
 
 #: template/ev.html.j2:52
 msgid "Governance"
-msgstr ""
+msgstr "Gobernanza"
 
 #: template/ev.html.j2:54
 msgid ""
@@ -965,14 +975,22 @@ msgid ""
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
 "\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
 msgstr ""
+"Puede encontrar nuestro \"Satzung\" y la lista de miembros en <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\"> https: //git.gnunet. org "
+"/ gnunet-ev.git / tree / satzung.tex </a>. La junta directiva actual está "
+"formada por: <dl> <dt> Vorsitz </dt> <dd> <a href=\"https://schanzen.eu\"> "
+"Martin Schanzenbach </a> </dd> <dt> Stellvertretender Vorsitz < / dt> <dd> "
+"t3sserakt </dd> <dt> Kassenwart </dt> <dd> Florian Dold </dd> <dt> Beisitzer "
+"</dt> <dd> <a href = \"https: // grothoff. org / christian / \"> Christian "
+"Grothoff </a>, capítulo 3 </dd> </dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
-msgstr ""
+msgstr "Notas Oficiales de la Reunión"
 
 #: template/ev.html.j2:86
 msgid "Support Us!"
-msgstr ""
+msgstr "¡Apóyanos!"
 
 #: template/ev.html.j2:88
 msgid ""
@@ -986,10 +1004,20 @@ msgid ""
 "<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
 "<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
 msgstr ""
+"Todos son bienvenidos para apoyarnos a través de donaciones. Para las "
+"contribuciones financieras, los europeos pueden donar a través de SEPA. "
+"Esperamos configurar cuentas en otras áreas monetarias importantes en el "
+"futuro. También puede donar a través de Bitcoin, los detalles de "
+"enrutamiento están a continuación. Tenga en cuenta que no podemos "
+"proporcionar recibos de sus donaciones. Si planea donar una cantidad "
+"significativa de dinero, comuníquese con nosotros primero, ya que podría ser "
+"mejor llegar a un acuerdo personalizado. <dl> <dt> BitCoin </dt> <dd> "
+"1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh </dd> <dt> SEPA / IBAN </dt> <dd> "
+"DE67830654080004822650 (BIC / SWIFT: GENODEF1SLR) </dd> </dl>"
 
 #: template/faq.html.j2:12
 msgid "Is GNUnet ready for use on production systems?"
-msgstr ""
+msgstr "¿Está GNUnet lista para usarse en sistemas de producción?"
 
 #: template/faq.html.j2:14
 msgid ""
@@ -999,10 +1027,18 @@ msgid ""
 "current low-level transport system. We are currently in the process of "
 "rewriting it (Project &quot;Transport Next Generation [TNG]&quot;)"
 msgstr ""
+"R: GNUnet todavía está experimentando un desarrollo importante. En su "
+"mayoría, aún no está listo para usarse más allá de los desarrolladores. Su "
+"millaje variará según la funcionalidad que utilice, pero es probable que "
+"vaya a encontrar problemas con nuestro sistema de transporte que actualmente "
+"tiene un nivel bajo. Actualmente, estamos en proceso de reescribirlo ("
+"Project & quot; Transport Next Generation [TNG] & quot;)"
 
 #: template/faq.html.j2:24
 msgid "Is GNUnet build using distributed ledger technologies?"
 msgstr ""
+"¿Se están utilizando tecnologías de contabilidad distribuida para hacer "
+"GNUnet ?"
 
 #: template/faq.html.j2:26
 msgid ""
@@ -1010,12 +1046,18 @@ msgid ""
 "distributed, and privacy-preserving applications. While a ledger could be "
 "built using GNUnet, we currently have no plans in doing so."
 msgstr ""
+"R: No. GNUnet es una nueva pila de protocolos de red para crear aplicaciones "
+"seguras, distribuidas y que preservan la privacidad. Si bien se podría "
+"construir un libro de contabilidad usando GNUnet, actualmente no tenemos "
+"planes para hacerlo."
 
 #: template/faq.html.j2:35
 msgid ""
 "I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. "
 "Should I worry?"
 msgstr ""
+"Recibo muchas &quot; WARNING Retardo de flujo calculado para X en Y para "
+"Z&quot;. ¿Debería preocuparme?"
 
 #: template/faq.html.j2:37
 msgid ""
@@ -1024,20 +1066,27 @@ msgid ""
 "until the Transport Next Generation (TNG) is ready, these warnings are "
 "expected."
 msgstr ""
+"R: En este momento, esto es esperado y es una causa debido a la alta "
+"latencia en GNUnet. Hemos comenzado una reescritura importante para abordar "
+"este y otros problemas, pero hasta que el Transport Next Generation (TNG) "
+"esté listo, estas advertencias seguirán ocurriendo."
 
 #: template/faq.html.j2:46
 msgid "Is there a graphical user interface?"
-msgstr ""
+msgstr "¿Existe una interfaz gráfica de usuario?"
 
 #: template/faq.html.j2:48
 msgid ""
 "A: gnunet-gtk is a separate download. The package contains various GTK+ "
 "based graphical interfaces, including a graphical tool for configuration."
 msgstr ""
+"R: gnunet-gtk es una descarga separada. El paquete contiene varias "
+"interfaces gráficas basadas en GTK +, incluida una herramienta gráfica para "
+"la configuración."
 
 #: template/glossary.html.j2:12
 msgid "Ego"
-msgstr ""
+msgstr "El Ego"
 
 #: template/glossary.html.j2:14
 msgid ""
@@ -1049,10 +1098,18 @@ msgid ""
 "not distinguish between them). We simply sometimes use the term \"ego\" to "
 "stress that you can have more than one."
 msgstr ""
+"Usamos el término \"Ego\" para referirnos al hecho de que los usuarios de "
+"GNUnet pueden tener múltiples identidades no vinculadas, en el sentido de "
+"alter egos. La capacidad de tener más de una identidad es importante, ya que "
+"es posible que deseemos mantener nuestros egos separados por ejemplo el de "
+"negocios del político o romántico. <br> Los egos en GNUnet son técnicamente "
+"equivalentes a las identidades (y el código no los distingue entre ellos). A "
+"veces simplemente usamos el término \"ego\" para enfatizar que puedes tener "
+"más de uno."
 
 #: template/glossary.html.j2:27
 msgid "Identity"
-msgstr ""
+msgstr "Identidad"
 
 #: template/glossary.html.j2:29
 msgid ""
