@@ -198,6 +198,12 @@ newsposts:
     title: GNUnet 0.11.0pre66
     abstract:
     content:
+  - page: 2013-12-28-archived-typos-pkeys.html
+    date: 2013-12-28
+    title: Typo-Protected Public Keys
+  - page: 2011-11-24-archived-vfork.html
+    date: 2011-11-24
+    title: vfork and the signal race
 # <!-- FIXME 2015: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Julian Kirsch, <a href="">"Knocking down the HACIENDA"</a>, GNU Hacker Meeting 2014</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Peter Schaar, <a href="">"Technik, Recht und Überwachung"</a>, Technische Universität München</li> -->
