@@ -201,6 +201,9 @@ newsposts:
   - page: 2013-12-28-archived-typos-pkeys.html
     date: 2013-12-28
     title: Typo-Protected Public Keys
+  - page: 2013-11-15-special-use-gns.html
+    date: 2013-11-15
+    title: Special-Use Domain Names of Peer-to-Peer Name Systems
   - page: 2011-11-24-archived-vfork.html
     date: 2011-11-24
     title: vfork and the signal race
