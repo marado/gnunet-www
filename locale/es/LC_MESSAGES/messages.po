@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-10 21:17+0000\n"
-"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
+"PO-Revision-Date: 2021-03-12 14:49+0000\n"
+"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1141,6 +1141,13 @@ msgid ""
 "neutral element on the elliptic curve) or a throw-away pseudonym that is "
 "only used once."
 msgstr ""
+"Un pseudónimo es un ego con el objetivo de no ser relacionado con el nombre "
+"propio. Los usuarios de GNUnet pueden crear varios egos, por ende varios "
+"pseudónimos. <br> El uso repetitivo del mismo pseudónimo puede relacionarse "
+"por definición, ya que se relacionan por la misma clave pública. La "
+"anonimidad requiere el uso de pseudónimos \"anónimos\" especiales (para "
+"GNUnet, es el elemento neutral de la curva elíptica) o un pseudónimo "
+"desechable de único uso."
 
 #: template/glossary.html.j2:71
 msgid "Namespaces"
@@ -1161,7 +1168,7 @@ msgstr ""
 
 #: template/glossary.html.j2:89
 msgid "Peer"
-msgstr ""
+msgstr "Par"
 
 #: template/glossary.html.j2:91
 msgid ""
@@ -1193,6 +1200,12 @@ msgid ""
 "Name System (GNS), a secure, decentralized name system built on top of "
 "GNUnet."
 msgstr ""
+"El Sistema de Nombres de Dominio hoy permite ataques a la ampliación de "
+"tráfico, censura (p.e. China), vigilancia masiva (MORECOWBELL) y guerra "
+"cibernética ofensiva (QUANTUMDNS).<br/> Lastimosamente, soluciones rápidas "
+"como DoT, DoH, DNSSEC, DPRIVE, y similares no lo arreglarán. Es por esto que "
+"construimos el Sistema de Nombres GNU (GNS), un sistema de nombres seguro y "
+"descentralizado construido sobre GNUnet."
 
 #: template/gns.html.j2:28
 msgid "Overview"
@@ -1200,7 +1213,7 @@ msgstr ""
 
 #: template/gns.html.j2:37
 msgid "Features"
-msgstr ""
+msgstr "Características"
 
 #: template/gns.html.j2:39
 msgid ""
@@ -1210,10 +1223,16 @@ msgid ""
 "<li>Censorship resistance</li> <li>Query privacy</li> <li>Secure name "
 "resolution</li> <li>Compatibility with DNS</li>"
 msgstr ""
+"El Sistema de Nombres GNU (GNS) es un sistema de nombres seguro y "
+"descentralizado. Permite a sus usuarios registrar nombres como Dominios de "
+"Nivel Superior (TLD) y resolver otros espacios de nombres dentro de sus TLD. "
+"<br/> El diseño de GNS ofrece: <ul> <li>Resistencia a la censura </li> "
+"<li>Privacidad en las búsquedas</li> <li>Resolución de nombre segura </li> "
+"<li> Compatibilidad con DNS</li>"
 
 #: template/gns.html.j2:52
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: template/gnurl.html.j2:21
 msgid ""
@@ -1237,15 +1256,15 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:48
-#, fuzzy
-#| msgid "About"
 msgid "About gnurl"
-msgstr "Sobre"
+msgstr "Acerca de gnurl"
 
 #: template/gnurl.html.j2:50
 msgid ""
 "Large parts of the following 6 paragraphs are old and need to be rewritten."
 msgstr ""
+"Grandes partes de los siguientes 6 párrafos son antiguos y necesitan "
+"reescritura."
 
 #: template/gnurl.html.j2:62
 msgid ""
