@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-12 14:49+0000\n"
-"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
+"Last-Translator: April Espindola <apriespindola@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1151,7 +1151,7 @@ msgstr ""
 
 #: template/glossary.html.j2:71
 msgid "Namespaces"
-msgstr ""
+msgstr "Espacio de nombres"
 
 #: template/glossary.html.j2:73
 msgid ""
@@ -1165,6 +1165,16 @@ msgid ""
 "which despite its name may not be public knowledge and is never disclosed by "
 "the GNS protocol itself."
 msgstr ""
+"El sistema de nombres GNU permite que cada identidad asocie de forma segura "
+"y privada cualquier numero de pares valor-etiqueta con un ego. El valor se "
+"denomina conjunto de registros siendo la terminología del sistema de nombres "
+"de dominio (DNS). El mapeo de etiquetas a conjuntos de registros para un ego "
+"dado se llama espacio de nombres. Si los registros se hacen públicos y por "
+"lo tanto se publican es posible que otros usuarios busquen el registro dada "
+"la clave publica y la etiqueta del ego. Aquí no solo la etiqueta puede "
+"actuar como una frase de contraseña, sino también la clave publica. que a "
+"pesar de su nombre puede no ser de conocimientos publico y nunca es revelado "
+"por el propio protocolo."
 
 #: template/glossary.html.j2:89
 msgid "Peer"
@@ -1209,7 +1219,7 @@ msgstr ""
 
 #: template/gns.html.j2:28
 msgid "Overview"
-msgstr ""
+msgstr "visión general"
 
 #: template/gns.html.j2:37
 msgid "Features"
@@ -1247,6 +1257,9 @@ msgid ""
 "Our main usecase is for GNUnet and Taler, but it might be usable for others, "
 "hence we&#39;re releasing the code to the general public."
 msgstr ""
+"Nuestro principal caso de uso es para GNUnet y Taler, pero puede ser "
+"utilizado por otros, por eso notros estamos soltando el código para el "
+"público en general."
 
 #: template/gnurl.html.j2:37
 msgid ""
