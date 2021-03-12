@@ -620,10 +620,16 @@ msgid ""
 "for addresses and self-organized decentralized routing algorithms, these "
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
+"Le basi di GNUnet sono una tabella hash distribuita (R5N), un livello di "
+"messaggistica con crittografia end-to-end di tipo SCTP (CADET), "
+"un'infrastruttura a chiave pubblica (GNS) e un sistema di trasporto "
+"collegabile (TRANSPORT).<br> Questi sottosistemi sostituiscono lo stack TCP/"
+"IP, poiché utilizzano chiavi pubbliche per indirizzi e algoritmi di routing "
+"decentralizzati e auto-organizzati."
 
 #: template/architecture.html.j2:35
 msgid "Security"
-msgstr ""
+msgstr "Sicurezza"
 
 #: template/architecture.html.j2:38
 msgid ""
@@ -633,14 +639,19 @@ msgid ""
 "is a <a href=\"https://www.gnu.org/\">GNU</a> package, and will always "
 "remain free software."
 msgstr ""
+"GNUnet è implementato con un’architettura multiprocesso. Ogni sottosistema "
+"viene eseguito come un processo separato, permettendo l’isolamento degli "
+"errori e la concessione di autorizzazioni limitate a ciascun sottosistema. L’"
+"implementazione è un pacchetto <a href=\"https://www.gnu.org/\">GNU</a>, "
+"quindi sarà sempre un software gratuito."
 
 #: template/architecture.html.j2:52
 msgid "System architecture"
-msgstr ""
+msgstr "Architettura del sistema"
 
 #: template/architecture.html.j2:58
 msgid "Subsystems"
-msgstr ""
+msgstr "Sottosistemi"
 
 #: template/architecture.html.j2:67
 msgid "libgnunetutil"
@@ -648,19 +659,19 @@ msgstr ""
 
 #: template/architecture.html.j2:73
 msgid "APIs"
-msgstr ""
+msgstr "API"
 
 #: template/architecture.html.j2:86
 msgid "Legend"
-msgstr ""
+msgstr "Legenda"
 
 #: template/contact.html.j2:6
 msgid "Contact information"
-msgstr ""
+msgstr "Informazioni di contatto"
 
 #: template/contact.html.j2:11
 msgid "The mailing list"
-msgstr ""
+msgstr "Mailing list"
 
 #: template/contact.html.j2:13
 msgid ""
@@ -669,10 +680,15 @@ msgid ""
 "mailman/listinfo/gnunet-developers</a>. You can send messages to the list at "
 "<a href=\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
 msgstr ""
+"All'indirizzo <a href=\"https://lists.gnu.org/mailman/listinfo/gnunet-"
+"developers\">https://lists.gnu.org/mailman/listinfo/gnunet-developers</a> è "
+"possibile trovare una mailing list di GNUnet pubblica e archiviata. È "
+"possibile inviare un messaggio a tutta la mailing list scrivendo a <a href="
+"\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
 
 #: template/contact.html.j2:23
 msgid "The IRC channel"
-msgstr ""
+msgstr "Canale IRC"
 
 #: template/contact.html.j2:25
 msgid ""
@@ -680,10 +696,13 @@ msgid ""
 "freenode.net</a>. There is also an <a href=\"https://view.matrix.org/room/!"
 "IjaAfLiruzjxFFzKAV:matrix.org/\">archive</a> available."
 msgstr ""
+"È possibile contattare <tt>#gnunet</tt> su <a href=\"https://freenode.net\""
+">irc.freenode.net</a>. È disponibile anche un <a href=\"https://view.matrix."
+"org/room/!IjaAfLiruzjxFFzKAV:matrix.org/\">archivio</a>."
 
 #: template/contact.html.j2:38
 msgid "Contacting individuals"
-msgstr ""
+msgstr "Contatti singoli"
 
 #: template/contact.html.j2:40
 msgid ""
@@ -692,10 +711,15 @@ msgid ""
 "encrypted Emails. Urgent and sensitive security issues may be addressed to "
 "the GNU maintainers <tt>schanzen</tt> and <tt>grothoff</tt>."
 msgstr ""
+"È possibile contattare gli sviluppatori di GNUnet scrivendo a "
+"<tt>PSEUDONYM@gnunet.org</tt> o <tt>LASTNAME@gnunet.org</tt>. Quasi tutti "
+"gli sviluppatori supportano la ricezione di email con crittografia GnuPG. "
+"Per questioni di sicurezza urgenti e delicate rivolgersi ai maintainer "
+"<tt>schanzen</tt> e <tt>grothoff</tt>."
 
 #: template/contact.html.j2:53
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Report dei bug"
 
 #: template/contact.html.j2:55
 msgid ""

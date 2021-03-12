@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-12 15:55+0100\n"
-"PO-Revision-Date: 2021-03-10 21:17+0000\n"
-"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
-"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/"
-">\n"
+"POT-Creation-Date: 2021-03-03 21:41+0100\n"
+"PO-Revision-Date: 2021-03-12 14:49+0000\n"
+"Last-Translator: Paulina Teran <pau_teran@hotmail.com>\n"
+"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
+"\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1858,6 +1858,20 @@ msgid ""
 "prove that they are studying. Students may keep their (certified) student "
 "identity separate from other egos that they use for other activities in life."
 msgstr ""
+"En GNUnet, los usuarios se identifican mediante una clave pública, y esa "
+"clave pública a menudo se denomina como la \"Identidad\" del usuario. Sin "
+"embargo, el concepto no es tan draconiano como suele serlo en la vida real, "
+"donde muchos se ven obligados a tener un nombre, un pasaporte y un número de "
+"identificación único. <br> Siempre y cuando las identidades en GNUnet sean "
+"simplemente claves públicas, los usuarios son libres de crear cualquier "
+"número de identidades, y nombramos a esos egos para enfatizar la diferencia. "
+"Aunque los usuarios pueden crear tales egos libremente, es posible tener un "
+"ego certificado por alguna autoridad de certificación, lo que se asemeja más "
+"al concepto tradicional de identidad. <br> Por ejemplo, una universidad "
+"puede certificar las identidades de sus estudiantes de manera que puedan "
+"demostrar que están estudiando. Los estudiantes pueden mantener su identidad "
+"de estudiante (certificada) separada de otros egos que usan para otras "
+"actividades en su vida."
 
 #: template/glossary.html.j2:50
 msgid "Pseudonym"
@@ -1873,10 +1887,17 @@ msgid ""
 "neutral element on the elliptic curve) or a throw-away pseudonym that is "
 "only used once."
 msgstr ""
+"Un pseudónimo es un ego con el objetivo de no ser relacionado con el nombre "
+"propio. Los usuarios de GNUnet pueden crear varios egos, por ende varios "
+"pseudónimos. <br> El uso repetitivo del mismo pseudónimo puede relacionarse "
+"por definición, ya que se relacionan por la misma clave pública. La "
+"anonimidad requiere el uso de pseudónimos \"anónimos\" especiales (para "
+"GNUnet, es el elemento neutral de la curva elíptica) o un pseudónimo "
+"desechable de único uso."
 
 #: template/glossary.html.j2:71
 msgid "Namespaces"
-msgstr ""
+msgstr "Espacio de nombres"
 
 #: template/glossary.html.j2:73
 msgid ""
@@ -1890,10 +1911,20 @@ msgid ""
 "which despite its name may not be public knowledge and is never disclosed by "
 "the GNS protocol itself."
 msgstr ""
+"El sistema de nombres GNU permite que cada identidad asocie de forma segura "
+"y privada cualquier numero de pares valor-etiqueta con un ego. El valor se "
+"denomina conjunto de registros siendo la terminología del sistema de nombres "
+"de dominio (DNS). El mapeo de etiquetas a conjuntos de registros para un ego "
+"dado se llama espacio de nombres. Si los registros se hacen públicos y por "
+"lo tanto se publican es posible que otros usuarios busquen el registro dada "
+"la clave publica y la etiqueta del ego. Aquí no solo la etiqueta puede "
+"actuar como una frase de contraseña, sino también la clave publica. que a "
+"pesar de su nombre puede no ser de conocimientos publico y nunca es revelado "
+"por el propio protocolo."
 
 #: template/glossary.html.j2:89
 msgid "Peer"
-msgstr ""
+msgstr "Par"
 
 #: template/glossary.html.j2:91
 msgid ""
@@ -1925,11 +1956,24 @@ msgid ""
 "Name System (GNS), a secure, decentralized name system built on top of "
 "GNUnet."
 msgstr ""
+"El Sistema de Nombres de Dominio hoy permite ataques a la ampliación de "
+"tráfico, censura (p.e. China), vigilancia masiva (MORECOWBELL) y guerra "
+"cibernética ofensiva (QUANTUMDNS).<br/> Lastimosamente, soluciones rápidas "
+"como DoT, DoH, DNSSEC, DPRIVE, y similares no lo arreglarán. Es por esto que "
+"construimos el Sistema de Nombres GNU (GNS), un sistema de nombres seguro y "
+"descentralizado construido sobre GNUnet."
 
 #: template/gns.html.j2:28
 msgid "Overview"
-msgstr ""
+msgstr "visión general"
 
+<<<<<<< HEAD
+=======
+#: template/gns.html.j2:37
+msgid "Features"
+msgstr "Características"
+
+>>>>>>> weblate/master
 #: template/gns.html.j2:39
 msgid ""
 "The GNU Name System (GNS) is secure and decentralized naming system. It "
@@ -1938,10 +1982,16 @@ msgid ""
 "<li>Censorship resistance</li> <li>Query privacy</li> <li>Secure name "
 "resolution</li> <li>Compatibility with DNS</li>"
 msgstr ""
+"El Sistema de Nombres GNU (GNS) es un sistema de nombres seguro y "
+"descentralizado. Permite a sus usuarios registrar nombres como Dominios de "
+"Nivel Superior (TLD) y resolver otros espacios de nombres dentro de sus TLD. "
+"<br/> El diseño de GNS ofrece: <ul> <li>Resistencia a la censura </li> "
+"<li>Privacidad en las búsquedas</li> <li>Resolución de nombre segura </li> "
+"<li> Compatibilidad con DNS</li>"
 
 #: template/gns.html.j2:52
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: template/gnurl.html.j2:21
 msgid ""
@@ -1956,6 +2006,9 @@ msgid ""
 "Our main usecase is for GNUnet and Taler, but it might be usable for others, "
 "hence we&#39;re releasing the code to the general public."
 msgstr ""
+"Nuestro principal caso de uso es para GNUnet y Taler, pero puede ser "
+"utilizado por otros, por eso notros estamos soltando el código para el "
+"público en general."
 
 #: template/gnurl.html.j2:37
 msgid ""
@@ -1965,15 +2018,15 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:48
-#, fuzzy
-#| msgid "About"
 msgid "About gnurl"
-msgstr "Sobre"
+msgstr "Acerca de gnurl"
 
 #: template/gnurl.html.j2:50
 msgid ""
 "Large parts of the following 6 paragraphs are old and need to be rewritten."
 msgstr ""
+"Grandes partes de los siguientes 6 párrafos son antiguos y necesitan "
+"reescritura."
 
 #: template/gnurl.html.j2:62
 msgid ""
