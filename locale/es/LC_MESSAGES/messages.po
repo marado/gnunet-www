@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-12 14:49+0000\n"
-"Last-Translator: Paulina Teran <pau_teran@hotmail.com>\n"
+"PO-Revision-Date: 2021-03-12 15:23+0000\n"
+"Last-Translator: Stefan <eintritt@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1025,7 +1025,7 @@ msgstr ""
 
 #: template/faq.html.j2:13 template/faq.html.j2:149 template/gns.html.j2:37
 msgid "Features"
-msgstr ""
+msgstr "Características"
 
 #: template/faq.html.j2:15 template/faq.html.j2:695
 msgid "Error messages"
