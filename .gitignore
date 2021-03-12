@@ -31,3 +31,10 @@ config.mk
 .style.yapf
 help/
 configure
+locale/ar/LC_MESSAGES/messages.mo
+locale/hi/LC_MESSAGES/messages.mo
+locale/ja/LC_MESSAGES/messages.mo
+locale/ko/LC_MESSAGES/messages.mo
+locale/pt/LC_MESSAGES/messages.mo
+locale/zh_Hant/LC_MESSAGES/messages.mo
+
