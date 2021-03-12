@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-12 18:11+0000\n"
-"Last-Translator: Juan Arellano <juan.arellano@gmail.com>\n"
+"PO-Revision-Date: 2021-03-13 01:03+0000\n"
+"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1159,10 +1159,15 @@ msgid ""
 "GNUnet does not really have one focus; our theme is secure decentralized "
 "networking, but that is too broad to be called a focus."
 msgstr ""
+"R: Tor se centra en comunicaciones anónimas y en resistencia a la censura "
+"para conexiones TCP (Protocolo de Control de Transmisión) y, el paquete de "
+"navegador Tor, para la web en particular. GNUnet no tiene realmente un "
+"enfoque; nuestro propósito es una red segura descentralizada, pero esto es "
+"muy amplio para ser considerado un enfoque."
 
 #: template/faq.html.j2:111
 msgid "How does GNUnet compare to I2P?"
-msgstr ""
+msgstr "¿Cómo se compara GNUnet con I2P (Proyecto de Internet invisible)?"
 
 #: template/faq.html.j2:113
 msgid ""
@@ -1172,6 +1177,12 @@ msgid ""
 "using onion (or garlic) routing as the basis for various (anonymized) "
 "applications. I2P is largely used via a Web frontend."
 msgstr ""
+"R: Ambos dos, GNUnet y I2P, quieren construir un internet mejor, mas seguro "
+"y mas descentralizado. Sin embargo, desde el punto de vista técnico, no hay "
+"casi coincidencias.<br><b. r>I2P esta escrito en Java, y tiene túneles de "
+"enrutamiento (asimétricos) cebolla (o ajo) como base para varias "
+"aplicaciones (anonimizadas). I2P is principalmente usada en webs del lado "
+"del cliente."
 
 #: template/faq.html.j2:124
 msgid "Is GNUnet ready for use on production systems?"
@@ -1210,10 +1221,8 @@ msgstr ""
 "planes para hacerlo."
 
 #: template/faq.html.j2:151
-#, fuzzy
-#| msgid "What is GNUnet?"
 msgid "What can I do with GNUnet?"
-msgstr "Qué es GNUnet?"
+msgstr "¿Qué puedo hacer con GNUnet?"
 
 #: template/faq.html.j2:153
 msgid ""
@@ -1221,27 +1230,38 @@ msgid ""
 "do more than just one thing. Naturally, the implementation and documentation "
 "of some of the features that exist are more advanced than others."
 msgstr ""
+"R: GNUnet es una estructura de red de pares, por lo que queremos decir que "
+"es capaz de hacer más que una sola cosa. Naturalmente, la implementación y "
+"documentación de algunas de sus herramientas existentes, son mas avanzadas "
+"que otras."
 
 #: template/faq.html.j2:160
+#, fuzzy
 msgid ""
 "For users, GNUnet offers anonymous and non-anonymous file-sharing, a fully "
 "decentralized and censorship-resistant replacement for DNS and a mechanism "
 "for IPv4-IPv6 protocol translation and tunneling (NAT-PT with DNS-ALG)."
 msgstr ""
+"Para usuarios, GNUnet ofrece compartir archivos en el anonimato o no, una "
+"completa sustitución descentralizada con resistencia de censura para DNS ("
+"sistema de nombre de dominio) y un mecanismo de traducción y tunneling (NAT-"
+"PT with DNS-ALG) para el protocolo IPv4-IPv6."
 
 #: template/faq.html.j2:171
 msgid "Is it possible to surf the WWW anonymously with GNUnet?"
-msgstr ""
+msgstr "¿Se puede navegar en la WWW en anonimato con GNUnet?"
 
 #: template/faq.html.j2:173
 msgid ""
 "A: It is not possible use GNUnet for anonymous browsing at this point. We "
 "recommend that you use Tor for anonymous surfing."
 msgstr ""
+"R: En este momento no es posible usar GNUnet para navegar de modo anónimo. "
+"Recomendamos que utilice Tor para hacer búsquedas anónimas."
 
 #: template/faq.html.j2:181
 msgid "Is it possible to access GNUnet via a browser as an anonymous WWW?"
-msgstr ""
+msgstr "¿Es posible acceder a GNUnet desde un buscador en anónimo en www?"
 
 #: template/faq.html.j2:183
 msgid ""
@@ -1250,6 +1270,11 @@ msgid ""
 "proxy and all one needs to know is the protocol used between browser and "
 "proxy and a swift look at the GNUnet code for file-sharing."
 msgstr ""
+"R: Actualmente no hay ningún proxy, como el proxy libre de Freenet, para "
+"GNUnet, que lo haga accesible con un buscador. Es posible construir "
+"semejante proxy y todo lo que se necesita saber es el protocolo usado entre "
+"el navegador y el proxy, y una mirada rápida al código en GNUnet para el "
+"intercambio de archivos."
 
 #: template/faq.html.j2:195
 msgid ""
