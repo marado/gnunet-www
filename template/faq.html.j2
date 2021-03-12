@@ -283,6 +283,112 @@
         </section>
 
         <section>
+          <h3>{{ _("How does GNS compare to other name systems") }}</h3>
+          <p>
+          {% trans %}
+          A: A scientific paper on this topic 
+          <a href="https://grothoff.org/christian/ns2018.pdf">has been published
+          </a> and below is a table from the publication.
+          For detailed descriptions please refer to the paper.
+          {% endtrans %}
+          <table>
+            <thead>
+              <td></td>
+              <td>MitM manipulation</td>
+              <td>Zone walk</td>
+              <td>Client observation (network)</td>
+              <td>Client observation (operator)</td>
+              <td>Traffic amplification</td>
+              <td>Censorship/legal attacks</td>
+              <td>Ease of migration</td>
+            <thead>
+            <tbody>
+              <tr>
+              <td>DNS</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td>+++</td>
+              </tr>
+              <tr>
+              <td>DNSSEC</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td>+</td>
+              </tr>
+              <tr>
+              <td>DNSCurve</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td>+</td>
+              </tr>
+              <tr>
+              <td>DoT/DoH</td>
+              <td><i class="fa fa-check"></i></td>
+              <td>n/a</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td>+</td>
+              </tr>
+              <tr>
+              <td>Confid. DNS</td>
+              <td><i class="fa fa-times"></i></td>
+              <td>n/a</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td>++</td>
+              </tr>
+              <tr>
+              <td>Namecoin</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td>-</td>
+              </tr>
+              <tr>
+              <td>GNS</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td>--</td>
+              </tr>
+              <tr>
+              <td>RAINS</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td>--</td>
+              </tr>
+
+            </tbody>
+          </table>
+          </p>
+        </section>
+        <section>
           <h3>{{ _("What is the difference between GNS and CoDoNS?") }}</h3>
           <p>
           {% trans %}
@@ -330,21 +436,16 @@
         </section>
 
         <section>
-          <h3>{{ _("What is the difference between GNS and Namecoin?") }}</h3>
-          <p>
-          </p>
-        </section>
-
-
-        <section>
           <h3>{{ _("What is the difference between GNS and Handshake?") }}</h3>
           <p>
-          </p>
-        </section>
-
-        <section>
-          <h3>{{ _("What is the difference between GNS and ENS?") }}</h3>
-          <p>
+          {% trans %}
+          A: Handshake is a blockchain-based method for root zone governance.
+          Hence, it does not address the name resolution process itself but
+          delegates resolution into DNS after the initial TLD resolution.
+          Not taking sustainablility considerations into account, handshake
+          could be used as an additional supporting GNS root zone governance
+          model but we currently do not have such plans in mind.
+          {% endtrans %}
           </p>
         </section>
 
