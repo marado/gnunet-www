@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-09 18:35+0000\n"
+"PO-Revision-Date: 2021-03-12 14:49+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
 ">\n"
@@ -786,50 +786,54 @@ msgid ""
 "performance regression analysis of the exchange backend at <a "
 "href=\"https://old.gnunet.org/gauger/\">https://old.gnunet.org/gauger/</a>."
 msgstr ""
+"交換バックエンドのパフォーマンス回帰分析には、<a href=\"https://old.gnunet.org/gauger/\">https://old"
+".gnunet.org/gauger/</a>で <a href=\"https://old.gnunet.org/gauger\">Gauger</"
+"a> を使用しています。"
 
 #: template/download.html.j2:7 template/gnurl.html.j2:209
 msgid "Downloads"
-msgstr ""
+msgstr "ダウンロード"
 
 #: template/download.html.j2:11
 msgid ""
 "Here you can download releases of our software and find links to the "
 "various versions."
-msgstr ""
+msgstr "こちらからソフトウェアのリリースをダウンロードできます。また、各種バージョンへのリンクを掲載しています。"
 
 #: template/download.html.j2:17
 msgid "0.11.x series"
-msgstr ""
+msgstr "0.11.x シリーズ"
 
 #: template/download.html.j2:18
 msgid "tarball"
-msgstr ""
+msgstr "tarball"
 
 #: template/download.html.j2:20
 msgid ""
 "The tarball of the latest version can be obtained from GNU FTP and its "
 "mirrors."
-msgstr ""
+msgstr "最新バージョンの tar は GNU FTP とそのミラーから取得できます。"
 
 #: template/download.html.j2:30
 msgid "git"
-msgstr ""
+msgstr "Git"
 
 #: template/download.html.j2:32
 msgid "You can fetch the git tag of version 0.11.x from our development server:"
-msgstr ""
+msgstr "バージョン 0.11.x の Git タグは開発サーバーから取得できます。"
 
 #: template/engage.html.j2:6
 msgid "Engage!"
-msgstr ""
+msgstr "参加しませんか"
 
 #: template/ev.html.j2:6
+#, fuzzy
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
-msgstr ""
+msgstr "Verein zur F&ouml;rderung von GNUnet e.V."
 
 #: template/ev.html.j2:11
 msgid "About GNUnet e.V."
-msgstr ""
+msgstr "GNUnet e.V. について"
 
 #: template/ev.html.j2:13
 msgid ""
@@ -838,6 +842,9 @@ msgid ""
 "German law to support GNUnet development. The Amtsgericht M&uuml;nchen "
 "registered the association on the 7th of March under VR 205287."
 msgstr ""
+"2013 年 12 月 27 日、GNUnet ハッカーのグループが 30c3 に集まり、ドイツ法に基づく GNUnet 開発支援のための協会である「"
+"Verein zur F&ouml;rderung von GNUnet e.V.」を結成しました。この協会は Amtsgericht M&uuml;"
+"nchen により 3 月 7 日に VR 205287 のもと登録されています。"
 
 #: template/ev.html.j2:22
 msgid ""
@@ -846,10 +853,12 @@ msgid ""
 "in general, and GNUnet specifically. This is the official website for the"
 " association."
 msgstr ""
+"協会は、安全な分散型ネットワーキング分野全般、特に GNUnet "
+"の研究、開発、教育の支援を公式な取り組みとしており、このウェブサイトは協会の公式ウェブサイトです。"
 
 #: template/ev.html.j2:31
 msgid "Becoming a Member of GNUnet e.V."
-msgstr ""
+msgstr "GNUnet e.V. のメンバーになる"
 
 #: template/ev.html.j2:33
 msgid ""
@@ -863,10 +872,15 @@ msgid ""
 "href=\"https://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (currently "
 "only available in German, translations welcome)."
 msgstr ""
+"Git（書き込み）アクセス権を持つ GNUnet 開発者は、メンバーとして意思決定プロセスに参加し、GNUnet e.V. "
+"を正式にサポートすることができます。メンバーとなるには、<a href=\"https://git.gnunet.org/gnunet-ev.git/\""
+">gnunet-ev</a> レポジトリにある <tt>members.txt</tt> ファイルを更新してください。会費はありませんが、メンバーには "
+"GNUnet e.V. へのサポート、特に技術開発面での相応の貢献が求められます。詳細については、<a href=\"https://git.gnunet"
+".org/gnunet-ev.git/\">Satzung</a> を参照してください（現在ドイツ語のみですが、翻訳も歓迎します）。"
 
 #: template/ev.html.j2:52
 msgid "Governance"
-msgstr ""
+msgstr "ガバナンス"
 
 #: template/ev.html.j2:54
 msgid ""
@@ -881,14 +895,21 @@ msgid ""
 "href=\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 "
 "</dd> </dl>"
 msgstr ""
+"「Satzung」およびメンバーのリストは<a href=\"https://git.gnunet.org/gnunet-ev.git/tree/"
+"satzung.tex\">https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex</a> "
+"から確認できます。現在の委員会メンバーは次の通りです。 <dl><dt>Vorsitz</dt><dd><a href=\"https"
+"://schanzen.eu\">Martin Schanzenbach</a></dd><dt>stellvertretender "
+"Vorsitz</dt><dd>t3sserakt</dd><dt>Kassenwart</dt><dd>Florian "
+"Dold</dd><dt>Beisitzer</dt><dd><a href=\"https://grothoff.org/christian/\""
+">Christian Grothoff</a>, ch3 </dd></dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
-msgstr ""
+msgstr "公式議事録"
 
 #: template/ev.html.j2:86
 msgid "Support Us!"
-msgstr ""
+msgstr "支援"
 
 #: template/ev.html.j2:88
 msgid ""
@@ -902,10 +923,16 @@ msgid ""
 "<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
 "<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
 msgstr ""
+"どなたでも寄付を通じてご支援いただけます。金銭的な貢献に関し、欧州にお住まいの場合 SEPA "
+"経由で寄付いただくことができます。将来的には他の主要通貨でも受け付けられるよう取り組んでいきたいと考えています。また、Bitcoin による寄付も可能で、"
+"ルーティング詳細は下に記載しています。ただし、寄付金について領収書は発行することができませんのでご了承ください。大口の寄付につきましては、関税処理が必要な"
+"場合があるため、事前にご連絡をいただけますようお願いします。<dl><dt>BitCoin</dt><dd>1GNUnetpWeR9Zs3vipdvVyw"
+"o1GseeksjUh</dd><dt>SEPA/IBAN</dt><dd>DE67830654080004822650 (BIC/SWIFT: "
+"GENODEF1SLR)</dd></dl>"
 
 #: template/faq.html.j2:12
 msgid "Is GNUnet ready for use on production systems?"
-msgstr ""
+msgstr "GNUnet は本番システムで利用できますか？"
 
 #: template/faq.html.j2:14
 msgid ""
@@ -916,10 +943,13 @@ msgid ""
 "process of rewriting it (Project &quot;Transport Next Generation "
 "[TNG]&quot;)"
 msgstr ""
+"回答：GNUnet はまだ開発途上であるため、大部分が開発者以外の方による使用には適していません。利用価値は、使いたい機能にもよりますが、現時点では転送シ"
+"ステムが洗練されておらず、常に何らかの問題に直面すると考えられます。この部分については現在書き換えを進めています。（プロジェクト&quot;"
+"Transport Next Generation [TNG]&quot;）"
 
 #: template/faq.html.j2:24
 msgid "Is GNUnet build using distributed ledger technologies?"
-msgstr ""
+msgstr "GNUnet は分散型台帳技術を使用して構築されていますか？"
 
 #: template/faq.html.j2:26
 msgid ""
@@ -927,12 +957,14 @@ msgid ""
 "distributed, and privacy-preserving applications. While a ledger could be"
 " built using GNUnet, we currently have no plans in doing so."
 msgstr ""
+"回答：いいえ。GNUnet は、安全で分散型のプライバシー保護を実現したアプリケーションを構築することができる、新しいネットワーク プロトコル "
+"スタックです。GNUnet で台帳を構築することもできますが、現時点でその予定はありません。"
 
 #: template/faq.html.j2:35
 msgid ""
 "I receive many &quot;WARNING Calculated flow delay for X at Y for "
 "Z&quot;. Should I worry?"
-msgstr ""
+msgstr "「WARNING Calculated flow delay for X at Y for Z」という警告が多くでますが、懸念すべきですか？"
 
 #: template/faq.html.j2:37
 msgid ""
@@ -941,16 +973,20 @@ msgid ""
 "problems, but until the Transport Next Generation (TNG) is ready, these "
 "warnings are expected."
 msgstr ""
+"回答：現時点でこれは想定内であり、GNUnet での高レイテンシの既知の原因です。この件および他の問題に対処するため、主要な書き換えを開始していますが、"
+"Transport Next Generation（TNG）が準備できるまでは発生が続くことが見込まれます。"
 
 #: template/faq.html.j2:46
 msgid "Is there a graphical user interface?"
-msgstr ""
+msgstr "グラフィカル ユーザー インターフェースはありますか？"
 
 #: template/faq.html.j2:48
 msgid ""
 "A: gnunet-gtk is a separate download. The package contains various GTK+ "
 "based graphical interfaces, including a graphical tool for configuration."
 msgstr ""
+"回答：gnunet-gtk を別途ダウンロードいただけます。このパッケージには、設定用のグラフィカル ツールなど、各種 GTK+ ベースのグラフィカル "
+"インターフェースが含まれます。"
 
 #: template/glossary.html.j2:12
 msgid "Ego"
