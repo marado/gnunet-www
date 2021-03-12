@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-12 15:51+0000\n"
+"PO-Revision-Date: 2021-03-12 17:37+0000\n"
 "Last-Translator: Juan Arellano <juan.arellano@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
@@ -1042,7 +1042,7 @@ msgstr ""
 
 #: template/faq.html.j2:26
 msgid "What do I do if my question is not answered here?"
-msgstr ""
+msgstr "¿Qué hago si aquí no responden mi pregunta?"
 
 #: template/faq.html.j2:28
 msgid ""
@@ -1050,10 +1050,13 @@ msgid ""
 "documentation or ask the question on the help-gnunet@gnu.org mailing list or "
 "the #gnunet IRC on irc.freenode.net."
 msgstr ""
+"R: Hay muchas otras fuentes de información. Puedes leer documentación "
+"adicional o preguntar en la lista de correos help-gnunet@gnu.org o en el IRC "
+"#gnunet en irc.freenode.net."
 
 #: template/faq.html.j2:36
 msgid "When are you going to release the next version?"
-msgstr ""
+msgstr "¿Cuándo lanzarán la próxima versión?"
 
 #: template/faq.html.j2:38
 msgid ""
@@ -1063,6 +1066,12 @@ msgid ""
 "planet.gnu.org\">planet GNU</a>. You can subscribe to the mailing list or "
 "the RSS feed of this site to automatically receive a notification."
 msgstr ""
+"R: La respuesta general es, cuando esté lista. Una mejor respuesta puede ser:"
+" antes si colaboras (probando, depurando, escribiendo código, documentando). "
+"Cada lanzamiento se anunciará en la lista de correo info-gnunet@gnu.org y en "
+"<a href=\"https://planet.gnu.org\"> planeta GNU </a>. Puedes suscribirte a "
+"la lista de correo o al canal RSS de este sitio para recibir automáticamente "
+"una notificación."
 
 #: template/faq.html.j2:49
 msgid "Is the code free?"
