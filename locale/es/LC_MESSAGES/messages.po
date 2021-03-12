@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-13 01:03+0000\n"
-"Last-Translator: Juan Arellano <juan.arellano@gmail.com>\n"
+"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -2196,7 +2196,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:142
 msgid "Using libgnurl"
-msgstr ""
+msgstr "Usar libgnurl"
 
 #: template/gnurl.html.j2:144
 msgid ""
@@ -2305,11 +2305,11 @@ msgstr ""
 
 #: template/gnurl.html.j2:321
 msgid "Now you can either run"
-msgstr ""
+msgstr "Ahora puede reproducir"
 
 #: template/gnurl.html.j2:331
 msgid "directly (and read configure-gnurl before you do so) or invoke"
-msgstr ""
+msgstr "directamente (lea configure-gnurl antes de hacerlo) o invocar"
 
 #: template/gnurl.html.j2:341
 msgid ""
@@ -2319,15 +2319,15 @@ msgstr ""
 
 #: template/gnurl.html.j2:346
 msgid "Now run"
-msgstr ""
+msgstr "Ahora reproduzca"
 
 #: template/gnurl.html.j2:356
 msgid "(this is optional)"
-msgstr ""
+msgstr "(esto es opcional)"
 
 #: template/gnurl.html.j2:365
 msgid "and you are done."
-msgstr ""
+msgstr "y eso es todo."
 
 #: template/gnurl.html.j2:369
 msgid "Building from a tagged git commit"
@@ -2341,7 +2341,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:382
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "Reporte de Bugs"
 
 #: template/gnurl.html.j2:384
 msgid ""
@@ -2349,10 +2349,14 @@ msgid ""
 "\">bugs.gnunet.org</a>. Alternatively you can use our bug mailinglist, but "
 "we prefer to track bugs on the bugtracker."
 msgstr ""
+"Usted puede reportar bugs o problemas en nuestro sistema de seguimiento de "
+"bugs: <a href=\"https://bugs.gnunet.org/\">bugs.gnunet.org</a>. De manera "
+"alternativa, usted puede usar nuestra lista de correos de bug, pero "
+"preferimos seguirlo en el sistema de seguimiento de bugs."
 
 #: template/gnurl.html.j2:395
 msgid "Maintainer and Cryptographic signatures"
-msgstr ""
+msgstr "Mantenedor y firmas criptográficas"
 
 #: template/gnurl.html.j2:397
 msgid ""
@@ -2362,14 +2366,20 @@ msgid ""
 "q=6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>), with the "
 "key fingerprint <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E 7F8D</b>."
 msgstr ""
+"gnurl/libgnurl está buscando un nuevo mantenedor. Los lanzamientos tras la "
+"versión 7.69.1 y hasta la versión 7.72.0 se firmaron con la clave OpenPGP "
+"Key <b>0xD6B570842F7E7F8D</b><a href=\"https://keys.openpgp.org/search?q="
+"6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>, con la "
+"huella digital de clave pública,<b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 "
+"2F7E 7F8D</b>."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:7
 msgid "GSoC 2018: GNUnet WebUI (GNUnet Web-based User Interface)"
-msgstr ""
+msgstr "GSoc 2018: GNUnet WebUI (Interfaz de usuario basada en la web GNUnet)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:11
 msgid "Tue, 08/14/2018 - 07:55, Phil Buschmann"
-msgstr ""
+msgstr "Martes, 14/08/2018 - 07:55, Phil Buschmann"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:18
 msgid ""
@@ -2377,6 +2387,9 @@ msgid ""
 "Schanzenbach) and I have worked on creating and extending the REST API of "
 "GNUnet. Currently, we mirrored the functionality of following commands:"
 msgstr ""
+"En el contexto de Google Summer of Code 2018, mi mentor (Martin Schazenbach) "
+"y yo trabajamos en la creación y expansión del REST API de GNUnet. "
+"Actualmente reflejamos la funcionalidad de los siguientes comandos:"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:32
 msgid ""
@@ -2384,6 +2397,9 @@ msgid ""
 "and the design framework iotaCSS to use the new REST API. The REST API of "
 "GNUnet is now documented with Sphinx."
 msgstr ""
+"Adicionalmente, desarrollamos un sitio web con el marco de Javascript "
+"Angular 6 y el diseño de marco iotaCSS para usar el nuevo REST API. El REST "
+"API de GNUnet está documentado ahora con Sphinx."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:41
 msgid ""
@@ -2394,6 +2410,14 @@ msgid ""
 "with GNUnet over a well known tool: their browsers. This addition to the C "
 "API and the command line tools may attract new users and developers."
 msgstr ""
+"... Cuándo podrá usar las herramientas de línea de comando? Necesitamos "
+"tener en cuenta que todos tienen el derecho a permanecer seguros y privados, "
+"pero no todos se sienten seguros al usar una terminal. El acceso restante "
+"desarrollado a REST a GNUnet APIs además de la nueva aplicación web permite "
+"a los usuarios nuevos interactuar con GNUnet por medio de una herramienta de "
+"amplio conocimiento: sus navegadores. Esta adición a la API C y las "
+"herramientas de línea de comando pueden atraer nuevos usuarios y "
+"desarrolladores."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:54
 msgid ""
