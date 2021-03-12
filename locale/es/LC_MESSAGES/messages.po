@@ -1967,10 +1967,6 @@ msgstr ""
 msgid "Overview"
 msgstr "visión general"
 
-#: template/gns.html.j2:37
-msgid "Features"
-msgstr "Características"
-
 #: template/gns.html.j2:39
 msgid ""
 "The GNU Name System (GNS) is secure and decentralized naming system. It "
