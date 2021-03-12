@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-13 01:03+0000\n"
-"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
+"Last-Translator: Juan Arellano <juan.arellano@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1277,6 +1277,7 @@ msgstr ""
 "intercambio de archivos."
 
 #: template/faq.html.j2:195
+#, fuzzy
 msgid ""
 "A: There are actually a few graphical user interfaces for different "
 "functions. gnunet-setup is to configure GNUnet, and gnunet-fs-gtk is for "
@@ -1287,10 +1288,18 @@ msgid ""
 "gnunet-setup, which must still be run separately at this time (as setup "
 "requires the peer to be stopped)."
 msgstr ""
+"R: En realidad, existen algunas interfaces gráficas de usuario para "
+"diferentes funciones. gnunet-setup es para configurar GNUnet, y gnunet-fs-"
+"gtk es para compartir archivos. Hay algunas otras GUI de gnunet-XXX-gtk de "
+"menor importancia. Ten en cuenta que para obtener la GUI, debes instalar el "
+"paquete gnunet-gtk, que es una descarga separada. gnunet-gtk es una GUI meta "
+"que integra la mayoría de las otras GUI en una ventana. Una excepción es "
+"gnunet-setup, que todavía debe ejecutarse por separado (ya que la "
+"instalación requiere que se detenga)."
 
 #: template/faq.html.j2:210
 msgid "On top of which operating systems does GNUnet run?"
-msgstr ""
+msgstr "¿Sobre qué sistemas operativos se ejecuta GNUnet?"
 
 #: template/faq.html.j2:212
 msgid ""
@@ -1301,10 +1310,17 @@ msgid ""
 "NetBSD, OpenBSD and Solaris. However, not all of those reports are recent, "
 "so if you cannot get GNUnet to work on those systems please let us know."
 msgstr ""
+"R: GNUnet se está desarrollando y probando principalmente en Debian GNU/"
+"Linux. Además, regularmente construimos y probamos GNUnet en Fedora, Ubuntu, "
+"Arch, FreeBSD y macOS. Tenemos informes de versiones que funcionan en muchas "
+"otras distribuciones GNU/Linux; en el pasado tuvimos informes de versiones "
+"de trabajo en NetBSD, OpenBSD y Solaris. Sin embargo, no todos esos informes "
+"son recientes, por lo que si no puedes hacer que GNUnet funcione en esos "
+"sistemas, háznoslo saber."
 
 #: template/faq.html.j2:228
 msgid "Who runs the GNS root zone?"
-msgstr ""
+msgstr "¿Quién administra la zona raíz de GNS?"
 
 #: template/faq.html.j2:230
 msgid ""
@@ -1314,12 +1330,20 @@ msgid ""
 "modify this configuration at will. We expect normal users to have no need to "
 "edit their own GNS zone(s) unless they host services themselves."
 msgstr ""
+"R: Respuesta corta: tú. La respuesta larga es que GNUnet se enviará con una "
+"configuración predeterminada de dominios de nivel superior. La gobernanza de "
+"esta configuración predeterminada aún no está establecida. En cualquier "
+"caso, el usuario podrá modificar esta configuración a su antojo. Esperamos "
+"que los usuarios promedio no tengan necesidad de editar sus propias zonas "
+"GNS a menos que ellos mismos alojen los servicios."
 
 #: template/faq.html.j2:241
+#, fuzzy
 msgid "Where is the per-user GNS database kept?"
-msgstr ""
+msgstr "¿Dónde se guarda la base de datos GNS por usuario?"
 
 #: template/faq.html.j2:243
+#, fuzzy
 msgid ""
 "A: The short answer is that the database is kept at the user's GNUnet peer. "
 "Now, a user may run multiple GNUnet peers, in which case the database could "
@@ -1330,6 +1354,16 @@ msgid ""
 "which various replication options are again applicable. Ultimately, there "
 "are many options for how users can store (and secure) their GNS database."
 msgstr ""
+"R: La respuesta corta es que la base de datos se guarda en el par GNUnet del "
+"usuario. Ahora, un usuario puede ejecutar múltiples pares GNUnet, en cuyo "
+"caso la base de datos podría mantenerse en cada par (sin embargo, no tenemos "
+"código para una replicación conveniente). De manera similar, varios pares de "
+"GNUnet pueden compartir una instancia de la base de datos: el & quot; gnunet-"
+"service-namestore & quot; se puede acceder de forma remota (a través de TCP)"
+". Los datos reales se pueden almacenar en una base de datos de Postgres, "
+"para lo cual se aplican nuevamente varias opciones de replicación. En última "
+"instancia, existen muchas opciones sobre cómo los usuarios pueden almacenar ("
+"y proteger) su base de datos GNS."
 
 #: template/faq.html.j2:258
 msgid "What is the expected average size of a GNS namestore database?"
