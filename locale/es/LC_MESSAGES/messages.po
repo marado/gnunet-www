@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-12 17:37+0000\n"
-"Last-Translator: Juan Arellano <juan.arellano@gmail.com>\n"
+"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1038,7 +1038,7 @@ msgstr "Filesharing o compartir documentos (Alfa)"
 
 #: template/faq.html.j2:17 template/faq.html.j2:973
 msgid "Contributing"
-msgstr ""
+msgstr "Contribuir"
 
 #: template/faq.html.j2:26
 msgid "What do I do if my question is not answered here?"
