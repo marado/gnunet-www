@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-12 17:44+0000\n"
-"Last-Translator: Juan Arellano <juan.arellano@gmail.com>\n"
+"PO-Revision-Date: 2021-03-12 17:52+0000\n"
+"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1087,8 +1087,9 @@ msgstr ""
 "org/licenses/agpl-3.0.en.html\"> GNU Affero Public License (AGPL) </a>."
 
 #: template/faq.html.j2:58
+#, fuzzy
 msgid "Are there any known bugs?"
-msgstr ""
+msgstr "¿Hay algún error conocido?"
 
 #: template/faq.html.j2:60
 msgid ""
@@ -1100,6 +1101,9 @@ msgid ""
 "you believe a bug is sensitive, you can set its view status to private (this "
 "should be the exception)."
 msgstr ""
+"R: Hacemos seguimiento sobre la lista de errores ya conocidos en el <a href="
+"\"https://bugs.gnunet.org/\">sistema Mantis</a>. Algunos errores son, "
+"ocasionalmente, enviados directamente a programadores o a la lista de correo."
 
 #: template/faq.html.j2:73 template/faq.html.j2:193
 msgid "Is there a graphical user interface?"
@@ -1116,7 +1120,7 @@ msgstr ""
 
 #: template/faq.html.j2:83
 msgid "Why does gnunet-service-nse create a high CPU load?"
-msgstr ""
+msgstr "¿Por qué gnunet-service-nse genera un uso elevado del CPU?"
 
 #: template/faq.html.j2:85
 msgid ""
