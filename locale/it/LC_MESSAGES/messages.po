@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-03 21:41+0100\n"
+"POT-Creation-Date: 2021-03-12 12:43+0100\n"
 "PO-Revision-Date: 2021-03-09 18:35+0000\n"
 "Last-Translator: Sabino Miani <sbn.miani@gmail.com>\n"
-"Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
-"\n"
+"Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/"
+">\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,6 +66,7 @@ msgid "About"
 msgstr "Per quanto riguarda"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
+#: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "Notizia"
@@ -158,19 +159,22 @@ msgstr "REST API"
 msgid "FAQ"
 msgstr "Domande Frequenti"
 
-#: news/index.html.j2:11 news/oldnews-2018.html.j2:16
+#: news/index.html.j2:11 news/oldnews-2011.html.j2:16
+#: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
 #: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
 msgstr ""
 "Annunci di notizie legate ai cambiamenti di GNUnet come comunicati stampa ed "
 "eventi"
 
-#: news/index.html.j2:16 news/oldnews-2018.html.j2:21
+#: news/index.html.j2:16 news/oldnews-2011.html.j2:21
+#: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
 #: news/oldnews-2019.html.j2:21
 msgid "subscribe to our RSS feed"
 msgstr "Fai la sottoscrizione alla nostra bacheca RSS"
 
-#: news/index.html.j2:36 news/oldnews-2018.html.j2:40
+#: news/index.html.j2:36 news/oldnews-2011.html.j2:40
+#: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
 msgstr "Per saperne di più"
@@ -227,8 +231,8 @@ msgstr ""
 "ostili presenti nella rete. \n"
 "Inoltre, l'internet dei giorni nostri si è evoluto al punto che, come "
 "sottolineato da Matthew Green, \n"
-"<a href=\"https://blog.cryptographyengineering.com/2015/08/16/"
-"the-network-is-hostile/\">\"la rete è ostile\"</a>."
+"<a href=\"https://blog.cryptographyengineering.com/2015/08/16/the-network-is-"
+"hostile/\">\"la rete è ostile\"</a>."
 
 #: template/about.html.j2:41
 msgid ""
@@ -294,7 +298,8 @@ msgstr ""
 
 #: template/about.html.j2:64
 msgid "GNUnet must be open and permit new peers to join."
-msgstr "GNUnet deve essere aperto e lasciare che nuovi colleghi possano unirsi."
+msgstr ""
+"GNUnet deve essere aperto e lasciare che nuovi colleghi possano unirsi."
 
 #: template/about.html.j2:65
 msgid "GNUnet must support a diverse range of applications and devices."
@@ -366,9 +371,9 @@ msgstr ""
 "Esistono molte più risorse che permettono di conoscere GNUnet oltre che il "
 "<a href=\"https://docs.gnunet.org/handbook/gnunet.html\">manuale</a>, "
 "abbiamo la<a href=\"https://bib.gnunet.org/\">bibliografia</a> con fogli che "
-"coprono i vari strati, molti<a href=\"https://gnunet.org/en/video.html\""
-">video</a>o un breve <a href=\"https://gnunet.org/en/glossary.html\""
-">glossario</a>."
+"coprono i vari strati, molti<a href=\"https://gnunet.org/en/video.html"
+"\">video</a>o un breve <a href=\"https://gnunet.org/en/glossary.html"
+"\">glossario</a>."
 
 #: template/about.html.j2:95
 msgid ""
@@ -379,8 +384,8 @@ msgid ""
 msgstr ""
 "Sei sempre il benvenuto <a href=\"engage.html\">quando si tratta di "
 "affrontare conversazioni</a>, <a href=\"install.html\">installare GNUnet</"
-"a>, <a href=\"use.html\">utilizzarlo</a> e <a href=\"engage.html\""
-">contribuire ed impegnarsi</a> in svariati modi."
+"a>, <a href=\"use.html\">utilizzarlo</a> e <a href=\"engage.html"
+"\">contribuire ed impegnarsi</a> in svariati modi."
 
 #: template/about.html.j2:100
 msgid ""
@@ -905,11 +910,123 @@ msgid ""
 "<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
 msgstr ""
 
-#: template/faq.html.j2:12
+#: template/faq.html.j2:12 template/faq.html.j2:21
+msgid "General"
+msgstr ""
+
+#: template/faq.html.j2:13 template/faq.html.j2:146 template/gns.html.j2:37
+msgid "Features"
+msgstr ""
+
+#: template/faq.html.j2:15 template/faq.html.j2:539
+msgid "Error messages"
+msgstr ""
+
+#: template/faq.html.j2:24
+msgid "What do I do if my question is not answered here?"
+msgstr ""
+
+#: template/faq.html.j2:26
+msgid ""
+"A: There are many other sources of information. You can read additional "
+"documentation or ask the question on the help-gnunet@gnu.org mailing list or "
+"the #gnunet IRC on irc.freenode.net."
+msgstr ""
+
+#: template/faq.html.j2:34
+msgid "When are you going to release the next version?"
+msgstr ""
+
+#: template/faq.html.j2:36
+msgid ""
+"A: The general answer is, when it is ready. A better answer may be: earlier "
+"if you contribute (test, debug, code, document). Every release will be "
+"anounced on the info-gnunet@gnu.org mailing list and on <a href=\"https://"
+"planet.gnu.org\">planet GNU</a>. You can subscribe to the mailing list or "
+"the RSS feed of this site to automatically receive a notification."
+msgstr ""
+
+#: template/faq.html.j2:47
+msgid "Is the code free?"
+msgstr ""
+
+#: template/faq.html.j2:49
+msgid ""
+"A: GNUnet is free software, available under the <a href=\"https://www.gnu."
+"org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
+msgstr ""
+
+#: template/faq.html.j2:56
+msgid "Are there any known bugs?"
+msgstr ""
+
+#: template/faq.html.j2:58
+msgid ""
+"A: We track the list of currently known bugs in the <a href=\"https://bugs."
+"gnunet.org/\">Mantis system</a>. Some bugs are occasionally reported "
+"directly to developers or the developer mailing list. This is discouraged "
+"since developers often do not have the time to feed these bugs back into the "
+"Mantis database. Please report bugs directly to the bug tracking system. If "
+"you believe a bug is sensitive, you can set its view status to private (this "
+"should be the exception)."
+msgstr ""
+
+#: template/faq.html.j2:71
+msgid "Is there a graphical user interface?"
+msgstr ""
+
+#: template/faq.html.j2:73
+msgid ""
+"A: gnunet-gtk is a separate download. The package contains various GTK+ "
+"based graphical interfaces, including a graphical tool for configuration."
+msgstr ""
+
+#: template/faq.html.j2:81
+msgid "Why does gnunet-service-nse create a high CPU load?"
+msgstr ""
+
+#: template/faq.html.j2:83
+msgid ""
+"A: The gnunet-service-nse process will initially compute a so-called &quot;"
+"proof-of-work&quot; which is used to convince the network that your peer is "
+"real (or, rather, make it expensive for an adversary to mount a Sybil attack "
+"on the network size estimator). The calculation is expected to take a few "
+"days, depending on how fast your CPU is. If the CPU load is creating a "
+"problem for you, you can set the value &quot;WORKDELAY&quot; in the &quot;"
+"nse&quot; section of your configuration file to a higher value. The default "
+"is &quot;5 ms&quot;."
+msgstr ""
+
+#: template/faq.html.j2:97
+msgid "How does GNUnet compare to Tor?"
+msgstr ""
+
+#: template/faq.html.j2:99
+msgid ""
+"A: Tor focuses on anonymous communication and censorship-resistance for TCP "
+"connections and, with the Tor Browser Bundle, for the Web in particular. "
+"GNUnet does not really have one focus; our theme is secure decentralized "
+"networking, but that is too broad to be called a focus."
+msgstr ""
+
+#: template/faq.html.j2:109
+msgid "How does GNUnet compare to I2P?"
+msgstr ""
+
+#: template/faq.html.j2:111
+msgid ""
+"A: Both GNUnet and I2P want to build a better, more secure, more "
+"decentralized Internet. However, on the technical side, there are almost no "
+"overlaps. <br><br> I2P is written in Java, and has (asymmetric) tunnels "
+"using onion (or garlic) routing as the basis for various (anonymized) "
+"applications. I2P is largely used via a Web frontend."
+msgstr ""
+
+#: template/faq.html.j2:122
 msgid "Is GNUnet ready for use on production systems?"
 msgstr ""
 
-#: template/faq.html.j2:14
+#: template/faq.html.j2:124
 msgid ""
 "A: GNUnet is still undergoing major development. It is largely not yet ready "
 "for usage beyond developers. Your mileage will vary depending on the "
@@ -918,24 +1035,406 @@ msgid ""
 "rewriting it (Project &quot;Transport Next Generation [TNG]&quot;)"
 msgstr ""
 
-#: template/faq.html.j2:24
+#: template/faq.html.j2:134
 msgid "Is GNUnet build using distributed ledger technologies?"
 msgstr ""
 
-#: template/faq.html.j2:26
+#: template/faq.html.j2:136
 msgid ""
 "A: No. GNUnet is a new network protocol stack for building secure, "
 "distributed, and privacy-preserving applications. While a ledger could be "
 "built using GNUnet, we currently have no plans in doing so."
 msgstr ""
 
-#: template/faq.html.j2:35
+#: template/faq.html.j2:148
+#, fuzzy
+#| msgid "What is GNUnet?"
+msgid "What can I do with GNUnet?"
+msgstr "Cos'è GNUnet?"
+
+#: template/faq.html.j2:150
+msgid ""
+"A: GNUnet is a peer-to-peer framework, by which we mostly mean that it can "
+"do more than just one thing. Naturally, the implementation and documentation "
+"of some of the features that exist are more advanced than others."
+msgstr ""
+
+#: template/faq.html.j2:157
+msgid ""
+"For users, GNUnet offers anonymous and non-anonymous file-sharing, a fully "
+"decentralized and censorship-resistant replacement for DNS and a mechanism "
+"for IPv4-IPv6 protocol translation and tunneling (NAT-PT with DNS-ALG)."
+msgstr ""
+
+#: template/faq.html.j2:171
+msgid "Who runs the GNS root zone?"
+msgstr ""
+
+#: template/faq.html.j2:173
+msgid ""
+"A: Short answer: you. The long answer is the GNUnet will ship with a default "
+"configuration of top-level domains. The governance of this default "
+"configuration is not yet established. In any case, the user will be able to "
+"modify this configuration at will. We expect normal users to have no need to "
+"edit their own GNS zone(s) unless they host services themselves."
+msgstr ""
+
+#: template/faq.html.j2:184
+msgid "Where is the per-user GNS database kept?"
+msgstr ""
+
+#: template/faq.html.j2:186
+msgid ""
+"A: The short answer is that the database is kept at the user's GNUnet peer. "
+"Now, a user may run multiple GNUnet peers, in which case the database could "
+"be kept at each peer (however, we don't have code for convenient "
+"replication). Similarly, multiple GNUnet peers can share one instance of the "
+"database --- the &quot;gnunet-service-namestore&quot; can be accessed from "
+"remote (via TCP). The actual data can be stored in a Postgres database, for "
+"which various replication options are again applicable. Ultimately, there "
+"are many options for how users can store (and secure) their GNS database."
+msgstr ""
+
+#: template/faq.html.j2:201
+msgid "What is the expected average size of a GNS namestore database?"
+msgstr ""
+
+#: template/faq.html.j2:203
+msgid ""
+"A: Pretty small. Based on our user study where we looked at browser "
+"histories and the number of domains visited, we expect that GNS databases "
+"will only grow to a few tens of thousands of entries, small enough to fit "
+"even on mobile devices."
+msgstr ""
+
+#: template/faq.html.j2:213
+msgid "Is GNS resistant to the attacks on DNS used by the US?"
+msgstr ""
+
+#: template/faq.html.j2:215
+msgid ""
+"A: We believe so, as there is no entity that any government could force to "
+"change the mapping for a name except for each individual user (and then the "
+"changes would only apply to the names that this user is the authority for). "
+"So if everyone used GNS, the only practical attack of a government would be "
+"to force the operator of a server to change the GNS records for his server "
+"to point elsewhere. However, if the owner of the private key for a zone is "
+"unavailable for enforcement, the respective zone cannot be changed and any "
+"other zone delegating to this zone will achieve proper resolution."
+msgstr ""
+
+#: template/faq.html.j2:229
+msgid "What is the difference between GNS and CoDoNS?"
+msgstr ""
+
+#: template/faq.html.j2:231
+msgid ""
+"A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
+"authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, and "
+"there are still registrars that determine who owns a name. <br><br> With "
+"GNS, we decentralize the database and also decentralize the responsibility "
+"for naming: each user runs his own personal root zone and is thus in "
+"complete control of the names he uses. GNS also has many additional features "
+"(to keep names short and enable migration) which don't even make sense in "
+"the context of CoDoNS."
+msgstr ""
+
+#: template/faq.html.j2:247
+msgid "What is the difference between GNS and SocialDNS?"
+msgstr ""
+
+#: template/faq.html.j2:249
+msgid ""
+"A: Like GNS, SocialDNS allows each user to create DNS mappings. However, "
+"with SocialDNS the mappings are shared through the social network and "
+"subjected to ranking. As the social relationships evolve, names can thus "
+"change in surprising ways. <br><br> With GNS, names are primarily shared via "
+"delegation, and thus mappings will only change if the user responsible for "
+"the name (the authority) manually changes the record."
+msgstr ""
+
+#: template/faq.html.j2:263
+msgid "What is the difference between GNS and ODDNS?"
+msgstr ""
+
+#: template/faq.html.j2:265
+msgid ""
+"A: ODDNS is primarily designed to bypass the DNS root zone and the TLD "
+"registries (such as those for \".com\" and \".org\"). Instead of using "
+"those, each user is expected to maintain a database of (second-level) "
+"domains (like \"gnu.org\") and the IP addresses of the respective name "
+"servers. Resolution will fail if the target name servers change IPs."
+msgstr ""
+
+#: template/faq.html.j2:276
+msgid "What is the difference between GNS and Namecoin?"
+msgstr ""
+
+#: template/faq.html.j2:283
+msgid "What is the difference between GNS and Handshake?"
+msgstr ""
+
+#: template/faq.html.j2:289
+msgid "What is the difference between GNS and ENS?"
+msgstr ""
+
+#: template/faq.html.j2:295
+msgid "What is the difference between GNS and TrickleDNS?"
+msgstr ""
+
+#: template/faq.html.j2:297
+msgid ""
+"A: TrickleDNS pushes (&quot;critical&quot;) DNS records between DNS "
+"resolvers of participating domains to provide &quot;better availability, "
+"lower query resolution times, and faster update propagation&quot;. Thus "
+"TrickleDNS is focused on defeating attacks on the availability (and "
+"performance) of record propagation in DNS, for example via DDoS attacks on "
+"DNS root servers. TrickleDNS is thus concerned with how to ensure "
+"distribution of authoritative records, and authority remains derived from "
+"the DNS hierarchy."
+msgstr ""
+
+#: template/faq.html.j2:310
+msgid ""
+"Does GNS require real-world introduction (secure PKEY exchange) in the style "
+"of the PGP web of trust?"
+msgstr ""
+
+#: template/faq.html.j2:312
+msgid ""
+"A: For security, it is well known that an initial trust path between the two "
+"parties must exist. However, for applications where this is not required, "
+"weaker mechanisms can be used. For example, we have implemented a first-come-"
+"first-served (FCFS) authority which allows arbitrary users to register "
+"arbitrary names. The key of this authority is included with every GNUnet "
+"installation. Thus, any name registered with FCFS is in fact global and "
+"requires no further introduction. However, the security of these names "
+"depends entirely on the trustworthiness of the FCFS authority. The authority "
+"can be queried under the &quot;.ping&quot; TLD."
+msgstr ""
+
+#: template/faq.html.j2:327
+msgid ""
+"How can a legitimate domain owner tell other people to not use his name in "
+"GNS?"
+msgstr ""
+
+#: template/faq.html.j2:329
+msgid ""
+"A: Names have no owners in GNS, so there cannot be a &quot;legitimate&quot; "
+"domain owner. Any user can claim any name (as his preferred name or &quot;"
+"pseudonym&quot;) in his NICK record. Similarly, all other users can choose "
+"to ignore this preference and use a name of their choice (or even assign no "
+"name) for this user."
+msgstr ""
+
+#: template/faq.html.j2:340
+msgid ""
+"Did you consider the privacy implications of making your personal GNS zone "
+"visible?"
+msgstr ""
+
+#: template/faq.html.j2:342
+msgid ""
+"A: Each record in GNS has a flag &quot;private&quot;. Records are shared "
+"with other users (via DHT or zone transfers) only if this flag is not set. "
+"Thus, users have full control over what information about their zones is "
+"made public."
+msgstr ""
+
+#: template/faq.html.j2:352
+msgid "Are \"Legacy Host\" (LEHO) records not going to be obsolete with IPv6?"
+msgstr ""
+
+#: template/faq.html.j2:354
+msgid ""
+"A: The question presumes that (a) virtual hosting is only necessary because "
+"of IPv4 address scarcity, and (b) that LEHOs are only useful in the context "
+"of virtual hosting. However, LEHOs are also useful to help with X.509 "
+"certificate validation (as they specify for which legacy hostname the "
+"certificate should be valid). Also, even with IPv6 fully deployed and &quot;"
+"infinite&quot; IP addresses being available, we're not sure that virtual "
+"hosting would disappear. Finally, we don't want to have to wait for IPv6 to "
+"become commonplace, GNS should work with today's networks."
+msgstr ""
+
+#: template/faq.html.j2:368
+msgid ""
+"Why does GNS not use a trust metric or consensus to determine globally "
+"unique names?"
+msgstr ""
+
+#: template/faq.html.j2:370
+msgid ""
+"A: Trust metrics have the fundamental problem that they have thresholds. As "
+"trust relationships evolve, mappings would change their meaning as they "
+"cross each others thresholds. We decided that the resulting unpredictability "
+"of the resolution process was not acceptable. Furthermore, trust and "
+"consensus might be easy to manipulate by adversaries."
+msgstr ""
+
+#: template/faq.html.j2:381
+msgid "How do you handle compromised zone keys in GNS?"
+msgstr ""
+
+#: template/faq.html.j2:383
+msgid ""
+"A: The owner of a private key can create a revocation message. This one can "
+"then be flooded throughout the overlay network, creating a copy at all "
+"peers. Before using a public key, peers check if that key has been revoked. "
+"All names that involve delegation via a revoked zone will then fail to "
+"resolve. Peers always automatically check for the existence of a revocation "
+"message when resolving names."
+msgstr ""
+
+#: template/faq.html.j2:395
+msgid "Could the signing algorithm of GNS be upgraded in the future?"
+msgstr ""
+
+#: template/faq.html.j2:397
+msgid ""
+"A: Yes. In our efforts to standardize GNS, we have already modified the "
+"protocol to support alternative delegation records. <br> <br> Naturally, "
+"deployed GNS implementations would have to be updated to support the new "
+"signature scheme. The new scheme can then be run in parallel with the "
+"existing system by using a new record type to indicate the use of a "
+"different cipher system."
+msgstr ""
+
+#: template/faq.html.j2:411
+msgid ""
+"How can a GNS zone maintain several name servers, e.g. for load balancing?"
+msgstr ""
+
+#: template/faq.html.j2:413
+msgid ""
+"A: We don't expect this to be necessary, as GNS records are stored (and "
+"replicated) in the R5N DHT. Thus the authority will typically not be "
+"contacted whenever clients perform a lookup. Even if the authority goes "
+"(temporarily) off-line, the DHT will cache the records for some time. "
+"However, should having multiple servers for a zone be considered truly "
+"necessary, the owner of the zone can simply run multiple peers (and share "
+"the zone's key and database among them)."
+msgstr ""
+
+#: template/faq.html.j2:426
+msgid ""
+"Why do you believe it is worth giving up unique names for censorship "
+"resistance?"
+msgstr ""
+
+#: template/faq.html.j2:428
+msgid ""
+"A: The GNU Name system offers an alternative to DNS that is censorship "
+"resistant. As with any security mechanism, this comes at a cost (names are "
+"not globally unique). To draw a parallel, HTTPS connections use more "
+"bandwidth and have higher latency than HTTP connections. Depending on your "
+"application, HTTPS may not be worth the cost. However, for users that are "
+"experiencing censorship (or are concerned about it), giving up globally "
+"unique names may very well be worth the cost. After all, what is a &quot;"
+"globally&quot; unique name worth, if it does not resolve?"
+msgstr ""
+
+#: template/faq.html.j2:442
+msgid "Why do you say that DNS is 'centralized' and 'distributed'?"
+msgstr ""
+
+#: template/faq.html.j2:444
+msgid ""
+"A: We say that DNS is 'centralized' because it has a central component / "
+"central point of failure --- the root zone and its management by IANA/ICANN. "
+"This centralization creates vulnerabilities. For example, the US government "
+"was able to reassign the management of the country-TLDs of Afganistan and "
+"Iraq during the wars at the beginning of the 21st century."
+msgstr ""
+
+#: template/faq.html.j2:455
+msgid "How does GNS protect against layer-3 censorship?"
+msgstr ""
+
+#: template/faq.html.j2:457
+msgid ""
+"A: GNS does not directly help with layer-3 censorship, but it does help "
+"indirectly in two ways: <ol> <li> Many websites today use virtual hosting, "
+"so blocking a particular IP address causes much more collateral damage than "
+"blocking a DNS name. It thus raises the cost of censorship.</li> <li> "
+"Existing layer-3 circumvention solutions (such as Tor) would benefit from a "
+"censorship resistant naming system. Accessing Tor's &quot;.onion&quot; "
+"namespace currently requires users to use unmemorable cryptographic "
+"identifiers. With nicer names, Tor and tor2web-like services would be even "
+"easier to use. </ol>"
+msgstr ""
+
+#: template/faq.html.j2:476
+msgid "Does GNS work with search engines?"
+msgstr ""
+
+#: template/faq.html.j2:478
+msgid ""
+"A: GNS creates no significant problems for search engines, as they can use "
+"GNS to perform name resolution as well as any normal user. Naturally, while "
+"we typically expect normal users to install custom software for name "
+"resolution, this is unlikely to work for search engines today. However, the "
+"DNS2GNS gateway allows search engines to use DNS to resolve GNS names, so "
+"they can still index GNS resources. However, as using DNS2GNS gateways "
+"breaks the cryptographic chain of trust, legacy search engines will "
+"obviously not obtain censorship-resistant names."
+msgstr ""
+
+#: template/faq.html.j2:492
+msgid "How does GNS compare to the Unmanaged Internet Architecture (UIA)?"
+msgstr ""
+
+#: template/faq.html.j2:494
+msgid ""
+"A: UIA and GNS both share the same basic naming model, which actually "
+"originated with Rivest's SDSI. However, UIA is not concerned about "
+"integration with legacy applications and instead focuses on universal "
+"connectivity between a user's many machines. In contrast, GNS was designed "
+"to interoperate with DNS as much as possible, and to also work as much as "
+"possible with the existing Web infrastructure. UIA is not at all concerned "
+"about legacy systems (clean slate)."
+msgstr ""
+
+#: template/faq.html.j2:507
+msgid "Doesn't GNS increase the trusted-computing base compared to DNS(SEC)?"
+msgstr ""
+
+#: template/faq.html.j2:509
+msgid ""
+"A: First of all, in GNS you can explicitly see the trust chain, so you know "
+"if a name you are resolving belongs to a friend, or a friend-of-a-friend, "
+"and can thus decide how much you trust the result. Naturally, the trusted-"
+"computing base (TCB) can become arbitrarily large this way --- however, "
+"given the name length restriction, for an individual name it is always less "
+"than about 128 entities."
+msgstr ""
+
+#: template/faq.html.j2:521
+msgid ""
+"How does GNS handle SRV/TLSA records where service and protocol are part of "
+"the domain name?"
+msgstr ""
+
+#: template/faq.html.j2:523
+msgid ""
+"A: When GNS splits a domain name into labels for resolution, it detects the "
+"&quot;_Service._Proto&quot; syntax, converts &quot;Service&quot; to the "
+"corresponding port number and &quot;Proto&quot; to the corresponding "
+"protocol number. The rest of the name is resolved as usual. Then, when the "
+"result is presented, GNS looks for the GNS-specific &quot;BOX&quot; record "
+"type. A BOX record is a record that contains another record (such as SRV or "
+"TLSA records) and adds a service and protocol number (and the original boxed "
+"record type) to it."
+msgstr ""
+
+#: template/faq.html.j2:541
 msgid ""
 "I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. "
 "Should I worry?"
 msgstr ""
 
-#: template/faq.html.j2:37
+#: template/faq.html.j2:543
 msgid ""
 "A: Right now, this is expected and a known cause for high latency in GNUnet. "
 "We have started a major rewrite to address this and other problems, but "
@@ -943,14 +1442,38 @@ msgid ""
 "expected."
 msgstr ""
 
-#: template/faq.html.j2:46
-msgid "Is there a graphical user interface?"
+#: template/faq.html.j2:552
+msgid "Error opening `/dev/net/tun': No such file or directory?"
 msgstr ""
 
-#: template/faq.html.j2:48
+#: template/faq.html.j2:554
 msgid ""
-"A: gnunet-gtk is a separate download. The package contains various GTK+ "
-"based graphical interfaces, including a graphical tool for configuration."
+"A: If you get this error message, the solution is simple. Issue the "
+"following commands (as root) to create the required device file"
+msgstr ""
+
+#: template/faq.html.j2:566
+msgid ""
+"'iptables: No chain/target/match by that name.' (when running gnunet-service-"
+"dns)?"
+msgstr ""
+
+#: template/faq.html.j2:568
+msgid ""
+"A: For GNUnet DNS, your iptables needs to have &quot;owner&quot; match "
+"support. This is accomplished by having the correct kernel options. Check if "
+"your kernel has CONFIG_NETFILTER_XT_MATCH_OWNER set to either 'y' or "
+"'m' (and the module is loaded)."
+msgstr ""
+
+#: template/faq.html.j2:580
+msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
+msgstr ""
+
+#: template/faq.html.j2:582
+msgid ""
+"A: If you get an error stating that the VPN timeout was reached, check if "
+"your firewall is enabled and blocking the connections."
 msgstr ""
 
 #: template/glossary.html.j2:12
@@ -1055,10 +1578,6 @@ msgstr ""
 
 #: template/gns.html.j2:28
 msgid "Overview"
-msgstr ""
-
-#: template/gns.html.j2:37
-msgid "Features"
 msgstr ""
 
 #: template/gns.html.j2:39
