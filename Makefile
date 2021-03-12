@@ -3,7 +3,7 @@
 include build-system/config.mk
 
 # List of all supported languages, add new languages here!
-LANGUAGES="en de fr it es"
+LANGUAGES="en de fr it es ar hi ja ko pt zh_Hant"
 
 # All: build HTML pages in all languages and compile the
 # TypeScript logic in web-common.
@@ -30,8 +30,9 @@ all: locale template
 	done)
 	(cd rendered; \
 		for lang in `echo $(LANGUAGES)`; do \
-		$(cp) $$lang/rss.xml $$lang/news/rss.xml; \
-	done)
+			mkdir -p $$lang/news/ &> /dev/null \
+			$(cp) $$lang/rss.xml $$lang/news/rss.xml; \
+		done)
 	(for d in dist ; do \
 		$(cp) -R $$d rendered/ ; \
 	done)

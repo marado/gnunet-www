@@ -9,10 +9,20 @@ siteconf:
     rsslang:
 langs_full: &langs
     en: English
+    ar: عربي
     fr: Français
     it: Italiano
     es: Español
     de: Deutsch
+    zh_Hant: Chinese
+    hi: Hindi
+    ja: 日本語
+    ko: Korean
+    pt: Português
+    pt_BR: Português (Brazil)
+    ru: Ру́сский язы́к
+    sv: Svenska
+    tr: Türk
 symlinks:
     - file: frontpage.html
       targets:
