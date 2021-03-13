@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-13 01:03+0000\n"
-"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
+"PO-Revision-Date: 2021-03-14 08:20+0000\n"
+"Last-Translator: Lucía López <lulopezcabrera@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1368,6 +1368,7 @@ msgstr ""
 #: template/faq.html.j2:258
 msgid "What is the expected average size of a GNS namestore database?"
 msgstr ""
+"¿Cuál es el tamaño promedio esperado de una base de datos de nombres GNS?"
 
 #: template/faq.html.j2:260
 msgid ""
@@ -1376,10 +1377,14 @@ msgid ""
 "will only grow to a few tens of thousands of entries, small enough to fit "
 "even on mobile devices."
 msgstr ""
+"R: Muy pequeña. Basándonos en nuestro estudio de usuarios, donde revisamos "
+"historiales de buscador y el número de dominios visitados, esperamos que las "
+"bases de datos GNS crezcan hasta decenas de miles de entradas, lo "
+"suficientemente pequeñas para caber incluso en dispositivos móviles."
 
 #: template/faq.html.j2:270
 msgid "Is GNS resistant to the attacks on DNS used by the US?"
-msgstr ""
+msgstr "¿GNS es resistente a los ataque de DNS utilizados por los E.E. U.U.?"
 
 #: template/faq.html.j2:272
 msgid ""
@@ -1395,7 +1400,7 @@ msgstr ""
 
 #: template/faq.html.j2:286
 msgid "How does GNS compare to other name systems"
-msgstr ""
+msgstr "¿Cómo se compara GNS a otros sistemas de nombres?"
 
 #: template/faq.html.j2:288
 msgid ""
@@ -1406,7 +1411,7 @@ msgstr ""
 
 #: template/faq.html.j2:392
 msgid "What is the difference between GNS and CoDoNS?"
-msgstr ""
+msgstr "¿Cuál es la diferencia entre GNS y CoDoNS?"
 
 #: template/faq.html.j2:394
 msgid ""
@@ -1422,7 +1427,7 @@ msgstr ""
 
 #: template/faq.html.j2:410
 msgid "What is the difference between GNS and SocialDNS?"
-msgstr ""
+msgstr "¿Cuál es la diferencia entre GNS y SocialDNS?"
 
 #: template/faq.html.j2:412
 msgid ""
@@ -1436,7 +1441,7 @@ msgstr ""
 
 #: template/faq.html.j2:426
 msgid "What is the difference between GNS and ODDNS?"
-msgstr ""
+msgstr "¿Cuál es la diferencia entre GNS y ODDNS?"
 
 #: template/faq.html.j2:428
 msgid ""
@@ -1449,7 +1454,7 @@ msgstr ""
 
 #: template/faq.html.j2:439
 msgid "What is the difference between GNS and Handshake?"
-msgstr ""
+msgstr "¿Cuál es la diferencia entre GNS y Handshake?"
 
 #: template/faq.html.j2:441
 msgid ""
