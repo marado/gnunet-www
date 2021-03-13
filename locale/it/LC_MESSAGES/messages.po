@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-13 01:03+0000\n"
+"PO-Revision-Date: 2021-03-15 15:12+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
@@ -26,11 +26,11 @@ msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
 msgid "GNU's framework for secure p2p networking"
-msgstr "La struttura di GNU per una connessione p2p sicura"
+msgstr "L'architettura GNU per una rete p2p sicura"
 
 #: common/footer.j2.inc:7
 msgid "Contact"
-msgstr "Contatto"
+msgstr "Contatti"
 
 #: common/footer.j2.inc:8 common/navigation.j2.inc:49
 msgid "GNUnet e.V."
@@ -38,11 +38,11 @@ msgstr "GNUnet e.V."
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr "Per quanto riguarda GNUnet"
+msgstr "Informazioni su GNUnet"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
 msgid "Bug Tracker"
-msgstr "Rilevatore di bachi"
+msgstr "Registro bug"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
 msgid "Copyright Assignment"
@@ -55,21 +55,21 @@ msgstr "Bibliografia"
 
 #: common/footer.j2.inc:31
 msgid "Source code of this site."
-msgstr "Il codice sorgente di questo sito."
+msgstr "Codice sorgente del sito."
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
-msgstr "Segnalare problemi con questo sito."
+msgstr "Segnalare problemi del sito."
 
 #: common/navigation.j2.inc:38
 msgid "About"
-msgstr "Per quanto riguarda"
+msgstr "Cos'è GNUnet"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
 #: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
-msgstr "Notizia"
+msgstr "Novità"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
@@ -77,11 +77,11 @@ msgstr "Applicazioni"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
-msgstr "Comunità"
+msgstr "Community"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
 msgid "Engage"
-msgstr "Impegnare"
+msgstr "Partecipa"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
@@ -89,7 +89,7 @@ msgstr "Progetti GSoC"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr "Diritti per i Contributori"
+msgstr "Copyright per i collaboratori"
 
 #: common/navigation.j2.inc:51
 msgid "IRC Archive"
@@ -101,7 +101,7 @@ msgstr "Sviluppo"
 
 #: common/navigation.j2.inc:61
 msgid "System Architecture"
-msgstr "Architettura di Sistema"
+msgstr "Architettura del sistema"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
 msgid "Roadmap"
@@ -109,19 +109,19 @@ msgstr "Tabella di marcia"
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
-msgstr "Codice Sorgente"
+msgstr "Codice sorgente"
 
 #: common/navigation.j2.inc:66
 msgid "Source Code Documentation"
-msgstr "Documentazione del Codice Sorgente"
+msgstr "Documentazione del codice sorgente"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
-msgstr "Integrazione Continua"
+msgstr "Integrazione continua"
 
 #: common/navigation.j2.inc:68
 msgid "Development Tutorial"
-msgstr "Esercitazione di Sviluppo"
+msgstr "Guida allo sviluppo"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
@@ -682,9 +682,9 @@ msgid ""
 msgstr ""
 "All'indirizzo <a href=\"https://lists.gnu.org/mailman/listinfo/gnunet-"
 "developers\">https://lists.gnu.org/mailman/listinfo/gnunet-developers</a> è "
-"possibile trovare una mailing list di GNUnet pubblica e archiviata. È "
-"possibile inviare un messaggio a tutta la mailing list scrivendo a <a href="
-"\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
+"possibile trovare una mailing list di GNUnet pubblica e archiviata. Per "
+"inviare un messaggio all'intera mailing list, scrivere a <a href=\"mailto"
+":gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
 
 #: template/contact.html.j2:23
 msgid "The IRC channel"
@@ -696,13 +696,13 @@ msgid ""
 "freenode.net</a>. There is also an <a href=\"https://view.matrix.org/room/!"
 "IjaAfLiruzjxFFzKAV:matrix.org/\">archive</a> available."
 msgstr ""
-"È possibile contattare <tt>#gnunet</tt> su <a href=\"https://freenode.net\""
-">irc.freenode.net</a>. È disponibile anche un <a href=\"https://view.matrix."
-"org/room/!IjaAfLiruzjxFFzKAV:matrix.org/\">archivio</a>."
+"<tt>#gnunet</tt> è accessibile su <a href=\"https://freenode.net\">irc."
+"freenode.net</a>. È disponibile anche un <a href=\"https://view.matrix.org/"
+"room/!IjaAfLiruzjxFFzKAV:matrix.org/\">archivio</a>."
 
 #: template/contact.html.j2:38
 msgid "Contacting individuals"
-msgstr "Contatti singoli"
+msgstr "Contatti degli sviluppatori"
 
 #: template/contact.html.j2:40
 msgid ""
