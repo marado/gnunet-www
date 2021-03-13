@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-14 08:20+0000\n"
-"Last-Translator: Lucía López <lulopezcabrera@gmail.com>\n"
+"Last-Translator: Sarah Aya Daza <fiorellaya.526@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -2452,6 +2452,8 @@ msgid ""
 "Please, give it a try and contact me, if you find any bugs or unintentional "
 "features. ;)"
 msgstr ""
+"Por favor, pruébelo y contácteme si encuentra bugs o características no "
+"intencionadas. ;)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:98
 msgid ""
@@ -2466,7 +2468,7 @@ msgstr ""
 
 #: template/gsoc-2018-gnunet-webui.html.j2:111
 msgid "Thanks for reading."
-msgstr ""
+msgstr "Gracias por leer."
 
 #: template/gsoc.html.j2:6
 msgid "GNUnet's Google Summer of Code projects"
@@ -2477,16 +2479,12 @@ msgid "Ideas 2021"
 msgstr ""
 
 #: template/gsoc.html.j2:13 template/gsoc.html.j2:215
-#, fuzzy
-#| msgid "GSoC Projects"
 msgid "Past projects"
-msgstr "Projectos de GSoC"
+msgstr "Proyectos pasados"
 
 #: template/gsoc.html.j2:14 template/gsoc.html.j2:596
-#, fuzzy
-#| msgid "GSoC Projects"
 msgid "Finished projects"
-msgstr "Projectos de GSoC"
+msgstr "Proyectos finalizados"
 
 #: template/gsoc.html.j2:21
 msgid ""
@@ -2496,6 +2494,12 @@ msgid ""
 "for 2020 below or any past project which is not yet finished (or even your "
 "own idea), please contact us either in IRC or mailing list."
 msgstr ""
+"Como projecto GNU, GNUnet ha participado en el Google Summer of Code (GSoC) "
+"por varios años. Esta página enlista todos los proyectos, actuales, pasados "
+"y finalizados. SI quiere participar y aplicar para cualquiera de las ideas "
+"para 2020 a continuación, o cualquier proyecto pasado que aún no haya "
+"finalizado (o incluso una idea suya), por favor contáctenos vía IRC o lista "
+"de correo."
 
 #: template/gsoc.html.j2:34
 msgid ""
