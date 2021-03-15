@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 15:55+0100\n"
-"PO-Revision-Date: 2021-03-15 15:12+0000\n"
-"Last-Translator: Nouran Atef <nouranatef69@gmail.com>\n"
+"PO-Revision-Date: 2021-03-16 22:31+0000\n"
+"Last-Translator: Shorouk Hassouna <shoroukhassuna@gmail.com>\n"
 "Language-Team: Arabic <http://weblate.taler.net/projects/gnunet/website/ar/>"
 "\n"
 "Language: ar\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: common/base.j2:5 common/news.j2:5
 msgid "GNUnet"
-msgstr ""
+msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
 msgid "GNU's framework for secure p2p networking"
@@ -39,10 +39,9 @@ msgstr ""
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr ""
+msgstr "عن GNUnet"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
-#, fuzzy
 msgid "Bug Tracker"
 msgstr "أداة تعقب الأخطاء"
 
@@ -57,15 +56,15 @@ msgstr "المراجع"
 
 #: common/footer.j2.inc:31
 msgid "Source code of this site."
-msgstr ""
+msgstr "Source code لهذا الموقع."
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
-msgstr ""
+msgstr "الابلاغ عن مشكلة بهذا الموقع."
 
 #: common/navigation.j2.inc:38
 msgid "About"
-msgstr ""
+msgstr "عن"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
 #: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
@@ -75,7 +74,7 @@ msgstr ""
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
-msgstr ""
+msgstr "التطبيقات"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
@@ -99,7 +98,7 @@ msgstr ""
 
 #: common/navigation.j2.inc:58
 msgid "Development"
-msgstr ""
+msgstr "تطوير"
 
 #: common/navigation.j2.inc:61
 msgid "System Architecture"
@@ -135,7 +134,7 @@ msgstr ""
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
 msgid "Use"
-msgstr ""
+msgstr "استخدم"
 
 #: common/navigation.j2.inc:84
 msgid "Videos"
@@ -159,13 +158,13 @@ msgstr ""
 
 #: common/navigation.j2.inc:89
 msgid "FAQ"
-msgstr ""
+msgstr "أسئلة شائعه"
 
 #: news/index.html.j2:11 news/oldnews-2011.html.j2:16
 #: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
 #: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr ""
+msgstr "منشورات جديدة عن التطورات فيما يخص GNUnet كالاصدارات والمناسبات"
 
 #: news/index.html.j2:16 news/oldnews-2011.html.j2:21
 #: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
@@ -177,11 +176,11 @@ msgstr ""
 #: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr ""
+msgstr "اقرأ المزيد"
 
 #: news/index.html.j2:45
 msgid "News archives:"
-msgstr ""
+msgstr "ارشيف الاخبار:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
