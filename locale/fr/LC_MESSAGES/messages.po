@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-12 14:49+0000\n"
+"PO-Revision-Date: 2021-03-15 15:12+0000\n"
 "Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
@@ -34,7 +34,7 @@ msgstr "Contact"
 
 #: common/footer.j2.inc:8 common/navigation.j2.inc:49
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "GNUnet e.V."
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
@@ -69,7 +69,7 @@ msgstr "À propos"
 #: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
-msgstr "Nouveautés"
+msgstr "Actualités"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
@@ -81,7 +81,7 @@ msgstr "Communauté"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
 msgid "Engage"
-msgstr ""
+msgstr "Participer"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
@@ -89,7 +89,7 @@ msgstr "Projets GSoC"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "Droits d'auteur pour les contributeurs"
 
 #: common/navigation.j2.inc:51
 msgid "IRC Archive"
@@ -162,7 +162,6 @@ msgstr "F.A.Q"
 #: news/index.html.j2:11 news/oldnews-2011.html.j2:16
 #: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
 #: news/oldnews-2019.html.j2:16
-#, fuzzy
 msgid "News posts about changes related to GNUnet such as releases and events"
 msgstr ""
 "Publications d'actualités de changements liés à GNUnet comme des parutions "
@@ -182,7 +181,7 @@ msgstr "Plus de détails"
 
 #: news/index.html.j2:45
 msgid "News archives:"
-msgstr ""
+msgstr "Archives des actualités :"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
