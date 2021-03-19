@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-19 18:06+0000\n"
+"PO-Revision-Date: 2021-03-19 18:44+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
@@ -905,7 +905,7 @@ msgstr "Partecipa!"
 
 #: template/ev.html.j2:6
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
-msgstr ""
+msgstr "Verein zur F&ouml;rderung von GNUnet e.V."
 
 #: template/ev.html.j2:11
 msgid "About GNUnet e.V."
@@ -951,10 +951,19 @@ msgid ""
 "git/\">Satzung</a> (currently only available in German, translations "
 "welcome)."
 msgstr ""
+"Gli sviluppatori di GNUnet con accesso git (scrittura) possono diventare "
+"membri per partecipare al processo decisionale e sostenere formalmente "
+"GNUnet e.V. Per farlo, basta aggiornare il file <tt>members.txt</tt> "
+"nell'archivio <a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</"
+"a>. Non ci sono quote associative. Tuttavia, i membri devono sostenere "
+"GNUnet e.V. e soprattutto contribuire allo sviluppo tecnico secondo le "
+"proprie possibilità. Per maggiori informazioni, consultare lo <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (attualmente disponibile solo "
+"in tedesco, sono ben accette traduzioni)."
 
 #: template/ev.html.j2:52
 msgid "Governance"
-msgstr ""
+msgstr "Governance"
 
 #: template/ev.html.j2:54
 msgid ""
@@ -966,14 +975,22 @@ msgid ""
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
 "\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
 msgstr ""
+"Il nostro \"Satzung\" e l'elenco dei membri è disponibile su <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet.org/"
+"gnunet-ev.git/tree/satzung.tex</a>. Il consiglio direttivo attuale è "
+"composto da: <dl><dt>Vorsitz</dt><dd><a href=\"https://schanzen.eu\">Martin "
+"Schanzenbach</a></dd><dt>stellvertretender "
+"Vorsitz</dt><dd>t3sserakt</dd><dt>Kassenwart</dt><dd>Florian "
+"Dold</dd><dt>Beisitzer</dt><dd><a href=\"https://grothoff.org/christian/\""
+">Christian Grothoff</a>, ch3 </dd></dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
-msgstr ""
+msgstr "Annotazioni sulle riunioni ufficiali"
 
 #: template/ev.html.j2:86
 msgid "Support Us!"
-msgstr ""
+msgstr "Sostienici!"
 
 #: template/ev.html.j2:88
 msgid ""
