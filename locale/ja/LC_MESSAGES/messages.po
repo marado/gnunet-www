@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 15:55+0100\n"
-"PO-Revision-Date: 2021-03-12 14:49+0000\n"
+"PO-Revision-Date: 2021-03-19 18:01+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
 ">\n"
@@ -867,7 +867,6 @@ msgid "Engage!"
 msgstr "参加しませんか"
 
 #: template/ev.html.j2:6
-#, fuzzy
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
 msgstr "Verein zur F&ouml;rderung von GNUnet e.V."
 
@@ -975,29 +974,27 @@ msgstr ""
 
 #: template/faq.html.j2:12 template/faq.html.j2:23
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: template/faq.html.j2:13 template/faq.html.j2:149 template/gns.html.j2:37
 msgid "Features"
-msgstr ""
+msgstr "機能"
 
 #: template/faq.html.j2:15 template/faq.html.j2:594
 msgid "Error messages"
-msgstr ""
+msgstr "エラーメッセージ"
 
 #: template/faq.html.j2:16 template/faq.html.j2:696
-#, fuzzy
-#| msgid "Filesharing (Alpha)"
 msgid "File-sharing"
-msgstr "ファイル共有（アルファ）"
+msgstr "ファイル共有"
 
 #: template/faq.html.j2:17 template/faq.html.j2:872
 msgid "Contributing"
-msgstr ""
+msgstr "貢献"
 
 #: template/faq.html.j2:26
 msgid "What do I do if my question is not answered here?"
-msgstr ""
+msgstr "探している回答がここで見つけられない場合はどうしたらいいですか？"
 
 #: template/faq.html.j2:28
 msgid ""
@@ -1005,10 +1002,12 @@ msgid ""
 "documentation or ask the question on the help-gnunet@gnu.org mailing list or "
 "the #gnunet IRC on irc.freenode.net."
 msgstr ""
+"回答：他の方法でも情報を提供しています。例えば、他のドキュメントを参照する、help-gnunet@gnu.org のメーリングリストまたは "
+"irc.freenode.net の #gnunet IRC から質問することもできます。"
 
 #: template/faq.html.j2:36
 msgid "When are you going to release the next version?"
-msgstr ""
+msgstr "次のバージョンのリリース予定はいつですか?"
 
 #: template/faq.html.j2:38
 msgid ""
@@ -1018,20 +1017,26 @@ msgid ""
 "planet.gnu.org\">planet GNU</a>. You can subscribe to the mailing list or "
 "the RSS feed of this site to automatically receive a notification."
 msgstr ""
+"回答：一般的な回答としては、準備ができ次第です。より理想的な回答としては「テスト、デバッグ、コード、ドキュメントなどに貢献いただければ早めに」リリースとな"
+"るでしょう。全てのリリースは、<a href=\"https://planet.gnu.org\">planet GNU </a> 　　の info-"
+"gnunet@gnu.org のメーリングリストで公表しています。こちらのサイトからメーリングリストまたは RSS "
+"フィードに登録すると自動で通知が届きます。"
 
 #: template/faq.html.j2:49
 msgid "Is the code free?"
-msgstr ""
+msgstr "コードは無料ですか？"
 
 #: template/faq.html.j2:51
 msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 msgstr ""
+"回答：GNUnet は無料ソフトウェアで、<a href=\"https://www.gnu.org/licenses/agpl-3.0.en."
+"html\">GNU Affero Public License (AGPL)</a> のもとで利用可能です。"
 
 #: template/faq.html.j2:58
 msgid "Are there any known bugs?"
-msgstr ""
+msgstr "既知のバグはありますか？"
 
 #: template/faq.html.j2:60
 msgid ""
@@ -1043,6 +1048,10 @@ msgid ""
 "you believe a bug is sensitive, you can set its view status to private (this "
 "should be the exception)."
 msgstr ""
+"回答：現時点で既知のバグは <a href=\"https://bugs.gnunet.org/\">Mantis system</a> "
+"に記載しています。バグの中には開発者または開発者メーリングリストに直接報告されたものもありますが、Mantis データベースへのバグ登録に時間を取られるた"
+"め、この方法は推奨されません。バグは追跡システムに直接報告をお願いします。機密扱いが必要と思われるバグに関しては、閲覧ステータスを例外的にプライベートに設"
+"定することができます。"
 
 #: template/faq.html.j2:73 template/faq.html.j2:193
 msgid "Is there a graphical user interface?"
@@ -1059,7 +1068,7 @@ msgstr ""
 
 #: template/faq.html.j2:83
 msgid "Why does gnunet-service-nse create a high CPU load?"
-msgstr ""
+msgstr "なぜ gnunet-service-nse は CPU 負荷が高いのですか？"
 
 #: template/faq.html.j2:85
 msgid ""
@@ -1072,10 +1081,14 @@ msgid ""
 "nse&quot; section of your configuration file to a higher value. The default "
 "is &quot;5 ms&quot;."
 msgstr ""
+"回答：gnunet-service-nse プロセスは最初、ネットワークにピアの正当性を示すために使用されるいわゆる&quot;プルーフオブワーク&quo"
+"t;を演算します（または、攻撃者にネットワーク規模評価上、シビル攻撃が高額となるよう仕掛ける方法）。この演算には、CPU "
+"速度にもよりますが、数日を要します。CPU 負荷が問題となる場合は、構成ファイルの&quot; nse&quot; セクションにある "
+"&quot;WORKDELAY&quot; 値を高く設定することができます。デフォルトは &quot;5 ミリ秒&quot;です。"
 
 #: template/faq.html.j2:99
 msgid "How does GNUnet compare to Tor?"
-msgstr ""
+msgstr "GNUnet と Tor は何が違うのですか？"
 
 #: template/faq.html.j2:101
 msgid ""
