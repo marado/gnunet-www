@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
 "PO-Revision-Date: 2021-03-19 18:01+0000\n"
-"Last-Translator: Juan Pablo González <jnpgonzal@gmail.com>\n"
+"Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1041,7 +1041,7 @@ msgstr "Contribuir"
 
 #: template/faq.html.j2:26
 msgid "What do I do if my question is not answered here?"
-msgstr "¿Qué hago si aquí no responden mi pregunta?"
+msgstr "¿Qué hago si aquí no encuentro respuesta a mi pregunta?"
 
 #: template/faq.html.j2:28
 msgid ""
