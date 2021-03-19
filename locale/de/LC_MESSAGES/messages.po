@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-19 18:01+0000\n"
+"PO-Revision-Date: 2021-03-20 10:40+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
 "\n"
@@ -296,7 +296,7 @@ msgstr ""
 
 #: template/about.html.j2:64
 msgid "GNUnet must be open and permit new peers to join."
-msgstr ""
+msgstr "GNUnet muss offen und aufnahmefähig für neue Mitglieder (Peers) sein."
 
 #: template/about.html.j2:65
 msgid "GNUnet must support a diverse range of applications and devices."
@@ -310,9 +310,9 @@ msgstr ""
 "Informationen zu schützen."
 
 #: template/about.html.j2:67
-#, fuzzy
 msgid "The GNUnet architecture must be resource efficient."
-msgstr "Die GNUnet-Architektur muss ressourceneffizient sein."
+msgstr ""
+"Die GNUnet-Architektur muss effizienten Ressourcenverbrauch ermöglichen."
 
 #: template/about.html.j2:68
 msgid ""
