@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 15:55+0100\n"
-"PO-Revision-Date: 2021-03-16 22:31+0000\n"
+"PO-Revision-Date: 2021-03-20 10:40+0000\n"
 "Last-Translator: Shorouk Hassouna <shoroukhassuna@gmail.com>\n"
 "Language-Team: Arabic <http://weblate.taler.net/projects/gnunet/website/ar/>"
 "\n"
@@ -70,7 +70,7 @@ msgstr "عن"
 #: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
-msgstr ""
+msgstr "الاخبار"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
@@ -102,7 +102,7 @@ msgstr "تطوير"
 
 #: common/navigation.j2.inc:61
 msgid "System Architecture"
-msgstr ""
+msgstr "هندسة النظام"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
 msgid "Roadmap"
@@ -126,11 +126,11 @@ msgstr ""
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
-msgstr ""
+msgstr "التوثيق"
 
 #: common/navigation.j2.inc:82 template/install.html.j2:6
 msgid "Install"
-msgstr ""
+msgstr "تحميل"
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
 msgid "Use"
@@ -138,7 +138,7 @@ msgstr "استخدم"
 
 #: common/navigation.j2.inc:84
 msgid "Videos"
-msgstr ""
+msgstr "مقاطع الڤيديو"
 
 #: common/navigation.j2.inc:85 template/glossary.html.j2:6
 msgid "Glossary"
@@ -146,7 +146,7 @@ msgstr ""
 
 #: common/navigation.j2.inc:86
 msgid "Handbook"
-msgstr ""
+msgstr "الدليل"
 
 #: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
 msgid "Living Standards"
@@ -184,7 +184,7 @@ msgstr "ارشيف الاخبار:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
-msgstr ""
+msgstr "ما هي GNUnet؟"
 
 #: template/about.html.j2:13
 msgid ""
@@ -194,6 +194,9 @@ msgid ""
 "secure publication of files, it has grown to include all kinds of basic "
 "protocol components and applications towards the creation of a GNU internet."
 msgstr ""
+"GNUnet هي شبكة تخزين بديلة لبناء تطبيقات لا مركزيه تحافظ على الخصوصية. هدفنا "
+"هو استبدال بروتوكول الانترنت القديم للتخزين. بدئنا من تطبيق للنشر الآمن "
+"للملفات، وتطور ذلك ليتضمن كل العناصر المبدئيه والتطبيقات نحو انترنت آمن."
 
 #: template/about.html.j2:23
 msgid ""
@@ -203,6 +206,10 @@ msgid ""
 "hierarchy and when necessary isolated from the rest of the world, the "
 "situation is less tenable for civil society."
 msgstr ""
+"اليوم تختلف حاجة المجتمع لشبكة عالمية بشكل كبير عن اهداف البداية في 1970. "
+"يظل الانترنت مناسب للاستخدام العسكري، حيث معدات الشبكة التي تدار من قبل "
+"اوامر سلطة هرمية يتم عزلها عن بقية العالم عند الضرورة، ولكن قابلية الدفاع عن "
+"الشبكة تنحدر بالنسبه للمجتمع المدني."
 
 #: template/about.html.j2:32
 msgid ""
@@ -366,7 +373,7 @@ msgstr ""
 
 #: template/applications.html.j2:7
 msgid "Applications provided by GNUnet"
-msgstr ""
+msgstr "تطبيقات مقدمة من GNUnet"
 
 #: template/applications.html.j2:13 template/gns.html.j2:7
 msgid "The GNU Name System"
@@ -499,7 +506,7 @@ msgstr ""
 
 #: template/architecture.html.j2:35
 msgid "Security"
-msgstr ""
+msgstr "الامان"
 
 #: template/architecture.html.j2:38
 msgid ""
