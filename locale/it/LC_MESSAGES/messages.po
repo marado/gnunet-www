@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-19 18:44+0000\n"
+"PO-Revision-Date: 2021-03-23 04:56+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
@@ -1004,18 +1004,28 @@ msgid ""
 "<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
 "<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
 msgstr ""
+"Chiunque può sostenerci tramite donazioni. Per quanto riguarda i contributi "
+"finanziari, i cittadini europei possono donare via SEPA. In futuro speriamo "
+"di aprire conti in altre aree valutarie principali. È possibile donare anche "
+"tramite Bitcoin, maggiori informazioni sui percorsi di trasferimento sono "
+"riportate qui di seguito. Ricordiamo che non possiamo fornire ricevute per "
+"le donazioni. Se hai intenzione di donare un importo notevole, prima di "
+"farlo contattaci, poiché potrebbe convenire concludere un accordo "
+"personalizzato. "
+"<dl><dt>BitCoin</dt><dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd><dt>SEPA/"
+"IBAN</dt><dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd></dl>"
 
 #: template/faq.html.j2:12 template/faq.html.j2:23
 msgid "General"
-msgstr ""
+msgstr "Domande generali"
 
 #: template/faq.html.j2:13 template/faq.html.j2:149 template/gns.html.j2:37
 msgid "Features"
-msgstr ""
+msgstr "Funzionalità"
 
 #: template/faq.html.j2:15 template/faq.html.j2:695
 msgid "Error messages"
-msgstr ""
+msgstr "Messaggi di errore"
 
 #: template/faq.html.j2:16 template/faq.html.j2:797
 msgid "File-sharing"
@@ -1023,11 +1033,11 @@ msgstr "Condivisione di file"
 
 #: template/faq.html.j2:17 template/faq.html.j2:973
 msgid "Contributing"
-msgstr ""
+msgstr "Contribuire"
 
 #: template/faq.html.j2:26
 msgid "What do I do if my question is not answered here?"
-msgstr ""
+msgstr "Cosa posso fare se non trovo le risposte alle mie domande?"
 
 #: template/faq.html.j2:28
 msgid ""
@@ -1035,10 +1045,13 @@ msgid ""
 "documentation or ask the question on the help-gnunet@gnu.org mailing list or "
 "the #gnunet IRC on irc.freenode.net."
 msgstr ""
+"R: Sono disponibili molte altre risorse informative. Puoi leggere la "
+"documentazione aggiuntiva o chiedere sulla mailing list help-gnunet@gnu.org "
+"o sull'IRC #gnunet su irc.freenode.net."
 
 #: template/faq.html.j2:36
 msgid "When are you going to release the next version?"
-msgstr ""
+msgstr "Quando verrà rilasciata la prossima versione?"
 
 #: template/faq.html.j2:38
 msgid ""
@@ -1048,20 +1061,28 @@ msgid ""
 "planet.gnu.org\">planet GNU</a>. You can subscribe to the mailing list or "
 "the RSS feed of this site to automatically receive a notification."
 msgstr ""
+"R: Di solito la risposta è \"quando è pronta\". Una risposta migliore "
+"potrebbe essere: prima, se dai il tuo contributo (facendo test, debug, "
+"scrivendo il codice e la documentazione). Il rilascio di una nuova versione "
+"sarà annunciato sulla mailing list info-gnunet@gnu.org e su <a href=\"https"
+"://planet.gnu.org\">planet GNU</a>. È possibile iscriversi alla mailing list "
+"o al feed RSS del sito per ricevere una notifica in automatico."
 
 #: template/faq.html.j2:49
 msgid "Is the code free?"
-msgstr ""
+msgstr "Il codice è libero?"
 
 #: template/faq.html.j2:51
 msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 msgstr ""
+"R: GNUnet è un software libero, disponibile con la <a href=\"https://www.gnu."
+"org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 
 #: template/faq.html.j2:58
 msgid "Are there any known bugs?"
-msgstr ""
+msgstr "Ci sono dei bug noti?"
 
 #: template/faq.html.j2:60
 msgid ""
@@ -1073,20 +1094,30 @@ msgid ""
 "you believe a bug is sensitive, you can set its view status to private (this "
 "should be the exception)."
 msgstr ""
+"R: Registriamo l'elenco dei bug attualmente noti nel <a href=\"https://bugs."
+"gnunet.org/\">sistema Mantis</a>. La presenza di alcuni bug, a volte, viene "
+"segnalata direttamente agli sviluppatori o alla mailing list degli "
+"sviluppatori. Si scoraggia tale pratica, poiché gli sviluppatori non hanno "
+"tempo per registrare questi bug nel database Mantis. Bisogna segnalare i bug "
+"direttamente nel registro bug. Se ritieni che il bug riguardi una questione "
+"delicata, è possibile impostare lo stato di visualizzazione in privato (solo "
+"in casi eccezionali)."
 
 #: template/faq.html.j2:73 template/faq.html.j2:193
 msgid "Is there a graphical user interface?"
-msgstr ""
+msgstr "È disponibile un'interfaccia utente grafica?"
 
 #: template/faq.html.j2:75
 msgid ""
 "A: gnunet-gtk is a separate download. The package contains various GTK+ "
 "based graphical interfaces, including a graphical tool for configuration."
 msgstr ""
+"R: gnunet-gtk va scaricato a parte. Il pacchetto contiene varie interfacce "
+"grafiche basate su GTK+, incluso uno strumento grafico per la configurazione."
 
 #: template/faq.html.j2:83
 msgid "Why does gnunet-service-nse create a high CPU load?"
-msgstr ""
+msgstr "Perché gnunet-service-nse crea un carico CPU elevato?"
 
 #: template/faq.html.j2:85
 msgid ""
