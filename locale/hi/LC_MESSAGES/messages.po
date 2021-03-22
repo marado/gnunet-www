@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-12 15:55+0100\n"
+"POT-Creation-Date: 2021-03-12 16:12+0100\n"
 "PO-Revision-Date: 2021-03-09 18:35+0000\n"
 "Last-Translator: Jigisha Sharma <jigishas38@gmail.com>\n"
 "Language-Team: Hindi <http://weblate.taler.net/projects/gnunet/website/hi/>\n"
@@ -792,15 +792,15 @@ msgstr ""
 msgid "Features"
 msgstr ""
 
-#: template/faq.html.j2:15 template/faq.html.j2:594
+#: template/faq.html.j2:15 template/faq.html.j2:695
 msgid "Error messages"
 msgstr ""
 
-#: template/faq.html.j2:16 template/faq.html.j2:696
+#: template/faq.html.j2:16 template/faq.html.j2:797
 msgid "File-sharing"
 msgstr ""
 
-#: template/faq.html.j2:17 template/faq.html.j2:872
+#: template/faq.html.j2:17 template/faq.html.j2:973
 msgid "Contributing"
 msgstr ""
 
@@ -1054,10 +1054,21 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:286
-msgid "What is the difference between GNS and CoDoNS?"
+msgid "How does GNS compare to other name systems"
 msgstr ""
 
 #: template/faq.html.j2:288
+msgid ""
+"A: A scientific paper on this topic <a href=\"https://grothoff.org/christian/"
+"ns2018.pdf\">has been published </a> and below is a table from the "
+"publication. For detailed descriptions please refer to the paper."
+msgstr ""
+
+#: template/faq.html.j2:392
+msgid "What is the difference between GNS and CoDoNS?"
+msgstr ""
+
+#: template/faq.html.j2:394
 msgid ""
 "A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
 "authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, and "
@@ -1069,11 +1080,11 @@ msgid ""
 "the context of CoDoNS."
 msgstr ""
 
-#: template/faq.html.j2:304
+#: template/faq.html.j2:410
 msgid "What is the difference between GNS and SocialDNS?"
 msgstr ""
 
-#: template/faq.html.j2:306
+#: template/faq.html.j2:412
 msgid ""
 "A: Like GNS, SocialDNS allows each user to create DNS mappings. However, "
 "with SocialDNS the mappings are shared through the social network and "
@@ -1083,11 +1094,11 @@ msgid ""
 "the name (the authority) manually changes the record."
 msgstr ""
 
-#: template/faq.html.j2:320
+#: template/faq.html.j2:426
 msgid "What is the difference between GNS and ODDNS?"
 msgstr ""
 
-#: template/faq.html.j2:322
+#: template/faq.html.j2:428
 msgid ""
 "A: ODDNS is primarily designed to bypass the DNS root zone and the TLD "
 "registries (such as those for \".com\" and \".org\"). Instead of using "
@@ -1096,23 +1107,25 @@ msgid ""
 "servers. Resolution will fail if the target name servers change IPs."
 msgstr ""
 
-#: template/faq.html.j2:333
-msgid "What is the difference between GNS and Namecoin?"
-msgstr ""
-
-#: template/faq.html.j2:340
+#: template/faq.html.j2:439
 msgid "What is the difference between GNS and Handshake?"
 msgstr ""
 
-#: template/faq.html.j2:346
-msgid "What is the difference between GNS and ENS?"
+#: template/faq.html.j2:441
+msgid ""
+"A: Handshake is a blockchain-based method for root zone governance. Hence, "
+"it does not address the name resolution process itself but delegates "
+"resolution into DNS after the initial TLD resolution. Not taking "
+"sustainablility considerations into account, handshake could be used as an "
+"additional supporting GNS root zone governance model but we currently do not "
+"have such plans in mind."
 msgstr ""
 
-#: template/faq.html.j2:352
+#: template/faq.html.j2:453
 msgid "What is the difference between GNS and TrickleDNS?"
 msgstr ""
 
-#: template/faq.html.j2:354
+#: template/faq.html.j2:455
 msgid ""
 "A: TrickleDNS pushes (&quot;critical&quot;) DNS records between DNS "
 "resolvers of participating domains to provide &quot;better availability, "
@@ -1124,13 +1137,13 @@ msgid ""
 "the DNS hierarchy."
 msgstr ""
 
-#: template/faq.html.j2:367
+#: template/faq.html.j2:468
 msgid ""
 "Does GNS require real-world introduction (secure PKEY exchange) in the style "
 "of the PGP web of trust?"
 msgstr ""
 
-#: template/faq.html.j2:369
+#: template/faq.html.j2:470
 msgid ""
 "A: For security, it is well known that an initial trust path between the two "
 "parties must exist. However, for applications where this is not required, "
@@ -1143,13 +1156,13 @@ msgid ""
 "can be queried under the &quot;.pin&quot; TLD."
 msgstr ""
 
-#: template/faq.html.j2:384
+#: template/faq.html.j2:485
 msgid ""
 "How can a legitimate domain owner tell other people to not use his name in "
 "GNS?"
 msgstr ""
 
-#: template/faq.html.j2:386
+#: template/faq.html.j2:487
 msgid ""
 "A: Names have no owners in GNS, so there cannot be a &quot;legitimate&quot; "
 "domain owner. Any user can claim any name (as his preferred name or &quot;"
@@ -1158,13 +1171,13 @@ msgid ""
 "name) for this user."
 msgstr ""
 
-#: template/faq.html.j2:397
+#: template/faq.html.j2:498
 msgid ""
 "Did you consider the privacy implications of making your personal GNS zone "
 "visible?"
 msgstr ""
 
-#: template/faq.html.j2:399
+#: template/faq.html.j2:500
 msgid ""
 "A: Each record in GNS has a flag &quot;private&quot;. Records are shared "
 "with other users (via DHT or zone transfers) only if this flag is not set. "
@@ -1172,11 +1185,11 @@ msgid ""
 "made public."
 msgstr ""
 
-#: template/faq.html.j2:409
+#: template/faq.html.j2:510
 msgid "Are \"Legacy Host\" (LEHO) records not going to be obsolete with IPv6?"
 msgstr ""
 
-#: template/faq.html.j2:411
+#: template/faq.html.j2:512
 msgid ""
 "A: The question presumes that (a) virtual hosting is only necessary because "
 "of IPv4 address scarcity, and (b) that LEHOs are only useful in the context "
@@ -1188,13 +1201,13 @@ msgid ""
 "become commonplace, GNS should work with today's networks."
 msgstr ""
 
-#: template/faq.html.j2:425
+#: template/faq.html.j2:526
 msgid ""
 "Why does GNS not use a trust metric or consensus to determine globally "
 "unique names?"
 msgstr ""
 
-#: template/faq.html.j2:427
+#: template/faq.html.j2:528
 msgid ""
 "A: Trust metrics have the fundamental problem that they have thresholds. As "
 "trust relationships evolve, mappings would change their meaning as they "
@@ -1203,11 +1216,11 @@ msgid ""
 "consensus might be easy to manipulate by adversaries."
 msgstr ""
 
-#: template/faq.html.j2:438
+#: template/faq.html.j2:539
 msgid "How do you handle compromised zone keys in GNS?"
 msgstr ""
 
-#: template/faq.html.j2:440
+#: template/faq.html.j2:541
 msgid ""
 "A: The owner of a private key can create a revocation message. This one can "
 "then be flooded throughout the overlay network, creating a copy at all "
@@ -1217,11 +1230,11 @@ msgid ""
 "message when resolving names."
 msgstr ""
 
-#: template/faq.html.j2:452
+#: template/faq.html.j2:553
 msgid "Could the signing algorithm of GNS be upgraded in the future?"
 msgstr ""
 
-#: template/faq.html.j2:454
+#: template/faq.html.j2:555
 msgid ""
 "A: Yes. In our efforts to standardize GNS, we have already modified the "
 "protocol to support alternative delegation records. <br> <br> Naturally, "
@@ -1231,12 +1244,12 @@ msgid ""
 "different cipher system."
 msgstr ""
 
-#: template/faq.html.j2:468
+#: template/faq.html.j2:569
 msgid ""
 "How can a GNS zone maintain several name servers, e.g. for load balancing?"
 msgstr ""
 
-#: template/faq.html.j2:470
+#: template/faq.html.j2:571
 msgid ""
 "A: We don't expect this to be necessary, as GNS records are stored (and "
 "replicated) in the R5N DHT. Thus the authority will typically not be "
@@ -1247,13 +1260,13 @@ msgid ""
 "the zone's key and database among them)."
 msgstr ""
 
-#: template/faq.html.j2:483
+#: template/faq.html.j2:584
 msgid ""
 "Why do you believe it is worth giving up unique names for censorship "
 "resistance?"
 msgstr ""
 
-#: template/faq.html.j2:485
+#: template/faq.html.j2:586
 msgid ""
 "A: The GNU Name system offers an alternative to DNS that is censorship "
 "resistant. As with any security mechanism, this comes at a cost (names are "
@@ -1265,11 +1278,11 @@ msgid ""
 "globally&quot; unique name worth, if it does not resolve?"
 msgstr ""
 
-#: template/faq.html.j2:499
+#: template/faq.html.j2:600
 msgid "Why do you say that DNS is 'centralized' and 'distributed'?"
 msgstr ""
 
-#: template/faq.html.j2:501
+#: template/faq.html.j2:602
 msgid ""
 "A: We say that DNS is 'centralized' because it has a central component / "
 "central point of failure --- the root zone and its management by IANA/ICANN. "
@@ -1278,11 +1291,11 @@ msgid ""
 "Iraq during the wars at the beginning of the 21st century."
 msgstr ""
 
-#: template/faq.html.j2:512
+#: template/faq.html.j2:613
 msgid "How does GNS protect against layer-3 censorship?"
 msgstr ""
 
-#: template/faq.html.j2:514
+#: template/faq.html.j2:615
 msgid ""
 "A: GNS does not directly help with layer-3 censorship, but it does help "
 "indirectly in two ways: <ol> <li> Many websites today use virtual hosting, "
@@ -1295,11 +1308,11 @@ msgid ""
 "easier to use. </ol>"
 msgstr ""
 
-#: template/faq.html.j2:533
+#: template/faq.html.j2:634
 msgid "Does GNS work with search engines?"
 msgstr ""
 
-#: template/faq.html.j2:535
+#: template/faq.html.j2:636
 msgid ""
 "A: GNS creates no significant problems for search engines, as they can use "
 "GNS to perform name resolution as well as any normal user. Naturally, while "
@@ -1311,11 +1324,11 @@ msgid ""
 "obviously not obtain censorship-resistant names."
 msgstr ""
 
-#: template/faq.html.j2:549
+#: template/faq.html.j2:650
 msgid "How does GNS compare to the Unmanaged Internet Architecture (UIA)?"
 msgstr ""
 
-#: template/faq.html.j2:551
+#: template/faq.html.j2:652
 msgid ""
 "A: UIA and GNS both share the same basic naming model, which actually "
 "originated with Rivest's SDSI. However, UIA is not concerned about "
@@ -1326,11 +1339,11 @@ msgid ""
 "about legacy systems (clean slate)."
 msgstr ""
 
-#: template/faq.html.j2:564
+#: template/faq.html.j2:665
 msgid "Doesn't GNS increase the trusted-computing base compared to DNS(SEC)?"
 msgstr ""
 
-#: template/faq.html.j2:566
+#: template/faq.html.j2:667
 msgid ""
 "A: First of all, in GNS you can explicitly see the trust chain, so you know "
 "if a name you are resolving belongs to a friend, or a friend-of-a-friend, "
@@ -1340,13 +1353,13 @@ msgid ""
 "than about 128 entities."
 msgstr ""
 
-#: template/faq.html.j2:578
+#: template/faq.html.j2:679
 msgid ""
 "How does GNS handle SRV/TLSA records where service and protocol are part of "
 "the domain name?"
 msgstr ""
 
-#: template/faq.html.j2:580
+#: template/faq.html.j2:681
 msgid ""
 "A: When GNS splits a domain name into labels for resolution, it detects the "
 "&quot;_Service._Proto&quot; syntax, converts &quot;Service&quot; to the "
@@ -1358,13 +1371,13 @@ msgid ""
 "record type) to it."
 msgstr ""
 
-#: template/faq.html.j2:596
+#: template/faq.html.j2:697
 msgid ""
 "I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. "
 "Should I worry?"
 msgstr ""
 
-#: template/faq.html.j2:598
+#: template/faq.html.j2:699
 msgid ""
 "A: Right now, this is expected and a known cause for high latency in GNUnet. "
 "We have started a major rewrite to address this and other problems, but "
@@ -1372,23 +1385,23 @@ msgid ""
 "expected."
 msgstr ""
 
-#: template/faq.html.j2:607
+#: template/faq.html.j2:708
 msgid "Error opening `/dev/net/tun': No such file or directory?"
 msgstr ""
 
-#: template/faq.html.j2:609
+#: template/faq.html.j2:710
 msgid ""
 "A: If you get this error message, the solution is simple. Issue the "
 "following commands (as root) to create the required device file"
 msgstr ""
 
-#: template/faq.html.j2:621
+#: template/faq.html.j2:722
 msgid ""
 "'iptables: No chain/target/match by that name.' (when running gnunet-service-"
 "dns)?"
 msgstr ""
 
-#: template/faq.html.j2:623
+#: template/faq.html.j2:724
 msgid ""
 "A: For GNUnet DNS, your iptables needs to have &quot;owner&quot; match "
 "support. This is accomplished by having the correct kernel options. Check if "
@@ -1396,22 +1409,22 @@ msgid ""
 "'m' (and the module is loaded)."
 msgstr ""
 
-#: template/faq.html.j2:635
+#: template/faq.html.j2:736
 msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
 msgstr ""
 
-#: template/faq.html.j2:637
+#: template/faq.html.j2:738
 msgid ""
 "A: If you get an error stating that the VPN timeout was reached, check if "
 "your firewall is enabled and blocking the connections."
 msgstr ""
 
-#: template/faq.html.j2:645
+#: template/faq.html.j2:746
 msgid ""
 "I'm getting an 'error while loading shared libraries: libgnunetXXX.so.X'"
 msgstr ""
 
-#: template/faq.html.j2:647
+#: template/faq.html.j2:748
 msgid ""
 "A: This error usually occurs when your linker fails to locate one of "
 "GNUnet's libraries. This can have two causes. First, it is theoretically "
@@ -1431,7 +1444,7 @@ msgid ""
 "you want to run:"
 msgstr ""
 
-#: template/faq.html.j2:673
+#: template/faq.html.j2:774
 msgid ""
 "to ensure GNUnet's binaries and libraries are found. In order to avoid "
 "having to do so each time, you can add the above lines (without the \"$\") "
@@ -1440,11 +1453,11 @@ msgid ""
 "environment)."
 msgstr ""
 
-#: template/faq.html.j2:680
+#: template/faq.html.j2:781
 msgid "What error messages can be ignored?"
 msgstr ""
 
-#: template/faq.html.j2:682
+#: template/faq.html.j2:783
 msgid ""
 "A: Error messages flagged as \"DEBUG\" should be disabled in binaries built "
 "for end-users and can always be ignored. Error messages flagged as \"INFO\" "
@@ -1454,11 +1467,11 @@ msgid ""
 "messages to display information about important configuration values."
 msgstr ""
 
-#: template/faq.html.j2:698
+#: template/faq.html.j2:799
 msgid "How does GNUnet compare to other file-sharing applications?"
 msgstr ""
 
-#: template/faq.html.j2:700
+#: template/faq.html.j2:801
 msgid ""
 "A: As opposed to Napster, Gnutella, Kazaa, FastTrack, eDonkey and most other "
 "P2P networks, GNUnet was designed with security in mind as the highest "
@@ -1478,7 +1491,7 @@ msgid ""
 "read the research papers (and probably the code)."
 msgstr ""
 
-#: template/faq.html.j2:814
+#: template/faq.html.j2:915
 msgid ""
 "Another important point of reference are the various anonymous peer-to-peer "
 "networks. Here, there are differences in terms of application domain and how "
@@ -1490,11 +1503,11 @@ msgid ""
 "reduce anonymity."
 msgstr ""
 
-#: template/faq.html.j2:827
+#: template/faq.html.j2:928
 msgid "Are there any known attacks (on GNUnet's file-sharing application)?"
 msgstr ""
 
-#: template/faq.html.j2:829
+#: template/faq.html.j2:930
 msgid ""
 "A: Generally, there is the possibility of a known plaintext attack on "
 "keywords, but since the user has control over the keywords that are "
@@ -1506,11 +1519,11 @@ msgid ""
 "obfuscate the content by choosing a difficult keyword anyway."
 msgstr ""
 
-#: template/faq.html.j2:843
+#: template/faq.html.j2:944
 msgid "What do you mean by anonymity?"
 msgstr ""
 
-#: template/faq.html.j2:845
+#: template/faq.html.j2:946
 msgid ""
 "A: Anonymity is the lack of distinction of an individual from a (large) "
 "group. A central goal for anonymous file-sharing in GNUnet is to make all "
@@ -1521,11 +1534,11 @@ msgid ""
 "originating peer and all other peers."
 msgstr ""
 
-#: template/faq.html.j2:857
+#: template/faq.html.j2:958
 msgid "What does my system do when participating in GNUnet file sharing?"
 msgstr ""
 
-#: template/faq.html.j2:859
+#: template/faq.html.j2:960
 msgid ""
 "A: In GNUnet you set up a node (a peer). It is identified by an ID (hash of "
 "its public key) and has a number of addresses it is reachable by (may have "
@@ -1535,11 +1548,11 @@ msgid ""
 "connect to other nodes, becoming part of the network."
 msgstr ""
 
-#: template/faq.html.j2:874
+#: template/faq.html.j2:975
 msgid "How can I help translate this webpage into other languages?"
 msgstr ""
 
-#: template/faq.html.j2:876
+#: template/faq.html.j2:977
 msgid ""
 "A: First, you need to register an account with our weblate system. Please "
 "send an e-mail with the desired target language to translators@gnunet.org or "
@@ -1548,11 +1561,11 @@ msgid ""
 "result in the loss of permissions."
 msgstr ""
 
-#: template/faq.html.j2:888
+#: template/faq.html.j2:989
 msgid "I have some great idea for a new feature, what should I do?"
 msgstr ""
 
-#: template/faq.html.j2:890
+#: template/faq.html.j2:991
 msgid ""
 "A: Sadly, we have many more feature requests than we can possibly implement. "
 "The best way to actually get a new feature implemented is to do it yourself "
