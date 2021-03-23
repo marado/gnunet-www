@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-19 18:01+0000\n"
+"PO-Revision-Date: 2021-03-24 13:31+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
 ">\n"
@@ -1105,10 +1105,12 @@ msgid ""
 "GNUnet does not really have one focus; our theme is secure decentralized "
 "networking, but that is too broad to be called a focus."
 msgstr ""
+"回答：Tor は、Tor Browser Bundle により、特にウェブにおける匿名通信と TCP 接続の検閲保護に焦点を当てています。GNUnet "
+"は、安全で分散したネットワーク化を趣旨としますが、焦点と呼ぶには大変広義であるため、実質的に一つの焦点はないと言えます。"
 
 #: template/faq.html.j2:111
 msgid "How does GNUnet compare to I2P?"
-msgstr ""
+msgstr "GNUnet は I2P とどのように比較されますか？"
 
 #: template/faq.html.j2:113
 msgid ""
@@ -1118,6 +1120,11 @@ msgid ""
 "using onion (or garlic) routing as the basis for various (anonymized) "
 "applications. I2P is largely used via a Web frontend."
 msgstr ""
+"回答：GNUnet と I2P "
+"はどちらも、安全性と分散化を高め、より優れたインターネットの構築を目指しています。しかし、技術面においてほぼ共通点はありません。<br><br> I2P "
+"は Java "
+"を使用しており、各種（匿名化された）アプリケーションの基盤として、オニオン（またはガーリック）ルーティングを使った（非対称）トンネルを持ちます。I2P "
+"はウェブのフロントエンドで広く使われています。"
 
 #: template/faq.html.j2:124
 msgid "Is GNUnet ready for use on production systems?"
@@ -1152,10 +1159,8 @@ msgstr ""
 "GNUnet で台帳を構築することもできますが、現時点でその予定はありません。"
 
 #: template/faq.html.j2:151
-#, fuzzy
-#| msgid "What is GNUnet?"
 msgid "What can I do with GNUnet?"
-msgstr "GNUnet とは"
+msgstr "GNUnet では何ができますか？"
 
 #: template/faq.html.j2:153
 msgid ""
@@ -1163,6 +1168,8 @@ msgid ""
 "do more than just one thing. Naturally, the implementation and documentation "
 "of some of the features that exist are more advanced than others."
 msgstr ""
+"回答：GNUnet はピアツーピアのフレームワークであり、つまり、できることは一つに限りません。そのため、既存機能の実装とドキュメンテーションは、他のもの"
+"よりも進んでいることがあります。"
 
 #: template/faq.html.j2:160
 msgid ""
@@ -1170,20 +1177,22 @@ msgid ""
 "decentralized and censorship-resistant replacement for DNS and a mechanism "
 "for IPv4-IPv6 protocol translation and tunneling (NAT-PT with DNS-ALG)."
 msgstr ""
+"ユーザーの観点からは、GNUnet は匿名および非匿名でのファイル共有、完全に分散化され検閲保護された DNS の代替手段、IPv4-IPv6 "
+"プロトコル変換およびトンネリングのメカニズム（DNS-ALG を使用した NAT-PT）を提供します。"
 
 #: template/faq.html.j2:171
 msgid "Is it possible to surf the WWW anonymously with GNUnet?"
-msgstr ""
+msgstr "GNUnet では匿名の WWW サーフィンは可能ですか？"
 
 #: template/faq.html.j2:173
 msgid ""
 "A: It is not possible use GNUnet for anonymous browsing at this point. We "
 "recommend that you use Tor for anonymous surfing."
-msgstr ""
+msgstr "回答：現時点で匿名ブラウジングに GNUnet を使用することはできません。匿名サーフィンには Tor をお勧めします。"
 
 #: template/faq.html.j2:181
 msgid "Is it possible to access GNUnet via a browser as an anonymous WWW?"
-msgstr ""
+msgstr "匿名の WWW としてブラウザ経由で GNUnet にアクセスすることは可能ですか？"
 
 #: template/faq.html.j2:183
 msgid ""
@@ -1192,6 +1201,9 @@ msgid ""
 "proxy and all one needs to know is the protocol used between browser and "
 "proxy and a swift look at the GNUnet code for file-sharing."
 msgstr ""
+"回答：現在、ブラウザでのアクセスを可能にする GNUnet 用のプロキシ（Freenet の fproxy "
+"など）はありません。こうしたプロキシの構築は可能で、必要となるのは、ブラウザとプロキシ間で利用されるプロトコルと、ファイル共通のための GNUnet "
+"コード概要のみです。"
 
 #: template/faq.html.j2:195
 msgid ""
@@ -1204,10 +1216,15 @@ msgid ""
 "gnunet-setup, which must still be run separately at this time (as setup "
 "requires the peer to be stopped)."
 msgstr ""
+"回答：実際、異なる機能に向けたグラフィカル ユーザーインターフェースが数種類あります。例えば、gnunet-setup は GNUnet 構成"
+"、gnunet-fs-gtk はファイル共有のためのものです。重要性は下がりますが、gnunet-XXX-gtk GUI はその他にもあります。GUI "
+"を取得するためには、gnunet-gtk パッケージが必要で、別途ダウンロードを要します。gnunet-gtk はその他ほぼ全ての GUI "
+"を一つのウィンドウに統合したメタ GUI です。例外は gnunet-setup "
+"で、現時点では単独で実行が必要となります（設定でピアを停止する必要があるため）。"
 
 #: template/faq.html.j2:210
 msgid "On top of which operating systems does GNUnet run?"
-msgstr ""
+msgstr "GNUnet はどのオペレーティングシステム上で実行されますか？"
 
 #: template/faq.html.j2:212
 msgid ""
@@ -1218,10 +1235,14 @@ msgid ""
 "NetBSD, OpenBSD and Solaris. However, not all of those reports are recent, "
 "so if you cannot get GNUnet to work on those systems please let us know."
 msgstr ""
+"回答：GNUnet の開発とテストは、主に Debian GNU / Linux で実施しています。さらに、Fedora、Ubuntu、 Arch、 "
+"FreeBSD、 macOS でも定期的に構築やテストを実施しています。そのほか多くの GNU/Linux でも正常な稼働が認められたという報告があり、"
+"これまで NetBSD、OpenBSD、Solaris 上での稼働が報告されています。ただ、こうした報告全てが最近のものとは限らず、これらシステム上で "
+"GNUnet を稼働できない場合はお知らせください。"
 
 #: template/faq.html.j2:228
 msgid "Who runs the GNS root zone?"
-msgstr ""
+msgstr "GNS ルートゾーンを実行しているのは誰ですか？"
 
 #: template/faq.html.j2:230
 msgid ""
@@ -1231,10 +1252,13 @@ msgid ""
 "modify this configuration at will. We expect normal users to have no need to "
 "edit their own GNS zone(s) unless they host services themselves."
 msgstr ""
+"回答：簡潔な回答は「みなさん」です。詳しくいうと、GNUnet は上位ドメインのデフォルト設定でリリースされ、このデフォルト設定のガバナンスはまだ構築され"
+"ていません。いずれにしても、ユーザー側でこの設定を好きに変更することができます。一般のユーザーは、サービスを自らホストしない限り、その GNS "
+"ゾーンを編集する必要はないとみなしています。"
 
 #: template/faq.html.j2:241
 msgid "Where is the per-user GNS database kept?"
-msgstr ""
+msgstr "ユーザーごとの GNS データベースはどこに保管されていますか？"
 
 #: template/faq.html.j2:243
 msgid ""
@@ -1247,10 +1271,15 @@ msgid ""
 "which various replication options are again applicable. Ultimately, there "
 "are many options for how users can store (and secure) their GNS database."
 msgstr ""
+"回答：簡潔には、データベースはユーザーの GNUnet ピアに保管されています。現在、ユーザーが複数の GNUnet "
+"ピアを走らせた場合、データベースは各ピアに保管されます（ただし、便宜的なレプリケーションのためのコードはありません）。同様に、複数の GNUnet "
+"ピアは、データベースの一つのインスタンスを共有することができ、 &quot;gnunet-service-namestore&quot; は TCP "
+"経由で遠隔からアクセスできます。実際のデータは Postgres データベースに保管され、各種レプリケーションのオプションが適用されます。つまり、GNS "
+"データベースの保管方法（または安全性の確保）については、ユーザーに多くの選択肢が与えられることになります。"
 
 #: template/faq.html.j2:258
 msgid "What is the expected average size of a GNS namestore database?"
-msgstr ""
+msgstr "GNS ネームストア データベースの平均サイズはどれくらいと予測されますか？"
 
 #: template/faq.html.j2:260
 msgid ""
@@ -1259,10 +1288,12 @@ msgid ""
 "will only grow to a few tens of thousands of entries, small enough to fit "
 "even on mobile devices."
 msgstr ""
+"回答：かなり小さいと言えます。実施した調査で、ブラウザ履歴とアクセスしたドメイン数を確認したところ、GNS "
+"データベースの規模は数万エントリーに留まり、モバイル端末でも対応できるほど小規模です。"
 
 #: template/faq.html.j2:270
 msgid "Is GNS resistant to the attacks on DNS used by the US?"
-msgstr ""
+msgstr "GNS は、米国で使用されている DNS 攻撃に耐性がありますか？"
 
 #: template/faq.html.j2:272
 msgid ""
@@ -1275,12 +1306,14 @@ msgid ""
 "unavailable for enforcement, the respective zone cannot be changed and any "
 "other zone delegating to this zone will achieve proper resolution."
 msgstr ""
+"回答：そのように考えます。理由として、個々のユーザーを除き、いかなる政府も名前のマッピングを変更するよう強制できる組織がないためです（その場合、変更は当該"
+"のユーザーが権限を持つ名前にのみ適用されます）。そのため、全員が GNS を利用した場合に唯一考えられる政府による攻撃は、"
+"サーバー運用者に対して該当サーバーが他の地点を指すよう GNS レコードの変更を強制することです。しかし、あるゾーンのプライベートキーの所有者が従わないな"
+"どの場合、該当するゾーンは変更できず、このゾーンに委任する他のゾーンは全て正常通りに動作します。"
 
 #: template/faq.html.j2:286
-#, fuzzy
-#| msgid "How does GNUnet compare to Tor?"
 msgid "How does GNS compare to other name systems"
-msgstr "GNUnet と Tor は何が違うのですか？"
+msgstr "GNS は他のネームシステムとどのように比較されますか？"
 
 #: template/faq.html.j2:288
 msgid ""
@@ -1288,6 +1321,8 @@ msgid ""
 "ns2018.pdf\">has been published </a> and below is a table from the "
 "publication. For detailed descriptions please refer to the paper."
 msgstr ""
+"回答：このトピックに関する科学論文が<a href=\"https://grothoff.org/christian/ns2018.pdf\""
+">公開されており</a>、以下は論文からの表です。詳細については、論文をご覧ください。"
 
 #: template/faq.html.j2:392
 msgid "What is the difference between GNS and CoDoNS?"
