@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-23 04:56+0000\n"
-"Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
+"PO-Revision-Date: 2021-03-26 12:18+0000\n"
+"Last-Translator: Francesca Giusti <francescag1194@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
 "Language: it\n"
@@ -1133,7 +1133,7 @@ msgstr ""
 
 #: template/faq.html.j2:99
 msgid "How does GNUnet compare to Tor?"
-msgstr ""
+msgstr "Qual é la differenza tra GNUnet e Tor?"
 
 #: template/faq.html.j2:101
 msgid ""
@@ -1145,7 +1145,7 @@ msgstr ""
 
 #: template/faq.html.j2:111
 msgid "How does GNUnet compare to I2P?"
-msgstr ""
+msgstr "Qual é la differenza tra GNUnet e I2P?"
 
 #: template/faq.html.j2:113
 msgid ""
@@ -1158,7 +1158,7 @@ msgstr ""
 
 #: template/faq.html.j2:124
 msgid "Is GNUnet ready for use on production systems?"
-msgstr ""
+msgstr "GNUnet è pronto per essere usato su sistemi di produzione?"
 
 #: template/faq.html.j2:126
 msgid ""
@@ -1171,7 +1171,7 @@ msgstr ""
 
 #: template/faq.html.j2:136
 msgid "Is GNUnet build using distributed ledger technologies?"
-msgstr ""
+msgstr "Si stanno usando tecnologie di registro per creare GNUnet?"
 
 #: template/faq.html.j2:138
 msgid ""
@@ -1179,6 +1179,9 @@ msgid ""
 "distributed, and privacy-preserving applications. While a ledger could be "
 "built using GNUnet, we currently have no plans in doing so."
 msgstr ""
+"A: No. GNUnet è un nuovo protocollo di rete per creare applicazioni sicure, "
+"distribuite e che preservino la privacy. Anche se si potesse creare un "
+"registro usando GNUnet, attualmente non abbiamo in mente di farlo."
 
 #: template/faq.html.j2:151
 msgid "What can I do with GNUnet?"
@@ -1200,17 +1203,19 @@ msgstr ""
 
 #: template/faq.html.j2:171
 msgid "Is it possible to surf the WWW anonymously with GNUnet?"
-msgstr ""
+msgstr "Si può navigare in incognito con GNUnet?"
 
 #: template/faq.html.j2:173
 msgid ""
 "A: It is not possible use GNUnet for anonymous browsing at this point. We "
 "recommend that you use Tor for anonymous surfing."
 msgstr ""
+"A: Non è possibile usare GNUnet per la navigazione in incognito ancora. Ti "
+"consigliamo di utilizzare Tor per questo scopo."
 
 #: template/faq.html.j2:181
 msgid "Is it possible to access GNUnet via a browser as an anonymous WWW?"
-msgstr ""
+msgstr "Si può accedere a GNUnet tramite una navigazione in incognito?"
 
 #: template/faq.html.j2:183
 msgid ""
@@ -1219,6 +1224,11 @@ msgid ""
 "proxy and all one needs to know is the protocol used between browser and "
 "proxy and a swift look at the GNUnet code for file-sharing."
 msgstr ""
+"A: Attualmente non c'è un proxy (come fproxy di Freenet) per GNUnet che "
+"potrebbe permettervi l'accesso con un browser. E' possibile creare un proxy "
+"così e tutto ciò di cui si ha bisogno è sapere il protocollo utilizzato tra "
+"il navigatore e il proxy, così come fare una revisione rapida del codice su "
+"GNUnet per lo scambio di dati."
 
 #: template/faq.html.j2:195
 msgid ""
