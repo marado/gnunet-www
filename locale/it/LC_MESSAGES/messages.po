@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-26 17:01+0000\n"
-"Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
+"PO-Revision-Date: 2021-03-27 19:45+0000\n"
+"Last-Translator: Francesca Giusti <francescag1194@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
 "Language: it\n"
@@ -1292,10 +1292,17 @@ msgid ""
 "NetBSD, OpenBSD and Solaris. However, not all of those reports are recent, "
 "so if you cannot get GNUnet to work on those systems please let us know."
 msgstr ""
+"A: GNUnet è stato sviluppato e testato dapprima su Debian GNU/Linux. "
+"Inoltre, costruiamo e testiamo regolarmente GNUnet su Fedora, Ubuntu, Arch, "
+"FreeBSD e macOS. Abbiamo rapporti di versioni funzionanti su molte altre "
+"distribuzioni GNU/Linux; in passato abbiamo ricevuto rapporti di versioni "
+"funzionanti su NetBDS, OpenBDS e Solaris. Ad ogni modo, non tutti questi "
+"rapporti sono recenti, perciò se non riesci a fare funzionare GNUnet su "
+"questi sistemi per piacere facci sapere."
 
 #: template/faq.html.j2:228
 msgid "Who runs the GNS root zone?"
-msgstr ""
+msgstr "Chi amministra la zona radicale GNS?"
 
 #: template/faq.html.j2:230
 msgid ""
@@ -1305,10 +1312,17 @@ msgid ""
 "modify this configuration at will. We expect normal users to have no need to "
 "edit their own GNS zone(s) unless they host services themselves."
 msgstr ""
+"R: La risposta breve è: tu. La risposta complessa è che GNUnet invierà una "
+"configurazione predeterminata di domini di livello superiore. L'autorità di "
+"questa configurazione di default non è stata ancora stabilita. In ogni caso, "
+"l'utente sarà in grado di modificare questa configurazione come desidera. "
+"Normalmente ci aspettiamo che utenti normali non abbiano la necessità di "
+"modificare la loro zona o zone GNS a meno che non offrano essi stessi dei "
+"servizi."
 
 #: template/faq.html.j2:241
 msgid "Where is the per-user GNS database kept?"
-msgstr ""
+msgstr "Dove è salvato il database di ogni utente GNS?"
 
 #: template/faq.html.j2:243
 msgid ""
@@ -1324,7 +1338,7 @@ msgstr ""
 
 #: template/faq.html.j2:258
 msgid "What is the expected average size of a GNS namestore database?"
-msgstr ""
+msgstr "Qual è la grandezza media di un database di nomi GNS?"
 
 #: template/faq.html.j2:260
 msgid ""
@@ -1333,10 +1347,15 @@ msgid ""
 "will only grow to a few tens of thousands of entries, small enough to fit "
 "even on mobile devices."
 msgstr ""
+"R: Abbastanza piccolo. Basandoci sul nostro studio degli utenti , in cui "
+"abbiamo analizzato la cronologia di navigazione e il numero di domini "
+"visitati, ci aspettiamo che i database di GNS cresceranno solo di poche "
+"decine di migliaia di entrate, abbastanza piccolo da andare bene anche per i "
+"dispositivi mobili."
 
 #: template/faq.html.j2:270
 msgid "Is GNS resistant to the attacks on DNS used by the US?"
-msgstr ""
+msgstr "GNS è resistente agli attacchi sul DNS dagli Stati Uniti?"
 
 #: template/faq.html.j2:272
 msgid ""
@@ -1349,6 +1368,15 @@ msgid ""
 "unavailable for enforcement, the respective zone cannot be changed and any "
 "other zone delegating to this zone will achieve proper resolution."
 msgstr ""
+"R: Pensiamo di sì, e non ci sarebbe alcun motivo per cui un governo dovrebbe "
+"obbligare a modificare la mappatura di un nome, eccetto per ogni utente "
+"individuale (e quindi il cambiamento sarebbe applicato solo ai nomi per cui "
+"questo utente ha autorità). Perciò se ognuno usasse GNS, l'unico attacco "
+"pratico di un governo sarebbe quello di forzare l'operatore di un server a "
+"cambiare i registri GNS per farli direzionare altrove. Ad ogni modo, se il "
+"proprietario di una chiave privata per una zona non è disponibile per "
+"rinforzo, la rispettiva zona non potrà essere cambiata e ogni altra zona "
+"delegata a questa conquisterà la propria risoluzione."
 
 #: template/faq.html.j2:286
 msgid "How does GNS compare to other name systems"
@@ -1360,10 +1388,14 @@ msgid ""
 "ns2018.pdf\">has been published </a> and below is a table from the "
 "publication. For detailed descriptions please refer to the paper."
 msgstr ""
+"R: Un documento scientifico riguardo questo argomento <a href=\"https"
+"://grothoff.org/christian/ns2018.pdf\"> è stato pubblicato </a> e più avanti "
+"c'è una tabella di questa pubblicazione. Per descrizioni più dettagliate per "
+"piacere fare riferimento al documento."
 
 #: template/faq.html.j2:392
 msgid "What is the difference between GNS and CoDoNS?"
-msgstr ""
+msgstr "Qual è la differenza tra GNS e CoDoNS?"
 
 #: template/faq.html.j2:394
 msgid ""
@@ -1376,10 +1408,18 @@ msgid ""
 "(to keep names short and enable migration) which don't even make sense in "
 "the context of CoDoNS."
 msgstr ""
+"R: CoDoNS decentralizza il database DNS (usando un DHT) ma preserva la "
+"struttura autoritaria di un DNS. Con CoDoNS, IANA/ICANN sono ancora sotto "
+"controllo, e ci sono anche processi che determinano chi possiede un nome. "
+"<br><br> Con GNS, noi decentralizziamo il database e la responsabilità di "
+"nominare: ogni utente amministra la propria zona radicale e questo è in "
+"completo controllo dei nomi che usa. GNS ha anche molte qualità addizionali ("
+"mantenere i nomi brevi e abilitare migrazioni) le quali non hanno alcun tipo "
+"di senso nel contesto di CoDoNS."
 
 #: template/faq.html.j2:410
 msgid "What is the difference between GNS and SocialDNS?"
-msgstr ""
+msgstr "Qual è la differenza tra GNS e SocialDNS?"
 
 #: template/faq.html.j2:412
 msgid ""
@@ -1390,10 +1430,17 @@ msgid ""
 "delegation, and thus mappings will only change if the user responsible for "
 "the name (the authority) manually changes the record."
 msgstr ""
+"R: Come GNS, SocialDNS permette a ogni utente di creare mappature DNS. Ad "
+"ogni modo, con SocialDNS le mappature sono condivise tramite social network "
+"e sono soggette a gerarchia. Così come le relazioni sociali evolvono, i nomi "
+"possono cambiare in maniera sorprendente. <br><br> Con GNS, i nomi sono "
+"dapprima condivisi tramite delega, e in seguito la mappatura cambierà solo "
+"se l'utente responsabile per il nome (l'autorità) modificherà manualmente il "
+"registro."
 
 #: template/faq.html.j2:426
 msgid "What is the difference between GNS and ODDNS?"
-msgstr ""
+msgstr "Qual è la differenza tra GNS e ODDNS?"
 
 #: template/faq.html.j2:428
 msgid ""
@@ -1403,6 +1450,11 @@ msgid ""
 "domains (like \"gnu.org\") and the IP addresses of the respective name "
 "servers. Resolution will fail if the target name servers change IPs."
 msgstr ""
+"R: ODDNS è stata primariamente ideata per bypassare la zona radicale DNS e i "
+"registri TLD (come quelli \".com\" e \".org\"). Invece di usare quelli, ci "
+"si aspetta che ogni utente mantenga un database di domini (di secondo "
+"livello, come \"gnu.org\") e gli indirizzi IP dei rispettivi nomi dei "
+"server. La risoluzione fallirà se i server dei nomi cambiano IP."
 
 #: template/faq.html.j2:439
 msgid "What is the difference between GNS and Handshake?"
