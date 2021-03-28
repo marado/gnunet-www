@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-28 11:16+0000\n"
-"Last-Translator: Stefan <eintritt@hotmail.com>\n"
+"PO-Revision-Date: 2021-03-28 20:40+0000\n"
+"Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
 "\n"
 "Language: de\n"
@@ -406,14 +406,13 @@ msgid "Current funding"
 msgstr "Aktuelle Finanzierung"
 
 #: template/about.html.j2:110
-#, fuzzy
 msgid ""
 "We're receiving funding from NLnet's Next Generation Internet funding line "
 "to document and implement the GNU Name System protocol in a way suitable for "
 "the IETF standardization process."
 msgstr ""
 "Wir erhalten Mittel von der Internet-Finanzierungslinie Next Generation von "
-"NLnet, um das GNU Name System-Protokoll auf eine Weise zu dokumentieren und "
+"NLnet, um das GNU Namenssystem-Protokoll auf eine Weise zu dokumentieren und "
 "zu implementieren, die für den IETF-Standardisierungsprozess geeignet ist."
 
 #: template/about.html.j2:123
@@ -517,26 +516,22 @@ msgstr ""
 "Anonymität treffen."
 
 #: template/applications.html.j2:73
-#, fuzzy
-#| msgid "Motivation"
 msgid "Conversation (Pre-Alpha)"
-msgstr "Gespräch (Pre-Alpha)"
+msgstr "Gespräch (Prä-Alpha)"
 
 #: template/applications.html.j2:75
-#, fuzzy
 msgid ""
 "GNUnet conversation is an application that provides secure voice "
 "communication in a fully decentralized way by employing GNUnet for routing "
 "and transport."
 msgstr ""
-"GNUnet Conversation ist eine Anwendung, die eine sichere Sprachkommunikation "
+"GNUnet conversation ist eine Anwendung, die eine sichere Sprachkommunikation "
 "auf vollständig dezentrale Weise bietet, indem GNUnet für Routing und "
 "Transport verwendet wird."
 
 #: template/applications.html.j2:91
-#, fuzzy
 msgid "Applications utilizing GNUnet"
-msgstr "Anwendungen mit GNUnet"
+msgstr "Anwendungen auf Basis von GNUnet"
 
 #: template/applications.html.j2:97
 #, fuzzy
@@ -666,15 +661,12 @@ msgstr ""
 "\">GNU</a>Paket und wird stets freie Software bleiben."
 
 #: template/architecture.html.j2:52
-#, fuzzy
-#| msgid "System Architecture"
 msgid "System architecture"
-msgstr "Systemaufbau"
+msgstr "Systemarchitektur"
 
 #: template/architecture.html.j2:58
-#, fuzzy
 msgid "Subsystems"
-msgstr "Teilsysteme"
+msgstr "Subsysteme"
 
 #: template/architecture.html.j2:67
 msgid "libgnunetutil"
@@ -842,6 +834,10 @@ msgid ""
 "gnunet-developers\">http://lists.gnu.org/mailman/listinfo/gnunet-developers</"
 "a>."
 msgstr ""
+"Wir haben eine Mailingliste für Diskussionen unter Entwicklern. Du kannst "
+"das Listenarchiv abonnieren und lesen auf<a href=\"http://lists.gnu.org/"
+"mailman/listinfo/gnunet-developers\">http://lists.gnu.org/mailman/listinfo/"
+"gnunet-developers</a>."
 
 #: template/developers.html.j2:47
 msgid "Regression Testing"
@@ -853,6 +849,10 @@ msgid ""
 "detect regressions and check for portability at <a href=\"https://old.gnunet."
 "org/buildbot/gnunet/\">https://old.gnunet.org/buildbot/gnunet/</a>."
 msgstr ""
+"Wir haben <a href=\"https://buildbot.net/\">Buildbot-</a> "
+"Automatisierungstests, um Regressionen zu erkennen und "
+"Portabilitätsüberprüfungen unter <a href=\"https://old.gnunet.org/buildbot/"
+"gnunet/\">https://old.gnunet.org/buildbot/gnunet/ zu</a> durchzuführen."
 
 #: template/developers.html.j2:59
 msgid "Code Coverage Analysis"
@@ -864,6 +864,10 @@ msgid ""
 "analyze the code coverage of our tests, the results are available at <a href="
 "\"https://old.gnunet.org/coverage/\">https://old.gnunet.org/coverage/</a>."
 msgstr ""
+"Wir verwenden <a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</"
+"a> , um die Codeabdeckung unserer Tests zu analysieren. Die Ergebnisse sind "
+"unter <a href=\"https://old.gnunet.org/coverage/\">https://old.gnunet.org/"
+"coverage/</a> abrufbar."
 
 #: template/developers.html.j2:72
 msgid "Performance Analysis"
@@ -875,24 +879,31 @@ msgid ""
 "regression analysis of the exchange backend at <a href=\"https://old.gnunet."
 "org/gauger/\">https://old.gnunet.org/gauger/</a>."
 msgstr ""
+"Wir verwenden <a href=\"https://old.gnunet.org/gauger\">Gauger</a> für die "
+"Regressionsanalyse der Leistung des Exchange-Backends unter <a href=\"https"
+"://old.gnunet.org/gauger/\">https://old.gnunet.org/gauger/</a> ."
 
 #: template/download.html.j2:7 template/gnurl.html.j2:209
 msgid "Downloads"
 msgstr "Herunterladen"
 
 #: template/download.html.j2:11
+#, fuzzy
 msgid ""
 "Here you can download releases of our software and find links to the various "
 "versions."
 msgstr ""
+"Hier können Sie Releases unserer Software herunterladen und Links zu den "
+"verschiedenen Versionen finden."
 
 #: template/download.html.j2:17
+#, fuzzy
 msgid "0.11.x series"
-msgstr ""
+msgstr "0.11.x Serie"
 
 #: template/download.html.j2:18
 msgid "tarball"
-msgstr ""
+msgstr "Tarball"
 
 #: template/download.html.j2:20
 msgid ""
@@ -902,12 +913,15 @@ msgstr ""
 
 #: template/download.html.j2:30
 msgid "git"
-msgstr ""
+msgstr "Git"
 
 #: template/download.html.j2:32
+#, fuzzy
 msgid ""
 "You can fetch the git tag of version 0.11.x from our development server:"
 msgstr ""
+"Sie können das Git-Tag der Version 0.11.x von unserem Entwicklungsserver "
+"abrufen:"
 
 #: template/engage.html.j2:6
 #, fuzzy
@@ -930,6 +944,11 @@ msgid ""
 "law to support GNUnet development. The Amtsgericht M&uuml;nchen registered "
 "the association on the 7th of March under VR 205287."
 msgstr ""
+"Am 27. Dezember 2013 traf sich eine Gruppe von GNUnet-Hackern bei 30c3, um "
+"den \"Verein zur Förderung von GNUnet e.V.\" zu gründen. Es handelt sich "
+"hierbei um einen Verein nach deutschem Recht zur Unterstützung der GNUnet-"
+"Entwicklung. Die Eintragung im Vereinsregister beim Amtsgericht München "
+"erfolgte am 7. März unter VR 205287."
 
 #: template/ev.html.j2:22
 msgid ""
@@ -937,6 +956,10 @@ msgid ""
 "and education in the area of secure decentralized networking in general, and "
 "GNUnet specifically. This is the official website for the association."
 msgstr ""
+"Der Verein widmet sich offiziell der Unterstützung von Forschung, "
+"Entwicklung und Bildung im Bereich der sicheren dezentralen Vernetzung im "
+"Allgemeinen und von GNUnet im Besonderen. Dies ist die offizielle Webseite "
+"des Vereins."
 
 #: template/ev.html.j2:31
 msgid "Becoming a Member of GNUnet e.V."
@@ -954,6 +977,16 @@ msgid ""
 "git/\">Satzung</a> (currently only available in German, translations "
 "welcome)."
 msgstr ""
+"GNUnet-Entwickler mit Git-Zugriff (Schreibzugriff) können Mitglieder werden, "
+"um am Entscheidungsprozess teilzunehmen und GNUnet e.V. offiziell zu "
+"unterstützen. Das einzige was du hierfür tun mußt ist, die Datei <tt>members."
+"txt</tt> im <a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</"
+"a>Speicher mit deinem Namen zu ergänzen. Es gibt keine Mitgliedsbeiträge; "
+"allerdings sind Mitglieder verpflichtet, GNUnet e.V. zu unterstützen und "
+"insbesondere im Rahmen ihrer Möglichkeiten zu dessen technischer Entwicklung "
+"beizutragen. Für weitere Einzelheiten verweisen wir auf die <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (zur Zeit nur auf Deutsch "
+"erhältlich, Übersetzungen sind willkommen)."
 
 #: template/ev.html.j2:52
 msgid "Governance"
@@ -969,6 +1002,14 @@ msgid ""
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
 "\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
 msgstr ""
+"Du findest unsere Satzung und das Mitgliederverzeichnis unter <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet.org/"
+"gnunet-ev.git/tree/satzung.tex</a>. Der Vorstand besteht gegenwärtig aus: "
+"<dl><dt>Vorsitz</dt>.<dd>.<a href=\"https://schanzen.eu\">Martin "
+"Schanzenbach</a></dd>.<dt>stellvertretender "
+"Vorsitz</dt>.<dd>t3sserakt</dd>.<dt>Kassenwart</dt>.<dd>Florian "
+"Dold</dd>.<dt>Beisitzer</dt>.<dd>.<a href=\"https://grothoff.org/christian/\""
+">Christian Grothoff</a>, ch3 </dd>.</dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
@@ -990,32 +1031,44 @@ msgid ""
 "<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
 "<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
 msgstr ""
+"Jeder ist herzlich eingeladen, uns durch Spenden zu unterstützen. Europäer "
+"können finanzielle Zuwendungen via SEPA durchführen. Wir hoffen Konten in "
+"anderen großen Währungsgebieten zukünftig einzurichten. Du kannst auch "
+"mittels Bitcoin spenden; die Routinganweisungen stehen unten. Wir bitten um "
+"Beachtung, daß es uns nicht möglich, ist Spendenbescheinigungen "
+"auszustellen. Falls du daran denkst einen größeren Betrag zu spenden, so "
+"bitte setze dich vorher mit uns in Verbindung. Eventuell bietet sich in dem "
+"Fall eine individuelle Lösung an. "
+"<dl><dt>BitCoin</dt>.<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd>.<dt>SEPA/"
+"IBAN<dt>.<dd>DE67830654080004822650 (BIC/SWIFT:GENODEF1SLR)</dd>.</dl>"
 
 #: template/faq.html.j2:12 template/faq.html.j2:23
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: template/faq.html.j2:13 template/faq.html.j2:149 template/gns.html.j2:37
 msgid "Features"
-msgstr ""
+msgstr "Merkmale"
 
 #: template/faq.html.j2:15 template/faq.html.j2:695
+#, fuzzy
 msgid "Error messages"
-msgstr ""
+msgstr "Fehlermeldungen"
 
 #: template/faq.html.j2:16 template/faq.html.j2:797
 #, fuzzy
 #| msgid "Motivation"
 msgid "File-sharing"
-msgstr "Motivation"
+msgstr "File-Sharing"
 
 #: template/faq.html.j2:17 template/faq.html.j2:973
 msgid "Contributing"
-msgstr ""
+msgstr "Beitragend"
 
 #: template/faq.html.j2:26
+#, fuzzy
 msgid "What do I do if my question is not answered here?"
-msgstr ""
+msgstr "Was mache ich, wenn meine Frage hier nicht beantwortet wird?"
 
 #: template/faq.html.j2:28
 msgid ""
