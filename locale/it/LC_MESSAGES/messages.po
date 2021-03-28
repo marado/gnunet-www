@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-28 11:16+0000\n"
+"PO-Revision-Date: 2021-03-28 15:56+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
@@ -1339,6 +1339,15 @@ msgid ""
 "which various replication options are again applicable. Ultimately, there "
 "are many options for how users can store (and secure) their GNS database."
 msgstr ""
+"R: In sintesi, il database viene memorizzato nel peer GNUnet dell'utente. Un "
+"utente potrebbe utilizzare numerosi peer GNUnet, e in tal caso il database "
+"potrebbe essere memorizzato in ogni peer (non disponiamo però di codici per "
+"un'apposita duplicazione). Allo stesso modo, diversi peer GNUnet possono "
+"condividere un'istanza del database; è possibile accedere allo &quot;gnunet-"
+"service-namestore&quot; da remoto (via TCP). I dati effettivi possono essere "
+"archiviati in un database Postgres, per il quale sono possibili diverse "
+"opzioni di duplicazione. Infine, gli utenti hanno a disposizione molte "
+"opzioni per archiviare e proteggere il loro database GNS."
 
 #: template/faq.html.j2:258
 msgid "What is the expected average size of a GNS namestore database?"
@@ -1384,7 +1393,7 @@ msgstr ""
 
 #: template/faq.html.j2:286
 msgid "How does GNS compare to other name systems"
-msgstr ""
+msgstr "Qual è la differenza tra GNS e altri sistemi di nomi di dominio?"
 
 #: template/faq.html.j2:288
 msgid ""
@@ -1462,7 +1471,7 @@ msgstr ""
 
 #: template/faq.html.j2:439
 msgid "What is the difference between GNS and Handshake?"
-msgstr ""
+msgstr "Qual è la differenza tra GNS e Handshake?"
 
 #: template/faq.html.j2:441
 msgid ""
@@ -1473,10 +1482,16 @@ msgid ""
 "additional supporting GNS root zone governance model but we currently do not "
 "have such plans in mind."
 msgstr ""
+"R: Handshake è un metodo per la governance della zona radice basato su "
+"blockchain. Quindi non si occupa del processo della risoluzione dei nomi in "
+"sé, ma la delega al DNS dopo la risoluzione TLD iniziale. Se non prendessimo "
+"in considerazione gli aspetti legati alla sostenibilità, handshake potrebbe "
+"essere usato come un supporto aggiuntivo al modello di governance della zona "
+"radice GNS; attualmente, però, questo utilizzo non rientra nei nostri piani."
 
 #: template/faq.html.j2:453
 msgid "What is the difference between GNS and TrickleDNS?"
-msgstr ""
+msgstr "Qual è la differenza tra GNS e TrickleDNS?"
 
 #: template/faq.html.j2:455
 msgid ""
@@ -1489,6 +1504,14 @@ msgid ""
 "distribution of authoritative records, and authority remains derived from "
 "the DNS hierarchy."
 msgstr ""
+"R: TrickleDNS invia i record DNS (&quot;critici&quot;) ai resolver DNS dei "
+"domini disponibili per fornire &quot;una maggior disponibilità, un tempo di "
+"risoluzione delle query inferiore e una diffusione degli aggiornamenti più "
+"veloce&quot;. Quindi TrickleDNS contrasta gli attacchi che colpiscono la "
+"disponibilità (e le prestazioni) della diffusione dei record nel DNS, ad "
+"esempio tramite attacchi DDoS sui server radice DNS. TrickleDNS si occupa di "
+"garantire la distribuzione dei record autorevoli, e l'autorevolezza deriva "
+"comunque dalla gerarchia DNS."
 
 #: template/faq.html.j2:468
 msgid ""
@@ -1514,6 +1537,8 @@ msgid ""
 "How can a legitimate domain owner tell other people to not use his name in "
 "GNS?"
 msgstr ""
+"In che modo il legittimo proprietario di un dominio può dire ad altri di non "
+"usare il suo nome in GNS?"
 
 #: template/faq.html.j2:487
 msgid ""
@@ -1523,12 +1548,20 @@ msgid ""
 "to ignore this preference and use a name of their choice (or even assign no "
 "name) for this user."
 msgstr ""
+"R: Su GNS i nomi non hanno proprietari, quindi non ci possono essere dei "
+"proprietari di dominio &quot;legittimi&quot;. Qualsiasi utente può "
+"rivendicare qualsiasi nome (come suo nome preferito o &quot;pseudonimo&quot;)"
+" nel suo registro NICK. Allo stesso modo, tutti gli altri utenti possono "
+"decidere di ignorare questa preferenza e impostare un nome a loro scelta per "
+"questo utente (o, addirittura, non assegnare alcun nome)."
 
 #: template/faq.html.j2:498
 msgid ""
 "Did you consider the privacy implications of making your personal GNS zone "
 "visible?"
 msgstr ""
+"Avete considerato quali conseguenze ha sulla privacy rendere l'area "
+"personale GNS visibile?"
 
 #: template/faq.html.j2:500
 msgid ""
