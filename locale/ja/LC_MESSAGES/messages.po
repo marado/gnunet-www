@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-24 13:31+0000\n"
+"PO-Revision-Date: 2021-03-31 14:34+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
 ">\n"
@@ -1326,7 +1326,7 @@ msgstr ""
 
 #: template/faq.html.j2:392
 msgid "What is the difference between GNS and CoDoNS?"
-msgstr ""
+msgstr "GNS と CoDoNS の違いは何ですか？"
 
 #: template/faq.html.j2:394
 msgid ""
@@ -1339,10 +1339,14 @@ msgid ""
 "(to keep names short and enable migration) which don't even make sense in "
 "the context of CoDoNS."
 msgstr ""
+"回答：CoDoNS は DHT を使用して DNS データベースを分散しますが、DNS の権限構造を保持しています。CoDoNS は IANA/"
+"ICANN で管理され、ドメイン名の所有者を決定するレジストラが存在します。<br><br>一方で GNS は、データベースを分散化するとともに命名につい"
+"ても中央管理はせずに分散化させています。つまり、各ユーザーが自らのルートゾーンを管理するため、使用するドメイン名を完全に制御することになります。GNU "
+"には CoDoNS では必要のない追加機能も豊富にあります（名前を短くし移行を実施するため）。"
 
 #: template/faq.html.j2:410
 msgid "What is the difference between GNS and SocialDNS?"
-msgstr ""
+msgstr "GNS と SocialDNS の違いは何ですか？"
 
 #: template/faq.html.j2:412
 msgid ""
@@ -1353,10 +1357,14 @@ msgid ""
 "delegation, and thus mappings will only change if the user responsible for "
 "the name (the authority) manually changes the record."
 msgstr ""
+"回答：GNS と同様、SocialDNS では各ユーザーが DNS マッピングを作成できます。しかし、SocialDNS "
+"ではマッピングがソーシャルネットワークで共有されてランキング対象となるため、関連が複雑化するにつれ、名前が予期せず変更されることがあり得ます。"
+"<br><br>一方 GNS "
+"では、名前の共有は主に移譲によって実施されるため、マッピングは名前の責任者（権限のあるユーザー）が手動で記録を変更した場合にのみ変更されます。"
 
 #: template/faq.html.j2:426
 msgid "What is the difference between GNS and ODDNS?"
-msgstr ""
+msgstr "GNS と ODDNS の違いは何ですか？"
 
 #: template/faq.html.j2:428
 msgid ""
@@ -1366,10 +1374,13 @@ msgid ""
 "domains (like \"gnu.org\") and the IP addresses of the respective name "
 "servers. Resolution will fail if the target name servers change IPs."
 msgstr ""
+"回答：ODDNS は主に DNS ルート ゾーンと TLD レジストリ（「.com」や「."
+"org」など）をバイパスするように設計されています。これらを使わず、各ユーザーは（セカンドレベル）ドメインのデータベース（「gnu.org」など）と、"
+"該当するネームサーバーの IP アドレスを保持することが求められます。ターゲットのネームサーバーが IP を変更すると名前解決は失敗します。"
 
 #: template/faq.html.j2:439
 msgid "What is the difference between GNS and Handshake?"
-msgstr ""
+msgstr "GNS とハンドシェイクの違いは何ですか?？"
 
 #: template/faq.html.j2:441
 msgid ""
@@ -1380,10 +1391,13 @@ msgid ""
 "additional supporting GNS root zone governance model but we currently do not "
 "have such plans in mind."
 msgstr ""
+"回答：ハンドシェイクは、ブロックチェーンベースのルートゾーンガバナンスのための手法です。そのため、名前解決プロセス自体には対処せず、最初の TLD "
+"の名前解決後、DNS に名前解決を委任します。ハンドシェイクでは持続性が考慮されていないため、GNS ルートゾーン "
+"ガバナンスモデルの追加サポートとして利用できますが、現時点でその予定はありません。"
 
 #: template/faq.html.j2:453
 msgid "What is the difference between GNS and TrickleDNS?"
-msgstr ""
+msgstr "GNS と TrickleDNS の違いは何ですか？"
 
 #: template/faq.html.j2:455
 msgid ""
@@ -1396,6 +1410,11 @@ msgid ""
 "distribution of authoritative records, and authority remains derived from "
 "the DNS hierarchy."
 msgstr ""
+"回答：TrickleDNS は、参加ドメインの DNS リゾルバー間で（&quot;クリティカルな&quot;）DNS "
+"レコードをプッシュし、&quot;可用性の向上、クエリ解決時間の短縮、更新のプロパゲーション高速化&quot;を実現します。そのため "
+"TrickleDNS は、例えば DNS ルートサーバーへの DDoS 攻撃など、DNS "
+"におけるレコードプロパゲーションの可用性（およびパフォーマンス）に対する攻撃への対処に主軸をおきます。TrickleDNS "
+"は確実に信頼できるレコードを分配する方法を考慮し、権限はこれまで通り DNS 階層に起因しています。"
 
 #: template/faq.html.j2:468
 msgid ""
