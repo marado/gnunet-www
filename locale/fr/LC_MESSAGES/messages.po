@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-28 20:40+0000\n"
-"Last-Translator: Axelle Dimpre <axelle.dimpre@gmail.com>\n"
+"PO-Revision-Date: 2021-03-31 14:34+0000\n"
+"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
 "Language: fr\n"
@@ -204,7 +204,6 @@ msgstr ""
 "protocole basique, jusqu'à la création d'un internet GNU."
 
 #: template/about.html.j2:23
-#, fuzzy
 msgid ""
 "Today, the actual use and thus the social requirements for a global network "
 "differs widely from those goals of 1970. While the Internet remains suitable "
@@ -215,12 +214,11 @@ msgstr ""
 "Aujourd'hui, le véritable usage et donc les exigences sociales d'un réseau "
 "mondial sont largement différentes de celles visées en 1970. Alors que "
 "l'Internet reste convenable pour un usage militaire, là où l'équipement de "
-"de réseau fonctionne grâce à une hiérarchie du commandement et est isolé du "
+"réseau fonctionne grâce à une hiérarchie du commandement et est isolé du "
 "reste du monde lorsque c'est nécessaire, la situation se prête moins à "
 "l'usage de la société civile."
 
 #: template/about.html.j2:32
-#, fuzzy
 msgid ""
 "Due to fundamental Internet design choices, Internet traffic can be "
 "misdirected, intercepted, censored and manipulated by hostile routers on the "
@@ -237,7 +235,6 @@ msgstr ""
 " réseau est malveillant\"</a>."
 
 #: template/about.html.j2:41
-#, fuzzy
 msgid ""
 "We believe liberal societies need a network architecture that uses the anti-"
 "authoritarian decentralized peer-to-peer paradigm and privacy-preserving "
@@ -251,7 +248,6 @@ msgstr ""
 "sous la forme d'un Logiciel Libre."
 
 #: template/about.html.j2:49
-#, fuzzy
 msgid ""
 "Specifically, GNUnet tries to follow the following design principles, in "
 "order of importance:"
@@ -260,16 +256,14 @@ msgstr ""
 "conception suivant, par ordre d'importance :"
 
 #: template/about.html.j2:56
-#, fuzzy
 msgid ""
 "GNUnet must be implemented as <a href=\"https://www.gnu.org/philosophy/free-"
 "sw.html\">Free Software</a>."
 msgstr ""
-"GNUnet doit être concrétisé sous forme de <a href=\"https://www.gnu.org/"
+"GNUnet doit être éxecuté sous forme de <a href=\"https://www.gnu.org/"
 "philosophy/free-sw.html\">Logiciel Libre</a>."
 
 #: template/about.html.j2:60
-#, fuzzy
 msgid ""
 "GNUnet must minimize the amount of personally identifiable information "
 "exposed."
@@ -278,7 +272,6 @@ msgstr ""
 "identifiable."
 
 #: template/about.html.j2:61
-#, fuzzy
 msgid ""
 "GNUnet must be fully distributed and resilient to external attacks and rogue "
 "participants."
@@ -287,7 +280,6 @@ msgstr ""
 "escroqueries."
 
 #: template/about.html.j2:62
-#, fuzzy
 msgid ""
 "GNUnet must be self-organizing and not depend on administrators or "
 "centralized infrastructure."
@@ -296,7 +288,6 @@ msgstr ""
 "infrastructure centralisée."
 
 #: template/about.html.j2:63
-#, fuzzy
 msgid ""
 "GNUnet must inform the user which other participants have to be trusted when "
 "establishing private communications."
@@ -305,13 +296,11 @@ msgstr ""
 "autres participants à son utilisateur."
 
 #: template/about.html.j2:64
-#, fuzzy
 msgid "GNUnet must be open and permit new peers to join."
 msgstr ""
-"GNUnet doit rester ouvert et laisser de nouveaux pairs rejoindre son réseaux."
+"GNUnet doit rester ouvert et laisser de nouveaux pairs rejoindre son réseau."
 
 #: template/about.html.j2:65
-#, fuzzy
 msgid "GNUnet must support a diverse range of applications and devices."
 msgstr "GNUnet doit supporter un large éventail d'applications et d'appareils."
 
@@ -322,12 +311,10 @@ msgstr ""
 "sensibles."
 
 #: template/about.html.j2:67
-#, fuzzy
 msgid "The GNUnet architecture must be resource efficient."
 msgstr "L'architecture de GNUnet doit avoir recourt à des ressources efficaces."
 
 #: template/about.html.j2:68
-#, fuzzy
 msgid ""
 "GNUnet must provide incentives for peers to contribute more resources than "
 "they consume."
@@ -336,7 +323,6 @@ msgstr ""
 "n'en consument."
 
 #: template/about.html.j2:72
-#, fuzzy
 msgid ""
 "To get know and learn more, please check our <a href=\"https://docs.gnunet."
 "org/handbook/gnunet.html\">handbook</a>, especially the <a href=\"https://"
@@ -358,8 +344,8 @@ msgstr ""
 "Vous trouverez davantage d'informations dans notre <a href=\"https://docs."
 "gnunet.org/handbook/gnunet.html\">manuel</a>, en particulier dans le <a href="
 "\"https://docs.gnunet.org/handbook/gnunet.html#Key-Concepts\">chapitre sur "
-"les \"Concepts Clé\"</a>, qui explique les concepts fondamentaux de GNUnet : "
-"<ul> <li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#"
+"les \"Concepts Clés\"</a>, qui explique les concepts fondamentaux de GNUnet :"
+" <ul> <li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#"
 "Authentication\">Authentification</a></li> <li><a href=\"https://docs.gnunet."
 "org/handbook/gnunet.html#Accounting-to-Encourage-Resource-Sharing\""
 ">Comptabilité pour favoriser le partage des ressources</a></li> <li><a href="
@@ -374,7 +360,6 @@ msgstr ""
 "gnunet.org/handbook/gnunet.html#Egos\">Egos</a></li> </ul>"
 
 #: template/about.html.j2:88
-#, fuzzy
 msgid "More Resources"
 msgstr "Plus d'informations"
 
