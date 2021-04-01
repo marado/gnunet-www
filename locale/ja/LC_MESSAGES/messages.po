@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-03-31 14:34+0000\n"
+"PO-Revision-Date: 2021-04-03 06:06+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
 ">\n"
@@ -1420,7 +1420,7 @@ msgstr ""
 msgid ""
 "Does GNS require real-world introduction (secure PKEY exchange) in the style "
 "of the PGP web of trust?"
-msgstr ""
+msgstr "GNS は PGP Web の信用モデル（web of trust）による実導入（セキュア PKEY 交換）を必要としますか？"
 
 #: template/faq.html.j2:470
 msgid ""
@@ -1434,12 +1434,16 @@ msgid ""
 "depends entirely on the trustworthiness of the FCFS authority. The authority "
 "can be queried under the &quot;.pin&quot; TLD."
 msgstr ""
+"回答：セキュリティの観点から最初の時点で二者間に信頼パスが必要とされていますが、これが必要とされないアプリケーションでは、より脆弱なメカニズムも利用できま"
+"す。例えば、私たちは FCFS 権限を実装しており、どのユーザーでも任意の名前を登録できるようになっています。この権限の鍵は全ての GNUnet "
+"インストールに含まれるため、FCFS で登録された名前はいずれも事実上グローバルであり、周知のものとなります。ただし、これらの名前のセキュリティは完全に "
+"FCFS 権限の信頼性に依ることになります。権限は &quot;.pin&quot; TLD で照会できます。"
 
 #: template/faq.html.j2:485
 msgid ""
 "How can a legitimate domain owner tell other people to not use his name in "
 "GNS?"
-msgstr ""
+msgstr "正当なドメイン所有者が他者に GNS でその名前を使用しないよう伝えるにはどうすればよいですか？"
 
 #: template/faq.html.j2:487
 msgid ""
@@ -1449,12 +1453,15 @@ msgid ""
 "to ignore this preference and use a name of their choice (or even assign no "
 "name) for this user."
 msgstr ""
+"回答：GNS では名前に所有者はいないため、&quot;正当な&quot;ドメイン所有者は存在しません。NICK レコードには、どのユーザーがどの名前（好"
+"きな名前または&quot;偽名&quot;）を使っても構いません。同様に、他のユーザーもこれを無視し、このユーザーに対し好きな名前を使うことができます（ま"
+"たは名前を付けないことも可）。"
 
 #: template/faq.html.j2:498
 msgid ""
 "Did you consider the privacy implications of making your personal GNS zone "
 "visible?"
-msgstr ""
+msgstr "個人の GNS ゾーン表示についてプライバシーへの影響を考慮しましたか？"
 
 #: template/faq.html.j2:500
 msgid ""
@@ -1463,10 +1470,13 @@ msgid ""
 "Thus, users have full control over what information about their zones is "
 "made public."
 msgstr ""
+"回答：GNS "
+"の各レコードには&quot;プライベート&quot;フラグがあります。レコードは、このフラグが設定されていない場合のみ他のユーザーと共有されます（DHT "
+"またはゾーン転送により）。そのため、ゾーンのどの情報を開示するかについては、ユーザーが全て管理することができます。"
 
 #: template/faq.html.j2:510
 msgid "Are \"Legacy Host\" (LEHO) records not going to be obsolete with IPv6?"
-msgstr ""
+msgstr "「レガシーホスト」（LEHO）レコードは IPv6 で廃止されるのではありませんか？"
 
 #: template/faq.html.j2:512
 msgid ""
@@ -1479,12 +1489,17 @@ msgid ""
 "hosting would disappear. Finally, we don't want to have to wait for IPv6 to "
 "become commonplace, GNS should work with today's networks."
 msgstr ""
+"回答：この質問は次のことを仮定しています。（a）仮想ホスティングの唯一の必要性は IPv4 アドレスが不足しているため。（b）LEHO "
+"は仮想ホスティングの文脈でのみ有用。しかし、LEHO は X.509 "
+"証明書の検証にも有用です（証明書が検証されるべきレガシーのホスト名を指定するため）。また、IPv6 が完全に実装され、IP "
+"アドレスが&quot;無限に&quot;活用できたとしても、仮想ホスティングが無くなるとは言い切れません。最後に、IPv6 "
+"が一般的に利用できるようになるのを待つよりも、GNS は現行のネットワークで運用できるべきです。"
 
 #: template/faq.html.j2:526
 msgid ""
 "Why does GNS not use a trust metric or consensus to determine globally "
 "unique names?"
-msgstr ""
+msgstr "GNS がトラストメトリックまたはコンセンサスを使用してグローバルに一意の名前を決定しないのはなぜですか？"
 
 #: template/faq.html.j2:528
 msgid ""
@@ -1494,10 +1509,12 @@ msgid ""
 "of the resolution process was not acceptable. Furthermore, trust and "
 "consensus might be easy to manipulate by adversaries."
 msgstr ""
+"回答：トラストメトリックには、しきい値があるという根本的な問題があります。信頼関係が進化すると、マッピングがそれぞれのしきい値を超えるため、意味が変化しま"
+"す。結果として解決プロセスが予測不能となるのは受け入れられないと結論付けました。さらに、信頼とコンセンサスは、攻撃者により操作されやすい可能性もあります。"
 
 #: template/faq.html.j2:539
 msgid "How do you handle compromised zone keys in GNS?"
-msgstr ""
+msgstr "GNS では、侵害されたゾーンキーをどのように処理しますか？"
 
 #: template/faq.html.j2:541
 msgid ""
@@ -1508,10 +1525,13 @@ msgid ""
 "resolve. Peers always automatically check for the existence of a revocation "
 "message when resolving names."
 msgstr ""
+"回答：秘密鍵の所有者は失効メッセージを作成できます。その後、オーバーレイ ネットワーク全体に周知し、全てのピアで複製を作成することが可能です。公開鍵を利用"
+"する前に、ピアは鍵が失効しているかを確認します。失効ゾーンを経由して委任された名前は、いずれも解決できません。ピアは名前解決に際して、常に自動で失効メッセ"
+"ージの有無を確認しています。"
 
 #: template/faq.html.j2:553
 msgid "Could the signing algorithm of GNS be upgraded in the future?"
-msgstr ""
+msgstr "GNS の署名アルゴリズムは将来アップグレードできますか？"
 
 #: template/faq.html.j2:555
 msgid ""
@@ -1522,11 +1542,14 @@ msgid ""
 "existing system by using a new record type to indicate the use of a "
 "different cipher system."
 msgstr ""
+"回答：はい、できます。GNS を標準化する過程で、代替の委任レコードに対応できるようプロトコルをすでに変更しています。<br> <br>そのため、"
+"デプロイされた GNS 実装は、新しい署名スキームに対応できるよう更新する必要があります。新しいスキームはその後、新しいレコードタイプを使い異なる暗号シス"
+"テムの利用を示すことで、既存スキームと並行して実行することができます。"
 
 #: template/faq.html.j2:569
 msgid ""
 "How can a GNS zone maintain several name servers, e.g. for load balancing?"
-msgstr ""
+msgstr "GNS ゾーンは、例えば負荷分散などで、どのように複数のネーム サーバーを保守していますか？"
 
 #: template/faq.html.j2:571
 msgid ""
@@ -1538,12 +1561,15 @@ msgid ""
 "necessary, the owner of the zone can simply run multiple peers (and share "
 "the zone's key and database among them)."
 msgstr ""
+"回答：GNS レコードは R5N DHT に保存（および複製）されるため、そうしたことは必要ないと考えています。そのため、通常クライアントがルックアップを"
+"実行するたびに、権威サーバーは連絡を受けません。権威サーバーが（一時的に）オフラインになった場合であっても、DHT はレコードを一定期間キャッシュします。"
+"しかし、一つのゾーンに複数のサーバーがどうしても必要な場合、ゾーンの所有者は複数のピアを走らせることができます（ゾーンの鍵とデータベースを共有可能）。"
 
 #: template/faq.html.j2:584
 msgid ""
 "Why do you believe it is worth giving up unique names for censorship "
 "resistance?"
-msgstr ""
+msgstr "検閲への対処のため一意の名前を放棄する価値はありますか？"
 
 #: template/faq.html.j2:586
 msgid ""
@@ -1556,10 +1582,15 @@ msgid ""
 "unique names may very well be worth the cost. After all, what is a &quot;"
 "globally&quot; unique name worth, if it does not resolve?"
 msgstr ""
+"回答：GNU ネームシステムは、検閲から保護された DNS "
+"の代替手段を提供します。どのセキュリティメカニズムにも言えることですが、これには代償もあります（名前がグローバルに一意ではない点）。他の例として、"
+"HTTPS 接続は HTTP 接続に比べてより多くの帯域を使用し、レイテンシも大きくなります。使っているアプリケーションによっては、HTTPS のコストは"
+"見合わないこともあります。しかし、検閲の対象となっていいる（またはこれを危惧する）ユーザーにとって、グローバルに一意の名前を放棄するという代償は払うに値す"
+"るものであると言えます。結局、&quot;グローバルに&quot;一意の名前も、名前解決できなければ意味がありません。"
 
 #: template/faq.html.j2:600
 msgid "Why do you say that DNS is 'centralized' and 'distributed'?"
-msgstr ""
+msgstr "DNS が「集中型」および「分散型」であると言うのはどういう意味ですか？"
 
 #: template/faq.html.j2:602
 msgid ""
@@ -1569,10 +1600,13 @@ msgid ""
 "was able to reassign the management of the country-TLDs of Afganistan and "
 "Iraq during the wars at the beginning of the 21st century."
 msgstr ""
+"回答：DNS が「集中型」であるのは、中央コンポーネント/中央障害点があり、ルートゾーンを IANA / ICANN "
+"が管理しているためです。こうした集中化により、脆弱性が生まれます。例えば米国政府は、21 世紀が明けて戦争を開始した際にアフガニスタンとイラクの国別 "
+"TLD の再割り当てを実施しています。"
 
 #: template/faq.html.j2:613
 msgid "How does GNS protect against layer-3 censorship?"
-msgstr ""
+msgstr "GNS はレイヤー 3 の検閲にどのように対処しますか？"
 
 #: template/faq.html.j2:615
 msgid ""
@@ -1586,10 +1620,16 @@ msgid ""
 "identifiers. With nicer names, Tor and tor2web-like services would be even "
 "easier to use. </ol>"
 msgstr ""
+"回答：GNS は、レイヤー 3 の検閲には直接対応しませんが、次の 2 つの方法で間接的に対応します。<ol><li>今日では、多くの Web "
+"サイトが仮想ホスティングを使用しているため、特定の IP アドレスをブロックすると、DNS "
+"名をブロックするよりもはるかに多くの被害が発生します。そのため、検閲コストも上昇します。</li> <li>既存のレイヤー 3 回避策（Tor "
+"など）は、検閲耐性のある命名システムによる利点があります。Tor の「."
+"onion」ネームスペースへのアクセスは現在、ユーザーに非記憶型の暗号化識別子を利用することを要しています。名前が向上すれば、Tor や tor2web "
+"のようなサービスはより使いやすくなるでしょう。</ol>"
 
 #: template/faq.html.j2:634
 msgid "Does GNS work with search engines?"
-msgstr ""
+msgstr "GNS では検索エンジンを使えますか？"
 
 #: template/faq.html.j2:636
 msgid ""
@@ -1602,10 +1642,14 @@ msgid ""
 "breaks the cryptographic chain of trust, legacy search engines will "
 "obviously not obtain censorship-resistant names."
 msgstr ""
+"回答：GNS を使用して名前解決やあらゆる標準ユーザーを実行できるため、検索エンジンに大きな問題はありません。通常、標準ユーザーは、カスタムのソフトウェア"
+"をインストールして名前解決すると考えられますが、現在この方法は検索エンジンでは使えません。ただし、DNS2GNS ゲートウェイにより検索エンジンが "
+"DNS を使用して GNS 名を解決できるため、GNS リソースのインデックスは可能です。しかし、DNS2GNS "
+"ゲートウェイの利用は暗号化による信頼の連鎖を崩すため、レガシーの検索エンジンは検閲耐性のある名前を取得できません。"
 
 #: template/faq.html.j2:650
 msgid "How does GNS compare to the Unmanaged Internet Architecture (UIA)?"
-msgstr ""
+msgstr "GNS はアンマネージド インターネット アーキテクチャ（UIA）とどのように比較されますか？"
 
 #: template/faq.html.j2:652
 msgid ""
@@ -1617,6 +1661,10 @@ msgid ""
 "possible with the existing Web infrastructure. UIA is not at all concerned "
 "about legacy systems (clean slate)."
 msgstr ""
+"回答：UIA と GNS は、どちらも同じ基本命名モデルを共有しており、これは実際 Rivest の SDSI に由来しています。しかし、UIA "
+"はレガシー アプリケーションとの統合は考慮せず、ユーザーの複数マシン間における汎用性のあるコネクティビティに注力しています。一方、GNS は DNS "
+"との相互運用に加え、既存の Web インフラとの親和性を最大限に考慮して設計されています。UIA "
+"はレガシーシステムを全く考慮していません（クリーンスレート）。"
 
 #: template/faq.html.j2:665
 msgid "Doesn't GNS increase the trusted-computing base compared to DNS(SEC)?"
