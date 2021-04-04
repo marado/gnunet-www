@@ -25,14 +25,11 @@ all: locale template
 	(for lang in `echo $(LANGUAGES)` ; \
 		do $(cp) -R images rendered/$$lang ; \
 	done)
-	(for lang in `echo $(LANGUAGES)` ; do \
-		$(cp) -R web-common rendered/$$lang ; \
-	done)
+	($(cp) -R web-common/* rendered/static/)
 	(cd rendered; \
 		for lang in `echo $(LANGUAGES)`; do \
-			mkdir -p $$lang/news/ &> /dev/null \
 			$(cp) $$lang/rss.xml $$lang/news/rss.xml; \
-		done)
+	done)
 	(for d in dist ; do \
 		$(cp) -R $$d rendered/ ; \
 	done)
@@ -49,7 +46,6 @@ locale-update: locale/messages.pot
 	(for lang in `echo $(LANGUAGES)`; do \
 		$(msgmerge) -q -U -m --previous locale/$$lang/LC_MESSAGES/messages.po locale/messages.pot ; \
 	done)
-
 	if $(grep) -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then $(echo) -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
 
 # Compile translation files for use.
