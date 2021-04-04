@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-04 09:37+0000\n"
+"PO-Revision-Date: 2021-04-04 13:11+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
 "\n"
@@ -1390,10 +1390,23 @@ msgid ""
 "which various replication options are again applicable. Ultimately, there "
 "are many options for how users can store (and secure) their GNS database."
 msgstr ""
+"A: Die kurze Antwort lautet, dass die Datenbank beim GNUnet-Peer des "
+"Benutzers gespeichert wird. Nun kann ein Nutzer mehrere GNUnet Peers laufen "
+"lassen, und in dem Fall könnte die Datenbank bei jedem Peer angesiedelt sein "
+"(allerdings haben wir keinen Code für eine bequemes Replizieren). Genauso "
+"können mehrere GNUnet Peers auf eine gemeinsame Version der Datenbank "
+"Zugriff haben --- die &quot;gnunet-service-namestore&quot; erlaubt remoten "
+"Zugriff (via TCP). Die eigentlichen Daten können in einer Postgres Datenbank "
+"gespeichert werden, für die wiederum verschiedene Optionen zur Replikation "
+"verfügbar sind. Letztenendes gibt es zahlreiche Optionen für die Nutzer zur "
+"Speicherung (und Sicherung) ihrer GNS Datenbank."
 
 #: template/faq.html.j2:258
+#, fuzzy
 msgid "What is the expected average size of a GNS namestore database?"
 msgstr ""
+"Was ist die erwartete durchschnittliche Größe einer GNS-"
+"Namespeicherdatenbank?"
 
 #: template/faq.html.j2:260
 msgid ""
@@ -1402,10 +1415,15 @@ msgid ""
 "will only grow to a few tens of thousands of entries, small enough to fit "
 "even on mobile devices."
 msgstr ""
+"A: Ziemlich klein. Auf Basis unserer Nutzerstudie, in der wir "
+"Browserhistorien und die Anzahl besuchter Domänen untersucht haben, erwarten "
+"wir, daß GNS Datenbanken nur auf einige Zehntausend Eintragungen anwachsen "
+"werden, klein genug um selbst auf mobile Geräte zu passen."
 
 #: template/faq.html.j2:270
+#, fuzzy
 msgid "Is GNS resistant to the attacks on DNS used by the US?"
-msgstr ""
+msgstr "Ist GNS resistent gegen die von den USA verwendeten DNS-Angriffe?"
 
 #: template/faq.html.j2:272
 msgid ""
@@ -1418,10 +1436,21 @@ msgid ""
 "unavailable for enforcement, the respective zone cannot be changed and any "
 "other zone delegating to this zone will achieve proper resolution."
 msgstr ""
+"A: Wir denken schon, da es keine Einheit gibt, die von einer Regierung "
+"gezwungen werden könnte, die Zuordnung für einen Namen zu ändern, außer für "
+"jeden einzelnen Benutzer (und dann würden die Änderungen nur für die Namen "
+"gelten, für die dieser Benutzer die Autorität hat). Wenn also alle GNS "
+"benutzen würden, dann wäre der einzig praktikable Angriff einer Regierung "
+"es, den Betreiber eines Servers zur Veränderung der GNS Archive auf ein "
+"anderes Ziel zu zwingen. Sollte jedoch der Eigentümer des privaten "
+"Schlüssels für eine Zone unerreichbar für eine solche Maßnahme sein, so kann "
+"die betreffende Zone nicht geändert werden und jeder anderen an sie "
+"delegierende Zone wird eine umfassende Lösung ermöglicht."
 
 #: template/faq.html.j2:286
+#, fuzzy
 msgid "How does GNS compare to other name systems"
-msgstr ""
+msgstr "Wie vergleicht sich GNS mit anderen Namenssystemen?"
 
 #: template/faq.html.j2:288
 msgid ""
@@ -1429,10 +1458,15 @@ msgid ""
 "ns2018.pdf\">has been published </a> and below is a table from the "
 "publication. For detailed descriptions please refer to the paper."
 msgstr ""
+"A: Es gibt einen wissenschaftlicher Aufsatz zu diesem Thema: <a href=\"https"
+"://grothoff.org/christian/ns2018.pdf\">und</a> nachfolgend finden Sie eine "
+"Tabelle aus der Veröffentlichung. Für genaue Erklärungen verweisen wir dich "
+"auf den Aufsatz."
 
 #: template/faq.html.j2:392
+#, fuzzy
 msgid "What is the difference between GNS and CoDoNS?"
-msgstr ""
+msgstr "Was ist der Unterschied zwischen GNS und CoDoNS?"
 
 #: template/faq.html.j2:394
 msgid ""
@@ -1445,10 +1479,20 @@ msgid ""
 "(to keep names short and enable migration) which don't even make sense in "
 "the context of CoDoNS."
 msgstr ""
+"A: CoDoNS dezentralisiert die DNS-Datenbank (mithilfe eines DHT), behält "
+"jedoch die Berechtigungsstruktur von DNS bei. Mit CoDoNS verbleiben IANA/"
+"ICANN noch in Kontrolle, und es gibt weiterhin Registrare, die über die "
+"Namensrechte bestimmen. <br><br> Mit GNS dezentralisieren wir die Datenbank "
+"und dezentralisieren ebenfalls die Berechtigung zur Namenszuteilung: Jeder "
+"Benutzer betreibt seine eigene persönliche Root-Zone und verbleibt somit in "
+"kompletter Kontrolle über die Namen, die er vergibt. GNS hat darüber hinaus "
+"viele weitere Anwendungen (um Namen kurz und migrationsfähig zu halten), "
+"welche im Kontext von CoDoNS ohne Sinn und Zweck wären."
 
 #: template/faq.html.j2:410
+#, fuzzy
 msgid "What is the difference between GNS and SocialDNS?"
-msgstr ""
+msgstr "Was ist der Unterschied zwischen GNS und SocialDNS?"
 
 #: template/faq.html.j2:412
 msgid ""
@@ -1459,10 +1503,18 @@ msgid ""
 "delegation, and thus mappings will only change if the user responsible for "
 "the name (the authority) manually changes the record."
 msgstr ""
+"A: Wie bei GNS ermöglicht SocialDNS jedem Benutzer, DNS-Zuordnungen zu "
+"erstellen. Mit SocialDNS werden die Zuordnungen jedoch innerhalb des "
+"sozialen Netzwerks geteilt und unterliegen einer Rangfolge. Im Zuge der "
+"Entwicklung der sozialen Beziehungen können die Namen daher auf "
+"überraschende Art mutieren. <br><br> Mit GNS werden Namen primär durch "
+"Delegation geteilt, und Zuordnungen können sich nur ändern, wenn der für den "
+"Namen verantwortliche Nutzer (die Autorität) händisch die Eintragung ändert."
 
 #: template/faq.html.j2:426
+#, fuzzy
 msgid "What is the difference between GNS and ODDNS?"
-msgstr ""
+msgstr "Was ist der Unterschied zwischen GNS und ODDNS?"
 
 #: template/faq.html.j2:428
 msgid ""
@@ -1474,8 +1526,9 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:439
+#, fuzzy
 msgid "What is the difference between GNS and Handshake?"
-msgstr ""
+msgstr "Was ist der Unterschied zwischen GNS und Handshake?"
 
 #: template/faq.html.j2:441
 msgid ""
@@ -1486,10 +1539,17 @@ msgid ""
 "additional supporting GNS root zone governance model but we currently do not "
 "have such plans in mind."
 msgstr ""
+"A: Handshake ist eine Blockchain-basierte Methode für die Root-Zonen-"
+"Governance. Folglich betrifft es nicht den Prozess zur Namensauflösung "
+"direkt, sondern delegiert die Auflösung nach DNS im Anschluß an die "
+"ursprüngliche TLD Auflösung. Losgelöst von Nachhaltigkeitsüberlegungen "
+"könnte Handshake als ein zusätzliches, flankierendes GNS Root-Zonen-"
+"Governance-Modell dienen, aber zur Zeit ist das von uns nicht geplant."
 
 #: template/faq.html.j2:453
+#, fuzzy
 msgid "What is the difference between GNS and TrickleDNS?"
-msgstr ""
+msgstr "Was ist der Unterschied zwischen GNS und TrickleDNS?"
 
 #: template/faq.html.j2:455
 msgid ""
