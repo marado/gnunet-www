@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-03 06:06+0000\n"
+"PO-Revision-Date: 2021-04-04 09:37+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
 "\n"
@@ -1305,6 +1305,11 @@ msgid ""
 "proxy and all one needs to know is the protocol used between browser and "
 "proxy and a swift look at the GNUnet code for file-sharing."
 msgstr ""
+"A: Derzeit gibt es keinen Proxy (wie fproxy in Freenet) für GNUnet, der es "
+"mit einem Browser zugänglich machen würde. Es wäre möglich einen solche "
+"Proxy zu konstruieren, und dafür muß man das zwischen Browser und Proxy "
+"verwendete Protokoll kennen und einen kurzen Blick auf den GNUnet Code für "
+"Datenaustausch werfen."
 
 #: template/faq.html.j2:195
 msgid ""
@@ -1317,10 +1322,19 @@ msgid ""
 "gnunet-setup, which must still be run separately at this time (as setup "
 "requires the peer to be stopped)."
 msgstr ""
+"A: Es gibt tatsächlich einige grafische Benutzeroberflächen für verschiedene "
+"Funktionen. gnunet-setup ist zum Konfigurieren von GNUnet, und gnunet-fs-gtk "
+"ist für Datenaustausch. Es gibt darüber hinaus einige weitere weniger "
+"wichtige gnunet-XXX-gtk GUIs. Beachte bitte, daß du um den GUI zu erhalten "
+"das gnunet-gtk-Paket installieren mußt, welches ein separater Download ist. "
+"gnunet-gtk ist ein Meta-GUI, der die meisten anderen GUIs in einem Fenster "
+"integriert. Eine Ausnahme ist gnunet-setup, das zur Zeit immer noch separat "
+"laufen muß (weil setup den Stopp des Peer benötigt)."
 
 #: template/faq.html.j2:210
+#, fuzzy
 msgid "On top of which operating systems does GNUnet run?"
-msgstr ""
+msgstr "Auf welchen Betriebssystemen läuft GNUnet?"
 
 #: template/faq.html.j2:212
 msgid ""
@@ -1331,10 +1345,18 @@ msgid ""
 "NetBSD, OpenBSD and Solaris. However, not all of those reports are recent, "
 "so if you cannot get GNUnet to work on those systems please let us know."
 msgstr ""
+"A: GNUnet wird hauptsächlich unter Debian GNU/Linux entwickelt und getestet. "
+"Darüber hinaus bauen und testen wir GNUnet regelmäßig auf Fedora, Ubuntu, "
+"Arch, FreeBSD und macOS. Uns liegen Berichte von Arbeitsversionen auf vielen "
+"anderen GNU/Linux Ausführungen vor; in der Vergangenheit wurde von "
+"Arbeitsversionen auf NetBSD, OpenBSD und Solaris berichtet. Allerdings sind "
+"nicht alle diese Berichte noch aktuell; also gib uns bitte Bescheid, falls "
+"es dir nicht möglich ist GNUnet auf diesen Systemen zum Laufen zu bringen."
 
 #: template/faq.html.j2:228
+#, fuzzy
 msgid "Who runs the GNS root zone?"
-msgstr ""
+msgstr "Wer betreibt die GNS-Root-Zone?"
 
 #: template/faq.html.j2:230
 msgid ""
@@ -1344,10 +1366,18 @@ msgid ""
 "modify this configuration at will. We expect normal users to have no need to "
 "edit their own GNS zone(s) unless they host services themselves."
 msgstr ""
+"A: Kurze Antwort: Du. Die lange Antwort lautet, daß das GNUnet mit einer "
+"Default-Konfiguration der wichtigsten Domains geliefert wird. Die Führung "
+"dieser Default-Konfiguration ist noch nicht festgelegt. Auf jeden Fall wird "
+"der Nutzer in der Lage sein, diese Konfiguration nach Wunsch zu "
+"modifizieren. Wir erwarten, daß normale Nutzer keine Notwendigkeit haben "
+"werden, ihre eigene GNS-Zone(n) zu bearbeiten, außer wenn sie selbst "
+"Dienstleistungen hosten."
 
 #: template/faq.html.j2:241
+#, fuzzy
 msgid "Where is the per-user GNS database kept?"
-msgstr ""
+msgstr "Wo wird die GNS-Datenbank pro Benutzer aufbewahrt?"
 
 #: template/faq.html.j2:243
 msgid ""
