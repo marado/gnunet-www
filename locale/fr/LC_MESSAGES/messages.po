@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-03-31 14:34+0000\n"
-"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
+"PO-Revision-Date: 2021-04-08 05:22+0000\n"
+"Last-Translator: Axelle Dimpre <axelle.dimpre@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
 "Language: fr\n"
@@ -411,27 +411,36 @@ msgid ""
 msgstr ""
 
 #: template/about.html.j2:141
+#, fuzzy
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
+"Nous tenons à remercier les organisations suivantes pour nous offrir "
+"l'hébergement gratuit :"
 
 #: template/about.html.j2:150
+#, fuzzy
 msgid "Past funding"
-msgstr ""
+msgstr "Ancien financement"
 
 #: template/about.html.j2:152
+#, fuzzy
 msgid "We are grateful for past funding from the following organizations:"
 msgstr ""
+"Nous tenons à remercier les organisations suivantes pour leur participation "
+"à l'ancien financement :"
 
 #: template/applications.html.j2:7
+#, fuzzy
 msgid "Applications provided by GNUnet"
-msgstr ""
+msgstr "Applications fournies par GNUnet"
 
 #: template/applications.html.j2:13 template/gns.html.j2:7
 msgid "The GNU Name System"
 msgstr ""
 
 #: template/applications.html.j2:15
+#, fuzzy
 msgid ""
 "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully decentralized "
 "replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
@@ -441,59 +450,93 @@ msgid ""
 "cryptographically secured. <!-- Too technical: GNS integrates a robust, "
 "efficient and instant key revocation mechanism. -->"
 msgstr ""
+"Le <a href=\"gns.html\">GNU Name System (GNS)</a> est un replacement "
+"entièrement décentralisé pour le Domain Name System (DNS). Au lieu de mettre "
+"en oeuvre la hiérarchie, GNS utilise un graphique dirigé. Les conventions "
+"relatives aux noms sont similaires au DNS, mais les questions et les "
+"réponses sont privées, notamment lorsque les pairs fournissent les réponses. "
+"L'intégrité des enregistrements et la privacité des consultations est sous "
+"sécurité cryptographiée. <!-- Too technical: GNS integrates a robust, "
+"efficient and instant key revocation mechanism. -->"
 
 #: template/applications.html.j2:38
+#, fuzzy
 msgid "Self-sovereign, decentralized identity provider"
-msgstr ""
+msgstr "Fournisseur d'identité auto-régie et décentralisée"
 
 #: template/applications.html.j2:40
+#, fuzzy
 msgid ""
 "<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> is a decentralized "
 "Identity Provider (IdP) service built in top of the GNU Name System. It "
 "allows users to securely share personal information with websites using "
 "standardized protocols (OpenID Connect)."
 msgstr ""
+"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> est un service "
+"décentralisé d'Identity Provider (IdP) construit sur la base du GNU Name "
+"System. Il permet aux utilisateurs de partager sans risque des informations "
+"personnelles sur des sites utilisant les protocoles standards (OpenID "
+"Connect)."
 
 #: template/applications.html.j2:57
+#, fuzzy
 msgid "Filesharing (Alpha)"
-msgstr ""
+msgstr "Partage de fichiers (Alpha)"
 
 #: template/applications.html.j2:59
+#, fuzzy
 msgid ""
 "GNUnet <a href=\"use.html#fs\">filesharing</a> is an application that aims "
 "to provide censorship-resistant, anonymous filesharing. The publisher is "
 "empowered to make a gradual choice between performance and anonymity."
 msgstr ""
+"GNUnet <a href=\"use.html#fs\">partage de fichiers</a> est une application "
+"qui a pour but de permettre un partage de fichiers anonyme et résistant à la "
+"censure. L'éditeur est chargé de trouver le juste milieu entre performance "
+"et anonymat."
 
 #: template/applications.html.j2:73
+#, fuzzy
 msgid "Conversation (Pre-Alpha)"
-msgstr ""
+msgstr "Conversation (Pre-Alpha)"
 
 #: template/applications.html.j2:75
+#, fuzzy
 msgid ""
 "GNUnet conversation is an application that provides secure voice "
 "communication in a fully decentralized way by employing GNUnet for routing "
 "and transport."
 msgstr ""
+"GNUnet conversation est une application qui fournit une communication vocale "
+"sans risque de manière complètement décentralisée en passant par GNUnet pour "
+"l'acheminement et le transport."
 
 #: template/applications.html.j2:91
+#, fuzzy
 msgid "Applications utilizing GNUnet"
-msgstr ""
+msgstr "Applications qui utilisent GNUnet"
 
 #: template/applications.html.j2:97
+#, fuzzy
 msgid "GNU Taler (Alpha)"
-msgstr ""
+msgstr "GNU Taler (Alpha)"
 
 #: template/applications.html.j2:99
+#, fuzzy
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
 "confirmed within milliseconds with extremely low transaction costs."
 msgstr ""
+"<a href=\"https://taler.net/\">GNU Taler</a> est un nouveau système de "
+"paiement électronique respectueux de la privacité. Les paiements sont sous "
+"sécurité cryptographiée et sont confirmées dans la milliseconde avec des "
+"frais sensiblement faibles."
 
 #: template/applications.html.j2:118
+#, fuzzy
 msgid "secushare"
-msgstr ""
+msgstr "Secushare"
 
 #: template/applications.html.j2:120
 msgid ""
