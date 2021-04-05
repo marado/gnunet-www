@@ -46,7 +46,7 @@
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ url_localized('engage.html') }}">{{ _("Engage") }} </a></li>
           <li><a class="dropdown-item" href="{{ url_localized('gsoc.html') }}">{{ _("GSoC Projects") }}</a></li>
-          <li><a class="dropdown-item" href="{{ url_localized('ev.html') }}">{{ _("GNUnet e.V.") }}</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('ev.html') }}">"GNUnet e.V.</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('copyright.html') }}">{{ _("Copyright for Contributors") }} </a></li>
 	  <!-- li><a class="dropdown-item" href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li -->
         </ul>
@@ -84,7 +84,7 @@
 	  <li><a class="dropdown-item" href="{{ url_localized('video.html') }}">{{ _("Videos") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('glossary.html') }}">{{ _("Glossary") }}</a></li>
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/handbook/gnunet.html">{{ _("Handbook") }}</a></li>
-    <li><a class="dropdown-item" target="_blank" href="{{ url_localized('livingstandards.html') }}">{{ _("Living Standards") }}</a></li>
+    <li><a class="dropdown-item" target="_blank" href="{{ url_localized('livingstandards.html') }}">Living Standards</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org/">{{ _("REST API") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('faq.html') }}">{{ _("FAQ") }}</a></li>
           <li><a class="dropdown-item" href="https://bib.gnunet.org/date.html" target="_blank">{{ _("Bibliography") }}</a></li>
