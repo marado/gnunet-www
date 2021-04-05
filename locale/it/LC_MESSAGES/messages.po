@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
 "PO-Revision-Date: 2021-04-08 05:22+0000\n"
-"Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
+"Last-Translator: Francesca Giusti <francescag1194@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
 "Language: it\n"
@@ -1880,6 +1880,8 @@ msgid ""
 "I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. "
 "Should I worry?"
 msgstr ""
+"Ricevo diversi &quot;ATTENZIONE Ritardo calcolato da X a Y&quot; Dovrei "
+"preoccuparmi?"
 
 #: template/faq.html.j2:699
 msgid ""
@@ -1888,22 +1890,30 @@ msgid ""
 "until the Transport Next Generation (TNG) is ready, these warnings are "
 "expected."
 msgstr ""
+"A: Al momento è da aspettarselo ed è dovuto all'alta latenza di GNUnet. "
+"Abbiamo iniziato una riscrittura importante per risolvere questo e altri "
+"problemi, però fino a che il Transport Next Generation (TNG) sia pronto, "
+"queste avvertenze continueranno a verificarsi."
 
 #: template/faq.html.j2:708
 msgid "Error opening `/dev/net/tun': No such file or directory?"
-msgstr ""
+msgstr "Errore di apertura `/dev/net/tun': nessun file trovato nell'elenco?"
 
 #: template/faq.html.j2:710
 msgid ""
 "A: If you get this error message, the solution is simple. Issue the "
 "following commands (as root) to create the required device file"
 msgstr ""
+"R: Se ricevi questo messaggio di errore la soluzione è semplice. Segui i "
+"seguenti comandi per creare i file richiesti dal dispositivo"
 
 #: template/faq.html.j2:722
 msgid ""
 "'iptables: No chain/target/match by that name.' (when running gnunet-service-"
 "dns)?"
 msgstr ""
+"'iptables: Non c'è catena/obiettivo/coincidenza con quel nome.' (durante "
+"l'esecuzione di gnunet-service-dns)?"
 
 #: template/faq.html.j2:724
 msgid ""
@@ -1912,21 +1922,31 @@ msgid ""
 "your kernel has CONFIG_NETFILTER_XT_MATCH_OWNER set to either 'y' or "
 "'m' (and the module is loaded)."
 msgstr ""
+"R: Per il DNS GNUnet, le tue iptables devono avere &quot;il proprio&quot; "
+"supporto di coincidenza. Questo si ottiene avendo le opzioni corrette del "
+"kernel. Controlla se il tuo kernel ha impostato "
+"CONFIG_NETFILTER_XT_MATCH_OWNER o su 'y' o su 'm' (e il il modulo si carica)."
 
 #: template/faq.html.j2:736
 msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
 msgstr ""
+"Si è esaurito il tempo di attesa durante l'esecuzione PT su Fedora (e "
+"possibilmente altri)?"
 
 #: template/faq.html.j2:738
 msgid ""
 "A: If you get an error stating that the VPN timeout was reached, check if "
 "your firewall is enabled and blocking the connections."
 msgstr ""
+"R: Se ricevi un errore che indica che il VPN ha raggiunto il tempo limite, "
+"controlla se il tuo firewall è abilitato e se sta bloccando le connessioni."
 
 #: template/faq.html.j2:746
 msgid ""
 "I'm getting an 'error while loading shared libraries: libgnunetXXX.so.X'"
 msgstr ""
+"Sto ricevendo un 'errore durante il caricamento delle biblioteche condivise: "
+"libgnunetXXX.so.X'"
 
 #: template/faq.html.j2:748
 msgid ""
