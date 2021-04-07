@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-04-03 06:06+0000\n"
-"Last-Translator: Juan Pablo González <jnpgonzal@gmail.com>\n"
+"PO-Revision-Date: 2021-04-08 05:22+0000\n"
+"Last-Translator: Lucía López <lulopezcabrera@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
 "\n"
 "Language: es\n"
@@ -1995,7 +1995,7 @@ msgstr ""
 
 #: template/faq.html.j2:781
 msgid "What error messages can be ignored?"
-msgstr ""
+msgstr "¿Cuáles mensajes de error pueden ser ignorados?"
 
 #: template/faq.html.j2:783
 msgid ""
@@ -2006,10 +2006,17 @@ msgid ""
 "expensive operation that will take some time. GNUnet will also use INFO "
 "messages to display information about important configuration values."
 msgstr ""
+"R: Los mensajes de error marcados como \"DEBUG\" deben estar deshabilitados "
+"en binarios construidos para usuarios fin y siempre pueden ser ignorados. "
+"Los mensajes de error marcados como \"INFO\" siempre hacen referencia a "
+"eventos inocuos que no requieren acción. Por ejemplo, GNUnet puede usar un "
+"mensaje INFO para indicar que se encuentra realizando una operación costosa "
+"que requerirá de algún tiempo. GNUnet también usará mensajes INFO para "
+"mostrar información acerca de valores de configuración importantes."
 
 #: template/faq.html.j2:799
 msgid "How does GNUnet compare to other file-sharing applications?"
-msgstr ""
+msgstr "¿Cómo se compara GNUnet a otras aplicaciones para compartir documentos?"
 
 #: template/faq.html.j2:801
 msgid ""
