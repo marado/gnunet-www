@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-04-08 05:22+0000\n"
-"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
+"PO-Revision-Date: 2021-04-11 02:59+0000\n"
+"Last-Translator: Axelle Dimpre <axelle.dimpre@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
 "Language: fr\n"
@@ -412,6 +412,7 @@ msgid ""
 msgstr ""
 
 #: template/about.html.j2:123
+#, fuzzy
 msgid ""
 "This project has received funding from the European Union’s Horizon 2020 "
 "research and innovation programme under the NGI_TRUST grant agreement no "
@@ -421,6 +422,14 @@ msgid ""
 "providers. The project is called \"Decentralized Identities for Self-"
 "Sovereign End-users\" (DISSENS)."
 msgstr ""
+"Ce projet a été financé par le programme de recherche et d'innovation "
+"Horizon Europe 2020, sous l'accord de garantie NGI_TRUST n°825618. Le projet "
+"vise à intégrer re:claimID dans le système de paiement GNU Taler au sein "
+"d'un pilote afin de démontrer la possibilité pratique et les bénéfices de la "
+"privacité en mettant en lumière la technologie pour les utilisateurs et les "
+"prestataires commerciaux. Ce projet a été appelé \"DISSENS\" (Decentralized "
+"Identities for Self-Sovereign End-Users, comprendre identités décentralisées "
+"à des fins d'utilisateurs indépendants)."
 
 #: template/about.html.j2:141
 #, fuzzy
@@ -448,8 +457,9 @@ msgid "Applications provided by GNUnet"
 msgstr "Applications fournies par GNUnet"
 
 #: template/applications.html.j2:13 template/gns.html.j2:7
+#, fuzzy
 msgid "The GNU Name System"
-msgstr ""
+msgstr "Le GNU Name System"
 
 #: template/applications.html.j2:15
 #, fuzzy
@@ -551,58 +561,85 @@ msgid "secushare"
 msgstr "Secushare"
 
 #: template/applications.html.j2:120
+#, fuzzy
 msgid ""
 "<a href=\"https://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
 "the extensible PSYC protocol, notifications are distributed end-to-end "
 "encrypted to authorized recipients only."
 msgstr ""
+"<a href=\"https://secushare.org/\">secushare</a> développe une application "
+"de réseautage social décentralisé en plus de GNUnet. Grâce à une couverture "
+"multicast et le protocole extensible PSYC, les notifications ne sont "
+"envoyées qu'à des destinataires autorisés chiffrés de bout en bout."
 
 #: template/applications.html.j2:139
+#, fuzzy
 msgid "pretty Easy privacy"
-msgstr ""
+msgstr "pretty Easy privacité"
 
 #: template/applications.html.j2:141
+#, fuzzy
 msgid ""
 "<a href=\"https://pep.foundation/\">pretty Easy privacy</a> (p&#8801;p) is "
 "creating a usable end-to-end encrypted e-mail solution using opportunistic "
 "key exchange. p&#8801;p will use GNUnet to protect metadata and exploit new "
 "cryptographic protocols to verify keys."
 msgstr ""
+"<a href=\"https://pep.foundation/\">pretty Easy privacité</a> (p&#8801;p) "
+"développe une solution d'e-mails chiffrés de bout en bout accessible en "
+"passant par des clés d'échanges de chiffrage opportuniste. p&#8801;p "
+"utilisera GNUnet pour protéger les métadonnées et exploiter les nouveaux "
+"protocoles cryptographiques pour vérifier les clés."
 
 #: template/applications.html.j2:160
+#, fuzzy
 msgid "Cadet-GTK"
-msgstr ""
+msgstr "Cadet-GTK"
 
 #: template/applications.html.j2:162
+#, fuzzy
 msgid ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
 "convenient but feature-rich graphical application providing messaging using "
 "especially the CADET subsystem. It is developed using GTK and libhandy for a "
 "convergent design."
 msgstr ""
+"<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> est "
+"une interface graphique modeste mais riche en carcatéristiques qui fournit "
+"des services de messagerie en utilisant notamment le sous-système CADET. Il "
+"est développé avec GTK et libhandy pour un design cohérent.</a>"
 
 #: template/applications.html.j2:180
+#, fuzzy
 msgid "groupchat"
-msgstr ""
+msgstr "groupchat"
 
 #: template/applications.html.j2:182
+#, fuzzy
 msgid ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
 "terminal user interface providing messaging using especially the CADET "
 "subsystem. It is developed using nim. Cadet-GTK and groupchat are planned to "
 "be compatible."
 msgstr ""
+"<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> est un "
+"terminal d'interface utilisateur qui fournit ds services de messagerie en "
+"utilisant notamment le sous-système CADET. Il est développé par nim. Cadet-"
+"GTK et groupchat seront compatibles."
 
 #: template/architecture.html.j2:6
+#, fuzzy
 msgid "GNUnet System Architecture"
-msgstr ""
+msgstr "GNUnet System Architecture"
 
 #: template/architecture.html.j2:20
+#, fuzzy
 msgid "Foundations"
-msgstr ""
+msgstr "Bases"
 
 #: template/architecture.html.j2:22
+#, fuzzy
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -610,12 +647,20 @@ msgid ""
 "for addresses and self-organized decentralized routing algorithms, these "
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
+"GNUnet repose sur une table de hachage distribuée (R5N), une couche de "
+"messagerie codée de bout en bout (CADET) similaire à SCPT, une "
+"infrastructure à clé publique (GNS) et un système de transport branchable "
+"(TRANSPORT). <br> À l’aide de clés publiques pour les adresses et d’"
+"algorithmes de routage décentralisés autonomes, ces sous-systèmes remplacent "
+"la pile TCP/IP traditionnelle."
 
 #: template/architecture.html.j2:35
+#, fuzzy
 msgid "Security"
-msgstr ""
+msgstr "Sécurité"
 
 #: template/architecture.html.j2:38
+#, fuzzy
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -623,65 +668,93 @@ msgid ""
 "is a <a href=\"https://www.gnu.org/\">GNU</a> package, and will always "
 "remain free software."
 msgstr ""
+"GNUnet est implanté grâce à une architecture multi-procédés. Chaque sous-"
+"système fonctionne comme procédé à part, ce qui permet d'isoler les défauts "
+"et de garantir les permissions strictes pour chaque sous-système."
 
 #: template/architecture.html.j2:52
+#, fuzzy
 msgid "System architecture"
-msgstr ""
+msgstr "Système d'architecture"
 
 #: template/architecture.html.j2:58
+#, fuzzy
 msgid "Subsystems"
-msgstr ""
+msgstr "Sous-systèmes"
 
 #: template/architecture.html.j2:67
+#, fuzzy
 msgid "libgnunetutil"
-msgstr ""
+msgstr "libgnunetutil"
 
 #: template/architecture.html.j2:73
+#, fuzzy
 msgid "APIs"
-msgstr ""
+msgstr "Interfaces de programmation"
 
 #: template/architecture.html.j2:86
+#, fuzzy
 msgid "Legend"
-msgstr ""
+msgstr "Légende"
 
 #: template/contact.html.j2:6
+#, fuzzy
 msgid "Contact information"
-msgstr ""
+msgstr "Nous contacter"
 
 #: template/contact.html.j2:11
+#, fuzzy
 msgid "The mailing list"
-msgstr ""
+msgstr "La liste mailing"
 
 #: template/contact.html.j2:13
+#, fuzzy
 msgid ""
 "An archived, public mailing list for GNUnet is hosted at <a href=\"https://"
 "lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists.gnu.org/"
 "mailman/listinfo/gnunet-developers</a>. You can send messages to the list at "
 "<a href=\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
 msgstr ""
+"Une liste mailing archivée et publique pour GNUnet est hébergée à <a href="
+"\"https://lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists."
+"gnu.org/mailman/listinfo/gnunet-developers</a>. Vous pouvez envoyer un "
+"message à cette liste ici :<a href=\"mailto:gnunet-developers@gnu.org\""
+">gnunet-developers@gnu.org</a>."
 
 #: template/contact.html.j2:23
+#, fuzzy
 msgid "The IRC channel"
-msgstr ""
+msgstr "La chaîne IRC"
 
 #: template/contact.html.j2:25
+#, fuzzy
 msgid ""
 "<tt>#gnunet</tt> is reachable via <a href=\"https://freenode.net\">irc."
 "freenode.net</a>. There is also an <a href=\"https://view.matrix.org/room/!"
 "IjaAfLiruzjxFFzKAV:matrix.org/\">archive</a> available."
 msgstr ""
+"<tt>#gnunet</tt> est accessible depuis <a href=\"https://freenode.net\">irc."
+"freenode.net</a>. Les <a href=\"https://view.matrix.org/room/"
+"!IjaAfLiruzjxFFzKAV:matrix.org/\">archives</a> sont également disponibles."
 
 #: template/contact.html.j2:38
+#, fuzzy
 msgid "Contacting individuals"
-msgstr ""
+msgstr "Contact particuliers"
 
 #: template/contact.html.j2:40
+#, fuzzy
 msgid ""
 "GNUnet developers are generally reachable at either <tt>PSEUDONYM@gnunet."
 "org</tt> or <tt>LASTNAME@gnunet.org</tt>. Most of us support receiving GnuPG "
 "encrypted Emails. Urgent and sensitive security issues may be addressed to "
 "the GNU maintainers <tt>schanzen</tt> and <tt>grothoff</tt>."
 msgstr ""
+"Les développeurs de GNUnet peuvent généralement être contacté via "
+"<tt>PSEUDONYM@gnunet.org</tt> ou <tt>LASTNAME@gnunet.org</tt>. La plupart "
+"d'entre nous supportent la réception d'Emails chiffrés GnuPG. Les questions "
+"urgentes et sensibles à propos de la sécurité peuvent être adressées aux "
+"responsables <tt>schanzen</tt> et <tt>grothoff</tt>."
 
 #: template/contact.html.j2:53
 msgid "Reporting bugs"
