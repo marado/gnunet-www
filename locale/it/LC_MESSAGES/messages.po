@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-09 06:12+0000\n"
+"PO-Revision-Date: 2021-04-11 02:00+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
@@ -2337,10 +2337,16 @@ msgid ""
 "<li>Censorship resistance</li> <li>Query privacy</li> <li>Secure name "
 "resolution</li> <li>Compatibility with DNS</li>"
 msgstr ""
+"Lo GNU Name System (GNS) è un sistema di nomi sicuro e decentralizzato. "
+"Permette agli utenti di registrare i nomi come domini di primo livello (TLD -"
+" Top Level Domain) e risolvere altri spazi dei nomi all'interno dei TLD. <br/"
+"> GNS è progettato per fornire: <ul> <li>Resistenza alla censura</li> "
+"<li>Privacy nelle query</li> <li>Risoluzione dei nomi sicura</li> "
+"<li>Compatibilità con il DNS</li>"
 
 #: template/gns.html.j2:52
 msgid "Resources"
-msgstr ""
+msgstr "Risorse"
 
 #: template/gnurl.html.j2:21
 msgid ""
@@ -2349,12 +2355,18 @@ msgid ""
 "ensure a small footprint and uniform experience for developers regardless of "
 "how libcurl was compiled."
 msgstr ""
+"libgnurl è una micro fork di libcurl. L'obiettivo di libgnurl è supportare "
+"solo HTTP e HTTPS (e solo HTTP 1.x) con un'unica back-end crittografica "
+"(GnuTLS) per garantire un ingombro ridotto e un'esperienza uniforme per gli "
+"sviluppatori, a prescindere da come è stato compilato libcurl."
 
 #: template/gnurl.html.j2:30
 msgid ""
 "Our main usecase is for GNUnet and Taler, but it might be usable for others, "
 "hence we&#39;re releasing the code to the general public."
 msgstr ""
+"Il nostro caso d'uso principale è per GNUnet e Taler, ma potrebbe essere "
+"usato per altro, quindi stiamo pubblicando il codice per il grande pubblico."
 
 #: template/gnurl.html.j2:37
 msgid ""
@@ -2362,15 +2374,20 @@ msgid ""
 "README for instructions, as you must supply the correct options to configure "
 "to get a proper build of libgnurl."
 msgstr ""
+"libgnurl viene rilasciato sotto la stessa licenza di libcurl. Leggere README "
+"per le istruzioni, perché bisogna impostare le opzioni correttamente per la "
+"configurazione e ottenere una giusta compilazione di libgnurl."
 
 #: template/gnurl.html.j2:48
 msgid "About gnurl"
-msgstr ""
+msgstr "Informazioni su gnurl"
 
 #: template/gnurl.html.j2:50
 msgid ""
 "Large parts of the following 6 paragraphs are old and need to be rewritten."
 msgstr ""
+"Gran parte dei sei paragrafi qui di seguito contengono informazioni obsolete "
+"e devono essere riscritti."
 
 #: template/gnurl.html.j2:62
 msgid ""
