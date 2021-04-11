@@ -8,179 +8,196 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-04-12 21:31+0000\n"
+"Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
+"gnunet/website/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: common/base.j2:5 common/news.j2:5
 msgid "GNUnet"
-msgstr ""
+msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
+#, fuzzy
 msgid "GNU's framework for secure p2p networking"
-msgstr ""
+msgstr "GNU為安全p2p制定的網路框架"
 
 #: common/footer.j2.inc:7
+#, fuzzy
 msgid "Contact"
-msgstr ""
+msgstr "聯絡"
 
 #: common/footer.j2.inc:8 common/navigation.j2.inc:49
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "GNUnet e.V."
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr ""
+msgstr "關於GNUnet"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
+#, fuzzy
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Bug Tracker"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
+#, fuzzy
 msgid "Copyright Assignment"
-msgstr ""
+msgstr "版權轉讓"
 
 #: common/footer.j2.inc:20 common/navigation.j2.inc:90
 #: template/developers.html.j2:24
 msgid "Bibliography"
-msgstr ""
+msgstr "參考書目"
 
 #: common/footer.j2.inc:31
 msgid "Source code of this site."
-msgstr ""
+msgstr "本網站的原始碼。"
 
 #: common/footer.j2.inc:32
 msgid "Report issues with this website."
-msgstr ""
+msgstr "舉報此網站的問題。"
 
 #: common/navigation.j2.inc:38
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
 #: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
 #: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
 msgid "News"
-msgstr ""
+msgstr "最新消息"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
-msgstr ""
+msgstr "應用程式"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
-msgstr ""
+msgstr "社群"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
+#, fuzzy
 msgid "Engage"
-msgstr ""
+msgstr "從事"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
-msgstr ""
+msgstr "GSoC專案"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "貢獻者的版權"
 
 #: common/navigation.j2.inc:51
+#, fuzzy
 msgid "IRC Archive"
-msgstr ""
+msgstr "IRC檔案"
 
 #: common/navigation.j2.inc:58
+#, fuzzy
 msgid "Development"
-msgstr ""
+msgstr "發展"
 
 #: common/navigation.j2.inc:61
 msgid "System Architecture"
-msgstr ""
+msgstr "系統架構"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
+#, fuzzy
 msgid "Roadmap"
-msgstr ""
+msgstr "藍圖"
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
-msgstr ""
+msgstr "原始碼"
 
 #: common/navigation.j2.inc:66
 msgid "Source Code Documentation"
-msgstr ""
+msgstr "原始碼相關文件"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
-msgstr ""
+msgstr "持續整合"
 
 #: common/navigation.j2.inc:68
+#, fuzzy
 msgid "Development Tutorial"
-msgstr ""
+msgstr "開發教學"
 
 #: common/navigation.j2.inc:79
+#, fuzzy
 msgid "Documentation"
-msgstr ""
+msgstr "相關文件"
 
 #: common/navigation.j2.inc:82 template/install.html.j2:6
 msgid "Install"
-msgstr ""
+msgstr "安裝"
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
+#, fuzzy
 msgid "Use"
-msgstr ""
+msgstr "使用"
 
 #: common/navigation.j2.inc:84
 msgid "Videos"
-msgstr ""
+msgstr "影片"
 
 #: common/navigation.j2.inc:85 template/glossary.html.j2:6
 msgid "Glossary"
-msgstr ""
+msgstr "詞彙表"
 
 #: common/navigation.j2.inc:86
 msgid "Handbook"
-msgstr ""
+msgstr "手冊"
 
 #: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
+#, fuzzy
 msgid "Living Standards"
-msgstr ""
+msgstr "生活水準"
 
 #: common/navigation.j2.inc:88
+#, fuzzy
 msgid "REST API"
-msgstr ""
+msgstr "REST API"
 
 #: common/navigation.j2.inc:89
 msgid "FAQ"
-msgstr ""
+msgstr "常見問答"
 
 #: news/index.html.j2:11 news/oldnews-2011.html.j2:16
 #: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
 #: news/oldnews-2019.html.j2:16
+#, fuzzy
 msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr ""
+msgstr "有關與GNUnet相關的更改(例如發行和事件)的新聞"
 
 #: news/index.html.j2:16 news/oldnews-2011.html.j2:21
 #: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
 #: news/oldnews-2019.html.j2:21
 msgid "subscribe to our RSS feed"
-msgstr ""
+msgstr "訂閱本站 RSS"
 
 #: news/index.html.j2:36 news/oldnews-2011.html.j2:40
 #: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr ""
+msgstr "閱讀更多"
 
 #: news/index.html.j2:45
 msgid "News archives:"
-msgstr ""
+msgstr "新聞檔案:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
-msgstr ""
+msgstr "什麼是 GNUnet?"
 
 #: template/about.html.j2:13
 msgid ""
@@ -222,31 +239,34 @@ msgstr ""
 msgid ""
 "Specifically, GNUnet tries to follow the following design principles, in "
 "order of importance:"
-msgstr ""
+msgstr "具體而言，GNUnet 試圖遵循以下設計原則，其重要性如下："
 
 #: template/about.html.j2:56
+#, fuzzy
 msgid ""
 "GNUnet must be implemented as <a href=\"https://www.gnu.org/philosophy/free-"
 "sw.html\">Free Software</a>."
 msgstr ""
+"GNUnet 必須實施為<a href=\"https://www.gnu.org/philosophy/free-sw.html\">免費軟體</a>。"
 
 #: template/about.html.j2:60
 msgid ""
 "GNUnet must minimize the amount of personally identifiable information "
 "exposed."
-msgstr ""
+msgstr "GNUnet 必須盡量減少暴露個人的可識別資訊量。"
 
 #: template/about.html.j2:61
+#, fuzzy
 msgid ""
 "GNUnet must be fully distributed and resilient to external attacks and rogue "
 "participants."
-msgstr ""
+msgstr "GNUnet 必須完全分散，並能夠抵禦外部攻擊和異常的參與者。"
 
 #: template/about.html.j2:62
 msgid ""
 "GNUnet must be self-organizing and not depend on administrators or "
 "centralized infrastructure."
-msgstr ""
+msgstr "GNUnet 必須為自我組織，且不依賴於管理員或集中式基礎設施。"
 
 #: template/about.html.j2:63
 msgid ""
