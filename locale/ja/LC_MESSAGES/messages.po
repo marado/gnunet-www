@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-09 06:12+0000\n"
+"PO-Revision-Date: 2021-04-15 10:31+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
 ">\n"
@@ -1700,6 +1700,10 @@ msgid ""
 "TLSA records) and adds a service and protocol number (and the original boxed "
 "record type) to it."
 msgstr ""
+"回答：GNS が解決のためにドメイン名をラベルに分割すると、「_ Service._Proto」構文が検出され、「Service」が対応するポート番号に変"
+"換、「Proto」が対応するプロトコル番号に変換されます。また、名前のその他の部分は通常通り解決されます。その後、結果が表示された際、GNS は GNS "
+"特有の「BOX」レコード種別を検索します。BOX レコードは、別のレコード（SRV や TLSA "
+"レコードなど）を含むレコードを指し、サービスやプロトコル番号（また、オリジナルのボックス型レコードタイプ）を追加します。"
 
 #: template/faq.html.j2:697
 msgid ""
@@ -1723,19 +1727,21 @@ msgstr ""
 
 #: template/faq.html.j2:708
 msgid "Error opening `/dev/net/tun': No such file or directory?"
-msgstr ""
+msgstr "`/dev/net/tun': No such file or directory のエラーとなります。"
 
 #: template/faq.html.j2:710
 msgid ""
 "A: If you get this error message, the solution is simple. Issue the "
 "following commands (as root) to create the required device file"
-msgstr ""
+msgstr "回答：このエラーメッセージが表示された場合の解決策は簡単です。次のコマンドを（ルートとして）実行し、必要なデバイスファイルを作成してください。"
 
 #: template/faq.html.j2:722
 msgid ""
 "'iptables: No chain/target/match by that name.' (when running gnunet-service-"
 "dns)?"
 msgstr ""
+"'iptables: No chain/target/match by that name.' （gnunet-service-dns "
+"を実行している場合）"
 
 #: template/faq.html.j2:724
 msgid ""
@@ -1744,21 +1750,25 @@ msgid ""
 "your kernel has CONFIG_NETFILTER_XT_MATCH_OWNER set to either 'y' or "
 "'m' (and the module is loaded)."
 msgstr ""
+"回答：GNUnet DNS の場合、iptables "
+"には「所有者」の一致サポートが必要です。これにはカーネルオプションが正しく設定されていることが必要となります。カーネルの "
+"CONFIG_NETFILTER_XT_MATCH_OWNER "
+"が「y」または「m」に設定されているか（またモジュールがロードされているか）確認してください。"
 
 #: template/faq.html.j2:736
 msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
-msgstr ""
+msgstr "Fedora で PT を実行すると（他でも発生の可能性）「Timeout was reached（タイムアウトとなりました）」となります。"
 
 #: template/faq.html.j2:738
 msgid ""
 "A: If you get an error stating that the VPN timeout was reached, check if "
 "your firewall is enabled and blocking the connections."
-msgstr ""
+msgstr "回答：VPN タイムアウトのエラーが表示された場合は、ファイアウォールが有効となり接続がブロックされていないかを確認してください。"
 
 #: template/faq.html.j2:746
 msgid ""
 "I'm getting an 'error while loading shared libraries: libgnunetXXX.so.X'"
-msgstr ""
+msgstr "「共有ライブラリのロード中にエラーが発生：libgnunetXXX.so.X」が表示されます。"
 
 #: template/faq.html.j2:748
 msgid ""
