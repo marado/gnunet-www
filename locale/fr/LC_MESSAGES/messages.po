@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-04-11 02:59+0000\n"
+"PO-Revision-Date: 2021-04-17 17:31+0000\n"
 "Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
@@ -410,6 +410,9 @@ msgid ""
 "to document and implement the GNU Name System protocol in a way suitable for "
 "the IETF standardization process."
 msgstr ""
+"Nous recevons des fonds du régime de financement Next Generation Internet de "
+"NLnet pour documenter et appliquer le protocole du GNU Name System d'une "
+"manière adaptée au processus de standardisation IETF."
 
 #: template/about.html.j2:123
 #, fuzzy
