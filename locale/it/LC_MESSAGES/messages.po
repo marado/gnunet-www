@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-17 17:31+0000\n"
-"Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
+"PO-Revision-Date: 2021-04-19 06:56+0000\n"
+"Last-Translator: Francesca Giusti <francescag1194@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
 "Language: it\n"
@@ -26,7 +26,7 @@ msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
 msgid "GNU's framework for secure p2p networking"
-msgstr "L'architettura GNU per una rete p2p sicura"
+msgstr "Il contesto operativo dello GNU per un sicuro p2p networking"
 
 #: common/footer.j2.inc:7
 msgid "Contact"
@@ -34,15 +34,15 @@ msgstr "Contatti"
 
 #: common/footer.j2.inc:8 common/navigation.j2.inc:49
 msgid "GNUnet e.V."
-msgstr "GNUnet e.V."
+msgstr "GNUnet e V."
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
-msgstr "Informazioni su GNUnet"
+msgstr "Su GNUnet"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
 msgid "Bug Tracker"
-msgstr "Registro bug"
+msgstr "Rilevatore di bug"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
 msgid "Copyright Assignment"
@@ -63,7 +63,7 @@ msgstr "Segnalare problemi del sito."
 
 #: common/navigation.j2.inc:38
 msgid "About"
-msgstr "Cos'è GNUnet"
+msgstr "Riguardo a"
 
 #: common/navigation.j2.inc:39 news/index.html.j2:8
 #: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
@@ -117,7 +117,7 @@ msgstr "Documentazione del codice sorgente"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
-msgstr "Integrazione continua"
+msgstr "Integrazione continuativa"
 
 #: common/navigation.j2.inc:68
 msgid "Development Tutorial"
@@ -133,7 +133,7 @@ msgstr "Installazione"
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
 msgid "Use"
-msgstr "Utilizzo"
+msgstr "Usare"
 
 #: common/navigation.j2.inc:84
 msgid "Videos"
@@ -157,7 +157,7 @@ msgstr "API REST"
 
 #: common/navigation.j2.inc:89
 msgid "FAQ"
-msgstr "Domande Frequenti"
+msgstr "FAQ"
 
 #: news/index.html.j2:11 news/oldnews-2011.html.j2:16
 #: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
@@ -175,7 +175,7 @@ msgstr "Iscriviti al nostro feed RSS"
 #: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr "Per saperne di più"
+msgstr "Maggiori informazioni"
 
 #: news/index.html.j2:45
 msgid "News archives:"
@@ -1967,6 +1967,22 @@ msgid ""
 "For example, if you configured GNUnet using a prefix of \"$HOME/gnunet/\" "
 "you want to run:"
 msgstr ""
+"R: Questo errore accade normalmente quando il tuo linker non riesce a "
+"localizzare una delle biblioteche di GNUnet. Questo può avere due ragioni. "
+"Primo, è teoreticamente possibile che la biblioteca non sia installata sul "
+"tuo sistema; ad ogni modo, se compili GNUnet normalmente e/o usi un "
+"pacchetto binario, è molto improbabile. La causa più comune è che hai "
+"installato GNUnet in una directory che il tuo linker non trova. Ci sono "
+"diversi modi per rimediarvi. Se sei \"root\" e lo hai installato su una "
+"cartella di sistema (come /usr/local), vuoi aggiungere le biblioteche sul "
+"percorso di ricerca a livello di sistema. Questo è possibile aggiungendo una "
+"linea \"/usr/local/lib/\" a /etc/ld.so.conf e avviare \"ldconfig\". Se hai "
+"installato GNUnet a /opt o qualsiasi altro percorso simile, ovviamente devi "
+"cambiare \"/usr/local\" di conseguenza. Se non hai diritti da \"root\" o hai "
+"installato GNUnet come \"/home/$USER/\", allora puoi esplicitamente far "
+"cercare al tuo linker una precisa directory per biblioteche usando la "
+"variabile ambientale \"LD_LIBRARY_PATH\". Per esempio, se hai configurato "
+"GNUnet usando un prefisso \"$HOME/gnunet/\" allora devi:"
 
 #: template/faq.html.j2:774
 msgid ""
@@ -1976,6 +1992,11 @@ msgid ""
 "have this new profile be applied to all shells (including your desktop "
 "environment)."
 msgstr ""
+"per assicurarti che le biblioteche e i binari di GNUnet vengano "
+"riconosciuti. Per evitare di dover fare così ogni volta, puoi aggiungere le "
+"linee di cui sopra (senza la \"$\") al tuo file .bashrc o .profile. Dovrai "
+"fare il logout e di nuovo il login per far sì che questo nuovo profilo venga "
+"aggiunto a tutte le strutture (incluso il tuo desktop)."
 
 #: template/faq.html.j2:781
 msgid "What error messages can be ignored?"
@@ -2307,7 +2328,7 @@ msgstr ""
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
 msgid "Motivation"
-msgstr ""
+msgstr "Motivazione"
 
 #: template/gns.html.j2:15
 msgid ""
@@ -2478,7 +2499,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:118
 msgid "Rename to fix"
-msgstr ""
+msgstr "Rinomina per risolvere"
 
 #: template/gnurl.html.j2:120
 #, python-format
@@ -2501,7 +2522,7 @@ msgstr ""
 
 #: template/gnurl.html.j2:142
 msgid "Using libgnurl"
-msgstr ""
+msgstr "Usare libgnurl"
 
 #: template/gnurl.html.j2:144
 msgid ""
@@ -2513,10 +2534,18 @@ msgid ""
 "proposed, but so far we have kept our changes minimal and no additions to "
 "the original curl source have been written."
 msgstr ""
+"Progetti che usano cURL per HTTP/HTTPS e che funzionerebbero con GnuTLS "
+"dovrebbero essere in grado di cambiare a lbgnurl cambiando \"-lcurl\" a "
+"\"lgnurl\". Tutto qui. Nessun cambio al codice della sorgente dovrebbe "
+"essere richiesto, dato che libgnurl lotta per una compatibilità bug-for-bug "
+"con i subset di cURL: HTTP/HTTPS/GnuTLS. Potremmo aggiungere nuovi "
+"componenti relazionati con questo subset se ci vengono proposti, ma finora "
+"abbiamo mantenuto al minimo i cambiamenti e niente è stato aggiunto alla "
+"sorgente originaria curl."
 
 #: template/gnurl.html.j2:161
 msgid "Gotchas"
-msgstr ""
+msgstr "Trabocchetti"
 
 #: template/gnurl.html.j2:163
 msgid ""
@@ -2530,6 +2559,15 @@ msgid ""
 "no conflicts in filenames occur you are not expected to remove curl to make "
 "use of gnurl and viceversa."
 msgstr ""
+"libgnurl e gnurl non sono stati pensati per essere usati come rimpiazzo per "
+"gli utenti curl: <br> Questo non significa che non ci sia fiducia nel lavoro "
+"fatto con gnurl, ma che questi strumenti non useranno un binario e "
+"biblioteca chiamati diversamente. Se sai cosa fai, dovresti essere in grado "
+"di usare gnurl nei tuoi strumenti invece di curl. Non consigliamo di farlo "
+"comunque, visto che l'unico uso per cui è stato testato <em> finora </em> è "
+"come parte dei sistemi Taler&#39;s e GNUnet&#39;s. <br> Dal momento che non "
+"ci sono conflitti nei nomi dei file non dovresti rimuovere curl per usare "
+"gnurl e viceversa."
 
 #: template/gnurl.html.j2:188
 msgid "You can get the gnurl git repository using:"
