@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-04-17 17:31+0000\n"
-"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
+"PO-Revision-Date: 2021-04-18 11:19+0000\n"
+"Last-Translator: Axelle Dimpre <axelle.dimpre@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
 "Language: fr\n"
@@ -42,7 +42,7 @@ msgstr "À propos de GNUnet"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
 msgid "Bug Tracker"
-msgstr "Système de suivi des bugs"
+msgstr "Système de suivi des dysfonctionnements"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
 msgid "Copyright Assignment"
@@ -164,8 +164,8 @@ msgstr "F.A.Q"
 #: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
 msgstr ""
-"Publications d'actualités de changements liés à GNUnet comme des parutions "
-"et des évènements"
+"Actualités sur les changements liés à GNUnet comme des sorites et des "
+"évènements"
 
 #: news/index.html.j2:16 news/oldnews-2011.html.j2:21
 #: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
@@ -199,9 +199,9 @@ msgstr ""
 "répartition des applications de manière sûre et décentralisée tout en étant "
 "respectueux de la vie privée. Notre but est de remplacer l'ancienne pile de "
 "protocoles Internet, trop dangereuse. À la base, il était question d'une "
-"application qui sécurisait la publication de fichiers, puis le projet s'est "
-"agrandit en incluant tous les types d'éléments et d'applications de "
-"protocole basique, jusqu'à la création d'un internet GNU."
+"fonction qui sécurisait la publication de fichiers, puis le projet s'est "
+"agrandit en incluant tous les types d'éléments et de fonctions de protocole "
+"basique, jusqu'à la création d'un internet GNU."
 
 #: template/about.html.j2:23
 msgid ""
@@ -212,9 +212,9 @@ msgid ""
 "situation is less tenable for civil society."
 msgstr ""
 "Aujourd'hui, le véritable usage et donc les exigences sociales d'un réseau "
-"mondial sont largement différentes de celles visées en 1970. Alors que "
-"l'Internet reste convenable pour un usage militaire, là où l'équipement de "
-"réseau fonctionne grâce à une hiérarchie du commandement et est isolé du "
+"mondial sont largement différentes de celles visées en 1970. Alors que le "
+"réseau Internet reste convenable pour un usage militaire, là où l'équipement "
+"de réseau fonctionne grâce à une hiérarchie du commandement et est isolé du "
 "reste du monde lorsque c'est nécessaire, la situation se prête moins à "
 "l'usage de la société civile."
 
@@ -229,7 +229,7 @@ msgid ""
 msgstr ""
 "A cause des choix de conception fondamentaux d'Internet, le trafic Internet "
 "peut être détourné, intercepté, censuré et manipulé par des des routeurs "
-"malveillants sur le réseau. Et en effet, l'Internet moderne a évolué "
+"malveillants sur le réseau. Et en effet, le réseau Internet moderne a évolué "
 "précisément jusqu'au point où, comme dit Matthew Green, <a href=\"https"
 "://blog.cryptographyengineering.com/2015/08/16/the-network-is-hostile/\">\"le"
 " réseau est malveillant\"</a>."
@@ -267,9 +267,7 @@ msgstr ""
 msgid ""
 "GNUnet must minimize the amount of personally identifiable information "
 "exposed."
-msgstr ""
-"GNUnet doit exposer le moins possible d'information personnellement "
-"identifiable."
+msgstr "GNUnet doit exposer le moins possible de données à caractère personnel."
 
 #: template/about.html.j2:61
 msgid ""
@@ -302,15 +300,16 @@ msgstr ""
 
 #: template/about.html.j2:65
 msgid "GNUnet must support a diverse range of applications and devices."
-msgstr "GNUnet doit supporter un large éventail d'applications et d'appareils."
+msgstr "GNUnet doit supporter un large éventail de fonctions et d'appareils."
 
 #: template/about.html.j2:66
 msgid "GNUnet must use compartmentalization to protect sensitive information."
 msgstr ""
-"GNUnet doit user de la compartimentation pour protéger les informations "
+"GNUnet doit utiliser la compartimentation pour protéger les informations "
 "sensibles."
 
 #: template/about.html.j2:67
+#, fuzzy
 msgid "The GNUnet architecture must be resource efficient."
 msgstr "L'architecture de GNUnet doit avoir recourt à des ressources efficaces."
 
@@ -375,8 +374,8 @@ msgstr ""
 "Il y a bien d'autres informations sur GNUnet à découvrir en plus du <a href="
 "\"https://docs.gnunet.org/handbook/gnunet.html\">manuel</a>, comme la <a "
 "href=\"https://bib.gnunet.org/\">bibliographie</a> avec des articles "
-"traitants des différents cas, plusieurs <a href=\"https://gnunet.org/en/video"
-".html\">vidéos</a> ou un <a href=\"https://gnunet.org/en/glossary.html\""
+"traitant des différents cas, plusieurs <a href=\"https://gnunet.org/en/video."
+"html\">vidéos</a> ou un <a href=\"https://gnunet.org/en/glossary.html\""
 ">glossaire</a> court."
 
 #: template/about.html.j2:95
@@ -386,18 +385,19 @@ msgid ""
 "html\">use it</a> and <a href=\"engage.html\">contribute and get engaged</a> "
 "in various ways."
 msgstr ""
-"Vous pouvez dès maintenant <a href=\"engage.html\">vous impliquer dans la "
+"Vous pouvez dès maintenant <a href=\"engage.html\">participer à la "
 "conversation</a>, <a href=\"install.html\">installer GNUnet</a>, <a href="
-"\"use.html\">l'utiliser</a> ainsi que <a href=\"engage.html\">contribuer et "
-"vous engager</a> de diverses manières."
+"\"use.html\">l'utiliser</a>,<a href=\"engage.html\">contribuer et vous "
+"engager</a> de diverses manières."
 
 #: template/about.html.j2:100
+#, fuzzy
 msgid ""
 "Please be aware that this project is (despite of it's age) still in an early "
 "alpha stage when it comes to software &#8211; its not an easy task to "
 "rewrite the whole Internet!"
 msgstr ""
-"Soyez conscients que ce projet (malgré son âge) est toujours au stade Alpha "
+"N'oubliez pas que ce projet (malgré son âge) est toujours au stade Alpha "
 "quant au logiciel &#8211;, ce n'est pas facile de réécrire Internet !"
 
 #: template/about.html.j2:105
@@ -411,11 +411,10 @@ msgid ""
 "the IETF standardization process."
 msgstr ""
 "Nous recevons des fonds du régime de financement Next Generation Internet de "
-"NLnet pour documenter et appliquer le protocole du GNU Name System d'une "
+"NLnet pour alimenter et appliquer le protocole du GNU Name System d'une "
 "manière adaptée au processus de standardisation IETF."
 
 #: template/about.html.j2:123
-#, fuzzy
 msgid ""
 "This project has received funding from the European Union’s Horizon 2020 "
 "research and innovation programme under the NGI_TRUST grant agreement no "
@@ -435,7 +434,6 @@ msgstr ""
 "à des fins d'utilisateurs indépendants)."
 
 #: template/about.html.j2:141
-#, fuzzy
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
@@ -448,24 +446,20 @@ msgid "Past funding"
 msgstr "Ancien financement"
 
 #: template/about.html.j2:152
-#, fuzzy
 msgid "We are grateful for past funding from the following organizations:"
 msgstr ""
 "Nous tenons à remercier les organisations suivantes pour leur participation "
 "à l'ancien financement :"
 
 #: template/applications.html.j2:7
-#, fuzzy
 msgid "Applications provided by GNUnet"
-msgstr "Applications fournies par GNUnet"
+msgstr "Fonctions disponibles sur GNUnet"
 
 #: template/applications.html.j2:13 template/gns.html.j2:7
-#, fuzzy
 msgid "The GNU Name System"
 msgstr "Le GNU Name System"
 
 #: template/applications.html.j2:15
-#, fuzzy
 msgid ""
 "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully decentralized "
 "replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
@@ -477,77 +471,68 @@ msgid ""
 msgstr ""
 "Le <a href=\"gns.html\">GNU Name System (GNS)</a> est un replacement "
 "entièrement décentralisé pour le Domain Name System (DNS). Au lieu de mettre "
-"en oeuvre la hiérarchie, GNS utilise un graphique dirigé. Les conventions "
+"en œuvre la hiérarchie, GNS utilise un graphique dirigé. Les conventions "
 "relatives aux noms sont similaires au DNS, mais les questions et les "
 "réponses sont privées, notamment lorsque les pairs fournissent les réponses. "
 "L'intégrité des enregistrements et la privacité des consultations est sous "
-"sécurité cryptographiée. <!-- Too technical: GNS integrates a robust, "
+"sécurité cryptographiée. < !-- Too technical : GNS integrates a robust, "
 "efficient and instant key revocation mechanism. -->"
 
 #: template/applications.html.j2:38
-#, fuzzy
 msgid "Self-sovereign, decentralized identity provider"
-msgstr "Fournisseur d'identité auto-régie et décentralisée"
+msgstr "Fournisseur d'identité indépendant et décentralisé"
 
 #: template/applications.html.j2:40
-#, fuzzy
 msgid ""
 "<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> is a decentralized "
 "Identity Provider (IdP) service built in top of the GNU Name System. It "
 "allows users to securely share personal information with websites using "
 "standardized protocols (OpenID Connect)."
 msgstr ""
-"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> est un service "
-"décentralisé d'Identity Provider (IdP) construit sur la base du GNU Name "
-"System. Il permet aux utilisateurs de partager sans risque des informations "
-"personnelles sur des sites utilisant les protocoles standards (OpenID "
-"Connect)."
+"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> est un service de "
+"fournisseur d'identité (IdP, \"identity provider\") décentralisé construit "
+"sur la base du GNU Name System. Il permet aux utilisateurs de partager sans "
+"risque des informations personnelles sur des sites utilisant les protocoles "
+"standards (OpenID Connect)."
 
 #: template/applications.html.j2:57
-#, fuzzy
 msgid "Filesharing (Alpha)"
 msgstr "Partage de fichiers (Alpha)"
 
 #: template/applications.html.j2:59
-#, fuzzy
 msgid ""
 "GNUnet <a href=\"use.html#fs\">filesharing</a> is an application that aims "
 "to provide censorship-resistant, anonymous filesharing. The publisher is "
 "empowered to make a gradual choice between performance and anonymity."
 msgstr ""
-"GNUnet <a href=\"use.html#fs\">partage de fichiers</a> est une application "
-"qui a pour but de permettre un partage de fichiers anonyme et résistant à la "
+"GNUnet <a href=\"use.html#fs\">partage de fichiers</a> est une fonction qui "
+"a pour but de permettre un partage de fichiers anonyme et résistant à la "
 "censure. L'éditeur est chargé de trouver le juste milieu entre performance "
 "et anonymat."
 
 #: template/applications.html.j2:73
-#, fuzzy
 msgid "Conversation (Pre-Alpha)"
 msgstr "Conversation (Pre-Alpha)"
 
 #: template/applications.html.j2:75
-#, fuzzy
 msgid ""
 "GNUnet conversation is an application that provides secure voice "
 "communication in a fully decentralized way by employing GNUnet for routing "
 "and transport."
 msgstr ""
-"GNUnet conversation est une application qui fournit une communication vocale "
-"sans risque de manière complètement décentralisée en passant par GNUnet pour "
-"l'acheminement et le transport."
+"GNUnet conversation est une fonction qui fournit une communication vocale "
+"sans risque, de manière complètement décentralisée en passant par GNUnet "
+"pour l'acheminement et le transport."
 
 #: template/applications.html.j2:91
-#, fuzzy
 msgid "Applications utilizing GNUnet"
-msgstr "Applications qui utilisent GNUnet"
+msgstr "Fonctions qui passent par GNUnet"
 
 #: template/applications.html.j2:97
-#, fuzzy
 msgid "GNU Taler (Alpha)"
 msgstr "GNU Taler (Alpha)"
 
 #: template/applications.html.j2:99
-#, fuzzy
 msgid ""
 "<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
 "electronic payment system. Payments are cryptographically secured and are "
@@ -555,34 +540,30 @@ msgid ""
 msgstr ""
 "<a href=\"https://taler.net/\">GNU Taler</a> est un nouveau système de "
 "paiement électronique respectueux de la privacité. Les paiements sont sous "
-"sécurité cryptographiée et sont confirmées dans la milliseconde avec des "
+"sécurité cryptographiée et sont confirmés dans la milliseconde avec des "
 "frais sensiblement faibles."
 
 #: template/applications.html.j2:118
-#, fuzzy
 msgid "secushare"
 msgstr "Secushare"
 
 #: template/applications.html.j2:120
-#, fuzzy
 msgid ""
 "<a href=\"https://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
 "the extensible PSYC protocol, notifications are distributed end-to-end "
 "encrypted to authorized recipients only."
 msgstr ""
-"<a href=\"https://secushare.org/\">secushare</a> développe une application "
-"de réseautage social décentralisé en plus de GNUnet. Grâce à une couverture "
+"<a href=\"https://secushare.org/\">secushare</a> développe une fonction de "
+"réseautage social décentralisé en plus de GNUnet. Grâce à une couverture "
 "multicast et le protocole extensible PSYC, les notifications ne sont "
 "envoyées qu'à des destinataires autorisés chiffrés de bout en bout."
 
 #: template/applications.html.j2:139
-#, fuzzy
 msgid "pretty Easy privacy"
 msgstr "pretty Easy privacité"
 
 #: template/applications.html.j2:141
-#, fuzzy
 msgid ""
 "<a href=\"https://pep.foundation/\">pretty Easy privacy</a> (p&#8801;p) is "
 "creating a usable end-to-end encrypted e-mail solution using opportunistic "
@@ -596,12 +577,10 @@ msgstr ""
 "protocoles cryptographiques pour vérifier les clés."
 
 #: template/applications.html.j2:160
-#, fuzzy
 msgid "Cadet-GTK"
 msgstr "Cadet-GTK"
 
 #: template/applications.html.j2:162
-#, fuzzy
 msgid ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
 "convenient but feature-rich graphical application providing messaging using "
@@ -609,17 +588,15 @@ msgid ""
 "convergent design."
 msgstr ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> est "
-"une interface graphique modeste mais riche en carcatéristiques qui fournit "
+"une interface graphique modeste mais riche en caractéristiques qui fournit "
 "des services de messagerie en utilisant notamment le sous-système CADET. Il "
-"est développé avec GTK et libhandy pour un design cohérent.</a>"
+"est développé avec GTK et libhandy pour un design cohérent."
 
 #: template/applications.html.j2:180
-#, fuzzy
 msgid "groupchat"
 msgstr "groupchat"
 
 #: template/applications.html.j2:182
-#, fuzzy
 msgid ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
 "terminal user interface providing messaging using especially the CADET "
@@ -632,17 +609,14 @@ msgstr ""
 "GTK et groupchat seront compatibles."
 
 #: template/architecture.html.j2:6
-#, fuzzy
 msgid "GNUnet System Architecture"
-msgstr "GNUnet System Architecture"
+msgstr "Architecture du système GNUnet"
 
 #: template/architecture.html.j2:20
-#, fuzzy
 msgid "Foundations"
 msgstr "Bases"
 
 #: template/architecture.html.j2:22
-#, fuzzy
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -658,12 +632,10 @@ msgstr ""
 "la pile TCP/IP traditionnelle."
 
 #: template/architecture.html.j2:35
-#, fuzzy
 msgid "Security"
 msgstr "Sécurité"
 
 #: template/architecture.html.j2:38
-#, fuzzy
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault-isolation and enabling tight "
@@ -673,45 +645,39 @@ msgid ""
 msgstr ""
 "GNUnet est implanté grâce à une architecture multi-procédés. Chaque sous-"
 "système fonctionne comme procédé à part, ce qui permet d'isoler les défauts "
-"et de garantir les permissions strictes pour chaque sous-système."
+"et de garantir les permissions strictes pour chaque sous-système. "
+"Naturellement, l’exécution est un progiciel <a href=\"https://www.gnu.org/\""
+">GNU</a>, et restera toujours un logiciel libre."
 
 #: template/architecture.html.j2:52
-#, fuzzy
 msgid "System architecture"
-msgstr "Système d'architecture"
+msgstr "Architecture du système"
 
 #: template/architecture.html.j2:58
-#, fuzzy
 msgid "Subsystems"
 msgstr "Sous-systèmes"
 
 #: template/architecture.html.j2:67
-#, fuzzy
 msgid "libgnunetutil"
 msgstr "libgnunetutil"
 
 #: template/architecture.html.j2:73
-#, fuzzy
 msgid "APIs"
 msgstr "Interfaces de programmation"
 
 #: template/architecture.html.j2:86
-#, fuzzy
 msgid "Legend"
 msgstr "Légende"
 
 #: template/contact.html.j2:6
-#, fuzzy
 msgid "Contact information"
 msgstr "Nous contacter"
 
 #: template/contact.html.j2:11
-#, fuzzy
 msgid "The mailing list"
 msgstr "La liste mailing"
 
 #: template/contact.html.j2:13
-#, fuzzy
 msgid ""
 "An archived, public mailing list for GNUnet is hosted at <a href=\"https://"
 "lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists.gnu.org/"
@@ -725,12 +691,10 @@ msgstr ""
 ">gnunet-developers@gnu.org</a>."
 
 #: template/contact.html.j2:23
-#, fuzzy
 msgid "The IRC channel"
 msgstr "La chaîne IRC"
 
 #: template/contact.html.j2:25
-#, fuzzy
 msgid ""
 "<tt>#gnunet</tt> is reachable via <a href=\"https://freenode.net\">irc."
 "freenode.net</a>. There is also an <a href=\"https://view.matrix.org/room/!"
@@ -741,7 +705,6 @@ msgstr ""
 "!IjaAfLiruzjxFFzKAV:matrix.org/\">archives</a> sont également disponibles."
 
 #: template/contact.html.j2:38
-#, fuzzy
 msgid "Contacting individuals"
 msgstr "Contact particuliers"
 
