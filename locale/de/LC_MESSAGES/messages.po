@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-12 21:31+0000\n"
+"PO-Revision-Date: 2021-04-19 06:56+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
 "\n"
@@ -2683,14 +2683,24 @@ msgid ""
 "no conflicts in filenames occur you are not expected to remove curl to make "
 "use of gnurl and viceversa."
 msgstr ""
+"libgnurl und gnurl sind nicht als Curl-Ersatz für Nutzer gedacht: <br> Das "
+"heißt nicht, es mangele an Vertrauen in mit gnurl produzierten "
+"Arbeitsergebnissen, sondern trägt der Tatsache Rechnung, dass Werkzeuge, die "
+"Curl oder libcurl erwarten, nicht auf anders benannte Binäre und "
+"Bibliotheken zurückgreifen. Solange du weißt was du tust solltest du in der "
+"Lage sein, gnurl als Teil deiner Systemgestaltung anstelle von Curl zu "
+"verwenden. Allerdings empfehlen wir nicht so vorzugehen, da der <em bislang "
+"</em> einzige getestete Einsatz als Teil des Taler&#39;s Bausystems ist. "
+"<br> Da keinerlei Konflikte in Dateinamen auftreten wird nicht erwartet, "
+"dass du Curl entfernst, um gnurl zu verwenden, oder umgekehrt."
 
 #: template/gnurl.html.j2:188
 msgid "You can get the gnurl git repository using:"
-msgstr ""
+msgstr "Du kannst das Gnurl Git Repository mit folgender Adresse abrufen:"
 
 #: template/gnurl.html.j2:201
 msgid "The versions are checked in as (signed) git tags."
-msgstr ""
+msgstr "Die Versionen werden als (signierte) Git-Tags aufgenommen."
 
 #: template/gnurl.html.j2:211
 msgid ""
@@ -2704,6 +2714,15 @@ msgid ""
 "\"https://nixos.org/nix/\">Nix</a>, and as www/gnurl in <a href=\"https://"
 "pkgsrc.org\">pkgsrc</a>."
 msgstr ""
+"Releases werden auf <a href=\"https://ftpmirror.gnu.org/gnu/gnunet/\""
+">ftpmirror.gnu.org/gnu/gnunet veröffentlicht</a>. gnurl ist über eine Reihe "
+"von Verteilungen und Paket-Managern erhältlich. Einige Paket-Manager, die "
+"gnurl einschließen, sind: <a href=\"https://www.gnu.org/software/guix/\">GNU "
+"Guix</a> (erhältlich als \"gnurl\"), <a href=\"https://gentoo.org\">Gentoo</"
+"a> über die kollaborative ebuild-Sammlung <a href=\"https://git.gnunet.org/"
+"youbroketheinternet-overlay.git/\">youbroketheinternet</a>,<a href=\"https"
+"://nixos.org/nix/\">Nix</a>, oder als www/gnurl in<a href=\"https://pkgsrc."
+"org\">pkgsrc</a>."
 
 #: template/gnurl.html.j2:228
 #, fuzzy
@@ -2725,79 +2744,107 @@ msgid ""
 "b> building gnurl from the tip of the default git branch, as only tags are "
 "considered to be stable and approved builds."
 msgstr ""
+"Wir empfehlen, entsprechende Release-Ankündigungen genau im Auge zu "
+"behalten, da sie möglicherweise auf Änderungen bei der Erstellung von gnurl "
+"hinweisen. <br> Falls dein Paket-Manager einen binären Build oder Build-"
+"Instruktionen zur Erstellung von gnurl aus mit deiner Systemumgebung "
+"automatisierten und integriertem Quellcode zur Verfügung stellt, dann "
+"empfehlen wir dringend diesen binären Build zu verwenden. <br> Es gibt zwei "
+"Möglichkeiten, gnurl zu bauen. Bei der ersten Möglichkeit baut man ausgehend "
+"vom jüngsten Git-Tag, bei der zweiten verwendet man den verteilten Tarball. "
+"Distributoren sollten grundsätzlich vom Tarball aus bauen, aber wir "
+"beschreiben hier beide Methoden. Sie sind beide ausgehend von einer NetBSD 9 "
+"Benutzerlandschaft geschrieben, mit Ersatztools wo erforderlich. <br> Du "
+"solltest es <b>vermeiden</b>, gnurl von der Spitze des Standard Git-Astes zu "
+"bauen, da nur Tags als wirklich sichere und zulässige Builds betrachtet "
+"werden können."
 
 #: template/gnurl.html.j2:251
+#, fuzzy
 msgid "Building from the distributed tarball (prefered method)"
-msgstr ""
+msgstr "Bauen aus dem verteilten Tarball (bevorzugte Methode)"
 
 #: template/gnurl.html.j2:253
 msgid ""
 "If you want to verify the signature, install an OpenPGP compatible tool such "
 "as security/gnupgp2 (and set it up). Assuming you use pkgin:"
 msgstr ""
+"Wenn du die Signatur überprüfen willst, installiere ein OpenPGP-kompatibles "
+"Tool wie security/gnupgp2 (und richte es ein). In der Annahme, dass du pkgin "
+"verwendest:"
 
 #: template/gnurl.html.j2:267
 msgid "Fetch the signature key from"
-msgstr ""
+msgstr "Hole dir den Signaturschlüssel von"
 
 #: template/gnurl.html.j2:271
+#, fuzzy
 msgid "or via commandline with gnupg2."
-msgstr ""
+msgstr "oder über die Kommandozeile mit gnupg2."
 
 #: template/gnurl.html.j2:276
 msgid ""
 "Fetch the release, the signature, the checksum file as well as its signature:"
 msgstr ""
+"Rufe die Version, die Signatur, die Prüfsummendatei sowie deren Signatur ab:"
 
 #: template/gnurl.html.j2:295
 msgid ""
 "verify the signatures, and verify the checksums against the checksums in "
 "the .sum.txt file."
 msgstr ""
+"Überprüfe die Signaturen, und verifiziere die Prüfsummen anhand der "
+"Prüfsummen in der Datei .sum.txt."
 
 #: template/gnurl.html.j2:301
 msgid "unpack the tarball:"
-msgstr ""
+msgstr "Pack den Tarball aus:"
 
 #: template/gnurl.html.j2:311
 msgid "Change into the directory"
-msgstr ""
+msgstr "Wechsele in das Verzeichnis"
 
 #: template/gnurl.html.j2:321
 msgid "Now you can either run"
-msgstr ""
+msgstr "Jetzt kannst du entweder einen Lauf starten"
 
 #: template/gnurl.html.j2:331
 msgid "directly (and read configure-gnurl before you do so) or invoke"
 msgstr ""
+", auf direktem Wege, (und lies vorher noch configure-gnurl) oder rufe auf"
 
 #: template/gnurl.html.j2:341
 msgid ""
 "and pass additional parameters such as a custom PREFIX location. Further "
 "reference can be the"
 msgstr ""
+"und übertrage zusätzliche Parameter wie z.B. einen benutzerdefinierten "
+"PREFIX-Speicherort. Eine weitere Information kann das"
 
 #: template/gnurl.html.j2:346
 msgid "Now run"
-msgstr ""
+msgstr "Führe nun die folgende Kommandos aus"
 
 #: template/gnurl.html.j2:356
 msgid "(this is optional)"
-msgstr ""
+msgstr "(dies ist optional)"
 
 #: template/gnurl.html.j2:365
+#, fuzzy
 msgid "and you are done."
-msgstr ""
+msgstr "und du bist fertig."
 
 #: template/gnurl.html.j2:369
 msgid "Building from a tagged git commit"
-msgstr ""
+msgstr "Aus einem getaggten Git-Commit bauen"
 
 #: template/gnurl.html.j2:371
 msgid ""
 "Follow the steps above, but instead of downloading the tarball, clone the "
 "git tag you want to build from."
 msgstr ""
+"Befolge die obigen Schritte, aber anstatt den Tarball herunterzuladen, klone "
+"das Git-Tag, aus dem du erstellen möchtest."
 
 #: template/gnurl.html.j2:382
 msgid "Reporting Bugs"
@@ -2809,10 +2856,14 @@ msgid ""
 "\">bugs.gnunet.org</a>. Alternatively you can use our bug mailinglist, but "
 "we prefer to track bugs on the bugtracker."
 msgstr ""
+"Du kannst Fehler auf unserem Bug-Tracker <a href=\"https://bugs.gnunet.org/\""
+">bugs.gnunet.org</a>melden. Alternativ kannst du unsere Bug-Mailingliste "
+"verwenden, aber wir ziehe es vor, Bugs auf dem Bug-Tracker zu verfolgen."
 
 #: template/gnurl.html.j2:395
+#, fuzzy
 msgid "Maintainer and Cryptographic signatures"
-msgstr ""
+msgstr "Maintainer- und kryptografische Signaturen"
 
 #: template/gnurl.html.j2:397
 msgid ""
@@ -2822,14 +2873,22 @@ msgid ""
 "q=6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>), with the "
 "key fingerprint <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E 7F8D</b>."
 msgstr ""
+"gnurl/libgnurl sucht einen neuen Betreuer. Releases nach der Version 7.69.1 "
+"und bis zu Version 7.72.0 wurden mit dem OpenPGPKey <br>0xD6B570842F7E7F8D</"
+"br> unterschrieben (<a href=\"https://keys.openpgp.org/search?q="
+"6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.or</a>), mit dem "
+"Schlüsselfingerabdruck <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E "
+"7F8D</br>."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:7
+#, fuzzy
 msgid "GSoC 2018: GNUnet WebUI (GNUnet Web-based User Interface)"
-msgstr ""
+msgstr "GSoC 2018: GNUnet WebUI (GNUnet Web-basierte Benutzeroberfläche)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:11
+#, fuzzy
 msgid "Tue, 08/14/2018 - 07:55, Phil Buschmann"
-msgstr ""
+msgstr "Di, 14.08.2008 - 07:55 Uhr, Phil Buschmann"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:18
 msgid ""
@@ -2837,6 +2896,10 @@ msgid ""
 "Schanzenbach) and I have worked on creating and extending the REST API of "
 "GNUnet. Currently, we mirrored the functionality of following commands:"
 msgstr ""
+"Im Rahmen von Google Summer of Code 2018 haben mein Mentor (Martin "
+"Schanzenbach) und ich an der Erstellung und Erweiterung der REST-API von "
+"GNUnet gearbeitet. Gegenwärtig haben wir die Funktionalität der folgenden "
+"Kommandos gespiegelt:"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:32
 msgid ""
@@ -2844,6 +2907,9 @@ msgid ""
 "and the design framework iotaCSS to use the new REST API. The REST API of "
 "GNUnet is now documented with Sphinx."
 msgstr ""
+"Zusätzlich haben wir eine Website mit dem Javascript-Framework Angular 6 und "
+"dem Design-Framework iotaCSS entwickelt, um die neue REST-API zu verwenden. "
+"Die REST-API von GNUnet ist nun mittels Sphinx dokumentiert."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:41
 msgid ""
@@ -2854,6 +2920,13 @@ msgid ""
 "with GNUnet over a well known tool: their browsers. This addition to the C "
 "API and the command line tools may attract new users and developers."
 msgstr ""
+"... wann kannst du die Kommandozeilen-Tools verwenden? Wir müssen uns vor "
+"Augen halten, daß jeder das Recht hat, sicher und privat zu bleiben, aber "
+"nicht jeder sich bei der Nutzung eines Terminals wohl fühlt. Gemeinsam mit "
+"der neuen Webapplikation erlaubt das weiterentwickelte REST neuen Nutzern "
+"den Zugang zu GNUnet APIs über ein wohlgekanntes Medium: ihren eigenen "
+"Browsern. Diese Weiterentwicklung des C-API und den Kommandozeilen-Tools "
+"könnte neue Nutzer und Entwickler anziehen."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:54
 msgid ""
@@ -2877,6 +2950,26 @@ msgid ""
 "api.git/\">GNUnet REST API Docmentation Git</a>).<br /> Clone the repository "
 "and \"make html\". Then open the 'index.html' under 'build/html/'. </li>"
 msgstr ""
+"<li>Die in GNUnet entwickelte REST-API<br> Die REST-API ist bereits im gnunet"
+".git-Repository ( <a href=\"https://gnunet.org/git/gnunet.git/\">GNUnet Main "
+"Git</a> ) zusammengeführt.<br /> Um die neuen Funktionen zu nutzen, klonst "
+"du das Repository und folgst der <a href=\"https://gnunet.org/en/install."
+"html\">Installation</a> auf gnunet.org. Starte dann den Rest-Service mit "
+"\"gnunet-arm -i rest\". </li> <li> Die Web-Anwendung<br> Die Web-Anwendung "
+"ist verfügbar unter der GNUnet-webui.git-Repository (<a href=\"https://gnunet"
+".org/git/gnunet-webui.git/\">GNUnet WebUI Git</a>).<br /> Du mußt die neuste "
+"Version von 'node' und 'yarn' installieren. In Abhängigkeit von deinem "
+"System mußt du eventuell neuere Versionen herunterladen und manuell anstatt "
+"über deinen Paket-Manager installieren. Nach erfolgreicher Installation mußt "
+"du die Repository klonen. Anschließend läßt du \"yarn install\" und \"yarn "
+"start\" für Testzwecke laufen. Um die Webseite bereitzustellen (beachte "
+"dabei, daß diese Webseite mit einer weiteren lokalen Host-Instanz "
+"kommuniziert) benutzt du \"yarn build\", um die Webapplikationen zu bauen, "
+"und verwendest das Ergebnis im 'dist'-Verzeichnis. </li> <li> Die "
+"Dokumentation<br /> Die Dokumentation ist verfügbar unter der gnunet-rest-api"
+".git-Repository (<a href=\"https://gnunet.org/git/gnunet-rest-api.git/\""
+">GNUnet REST API Docmentation Git</a>).<br /> Klone die Repository und \"make"
+" html\". Dann öffnest du den 'index.html' unter 'build/html/'. </li>"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:91
 msgid ""
