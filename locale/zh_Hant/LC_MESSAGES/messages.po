@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-15 10:31+0000\n"
+"PO-Revision-Date: 2021-04-20 16:41+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -1461,19 +1461,20 @@ msgstr ""
 
 #: template/faq.html.j2:708
 msgid "Error opening `/dev/net/tun': No such file or directory?"
-msgstr ""
+msgstr "開啟 '/dev/net/tun' 時出現錯誤: 沒有此文件或目錄?"
 
 #: template/faq.html.j2:710
 msgid ""
 "A: If you get this error message, the solution is simple. Issue the "
 "following commands (as root) to create the required device file"
-msgstr ""
+msgstr "答: 若您收到此錯誤訊息，解決方法很簡單。發出以下命令(以root用戶身份)創建所需的設備文件"
 
 #: template/faq.html.j2:722
+#, fuzzy
 msgid ""
 "'iptables: No chain/target/match by that name.' (when running gnunet-service-"
 "dns)?"
-msgstr ""
+msgstr "\"iptables: 沒有該名稱的鍊(chain)/目標/匹配項目。\"(運行gnunet-service-dns時)?"
 
 #: template/faq.html.j2:724
 msgid ""
@@ -1482,21 +1483,23 @@ msgid ""
 "your kernel has CONFIG_NETFILTER_XT_MATCH_OWNER set to either 'y' or "
 "'m' (and the module is loaded)."
 msgstr ""
+"答: 對於GNUnet DNS，您的iptables需具有 &quot;所有者&quot; 匹配支持。這可以通過使用正確的內核(kernel)選項來達成。"
+"請檢察您的內核的CONFIG_NETFILTER_XT_MATCH_OWNER是否已設定為 'y'或是'm'(並且已載入模板)。"
 
 #: template/faq.html.j2:736
 msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
-msgstr ""
+msgstr "在Fedora(或其他)上運行PT時“已超時”?"
 
 #: template/faq.html.j2:738
 msgid ""
 "A: If you get an error stating that the VPN timeout was reached, check if "
 "your firewall is enabled and blocking the connections."
-msgstr ""
+msgstr "答: 如果收到指出已達到VPN超時的錯誤訊息，請檢查您的防火牆是否為啟用狀態且阻擋連線。"
 
 #: template/faq.html.j2:746
 msgid ""
 "I'm getting an 'error while loading shared libraries: libgnunetXXX.so.X'"
-msgstr ""
+msgstr "我在載入共享庫(shared libraries)時遇到\"錯誤: libgnunetXXX.so.X\""
 
 #: template/faq.html.j2:748
 msgid ""
@@ -1529,7 +1532,7 @@ msgstr ""
 
 #: template/faq.html.j2:781
 msgid "What error messages can be ignored?"
-msgstr ""
+msgstr "我可以忽略哪些錯誤訊息可以?"
 
 #: template/faq.html.j2:783
 msgid ""
@@ -1543,7 +1546,7 @@ msgstr ""
 
 #: template/faq.html.j2:799
 msgid "How does GNUnet compare to other file-sharing applications?"
-msgstr ""
+msgstr "GNUnet與其他文件共享應用程式相比如何?"
 
 #: template/faq.html.j2:801
 msgid ""
@@ -1579,7 +1582,7 @@ msgstr ""
 
 #: template/faq.html.j2:928
 msgid "Are there any known attacks (on GNUnet's file-sharing application)?"
-msgstr ""
+msgstr "是否存在任何(在GNUnet的文件共享應用程序上)已知的攻擊?"
 
 #: template/faq.html.j2:930
 msgid ""
@@ -1594,8 +1597,9 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:944
+#, fuzzy
 msgid "What do you mean by anonymity?"
-msgstr ""
+msgstr "匿名是什麼意思?"
 
 #: template/faq.html.j2:946
 msgid ""
