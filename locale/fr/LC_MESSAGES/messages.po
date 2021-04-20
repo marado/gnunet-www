@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-04-18 11:19+0000\n"
-"Last-Translator: Axelle Dimpre <axelle.dimpre@gmail.com>\n"
+"PO-Revision-Date: 2021-04-20 19:08+0000\n"
+"Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
 "Language: fr\n"
@@ -441,7 +441,6 @@ msgstr ""
 "l'hébergement gratuit :"
 
 #: template/about.html.j2:150
-#, fuzzy
 msgid "Past funding"
 msgstr "Ancien financement"
 
@@ -460,6 +459,7 @@ msgid "The GNU Name System"
 msgstr "Le GNU Name System"
 
 #: template/applications.html.j2:15
+#, fuzzy
 msgid ""
 "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully decentralized "
 "replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
@@ -472,11 +472,10 @@ msgstr ""
 "Le <a href=\"gns.html\">GNU Name System (GNS)</a> est un replacement "
 "entièrement décentralisé pour le Domain Name System (DNS). Au lieu de mettre "
 "en œuvre la hiérarchie, GNS utilise un graphique dirigé. Les conventions "
-"relatives aux noms sont similaires au DNS, mais les questions et les "
-"réponses sont privées, notamment lorsque les pairs fournissent les réponses. "
-"L'intégrité des enregistrements et la privacité des consultations est sous "
-"sécurité cryptographiée. < !-- Too technical : GNS integrates a robust, "
-"efficient and instant key revocation mechanism. -->"
+"nominatives sont similaires au DNS, mais les questions et les réponses sont "
+"privées, notamment lorsque les pairs fournissent les réponses. L'intégrité "
+"des enregistrements et la privacité des recherches sont sous sécurité "
+"cryptographiée."
 
 #: template/applications.html.j2:38
 msgid "Self-sovereign, decentralized identity provider"
@@ -593,8 +592,9 @@ msgstr ""
 "est développé avec GTK et libhandy pour un design cohérent."
 
 #: template/applications.html.j2:180
+#, fuzzy
 msgid "groupchat"
-msgstr "groupchat"
+msgstr "groupe de chat"
 
 #: template/applications.html.j2:182
 msgid ""
@@ -709,18 +709,17 @@ msgid "Contacting individuals"
 msgstr "Contact particuliers"
 
 #: template/contact.html.j2:40
-#, fuzzy
 msgid ""
 "GNUnet developers are generally reachable at either <tt>PSEUDONYM@gnunet."
 "org</tt> or <tt>LASTNAME@gnunet.org</tt>. Most of us support receiving GnuPG "
 "encrypted Emails. Urgent and sensitive security issues may be addressed to "
 "the GNU maintainers <tt>schanzen</tt> and <tt>grothoff</tt>."
 msgstr ""
-"Les développeurs de GNUnet peuvent généralement être contacté via "
+"En général, il est possible de contacter les développeurs de GNUnet via "
 "<tt>PSEUDONYM@gnunet.org</tt> ou <tt>LASTNAME@gnunet.org</tt>. La plupart "
-"d'entre nous supportent la réception d'Emails chiffrés GnuPG. Les questions "
-"urgentes et sensibles à propos de la sécurité peuvent être adressées aux "
-"responsables <tt>schanzen</tt> et <tt>grothoff</tt>."
+"d'entre nous peut recevoir des Emails chiffrés GnuPG. Les questions urgentes "
+"et sensibles à propos de la sécurité peuvent être adressées aux responsables "
+"<tt>Schanzen</tt> et <tt>Grothoff</tt>."
 
 #: template/contact.html.j2:53
 msgid "Reporting bugs"
