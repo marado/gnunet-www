@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-19 06:56+0000\n"
-"Last-Translator: Francesca Giusti <francescag1194@gmail.com>\n"
+"PO-Revision-Date: 2021-04-20 23:43+0000\n"
+"Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
 "Language: it\n"
@@ -2571,11 +2571,11 @@ msgstr ""
 
 #: template/gnurl.html.j2:188
 msgid "You can get the gnurl git repository using:"
-msgstr ""
+msgstr "È possibile ottenere l'archivio git gnurl usando:"
 
 #: template/gnurl.html.j2:201
 msgid "The versions are checked in as (signed) git tags."
-msgstr ""
+msgstr "Le versioni sono registrate come git tag (firmate)."
 
 #: template/gnurl.html.j2:211
 msgid ""
@@ -2589,10 +2589,19 @@ msgid ""
 "\"https://nixos.org/nix/\">Nix</a>, and as www/gnurl in <a href=\"https://"
 "pkgsrc.org\">pkgsrc</a>."
 msgstr ""
+"Le versioni sono pubblicate su <a href=\"https://ftpmirror.gnu.org/gnu/"
+"gnunet/\">ftpmirror.gnu.org/gnu/gnunet</a>. È possibile trovare gnurl "
+"all'interno di un'ampia gamma di distribuzioni e gestori di pacchetti. Tra i "
+"Gestori di pacchetti che includono gnurl ci sono: <a href=\"https://www.gnu."
+"org/software/guix/\">GNU Guix</a> (disponibile come \"gnurl\"), <a href="
+"\"https://gentoo.org\">Gentoo</a> tramite la raccolta di ebuild "
+"collaborativa <a href=\"https://git.gnunet.org/youbroketheinternet-overlay."
+"git/\">youbroketheinternet</a>, <a href=\"https://nixos.org/nix/\">Nix</a> e "
+"come www/gnurl in <a href=\"https://pkgsrc.org\">pkgsrc</a>."
 
 #: template/gnurl.html.j2:228
 msgid "Building gnurl"
-msgstr ""
+msgstr "Compilare gnurl"
 
 #: template/gnurl.html.j2:230
 msgid ""
