@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-03 21:41+0100\n"
-"PO-Revision-Date: 2021-04-20 19:16+0000\n"
+"PO-Revision-Date: 2021-04-20 23:43+0000\n"
 "Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
@@ -73,7 +73,7 @@ msgstr "Actualités"
 
 #: common/navigation.j2.inc:40 template/index.html.j2:289
 msgid "Applications"
-msgstr "Fonctions"
+msgstr "Applications"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
@@ -125,7 +125,7 @@ msgstr "Tutoriel de Développement"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
-msgstr "Documents"
+msgstr "Documentation"
 
 #: common/navigation.j2.inc:82 template/install.html.j2:6
 msgid "Install"
@@ -148,8 +148,9 @@ msgid "Handbook"
 msgstr "Manuel"
 
 #: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
+#, fuzzy
 msgid "Living Standards"
-msgstr "Niveau de Vie"
+msgstr "Standards"
 
 #: common/navigation.j2.inc:88
 msgid "REST API"
@@ -164,8 +165,8 @@ msgstr "F.A.Q"
 #: news/oldnews-2019.html.j2:16
 msgid "News posts about changes related to GNUnet such as releases and events"
 msgstr ""
-"Actualités sur les changements liés à GNUnet comme des sorites et des "
-"évènements"
+"Actualités sur les changements liés à GNUnet comme des nouveaux déploiements "
+"et nos événements"
 
 #: news/index.html.j2:16 news/oldnews-2011.html.j2:21
 #: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
@@ -177,7 +178,7 @@ msgstr "Abonnez-vous à notre Flux RSS"
 #: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
 #: news/oldnews-2019.html.j2:40
 msgid "read more"
-msgstr "Plus de détails"
+msgstr "En savoir plus"
 
 #: news/index.html.j2:45
 msgid "News archives:"
@@ -188,6 +189,7 @@ msgid "What is GNUnet?"
 msgstr "Qu'est-ce que GNUnet  ?"
 
 #: template/about.html.j2:13
+#, fuzzy
 msgid ""
 "GNUnet is an alternative network stack for building secure, decentralized "
 "and privacy-preserving distributed applications. Our goal is to replace the "
