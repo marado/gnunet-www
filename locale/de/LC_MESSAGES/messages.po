@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-03-12 16:12+0100\n"
-"PO-Revision-Date: 2021-04-20 16:41+0000\n"
+"PO-Revision-Date: 2021-04-26 03:52+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
 "\n"
@@ -3128,6 +3128,24 @@ msgid ""
 "li> <li>Webextensions</li> </ol> <br/> <strong>Difficulty:</strong> "
 "Challenging <br/> <strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
+"reclaimID ist ein dezentrales Identitätssystem, das auf dem GNU-Namenssystem "
+"aufbaut. Zur Zeit gibt es eine Webextension, welche das GNUnet verwendet <a "
+"href=\"https://rest.gnunet.org\">REST API</a>. Damit diese besser angenommen "
+"und leichter angewandt werden kann, zielt dieses Projekt darauf ab, einen "
+"vollwertigen GNUnet-Knoten innerhalb der Webextension als Absicherung "
+"anzubieten. GNUnet kann zu Web Assembly oder JavaScript zusammengetragen "
+"werden, wie hier <a href=\"https://gnunet.io\">here</a>gezeigt. Die Idee "
+"ist, dieses Konzept zu verbessern und mehr von GNUnets Subsystemen zu "
+"unterstützen. Die Schwierigkeit des Projekts hängt zum größten Teil von den "
+"Fähigkeiten der Studenten bzgl. Toolbau, Emscripten und Improvisation ab. "
+"Die unvollständige Aufgabenliste wäre: <ol><li>Verbessere den gegenwärtigen "
+"GNUnet Emscripten-Aufbau, um mehr Subsysteme "
+"unterzubringen.<li><li>Integriere das Ergebnis in eine "
+"Webextension.<li><li>Integriere das Ergebnis in die re:claim ID "
+"Webextension<li></ol> Vorteilhafte Kenntnisse/Sprachen/Systeme: "
+"<ol><li>C</li><li>emscripten</li><li>Webextensions</li></ol><br/"
+"><strong>Schwierigkeit:</strong> Herausfordernd <br/><strong>Mentoren:</"
+"<strong> Martin Schanzenbach"
 
 #: template/gsoc.html.j2:147
 msgid ""
@@ -3147,6 +3165,23 @@ msgid ""
 "ol> <br/> <strong>Difficulty:</strong> Beginner <br/> <strong>Mentors:</"
 "strong> Martin Schanzenbach"
 msgstr ""
+"Derzeit sind die Schlüssel in unserer Statistikdatenbank zu umfangreich. Zum "
+"Beispiel: </p> <p> nse # flood messages received: 13<br/> nse # peers "
+"connected: 4<br/> nse # nodes in the network (estimate): 203<br/> nse # "
+"flood messages started: 5<br/> nse # estimated network diameter: 3<br/> nse #"
+" flood messages transmitted: 10<br/> </p> <p> Mit derart umfangreichen "
+"Schlüsseln gibt es keinen einfachen Weg, ein kompaktes JSON Dokument oder "
+"Einträge für eine Zeitreihendatenbank zu bilden. Und es lassen sich keine "
+"einzelnen Statistiken anfragen, ohne die Zeile exakt zu copypasten und in "
+"Anführungsstriche zu setzen. Kurz zusammengefaßt sind die Ziele... <ol> "
+"<li>Entwickele eine Methode, wie statistische Einträge kanonisch gemacht "
+"werden können.</li> <li>Setze die Veränderung um und migriere die "
+"bestehenden Verwendungen.</li> <li>Dokumentiere das bzw. die Format(e) und "
+"definiere einen geeigneten Registrierungmechanismus für Bezeichner</li> </"
+"ol> Relevante Fehler: <a href=\"https://bugs.gnunet.org/view.php?id=5650\""
+">#5650</a><br/> Vorteilhafte Kenntnisse/Sprachen/Systeme: <ol> <li>C</li> "
+"<li>HTML</li> </ol> <br/> <strong>Schwierigkeit:</strong> Anfänger <br/> "
+"<strong>Mentoren:</strong> Martin Schanzenbach"
 
 #: template/gsoc.html.j2:187
 msgid ""
@@ -3158,19 +3193,32 @@ msgid ""
 "org/gnunet-ext.git/\">C template</a> which allows to quickly start "
 "implementing services and libraries for GNUnet."
 msgstr ""
+"Ziel ist es, entweder auf den (veralteten) <a href=\"https://github.com/"
+"canndrew/gnunet-rs\">GNUnet Rust-Bindungen</a> aufzubauen oder dem Pfad von "
+"<a href=\"GNUnet Go\">https://github.com/bfix/gnunet-go</a> zu folgen, der "
+"versucht, den größten Teil des GNUnet-Stacks neu zu implementieren. Das "
+"Endergebnis sollte ein Erweiterungstemplate für GNUnet in der Form des "
+"bestehenden <a href=\"https://git.gnunet.org/gnunet-ext.git/\">C template</"
+"a>sein, welches es ermöglicht, schnell Dienstleistungen und Bibliotheken für "
+"GNUnet zu implementieren."
 
 #: template/gsoc.html.j2:198 template/gsoc.html.j2:652
+#, fuzzy
 msgid "<strong>Mentors:</strong> Martin Schanzenbach"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> Martin Schanzenbach"
 
 #: template/gsoc.html.j2:203
+#, fuzzy
 msgid "Required Skills: Solid knowledge of Rust and ideally asynchronuous IO."
 msgstr ""
+"Erforderliche Fähigkeiten: Solide Kenntnisse in Rust und idealerweise "
+"asynchrone E / A."
 
 #: template/gsoc.html.j2:208 template/gsoc.html.j2:321
 #: template/gsoc.html.j2:531 template/gsoc.html.j2:662
+#, fuzzy
 msgid "Difficulty level: medium"
-msgstr ""
+msgstr "Schwierigkeitsgrad: mittel"
 
 #: template/gsoc.html.j2:222
 msgid ""
@@ -3178,19 +3226,28 @@ msgid ""
 "written in C, and this is not about rewriting GNUnet in Java, but about "
 "getting the C code to run on Android."
 msgstr ""
+"Es ist Zeit, dass GNUnet unter Android vernünftig läuft. Bedenke, daß GNUnet "
+"in C geschrieben ist, und es geht hier nicht darum, GNUnet in Java "
+"umzuschreiben, sondern darum, C-Code auf Android zum Laufen zu bekommen."
 
 #: template/gsoc.html.j2:229
+#, fuzzy
 msgid ""
 "Includes: Implementation of rudimentary Android compatibility for GNUnet, in "
 "part by porting the GNUnet utils scheduler to act as a thin wrapper over "
 "libuv."
 msgstr ""
+"Enthält: Implementierung der rudimentären Android-Kompatibilität für GNUnet, "
+"teilweise durch Portierung des GNUnet-Utils-Schedulers als Thin Wrapper über "
+"libuv."
 
 #: template/gsoc.html.j2:236
 msgid ""
 "<strong>Mentors:</strong> <a href=\"https://www.goebel-consult.de/\">Hartmut "
 "Goebel</a>, Jeff Burdges, Christian Grothoff"
 msgstr ""
+"<strong>Mentoren:</strong><a href=\"https://www.goebel-consult.de/\">Hartmut "
+"Goebel</a>, Jeff Burdges, Christian Grothoff"
 
 #: template/gsoc.html.j2:245
 msgid ""
@@ -3202,10 +3259,20 @@ msgid ""
 "dependencies have changed and scripting more granular triggers or ideally "
 "automatic dependency discovery (as done by the autotools) is also important."
 msgstr ""
+"Es gibt einen Push für die Migration unseres CI nach Gitlab. Der CI sollte "
+"irgendwann nicht nur \"make check\" auf verschiedenen Plattformen laufen "
+"lassen, sondern auch Tests mit mehreren Peers durchführen, die jeweils in "
+"unterschiedlichen VMs mit spezifischen simulierten Netzwerktopologien (d.h. "
+"NAT) laufen. Der CI sollte also auch mit Gauger zur "
+"Leistungsregressionsanalyse integriert werden. Jobs nur bei veränderten "
+"Abhängigkeiten laufen zu lassen und sensiblere Trigger zu schreiben oder "
+"idealerweise automatische Abhängigkeitsidentifikation (wie von Autotools "
+"geliefert) sind ebenfalls wichtig."
 
 #: template/gsoc.html.j2:257
+#, fuzzy
 msgid "<strong>Mentors:</strong> TBD"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> TBD"
 
 #: template/gsoc.html.j2:267
 msgid ""
@@ -3222,20 +3289,38 @@ msgid ""
 "out of the box with the nicknames of people instead of cloud services. For "
 "more information and context, read"
 msgstr ""
+"Ein großes Problem des gegenwärtigen Internets ist das Fehlen einer "
+"Disintermediation. Wenn Leute sich unterhalten wollen benötigen sie einen "
+"Chatservice. Wenn Sie Dateien austauschen wollen benötigen sie einen "
+"Dateitransferservice. Obwohl GNUnet bereits über eine recht fortgeschrittene "
+"Integration ins Linux-Universum verfügt, ist noch etwas Arbeit für "
+"bestehende Applikationen wie irc, www, ftp, rsh, nntpd erforderlich, um "
+"darüber im Peer-to-Peer-Stil durch einfache Verwendung eines GNS Hostname "
+"wie friend.gu zu verfahren. Sobald man eine Person zu seinem GNS hinzufügt "
+"wird es möglich, Nachrichten, Dateien usw. direkt auszutauschen, mit nichts "
+"mehr als dem GNUnet dazwischen, unter Benutzung von Applikationen, die mit "
+"Unix-Systemen seit den 1980er Jahre verteilt wurden. Wir können eine OS "
+"Distribution generieren, wo diese Sachen uneingeschränkt mit den Spitznamen "
+"der Nutzer anstatt mit Cloud-Dienstleistungen funktionieren. Für mehr "
+"Informationen und Kontext, lese"
 
 #: template/gsoc.html.j2:288
+#, fuzzy
 msgid "<strong>Mentors:</strong> lynX &amp; dvn"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> lynX &amp; dvn"
 
 #: template/gsoc.html.j2:296
 msgid ""
 "Implement the AnycastExit spec to enable GNUnet clients to connect over Tor."
 msgstr ""
+"Implementiere die AnycastExit-Spezifikation, damit GNUnet-Clients eine "
+"Verbindung über Tor herstellen können."
 
 #: template/gsoc.html.j2:302 template/gsoc.html.j2:337
 #: template/gsoc.html.j2:352
+#, fuzzy
 msgid "<strong>Mentors:</strong> Jeff Burdges"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> Jeff Burdges"
 
 #: template/gsoc.html.j2:307
 msgid ""
@@ -3244,11 +3329,16 @@ msgid ""
 "about how names should be moved around the local system. We're calling this "
 "more collaborative approach NSS2 for now."
 msgstr ""
+"Hinweis: Es gab eine spezielle TLD-Spezifikation, mit der Tor Domänennamen "
+"auch mit GNS über Tor auflösen konnte. Diese befindet sich jedoch "
+"gegenwärtig in der Warteschleife, bis man eine bessere Vorstellung darüber "
+"hat, wie Namen innerhalb des lokalen Systems verschoben werden sollen. Bis "
+"auf weiteres nennen wir diesen verstärkt kollaborativen Ansatz NSS2."
 
 #: template/gsoc.html.j2:316 template/gsoc.html.j2:456
 #: template/gsoc.html.j2:496 template/gsoc.html.j2:526
 msgid "Required Skills: C"
-msgstr ""
+msgstr "Benötigte Kenntnisse: C"
 
 #: template/gsoc.html.j2:329
 msgid ""
@@ -3257,31 +3347,43 @@ msgid ""
 "asynchronous IO library built upon it, such as rotor, mioco, eventual_io, or "
 "gj."
 msgstr ""
+"Verbessere die Rust-Implementierung von GNUnet-Dienstprogrammen, eventuell "
+"unter Hinzuziehung einer Unterstützung für asynchrone E / A mit mio oder "
+"eine darauf aufbauende asynchrone E / A-Bibliothek wie Rotor, mioco, "
+"eventual_io oder gj."
 
 #: template/gsoc.html.j2:345
+#, fuzzy
 msgid ""
 "Implementation of a replacement for PANDA (see Pond) with better security, "
 "and maybe integration with the GNU Name System for key exchange."
 msgstr ""
+"Implementierung eines Ersatzes für PANDA (siehe Teich) mit besserer "
+"Sicherheit und möglicherweise Integration in das GNU-Namenssystem für den "
+"Schlüsselaustausch."
 
 #: template/gsoc.html.j2:357
+#, fuzzy
 msgid "Required Skills: Rust or C, crypto"
-msgstr ""
+msgstr "Erforderliche Fähigkeiten: Rust oder C, Krypto"
 
 #: template/gsoc.html.j2:362 template/gsoc.html.j2:419
 #: template/gsoc.html.j2:461 template/gsoc.html.j2:501
 msgid "Difficulty level: high"
-msgstr ""
+msgstr "Schwierigkeitsgrad: hoch"
 
 #: template/gsoc.html.j2:370
 msgid ""
 "Implement different place types and file sharing by creating a new place for "
 "the shared content."
 msgstr ""
+"Implementiere verschiedene Ortstypen und Dateifreigaben, indem du einen "
+"neuen Ort für den freigegebenen Inhalt erstellst."
 
 #: template/gsoc.html.j2:376
+#, fuzzy
 msgid "Place types to be implemented:"
-msgstr ""
+msgstr "Zu implementierende Ortsarten:"
 
 #: template/gsoc.html.j2:380
 msgid ""
@@ -3292,10 +3394,16 @@ msgid ""
 "<li>Survey: ask your social neighborhood questions in a structured form</li> "
 "</ul>"
 msgstr ""
+"<ul><li>Datei: generische Datei mit Kommentaren</li><li> Bild: Zeigt ein "
+"Bild mit Kommentaren an, die auf einen Bereich des Bildes verweisen</li><li> "
+"Sound: Spiele eine Sounddatei mit Kommentaren ab, die auf einen Zeitstempel "
+"verweisen</li><li> Verzeichnis/Album: Zeiger auf Datei- / Bild- / Tonorte</"
+"li><li> Veranstaltung: mit RSVP</li><li>Umfrage: Stelle deiner sozialen "
+"Nachbarschaft Fragen in strukturierter Form</li></ul>"
 
 #: template/gsoc.html.j2:391
 msgid "Also provide the following UI functionality:"
-msgstr ""
+msgstr "Stelle außerdem die folgenden UI-Funktionen bereit:"
 
 #: template/gsoc.html.j2:395
 msgid ""
@@ -3305,20 +3413,29 @@ msgid ""
 "edit history to readers.</li> <li>Control expiry of channel history.</li> </"
 "ul>"
 msgstr ""
+"<ul><li>Verzweige vorhandene Kanäle, reorganisiere Menschen in neue "
+"Chatrooms oder Kanäle.</li><li>Teile einen Beitrag (bearbeite und poste "
+"etwas woanders, zum Beispiel auf einer Fanseite).</li><li>Bearbeite einen "
+"zuvor veröffentlichten Beitrag und biete den Lesern einen "
+"Bearbeitungsverlauf an.</li><li> Kontrolliere wann die Kanalhistorie "
+"abläuft.</li></ul>"
 
 #: template/gsoc.html.j2:404
 msgid ""
 "See also <a href=\"http://secushare.org/features\">http://secushare.org/"
 "features</a>"
 msgstr ""
+"Siehe auch <a href=\"http://secushare.org/features\">http://secushare.org/"
+"features</a>"
 
 #: template/gsoc.html.j2:409
+#, fuzzy
 msgid "<strong>Mentors:</strong> lynX"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> lynX"
 
 #: template/gsoc.html.j2:414
 msgid "Required Skills: C/C++"
-msgstr ""
+msgstr "Erforderliche Fähigkeiten: C/C++"
 
 #: template/gsoc.html.j2:427
 msgid ""
@@ -3330,16 +3447,28 @@ msgid ""
 "finding them in the social graph of their existing contacts (\"This is "
 "Linda. You have 11 contacts in common with her. [ADD]\")."
 msgstr ""
+"Implementiere die Aggregation des verteilten Status aus verschiedenen "
+"Kanälen, um eine leistungsstarke API für soziale Diagramme bereitzustellen, "
+"mit der Profile sozialer Netzwerke, Dashboards, ein Kalender aus "
+"bevorstehenden Ereigniseinladungen (falls verfügbar), Funktionen für die "
+"soziale Suche und vor allem einfache Funktionen erstellt werden können, um "
+"Benutzern die Übernahme von kryptografischen Identitäten ihrer Kontakte / "
+"Freunde zu ermöglichen, indem sie diese einfach im sozialen Diagramm ihrer "
+"vorhandenen Kontakte finden (\"Dies ist Linda. Du hast 11 gemeinsame "
+"Kontakte mit ihr. [ADD]\")."
 
 #: template/gsoc.html.j2:445
 msgid ""
 "Related to <a href=\"http://secushare.org/rendezvous\">secushare.org/"
 "rendezvous</a>"
 msgstr ""
+"Bezogen auf <a href=\"http://secushare.org/rendezvous\">secushare.org/"
+"rendezvous</a>"
 
 #: template/gsoc.html.j2:451 template/gsoc.html.j2:491
+#, fuzzy
 msgid "<strong>Mentors:</strong> t3sserakt, lynX"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> t3sserakt, lynX"
 
 #: template/gsoc.html.j2:468
 msgid ""
@@ -3350,6 +3479,13 @@ msgid ""
 "secushare are currently written in Rust, therefore Rust is preferred for "
 "this task but it is not an requirement. </li> </ul>"
 msgstr ""
+"<ul><li>Emuliere IMAP/SMTP-Protokolle nach Bedarf, um herkömmliche E-Mail-"
+"Clients in sichere Benutzeroberflächen umzuwandeln. </li><li>Mache dir "
+"Gedanken wie E-Mail-Adressen mit sicheren Identitäten verbunden werden "
+"können. </li><li> Kodiere oder übertrage verschiedene E-mail-Funktionen in "
+"sichere Äquivalente. </li><li>Teile von Secushare sind gegenwärtig in Rust "
+"geschrieben, daher wird Rust für diese Aufgabe bevorzugt, ist aber nicht "
+"vorgeschrieben. </li></ul>"
 
 #: template/gsoc.html.j2:509
 msgid ""
@@ -3359,32 +3495,47 @@ msgid ""
 "to libbrandt as well as creating the GNUnet auction service, library and the "
 "three user interface programs create, info and join."
 msgstr ""
+"Implementierung des in Kapitel 3 von <a href=\"https://grothoff.org/"
+"christian/teich2017ms.pdf\">this thesis</a> beschriebenen GNUnet-"
+"Auktionssystems. Verschiedene Aufgaben fügen intelligente Vertragskreierung "
+"und Durchsetzung zeitlicher Rundung zu libbrandt hinzu sowie die Erschaffung "
+"des GNUnet-Auktionssystems, Bibliothek und die drei "
+"Benutzeroberflächenprogramme create, info und join."
 
 #: template/gsoc.html.j2:521
 msgid "<strong>Mentors:</strong> mate, cg"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> mate, cg"
 
 #: template/gsoc.html.j2:539
+#, fuzzy
 msgid ""
 "Implementation of additional transports to make GNUnet communication more "
 "robust in the presence of problematic networks: GNUnet-over-SMTP, GNUnet-"
 "over-DNS"
 msgstr ""
+"Implementierung zusätzlicher Transporte, um die GNUnet-Kommunikation bei "
+"problematischen Netzwerken robuster zu machen: GNUnet-over-SMTP, GNUnet-over-"
+"DNS"
 
 #: template/gsoc.html.j2:546 template/gsoc.html.j2:560
+#, fuzzy
 msgid "<strong>Mentors:</strong> Matthias Wachs"
-msgstr ""
+msgstr "<strong>Mentoren:</strong> Matthias Wachs"
 
 #: template/gsoc.html.j2:554
 msgid ""
 "Implementation of ALG-based NAT traversal methods (FTP/SIP-based hole "
 "punching, better STUN support)"
 msgstr ""
+"Implementierung von ALG-basierten NAT-Traversal-Methoden (FTP/SIP-basiertes "
+"Lochstanzen, bessere STUN-Unterstützung)"
 
 #: template/gsoc.html.j2:568
+#, fuzzy
 msgid ""
 "<strong>Mentors:</strong> Matthias Wachs, Christian Grothoff, Jeff Burdges"
 msgstr ""
+"<strong>Mentoren:</strong> Matthias Wachs, Christian Grothoff, Jeff Burdges"
 
 #: template/gsoc.html.j2:576
 msgid ""
@@ -3393,12 +3544,19 @@ msgid ""
 "doid=62212.62213\">Ben-Or et al.</a> if possible. This in particular means "
 "moving libaboss to bignums (gcry_mpi)."
 msgstr ""
+"Verbesserung von Libaboss zur Berechnung gemeinsamer Geheimnisse ("
+"einschließlich wiederholter Multiplikation) basierend wenn möglich auf <a "
+"href=\"https://dl.acm.org/citation.cfm?doid=62212.62213\">Ben-Or et al.</a>. "
+"Insbesondere bedeutet dies, Libaboss zu Bignums zu bewegen (gcry_mpi)."
 
 #: template/gsoc.html.j2:589
+#, fuzzy
 msgid ""
 "Please refer to the description for this project listed under GNU Guix "
 "project ideas."
 msgstr ""
+"Weitere Informationen zu diesem Projekt finden Sie unter GNU Guix-"
+"Projektideen."
 
 #: template/gsoc.html.j2:602
 msgid ""
@@ -3408,6 +3566,12 @@ msgid ""
 "to directly use libzbar to scan QR codes for GNUnet / the GNU Name System "
 "(see also <a href=\"https://bugs.gnunet.org/view.php?id=5562\">#5562</a>)."
 msgstr ""
+"Python 2.7 nähert sich dem Ende seiner Lebensdauer, und wir möchten die "
+"Abhängigkeit von Python beseitigen. Das bestehende GNUnet-qr-Tool ist eine "
+"relativ einfache Hülle um Python-zbar, welches selber libzbar umhüllt. Das "
+"Ziel dieses Projekt ist es, libzbar direkt für des Scannen von QR-Codes für "
+"GNUnet / das GNU-Namen-System zu verwenden (siehe auch <a href=\"https://bugs"
+".gnunet.org/view.php?id=5562\">#5562</a>)."
 
 #: template/gsoc.html.j2:612
 msgid "<strong>Mentors:</strong> Christian Grothoff"
