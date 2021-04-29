@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-12 16:12+0100\n"
+"POT-Creation-Date: 2021-04-28 14:41+0200\n"
 "PO-Revision-Date: 2021-04-11 02:59+0000\n"
 "Last-Translator: Chaewon Park <wonnie0624@gmail.com>\n"
-"Language-Team: Korean <http://weblate.taler.net/projects/gnunet/website/ko/>"
-"\n"
+"Language-Team: Korean <http://weblate.taler.net/projects/gnunet/website/ko/"
+">\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +32,7 @@ msgstr "안전한 p2p 네트워킹을 위한 GNU의 프레임워크"
 msgid "Contact"
 msgstr "연락처"
 
-#: common/footer.j2.inc:8 common/navigation.j2.inc:49
+#: common/footer.j2.inc:8
 msgid "GNUnet e.V."
 msgstr ""
 
@@ -147,10 +147,6 @@ msgstr "용어 사전"
 msgid "Handbook"
 msgstr "핸드북"
 
-#: common/navigation.j2.inc:87 template/livingstandards.html.j2:8
-msgid "Living Standards"
-msgstr "생활 수준"
-
 #: common/navigation.j2.inc:88
 msgid "REST API"
 msgstr ""
@@ -193,9 +189,11 @@ msgid ""
 "secure publication of files, it has grown to include all kinds of basic "
 "protocol components and applications towards the creation of a GNU internet."
 msgstr ""
-"GNUnet은 안전하고 분권적이며 개인 정보를 보호할 수 있는 분산형 어플리케이션을 만들기 위한 대체적 네트워크 스택입니다. 우리의 "
-"목표는 오래되어 안전하지 않은 인터넷 프로토콜 스택을 대체하는 것입니다. 우리는 파일의 안전한 게시를 위한 응용 프로그램에서부터 "
-"시작하여, GNU 인터넷 생성을 위한 모든 종류의 기본 프로토콜 구성요소와 응용 프로그램을 포함하게 되기까지 성장했습니다."
+"GNUnet은 안전하고 분권적이며 개인 정보를 보호할 수 있는 분산형 어플리케이션"
+"을 만들기 위한 대체적 네트워크 스택입니다. 우리의 목표는 오래되어 안전하지 않"
+"은 인터넷 프로토콜 스택을 대체하는 것입니다. 우리는 파일의 안전한 게시를 위"
+"한 응용 프로그램에서부터 시작하여, GNU 인터넷 생성을 위한 모든 종류의 기본 프"
+"로토콜 구성요소와 응용 프로그램을 포함하게 되기까지 성장했습니다."
 
 #: template/about.html.j2:23
 msgid ""
@@ -205,9 +203,10 @@ msgid ""
 "hierarchy and when necessary isolated from the rest of the world, the "
 "situation is less tenable for civil society."
 msgstr ""
-"오늘날, 글로벌 네트워크를 사람들이 이용하는 방식과 그에 따라 네트워크에 주어지는 사회적 책임은, 1970년의 그것과는 매우 다릅니다. "
-"위계에 의해 네트워크 장비가 운용되고 외부 사회와 격리되어 있는 군대에서 사용하기에는 인터넷이 여전히 유용할지 모르지만, 시민 사회에서의 "
-"상황은 달라졌습니다."
+"오늘날, 글로벌 네트워크를 사람들이 이용하는 방식과 그에 따라 네트워크에 주어"
+"지는 사회적 책임은, 1970년의 그것과는 매우 다릅니다. 위계에 의해 네트워크 장"
+"비가 운용되고 외부 사회와 격리되어 있는 군대에서 사용하기에는 인터넷이 여전"
+"히 유용할지 모르지만, 시민 사회에서의 상황은 달라졌습니다."
 
 #: template/about.html.j2:32
 msgid ""
@@ -383,7 +382,7 @@ msgid ""
 "replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
 "GNS uses a directed graph. Naming conventions are similar to DNS, but "
 "queries and replies are private even with respect to peers providing the "
-"answers. The integrity of records and privacy of look-ups is "
+"answers. The integrity of records and privacy of look-ups are "
 "cryptographically secured. <!-- Too technical: GNS integrates a robust, "
 "efficient and instant key revocation mechanism. -->"
 msgstr ""
@@ -469,8 +468,8 @@ msgstr ""
 msgid ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
 "convenient but feature-rich graphical application providing messaging using "
-"especially the CADET subsystem. It is developed using GTK and libhandy for a "
-"convergent design."
+"the CADET subsystem. It is developed using GTK and libhandy for a convergent "
+"design."
 msgstr ""
 
 #: template/applications.html.j2:180
@@ -480,9 +479,8 @@ msgstr ""
 #: template/applications.html.j2:182
 msgid ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
-"terminal user interface providing messaging using especially the CADET "
-"subsystem. It is developed using nim. Cadet-GTK and groupchat are planned to "
-"be compatible."
+"terminal user interface providing messaging using the CADET subsystem. It is "
+"developed using nim. Cadet-GTK and groupchat are planned to be compatible."
 msgstr ""
 
 #: template/architecture.html.j2:6
@@ -498,7 +496,7 @@ msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
 "(GNS) and a pluggable transport system (TRANSPORT).<br> Using public keys "
-"for addresses and self-organized decentralized routing algorithms, these "
+"for addresses and self-organizing decentralized routing algorithms, these "
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
 
@@ -509,7 +507,7 @@ msgstr ""
 #: template/architecture.html.j2:38
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
-"runs as a separate process, providing fault-isolation and enabling tight "
+"runs as a separate process, providing fault isolation and enabling tight "
 "permissions to be granted to each subsystem. Naturally, the implementation "
 "is a <a href=\"https://www.gnu.org/\">GNU</a> package, and will always "
 "remain free software."
@@ -751,8 +749,8 @@ msgid ""
 "membership dues; however, members are required to support GNUnet e.V. and in "
 "particularly contribute to the technical development within their means. For "
 "further details, we refer to the <a href=\"https://git.gnunet.org/gnunet-ev."
-"git/\">Satzung</a> (currently only available in German, translations "
-"welcome)."
+"git/\">Satzung (Charter)</a> (currently only available in German, "
+"translations welcome)."
 msgstr ""
 
 #: template/ev.html.j2:52
@@ -761,9 +759,9 @@ msgstr ""
 
 #: template/ev.html.j2:54
 msgid ""
-"You can find our \"Satzung\", and the list of members under <a href="
-"\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet."
-"org/gnunet-ev.git/tree/satzung.tex</a>. The current board consists of: "
+"You can find our charter, and the list of members under <a href=\"https://"
+"git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet.org/"
+"gnunet-ev.git/tree/satzung.tex</a>. The current board consists of: "
 "<dl><dt>Vorsitz</dt> <dd><a href=\"https://schanzen.eu\">Martin "
 "Schanzenbach</a></dd> <dt>stellvertretender Vorsitz</dt> <dd>t3sserakt</dd> "
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
@@ -970,9 +968,9 @@ msgstr ""
 #: template/faq.html.j2:183
 msgid ""
 "A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
-"would make it accessible with a browser. It is possible to build such a "
-"proxy and all one needs to know is the protocol used between browser and "
-"proxy and a swift look at the GNUnet code for file-sharing."
+"would make it accessible via a browser. It is possible to build such a proxy "
+"and all one needs to know is the protocol used between the browser and the "
+"proxy and the GNUnet code for file-sharing."
 msgstr ""
 
 #: template/faq.html.j2:195
@@ -988,7 +986,7 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:210
-msgid "On top of which operating systems does GNUnet run?"
+msgid "Which operating systems does GNUnet run on?"
 msgstr ""
 
 #: template/faq.html.j2:212
@@ -1059,7 +1057,7 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:286
-msgid "How does GNS compare to other name systems"
+msgid "How does GNS compare to other name systems?"
 msgstr ""
 
 #: template/faq.html.j2:288
@@ -1079,10 +1077,10 @@ msgid ""
 "authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, and "
 "there are still registrars that determine who owns a name. <br><br> With "
 "GNS, we decentralize the database and also decentralize the responsibility "
-"for naming: each user runs his own personal root zone and is thus in "
-"complete control of the names he uses. GNS also has many additional features "
-"(to keep names short and enable migration) which don't even make sense in "
-"the context of CoDoNS."
+"for naming: each user runs their own personal root zone and is thus in "
+"complete control of the names they use. GNS also has many additional "
+"features (to keep names short and enable migration) which don't even make "
+"sense in the context of CoDoNS."
 msgstr ""
 
 #: template/faq.html.j2:410
@@ -1121,9 +1119,9 @@ msgid ""
 "A: Handshake is a blockchain-based method for root zone governance. Hence, "
 "it does not address the name resolution process itself but delegates "
 "resolution into DNS after the initial TLD resolution. Not taking "
-"sustainablility considerations into account, handshake could be used as an "
-"additional supporting GNS root zone governance model but we currently do not "
-"have such plans in mind."
+"sustainablility considerations into account, Handshake could be used as an "
+"additional supporting GNS root zone governance model, but we currently do "
+"not have such plans in mind."
 msgstr ""
 
 #: template/faq.html.j2:453
@@ -1501,7 +1499,7 @@ msgid ""
 "Another important point of reference are the various anonymous peer-to-peer "
 "networks. Here, there are differences in terms of application domain and how "
 "specifically anonymity is achieved. Anonymous routing is a hard research "
-"topic, so for a superficial comparisson like this one we focus on the "
+"topic, so for a superficial comparison like this one we focus on the "
 "latency. Another important factor is the programming language. Type-safe "
 "languages may offer certain security benefits; however, this may come at the "
 "cost of significant increases in resource consumption which in turn may "
@@ -2746,8 +2744,8 @@ msgid ""
 "that we can add it to this list. Furthermore, if you are interested in "
 "packaging GNUnet for your Operating System, get in touch with us at gnunet-"
 "developers@gnu.org if you require help with this job. If you were using an "
-"Operating System with the Alpine package manager, GNUnet could be installed "
-"as simple as:"
+"Operating System with the APT package manager, GNUnet could be installed as "
+"simple as:"
 msgstr ""
 
 #: template/install.html.j2:61
@@ -2779,7 +2777,7 @@ msgid ""
 msgstr ""
 
 #: template/install.html.j2:98
-msgid "Alternatively, get the sources from git by entering:"
+msgid "To compile gnunet from the git source you can do so by entering:"
 msgstr ""
 
 #: template/install.html.j2:106
@@ -2892,3 +2890,6 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
+
+#~ msgid "Living Standards"
+#~ msgstr "생활 수준"
