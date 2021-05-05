@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-04-28 14:41+0200\n"
-"PO-Revision-Date: 2021-04-20 23:43+0000\n"
-"Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
-"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/"
-">\n"
+"PO-Revision-Date: 2021-05-05 17:48+0000\n"
+"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
+"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
+"\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -184,7 +184,6 @@ msgid "What is GNUnet?"
 msgstr "Qu'est-ce que GNUnet  ?"
 
 #: template/about.html.j2:13
-#, fuzzy
 msgid ""
 "GNUnet is an alternative network stack for building secure, decentralized "
 "and privacy-preserving distributed applications. Our goal is to replace the "
@@ -192,16 +191,15 @@ msgid ""
 "secure publication of files, it has grown to include all kinds of basic "
 "protocol components and applications towards the creation of a GNU internet."
 msgstr ""
-"GNUnet est un réseau de couches alternatif qui permet de mettre en place la "
-"répartition des applications de manière sûre et décentralisée tout en étant "
-"respectueux de la vie privée. Notre but est de remplacer l'ancienne pile de "
-"protocoles Internet, trop dangereuse. À la base, il était question d'une "
-"fonction qui sécurisait la publication de fichiers, puis le projet s'est "
-"agrandit en incluant tous les types d'éléments et de fonctions de protocole "
-"basique, jusqu'à la création d'un internet GNU."
+"GNUnet est un réseau de couches alternatives qui permet de mettre en place "
+"la répartition des applications de manière sûre et décentralisée tout en "
+"étant respectueux de la vie privée. Notre but est de remplacer l'ancienne "
+"pile de protocoles Internet, trop dangereuse. À la base, il était question "
+"d'une fonction qui sécurisait la publication de fichiers, puis le projet "
+"s'est élargit en incluant tous les types d'éléments et de fonctions de "
+"protocole basique, jusqu'à la création d'un internet GNU."
 
 #: template/about.html.j2:23
-#, fuzzy
 msgid ""
 "Today, the actual use and thus the social requirements for a global network "
 "differs widely from those goals of 1970. While the Internet remains suitable "
@@ -311,7 +309,7 @@ msgstr ""
 #, fuzzy
 msgid "The GNUnet architecture must be resource efficient."
 msgstr ""
-"L'architecture de GNUnet doit avoir recourt à des ressources efficaces."
+"L'architecture de GNUnet doit utiliser ses ressources de manière efficace."
 
 #: template/about.html.j2:68
 msgid ""
@@ -391,7 +389,6 @@ msgstr ""
 "engager</a> de diverses manières."
 
 #: template/about.html.j2:100
-#, fuzzy
 msgid ""
 "Please be aware that this project is (despite of it's age) still in an early "
 "alpha stage when it comes to software &#8211; its not an easy task to "
@@ -459,7 +456,6 @@ msgid "The GNU Name System"
 msgstr "Le GNU Name System"
 
 #: template/applications.html.j2:15
-#, fuzzy
 msgid ""
 "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully decentralized "
 "replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
@@ -474,7 +470,7 @@ msgstr ""
 "en œuvre la hiérarchie, GNS utilise un graphique dirigé. Les conventions "
 "nominatives sont similaires au DNS, mais les questions et les réponses sont "
 "privées, notamment lorsque les pairs fournissent les réponses. L'intégrité "
-"des enregistrements et la privacité des recherches sont sous sécurité "
+"des enregistrements et la confidentialité des recherches sont sous sécurité "
 "cryptographiée."
 
 #: template/applications.html.j2:38
@@ -580,12 +576,6 @@ msgid "Cadet-GTK"
 msgstr "Cadet-GTK"
 
 #: template/applications.html.j2:162
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> "
-#| "is a convenient but feature-rich graphical application providing "
-#| "messaging using especially the CADET subsystem. It is developed using GTK "
-#| "and libhandy for a convergent design."
 msgid ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
 "convenient but feature-rich graphical application providing messaging using "
@@ -598,17 +588,10 @@ msgstr ""
 "est développé avec GTK et libhandy pour un design cohérent."
 
 #: template/applications.html.j2:180
-#, fuzzy
 msgid "groupchat"
-msgstr "groupe de chat"
+msgstr "groupe de discussion"
 
 #: template/applications.html.j2:182
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
-#| "terminal user interface providing messaging using especially the CADET "
-#| "subsystem. It is developed using nim. Cadet-GTK and groupchat are planned "
-#| "to be compatible."
 msgid ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
 "terminal user interface providing messaging using the CADET subsystem. It is "
@@ -628,13 +611,6 @@ msgid "Foundations"
 msgstr "Bases"
 
 #: template/architecture.html.j2:22
-#, fuzzy
-#| msgid ""
-#| "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-"
-#| "like end-to-end encrypted messaging layer (CADET), a public key "
-#| "infrastructure (GNS) and a pluggable transport system (TRANSPORT).<br> "
-#| "Using public keys for addresses and self-organized decentralized routing "
-#| "algorithms, these subsystems replace the traditional TCP/IP stack."
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -645,22 +621,15 @@ msgstr ""
 "GNUnet repose sur une table de hachage distribuée (R5N), une couche de "
 "messagerie codée de bout en bout (CADET) similaire à SCPT, une "
 "infrastructure à clé publique (GNS) et un système de transport branchable "
-"(TRANSPORT). <br> À l’aide de clés publiques pour les adresses et "
-"d’algorithmes de routage décentralisés autonomes, ces sous-systèmes "
-"remplacent la pile TCP/IP traditionnelle."
+"(TRANSPORT). <br> À l’aide de clés publiques pour les adresses et d’"
+"algorithmes de routage décentralisés autonomes, ces sous-systèmes remplacent "
+"la pile TCP/IP traditionnelle."
 
 #: template/architecture.html.j2:35
 msgid "Security"
 msgstr "Sécurité"
 
 #: template/architecture.html.j2:38
-#, fuzzy
-#| msgid ""
-#| "GNUnet is implemented using a multi-process architecture. Each subsystem "
-#| "runs as a separate process, providing fault-isolation and enabling tight "
-#| "permissions to be granted to each subsystem. Naturally, the "
-#| "implementation is a <a href=\"https://www.gnu.org/\">GNU</a> package, and "
-#| "will always remain free software."
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault isolation and enabling tight "
@@ -671,8 +640,8 @@ msgstr ""
 "GNUnet est implanté grâce à une architecture multi-procédés. Chaque sous-"
 "système fonctionne comme procédé à part, ce qui permet d'isoler les défauts "
 "et de garantir les permissions strictes pour chaque sous-système. "
-"Naturellement, l’exécution est un progiciel <a href=\"https://www.gnu.org/"
-"\">GNU</a>, et restera toujours un logiciel libre."
+"Naturellement, l’exécution est un progiciel <a href=\"https://www.gnu.org/\""
+">GNU</a>, et restera toujours un logiciel libre."
 
 #: template/architecture.html.j2:52
 msgid "System architecture"
@@ -748,7 +717,7 @@ msgstr ""
 
 #: template/contact.html.j2:53
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Signaler des bugs"
 
 #: template/contact.html.j2:55
 msgid ""
