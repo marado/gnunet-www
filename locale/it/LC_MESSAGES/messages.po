@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-07 16:24+0200\n"
-"PO-Revision-Date: 2021-04-25 04:48+0000\n"
+"POT-Creation-Date: 2021-04-28 14:41+0200\n"
+"PO-Revision-Date: 2021-05-07 17:06+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
-"Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/"
-">\n"
+"Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
+"\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -438,15 +438,6 @@ msgid "The GNU Name System"
 msgstr "Il GNU Name System"
 
 #: template/applications.html.j2:15
-#, fuzzy
-#| msgid ""
-#| "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully "
-#| "decentralized replacement for the Domain Name System (DNS). Instead of "
-#| "using a hierarchy, GNS uses a directed graph. Naming conventions are "
-#| "similar to DNS, but queries and replies are private even with respect to "
-#| "peers providing the answers. The integrity of records and privacy of look-"
-#| "ups is cryptographically secured. <!-- Too technical: GNS integrates a "
-#| "robust, efficient and instant key revocation mechanism. -->"
 msgid ""
 "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully decentralized "
 "replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
@@ -456,14 +447,14 @@ msgid ""
 "cryptographically secured. <!-- Too technical: GNS integrates a robust, "
 "efficient and instant key revocation mechanism. -->"
 msgstr ""
-"Il <a href=\"gns.html\">GNU Name System (GNS)</a> è un rimpiazzo "
-"decentralizzato per il Domain Name System (DNS). Piuttosto che far uso di "
-"una gerarchia, GNS sfrutta un grafico diretto. Le convenzioni per "
-"denominazione sono più simili al DNS, ma quesiti e risposte sono privati "
-"anche verso i colleghi che forniscono le risposte. L'integrità dei registri "
-"e la privacy delle ricerche è criptograficamente sicura.\n"
-"<!-- Troppo tecnico: GNS integra un robusto, efficiente ed istantaneo "
-"meccanismo chiave di revoca. -->"
+"Lo <a href=\"gns.html\">GNU Name System (GNS)</a> è un sostituto "
+"completamente decentralizzato del Sistema di nomi di dominio (DNS). Anziché "
+"usare una gerarchia, GNS usa un grafo orientato. Le convenzioni di "
+"denominazione sono simili al DNS, ma le query e le risposte sono private "
+"anche per i peer che forniscono le risposte. L'integrità dei record e la "
+"privacy delle ricerche sono protette con crittografia. <!-- Troppo tecnico: "
+"GNS integra un meccanismo di revoca delle chiavi solido, efficiente e "
+"istantaneo. -->"
 
 #: template/applications.html.j2:38
 msgid "Self-sovereign, decentralized identity provider"
@@ -499,7 +490,7 @@ msgstr ""
 
 #: template/applications.html.j2:73
 msgid "Conversation (Pre-Alpha)"
-msgstr "Conversation (Pre-Alpha)"
+msgstr "Conversazione (Pre-Alpha)"
 
 #: template/applications.html.j2:75
 msgid ""
@@ -568,12 +559,6 @@ msgid "Cadet-GTK"
 msgstr "Cadet-GTK"
 
 #: template/applications.html.j2:162
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> "
-#| "is a convenient but feature-rich graphical application providing "
-#| "messaging using especially the CADET subsystem. It is developed using GTK "
-#| "and libhandy for a convergent design."
 msgid ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
 "convenient but feature-rich graphical application providing messaging using "
@@ -582,30 +567,23 @@ msgid ""
 msgstr ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> è "
 "un'applicazione grafica conveniente ma allo stesso tempo ricca di "
-"funzionalità che fornisce messaggistica utilizzando sopratutto il "
-"sottosistema CADET. È sviluppata facendo uso di GTK e libhandy per un design "
-"convergente."
+"funzionalità che fornisce messaggistica utilizzando il sottosistema CADET. È "
+"sviluppata con GTK e libhandy per un design convergente."
 
 #: template/applications.html.j2:180
 msgid "groupchat"
 msgstr "groupchat"
 
 #: template/applications.html.j2:182
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
-#| "terminal user interface providing messaging using especially the CADET "
-#| "subsystem. It is developed using nim. Cadet-GTK and groupchat are planned "
-#| "to be compatible."
 msgid ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
 "terminal user interface providing messaging using the CADET subsystem. It is "
 "developed using nim. Cadet-GTK and groupchat are planned to be compatible."
 msgstr ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> è un "
-"terminale di interfaccia utente che fornisce messaggistica utilizzando in "
-"modo particolare il sottosistema CADET. Si sta sviluppando tramite nim. "
-"Cadet-GTK e groupchat saranno compatibili."
+"terminale di interfaccia utente che fornisce messaggistica utilizzando il "
+"sottosistema CADET. Viene sviluppato tramite nim. È previsto che Cadet-GTK e "
+"groupchat siano compatibili."
 
 #: template/architecture.html.j2:6
 msgid "GNUnet System Architecture"
@@ -616,13 +594,6 @@ msgid "Foundations"
 msgstr "Foundations"
 
 #: template/architecture.html.j2:22
-#, fuzzy
-#| msgid ""
-#| "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-"
-#| "like end-to-end encrypted messaging layer (CADET), a public key "
-#| "infrastructure (GNS) and a pluggable transport system (TRANSPORT).<br> "
-#| "Using public keys for addresses and self-organized decentralized routing "
-#| "algorithms, these subsystems replace the traditional TCP/IP stack."
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -635,20 +606,13 @@ msgstr ""
 "un'infrastruttura a chiave pubblica (GNS) e un sistema di trasporto "
 "collegabile (TRANSPORT).<br> Questi sottosistemi sostituiscono lo stack TCP/"
 "IP, poiché utilizzano chiavi pubbliche per indirizzi e algoritmi di routing "
-"decentralizzati e auto-organizzati."
+"decentralizzati e che si auto-organizzano."
 
 #: template/architecture.html.j2:35
 msgid "Security"
 msgstr "Sicurezza"
 
 #: template/architecture.html.j2:38
-#, fuzzy
-#| msgid ""
-#| "GNUnet is implemented using a multi-process architecture. Each subsystem "
-#| "runs as a separate process, providing fault-isolation and enabling tight "
-#| "permissions to be granted to each subsystem. Naturally, the "
-#| "implementation is a <a href=\"https://www.gnu.org/\">GNU</a> package, and "
-#| "will always remain free software."
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault isolation and enabling tight "
@@ -658,9 +622,9 @@ msgid ""
 msgstr ""
 "GNUnet è implementato con un’architettura multiprocesso. Ogni sottosistema "
 "viene eseguito come un processo separato, permettendo l’isolamento degli "
-"errori e la concessione di autorizzazioni limitate a ciascun sottosistema. "
-"L’implementazione è un pacchetto <a href=\"https://www.gnu.org/\">GNU</a>, "
-"quindi sarà sempre un software gratuito."
+"errori e la concessione di autorizzazioni limitate a ciascun sottosistema. L’"
+"implementazione è un pacchetto <a href=\"https://www.gnu.org/\">GNU</a>, "
+"quindi sarà sempre un software libero."
 
 #: template/architecture.html.j2:52
 msgid "System architecture"
@@ -959,17 +923,6 @@ msgid "Becoming a Member of GNUnet e.V."
 msgstr "Entrare a far parte di GNUnet e.V."
 
 #: template/ev.html.j2:33
-#, fuzzy
-#| msgid ""
-#| "GNUnet developers with git (write) access can become members to "
-#| "participate in the decision process and formally support GNUnet e.V. For "
-#| "this, all you have to do is update the <tt>members.txt</tt> file in the "
-#| "<a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</a> "
-#| "repository. There are no membership dues; however, members are required "
-#| "to support GNUnet e.V. and in particularly contribute to the technical "
-#| "development within their means. For further details, we refer to the <a "
-#| "href=\"https://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (currently "
-#| "only available in German, translations welcome)."
 msgid ""
 "GNUnet developers with git (write) access can become members to participate "
 "in the decision process and formally support GNUnet e.V. For this, all you "
@@ -987,8 +940,8 @@ msgstr ""
 "nell'archivio <a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</"
 "a>. Non ci sono quote associative. Tuttavia, i membri devono sostenere "
 "GNUnet e.V. e soprattutto contribuire allo sviluppo tecnico secondo le "
-"proprie possibilità. Per maggiori informazioni, consultare lo <a href="
-"\"https://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (attualmente "
+"proprie possibilità. Per maggiori informazioni, consultare lo <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/\">Satzung (Charter)</a> (attualmente "
 "disponibile solo in tedesco, sono ben accette traduzioni)."
 
 #: template/ev.html.j2:52
@@ -996,16 +949,6 @@ msgid "Governance"
 msgstr "Governance"
 
 #: template/ev.html.j2:54
-#, fuzzy
-#| msgid ""
-#| "You can find our \"Satzung\", and the list of members under <a href="
-#| "\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git."
-#| "gnunet.org/gnunet-ev.git/tree/satzung.tex</a>. The current board consists "
-#| "of: <dl><dt>Vorsitz</dt> <dd><a href=\"https://schanzen.eu\">Martin "
-#| "Schanzenbach</a></dd> <dt>stellvertretender Vorsitz</dt> <dd>t3sserakt</"
-#| "dd> <dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a "
-#| "href=\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </"
-#| "dd> </dl>"
 msgid ""
 "You can find our charter, and the list of members under <a href=\"https://"
 "git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet.org/"
@@ -1015,13 +958,14 @@ msgid ""
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
 "\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
 msgstr ""
-"Il nostro \"Satzung\" e l'elenco dei membri è disponibile su <a href="
+"Il nostro atto costitutivo e l'elenco dei membri è disponibile su <a href="
 "\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet."
 "org/gnunet-ev.git/tree/satzung.tex</a>. Il consiglio direttivo attuale è "
 "composto da: <dl><dt>Vorsitz</dt><dd><a href=\"https://schanzen.eu\">Martin "
-"Schanzenbach</a></dd><dt>stellvertretender Vorsitz</dt><dd>t3sserakt</"
-"dd><dt>Kassenwart</dt><dd>Florian Dold</dd><dt>Beisitzer</dt><dd><a href="
-"\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd></dl>"
+"Schanzenbach</a></dd><dt>stellvertretender "
+"Vorsitz</dt><dd>t3sserakt</dd><dt>Kassenwart</dt><dd>Florian "
+"Dold</dd><dt>Beisitzer</dt><dd><a href=\"https://grothoff.org/christian/\""
+">Christian Grothoff</a>, ch3 </dd></dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
@@ -1290,23 +1234,16 @@ msgid "Is it possible to access GNUnet via a browser as an anonymous WWW?"
 msgstr "Si può accedere a GNUnet tramite una navigazione in incognito?"
 
 #: template/faq.html.j2:183
-#, fuzzy
-#| msgid ""
-#| "A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
-#| "would make it accessible with a browser. It is possible to build such a "
-#| "proxy and all one needs to know is the protocol used between browser and "
-#| "proxy and a swift look at the GNUnet code for file-sharing."
 msgid ""
 "A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
 "would make it accessible via a browser. It is possible to build such a proxy "
 "and all one needs to know is the protocol used between the browser and the "
 "proxy and the GNUnet code for file-sharing."
 msgstr ""
-"A: Attualmente non c'è un proxy (come fproxy di Freenet) per GNUnet che "
-"potrebbe permettervi l'accesso con un browser. E' possibile creare un proxy "
-"così e tutto ciò di cui si ha bisogno è sapere il protocollo utilizzato tra "
-"il navigatore e il proxy, così come fare una revisione rapida del codice su "
-"GNUnet per lo scambio di dati."
+"R: Attualmente non c'è un proxy (come fproxy di Freenet) per GNUnet per "
+"permettere l'accesso tramite browser. È possibile creare un proxy di questo "
+"genere, basta solo conoscere il protocollo utilizzato tra il browser e il "
+"proxy, e il codice GNUnet per lo scambio di dati."
 
 #: template/faq.html.j2:195
 msgid ""
@@ -1330,8 +1267,6 @@ msgstr ""
 "(dato che per installarla è necessario fermare il peer)."
 
 #: template/faq.html.j2:210
-#, fuzzy
-#| msgid "On top of which operating systems does GNUnet run?"
 msgid "Which operating systems does GNUnet run on?"
 msgstr "Su quale sistema operativo si esegue GNUnet?"
 
@@ -1440,8 +1375,6 @@ msgstr ""
 "delegata a questa conquisterà la propria risoluzione."
 
 #: template/faq.html.j2:286
-#, fuzzy
-#| msgid "How does GNS compare to other name systems"
 msgid "How does GNS compare to other name systems?"
 msgstr "Qual è la differenza tra GNS e altri sistemi di nomi di dominio?"
 
@@ -1461,16 +1394,6 @@ msgid "What is the difference between GNS and CoDoNS?"
 msgstr "Qual è la differenza tra GNS e CoDoNS?"
 
 #: template/faq.html.j2:394
-#, fuzzy
-#| msgid ""
-#| "A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
-#| "authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, "
-#| "and there are still registrars that determine who owns a name. <br><br> "
-#| "With GNS, we decentralize the database and also decentralize the "
-#| "responsibility for naming: each user runs his own personal root zone and "
-#| "is thus in complete control of the names he uses. GNS also has many "
-#| "additional features (to keep names short and enable migration) which "
-#| "don't even make sense in the context of CoDoNS."
 msgid ""
 "A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
 "authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, and "
@@ -1486,9 +1409,9 @@ msgstr ""
 "controllo, e ci sono anche processi che determinano chi possiede un nome. "
 "<br><br> Con GNS, noi decentralizziamo il database e la responsabilità di "
 "nominare: ogni utente amministra la propria zona radicale e questo è in "
-"completo controllo dei nomi che usa. GNS ha anche molte qualità addizionali "
-"(mantenere i nomi brevi e abilitare migrazioni) le quali non hanno alcun "
-"tipo di senso nel contesto di CoDoNS."
+"completo controllo dei nomi che usa. GNS ha anche molte qualità addizionali ("
+"mantenere i nomi brevi e abilitare migrazioni) le quali non hanno alcun tipo "
+"di senso nel contesto di CoDoNS."
 
 #: template/faq.html.j2:410
 msgid "What is the difference between GNS and SocialDNS?"
@@ -1534,14 +1457,6 @@ msgid "What is the difference between GNS and Handshake?"
 msgstr "Qual è la differenza tra GNS e Handshake?"
 
 #: template/faq.html.j2:441
-#, fuzzy
-#| msgid ""
-#| "A: Handshake is a blockchain-based method for root zone governance. "
-#| "Hence, it does not address the name resolution process itself but "
-#| "delegates resolution into DNS after the initial TLD resolution. Not "
-#| "taking sustainablility considerations into account, handshake could be "
-#| "used as an additional supporting GNS root zone governance model but we "
-#| "currently do not have such plans in mind."
 msgid ""
 "A: Handshake is a blockchain-based method for root zone governance. Hence, "
 "it does not address the name resolution process itself but delegates "
@@ -1553,7 +1468,7 @@ msgstr ""
 "R: Handshake è un metodo per la governance della zona radice basato su "
 "blockchain. Quindi non si occupa del processo della risoluzione dei nomi in "
 "sé, ma la delega al DNS dopo la risoluzione TLD iniziale. Se trascurassimo "
-"gli aspetti legati alla sostenibilità, handshake potrebbe essere usato come "
+"gli aspetti legati alla sostenibilità, Handshake potrebbe essere usato come "
 "supporto aggiuntivo al modello di governance della zona radice GNS; "
 "attualmente, però, questo utilizzo non rientra nei nostri piani."
 
@@ -2132,16 +2047,6 @@ msgstr ""
 "leggere i documenti di ricerca (e probabilmente anche il codice)."
 
 #: template/faq.html.j2:915
-#, fuzzy
-#| msgid ""
-#| "Another important point of reference are the various anonymous peer-to-"
-#| "peer networks. Here, there are differences in terms of application domain "
-#| "and how specifically anonymity is achieved. Anonymous routing is a hard "
-#| "research topic, so for a superficial comparisson like this one we focus "
-#| "on the latency. Another important factor is the programming language. "
-#| "Type-safe languages may offer certain security benefits; however, this "
-#| "may come at the cost of significant increases in resource consumption "
-#| "which in turn may reduce anonymity."
 msgid ""
 "Another important point of reference are the various anonymous peer-to-peer "
 "networks. Here, there are differences in terms of application domain and how "
@@ -2561,7 +2466,7 @@ msgid ""
 "the linker will link GNUnet against the right version. Note that none of "
 "this can really be trivially fixed by the cURL developers."
 msgstr ""
-"Quindi per usare una versione moderna di GnuTLS, il giusto approccio è "
+"Quindi per usare una versione moderna di GnuTLS, l'approccio giusto è "
 "disattivare tutte le funzionalità \"opzionali\" di cURL che trascinano con "
 "loro librerie di sistema che si collegano allo GnuTLS precedente. È una "
 "soluzione che funziona, tranne per il fatto che poi non si dovrebbe MAI "
@@ -2596,6 +2501,21 @@ msgid ""
 "are miniscule and can easily be applied again and again whenever libcurl "
 "makes a new release."
 msgstr ""
+"In che modo eseguire il fork risolve il problema? È semplice. Per prima "
+"cosa, permette di sbarazzarsi di tutti i problemi di compatibilità. Se usi "
+"libgnurl, dichiari di aver bisogno solo di HTTP/HTTPS. Per le applicazioni "
+"che hanno bisogno di altri protocolli, si dovrebbe mantenere il cURL "
+"originale. Per le altre, si può scegliere di passare a qualcosa di più "
+"semplice. Dato che la libreria viene rinominata, non bisognerà preoccuparsi "
+"che mucchi di pacchetti si rompano non appena viene ricompilata. Rinominare "
+"e dire che \"libgnurl = libcurl che supporta solo HTTP/HTTPS e GnuTLS\" "
+"risolve il 99%% dei problemi che ci provocavano malumore. Tutto questo NON è "
+"possibile senza un fork, perché rinominare è fondamentale per risolvere i "
+"problemi. Ci potrebbero essere soluzioni creative per ottenere lo stesso "
+"risultato nel sistema di compilazione cURL standard ma, quando gnurl è stato "
+"creato, farlo è stato ritenuto una mole di lavoro troppo grande. Le "
+"modifiche che libgnurl apporta a curl sono piccolissime e possono essere "
+"applicate di nuovo con facilità ad ogni nuova versione di libcurl."
 
 #: template/gnurl.html.j2:142
 msgid "Using libgnurl"
@@ -2730,47 +2650,51 @@ msgstr "o tramite riga di comando con gnupg2."
 #: template/gnurl.html.j2:276
 msgid ""
 "Fetch the release, the signature, the checksum file as well as its signature:"
-msgstr ""
+msgstr "Recupera la versione, la firma, il file checksum e la sua firma:"
 
 #: template/gnurl.html.j2:295
 msgid ""
 "verify the signatures, and verify the checksums against the checksums in "
 "the .sum.txt file."
 msgstr ""
+"verifica le firme e i checksum confrontandoli con i checksum nel file .sum."
+"txt."
 
 #: template/gnurl.html.j2:301
 msgid "unpack the tarball:"
-msgstr ""
+msgstr "decomprimere il tarball:"
 
 #: template/gnurl.html.j2:311
 msgid "Change into the directory"
-msgstr ""
+msgstr "Passare alla directory"
 
 #: template/gnurl.html.j2:321
 msgid "Now you can either run"
-msgstr ""
+msgstr "Ora è possibile o eseguire"
 
 #: template/gnurl.html.j2:331
 msgid "directly (and read configure-gnurl before you do so) or invoke"
-msgstr ""
+msgstr "direttamente (e leggere configurare-gnurl prima di farlo) o richiamare"
 
 #: template/gnurl.html.j2:341
 msgid ""
 "and pass additional parameters such as a custom PREFIX location. Further "
 "reference can be the"
 msgstr ""
+"e passare parametri aggiuntivi come una posizione PREFIX personalizzata. Per "
+"maggiori informazioni consultare il"
 
 #: template/gnurl.html.j2:346
 msgid "Now run"
-msgstr ""
+msgstr "Quindi, eseguire"
 
 #: template/gnurl.html.j2:356
 msgid "(this is optional)"
-msgstr ""
+msgstr "(opzionale)"
 
 #: template/gnurl.html.j2:365
 msgid "and you are done."
-msgstr ""
+msgstr "ecco fatto."
 
 #: template/gnurl.html.j2:369
 msgid "Building from a tagged git commit"
