@@ -30,7 +30,7 @@
                   </p>
                 </header>
                 <p class="item-abstract">
-                  {{ item['abstract'] }} <br/>
+                  {{ get_abstract(item['page'], 1000) }} <br/>
                   [<a href="{{ item['page'] }}" title="{{ item['date']}}">{{ _("read more") }}</a>]
                 </p>
               </section>

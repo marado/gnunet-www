@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-07 13:32+0200\n"
+"POT-Creation-Date: 2021-05-07 16:24+0200\n"
 "PO-Revision-Date: 2021-03-09 18:35+0000\n"
 "Last-Translator: Jigisha Sharma <jigishas38@gmail.com>\n"
 "Language-Team: Hindi <http://weblate.taler.net/projects/gnunet/website/hi/>\n"
@@ -64,9 +64,8 @@ msgstr "दर्ज करे समस्या वेबसाईट के."
 msgid "About"
 msgstr "जानकारी"
 
-#: common/navigation.j2.inc:39 template/news/index.html.j2:8
-#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
-#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 common/old-news.j2.inc:7
+#: template/news/index.html.j2:8
 msgid "News"
 msgstr "समाचार"
 
@@ -153,6 +152,18 @@ msgstr "र.ई.एस.टी ए .पी .इ"
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "अकसर पूछे जाने वाले सवाल"
+
+#: common/old-news.j2.inc:10 template/news/index.html.j2:11
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr "समाचार पत्र बदलाव जी॰एन॰यू॰ नेट को लेकर घटना और प्रकाशित के उदाहरण"
+
+#: common/old-news.j2.inc:15 template/news/index.html.j2:16
+msgid "subscribe to our RSS feed"
+msgstr "अभिदाता बने हमारे रस्स वेब फ़ीड पर"
+
+#: common/old-news.j2.inc:34 template/news/index.html.j2:36
+msgid "read more"
+msgstr "और पड़े"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -2892,24 +2903,6 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
-
-#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
-#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
-#: template/news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr "समाचार पत्र बदलाव जी॰एन॰यू॰ नेट को लेकर घटना और प्रकाशित के उदाहरण"
-
-#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
-#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
-#: template/news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr "अभिदाता बने हमारे रस्स वेब फ़ीड पर"
-
-#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
-#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
-#: template/news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "और पड़े"
 
 #: template/news/index.html.j2:45
 msgid "News archives:"

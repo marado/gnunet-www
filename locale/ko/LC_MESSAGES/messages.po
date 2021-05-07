@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-07 13:32+0200\n"
+"POT-Creation-Date: 2021-05-07 16:24+0200\n"
 "PO-Revision-Date: 2021-04-11 02:59+0000\n"
 "Last-Translator: Chaewon Park <wonnie0624@gmail.com>\n"
 "Language-Team: Korean <http://weblate.taler.net/projects/gnunet/website/ko/"
@@ -67,9 +67,8 @@ msgstr "웹사이트 관련 문제 신고."
 msgid "About"
 msgstr "관하여"
 
-#: common/navigation.j2.inc:39 template/news/index.html.j2:8
-#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
-#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 common/old-news.j2.inc:7
+#: template/news/index.html.j2:8
 msgid "News"
 msgstr "소식"
 
@@ -156,6 +155,18 @@ msgstr ""
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "FAQ(자주 묻는 질문과 답변)"
+
+#: common/old-news.j2.inc:10 template/news/index.html.j2:11
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr "언론보도 및 이벤트 등 GNU넷과 관련된 신규 소식"
+
+#: common/old-news.j2.inc:15 template/news/index.html.j2:16
+msgid "subscribe to our RSS feed"
+msgstr "우리의 RSS 피드를 구독하십시오"
+
+#: common/old-news.j2.inc:34 template/news/index.html.j2:36
+msgid "read more"
+msgstr "더 읽기"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -2904,24 +2915,6 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
-
-#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
-#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
-#: template/news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr "언론보도 및 이벤트 등 GNU넷과 관련된 신규 소식"
-
-#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
-#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
-#: template/news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr "우리의 RSS 피드를 구독하십시오"
-
-#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
-#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
-#: template/news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "더 읽기"
 
 #: template/news/index.html.j2:45
 msgid "News archives:"

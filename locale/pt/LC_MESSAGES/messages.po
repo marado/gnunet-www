@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-07 13:32+0200\n"
+"POT-Creation-Date: 2021-05-07 16:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -62,9 +62,8 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: common/navigation.j2.inc:39 template/news/index.html.j2:8
-#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
-#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 common/old-news.j2.inc:7
+#: template/news/index.html.j2:8
 msgid "News"
 msgstr ""
 
@@ -150,6 +149,18 @@ msgstr ""
 
 #: common/navigation.j2.inc:89
 msgid "FAQ"
+msgstr ""
+
+#: common/old-news.j2.inc:10 template/news/index.html.j2:11
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr ""
+
+#: common/old-news.j2.inc:15 template/news/index.html.j2:16
+msgid "subscribe to our RSS feed"
+msgstr ""
+
+#: common/old-news.j2.inc:34 template/news/index.html.j2:36
+msgid "read more"
 msgstr ""
 
 #: template/about.html.j2:11
@@ -2855,24 +2866,6 @@ msgstr ""
 
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
-msgstr ""
-
-#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
-#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
-#: template/news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr ""
-
-#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
-#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
-#: template/news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr ""
-
-#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
-#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
-#: template/news/oldnews-2019.html.j2:40
-msgid "read more"
 msgstr ""
 
 #: template/news/index.html.j2:45
