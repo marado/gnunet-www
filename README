@@ -105,6 +105,13 @@ section in the manual.
 * Last but least build the website locally and check if the news
   post renders correctly.
 
+Archiving Old News
+==================
+
+To create an archive page with old news, copy one of the existing
+template/news/oldnews-*.html.j2 files and adjust the year in the "oldnews(...)"
+macro call.
+
 Developing with GNU Guix
 ========================
 
