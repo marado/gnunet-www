@@ -1,12 +1,12 @@
 siteconf:
-  - baseurl: gnunet.org
-    newsloc: /news/
-    newsdir: news
-    rsstitle: GNUnet.org
-    rssdescr: "News posts published by GNUnet about changes related to GNUnet, releases, and events"
-    rssloc:
-    rsslink:
-    rsslang:
+  baseurl: https://gnunet.org/
+  newsloc: /news/
+  newsdir: news
+  rsstitle: GNUnet.org
+  rssdescr: "News posts published by GNUnet about changes related to GNUnet, releases, and events"
+  rssloc:
+  rsslink:
+  rsslang:
 langs_full: &langs
     en: English
     ar: عربي
@@ -23,41 +23,6 @@ langs_full: &langs
     ru: Ру́сский язы́к
     sv: Svenska
     tr: Türk
-symlinks:
-    - file: frontpage.html
-      targets:
-        - frontpage
-    - file: gsoc.html
-      targets:
-        - gsoc
-    - file: about.html
-      targets:
-        - philosophy
-    - file: gns.html
-      targets:
-        - gns
-    - file: node/about.html
-      targets:
-        - "397"
-staticfiles:
-    - file: favicon.ico
-      targets:
-        - favicon.ico
-    - file: moved.html
-      targets:
-        - frontpage.html
-    - file: robots.txt
-      targets:
-        - robots.txt
-    - file: moved_gsoc.html
-      targets:
-        - gsoc.html
-    - file: moved_about.html
-      targets:
-        - about.html
-    - file: moved_gns.html
-      targets:
-        - gns.html
 meetingnotes:
   2013: 2013-12-27
   2014: 2014-12-28
@@ -68,156 +33,156 @@ meetingnotes:
   2019: 2019-12-27
   2020: 2020-12-30
 newsposts:
-  - page: 2021-03-0.14.1.html
+  - page: news/2021-03-0.14.1.html
     date: 2021-04-04
     title: GNUnet 0.14.1
-  - page: 2021-03-gsoc-update.html
+  - page: news/2021-03-gsoc-update.html
     date: 2021-03-09
     title: No GSoC projects in 2021
-  - page: 2020-11-0.14.0.html
+  - page: news/2020-11-0.14.0.html
     date: 2020-11-14
     title: GNUnet 0.14.0
-  - page: 2020-11-GNSSpec4.html
+  - page: news/2020-11-GNSSpec4.html
     date: 2020-11-11
     title: GNS Specification Milestone 4/4 and Packaging 1+2
     abstract:
     content:
-  - page: 2020-09-0.13.3.html
+  - page: news/2020-09-0.13.3.html
     date: 2020-09-06
     title: GNUnet 0.13.3
-  - page: 2020-08-0.13.2.html
+  - page: news/2020-08-0.13.2.html
     date: 2020-08-14
     title: GNUnet 0.13.2
-  - page: 2020-07-0.13.1.html
+  - page: news/2020-07-0.13.1.html
     date: 2020-07-12
     title: GNUnet 0.13.1
-  - page: 2020-07-0.13.0.html
+  - page: news/2020-07-0.13.0.html
     date: 2020-07-07
     title: GNUnet 0.13.0
-  - page: 2020-06-GNSSpec3.html
+  - page: news/2020-06-GNSSpec3.html
     date: 2020-06-30
     title: GNS Specification Milestone 3/4
     abstract:
     content:
-  - page: 2020-05-GHM_Jun_2020.html
+  - page: news/2020-05-GHM_Jun_2020.html
     date: 2020-05-28
     title: GNUnet Hacker Meeting 2020
-  - page: 2020-01-0.12.2.html
+  - page: news/2020-01-0.12.2.html
     date: 2020-01-13
     title: GNUnet 0.12.2
-  - page: 2020-01-GNSSpec2.html
+  - page: news/2020-01-GNSSpec2.html
     date: 2020-01-12
     title: GNS Specification Milestone 2/4
     abstract:
     content:
-  - page: 2019-12-UpcomingTalks.html
+  - page: news/2019-12-UpcomingTalks.html
     date: 2019-12-26
     title: Upcoming GNUnet Talks
-  - page: 2019-0.12.1.html
+  - page: news/2019-0.12.1.html
     date: 2019-12-25
     title: GNUnet 0.12.1
-  - page: 2019-0.12.0.html
+  - page: news/2019-0.12.0.html
     date: 2019-12-20
     title: GNUnet 0.12.0
     abstract:
     content:
-  - page: 2019-11-ICANNUpdate.html
+  - page: news/2019-11-ICANNUpdate.html
     date: 2019-11-10
     title: GNS@ICANN66
     abstract:
     content:
-  - page: 2019-0.11.8.html
+  - page: news/2019-0.11.8.html
     date: 2019-10-30
     title: GNUnet 0.11.8
     abstract:
     content:
-  - page: 2019-0.11.7.html
+  - page: news/2019-0.11.7.html
     date: 2019-10-27
     title: GNUnet 0.11.7
     abstract:
     content:
-  - page: 2019-10-ICANNPanel.html
+  - page: news/2019-10-ICANNPanel.html
     date: 2019-10-20
     title: GNUnet invited to ICANN Panel
     abstract:
     content:
-  - page: 2019-10-GNSSpec1.html
+  - page: news/2019-10-GNSSpec1.html
     date: 2019-10-04
     title: GNS Specification Milestone 1/4
     abstract:
     content:
-  - page: 2019-0.11.6.html
+  - page: news/2019-0.11.6.html
     date: 2019-07-24
     title: GNUnet 0.11.6
     abstract:
     content:
-  - page: 2019-07-GHM_Aug_2019.html
+  - page: news/2019-07-GHM_Aug_2019.html
     date: 2019-07-17
     title: GNUnet Hacker Meeting 2019
     abstract:
     content:
-  - page: 2019-06-DSTJ.html
+  - page: news/2019-06-DSTJ.html
     date: 2019-06-28
     title: "Peer DSTJ is dead, long live peer Y924"
     abstract:
     content:
-  - page: 2019-0.11.5.html
+  - page: news/2019-0.11.5.html
     date: 2019-06-05
     title: GNUnet 0.11.5
     abstract:
     content:
-  - page: 2019-06.html
+  - page: news/2019-06.html
     date: 2019-06-01
     title: 2019-06
     abstract:
     content:
-  - page: 2019-0.11.4.html
+  - page: news/2019-0.11.4.html
     date: 2019-05-12
     title: GNUnet 0.11.4
     abstract:
     content:
-  - page: 2019-0.11.3.html
+  - page: news/2019-0.11.3.html
     date: 2019-04-07
     title: GNUnet 0.11.3
     abstract:
     content:
-  - page: 2019-0.11.2.html
+  - page: news/2019-0.11.2.html
     date: 2019-04-04
     title: GNUnet 0.11.2
     abstract:
     content:
-  - page: 2019-0.11.1.html
+  - page: news/2019-0.11.1.html
     date: 2019-04-03
     title: GNUnet 0.11.1
     abstract:
     content:
-  - page: 2019-0.11.0.html
+  - page: news/2019-0.11.0.html
     date: 2019-02-28
     title: GNUnet 0.11.0
     abstract:
     content:
-  - page: 2019-02.html
+  - page: news/2019-02.html
     date: 2019-02-01
     title: Google Summer of Code 2019
     abstract:
     content:
-  - page: 2018-07.html
+  - page: news/2018-07.html
     date: 2018-07-01
     title: Second GNUnet Hacker Meeting 2018
     abstract:
     content:
-  - page: 2018-06.html
+  - page: news/2018-06.html
     date: 2018-06-06
     title: GNUnet 0.11.0pre66
     abstract:
     content:
-  - page: 2013-12-28-archived-typos-pkeys.html
+  - page: news/2013-12-28-archived-typos-pkeys.html
     date: 2013-12-28
     title: Typo-Protected Public Keys
-  - page: 2013-11-15-special-use-gns.html
+  - page: news/2013-11-15-special-use-gns.html
     date: 2013-11-15
     title: Special-Use Domain Names of Peer-to-Peer Name Systems
-  - page: 2011-11-24-archived-vfork.html
+  - page: news/2011-11-24-archived-vfork.html
     date: 2011-11-24
     title: vfork and the signal race
 # <!-- FIXME 2015: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->

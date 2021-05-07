@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-28 14:41+0200\n"
+"POT-Creation-Date: 2021-05-07 13:32+0200\n"
 "PO-Revision-Date: 2021-04-26 03:52+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/"
@@ -65,9 +65,9 @@ msgstr "Melden Sie Probleme mit dieser Website."
 msgid "About"
 msgstr "Über GNUnet"
 
-#: common/navigation.j2.inc:39 news/index.html.j2:8
-#: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
-#: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 template/news/index.html.j2:8
+#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
+#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "Neues"
 
@@ -154,30 +154,6 @@ msgstr "REST API"
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "FAQ"
-
-#: news/index.html.j2:11 news/oldnews-2011.html.j2:16
-#: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
-#: news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr ""
-"Neue Posts zu Änderungen die GNU net betreffen, wie neue Versionen und "
-"Veranstaltungen"
-
-#: news/index.html.j2:16 news/oldnews-2011.html.j2:21
-#: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
-#: news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr "Abonniere unseren RSS-Feed"
-
-#: news/index.html.j2:36 news/oldnews-2011.html.j2:40
-#: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
-#: news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "Hier klicken für weitere Informationen"
-
-#: news/index.html.j2:45
-msgid "News archives:"
-msgstr "Nachrichten-Archive"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -3657,16 +3633,22 @@ msgstr ""
 "bugs.gnunet.org/view.php?id=5562\">#5562</a>)."
 
 #: template/gsoc.html.j2:612
+#, fuzzy
 msgid "<strong>Mentors:</strong> Christian Grothoff"
 msgstr ""
+"<strong>Mentoren:</strong> Matthias Wachs, Christian Grothoff, Jeff Burdges"
 
 #: template/gsoc.html.j2:617
+#, fuzzy
+#| msgid "Required Skills: C"
 msgid "Required Skills:"
-msgstr ""
+msgstr "Benötigte Kenntnisse: C"
 
 #: template/gsoc.html.j2:622
+#, fuzzy
+#| msgid "Difficulty level: high"
 msgid "Difficulty level:"
-msgstr ""
+msgstr "Schwierigkeitsgrad: hoch"
 
 #: template/gsoc.html.j2:627
 msgid "Report:"
@@ -3686,8 +3668,9 @@ msgid ""
 msgstr ""
 
 #: template/gsoc.html.j2:657
+#, fuzzy
 msgid "Required Skills: C, JavaScript, CSS"
-msgstr ""
+msgstr "Erforderliche Fähigkeiten: Rust oder C, Krypto"
 
 #: template/gsoc.html.j2:667
 msgid ""
@@ -3884,8 +3867,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:46
 #: template/install-on-ubuntu1804.html.j2:41
+#, fuzzy
+#| msgid "Change into the directory"
 msgid "Make an installation directory"
-msgstr ""
+msgstr "Wechsele in das Verzeichnis"
 
 #: template/install-on-debian9.html.j2:60 template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:237
@@ -3903,8 +3888,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:104
 #: template/install-on-ubuntu1804.html.j2:70
+#, fuzzy
+#| msgid "GNUnet for developers"
 msgid "Option 1: GNUnet for testing / usage"
-msgstr ""
+msgstr "GNUNet für Entwickeler"
 
 #: template/install-on-debian9.html.j2:117
 #: template/install-on-ubuntu1804.html.j2:82
@@ -3920,8 +3907,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:208
 #: template/install-on-ubuntu1804.html.j2:134
+#, fuzzy
+#| msgid "Motivation"
 msgid "Create configuration file"
-msgstr ""
+msgstr "Motivation"
 
 #: template/install-on-debian9.html.j2:228
 #: template/install-on-ubuntu1804.html.j2:156
@@ -3953,12 +3942,16 @@ msgid "Alternative: Installation from source"
 msgstr ""
 
 #: template/install-on-macos.html.j2:154 template/install-on-netbsd.html.j2:265
+#, fuzzy
+#| msgid "GNUnet for developers"
 msgid "Option 1: GNUnet for production / usage"
-msgstr ""
+msgstr "GNUNet für Entwickeler"
 
 #: template/install-on-macos.html.j2:187 template/install-on-netbsd.html.j2:293
+#, fuzzy
+#| msgid "GNUnet for developers"
 msgid "Option 2: GNUnet experimental"
-msgstr ""
+msgstr "GNUNet für Entwickeler"
 
 #: template/install-on-netbsd.html.j2:6
 msgid "Tutorial: GNUnet on NetBSD 8.0 CURRENT"
@@ -4085,16 +4078,19 @@ msgid "How to use GNUnet - in a nutshell"
 msgstr ""
 
 #: template/use.html.j2:12 template/use.html.j2:125
+#, fuzzy
+#| msgid "Motivation"
 msgid "Filesharing"
-msgstr ""
+msgstr "File-Sharing"
 
 #: template/use.html.j2:13
 msgid "CADET"
 msgstr ""
 
 #: template/use.html.j2:14
+#, fuzzy
 msgid "Minimal Groupchat"
-msgstr ""
+msgstr "Gruppenchat"
 
 #: template/use.html.j2:15
 msgid "GNS with CLI"
@@ -4165,6 +4161,30 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
+
+#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
+#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
+#: template/news/oldnews-2019.html.j2:16
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr ""
+"Neue Posts zu Änderungen die GNU net betreffen, wie neue Versionen und "
+"Veranstaltungen"
+
+#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
+#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
+#: template/news/oldnews-2019.html.j2:21
+msgid "subscribe to our RSS feed"
+msgstr "Abonniere unseren RSS-Feed"
+
+#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
+#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
+#: template/news/oldnews-2019.html.j2:40
+msgid "read more"
+msgstr "Hier klicken für weitere Informationen"
+
+#: template/news/index.html.j2:45
+msgid "News archives:"
+msgstr "Nachrichten-Archive"
 
 #~ msgid "Living Standards"
 #~ msgstr "Lebensbedingungen"

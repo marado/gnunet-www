@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-28 14:41+0200\n"
+"POT-Creation-Date: 2021-05-07 13:32+0200\n"
 "PO-Revision-Date: 2021-04-11 02:59+0000\n"
 "Last-Translator: Chaewon Park <wonnie0624@gmail.com>\n"
 "Language-Team: Korean <http://weblate.taler.net/projects/gnunet/website/ko/"
@@ -33,8 +33,10 @@ msgid "Contact"
 msgstr "연락처"
 
 #: common/footer.j2.inc:8
+#, fuzzy
+#| msgid "GNUnet"
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "GNU넷"
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
@@ -65,9 +67,9 @@ msgstr "웹사이트 관련 문제 신고."
 msgid "About"
 msgstr "관하여"
 
-#: common/navigation.j2.inc:39 news/index.html.j2:8
-#: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
-#: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 template/news/index.html.j2:8
+#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
+#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "소식"
 
@@ -154,28 +156,6 @@ msgstr ""
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "FAQ(자주 묻는 질문과 답변)"
-
-#: news/index.html.j2:11 news/oldnews-2011.html.j2:16
-#: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
-#: news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr "언론보도 및 이벤트 등 GNU넷과 관련된 신규 소식"
-
-#: news/index.html.j2:16 news/oldnews-2011.html.j2:21
-#: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
-#: news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr "우리의 RSS 피드를 구독하십시오"
-
-#: news/index.html.j2:36 news/oldnews-2011.html.j2:40
-#: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
-#: news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "더 읽기"
-
-#: news/index.html.j2:45
-msgid "News archives:"
-msgstr "뉴스 아카이브:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -484,12 +464,16 @@ msgid ""
 msgstr ""
 
 #: template/architecture.html.j2:6
+#, fuzzy
+#| msgid "System Architecture"
 msgid "GNUnet System Architecture"
-msgstr ""
+msgstr "시스템 아키텍처(구조)"
 
 #: template/architecture.html.j2:20
+#, fuzzy
+#| msgid "Documentation"
 msgid "Foundations"
-msgstr ""
+msgstr "문서"
 
 #: template/architecture.html.j2:22
 msgid ""
@@ -514,8 +498,10 @@ msgid ""
 msgstr ""
 
 #: template/architecture.html.j2:52
+#, fuzzy
+#| msgid "System Architecture"
 msgid "System architecture"
-msgstr ""
+msgstr "시스템 아키텍처(구조)"
 
 #: template/architecture.html.j2:58
 msgid "Subsystems"
@@ -534,8 +520,10 @@ msgid "Legend"
 msgstr ""
 
 #: template/contact.html.j2:6
+#, fuzzy
+#| msgid "Continuous Integration"
 msgid "Contact information"
-msgstr ""
+msgstr "지속적 통합"
 
 #: template/contact.html.j2:11
 msgid "The mailing list"
@@ -710,16 +698,20 @@ msgid ""
 msgstr ""
 
 #: template/engage.html.j2:6
+#, fuzzy
+#| msgid "Engage"
 msgid "Engage!"
-msgstr ""
+msgstr "참여"
 
 #: template/ev.html.j2:6
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
 msgstr ""
 
 #: template/ev.html.j2:11
+#, fuzzy
+#| msgid "About GNUnet"
 msgid "About GNUnet e.V."
-msgstr ""
+msgstr "GNUnet에 대하여"
 
 #: template/ev.html.j2:13
 msgid ""
@@ -934,8 +926,10 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:151
+#, fuzzy
+#| msgid "What is GNUnet?"
 msgid "What can I do with GNUnet?"
-msgstr ""
+msgstr "GNUnet이란?"
 
 #: template/faq.html.j2:153
 msgid ""
@@ -1662,8 +1656,10 @@ msgid ""
 msgstr ""
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
+#, fuzzy
+#| msgid "Documentation"
 msgid "Motivation"
-msgstr ""
+msgstr "문서"
 
 #: template/gns.html.j2:15
 msgid ""
@@ -1714,8 +1710,10 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:48
+#, fuzzy
+#| msgid "About"
 msgid "About gnurl"
-msgstr ""
+msgstr "관하여"
 
 #: template/gnurl.html.j2:50
 msgid ""
@@ -2047,8 +2045,10 @@ msgid "Ideas 2021"
 msgstr ""
 
 #: template/gsoc.html.j2:13 template/gsoc.html.j2:215
+#, fuzzy
+#| msgid "GSoC Projects"
 msgid "Past projects"
-msgstr ""
+msgstr "GSoC 프로젝트"
 
 #: template/gsoc.html.j2:14 template/gsoc.html.j2:596
 msgid "Finished projects"
@@ -2573,8 +2573,10 @@ msgid ""
 msgstr ""
 
 #: template/index.html.j2:286
+#, fuzzy
+#| msgid "read more"
 msgid "Learn more"
-msgstr ""
+msgstr "더 읽기"
 
 #: template/index.html.j2:295
 msgid "Get started"
@@ -2589,8 +2591,10 @@ msgid "Requirements for Raspberry Pi 3"
 msgstr ""
 
 #: template/install-on-archpi.html.j2:40
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the Source Code"
-msgstr ""
+msgstr "소스 코드"
 
 #: template/install-on-archpi.html.j2:62
 #: template/install-on-debian9.html.j2:131
@@ -2629,8 +2633,10 @@ msgstr ""
 #: template/install-on-debian9.html.j2:60 template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:237
 #: template/install-on-ubuntu1804.html.j2:53
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the source code"
-msgstr ""
+msgstr "소스 코드"
 
 #: template/install-on-debian9.html.j2:79 template/install-on-macos.html.j2:142
 #: template/install-on-netbsd.html.j2:245
@@ -2660,8 +2666,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:228
 #: template/install-on-ubuntu1804.html.j2:156
+#, fuzzy
+#| msgid "GNUnet"
 msgid "Use GNUnet!"
-msgstr ""
+msgstr "GNU넷"
 
 #: template/install-on-debian9.html.j2:233
 #: template/install-on-ubuntu1804.html.j2:162
@@ -2674,8 +2682,10 @@ msgstr ""
 
 #: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
 #: template/install-on-openwrt.html.j2:15
+#, fuzzy
+#| msgid "Install"
 msgid "Installation"
-msgstr ""
+msgstr "설치"
 
 #: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
 msgid "First steps"
@@ -2702,8 +2712,10 @@ msgid "Tutorial: GNUnet on OpenWrt"
 msgstr ""
 
 #: template/install-on-openwrt.html.j2:47
+#, fuzzy
+#| msgid "Continuous Integration"
 msgid "Configuration"
-msgstr ""
+msgstr "지속적 통합"
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
@@ -2852,8 +2864,10 @@ msgid "Accessing GNUnet"
 msgstr ""
 
 #: template/use.html.j2:78
+#, fuzzy
+#| msgid "What is GNUnet?"
 msgid "Leaving GNUnet"
-msgstr ""
+msgstr "GNUnet이란?"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
@@ -2890,6 +2904,28 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
+
+#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
+#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
+#: template/news/oldnews-2019.html.j2:16
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr "언론보도 및 이벤트 등 GNU넷과 관련된 신규 소식"
+
+#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
+#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
+#: template/news/oldnews-2019.html.j2:21
+msgid "subscribe to our RSS feed"
+msgstr "우리의 RSS 피드를 구독하십시오"
+
+#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
+#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
+#: template/news/oldnews-2019.html.j2:40
+msgid "read more"
+msgstr "더 읽기"
+
+#: template/news/index.html.j2:45
+msgid "News archives:"
+msgstr "뉴스 아카이브:"
 
 #~ msgid "Living Standards"
 #~ msgstr "생활 수준"

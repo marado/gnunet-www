@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-28 14:41+0200\n"
+"POT-Creation-Date: 2021-05-07 13:32+0200\n"
 "PO-Revision-Date: 2021-03-09 18:35+0000\n"
 "Last-Translator: Jigisha Sharma <jigishas38@gmail.com>\n"
 "Language-Team: Hindi <http://weblate.taler.net/projects/gnunet/website/hi/>\n"
@@ -64,9 +64,9 @@ msgstr "दर्ज करे समस्या वेबसाईट के."
 msgid "About"
 msgstr "जानकारी"
 
-#: common/navigation.j2.inc:39 news/index.html.j2:8
-#: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
-#: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 template/news/index.html.j2:8
+#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
+#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "समाचार"
 
@@ -153,28 +153,6 @@ msgstr "र.ई.एस.टी ए .पी .इ"
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "अकसर पूछे जाने वाले सवाल"
-
-#: news/index.html.j2:11 news/oldnews-2011.html.j2:16
-#: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
-#: news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr "समाचार पत्र बदलाव जी॰एन॰यू॰ नेट को लेकर घटना और प्रकाशित के उदाहरण"
-
-#: news/index.html.j2:16 news/oldnews-2011.html.j2:21
-#: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
-#: news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr "अभिदाता बने हमारे रस्स वेब फ़ीड पर"
-
-#: news/index.html.j2:36 news/oldnews-2011.html.j2:40
-#: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
-#: news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "और पड़े"
-
-#: news/index.html.j2:45
-msgid "News archives:"
-msgstr "समाचार पुरालेख:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -474,12 +452,16 @@ msgid ""
 msgstr ""
 
 #: template/architecture.html.j2:6
+#, fuzzy
+#| msgid "System Architecture"
 msgid "GNUnet System Architecture"
-msgstr ""
+msgstr "प्रणाली स्थापत्य"
 
 #: template/architecture.html.j2:20
+#, fuzzy
+#| msgid "Documentation"
 msgid "Foundations"
-msgstr ""
+msgstr "प्रलेखन"
 
 #: template/architecture.html.j2:22
 msgid ""
@@ -504,8 +486,10 @@ msgid ""
 msgstr ""
 
 #: template/architecture.html.j2:52
+#, fuzzy
+#| msgid "System Architecture"
 msgid "System architecture"
-msgstr ""
+msgstr "प्रणाली स्थापत्य"
 
 #: template/architecture.html.j2:58
 msgid "Subsystems"
@@ -524,8 +508,10 @@ msgid "Legend"
 msgstr ""
 
 #: template/contact.html.j2:6
+#, fuzzy
+#| msgid "Continuous Integration"
 msgid "Contact information"
-msgstr ""
+msgstr "लगातार एकीकरण"
 
 #: template/contact.html.j2:11
 msgid "The mailing list"
@@ -700,16 +686,20 @@ msgid ""
 msgstr ""
 
 #: template/engage.html.j2:6
+#, fuzzy
+#| msgid "Engage"
 msgid "Engage!"
-msgstr ""
+msgstr "संलग्न"
 
 #: template/ev.html.j2:6
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
 msgstr ""
 
 #: template/ev.html.j2:11
+#, fuzzy
+#| msgid "About GNUnet"
 msgid "About GNUnet e.V."
-msgstr ""
+msgstr "कप्यूटिंग नेट के बारे में"
 
 #: template/ev.html.j2:13
 msgid ""
@@ -1654,8 +1644,10 @@ msgid ""
 msgstr ""
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
+#, fuzzy
+#| msgid "Documentation"
 msgid "Motivation"
-msgstr ""
+msgstr "प्रलेखन"
 
 #: template/gns.html.j2:15
 msgid ""
@@ -1706,8 +1698,10 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:48
+#, fuzzy
+#| msgid "About"
 msgid "About gnurl"
-msgstr ""
+msgstr "जानकारी"
 
 #: template/gnurl.html.j2:50
 msgid ""
@@ -2039,8 +2033,10 @@ msgid "Ideas 2021"
 msgstr ""
 
 #: template/gsoc.html.j2:13 template/gsoc.html.j2:215
+#, fuzzy
+#| msgid "GSoC Projects"
 msgid "Past projects"
-msgstr ""
+msgstr "ग स ओ क परियोजनाओं"
 
 #: template/gsoc.html.j2:14 template/gsoc.html.j2:596
 msgid "Finished projects"
@@ -2565,8 +2561,10 @@ msgid ""
 msgstr ""
 
 #: template/index.html.j2:286
+#, fuzzy
+#| msgid "read more"
 msgid "Learn more"
-msgstr ""
+msgstr "और पड़े"
 
 #: template/index.html.j2:295
 msgid "Get started"
@@ -2581,8 +2579,10 @@ msgid "Requirements for Raspberry Pi 3"
 msgstr ""
 
 #: template/install-on-archpi.html.j2:40
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the Source Code"
-msgstr ""
+msgstr "सूत्र संहिता"
 
 #: template/install-on-archpi.html.j2:62
 #: template/install-on-debian9.html.j2:131
@@ -2621,8 +2621,10 @@ msgstr ""
 #: template/install-on-debian9.html.j2:60 template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:237
 #: template/install-on-ubuntu1804.html.j2:53
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the source code"
-msgstr ""
+msgstr "सूत्र संहिता"
 
 #: template/install-on-debian9.html.j2:79 template/install-on-macos.html.j2:142
 #: template/install-on-netbsd.html.j2:245
@@ -2652,8 +2654,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:228
 #: template/install-on-ubuntu1804.html.j2:156
+#, fuzzy
+#| msgid "GNUnet"
 msgid "Use GNUnet!"
-msgstr ""
+msgstr "कम्प्यूटिंग नेट"
 
 #: template/install-on-debian9.html.j2:233
 #: template/install-on-ubuntu1804.html.j2:162
@@ -2666,8 +2670,10 @@ msgstr ""
 
 #: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
 #: template/install-on-openwrt.html.j2:15
+#, fuzzy
+#| msgid "Install"
 msgid "Installation"
-msgstr ""
+msgstr "स्थापित"
 
 #: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
 msgid "First steps"
@@ -2694,8 +2700,10 @@ msgid "Tutorial: GNUnet on OpenWrt"
 msgstr ""
 
 #: template/install-on-openwrt.html.j2:47
+#, fuzzy
+#| msgid "Continuous Integration"
 msgid "Configuration"
-msgstr ""
+msgstr "लगातार एकीकरण"
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
@@ -2844,8 +2852,10 @@ msgid "Accessing GNUnet"
 msgstr ""
 
 #: template/use.html.j2:78
+#, fuzzy
+#| msgid "What is GNUnet?"
 msgid "Leaving GNUnet"
-msgstr ""
+msgstr "क्या हे जी॰ एन॰यू॰ नेट?"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
@@ -2882,6 +2892,28 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
+
+#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
+#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
+#: template/news/oldnews-2019.html.j2:16
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr "समाचार पत्र बदलाव जी॰एन॰यू॰ नेट को लेकर घटना और प्रकाशित के उदाहरण"
+
+#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
+#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
+#: template/news/oldnews-2019.html.j2:21
+msgid "subscribe to our RSS feed"
+msgstr "अभिदाता बने हमारे रस्स वेब फ़ीड पर"
+
+#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
+#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
+#: template/news/oldnews-2019.html.j2:40
+msgid "read more"
+msgstr "और पड़े"
+
+#: template/news/index.html.j2:45
+msgid "News archives:"
+msgstr "समाचार पुरालेख:"
 
 #~ msgid "Living Standards"
 #~ msgstr "जीवन स्तर"

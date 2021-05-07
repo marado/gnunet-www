@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-28 14:41+0200\n"
+"POT-Creation-Date: 2021-05-07 13:32+0200\n"
 "PO-Revision-Date: 2021-04-25 04:48+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/"
@@ -65,9 +65,9 @@ msgstr "Segnalare problemi del sito."
 msgid "About"
 msgstr "Riguardo a"
 
-#: common/navigation.j2.inc:39 news/index.html.j2:8
-#: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
-#: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 template/news/index.html.j2:8
+#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
+#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "Novità"
 
@@ -154,28 +154,6 @@ msgstr "API REST"
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "FAQ"
-
-#: news/index.html.j2:11 news/oldnews-2011.html.j2:16
-#: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
-#: news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr "Post sulle novità di GNUnet come comunicati stampa ed eventi"
-
-#: news/index.html.j2:16 news/oldnews-2011.html.j2:21
-#: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
-#: news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr "Iscriviti al nostro feed RSS"
-
-#: news/index.html.j2:36 news/oldnews-2011.html.j2:40
-#: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
-#: news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "Maggiori informazioni"
-
-#: news/index.html.j2:45
-msgid "News archives:"
-msgstr "Archivi delle notizie:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -2794,8 +2772,10 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:382
+#, fuzzy
+#| msgid "Reporting bugs"
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "Report dei bug"
 
 #: template/gnurl.html.j2:384
 msgid ""
@@ -2902,8 +2882,10 @@ msgid "Ideas 2021"
 msgstr ""
 
 #: template/gsoc.html.j2:13 template/gsoc.html.j2:215
+#, fuzzy
+#| msgid "GSoC Projects"
 msgid "Past projects"
-msgstr ""
+msgstr "Progetti GSoC"
 
 #: template/gsoc.html.j2:14 template/gsoc.html.j2:596
 msgid "Finished projects"
@@ -3428,8 +3410,10 @@ msgid ""
 msgstr ""
 
 #: template/index.html.j2:286
+#, fuzzy
+#| msgid "read more"
 msgid "Learn more"
-msgstr ""
+msgstr "Maggiori informazioni"
 
 #: template/index.html.j2:295
 msgid "Get started"
@@ -3444,8 +3428,10 @@ msgid "Requirements for Raspberry Pi 3"
 msgstr ""
 
 #: template/install-on-archpi.html.j2:40
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the Source Code"
-msgstr ""
+msgstr "Codice sorgente"
 
 #: template/install-on-archpi.html.j2:62
 #: template/install-on-debian9.html.j2:131
@@ -3484,8 +3470,10 @@ msgstr ""
 #: template/install-on-debian9.html.j2:60 template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:237
 #: template/install-on-ubuntu1804.html.j2:53
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the source code"
-msgstr ""
+msgstr "Codice sorgente"
 
 #: template/install-on-debian9.html.j2:79 template/install-on-macos.html.j2:142
 #: template/install-on-netbsd.html.j2:245
@@ -3500,8 +3488,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:117
 #: template/install-on-ubuntu1804.html.j2:82
+#, fuzzy
+#| msgid "GNUnet for developers"
 msgid "Option 2: GNUnet for development"
-msgstr ""
+msgstr "GNUnet per gli sviluppatori"
 
 #: template/install-on-debian9.html.j2:154
 #: template/install-on-ubuntu1804.html.j2:97
@@ -3515,8 +3505,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:228
 #: template/install-on-ubuntu1804.html.j2:156
+#, fuzzy
+#| msgid "GNUnet"
 msgid "Use GNUnet!"
-msgstr ""
+msgstr "GNUnet"
 
 #: template/install-on-debian9.html.j2:233
 #: template/install-on-ubuntu1804.html.j2:162
@@ -3529,8 +3521,10 @@ msgstr ""
 
 #: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
 #: template/install-on-openwrt.html.j2:15
+#, fuzzy
+#| msgid "Install"
 msgid "Installation"
-msgstr ""
+msgstr "Installazione"
 
 #: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
 msgid "First steps"
@@ -3557,8 +3551,10 @@ msgid "Tutorial: GNUnet on OpenWrt"
 msgstr ""
 
 #: template/install-on-openwrt.html.j2:47
+#, fuzzy
+#| msgid "Continuous Integration"
 msgid "Configuration"
-msgstr ""
+msgstr "Integrazione continuativa"
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
@@ -3671,16 +3667,20 @@ msgid "How to use GNUnet - in a nutshell"
 msgstr ""
 
 #: template/use.html.j2:12 template/use.html.j2:125
+#, fuzzy
+#| msgid "File-sharing"
 msgid "Filesharing"
-msgstr ""
+msgstr "Condivisione di file"
 
 #: template/use.html.j2:13
 msgid "CADET"
 msgstr ""
 
 #: template/use.html.j2:14
+#, fuzzy
+#| msgid "groupchat"
 msgid "Minimal Groupchat"
-msgstr ""
+msgstr "groupchat"
 
 #: template/use.html.j2:15
 msgid "GNS with CLI"
@@ -3695,8 +3695,10 @@ msgid "VPN"
 msgstr ""
 
 #: template/use.html.j2:18 template/use.html.j2:508
+#, fuzzy
+#| msgid "Conversation (Pre-Alpha)"
 msgid "Conversation"
-msgstr ""
+msgstr "Conversation (Pre-Alpha)"
 
 #: template/use.html.j2:19 template/use.html.j2:519
 msgid "Trouble Shooting"
@@ -3707,8 +3709,10 @@ msgid "Accessing GNUnet"
 msgstr ""
 
 #: template/use.html.j2:78
+#, fuzzy
+#| msgid "What is GNUnet?"
 msgid "Leaving GNUnet"
-msgstr ""
+msgstr "Cos'è GNUnet?"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
@@ -3745,6 +3749,28 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
+
+#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
+#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
+#: template/news/oldnews-2019.html.j2:16
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr "Post sulle novità di GNUnet come comunicati stampa ed eventi"
+
+#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
+#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
+#: template/news/oldnews-2019.html.j2:21
+msgid "subscribe to our RSS feed"
+msgstr "Iscriviti al nostro feed RSS"
+
+#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
+#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
+#: template/news/oldnews-2019.html.j2:40
+msgid "read more"
+msgstr "Maggiori informazioni"
+
+#: template/news/index.html.j2:45
+msgid "News archives:"
+msgstr "Archivi delle notizie:"
 
 #~ msgid "Living Standards"
 #~ msgstr "Standard di vita"

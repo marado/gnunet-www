@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-28 14:41+0200\n"
+"POT-Creation-Date: 2021-05-07 13:32+0200\n"
 "PO-Revision-Date: 2021-03-20 10:40+0000\n"
 "Last-Translator: Shorouk Hassouna <shoroukhassuna@gmail.com>\n"
 "Language-Team: Arabic <http://weblate.taler.net/projects/gnunet/website/ar/"
@@ -34,8 +34,10 @@ msgid "Contact"
 msgstr "جهات الاتصال"
 
 #: common/footer.j2.inc:8
+#, fuzzy
+#| msgid "GNUnet"
 msgid "GNUnet e.V."
-msgstr ""
+msgstr "GNUnet"
 
 #: common/footer.j2.inc:9 template/about.html.j2:6
 msgid "About GNUnet"
@@ -66,9 +68,9 @@ msgstr "الابلاغ عن مشكلة بهذا الموقع."
 msgid "About"
 msgstr "عن"
 
-#: common/navigation.j2.inc:39 news/index.html.j2:8
-#: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
-#: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 template/news/index.html.j2:8
+#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
+#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "الاخبار"
 
@@ -113,16 +115,20 @@ msgid "Source Code"
 msgstr ""
 
 #: common/navigation.j2.inc:66
+#, fuzzy
+#| msgid "Documentation"
 msgid "Source Code Documentation"
-msgstr ""
+msgstr "التوثيق"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
 msgstr ""
 
 #: common/navigation.j2.inc:68
+#, fuzzy
+#| msgid "Development"
 msgid "Development Tutorial"
-msgstr ""
+msgstr "تطوير"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
@@ -155,28 +161,6 @@ msgstr ""
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "أسئلة شائعه"
-
-#: news/index.html.j2:11 news/oldnews-2011.html.j2:16
-#: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
-#: news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr "منشورات جديدة عن التطورات فيما يخص GNUnet كالاصدارات والمناسبات"
-
-#: news/index.html.j2:16 news/oldnews-2011.html.j2:21
-#: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
-#: news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr ""
-
-#: news/index.html.j2:36 news/oldnews-2011.html.j2:40
-#: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
-#: news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "اقرأ المزيد"
-
-#: news/index.html.j2:45
-msgid "News archives:"
-msgstr "ارشيف الاخبار:"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -421,8 +405,10 @@ msgid ""
 msgstr ""
 
 #: template/applications.html.j2:91
+#, fuzzy
+#| msgid "Applications provided by GNUnet"
 msgid "Applications utilizing GNUnet"
-msgstr ""
+msgstr "تطبيقات مقدمة من GNUnet"
 
 #: template/applications.html.j2:97
 msgid "GNU Taler (Alpha)"
@@ -483,12 +469,16 @@ msgid ""
 msgstr ""
 
 #: template/architecture.html.j2:6
+#, fuzzy
+#| msgid "System Architecture"
 msgid "GNUnet System Architecture"
-msgstr ""
+msgstr "هندسة النظام"
 
 #: template/architecture.html.j2:20
+#, fuzzy
+#| msgid "Documentation"
 msgid "Foundations"
-msgstr ""
+msgstr "التوثيق"
 
 #: template/architecture.html.j2:22
 msgid ""
@@ -513,8 +503,10 @@ msgid ""
 msgstr ""
 
 #: template/architecture.html.j2:52
+#, fuzzy
+#| msgid "System Architecture"
 msgid "System architecture"
-msgstr ""
+msgstr "هندسة النظام"
 
 #: template/architecture.html.j2:58
 msgid "Subsystems"
@@ -717,8 +709,10 @@ msgid "Verein zur F&ouml;rderung von GNUnet e.V."
 msgstr ""
 
 #: template/ev.html.j2:11
+#, fuzzy
+#| msgid "About GNUnet"
 msgid "About GNUnet e.V."
-msgstr ""
+msgstr "عن GNUnet"
 
 #: template/ev.html.j2:13
 msgid ""
@@ -933,8 +927,10 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:151
+#, fuzzy
+#| msgid "What is GNUnet?"
 msgid "What can I do with GNUnet?"
-msgstr ""
+msgstr "ما هي GNUnet؟"
 
 #: template/faq.html.j2:153
 msgid ""
@@ -1661,8 +1657,10 @@ msgid ""
 msgstr ""
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
+#, fuzzy
+#| msgid "Documentation"
 msgid "Motivation"
-msgstr ""
+msgstr "التوثيق"
 
 #: template/gns.html.j2:15
 msgid ""
@@ -1713,8 +1711,10 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:48
+#, fuzzy
+#| msgid "About"
 msgid "About gnurl"
-msgstr ""
+msgstr "عن"
 
 #: template/gnurl.html.j2:50
 msgid ""
@@ -2572,8 +2572,10 @@ msgid ""
 msgstr ""
 
 #: template/index.html.j2:286
+#, fuzzy
+#| msgid "read more"
 msgid "Learn more"
-msgstr ""
+msgstr "اقرأ المزيد"
 
 #: template/index.html.j2:295
 msgid "Get started"
@@ -2659,8 +2661,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:228
 #: template/install-on-ubuntu1804.html.j2:156
+#, fuzzy
+#| msgid "GNUnet"
 msgid "Use GNUnet!"
-msgstr ""
+msgstr "GNUnet"
 
 #: template/install-on-debian9.html.j2:233
 #: template/install-on-ubuntu1804.html.j2:162
@@ -2673,8 +2677,10 @@ msgstr ""
 
 #: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
 #: template/install-on-openwrt.html.j2:15
+#, fuzzy
+#| msgid "Install"
 msgid "Installation"
-msgstr ""
+msgstr "تحميل"
 
 #: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
 msgid "First steps"
@@ -2851,8 +2857,10 @@ msgid "Accessing GNUnet"
 msgstr ""
 
 #: template/use.html.j2:78
+#, fuzzy
+#| msgid "What is GNUnet?"
 msgid "Leaving GNUnet"
-msgstr ""
+msgstr "ما هي GNUnet؟"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
@@ -2889,3 +2897,25 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
+
+#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
+#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
+#: template/news/oldnews-2019.html.j2:16
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr "منشورات جديدة عن التطورات فيما يخص GNUnet كالاصدارات والمناسبات"
+
+#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
+#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
+#: template/news/oldnews-2019.html.j2:21
+msgid "subscribe to our RSS feed"
+msgstr ""
+
+#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
+#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
+#: template/news/oldnews-2019.html.j2:40
+msgid "read more"
+msgstr "اقرأ المزيد"
+
+#: template/news/index.html.j2:45
+msgid "News archives:"
+msgstr "ارشيف الاخبار:"

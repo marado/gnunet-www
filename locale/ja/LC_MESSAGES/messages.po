@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-28 14:41+0200\n"
+"POT-Creation-Date: 2021-05-07 13:32+0200\n"
 "PO-Revision-Date: 2021-04-15 10:31+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
@@ -65,9 +65,9 @@ msgstr "このウェブサイトの問題を報告する。"
 msgid "About"
 msgstr "概要"
 
-#: common/navigation.j2.inc:39 news/index.html.j2:8
-#: news/oldnews-2011.html.j2:13 news/oldnews-2013.html.j2:13
-#: news/oldnews-2018.html.j2:13 news/oldnews-2019.html.j2:13
+#: common/navigation.j2.inc:39 template/news/index.html.j2:8
+#: template/news/oldnews-2011.html.j2:13 template/news/oldnews-2013.html.j2:13
+#: template/news/oldnews-2018.html.j2:13 template/news/oldnews-2019.html.j2:13
 msgid "News"
 msgstr "更新情報"
 
@@ -154,29 +154,6 @@ msgstr "REST API"
 #: common/navigation.j2.inc:89
 msgid "FAQ"
 msgstr "よくある質問"
-
-#: news/index.html.j2:11 news/oldnews-2011.html.j2:16
-#: news/oldnews-2013.html.j2:16 news/oldnews-2018.html.j2:16
-#: news/oldnews-2019.html.j2:16
-msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr ""
-"リリースやイベントなど、GNUnet 関連の各種変更についての情報を掲載しています"
-
-#: news/index.html.j2:16 news/oldnews-2011.html.j2:21
-#: news/oldnews-2013.html.j2:21 news/oldnews-2018.html.j2:21
-#: news/oldnews-2019.html.j2:21
-msgid "subscribe to our RSS feed"
-msgstr "RSS フィードに登録"
-
-#: news/index.html.j2:36 news/oldnews-2011.html.j2:40
-#: news/oldnews-2013.html.j2:40 news/oldnews-2018.html.j2:40
-#: news/oldnews-2019.html.j2:40
-msgid "read more"
-msgstr "詳細"
-
-#: news/index.html.j2:45
-msgid "News archives:"
-msgstr "アーカイブ"
 
 #: template/about.html.j2:11
 msgid "What is GNUnet?"
@@ -1981,8 +1958,10 @@ msgid ""
 msgstr ""
 
 #: template/faq.html.j2:799
+#, fuzzy
+#| msgid "How does GNUnet compare to Tor?"
 msgid "How does GNUnet compare to other file-sharing applications?"
-msgstr ""
+msgstr "GNUnet と Tor は何が違うのですか？"
 
 #: template/faq.html.j2:801
 msgid ""
@@ -2172,8 +2151,10 @@ msgid ""
 msgstr ""
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
+#, fuzzy
+#| msgid "Documentation"
 msgid "Motivation"
-msgstr ""
+msgstr "資料"
 
 #: template/gns.html.j2:15
 msgid ""
@@ -2199,8 +2180,10 @@ msgid ""
 msgstr ""
 
 #: template/gns.html.j2:52
+#, fuzzy
+#| msgid "More Resources"
 msgid "Resources"
-msgstr ""
+msgstr "その他のリソース"
 
 #: template/gnurl.html.j2:21
 msgid ""
@@ -2224,8 +2207,10 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:48
+#, fuzzy
+#| msgid "About"
 msgid "About gnurl"
-msgstr ""
+msgstr "概要"
 
 #: template/gnurl.html.j2:50
 msgid ""
@@ -2449,8 +2434,10 @@ msgid ""
 msgstr ""
 
 #: template/gnurl.html.j2:382
+#, fuzzy
+#| msgid "Reporting bugs"
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "バグの報告"
 
 #: template/gnurl.html.j2:384
 msgid ""
@@ -2557,8 +2544,10 @@ msgid "Ideas 2021"
 msgstr ""
 
 #: template/gsoc.html.j2:13 template/gsoc.html.j2:215
+#, fuzzy
+#| msgid "GSoC Projects"
 msgid "Past projects"
-msgstr ""
+msgstr "GSoC プロジェクト"
 
 #: template/gsoc.html.j2:14 template/gsoc.html.j2:596
 msgid "Finished projects"
@@ -3083,8 +3072,10 @@ msgid ""
 msgstr ""
 
 #: template/index.html.j2:286
+#, fuzzy
+#| msgid "read more"
 msgid "Learn more"
-msgstr ""
+msgstr "詳細"
 
 #: template/index.html.j2:295
 msgid "Get started"
@@ -3099,8 +3090,10 @@ msgid "Requirements for Raspberry Pi 3"
 msgstr ""
 
 #: template/install-on-archpi.html.j2:40
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the Source Code"
-msgstr ""
+msgstr "ソースコード"
 
 #: template/install-on-archpi.html.j2:62
 #: template/install-on-debian9.html.j2:131
@@ -3139,8 +3132,10 @@ msgstr ""
 #: template/install-on-debian9.html.j2:60 template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:237
 #: template/install-on-ubuntu1804.html.j2:53
+#, fuzzy
+#| msgid "Source Code"
 msgid "Get the source code"
-msgstr ""
+msgstr "ソースコード"
 
 #: template/install-on-debian9.html.j2:79 template/install-on-macos.html.j2:142
 #: template/install-on-netbsd.html.j2:245
@@ -3155,8 +3150,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:117
 #: template/install-on-ubuntu1804.html.j2:82
+#, fuzzy
+#| msgid "GNUnet for developers"
 msgid "Option 2: GNUnet for development"
-msgstr ""
+msgstr "開発者向け GNUnet"
 
 #: template/install-on-debian9.html.j2:154
 #: template/install-on-ubuntu1804.html.j2:97
@@ -3170,8 +3167,10 @@ msgstr ""
 
 #: template/install-on-debian9.html.j2:228
 #: template/install-on-ubuntu1804.html.j2:156
+#, fuzzy
+#| msgid "GNUnet"
 msgid "Use GNUnet!"
-msgstr ""
+msgstr "GNUnet"
 
 #: template/install-on-debian9.html.j2:233
 #: template/install-on-ubuntu1804.html.j2:162
@@ -3184,8 +3183,10 @@ msgstr ""
 
 #: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
 #: template/install-on-openwrt.html.j2:15
+#, fuzzy
+#| msgid "Install"
 msgid "Installation"
-msgstr ""
+msgstr "インストール"
 
 #: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
 msgid "First steps"
@@ -3212,8 +3213,10 @@ msgid "Tutorial: GNUnet on OpenWrt"
 msgstr ""
 
 #: template/install-on-openwrt.html.j2:47
+#, fuzzy
+#| msgid "Continuous Integration"
 msgid "Configuration"
-msgstr ""
+msgstr "継続的なインテグレーション"
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
@@ -3326,16 +3329,20 @@ msgid "How to use GNUnet - in a nutshell"
 msgstr ""
 
 #: template/use.html.j2:12 template/use.html.j2:125
+#, fuzzy
+#| msgid "File-sharing"
 msgid "Filesharing"
-msgstr ""
+msgstr "ファイル共有"
 
 #: template/use.html.j2:13
 msgid "CADET"
 msgstr ""
 
 #: template/use.html.j2:14
+#, fuzzy
+#| msgid "groupchat"
 msgid "Minimal Groupchat"
-msgstr ""
+msgstr "groupchat"
 
 #: template/use.html.j2:15
 msgid "GNS with CLI"
@@ -3350,8 +3357,10 @@ msgid "VPN"
 msgstr ""
 
 #: template/use.html.j2:18 template/use.html.j2:508
+#, fuzzy
+#| msgid "Conversation (Pre-Alpha)"
 msgid "Conversation"
-msgstr ""
+msgstr "カンバセーション（プレアルファ）"
 
 #: template/use.html.j2:19 template/use.html.j2:519
 msgid "Trouble Shooting"
@@ -3362,8 +3371,10 @@ msgid "Accessing GNUnet"
 msgstr ""
 
 #: template/use.html.j2:78
+#, fuzzy
+#| msgid "What is GNUnet?"
 msgid "Leaving GNUnet"
-msgstr ""
+msgstr "GNUnet とは"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
@@ -3400,6 +3411,29 @@ msgstr ""
 #: template/video.html.j2:12
 msgid "Videos related to GNUnet"
 msgstr ""
+
+#: template/news/index.html.j2:11 template/news/oldnews-2011.html.j2:16
+#: template/news/oldnews-2013.html.j2:16 template/news/oldnews-2018.html.j2:16
+#: template/news/oldnews-2019.html.j2:16
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr ""
+"リリースやイベントなど、GNUnet 関連の各種変更についての情報を掲載しています"
+
+#: template/news/index.html.j2:16 template/news/oldnews-2011.html.j2:21
+#: template/news/oldnews-2013.html.j2:21 template/news/oldnews-2018.html.j2:21
+#: template/news/oldnews-2019.html.j2:21
+msgid "subscribe to our RSS feed"
+msgstr "RSS フィードに登録"
+
+#: template/news/index.html.j2:36 template/news/oldnews-2011.html.j2:40
+#: template/news/oldnews-2013.html.j2:40 template/news/oldnews-2018.html.j2:40
+#: template/news/oldnews-2019.html.j2:40
+msgid "read more"
+msgstr "詳細"
+
+#: template/news/index.html.j2:45
+msgid "News archives:"
+msgstr "アーカイブ"
 
 #~ msgid "Living Standards"
 #~ msgstr "規格や標準"
