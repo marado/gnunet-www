@@ -19,10 +19,6 @@ langs_full: &langs
     ja: 日本語
     ko: Korean
     pt: Português
-    pt_BR: Português (Brazil)
-    ru: Ру́сский язы́к
-    sv: Svenska
-    tr: Türk
 meetingnotes:
   2013: 2013-12-27
   2014: 2014-12-28

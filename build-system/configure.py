@@ -7,9 +7,10 @@ b.enable_prefix()
 b.enable_configmk()
 b.use(Option("variant", "Variant (used as output directory)"))
 
-# Base URL for the site.  Per default, the URL is the protocol-relative
-# root path.
-b.use(Option("baseurl", "Base URL that the site will run on", default="//", required=False))
+# Base URL override for the site.
+# If not set, use value from www.yml
+b.use(Option("baseurl", "Override base URL that the site will run on", default="", required=False))
+
 b.add_tool(PythonTool())
 b.add_tool(PyBabelTool())
 b.add_tool(PosixTool("cp"))
