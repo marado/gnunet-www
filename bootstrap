@@ -11,7 +11,7 @@ if ! git --version >/dev/null; then
 fi
 
 git submodule update --init
-git submodule update --recursive --remote
+git submodule update --recursive
 git submodule sync
 
 cp build-system/taler-build-scripts/configure ./configure || true
