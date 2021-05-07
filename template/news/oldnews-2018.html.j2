@@ -1,50 +1,5 @@
 {% extends "common/base.j2" %}
+{% from "common/old-news.j2.inc" import oldnews with context %}
 {% block body_content %}
-<!-- Simply link to or copy this file as-is (no modifications required)
-     news/oldnews-::year::. This will generate a new news archive page.
-     Note that you may still have to modify the currently displayed
-     year ranges in the index.html.j2.
--->
-  <div class="container-fluid">
-    <div class="container">
-      <article>
-        <div class="row">
-          <div class="container text-center">
-            <h1>{{ _("News") + " " + self._TemplateReference__context.name[13:17] }}<a name="news"></a></h1>
-            <section>
-              <p>
-                {% trans %}
-                News posts about changes related to
-                GNUnet such as releases and events
-                {% endtrans %}
-                &#8211;
-                <a href="{{ url_localized('rss.xml') }}">{{ _("subscribe to our RSS feed") }}</a>
-              </p>
-            </section>
-          </div>
-        </div>
-        <div class="row">
-          <b>{{ self._TemplateReference__context.name[13:17] }}</b>
-          <ul class="timeline">
-          {% for item in newsdata|selectattr('date.year', 'eq', self._TemplateReference__context.name[13:17]|int) %}
-          <li>
-              <section class="item-preview">
-               <header>
-                  <h3>{{ item['title']|e }}</h3>
-                  <p class="item-date">
-                    {{ item['date'] }}
-                  </p>
-                </header>
-                <p class="item-abstract">
-                  {{ item['abstract'] }} <br/>
-                  [<a href="{{ item['page'] }}" title="{{ item['date']}}">{{ _("read more") }}</a>]
-                </p>
-              </section>
-            </li>
-          {% endfor %}
-          </ul>
-        </div>
-      </article>
-    </div>
-  </div>
+{{ oldnews(2018) }}
 {% endblock body_content %}
