@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-04-28 14:41+0200\n"
-"PO-Revision-Date: 2021-05-07 17:06+0000\n"
+"PO-Revision-Date: 2021-05-09 18:10+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
 "\n"
@@ -452,9 +452,8 @@ msgstr ""
 "usare una gerarchia, GNS usa un grafo orientato. Le convenzioni di "
 "denominazione sono simili al DNS, ma le query e le risposte sono private "
 "anche per i peer che forniscono le risposte. L'integrità dei record e la "
-"privacy delle ricerche sono protette con crittografia. <!-- Troppo tecnico: "
-"GNS integra un meccanismo di revoca delle chiavi solido, efficiente e "
-"istantaneo. -->"
+"privacy delle ricerche sono protette con crittografia. <!-- Too technical: "
+"GNS integrates a robust, efficient and instant key revocation mechanism. -->"
 
 #: template/applications.html.j2:38
 msgid "Self-sovereign, decentralized identity provider"
@@ -2503,9 +2502,9 @@ msgid ""
 msgstr ""
 "In che modo eseguire il fork risolve il problema? È semplice. Per prima "
 "cosa, permette di sbarazzarsi di tutti i problemi di compatibilità. Se usi "
-"libgnurl, dichiari di aver bisogno solo di HTTP/HTTPS. Per le applicazioni "
-"che hanno bisogno di altri protocolli, si dovrebbe mantenere il cURL "
-"originale. Per le altre, si può scegliere di passare a qualcosa di più "
+"libgnurl, dichiari di aver bisogno solo&#39; di HTTP/HTTPS. Per le "
+"applicazioni che hanno bisogno di altri protocolli, si dovrebbe mantenere il "
+"cURL originale. Per le altre, si può scegliere di passare a qualcosa di più "
 "semplice. Dato che la libreria viene rinominata, non bisognerà preoccuparsi "
 "che mucchi di pacchetti si rompano non appena viene ricompilata. Rinominare "
 "e dire che \"libgnurl = libcurl che supporta solo HTTP/HTTPS e GnuTLS\" "
@@ -2670,7 +2669,7 @@ msgstr "Passare alla directory"
 
 #: template/gnurl.html.j2:321
 msgid "Now you can either run"
-msgstr "Ora è possibile o eseguire"
+msgstr "Ora è possibile eseguire"
 
 #: template/gnurl.html.j2:331
 msgid "directly (and read configure-gnurl before you do so) or invoke"
@@ -2698,19 +2697,19 @@ msgstr "ecco fatto."
 
 #: template/gnurl.html.j2:369
 msgid "Building from a tagged git commit"
-msgstr ""
+msgstr "Compilare da un commit git contrassegnato"
 
 #: template/gnurl.html.j2:371
 msgid ""
 "Follow the steps above, but instead of downloading the tarball, clone the "
 "git tag you want to build from."
 msgstr ""
+"Segui le istruzioni sopra ma, anziché scaricare il tarball, clona il tag git "
+"da cui vuoi compilare."
 
 #: template/gnurl.html.j2:382
-#, fuzzy
-#| msgid "Reporting bugs"
 msgid "Reporting Bugs"
-msgstr "Report dei bug"
+msgstr "Report dei Bug"
 
 #: template/gnurl.html.j2:384
 msgid ""
@@ -2718,10 +2717,13 @@ msgid ""
 "\">bugs.gnunet.org</a>. Alternatively you can use our bug mailinglist, but "
 "we prefer to track bugs on the bugtracker."
 msgstr ""
+"È possibile segnalare i bug sul nostro registro bug: <a href=\"https://bugs."
+"gnunet.org/\">bugs.gnunet.org</a>. Oppure, è possibile usare la mailing list "
+"per i bug, ma è preferibile segnalarli sul registro bug."
 
 #: template/gnurl.html.j2:395
 msgid "Maintainer and Cryptographic signatures"
-msgstr ""
+msgstr "Maintainer e firme Crittografiche"
 
 #: template/gnurl.html.j2:397
 msgid ""
@@ -2731,14 +2733,20 @@ msgid ""
 "q=6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>), with the "
 "key fingerprint <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E 7F8D</b>."
 msgstr ""
+"gnurl/libgnurl è alla ricerca di un nuovo maintainer. Le versioni successive "
+"alla 7.69.1 fino alla 7.72.0 sono state firmate con la chiave OpenPGP "
+"<b>0xD6B570842F7E7F8D</b> (<a href=\"https://keys.openpgp.org/search?q="
+"6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>, con "
+"impronta digitale della chiave <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 "
+"2F7E 7F8D</b>."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:7
 msgid "GSoC 2018: GNUnet WebUI (GNUnet Web-based User Interface)"
-msgstr ""
+msgstr "GSoC 2018: GNUnet WebUI (Interfaccia Utente GNUnet basata sul Web)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:11
 msgid "Tue, 08/14/2018 - 07:55, Phil Buschmann"
-msgstr ""
+msgstr "Martedì, 14/08/2018 - 07:55, Phil Buschmann"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:18
 msgid ""
@@ -2746,6 +2754,9 @@ msgid ""
 "Schanzenbach) and I have worked on creating and extending the REST API of "
 "GNUnet. Currently, we mirrored the functionality of following commands:"
 msgstr ""
+"Nel contesto del Google Summer of Code 2018, ho lavorato con il mio mentore ("
+"Martin Schanzenbach) alla creazione e ampliamento dell'API REST di GNUnet. "
+"Ad oggi, abbiamo rispecchiato le funzionalità dei seguenti comandi:"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:32
 msgid ""
@@ -2753,6 +2764,9 @@ msgid ""
 "and the design framework iotaCSS to use the new REST API. The REST API of "
 "GNUnet is now documented with Sphinx."
 msgstr ""
+"Inoltre, abbiamo sviluppato un sito web con il framework Javascript Angular "
+"6 e il framework di progettazione iotaCSS per usare il nuovo API REST. Ora, "
+"l'API REST di GNUnet è documentato con Sphinx."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:41
 msgid ""
@@ -2763,6 +2777,13 @@ msgid ""
 "with GNUnet over a well known tool: their browsers. This addition to the C "
 "API and the command line tools may attract new users and developers."
 msgstr ""
+"... quando è possibile usare gli strumenti da riga di comando? È necessario "
+"ricordare che tutti hanno il diritto alla sicurezza e alla privacy, ma non "
+"tutti si trovano bene ad usare un terminale. L'accesso REST agli API GNUnet "
+"sviluppato ulteriormente, in aggiunta alla nuova applicazione web, permette "
+"ai nuovi utenti di interagire con GNUnet tramite uno strumento che conoscono "
+"bene: il loro browser. Questa aggiunta all'API C e gli strumenti da riga di "
+"comando potrebbero far avvicinare nuovi utenti e sviluppatori."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:54
 msgid ""
@@ -2792,6 +2813,8 @@ msgid ""
 "Please, give it a try and contact me, if you find any bugs or unintentional "
 "features. ;)"
 msgstr ""
+"Per favore, provate a contattarmi se trovate bug o funzionalità non "
+"intenzionali. ;)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:98
 msgid ""
@@ -2803,28 +2826,34 @@ msgid ""
 "each record type.<br /> Last but not least, additional features, design "
 "changes, etc..."
 msgstr ""
+"Al momento, il processo di compilazione dell'applicazione web potrebbe "
+"essere un po' troppo complesso per un utente occasionale. Potremmo riuscire "
+"a risolvere il problema usando docker.<br /> Inoltre, l'applicazione web non "
+"impedisce input sbagliati, ma risponde con messaggi di errore. Attualmente, "
+"l'aggiunta di Record GNUnet è utilizzabile solo da chi conosce il "
+"funzionamento dei Record GNS. Lo stesso vale per qualsiasi tipo di record. "
+"<br /> Ultimo, ma non meno importante, funzionalità aggiuntive, modifiche di "
+"progettazione, ecc..."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:111
 msgid "Thanks for reading."
-msgstr ""
+msgstr "Grazie per aver letto."
 
 #: template/gsoc.html.j2:6
 msgid "GNUnet's Google Summer of Code projects"
-msgstr ""
+msgstr "Progetti della Google Summer of Code di GNUnet"
 
 #: template/gsoc.html.j2:12 template/gsoc.html.j2:29
 msgid "Ideas 2021"
-msgstr ""
+msgstr "Idee per il 2021"
 
 #: template/gsoc.html.j2:13 template/gsoc.html.j2:215
-#, fuzzy
-#| msgid "GSoC Projects"
 msgid "Past projects"
-msgstr "Progetti GSoC"
+msgstr "Progetti precedenti"
 
 #: template/gsoc.html.j2:14 template/gsoc.html.j2:596
 msgid "Finished projects"
-msgstr ""
+msgstr "Progetti conclusi"
 
 #: template/gsoc.html.j2:21
 msgid ""
