@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-07 16:24+0200\n"
-"PO-Revision-Date: 2021-04-26 03:52+0000\n"
+"PO-Revision-Date: 2021-05-09 18:10+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
-"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/"
-">\n"
+"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3664,12 +3664,15 @@ msgid "Difficulty level:"
 msgstr "Schwierigkeitsgrad: hoch"
 
 #: template/gsoc.html.j2:627
+#, fuzzy
 msgid "Report:"
-msgstr ""
+msgstr "Report:"
 
 #: template/gsoc.html.j2:632
 msgid "Unfinished/Abandoned as gnunet-qr was moved to C outside of GSoC."
 msgstr ""
+"Unvollendet/Abgebrochen, da gnunet-qr nach C außerhalb von GSoc verschoben "
+"wurde."
 
 #: template/gsoc.html.j2:642
 msgid ""
@@ -3679,6 +3682,11 @@ msgid ""
 "APIs</a> that expose the <a href=\"https://docs.gnunet.org/doxygen/modules."
 "html\">GNUnet API</a>."
 msgstr ""
+"Implementierung einer webbasierten Benutzeroberfläche für GNUnet ähnlich wie "
+"GNUnet-Gtk mit einem noch zu bestimmenden Framework wie etwa Angular2. Das "
+"schließt die Entwicklung und Implementierung von noch nicht existierenden <a "
+"href=\"http://jsonapi.org/\">REST APIs</a>, die das <a href=\"https://docs."
+"gnunet.org/doxygen/modules.html\">GNUnet API</a>exponieren, mit ein."
 
 #: template/gsoc.html.j2:657
 #, fuzzy
@@ -3686,25 +3694,31 @@ msgid "Required Skills: C, JavaScript, CSS"
 msgstr "Erforderliche Fähigkeiten: Rust oder C, Krypto"
 
 #: template/gsoc.html.j2:667
+#, fuzzy
 msgid ""
 "Report: <a href=\"gsoc-2018-gnunet-webui.html\">GSoC 2018: GNUnet WebUI</a>"
 msgstr ""
+"Bericht: <a href=\"gsoc-2018-gnunet-webui.html\">GSoC 2018: GNUnet WebUI</a>"
 
 #: template/index.html.j2:8
+#, fuzzy
 msgid "The Internet of tomorrow needs GNUnet today"
-msgstr ""
+msgstr "Das Internet von morgen braucht heute GNUnet"
 
 #: template/index.html.j2:26
+#, fuzzy
 msgid "Latest news"
-msgstr ""
+msgstr "Aktuelle Nachrichten"
 
 #: template/index.html.j2:32
+#, fuzzy
 msgid "Older news entries"
-msgstr ""
+msgstr "Ältere Nachrichteneinträge"
 
 #: template/index.html.j2:47
+#, fuzzy
 msgid "The Internet is broken"
-msgstr ""
+msgstr "Das Internet ist kaputt"
 
 #: template/index.html.j2:49
 msgid ""
@@ -3728,10 +3742,23 @@ msgid ""
 "defaults and high complexity; and it is centralized. That makes it very "
 "vulnerable for multiple attacks massively threatening our freedom. -->"
 msgstr ""
+"Das konventionelle Internet ist derzeit wie ein Straßensystem mit tiefen "
+"Schlaglöchern und Straßenräubern überall. Selbst wenn man die Straßen noch "
+"benutzen kann (z.B. Emails senden oder Webseiten besuchen) besteht die "
+"Gefahr, daß dir das Auto gekapert oder beschädigt wird, oder dass Langfinger "
+"sich an deinem Gepäck zu schaffen machen und Gegenstände (Daten) klauen, die "
+"sie gegen dich verwenden und an andere weiterverkaufen - und du merkst den "
+"Diebstahl nicht mal und kannst die Gauner nicht beschuldigen und zur "
+"Rechenschaft ziehen. \n"
+"Das Internet wurde nicht unter dem Gesichtspunkt der Sicherheit gestaltet: "
+"Schutz gegen Adressenfälschung, Beeinflussung von Routern durch Metadaten "
+"oder die Wahl vertrauenswürdiger Gegenüber ist nicht trivial und manchmal "
+"unmöglich."
 
 #: template/index.html.j2:94
+#, fuzzy
 msgid "GNUnet helps building a new Internet"
-msgstr ""
+msgstr "GNUnet hilft beim Aufbau eines neuen Internets"
 
 #: template/index.html.j2:96
 msgid ""
@@ -3741,10 +3768,16 @@ msgid ""
 "replace the <a class=\"link\" href=\"https://secushare.org/broken-internet"
 "\">old insecure Internet</a> protocol stack."
 msgstr ""
+"GNUnet ist ein Netzwerkprotokoll-Stack zum Erstellen sicherer, verteilter "
+"und datenschutzbewahrender Anwendungen.<br/> Mit starken Wurzeln in der <a "
+"class=\"link\" href=\"https://bib.gnunet.org\">akademischen Forschung</a> "
+"ist es unser Ziel, den <a class=\"link\" href=\"https://secushare.org/broken-"
+"internet\">alten unsicheren Internetprotokoll-Stack</a> zu ersetzen."
 
 #: template/index.html.j2:119
+#, fuzzy
 msgid "Metadata is exposed"
-msgstr ""
+msgstr "Metadaten werden angezeigt"
 
 #: template/index.html.j2:121
 msgid ""
@@ -3754,10 +3787,17 @@ msgid ""
 "threaten democracy: the identities of senders and receivers, the times, "
 "frequency and the volume of communication are all still revealed.<br>"
 msgstr ""
+"Deine Metadaten sind genauso aufschlussreich wie der eigentliche Inhalt; und "
+"im Internet wird alles offengelegt. <br> Obwohl im Internet zunehmend "
+"Transportverschlüsselungen zur Anwendung kommen, werden immer noch Daten "
+"sichtbar gemacht, die demokratische Prinzipien gefährden: Die Identität von "
+"Sendern und Empfängern, sowie Zeitpunkte, Häufigkeit und das Volumen von "
+"Kommunikationen sind stets offen verfügbar.<br>"
 
 #: template/index.html.j2:150
+#, fuzzy
 msgid "GNUnet provides privacy-by design"
-msgstr ""
+msgstr "GNUnet bietet Privacy-by-Design"
 
 #: template/index.html.j2:152
 msgid ""
@@ -3769,22 +3809,36 @@ msgid ""
 "\"</a> and \"distributed by design\". This improves addressing, routing, "
 "naming and content distribution in a technically robust manner. -->"
 msgstr ""
+"Es bietet <a class=\"link\" href=\"https://www.w3.org/2014/strint/papers/65."
+"pdf\">eine technisch robuste Verbesserung der Adressierung, des Routings, "
+"der Benennung und der Verteilung von Inhalten</a> - im Gegensatz zu den "
+"heute üblichen Ad-hoc-Designs.\n"
+"<!-- Proposal from fabian gerlach: GNUnet is built <a href=\"https://www.w3."
+"org/2014/strint/papers/65.pdf\">\"privacy by design\"</a> and \"distributed "
+"by design\". Das bietet Verbesserung bei Adressierung, Routen, Namensgebung "
+"und Vertreibung von Inhalten auf technisch robuste Weise. -->"
 
 #: template/index.html.j2:177
+#, fuzzy
 msgid "Freedoms are not respected"
-msgstr ""
+msgstr "Freiheiten werden nicht respektiert"
 
 #: template/index.html.j2:179
+#, fuzzy
 msgid ""
 "Today, monitoring increasingly centralized infrastructure, proprietary "
 "implementations, traffic shapers and firewalls restrict all of the <a class="
 "\"link\" href=\"https://www.gnu.org/philosophy/free-sw.html\">essential "
 "freedoms</a> to various degrees."
 msgstr ""
+"Die Überwachung einer zunehmend zentralisierten Infrastruktur, proprietärer "
+"Implementierungen, Traffic Shaper und Firewalls schränkt heute alle <a class="
+"\"link\" href=\"https://www.gnu.org/philosophy/free-sw.html\">wesentlichen "
+"Freiheiten</a> in unterschiedlichem Maße ein."
 
 #: template/index.html.j2:203
 msgid "GNUnet supports a free and open society"
-msgstr ""
+msgstr "GNUnet steht für eine freie und offene Gesellschaft"
 
 #: template/index.html.j2:205
 msgid ""
@@ -3797,10 +3851,19 @@ msgid ""
 "to distribute information (\"copy\"), as well as the freedom to deploy new "
 "applications (\"modify\")."
 msgstr ""
+"GNUnet ist ein selbstorganisierendes Netzwerk und es ist <a class=\"link\" "
+"href=\"https://www.gnu.org/philosophy/free-sw.html\">freie Software</a> im "
+"Sinne von Freiheit. GNUnet versetzt dich in die Lage, deine Daten zu "
+"kontrollieren. Du bestimmst, welche Daten wem zugänglich gemacht werden "
+"sollen, und du hast keinerlei Druck, Kompromisse einzugehen. Es gibt Nutzern "
+"die Freiheiten von sicherem Informationszugang (das Netzwerk \"durchlaufen\")"
+", zum Studium aller Betriebselemente des Netzwerks (\"Zugang zum Code\"), "
+"Informationen zu verteilen (\"kopieren\") sowie die Freiheit zum Einsetzen "
+"neuer Applikationen (\"modifizieren\")."
 
 #: template/index.html.j2:229
 msgid "Decentralization is the key, but hard"
-msgstr ""
+msgstr "Dezentralisierung ist der Schlüssel, aber schwierig"
 
 #: template/index.html.j2:232
 msgid ""
@@ -3812,10 +3875,20 @@ msgid ""
 "TODO: rework this sentence. --> This heightens the effort and increases the "
 "potential number of vulnerabilities."
 msgstr ""
+"<!-- replaced with Proposal from Fabian Gerlach: It seems as if every other "
+"distributed or P2P project develops its own library stack, covering "
+"transports, stream muxing, discovery and others. This divides effort and "
+"multiplies bug count. -->\n"
+"Anstatt gemeinsame Komponenten und Hilfsmittel zur Konstruktion von P2P "
+"Systemen untereinander zu teilen scheint jedes P2P Projekt das Rad neu zu "
+"erfinden.\n"
+"<!-- TODO: rework this sentence. --> Dieses treibt den Aufwand und erhöht "
+"die Anzahl möglicher Fehlerquellen."
 
 #: template/index.html.j2:264
+#, fuzzy
 msgid "GNUnet is a framework"
-msgstr ""
+msgstr "GNUnet ist ein Framework"
 
 #: template/index.html.j2:266
 msgid ""
@@ -3824,6 +3897,10 @@ msgid ""
 "and resource discovery and naming. Our work is based on continuous research "
 "spanning almost two decades."
 msgstr ""
+"Es bietet eine metadatenerhaltende Grundlage für deine Anwendung. Es bietet "
+"Komponenten zur Adresserstellung, zuverlässige verschlüsselte Kanäle mit "
+"fortgeschrittenem Routing sowie Ressourcenerkennung und Namensgebung. Unsere "
+"Arbeit gründet sich auf fast zwei Jahrzehnte Forschungsarbeit."
 
 #: template/index.html.j2:286
 #, fuzzy
@@ -3832,16 +3909,18 @@ msgid "Learn more"
 msgstr "Über GNUnet"
 
 #: template/index.html.j2:295
+#, fuzzy
 msgid "Get started"
-msgstr ""
+msgstr "Loslegen"
 
 #: template/install-on-archpi.html.j2:6
 msgid "Tutorial: GNUnet on Arch Linux/Pi"
-msgstr ""
+msgstr "Tutorial: GNUnet auf Arch Linux/Pi"
 
 #: template/install-on-archpi.html.j2:16
+#, fuzzy
 msgid "Requirements for Raspberry Pi 3"
-msgstr ""
+msgstr "Anforderungen an Raspberry Pi 3"
 
 #: template/install-on-archpi.html.j2:40
 #, fuzzy
@@ -3851,32 +3930,33 @@ msgstr "Quellkode"
 
 #: template/install-on-archpi.html.j2:62
 #: template/install-on-debian9.html.j2:131
+#, fuzzy
 msgid "In Addition: gnunet-gtk"
-msgstr ""
+msgstr "Zusätzlich: gnunet-gtk"
 
 #: template/install-on-archpi.html.j2:81
 msgid "Run"
-msgstr ""
+msgstr "Ausführen"
 
 #: template/install-on-archpi.html.j2:133
 #: template/install-on-openwrt.html.j2:111
 msgid "Make sure, it works!"
-msgstr ""
+msgstr "Stell sicher, daß es funktioniert!"
 
 #: template/install-on-debian9.html.j2:6
 msgid "Tutorial: GNUnet on Debian 9"
-msgstr ""
+msgstr "Tutorial: GNUnet auf Debian 9"
 
 #: template/install-on-debian9.html.j2:9
 #: template/install-on-ubuntu1804.html.j2:9
 msgid "Introduction"
-msgstr ""
+msgstr "Einführung"
 
 #: template/install-on-debian9.html.j2:29 template/install-on-macos.html.j2:17
 #: template/install-on-netbsd.html.j2:19
 #: template/install-on-ubuntu1804.html.j2:26
 msgid "Requirements"
-msgstr ""
+msgstr "Anforderungen"
 
 #: template/install-on-debian9.html.j2:46
 #: template/install-on-ubuntu1804.html.j2:41
@@ -3897,7 +3977,7 @@ msgstr "Quellkode"
 #: template/install-on-netbsd.html.j2:245
 #: template/install-on-ubuntu1804.html.j2:61
 msgid "Compile and Install"
-msgstr ""
+msgstr "Zusammenstellen und Installieren"
 
 #: template/install-on-debian9.html.j2:104
 #: template/install-on-ubuntu1804.html.j2:70
@@ -3916,7 +3996,7 @@ msgstr "GNUNet für Entwickeler"
 #: template/install-on-debian9.html.j2:154
 #: template/install-on-ubuntu1804.html.j2:97
 msgid "Install GNUnet plugin for name resolution"
-msgstr ""
+msgstr "Installiere das GNUnet-Plugin für die Namensauflösung"
 
 #: template/install-on-debian9.html.j2:208
 #: template/install-on-ubuntu1804.html.j2:134
@@ -3932,12 +4012,13 @@ msgstr "GNUnet nutzen!"
 
 #: template/install-on-debian9.html.j2:233
 #: template/install-on-ubuntu1804.html.j2:162
+#, fuzzy
 msgid "Uninstall GNUnet and its dependencies"
-msgstr ""
+msgstr "Deinstallieren Sie GNUnet und seine Abhängigkeiten"
 
 #: template/install-on-macos.html.j2:6
 msgid "Tutorial: GNUnet on macOS 10.14 (Mojave)"
-msgstr ""
+msgstr "Tutorial: GNUnet auf macOS 10.14 (Mojave)"
 
 #: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
 #: template/install-on-openwrt.html.j2:15
@@ -3947,12 +4028,14 @@ msgid "Installation"
 msgstr "Installieren"
 
 #: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
+#, fuzzy
 msgid "First steps"
-msgstr ""
+msgstr "Erste Schritte"
 
 #: template/install-on-macos.html.j2:109 template/install-on-netbsd.html.j2:195
+#, fuzzy
 msgid "Alternative: Installation from source"
-msgstr ""
+msgstr "Alternative: Installation von der Quelle"
 
 #: template/install-on-macos.html.j2:154 template/install-on-netbsd.html.j2:265
 #, fuzzy
@@ -3968,11 +4051,12 @@ msgstr "GNUNet für Entwickeler"
 
 #: template/install-on-netbsd.html.j2:6
 msgid "Tutorial: GNUnet on NetBSD 8.0 CURRENT"
-msgstr ""
+msgstr "Tutorial: GNUnet auf NetBSD 8.0 CURRENT"
 
 #: template/install-on-openwrt.html.j2:6
+#, fuzzy
 msgid "Tutorial: GNUnet on OpenWrt"
-msgstr ""
+msgstr "Tutorial: GNUnet auf OpenWrt"
 
 #: template/install-on-openwrt.html.j2:47
 #, fuzzy
@@ -3982,13 +4066,15 @@ msgstr "Motivation"
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
-msgstr ""
+msgstr "Tutorial: GNUnet auf Ubuntu 18.04"
 
 #: template/install.html.j2:12
 msgid ""
 "Notice: GNUnet is still undergoing major development. It is largely <i>not "
 "yet ready</i> for usage beyond developers."
 msgstr ""
+"Hinweis: GNUnet befindet sich noch zum größten Teil in der Entwicklung. Es "
+"ist zum guten Teil <i>noch nicht bereit</i> zum Einsatz außer für Entwickler."
 
 #: template/install.html.j2:18
 msgid ""
@@ -4000,6 +4086,13 @@ msgid ""
 "about the installation or the usage, please <a href=\"engage.html\">get in "
 "touch!</a></p>"
 msgstr ""
+"<p>Bitte beachte, dass sich dieses Projekt beim Ausführen von Software noch "
+"in einem frühen Alpha-Stadium befindet; es ist keine leichte Aufgabe, das "
+"gesamte Internet neu zu schreiben! Wir freuen uns jederzeit <a href=\"engage."
+"html\">über deine Hilfe!</a> Weitere Informationen findest Du in unserem <a "
+"href=\"https://docs.gnunet.org/#toc-Using-GNUnet-1\">Handbuch</a>. Falls du "
+"irgendwelche Fragen zur Installation oder Anwendung hast, bitte <a href="
+"\"engage.html\">melde dich!</a></p>"
 
 #: template/install.html.j2:30
 msgid ""
@@ -4022,6 +4115,25 @@ msgid ""
 "Operating System with the APT package manager, GNUnet could be installed as "
 "simple as:"
 msgstr ""
+"Wir empfehlen die Verwendung von Binärpaketen, die im Paketmanager enthalten "
+"sind, der in deinem Betriebssystem integriert ist. GNUnet ist verschiedenen "
+"Berichten zufolge mindestens verfügbar für: <ul> <li><a href=\"https://pkgs."
+"alpinelinux.org/package/edge/testing/x86_64/gnunet\">Alpine</a></li> <li><a "
+"href=\"https://www.archlinux.org/packages/community/x86_64/gnunet/\""
+">Arch</a></li> <li><a href=\"https://packages.debian.org/search?keywords="
+"gnunet\">Debian</a></li> <li><a href=\"https://copr.fedorainfracloud.org/"
+"coprs/yosl/gnunet/\">Fedora (Copr)</a></li> <li><a href=\"https://guix.gnu."
+"org/en/packages/G/\">Guix</a></li> <li><a href=\"https://github.com/Homebrew/"
+"homebrew-core/blob/master/Formula/gnunet.rb\">Homebrew</a></li> <li><a href="
+"\"https://nixos.org/nixos/packages.html?attr=gnunet&channel=nixpkgs-"
+"unstable&query=gnunet\">NixOS</a></li> <li><a href=\"install-on-openwrt."
+"html\">OpenWrt</a></li> </ul> Falls GNUnet für dein Betriebssystem verfügbar "
+"ist, aber in der Aufzählung fehlt, so gib uns bitte Rückmeldung, damit wir "
+"es in die Liste aufnehmen können. Falls du darüber hinaus interessiert bist, "
+"GNUnet für dein Betriebssystem aufzunehmen, so melde dich bitte bei uns auf "
+"GNUnet-developers@gnu.org wenn du hierbei Hilfe brauchst. Falls du ein "
+"Betriebssystem mit dem APT Paketmanager verwendest, kann GNUnet ganz einfach "
+"wie folgt installiert werden:"
 
 #: template/install.html.j2:61
 msgid ""
@@ -4034,6 +4146,14 @@ msgid ""
 "totally up-to-date! Please <a href=\"engage.html\">ask us</a> if you get "
 "stuck."
 msgstr ""
+"Als nächstes beschreiben wir eine generische Methode zur Installation von "
+"der Quelle. Falls du eins der folgenden Betriebssysteme verwendest könnten "
+"diese Schritt-für-Schritt-Anleitungen hilfreich sein: <a href=\"install-on-"
+"archpi.html\">ArchPi</a>, <a href=\"install-on-debian9.html\">Debian 9</a>, "
+"<a href=\"install-on-macos.html\">Mac OS</a>, <a href=\"install-on-netbsd."
+"html\">NetBSD</a>, <a href=\"install-on-ubuntu1804.html\">Ubuntu 1804</a>. "
+"Beachte, daß nicht alle von ihnen völlig aktualisiert sein können. Bitte <a "
+"href=\"engage.html\">frag uns</a> falls du hängen bleibst."
 
 #: template/install.html.j2:75
 msgid ""
