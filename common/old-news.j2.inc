@@ -31,7 +31,7 @@
                 </header>
                 <p class="item-abstract">
                   {{ get_abstract(item['page'], 1000) }} <br/>
-                  [<a href="{{ item['page'] }}" title="{{ item['date']}}">{{ _("read more") }}</a>]
+                  [<a href="{{ url_localized(item['page']) }}" title="{{ item['date']}}">{{ _("read more") }}</a>]
                 </p>
               </section>
             </li>
