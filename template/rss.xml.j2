@@ -35,9 +35,13 @@
         <title>{{ newspostitem['title']|e }}</title>
         <description>
           <![CDATA[
+             <html>
+             <body>
              {% filter extract_body %}
              {% include (newspostitem['page'] + ".j2") %}
              {% endfilter %}
+             </body>
+             </html>
            ]]>
         </description>
       </item>
