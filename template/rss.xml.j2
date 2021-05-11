@@ -35,9 +35,9 @@
         <title>{{ newspostitem['title']|e }}</title>
         <description>
           <![CDATA[
-           <article>
-             {{ get_abstract(newspostitem['page'], 1000) }}
-           </article>
+             {% filter extract_body %}
+             {% include (newspostitem['page'] + ".j2") %}
+             {% endfilter %}
            ]]>
         </description>
       </item>
