@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-07 16:24+0200\n"
+"POT-Creation-Date: 2021-05-12 14:14+0200\n"
 "PO-Revision-Date: 2021-04-15 10:31+0000\n"
 "Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
 "Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
@@ -150,7 +150,7 @@ msgstr "ハンドブック"
 msgid "REST API"
 msgstr "REST API"
 
-#: common/navigation.j2.inc:89
+#: common/navigation.j2.inc:89 template/reclaim/index.html.j2:83
 msgid "FAQ"
 msgstr "よくある質問"
 
@@ -451,12 +451,17 @@ msgstr ""
 msgid "Self-sovereign, decentralized identity provider"
 msgstr "自己主権型、脱中央型の IdP"
 
-#: template/applications.html.j2:40
+#: template/applications.html.j2:41
+#, fuzzy
+#| msgid ""
+#| "<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> is a decentralized "
+#| "Identity Provider (IdP) service built in top of the GNU Name System. It "
+#| "allows users to securely share personal information with websites using "
+#| "standardized protocols (OpenID Connect)."
 msgid ""
-"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> is a decentralized "
-"Identity Provider (IdP) service built in top of the GNU Name System. It "
-"allows users to securely share personal information with websites using "
-"standardized protocols (OpenID Connect)."
+"is a decentralized Identity Provider (IdP) service built in top of the GNU "
+"Name System. It allows users to securely share personal information with "
+"websites using standardized protocols (OpenID Connect)."
 msgstr ""
 "<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> は分散型のアイデンティ"
 "ティ プロバイダ（IdP）サービスであり、GNU ネームシステムの上位に組み込まれて"
@@ -2163,6 +2168,7 @@ msgid ""
 msgstr ""
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
+#: template/reclaim/index.html.j2:80 template/reclaim/motivation.html.j2:6
 #, fuzzy
 #| msgid "Documentation"
 msgid "Motivation"
@@ -2178,7 +2184,7 @@ msgid ""
 "GNUnet."
 msgstr ""
 
-#: template/gns.html.j2:28
+#: template/gns.html.j2:28 template/reclaim/tech.html.j2:6
 msgid "Overview"
 msgstr ""
 
@@ -3234,13 +3240,13 @@ msgstr "継続的なインテグレーション"
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
 msgstr ""
 
-#: template/install.html.j2:12
+#: template/install.html.j2:11
 msgid ""
 "Notice: GNUnet is still undergoing major development. It is largely <i>not "
 "yet ready</i> for usage beyond developers."
 msgstr ""
 
-#: template/install.html.j2:18
+#: template/install.html.j2:16
 msgid ""
 "<p>Please be aware that this project is still in an early alpha stage when "
 "it comes to running software &#8211; its not an easy task to rewrite the "
@@ -3251,7 +3257,7 @@ msgid ""
 "touch!</a></p>"
 msgstr ""
 
-#: template/install.html.j2:30
+#: template/install.html.j2:28
 msgid ""
 "We recommend to use binary packages provided by the package manager "
 "integrated within your Operating System. GNUnet is reportedly available for "
@@ -3273,7 +3279,7 @@ msgid ""
 "simple as:"
 msgstr ""
 
-#: template/install.html.j2:61
+#: template/install.html.j2:59
 msgid ""
 "Next we describe a generic way to install from source. If you are using one "
 "of the following Operating Systems these step-by-step guides might be "
@@ -3285,14 +3291,14 @@ msgid ""
 "stuck."
 msgstr ""
 
-#: template/install.html.j2:75
+#: template/install.html.j2:73
 msgid ""
 "First, install the <a href=\"https://git.gnunet.org/gnunet.git/tree/README"
 "\">required dependencies</a> of GNUnet. There are base requirements and "
 "optional requirements."
 msgstr ""
 
-#: template/install.html.j2:81
+#: template/install.html.j2:79
 msgid ""
 "Now, you need to decide if you want to install GNUnet from the release "
 "tarball or from git. If you want to use GNUnet and there is no binary "
@@ -3301,31 +3307,31 @@ msgid ""
 "href=\"https://git.gnunet.org/\">git repository</a>."
 msgstr ""
 
-#: template/install.html.j2:98
+#: template/install.html.j2:96
 msgid "To compile gnunet from the git source you can do so by entering:"
 msgstr ""
 
-#: template/install.html.j2:106
+#: template/install.html.j2:104
 msgid ""
 "Before building GNUnet, make sure that you setup the required groups and add "
 "your user to the group <code>gnunet</code>:"
 msgstr ""
 
-#: template/install.html.j2:117
+#: template/install.html.j2:115
 msgid "To compile GNUnet, execute:"
 msgstr ""
 
-#: template/install.html.j2:128
+#: template/install.html.j2:126
 msgid ""
 "You can find more configuration flags in the <a href=\"https://git.gnunet."
 "org/gnunet.git/tree/README\">README</a>.<br> Install GNUnet with:"
 msgstr ""
 
-#: template/install.html.j2:138
+#: template/install.html.j2:136
 msgid "You can now start GNUnet by running:"
 msgstr ""
 
-#: template/install.html.j2:146
+#: template/install.html.j2:144
 msgid ""
 "Check the <a href=\"https://docs.gnunet.org/handbook/gnunet.html#Minimal-"
 "configuration\">handbook</a> for detailed documentation. For a more hands-on "
@@ -3427,6 +3433,126 @@ msgstr ""
 #: template/news/index.html.j2:45
 msgid "News archives:"
 msgstr "アーカイブ"
+
+#: template/reclaim/faq.html.j2:6
+msgid "Frequently asked questions"
+msgstr ""
+
+#: template/reclaim/idps.html.j2:6 template/reclaim/index.html.j2:95
+msgid "For IdPs"
+msgstr ""
+
+#: template/reclaim/index.html.j2:8
+#, fuzzy
+#| msgid "Self-sovereign, decentralized identity provider"
+msgid ""
+"Self-sovereign, Decentralised Identity Management and Personal Data Sharing"
+msgstr "自己主権型、脱中央型の IdP"
+
+#: template/reclaim/index.html.j2:18
+msgid "Self-sovereign"
+msgstr ""
+
+#: template/reclaim/index.html.j2:20
+msgid ""
+"You manage your identities and attributes locally on your computer. No need "
+"to trust a third party service with your data."
+msgstr ""
+
+#: template/reclaim/index.html.j2:40
+msgid "Decentralized"
+msgstr ""
+
+#: template/reclaim/index.html.j2:42
+msgid ""
+"You can share your identity attributes securely over a decentralized name "
+"system. This allows your friends to access your shared data without the need "
+"of a trusted third party."
+msgstr ""
+
+#: template/reclaim/index.html.j2:58
+msgid "Standard-compliant"
+msgstr ""
+
+#: template/reclaim/index.html.j2:60
+msgid "You can use OpenID Connect to integrate reclaim in your web sites."
+msgstr ""
+
+#: template/reclaim/index.html.j2:77
+msgid "Technology"
+msgstr ""
+
+#: template/reclaim/index.html.j2:89 template/reclaim/users.html.j2:6
+msgid "For users"
+msgstr ""
+
+#: template/reclaim/index.html.j2:92 template/reclaim/websites.html.j2:6
+msgid "For websites"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:15
+#, fuzzy
+#| msgid "Self-sovereign, decentralized identity provider"
+msgid "Decentralised identity directory"
+msgstr "自己主権型、脱中央型の IdP"
+
+#: template/reclaim/tech.html.j2:18
+msgid ""
+"The decentralised GNU Name System (GNS) gives users full and exclusive "
+"authority over their attributes by sharing them over user-owned namespaces."
+msgstr ""
+
+#: template/reclaim/tech.html.j2:26
+msgid "Cryptographic access control"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:30
+msgid ""
+"Users regularly publish fresh, up-to-date attributes which can be retrieved "
+"and read only by authorized relying parties parties without direct user "
+"interaction -- even if the user is offline!"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:39
+msgid "Principles"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:46
+msgid "Identity and attribute management"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:48
+msgid ""
+"Users regularly publish fresh, up-to-date attributes which can be retrieved "
+"by requesting parties without direct user interaction -- even if the user is "
+"offline! Access to attributes is controlled through an ecryption based "
+"access control layer."
+msgstr ""
+
+#: template/reclaim/tech.html.j2:71
+#, fuzzy
+#| msgid "Documentation"
+msgid "Authorization"
+msgstr "資料"
+
+#: template/reclaim/tech.html.j2:73
+msgid ""
+"To access attributes, requesting parties request authorization from the user "
+"thrugh the use of OpenID Connect. If access is granted, the relying party is "
+"given the necessary decryption key material. The user may at any time revoke "
+"this access or modify the authorization decision."
+msgstr ""
+
+#: template/reclaim/tech.html.j2:92
+msgid "Attribute retrieval"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:94
+msgid ""
+"Relying parties retrieve encrypted identity data from the decentralised "
+"directory. It is able to decrypt all those attributes that the user has "
+"authorized it to access using the respective key."
+msgstr ""
 
 #~ msgid "Living Standards"
 #~ msgstr "規格や標準"

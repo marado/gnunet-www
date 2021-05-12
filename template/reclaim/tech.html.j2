@@ -1,0 +1,115 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="m-3">
+  <a class="mt-2 mb-2" href="{{ url_localized('reclaim/index.html') }}">reclaimID</a> / Technology
+</div>
+<h2 class="text-center">{{ _("Overview") }}</h2>
+<div style="text-align:center">
+  <img style="width:75%" src="{{ url_static('images/reclaim/reclaim_eq.png') }}"/>
+</div>
+<br/>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>
+        {{ _("Decentralised identity directory") }}
+      </h3>
+      <p>
+      {% trans %}
+      The decentralised GNU Name System (GNS) gives users full and exclusive authority over their attributes by sharing them over user-owned namespaces.
+      {% endtrans %}
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <div>
+        <h3>
+          {{ _("Cryptographic access control") }}
+        </h3>
+      </div>
+      <p>
+      {% trans %}
+Users regularly publish fresh, up-to-date attributes which can be retrieved and
+read only by authorized relying parties parties without direct user interaction -- even if the user is offline!
+      {% endtrans %}
+      </p>
+    </div>
+  </div>
+</div>
+<hr/>
+<h2 class="text-center">{{ _("Principles") }}</h2>
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("Identity and attribute management") }}</h2>
+        <p>
+        {% trans %}
+      Users regularly publish fresh, up-to-date attributes which can be retrieved by requesting parties without direct user interaction -- even if the user is offline!
+      Access to attributes is controlled through an ecryption based access
+      control layer.
+        {% endtrans %}
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-5 homepageicon">
+        <a href="{{ url_static('images/reclaim/Reclaim-2.png') }}"><img style="width:100%" src="{{ url_static('images/reclaim/Reclaim-2.png') }}"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-5 homepageicon">
+        <a href="{{ url_static('images/reclaim/Reclaim-3.png') }}"><img style="width:100%" src="{{ url_static('images/reclaim/Reclaim-3.png') }}"/></a>
+
+      </div>
+      <div class="col-lg-6">
+      <section>
+        <h2>{{ _("Authorization") }}</h2>
+        <p>
+        {% trans %}
+        To access attributes, requesting parties request authorization from the
+        user thrugh the use of OpenID Connect.
+        If access is granted, the relying party is given the necessary decryption
+        key material.
+        The user may at any time revoke this access or modify the authorization decision.
+        {% endtrans %}
+        </p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("Attribute retrieval") }}</h2>
+        <p>
+        {% trans %}
+      Relying parties retrieve encrypted identity data from the decentralised
+      directory.
+      It is able to decrypt all those attributes that the user has authorized
+      it to access using the respective key.
+        {% endtrans %}
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-5 homepageicon">
+        <a href="{{ url_static('images/reclaim/Reclaim-4.png') }}"><img style="width:100%" src="{{ url_static('images/reclaim/Reclaim-4.png') }}"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<h2 style="text-align:center" class="mt-2">Videos and Talks</h2>
+<ul class="fa-ul">
+  <li><i class="fa-li fas fa-caret-right"></i> <a href="https://youtu.be/PlSX-o36Wus?t=5371">IETF Meeting #104; Privacy Enhancements and Assessments Research Group - March 2019</a> (<a href="https://git.gnunet.org/presentations.git/plain/IETF104/slides-104-pearg-reclaim-00.pdf">Slides</a>)</li>
+  <li><i class="fa-li fas fa-caret-right"></i> <a href="https://media.ccc.de/v/ds19-10383-re_claimid">Datenspuren 2019 - September 2019 (German)</a> (<a href="https://git.gnunet.org/presentations.git/plain/datenspuren2019/datenspuren2019.pdf">Slides</a>, English)</li>
+</ul>
+{% endblock body_content %}

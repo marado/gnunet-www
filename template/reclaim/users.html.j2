@@ -1,0 +1,40 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="m-3">
+  <a class="mt-2 mb-2" href="{{ url_localized('reclaim/index.html') }}">reclaimID</a> / Users
+</div>
+<h2 class="text-center">{{ _("For users") }}</h2>
+<br/>
+<div class="container">
+  <h2><b>Step 1:</b> Installation</h2>
+  <p>
+    Please use the <a href="{{ url_localized('install.html') }}">GNUnet installation guides</a>.
+  </p>
+  <h2 class="mt-5"><b>Step 2:</b> Browser plugin</h2>
+
+  <p>You also need to install a browser plugin:</p>
+  <div class="centering">
+    <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                                               href="https://addons.mozilla.org/addon/reclaimid/"><i class="fab fa-firefox"></i> Mozilla Firefox</a>
+    <a class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+                                               href="https://chrome.google.com/webstore/detail/reclaimid/jiogompmdejcnacmlnjhnaicgkefcfll"><i class="fab fa-chrome"></i> Chrome / Chromium</a>
+  </div>
+  <br/>
+  <h2 class="mt-5"><b>Step 3:</b> Creating your first identity</h2>
+  <p>Almost there. Now try adding a new identity at <a href="https://ui.reclaim">your local re:claimID instance</a> and add some attributes to it.
+  <br/>
+
+  <h2 class="mt-5">Websites supporting re:claimID</h2>
+  <p>To test a login with one of your re:claimID identities, you can go to one of the websites supporting it:</p>
+  <ul>
+    <li><a href="https://demo.reclaim-identity.io">Our demo messaging board</a> (<a href="https://gitlab.com/reclaimid/demo">Source</a>)</li>
+    <li><a href="https://eusec.clouditor.io">Clouditor EUSEC project page</a></li>
+  </ul>
+
+
+  <h2 class="mt-5">Troubleshooting</h2>
+  In case you encounter any problems, please check for <a href="https://bugs.gnunet.org">known issues and report bugs to help us improve re:claimID!</a>
+
+
+</div>
+{% endblock body_content %}

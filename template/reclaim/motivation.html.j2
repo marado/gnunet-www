@@ -1,0 +1,34 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="m-3">
+  <a class="mt-2 mb-2" href="{{ url_localized('reclaim/index.html') }}">reclaimID</a> / Motivation
+</div>
+<h2 class="text-center">{{ _("Motivation") }}</h2>
+<br/>
+<div class="container">
+<p>
+Today, users are often required to share personal data, like email addresses, to use services on the web. As part of normal service operation, such as notifications or billing, services require access to -- ideally fresh and correct -- user data.
+Sharing attributes in the Web today is often done via centralized service providers to reduce data redundancy and to give services access to current, up-to-date information even if the user is currently offline.
+Abuse of this power is theoretically limited by local laws and regulations.
+But, the past has shown that even well-meaning identity providers struggle to keep user data safe as they become major targets for hackers and nation state actors while striving for monetizing anonymized statistics from these data.
+We advocate for a new, decentralized way for users to manage their identities for the following reasons:
+</p>
+<ul class="fa-ul">
+  <li><i class="fa-li fas fa-caret-right"></i> The current state of omniscient identity providers is a significant threat to the users' privacy.</li>
+  <li><i class="fa-li fas fa-caret-right"></i> Users must completely trust the service provider with respect to protecting the integrity and confidentiality of their identity in their interest.</li>
+  <li><i class="fa-li fas fa-caret-right"></i> The service provider itself is facing substantial liability risks given the responsibility of securely managing potentially sensitive personal data of millions of users.</li>
+</ul>
+
+<p>re:claimID is built as a service on top of the peer-to-peer framework <a href="https://gnunet.org">GNUnet</a>.<br/>
+It emerged from research conducted by the research group "Secure
+Applications and Services" at the <a href="https://www.aisec.fraunhofer.de/de/fields-of-expertise/projekte/reclaim.html">Fraunhofer AISEC</a> research institute.<br/>
+A scientific, peer-reviewed paper on the theoretical foundations of re:claimID
+was published at <a href="https://ieeexplore.ieee.org/document/8456003">TrustCom 2018</a>
+(<a href="https://arxiv.org/abs/1805.06253v1">Arxiv</a>).<br/> re:claimID is
+primarily developed in the
+<a href="https://git.gnunet.org/gnunet.git/tree/src/reclaim">GNUnet source tree</a>.
+Accompanying tools and sources can be found in the
+<a href="https://gitlab.com/reclaimid">Gitlab project</a>.
+</p>
+</div>
+{% endblock body_content %}
