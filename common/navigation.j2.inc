@@ -46,7 +46,7 @@
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ url_localized('engage.html') }}">{{ _("Engage") }} </a></li>
           <li><a class="dropdown-item" href="{{ url_localized('gsoc.html') }}">{{ _("GSoC Projects") }}</a></li>
-          <li><a class="dropdown-item" href="{{ url_localized('ev.html') }}">"GNUnet e.V.</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('ev.html') }}">GNUnet e.V.</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('copyright.html') }}">{{ _("Copyright for Contributors") }} </a></li>
 	  <!-- li><a class="dropdown-item" href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li -->
         </ul>
