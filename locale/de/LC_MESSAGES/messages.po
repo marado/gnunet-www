@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-12 14:14+0200\n"
-"PO-Revision-Date: 2021-05-09 18:10+0000\n"
+"PO-Revision-Date: 2021-05-17 06:13+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
-"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/"
-">\n"
+"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -448,15 +448,6 @@ msgid "The GNU Name System"
 msgstr "Das GNU-Namenssystem"
 
 #: template/applications.html.j2:15
-#, fuzzy
-#| msgid ""
-#| "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully "
-#| "decentralized replacement for the Domain Name System (DNS). Instead of "
-#| "using a hierarchy, GNS uses a directed graph. Naming conventions are "
-#| "similar to DNS, but queries and replies are private even with respect to "
-#| "peers providing the answers. The integrity of records and privacy of look-"
-#| "ups is cryptographically secured. <!-- Too technical: GNS integrates a "
-#| "robust, efficient and instant key revocation mechanism. -->"
 msgid ""
 "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully decentralized "
 "replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
@@ -466,13 +457,13 @@ msgid ""
 "cryptographically secured. <!-- Too technical: GNS integrates a robust, "
 "efficient and instant key revocation mechanism. -->"
 msgstr ""
-"Das <a href=\"gns.html\">GNU Name System (GNS)</a> ist ein komplett "
-"dezentraler Ersatz für das Domain Name System (DNS). Statt einer Hierarchie "
+"Das <a href=\"gns.html\">GNU Namenssystem (GNS)</a> ist ein komplett "
+"dezentraler Ersatz für das Domain-Namenssystem (DNS). Statt einer Hierarchie "
 "verwendet GNS einen gerichteten Graphen. Die Bezeichnungskonventionen ähneln "
 "denen von DNS, aber Anfragen und Antworten bleiben selbst für die "
 "Beteiligten vertraulich. Die Integrität der Archive und Vertraulichkeit von "
-"Look-Ups sind kryptographisch gesichert. <!--Too technical: GNS integrates a "
-"robust, efficient and instant key revocation mechanism.-->"
+"Look-Ups sind kryptographisch gesichert. <!-- Zu technisch: GNS integriert "
+"einen robusten, effizienten and sofortigen Schlüsselentzugsmechanismus. -->"
 
 #: template/applications.html.j2:38
 #, fuzzy
@@ -480,28 +471,19 @@ msgid "Self-sovereign, decentralized identity provider"
 msgstr "Selbstsouveräner, dezentraler Identitätsanbieter"
 
 #: template/applications.html.j2:41
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> is a decentralized "
-#| "Identity Provider (IdP) service built in top of the GNU Name System. It "
-#| "allows users to securely share personal information with websites using "
-#| "standardized protocols (OpenID Connect)."
 msgid ""
 "is a decentralized Identity Provider (IdP) service built in top of the GNU "
 "Name System. It allows users to securely share personal information with "
 "websites using standardized protocols (OpenID Connect)."
 msgstr ""
-"<a href=\"https://reclaim.gnunet.org/\">re: ClaimID</a> ist ein dezentraler "
-"Identity Provider (IdP) -Dienst, der auf dem GNU-Namenssystem basiert. Er "
-"erlaubt seinen Nutzern einen sicheren Austausch von persönlichen Daten mit "
-"Webseiten durch die Nutzung von standardisierten Protokollen (OpenID "
-"Connect)."
+"ist ein dezentraler Indentitätsanbieterdienst (IdP), der auf dem GNU-"
+"Namenssystem aufgesetzt ist. Er erlaubt seinen Nutzern einen sicheren "
+"Austausch von persönlichen Daten mit Webseiten durch die Nutzung von "
+"standardisierten Protokollen (OpenID Connect)."
 
 #: template/applications.html.j2:57
-#, fuzzy
-#| msgid "Motivation"
 msgid "Filesharing (Alpha)"
-msgstr "Filesharing (Alpha)"
+msgstr "Datenaustausch (Alpha)"
 
 #: template/applications.html.j2:59
 msgid ""
@@ -589,12 +571,6 @@ msgid "Cadet-GTK"
 msgstr "Cadet-GTK"
 
 #: template/applications.html.j2:162
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> "
-#| "is a convenient but feature-rich graphical application providing "
-#| "messaging using especially the CADET subsystem. It is developed using GTK "
-#| "and libhandy for a convergent design."
 msgid ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
 "convenient but feature-rich graphical application providing messaging using "
@@ -603,9 +579,9 @@ msgid ""
 msgstr ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> ist "
 "eine praktische, aber funktionsreiche grafische Anwendung, die "
-"Nachrichtenübermittlung insbesondere unter Verwendung des CADET-Subsystem "
-"bereitstellt. Sie wurde unter Verwendung von GTK und libhandy in "
-"konvergenter Gestaltung entwickelt."
+"Nachrichtenübermittlung unter Verwendung des CADET-Subsystem ermöglicht. Es "
+"wurde unter Verwendung von GTK und libhandy für eine konvergente Gestaltung "
+"entwickelt."
 
 #: template/applications.html.j2:180
 #, fuzzy
@@ -613,21 +589,15 @@ msgid "groupchat"
 msgstr "Gruppenchat"
 
 #: template/applications.html.j2:182
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
-#| "terminal user interface providing messaging using especially the CADET "
-#| "subsystem. It is developed using nim. Cadet-GTK and groupchat are planned "
-#| "to be compatible."
 msgid ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
 "terminal user interface providing messaging using the CADET subsystem. It is "
 "developed using nim. Cadet-GTK and groupchat are planned to be compatible."
 msgstr ""
-"<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> "
-"Benutzeroberfläche für Terminals, die Nachrichtenübermittlung insbesondere "
-"über das CADET Subsystem bereitstellt. Es wurde unter Verwendung von nim "
-"entwickelt. Cadet-GTK und groupchat sollen kompatibel sein."
+"<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> ist eine "
+"Benutzeroberfläche für Terminals, die Nachrichtenübermittlung über das CADET "
+"Subsystem bereitstellt. Es wurde unter Verwendung von nim entwickelt. Cadet-"
+"GTK und groupchat sollen kompatibel werden."
 
 #: template/architecture.html.j2:6
 msgid "GNUnet System Architecture"
@@ -638,13 +608,6 @@ msgid "Foundations"
 msgstr "Grundlagen"
 
 #: template/architecture.html.j2:22
-#, fuzzy
-#| msgid ""
-#| "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-"
-#| "like end-to-end encrypted messaging layer (CADET), a public key "
-#| "infrastructure (GNS) and a pluggable transport system (TRANSPORT).<br> "
-#| "Using public keys for addresses and self-organized decentralized routing "
-#| "algorithms, these subsystems replace the traditional TCP/IP stack."
 msgid ""
 "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
 "end-to-end encrypted messaging layer (CADET), a public key infrastructure "
@@ -652,25 +615,18 @@ msgid ""
 "for addresses and self-organizing decentralized routing algorithms, these "
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
-"GNUnet basiert auf einer verteilten Hashtabelle (R5N), einem SCTP ähnlichen "
-"ende-zu-ende verschlüsselter Nachrichtenübertragung (CADET), einer Public-"
-"Key-Infrastruktur (GNS) und einem erweiterbaren Transportsystem (TRANSPORT)."
-"<br> Öffentliche Schlüssel werden als Addressen für selbstorganizierte "
-"decentralizierte Routingalgorithmen benutzt. Diese Komponenten ersetzen das "
-"traditionelle Internet (TCP/IP)."
+"GNUnet basiert auf einer verteilten Hashtabelle (R5N), einer SCTP-ähnlichen "
+"Ende-zu-Ende verschlüsselten Nachrichtenebene (CADET), einer Public-Key-"
+"Infrastruktur (GNS) und einem erweiterbaren Transportsystem (TRANSPORT).<br> "
+"Diese Komponenten ersetzen den traditionellenTCP/IP Stapel mittels "
+"öffentlicher Schlüssel und selbstorganisierender dezentralen "
+"Routingalgorithmen."
 
 #: template/architecture.html.j2:35
 msgid "Security"
 msgstr "Sicherheit"
 
 #: template/architecture.html.j2:38
-#, fuzzy
-#| msgid ""
-#| "GNUnet is implemented using a multi-process architecture. Each subsystem "
-#| "runs as a separate process, providing fault-isolation and enabling tight "
-#| "permissions to be granted to each subsystem. Naturally, the "
-#| "implementation is a <a href=\"https://www.gnu.org/\">GNU</a> package, and "
-#| "will always remain free software."
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault isolation and enabling tight "
@@ -681,8 +637,8 @@ msgstr ""
 "GNUnet wird mithilfe einer Multiprozessarchitektur implementiert. Jedes "
 "Subsystem läuft als separater Prozess, bietet Fehlerisolation und erlaubt "
 "strenges Authorisierungsmanagement für jedes einzelne Subsystem. Die "
-"Implementierung ist ein selbstverständlich ein <a href=\"https://www.gnu.org/"
-"\">GNU</a>Paket und wird stets freie Software bleiben."
+"Implementierung ist selbstverständlich ein <a href=\"https://www.gnu.org/\""
+">GNU</a>-Paket und wird stets freie Software bleiben."
 
 #: template/architecture.html.j2:52
 msgid "System architecture"
@@ -912,12 +868,11 @@ msgid "Downloads"
 msgstr "Herunterladen"
 
 #: template/download.html.j2:11
-#, fuzzy
 msgid ""
 "Here you can download releases of our software and find links to the various "
 "versions."
 msgstr ""
-"Hier können Sie Releases unserer Software herunterladen und Links zu den "
+"Hier kannst du Releases unserer Software herunterladen und Links zu den "
 "verschiedenen Versionen finden."
 
 #: template/download.html.j2:17
@@ -943,11 +898,10 @@ msgid "git"
 msgstr "Git"
 
 #: template/download.html.j2:32
-#, fuzzy
 msgid ""
 "You can fetch the git tag of version 0.11.x from our development server:"
 msgstr ""
-"Sie können das Git-Tag der Version 0.11.x von unserem Entwicklungsserver "
+"Du kannst das Git-Tag der Version 0.11.x von unserem Entwicklungsserver "
 "abrufen:"
 
 #: template/engage.html.j2:6
@@ -993,17 +947,6 @@ msgid "Becoming a Member of GNUnet e.V."
 msgstr "Ein Mitglied von GNUnet e.V. werden"
 
 #: template/ev.html.j2:33
-#, fuzzy
-#| msgid ""
-#| "GNUnet developers with git (write) access can become members to "
-#| "participate in the decision process and formally support GNUnet e.V. For "
-#| "this, all you have to do is update the <tt>members.txt</tt> file in the "
-#| "<a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</a> "
-#| "repository. There are no membership dues; however, members are required "
-#| "to support GNUnet e.V. and in particularly contribute to the technical "
-#| "development within their means. For further details, we refer to the <a "
-#| "href=\"https://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (currently "
-#| "only available in German, translations welcome)."
 msgid ""
 "GNUnet developers with git (write) access can become members to participate "
 "in the decision process and formally support GNUnet e.V. For this, all you "
@@ -1017,14 +960,14 @@ msgid ""
 msgstr ""
 "GNUnet-Entwickler mit Git-Zugriff (Schreibzugriff) können Mitglieder werden, "
 "um am Entscheidungsprozess teilzunehmen und GNUnet e.V. offiziell zu "
-"unterstützen. Das einzige was du hierfür tun mußt ist, die Datei <tt>members."
-"txt</tt> im <a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</"
-"a>Speicher mit deinem Namen zu ergänzen. Es gibt keine Mitgliedsbeiträge; "
+"unterstützen. Das einzige was du hierzu tun musst ist, die Datei <tt>members."
+"txt</tt> im <a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</a>-"
+"Speicher mit deinem Namen zu ergänzen. Es gibt keine Mitgliedsbeiträge; "
 "allerdings sind Mitglieder verpflichtet, GNUnet e.V. zu unterstützen und "
 "insbesondere im Rahmen ihrer Möglichkeiten zu dessen technischer Entwicklung "
-"beizutragen. Für weitere Einzelheiten verweisen wir auf die <a href="
-"\"https://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (zur Zeit nur auf "
-"Deutsch erhältlich, Übersetzungen sind willkommen)."
+"beizutragen. Für weitere Einzelheiten verweisen wir auf die <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (zur Zeit nur auf Deutsch "
+"erhältlich, Übersetzungen sind willkommen)."
 
 #: template/ev.html.j2:52
 msgid "Governance"
@@ -1103,10 +1046,8 @@ msgid "Error messages"
 msgstr "Fehlermeldungen"
 
 #: template/faq.html.j2:16 template/faq.html.j2:797
-#, fuzzy
-#| msgid "Motivation"
 msgid "File-sharing"
-msgstr "File-Sharing"
+msgstr "Datenaustausch"
 
 #: template/faq.html.j2:17 template/faq.html.j2:973
 msgid "Contributing"
@@ -1146,19 +1087,16 @@ msgstr ""
 "Webseite abonnieren, um eine automatische Benachrichtigung zu erhalten."
 
 #: template/faq.html.j2:49
-#, fuzzy
 msgid "Is the code free?"
-msgstr "Ist der Code kostenlos?"
+msgstr "Ist der Code frei?"
 
 #: template/faq.html.j2:51
-#, fuzzy
 msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 msgstr ""
-"A: GNUnet ist freie Software, die unter der <a href=\"https://www.gnu.org/"
-"licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL) erhältlich ist</"
-"a> ."
+"A: GNUnet ist freie Software, erhältlich unter dem <a href=\"https://www.gnu."
+"org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 
 #: template/faq.html.j2:58
 msgid "Are there any known bugs?"
@@ -1197,9 +1135,8 @@ msgstr ""
 "Konfiguration."
 
 #: template/faq.html.j2:83
-#, fuzzy
 msgid "Why does gnunet-service-nse create a high CPU load?"
-msgstr "Warum verursacht gnunet-service-nse eine hohe CPU-Auslastung?"
+msgstr "Warum verursacht GNUnet-Service-nse eine hohe CPU-Auslastung?"
 
 #: template/faq.html.j2:85
 msgid ""
@@ -1240,9 +1177,8 @@ msgstr ""
 "spezifischer Fokus."
 
 #: template/faq.html.j2:111
-#, fuzzy
 msgid "How does GNUnet compare to I2P?"
-msgstr "Wie vergleicht sich GNUnet mit I2P?"
+msgstr "Wie schneidet GNUnet im Vergleich mit I2P ab?"
 
 #: template/faq.html.j2:113
 msgid ""
@@ -1260,9 +1196,8 @@ msgstr ""
 "größtenteils mittels eines Web-Frontends angewendet."
 
 #: template/faq.html.j2:124
-#, fuzzy
 msgid "Is GNUnet ready for use on production systems?"
-msgstr "Ist GNUnet für den Einsatz in Produktionssystemen bereit?"
+msgstr "Ist GNUnet für den Einsatz in Produktivsystemen fertig?"
 
 #: template/faq.html.j2:126
 msgid ""
@@ -1280,9 +1215,8 @@ msgstr ""
 "&quot;Tansport Next Generation [TNG]&quot;)"
 
 #: template/faq.html.j2:136
-#, fuzzy
 msgid "Is GNUnet build using distributed ledger technologies?"
-msgstr "Wird GNUnet mit verteilten Hauptbuchtechnologien erstellt?"
+msgstr "Wurde GNUnet mittels verteilter Hauptbuchtechnologien entwickelt?"
 
 #: template/faq.html.j2:138
 msgid ""
@@ -1337,29 +1271,21 @@ msgstr ""
 "Wir empfehlen dir die Benutzung von Tor für anonymes Browsen."
 
 #: template/faq.html.j2:181
-#, fuzzy
 msgid "Is it possible to access GNUnet via a browser as an anonymous WWW?"
 msgstr ""
-"Ist es möglich, über einen Browser als anonymes WWW auf GNUnet zuzugreifen?"
+"Ist es möglich, über einen Browser auf GNUnet als anonymes WWW zuzugreifen?"
 
 #: template/faq.html.j2:183
-#, fuzzy
-#| msgid ""
-#| "A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
-#| "would make it accessible with a browser. It is possible to build such a "
-#| "proxy and all one needs to know is the protocol used between browser and "
-#| "proxy and a swift look at the GNUnet code for file-sharing."
 msgid ""
 "A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
 "would make it accessible via a browser. It is possible to build such a proxy "
 "and all one needs to know is the protocol used between the browser and the "
 "proxy and the GNUnet code for file-sharing."
 msgstr ""
-"A: Derzeit gibt es keinen Proxy (wie fproxy in Freenet) für GNUnet, der es "
-"mit einem Browser zugänglich machen würde. Es wäre möglich einen solche "
-"Proxy zu konstruieren, und dafür muß man das zwischen Browser und Proxy "
-"verwendete Protokoll kennen und einen kurzen Blick auf den GNUnet Code für "
-"Datenaustausch werfen."
+"A: Derzeit gibt es keinen Proxy (wie etwa fproxy in Freenet) für GNUnet, der "
+"es für einen Browser zugänglich machen würde. Es wäre möglich, einen solche "
+"Proxy zu bauen, und dafür müsste man nur das zwischen Browser und Proxy "
+"verwendete Protokoll und den GNUnet Code für Datenaustausch kennen."
 
 #: template/faq.html.j2:195
 msgid ""
@@ -1404,9 +1330,8 @@ msgstr ""
 "es dir nicht möglich ist GNUnet auf diesen Systemen zum Laufen zu bringen."
 
 #: template/faq.html.j2:228
-#, fuzzy
 msgid "Who runs the GNS root zone?"
-msgstr "Wer betreibt die GNS-Root-Zone?"
+msgstr "Wer betreibt den GNS-Stammindex?"
 
 #: template/faq.html.j2:230
 msgid ""
@@ -1425,9 +1350,8 @@ msgstr ""
 "Dienstleistungen hosten."
 
 #: template/faq.html.j2:241
-#, fuzzy
 msgid "Where is the per-user GNS database kept?"
-msgstr "Wo wird die GNS-Datenbank pro Benutzer aufbewahrt?"
+msgstr "Wo befindet sich die GNS-per-user-Datenbank?"
 
 #: template/faq.html.j2:243
 msgid ""
@@ -1452,11 +1376,9 @@ msgstr ""
 "Speicherung (und Sicherung) ihrer GNS Datenbank."
 
 #: template/faq.html.j2:258
-#, fuzzy
 msgid "What is the expected average size of a GNS namestore database?"
 msgstr ""
-"Was ist die erwartete durchschnittliche Größe einer GNS-"
-"Namespeicherdatenbank?"
+"Mit welcher Größe rechnet man im allgemeinen bei einem GNS-Namensspeicher?"
 
 #: template/faq.html.j2:260
 msgid ""
@@ -1471,9 +1393,9 @@ msgstr ""
 "werden, klein genug um selbst auf mobile Geräte zu passen."
 
 #: template/faq.html.j2:270
-#, fuzzy
 msgid "Is GNS resistant to the attacks on DNS used by the US?"
-msgstr "Ist GNS resistent gegen die von den USA verwendeten DNS-Angriffe?"
+msgstr ""
+"Ist GNS widerstandsfähig gegen die von den USA eingesetzten DNS-Angriffe?"
 
 #: template/faq.html.j2:272
 msgid ""
@@ -1498,9 +1420,8 @@ msgstr ""
 "delegierende Zone wird eine umfassende Lösung ermöglicht."
 
 #: template/faq.html.j2:286
-#, fuzzy
 msgid "How does GNS compare to other name systems?"
-msgstr "Wie vergleicht sich GNS mit anderen Namenssystemen?"
+msgstr "Wie unterscheidet sich GNS von anderen Namenssystemen?"
 
 #: template/faq.html.j2:288
 msgid ""
@@ -1519,16 +1440,6 @@ msgid "What is the difference between GNS and CoDoNS?"
 msgstr "Was ist der Unterschied zwischen GNS und CoDoNS?"
 
 #: template/faq.html.j2:394
-#, fuzzy
-#| msgid ""
-#| "A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
-#| "authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, "
-#| "and there are still registrars that determine who owns a name. <br><br> "
-#| "With GNS, we decentralize the database and also decentralize the "
-#| "responsibility for naming: each user runs his own personal root zone and "
-#| "is thus in complete control of the names he uses. GNS also has many "
-#| "additional features (to keep names short and enable migration) which "
-#| "don't even make sense in the context of CoDoNS."
 msgid ""
 "A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
 "authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, and "
@@ -1544,7 +1455,7 @@ msgstr ""
 "ICANN noch in Kontrolle, und es gibt weiterhin Registrare, die über die "
 "Namensrechte bestimmen. <br><br> Mit GNS dezentralisieren wir die Datenbank "
 "und dezentralisieren ebenfalls die Berechtigung zur Namenszuteilung: Jeder "
-"Benutzer betreibt seine eigene persönliche Root-Zone und verbleibt somit in "
+"Nutzer betreibt seine eigene persönliche Root-Zone und verbleibt somit in "
 "kompletter Kontrolle über die Namen, die er vergibt. GNS hat darüber hinaus "
 "viele weitere Anwendungen (um Namen kurz und migrationsfähig zu halten), "
 "welche im Kontext von CoDoNS ohne Sinn und Zweck wären."
@@ -1597,14 +1508,6 @@ msgid "What is the difference between GNS and Handshake?"
 msgstr "Was ist der Unterschied zwischen GNS und Handshake?"
 
 #: template/faq.html.j2:441
-#, fuzzy
-#| msgid ""
-#| "A: Handshake is a blockchain-based method for root zone governance. "
-#| "Hence, it does not address the name resolution process itself but "
-#| "delegates resolution into DNS after the initial TLD resolution. Not "
-#| "taking sustainablility considerations into account, handshake could be "
-#| "used as an additional supporting GNS root zone governance model but we "
-#| "currently do not have such plans in mind."
 msgid ""
 "A: Handshake is a blockchain-based method for root zone governance. Hence, "
 "it does not address the name resolution process itself but delegates "
@@ -1614,8 +1517,8 @@ msgid ""
 "not have such plans in mind."
 msgstr ""
 "A: Handshake ist eine Blockchain-basierte Methode für die Root-Zonen-"
-"Governance. Folglich betrifft es nicht den Prozess zur Namensauflösung "
-"direkt, sondern delegiert die Auflösung nach DNS im Anschluß an die "
+"Governance. Folglich betrifft es nicht direkt den Prozess zur "
+"Namensauflösung, sondern delegiert die Auflösung nach DNS im Anschluß an die "
 "ursprüngliche TLD Auflösung. Losgelöst von Nachhaltigkeitsüberlegungen "
 "könnte Handshake als ein zusätzliches, flankierendes GNS Root-Zonen-"
 "Governance-Modell dienen, aber zur Zeit ist das von uns nicht geplant."
@@ -1644,13 +1547,12 @@ msgstr ""
 "Angriffe auf DNS Root-Server, abzuwehren."
 
 #: template/faq.html.j2:468
-#, fuzzy
 msgid ""
 "Does GNS require real-world introduction (secure PKEY exchange) in the style "
 "of the PGP web of trust?"
 msgstr ""
-"Erfordert GNS eine reale Einführung (sicherer PKEY-Austausch) im Stil des "
-"PGP-Vertrauensnetzwerks?"
+"Erfordert die Aktivierung von GNS (sicherer PKEY-Austausch) ein Agieren im "
+"Stil des PGP-Vertrauensnetzwerks?"
 
 #: template/faq.html.j2:470
 msgid ""
@@ -1677,13 +1579,12 @@ msgstr ""
 "Autorität kann unter dem &quot;pin&quot; TLD abgefragt werden."
 
 #: template/faq.html.j2:485
-#, fuzzy
 msgid ""
 "How can a legitimate domain owner tell other people to not use his name in "
 "GNS?"
 msgstr ""
-"Wie kann ein legitimer Domaininhaber anderen Personen sagen, dass sie seinen "
-"Namen nicht in GNS verwenden sollen?"
+"Wie kann ein legitimer Domaininhaber anderen Personen die Verwendung seines "
+"Namens in GNS untersagen?"
 
 #: template/faq.html.j2:487
 msgid ""
@@ -1750,13 +1651,12 @@ msgstr ""
 "bestehenden Netzwerken funktioniert."
 
 #: template/faq.html.j2:526
-#, fuzzy
 msgid ""
 "Why does GNS not use a trust metric or consensus to determine globally "
 "unique names?"
 msgstr ""
 "Warum verwendet GNS keine Vertrauensmetrik oder keinen Konsens, um global "
-"eindeutige Namen zu bestimmen?"
+"einzigartige Namen zu bestimmen?"
 
 #: template/faq.html.j2:528
 msgid ""
@@ -1796,9 +1696,8 @@ msgstr ""
 "auf Sperrnachrichten bei der Namensauflösung durchführen."
 
 #: template/faq.html.j2:553
-#, fuzzy
 msgid "Could the signing algorithm of GNS be upgraded in the future?"
-msgstr "Könnte der Signaturalgorithmus von GNS in Zukunft aktualisiert werden?"
+msgstr "Könnte der Signaturalgorithmus von GNS zukünftig verbessert werden?"
 
 #: template/faq.html.j2:555
 msgid ""
@@ -1894,9 +1793,8 @@ msgstr ""
 "Jahrhunderts neu zuzuweisen."
 
 #: template/faq.html.j2:613
-#, fuzzy
 msgid "How does GNS protect against layer-3 censorship?"
-msgstr "Wie schützt GNS vor Layer-3-Zensur?"
+msgstr "Wie schützt GNS vor Dreischichtzensur?"
 
 #: template/faq.html.j2:615
 msgid ""
@@ -1922,9 +1820,8 @@ msgstr ""
 "artige Dienste noch leichter zu nutzen. </ol>"
 
 #: template/faq.html.j2:634
-#, fuzzy
 msgid "Does GNS work with search engines?"
-msgstr "Funktioniert GNS mit Suchmaschinen?"
+msgstr "Arbeitet GNS mit Suchmaschinen zusammen?"
 
 #: template/faq.html.j2:636
 msgid ""
@@ -1950,9 +1847,8 @@ msgstr ""
 "erhalten."
 
 #: template/faq.html.j2:650
-#, fuzzy
 msgid "How does GNS compare to the Unmanaged Internet Architecture (UIA)?"
-msgstr "Wie vergleicht sich GNS mit der Unmanaged Internet Architecture (UIA)?"
+msgstr "Wie vergleicht sich GNS mit der Unmanaged Internet-Architektur (UIA)?"
 
 #: template/faq.html.j2:652
 msgid ""
@@ -2080,7 +1976,6 @@ msgstr ""
 "'m' gestellt wurden (und das Modul geladen ist)."
 
 #: template/faq.html.j2:736
-#, fuzzy
 msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
 msgstr ""
 "&quot;Timeout wurde erreicht&quot; beim Ausführen von PT auf Fedora (und "
@@ -2303,9 +2198,8 @@ msgstr ""
 "und allen anderen Peers zu unterscheiden."
 
 #: template/faq.html.j2:958
-#, fuzzy
 msgid "What does my system do when participating in GNUnet file sharing?"
-msgstr "Was macht mein System, wenn es an der GNUnet-Dateifreigabe teilnimmt?"
+msgstr "Was macht mein System, wenn es am GNUnet-Datenaustausch teilnimmt?"
 
 #: template/faq.html.j2:960
 msgid ""
@@ -2559,14 +2453,13 @@ msgstr ""
 "wie libcurl zusammengesetzt ist."
 
 #: template/gnurl.html.j2:30
-#, fuzzy
 msgid ""
 "Our main usecase is for GNUnet and Taler, but it might be usable for others, "
 "hence we&#39;re releasing the code to the general public."
 msgstr ""
-"Unser Hauptanwendungsfall ist für GNUnet und Taler, aber es könnte für "
-"andere verwendbar sein, daher geben wir den Code für die breite "
-"Öffentlichkeit frei."
+"Unser Hauptanwendungsfall ist für GNUnet und Taler, aber der Code könnte für "
+"andere anwendbar sein, daher geben wir ihn für die breite Öffentlichkeit "
+"frei."
 
 #: template/gnurl.html.j2:37
 msgid ""
@@ -2580,18 +2473,15 @@ msgstr ""
 "erreichen."
 
 #: template/gnurl.html.j2:48
-#, fuzzy
-#| msgid "About"
 msgid "About gnurl"
-msgstr "Über GNUnet"
+msgstr "Über gnurl"
 
 #: template/gnurl.html.j2:50
-#, fuzzy
 msgid ""
 "Large parts of the following 6 paragraphs are old and need to be rewritten."
 msgstr ""
-"Große Teile der folgenden 6 Absätze sind alt und müssen neu geschrieben "
-"werden."
+"Weite Teile der folgenden sechs Absätze sind veraltet und müssen neu "
+"geschrieben werden."
 
 #: template/gnurl.html.j2:62
 msgid ""
@@ -2804,10 +2694,8 @@ msgstr ""
 "\"https://pkgsrc.org\">pkgsrc</a>."
 
 #: template/gnurl.html.j2:228
-#, fuzzy
-#| msgid "Using libgnurl"
 msgid "Building gnurl"
-msgstr "Benutzung von libgnurl"
+msgstr "gnurl konstruieren"
 
 #: template/gnurl.html.j2:230
 msgid ""
@@ -2839,9 +2727,8 @@ msgstr ""
 "werden können."
 
 #: template/gnurl.html.j2:251
-#, fuzzy
 msgid "Building from the distributed tarball (prefered method)"
-msgstr "Bauen aus dem verteilten Tarball (bevorzugte Methode)"
+msgstr "Konstruieren auf Basis des verteilten Tarball (bevorzugte Methode)"
 
 #: template/gnurl.html.j2:253
 msgid ""
@@ -2857,9 +2744,8 @@ msgid "Fetch the signature key from"
 msgstr "Hole dir den Signaturschlüssel von"
 
 #: template/gnurl.html.j2:271
-#, fuzzy
 msgid "or via commandline with gnupg2."
-msgstr "oder über die Kommandozeile mit gnupg2."
+msgstr "oder über eine Kommandozeile mit gnupg2."
 
 #: template/gnurl.html.j2:276
 msgid ""
@@ -2909,9 +2795,8 @@ msgid "(this is optional)"
 msgstr "(dies ist optional)"
 
 #: template/gnurl.html.j2:365
-#, fuzzy
 msgid "and you are done."
-msgstr "und du bist fertig."
+msgstr "und fertig."
 
 #: template/gnurl.html.j2:369
 msgid "Building from a tagged git commit"
@@ -4167,6 +4052,9 @@ msgid ""
 "\">required dependencies</a> of GNUnet. There are base requirements and "
 "optional requirements."
 msgstr ""
+"Installiere als erstes die <a href=\"https://git.gnunet.org/gnunet.git/tree/"
+"README\">erforderlichen Abhängigkeiten</a> von GNUnet. Es gibt "
+"grundsätzliche Anforderungen und optionale Anforderungen."
 
 #: template/install.html.j2:79
 msgid ""
@@ -4176,30 +4064,42 @@ msgid ""
 "you want to develop using the most recent build, you should go with the <a "
 "href=\"https://git.gnunet.org/\">git repository</a>."
 msgstr ""
+"Anschließend mußt du entscheiden, ob du GNUnet vom Release-Tarball oder von "
+"Git installieren möchtest. Wenn du GNUnet verwenden willst und kein "
+"Binärpaket für dein Betriebssystem verfügbar ist, solltest du beim Release-"
+"Tarball bleiben. Wenn du auf Basis der neusten Versionen deine Entwicklungen "
+"vornehmen möchtest, solltest du das <a href=\"https://git.gnunet.org/\">git "
+"repository</a> zurückgreifen."
 
 #: template/install.html.j2:96
 msgid "To compile gnunet from the git source you can do so by entering:"
-msgstr ""
+msgstr "Um Gnunet aus der Git-Quelle zu kompilieren, gibst du Folgendes ein:"
 
 #: template/install.html.j2:104
 msgid ""
 "Before building GNUnet, make sure that you setup the required groups and add "
 "your user to the group <code>gnunet</code>:"
 msgstr ""
+"Bevor du GNUnet baust, stelle sicher, dass du die erforderlichen Gruppen "
+"eingerichtet und deinen Benutzer zur Gruppe <code>gnunet</code>hinzugefügt "
+"hast:"
 
 #: template/install.html.j2:115
 msgid "To compile GNUnet, execute:"
-msgstr ""
+msgstr "Um GNUnet zu kompilieren, führe Folgendes aus:"
 
 #: template/install.html.j2:126
 msgid ""
 "You can find more configuration flags in the <a href=\"https://git.gnunet."
 "org/gnunet.git/tree/README\">README</a>.<br> Install GNUnet with:"
 msgstr ""
+"Weitere Konfigurationsflags findest du in der <a href=\"https://git.gnunet."
+"org/gnunet.git/tree/README\">README</a>.<br> Installiere GNUnet mit:"
 
 #: template/install.html.j2:136
+#, fuzzy
 msgid "You can now start GNUnet by running:"
-msgstr ""
+msgstr "Sie können GNUnet jetzt starten, indem Sie Folgendes ausführen:"
 
 #: template/install.html.j2:144
 msgid ""
@@ -4207,14 +4107,19 @@ msgid ""
 "configuration\">handbook</a> for detailed documentation. For a more hands-on "
 "experience, <a href=\"https://gnunet.org/en/use.html\">continue here</a>."
 msgstr ""
+"Detaillierte Dokumentation findest du im <a href=\"https://docs.gnunet.org/"
+"handbook/gnunet.html#Minimal-configuration\">Handbuch</a>. Für ein "
+"handfesteres Vorgehen <a href=\"https://gnunet.org/en/use.html\">fahre hier "
+"fort</a>."
 
 #: template/livingstandards.html.j2:11
 msgid "On this page you can find links to our technical specifications."
-msgstr ""
+msgstr "Auf dieser Seite findest du Links zu unseren technischen Daten."
 
 #: template/use.html.j2:6
+#, fuzzy
 msgid "How to use GNUnet - in a nutshell"
-msgstr ""
+msgstr "Wie man GNUnet benutzt - auf den Punkt gebracht"
 
 #: template/use.html.j2:12 template/use.html.j2:125
 #, fuzzy
@@ -4224,7 +4129,7 @@ msgstr "File-Sharing"
 
 #: template/use.html.j2:13
 msgid "CADET"
-msgstr ""
+msgstr "CADET"
 
 #: template/use.html.j2:14
 #, fuzzy
@@ -4232,16 +4137,19 @@ msgid "Minimal Groupchat"
 msgstr "Gruppenchat"
 
 #: template/use.html.j2:15
+#, fuzzy
 msgid "GNS with CLI"
-msgstr ""
+msgstr "GNS mit CLI"
 
 #: template/use.html.j2:16
+#, fuzzy
 msgid "GNS with Browser"
-msgstr ""
+msgstr "GNS mit Browser"
 
 #: template/use.html.j2:17 template/use.html.j2:448
+#, fuzzy
 msgid "VPN"
-msgstr ""
+msgstr "VPN"
 
 #: template/use.html.j2:18 template/use.html.j2:508
 #, fuzzy
@@ -4250,8 +4158,9 @@ msgid "Conversation"
 msgstr "Motivation"
 
 #: template/use.html.j2:19 template/use.html.j2:519
+#, fuzzy
 msgid "Trouble Shooting"
-msgstr ""
+msgstr "Fehlerbehebung"
 
 #: template/use.html.j2:34
 #, fuzzy
@@ -4267,51 +4176,56 @@ msgstr "GNUnet"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
-msgstr ""
+msgstr "Stelle sicher, dass deine GNUnet-Installation funktioniert..."
 
 #: template/use.html.j2:107
 msgid "... and play around with it."
-msgstr ""
+msgstr "...und spiele damit herum."
 
 #: template/use.html.j2:179
+#, fuzzy
 msgid "CADET (and Chat)"
-msgstr ""
+msgstr "CADET (und Chat)"
 
 #: template/use.html.j2:219
+#, fuzzy
 msgid "Chatting with a (simple) client"
-msgstr ""
+msgstr "Chatten mit einem (einfachen) Client"
 
 #: template/use.html.j2:283
 msgid "Name resolution using GNS on the command line"
-msgstr ""
+msgstr "Namensauflösung mittels GNS in der Kommandozeile"
 
 #: template/use.html.j2:360
 msgid "Name resolution using GNS with a browser"
-msgstr ""
+msgstr "Namensauflösung mittels GNS unter Benutzung eines Browser"
 
 #: template/use.html.j2:521
 msgid "You can't reach other people's nodes"
-msgstr ""
+msgstr "Du kannst die Knoten anderer Personen nicht erreichen"
 
 #: template/use.html.j2:557
 msgid "OMG you guys broke my internet"
-msgstr ""
+msgstr "Oh mein Gott, ihr habt mir mein Internet kaputt gemacht"
 
 #: template/video.html.j2:12
+#, fuzzy
 msgid "Videos related to GNUnet"
-msgstr ""
+msgstr "Videos zu GNUnet"
 
 #: template/news/index.html.j2:45
 msgid "News archives:"
 msgstr "Nachrichten-Archive"
 
 #: template/reclaim/faq.html.j2:6
+#, fuzzy
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Häufig gestellte Fragen"
 
 #: template/reclaim/idps.html.j2:6 template/reclaim/index.html.j2:95
+#, fuzzy
 msgid "For IdPs"
-msgstr ""
+msgstr "Für IdPs"
 
 #: template/reclaim/index.html.j2:8
 #, fuzzy
@@ -4320,18 +4234,21 @@ msgid ""
 msgstr "Selbstsouveräner, dezentraler Identitätsanbieter"
 
 #: template/reclaim/index.html.j2:18
+#, fuzzy
 msgid "Self-sovereign"
-msgstr ""
+msgstr "Selbstsouverän"
 
 #: template/reclaim/index.html.j2:20
 msgid ""
 "You manage your identities and attributes locally on your computer. No need "
 "to trust a third party service with your data."
 msgstr ""
+"Du verwaltest deine Identitäten und Attribute lokal auf deinem Computer. Es "
+"ist nicht nötig, deine Daten einem Dienstleister anzuvertrauen."
 
 #: template/reclaim/index.html.j2:40
 msgid "Decentralized"
-msgstr ""
+msgstr "Dezentralisiert"
 
 #: template/reclaim/index.html.j2:42
 msgid ""
@@ -4339,22 +4256,30 @@ msgid ""
 "system. This allows your friends to access your shared data without the need "
 "of a trusted third party."
 msgstr ""
+"Du kannst deine Identitätsattribute sicher über ein dezentrales Namenssystem "
+"freigeben. Das erlaubt deinen Freunden Zugriff auf deine freigeschaltenen "
+"Daten, ohne einen vertrauenswürdigen Dienstleister zu beanspruchen."
 
 #: template/reclaim/index.html.j2:58
+#, fuzzy
 msgid "Standard-compliant"
-msgstr ""
+msgstr "Standardkonform"
 
 #: template/reclaim/index.html.j2:60
 msgid "You can use OpenID Connect to integrate reclaim in your web sites."
 msgstr ""
+"Du kannst OpenID Connect verwenden, um Reclaim in deine Webseiten zu "
+"integrieren."
 
 #: template/reclaim/index.html.j2:77
+#, fuzzy
 msgid "Technology"
-msgstr ""
+msgstr "Technologie"
 
 #: template/reclaim/index.html.j2:89 template/reclaim/users.html.j2:6
+#, fuzzy
 msgid "For users"
-msgstr ""
+msgstr "Für Nutzer"
 
 #: template/reclaim/index.html.j2:92 template/reclaim/websites.html.j2:6
 #, fuzzy
@@ -4372,10 +4297,13 @@ msgid ""
 "The decentralised GNU Name System (GNS) gives users full and exclusive "
 "authority over their attributes by sharing them over user-owned namespaces."
 msgstr ""
+"Das dezentrale GNU-Namenssystem (GNS) gibt Nutzern die volle und "
+"ausschließliche Autorität über ihre eigenen Attribute, indem es diese über "
+"benutzereigene Namespaces freigibt."
 
 #: template/reclaim/tech.html.j2:26
 msgid "Cryptographic access control"
-msgstr ""
+msgstr "Kryptographische Zugriffskontrolle"
 
 #: template/reclaim/tech.html.j2:30
 msgid ""
@@ -4383,14 +4311,19 @@ msgid ""
 "and read only by authorized relying parties parties without direct user "
 "interaction -- even if the user is offline!"
 msgstr ""
+"Die Nutzer veröffentlichen regelmäßig neue, aktuelle Attribute, die nur von "
+"autorisierten Personen ohne direkte Benutzerinteraktion abgerufen und "
+"gelesen werden können -- selbst wenn der Nutzer offline ist!"
 
 #: template/reclaim/tech.html.j2:39
+#, fuzzy
 msgid "Principles"
-msgstr ""
+msgstr "Grundsätze"
 
 #: template/reclaim/tech.html.j2:46
+#, fuzzy
 msgid "Identity and attribute management"
-msgstr ""
+msgstr "Identitäts- und Attributverwaltung"
 
 #: template/reclaim/tech.html.j2:48
 msgid ""
@@ -4399,6 +4332,11 @@ msgid ""
 "offline! Access to attributes is controlled through an ecryption based "
 "access control layer."
 msgstr ""
+"Nutzer veröffentlichen regelmäßig neue, aktuelle Attribute, die von "
+"anfragenden Parteien ohne direkte Benutzerinteraktion abgerufen werden "
+"können -- auch wenn der Nutzer offline ist! Der Zugriff auf Attribute wird "
+"über eine auf Verschlüsselung basierende Zugriffssteuerungsschicht "
+"kontrolliert."
 
 #: template/reclaim/tech.html.j2:71
 #, fuzzy
@@ -4413,10 +4351,13 @@ msgid ""
 "given the necessary decryption key material. The user may at any time revoke "
 "this access or modify the authorization decision."
 msgstr ""
+"Um auf Attribute zugreifen zu können, fordern Dritte mittels OpenID die "
+"Autorisierung durch den Benutzer an."
 
 #: template/reclaim/tech.html.j2:92
+#, fuzzy
 msgid "Attribute retrieval"
-msgstr ""
+msgstr "Attributabruf"
 
 #: template/reclaim/tech.html.j2:94
 msgid ""
@@ -4424,6 +4365,10 @@ msgid ""
 "directory. It is able to decrypt all those attributes that the user has "
 "authorized it to access using the respective key."
 msgstr ""
+"Die im Vertrauensverhältnis stehenden Parteien rufen verschlüsselte "
+"Identitätsdaten aus dem dezentralen Verzeichnis ab. Dieses ist in der Lage, "
+"alle Attribute zu entschlüsseln, zu denen der Nutzer ihm Zugang mittels des "
+"zugehörigen Schlüssels eingeräumt hat."
 
 #~ msgid "Living Standards"
 #~ msgstr "Lebensbedingungen"
