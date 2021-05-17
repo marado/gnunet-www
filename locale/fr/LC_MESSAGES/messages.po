@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-12 14:14+0200\n"
-"PO-Revision-Date: 2021-05-17 06:13+0000\n"
-"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
+"PO-Revision-Date: 2021-05-18 17:53+0000\n"
+"Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
 "Language: fr\n"
@@ -763,54 +763,55 @@ msgid ""
 "simply sign the agreement with your pseudonym. Scanned copies are "
 "sufficient, but snail mail is preferred.</p>"
 msgstr ""
+"<p>Les petites contributions (en gros, toute personne sans accès Git) ne "
+"nécessitent pas de cession de droits d'auteur. Les contributions sous "
+"pseudonymes sont acceptées, dans ces cas là, il suffit de signer l'accord "
+"avec votre pseudonyme. Les copies scannées est suffisantes mais les "
+"courriers sont préférables.</p>"
 
 #: template/developers.html.j2:5
 msgid "GNUnet for developers"
-msgstr ""
+msgstr "GNUnet pour les développeurs"
 
 #: template/developers.html.j2:13
 msgid "Repositories"
-msgstr ""
+msgstr "Référentiel de base de données"
 
 #: template/developers.html.j2:16
 msgid ""
 "A list of our Git repositories can be found on our our <a href=\"https://git."
 "gnunet.org/\">Git Server</a>."
 msgstr ""
+"Une liste de nos référentiels de base de données Git sont accessibles sur "
+"notre <a href=\"https://git.gnunet.org/\">Serveur Git</a>."
 
 #: template/developers.html.j2:27
 msgid ""
 "Technical papers can be found in our <a href=\"https://old.gnunet.org/"
 "bibliography\">bibliography</a>."
 msgstr ""
+"Des ressources techniques peuvent être trouvées dans notre <a href=\"https"
+"://old.gnunet.org/bibliography\">bibliographie</a>."
 
 #: template/developers.html.j2:34
 msgid "Discussion"
-msgstr ""
+msgstr "Discussion"
 
 #: template/developers.html.j2:37
-#, fuzzy
-#| msgid ""
-#| "An archived, public mailing list for GNUnet is hosted at <a href="
-#| "\"https://lists.gnu.org/mailman/listinfo/gnunet-developers\">https://"
-#| "lists.gnu.org/mailman/listinfo/gnunet-developers</a>. You can send "
-#| "messages to the list at <a href=\"mailto:gnunet-developers@gnu.org"
-#| "\">gnunet-developers@gnu.org</a>."
 msgid ""
 "We have a mailing list for developer discussions. You can subscribe to or "
 "read the list archive at <a href=\"http://lists.gnu.org/mailman/listinfo/"
 "gnunet-developers\">http://lists.gnu.org/mailman/listinfo/gnunet-developers</"
 "a>."
 msgstr ""
-"Une liste mailing archivée et publique pour GNUnet est hébergée à <a href="
+"Nous avons une liste de mailing pour les échanges entre développeurs. Il est "
+"possible de s'y abonner ou bien de lire les listes d'archives depuis <a href="
 "\"https://lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists."
-"gnu.org/mailman/listinfo/gnunet-developers</a>. Vous pouvez envoyer un "
-"message à cette liste ici :<a href=\"mailto:gnunet-developers@gnu.org"
-"\">gnunet-developers@gnu.org</a>."
+"gnu.org/mailman/listinfo/gnunet-developers</a>."
 
 #: template/developers.html.j2:47
 msgid "Regression Testing"
-msgstr ""
+msgstr "Tests de régressions"
 
 #: template/developers.html.j2:50
 msgid ""
@@ -818,10 +819,14 @@ msgid ""
 "detect regressions and check for portability at <a href=\"https://old.gnunet."
 "org/buildbot/gnunet/\">https://old.gnunet.org/buildbot/gnunet/</a>."
 msgstr ""
+"Nous avons <a href=\"https://buildbot.net/\">Buildbot</a> afin d'effectuer "
+"des tests d'automation pour détecter des régressions et vérifier leur "
+"transférabilité depuis <a href=\"https://old.gnunet.org/buildbot/gnunet/\""
+">https://old.gnunet.org/buildbot/gnunet/</a>."
 
 #: template/developers.html.j2:59
 msgid "Code Coverage Analysis"
-msgstr ""
+msgstr "Analyse de couverture de code"
 
 #: template/developers.html.j2:62
 msgid ""
@@ -829,10 +834,14 @@ msgid ""
 "analyze the code coverage of our tests, the results are available at <a href="
 "\"https://old.gnunet.org/coverage/\">https://old.gnunet.org/coverage/</a>."
 msgstr ""
+"Nous utilisons <a href=\"http://ltp.sourceforge.net/coverage/lcov.php\""
+">LCOV</a> pour analyser la couverture du code de nos tests, les résultats "
+"sont disponibles sur <a href=\"https://old.gnunet.org/coverage/\">https://old"
+".gnunet.org/coverage/</a>."
 
 #: template/developers.html.j2:72
 msgid "Performance Analysis"
-msgstr ""
+msgstr "Analyse de performance"
 
 #: template/developers.html.j2:75
 msgid ""
@@ -840,16 +849,21 @@ msgid ""
 "regression analysis of the exchange backend at <a href=\"https://old.gnunet."
 "org/gauger/\">https://old.gnunet.org/gauger/</a>."
 msgstr ""
+"Nous utilisons <a href=\"https://old.gnunet.org/gauger\">Gauger</a> pour "
+"l'analyse de la performance de régression des échanges en backend sur <a "
+"href=\"https://old.gnunet.org/gauger/\">https://old.gnunet.org/gauger/</a>."
 
 #: template/download.html.j2:7 template/gnurl.html.j2:209
 msgid "Downloads"
-msgstr ""
+msgstr "Téléchargements"
 
 #: template/download.html.j2:11
 msgid ""
 "Here you can download releases of our software and find links to the various "
 "versions."
 msgstr ""
+"Ici vous pouvez télécharger les versions de notre logiciel ainsi que des "
+"liens pour les différentes versions."
 
 #: template/download.html.j2:17
 msgid "0.11.x series"
@@ -857,7 +871,7 @@ msgstr ""
 
 #: template/download.html.j2:18
 msgid "tarball"
-msgstr ""
+msgstr "tarball"
 
 #: template/download.html.j2:20
 msgid ""
@@ -867,7 +881,7 @@ msgstr ""
 
 #: template/download.html.j2:30
 msgid "git"
-msgstr ""
+msgstr "git"
 
 #: template/download.html.j2:32
 msgid ""
@@ -897,6 +911,11 @@ msgid ""
 "law to support GNUnet development. The Amtsgericht M&uuml;nchen registered "
 "the association on the 7th of March under VR 205287."
 msgstr ""
+"Le 27 décembre 2013, un groupe d'hackers de GNUnet se sont rencontrés à 30c3 "
+"pour créer le \"Verein zur Forderung von GNUnet e.V.\", une association de "
+"droit allemand pour soutenir le développement de GNUnet. Le Tribunal "
+"d'Instance de Munich a enregistré l'association le 7 mars sous le nom de "
+"registre VR 205287."
 
 #: template/ev.html.j2:22
 msgid ""
@@ -907,7 +926,7 @@ msgstr ""
 
 #: template/ev.html.j2:31
 msgid "Becoming a Member of GNUnet e.V."
-msgstr ""
+msgstr "Devenir un membre de GNUnet e.V/"
 
 #: template/ev.html.j2:33
 msgid ""
@@ -924,7 +943,7 @@ msgstr ""
 
 #: template/ev.html.j2:52
 msgid "Governance"
-msgstr ""
+msgstr "Gouvernance"
 
 #: template/ev.html.j2:54
 msgid ""
@@ -943,7 +962,7 @@ msgstr ""
 
 #: template/ev.html.j2:86
 msgid "Support Us!"
-msgstr ""
+msgstr "Soutenez-nous!"
 
 #: template/ev.html.j2:88
 msgid ""
@@ -960,15 +979,15 @@ msgstr ""
 
 #: template/faq.html.j2:12 template/faq.html.j2:23
 msgid "General"
-msgstr ""
+msgstr "Général"
 
 #: template/faq.html.j2:13 template/faq.html.j2:149 template/gns.html.j2:37
 msgid "Features"
-msgstr ""
+msgstr "Fonctionnalités"
 
 #: template/faq.html.j2:15 template/faq.html.j2:695
 msgid "Error messages"
-msgstr ""
+msgstr "Messages d'erreur"
 
 #: template/faq.html.j2:16 template/faq.html.j2:797
 #, fuzzy
@@ -982,7 +1001,7 @@ msgstr ""
 
 #: template/faq.html.j2:26
 msgid "What do I do if my question is not answered here?"
-msgstr ""
+msgstr "Que dois-je faire si je n'ai pas la réponse à ma question ici ?"
 
 #: template/faq.html.j2:28
 msgid ""
@@ -3009,23 +3028,19 @@ msgstr ""
 
 #: template/use.html.j2:6
 msgid "How to use GNUnet - in a nutshell"
-msgstr ""
+msgstr "Comment utiliser GNUnet - en quelques mots"
 
 #: template/use.html.j2:12 template/use.html.j2:125
-#, fuzzy
-#| msgid "Filesharing (Alpha)"
 msgid "Filesharing"
-msgstr "Partage de fichiers (Alpha)"
+msgstr "Partage de fichiers"
 
 #: template/use.html.j2:13
 msgid "CADET"
 msgstr ""
 
 #: template/use.html.j2:14
-#, fuzzy
-#| msgid "groupchat"
 msgid "Minimal Groupchat"
-msgstr "groupe de discussion"
+msgstr "Groupe de discussion minimal"
 
 #: template/use.html.j2:15
 msgid "GNS with CLI"
@@ -3037,27 +3052,23 @@ msgstr ""
 
 #: template/use.html.j2:17 template/use.html.j2:448
 msgid "VPN"
-msgstr ""
+msgstr "VPN"
 
 #: template/use.html.j2:18 template/use.html.j2:508
-#, fuzzy
-#| msgid "Conversation (Pre-Alpha)"
 msgid "Conversation"
-msgstr "Conversation (Pre-Alpha)"
+msgstr "Conversation"
 
 #: template/use.html.j2:19 template/use.html.j2:519
 msgid "Trouble Shooting"
-msgstr ""
+msgstr "Résolution de problèmes"
 
 #: template/use.html.j2:34
 msgid "Accessing GNUnet"
-msgstr ""
+msgstr "Accéder GNUnet"
 
 #: template/use.html.j2:78
-#, fuzzy
-#| msgid "What is GNUnet?"
 msgid "Leaving GNUnet"
-msgstr "Qu'est-ce que GNUnet  ?"
+msgstr "Quitter GNUnet"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
@@ -3065,7 +3076,7 @@ msgstr ""
 
 #: template/use.html.j2:107
 msgid "... and play around with it."
-msgstr ""
+msgstr "... et jouer avec."
 
 #: template/use.html.j2:179
 msgid "CADET (and Chat)"
@@ -3101,7 +3112,7 @@ msgstr "Archives des actualités :"
 
 #: template/reclaim/faq.html.j2:6
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Foire À Questions"
 
 #: template/reclaim/idps.html.j2:6 template/reclaim/index.html.j2:95
 msgid "For IdPs"
@@ -3126,7 +3137,7 @@ msgstr ""
 
 #: template/reclaim/index.html.j2:40
 msgid "Decentralized"
-msgstr ""
+msgstr "Décentralisé"
 
 #: template/reclaim/index.html.j2:42
 msgid ""
@@ -3145,15 +3156,15 @@ msgstr ""
 
 #: template/reclaim/index.html.j2:77
 msgid "Technology"
-msgstr ""
+msgstr "Technologie"
 
 #: template/reclaim/index.html.j2:89 template/reclaim/users.html.j2:6
 msgid "For users"
-msgstr ""
+msgstr "Pour les utilisateurs"
 
 #: template/reclaim/index.html.j2:92 template/reclaim/websites.html.j2:6
 msgid "For websites"
-msgstr ""
+msgstr "Pour les sites internet"
 
 #: template/reclaim/tech.html.j2:15
 #, fuzzy
