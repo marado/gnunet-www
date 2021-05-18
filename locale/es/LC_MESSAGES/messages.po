@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-12 14:14+0200\n"
-"PO-Revision-Date: 2021-05-05 17:48+0000\n"
+"PO-Revision-Date: 2021-05-18 17:53+0000\n"
 "Last-Translator: Lucía López <lulopezcabrera@gmail.com>\n"
-"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/"
-">\n"
+"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
+"\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2404,6 +2404,18 @@ msgid ""
 "to egos or identities. Namespaces cannot be associated with a peer, only "
 "with egos."
 msgstr ""
+"Un \"par\" es una instancia de GNUnet con clave pública por instancia y "
+"direcciones de red propias. Técnicamente, es posible ejecutar múltiples "
+"pares en el mismo anfitrión pero esto solamente tendría sentido para "
+"realizar una prueba. <br> GNUnet respalda múltiples usuarios por diseño para "
+"compartir el mismo par, al igual que UNIX es un sistema multi-usuario. Un "
+"\"par\" típicamente consiste de un conjunto de servicios fundacionales de "
+"GNUnet ejecutándose como el usuario \"gnunet\", y permitiendo a todos los "
+"usuarios en el grupo \"gnunet\" utilizar el API. En sistemas multiusuario, "
+"servicios adicionales \"personalizados\" pueden ser requeridos por usuario. "
+"<br> Aunque los pares también se identifican por claves públicas, estas "
+"están completamente desvinculadas a egos o identidades. Espacios de nombres "
+"no pueden ser asociados con un par, solo con egos."
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
 #: template/reclaim/index.html.j2:80 template/reclaim/motivation.html.j2:6
@@ -3772,17 +3784,19 @@ msgstr "Proveedor de identidad, descentralizado y autónomo"
 
 #: template/reclaim/index.html.j2:18
 msgid "Self-sovereign"
-msgstr ""
+msgstr "Autónomo"
 
 #: template/reclaim/index.html.j2:20
 msgid ""
 "You manage your identities and attributes locally on your computer. No need "
 "to trust a third party service with your data."
 msgstr ""
+"Usted gestiona sus identidades y atributos localmente en su computadora. No "
+"es necesario confiar en un servicio de terceros con sus datos."
 
 #: template/reclaim/index.html.j2:40
 msgid "Decentralized"
-msgstr ""
+msgstr "Descentralizado"
 
 #: template/reclaim/index.html.j2:42
 msgid ""
@@ -3790,26 +3804,31 @@ msgid ""
 "system. This allows your friends to access your shared data without the need "
 "of a trusted third party."
 msgstr ""
+"Usted puede compartir sus atributos de identidad de forma segura mediante un "
+"sistema de nombres descentralizado; esto le permite a sus amigos acceder a "
+"sus datos compartidos sin necesidad de una tercera parte confiable."
 
 #: template/reclaim/index.html.j2:58
 msgid "Standard-compliant"
-msgstr ""
+msgstr "Cumpliendo los estándares"
 
 #: template/reclaim/index.html.j2:60
 msgid "You can use OpenID Connect to integrate reclaim in your web sites."
 msgstr ""
+"Usted puede usar OpenID Connect para integrar reclamaciones en sus sitios "
+"web."
 
 #: template/reclaim/index.html.j2:77
 msgid "Technology"
-msgstr ""
+msgstr "Tecnología"
 
 #: template/reclaim/index.html.j2:89 template/reclaim/users.html.j2:6
 msgid "For users"
-msgstr ""
+msgstr "Para los usuarios"
 
 #: template/reclaim/index.html.j2:92 template/reclaim/websites.html.j2:6
 msgid "For websites"
-msgstr ""
+msgstr "Para sitios web"
 
 #: template/reclaim/tech.html.j2:15
 #, fuzzy
@@ -3822,6 +3841,9 @@ msgid ""
 "The decentralised GNU Name System (GNS) gives users full and exclusive "
 "authority over their attributes by sharing them over user-owned namespaces."
 msgstr ""
+"El Sistema de Nombres GNU descentralizado otorga a los usuarios autoridad "
+"completa y exclusiva sobre sus atributos al compartirlos mediante espacios "
+"de nombre propiedad de los usuarios."
 
 #: template/reclaim/tech.html.j2:26
 msgid "Cryptographic access control"
@@ -3833,14 +3855,18 @@ msgid ""
 "and read only by authorized relying parties parties without direct user "
 "interaction -- even if the user is offline!"
 msgstr ""
+"Los usuarios regularmente publican atributos actualizados frescos, los "
+"cuales pueden ser recuperados y leídos únicamente por partes interesadas "
+"autorizadas sin interacción directa con usuarios, ¡incluso si el usuario no "
+"está en línea!"
 
 #: template/reclaim/tech.html.j2:39
 msgid "Principles"
-msgstr ""
+msgstr "Principios"
 
 #: template/reclaim/tech.html.j2:46
 msgid "Identity and attribute management"
-msgstr ""
+msgstr "Gestión de identidad y atributos"
 
 #: template/reclaim/tech.html.j2:48
 msgid ""
@@ -3849,6 +3875,11 @@ msgid ""
 "offline! Access to attributes is controlled through an ecryption based "
 "access control layer."
 msgstr ""
+"Los usuarios regularmente publican atributos actualizados frescos, los "
+"cuales pueden ser recuperados por partes solicitantes sin interacción "
+"directa con el usuario, ¡¡incluso si el usuario no se encuentra en línea!! "
+"El acceso a los atributos es controlado mediante una capa de control de "
+"acceso basada en encriptación."
 
 #: template/reclaim/tech.html.j2:71
 #, fuzzy
@@ -3863,10 +3894,14 @@ msgid ""
 "given the necessary decryption key material. The user may at any time revoke "
 "this access or modify the authorization decision."
 msgstr ""
+"Para acceder a atributos, las partes solicitantes solicitan autorización del "
+"usuario mediante el uso de OpenID Connect. Si el acceso es concedido, a la "
+"parte involucrada le es otorgado el material clave necesario de "
+"desencriptación."
 
 #: template/reclaim/tech.html.j2:92
 msgid "Attribute retrieval"
-msgstr ""
+msgstr "Recuperación de atributos"
 
 #: template/reclaim/tech.html.j2:94
 msgid ""
@@ -3874,6 +3909,9 @@ msgid ""
 "directory. It is able to decrypt all those attributes that the user has "
 "authorized it to access using the respective key."
 msgstr ""
+"Las partes involucradas recuperan datos de identidad encriptados del "
+"directorio descentralizado. Puede desencriptar todos esos atributos que el "
+"usuario le ha autorizado a acceder utilizando la clave respectiva."
 
 #~ msgid "Living Standards"
 #~ msgstr "Estándares de vida"
