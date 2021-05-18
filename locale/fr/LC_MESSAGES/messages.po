@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-12 14:14+0200\n"
-"PO-Revision-Date: 2021-05-18 17:53+0000\n"
+"PO-Revision-Date: 2021-05-19 07:56+0000\n"
 "Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
@@ -1012,7 +1012,7 @@ msgstr ""
 
 #: template/faq.html.j2:36
 msgid "When are you going to release the next version?"
-msgstr ""
+msgstr "Quand est-ce que vous allez mettre en ligne la prochaine version ?"
 
 #: template/faq.html.j2:38
 msgid ""
@@ -1025,17 +1025,19 @@ msgstr ""
 
 #: template/faq.html.j2:49
 msgid "Is the code free?"
-msgstr ""
+msgstr "Est-ce que le code est accessible gratuitement ?"
 
 #: template/faq.html.j2:51
 msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 msgstr ""
+"A: GNUnet est un logiciel gratuit, disponible depuis <a href=\"https://www."
+"gnu.org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 
 #: template/faq.html.j2:58
 msgid "Are there any known bugs?"
-msgstr ""
+msgstr "Y a-t-il des bugs connus ?"
 
 #: template/faq.html.j2:60
 msgid ""
@@ -1050,7 +1052,7 @@ msgstr ""
 
 #: template/faq.html.j2:73 template/faq.html.j2:193
 msgid "Is there a graphical user interface?"
-msgstr ""
+msgstr "Y a-t-il une interface graphique pour les utilisateurs ?"
 
 #: template/faq.html.j2:75
 msgid ""
@@ -2983,6 +2985,7 @@ msgid ""
 msgstr ""
 
 #: template/install.html.j2:79
+#, fuzzy
 msgid ""
 "Now, you need to decide if you want to install GNUnet from the release "
 "tarball or from git. If you want to use GNUnet and there is no binary "
@@ -2990,6 +2993,12 @@ msgid ""
 "you want to develop using the most recent build, you should go with the <a "
 "href=\"https://git.gnunet.org/\">git repository</a>."
 msgstr ""
+"À présent, vous devez décider si vous souhaitez installer GNUnet à partir "
+"des versions d'archive tar ou bien à partir de git. Si vous souhaitez "
+"utiliser GNUnet et qu'il n'y a pas de compilation binaire disponible pour "
+"votre version OS, vous devriez opter pour la version d'archive tar. Si vous "
+"souhaitez développer en utilisant la version la plus récente, vous devriez "
+"prendre la <a href=\"https://git.gnunet.org/\">base de donnée git</a>."
 
 #: template/install.html.j2:96
 msgid "To compile gnunet from the git source you can do so by entering:"
