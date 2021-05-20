@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-12 14:14+0200\n"
-"PO-Revision-Date: 2021-03-20 10:40+0000\n"
+"PO-Revision-Date: 2021-05-21 14:59+0000\n"
 "Last-Translator: Shorouk Hassouna <shoroukhassuna@gmail.com>\n"
-"Language-Team: Arabic <http://weblate.taler.net/projects/gnunet/website/ar/"
-">\n"
+"Language-Team: Arabic <http://weblate.taler.net/projects/gnunet/website/ar/>"
+"\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,23 +79,23 @@ msgstr "التطبيقات"
 
 #: common/navigation.j2.inc:44
 msgid "Community"
-msgstr ""
+msgstr "المجتمع"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
 msgid "Engage"
-msgstr ""
+msgstr "اشترك"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
-msgstr ""
+msgstr "مشروعات GSoC"
 
 #: common/navigation.j2.inc:50
 msgid "Copyright for Contributors"
-msgstr ""
+msgstr "حق النشر للمشتركين"
 
 #: common/navigation.j2.inc:51
 msgid "IRC Archive"
-msgstr ""
+msgstr "ارشيف IRC"
 
 #: common/navigation.j2.inc:58
 msgid "Development"
@@ -107,11 +107,11 @@ msgstr "هندسة النظام"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
 msgid "Roadmap"
-msgstr ""
+msgstr "خريطة الطريق"
 
 #: common/navigation.j2.inc:65 template/gnurl.html.j2:186
 msgid "Source Code"
-msgstr ""
+msgstr "Source Code"
 
 #: common/navigation.j2.inc:66
 #, fuzzy
@@ -121,13 +121,11 @@ msgstr "التوثيق"
 
 #: common/navigation.j2.inc:67
 msgid "Continuous Integration"
-msgstr ""
+msgstr "الدمج المستمر"
 
 #: common/navigation.j2.inc:68
-#, fuzzy
-#| msgid "Development"
 msgid "Development Tutorial"
-msgstr "تطوير"
+msgstr "درس التطوير"
 
 #: common/navigation.j2.inc:79
 msgid "Documentation"
@@ -147,7 +145,7 @@ msgstr "مقاطع الڤيديو"
 
 #: common/navigation.j2.inc:85 template/glossary.html.j2:6
 msgid "Glossary"
-msgstr ""
+msgstr "قائمة المصطلحات"
 
 #: common/navigation.j2.inc:86
 msgid "Handbook"
