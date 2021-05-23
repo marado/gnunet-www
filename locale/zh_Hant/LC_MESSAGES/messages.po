@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-12 14:14+0200\n"
-"PO-Revision-Date: 2021-04-25 04:48+0000\n"
+"PO-Revision-Date: 2021-05-23 22:10+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -25,12 +25,10 @@ msgid "GNUnet"
 msgstr "GNUnet"
 
 #: common/base.j2:6 common/news.j2:6
-#, fuzzy
 msgid "GNU's framework for secure p2p networking"
 msgstr "GNU為安全p2p制定的網路框架"
 
 #: common/footer.j2.inc:7
-#, fuzzy
 msgid "Contact"
 msgstr "聯絡"
 
@@ -43,12 +41,10 @@ msgid "About GNUnet"
 msgstr "關於GNUnet"
 
 #: common/footer.j2.inc:14 common/navigation.j2.inc:64
-#, fuzzy
 msgid "Bug Tracker"
 msgstr "Bug Tracker"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
-#, fuzzy
 msgid "Copyright Assignment"
 msgstr "版權轉讓"
 
@@ -83,7 +79,6 @@ msgid "Community"
 msgstr "社群"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
-#, fuzzy
 msgid "Engage"
 msgstr "從事"
 
@@ -96,12 +91,10 @@ msgid "Copyright for Contributors"
 msgstr "貢獻者的版權"
 
 #: common/navigation.j2.inc:51
-#, fuzzy
 msgid "IRC Archive"
 msgstr "IRC檔案"
 
 #: common/navigation.j2.inc:58
-#, fuzzy
 msgid "Development"
 msgstr "發展"
 
@@ -110,7 +103,6 @@ msgid "System Architecture"
 msgstr "系統架構"
 
 #: common/navigation.j2.inc:63 template/roadmap.html.j2:6
-#, fuzzy
 msgid "Roadmap"
 msgstr "藍圖"
 
@@ -127,12 +119,10 @@ msgid "Continuous Integration"
 msgstr "持續整合"
 
 #: common/navigation.j2.inc:68
-#, fuzzy
 msgid "Development Tutorial"
 msgstr "開發教學"
 
 #: common/navigation.j2.inc:79
-#, fuzzy
 msgid "Documentation"
 msgstr "相關文件"
 
@@ -141,7 +131,6 @@ msgid "Install"
 msgstr "安裝"
 
 #: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
-#, fuzzy
 msgid "Use"
 msgstr "使用"
 
@@ -158,7 +147,6 @@ msgid "Handbook"
 msgstr "手冊"
 
 #: common/navigation.j2.inc:88
-#, fuzzy
 msgid "REST API"
 msgstr "REST API"
 
@@ -167,9 +155,8 @@ msgid "FAQ"
 msgstr "常見問答"
 
 #: common/old-news.j2.inc:10 template/news/index.html.j2:11
-#, fuzzy
 msgid "News posts about changes related to GNUnet such as releases and events"
-msgstr "有關與GNUnet相關的更改(例如發行和事件)的新聞"
+msgstr "有關與GNUnet相關的更改（例如發行和事件）的新聞"
 
 #: common/old-news.j2.inc:15 template/news/index.html.j2:16
 msgid "subscribe to our RSS feed"
