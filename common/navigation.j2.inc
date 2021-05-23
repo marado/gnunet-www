@@ -65,7 +65,7 @@
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/doxygen/">{{ _("Source Code Documentation") }}</a></li>
           <li><a class="dropdown-item" href="https://buildbot.gnunet.org/" target="_blank">{{ _("Continuous Integration") }}</a></li>
-          <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/tutorial/gnunet-tutorial.html">{{ _("Development Tutorial") }}</a></li>
+          <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/tutorial/tutorial.html">{{ _("Development Tutorial") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('gnurl.html') }}">libgnurl</a></li>
         </ul>
       </li>
