@@ -1,20 +1,7 @@
 #!/bin/sh
 
-# This file is part of TALER
-# (C) 2019 GNUnet e.V.
-#
-# This is very simple POSIX sh script which
-# identifies the first matching
-# python3 identifier in $PATH and produces
-# configure.py from configure.py.in, and then
-# calls the new executable configure.py.
-#
-# It should be portable on Unices. Report bugs on
-# the bugtracker if you discover that it isn't
-# working as intended.
-#
-# Authors:
-# Author: ng0 <ng0@taler.net>
+# This file is part of GNU Taler.
+# (C) 2020 Taler Systems S.A.
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted.
@@ -30,24 +17,31 @@
 #
 # SPDX-License-Identifier: 0BSD
 
-# we invoke configure not as a symlink but as a copy,
-# so we have to use a fixed location for the repository!
-dir=$(dirname "$(readlink -- "$0")")/build-system/taler-build-scripts
-. $dir/sh/lib.sh/existence.sh
-. $dir/sh/lib.sh/existence_python.sh
+# This script checks if a suitable python3 executable is installed and then
+# executes the actual configure logic written in Python.
 
 scriptpath=build-system/taler-build-scripts
 
 if ! test -d "$scriptpath"; then
   echo "fatal error: taler-build-scripts not found at $scriptpath" >&2
+  echo "hint: did you run './bootstrap'?" >&2
   exit 1
 fi
 
+# Check that the python3 executable is on the PATH.
+# This follows PEP 394 (https://www.python.org/dev/peps/pep-0394/).
+if ! python3 --version >/dev/null 2>&1; then
+  echo "error: python3 not found" >&2
+  exit 1
+fi
+
+# Let python3 check that its own version is okay for us.
+python3 "$scriptpath/pyvercheck.py" || exit $?
+
+# Allow Python to find libraries that are checked into the build system git.
 export PYTHONPATH="$scriptpath:${PYTHONPATH:-}"
 
+export TALERBUILDSYSTEMDIR=./build-system
+
 # Call configure.py, assuming all went well.
-# $1 is read by configure.py as the prefix.
-# If $1 is empty, the python script checks the
-# environment for PREFIX. We might need more
-# variables and switches, such as DESTDIR.
-exec "$PYTHON" ./configure.py $@
+python3 $TALERBUILDSYSTEMDIR/configure.py "$@"

@@ -9,6 +9,77 @@
   <div class="container">
     <div class="row">
       <div class="col-10">
+       <img class="img-fluid" src="../static/images/arch.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <h2>{{ _("Foundations") }}</h2>
+        <p>
+          {% trans %}
+          The foundations of GNUnet are a distributed hash
+          table (R5N), an SCTP-like end-to-end encrypted
+          messaging layer (CADET), a public key infrastructure
+          (GNS) and a pluggable transport system (TRANSPORT).<br>
+          Using public keys for addresses
+          and self-organizing decentralized routing algorithms,
+          these subsystems replace the traditional TCP/IP stack.
+          {% endtrans %}
+        </p>
+
+      </div>
+      <div class="col-md">
+        <h2>{{ _("Security") }}</h2>
+
+        <p>
+          {% trans %}
+          GNUnet is implemented using a multi-process architecture.
+          Each subsystem runs as a separate process, providing
+          fault isolation and enabling tight permissions to be
+          granted to each subsystem.  Naturally, the
+          implementation is a <a href="https://www.gnu.org/">GNU</a>
+          package, and will always remain free software.
+          {% endtrans %}
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md">
+        <h2>{{ _("System architecture") }}</h2>
+        <p>
+        Read more about the system architecture in the corresponding section of our <a href="https://docs.gnunet.org/handbook/gnunet.html#System-Architecture" target="_blank">handbook</a>.
+        </p>
+      </div>
+      <div class="col-md">
+        <h2>{{ _("Subsystems") }}</h2>
+        <p>
+        Read more about the subsystems (or GNUnet services) in the corresponding section of our <a href="https://docs.gnunet.org/handbook/gnunet.html#Code-overview" target="_blank">handbook</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md">
+        <h2>{{ _("libgnunetutil") }}</h2>
+        <p>
+        libgnunetutil is the fundamental library that all GNUnet code builds upon. Ideally, this library should contain most of the platform dependent code (except for user interfaces and really special needs that only few applications have). Read <a href="https://docs.gnunet.org/handbook/gnunet.html#libgnunetutil">more</a>.
+        </p>
+      </div>
+      <div class="col-md">
+        <h2>{{ _("APIs") }}</h2>
+        <p>
+        GNUnet offers a variety of APIs for <a href="https://docs.gnunet.org/handbook/gnunet.html#Interprocess-communication-API-_0028IPC_0029" target="_blank">accessing services</a> (using IPC), <a href="https://docs.gnunet.org/handbook/gnunet.html#Service-API">running services</a>, <a href="https://docs.gnunet.org/handbook/gnunet.html#Message-Queue-API">message queues</a>, or <a href="https://docs.gnunet.org/handbook/gnunet.html#Cryptography-API" target="_blank">cryptographic operations</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+     <div class="col-10">
         <img class="img-fluid border rounded" src="../static/images/gnunet-arch-full.svg">
       </div>
       <div class="col-2 d-none d-sm-block">
@@ -45,70 +116,6 @@
           <dt>dashed</dt>
           <dd>in planning</dd>
         </dl>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md">
-        <h2>{{ _("Foundations") }}</h2>
-        <p>
-          {% trans %}
-          The foundations of GNUnet are a distributed hash
-          table (R5N), an SCTP-like end-to-end encrypted
-          messaging layer (CADET), a public key infrastructure
-          (GNS) and a pluggable transport system (TRANSPORT).<br>
-          Using public keys for addresses
-          and self-organized decentralized routing algorithms,
-          these subsystems replace the traditional TCP/IP stack.
-          {% endtrans %}
-        </p>
-
-      </div>
-      <div class="col-md">
-        <h2>{{ _("Security") }}</h2>
-
-        <p>
-          {% trans %}
-          GNUnet is implemented using a multi-process architecture.
-          Each subsystem runs as a separate process, providing
-          fault-isolation and enabling tight permissions to be
-          granted to each subsystem.  Naturally, the
-          implementation is a <a href="https://www.gnu.org/">GNU</a>
-          package, and will always remain free software.
-          {% endtrans %}
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md">
-        <h2>{{ _("System architecture") }}</h2>
-        <p>
-        Read more about the system architecure in the respective section of our <a href="https://docs.gnunet.org/handbook/gnunet.html#System-Architecture" target="_blank">handbook</a>.
-        </p>
-      </div>
-      <div class="col-md">
-        <h2>{{ _("Subsystems") }}</h2>
-        <p>
-        Read more about the subsystems (or GNUnet services) in the respective section of our <a href="https://docs.gnunet.org/handbook/gnunet.html#Code-overview" target="_blank">handbook</a>.
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md">
-        <h2>{{ _("libgnunetutil") }}</h2>
-        <p>
-        libgnunetutil is the fundamental library that all GNUnet code builds upon. Ideally, this library should contain most of the platform dependent code (except for user interfaces and really special needs that only few applications have). Read <a href="https://docs.gnunet.org/handbook/gnunet.html#libgnunetutil">more</a>.
-        </p>
-      </div>
-      <div class="col-md">
-        <h2>{{ _("APIs") }}</h2>
-        <p>
-        GNUnet offers variaty of APIs for <a href="https://docs.gnunet.org/handbook/gnunet.html#Interprocess-communication-API-_0028IPC_0029" target="_blank">accessing services</a> (using IPC), <a href="https://docs.gnunet.org/handbook/gnunet.html#Service-API">running services</a>, <a href="https://docs.gnunet.org/handbook/gnunet.html#Message-Queue-API">message queues</a>, or <a href="https://docs.gnunet.org/handbook/gnunet.html#Cryptography-API" target="_blank">cryptographic operations</a>.
-        </p>
       </div>
     </div>
   </div>

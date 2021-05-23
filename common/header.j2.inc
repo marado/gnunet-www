@@ -55,7 +55,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="{{ url_localized('news/rss.xml') }}" />
+    <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="{{ url_localized('rss.xml') }}" />
 
     <!-- opengraph -->
     <!--

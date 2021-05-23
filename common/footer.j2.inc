@@ -27,7 +27,7 @@
     <p>
       Copyright &copy;
       <a href="{{ url_localized('ev.html') }}">GNUnet e.V.</a>
-      2001 &mdash; 2020.
+      2001 &mdash; 2021.
       <a href="https://git.gnunet.org/www.git">{{ _("Source code of this site.") }}</a>
       <a href="{{ url_localized('contact.html') }}">{{ _("Report issues with this website.") }}</a>
     </p>

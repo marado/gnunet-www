@@ -7,13 +7,11 @@
   </header>
 
   <div class="row container justify-content-center">
-    <div class="alert" style="background-color: #419edb;">
-      <div class="alert-content">
+    <div class="alert alert-info">
 {% trans %}
           Notice: GNUnet is still undergoing major development. It is
           largely <i>not yet ready</i> for usage beyond developers.
 {% endtrans %}
-      </div>
     </div>
 {% trans %}
 <p>Please be aware that this project is still in an early alpha
@@ -32,12 +30,12 @@ If you have any queries about the installation or the usage, please <a href="eng
     within your Operating System. GNUnet is reportedly available for at least:
     <ul>
       <li><a href="https://pkgs.alpinelinux.org/package/edge/testing/x86_64/gnunet">Alpine</a></li>
-      <li><a href="https://www.archlinux.org/packages/community/x86_64/gnunet/">Arch</a></li>
+      <li><a href="https://aur.archlinux.org/packages/gnunet/">Arch (AUR)</a></li>
       <li><a href="https://packages.debian.org/search?keywords=gnunet">Debian</a></li>
       <li><a href="https://copr.fedorainfracloud.org/coprs/yosl/gnunet/">Fedora (Copr)</a></li>
       <li><a href="https://guix.gnu.org/en/packages/G/">Guix</a></li>
       <li><a href="https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnunet.rb">Homebrew</a></li>
-      <li><a href="https://nixos.org/nixos/packages.html?attr=gnunet&channel=nixpkgs-unstable&query=gnunet">NixOS</a></li>
+      <li><a href="https://search.nixos.org/packages?from=0&size=50&sort=relevance&query=gnunet">NixOS</a></li>
       <li><a href="install-on-openwrt.html">OpenWrt</a></li>
     </ul>
     If GNUnet is available for your Operating System and it is missing,
@@ -46,12 +44,12 @@ If you have any queries about the installation or the usage, please <a href="eng
     get in touch with us at gnunet-developers@gnu.org if you require
     help with this job.
 
-    If you were using an Operating System with the Alpine package manager,
+    If you were using an Operating System with the APT package manager,
     GNUnet could be installed as simple as:
     {% endtrans %}
   </p>
   <code class="block">
-    $ apk add gnunet
+    $ apt-get install gnunet
   </code>
   <p>
    Please beware that some distributions may include outdated GNUnet packages!
@@ -96,7 +94,7 @@ If you have any queries about the installation or the usage, please <a href="eng
   </div>
   <p>
    {% trans %}
-   Alternatively, get the sources from git by entering:
+   To compile gnunet from the git source you can do so by entering:
    {% endtrans %}
   </p>
   <code class="block">
@@ -153,15 +151,15 @@ If you have any queries about the installation or the usage, please <a href="eng
 <!--
   <div class="row container justify-content-center text-center">
     <div class="col-md">
-      <p><a href="install-on-ubuntu1804.html"><img src="{{ url('static/images/ubuntu-logo32.png') }}" class="distro-logo"></a></p>
+      <p><a href="install-on-ubuntu1804.html"><img src="{{ url('images/ubuntu-logo32.png') }}" class="distro-logo"></a></p>
       <h3>Ubuntu 18.04</h3>
     </div>
     <div class="col-md">
-      <p><a href="install-on-debian9.html"><img src="{{ url('static/images/debian-logo.svg') }}" class="distro-logo"></a></p>
+      <p><a href="install-on-debian9.html"><img src="{{ url('images/debian-logo.svg') }}" class="distro-logo"></a></p>
       <h3>Debian 9</h3>
     </div>
     <div class="col-md">
-      <p><a href="install-on-netbsd.html"><img src="{{ url('static/images/NetBSD_Logo.svg') }}" class="distro-logo"></a></p>
+      <p><a href="install-on-netbsd.html"><img src="{{ url('images/NetBSD_Logo.svg') }}" class="distro-logo"></a></p>
       <h3>NetBSD</h3>
     </div>
   </div>
@@ -171,15 +169,15 @@ If you have any queries about the installation or the usage, please <a href="eng
       <h1><a href="install-on-macos.html">Apple<br/>macOS</a></h1>
     </div>
     <div class="col-md">
-      <p><a href="install-on-archpi.html"><img src="{{ url('static/images/archlinux-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
+      <p><a href="install-on-archpi.html"><img src="{{ url('images/archlinux-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
       <h3>Arch Linux/Arch-Pi</h3>
     </div>
     <div class="col-md">
-      <p><a href="install-on-openwrt.html"><img src ="{{ url('static/images/openwrt-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
+      <p><a href="install-on-openwrt.html"><img src ="{{ url('images/openwrt-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
       <h3>OpenWrt</h3>
     </div>
     <div class="col-md">
-      <p><a href="https://wiki.gentoo.org/wiki/Overlay:Youbroketheinternet"><img alt="gentoo linux" src ="{{ url('static/images/gentoo-logo.svg') }}" class="distro-logo" style="width:170px;height:auto"></a></p>
+      <p><a href="https://wiki.gentoo.org/wiki/Overlay:Youbroketheinternet"><img alt="gentoo linux" src ="{{ url('images/gentoo-logo.svg') }}" class="distro-logo" style="width:170px;height:auto"></a></p>
     </div>
   </div>
 -->

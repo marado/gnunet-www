@@ -13,5 +13,6 @@ fi
 git submodule update --init
 git submodule update --recursive
 git submodule sync
+
 cp build-system/taler-build-scripts/configure ./configure || true
 cp build-system/taler-build-scripts/conf/.style.yapf .style.yapf || true

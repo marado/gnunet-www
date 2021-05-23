@@ -1,53 +1,24 @@
 siteconf:
-  - baseurl: gnunet.org
-    newsloc: /news/
-    newsdir: news
-    rsstitle: GNUnet.org
-    rssdescr: "News posts published by GNUnet about changes related to GNUnet, releases, and events"
-    rssloc:
-    rsslink:
-    rsslang:
+  baseurl: https://gnunet.org/
+  newsloc: /news/
+  newsdir: news
+  rsstitle: GNUnet.org
+  rssdescr: "News posts published by GNUnet about changes related to GNUnet, releases, and events"
+  rssloc:
+  rsslink:
+  rsslang:
 langs_full: &langs
     en: English
+    ar: عربي
     fr: Français
     it: Italiano
     es: Español
     de: Deutsch
-symlinks:
-    - file: frontpage.html
-      targets:
-        - frontpage
-    - file: gsoc.html
-      targets:
-        - gsoc
-    - file: about.html
-      targets:
-        - philosophy
-    - file: gns.html
-      targets:
-        - gns
-    - file: node/about.html
-      targets:
-        - "397"
-staticfiles:
-    - file: favicon.ico
-      targets:
-        - favicon.ico
-    - file: moved.html
-      targets:
-        - frontpage.html
-    - file: robots.txt
-      targets:
-        - robots.txt
-    - file: moved_gsoc.html
-      targets:
-        - gsoc.html
-    - file: moved_about.html
-      targets:
-        - about.html
-    - file: moved_gns.html
-      targets:
-        - gns.html
+    zh_Hant: Chinese
+    hi: Hindi
+    ja: 日本語
+    ko: Korean
+    pt: Português
 meetingnotes:
   2013: 2013-12-27
   2014: 2014-12-28
@@ -56,133 +27,163 @@ meetingnotes:
   2017: 2017-12-27
   2018: 2018-12-27
   2019: 2019-12-27
+  2020: 2020-12-30
 newsposts:
-  - page: 2020-08-0.13.2.html
+  - page: news/2021-05-DISSENS.html
+    date: 2021-05-10
+    title: "DISSENS: Decentralized Identities for Self-sovereign End-users"
+  - page: news/2021-03-0.14.1.html
+    date: 2021-04-04
+    title: GNUnet 0.14.1
+  - page: news/2021-03-gsoc-update.html
+    date: 2021-03-09
+    title: No GSoC projects in 2021
+  - page: news/2020-11-0.14.0.html
+    date: 2020-11-14
+    title: GNUnet 0.14.0
+  - page: news/2020-11-GNSSpec4.html
+    date: 2020-11-11
+    title: GNS Specification Milestone 4/4 and Packaging 1+2
+    abstract:
+    content:
+  - page: news/2020-09-0.13.3.html
+    date: 2020-09-06
+    title: GNUnet 0.13.3
+  - page: news/2020-08-0.13.2.html
     date: 2020-08-14
     title: GNUnet 0.13.2
-  - page: 2020-07-0.13.1.html
+  - page: news/2020-07-0.13.1.html
     date: 2020-07-12
     title: GNUnet 0.13.1
-  - page: 2020-07-0.13.0.html
+  - page: news/2020-07-0.13.0.html
     date: 2020-07-07
     title: GNUnet 0.13.0
-  - page: 2020-06-GNSSpec3.html
+  - page: news/2020-06-GNSSpec3.html
     date: 2020-06-30
     title: GNS Specification Milestone 3/4
     abstract:
     content:
-  - page: 2020-05-GHM_Jun_2020.html
+  - page: news/2020-05-GHM_Jun_2020.html
     date: 2020-05-28
     title: GNUnet Hacker Meeting 2020
-  - page: 2020-01-0.12.2.html
+  - page: news/2020-01-0.12.2.html
     date: 2020-01-13
     title: GNUnet 0.12.2
-  - page: 2020-01-GNSSpec2.html
+  - page: news/2020-01-GNSSpec2.html
     date: 2020-01-12
     title: GNS Specification Milestone 2/4
     abstract:
     content:
-  - page: 2019-12-UpcomingTalks.html
+  - page: news/2019-12-UpcomingTalks.html
     date: 2019-12-26
     title: Upcoming GNUnet Talks
-  - page: 2019-0.12.1.html
+  - page: news/2019-0.12.1.html
     date: 2019-12-25
     title: GNUnet 0.12.1
-  - page: 2019-0.12.0.html
+  - page: news/2019-0.12.0.html
     date: 2019-12-20
     title: GNUnet 0.12.0
     abstract:
     content:
-  - page: 2019-11-ICANNUpdate.html
+  - page: news/2019-11-ICANNUpdate.html
     date: 2019-11-10
     title: GNS@ICANN66
     abstract:
     content:
-  - page: 2019-0.11.8.html
+  - page: news/2019-0.11.8.html
     date: 2019-10-30
     title: GNUnet 0.11.8
     abstract:
     content:
-  - page: 2019-0.11.7.html
+  - page: news/2019-0.11.7.html
     date: 2019-10-27
     title: GNUnet 0.11.7
     abstract:
     content:
-  - page: 2019-10-ICANNPanel.html
+  - page: news/2019-10-ICANNPanel.html
     date: 2019-10-20
     title: GNUnet invited to ICANN Panel
     abstract:
     content:
-  - page: 2019-10-GNSSpec1.html
+  - page: news/2019-10-GNSSpec1.html
     date: 2019-10-04
     title: GNS Specification Milestone 1/4
     abstract:
     content:
-  - page: 2019-0.11.6.html
+  - page: news/2019-0.11.6.html
     date: 2019-07-24
     title: GNUnet 0.11.6
     abstract:
     content:
-  - page: 2019-07-GHM_Aug_2019.html
+  - page: news/2019-07-GHM_Aug_2019.html
     date: 2019-07-17
     title: GNUnet Hacker Meeting 2019
     abstract:
     content:
-  - page: 2019-06-DSTJ.html
+  - page: news/2019-06-DSTJ.html
     date: 2019-06-28
     title: "Peer DSTJ is dead, long live peer Y924"
     abstract:
     content:
-  - page: 2019-0.11.5.html
+  - page: news/2019-0.11.5.html
     date: 2019-06-05
     title: GNUnet 0.11.5
     abstract:
     content:
-  - page: 2019-06.html
+  - page: news/2019-06.html
     date: 2019-06-01
     title: 2019-06
     abstract:
     content:
-  - page: 2019-0.11.4.html
+  - page: news/2019-0.11.4.html
     date: 2019-05-12
     title: GNUnet 0.11.4
     abstract:
     content:
-  - page: 2019-0.11.3.html
+  - page: news/2019-0.11.3.html
     date: 2019-04-07
     title: GNUnet 0.11.3
     abstract:
     content:
-  - page: 2019-0.11.2.html
+  - page: news/2019-0.11.2.html
     date: 2019-04-04
     title: GNUnet 0.11.2
     abstract:
     content:
-  - page: 2019-0.11.1.html
+  - page: news/2019-0.11.1.html
     date: 2019-04-03
     title: GNUnet 0.11.1
     abstract:
     content:
-  - page: 2019-0.11.0.html
+  - page: news/2019-0.11.0.html
     date: 2019-02-28
     title: GNUnet 0.11.0
     abstract:
     content:
-  - page: 2019-02.html
+  - page: news/2019-02.html
     date: 2019-02-01
     title: Google Summer of Code 2019
     abstract:
     content:
-  - page: 2018-07.html
+  - page: news/2018-07.html
     date: 2018-07-01
     title: Second GNUnet Hacker Meeting 2018
     abstract:
     content:
-  - page: 2018-06.html
+  - page: news/2018-06.html
     date: 2018-06-06
     title: GNUnet 0.11.0pre66
     abstract:
     content:
+  - page: news/2013-12-28-archived-typos-pkeys.html
+    date: 2013-12-28
+    title: Typo-Protected Public Keys
+  - page: news/2013-11-15-special-use-gns.html
+    date: 2013-11-15
+    title: Special-Use Domain Names of Peer-to-Peer Name Systems
+  - page: news/2011-11-24-archived-vfork.html
+    date: 2011-11-24
+    title: vfork and the signal race
 # <!-- FIXME 2015: source only available on yt. <li>Ludovic Courtès, <a href="">Reproducible Software Deployment with GNU Guix</a>, Inria</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Julian Kirsch, <a href="">"Knocking down the HACIENDA"</a>, GNU Hacker Meeting 2014</li> -->
 # <!-- FIXME 2014: no source link on web. <li>Peter Schaar, <a href="">"Technik, Recht und Überwachung"</a>, Technische Universität München</li> -->
@@ -221,11 +222,11 @@ videoslist:
     authors:
       - Christian Grothoff
     location: IETF
-    description: 
+    description:
     name: GNU Name System
     sources:
       - https://git.gnunet.org/gnunet-videos-2019.git/plain/IETF104/GNU_Name_System_-_2019_Edition_IETF104__Christian_Grothoff.webm
-    mirror_sources: 
+    mirror_sources:
     slides:
       - https://git.gnunet.org/presentations.git/plain/IETF104/slides-104-dinrg-gnu-name-system-00.pdf
     comment:
@@ -233,265 +234,265 @@ videoslist:
     authors:
       - t3sserakt
     location: Datenspuren 2018
-    description: 
+    description:
     name: State of the GNUnet
     sources:
       - https://git.gnunet.org/gnunet-videos-2018.git/plain/Datenspuren2018/DS2018-9337-deu-State_of_the_GNUnet_webm-hd.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2018
     authors:
       - sva
     location: hack.lu
-    description: 
+    description:
     name: You Broke The Internet - Let's Make a GNU One
     sources:
       - https://git.gnunet.org/gnunet-videos-2018.git/plain/hack.lu/Hack.lu_2018_LT_-_GNUnet_-_You_Broke_The_Internet_Lets_Make_A_GNU_One__sva.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2018
     authors:
       - Christian Grothoff
-    location: 
-    description: 
+    location:
+    description:
     name: GNS - The GNU Name System - Overview
     sources:
       - https://git.gnunet.org/gnunet-videos-2018.git/plain/GNS_-_The_GNU_Name_System_-_Overview.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2017
     authors:
       - Christian Grothoff
     location: Technische Universitaet Muenchen
-    description: 
+    description:
     name: Big Data, Little Data, No Data
     sources:
       - https://git.gnunet.org/gnunet-videos-2017.git/plain/Big_Data-Little_Data-No_Data.mp4
-    mirror_sources: 
+    mirror_sources:
     slides:
       - https://git.gnunet.org/presentations.git/plain/grothoff/grothoff_bigdata-littledata-nomoredata_tum2017.pdf
-    comment: 
+    comment:
   - year: 2017
     authors:
       - lynX
     location: 34C3
-    description: 
+    description:
     name: Three Ways to Enhance Metadata Protection Beyond Tor
     sources:
       - https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-1-eng-Three_Ways_to_Enhance_Metadata_Protection_Beyond_Tor_-_secushareorg_webm-hd.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2017
     authors:
       - t3sserakt
     location: 34C3
-    description: 
+    description:
     name: Modeling Trust in a Distributed Private Social Network
     sources:
       - https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-2-eng-Modeling_Trust_in_a_Distributed_Private_Social_Network_-_secushareorg_webm-hd.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2017
     authors:
       - lynX
     location: 34C3
-    description: 
+    description:
     name: Scalable and privacy-respectful distributed systems - Our chance to avoid cloud computing
     sources:
       - https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-7-eng-Scalable_and_privacy-respectful_distributed_systems_-_Our_chance_to_avoid_cloud_computing_webm-hd.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2017
     authors:
       - lynX
       - Christian Grothoff
     location: 34C3
-    description: 
+    description:
     name: Privacy-Oriented Distributed Networking for an Ethical Internet
     sources:
       - https://git.gnunet.org/gnunet-videos-2017.git/plain/34c3/34c3-chaoswest-6-eng-Privacy-Oriented_Distributed_Networking_for_an_Ethical_Internet_-_including_50_subsystems_of_GNUnet_webm-hd.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2016
     authors:
       - Daniel Golle
     location: Battlemesh v9 (Porto, Portugal)
-    description: 
+    description:
     name: GNUnet For Mesh Communities
     sources:
       - https://git.gnunet.org/gnunet-videos-2016.git/plain/Battlemeshv9/Gnunet%20For%20Mesh%20Communities%20-%20Battlemesh%20v9%20(Porto%20Portugal).mp4
-    mirror_sources: 
+    mirror_sources:
     slides:
       - https://git.gnunet.org/presentations.git/plain/GNUnet_For_Mesh_Communities-Daniel_Golle-Battlemeshv9_Portugal.pdf
-    comment: 
+    comment:
   - year: 2016
     authors:
       - Jeff Burdges
     location: GNU Hacker Meeting 2016
-    description: 
+    description:
     name: Xolotl - A compact mixnet format with stronger forwared secrecy and hybrid anonymity
     sources:
       - https://git.gnunet.org/gnunet-videos-2015.git/plain/GHM%202015/expose-GNUJeffBurdges19aout2016.mp4
     mirror_sources:
       - http://videos.rennes.inria.fr/Workshop-GNUHackersMeetings2016/expose-GNUJeffBurdges19aout2016.mp4
-    slides: 
-    comment: 
+    slides:
+    comment:
   - year: 2016
     authors:
       - t3sserakt
       - xrs
     location: Datenspuren 2016
-    description: 
+    description:
     name: secushare
     sources:
       - https://git.gnunet.org/gnunet-videos-2016.git/plain/Datenspuren2016/DS2016-7775-deu-Secushare_webm-hd.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2015
     authors:
       - Christian Grothoff
     location: PSC 2015
-    description: 
+    description:
     name: "The Architecture of the GNUnet: 45 Subsystems in 45 Minutes"
     sources:
       - https://git.gnunet.org/gnunet-videos-2015.git/plain/psc2015/grothoff.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2015
     authors:
       - t3sserakt
       - demos
     location: Datenspuren 2015
-    description: 
+    description:
     name: Echt Dezentrales Netzwerk
     sources:
       - https://git.gnunet.org/gnunet-videos-2015.git/plain/Datenspuren2015/datenspuren15-7069-de-EDN_-_Echt_Dezentrales_Netzwerk_webm.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2015
     authors:
       - Florian Dold
     location: 32C3
-    description: 
+    description:
     name: Byzantine Fault Tolerance Set Consensus with Efficient Set Reconciliation
     sources:
       - https://git.gnunet.org/gnunet-videos-2015.git/plain/32c3/byzantine-fault-tolerant-set-consensus-with-efficient-set-reconciliation.mp4
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2015
     authors:
       - Daniel Golle
     location: BattleMesh 2015
-    description: 
+    description:
     name: GNUnet in Community Networks
     sources:
       - https://git.gnunet.org/gnunet-videos-2015.git/plain/BattleMeshV8/GNUnet%20in%20Community%20Mesh%20Networks%20+%20Slides%20-%20BattleMeshV8.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Florian Dold
     location: 31C3
-    description: 
+    description:
     name: Electronic Voting and Key Generation in Distributed Systems
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/voting-voting.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Markus Sabadello
       - Suhin Mohan Adapa
     location: 31C3
-    description: 
+    description:
     name: FreedomBox Status Update
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/freedombox-freedombox.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Lucas Fulchir
     location: 31C3
-    description: 
+    description:
     name: why TLS sucks and what I am doing about it
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/fenrir-fenrir.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Nicolas Benes
     location: 31C3
-    description: 
+    description:
     name: Panic! An approach for home routers to securely erase sensitive data
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/do-panic-do-panic.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Christian Grothoff
       - Douwe Korff
       - Jacob Appelbaum
     location: Council of Europe
-    description: 
+    description:
     name: "After Snowden: using law and technology to counter snooping"
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/2014-coe.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Christian Grothoff
       - Florian Dold
     location: 31C3
-    description: 
+    description:
     name: Taler
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/taler-taler.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Markus Benter
     location: 31C3
-    description: 
+    description:
     name: Complex Queries in P2P networks
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/queries-queries.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2014
     authors:
       - Bernd Paysan
     location: 31C3
-    description: 
+    description:
     name: net2o - Reinventing the Internet
     sources:
       - https://git.gnunet.org/gnunet-videos-2014.git/plain/31c3/net2o-net2o.webm
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:
   - year: 2013
     authors:
       - Christian Grothoff
@@ -499,11 +500,11 @@ videoslist:
       - Jacob Appelbaum
       - Richard Stallman
     location: Berlin
-    description: 
+    description:
     name: "You broke the Internet. We're making ourselves a GNU one."
     sources:
       - https://git.gnunet.org/gnunet-videos-2013.git/plain/you%20broke%20the%20internet/internetistschuld.webm
-    mirror_sources: 
+    mirror_sources:
     slides:
       - https://git.gnunet.org/presentations.git/plain/2013-youbroketheinternet-event/grothoff_slides_berlin.pdf
       - https://git.gnunet.org/presentations.git/plain/2013-youbroketheinternet-event/lynx_slides_secushare.pdf
@@ -512,78 +513,78 @@ videoslist:
     authors:
       - Christian Grothoff
     location: GNU Hacker Meeting 2013
-    description: 
+    description:
     name: The GNU Name System and the Future of Social Networking with GNUnet
-    sources: 
+    sources:
     mirror_sources:
       - https://audio-video.gnu.org/video/ghm2013/Christian_Grothoff-The_GNU_Name_System_and_the_Future_of_Social_Networking_with_GNUnet_.webm
-    slides: 
-    comment: 
+    slides:
+    comment:
   - year: 2013
     authors:
       - Christian Grothoff
     location: 30C3
-    description: 
+    description:
     name: The GNU Name System
-    sources: 
+    sources:
     mirror_sources:
       - https://cdn.media.ccc.de/congress/2013/mp4-lq/30c3-5212-en-The_GNU_Name_System_h264-iprod.mp4
-    slides: 
-    comment: 
+    slides:
+    comment:
   - year: 2013
     authors:
       - Markus Teich
     location: Technische Universitaet Muenchen
-    description: 
+    description:
     name: Monkey - generating Useful Bug Reports Automatically
-    sources: 
+    sources:
     mirror_sources:
       - https://media.net.in.tum.de/videos/standalonevideo/video/491
-    slides: 
+    slides:
     comment: TUM internal access
   - year: 2012
     authors:
       - Martin Schanzenbach
     location: Technische Universitaet Muenchen
-    description: 
+    description:
     name: A Censorship-Resistant and Fully Decentralized Naming System
-    sources: 
+    sources:
     mirror_sources:
       - https://media.net.in.tum.de/videoarchive/SS12/Oberseminar/2012+09+19_1600+Design+and+Implementation+of+a+Censorship+Resist/priv/camera.mp4
-    slides: 
-    comment: 
+    slides:
+    comment:
   - year: 2010
     authors:
       - Matthias Wachs
     location: GNU Hacker Meeting 2010
-    description: 
+    description:
     name: GNUnet - Transport and Transport Selection
     sources:
       - https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_-_Transports_and_Transport_Selection.ogv
-    mirror_sources: 
+    mirror_sources:
     slides:
       - https://git.gnunet.org/presentations.git/plain/wachs_ghm_presentation.pdf
-    comment: 
+    comment:
   - year: 2010
     authors:
       - Nathan S. Evan
     location: GNU Hacker Meeting 2010
-    description: 
+    description:
     name: GNUnet Distributed Data Storage - DHT and Distance Vector Transport
     sources:
       - https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/GNUnet_Distributed_Data_Storage_-_DHT_and_Distance_Vector_Transport.ogv
-    mirror_sources: 
+    mirror_sources:
     slides:
       - https://git.gnunet.org/presentations.git/plain/evans_ghm_presentation.pdf
-    comment: 
+    comment:
   - year: 2010
     authors:
       - Christian Grothoff
     location: GNU Hacker Meeting 2010
-    description: 
+    description:
     name: Introduction to the GNUnet Peer-to-Peer Framework
     sources:
       - https://git.gnunet.org/gnunet-videos-2010.git/plain/GHM_Hague/Introduction_to_The_GNUnet_Peer-to-Peer_Framework.ogv
-    mirror_sources: 
-    slides: 
-    comment: 
+    mirror_sources:
+    slides:
+    comment:

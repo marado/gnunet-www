@@ -46,7 +46,7 @@
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ url_localized('engage.html') }}">{{ _("Engage") }} </a></li>
           <li><a class="dropdown-item" href="{{ url_localized('gsoc.html') }}">{{ _("GSoC Projects") }}</a></li>
-          <li><a class="dropdown-item" href="{{ url_localized('ev.html') }}">{{ _("GNUnet e.V.") }}</a></li>
+          <li><a class="dropdown-item" href="{{ url_localized('ev.html') }}">GNUnet e.V.</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('copyright.html') }}">{{ _("Copyright for Contributors") }} </a></li>
 	  <!-- li><a class="dropdown-item" href="https://old.gnunet.org/bot/log/gnunet">{{ _("IRC Archive") }}</a></li -->
         </ul>
@@ -60,9 +60,7 @@
         <ul class="dropdown-menu" aria-labelledby="navbarMain">
           <li><a class="dropdown-item" href="{{ url_localized('architecture.html') }}">{{ _("System Architecture") }}</a></li>
 
-<!-- TODO fill with content
-
-          <li><a class="dropdown-item" href="{{ url_localized('roadmap.html') }}">{{ _("Roadmap") }}</a></li>-->
+          <li><a class="dropdown-item" href="{{ url_localized('roadmap.html') }}">{{ _("Roadmap") }}</a></li>
           <li><a class="dropdown-item" href="https://bugs.gnunet.org" target="_blank">{{ _("Bug Tracker") }}</a></li>
           <li><a class="dropdown-item" href="https://git.gnunet.org" target="_blank">{{ _("Source Code") }}</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/doxygen/">{{ _("Source Code Documentation") }}</a></li>
@@ -86,6 +84,7 @@
 	  <li><a class="dropdown-item" href="{{ url_localized('video.html') }}">{{ _("Videos") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('glossary.html') }}">{{ _("Glossary") }}</a></li>
 	  <li><a class="dropdown-item" target="_blank" href="https://docs.gnunet.org/handbook/gnunet.html">{{ _("Handbook") }}</a></li>
+    <li><a class="dropdown-item" target="_blank" href="{{ url_localized('livingstandards.html') }}">Living Standards</a></li>
           <li><a class="dropdown-item" target="_blank" href="https://rest.gnunet.org/">{{ _("REST API") }}</a></li>
           <li><a class="dropdown-item" href="{{ url_localized('faq.html') }}">{{ _("FAQ") }}</a></li>
           <li><a class="dropdown-item" href="https://bib.gnunet.org/date.html" target="_blank">{{ _("Bibliography") }}</a></li>

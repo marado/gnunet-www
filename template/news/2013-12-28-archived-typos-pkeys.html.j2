@@ -1,0 +1,16 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+  <h1>Typo-Protected Public Keys</h1>
+<p>
+  <b>This is an imported news item from the old Drupal GNUnet homepage.</b>
+</p>
+<p>
+When users type in public keys (such as the 53-characters of a GNS zone), they might make typos. The usual way to fix typos is to add a checksum, further increasing the length of the sequence that has to be typed in.
+<br>
+We can fix this by including the checksum of the public key in the public key itself, simply by trying new private keys until the corresponding public key happens to have a checksum (over the other bits) in the bits designated for the checksum. If a checksum is 16 bits, we would only need to try 216 keys. The basic idea of brute-forcing keys to match a particular pattern <a href="https://web.archive.org/web/20141008173738/https://bitcointalk.org/index.php?topic=84569.0">was proposed before</a> for creating "vanity" public keys, but this might be another practical variant.
+</p>
+<p>
+<b>Acknowledgements</b><br/>
+The idea popped up in a discussion on the need for short public keys for GNS with Dan Bernstein and Tanja Lange at 30c3.
+</p>
+{% endblock body_content %}

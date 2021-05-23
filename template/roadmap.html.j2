@@ -4,25 +4,34 @@
   <div class="row">
     <div class="container text-center">
       <h1>{{ _("Roadmap") }}</h1>
-      <section>
-        <p>
-         This is our roadmap.
-        </p>
-      </section>
     </div>
+    <p>
+      This is our roadmap. We distinguish between short, medium and long term goals.
+      The roadmap is subject to change and its primary purpose it to indicate the current work in progress and future work as well as the path to a stable release. Goals which are currently in active development are marked in <b>bold</b>.
+    </p>
     <ul class="timeline">
       <li>
         <section class="item-preview">
           <header>
             <h3>Short term</h3>
             <p class="item-date">
-            0.13.x
+            &le;0.16
             </p>
             <p class="item-abstract">
-            <ul>
-              <li>Setup and use names and numbers registration (GANA) for GNUnet
-              subsystems.</li>
-              <li>GNU Name System technical specification.</li>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="far fa-square"></i></span>DHT:
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="far fa-square"></i></span>Improvements including signed paths and stability improvements. Technical specification.</li>
+                  <li><span class="fa-li"><i class="far fa-square"></i></span><a href="https://lsd.gnunet.org/lsd0000/">Technical specification</a>.</li>
+                </ul>
+              </li>
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>SET:</b>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>Improvements to code quality and correctness</b>.</li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><a href="https://lsd.gnunet.org/lsd0003/"><b>Technical specification</a></b>.</li>
+                </ul>
+              </li>
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>RECLAIM: <a href="https://lsd.gnunet.org/lsd0002/">Technical specification</a></b>.</li>
              </ul>
             </p>
           </header>
@@ -34,17 +43,23 @@
           <header>
             <h3>Medium term</h3>
             <p class="item-date">
-            0.14 and beyond
+            &gt;0.16
             </p>
             <p class="item-abstract">
-            <ul>
-              <li>TNG: Transport rewrite complete including basic service, communicators and NAT.</li>
-              <li>CORE/CADET performance and correctness improvements.</li>
-              <li>DHT improvements including signed paths and stability improvements.</li>
-              <li>SET improvements to code quality and correctness.</li>
-              <li>CONVERSATION improvements to performance, latency hiding and usability.</li>
-              <li>Stable and usable documentation.</li>
-              <li>GNUnet packages available and up-to-date in distributions.</li>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>TNG</b>: Transport rewrite. [<a href="https://bugs.gnunet.org/search.php?tag_string=tng">Open issues</a>]
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>TNG service</b></li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>TCP communicator</b></li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>UDP communicator</b></li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>UNIX Domain Socket communicator</b></li>
+                  <li><span class="fa-li"><i class="far fa-square"></i></span>NAT</li>
+                </ul>
+              </li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>CORE/CADET: Performance and correctness improvements.</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>CONVERSATION improvements to performance, latency hiding and usability.</li>
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>Stable and usable documentation.</b></li>
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>GNUnet packages available and up-to-date in distributions.</b></li>
              </ul>
             </p>
           </header>
@@ -59,12 +74,12 @@
             1.x
             </p>
             <p class="item-abstract">
-            <ul>
-              <li>Stable release.</li>
-              <li>Onion routing with RPS</li>
-              <li>Mix network, pEp integration on top of mix network</li>
-              <li>Collaborative filtering / news distribution</li>
-              <li>Improved FS design, proper integration with GNS</li>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Stable release.</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Onion routing with RPS</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Mix network, pEp integration on top of mix network</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Collaborative filtering / news distribution</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Improved FS design, proper integration with GNS</li>
              </ul>
             </p>
           </header>

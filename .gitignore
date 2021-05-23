@@ -1,22 +1,9 @@
-./*.html
-common/*.inc
-
 old/
-
-*.mo
-locale/*/
-locale/messages.pot
 
 videos/grothoff2014fossa.webm
 videos/grothoff2014fossa.ogv
 
 rendered/
-en/
-de/
-fr/
-it/
-es/
-ru/
 
 __pycache__
 *.pyc
@@ -35,3 +22,10 @@ config.mk
 .style.yapf
 help/
 configure
+locale/ar/LC_MESSAGES/messages.mo
+locale/hi/LC_MESSAGES/messages.mo
+locale/ja/LC_MESSAGES/messages.mo
+locale/ko/LC_MESSAGES/messages.mo
+locale/pt/LC_MESSAGES/messages.mo
+locale/zh_Hant/LC_MESSAGES/messages.mo
+

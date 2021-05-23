@@ -19,7 +19,7 @@
 	  hierarchy, GNS uses a directed graph.  Naming conventions
 	  are similar to DNS, but queries and replies are private even
 	  with respect to peers providing the answers.  The integrity of
-	  records and privacy of look-ups is cryptographically secured.
+	  records and privacy of look-ups are cryptographically secured.
 	  <!-- Too technical: GNS integrates
 	       a robust, efficient and instant key revocation mechanism. -->
         {% endtrans %}
@@ -37,8 +37,8 @@
       <section>
       <h3>{{ _("Self-sovereign, decentralized identity provider") }}</h3>
       <p>
+        <a href="{{ url_localized('reclaim/index.html') }}">re:claimID</a>
         {% trans %}
-        <a href="https://reclaim.gnunet.org/">re:claimID</a>
         is a decentralized Identity Provider (IdP) service built in top of the
         GNU Name System. It allows users to securely share personal information
         with websites using standardized protocols (OpenID Connect).
@@ -162,7 +162,7 @@
           {% trans %}
           <a href="https://gitlab.com/gnunet-messenger/cadet-gtk">Cadet-GTK</a>
           is a convenient but feature-rich graphical application
-          providing messaging using especially the CADET subsystem. It is
+          providing messaging using the CADET subsystem. It is
           developed using GTK and libhandy for a convergent design.
           {% endtrans %}
         </p>
@@ -181,7 +181,7 @@
         <p>
           {% trans %}
           <a href="https://git.gnunet.org/groupchat.git/">groupchat</a>
-          is a terminal user interface providing messaging using especially the CADET subsystem. It is
+          is a terminal user interface providing messaging using the CADET subsystem. It is
           developed using nim. Cadet-GTK and groupchat are planned to be compatible.
           {% endtrans %}
         </p>

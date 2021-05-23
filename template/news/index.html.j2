@@ -19,9 +19,11 @@
           </div>
         </div>
         <div class="row">
+          {% for year, yitem in newsdata|selectattr('date.year', 'gt', 2019)|groupby('date.year')|reverse %}
+          <b>{{ year }}</b>
           <ul class="timeline">
-          {% for item in newsdata %}
-            <li>
+          {% for item in yitem %}
+          <li>
               <section class="item-preview">
                <header>
                   <h3>{{ item['title']|e }}</h3>
@@ -30,14 +32,25 @@
                   </p>
                 </header>
                 <p class="item-abstract">
-                  {{ item['abstract'] }} <br/>
-                  [<a href="{{ item['page'] }}" title="{{ item['date']}}">{{ _("read more") }}</a>]
+                  {{ get_abstract(item['page'], 500) }} <br/>
+                  [<a href="{{ url_localized(item['page']) }}" title="{{ item['date']}}">{{ _("read more") }}</a>]
                 </p>
               </section>
             </li>
           {% endfor %}
           </ul>
+          {% endfor %}
         </div>
+        <h2>
+          {% trans %}
+          News archives:
+          {% endtrans %}
+        </h2>
+        <ul>
+        {% for year, yitem in newsdata|selectattr('date.year', 'lt', 2020)|groupby('date.year')|reverse %}
+          <li><a href="{{ 'oldnews-' + year|string + '.html' }}">{{ year }} ({{yitem|length}})</a></li>
+        {% endfor %}
+        </ul>
       </article>
     </div>
   </div>

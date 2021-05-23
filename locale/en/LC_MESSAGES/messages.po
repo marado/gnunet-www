@@ -1,3 +1,0 @@
-
-#~ msgid "_project_title"
-#~ msgstr "GNUnet is the Next Generation Internet"

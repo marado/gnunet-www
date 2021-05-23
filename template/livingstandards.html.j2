@@ -1,0 +1,27 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+  <div class="container-fluid">
+    <div class="container">
+      <article>
+        <div class="row">
+          <div class="container text-center">
+            <h1>Living Standards</h1>
+            <section>
+              <p>
+                {% trans %}
+                On this page you can find links to our technical specifications.
+                {% endtrans %}
+              </p>
+            </section>
+          </div>
+        </div>
+        <ul>
+          <li><b>LSD0000</b>: The Distributed Hash Table</li>
+          <li><b>LSD0001</b>: <a href="https://lsd.gnunet.org/lsd0001">The GNU Name System</a></li>
+          <li><b>LSD0002</b>: <a href="https://lsd.gnunet.org/lsd0002">re:claimID</a></li>
+          <li><b>LSD0003</b>: <a href="https://lsd.gnunet.org/lsd0003">Byzantine Fault Tolerant Set Reconciliation</a></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+{% endblock body_content %}

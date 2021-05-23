@@ -1,0 +1,3558 @@
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-05-12 14:14+0200\n"
+"PO-Revision-Date: 2021-04-15 10:31+0000\n"
+"Last-Translator: Kanoko Kondo <yves0625@gmail.com>\n"
+"Language-Team: Japanese <http://weblate.taler.net/projects/gnunet/website/ja/"
+">\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: common/base.j2:5 common/news.j2:5
+msgid "GNUnet"
+msgstr "GNUnet"
+
+#: common/base.j2:6 common/news.j2:6
+msgid "GNU's framework for secure p2p networking"
+msgstr "安全な P2P ネットワーキングを可能にする GNU のフレームワーク"
+
+#: common/footer.j2.inc:7
+msgid "Contact"
+msgstr "お問い合わせ"
+
+#: common/footer.j2.inc:8
+msgid "GNUnet e.V."
+msgstr "GNUnet e.V."
+
+#: common/footer.j2.inc:9 template/about.html.j2:6
+msgid "About GNUnet"
+msgstr "GNUnet について"
+
+#: common/footer.j2.inc:14 common/navigation.j2.inc:64
+msgid "Bug Tracker"
+msgstr "バグトラッカー"
+
+#: common/footer.j2.inc:19 template/copyright.html.j2:6
+msgid "Copyright Assignment"
+msgstr "著作権譲渡書"
+
+#: common/footer.j2.inc:20 common/navigation.j2.inc:90
+#: template/developers.html.j2:24
+msgid "Bibliography"
+msgstr "参考文献"
+
+#: common/footer.j2.inc:31
+msgid "Source code of this site."
+msgstr "本サイトのソースコードはこちら。"
+
+#: common/footer.j2.inc:32
+msgid "Report issues with this website."
+msgstr "このウェブサイトの問題を報告する。"
+
+#: common/navigation.j2.inc:38
+msgid "About"
+msgstr "概要"
+
+#: common/navigation.j2.inc:39 common/old-news.j2.inc:7
+#: template/news/index.html.j2:8
+msgid "News"
+msgstr "更新情報"
+
+#: common/navigation.j2.inc:40 template/index.html.j2:289
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: common/navigation.j2.inc:44
+msgid "Community"
+msgstr "コミュニティ"
+
+#: common/navigation.j2.inc:47 template/index.html.j2:292
+msgid "Engage"
+msgstr "参加する"
+
+#: common/navigation.j2.inc:48
+msgid "GSoC Projects"
+msgstr "GSoC プロジェクト"
+
+#: common/navigation.j2.inc:50
+msgid "Copyright for Contributors"
+msgstr "貢献者の著作権"
+
+#: common/navigation.j2.inc:51
+msgid "IRC Archive"
+msgstr "IRC アーカイブ"
+
+#: common/navigation.j2.inc:58
+msgid "Development"
+msgstr "開発"
+
+#: common/navigation.j2.inc:61
+msgid "System Architecture"
+msgstr "システム アーキテクチャ"
+
+#: common/navigation.j2.inc:63 template/roadmap.html.j2:6
+msgid "Roadmap"
+msgstr "ロードマップ"
+
+#: common/navigation.j2.inc:65 template/gnurl.html.j2:186
+msgid "Source Code"
+msgstr "ソースコード"
+
+#: common/navigation.j2.inc:66
+msgid "Source Code Documentation"
+msgstr "ドキュメンテーション"
+
+#: common/navigation.j2.inc:67
+msgid "Continuous Integration"
+msgstr "継続的なインテグレーション"
+
+#: common/navigation.j2.inc:68
+msgid "Development Tutorial"
+msgstr "チュートリアル"
+
+#: common/navigation.j2.inc:79
+msgid "Documentation"
+msgstr "資料"
+
+#: common/navigation.j2.inc:82 template/install.html.j2:6
+msgid "Install"
+msgstr "インストール"
+
+#: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
+msgid "Use"
+msgstr "利用"
+
+#: common/navigation.j2.inc:84
+msgid "Videos"
+msgstr "動画"
+
+#: common/navigation.j2.inc:85 template/glossary.html.j2:6
+msgid "Glossary"
+msgstr "用語集"
+
+#: common/navigation.j2.inc:86
+msgid "Handbook"
+msgstr "ハンドブック"
+
+#: common/navigation.j2.inc:88
+msgid "REST API"
+msgstr "REST API"
+
+#: common/navigation.j2.inc:89 template/reclaim/index.html.j2:83
+msgid "FAQ"
+msgstr "よくある質問"
+
+#: common/old-news.j2.inc:10 template/news/index.html.j2:11
+msgid "News posts about changes related to GNUnet such as releases and events"
+msgstr ""
+"リリースやイベントなど、GNUnet 関連の各種変更についての情報を掲載しています"
+
+#: common/old-news.j2.inc:15 template/news/index.html.j2:16
+msgid "subscribe to our RSS feed"
+msgstr "RSS フィードに登録"
+
+#: common/old-news.j2.inc:34 template/news/index.html.j2:36
+msgid "read more"
+msgstr "詳細"
+
+#: template/about.html.j2:11
+msgid "What is GNUnet?"
+msgstr "GNUnet とは"
+
+#: template/about.html.j2:13
+msgid ""
+"GNUnet is an alternative network stack for building secure, decentralized "
+"and privacy-preserving distributed applications. Our goal is to replace the "
+"old insecure Internet protocol stack. Starting from an application for "
+"secure publication of files, it has grown to include all kinds of basic "
+"protocol components and applications towards the creation of a GNU internet."
+msgstr ""
+"GNUnet とは、安全、脱一元化、プライバシー保護を実現する分散型プリケーションを"
+"構築するための代替ネットワーク スタックであり、従来型の安全性に欠くインター"
+"ネット プロトコル スタックを置き換えることを目的としています。各種ファイルを"
+"安全に公開できるアプリケーションとしてスタートし、現在は、あらゆる種類の基本"
+"プロトコル コンポーネントやアプリケーションなどを含め、GNU インターネットの創"
+"造を目指しています。"
+
+#: template/about.html.j2:23
+msgid ""
+"Today, the actual use and thus the social requirements for a global network "
+"differs widely from those goals of 1970. While the Internet remains suitable "
+"for military use, where the network equipment is operated by a command "
+"hierarchy and when necessary isolated from the rest of the world, the "
+"situation is less tenable for civil society."
+msgstr ""
+"今日、グローバル ネットワークの実利用、つまり社会的要件は 1970 年の目標とは大"
+"きく異なります。ネットワーク機器はコマンド階層によって運用され、必要に応じて"
+"一部のみ切り離すことができるという点で、インターネットは軍事利用に適している"
+"ものの、現状では一般市民による利用に適しているとはいえません。"
+
+#: template/about.html.j2:32
+msgid ""
+"Due to fundamental Internet design choices, Internet traffic can be "
+"misdirected, intercepted, censored and manipulated by hostile routers on the "
+"network. And indeed, the modern Internet has evolved exactly to the point "
+"where, as Matthew Green put it, <a href=\"https://blog."
+"cryptographyengineering.com/2015/08/16/the-network-is-hostile/\">\"the "
+"network is hostile\"</a>."
+msgstr ""
+"インターネットの基本設計は、ネットワーク上の悪意あるルーターを経由したトラ"
+"フィックの誤ダイレクト、傍受、検閲、操作などを可能にしています。実際に現代の"
+"インターネットは、マシュー・グリーンによる<a href=\"https://blog."
+"cryptographyengineering.com/2015/08/16/the-network-is-hostile/\">「ネットワー"
+"クには敵意がある」</a>という表現を正に体現するに至ったと言えます。"
+
+#: template/about.html.j2:41
+msgid ""
+"We believe liberal societies need a network architecture that uses the anti-"
+"authoritarian decentralized peer-to-peer paradigm and privacy-preserving "
+"cryptographic protocols. The goal of the GNUnet project is to provide a Free "
+"Software realization of this ideal."
+msgstr ""
+"自由主義社会には、権威から独立した分散型ピアツーピア パラダイムとプライバシー"
+"保護のための暗号プロトコルを使用するネットワーク アーキテクチャが必要であると"
+"私たちは考えます。こうした理想を実現する自由ソフトウェアを提供することが "
+"GNUnet プロジェクトの目的です。"
+
+#: template/about.html.j2:49
+msgid ""
+"Specifically, GNUnet tries to follow the following design principles, in "
+"order of importance:"
+msgstr "具体的には、GNUnet の設計は次の原則に則っています（重要度の高い順）。"
+
+#: template/about.html.j2:56
+msgid ""
+"GNUnet must be implemented as <a href=\"https://www.gnu.org/philosophy/free-"
+"sw.html\">Free Software</a>."
+msgstr ""
+"GNUnet は<a href=\"https://www.gnu.org/philosophy/free-sw.html\">自由ソフト"
+"ウェア</a>として実装される。"
+
+#: template/about.html.j2:60
+msgid ""
+"GNUnet must minimize the amount of personally identifiable information "
+"exposed."
+msgstr "公開される PII（個人を特定できる情報）を最小限に抑える。"
+
+#: template/about.html.j2:61
+msgid ""
+"GNUnet must be fully distributed and resilient to external attacks and rogue "
+"participants."
+msgstr ""
+"GNUnet は完全な分散型であり、外部からの攻撃や悪質な参加者に対して回復力がなけ"
+"ればならない。"
+
+#: template/about.html.j2:62
+msgid ""
+"GNUnet must be self-organizing and not depend on administrators or "
+"centralized infrastructure."
+msgstr ""
+"GNUnet は自律した組織化構造を持ち、管理者や中央一元型インフラストラクチャに依"
+"存してはならない。"
+
+#: template/about.html.j2:63
+msgid ""
+"GNUnet must inform the user which other participants have to be trusted when "
+"establishing private communications."
+msgstr ""
+"GNUnet は、プライベート通信を確立する際、信頼すべき他の参加者をユーザーに通知"
+"する。"
+
+#: template/about.html.j2:64
+msgid "GNUnet must be open and permit new peers to join."
+msgstr "GNUnet はオープンであり、新しい参加者を受け入れなければならない。"
+
+#: template/about.html.j2:65
+msgid "GNUnet must support a diverse range of applications and devices."
+msgstr ""
+"GNUnet は、さまざまなアプリケーションやデバイスに対応しなければならない。"
+
+#: template/about.html.j2:66
+msgid "GNUnet must use compartmentalization to protect sensitive information."
+msgstr "GNUnet は、機密情報を保護するために区分化されなければならない。"
+
+#: template/about.html.j2:67
+msgid "The GNUnet architecture must be resource efficient."
+msgstr "GNUnet アーキテクチャはリソース効率が高くなければならない。"
+
+#: template/about.html.j2:68
+msgid ""
+"GNUnet must provide incentives for peers to contribute more resources than "
+"they consume."
+msgstr ""
+"GNUnet は、リソースの消費を超える貢献をしてもらうため、ピアを動機づけしなけれ"
+"ばならない。"
+
+#: template/about.html.j2:72
+msgid ""
+"To get know and learn more, please check our <a href=\"https://docs.gnunet."
+"org/handbook/gnunet.html\">handbook</a>, especially the <a href=\"https://"
+"docs.gnunet.org/handbook/gnunet.html#Key-Concepts\">chapter on \"Key Concepts"
+"\"</a>, explaining the fundamental concepts of GNUnet: <ul> <li><a href="
+"\"https://docs.gnunet.org/handbook/gnunet.html#Authentication"
+"\">Authentication</a></li> <li><a href=\"https://docs.gnunet.org/handbook/"
+"gnunet.html#Accounting-to-Encourage-Resource-Sharing\">Accounting to "
+"Encourage Resource Sharing</a></li> <li><a href=\"https://docs.gnunet.org/"
+"handbook/gnunet.html#Confidentiality\">Confidentiality</a></li> <li><a href="
+"\"https://docs.gnunet.org/handbook/gnunet.html#Anonymity\">Anonymity</a></"
+"li> <li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#Deniability"
+"\">Deniability</a></li> <li><a href=\"https://docs.gnunet.org/handbook/"
+"gnunet.html#Peer-Identities\">Peer Identities</a></li> <li><a href=\"https://"
+"docs.gnunet.org/handbook/gnunet.html#Zones-in-the-GNU-Name-System-_0028GNS-"
+"Zones_0029\">Zones in the GNU Name System (GNS Zones)</a></li> <li><a href="
+"\"https://docs.gnunet.org/handbook/gnunet.html#Egos\">Egos</a></li> </ul>"
+msgstr ""
+"詳細は<a href=\"https://docs.gnunet.org/handbook/gnunet.html\">ハンドブック</"
+"a>中の、特に GNUnet の基本概念を説明する<a href=\"https://docs.gnunet.org/"
+"handbook/gnunet.html#Key-Concepts\">「主要概念」の章</a>を参照してください。"
+"<ul><li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#Authentication"
+"\">認証</a></li><li><a href=\"https://docs.gnunet.org/handbook/gnunet."
+"html#Accounting-to-Encourage-Resource-Sharing\">リソース共有の奨励</a></"
+"li><li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#Confidentiality"
+"\">守秘義務</a></li><li><a href=\"https://docs.gnunet.org/handbook/gnunet."
+"html#Anonymity\">匿名性</a></li><li><a href=\"https://docs.gnunet.org/"
+"handbook/gnunet.html#Deniability\">否認権</a></li><li><a href=\"https://docs."
+"gnunet.org/handbook/gnunet.html#Peer-Identities\">ピア ID</a></li><li><a "
+"href=\"https://docs.gnunet.org/handbook/gnunet.html#Zones-in-the-GNU-Name-"
+"System-_0028GNS-Zones_0029\">GNU ネーム システムのゾーン（GNS ゾーン）</a></"
+"li><li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#Egos\">Egos</"
+"a></li></ul>"
+
+#: template/about.html.j2:88
+msgid "More Resources"
+msgstr "その他のリソース"
+
+#: template/about.html.j2:90
+msgid ""
+"There are many more resources to learn about GNUnet besides the <a href="
+"\"https://docs.gnunet.org/handbook/gnunet.html\">handbook</a>, such as the "
+"<a href=\"https://bib.gnunet.org/\">bibliography</a> with papers covering "
+"the various layers, many <a href=\"https://gnunet.org/en/video.html"
+"\">videos</a> or a brief <a href=\"https://gnunet.org/en/glossary.html"
+"\">glossary</a>."
+msgstr ""
+"GNUnet の詳細については、<a href=\"https://docs.gnunet.org/handbook/gnunet."
+"html\">ハンドブック</a>以外にも多くのリソースがあり、一例としては、多角的な視"
+"点での論文を集めた<a href=\"https://bib.gnunet.org/\">参考文献</a>、各種<a "
+"href=\"https://gnunet.org/en/video.html\">動画</a>、簡潔な<a href=\"https://"
+"gnunet.org/en/glossary.html\">用語集</a>などが挙げられます。"
+
+#: template/about.html.j2:95
+msgid ""
+"You are most welcome to <a href=\"engage.html\">get engaged into the "
+"conversation</a>, <a href=\"install.html\">install GNUnet</a>, <a href=\"use."
+"html\">use it</a> and <a href=\"engage.html\">contribute and get engaged</a> "
+"in various ways."
+msgstr ""
+"<a href=\"engage.html\">会話に参加する</a>、<a href=\"install.html\">GNUnet "
+"をインストールする</a>、<a href=\"use.html\">実際に利用する</a>、<a href="
+"\"engage.html\">貢献して参加する</a>など、さまざまな方法で活用いただけます。"
+
+#: template/about.html.j2:100
+msgid ""
+"Please be aware that this project is (despite of it's age) still in an early "
+"alpha stage when it comes to software &#8211; its not an easy task to "
+"rewrite the whole Internet!"
+msgstr ""
+"このプロジェクトは、ソフトウェア&#8211;に関してまだ初期のアルファ段階にあり、"
+"インターネット全体の書き換えはまだ現実的ではありません。"
+
+#: template/about.html.j2:105
+msgid "Current funding"
+msgstr "現在の資金調達"
+
+#: template/about.html.j2:110
+msgid ""
+"We're receiving funding from NLnet's Next Generation Internet funding line "
+"to document and implement the GNU Name System protocol in a way suitable for "
+"the IETF standardization process."
+msgstr ""
+"NLnet の次世代インターネット資金ラインから支援を受け、IETF 標準化プロセスに適"
+"合させる形で GNU ネームシステムプロトコルを文書化し、実装しています。"
+
+#: template/about.html.j2:123
+msgid ""
+"This project has received funding from the European Union’s Horizon 2020 "
+"research and innovation programme under the NGI_TRUST grant agreement no "
+"825618. The project aims to integrate re:claimID with the GNU Taler payment "
+"system in a pilot in order to demonstrate the practical feasibility and "
+"benefits of privacy enhancing technologies for users and commercial service "
+"providers. The project is called \"Decentralized Identities for Self-"
+"Sovereign End-users\" (DISSENS)."
+msgstr ""
+"このプロジェクトは、欧州連合の「Horizon 2020」研究・イノベーションプログラム"
+"から NGI_TRUST 補助金契約 No. 825618 に基づき資金を受け取っています。本プロ"
+"ジェクトは、re:claimID および、試験段階にある GNU Taler 支払いシステムを統合"
+"することで、ユーザーと商用サービスプロバイダーに向け、実用への可能性とプライ"
+"バシー向上技術の利点を証明することを目指しています。プロジェクトは"
+"「Decentralized Identities for Self-Sovereign End-uers（DISSENS：自己主権を持"
+"つエンドユーザーのための脱中央型 ID）」と呼ばれます。"
+
+#: template/about.html.j2:141
+msgid ""
+"We are grateful for free hosting offered by the following organizations:"
+msgstr "次の組織により無料でホスティングを提供いただいています。"
+
+#: template/about.html.j2:150
+msgid "Past funding"
+msgstr "過去の資金提供"
+
+#: template/about.html.j2:152
+msgid "We are grateful for past funding from the following organizations:"
+msgstr "これまで資金援助いただいた組織は次の通りです。"
+
+#: template/applications.html.j2:7
+msgid "Applications provided by GNUnet"
+msgstr "GNUnet が提供するアプリケーション"
+
+#: template/applications.html.j2:13 template/gns.html.j2:7
+msgid "The GNU Name System"
+msgstr "GNU ネームシステム"
+
+#: template/applications.html.j2:15
+#, fuzzy
+#| msgid ""
+#| "The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully "
+#| "decentralized replacement for the Domain Name System (DNS). Instead of "
+#| "using a hierarchy, GNS uses a directed graph. Naming conventions are "
+#| "similar to DNS, but queries and replies are private even with respect to "
+#| "peers providing the answers. The integrity of records and privacy of look-"
+#| "ups is cryptographically secured. <!-- Too technical: GNS integrates a "
+#| "robust, efficient and instant key revocation mechanism. -->"
+msgid ""
+"The <a href=\"gns.html\">GNU Name System (GNS)</a> is a fully decentralized "
+"replacement for the Domain Name System (DNS). Instead of using a hierarchy, "
+"GNS uses a directed graph. Naming conventions are similar to DNS, but "
+"queries and replies are private even with respect to peers providing the "
+"answers. The integrity of records and privacy of look-ups are "
+"cryptographically secured. <!-- Too technical: GNS integrates a robust, "
+"efficient and instant key revocation mechanism. -->"
+msgstr ""
+"<a href=\"gns.html\">GNU ネームシステム（GNS）</a>は、ドメインネームシステム"
+"（DNS）が完全に分散されたもので、その代替です。GNU は階層構造に代わり有向グラ"
+"フを使用します。命名規則は DNS に類似していますが、クエリと応答は、回答をする"
+"ピアに関してもプライベートです。レコードの完全性とルックアップのプライバシー"
+"はセキュアに暗号化されます。<!-- Too technical: GNS integrates a robust, "
+"efficient and instant key revocation mechanism. -->"
+
+#: template/applications.html.j2:38
+msgid "Self-sovereign, decentralized identity provider"
+msgstr "自己主権型、脱中央型の IdP"
+
+#: template/applications.html.j2:41
+#, fuzzy
+#| msgid ""
+#| "<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> is a decentralized "
+#| "Identity Provider (IdP) service built in top of the GNU Name System. It "
+#| "allows users to securely share personal information with websites using "
+#| "standardized protocols (OpenID Connect)."
+msgid ""
+"is a decentralized Identity Provider (IdP) service built in top of the GNU "
+"Name System. It allows users to securely share personal information with "
+"websites using standardized protocols (OpenID Connect)."
+msgstr ""
+"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> は分散型のアイデンティ"
+"ティ プロバイダ（IdP）サービスであり、GNU ネームシステムの上位に組み込まれて"
+"います。これによりユーザーは、標準化されたプロトコルを使い、ウェブサイトから"
+"個人情報を安全に共有することができます（OpenID Connect）。"
+
+#: template/applications.html.j2:57
+msgid "Filesharing (Alpha)"
+msgstr "ファイル共有（アルファ）"
+
+#: template/applications.html.j2:59
+msgid ""
+"GNUnet <a href=\"use.html#fs\">filesharing</a> is an application that aims "
+"to provide censorship-resistant, anonymous filesharing. The publisher is "
+"empowered to make a gradual choice between performance and anonymity."
+msgstr ""
+"GNUnet の<a href=\"use.html#fs\">ファイル共有</a>は、検閲耐性と匿名性を備えた"
+"ファイル共有を目指すアプリケーションです。発行者は、パフォーマンスと匿名性の"
+"度合いを自在に選択することができます。"
+
+#: template/applications.html.j2:73
+msgid "Conversation (Pre-Alpha)"
+msgstr "カンバセーション（プレアルファ）"
+
+#: template/applications.html.j2:75
+msgid ""
+"GNUnet conversation is an application that provides secure voice "
+"communication in a fully decentralized way by employing GNUnet for routing "
+"and transport."
+msgstr ""
+"GNUnet カンバセーションは、ルーティングとトランスポートに GNUnet を採用するこ"
+"とにより、完全分散型の安全な音声通話を提供するアプリケーションです。"
+
+#: template/applications.html.j2:91
+msgid "Applications utilizing GNUnet"
+msgstr "GNUnet を利用するアプリケーション"
+
+#: template/applications.html.j2:97
+msgid "GNU Taler (Alpha)"
+msgstr "GNU Taler（アルファ）"
+
+#: template/applications.html.j2:99
+msgid ""
+"<a href=\"https://taler.net/\">GNU Taler</a> is a new privacy-preserving "
+"electronic payment system. Payments are cryptographically secured and are "
+"confirmed within milliseconds with extremely low transaction costs."
+msgstr ""
+"<a href=\"https://taler.net/\">GNU Taler</a> は、プライバシーを保護する新しい"
+"電子決済システムです。決済はセキュアに暗号化され、数ミリ秒で完了、トランザク"
+"ションも大変低コストです。"
+
+#: template/applications.html.j2:118
+msgid "secushare"
+msgstr "secushare"
+
+#: template/applications.html.j2:120
+msgid ""
+"<a href=\"https://secushare.org/\">secushare</a> is creating a decentralized "
+"social networking application on top of GNUnet. Using overlay multicast and "
+"the extensible PSYC protocol, notifications are distributed end-to-end "
+"encrypted to authorized recipients only."
+msgstr ""
+"<a href=\"https://secushare.org/\">secushare</a> は、GNUnet 上に分散型ソー"
+"シャルネットワーキング アプリケーションを作成しています。オーバーレイ マルチ"
+"キャスト、拡張可能な PSYC プロトコル、通知機能がエンドツーエンドで暗号化さ"
+"れ、承認済みの受信者にのみ配信されます。"
+
+#: template/applications.html.j2:139
+msgid "pretty Easy privacy"
+msgstr "pretty Easy privacy"
+
+#: template/applications.html.j2:141
+msgid ""
+"<a href=\"https://pep.foundation/\">pretty Easy privacy</a> (p&#8801;p) is "
+"creating a usable end-to-end encrypted e-mail solution using opportunistic "
+"key exchange. p&#8801;p will use GNUnet to protect metadata and exploit new "
+"cryptographic protocols to verify keys."
+msgstr ""
+"<a href=\"https://pep.foundation/\">pretty Easy privacy</a>（p&#8801;p）は、"
+"日和見鍵交換を使用して、実用性のあるエンドツーエンドで暗号化された電子メール"
+"ソリューションを作成しています。p&#8801;p は GNUnet によりメタデータを保護"
+"し、新たな暗号化プロトコルで鍵を検証します。"
+
+#: template/applications.html.j2:160
+msgid "Cadet-GTK"
+msgstr "Cadet-GTK"
+
+#: template/applications.html.j2:162
+#, fuzzy
+#| msgid ""
+#| "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> "
+#| "is a convenient but feature-rich graphical application providing "
+#| "messaging using especially the CADET subsystem. It is developed using GTK "
+#| "and libhandy for a convergent design."
+msgid ""
+"<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
+"convenient but feature-rich graphical application providing messaging using "
+"the CADET subsystem. It is developed using GTK and libhandy for a convergent "
+"design."
+msgstr ""
+"<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> は、"
+"高い利便性と豊富な機能を備えたグラフィカル アプリケーションで、特に CADET サ"
+"ブシステムを使用してメッセージ機能を提供します。GTK と libhandy を利用して開"
+"発されいます。"
+
+#: template/applications.html.j2:180
+msgid "groupchat"
+msgstr "groupchat"
+
+#: template/applications.html.j2:182
+#, fuzzy
+#| msgid ""
+#| "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
+#| "terminal user interface providing messaging using especially the CADET "
+#| "subsystem. It is developed using nim. Cadet-GTK and groupchat are planned "
+#| "to be compatible."
+msgid ""
+"<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
+"terminal user interface providing messaging using the CADET subsystem. It is "
+"developed using nim. Cadet-GTK and groupchat are planned to be compatible."
+msgstr ""
+"<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> は、主に "
+"CADET サブシステムを使用してメッセージ機能を提供するターミナル ユーザーイン"
+"ターフェースです。開発言語は Nim で、将来的には Cadet-GTK と groupchat と互換"
+"性を持つ予定です。"
+
+#: template/architecture.html.j2:6
+msgid "GNUnet System Architecture"
+msgstr "GNUnet システム アーキテクチャ"
+
+#: template/architecture.html.j2:20
+msgid "Foundations"
+msgstr "基盤"
+
+#: template/architecture.html.j2:22
+#, fuzzy
+#| msgid ""
+#| "The foundations of GNUnet are a distributed hash table (R5N), an SCTP-"
+#| "like end-to-end encrypted messaging layer (CADET), a public key "
+#| "infrastructure (GNS) and a pluggable transport system (TRANSPORT).<br> "
+#| "Using public keys for addresses and self-organized decentralized routing "
+#| "algorithms, these subsystems replace the traditional TCP/IP stack."
+msgid ""
+"The foundations of GNUnet are a distributed hash table (R5N), an SCTP-like "
+"end-to-end encrypted messaging layer (CADET), a public key infrastructure "
+"(GNS) and a pluggable transport system (TRANSPORT).<br> Using public keys "
+"for addresses and self-organizing decentralized routing algorithms, these "
+"subsystems replace the traditional TCP/IP stack."
+msgstr ""
+"GNUnet の基盤は、分散ハッシュ テーブル（R5N）、SCTP に類似したエンド ツー エ"
+"ンドの暗号化メッセージング層（CADET）、公開鍵基盤（GNS）、プラグ可能なトラン"
+"スポート システム（TRANSPORT）です。<br>これらのサブシステムは、アドレスや自"
+"己組織する分散型ルーティング アルゴリズムに公開鍵を使用し、従来の TCP/IP ス"
+"タックに代替するものです。"
+
+#: template/architecture.html.j2:35
+msgid "Security"
+msgstr "セキュリティ"
+
+#: template/architecture.html.j2:38
+#, fuzzy
+#| msgid ""
+#| "GNUnet is implemented using a multi-process architecture. Each subsystem "
+#| "runs as a separate process, providing fault-isolation and enabling tight "
+#| "permissions to be granted to each subsystem. Naturally, the "
+#| "implementation is a <a href=\"https://www.gnu.org/\">GNU</a> package, and "
+#| "will always remain free software."
+msgid ""
+"GNUnet is implemented using a multi-process architecture. Each subsystem "
+"runs as a separate process, providing fault isolation and enabling tight "
+"permissions to be granted to each subsystem. Naturally, the implementation "
+"is a <a href=\"https://www.gnu.org/\">GNU</a> package, and will always "
+"remain free software."
+msgstr ""
+"GNUnet はマルチプロセス アーキテクチャを使用して実装されます。各サブシステム"
+"は別々のプロセスとして実行され、問題の切り分けや厳格な権限付与がサブシステム"
+"毎に可能です。そのため、実装は<a href=\"https://www.gnu.org/\"> GNU</a> パッ"
+"ケージであり、その後も自由ソフトウェアであり続けます。"
+
+#: template/architecture.html.j2:52
+msgid "System architecture"
+msgstr "システム アーキテクチャ"
+
+#: template/architecture.html.j2:58
+msgid "Subsystems"
+msgstr "サブシステム"
+
+#: template/architecture.html.j2:67
+msgid "libgnunetutil"
+msgstr "libgnunetutil"
+
+#: template/architecture.html.j2:73
+msgid "APIs"
+msgstr "API"
+
+#: template/architecture.html.j2:86
+msgid "Legend"
+msgstr "凡例"
+
+#: template/contact.html.j2:6
+msgid "Contact information"
+msgstr "お問い合わせ"
+
+#: template/contact.html.j2:11
+msgid "The mailing list"
+msgstr "メーリングリスト"
+
+#: template/contact.html.j2:13
+msgid ""
+"An archived, public mailing list for GNUnet is hosted at <a href=\"https://"
+"lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists.gnu.org/"
+"mailman/listinfo/gnunet-developers</a>. You can send messages to the list at "
+"<a href=\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
+msgstr ""
+"GNUnet の公開メーリング リストのアーカイブは<a href=\"https://lists.gnu.org/"
+"mailman/listinfo/gnunet-developers\">https://lists.gnu.org/mailman/listinfo/"
+"gnunet-developers</a>にホストされています。このリストへのメッセージは<a href="
+"\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>から送信で"
+"きます。"
+
+#: template/contact.html.j2:23
+msgid "The IRC channel"
+msgstr "IRC チャネル"
+
+#: template/contact.html.j2:25
+msgid ""
+"<tt>#gnunet</tt> is reachable via <a href=\"https://freenode.net\">irc."
+"freenode.net</a>. There is also an <a href=\"https://view.matrix.org/room/!"
+"IjaAfLiruzjxFFzKAV:matrix.org/\">archive</a> available."
+msgstr ""
+"<tt>#gnune</tt>は<a href=\"https://freenode.net\">irc.freenode.net</a>からア"
+"クセスできます。また、<a href=\"https://view.matrix.org/room/!"
+"IjaAfLiruzjxFFzKAV:matrix.org/\">アーカイブ</a>はこちらです。"
+
+#: template/contact.html.j2:38
+msgid "Contacting individuals"
+msgstr "個人へのお問い合わせ"
+
+#: template/contact.html.j2:40
+msgid ""
+"GNUnet developers are generally reachable at either <tt>PSEUDONYM@gnunet."
+"org</tt> or <tt>LASTNAME@gnunet.org</tt>. Most of us support receiving GnuPG "
+"encrypted Emails. Urgent and sensitive security issues may be addressed to "
+"the GNU maintainers <tt>schanzen</tt> and <tt>grothoff</tt>."
+msgstr ""
+"GNUnet 開発者へのご連絡は、通常 <tt>PSEUDONYM@gnunet.org</tt> または "
+"<tt>LASTNAME@gnunet.org</tt> から可能です。ほとんどのメンバーは GnuPG 暗号化"
+"メールの受信に対応しています。緊急の場合や機密性の高いセキュリティ関連の問題"
+"については、GNU 保守を担当する <tt> schanzen</tt> および <tt> grothoff</tt> "
+"までご連絡ください。"
+
+#: template/contact.html.j2:53
+msgid "Reporting bugs"
+msgstr "バグの報告"
+
+#: template/contact.html.j2:55
+msgid ""
+"We track open feature requests and bugs for projects within GNUnet in our <a "
+"href=\"https://bugs.gnunet.org/\">Bug tracker</a>. You can also report bugs "
+"or feature requests to the <a href=\"https://lists.gnu.org/mailman/listinfo/"
+"bug-gnunet\">bug-gnunet</a> mailing list. The mailinglist requires no "
+"subscription."
+msgstr ""
+"GNUnet 内の各種プロジェクトの公開機能リクエストやバグは、<a href=\"https://"
+"bugs.gnunet.org/\">バグ トラッカー</a>で管理しています。バグの報告や機能リク"
+"エストは、<a href=\"https://lists.gnu.org/mailman/listinfo/bug-gnunet\">bug-"
+"gnunet</a> のメーリングリストからも送信できます。メーリングリストへの登録は必"
+"要ありません。"
+
+#: template/copyright.html.j2:11
+msgid ""
+"<p> Contributors to GNUnet with Git access must sign the <a href=\"/static/"
+"pdf/copyright.pdf\">copyright assignment</a> to ensure that the <a href="
+"\"https://git.gnunet.org/gnunet-ev.git/tree/gnunet_taler_agreement.tex"
+"\">GNUnet e.V. --- Taler Systems SA agreement on licensing and collaborative "
+"development</a> of the GNUnet and GNU Taler projects is satisfied. </p>"
+msgstr ""
+"<p>GNUnet の参加者で Git を使われている場合、<a href=\"/static/pdf/copyright."
+"pdf\">著作権譲渡書</a>に合意し、GNUnet および GNU Taler プロジェクトの「<a "
+"href=\"https://git.gnunet.org/gnunet-ev.git/tree/gnunet_taler_agreement.tex"
+"\">GNUnet e.V. --- ライセンスと共同開発についての Taler システム SA 合意</"
+"a>」に順守することが必要となります。</p>"
+
+#: template/copyright.html.j2:22
+msgid ""
+"<p>The agreements ensure that the code will continue to be made available "
+"under free software licenses, but gives developers the freedom to move code "
+"between GNUnet and GNU Taler without worrying about licenses and to give the "
+"company the ability to dual-license (for example, so that we can distribute "
+"via App-stores that are hostile to free software).</p>"
+msgstr ""
+"<p>本合意により、今後も自由ソフトウェア ライセンスのもとでコードの公開が可能"
+"となり、開発者は GNUnet と GNU Taler の両方の許諾を得なくても双方でプログラム"
+"のコードを使うことができます。（例えば、自由ソフトウェアに好意的でないアプリ"
+"ストアを通じた配布も可能となります。）</p>"
+
+#: template/copyright.html.j2:30
+msgid ""
+"<p>Minor contributions (basically, anyone without Git access) do not require "
+"copyright assignment. Pseudonymous contributions are accepted, in this case "
+"simply sign the agreement with your pseudonym. Scanned copies are "
+"sufficient, but snail mail is preferred.</p>"
+msgstr ""
+"<p>Git アクセス権のない方のご協力については、著作権譲渡書は不要です。偽名でご"
+"協力いただくことも可能ですが、著作権譲渡書も同じ偽名で署名してください。ス"
+"キャンしたコピーも受け付けていますが、郵送を推奨しています。</p>"
+
+#: template/developers.html.j2:5
+msgid "GNUnet for developers"
+msgstr "開発者向け GNUnet"
+
+#: template/developers.html.j2:13
+msgid "Repositories"
+msgstr "レポジトリ"
+
+#: template/developers.html.j2:16
+msgid ""
+"A list of our Git repositories can be found on our our <a href=\"https://git."
+"gnunet.org/\">Git Server</a>."
+msgstr ""
+"Git レポジトリのリストは <a href=\"https://git.gnunet.org/\">Git Server</a> "
+"からご確認いただけます。"
+
+#: template/developers.html.j2:27
+msgid ""
+"Technical papers can be found in our <a href=\"https://old.gnunet.org/"
+"bibliography\">bibliography</a>."
+msgstr ""
+"技術論文は<a href=\"https://old.gnunet.org/bibliography\">参考文献</a>に掲載"
+"しています。"
+
+#: template/developers.html.j2:34
+msgid "Discussion"
+msgstr "ディスカッション"
+
+#: template/developers.html.j2:37
+msgid ""
+"We have a mailing list for developer discussions. You can subscribe to or "
+"read the list archive at <a href=\"http://lists.gnu.org/mailman/listinfo/"
+"gnunet-developers\">http://lists.gnu.org/mailman/listinfo/gnunet-developers</"
+"a>."
+msgstr ""
+"開発者向けディスカッション用にメーリングリストを用意しています。登録やアーカ"
+"イブの閲覧は、<a href=\"http://lists.gnu.org/mailman/listinfo/gnunet-"
+"developers\">http://lists.gnu.org/mailman/listinfo/gnunet-developers</a> から"
+"可能です。"
+
+#: template/developers.html.j2:47
+msgid "Regression Testing"
+msgstr "回帰テスト"
+
+#: template/developers.html.j2:50
+msgid ""
+"We have <a href=\"https://buildbot.net/\">Buildbot</a> automation tests to "
+"detect regressions and check for portability at <a href=\"https://old.gnunet."
+"org/buildbot/gnunet/\">https://old.gnunet.org/buildbot/gnunet/</a>."
+msgstr ""
+"リグレッションの検出と移植性の確認のため、<a href=\"https://old.gnunet.org/"
+"buildbot/gnunet/\">https://old.gnunet.org/buildbot/gnunet/</a> で <a href="
+"\"https://buildbot.net/\">Buildbot</a> 自動テストを実施しています。"
+
+#: template/developers.html.j2:59
+msgid "Code Coverage Analysis"
+msgstr "コード カバレッジ分析"
+
+#: template/developers.html.j2:62
+msgid ""
+"We use <a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</a> to "
+"analyze the code coverage of our tests, the results are available at <a href="
+"\"https://old.gnunet.org/coverage/\">https://old.gnunet.org/coverage/</a>."
+msgstr ""
+"<a href=\"http://ltp.sourceforge.net/coverage/lcov.php\">LCOV</a> によりテス"
+"トのコード カバレッジを分析しており、結果は <a href=\"https://old.gnunet.org/"
+"coverage/\">https://old.gnunet.org/coverage/</a> から参照可能です。"
+
+#: template/developers.html.j2:72
+msgid "Performance Analysis"
+msgstr "パフォーマンス分析"
+
+#: template/developers.html.j2:75
+msgid ""
+"We use <a href=\"https://old.gnunet.org/gauger\">Gauger</a> for performance "
+"regression analysis of the exchange backend at <a href=\"https://old.gnunet."
+"org/gauger/\">https://old.gnunet.org/gauger/</a>."
+msgstr ""
+"交換バックエンドのパフォーマンス回帰分析には、<a href=\"https://old.gnunet."
+"org/gauger/\">https://old.gnunet.org/gauger/</a>で <a href=\"https://old."
+"gnunet.org/gauger\">Gauger</a> を使用しています。"
+
+#: template/download.html.j2:7 template/gnurl.html.j2:209
+msgid "Downloads"
+msgstr "ダウンロード"
+
+#: template/download.html.j2:11
+msgid ""
+"Here you can download releases of our software and find links to the various "
+"versions."
+msgstr ""
+"こちらからソフトウェアのリリースをダウンロードできます。また、各種バージョン"
+"へのリンクを掲載しています。"
+
+#: template/download.html.j2:17
+msgid "0.11.x series"
+msgstr "0.11.x シリーズ"
+
+#: template/download.html.j2:18
+msgid "tarball"
+msgstr "tarball"
+
+#: template/download.html.j2:20
+msgid ""
+"The tarball of the latest version can be obtained from GNU FTP and its "
+"mirrors."
+msgstr "最新バージョンの tar は GNU FTP とそのミラーから取得できます。"
+
+#: template/download.html.j2:30
+msgid "git"
+msgstr "Git"
+
+#: template/download.html.j2:32
+msgid ""
+"You can fetch the git tag of version 0.11.x from our development server:"
+msgstr "バージョン 0.11.x の Git タグは開発サーバーから取得できます。"
+
+#: template/engage.html.j2:6
+msgid "Engage!"
+msgstr "参加しませんか"
+
+#: template/ev.html.j2:6
+msgid "Verein zur F&ouml;rderung von GNUnet e.V."
+msgstr "Verein zur F&ouml;rderung von GNUnet e.V."
+
+#: template/ev.html.j2:11
+msgid "About GNUnet e.V."
+msgstr "GNUnet e.V. について"
+
+#: template/ev.html.j2:13
+msgid ""
+"On December 27th 2013 a group of GNUnet hackers met at 30c3 to create the "
+"\"Verein zur F&ouml;rderung von GNUnet e.V.\", an association under German "
+"law to support GNUnet development. The Amtsgericht M&uuml;nchen registered "
+"the association on the 7th of March under VR 205287."
+msgstr ""
+"2013 年 12 月 27 日、GNUnet ハッカーのグループが 30c3 に集まり、ドイツ法に基"
+"づく GNUnet 開発支援のための協会である「Verein zur F&ouml;rderung von GNUnet "
+"e.V.」を結成しました。この協会は Amtsgericht M&uuml;nchen により 3 月 7 日に "
+"VR 205287 のもと登録されています。"
+
+#: template/ev.html.j2:22
+msgid ""
+"The association is officially dedicated to supporting research, development "
+"and education in the area of secure decentralized networking in general, and "
+"GNUnet specifically. This is the official website for the association."
+msgstr ""
+"協会は、安全な分散型ネットワーキング分野全般、特に GNUnet の研究、開発、教育"
+"の支援を公式な取り組みとしており、このウェブサイトは協会の公式ウェブサイトで"
+"す。"
+
+#: template/ev.html.j2:31
+msgid "Becoming a Member of GNUnet e.V."
+msgstr "GNUnet e.V. のメンバーになる"
+
+#: template/ev.html.j2:33
+#, fuzzy
+#| msgid ""
+#| "GNUnet developers with git (write) access can become members to "
+#| "participate in the decision process and formally support GNUnet e.V. For "
+#| "this, all you have to do is update the <tt>members.txt</tt> file in the "
+#| "<a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</a> "
+#| "repository. There are no membership dues; however, members are required "
+#| "to support GNUnet e.V. and in particularly contribute to the technical "
+#| "development within their means. For further details, we refer to the <a "
+#| "href=\"https://git.gnunet.org/gnunet-ev.git/\">Satzung</a> (currently "
+#| "only available in German, translations welcome)."
+msgid ""
+"GNUnet developers with git (write) access can become members to participate "
+"in the decision process and formally support GNUnet e.V. For this, all you "
+"have to do is update the <tt>members.txt</tt> file in the <a href=\"https://"
+"git.gnunet.org/gnunet-ev.git/\">gnunet-ev</a> repository. There are no "
+"membership dues; however, members are required to support GNUnet e.V. and in "
+"particularly contribute to the technical development within their means. For "
+"further details, we refer to the <a href=\"https://git.gnunet.org/gnunet-ev."
+"git/\">Satzung (Charter)</a> (currently only available in German, "
+"translations welcome)."
+msgstr ""
+"Git（書き込み）アクセス権を持つ GNUnet 開発者は、メンバーとして意思決定プロセ"
+"スに参加し、GNUnet e.V. を正式にサポートすることができます。メンバーとなるに"
+"は、<a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-ev</a> レポジト"
+"リにある <tt>members.txt</tt> ファイルを更新してください。会費はありません"
+"が、メンバーには GNUnet e.V. へのサポート、特に技術開発面での相応の貢献が求め"
+"られます。詳細については、<a href=\"https://git.gnunet.org/gnunet-ev.git/"
+"\">Satzung</a> を参照してください（現在ドイツ語のみですが、翻訳も歓迎しま"
+"す）。"
+
+#: template/ev.html.j2:52
+msgid "Governance"
+msgstr "ガバナンス"
+
+#: template/ev.html.j2:54
+#, fuzzy
+#| msgid ""
+#| "You can find our \"Satzung\", and the list of members under <a href="
+#| "\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git."
+#| "gnunet.org/gnunet-ev.git/tree/satzung.tex</a>. The current board consists "
+#| "of: <dl><dt>Vorsitz</dt> <dd><a href=\"https://schanzen.eu\">Martin "
+#| "Schanzenbach</a></dd> <dt>stellvertretender Vorsitz</dt> <dd>t3sserakt</"
+#| "dd> <dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a "
+#| "href=\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </"
+#| "dd> </dl>"
+msgid ""
+"You can find our charter, and the list of members under <a href=\"https://"
+"git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet.org/"
+"gnunet-ev.git/tree/satzung.tex</a>. The current board consists of: "
+"<dl><dt>Vorsitz</dt> <dd><a href=\"https://schanzen.eu\">Martin "
+"Schanzenbach</a></dd> <dt>stellvertretender Vorsitz</dt> <dd>t3sserakt</dd> "
+"<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
+"\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
+msgstr ""
+"「Satzung」およびメンバーのリストは<a href=\"https://git.gnunet.org/gnunet-"
+"ev.git/tree/satzung.tex\">https://git.gnunet.org/gnunet-ev.git/tree/satzung."
+"tex</a> から確認できます。現在の委員会メンバーは次の通りです。 "
+"<dl><dt>Vorsitz</dt><dd><a href=\"https://schanzen.eu\">Martin Schanzenbach</"
+"a></dd><dt>stellvertretender Vorsitz</dt><dd>t3sserakt</dd><dt>Kassenwart</"
+"dt><dd>Florian Dold</dd><dt>Beisitzer</dt><dd><a href=\"https://grothoff.org/"
+"christian/\">Christian Grothoff</a>, ch3 </dd></dl>"
+
+#: template/ev.html.j2:73
+msgid "Official Meeting Notes"
+msgstr "公式議事録"
+
+#: template/ev.html.j2:86
+msgid "Support Us!"
+msgstr "支援"
+
+#: template/ev.html.j2:88
+msgid ""
+"Everybody is welcome to support us via donations. For financial "
+"contributions, Europeans are able to donate via SEPA. We hope to setup "
+"accounts in other major currency areas in the future. You can also donate "
+"via Bitcoin, routing details are given below. Please note that we are unable "
+"to provide receipts for your donations. If you are planning to donate a "
+"significant amount of money, please contact us first as it might be better "
+"to come to a custom arrangement. <dl><dt>BitCoin</dt> "
+"<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
+"<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
+msgstr ""
+"どなたでも寄付を通じてご支援いただけます。金銭的な貢献に関し、欧州にお住まい"
+"の場合 SEPA 経由で寄付いただくことができます。将来的には他の主要通貨でも受け"
+"付けられるよう取り組んでいきたいと考えています。また、Bitcoin による寄付も可"
+"能で、ルーティング詳細は下に記載しています。ただし、寄付金について領収書は発"
+"行することができませんのでご了承ください。大口の寄付につきましては、関税処理"
+"が必要な場合があるため、事前にご連絡をいただけますようお願いします。"
+"<dl><dt>BitCoin</dt><dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd><dt>SEPA/"
+"IBAN</dt><dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd></dl>"
+
+#: template/faq.html.j2:12 template/faq.html.j2:23
+msgid "General"
+msgstr "一般"
+
+#: template/faq.html.j2:13 template/faq.html.j2:149 template/gns.html.j2:37
+msgid "Features"
+msgstr "機能"
+
+#: template/faq.html.j2:15 template/faq.html.j2:695
+msgid "Error messages"
+msgstr "エラーメッセージ"
+
+#: template/faq.html.j2:16 template/faq.html.j2:797
+msgid "File-sharing"
+msgstr "ファイル共有"
+
+#: template/faq.html.j2:17 template/faq.html.j2:973
+msgid "Contributing"
+msgstr "貢献"
+
+#: template/faq.html.j2:26
+msgid "What do I do if my question is not answered here?"
+msgstr "探している回答がここで見つけられない場合はどうしたらいいですか？"
+
+#: template/faq.html.j2:28
+msgid ""
+"A: There are many other sources of information. You can read additional "
+"documentation or ask the question on the help-gnunet@gnu.org mailing list or "
+"the #gnunet IRC on irc.freenode.net."
+msgstr ""
+"回答：他の方法でも情報を提供しています。例えば、他のドキュメントを参照する、"
+"help-gnunet@gnu.org のメーリングリストまたは irc.freenode.net の #gnunet IRC "
+"から質問することもできます。"
+
+#: template/faq.html.j2:36
+msgid "When are you going to release the next version?"
+msgstr "次のバージョンのリリース予定はいつですか?"
+
+#: template/faq.html.j2:38
+msgid ""
+"A: The general answer is, when it is ready. A better answer may be: earlier "
+"if you contribute (test, debug, code, document). Every release will be "
+"anounced on the info-gnunet@gnu.org mailing list and on <a href=\"https://"
+"planet.gnu.org\">planet GNU</a>. You can subscribe to the mailing list or "
+"the RSS feed of this site to automatically receive a notification."
+msgstr ""
+"回答：一般的な回答としては、準備ができ次第です。より理想的な回答としては「テ"
+"スト、デバッグ、コード、ドキュメントなどに貢献いただければ早めに」リリースと"
+"なるでしょう。全てのリリースは、<a href=\"https://planet.gnu.org\">planet "
+"GNU </a> 　　の info-gnunet@gnu.org のメーリングリストで公表しています。こち"
+"らのサイトからメーリングリストまたは RSS フィードに登録すると自動で通知が届き"
+"ます。"
+
+#: template/faq.html.j2:49
+msgid "Is the code free?"
+msgstr "コードは無料ですか？"
+
+#: template/faq.html.j2:51
+msgid ""
+"A: GNUnet is free software, available under the <a href=\"https://www.gnu."
+"org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
+msgstr ""
+"回答：GNUnet は無料ソフトウェアで、<a href=\"https://www.gnu.org/licenses/"
+"agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a> のもとで利用可能で"
+"す。"
+
+#: template/faq.html.j2:58
+msgid "Are there any known bugs?"
+msgstr "既知のバグはありますか？"
+
+#: template/faq.html.j2:60
+msgid ""
+"A: We track the list of currently known bugs in the <a href=\"https://bugs."
+"gnunet.org/\">Mantis system</a>. Some bugs are occasionally reported "
+"directly to developers or the developer mailing list. This is discouraged "
+"since developers often do not have the time to feed these bugs back into the "
+"Mantis database. Please report bugs directly to the bug tracking system. If "
+"you believe a bug is sensitive, you can set its view status to private (this "
+"should be the exception)."
+msgstr ""
+"回答：現時点で既知のバグは <a href=\"https://bugs.gnunet.org/\">Mantis "
+"system</a> に記載しています。バグの中には開発者または開発者メーリングリストに"
+"直接報告されたものもありますが、Mantis データベースへのバグ登録に時間を取られ"
+"るため、この方法は推奨されません。バグは追跡システムに直接報告をお願いしま"
+"す。機密扱いが必要と思われるバグに関しては、閲覧ステータスを例外的にプライ"
+"ベートに設定することができます。"
+
+#: template/faq.html.j2:73 template/faq.html.j2:193
+msgid "Is there a graphical user interface?"
+msgstr "グラフィカル ユーザー インターフェースはありますか？"
+
+#: template/faq.html.j2:75
+msgid ""
+"A: gnunet-gtk is a separate download. The package contains various GTK+ "
+"based graphical interfaces, including a graphical tool for configuration."
+msgstr ""
+"回答：gnunet-gtk を別途ダウンロードいただけます。このパッケージには、設定用の"
+"グラフィカル ツールなど、各種 GTK+ ベースのグラフィカル インターフェースが含"
+"まれます。"
+
+#: template/faq.html.j2:83
+msgid "Why does gnunet-service-nse create a high CPU load?"
+msgstr "なぜ gnunet-service-nse は CPU 負荷が高いのですか？"
+
+#: template/faq.html.j2:85
+msgid ""
+"A: The gnunet-service-nse process will initially compute a so-called &quot;"
+"proof-of-work&quot; which is used to convince the network that your peer is "
+"real (or, rather, make it expensive for an adversary to mount a Sybil attack "
+"on the network size estimator). The calculation is expected to take a few "
+"days, depending on how fast your CPU is. If the CPU load is creating a "
+"problem for you, you can set the value &quot;WORKDELAY&quot; in the &quot;"
+"nse&quot; section of your configuration file to a higher value. The default "
+"is &quot;5 ms&quot;."
+msgstr ""
+"回答：gnunet-service-nse プロセスは最初、ネットワークにピアの正当性を示すため"
+"に使用されるいわゆる&quot;プルーフオブワーク&quot;を演算します（または、攻撃"
+"者にネットワーク規模評価上、シビル攻撃が高額となるよう仕掛ける方法）。この演"
+"算には、CPU 速度にもよりますが、数日を要します。CPU 負荷が問題となる場合は、"
+"構成ファイルの&quot; nse&quot; セクションにある &quot;WORKDELAY&quot; 値を高"
+"く設定することができます。デフォルトは &quot;5 ミリ秒&quot;です。"
+
+#: template/faq.html.j2:99
+msgid "How does GNUnet compare to Tor?"
+msgstr "GNUnet と Tor は何が違うのですか？"
+
+#: template/faq.html.j2:101
+msgid ""
+"A: Tor focuses on anonymous communication and censorship-resistance for TCP "
+"connections and, with the Tor Browser Bundle, for the Web in particular. "
+"GNUnet does not really have one focus; our theme is secure decentralized "
+"networking, but that is too broad to be called a focus."
+msgstr ""
+"回答：Tor は、Tor Browser Bundle により、特にウェブにおける匿名通信と TCP 接"
+"続の検閲保護に焦点を当てています。GNUnet は、安全で分散したネットワーク化を趣"
+"旨としますが、焦点と呼ぶには大変広義であるため、実質的に一つの焦点はないと言"
+"えます。"
+
+#: template/faq.html.j2:111
+msgid "How does GNUnet compare to I2P?"
+msgstr "GNUnet は I2P とどのように比較されますか？"
+
+#: template/faq.html.j2:113
+msgid ""
+"A: Both GNUnet and I2P want to build a better, more secure, more "
+"decentralized Internet. However, on the technical side, there are almost no "
+"overlaps. <br><br> I2P is written in Java, and has (asymmetric) tunnels "
+"using onion (or garlic) routing as the basis for various (anonymized) "
+"applications. I2P is largely used via a Web frontend."
+msgstr ""
+"回答：GNUnet と I2P はどちらも、安全性と分散化を高め、より優れたインターネッ"
+"トの構築を目指しています。しかし、技術面においてほぼ共通点はありません。"
+"<br><br> I2P は Java を使用しており、各種（匿名化された）アプリケーションの基"
+"盤として、オニオン（またはガーリック）ルーティングを使った（非対称）トンネル"
+"を持ちます。I2P はウェブのフロントエンドで広く使われています。"
+
+#: template/faq.html.j2:124
+msgid "Is GNUnet ready for use on production systems?"
+msgstr "GNUnet は本番システムで利用できますか？"
+
+#: template/faq.html.j2:126
+msgid ""
+"A: GNUnet is still undergoing major development. It is largely not yet ready "
+"for usage beyond developers. Your mileage will vary depending on the "
+"functionality you use, but you will always likely run into issues with our "
+"current low-level transport system. We are currently in the process of "
+"rewriting it (Project &quot;Transport Next Generation [TNG]&quot;)"
+msgstr ""
+"回答：GNUnet はまだ開発途上であるため、大部分が開発者以外の方による使用には適"
+"していません。利用価値は、使いたい機能にもよりますが、現時点では転送システム"
+"が洗練されておらず、常に何らかの問題に直面すると考えられます。この部分につい"
+"ては現在書き換えを進めています。（プロジェクト&quot;Transport Next "
+"Generation [TNG]&quot;）"
+
+#: template/faq.html.j2:136
+msgid "Is GNUnet build using distributed ledger technologies?"
+msgstr "GNUnet は分散型台帳技術を使用して構築されていますか？"
+
+#: template/faq.html.j2:138
+msgid ""
+"A: No. GNUnet is a new network protocol stack for building secure, "
+"distributed, and privacy-preserving applications. While a ledger could be "
+"built using GNUnet, we currently have no plans in doing so."
+msgstr ""
+"回答：いいえ。GNUnet は、安全で分散型のプライバシー保護を実現したアプリケー"
+"ションを構築することができる、新しいネットワーク プロトコル スタックです。"
+"GNUnet で台帳を構築することもできますが、現時点でその予定はありません。"
+
+#: template/faq.html.j2:151
+msgid "What can I do with GNUnet?"
+msgstr "GNUnet では何ができますか？"
+
+#: template/faq.html.j2:153
+msgid ""
+"A: GNUnet is a peer-to-peer framework, by which we mostly mean that it can "
+"do more than just one thing. Naturally, the implementation and documentation "
+"of some of the features that exist are more advanced than others."
+msgstr ""
+"回答：GNUnet はピアツーピアのフレームワークであり、つまり、できることは一つに"
+"限りません。そのため、既存機能の実装とドキュメンテーションは、他のものよりも"
+"進んでいることがあります。"
+
+#: template/faq.html.j2:160
+msgid ""
+"For users, GNUnet offers anonymous and non-anonymous file-sharing, a fully "
+"decentralized and censorship-resistant replacement for DNS and a mechanism "
+"for IPv4-IPv6 protocol translation and tunneling (NAT-PT with DNS-ALG)."
+msgstr ""
+"ユーザーの観点からは、GNUnet は匿名および非匿名でのファイル共有、完全に分散化"
+"され検閲保護された DNS の代替手段、IPv4-IPv6 プロトコル変換およびトンネリング"
+"のメカニズム（DNS-ALG を使用した NAT-PT）を提供します。"
+
+#: template/faq.html.j2:171
+msgid "Is it possible to surf the WWW anonymously with GNUnet?"
+msgstr "GNUnet では匿名の WWW サーフィンは可能ですか？"
+
+#: template/faq.html.j2:173
+msgid ""
+"A: It is not possible use GNUnet for anonymous browsing at this point. We "
+"recommend that you use Tor for anonymous surfing."
+msgstr ""
+"回答：現時点で匿名ブラウジングに GNUnet を使用することはできません。匿名サー"
+"フィンには Tor をお勧めします。"
+
+#: template/faq.html.j2:181
+msgid "Is it possible to access GNUnet via a browser as an anonymous WWW?"
+msgstr ""
+"匿名の WWW としてブラウザ経由で GNUnet にアクセスすることは可能ですか？"
+
+#: template/faq.html.j2:183
+#, fuzzy
+#| msgid ""
+#| "A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
+#| "would make it accessible with a browser. It is possible to build such a "
+#| "proxy and all one needs to know is the protocol used between browser and "
+#| "proxy and a swift look at the GNUnet code for file-sharing."
+msgid ""
+"A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
+"would make it accessible via a browser. It is possible to build such a proxy "
+"and all one needs to know is the protocol used between the browser and the "
+"proxy and the GNUnet code for file-sharing."
+msgstr ""
+"回答：現在、ブラウザでのアクセスを可能にする GNUnet 用のプロキシ（Freenet の "
+"fproxy など）はありません。こうしたプロキシの構築は可能で、必要となるのは、ブ"
+"ラウザとプロキシ間で利用されるプロトコルと、ファイル共通のための GNUnet コー"
+"ド概要のみです。"
+
+#: template/faq.html.j2:195
+msgid ""
+"A: There are actually a few graphical user interfaces for different "
+"functions. gnunet-setup is to configure GNUnet, and gnunet-fs-gtk is for "
+"file-sharing. There are a few other gnunet-XXX-gtk GUIs of lesser "
+"importance. Note that in order to obtain the GUI, you need to install the "
+"gnunet-gtk package, which is a separate download. gnunet-gtk is a meta GUI "
+"that integrates most of the other GUIs in one window. One exception is "
+"gnunet-setup, which must still be run separately at this time (as setup "
+"requires the peer to be stopped)."
+msgstr ""
+"回答：実際、異なる機能に向けたグラフィカル ユーザーインターフェースが数種類あ"
+"ります。例えば、gnunet-setup は GNUnet 構成、gnunet-fs-gtk はファイル共有のた"
+"めのものです。重要性は下がりますが、gnunet-XXX-gtk GUI はその他にもあります。"
+"GUI を取得するためには、gnunet-gtk パッケージが必要で、別途ダウンロードを要し"
+"ます。gnunet-gtk はその他ほぼ全ての GUI を一つのウィンドウに統合したメタ GUI "
+"です。例外は gnunet-setup で、現時点では単独で実行が必要となります（設定でピ"
+"アを停止する必要があるため）。"
+
+#: template/faq.html.j2:210
+#, fuzzy
+#| msgid "On top of which operating systems does GNUnet run?"
+msgid "Which operating systems does GNUnet run on?"
+msgstr "GNUnet はどのオペレーティングシステム上で実行されますか？"
+
+#: template/faq.html.j2:212
+msgid ""
+"A: GNUnet is being developed and tested primarily under Debian GNU/Linux. "
+"Furthermore, we regularly build and test GNUnet on Fedora, Ubuntu, Arch, "
+"FreeBSD and macOS. We have reports of working versions on many other GNU/"
+"Linux distributions; in the past we had reports of working versions on "
+"NetBSD, OpenBSD and Solaris. However, not all of those reports are recent, "
+"so if you cannot get GNUnet to work on those systems please let us know."
+msgstr ""
+"回答：GNUnet の開発とテストは、主に Debian GNU / Linux で実施しています。さら"
+"に、Fedora、Ubuntu、 Arch、 FreeBSD、 macOS でも定期的に構築やテストを実施し"
+"ています。そのほか多くの GNU/Linux でも正常な稼働が認められたという報告があ"
+"り、これまで NetBSD、OpenBSD、Solaris 上での稼働が報告されています。ただ、こ"
+"うした報告全てが最近のものとは限らず、これらシステム上で GNUnet を稼働できな"
+"い場合はお知らせください。"
+
+#: template/faq.html.j2:228
+msgid "Who runs the GNS root zone?"
+msgstr "GNS ルートゾーンを実行しているのは誰ですか？"
+
+#: template/faq.html.j2:230
+msgid ""
+"A: Short answer: you. The long answer is the GNUnet will ship with a default "
+"configuration of top-level domains. The governance of this default "
+"configuration is not yet established. In any case, the user will be able to "
+"modify this configuration at will. We expect normal users to have no need to "
+"edit their own GNS zone(s) unless they host services themselves."
+msgstr ""
+"回答：簡潔な回答は「みなさん」です。詳しくいうと、GNUnet は上位ドメインのデ"
+"フォルト設定でリリースされ、このデフォルト設定のガバナンスはまだ構築されてい"
+"ません。いずれにしても、ユーザー側でこの設定を好きに変更することができます。"
+"一般のユーザーは、サービスを自らホストしない限り、その GNS ゾーンを編集する必"
+"要はないとみなしています。"
+
+#: template/faq.html.j2:241
+msgid "Where is the per-user GNS database kept?"
+msgstr "ユーザーごとの GNS データベースはどこに保管されていますか？"
+
+#: template/faq.html.j2:243
+msgid ""
+"A: The short answer is that the database is kept at the user's GNUnet peer. "
+"Now, a user may run multiple GNUnet peers, in which case the database could "
+"be kept at each peer (however, we don't have code for convenient "
+"replication). Similarly, multiple GNUnet peers can share one instance of the "
+"database --- the &quot;gnunet-service-namestore&quot; can be accessed from "
+"remote (via TCP). The actual data can be stored in a Postgres database, for "
+"which various replication options are again applicable. Ultimately, there "
+"are many options for how users can store (and secure) their GNS database."
+msgstr ""
+"回答：簡潔には、データベースはユーザーの GNUnet ピアに保管されています。現"
+"在、ユーザーが複数の GNUnet ピアを走らせた場合、データベースは各ピアに保管さ"
+"れます（ただし、便宜的なレプリケーションのためのコードはありません）。同様"
+"に、複数の GNUnet ピアは、データベースの一つのインスタンスを共有することがで"
+"き、 &quot;gnunet-service-namestore&quot; は TCP 経由で遠隔からアクセスできま"
+"す。実際のデータは Postgres データベースに保管され、各種レプリケーションのオ"
+"プションが適用されます。つまり、GNS データベースの保管方法（または安全性の確"
+"保）については、ユーザーに多くの選択肢が与えられることになります。"
+
+#: template/faq.html.j2:258
+msgid "What is the expected average size of a GNS namestore database?"
+msgstr ""
+"GNS ネームストア データベースの平均サイズはどれくらいと予測されますか？"
+
+#: template/faq.html.j2:260
+msgid ""
+"A: Pretty small. Based on our user study where we looked at browser "
+"histories and the number of domains visited, we expect that GNS databases "
+"will only grow to a few tens of thousands of entries, small enough to fit "
+"even on mobile devices."
+msgstr ""
+"回答：かなり小さいと言えます。実施した調査で、ブラウザ履歴とアクセスしたドメ"
+"イン数を確認したところ、GNS データベースの規模は数万エントリーに留まり、モバ"
+"イル端末でも対応できるほど小規模です。"
+
+#: template/faq.html.j2:270
+msgid "Is GNS resistant to the attacks on DNS used by the US?"
+msgstr "GNS は、米国で使用されている DNS 攻撃に耐性がありますか？"
+
+#: template/faq.html.j2:272
+msgid ""
+"A: We believe so, as there is no entity that any government could force to "
+"change the mapping for a name except for each individual user (and then the "
+"changes would only apply to the names that this user is the authority for). "
+"So if everyone used GNS, the only practical attack of a government would be "
+"to force the operator of a server to change the GNS records for his server "
+"to point elsewhere. However, if the owner of the private key for a zone is "
+"unavailable for enforcement, the respective zone cannot be changed and any "
+"other zone delegating to this zone will achieve proper resolution."
+msgstr ""
+"回答：そのように考えます。理由として、個々のユーザーを除き、いかなる政府も名"
+"前のマッピングを変更するよう強制できる組織がないためです（その場合、変更は当"
+"該のユーザーが権限を持つ名前にのみ適用されます）。そのため、全員が GNS を利用"
+"した場合に唯一考えられる政府による攻撃は、サーバー運用者に対して該当サーバー"
+"が他の地点を指すよう GNS レコードの変更を強制することです。しかし、あるゾーン"
+"のプライベートキーの所有者が従わないなどの場合、該当するゾーンは変更できず、"
+"このゾーンに委任する他のゾーンは全て正常通りに動作します。"
+
+#: template/faq.html.j2:286
+#, fuzzy
+#| msgid "How does GNS compare to other name systems"
+msgid "How does GNS compare to other name systems?"
+msgstr "GNS は他のネームシステムとどのように比較されますか？"
+
+#: template/faq.html.j2:288
+msgid ""
+"A: A scientific paper on this topic <a href=\"https://grothoff.org/christian/"
+"ns2018.pdf\">has been published </a> and below is a table from the "
+"publication. For detailed descriptions please refer to the paper."
+msgstr ""
+"回答：このトピックに関する科学論文が<a href=\"https://grothoff.org/christian/"
+"ns2018.pdf\">公開されており</a>、以下は論文からの表です。詳細については、論文"
+"をご覧ください。"
+
+#: template/faq.html.j2:392
+msgid "What is the difference between GNS and CoDoNS?"
+msgstr "GNS と CoDoNS の違いは何ですか？"
+
+#: template/faq.html.j2:394
+#, fuzzy
+#| msgid ""
+#| "A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
+#| "authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, "
+#| "and there are still registrars that determine who owns a name. <br><br> "
+#| "With GNS, we decentralize the database and also decentralize the "
+#| "responsibility for naming: each user runs his own personal root zone and "
+#| "is thus in complete control of the names he uses. GNS also has many "
+#| "additional features (to keep names short and enable migration) which "
+#| "don't even make sense in the context of CoDoNS."
+msgid ""
+"A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
+"authority structure of DNS. With CoDoNS, IANA/ICANN are still in charge, and "
+"there are still registrars that determine who owns a name. <br><br> With "
+"GNS, we decentralize the database and also decentralize the responsibility "
+"for naming: each user runs their own personal root zone and is thus in "
+"complete control of the names they use. GNS also has many additional "
+"features (to keep names short and enable migration) which don't even make "
+"sense in the context of CoDoNS."
+msgstr ""
+"回答：CoDoNS は DHT を使用して DNS データベースを分散しますが、DNS の権限構造"
+"を保持しています。CoDoNS は IANA/ICANN で管理され、ドメイン名の所有者を決定す"
+"るレジストラが存在します。<br><br>一方で GNS は、データベースを分散化するとと"
+"もに命名についても中央管理はせずに分散化させています。つまり、各ユーザーが自"
+"らのルートゾーンを管理するため、使用するドメイン名を完全に制御することになり"
+"ます。GNU には CoDoNS では必要のない追加機能も豊富にあります（名前を短くし移"
+"行を実施するため）。"
+
+#: template/faq.html.j2:410
+msgid "What is the difference between GNS and SocialDNS?"
+msgstr "GNS と SocialDNS の違いは何ですか？"
+
+#: template/faq.html.j2:412
+msgid ""
+"A: Like GNS, SocialDNS allows each user to create DNS mappings. However, "
+"with SocialDNS the mappings are shared through the social network and "
+"subjected to ranking. As the social relationships evolve, names can thus "
+"change in surprising ways. <br><br> With GNS, names are primarily shared via "
+"delegation, and thus mappings will only change if the user responsible for "
+"the name (the authority) manually changes the record."
+msgstr ""
+"回答：GNS と同様、SocialDNS では各ユーザーが DNS マッピングを作成できます。し"
+"かし、SocialDNS ではマッピングがソーシャルネットワークで共有されてランキング"
+"対象となるため、関連が複雑化するにつれ、名前が予期せず変更されることがあり得"
+"ます。<br><br>一方 GNS では、名前の共有は主に移譲によって実施されるため、マッ"
+"ピングは名前の責任者（権限のあるユーザー）が手動で記録を変更した場合にのみ変"
+"更されます。"
+
+#: template/faq.html.j2:426
+msgid "What is the difference between GNS and ODDNS?"
+msgstr "GNS と ODDNS の違いは何ですか？"
+
+#: template/faq.html.j2:428
+msgid ""
+"A: ODDNS is primarily designed to bypass the DNS root zone and the TLD "
+"registries (such as those for \".com\" and \".org\"). Instead of using "
+"those, each user is expected to maintain a database of (second-level) "
+"domains (like \"gnu.org\") and the IP addresses of the respective name "
+"servers. Resolution will fail if the target name servers change IPs."
+msgstr ""
+"回答：ODDNS は主に DNS ルート ゾーンと TLD レジストリ（「.com」や「.org」な"
+"ど）をバイパスするように設計されています。これらを使わず、各ユーザーは（セカ"
+"ンドレベル）ドメインのデータベース（「gnu.org」など）と、該当するネームサー"
+"バーの IP アドレスを保持することが求められます。ターゲットのネームサーバーが "
+"IP を変更すると名前解決は失敗します。"
+
+#: template/faq.html.j2:439
+msgid "What is the difference between GNS and Handshake?"
+msgstr "GNS とハンドシェイクの違いは何ですか?？"
+
+#: template/faq.html.j2:441
+#, fuzzy
+#| msgid ""
+#| "A: Handshake is a blockchain-based method for root zone governance. "
+#| "Hence, it does not address the name resolution process itself but "
+#| "delegates resolution into DNS after the initial TLD resolution. Not "
+#| "taking sustainablility considerations into account, handshake could be "
+#| "used as an additional supporting GNS root zone governance model but we "
+#| "currently do not have such plans in mind."
+msgid ""
+"A: Handshake is a blockchain-based method for root zone governance. Hence, "
+"it does not address the name resolution process itself but delegates "
+"resolution into DNS after the initial TLD resolution. Not taking "
+"sustainablility considerations into account, Handshake could be used as an "
+"additional supporting GNS root zone governance model, but we currently do "
+"not have such plans in mind."
+msgstr ""
+"回答：ハンドシェイクは、ブロックチェーンベースのルートゾーンガバナンスのため"
+"の手法です。そのため、名前解決プロセス自体には対処せず、最初の TLD の名前解決"
+"後、DNS に名前解決を委任します。ハンドシェイクでは持続性が考慮されていないた"
+"め、GNS ルートゾーン ガバナンスモデルの追加サポートとして利用できますが、現時"
+"点でその予定はありません。"
+
+#: template/faq.html.j2:453
+msgid "What is the difference between GNS and TrickleDNS?"
+msgstr "GNS と TrickleDNS の違いは何ですか？"
+
+#: template/faq.html.j2:455
+msgid ""
+"A: TrickleDNS pushes (&quot;critical&quot;) DNS records between DNS "
+"resolvers of participating domains to provide &quot;better availability, "
+"lower query resolution times, and faster update propagation&quot;. Thus "
+"TrickleDNS is focused on defeating attacks on the availability (and "
+"performance) of record propagation in DNS, for example via DDoS attacks on "
+"DNS root servers. TrickleDNS is thus concerned with how to ensure "
+"distribution of authoritative records, and authority remains derived from "
+"the DNS hierarchy."
+msgstr ""
+"回答：TrickleDNS は、参加ドメインの DNS リゾルバー間で（&quot;クリティカルな"
+"&quot;）DNS レコードをプッシュし、&quot;可用性の向上、クエリ解決時間の短縮、"
+"更新のプロパゲーション高速化&quot;を実現します。そのため TrickleDNS は、例え"
+"ば DNS ルートサーバーへの DDoS 攻撃など、DNS におけるレコードプロパゲーション"
+"の可用性（およびパフォーマンス）に対する攻撃への対処に主軸をおきます。"
+"TrickleDNS は確実に信頼できるレコードを分配する方法を考慮し、権限はこれまで通"
+"り DNS 階層に起因しています。"
+
+#: template/faq.html.j2:468
+msgid ""
+"Does GNS require real-world introduction (secure PKEY exchange) in the style "
+"of the PGP web of trust?"
+msgstr ""
+"GNS は PGP Web の信用モデル（web of trust）による実導入（セキュア PKEY 交換）"
+"を必要としますか？"
+
+#: template/faq.html.j2:470
+msgid ""
+"A: For security, it is well known that an initial trust path between the two "
+"parties must exist. However, for applications where this is not required, "
+"weaker mechanisms can be used. For example, we have implemented a first-come-"
+"first-served (FCFS) authority which allows arbitrary users to register "
+"arbitrary names. The key of this authority is included with every GNUnet "
+"installation. Thus, any name registered with FCFS is in fact global and "
+"requires no further introduction. However, the security of these names "
+"depends entirely on the trustworthiness of the FCFS authority. The authority "
+"can be queried under the &quot;.pin&quot; TLD."
+msgstr ""
+"回答：セキュリティの観点から最初の時点で二者間に信頼パスが必要とされています"
+"が、これが必要とされないアプリケーションでは、より脆弱なメカニズムも利用でき"
+"ます。例えば、私たちは FCFS 権限を実装しており、どのユーザーでも任意の名前を"
+"登録できるようになっています。この権限の鍵は全ての GNUnet インストールに含ま"
+"れるため、FCFS で登録された名前はいずれも事実上グローバルであり、周知のものと"
+"なります。ただし、これらの名前のセキュリティは完全に FCFS 権限の信頼性に依る"
+"ことになります。権限は &quot;.pin&quot; TLD で照会できます。"
+
+#: template/faq.html.j2:485
+msgid ""
+"How can a legitimate domain owner tell other people to not use his name in "
+"GNS?"
+msgstr ""
+"正当なドメイン所有者が他者に GNS でその名前を使用しないよう伝えるにはどうすれ"
+"ばよいですか？"
+
+#: template/faq.html.j2:487
+msgid ""
+"A: Names have no owners in GNS, so there cannot be a &quot;legitimate&quot; "
+"domain owner. Any user can claim any name (as his preferred name or &quot;"
+"pseudonym&quot;) in his NICK record. Similarly, all other users can choose "
+"to ignore this preference and use a name of their choice (or even assign no "
+"name) for this user."
+msgstr ""
+"回答：GNS では名前に所有者はいないため、&quot;正当な&quot;ドメイン所有者は存"
+"在しません。NICK レコードには、どのユーザーがどの名前（好きな名前または&quot;"
+"偽名&quot;）を使っても構いません。同様に、他のユーザーもこれを無視し、この"
+"ユーザーに対し好きな名前を使うことができます（または名前を付けないことも"
+"可）。"
+
+#: template/faq.html.j2:498
+msgid ""
+"Did you consider the privacy implications of making your personal GNS zone "
+"visible?"
+msgstr "個人の GNS ゾーン表示についてプライバシーへの影響を考慮しましたか？"
+
+#: template/faq.html.j2:500
+msgid ""
+"A: Each record in GNS has a flag &quot;private&quot;. Records are shared "
+"with other users (via DHT or zone transfers) only if this flag is not set. "
+"Thus, users have full control over what information about their zones is "
+"made public."
+msgstr ""
+"回答：GNS の各レコードには&quot;プライベート&quot;フラグがあります。レコード"
+"は、このフラグが設定されていない場合のみ他のユーザーと共有されます（DHT また"
+"はゾーン転送により）。そのため、ゾーンのどの情報を開示するかについては、ユー"
+"ザーが全て管理することができます。"
+
+#: template/faq.html.j2:510
+msgid "Are \"Legacy Host\" (LEHO) records not going to be obsolete with IPv6?"
+msgstr ""
+"「レガシーホスト」（LEHO）レコードは IPv6 で廃止されるのではありませんか？"
+
+#: template/faq.html.j2:512
+msgid ""
+"A: The question presumes that (a) virtual hosting is only necessary because "
+"of IPv4 address scarcity, and (b) that LEHOs are only useful in the context "
+"of virtual hosting. However, LEHOs are also useful to help with X.509 "
+"certificate validation (as they specify for which legacy hostname the "
+"certificate should be valid). Also, even with IPv6 fully deployed and &quot;"
+"infinite&quot; IP addresses being available, we're not sure that virtual "
+"hosting would disappear. Finally, we don't want to have to wait for IPv6 to "
+"become commonplace, GNS should work with today's networks."
+msgstr ""
+"回答：この質問は次のことを仮定しています。（a）仮想ホスティングの唯一の必要性"
+"は IPv4 アドレスが不足しているため。（b）LEHO は仮想ホスティングの文脈でのみ"
+"有用。しかし、LEHO は X.509 証明書の検証にも有用です（証明書が検証されるべき"
+"レガシーのホスト名を指定するため）。また、IPv6 が完全に実装され、IP アドレス"
+"が&quot;無限に&quot;活用できたとしても、仮想ホスティングが無くなるとは言い切"
+"れません。最後に、IPv6 が一般的に利用できるようになるのを待つよりも、GNS は現"
+"行のネットワークで運用できるべきです。"
+
+#: template/faq.html.j2:526
+msgid ""
+"Why does GNS not use a trust metric or consensus to determine globally "
+"unique names?"
+msgstr ""
+"GNS がトラストメトリックまたはコンセンサスを使用してグローバルに一意の名前を"
+"決定しないのはなぜですか？"
+
+#: template/faq.html.j2:528
+msgid ""
+"A: Trust metrics have the fundamental problem that they have thresholds. As "
+"trust relationships evolve, mappings would change their meaning as they "
+"cross each others thresholds. We decided that the resulting unpredictability "
+"of the resolution process was not acceptable. Furthermore, trust and "
+"consensus might be easy to manipulate by adversaries."
+msgstr ""
+"回答：トラストメトリックには、しきい値があるという根本的な問題があります。信"
+"頼関係が進化すると、マッピングがそれぞれのしきい値を超えるため、意味が変化し"
+"ます。結果として解決プロセスが予測不能となるのは受け入れられないと結論付けま"
+"した。さらに、信頼とコンセンサスは、攻撃者により操作されやすい可能性もありま"
+"す。"
+
+#: template/faq.html.j2:539
+msgid "How do you handle compromised zone keys in GNS?"
+msgstr "GNS では、侵害されたゾーンキーをどのように処理しますか？"
+
+#: template/faq.html.j2:541
+msgid ""
+"A: The owner of a private key can create a revocation message. This one can "
+"then be flooded throughout the overlay network, creating a copy at all "
+"peers. Before using a public key, peers check if that key has been revoked. "
+"All names that involve delegation via a revoked zone will then fail to "
+"resolve. Peers always automatically check for the existence of a revocation "
+"message when resolving names."
+msgstr ""
+"回答：秘密鍵の所有者は失効メッセージを作成できます。その後、オーバーレイ ネッ"
+"トワーク全体に周知し、全てのピアで複製を作成することが可能です。公開鍵を利用"
+"する前に、ピアは鍵が失効しているかを確認します。失効ゾーンを経由して委任され"
+"た名前は、いずれも解決できません。ピアは名前解決に際して、常に自動で失効メッ"
+"セージの有無を確認しています。"
+
+#: template/faq.html.j2:553
+msgid "Could the signing algorithm of GNS be upgraded in the future?"
+msgstr "GNS の署名アルゴリズムは将来アップグレードできますか？"
+
+#: template/faq.html.j2:555
+msgid ""
+"A: Yes. In our efforts to standardize GNS, we have already modified the "
+"protocol to support alternative delegation records. <br> <br> Naturally, "
+"deployed GNS implementations would have to be updated to support the new "
+"signature scheme. The new scheme can then be run in parallel with the "
+"existing system by using a new record type to indicate the use of a "
+"different cipher system."
+msgstr ""
+"回答：はい、できます。GNS を標準化する過程で、代替の委任レコードに対応できる"
+"ようプロトコルをすでに変更しています。<br> <br>そのため、デプロイされた GNS "
+"実装は、新しい署名スキームに対応できるよう更新する必要があります。新しいス"
+"キームはその後、新しいレコードタイプを使い異なる暗号システムの利用を示すこと"
+"で、既存スキームと並行して実行することができます。"
+
+#: template/faq.html.j2:569
+msgid ""
+"How can a GNS zone maintain several name servers, e.g. for load balancing?"
+msgstr ""
+"GNS ゾーンは、例えば負荷分散などで、どのように複数のネーム サーバーを保守して"
+"いますか？"
+
+#: template/faq.html.j2:571
+msgid ""
+"A: We don't expect this to be necessary, as GNS records are stored (and "
+"replicated) in the R5N DHT. Thus the authority will typically not be "
+"contacted whenever clients perform a lookup. Even if the authority goes "
+"(temporarily) off-line, the DHT will cache the records for some time. "
+"However, should having multiple servers for a zone be considered truly "
+"necessary, the owner of the zone can simply run multiple peers (and share "
+"the zone's key and database among them)."
+msgstr ""
+"回答：GNS レコードは R5N DHT に保存（および複製）されるため、そうしたことは必"
+"要ないと考えています。そのため、通常クライアントがルックアップを実行するたび"
+"に、権威サーバーは連絡を受けません。権威サーバーが（一時的に）オフラインに"
+"なった場合であっても、DHT はレコードを一定期間キャッシュします。しかし、一つ"
+"のゾーンに複数のサーバーがどうしても必要な場合、ゾーンの所有者は複数のピアを"
+"走らせることができます（ゾーンの鍵とデータベースを共有可能）。"
+
+#: template/faq.html.j2:584
+msgid ""
+"Why do you believe it is worth giving up unique names for censorship "
+"resistance?"
+msgstr "検閲への対処のため一意の名前を放棄する価値はありますか？"
+
+#: template/faq.html.j2:586
+msgid ""
+"A: The GNU Name system offers an alternative to DNS that is censorship "
+"resistant. As with any security mechanism, this comes at a cost (names are "
+"not globally unique). To draw a parallel, HTTPS connections use more "
+"bandwidth and have higher latency than HTTP connections. Depending on your "
+"application, HTTPS may not be worth the cost. However, for users that are "
+"experiencing censorship (or are concerned about it), giving up globally "
+"unique names may very well be worth the cost. After all, what is a &quot;"
+"globally&quot; unique name worth, if it does not resolve?"
+msgstr ""
+"回答：GNU ネームシステムは、検閲から保護された DNS の代替手段を提供します。ど"
+"のセキュリティメカニズムにも言えることですが、これには代償もあります（名前が"
+"グローバルに一意ではない点）。他の例として、HTTPS 接続は HTTP 接続に比べてよ"
+"り多くの帯域を使用し、レイテンシも大きくなります。使っているアプリケーション"
+"によっては、HTTPS のコストは見合わないこともあります。しかし、検閲の対象と"
+"なっていいる（またはこれを危惧する）ユーザーにとって、グローバルに一意の名前"
+"を放棄するという代償は払うに値するものであると言えます。結局、&quot;グローバ"
+"ルに&quot;一意の名前も、名前解決できなければ意味がありません。"
+
+#: template/faq.html.j2:600
+msgid "Why do you say that DNS is 'centralized' and 'distributed'?"
+msgstr "DNS が「集中型」および「分散型」であると言うのはどういう意味ですか？"
+
+#: template/faq.html.j2:602
+msgid ""
+"A: We say that DNS is 'centralized' because it has a central component / "
+"central point of failure --- the root zone and its management by IANA/ICANN. "
+"This centralization creates vulnerabilities. For example, the US government "
+"was able to reassign the management of the country-TLDs of Afganistan and "
+"Iraq during the wars at the beginning of the 21st century."
+msgstr ""
+"回答：DNS が「集中型」であるのは、中央コンポーネント/中央障害点があり、ルート"
+"ゾーンを IANA / ICANN が管理しているためです。こうした集中化により、脆弱性が"
+"生まれます。例えば米国政府は、21 世紀が明けて戦争を開始した際にアフガニスタン"
+"とイラクの国別 TLD の再割り当てを実施しています。"
+
+#: template/faq.html.j2:613
+msgid "How does GNS protect against layer-3 censorship?"
+msgstr "GNS はレイヤー 3 の検閲にどのように対処しますか？"
+
+#: template/faq.html.j2:615
+msgid ""
+"A: GNS does not directly help with layer-3 censorship, but it does help "
+"indirectly in two ways: <ol> <li> Many websites today use virtual hosting, "
+"so blocking a particular IP address causes much more collateral damage than "
+"blocking a DNS name. It thus raises the cost of censorship.</li> <li> "
+"Existing layer-3 circumvention solutions (such as Tor) would benefit from a "
+"censorship resistant naming system. Accessing Tor's &quot;.onion&quot; "
+"namespace currently requires users to use unmemorable cryptographic "
+"identifiers. With nicer names, Tor and tor2web-like services would be even "
+"easier to use. </ol>"
+msgstr ""
+"回答：GNS は、レイヤー 3 の検閲には直接対応しませんが、次の 2 つの方法で間接"
+"的に対応します。<ol><li>今日では、多くの Web サイトが仮想ホスティングを使用し"
+"ているため、特定の IP アドレスをブロックすると、DNS 名をブロックするよりもは"
+"るかに多くの被害が発生します。そのため、検閲コストも上昇します。</li> <li>既"
+"存のレイヤー 3 回避策（Tor など）は、検閲耐性のある命名システムによる利点があ"
+"ります。Tor の「.onion」ネームスペースへのアクセスは現在、ユーザーに非記憶型"
+"の暗号化識別子を利用することを要しています。名前が向上すれば、Tor や tor2web "
+"のようなサービスはより使いやすくなるでしょう。</ol>"
+
+#: template/faq.html.j2:634
+msgid "Does GNS work with search engines?"
+msgstr "GNS では検索エンジンを使えますか？"
+
+#: template/faq.html.j2:636
+msgid ""
+"A: GNS creates no significant problems for search engines, as they can use "
+"GNS to perform name resolution as well as any normal user. Naturally, while "
+"we typically expect normal users to install custom software for name "
+"resolution, this is unlikely to work for search engines today. However, the "
+"DNS2GNS gateway allows search engines to use DNS to resolve GNS names, so "
+"they can still index GNS resources. However, as using DNS2GNS gateways "
+"breaks the cryptographic chain of trust, legacy search engines will "
+"obviously not obtain censorship-resistant names."
+msgstr ""
+"回答：GNS を使用して名前解決やあらゆる標準ユーザーを実行できるため、検索エン"
+"ジンに大きな問題はありません。通常、標準ユーザーは、カスタムのソフトウェアを"
+"インストールして名前解決すると考えられますが、現在この方法は検索エンジンでは"
+"使えません。ただし、DNS2GNS ゲートウェイにより検索エンジンが DNS を使用して "
+"GNS 名を解決できるため、GNS リソースのインデックスは可能です。しかし、"
+"DNS2GNS ゲートウェイの利用は暗号化による信頼の連鎖を崩すため、レガシーの検索"
+"エンジンは検閲耐性のある名前を取得できません。"
+
+#: template/faq.html.j2:650
+msgid "How does GNS compare to the Unmanaged Internet Architecture (UIA)?"
+msgstr ""
+"GNS はアンマネージド インターネット アーキテクチャ（UIA）とどのように比較され"
+"ますか？"
+
+#: template/faq.html.j2:652
+msgid ""
+"A: UIA and GNS both share the same basic naming model, which actually "
+"originated with Rivest's SDSI. However, UIA is not concerned about "
+"integration with legacy applications and instead focuses on universal "
+"connectivity between a user's many machines. In contrast, GNS was designed "
+"to interoperate with DNS as much as possible, and to also work as much as "
+"possible with the existing Web infrastructure. UIA is not at all concerned "
+"about legacy systems (clean slate)."
+msgstr ""
+"回答：UIA と GNS は、どちらも同じ基本命名モデルを共有しており、これは実際 "
+"Rivest の SDSI に由来しています。しかし、UIA はレガシー アプリケーションとの"
+"統合は考慮せず、ユーザーの複数マシン間における汎用性のあるコネクティビティに"
+"注力しています。一方、GNS は DNS との相互運用に加え、既存の Web インフラとの"
+"親和性を最大限に考慮して設計されています。UIA はレガシーシステムを全く考慮し"
+"ていません（クリーンスレート）。"
+
+#: template/faq.html.j2:665
+msgid "Doesn't GNS increase the trusted-computing base compared to DNS(SEC)?"
+msgstr ""
+
+#: template/faq.html.j2:667
+msgid ""
+"A: First of all, in GNS you can explicitly see the trust chain, so you know "
+"if a name you are resolving belongs to a friend, or a friend-of-a-friend, "
+"and can thus decide how much you trust the result. Naturally, the trusted-"
+"computing base (TCB) can become arbitrarily large this way --- however, "
+"given the name length restriction, for an individual name it is always less "
+"than about 128 entities."
+msgstr ""
+"回答：まず、GNS では信頼チェーンを明示的に確認することができるため、解決する"
+"名前の所有者が友人または友人の友人であるなどを把握でき、結果がどの程度信頼で"
+"きるかが分かります。この方法ではトラステッド コンピューティング ベース（TCB）"
+"が恣意的に大規模になりえますが、名前の長さに制限があるため、大抵の場合、個別"
+"の名前は約 128 エンティティ以内です。"
+
+#: template/faq.html.j2:679
+msgid ""
+"How does GNS handle SRV/TLSA records where service and protocol are part of "
+"the domain name?"
+msgstr ""
+"GNS は、サービスとプロトコルがドメイン名の一部である SRV / TLSA レコードをど"
+"のように処理しますか？"
+
+#: template/faq.html.j2:681
+msgid ""
+"A: When GNS splits a domain name into labels for resolution, it detects the "
+"&quot;_Service._Proto&quot; syntax, converts &quot;Service&quot; to the "
+"corresponding port number and &quot;Proto&quot; to the corresponding "
+"protocol number. The rest of the name is resolved as usual. Then, when the "
+"result is presented, GNS looks for the GNS-specific &quot;BOX&quot; record "
+"type. A BOX record is a record that contains another record (such as SRV or "
+"TLSA records) and adds a service and protocol number (and the original boxed "
+"record type) to it."
+msgstr ""
+"回答：GNS が解決のためにドメイン名をラベルに分割すると、「_ Service._Proto」"
+"構文が検出され、「Service」が対応するポート番号に変換、「Proto」が対応するプ"
+"ロトコル番号に変換されます。また、名前のその他の部分は通常通り解決されます。"
+"その後、結果が表示された際、GNS は GNS 特有の「BOX」レコード種別を検索しま"
+"す。BOX レコードは、別のレコード（SRV や TLSA レコードなど）を含むレコードを"
+"指し、サービスやプロトコル番号（また、オリジナルのボックス型レコードタイプ）"
+"を追加します。"
+
+#: template/faq.html.j2:697
+msgid ""
+"I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. "
+"Should I worry?"
+msgstr ""
+"「WARNING Calculated flow delay for X at Y for Z」という警告が多くでますが、"
+"懸念すべきですか？"
+
+#: template/faq.html.j2:699
+msgid ""
+"A: Right now, this is expected and a known cause for high latency in GNUnet. "
+"We have started a major rewrite to address this and other problems, but "
+"until the Transport Next Generation (TNG) is ready, these warnings are "
+"expected."
+msgstr ""
+"回答：現時点でこれは想定内であり、GNUnet での高レイテンシの既知の原因です。こ"
+"の件および他の問題に対処するため、主要な書き換えを開始していますが、"
+"Transport Next Generation（TNG）が準備できるまでは発生が続くことが見込まれま"
+"す。"
+
+#: template/faq.html.j2:708
+msgid "Error opening `/dev/net/tun': No such file or directory?"
+msgstr "`/dev/net/tun': No such file or directory のエラーとなります。"
+
+#: template/faq.html.j2:710
+msgid ""
+"A: If you get this error message, the solution is simple. Issue the "
+"following commands (as root) to create the required device file"
+msgstr ""
+"回答：このエラーメッセージが表示された場合の解決策は簡単です。次のコマンドを"
+"（ルートとして）実行し、必要なデバイスファイルを作成してください。"
+
+#: template/faq.html.j2:722
+msgid ""
+"'iptables: No chain/target/match by that name.' (when running gnunet-service-"
+"dns)?"
+msgstr ""
+"'iptables: No chain/target/match by that name.' （gnunet-service-dns を実行し"
+"ている場合）"
+
+#: template/faq.html.j2:724
+msgid ""
+"A: For GNUnet DNS, your iptables needs to have &quot;owner&quot; match "
+"support. This is accomplished by having the correct kernel options. Check if "
+"your kernel has CONFIG_NETFILTER_XT_MATCH_OWNER set to either 'y' or "
+"'m' (and the module is loaded)."
+msgstr ""
+"回答：GNUnet DNS の場合、iptables には「所有者」の一致サポートが必要です。こ"
+"れにはカーネルオプションが正しく設定されていることが必要となります。カーネル"
+"の CONFIG_NETFILTER_XT_MATCH_OWNER が「y」または「m」に設定されているか（また"
+"モジュールがロードされているか）確認してください。"
+
+#: template/faq.html.j2:736
+msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
+msgstr ""
+"Fedora で PT を実行すると（他でも発生の可能性）「Timeout was reached（タイム"
+"アウトとなりました）」となります。"
+
+#: template/faq.html.j2:738
+msgid ""
+"A: If you get an error stating that the VPN timeout was reached, check if "
+"your firewall is enabled and blocking the connections."
+msgstr ""
+"回答：VPN タイムアウトのエラーが表示された場合は、ファイアウォールが有効とな"
+"り接続がブロックされていないかを確認してください。"
+
+#: template/faq.html.j2:746
+msgid ""
+"I'm getting an 'error while loading shared libraries: libgnunetXXX.so.X'"
+msgstr ""
+"「共有ライブラリのロード中にエラーが発生：libgnunetXXX.so.X」が表示されます。"
+
+#: template/faq.html.j2:748
+msgid ""
+"A: This error usually occurs when your linker fails to locate one of "
+"GNUnet's libraries. This can have two causes. First, it is theoretically "
+"possible that the library is not installed on your system; however, if you "
+"compiled GNUnet the normal way and/or used a binary package, that is highly "
+"unlikely. The more common cause is that you installed GNUnet to a directory "
+"that your linker does not search. There are several ways to fix this that "
+"are described below. If you are 'root' and you installed to a system folder "
+"(such as /usr/local), you want to add the libraries to the system-wide "
+"search path. This is done by adding a line \"/usr/local/lib/\" to /etc/ld.so."
+"conf and running \"ldconfig\". If you installed GNUnet to /opt or any other "
+"similar path, you obviously have to change \"/usr/local\" accordingly. If "
+"you do not have 'root' rights or if you installed GNUnet to say \"/home/"
+"$USER/\", then you can explicitly tell your linker to search a particular "
+"directory for libraries using the \"LD_LIBRARY_PATH\" environment variable. "
+"For example, if you configured GNUnet using a prefix of \"$HOME/gnunet/\" "
+"you want to run:"
+msgstr ""
+
+#: template/faq.html.j2:774
+msgid ""
+"to ensure GNUnet's binaries and libraries are found. In order to avoid "
+"having to do so each time, you can add the above lines (without the \"$\") "
+"to your .bashrc or .profile file. You will have to logout and login again to "
+"have this new profile be applied to all shells (including your desktop "
+"environment)."
+msgstr ""
+
+#: template/faq.html.j2:781
+msgid "What error messages can be ignored?"
+msgstr ""
+
+#: template/faq.html.j2:783
+msgid ""
+"A: Error messages flagged as \"DEBUG\" should be disabled in binaries built "
+"for end-users and can always be ignored. Error messages flagged as \"INFO\" "
+"always refer to harmless events that require no action. For example, GNUnet "
+"may use an INFO message to indicate that it is currently performing an "
+"expensive operation that will take some time. GNUnet will also use INFO "
+"messages to display information about important configuration values."
+msgstr ""
+
+#: template/faq.html.j2:799
+#, fuzzy
+#| msgid "How does GNUnet compare to Tor?"
+msgid "How does GNUnet compare to other file-sharing applications?"
+msgstr "GNUnet と Tor は何が違うのですか？"
+
+#: template/faq.html.j2:801
+msgid ""
+"A: As opposed to Napster, Gnutella, Kazaa, FastTrack, eDonkey and most other "
+"P2P networks, GNUnet was designed with security in mind as the highest "
+"priority. We intend on producing a network with comprehensive security "
+"features. Many other P2P networks are open to a wide variety of attacks, and "
+"users have little privacy. GNUnet is also Free Software and thus the source "
+"code is available, so you do not have to worry about being spied upon by the "
+"software. The following table summarises the main differences between GNUnet "
+"and other systems. The information is accurate to the best of our knowledge. "
+"The comparison is difficult since there are sometimes differences between "
+"various implementations of (almost) the same protocol. In general, we pick a "
+"free implementation as the reference implementation since it is possible to "
+"inspect the free code. Also, all of these systems are changing over time and "
+"thus the data below may not be up-to-date. If you find any flaws, please let "
+"us know. Finally, the table is not saying terribly much (it is hard to "
+"compare these systems this briefly), so if you want the real differences, "
+"read the research papers (and probably the code)."
+msgstr ""
+
+#: template/faq.html.j2:915
+msgid ""
+"Another important point of reference are the various anonymous peer-to-peer "
+"networks. Here, there are differences in terms of application domain and how "
+"specifically anonymity is achieved. Anonymous routing is a hard research "
+"topic, so for a superficial comparison like this one we focus on the "
+"latency. Another important factor is the programming language. Type-safe "
+"languages may offer certain security benefits; however, this may come at the "
+"cost of significant increases in resource consumption which in turn may "
+"reduce anonymity."
+msgstr ""
+
+#: template/faq.html.j2:928
+msgid "Are there any known attacks (on GNUnet's file-sharing application)?"
+msgstr ""
+
+#: template/faq.html.j2:930
+msgid ""
+"A: Generally, there is the possibility of a known plaintext attack on "
+"keywords, but since the user has control over the keywords that are "
+"associated with the content he inserts, the user can take advantage of the "
+"same techniques used to generate reasonable passwords to defend against such "
+"an attack. In any event, we are not trying to hide content; thus, unless the "
+"user is trying to insert information into the network that can only be "
+"shared with a small group of people, there is no real reason to try to "
+"obfuscate the content by choosing a difficult keyword anyway."
+msgstr ""
+
+#: template/faq.html.j2:944
+msgid "What do you mean by anonymity?"
+msgstr ""
+
+#: template/faq.html.j2:946
+msgid ""
+"A: Anonymity is the lack of distinction of an individual from a (large) "
+"group. A central goal for anonymous file-sharing in GNUnet is to make all "
+"users (peers) form a group and to make communications in that group "
+"anonymous, that is, nobody (but the initiator) should be able to tell which "
+"of the peers in the group originated the message. In other words, it should "
+"be difficult to impossible for an adversary to distinguish between the "
+"originating peer and all other peers."
+msgstr ""
+
+#: template/faq.html.j2:958
+msgid "What does my system do when participating in GNUnet file sharing?"
+msgstr ""
+
+#: template/faq.html.j2:960
+msgid ""
+"A: In GNUnet you set up a node (a peer). It is identified by an ID (hash of "
+"its public key) and has a number of addresses it is reachable by (may have "
+"no addresses, for instance when it's behind a NAT). You specify bandwidth "
+"limits (how much traffic GNUnet is allowed to consume) and datastore quote "
+"(how large your on-disk block storage is) . Your node will then proceed to "
+"connect to other nodes, becoming part of the network."
+msgstr ""
+
+#: template/faq.html.j2:975
+msgid "How can I help translate this webpage into other languages?"
+msgstr ""
+
+#: template/faq.html.j2:977
+msgid ""
+"A: First, you need to register an account with our weblate system. Please "
+"send an e-mail with the desired target language to translators@gnunet.org or "
+"ask for help on the #gnunet chat on irc.freenode.net. Typically someone with "
+"sufficient permissions will then grant you access. Naturally, any abuse will "
+"result in the loss of permissions."
+msgstr ""
+
+#: template/faq.html.j2:989
+msgid "I have some great idea for a new feature, what should I do?"
+msgstr ""
+
+#: template/faq.html.j2:991
+msgid ""
+"A: Sadly, we have many more feature requests than we can possibly implement. "
+"The best way to actually get a new feature implemented is to do it yourself "
+"--- and to then send us a patch."
+msgstr ""
+
+#: template/glossary.html.j2:12
+msgid "Ego"
+msgstr ""
+
+#: template/glossary.html.j2:14
+msgid ""
+"We use the term \"Ego\" to refer to the fact that users in GNUnet can have "
+"multiple unlinkable identities, in the sense of alter egos. The ability to "
+"have more than one identity is crucial, as we may want to keep our egos for "
+"business separate from those we use for political activities or romance.<br> "
+"Egos in GNUnet are technically equivalent to identities (and the code does "
+"not distinguish between them). We simply sometimes use the term \"ego\" to "
+"stress that you can have more than one."
+msgstr ""
+
+#: template/glossary.html.j2:27
+msgid "Identity"
+msgstr ""
+
+#: template/glossary.html.j2:29
+msgid ""
+"In GNUnet users are identified via a public key, and that public key is then "
+"often referred to as the \"Identity\" of the user. However, the concept is "
+"not as draconian as it often is in real life where many are forced to have "
+"one name, one passport and one unique identification number. <br> As long as "
+"identities in GNUnet are simply public keys, users are free to create any "
+"number of identities, and we call those egos to emphasize the difference. "
+"Even though users can create such egos freely, it is possible to have an ego "
+"certified by some certification authority, resulting in something that more "
+"closely resembles the traditional concept of an identity.<br> For example, a "
+"university may certify the identities of its students such that they can "
+"prove that they are studying. Students may keep their (certified) student "
+"identity separate from other egos that they use for other activities in life."
+msgstr ""
+
+#: template/glossary.html.j2:50
+msgid "Pseudonym"
+msgstr ""
+
+#: template/glossary.html.j2:52
+msgid ""
+"A pseudonym is an ego that is specifically intended to not be linked to "
+"one's real name. GNUnet users can create many egos, and thus also many "
+"pseudonyms. <br> Repeated uses of the same pseudonym are linkable by "
+"definition, as they involve the same public key. Anonymity requires the use "
+"of either the special \"anonymous\" pseudonym (for GNUnet, this is the "
+"neutral element on the elliptic curve) or a throw-away pseudonym that is "
+"only used once."
+msgstr ""
+
+#: template/glossary.html.j2:71
+msgid "Namespaces"
+msgstr ""
+
+#: template/glossary.html.j2:73
+msgid ""
+"The GNU Name System allows every ego (or identity) to securely and privately "
+"associate any number of label-value pairs with an ego. The values are called "
+"record sets following the terminology of the Domain Name System (DNS). The "
+"mapping of labels to record sets for a given ego is called a namespace. <br> "
+"If records are made public and thus published, it is possible for other "
+"users to lookup the record given the ego's public key and the label. Here, "
+"not only the label can thus act as a passphrase but also the public key -- "
+"which despite its name may not be public knowledge and is never disclosed by "
+"the GNS protocol itself."
+msgstr ""
+
+#: template/glossary.html.j2:89
+msgid "Peer"
+msgstr ""
+
+#: template/glossary.html.j2:91
+msgid ""
+"A \"peer\" is an instance of GNUnet with its own per-instance public key and "
+"network addresses. Technically, it is possible to run multiple peers on the "
+"same host, but this only makes sense for testing. <br> By design GNUnet "
+"supports multiple users to share the same peer, just as UNIX is a multi-user "
+"system. A \"peer\" typically consists of a set of foundational GNUnet "
+"services running as the \"gnunet\" user and allowing all users in the "
+"\"gnunet\" group to utilize the API. On multi-user systems, additional "
+"\"personalized\" services may be required per user. <br> While peers are "
+"also identified by public keys, these public keys are completely unrelated "
+"to egos or identities. Namespaces cannot be associated with a peer, only "
+"with egos."
+msgstr ""
+
+#: template/gns.html.j2:13 template/gnurl.html.j2:60
+#: template/reclaim/index.html.j2:80 template/reclaim/motivation.html.j2:6
+#, fuzzy
+#| msgid "Documentation"
+msgid "Motivation"
+msgstr "資料"
+
+#: template/gns.html.j2:15
+msgid ""
+"The Domain Name System today enables traffic amplification attacks, "
+"censorship (i.e. China), mass surveillance (MORECOWBELL) and offensive cyber "
+"war (QUANTUMDNS).<br/> Unfortunately, band aid solutions such as DoT, DoH, "
+"DNSSEC, DPRIVE and the like will not fix this. This is why we built the GNU "
+"Name System (GNS), a secure, decentralized name system built on top of "
+"GNUnet."
+msgstr ""
+
+#: template/gns.html.j2:28 template/reclaim/tech.html.j2:6
+msgid "Overview"
+msgstr ""
+
+#: template/gns.html.j2:39
+msgid ""
+"The GNU Name System (GNS) is secure and decentralized naming system. It "
+"allows its users to register names as top-level domains (TLDs) and resolve "
+"other namespaces within their TLDs. <br/> GNS is designed to provide: <ul> "
+"<li>Censorship resistance</li> <li>Query privacy</li> <li>Secure name "
+"resolution</li> <li>Compatibility with DNS</li>"
+msgstr ""
+
+#: template/gns.html.j2:52
+#, fuzzy
+#| msgid "More Resources"
+msgid "Resources"
+msgstr "その他のリソース"
+
+#: template/gnurl.html.j2:21
+msgid ""
+"libgnurl is a micro fork of libcurl. The goal of libgnurl is to support only "
+"HTTP and HTTPS (and only HTTP 1.x) with a single crypto backend (GnuTLS) to "
+"ensure a small footprint and uniform experience for developers regardless of "
+"how libcurl was compiled."
+msgstr ""
+
+#: template/gnurl.html.j2:30
+msgid ""
+"Our main usecase is for GNUnet and Taler, but it might be usable for others, "
+"hence we&#39;re releasing the code to the general public."
+msgstr ""
+
+#: template/gnurl.html.j2:37
+msgid ""
+"libgnurl is released under the same license as libcurl. Please read the "
+"README for instructions, as you must supply the correct options to configure "
+"to get a proper build of libgnurl."
+msgstr ""
+
+#: template/gnurl.html.j2:48
+#, fuzzy
+#| msgid "About"
+msgid "About gnurl"
+msgstr "概要"
+
+#: template/gnurl.html.j2:50
+msgid ""
+"Large parts of the following 6 paragraphs are old and need to be rewritten."
+msgstr ""
+
+#: template/gnurl.html.j2:62
+msgid ""
+"cURL supports many crypto backends. GNUnet requires the use of GnuTLS, but "
+"other variants are used by some distributions. Supporting other crypto "
+"backends would again expose us to a wider array of security issues, may "
+"create licensing issues and most importantly introduce new bugs as some "
+"crypto backends are known to introduce subtle runtime issues. While it is "
+"possible to have two versions of libcurl installed on the same system, this "
+"is error-prone, especially as if we are linked against the wrong version, "
+"the bugs that arise might be rather subtle."
+msgstr ""
+
+#: template/gnurl.html.j2:75
+msgid ""
+"For GNUnet, we also need a particularly modern version of GnuTLS. Thus, it "
+"would anyway be necessary to recompile cURL for GNUnet. But what happens if "
+"one links cURL against this version of GnuTLS? Well, first one would install "
+"GnuTLS by hand in the system. Then, we build cURL. cURL will build against "
+"it just fine, but the linker will eventually complain bitterly. The reason "
+"is that cURL also links against a bunch of other system libraries (gssapi, "
+"ldap, ssh2, rtmp, krb5, sasl2, see discussion on obscure protocols above), "
+"which --- as they are part of the distribution --- were linked against an "
+"older version of GnuTLS. As a result, the same binary would be linked "
+"against two different versions of GnuTLS. That is typically a recipe for "
+"disaster. Thus, in order to avoid updating a dozen system libraries (and "
+"having two versions of those installed), it is necessary to disable all of "
+"those cURL features that GNUnet does not use, and there are many of those. "
+"For GNUnet, the more obscure protocols supported by cURL are close to dead "
+"code --- mostly harmless, but not useful. However, as some application may "
+"use one of those features, distributions are typically forced to enable all "
+"of those features, and thus including security issues that might arise from "
+"that code."
+msgstr ""
+
+#: template/gnurl.html.j2:99
+msgid ""
+"So to use a modern version of GnuTLS, a sane approach is to disable all of "
+"the \"optional\" features of cURL that drag in system libraries that link "
+"against the older GnuTLS. That works, except that one should then NEVER "
+"install that version of libcurl in say /usr or /usr/local, as that may break "
+"other parts of the system that might depend on these features that we just "
+"disabled. Libtool versioning doesn't help here, as it is not intended to "
+"deal with libraries that have optional features. Naturally, installing cURL "
+"somewhere else is also problematic, as we now need to be really careful that "
+"the linker will link GNUnet against the right version. Note that none of "
+"this can really be trivially fixed by the cURL developers."
+msgstr ""
+
+#: template/gnurl.html.j2:118
+msgid "Rename to fix"
+msgstr ""
+
+#: template/gnurl.html.j2:120
+#, python-format
+msgid ""
+"How does forking fix it? Easy. First, we can get rid of all of the "
+"compatibility issues --- if you use libgnurl, you state that you don&#39;t "
+"need anything but HTTP/HTTPS. Those applications that need more, should "
+"stick with the original cURL. Those that do not, can choose to move to "
+"something simpler. As the library gets a new name, we do not have to worry "
+"about tons of packages breaking as soon as one rebuilds it. So renaming "
+"itself and saying that \"libgnurl = libcurl with only HTTP/HTTPS support and "
+"GnuTLS\" fixes 99%% of the problems that darkened my mood. Note that this "
+"pretty much CANNOT be done without a fork, as renaming is an essential part "
+"of the fix. Now, there might be creative solutions to achieve the same thing "
+"within the standard cURL build system, but this was deemed to be too much "
+"work when gnurl was originally started. The changes libgnurl makes to curl "
+"are miniscule and can easily be applied again and again whenever libcurl "
+"makes a new release."
+msgstr ""
+
+#: template/gnurl.html.j2:142
+msgid "Using libgnurl"
+msgstr ""
+
+#: template/gnurl.html.j2:144
+msgid ""
+"Projects that use cURL only for HTTP/HTTPS and that would work with GnuTLS "
+"should be able to switch to libgnurl by changing \"-lcurl\" to \"-lgnurl\". "
+"That&#39;s it. No changes to the source code should be required, as libgnurl "
+"strives for bug-for-bug compatibility with the HTTP/HTTPS/GnuTLS subset of "
+"cURL. We might add new features relating to this core subset if they are "
+"proposed, but so far we have kept our changes minimal and no additions to "
+"the original curl source have been written."
+msgstr ""
+
+#: template/gnurl.html.j2:161
+msgid "Gotchas"
+msgstr ""
+
+#: template/gnurl.html.j2:163
+msgid ""
+"libgnurl and gnurl are not intended to be used as a replacement for curl for "
+"users: <br> This does not mean there is no confidence in the work done with "
+"gnurl, it means that tools which expect curl or libcurl will not make use of "
+"a different named binary and library. If you know what you are doing, you "
+"should be able to use gnurl as part of your tooling in place of curl. We do "
+"not recommend to do so however, as the only usage it is tested for <em>so "
+"far</em> is as part of Taler&#39;s and GNunet&#39;s build-system. <br> Since "
+"no conflicts in filenames occur you are not expected to remove curl to make "
+"use of gnurl and viceversa."
+msgstr ""
+
+#: template/gnurl.html.j2:188
+msgid "You can get the gnurl git repository using:"
+msgstr ""
+
+#: template/gnurl.html.j2:201
+msgid "The versions are checked in as (signed) git tags."
+msgstr ""
+
+#: template/gnurl.html.j2:211
+msgid ""
+"Releases are published on <a href=\"https://ftpmirror.gnu.org/gnu/gnunet/"
+"\">ftpmirror.gnu.org/gnu/gnunet</a>. gnurl is available from within a "
+"variety of distributions and package managers. Some Package Managers which "
+"include gnurl are: <a href=\"https://www.gnu.org/software/guix/\">GNU Guix</"
+"a> (available as \"gnurl\"), <a href=\"https://gentoo.org\">Gentoo</a> "
+"through the collaborative ebuild collection <a href=\"https://git.gnunet.org/"
+"youbroketheinternet-overlay.git/\">youbroketheinternet</a>, <a href="
+"\"https://nixos.org/nix/\">Nix</a>, and as www/gnurl in <a href=\"https://"
+"pkgsrc.org\">pkgsrc</a>."
+msgstr ""
+
+#: template/gnurl.html.j2:228
+msgid "Building gnurl"
+msgstr ""
+
+#: template/gnurl.html.j2:230
+msgid ""
+"We suggest to closely follow release announcements, as they might indicate "
+"changes in how gnurl is to be build. <br> If your package manager provides a "
+"binary build or build instructions to build gnurl from source automated and "
+"integrated with your environment, we strongly suggest to use this binary "
+"build. <br> There are two ways to build gnurl. The first one builds from the "
+"most recent git tag, the second one uses the distributed tarball. "
+"Distributors generally are supposed to build from the tarball, but we "
+"describe both methods here. Both methods are written with a NetBSD 9 "
+"userland in mind, substitute tools as necessary. <br> You should <b>avoid</"
+"b> building gnurl from the tip of the default git branch, as only tags are "
+"considered to be stable and approved builds."
+msgstr ""
+
+#: template/gnurl.html.j2:251
+msgid "Building from the distributed tarball (prefered method)"
+msgstr ""
+
+#: template/gnurl.html.j2:253
+msgid ""
+"If you want to verify the signature, install an OpenPGP compatible tool such "
+"as security/gnupgp2 (and set it up). Assuming you use pkgin:"
+msgstr ""
+
+#: template/gnurl.html.j2:267
+msgid "Fetch the signature key from"
+msgstr ""
+
+#: template/gnurl.html.j2:271
+msgid "or via commandline with gnupg2."
+msgstr ""
+
+#: template/gnurl.html.j2:276
+msgid ""
+"Fetch the release, the signature, the checksum file as well as its signature:"
+msgstr ""
+
+#: template/gnurl.html.j2:295
+msgid ""
+"verify the signatures, and verify the checksums against the checksums in "
+"the .sum.txt file."
+msgstr ""
+
+#: template/gnurl.html.j2:301
+msgid "unpack the tarball:"
+msgstr ""
+
+#: template/gnurl.html.j2:311
+msgid "Change into the directory"
+msgstr ""
+
+#: template/gnurl.html.j2:321
+msgid "Now you can either run"
+msgstr ""
+
+#: template/gnurl.html.j2:331
+msgid "directly (and read configure-gnurl before you do so) or invoke"
+msgstr ""
+
+#: template/gnurl.html.j2:341
+msgid ""
+"and pass additional parameters such as a custom PREFIX location. Further "
+"reference can be the"
+msgstr ""
+
+#: template/gnurl.html.j2:346
+msgid "Now run"
+msgstr ""
+
+#: template/gnurl.html.j2:356
+msgid "(this is optional)"
+msgstr ""
+
+#: template/gnurl.html.j2:365
+msgid "and you are done."
+msgstr ""
+
+#: template/gnurl.html.j2:369
+msgid "Building from a tagged git commit"
+msgstr ""
+
+#: template/gnurl.html.j2:371
+msgid ""
+"Follow the steps above, but instead of downloading the tarball, clone the "
+"git tag you want to build from."
+msgstr ""
+
+#: template/gnurl.html.j2:382
+#, fuzzy
+#| msgid "Reporting bugs"
+msgid "Reporting Bugs"
+msgstr "バグの報告"
+
+#: template/gnurl.html.j2:384
+msgid ""
+"You can report bugs on our bug tracker: <a href=\"https://bugs.gnunet.org/"
+"\">bugs.gnunet.org</a>. Alternatively you can use our bug mailinglist, but "
+"we prefer to track bugs on the bugtracker."
+msgstr ""
+
+#: template/gnurl.html.j2:395
+msgid "Maintainer and Cryptographic signatures"
+msgstr ""
+
+#: template/gnurl.html.j2:397
+msgid ""
+"gnurl/libgnurl is looking for a new maintainer. Releases after version "
+"7.69.1 and up to version 7.72.0 were signed with the OpenPGP Key "
+"<b>0xD6B570842F7E7F8D</b> (<a href=\"https://keys.openpgp.org/search?"
+"q=6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>), with the "
+"key fingerprint <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E 7F8D</b>."
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:7
+msgid "GSoC 2018: GNUnet WebUI (GNUnet Web-based User Interface)"
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:11
+msgid "Tue, 08/14/2018 - 07:55, Phil Buschmann"
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:18
+msgid ""
+"In the context of Google Summer of Code 2018, my mentor (Martin "
+"Schanzenbach) and I have worked on creating and extending the REST API of "
+"GNUnet. Currently, we mirrored the functionality of following commands:"
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:32
+msgid ""
+"Additionally, we developed a website with the Javascript framework Angular 6 "
+"and the design framework iotaCSS to use the new REST API. The REST API of "
+"GNUnet is now documented with Sphinx."
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:41
+msgid ""
+"... when you can use the command line tools? We need to keep in mind, that "
+"everyone has the right to stay secure and private but not everyone feels "
+"comfortable using a terminal. The further developed REST access to GNUnet "
+"APIs in addition to the new web application allows new users to interact "
+"with GNUnet over a well known tool: their browsers. This addition to the C "
+"API and the command line tools may attract new users and developers."
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:54
+msgid ""
+"<li> The REST API developed in GNUnet<br> The REST API is already merged "
+"into the gnunet.git repository (<a href=\"https://gnunet.org/git/gnunet.git/"
+"\">GNUnet Main Git</a>).<br /> To use the new features, clone the repository "
+"and follow the <a href=\"https://gnunet.org/en/install.html\">Installation</"
+"a> on gnunet.org. Then, start the rest service with \"gnunet-arm -i rest\". "
+"</li> <li> The Web Application<br> The web application is available under "
+"the gnunet-webui.git repository (<a href=\"https://gnunet.org/git/gnunet-"
+"webui.git/\">GNUnet WebUI Git</a>).<br /> You need to install the newest "
+"version of 'node' and 'yarn'. Dependent on your system, you may need to "
+"download newer versions and install them manually and not over your packet "
+"manager. After the installation succeeded, you need to clone the repository. "
+"Then, you need to run \"yarn install\" and \"yarn start\" for testing "
+"purposes. To deploy the website (keep in mind, that this website "
+"communicates with another localhost instance) use \"yarn build\" for "
+"building the web application and use the output in the 'dist' directory. </"
+"li> <li> The Documentation<br /> The documentation is available under the "
+"gnunet-rest-api.git repository (<a href=\"https://gnunet.org/git/gnunet-rest-"
+"api.git/\">GNUnet REST API Docmentation Git</a>).<br /> Clone the repository "
+"and \"make html\". Then open the 'index.html' under 'build/html/'. </li>"
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:91
+msgid ""
+"Please, give it a try and contact me, if you find any bugs or unintentional "
+"features. ;)"
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:98
+msgid ""
+"Right now, the build process of the web application may be a little too "
+"complex for a casual user. We may be able to solve this by using docker.<br /"
+"> Additionally, the web application does not prevent wrong inputs but "
+"responds with error messages. Adding GNUnet Records is currently only usable "
+"for people, who know how a GNS Record looks like. This can be adapted to "
+"each record type.<br /> Last but not least, additional features, design "
+"changes, etc..."
+msgstr ""
+
+#: template/gsoc-2018-gnunet-webui.html.j2:111
+msgid "Thanks for reading."
+msgstr ""
+
+#: template/gsoc.html.j2:6
+msgid "GNUnet's Google Summer of Code projects"
+msgstr ""
+
+#: template/gsoc.html.j2:12 template/gsoc.html.j2:29
+msgid "Ideas 2021"
+msgstr ""
+
+#: template/gsoc.html.j2:13 template/gsoc.html.j2:215
+#, fuzzy
+#| msgid "GSoC Projects"
+msgid "Past projects"
+msgstr "GSoC プロジェクト"
+
+#: template/gsoc.html.j2:14 template/gsoc.html.j2:596
+msgid "Finished projects"
+msgstr ""
+
+#: template/gsoc.html.j2:21
+msgid ""
+"As a GNU project, GNUnet has participated in the Google Summer of Code "
+"(GSoC) for a number of years. This page lists all current, past, and "
+"finished projects. If you want to participate and apply for any of the ideas "
+"for 2020 below or any past project which is not yet finished (or even your "
+"own idea), please contact us either in IRC or mailing list."
+msgstr ""
+
+#: template/gsoc.html.j2:34
+msgid ""
+"The GNUnet team is currently working on a transport layer rewrite in order "
+"to fix core issues with connectivity. This new component is currently "
+"developed under the name \"TNG\". What is currently known as \"transport "
+"plugins\" will in the TNG be represented as \"communicators\". Communicators "
+"are processes with a well defined API that allow to connect peers over a "
+"specific protocol. The primary protocol which are already implemented are "
+"UNIX sockets, UDP sockets, and TCP sockets. For a truly resilient network, "
+"other connectivity options such as WiFi mesh, Bluetooth, HTTP(S), QUIC or "
+"even more obscure alternatives such as radio are required. In this project, "
+"the goal is to select, implement and test new communicators. While TNG is "
+"not yet ready, communicators can, by design, be developed and tested against "
+"the current API. We expect that this project can be worked on by multiple "
+"students as there are a lot of protocols to choose from. The tasks would "
+"consist of: <ol> <li>Deciding which communicators to implement.</li> "
+"<li>Test the communicators.</li> <li>Documentation.</li> </ol> Advantageous "
+"skills/languages/frameworks: <ol> <li>C</li> <li>Knowledge of HTTPS, QUIC, "
+"Bluetooth or WiFi.</li> </ol> <br/> <strong>Difficulty:</strong> Average, "
+"but depends on selected protocols. <br/> <strong>Mentors:</strong> Martin "
+"Schanzenbach, t3sserakt"
+msgstr ""
+
+#: template/gsoc.html.j2:79
+msgid ""
+"The REST API currently only supports a single user system. This is an issue "
+"as on multi-user systems, access control must be enfoced on a per-user "
+"basis. In this project, the REST service must be extended to support user "
+"authentication. This includes the correct handling of user context switches. "
+"<ol> <li>Implement user authentication.</li> <li>Test the access control.</"
+"li> <li>Document the changes to the REST API.</li> </ol> Advantageous skills/"
+"languages/frameworks: <ol> <li>C</li> <li>Knowledge of user authentication "
+"subsystems on Linux/Unix.</li> <li>REST/HTTP Authentication methods</li> </"
+"ol> <br/> <strong>Difficulty:</strong> Beginner <br/> <strong>Mentors:</"
+"strong> Martin Schanzenbach"
+msgstr ""
+
+#: template/gsoc.html.j2:111
+msgid ""
+"reclaimID is a decentralized identity system build on top of the GNU Name "
+"System. Currently, there is a Webextension which uses the GNUnet <a href="
+"\"https://rest.gnunet.org\">REST API</a>. In order to improve adoption and "
+"ease of use, this project aims to include a full GNUnet node within the "
+"Webextention as a fallback. GNUnet can be compiled to Web Assembly or "
+"JavaScript as demonstrated <a href=\"https://gnunet.io\">here</a>. The idea "
+"is to improve upon this concept and support more of GNUnet's subsystems. The "
+"difficulty of this project largely depends on the students proficiency with "
+"build tools, emscripten and improvisation skills. There non-exhaustive task "
+"list would be: <ol> <li>Improve existing GNUnet emscripten build to include "
+"more subsystems.</li> <li>Integrate the result into a Webextention.</li> "
+"<li>Integrate the result into the re:claimID Webextension</li> </ol> "
+"Advantageous skills/languages/frameworks: <ol> <li>C</li> <li>emscripten</"
+"li> <li>Webextensions</li> </ol> <br/> <strong>Difficulty:</strong> "
+"Challenging <br/> <strong>Mentors:</strong> Martin Schanzenbach"
+msgstr ""
+
+#: template/gsoc.html.j2:147
+msgid ""
+"Currently, the keys in our statistics database are too verbose. For example: "
+"</p> <p> nse # flood messages received: 13<br/> nse # peers connected: 4<br/"
+"> nse # nodes in the network (estimate): 203<br/> nse # flood messages "
+"started: 5<br/> nse # estimated network diameter: 3<br/> nse # flood "
+"messages transmitted: 10<br/> </p> <p> With such verbose keys there's no "
+"easy way to form compact JSON document or entries for time-series database. "
+"And you can't query single stats without having to copypaste the line "
+"exactly and put in quotes. In short, the goals are to... <ol> <li>Think of a "
+"way how statistics entries can be made canonical.</li> <li>Implement the "
+"change and migrate existing uses.</li> <li>Document the format(s) and define "
+"an appropriate registration mechanism for identifiers</li> </ol> Relevant "
+"bugs: <a href=\"https://bugs.gnunet.org/view.php?id=5650\">#5650</a><br/> "
+"Advantageous skills/languages/frameworks: <ol> <li>C</li> <li>HTML</li> </"
+"ol> <br/> <strong>Difficulty:</strong> Beginner <br/> <strong>Mentors:</"
+"strong> Martin Schanzenbach"
+msgstr ""
+
+#: template/gsoc.html.j2:187
+msgid ""
+"The goal is to either build upon the (outdated) <a href=\"https://github.com/"
+"canndrew/gnunet-rs\">GNUnet Rust bindings</a> or to follow the path of <a "
+"href=\"GNUnet Go\">https://github.com/bfix/gnunet-go</a> which tries to "
+"reimplement most of the GNUnet stack. The end result should be an extension "
+"template for GNUnet in the form of the existing <a href=\"https://git.gnunet."
+"org/gnunet-ext.git/\">C template</a> which allows to quickly start "
+"implementing services and libraries for GNUnet."
+msgstr ""
+
+#: template/gsoc.html.j2:198 template/gsoc.html.j2:652
+msgid "<strong>Mentors:</strong> Martin Schanzenbach"
+msgstr ""
+
+#: template/gsoc.html.j2:203
+msgid "Required Skills: Solid knowledge of Rust and ideally asynchronuous IO."
+msgstr ""
+
+#: template/gsoc.html.j2:208 template/gsoc.html.j2:321
+#: template/gsoc.html.j2:531 template/gsoc.html.j2:662
+msgid "Difficulty level: medium"
+msgstr ""
+
+#: template/gsoc.html.j2:222
+msgid ""
+"It is time for GNUnet to run properly on Android. Note that GNUnet is "
+"written in C, and this is not about rewriting GNUnet in Java, but about "
+"getting the C code to run on Android."
+msgstr ""
+
+#: template/gsoc.html.j2:229
+msgid ""
+"Includes: Implementation of rudimentary Android compatibility for GNUnet, in "
+"part by porting the GNUnet utils scheduler to act as a thin wrapper over "
+"libuv."
+msgstr ""
+
+#: template/gsoc.html.j2:236
+msgid ""
+"<strong>Mentors:</strong> <a href=\"https://www.goebel-consult.de/\">Hartmut "
+"Goebel</a>, Jeff Burdges, Christian Grothoff"
+msgstr ""
+
+#: template/gsoc.html.j2:245
+msgid ""
+"There is a push for migrating our CI to Gitlab. The CI should eventually not "
+"just run \"make check\" on various platforms, but also perform tests with "
+"multiple peers running in different VMs with specific network topologies (i."
+"e. NAT) between them being simulated. The CI should also be integrated with "
+"Gauger for performance regression analysis. Running jobs only when "
+"dependencies have changed and scripting more granular triggers or ideally "
+"automatic dependency discovery (as done by the autotools) is also important."
+msgstr ""
+
+#: template/gsoc.html.j2:257
+msgid "<strong>Mentors:</strong> TBD"
+msgstr ""
+
+#: template/gsoc.html.j2:267
+msgid ""
+"One great problem of the current Internet is the lack of disintermediation. "
+"When people want to talk they need a chat service. When they want to share "
+"files they need a file transfer service. Although GNUnet already possesses "
+"quite advanced integration into Linux networking, a little extra work is "
+"needed for existing applications like irc, www, ftp, rsh, nntpd to run over "
+"it in a peer-to-peer way, simply by using a GNS hostname like friend.gnu. "
+"Once people have added a person to their GNS they can immediately message, "
+"exchange files and suchlike directly, with nothing but the GNUnet in the "
+"middle, using applications that have been distributed with unix systems ever "
+"since the 1980's. We can produce an OS distribution where these things work "
+"out of the box with the nicknames of people instead of cloud services. For "
+"more information and context, read"
+msgstr ""
+
+#: template/gsoc.html.j2:288
+msgid "<strong>Mentors:</strong> lynX &amp; dvn"
+msgstr ""
+
+#: template/gsoc.html.j2:296
+msgid ""
+"Implement the AnycastExit spec to enable GNUnet clients to connect over Tor."
+msgstr ""
+
+#: template/gsoc.html.j2:302 template/gsoc.html.j2:337
+#: template/gsoc.html.j2:352
+msgid "<strong>Mentors:</strong> Jeff Burdges"
+msgstr ""
+
+#: template/gsoc.html.j2:307
+msgid ""
+"Note: There was a Special TLDs spec to allow Tor to resolve domain names "
+"using GNS over Tor too, but currently that's on hold until folks think more "
+"about how names should be moved around the local system. We're calling this "
+"more collaborative approach NSS2 for now."
+msgstr ""
+
+#: template/gsoc.html.j2:316 template/gsoc.html.j2:456
+#: template/gsoc.html.j2:496 template/gsoc.html.j2:526
+msgid "Required Skills: C"
+msgstr ""
+
+#: template/gsoc.html.j2:329
+msgid ""
+"Improve the Rust implementation of GNUnet utils, possibly including adding "
+"support for asynchronous IO using mio, or perhaps a higher level "
+"asynchronous IO library built upon it, such as rotor, mioco, eventual_io, or "
+"gj."
+msgstr ""
+
+#: template/gsoc.html.j2:345
+msgid ""
+"Implementation of a replacement for PANDA (see Pond) with better security, "
+"and maybe integration with the GNU Name System for key exchange."
+msgstr ""
+
+#: template/gsoc.html.j2:357
+msgid "Required Skills: Rust or C, crypto"
+msgstr ""
+
+#: template/gsoc.html.j2:362 template/gsoc.html.j2:419
+#: template/gsoc.html.j2:461 template/gsoc.html.j2:501
+msgid "Difficulty level: high"
+msgstr ""
+
+#: template/gsoc.html.j2:370
+msgid ""
+"Implement different place types and file sharing by creating a new place for "
+"the shared content."
+msgstr ""
+
+#: template/gsoc.html.j2:376
+msgid "Place types to be implemented:"
+msgstr ""
+
+#: template/gsoc.html.j2:380
+msgid ""
+"<ul> <li>File: generic file with comments</li> <li>Image: display an image "
+"with comments referencing a region of the image</li> <li>Sound: play a sound "
+"file with comments referencing a timestamp</li> <li>Directory/Album: "
+"pointers to File / Image / Sound places</li> <li>Event: with RSVP</li> "
+"<li>Survey: ask your social neighborhood questions in a structured form</li> "
+"</ul>"
+msgstr ""
+
+#: template/gsoc.html.j2:391
+msgid "Also provide the following UI functionality:"
+msgstr ""
+
+#: template/gsoc.html.j2:395
+msgid ""
+"<ul> <li>Fork existing channels, reorganize people into new chatrooms or "
+"channels.</li> <li>Share a post (edit and repost something elsewhere, on a "
+"fan page for example).</li> <li>Edit a previously published post + offer "
+"edit history to readers.</li> <li>Control expiry of channel history.</li> </"
+"ul>"
+msgstr ""
+
+#: template/gsoc.html.j2:404
+msgid ""
+"See also <a href=\"http://secushare.org/features\">http://secushare.org/"
+"features</a>"
+msgstr ""
+
+#: template/gsoc.html.j2:409
+msgid "<strong>Mentors:</strong> lynX"
+msgstr ""
+
+#: template/gsoc.html.j2:414
+msgid "Required Skills: C/C++"
+msgstr ""
+
+#: template/gsoc.html.j2:427
+msgid ""
+"Implement aggregation of distributed state from various channels in order to "
+"provide for a powerful social graph API capable of producing social network "
+"profiles, dashboards, a calendar out of upcoming event invitations (if "
+"available), social search functionality and most of all to make it easy for "
+"users to adopt cryptographic identities of their contacts/friends simply by "
+"finding them in the social graph of their existing contacts (\"This is "
+"Linda. You have 11 contacts in common with her. [ADD]\")."
+msgstr ""
+
+#: template/gsoc.html.j2:445
+msgid ""
+"Related to <a href=\"http://secushare.org/rendezvous\">secushare.org/"
+"rendezvous</a>"
+msgstr ""
+
+#: template/gsoc.html.j2:451 template/gsoc.html.j2:491
+msgid "<strong>Mentors:</strong> t3sserakt, lynX"
+msgstr ""
+
+#: template/gsoc.html.j2:468
+msgid ""
+"<ul> <li> Emulate IMAP/SMTP protocols as necessary to transform traditional "
+"mail clients into secushare user interfaces. </li> <li> Think of ways to map "
+"e-mail addresses to secushare identities. </li> <li> Encode or translate "
+"various e-mail features into secushare equivalents. </li> <li> Parts of "
+"secushare are currently written in Rust, therefore Rust is preferred for "
+"this task but it is not an requirement. </li> </ul>"
+msgstr ""
+
+#: template/gsoc.html.j2:509
+msgid ""
+"Implementation of the GNUnet auction system described in Chapter 3 of <a "
+"href=\"https://grothoff.org/christian/teich2017ms.pdf\">this thesis</a>. "
+"Specific tasks are adding smart contract creation and round time enforcement "
+"to libbrandt as well as creating the GNUnet auction service, library and the "
+"three user interface programs create, info and join."
+msgstr ""
+
+#: template/gsoc.html.j2:521
+msgid "<strong>Mentors:</strong> mate, cg"
+msgstr ""
+
+#: template/gsoc.html.j2:539
+msgid ""
+"Implementation of additional transports to make GNUnet communication more "
+"robust in the presence of problematic networks: GNUnet-over-SMTP, GNUnet-"
+"over-DNS"
+msgstr ""
+
+#: template/gsoc.html.j2:546 template/gsoc.html.j2:560
+msgid "<strong>Mentors:</strong> Matthias Wachs"
+msgstr ""
+
+#: template/gsoc.html.j2:554
+msgid ""
+"Implementation of ALG-based NAT traversal methods (FTP/SIP-based hole "
+"punching, better STUN support)"
+msgstr ""
+
+#: template/gsoc.html.j2:568
+msgid ""
+"<strong>Mentors:</strong> Matthias Wachs, Christian Grothoff, Jeff Burdges"
+msgstr ""
+
+#: template/gsoc.html.j2:576
+msgid ""
+"Improving libaboss to make computation on shared secrets (including repeated "
+"multiplication) based on <a href=\"https://dl.acm.org/citation.cfm?"
+"doid=62212.62213\">Ben-Or et al.</a> if possible. This in particular means "
+"moving libaboss to bignums (gcry_mpi)."
+msgstr ""
+
+#: template/gsoc.html.j2:589
+msgid ""
+"Please refer to the description for this project listed under GNU Guix "
+"project ideas."
+msgstr ""
+
+#: template/gsoc.html.j2:602
+msgid ""
+"Python 2.7 is reaching its end-of-life, and we want to get rid of the "
+"dependency on Python. The existing gnunet-qr tool is a rather simple wrapper "
+"around python-zbar, which itself wraps libzbar. The goal of this project is "
+"to directly use libzbar to scan QR codes for GNUnet / the GNU Name System "
+"(see also <a href=\"https://bugs.gnunet.org/view.php?id=5562\">#5562</a>)."
+msgstr ""
+
+#: template/gsoc.html.j2:612
+msgid "<strong>Mentors:</strong> Christian Grothoff"
+msgstr ""
+
+#: template/gsoc.html.j2:617
+msgid "Required Skills:"
+msgstr ""
+
+#: template/gsoc.html.j2:622
+msgid "Difficulty level:"
+msgstr ""
+
+#: template/gsoc.html.j2:627
+msgid "Report:"
+msgstr ""
+
+#: template/gsoc.html.j2:632
+msgid "Unfinished/Abandoned as gnunet-qr was moved to C outside of GSoC."
+msgstr ""
+
+#: template/gsoc.html.j2:642
+msgid ""
+"Implementation of a Web-based UI for GNUnet similar to GNUnet-Gtk with a yet "
+"to be determined framework such as Angular2. This includes the design and "
+"implementation of not yet existing <a href=\"http://jsonapi.org/\">REST "
+"APIs</a> that expose the <a href=\"https://docs.gnunet.org/doxygen/modules."
+"html\">GNUnet API</a>."
+msgstr ""
+
+#: template/gsoc.html.j2:657
+msgid "Required Skills: C, JavaScript, CSS"
+msgstr ""
+
+#: template/gsoc.html.j2:667
+msgid ""
+"Report: <a href=\"gsoc-2018-gnunet-webui.html\">GSoC 2018: GNUnet WebUI</a>"
+msgstr ""
+
+#: template/index.html.j2:8
+msgid "The Internet of tomorrow needs GNUnet today"
+msgstr ""
+
+#: template/index.html.j2:26
+msgid "Latest news"
+msgstr ""
+
+#: template/index.html.j2:32
+msgid "Older news entries"
+msgstr ""
+
+#: template/index.html.j2:47
+msgid "The Internet is broken"
+msgstr ""
+
+#: template/index.html.j2:49
+msgid ""
+"The conventional Internet is currently like a system of roads with deep "
+"potholes and highwaymen all over the place. Even if you still can use the "
+"roads (e.g. send emails, or browse websites) your vehicle might get "
+"hijacked, damaged, or long arms might reach into its back and steal your "
+"items (data) to use it against you and sell it to others - while you can&#39;"
+"t even notice the thievery nor accuse and hold the scroungers accountable. "
+"<!-- Proposal from Fabian Gerlach: The conventional Internet is currently "
+"like a system of roads with deep potholes and surveillance cameras all over "
+"the place. Even if you still can use the roads (e.g. send emails, or browse "
+"websites) your vehicle might gets damaged. And the surveillance cameras will "
+"create a movement profile about your life: They recognize your car license "
+"plate, track you everywhere you drive, and save this information in a "
+"central data base. --> The Internet was not designed with security in mind: "
+"protecting against address forgery, routers learning metadata, or choosing "
+"trustworthy third parties is nontrivial and sometimes impossible. <!-- "
+"Proposal from Fabian Gerlach: The Internet is not designed with security in "
+"mind: The network generally learns too much about users; it has insecure "
+"defaults and high complexity; and it is centralized. That makes it very "
+"vulnerable for multiple attacks massively threatening our freedom. -->"
+msgstr ""
+
+#: template/index.html.j2:94
+msgid "GNUnet helps building a new Internet"
+msgstr ""
+
+#: template/index.html.j2:96
+msgid ""
+"GNUnet is a network protocol stack for building secure, distributed, and "
+"privacy-preserving applications.<br/> With strong roots in <a class=\"link\" "
+"href=\"https://bib.gnunet.org\">academic research</a>, our goal is to "
+"replace the <a class=\"link\" href=\"https://secushare.org/broken-internet"
+"\">old insecure Internet</a> protocol stack."
+msgstr ""
+
+#: template/index.html.j2:119
+msgid "Metadata is exposed"
+msgstr ""
+
+#: template/index.html.j2:121
+msgid ""
+"Your metadata is just as revealing as the actual content; and it gets "
+"exposed on the Internet.<br> Even though transport encryption is "
+"increasingly being deployed on the Internet, it still reveals data that can "
+"threaten democracy: the identities of senders and receivers, the times, "
+"frequency and the volume of communication are all still revealed.<br>"
+msgstr ""
+
+#: template/index.html.j2:150
+msgid "GNUnet provides privacy-by design"
+msgstr ""
+
+#: template/index.html.j2:152
+msgid ""
+"It provides <a class=\"link\" href=\"https://www.w3.org/2014/strint/"
+"papers/65.pdf\"> improving addressing, routing, naming and content "
+"distribution</a> in a technically robust manner - as opposed to ad-hoc "
+"designs in place today. <!-- Proposal from fabian gerlach: GNUnet is built "
+"<a href=\"https://www.w3.org/2014/strint/papers/65.pdf\">\"privacy by design"
+"\"</a> and \"distributed by design\". This improves addressing, routing, "
+"naming and content distribution in a technically robust manner. -->"
+msgstr ""
+
+#: template/index.html.j2:177
+msgid "Freedoms are not respected"
+msgstr ""
+
+#: template/index.html.j2:179
+msgid ""
+"Today, monitoring increasingly centralized infrastructure, proprietary "
+"implementations, traffic shapers and firewalls restrict all of the <a class="
+"\"link\" href=\"https://www.gnu.org/philosophy/free-sw.html\">essential "
+"freedoms</a> to various degrees."
+msgstr ""
+
+#: template/index.html.j2:203
+msgid "GNUnet supports a free and open society"
+msgstr ""
+
+#: template/index.html.j2:205
+msgid ""
+"GNUnet is a self-organizing network and it is <a class=\"link\" href="
+"\"https://www.gnu.org/philosophy/free-sw.html\">free software</a> as in "
+"freedom. GNUnet puts you in control of your data. You determine which data "
+"to share with whom, and you&#39;re not pressured to accept compromises. It "
+"gives users freedoms to securely access information (\"run\" the network), "
+"to study all aspects of the network&#39;s operation (\"access the code\"), "
+"to distribute information (\"copy\"), as well as the freedom to deploy new "
+"applications (\"modify\")."
+msgstr ""
+
+#: template/index.html.j2:229
+msgid "Decentralization is the key, but hard"
+msgstr ""
+
+#: template/index.html.j2:232
+msgid ""
+"<!-- replaced with Proposal from Fabian Gerlach: It seems as if every other "
+"distributed or P2P project develops its own library stack, covering "
+"transports, stream muxing, discovery and others. This divides effort and "
+"multiplies bug count. --> Instead of sharing common components and tools for "
+"building P2P systems, every P2P project seems to re-invent the wheel. <!-- "
+"TODO: rework this sentence. --> This heightens the effort and increases the "
+"potential number of vulnerabilities."
+msgstr ""
+
+#: template/index.html.j2:264
+msgid "GNUnet is a framework"
+msgstr ""
+
+#: template/index.html.j2:266
+msgid ""
+"It offers a metadata-preserving foundation for your application. It offers "
+"components for addressing, reliable encrypted channels with advanced routing "
+"and resource discovery and naming. Our work is based on continuous research "
+"spanning almost two decades."
+msgstr ""
+
+#: template/index.html.j2:286
+#, fuzzy
+#| msgid "read more"
+msgid "Learn more"
+msgstr "詳細"
+
+#: template/index.html.j2:295
+msgid "Get started"
+msgstr ""
+
+#: template/install-on-archpi.html.j2:6
+msgid "Tutorial: GNUnet on Arch Linux/Pi"
+msgstr ""
+
+#: template/install-on-archpi.html.j2:16
+msgid "Requirements for Raspberry Pi 3"
+msgstr ""
+
+#: template/install-on-archpi.html.j2:40
+#, fuzzy
+#| msgid "Source Code"
+msgid "Get the Source Code"
+msgstr "ソースコード"
+
+#: template/install-on-archpi.html.j2:62
+#: template/install-on-debian9.html.j2:131
+msgid "In Addition: gnunet-gtk"
+msgstr ""
+
+#: template/install-on-archpi.html.j2:81
+msgid "Run"
+msgstr ""
+
+#: template/install-on-archpi.html.j2:133
+#: template/install-on-openwrt.html.j2:111
+msgid "Make sure, it works!"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:6
+msgid "Tutorial: GNUnet on Debian 9"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:9
+#: template/install-on-ubuntu1804.html.j2:9
+msgid "Introduction"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:29 template/install-on-macos.html.j2:17
+#: template/install-on-netbsd.html.j2:19
+#: template/install-on-ubuntu1804.html.j2:26
+msgid "Requirements"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:46
+#: template/install-on-ubuntu1804.html.j2:41
+msgid "Make an installation directory"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:60 template/install-on-macos.html.j2:134
+#: template/install-on-netbsd.html.j2:237
+#: template/install-on-ubuntu1804.html.j2:53
+#, fuzzy
+#| msgid "Source Code"
+msgid "Get the source code"
+msgstr "ソースコード"
+
+#: template/install-on-debian9.html.j2:79 template/install-on-macos.html.j2:142
+#: template/install-on-netbsd.html.j2:245
+#: template/install-on-ubuntu1804.html.j2:61
+msgid "Compile and Install"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:104
+#: template/install-on-ubuntu1804.html.j2:70
+msgid "Option 1: GNUnet for testing / usage"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:117
+#: template/install-on-ubuntu1804.html.j2:82
+#, fuzzy
+#| msgid "GNUnet for developers"
+msgid "Option 2: GNUnet for development"
+msgstr "開発者向け GNUnet"
+
+#: template/install-on-debian9.html.j2:154
+#: template/install-on-ubuntu1804.html.j2:97
+msgid "Install GNUnet plugin for name resolution"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:208
+#: template/install-on-ubuntu1804.html.j2:134
+msgid "Create configuration file"
+msgstr ""
+
+#: template/install-on-debian9.html.j2:228
+#: template/install-on-ubuntu1804.html.j2:156
+#, fuzzy
+#| msgid "GNUnet"
+msgid "Use GNUnet!"
+msgstr "GNUnet"
+
+#: template/install-on-debian9.html.j2:233
+#: template/install-on-ubuntu1804.html.j2:162
+msgid "Uninstall GNUnet and its dependencies"
+msgstr ""
+
+#: template/install-on-macos.html.j2:6
+msgid "Tutorial: GNUnet on macOS 10.14 (Mojave)"
+msgstr ""
+
+#: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
+#: template/install-on-openwrt.html.j2:15
+#, fuzzy
+#| msgid "Install"
+msgid "Installation"
+msgstr "インストール"
+
+#: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
+msgid "First steps"
+msgstr ""
+
+#: template/install-on-macos.html.j2:109 template/install-on-netbsd.html.j2:195
+msgid "Alternative: Installation from source"
+msgstr ""
+
+#: template/install-on-macos.html.j2:154 template/install-on-netbsd.html.j2:265
+msgid "Option 1: GNUnet for production / usage"
+msgstr ""
+
+#: template/install-on-macos.html.j2:187 template/install-on-netbsd.html.j2:293
+msgid "Option 2: GNUnet experimental"
+msgstr ""
+
+#: template/install-on-netbsd.html.j2:6
+msgid "Tutorial: GNUnet on NetBSD 8.0 CURRENT"
+msgstr ""
+
+#: template/install-on-openwrt.html.j2:6
+msgid "Tutorial: GNUnet on OpenWrt"
+msgstr ""
+
+#: template/install-on-openwrt.html.j2:47
+#, fuzzy
+#| msgid "Continuous Integration"
+msgid "Configuration"
+msgstr "継続的なインテグレーション"
+
+#: template/install-on-ubuntu1804.html.j2:6
+msgid "Tutorial: GNUnet on Ubuntu 18.04"
+msgstr ""
+
+#: template/install.html.j2:11
+msgid ""
+"Notice: GNUnet is still undergoing major development. It is largely <i>not "
+"yet ready</i> for usage beyond developers."
+msgstr ""
+
+#: template/install.html.j2:16
+msgid ""
+"<p>Please be aware that this project is still in an early alpha stage when "
+"it comes to running software &#8211; its not an easy task to rewrite the "
+"whole Internet! We are happy to get your <a href=\"engage.html\">helping "
+"hand</a> anytime! Further information is available in our <a href=\"https://"
+"docs.gnunet.org/#toc-Using-GNUnet-1\">handbook</a>. If you have any queries "
+"about the installation or the usage, please <a href=\"engage.html\">get in "
+"touch!</a></p>"
+msgstr ""
+
+#: template/install.html.j2:28
+msgid ""
+"We recommend to use binary packages provided by the package manager "
+"integrated within your Operating System. GNUnet is reportedly available for "
+"at least: <ul> <li><a href=\"https://pkgs.alpinelinux.org/package/edge/"
+"testing/x86_64/gnunet\">Alpine</a></li> <li><a href=\"https://www.archlinux."
+"org/packages/community/x86_64/gnunet/\">Arch</a></li> <li><a href=\"https://"
+"packages.debian.org/search?keywords=gnunet\">Debian</a></li> <li><a href="
+"\"https://copr.fedorainfracloud.org/coprs/yosl/gnunet/\">Fedora (Copr)</a></"
+"li> <li><a href=\"https://guix.gnu.org/en/packages/G/\">Guix</a></li> <li><a "
+"href=\"https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnunet."
+"rb\">Homebrew</a></li> <li><a href=\"https://nixos.org/nixos/packages.html?"
+"attr=gnunet&channel=nixpkgs-unstable&query=gnunet\">NixOS</a></li> <li><a "
+"href=\"install-on-openwrt.html\">OpenWrt</a></li> </ul> If GNUnet is "
+"available for your Operating System and it is missing, send us feedback so "
+"that we can add it to this list. Furthermore, if you are interested in "
+"packaging GNUnet for your Operating System, get in touch with us at gnunet-"
+"developers@gnu.org if you require help with this job. If you were using an "
+"Operating System with the APT package manager, GNUnet could be installed as "
+"simple as:"
+msgstr ""
+
+#: template/install.html.j2:59
+msgid ""
+"Next we describe a generic way to install from source. If you are using one "
+"of the following Operating Systems these step-by-step guides might be "
+"useful: <a href=\"install-on-archpi.html\">ArchPi</a>, <a href=\"install-on-"
+"debian9.html\">Debian 9</a>, <a href=\"install-on-macos.html\">Mac OS</a>, "
+"<a href=\"install-on-netbsd.html\">NetBSD</a>, <a href=\"install-on-"
+"ubuntu1804.html\">Ubuntu 1804</a>. Be aware that not all of them might be "
+"totally up-to-date! Please <a href=\"engage.html\">ask us</a> if you get "
+"stuck."
+msgstr ""
+
+#: template/install.html.j2:73
+msgid ""
+"First, install the <a href=\"https://git.gnunet.org/gnunet.git/tree/README"
+"\">required dependencies</a> of GNUnet. There are base requirements and "
+"optional requirements."
+msgstr ""
+
+#: template/install.html.j2:79
+msgid ""
+"Now, you need to decide if you want to install GNUnet from the release "
+"tarball or from git. If you want to use GNUnet and there is no binary "
+"package available for your OS, you should stick with the release tarball. If "
+"you want to develop using the most recent build, you should go with the <a "
+"href=\"https://git.gnunet.org/\">git repository</a>."
+msgstr ""
+
+#: template/install.html.j2:96
+msgid "To compile gnunet from the git source you can do so by entering:"
+msgstr ""
+
+#: template/install.html.j2:104
+msgid ""
+"Before building GNUnet, make sure that you setup the required groups and add "
+"your user to the group <code>gnunet</code>:"
+msgstr ""
+
+#: template/install.html.j2:115
+msgid "To compile GNUnet, execute:"
+msgstr ""
+
+#: template/install.html.j2:126
+msgid ""
+"You can find more configuration flags in the <a href=\"https://git.gnunet."
+"org/gnunet.git/tree/README\">README</a>.<br> Install GNUnet with:"
+msgstr ""
+
+#: template/install.html.j2:136
+msgid "You can now start GNUnet by running:"
+msgstr ""
+
+#: template/install.html.j2:144
+msgid ""
+"Check the <a href=\"https://docs.gnunet.org/handbook/gnunet.html#Minimal-"
+"configuration\">handbook</a> for detailed documentation. For a more hands-on "
+"experience, <a href=\"https://gnunet.org/en/use.html\">continue here</a>."
+msgstr ""
+
+#: template/livingstandards.html.j2:11
+msgid "On this page you can find links to our technical specifications."
+msgstr ""
+
+#: template/use.html.j2:6
+msgid "How to use GNUnet - in a nutshell"
+msgstr ""
+
+#: template/use.html.j2:12 template/use.html.j2:125
+#, fuzzy
+#| msgid "File-sharing"
+msgid "Filesharing"
+msgstr "ファイル共有"
+
+#: template/use.html.j2:13
+msgid "CADET"
+msgstr ""
+
+#: template/use.html.j2:14
+#, fuzzy
+#| msgid "groupchat"
+msgid "Minimal Groupchat"
+msgstr "groupchat"
+
+#: template/use.html.j2:15
+msgid "GNS with CLI"
+msgstr ""
+
+#: template/use.html.j2:16
+msgid "GNS with Browser"
+msgstr ""
+
+#: template/use.html.j2:17 template/use.html.j2:448
+msgid "VPN"
+msgstr ""
+
+#: template/use.html.j2:18 template/use.html.j2:508
+#, fuzzy
+#| msgid "Conversation (Pre-Alpha)"
+msgid "Conversation"
+msgstr "カンバセーション（プレアルファ）"
+
+#: template/use.html.j2:19 template/use.html.j2:519
+msgid "Trouble Shooting"
+msgstr ""
+
+#: template/use.html.j2:34
+msgid "Accessing GNUnet"
+msgstr ""
+
+#: template/use.html.j2:78
+#, fuzzy
+#| msgid "What is GNUnet?"
+msgid "Leaving GNUnet"
+msgstr "GNUnet とは"
+
+#: template/use.html.j2:88
+msgid "Make sure your GNUnet installation works..."
+msgstr ""
+
+#: template/use.html.j2:107
+msgid "... and play around with it."
+msgstr ""
+
+#: template/use.html.j2:179
+msgid "CADET (and Chat)"
+msgstr ""
+
+#: template/use.html.j2:219
+msgid "Chatting with a (simple) client"
+msgstr ""
+
+#: template/use.html.j2:283
+msgid "Name resolution using GNS on the command line"
+msgstr ""
+
+#: template/use.html.j2:360
+msgid "Name resolution using GNS with a browser"
+msgstr ""
+
+#: template/use.html.j2:521
+msgid "You can't reach other people's nodes"
+msgstr ""
+
+#: template/use.html.j2:557
+msgid "OMG you guys broke my internet"
+msgstr ""
+
+#: template/video.html.j2:12
+msgid "Videos related to GNUnet"
+msgstr ""
+
+#: template/news/index.html.j2:45
+msgid "News archives:"
+msgstr "アーカイブ"
+
+#: template/reclaim/faq.html.j2:6
+msgid "Frequently asked questions"
+msgstr ""
+
+#: template/reclaim/idps.html.j2:6 template/reclaim/index.html.j2:95
+msgid "For IdPs"
+msgstr ""
+
+#: template/reclaim/index.html.j2:8
+#, fuzzy
+#| msgid "Self-sovereign, decentralized identity provider"
+msgid ""
+"Self-sovereign, Decentralised Identity Management and Personal Data Sharing"
+msgstr "自己主権型、脱中央型の IdP"
+
+#: template/reclaim/index.html.j2:18
+msgid "Self-sovereign"
+msgstr ""
+
+#: template/reclaim/index.html.j2:20
+msgid ""
+"You manage your identities and attributes locally on your computer. No need "
+"to trust a third party service with your data."
+msgstr ""
+
+#: template/reclaim/index.html.j2:40
+msgid "Decentralized"
+msgstr ""
+
+#: template/reclaim/index.html.j2:42
+msgid ""
+"You can share your identity attributes securely over a decentralized name "
+"system. This allows your friends to access your shared data without the need "
+"of a trusted third party."
+msgstr ""
+
+#: template/reclaim/index.html.j2:58
+msgid "Standard-compliant"
+msgstr ""
+
+#: template/reclaim/index.html.j2:60
+msgid "You can use OpenID Connect to integrate reclaim in your web sites."
+msgstr ""
+
+#: template/reclaim/index.html.j2:77
+msgid "Technology"
+msgstr ""
+
+#: template/reclaim/index.html.j2:89 template/reclaim/users.html.j2:6
+msgid "For users"
+msgstr ""
+
+#: template/reclaim/index.html.j2:92 template/reclaim/websites.html.j2:6
+msgid "For websites"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:15
+#, fuzzy
+#| msgid "Self-sovereign, decentralized identity provider"
+msgid "Decentralised identity directory"
+msgstr "自己主権型、脱中央型の IdP"
+
+#: template/reclaim/tech.html.j2:18
+msgid ""
+"The decentralised GNU Name System (GNS) gives users full and exclusive "
+"authority over their attributes by sharing them over user-owned namespaces."
+msgstr ""
+
+#: template/reclaim/tech.html.j2:26
+msgid "Cryptographic access control"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:30
+msgid ""
+"Users regularly publish fresh, up-to-date attributes which can be retrieved "
+"and read only by authorized relying parties parties without direct user "
+"interaction -- even if the user is offline!"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:39
+msgid "Principles"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:46
+msgid "Identity and attribute management"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:48
+msgid ""
+"Users regularly publish fresh, up-to-date attributes which can be retrieved "
+"by requesting parties without direct user interaction -- even if the user is "
+"offline! Access to attributes is controlled through an ecryption based "
+"access control layer."
+msgstr ""
+
+#: template/reclaim/tech.html.j2:71
+#, fuzzy
+#| msgid "Documentation"
+msgid "Authorization"
+msgstr "資料"
+
+#: template/reclaim/tech.html.j2:73
+msgid ""
+"To access attributes, requesting parties request authorization from the user "
+"thrugh the use of OpenID Connect. If access is granted, the relying party is "
+"given the necessary decryption key material. The user may at any time revoke "
+"this access or modify the authorization decision."
+msgstr ""
+
+#: template/reclaim/tech.html.j2:92
+msgid "Attribute retrieval"
+msgstr ""
+
+#: template/reclaim/tech.html.j2:94
+msgid ""
+"Relying parties retrieve encrypted identity data from the decentralised "
+"directory. It is able to decrypt all those attributes that the user has "
+"authorized it to access using the respective key."
+msgstr ""
+
+#~ msgid "Living Standards"
+#~ msgstr "規格や標準"
