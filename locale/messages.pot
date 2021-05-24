@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-12 14:14+0200\n"
+"POT-Creation-Date: 2021-05-23 20:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: common/base.j2:5 common/news.j2:5
 msgid "GNUnet"
@@ -322,31 +322,22 @@ msgstr ""
 
 #: template/about.html.j2:110
 msgid ""
-"We're receiving funding from NLnet's Next Generation Internet funding "
-"line to document and implement the GNU Name System protocol in a way "
-"suitable for the IETF standardization process."
-msgstr ""
-
-#: template/about.html.j2:123
-msgid ""
 "This project has received funding from the European Union’s Horizon 2020 "
-"research and innovation programme under the NGI_TRUST grant agreement no "
-"825618. The project aims to integrate re:claimID with the GNU Taler "
-"payment system in a pilot in order to demonstrate the practical "
-"feasibility and benefits of privacy enhancing technologies for users and "
-"commercial service providers. The project is called \"Decentralized "
-"Identities for Self-Sovereign End-users\" (DISSENS)."
+"research and innovation programme NGI Assure. We're receiving funding to "
+"document and implement the Distributed Hash Table R5N in a way suitable "
+"for third party implementors and for submission to standardization "
+"organizations such as the IETF."
 msgstr ""
 
-#: template/about.html.j2:141
+#: template/about.html.j2:126
 msgid "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
 
-#: template/about.html.j2:150
+#: template/about.html.j2:135
 msgid "Past funding"
 msgstr ""
 
-#: template/about.html.j2:152
+#: template/about.html.j2:137
 msgid "We are grateful for past funding from the following organizations:"
 msgstr ""
 
@@ -2768,9 +2759,8 @@ msgid ""
 "integrated within your Operating System. GNUnet is reportedly available "
 "for at least: <ul> <li><a "
 "href=\"https://pkgs.alpinelinux.org/package/edge/testing/x86_64/gnunet\">Alpine</a></li>"
-" <li><a "
-"href=\"https://www.archlinux.org/packages/community/x86_64/gnunet/\">Arch</a></li>"
-" <li><a "
+" <li><a href=\"https://aur.archlinux.org/packages/gnunet/\">Arch "
+"(AUR)</a></li> <li><a "
 "href=\"https://packages.debian.org/search?keywords=gnunet\">Debian</a></li>"
 " <li><a "
 "href=\"https://copr.fedorainfracloud.org/coprs/yosl/gnunet/\">Fedora "
@@ -2778,15 +2768,14 @@ msgid ""
 "href=\"https://guix.gnu.org/en/packages/G/\">Guix</a></li> <li><a "
 "href=\"https://github.com/Homebrew/homebrew-"
 "core/blob/master/Formula/gnunet.rb\">Homebrew</a></li> <li><a "
-"href=\"https://nixos.org/nixos/packages.html?attr=gnunet&channel=nixpkgs-"
-"unstable&query=gnunet\">NixOS</a></li> <li><a href=\"install-on-"
-"openwrt.html\">OpenWrt</a></li> </ul> If GNUnet is available for your "
-"Operating System and it is missing, send us feedback so that we can add "
-"it to this list. Furthermore, if you are interested in packaging GNUnet "
-"for your Operating System, get in touch with us at gnunet-"
-"developers@gnu.org if you require help with this job. If you were using "
-"an Operating System with the APT package manager, GNUnet could be "
-"installed as simple as:"
+"href=\"https://search.nixos.org/packages?from=0&size=50&sort=relevance&query=gnunet\">NixOS</a></li>"
+" <li><a href=\"install-on-openwrt.html\">OpenWrt</a></li> </ul> If GNUnet"
+" is available for your Operating System and it is missing, send us "
+"feedback so that we can add it to this list. Furthermore, if you are "
+"interested in packaging GNUnet for your Operating System, get in touch "
+"with us at gnunet-developers@gnu.org if you require help with this job. "
+"If you were using an Operating System with the APT package manager, "
+"GNUnet could be installed as simple as:"
 msgstr ""
 
 #: template/install.html.j2:59
