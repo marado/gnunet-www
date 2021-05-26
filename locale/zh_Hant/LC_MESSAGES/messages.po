@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-23 20:46+0200\n"
+"POT-Creation-Date: 2021-05-26 19:27+0200\n"
 "PO-Revision-Date: 2021-05-23 22:10+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
@@ -327,24 +327,21 @@ msgstr "當前資金"
 
 #: template/about.html.j2:110
 msgid ""
-"This project has received funding from the European Union’s Horizon 2020 "
-"research and innovation programme NGI Assure. We're receiving funding to "
-"document and implement the Distributed Hash Table R5N in a way suitable for "
-"third party implementors and for submission to standardization organizations "
-"such as the IETF."
+"This project is receiving funding from the European Union’s Horizon 2020 "
+"research and innovation programme NGI Assure."
 msgstr ""
 
-#: template/about.html.j2:126
+#: template/about.html.j2:122
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr "我們感謝以下組織提供的免費託管："
 
-#: template/about.html.j2:135
+#: template/about.html.j2:131
 #, fuzzy
 msgid "Past funding"
 msgstr "過去的資金"
 
-#: template/about.html.j2:137
+#: template/about.html.j2:133
 msgid "We are grateful for past funding from the following organizations:"
 msgstr "我們感謝以下組織過去提供的資金："
 

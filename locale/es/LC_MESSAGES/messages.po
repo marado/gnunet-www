@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-23 20:46+0200\n"
+"POT-Creation-Date: 2021-05-26 19:27+0200\n"
 "PO-Revision-Date: 2021-05-18 17:53+0000\n"
 "Last-Translator: Lucía López <lulopezcabrera@gmail.com>\n"
 "Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/"
@@ -389,25 +389,22 @@ msgstr "Financiamiento actual"
 
 #: template/about.html.j2:110
 msgid ""
-"This project has received funding from the European Union’s Horizon 2020 "
-"research and innovation programme NGI Assure. We're receiving funding to "
-"document and implement the Distributed Hash Table R5N in a way suitable for "
-"third party implementors and for submission to standardization organizations "
-"such as the IETF."
+"This project is receiving funding from the European Union’s Horizon 2020 "
+"research and innovation programme NGI Assure."
 msgstr ""
 
-#: template/about.html.j2:126
+#: template/about.html.j2:122
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
 "Agradecemos el alojamiento gratuito brindado por las siguientes "
 "organizaciones:"
 
-#: template/about.html.j2:135
+#: template/about.html.j2:131
 msgid "Past funding"
 msgstr "Financiamiento pasado"
 
-#: template/about.html.j2:137
+#: template/about.html.j2:133
 msgid "We are grateful for past funding from the following organizations:"
 msgstr "Agradecemos el financiamiento pasado de las siguientes organizaciones:"
 
