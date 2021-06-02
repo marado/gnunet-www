@@ -403,7 +403,7 @@ msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
 "Wir sind dankbar für das kostenlose Hosting, das von folgenden "
-"Organisationen angeboten wird:"
+"Organisationen bereitgestellt wird:"
 
 #: template/about.html.j2:131
 msgid "Past funding"
@@ -863,13 +863,12 @@ msgid "tarball"
 msgstr "Tarball"
 
 #: template/download.html.j2:20
-#, fuzzy
 msgid ""
 "The tarball of the latest version can be obtained from GNU FTP and its "
 "mirrors."
 msgstr ""
 "Der Tarball der neuesten Version kann von GNU FTP und seinen Spiegeln "
-"bezogen werden."
+"erhalten werden."
 
 #: template/download.html.j2:30
 msgid "git"
@@ -2051,9 +2050,8 @@ msgstr ""
 "Konfigurationswerte verwenden."
 
 #: template/faq.html.j2:799
-#, fuzzy
 msgid "How does GNUnet compare to other file-sharing applications?"
-msgstr "Wie vergleicht sich GNUnet mit anderen File-Sharing-Anwendungen?"
+msgstr "Wie vergleicht sich GNUnet mit anderen Anwendungen zum Datenaustausch?"
 
 #: template/faq.html.j2:801
 msgid ""
@@ -2828,9 +2826,8 @@ msgid "GSoC 2018: GNUnet WebUI (GNUnet Web-based User Interface)"
 msgstr "GSoC 2018: GNUnet WebUI (GNUnet Web-basierte Benutzeroberfläche)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:11
-#, fuzzy
 msgid "Tue, 08/14/2018 - 07:55, Phil Buschmann"
-msgstr "Di, 14.08.2008 - 07:55 Uhr, Phil Buschmann"
+msgstr "Di, 14.08.2018 - 07.55 Uhr, Phil Buschmann"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:18
 msgid ""
@@ -2947,9 +2944,8 @@ msgid "Thanks for reading."
 msgstr "Danke fürs Lesen."
 
 #: template/gsoc.html.j2:6
-#, fuzzy
 msgid "GNUnet's Google Summer of Code projects"
-msgstr "Google Summer of Code-Projekte von GNUnet"
+msgstr "Google \"Summer of Code\" Projekte von GNUnet"
 
 #: template/gsoc.html.j2:12 template/gsoc.html.j2:29
 #, fuzzy
@@ -2957,16 +2953,12 @@ msgid "Ideas 2021"
 msgstr "Ideen 2021"
 
 #: template/gsoc.html.j2:13 template/gsoc.html.j2:215
-#, fuzzy
-#| msgid "GSoC Projects"
 msgid "Past projects"
-msgstr "GSoC Projekte"
+msgstr "Historische Projekte"
 
 #: template/gsoc.html.j2:14 template/gsoc.html.j2:596
-#, fuzzy
-#| msgid "GSoC Projects"
 msgid "Finished projects"
-msgstr "GSoC Projekte"
+msgstr "Abgeschlossene Projekte"
 
 #: template/gsoc.html.j2:21
 msgid ""
@@ -3149,10 +3141,9 @@ msgid "<strong>Mentors:</strong> Martin Schanzenbach"
 msgstr "<strong>Mentoren:</strong> Martin Schanzenbach"
 
 #: template/gsoc.html.j2:203
-#, fuzzy
 msgid "Required Skills: Solid knowledge of Rust and ideally asynchronuous IO."
 msgstr ""
-"Erforderliche Fähigkeiten: Solide Kenntnisse in Rust und idealerweise "
+"Notwendige Fähigkeiten: Solide Kenntnisse in Rust und idealerweise "
 "asynchrone E / A."
 
 #: template/gsoc.html.j2:208 template/gsoc.html.j2:321
@@ -3322,9 +3313,8 @@ msgstr ""
 "neuen Ort für den freigegebenen Inhalt erstellst."
 
 #: template/gsoc.html.j2:376
-#, fuzzy
 msgid "Place types to be implemented:"
-msgstr "Zu implementierende Ortsarten:"
+msgstr "Zu implementierende Ortstypen:"
 
 #: template/gsoc.html.j2:380
 msgid ""
@@ -3515,22 +3505,16 @@ msgstr ""
 "bugs.gnunet.org/view.php?id=5562\">#5562</a>)."
 
 #: template/gsoc.html.j2:612
-#, fuzzy
 msgid "<strong>Mentors:</strong> Christian Grothoff"
-msgstr ""
-"<strong>Mentoren:</strong> Matthias Wachs, Christian Grothoff, Jeff Burdges"
+msgstr "<strong>Mentoren:</strong> Christian Grothoff"
 
 #: template/gsoc.html.j2:617
-#, fuzzy
-#| msgid "Required Skills: C"
 msgid "Required Skills:"
-msgstr "Benötigte Kenntnisse: C"
+msgstr "Erforderliche Kenntnisse:"
 
 #: template/gsoc.html.j2:622
-#, fuzzy
-#| msgid "Difficulty level: high"
 msgid "Difficulty level:"
-msgstr "Schwierigkeitsgrad: hoch"
+msgstr "Schwierigkeitsgrad:"
 
 #: template/gsoc.html.j2:627
 #, fuzzy
@@ -3558,9 +3542,8 @@ msgstr ""
 "gnunet.org/doxygen/modules.html\">GNUnet API</a>exponieren, mit ein."
 
 #: template/gsoc.html.j2:657
-#, fuzzy
 msgid "Required Skills: C, JavaScript, CSS"
-msgstr "Erforderliche Fähigkeiten: Rust oder C, Krypto"
+msgstr "Erforderliche Fähigkeiten: C, JavaScript, CSS"
 
 #: template/gsoc.html.j2:667
 #, fuzzy
@@ -3755,9 +3738,8 @@ msgstr ""
 "die Anzahl möglicher Fehlerquellen."
 
 #: template/index.html.j2:264
-#, fuzzy
 msgid "GNUnet is a framework"
-msgstr "GNUnet ist ein Framework"
+msgstr "GNUnet ist ein Rahmen"
 
 #: template/index.html.j2:266
 msgid ""
@@ -3772,15 +3754,12 @@ msgstr ""
 "Arbeit gründet sich auf fast zwei Jahrzehnte Forschungsarbeit."
 
 #: template/index.html.j2:286
-#, fuzzy
-#| msgid "About GNUnet"
 msgid "Learn more"
-msgstr "Über GNUnet"
+msgstr "Mehr erfahren"
 
 #: template/index.html.j2:295
-#, fuzzy
 msgid "Get started"
-msgstr "Loslegen"
+msgstr "Erste Schritte"
 
 #: template/install-on-archpi.html.j2:6
 msgid "Tutorial: GNUnet on Arch Linux/Pi"
@@ -3792,10 +3771,8 @@ msgid "Requirements for Raspberry Pi 3"
 msgstr "Anforderungen an Raspberry Pi 3"
 
 #: template/install-on-archpi.html.j2:40
-#, fuzzy
-#| msgid "Source Code"
 msgid "Get the Source Code"
-msgstr "Quellkode"
+msgstr "Quellcode beschaffen"
 
 #: template/install-on-archpi.html.j2:62
 #: template/install-on-debian9.html.j2:131
@@ -3829,18 +3806,14 @@ msgstr "Anforderungen"
 
 #: template/install-on-debian9.html.j2:46
 #: template/install-on-ubuntu1804.html.j2:41
-#, fuzzy
-#| msgid "Change into the directory"
 msgid "Make an installation directory"
-msgstr "Wechsele in das Verzeichnis"
+msgstr "Erstelle ein Installationsverzeichnis"
 
 #: template/install-on-debian9.html.j2:60 template/install-on-macos.html.j2:134
 #: template/install-on-netbsd.html.j2:237
 #: template/install-on-ubuntu1804.html.j2:53
-#, fuzzy
-#| msgid "Source Code"
 msgid "Get the source code"
-msgstr "Quellkode"
+msgstr "Quellcode beschaffen"
 
 #: template/install-on-debian9.html.j2:79 template/install-on-macos.html.j2:142
 #: template/install-on-netbsd.html.j2:245
@@ -3850,17 +3823,13 @@ msgstr "Zusammenstellen und Installieren"
 
 #: template/install-on-debian9.html.j2:104
 #: template/install-on-ubuntu1804.html.j2:70
-#, fuzzy
-#| msgid "GNUnet for developers"
 msgid "Option 1: GNUnet for testing / usage"
-msgstr "GNUNet für Entwickeler"
+msgstr "Option 1: GNUNet für Testen / Anwenden"
 
 #: template/install-on-debian9.html.j2:117
 #: template/install-on-ubuntu1804.html.j2:82
-#, fuzzy
-#| msgid "GNUnet for developers"
 msgid "Option 2: GNUnet for development"
-msgstr "GNUNet für Entwickeler"
+msgstr "Option 2: GNUNet zur Entwicklung"
 
 #: template/install-on-debian9.html.j2:154
 #: template/install-on-ubuntu1804.html.j2:97
@@ -3869,10 +3838,8 @@ msgstr "Installiere das GNUnet-Plugin für die Namensauflösung"
 
 #: template/install-on-debian9.html.j2:208
 #: template/install-on-ubuntu1804.html.j2:134
-#, fuzzy
-#| msgid "Motivation"
 msgid "Create configuration file"
-msgstr "Motivation"
+msgstr "Konfigurationsdatei erstellen"
 
 #: template/install-on-debian9.html.j2:228
 #: template/install-on-ubuntu1804.html.j2:156
@@ -3881,9 +3848,8 @@ msgstr "GNUnet nutzen!"
 
 #: template/install-on-debian9.html.j2:233
 #: template/install-on-ubuntu1804.html.j2:162
-#, fuzzy
 msgid "Uninstall GNUnet and its dependencies"
-msgstr "Deinstallieren Sie GNUnet und seine Abhängigkeiten"
+msgstr "Deinstalliere GNUnet und seine Abhängigkeiten"
 
 #: template/install-on-macos.html.j2:6
 msgid "Tutorial: GNUnet on macOS 10.14 (Mojave)"
@@ -3891,10 +3857,8 @@ msgstr "Tutorial: GNUnet auf macOS 10.14 (Mojave)"
 
 #: template/install-on-macos.html.j2:24 template/install-on-netbsd.html.j2:36
 #: template/install-on-openwrt.html.j2:15
-#, fuzzy
-#| msgid "Install"
 msgid "Installation"
-msgstr "Installieren"
+msgstr "Installation"
 
 #: template/install-on-macos.html.j2:42 template/install-on-netbsd.html.j2:115
 #, fuzzy
@@ -3907,16 +3871,12 @@ msgid "Alternative: Installation from source"
 msgstr "Alternative: Installation von der Quelle"
 
 #: template/install-on-macos.html.j2:154 template/install-on-netbsd.html.j2:265
-#, fuzzy
-#| msgid "GNUnet for developers"
 msgid "Option 1: GNUnet for production / usage"
-msgstr "GNUNet für Entwickeler"
+msgstr "Option 1: GNUNet für Produktion / Anwendung"
 
 #: template/install-on-macos.html.j2:187 template/install-on-netbsd.html.j2:293
-#, fuzzy
-#| msgid "GNUnet for developers"
 msgid "Option 2: GNUnet experimental"
-msgstr "GNUNet für Entwickeler"
+msgstr "Option 2: GNUNet experimentell"
 
 #: template/install-on-netbsd.html.j2:6
 msgid "Tutorial: GNUnet on NetBSD 8.0 CURRENT"
@@ -3928,10 +3888,8 @@ msgid "Tutorial: GNUnet on OpenWrt"
 msgstr "Tutorial: GNUnet auf OpenWrt"
 
 #: template/install-on-openwrt.html.j2:47
-#, fuzzy
-#| msgid "Motivation"
 msgid "Configuration"
-msgstr "Motivation"
+msgstr "Konfiguration"
 
 #: template/install-on-ubuntu1804.html.j2:6
 msgid "Tutorial: GNUnet on Ubuntu 18.04"
@@ -4094,9 +4052,8 @@ msgstr ""
 "org/gnunet.git/tree/README\">README</a>.<br> Installiere GNUnet mit:"
 
 #: template/install.html.j2:136
-#, fuzzy
 msgid "You can now start GNUnet by running:"
-msgstr "Sie können GNUnet jetzt starten, indem Sie Folgendes ausführen:"
+msgstr "Mit folgender Ausführung kannst GNUnet jetzt starten:"
 
 #: template/install.html.j2:144
 msgid ""
@@ -4119,19 +4076,16 @@ msgid "How to use GNUnet - in a nutshell"
 msgstr "Wie man GNUnet benutzt - auf den Punkt gebracht"
 
 #: template/use.html.j2:12 template/use.html.j2:125
-#, fuzzy
-#| msgid "Motivation"
 msgid "Filesharing"
-msgstr "File-Sharing"
+msgstr "Datenaustausch"
 
 #: template/use.html.j2:13
 msgid "CADET"
 msgstr "CADET"
 
 #: template/use.html.j2:14
-#, fuzzy
 msgid "Minimal Groupchat"
-msgstr "Gruppenchat"
+msgstr "Minimaler Gruppenchat"
 
 #: template/use.html.j2:15
 #, fuzzy
@@ -4149,10 +4103,8 @@ msgid "VPN"
 msgstr "VPN"
 
 #: template/use.html.j2:18 template/use.html.j2:508
-#, fuzzy
-#| msgid "Motivation"
 msgid "Conversation"
-msgstr "Motivation"
+msgstr "Unterhaltung"
 
 #: template/use.html.j2:19 template/use.html.j2:519
 #, fuzzy
@@ -4160,16 +4112,12 @@ msgid "Trouble Shooting"
 msgstr "Fehlerbehebung"
 
 #: template/use.html.j2:34
-#, fuzzy
-#| msgid "GNUnet"
 msgid "Accessing GNUnet"
-msgstr "GNUnet"
+msgstr "GNUnet Zugang"
 
 #: template/use.html.j2:78
-#, fuzzy
-#| msgid "GNUnet"
 msgid "Leaving GNUnet"
-msgstr "GNUnet"
+msgstr "GNUnet verlassen"
 
 #: template/use.html.j2:88
 msgid "Make sure your GNUnet installation works..."
@@ -4225,10 +4173,11 @@ msgid "For IdPs"
 msgstr "Für IdPs"
 
 #: template/reclaim/index.html.j2:8
-#, fuzzy
 msgid ""
 "Self-sovereign, Decentralised Identity Management and Personal Data Sharing"
-msgstr "Selbstsouveräner, dezentraler Identitätsanbieter"
+msgstr ""
+"Selbstsouveränes, dezentrales Identitätsmanagement und Austausch "
+"personenbezogener Daten"
 
 #: template/reclaim/index.html.j2:18
 #, fuzzy
@@ -4279,10 +4228,8 @@ msgid "For users"
 msgstr "Für Nutzer"
 
 #: template/reclaim/index.html.j2:92 template/reclaim/websites.html.j2:6
-#, fuzzy
-#| msgid "Old Website"
 msgid "For websites"
-msgstr "Alte Website"
+msgstr "Für Webseiten"
 
 #: template/reclaim/tech.html.j2:15
 #, fuzzy
@@ -4336,10 +4283,8 @@ msgstr ""
 "kontrolliert."
 
 #: template/reclaim/tech.html.j2:71
-#, fuzzy
-#| msgid "Motivation"
 msgid "Authorization"
-msgstr "Motivation"
+msgstr "Autorisierung"
 
 #: template/reclaim/tech.html.j2:73
 msgid ""
