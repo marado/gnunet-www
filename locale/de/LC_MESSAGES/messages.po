@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-26 19:27+0200\n"
-"PO-Revision-Date: 2021-05-17 06:13+0000\n"
+"PO-Revision-Date: 2021-06-06 17:06+0000\n"
 "Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
-"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/"
-">\n"
+"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -391,10 +391,13 @@ msgid "Current funding"
 msgstr "Aktuelle Finanzierung"
 
 #: template/about.html.j2:110
+#, fuzzy
 msgid ""
 "This project is receiving funding from the European Union’s Horizon 2020 "
 "research and innovation programme NGI Assure."
 msgstr ""
+"Dieses Projekt wird vom Forschungs- und Innovationsprogramm Horizon 2020 der "
+"Europäischen Union NGI Assure gefördert."
 
 #: template/about.html.j2:122
 #, fuzzy
@@ -1207,10 +1210,8 @@ msgstr ""
 "beabsichtigen gegenwärtig nicht das zu tun."
 
 #: template/faq.html.j2:151
-#, fuzzy
-#| msgid "What is GNUnet?"
 msgid "What can I do with GNUnet?"
-msgstr "Was kann ich mit GNUnet machen?"
+msgstr "Was kann ich mit GNUnet anstellen?"
 
 #: template/faq.html.j2:153
 msgid ""
@@ -2095,16 +2096,6 @@ msgstr ""
 "Publikationen (und vermutlich sogar den Code) lesen."
 
 #: template/faq.html.j2:915
-#, fuzzy
-#| msgid ""
-#| "Another important point of reference are the various anonymous peer-to-"
-#| "peer networks. Here, there are differences in terms of application domain "
-#| "and how specifically anonymity is achieved. Anonymous routing is a hard "
-#| "research topic, so for a superficial comparisson like this one we focus "
-#| "on the latency. Another important factor is the programming language. "
-#| "Type-safe languages may offer certain security benefits; however, this "
-#| "may come at the cost of significant increases in resource consumption "
-#| "which in turn may reduce anonymity."
 msgid ""
 "Another important point of reference are the various anonymous peer-to-peer "
 "networks. Here, there are differences in terms of application domain and how "
@@ -2117,10 +2108,10 @@ msgid ""
 msgstr ""
 "Ein weiterer wichtiger Bezugspunkt sind die verschiedenen anonymen Peer-to-"
 "Peer-Netzwerke. Hier gibt es Unterschiede bezüglich Anwendungs-Domain und "
-"wie insbesondere Anonymität erreicht wird. Anonymes Routen ist ein "
+"wie insbesondere Anonymität geleistet wird. Anonymes Routen ist ein "
 "schwieriges Forschungsthema, für einen oberflächlichen Vergleich wie diesen "
-"konzentrieren wir uns auf die Latenz. Ein weiterer wichtiger Faktor ist die "
-"Programmiersprache. Typsichere Programmiersprachen mögen gewisse "
+"konzentrieren wir uns daher auf die Latenz. Ein weiterer wichtiger Faktor "
+"ist die Programmiersprache. Typsichere Programmiersprachen mögen gewisse "
 "Sicherheitsvorzüge bieten; allerdings kann dies zulasten eines erheblichen "
 "Ressourcenaufwands gehen, der wiederum Anonymität reduzieren könnte."
 
@@ -2216,9 +2207,8 @@ msgstr ""
 "Verlust der Berechtigungen."
 
 #: template/faq.html.j2:989
-#, fuzzy
 msgid "I have some great idea for a new feature, what should I do?"
-msgstr "Ich habe eine tolle Idee für eine neue Funktion, was soll ich tun?"
+msgstr "Ich habe eine tolle Idee für eine neue Funktion, was mache ich?"
 
 #: template/faq.html.j2:991
 msgid ""
@@ -3202,9 +3192,8 @@ msgstr ""
 "geliefert) sind ebenfalls wichtig."
 
 #: template/gsoc.html.j2:257
-#, fuzzy
 msgid "<strong>Mentors:</strong> TBD"
-msgstr "<strong>Mentoren:</strong> TBD"
+msgstr "<strong>Mentoren:</strong> Noch offen"
 
 #: template/gsoc.html.j2:267
 msgid ""
@@ -3285,19 +3274,17 @@ msgstr ""
 "eventual_io oder gj."
 
 #: template/gsoc.html.j2:345
-#, fuzzy
 msgid ""
 "Implementation of a replacement for PANDA (see Pond) with better security, "
 "and maybe integration with the GNU Name System for key exchange."
 msgstr ""
-"Implementierung eines Ersatzes für PANDA (siehe Teich) mit besserer "
+"Implementierung eines Ersatzes für PANDA (siehe Pond) mit besserer "
 "Sicherheit und möglicherweise Integration in das GNU-Namenssystem für den "
 "Schlüsselaustausch."
 
 #: template/gsoc.html.j2:357
-#, fuzzy
 msgid "Required Skills: Rust or C, crypto"
-msgstr "Erforderliche Fähigkeiten: Rust oder C, Krypto"
+msgstr "Erforderliche Kenntnisse: Rust oder C, crypto"
 
 #: template/gsoc.html.j2:362 template/gsoc.html.j2:419
 #: template/gsoc.html.j2:461 template/gsoc.html.j2:501
