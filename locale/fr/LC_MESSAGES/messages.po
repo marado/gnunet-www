@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-26 19:27+0200\n"
-"PO-Revision-Date: 2021-06-07 21:11+0000\n"
-"Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
+"PO-Revision-Date: 2021-06-08 03:45+0000\n"
+"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
 "Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
 "\n"
 "Language: fr\n"
@@ -859,15 +859,16 @@ msgid "git"
 msgstr "git"
 
 #: template/download.html.j2:32
+#, fuzzy
 msgid ""
 "You can fetch the git tag of version 0.11.x from our development server:"
 msgstr ""
+"Vous pouvez récupérer l'étiquette git 0.11x depuis notre serveur de "
+"développement :"
 
 #: template/engage.html.j2:6
-#, fuzzy
-#| msgid "Engage"
 msgid "Engage!"
-msgstr "Participer"
+msgstr "Participez !"
 
 #: template/ev.html.j2:6
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
@@ -893,15 +894,21 @@ msgstr ""
 "registre VR 205287."
 
 #: template/ev.html.j2:22
+#, fuzzy
 msgid ""
 "The association is officially dedicated to supporting research, development "
 "and education in the area of secure decentralized networking in general, and "
 "GNUnet specifically. This is the official website for the association."
 msgstr ""
+"Cette association est officiellement dédiée au soutien de la recherche, du "
+"développement et de l'éducation dans le domaine du networking sécurisé et "
+"décentralisé en général, et particulièrement GNUnet. Ceci est le site "
+"officiel de l'association."
 
 #: template/ev.html.j2:31
+#, fuzzy
 msgid "Becoming a Member of GNUnet e.V."
-msgstr "Devenir un membre de GNUnet e.V/"
+msgstr "Devenir un membre de GNUnet e.V."
 
 #: template/ev.html.j2:33
 msgid ""
@@ -932,14 +939,16 @@ msgid ""
 msgstr ""
 
 #: template/ev.html.j2:73
+#, fuzzy
 msgid "Official Meeting Notes"
-msgstr ""
+msgstr "Notes de réunion officielles"
 
 #: template/ev.html.j2:86
 msgid "Support Us!"
-msgstr "Soutenez-nous!"
+msgstr "Soutenez-nous !"
 
 #: template/ev.html.j2:88
+#, fuzzy
 msgid ""
 "Everybody is welcome to support us via donations. For financial "
 "contributions, Europeans are able to donate via SEPA. We hope to setup "
@@ -951,6 +960,16 @@ msgid ""
 "<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
 "<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
 msgstr ""
+"Il est possible de nous soutenir grâce aux dons. Pour les contributions "
+"financières, les Européens peuvent donner via SEPA. Nous espérons ouvrir la "
+"possibilité de dons dans d'autres zones monétaires dans le futur. Vous "
+"pouvez également donner via Bitcoin, les coordonnées de routage sont données "
+"plus bas. Notez que nous ne sommes pas en capacité de vous fournir des reçus "
+"de vos dons. Si vous avez l'intention de donner une importante somme "
+"d'argent, veuillez nous contacter au préalable pour discuter d'un "
+"arrangement sur mesure. "
+"<dl><dt>Bitcoin</dt><dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd><dt>SEPA/"
+"IBAN</dt><dd>DE67830654080004822650 (BIC/SWIFT : GENODEF1SLR)</dd></dl>"
 
 #: template/faq.html.j2:12 template/faq.html.j2:23
 msgid "General"
@@ -968,28 +987,34 @@ msgstr "Messages d'erreur"
 #, fuzzy
 #| msgid "Filesharing (Alpha)"
 msgid "File-sharing"
-msgstr "Partage de fichiers (Alpha)"
+msgstr "Partage de fichiers"
 
 #: template/faq.html.j2:17 template/faq.html.j2:973
+#, fuzzy
 msgid "Contributing"
-msgstr ""
+msgstr "Contribuer"
 
 #: template/faq.html.j2:26
 msgid "What do I do if my question is not answered here?"
 msgstr "Que dois-je faire si je n'ai pas la réponse à ma question ici ?"
 
 #: template/faq.html.j2:28
+#, fuzzy
 msgid ""
 "A: There are many other sources of information. You can read additional "
 "documentation or ask the question on the help-gnunet@gnu.org mailing list or "
 "the #gnunet IRC on irc.freenode.net."
 msgstr ""
+"R : Il y a beaucoup d'autres sources d'information. Vous pouvez lire des "
+"documents supplémentaires ou posez votre question dans la liste de diffusion "
+"help-gnunet@gnu.org ou alors au #gnunet IRC sur irc.freenode.net."
 
 #: template/faq.html.j2:36
 msgid "When are you going to release the next version?"
 msgstr "Quand est-ce que vous allez mettre en ligne la prochaine version ?"
 
 #: template/faq.html.j2:38
+#, fuzzy
 msgid ""
 "A: The general answer is, when it is ready. A better answer may be: earlier "
 "if you contribute (test, debug, code, document). Every release will be "
@@ -997,6 +1022,12 @@ msgid ""
 "planet.gnu.org\">planet GNU</a>. You can subscribe to the mailing list or "
 "the RSS feed of this site to automatically receive a notification."
 msgstr ""
+"R : La réponse globale est : \"Quand elle sera prête\". Une réponse plus "
+"juste pourrait être : \"Encore plus tôt si vous contribuez\" (test, "
+"debugger, coder, documenter). Chaque mise en ligne sera annoncée sur la "
+"liste de diffusion info-gnunet@gnu.org et sur <a href=\"https://planet.gnu."
+"org\">planet GNU</a>. Vous pouvez vous abonner à la liste de diffusion ou au "
+"flux RSS de ce site pour recevoir une notification automatiquement."
 
 #: template/faq.html.j2:49
 msgid "Is the code free?"
@@ -1007,7 +1038,7 @@ msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 msgstr ""
-"A: GNUnet est un logiciel gratuit, disponible depuis <a href=\"https://www."
+"A : GNUnet est un logiciel gratuit, disponible depuis <a href=\"https://www."
 "gnu.org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 
 #: template/faq.html.j2:58
