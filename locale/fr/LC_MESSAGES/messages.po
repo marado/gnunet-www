@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-05-26 19:27+0200\n"
-"PO-Revision-Date: 2021-05-19 07:56+0000\n"
-"Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
-"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/"
-">\n"
+"PO-Revision-Date: 2021-06-07 21:11+0000\n"
+"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
+"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
+"\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -390,10 +390,13 @@ msgid "Current funding"
 msgstr "Financement actuel"
 
 #: template/about.html.j2:110
+#, fuzzy
 msgid ""
 "This project is receiving funding from the European Union’s Horizon 2020 "
 "research and innovation programme NGI Assure."
 msgstr ""
+"Ce projet reçoit son financement du programme de recherche Horizon 2020 de "
+"l'Union Européenne et le programme d'innovation NGI Assure."
 
 #: template/about.html.j2:122
 msgid ""
@@ -443,22 +446,15 @@ msgid "Self-sovereign, decentralized identity provider"
 msgstr "Fournisseur d'identité indépendant et décentralisé"
 
 #: template/applications.html.j2:41
-#, fuzzy
-#| msgid ""
-#| "<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> is a decentralized "
-#| "Identity Provider (IdP) service built in top of the GNU Name System. It "
-#| "allows users to securely share personal information with websites using "
-#| "standardized protocols (OpenID Connect)."
 msgid ""
 "is a decentralized Identity Provider (IdP) service built in top of the GNU "
 "Name System. It allows users to securely share personal information with "
 "websites using standardized protocols (OpenID Connect)."
 msgstr ""
-"<a href=\"https://reclaim.gnunet.org/\">re:claimID</a> est un service de "
-"fournisseur d'identité (IdP, \"identity provider\") décentralisé construit "
-"sur la base du GNU Name System. Il permet aux utilisateurs de partager sans "
-"risque des informations personnelles sur des sites utilisant les protocoles "
-"standards (OpenID Connect)."
+"est un service de fournisseur d'identité (IdP, \"identity provider\") "
+"décentralisé construit sur la base du GNU Name System. Il permet aux "
+"utilisateurs de partager sans risque des informations personnelles sur des "
+"sites utilisant les protocoles standards (OpenID Connect)."
 
 #: template/applications.html.j2:57
 msgid "Filesharing (Alpha)"
@@ -844,7 +840,7 @@ msgstr ""
 
 #: template/download.html.j2:17
 msgid "0.11.x series"
-msgstr ""
+msgstr "0.11x séries"
 
 #: template/download.html.j2:18
 msgid "tarball"
