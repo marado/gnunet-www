@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-26 19:27+0200\n"
+"POT-Creation-Date: 2021-06-10 22:48+0200\n"
 "PO-Revision-Date: 2021-06-09 05:22+0000\n"
 "Last-Translator: Samira Tamboura <samiratg8@hotmail.com>\n"
-"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/>"
-"\n"
+"Language-Team: Spanish <http://weblate.taler.net/projects/gnunet/website/es/"
+">\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -689,25 +689,11 @@ msgstr ""
 "lista usando la dirección <a href=\"mailto:gnunet-developers@gnu.org"
 "\">gnunet-developers@gnu.org</a>."
 
-#: template/contact.html.j2:23
-msgid "The IRC channel"
-msgstr "El canal IRC"
-
 #: template/contact.html.j2:25
-msgid ""
-"<tt>#gnunet</tt> is reachable via <a href=\"https://freenode.net\">irc."
-"freenode.net</a>. There is also an <a href=\"https://view.matrix.org/room/!"
-"IjaAfLiruzjxFFzKAV:matrix.org/\">archive</a> available."
-msgstr ""
-"<tt>#gnunet</tt> es accesible a través de <a href=\"https://freenode.net"
-"\">irc.freenode.net</a>. También hay un <a href=\"https://view.matrix.org/"
-"room/!IjaAfLiruzjxFFzKAV:matrix.org/\">archivo</a> disponible."
-
-#: template/contact.html.j2:38
 msgid "Contacting individuals"
 msgstr "Contactos individuales"
 
-#: template/contact.html.j2:40
+#: template/contact.html.j2:27
 msgid ""
 "GNUnet developers are generally reachable at either <tt>PSEUDONYM@gnunet."
 "org</tt> or <tt>LASTNAME@gnunet.org</tt>. Most of us support receiving GnuPG "
@@ -720,11 +706,11 @@ msgstr ""
 "y delicados sobre seguridad pueden dirigirse a los encargados de "
 "mantenimiento de GNU, <tt>schanzen</tt> y <tt>grothoff</tt>."
 
-#: template/contact.html.j2:53
+#: template/contact.html.j2:40
 msgid "Reporting bugs"
 msgstr "Reporte de errores"
 
-#: template/contact.html.j2:55
+#: template/contact.html.j2:42
 msgid ""
 "We track open feature requests and bugs for projects within GNUnet in our <a "
 "href=\"https://bugs.gnunet.org/\">Bug tracker</a>. You can also report bugs "
@@ -1046,20 +1032,20 @@ msgstr ""
 msgid "General"
 msgstr "General"
 
-#: template/faq.html.j2:13 template/faq.html.j2:149 template/gns.html.j2:37
+#: template/faq.html.j2:13 template/faq.html.j2:148 template/gns.html.j2:37
 msgid "Features"
 msgstr "Características"
 
-#: template/faq.html.j2:15 template/faq.html.j2:695
+#: template/faq.html.j2:15 template/faq.html.j2:694
 msgid "Error messages"
 msgstr "Mensajes de error"
 
-#: template/faq.html.j2:16 template/faq.html.j2:797
+#: template/faq.html.j2:16 template/faq.html.j2:796
 #, fuzzy
 msgid "File-sharing"
 msgstr "Filesharing o compartir documentos (Alfa)"
 
-#: template/faq.html.j2:17 template/faq.html.j2:973
+#: template/faq.html.j2:17 template/faq.html.j2:972
 msgid "Contributing"
 msgstr "Contribuir"
 
@@ -1068,20 +1054,24 @@ msgid "What do I do if my question is not answered here?"
 msgstr "¿Qué hago si aquí no encuentro respuesta a mi pregunta?"
 
 #: template/faq.html.j2:28
+#, fuzzy
+#| msgid ""
+#| "A: There are many other sources of information. You can read additional "
+#| "documentation or ask the question on the help-gnunet@gnu.org mailing list "
+#| "or the #gnunet IRC on irc.freenode.net."
 msgid ""
 "A: There are many other sources of information. You can read additional "
-"documentation or ask the question on the help-gnunet@gnu.org mailing list or "
-"the #gnunet IRC on irc.freenode.net."
+"documentation or ask the question on the help-gnunet@gnu.org mailing list."
 msgstr ""
 "R: Hay muchas otras fuentes de información. Puedes leer documentación "
 "adicional, preguntar en la lista de correos help-gnunet@gnu.org ,o en el IRC "
 "#gnunet en irc.freenode.net."
 
-#: template/faq.html.j2:36
+#: template/faq.html.j2:35
 msgid "When are you going to release the next version?"
 msgstr "¿Cuándo van a lanzar la próxima versión?"
 
-#: template/faq.html.j2:38
+#: template/faq.html.j2:37
 msgid ""
 "A: The general answer is, when it is ready. A better answer may be: earlier "
 "if you contribute (test, debug, code, document). Every release will be "
@@ -1096,11 +1086,11 @@ msgstr ""
 "Puedes suscribirte a la lista de correo o al canal RSS de este sitio para "
 "recibir automáticamente una notificación."
 
-#: template/faq.html.j2:49
+#: template/faq.html.j2:48
 msgid "Is the code free?"
 msgstr "¿El uso del código es libre?"
 
-#: template/faq.html.j2:51
+#: template/faq.html.j2:50
 msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
@@ -1108,11 +1098,11 @@ msgstr ""
 "R: GNUnet es un software libre, disponible bajo la <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\"> GNU Affero Public License (AGPL) </a>."
 
-#: template/faq.html.j2:58
+#: template/faq.html.j2:57
 msgid "Are there any known bugs?"
 msgstr "¿Hay algún error conocido?"
 
-#: template/faq.html.j2:60
+#: template/faq.html.j2:59
 msgid ""
 "A: We track the list of currently known bugs in the <a href=\"https://bugs."
 "gnunet.org/\">Mantis system</a>. Some bugs are occasionally reported "
@@ -1132,11 +1122,11 @@ msgstr ""
 "establecer su estatus de visualización como privado (estos deben ser sólo "
 "casos excepcionales)."
 
-#: template/faq.html.j2:73 template/faq.html.j2:193
+#: template/faq.html.j2:72 template/faq.html.j2:192
 msgid "Is there a graphical user interface?"
 msgstr "¿Existe una interfaz gráfica de usuario?"
 
-#: template/faq.html.j2:75
+#: template/faq.html.j2:74
 msgid ""
 "A: gnunet-gtk is a separate download. The package contains various GTK+ "
 "based graphical interfaces, including a graphical tool for configuration."
@@ -1145,11 +1135,11 @@ msgstr ""
 "interfaces gráficas basadas en GTK +, incluida una herramienta gráfica para "
 "la configuración."
 
-#: template/faq.html.j2:83
+#: template/faq.html.j2:82
 msgid "Why does gnunet-service-nse create a high CPU load?"
 msgstr "¿Por qué gnunet-service-nse genera un uso elevado del CPU?"
 
-#: template/faq.html.j2:85
+#: template/faq.html.j2:84
 msgid ""
 "A: The gnunet-service-nse process will initially compute a so-called &quot;"
 "proof-of-work&quot; which is used to convince the network that your peer is "
@@ -1170,11 +1160,11 @@ msgstr ""
 "nse&quot; de tu archivo de configuración. El valor por defecto es &quot;5 "
 "ms&quot;."
 
-#: template/faq.html.j2:99
+#: template/faq.html.j2:98
 msgid "How does GNUnet compare to Tor?"
 msgstr "¿Cómo se compara GNUnet con Tor?"
 
-#: template/faq.html.j2:101
+#: template/faq.html.j2:100
 msgid ""
 "A: Tor focuses on anonymous communication and censorship-resistance for TCP "
 "connections and, with the Tor Browser Bundle, for the Web in particular. "
@@ -1187,11 +1177,11 @@ msgstr ""
 "nuestro propósito es una red segura descentralizada, pero esto es muy amplio "
 "para ser considerado un enfoque."
 
-#: template/faq.html.j2:111
+#: template/faq.html.j2:110
 msgid "How does GNUnet compare to I2P?"
 msgstr "¿Cómo se compara GNUnet con I2P (Proyecto de Internet invisible)?"
 
-#: template/faq.html.j2:113
+#: template/faq.html.j2:112
 msgid ""
 "A: Both GNUnet and I2P want to build a better, more secure, more "
 "decentralized Internet. However, on the technical side, there are almost no "
@@ -1206,11 +1196,11 @@ msgstr ""
 "aplicaciones anonimizadas. I2P es usada principalmente en la interfaz web de "
 "usuario."
 
-#: template/faq.html.j2:124
+#: template/faq.html.j2:123
 msgid "Is GNUnet ready for use on production systems?"
 msgstr "¿Está GNUnet listo para usarse en sistemas de producción?"
 
-#: template/faq.html.j2:126
+#: template/faq.html.j2:125
 msgid ""
 "A: GNUnet is still undergoing major development. It is largely not yet ready "
 "for usage beyond developers. Your mileage will vary depending on the "
@@ -1225,12 +1215,12 @@ msgstr ""
 "Actualmente estamos en proceso de reescribirlo (Project & quot; Transport "
 "Next Generation [TNG] & quot;)"
 
-#: template/faq.html.j2:136
+#: template/faq.html.j2:135
 msgid "Is GNUnet build using distributed ledger technologies?"
 msgstr ""
 "¿Se están utilizando tecnologías de registro distribuido para hacer GNUnet ?"
 
-#: template/faq.html.j2:138
+#: template/faq.html.j2:137
 msgid ""
 "A: No. GNUnet is a new network protocol stack for building secure, "
 "distributed, and privacy-preserving applications. While a ledger could be "
@@ -1241,11 +1231,11 @@ msgstr ""
 "construir un registro distribuido usando GNUnet, actualmente no tenemos "
 "planes para hacerlo."
 
-#: template/faq.html.j2:151
+#: template/faq.html.j2:150
 msgid "What can I do with GNUnet?"
 msgstr "¿Qué puedo hacer con GNUnet?"
 
-#: template/faq.html.j2:153
+#: template/faq.html.j2:152
 msgid ""
 "A: GNUnet is a peer-to-peer framework, by which we mostly mean that it can "
 "do more than just one thing. Naturally, the implementation and documentation "
@@ -1256,7 +1246,7 @@ msgstr ""
 "documentación de ciertas características ya existentes puede ser más "
 "avanzadas que de otras."
 
-#: template/faq.html.j2:160
+#: template/faq.html.j2:159
 msgid ""
 "For users, GNUnet offers anonymous and non-anonymous file-sharing, a fully "
 "decentralized and censorship-resistant replacement for DNS and a mechanism "
@@ -1267,11 +1257,11 @@ msgstr ""
 "descentralizada y resistente a la censura, así como a un mecanismo de "
 "traducción y \"tunneling\" para el protocolo IPv4-IPv6 (NAT-PT con DNS-ALG)."
 
-#: template/faq.html.j2:171
+#: template/faq.html.j2:170
 msgid "Is it possible to surf the WWW anonymously with GNUnet?"
 msgstr "¿Se puede navegar la WWW de forma anónima con GNUnet?"
 
-#: template/faq.html.j2:173
+#: template/faq.html.j2:172
 msgid ""
 "A: It is not possible use GNUnet for anonymous browsing at this point. We "
 "recommend that you use Tor for anonymous surfing."
@@ -1279,12 +1269,12 @@ msgstr ""
 "R: Por ahora no es posible usar GNUnet para usar internet de modo anónimo. "
 "Recomendamos usar Tor para una navegación anónima."
 
-#: template/faq.html.j2:181
+#: template/faq.html.j2:180
 msgid "Is it possible to access GNUnet via a browser as an anonymous WWW?"
 msgstr ""
 "¿Es posible acceder a GNUnet desde un navegador de internet en modo anónimo?"
 
-#: template/faq.html.j2:183
+#: template/faq.html.j2:182
 #, fuzzy
 #| msgid ""
 #| "A: There is currently no proxy (like fproxy in Freenet) for GNUnet that "
@@ -1303,7 +1293,7 @@ msgstr ""
 "navegador y el proxy, así como hacer una revisión rápida al código en GNUnet "
 "para el intercambio de archivos."
 
-#: template/faq.html.j2:195
+#: template/faq.html.j2:194
 msgid ""
 "A: There are actually a few graphical user interfaces for different "
 "functions. gnunet-setup is to configure GNUnet, and gnunet-fs-gtk is for "
@@ -1323,13 +1313,13 @@ msgstr ""
 "en una ventana. Una excepción es gnunet-setup, que debería ejecutarse por "
 "separado, ya que la instalación requiere que la red de pares se detenga."
 
-#: template/faq.html.j2:210
+#: template/faq.html.j2:209
 #, fuzzy
 #| msgid "On top of which operating systems does GNUnet run?"
 msgid "Which operating systems does GNUnet run on?"
 msgstr "¿Sobre qué sistemas operativos se ejecuta GNUnet?"
 
-#: template/faq.html.j2:212
+#: template/faq.html.j2:211
 msgid ""
 "A: GNUnet is being developed and tested primarily under Debian GNU/Linux. "
 "Furthermore, we regularly build and test GNUnet on Fedora, Ubuntu, Arch, "
@@ -1346,11 +1336,11 @@ msgstr ""
 "son recientes, por lo que si no puedes hacer que GNUnet funcione en esos "
 "sistemas, háznoslo saber."
 
-#: template/faq.html.j2:228
+#: template/faq.html.j2:227
 msgid "Who runs the GNS root zone?"
 msgstr "¿Quién administra la zona raíz de GNS?"
 
-#: template/faq.html.j2:230
+#: template/faq.html.j2:229
 msgid ""
 "A: Short answer: you. The long answer is the GNUnet will ship with a default "
 "configuration of top-level domains. The governance of this default "
@@ -1365,11 +1355,11 @@ msgstr ""
 "que los usuarios promedio no tengan necesidad de editar sus propias zonas "
 "GNS a menos que ellos mismos alojen los servicios."
 
-#: template/faq.html.j2:241
+#: template/faq.html.j2:240
 msgid "Where is the per-user GNS database kept?"
 msgstr "¿Dónde se guarda la base de datos GNS de cada usuario?"
 
-#: template/faq.html.j2:243
+#: template/faq.html.j2:242
 msgid ""
 "A: The short answer is that the database is kept at the user's GNUnet peer. "
 "Now, a user may run multiple GNUnet peers, in which case the database could "
@@ -1391,12 +1381,12 @@ msgstr ""
 "también son aplicables. En última instancia, existen muchas opciones para "
 "que los usuarios puedan almacenar y proteger su base de datos GNS."
 
-#: template/faq.html.j2:258
+#: template/faq.html.j2:257
 msgid "What is the expected average size of a GNS namestore database?"
 msgstr ""
 "¿Cuál es el tamaño promedio esperado de una base de datos de nombres GNS?"
 
-#: template/faq.html.j2:260
+#: template/faq.html.j2:259
 msgid ""
 "A: Pretty small. Based on our user study where we looked at browser "
 "histories and the number of domains visited, we expect that GNS databases "
@@ -1408,11 +1398,11 @@ msgstr ""
 "las bases de datos GNS sólo crezcan hasta decenas de miles de entradas, lo "
 "suficientemente pequeñas para caber incluso en dispositivos móviles."
 
-#: template/faq.html.j2:270
+#: template/faq.html.j2:269
 msgid "Is GNS resistant to the attacks on DNS used by the US?"
 msgstr "¿GNS es resistente a los ataque de DNS utilizados por los E.E. U.U.?"
 
-#: template/faq.html.j2:272
+#: template/faq.html.j2:271
 msgid ""
 "A: We believe so, as there is no entity that any government could force to "
 "change the mapping for a name except for each individual user (and then the "
@@ -1433,13 +1423,13 @@ msgstr ""
 "zona no puede ser coaccionado, la respectiva zona no puede ser modificada y "
 "cualquier otra zona delegada a ésta alcanzará una resolución adecuada."
 
-#: template/faq.html.j2:286
+#: template/faq.html.j2:285
 #, fuzzy
 #| msgid "How does GNS compare to other name systems"
 msgid "How does GNS compare to other name systems?"
 msgstr "¿Cómo se compara GNS a otros sistemas de nombres de dominio?"
 
-#: template/faq.html.j2:288
+#: template/faq.html.j2:287
 msgid ""
 "A: A scientific paper on this topic <a href=\"https://grothoff.org/christian/"
 "ns2018.pdf\">has been published </a> and below is a table from the "
@@ -1450,11 +1440,11 @@ msgstr ""
 "publicación. Para una descripción detallada, por favor diríjanse al "
 "documento."
 
-#: template/faq.html.j2:392
+#: template/faq.html.j2:391
 msgid "What is the difference between GNS and CoDoNS?"
 msgstr "¿Cuál es la diferencia entre GNS y CoDoNS?"
 
-#: template/faq.html.j2:394
+#: template/faq.html.j2:393
 #, fuzzy
 #| msgid ""
 #| "A: CoDoNS decentralizes the DNS database (using a DHT) but preserves the "
@@ -1485,11 +1475,11 @@ msgstr ""
 "nombres cortos y habilitar migraciones, lo cual, en el contexto de CoDoNS, "
 "ni siquiera tendría sentido."
 
-#: template/faq.html.j2:410
+#: template/faq.html.j2:409
 msgid "What is the difference between GNS and SocialDNS?"
 msgstr "¿Cuál es la diferencia entre GNS y SocialDNS?"
 
-#: template/faq.html.j2:412
+#: template/faq.html.j2:411
 msgid ""
 "A: Like GNS, SocialDNS allows each user to create DNS mappings. However, "
 "with SocialDNS the mappings are shared through the social network and "
@@ -1506,11 +1496,11 @@ msgstr ""
 "delegación, y por ello los mapeos sólo cambiarán si el usuario responsable "
 "del nombre (la autoridad) modifica manualmente su registro."
 
-#: template/faq.html.j2:426
+#: template/faq.html.j2:425
 msgid "What is the difference between GNS and ODDNS?"
 msgstr "¿Cuál es la diferencia entre GNS y ODDNS?"
 
-#: template/faq.html.j2:428
+#: template/faq.html.j2:427
 msgid ""
 "A: ODDNS is primarily designed to bypass the DNS root zone and the TLD "
 "registries (such as those for \".com\" and \".org\"). Instead of using "
@@ -1525,11 +1515,11 @@ msgstr ""
 "org\", y la dirección IP de los respectivos nombres. La resolución fallará "
 "si los servidores de nombres cambian las IP."
 
-#: template/faq.html.j2:439
+#: template/faq.html.j2:438
 msgid "What is the difference between GNS and Handshake?"
 msgstr "¿Cuál es la diferencia entre GNS y Handshake?"
 
-#: template/faq.html.j2:441
+#: template/faq.html.j2:440
 #, fuzzy
 #| msgid ""
 #| "A: Handshake is a blockchain-based method for root zone governance. "
@@ -1553,11 +1543,11 @@ msgstr ""
 "usarse como un modelo adicional de apoyo para la gobernanza de la zona raíz "
 "GNS, pero actualmente no tenemos tales planes en mente."
 
-#: template/faq.html.j2:453
+#: template/faq.html.j2:452
 msgid "What is the difference between GNS and TrickleDNS?"
 msgstr "¿Cuál es la diferencia entre GNS y TrickleDNS?"
 
-#: template/faq.html.j2:455
+#: template/faq.html.j2:454
 msgid ""
 "A: TrickleDNS pushes (&quot;critical&quot;) DNS records between DNS "
 "resolvers of participating domains to provide &quot;better availability, "
@@ -1578,7 +1568,7 @@ msgstr ""
 "registros autorizados, y su autoridad sigue derivando de la jerarquía del "
 "DNS."
 
-#: template/faq.html.j2:468
+#: template/faq.html.j2:467
 msgid ""
 "Does GNS require real-world introduction (secure PKEY exchange) in the style "
 "of the PGP web of trust?"
@@ -1586,7 +1576,7 @@ msgstr ""
 "¿GNS necesita una introducción en el mundo real (intercambio seguro de PKEY) "
 "al estilo de la web de confianza de PGP?"
 
-#: template/faq.html.j2:470
+#: template/faq.html.j2:469
 msgid ""
 "A: For security, it is well known that an initial trust path between the two "
 "parties must exist. However, for applications where this is not required, "
@@ -1609,7 +1599,7 @@ msgstr ""
 "confiabilidad de la autoridad del sistema FCFS. Esta autoridad puede "
 "consultarse en &quot;.pin&quot; TLD."
 
-#: template/faq.html.j2:485
+#: template/faq.html.j2:484
 msgid ""
 "How can a legitimate domain owner tell other people to not use his name in "
 "GNS?"
@@ -1617,7 +1607,7 @@ msgstr ""
 "¿Cómo podría el propietario legítimo de un dominio decirle a otros que no "
 "utilicen su nombre en GNS?"
 
-#: template/faq.html.j2:487
+#: template/faq.html.j2:486
 msgid ""
 "A: Names have no owners in GNS, so there cannot be a &quot;legitimate&quot; "
 "domain owner. Any user can claim any name (as his preferred name or &quot;"
@@ -1632,7 +1622,7 @@ msgstr ""
 "optar por ignorar esta preferencia y utilizar un nombre de su elección (o "
 "incluso no asignar ningún nombre) para este usuario."
 
-#: template/faq.html.j2:498
+#: template/faq.html.j2:497
 msgid ""
 "Did you consider the privacy implications of making your personal GNS zone "
 "visible?"
@@ -1640,7 +1630,7 @@ msgstr ""
 "¿Han considerado las implicaciones de privacidad al hacer visible la zona "
 "GNS personal?"
 
-#: template/faq.html.j2:500
+#: template/faq.html.j2:499
 msgid ""
 "A: Each record in GNS has a flag &quot;private&quot;. Records are shared "
 "with other users (via DHT or zone transfers) only if this flag is not set. "
@@ -1653,11 +1643,11 @@ msgstr ""
 "tanto, los usuarios tienen control total sobre qué información de sus zonas "
 "se hace pública."
 
-#: template/faq.html.j2:510
+#: template/faq.html.j2:509
 msgid "Are \"Legacy Host\" (LEHO) records not going to be obsolete with IPv6?"
 msgstr "¿Los registros de \"Legacy Host\" (LEHO) no serán obsoletos con IPv6?"
 
-#: template/faq.html.j2:512
+#: template/faq.html.j2:511
 msgid ""
 "A: The question presumes that (a) virtual hosting is only necessary because "
 "of IPv4 address scarcity, and (b) that LEHOs are only useful in the context "
@@ -1679,7 +1669,7 @@ msgstr ""
 "esperar a que IPv6 se convierta en algo común. GNS debería funcionar con las "
 "redes actuales."
 
-#: template/faq.html.j2:526
+#: template/faq.html.j2:525
 msgid ""
 "Why does GNS not use a trust metric or consensus to determine globally "
 "unique names?"
@@ -1687,7 +1677,7 @@ msgstr ""
 "¿Por qué GNS no usa una métrica de confianza o consenso para determinar "
 "nombres únicos a nivel mundial?"
 
-#: template/faq.html.j2:528
+#: template/faq.html.j2:527
 msgid ""
 "A: Trust metrics have the fundamental problem that they have thresholds. As "
 "trust relationships evolve, mappings would change their meaning as they "
@@ -1702,11 +1692,11 @@ msgstr ""
 "proceso de resolución no era aceptable. Además, herramientas de confianza y "
 "consenso pueden ser fácilmente manipulables por intrusos."
 
-#: template/faq.html.j2:539
+#: template/faq.html.j2:538
 msgid "How do you handle compromised zone keys in GNS?"
 msgstr "¿Cómo manejan las claves de las áreas comprometidas en GNS?"
 
-#: template/faq.html.j2:541
+#: template/faq.html.j2:540
 msgid ""
 "A: The owner of a private key can create a revocation message. This one can "
 "then be flooded throughout the overlay network, creating a copy at all "
@@ -1722,11 +1712,11 @@ msgstr ""
 "zona revocada no se resolverán. Los pares siempre verifican automáticamente "
 "la existencia de un mensaje de revocación al solucionar los nombres."
 
-#: template/faq.html.j2:553
+#: template/faq.html.j2:552
 msgid "Could the signing algorithm of GNS be upgraded in the future?"
 msgstr "¿Se podría actualizar el algoritmo para firmar de GNS en el futuro?"
 
-#: template/faq.html.j2:555
+#: template/faq.html.j2:554
 msgid ""
 "A: Yes. In our efforts to standardize GNS, we have already modified the "
 "protocol to support alternative delegation records. <br> <br> Naturally, "
@@ -1742,14 +1732,14 @@ msgstr ""
 "puede ejecutar en paralelo con el sistema existente, utilizando un nuevo "
 "tipo de registro para indicar el uso de un sistema de cifrado distinto."
 
-#: template/faq.html.j2:569
+#: template/faq.html.j2:568
 msgid ""
 "How can a GNS zone maintain several name servers, e.g. for load balancing?"
 msgstr ""
 "¿Cómo una zona GNS puede mantener diversos nombres de servidores, por "
 "ejemplo, para el equilibrio de carga?"
 
-#: template/faq.html.j2:571
+#: template/faq.html.j2:570
 msgid ""
 "A: We don't expect this to be necessary, as GNS records are stored (and "
 "replicated) in the R5N DHT. Thus the authority will typically not be "
@@ -1768,7 +1758,7 @@ msgstr ""
 "dicha zona puede simplemente ejecutar varios pares (compartir la clave y la "
 "base de datos de la zona entre ellos)."
 
-#: template/faq.html.j2:584
+#: template/faq.html.j2:583
 msgid ""
 "Why do you believe it is worth giving up unique names for censorship "
 "resistance?"
@@ -1776,7 +1766,7 @@ msgstr ""
 "¿Por qué consideran que vale la pena renunciar a nombres únicos para "
 "resistir a la censura?"
 
-#: template/faq.html.j2:586
+#: template/faq.html.j2:585
 msgid ""
 "A: The GNU Name system offers an alternative to DNS that is censorship "
 "resistant. As with any security mechanism, this comes at a cost (names are "
@@ -1798,11 +1788,11 @@ msgstr ""
 "puede valer la pena. Después de todo, ¿de qué sirve tener un nombre único "
 "&quot;global&quot; si no puede resolverse?"
 
-#: template/faq.html.j2:600
+#: template/faq.html.j2:599
 msgid "Why do you say that DNS is 'centralized' and 'distributed'?"
 msgstr "¿Por qué se dice que el DNS está 'centralizado' y 'distribuido'?"
 
-#: template/faq.html.j2:602
+#: template/faq.html.j2:601
 msgid ""
 "A: We say that DNS is 'centralized' because it has a central component / "
 "central point of failure --- the root zone and its management by IANA/ICANN. "
@@ -1816,11 +1806,11 @@ msgstr ""
 "ejemplo, el gobierno de EE. UU. pudo modificar la gestión nacional de los "
 "TLD en Afganistán e Irak durante las guerras de principios del siglo XXI."
 
-#: template/faq.html.j2:613
+#: template/faq.html.j2:612
 msgid "How does GNS protect against layer-3 censorship?"
 msgstr "¿Cómo GNS brinda protección contra la censura de capa 3?"
 
-#: template/faq.html.j2:615
+#: template/faq.html.j2:614
 msgid ""
 "A: GNS does not directly help with layer-3 censorship, but it does help "
 "indirectly in two ways: <ol> <li> Many websites today use virtual hosting, "
@@ -1843,11 +1833,11 @@ msgstr ""
 "criptográficos nada memorables. Con nombres más agradables, los servicios "
 "tipo Tor y tor2web serían aún más fáciles de usar. </ol>"
 
-#: template/faq.html.j2:634
+#: template/faq.html.j2:633
 msgid "Does GNS work with search engines?"
 msgstr "¿GNS funciona con motores de búsqueda?"
 
-#: template/faq.html.j2:636
+#: template/faq.html.j2:635
 msgid ""
 "A: GNS creates no significant problems for search engines, as they can use "
 "GNS to perform name resolution as well as any normal user. Naturally, while "
@@ -1869,12 +1859,12 @@ msgstr ""
 "confianza criptográfica, los motores de búsqueda heredados no obtendrán "
 "nombres que sean resistentes a la censura."
 
-#: template/faq.html.j2:650
+#: template/faq.html.j2:649
 msgid "How does GNS compare to the Unmanaged Internet Architecture (UIA)?"
 msgstr ""
 "¿Cómo se compara GNS con la Arquitectura de Internet no Administrada (UIA)?"
 
-#: template/faq.html.j2:652
+#: template/faq.html.j2:651
 msgid ""
 "A: UIA and GNS both share the same basic naming model, which actually "
 "originated with Rivest's SDSI. However, UIA is not concerned about "
@@ -1892,12 +1882,12 @@ msgstr ""
 "posible, así como para trabajar extensivamente con la infraestructura web. "
 "La UIA no se preocupa por los sistemas heredados (pizarra limpia)."
 
-#: template/faq.html.j2:665
+#: template/faq.html.j2:664
 msgid "Doesn't GNS increase the trusted-computing base compared to DNS(SEC)?"
 msgstr ""
 "¿GNS no aumenta la base informática confiable en comparación con DNS (SEC)?"
 
-#: template/faq.html.j2:667
+#: template/faq.html.j2:666
 msgid ""
 "A: First of all, in GNS you can explicitly see the trust chain, so you know "
 "if a name you are resolving belongs to a friend, or a friend-of-a-friend, "
@@ -1914,7 +1904,7 @@ msgstr ""
 "longitud del nombre, para un nombre individual siempre será menor a 128 "
 "entidades."
 
-#: template/faq.html.j2:679
+#: template/faq.html.j2:678
 msgid ""
 "How does GNS handle SRV/TLSA records where service and protocol are part of "
 "the domain name?"
@@ -1922,7 +1912,7 @@ msgstr ""
 "¿Cómo maneja GNS los registros SRV/TLSA donde el servicio y el protocolo son "
 "parte del nombre de dominio?"
 
-#: template/faq.html.j2:681
+#: template/faq.html.j2:680
 msgid ""
 "A: When GNS splits a domain name into labels for resolution, it detects the "
 "&quot;_Service._Proto&quot; syntax, converts &quot;Service&quot; to the "
@@ -1942,7 +1932,7 @@ msgstr ""
 "que contiene otro registro (como registros SRV o TLSA) y le agrega un número "
 "de servicio y protocolo (y el tipo de registro en caja original)."
 
-#: template/faq.html.j2:697
+#: template/faq.html.j2:696
 msgid ""
 "I receive many &quot;WARNING Calculated flow delay for X at Y for Z&quot;. "
 "Should I worry?"
@@ -1950,7 +1940,7 @@ msgstr ""
 "Recibo muchas &quot; WARNING Retardo de flujo calculado para X en Y para "
 "Z&quot;. ¿Debería preocuparme?"
 
-#: template/faq.html.j2:699
+#: template/faq.html.j2:698
 msgid ""
 "A: Right now, this is expected and a known cause for high latency in GNUnet. "
 "We have started a major rewrite to address this and other problems, but "
@@ -1962,12 +1952,12 @@ msgstr ""
 "este y otros problemas, pero hasta que el Transport Next Generation (TNG) "
 "esté listo, estas advertencias seguirán ocurriendo."
 
-#: template/faq.html.j2:708
+#: template/faq.html.j2:707
 msgid "Error opening `/dev/net/tun': No such file or directory?"
 msgstr ""
 "Error al abrir `/ dev / net / tun ': ¿No existe ese archivo o directorio?"
 
-#: template/faq.html.j2:710
+#: template/faq.html.j2:709
 msgid ""
 "A: If you get this error message, the solution is simple. Issue the "
 "following commands (as root) to create the required device file"
@@ -1976,7 +1966,7 @@ msgstr ""
 "siguientes comandos (como root) para crear el archivo de dispositivo "
 "requerido"
 
-#: template/faq.html.j2:722
+#: template/faq.html.j2:721
 msgid ""
 "'iptables: No chain/target/match by that name.' (when running gnunet-service-"
 "dns)?"
@@ -1984,7 +1974,7 @@ msgstr ""
 "'iptables: No hay cadena / objetivo / coincidencia con ese nombre'. ¿(al "
 "ejecutar gnunet-service-dns)?"
 
-#: template/faq.html.j2:724
+#: template/faq.html.j2:723
 msgid ""
 "A: For GNUnet DNS, your iptables needs to have &quot;owner&quot; match "
 "support. This is accomplished by having the correct kernel options. Check if "
@@ -1996,13 +1986,13 @@ msgstr ""
 "kernel. Compruebe si su kernel tiene CONFIG_NETFILTER_XT_MATCH_OWNER "
 "configurado en 'y' o 'm' (y el módulo está cargado)."
 
-#: template/faq.html.j2:736
+#: template/faq.html.j2:735
 msgid "'Timeout was reached' when running PT on Fedora (and possibly others)?"
 msgstr ""
 "¿'Se alcanzó el tiempo de espera' al ejecutar PT en Fedora (y posiblemente "
 "otros)?"
 
-#: template/faq.html.j2:738
+#: template/faq.html.j2:737
 msgid ""
 "A: If you get an error stating that the VPN timeout was reached, check if "
 "your firewall is enabled and blocking the connections."
@@ -2011,12 +2001,12 @@ msgstr ""
 "VPN, verifique si su firewall está habilitado y está bloqueando las "
 "conexiones."
 
-#: template/faq.html.j2:746
+#: template/faq.html.j2:745
 msgid ""
 "I'm getting an 'error while loading shared libraries: libgnunetXXX.so.X'"
 msgstr "Recibí un 'error al cargar bibliotecas compartidas: libgnunetXXX.so.X'"
 
-#: template/faq.html.j2:748
+#: template/faq.html.j2:747
 msgid ""
 "A: This error usually occurs when your linker fails to locate one of "
 "GNUnet's libraries. This can have two causes. First, it is theoretically "
@@ -2053,7 +2043,7 @@ msgstr ""
 "marco \"LD_LIBRARY_PATH\". Por ejemplo, si configuró GNUnet usando el "
 "prefijo \"$HOME/gnunet/\" usted quiere ejecutar:"
 
-#: template/faq.html.j2:774
+#: template/faq.html.j2:773
 msgid ""
 "to ensure GNUnet's binaries and libraries are found. In order to avoid "
 "having to do so each time, you can add the above lines (without the \"$\") "
@@ -2068,11 +2058,11 @@ msgstr ""
 "aplicado a todos los intérpretes de comandos (incluyendo su entorno de "
 "escritorio)."
 
-#: template/faq.html.j2:781
+#: template/faq.html.j2:780
 msgid "What error messages can be ignored?"
 msgstr "¿Cuáles mensajes de error pueden ser ignorados?"
 
-#: template/faq.html.j2:783
+#: template/faq.html.j2:782
 msgid ""
 "A: Error messages flagged as \"DEBUG\" should be disabled in binaries built "
 "for end-users and can always be ignored. Error messages flagged as \"INFO\" "
@@ -2089,12 +2079,12 @@ msgstr ""
 "que requerirá de algún tiempo. GNUnet también usará mensajes INFO para "
 "mostrar información acerca de valores de configuración importantes."
 
-#: template/faq.html.j2:799
+#: template/faq.html.j2:798
 msgid "How does GNUnet compare to other file-sharing applications?"
 msgstr ""
 "¿Cómo se compara GNUnet con otras aplicaciones para compartir documentos?"
 
-#: template/faq.html.j2:801
+#: template/faq.html.j2:800
 msgid ""
 "A: As opposed to Napster, Gnutella, Kazaa, FastTrack, eDonkey and most other "
 "P2P networks, GNUnet was designed with security in mind as the highest "
@@ -2133,7 +2123,7 @@ msgstr ""
 "diferencias reales, lea los artículos de investigación (y probablemente el "
 "código)."
 
-#: template/faq.html.j2:915
+#: template/faq.html.j2:914
 msgid ""
 "Another important point of reference are the various anonymous peer-to-peer "
 "networks. Here, there are differences in terms of application domain and how "
@@ -2153,13 +2143,13 @@ msgstr ""
 "beneficios de seguridad, sin embargo, pueden significar un aumento "
 "importante en el consumo de recursos, lo cual puede reducir la anonimidad."
 
-#: template/faq.html.j2:928
+#: template/faq.html.j2:927
 msgid "Are there any known attacks (on GNUnet's file-sharing application)?"
 msgstr ""
 "¿Existen ataques conocidos (en la aplicación de intercambio de archivos de "
 "GNUnet)?"
 
-#: template/faq.html.j2:930
+#: template/faq.html.j2:929
 msgid ""
 "A: Generally, there is the possibility of a known plaintext attack on "
 "keywords, but since the user has control over the keywords that are "
@@ -2180,11 +2170,11 @@ msgstr ""
 "únicamente con un pequeño grupo de personas, no existe una razón para "
 "intentar ofuscar el contenido al elegir una palabra clave difícil."
 
-#: template/faq.html.j2:944
+#: template/faq.html.j2:943
 msgid "What do you mean by anonymity?"
 msgstr "¿Qué significa la anonimidad?"
 
-#: template/faq.html.j2:946
+#: template/faq.html.j2:945
 msgid ""
 "A: Anonymity is the lack of distinction of an individual from a (large) "
 "group. A central goal for anonymous file-sharing in GNUnet is to make all "
@@ -2203,13 +2193,13 @@ msgstr ""
 "imposible para un adversario el distinguir entre pares iniciadores y los "
 "demás pares."
 
-#: template/faq.html.j2:958
+#: template/faq.html.j2:957
 msgid "What does my system do when participating in GNUnet file sharing?"
 msgstr ""
 "¿Qué hace mi sistema cuando participa en el intercambio de archivos de "
 "GNUnet?"
 
-#: template/faq.html.j2:960
+#: template/faq.html.j2:959
 msgid ""
 "A: In GNUnet you set up a node (a peer). It is identified by an ID (hash of "
 "its public key) and has a number of addresses it is reachable by (may have "
@@ -2227,11 +2217,11 @@ msgstr ""
 "Su nodo entonces procederá a conectarse con otros nodos, volviéndose parte "
 "de la red."
 
-#: template/faq.html.j2:975
+#: template/faq.html.j2:974
 msgid "How can I help translate this webpage into other languages?"
 msgstr "¿Cómo puedo ayudar a traducir éste sitio web a otros idiomas?"
 
-#: template/faq.html.j2:977
+#: template/faq.html.j2:976
 msgid ""
 "A: First, you need to register an account with our weblate system. Please "
 "send an e-mail with the desired target language to translators@gnunet.org or "
@@ -2245,11 +2235,11 @@ msgstr ""
 "Normalmente, alguien con permisos suficientes le proporcionará acceso. "
 "Naturalmente, cualquier abuso resultará en la pérdida de los permisos."
 
-#: template/faq.html.j2:989
+#: template/faq.html.j2:988
 msgid "I have some great idea for a new feature, what should I do?"
 msgstr "¿Qué debo hacer si tengo una buena idea para una nueva función?"
 
-#: template/faq.html.j2:991
+#: template/faq.html.j2:990
 msgid ""
 "A: Sadly, we have many more feature requests than we can possibly implement. "
 "The best way to actually get a new feature implemented is to do it yourself "
@@ -2876,12 +2866,19 @@ msgid "Finished projects"
 msgstr "Proyectos finalizados"
 
 #: template/gsoc.html.j2:21
+#, fuzzy
+#| msgid ""
+#| "As a GNU project, GNUnet has participated in the Google Summer of Code "
+#| "(GSoC) for a number of years. This page lists all current, past, and "
+#| "finished projects. If you want to participate and apply for any of the "
+#| "ideas for 2020 below or any past project which is not yet finished (or "
+#| "even your own idea), please contact us either in IRC or mailing list."
 msgid ""
 "As a GNU project, GNUnet has participated in the Google Summer of Code "
 "(GSoC) for a number of years. This page lists all current, past, and "
 "finished projects. If you want to participate and apply for any of the ideas "
 "for 2020 below or any past project which is not yet finished (or even your "
-"own idea), please contact us either in IRC or mailing list."
+"own idea), please contact us on the mailing list."
 msgstr ""
 "Como projecto GNU, GNUnet ha participado en el Google Summer of Code (GSoC) "
 "por varios años. Esta página enlista todos los proyectos, actuales, pasados "
@@ -3679,17 +3676,17 @@ msgstr ""
 msgid "GNS with Browser"
 msgstr ""
 
-#: template/use.html.j2:17 template/use.html.j2:448
+#: template/use.html.j2:17 template/use.html.j2:445
 msgid "VPN"
 msgstr ""
 
-#: template/use.html.j2:18 template/use.html.j2:508
+#: template/use.html.j2:18 template/use.html.j2:505
 #, fuzzy
 #| msgid "Continuous Integration"
 msgid "Conversation"
 msgstr "Integración continua"
 
-#: template/use.html.j2:19 template/use.html.j2:519
+#: template/use.html.j2:19 template/use.html.j2:516
 msgid "Trouble Shooting"
 msgstr ""
 
@@ -3721,19 +3718,19 @@ msgstr ""
 msgid "Chatting with a (simple) client"
 msgstr ""
 
-#: template/use.html.j2:283
+#: template/use.html.j2:280
 msgid "Name resolution using GNS on the command line"
 msgstr ""
 
-#: template/use.html.j2:360
+#: template/use.html.j2:357
 msgid "Name resolution using GNS with a browser"
 msgstr ""
 
-#: template/use.html.j2:521
+#: template/use.html.j2:518
 msgid "You can't reach other people's nodes"
 msgstr ""
 
-#: template/use.html.j2:557
+#: template/use.html.j2:554
 msgid "OMG you guys broke my internet"
 msgstr ""
 
@@ -3890,6 +3887,18 @@ msgstr ""
 "Las partes involucradas recuperan datos de identidad encriptados del "
 "directorio descentralizado. Puede desencriptar todos esos atributos que el "
 "usuario le ha autorizado a acceder utilizando la clave respectiva."
+
+#~ msgid "The IRC channel"
+#~ msgstr "El canal IRC"
+
+#~ msgid ""
+#~ "<tt>#gnunet</tt> is reachable via <a href=\"https://freenode.net\">irc."
+#~ "freenode.net</a>. There is also an <a href=\"https://view.matrix.org/"
+#~ "room/!IjaAfLiruzjxFFzKAV:matrix.org/\">archive</a> available."
+#~ msgstr ""
+#~ "<tt>#gnunet</tt> es accesible a través de <a href=\"https://freenode.net"
+#~ "\">irc.freenode.net</a>. También hay un <a href=\"https://view.matrix.org/"
+#~ "room/!IjaAfLiruzjxFFzKAV:matrix.org/\">archivo</a> disponible."
 
 #~ msgid ""
 #~ "This project has received funding from the European Union’s Horizon 2020 "
