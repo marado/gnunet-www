@@ -26,7 +26,7 @@
         <h2>{{ _("Latest news") }}</h2>
         <p>
         {% for item in newsdata[:3] %}
-        <a class="link" href="{{ url_localized(item['page']) }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a><br/>
+        <a class="link" href="{{ url_localized('news/' + item['page']) }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a><br/>
         {% endfor %}
         <br/>
         <a class="link" href="{{ url_localized('news/index.html')}}">{{ _("Older news entries") }}</a>

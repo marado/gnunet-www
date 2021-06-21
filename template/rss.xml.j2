@@ -36,7 +36,7 @@
         <description>
           <![CDATA[
              {% filter extract_body %}
-             {% include (newspostitem['page'] + ".j2") %}
+             {% include ('news/' + newspostitem['page'] + ".j2") %}
              {% endfilter %}
            ]]>
         </description>
