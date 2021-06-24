@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-10 22:48+0200\n"
-"PO-Revision-Date: 2021-06-24 14:26+0000\n"
+"PO-Revision-Date: 2021-06-25 10:19+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -178,8 +178,11 @@ msgid ""
 "secure publication of files, it has grown to include all kinds of basic "
 "protocol components and applications towards the creation of a GNU internet."
 msgstr ""
+"GNUnet是個替代網絡堆棧，其主要目標為構建安全、分散和保護隱私的分佈式應用程序。我們的目標為替換舊的、不安全的互聯網協議棧。起始於一個用於安全發布文件"
+"的應用程式，GNUnet已經發展到包含所有類型的基本協議組件和應用程序，並朝向創建 GNU 互聯網發展。"
 
 #: template/about.html.j2:23
+#, fuzzy
 msgid ""
 "Today, the actual use and thus the social requirements for a global network "
 "differs widely from those goals of 1970. While the Internet remains suitable "
@@ -187,6 +190,8 @@ msgid ""
 "hierarchy and when necessary isolated from the rest of the world, the "
 "situation is less tenable for civil society."
 msgstr ""
+"現今，全球網絡的實際用途和社會需求與 1970 "
+"年的目標大不相同。雖然網際網路仍然適合軍事用途(網絡設備由指揮層操作，並在必要時與世界其他地方隔離)，但民間社會的情況卻較站不住腳。"
 
 #: template/about.html.j2:32
 msgid ""
@@ -197,6 +202,9 @@ msgid ""
 "cryptographyengineering.com/2015/08/16/the-network-is-hostile/\">\"the "
 "network is hostile\"</a>."
 msgstr ""
+"由於基本網際網路的設計選擇，網際網路的流量可能會被網路上的敵對路由器誤導、攔截、審查和操縱。而確實，現代網際網路已經發展到這個地步，如同Matthew "
+"Green所說的，<a href=\"https://blog.cryptographyengineering.com/2015/08/16/"
+"the-network-is-hostile/\">\"網路是懷有敵意的(the network is hostile)\"</a>。"
 
 #: template/about.html.j2:41
 msgid ""
@@ -284,6 +292,22 @@ msgid ""
 "Zones_0029\">Zones in the GNU Name System (GNS Zones)</a></li> <li><a href="
 "\"https://docs.gnunet.org/handbook/gnunet.html#Egos\">Egos</a></li> </ul>"
 msgstr ""
+"欲瞭解更多，請參考我們的 <a href=\"https://docs.gnunet.org/handbook/gnunet.html\">手冊</a>，"
+"尤其是<a href=\"https://docs.gnunet.org/handbook/gnunet.html#Key-Concepts\">"
+"\"關鍵概念(Key Concepts)\"的章節</a>，此章節解釋了GNUnet的基礎概念:<ul>。<li><a href=\"https"
+"://docs.gnunet.org/handbook/gnunet.html#Authentication\""
+">驗證(Authentication)</a></li>。<li><a href=\"https://docs.gnunet.org/handbook/"
+"gnunet.html#Accounting-to-Encourage-Resource-Sharing\">說明鼓勵資源共享(Accounting "
+"to Encourage Resource Sharing)</a></li>。<li><a href=\"https://docs.gnunet."
+"org/handbook/gnunet.html#Confidentiality\">保密性(Confidentiality)</a></li>。"
+"<li><a href=\"https://docs.gnunet.org/handbook/gnunet.html#Anonymity\""
+">匿名性(Anonymity)</a></li>。<li><a href=\"https://docs.gnunet.org/handbook/"
+"gnunet.html#Deniability\">可否認性(Deniability)</a></li>。<li><a href=\"https"
+"://docs.gnunet.org/handbook/gnunet.html#Peer-Identities\">對等身份(Peer "
+"Identities)</a></li>。<li><a href=\"https://docs.gnunet.org/handbook/gnunet."
+"html#Zones-in-the-GNU-Name-System-_0028GNS-Zones_0029\">GNU 名稱系統中的區域(Zones "
+"in the GNU Name System; GNS Zones)</a></li>。<li><a href=\"https://docs.gnunet"
+".org/handbook/gnunet.html#Egos\">自我(Egos)</a></li>。</ul>"
 
 #: template/about.html.j2:88
 msgid "More Resources"
@@ -362,6 +386,10 @@ msgid ""
 "cryptographically secured. <!-- Too technical: GNS integrates a robust, "
 "efficient and instant key revocation mechanism. -->"
 msgstr ""
+"<a href=\"gns.html\">GNU 名稱系統 (GNS)</a>是域名系統 (DNS) 的完全去中心化替代品。GNS "
+"不使用層次結構，而是使用有向圖。命名常規與DNS相似，但即使對於提供答覆的同行，查詢和回覆也是私密的。記錄的完整性和查詢的隱私是加密保護的。<!-- "
+"Too technical: GNS integrates a robust, efficient and instant key revocation "
+"mechanism. -->"
 
 #: template/applications.html.j2:38
 msgid "Self-sovereign, decentralized identity provider"
@@ -505,6 +533,7 @@ msgid "Security"
 msgstr "安全性"
 
 #: template/architecture.html.j2:38
+#, fuzzy
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault isolation and enabling tight "
@@ -512,6 +541,8 @@ msgid ""
 "is a <a href=\"https://www.gnu.org/\">GNU</a> package, and will always "
 "remain free software."
 msgstr ""
+"GNUnet 是使用多進程架構實現的。每個子系統都作為一個單獨的進程運行，以提供故障隔離並允許為每個子系統授予嚴格的權限。自然地，這是一個<a href="
+"\"https://www.gnu.org/\">GNU</a> package的實現，並會持續保持為一個自由軟體。"
 
 #: template/architecture.html.j2:52
 msgid "System architecture"
@@ -598,8 +629,12 @@ msgid ""
 "\">GNUnet e.V. --- Taler Systems SA agreement on licensing and collaborative "
 "development</a> of the GNUnet and GNU Taler projects is satisfied. </p>"
 msgstr ""
+"擁有Git存取權限的GNU Taler貢獻者必須簽署 <a href=\"/pdf/copyright.pdf\">版權轉讓</a> ，"
+"以確保GNUnet 與 GNU Taler 專案的<a href=\"https://git.gnunet.org/gnunet-ev.git/tree/"
+"gnunet_taler_agreement.tex\">GNUnet e.V. --- Taler 系統對於授權與協同開發的SA協議</a>已被符合。"
 
 #: template/copyright.html.j2:22
+#, fuzzy
 msgid ""
 "<p>The agreements ensure that the code will continue to be made available "
 "under free software licenses, but gives developers the freedom to move code "
@@ -607,6 +642,8 @@ msgid ""
 "company the ability to dual-license (for example, so that we can distribute "
 "via App-stores that are hostile to free software).</p>"
 msgstr ""
+"<p>這些協議確保程式碼可以在自由軟體許可下繼續地被提供，但使開發人員可以自由地在GNUnet和GNU "
+"Taler之間移動程式碼，而不必擔心許可證問題，並使公司具有雙重許可的能力(例如，因此我們可以通過對自由軟體有敵意的應用程式商店進行分發)。</p>"
 
 #: template/copyright.html.j2:30
 msgid ""
@@ -615,6 +652,8 @@ msgid ""
 "simply sign the agreement with your pseudonym. Scanned copies are "
 "sufficient, but snail mail is preferred.</p>"
 msgstr ""
+"<p>小額捐款(基本上，任何沒有Git訪問許可權的人)都不需要版權轉讓。我們也接受匿名捐款，在此情況下，您只需使用您的假名/筆名簽署同意書並掃描副本即可，"
+"不過蝸牛郵件為更好的方式。</p>"
 
 #: template/developers.html.j2:5
 msgid "GNUnet for developers"
@@ -743,12 +782,16 @@ msgid "About GNUnet e.V."
 msgstr "關於GNUnet e.V."
 
 #: template/ev.html.j2:13
+#, fuzzy
 msgid ""
 "On December 27th 2013 a group of GNUnet hackers met at 30c3 to create the "
 "\"Verein zur F&ouml;rderung von GNUnet e.V.\", an association under German "
 "law to support GNUnet development. The Amtsgericht M&uuml;nchen registered "
 "the association on the 7th of March under VR 205287."
 msgstr ""
+"2013 年 12 月 27 日，一群 GNUnet 黑客在 30c3 會面，創建了\"Verein zur F&ouml;rderung von "
+"GNUnet e.V.\"，一個根據德國法律支持 GNUnet 開發的協會。Amtsgericht M&uuml;nchen 於 3 月 7 日在 VR "
+"205287 之下註冊了該協會。"
 
 #: template/ev.html.j2:22
 msgid ""
@@ -773,6 +816,11 @@ msgid ""
 "git/\">Satzung (Charter)</a> (currently only available in German, "
 "translations welcome)."
 msgstr ""
+"具有 git(寫)權限的 GNUnet 開發人員可以成為成員以參與決策過程並正式支持GNUnet e.V。為此，您所需要做的就是更新<tt>members"
+".txt</tt>檔案，其位於 <a href=\"https://git.gnunet.org/gnunet-ev.git/\">gnunet-"
+"ev</a>儲存庫。會員無須繳納會員費；然而，成員必須支持 GNUnet e.V，尤其是在力所能及的範圍內為技術發展做出貢獻。若欲瞭解更多的細節，請參閱 "
+"<a href=\"https://git.gnunet.org/gnunet-ev.git/\">Satzung (章程)</a> "
+"(目前僅提供德語內容，歡迎提供翻譯協助)。"
 
 #: template/ev.html.j2:52
 msgid "Governance"
@@ -788,6 +836,14 @@ msgid ""
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
 "\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
 msgstr ""
+"您可以在此找到我們的章程和成員名單<a href=\"https://git.gnunet.org/gnunet-ev.git/tree/satzung."
+"tex\">https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex</a>。目前董事會的組成為: "
+"<dl><dt>Vorsitz</dt>。<dd><a href=\"https://schanzen.eu\">Martin "
+"Schanzenbach</a></dd>。<dt>stellvertretender "
+"Vorsitz</dt>。<dd>t3sserakt</dd>。<dt>Kassenwart</dt>。<dd>Florian "
+"Dold</dd>。<dt>Beisitzer</dt>。<dd>。\n"
+"<a href=\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 "
+"</dd>。</dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
@@ -809,6 +865,10 @@ msgid ""
 "<dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd> <dt>SEPA/IBAN</dt> "
 "<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd> </dl>"
 msgstr ""
+"歡迎大家通過捐款支持我們。歐盟成員可以通過 SEPA 進行財政捐助。我們希望未來在其他主要貨幣區開設賬戶。您也可以通過比特幣捐款，請參考下方的路由詳情。請"
+"您注意，我們無法為您的捐款提供收據。若您打算捐贈大量資金，請先與我們聯繫，以制定最好的安排。<dl><dt>比特幣(BitCoin)</dt>。<dd>1"
+"GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd>。<dt>SEPA/IBAN</dt>。"
+"<dd>DE67830654080004822650 (BIC/SWIFT: GENODEF1SLR)</dd>。</dl>"
 
 #: template/faq.html.j2:12 template/faq.html.j2:23
 msgid "General"
@@ -974,6 +1034,8 @@ msgid ""
 "do more than just one thing. Naturally, the implementation and documentation "
 "of some of the features that exist are more advanced than others."
 msgstr ""
+"A: GNUnet 是一個點對點(peer-to-"
+"peer)框架，我們主要是指它可以做的不僅僅是一件事。理所當然地，一些現有功能的實現與文檔比其他功能更先進。"
 
 #: template/faq.html.j2:159
 msgid ""
@@ -1427,6 +1489,8 @@ msgid ""
 "until the Transport Next Generation (TNG) is ready, these warnings are "
 "expected."
 msgstr ""
+"A: 在此時，這是意料之中的，也是 GNUnet 高度延遲的一個已知原因。我們已開始進行重大改寫以解決此問題和其他問題，但在下一代傳輸 ("
+"Transport Next Generation; TNG) 準備就緒之前，這些警告仍在預期之中。"
 
 #: template/faq.html.j2:707
 msgid "Error opening `/dev/net/tun': No such file or directory?"
@@ -1620,7 +1684,7 @@ msgid ""
 "A: Sadly, we have many more feature requests than we can possibly implement. "
 "The best way to actually get a new feature implemented is to do it yourself "
 "--- and to then send us a patch."
-msgstr ""
+msgstr "A: 不幸地，我們收到的功能請求比我們可能實現的功能來得多。能夠實際地實現新功能的最佳方法為自己做——並向我們發送程式補丁(patch)。"
 
 #: template/glossary.html.j2:12
 msgid "Ego"
@@ -2020,6 +2084,10 @@ msgid ""
 "q=6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>), with the "
 "key fingerprint <b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E 7F8D</b>."
 msgstr ""
+"gnurl/libgnurl 正在尋找新的維護者。版本7.69.1 至版本7.72.0為OpenPGP "
+"Key所簽署<b>0xD6B570842F7E7F8D</b>(<a href=\"https://keys.openpgp.org/search?q="
+"6115012DEA3026F62A98A556D6B570842F7E7F8D\">keys.openpgp.org</a>)，其所使用的密鑰指紋為 "
+"<b>6115 012D EA30 26F6 2A98 A556 D6B5 7084 2F7E 7F8D</b>。"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:7
 msgid "GSoC 2018: GNUnet WebUI (GNUnet Web-based User Interface)"
@@ -2662,12 +2730,14 @@ msgid "GNUnet is a framework"
 msgstr "GNUnet是一個框架"
 
 #: template/index.html.j2:266
+#, fuzzy
 msgid ""
 "It offers a metadata-preserving foundation for your application. It offers "
 "components for addressing, reliable encrypted channels with advanced routing "
 "and resource discovery and naming. Our work is based on continuous research "
 "spanning almost two decades."
 msgstr ""
+"它為您的應用程式提供了保留元資料的基礎。它提供用於尋址、具有高級路由和資源發現和命名的可靠加密通道的組件。我們的工作基於跨越近二十年的持續研究。"
 
 #: template/index.html.j2:286
 msgid "Learn more"
