@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-10 22:48+0200\n"
-"PO-Revision-Date: 2021-06-25 10:19+0000\n"
+"PO-Revision-Date: 2021-06-29 05:39+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -527,6 +527,8 @@ msgid ""
 "for addresses and self-organizing decentralized routing algorithms, these "
 "subsystems replace the traditional TCP/IP stack."
 msgstr ""
+"GNUnet 的基礎是分佈式雜湊表 (R5N)、類似 SCTP 的端對端加密消息傳遞層 (CADET)、公鑰基礎設施 (GNS) 和可插拔傳輸系統 "
+"(TRANSPORT)。<br> 這些子系統使用公鑰作為地址和自組織分散式選路演算法，取代了傳統的 TCP/IP 堆棧。"
 
 #: template/architecture.html.j2:35
 msgid "Security"
@@ -895,17 +897,10 @@ msgid "What do I do if my question is not answered here?"
 msgstr "如果我的問題沒有在這裡被回答我該怎麼做?"
 
 #: template/faq.html.j2:28
-#, fuzzy
-#| msgid ""
-#| "A: There are many other sources of information. You can read additional "
-#| "documentation or ask the question on the help-gnunet@gnu.org mailing list "
-#| "or the #gnunet IRC on irc.freenode.net."
 msgid ""
 "A: There are many other sources of information. You can read additional "
 "documentation or ask the question on the help-gnunet@gnu.org mailing list."
-msgstr ""
-"答:還有許多其他信息來源可供您參考。您可以閱讀額外的文件、透過help-gnunet@gnu."
-"org寄件名單或是 irc.freenode.net上的#gnunet IRC來訊問問題。"
+msgstr "答: 還有許多其他信息來源可供您參考。您可以閱讀額外的文件、透過help-gnunet@gnu.org寄件名單來詢問問題。"
 
 #: template/faq.html.j2:35
 msgid "When are you going to release the next version?"
@@ -919,18 +914,21 @@ msgid ""
 "planet.gnu.org\">planet GNU</a>. You can subscribe to the mailing list or "
 "the RSS feed of this site to automatically receive a notification."
 msgstr ""
+"A: 一般的答案為，當它準備好時。一個更佳的答案可能為: 更早，若您做出貢獻(測試、除錯、編碼、紀錄)。所有的發表都會在info-gnunet@"
+"gnu.org 的寄件名單以及 <a href=\"https://planet.gnu.org\">planet GNU</a>上公布。"
+"您可以訂閱此網站的寄件清單或是RSS feed以自動獲取通知。"
 
 #: template/faq.html.j2:48
 msgid "Is the code free?"
-msgstr "程式碼是免費的嗎？"
+msgstr "程式碼是自由的嗎？"
 
 #: template/faq.html.j2:50
 msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
 msgstr ""
-"答: GNUnet是免費軟體，您可以根據<a href=\"https://www.gnu.org/licenses/"
-"agpl-3.0.en.html\">GNU Affero公共許可證(AGPL)</a>來取得。"
+"答: GNUnet是自由軟體，您可以根據<a href=\"https://www.gnu.org/licenses/agpl-3.0.en.html\""
+">GNU Affero公共許可證(AGPL)</a>來取得。"
 
 #: template/faq.html.j2:57
 msgid "Are there any known bugs?"
@@ -946,6 +944,9 @@ msgid ""
 "you believe a bug is sensitive, you can set its view status to private (this "
 "should be the exception)."
 msgstr ""
+"A: 我們從<a href=\"https://bugs.gnunet.org/\">Mantis系統</a>追蹤已知的錯誤。有些錯誤偶爾會直接報告給開發"
+"人員或開發人員郵件列表。然而，由於開發人員通常沒有時間將這些錯誤放入Mantis資料庫，我們不鼓勵這種做法。請直接向錯誤跟踪系統報告錯誤。如果您認為某個錯"
+"誤是敏感的，您可以將其視圖狀態設置為私有(這應是例外)。"
 
 #: template/faq.html.j2:72 template/faq.html.j2:192
 msgid "Is there a graphical user interface?"
@@ -972,6 +973,9 @@ msgid ""
 "nse&quot; section of your configuration file to a higher value. The default "
 "is &quot;5 ms&quot;."
 msgstr ""
+"答：gnunet-service-nse流程最初會計算出一個所謂的&quot;proof-of-work (工作量證明)&quot; "
+"用於說服網路您的對等實體是真實的(亦或者，使對手對網路規模估計器發起 Sybil 攻擊的成本很高)。取決於你的 CPU 有多快，此計算預計需要幾天的時間。"
+"如果 CPU 負載給您帶來問題，您可以在配置文件的&quot;nse&quot;部分中將設置值 &quot;WORKDELAY&quot;設置為更高的值。"
 
 #: template/faq.html.j2:98
 msgid "How does GNUnet compare to Tor?"
@@ -984,6 +988,8 @@ msgid ""
 "GNUnet does not really have one focus; our theme is secure decentralized "
 "networking, but that is too broad to be called a focus."
 msgstr ""
+"A: Tor 著重於(尤其是 Web的)TCP 連接的匿名通信和抗審查，以及 Tor "
+"瀏覽器捆綁包。GNUnet則沒有一個特定的焦點；我們的主題是安全的去中心化網路，但這太廣泛了，不能稱之為一個焦點。"
 
 #: template/faq.html.j2:110
 msgid "How does GNUnet compare to I2P?"
@@ -997,6 +1003,8 @@ msgid ""
 "using onion (or garlic) routing as the basis for various (anonymized) "
 "applications. I2P is largely used via a Web frontend."
 msgstr ""
+"A: GNUnet 和 I2P 都希望建立一個更好、更安全、更分散的網際網路。然而，在技術層面上，兩者幾乎沒有重疊。<br><br> "
+"I2P以Java撰寫，並具有使用洋蔥（或大蒜）路由的（非對稱）隧道作為各種（匿名）應用程式的基礎。I2P 則主要通過 Web 前端使用。"
 
 #: template/faq.html.j2:123
 msgid "Is GNUnet ready for use on production systems?"
@@ -1010,6 +1018,8 @@ msgid ""
 "current low-level transport system. We are currently in the process of "
 "rewriting it (Project &quot;Transport Next Generation [TNG]&quot;)"
 msgstr ""
+"A: GNUnet 仍然在經歷重大的發展。它在很大程度上還沒有準備好供開發人員使用。您的使用過程將根據您使用的功能而有所不同，但您可能會遇到我們當前的低階"
+"運輸系統的問題。我們目前正在重寫這些部分。(專案&quot;Transport Next Generation [TNG]&quot;)"
 
 #: template/faq.html.j2:135
 msgid "Is GNUnet build using distributed ledger technologies?"
@@ -1067,6 +1077,8 @@ msgid ""
 "and all one needs to know is the protocol used between the browser and the "
 "proxy and the GNUnet code for file-sharing."
 msgstr ""
+"A: 目前沒有可以通過瀏覽器訪問 GNUnet 的代理（如 Freenet 中的 fproxy）。但僅需知道瀏覽器和代理之間使用的協議以及用於文件共享的 "
+"GNUnet 代碼，是可能構建這樣的代理的。"
 
 #: template/faq.html.j2:194
 msgid ""
@@ -1079,6 +1091,10 @@ msgid ""
 "gnunet-setup, which must still be run separately at this time (as setup "
 "requires the peer to be stopped)."
 msgstr ""
+"答：實際上有幾個圖形用戶介面可用於不同的功能。gnunet-setup可用來配置GNUnet，而gnunet-fs-gtk則可用來分享檔案"
+"。還有其他次為重要的gnunet-XXX-gtk GUIs。請注意，為了獲得 GUI，您需要安裝一個單獨的下載的 gnunet-gtk 包。 "
+"gnunet-gtk 是一個元 GUI(meta GUI)，它在一個窗口中合併了大多數其他 GUI。其中一個例外是 gnunet-"
+"setup，此時它仍必須分開運行（因為設定原因，需要對等方停止）。"
 
 #: template/faq.html.j2:209
 msgid "Which operating systems does GNUnet run on?"
@@ -1093,6 +1109,9 @@ msgid ""
 "NetBSD, OpenBSD and Solaris. However, not all of those reports are recent, "
 "so if you cannot get GNUnet to work on those systems please let us know."
 msgstr ""
+"A: GNUnet 主要在 Debian GNU/Linux 下開發和測試。此外，我們經常在 Fedora、Ubuntu、Arch、FreeBSD 和 "
+"macOS 上構建和測試 GNUnet。我們有許多其他 GNU/Linux 發行版的工作版本報告；在過去，我們曾有關於 NetBSD、OpenBSD 和 "
+"Solaris 上的工作版本的報告。然而，並不是所有這些報告都是近期的，所以如果您無法讓 GNUnet 在這些系統上工作，請您通知我們。"
 
 #: template/faq.html.j2:227
 msgid "Who runs the GNS root zone?"
@@ -1106,6 +1125,9 @@ msgid ""
 "modify this configuration at will. We expect normal users to have no need to "
 "edit their own GNS zone(s) unless they host services themselves."
 msgstr ""
+"A: 一個簡短的答案為: 你。一個較長的回答則是: GNUnet "
+"將運送頂級域的默認配置。此默認配置的管理體系尚未建立。在任何情況下，用戶都可以隨意修改此配置。我們希望，除非用戶自行託管此服務，普通用戶無需編輯自己的 "
+"GNS 區域。"
 
 #: template/faq.html.j2:240
 msgid "Where is the per-user GNS database kept?"
@@ -1122,6 +1144,10 @@ msgid ""
 "which various replication options are again applicable. Ultimately, there "
 "are many options for how users can store (and secure) their GNS database."
 msgstr ""
+"A: 簡短的回答是-- 資料庫被保存於用戶的 GNUnet peer。目前，一個用戶可以運行多個 GNUnet peer，在這種情況下，"
+"資料庫可以被保存在每個 peer 上（但是我們沒有方便複製的程式碼）。同樣地，多個 GNUnet peer 可以共享一個資料庫實例--- &quot"
+";gnunet-service-namestore&quot;可以（透過TCP）進行遠程訪問。實際資料可以存儲在 Postgres "
+"資料庫中，且各種複制選項同樣適用於該資料庫。結論上，用戶有很多選擇來存儲（和保護）他們的 GNS 資料庫。"
 
 #: template/faq.html.j2:257
 msgid "What is the expected average size of a GNS namestore database?"
@@ -1133,13 +1159,14 @@ msgid ""
 "histories and the number of domains visited, we expect that GNS databases "
 "will only grow to a few tens of thousands of entries, small enough to fit "
 "even on mobile devices."
-msgstr ""
+msgstr "A: 很小。根據我們查看瀏覽器歷史記錄和訪問域數的用戶研究，我們預計 GNS 資料庫只會增長到幾萬個條目，小到甚至可以安裝在行動裝置上。"
 
 #: template/faq.html.j2:269
 msgid "Is GNS resistant to the attacks on DNS used by the US?"
 msgstr "GNS是否可以抵抗美國使用的DNS攻擊?"
 
 #: template/faq.html.j2:271
+#, fuzzy
 msgid ""
 "A: We believe so, as there is no entity that any government could force to "
 "change the mapping for a name except for each individual user (and then the "
@@ -1150,6 +1177,9 @@ msgid ""
 "unavailable for enforcement, the respective zone cannot be changed and any "
 "other zone delegating to this zone will achieve proper resolution."
 msgstr ""
+"A: 我們相信是如此，因為除了每個個人用戶之外，沒有任何實體可以強制任何政府更改名稱的映射（然後此更改將僅適用於該用戶有權使用的名稱）。因此，"
+"如果每個人都使用 GNS，那麼政府唯一的實際攻擊即為強迫服務器的操作員更改其服務器的 GNS "
+"記錄以指向其他地方。但是，如果某個區域的私鑰所有者不可用於強制執行，則無法更改相應的區域，且委派給該區域的任何其他區域都將獲得正確的解決方案。"
 
 #: template/faq.html.j2:285
 msgid "How does GNS compare to other name systems?"
@@ -1179,6 +1209,10 @@ msgid ""
 "features (to keep names short and enable migration) which don't even make "
 "sense in the context of CoDoNS."
 msgstr ""
+"A: CoDoNS 分散了 DNS 資料庫（使用 DHT）但保留了 DNS 的權限結構。有了CoDoNS，IANA/ICANN "
+"仍然擁有主導權，並依然有註冊商決定誰擁有名稱。<br><br> 有了GNS，我們分散了資料庫，也分散了命名的責任: "
+"每個用戶都運行自己的個人根區域，因此用戶可以完全控制他們使用的名稱。GNS 還具有許多附加功能（以保持簡短的名稱並啟用遷移），這些功能在 CoDoNS "
+"的環境中甚至沒有意義。"
 
 #: template/faq.html.j2:409
 msgid "What is the difference between GNS and SocialDNS?"
@@ -1193,6 +1227,9 @@ msgid ""
 "delegation, and thus mappings will only change if the user responsible for "
 "the name (the authority) manually changes the record."
 msgstr ""
+"A: 如同 GNS，SocialDNS 允許每個用戶創建 DNS 映射。然而，使用 "
+"SocialDNS的映射通過社交網路共享並進行排名。隨著社會關係的發展，名稱可能會以令人驚訝的方式發生變化。<br><br> 使用 "
+"GNS時，名稱主要通過委託來共享，因此只有當負責名稱的用戶（權限）手動更改記錄時，映射才會有所改變。"
 
 #: template/faq.html.j2:425
 msgid "What is the difference between GNS and ODDNS?"
@@ -1206,6 +1243,9 @@ msgid ""
 "domains (like \"gnu.org\") and the IP addresses of the respective name "
 "servers. Resolution will fail if the target name servers change IPs."
 msgstr ""
+"A: ODDNS 主要旨為繞過 DNS 根區和 TLD 註冊機構（例如“.com”和“."
+"org”的註冊機構）。用戶們不應使用這些，每個用戶都應該維護一個（二級）域（如“gnu.org”）的資料庫和各自名稱伺服器的 IP 地址。"
+"如果目標名稱伺服器更改 IP，那麼分解將會失敗。"
 
 #: template/faq.html.j2:438
 msgid "What is the difference between GNS and Handshake?"
@@ -1220,6 +1260,9 @@ msgid ""
 "additional supporting GNS root zone governance model, but we currently do "
 "not have such plans in mind."
 msgstr ""
+"A: 握手(Handshake)是一種基於區塊鏈的根區治理方法。因此，它不解決名稱分解(name resolution)過程本身，而是在初始 TLD "
+"分解(TLD resolution)後將解析委託給 DNS。若不將可持續性列入考量，Handshake 可以用作額外的支持 GNS "
+"根區治理的模型，但我們目前沒有這樣的計劃。"
 
 #: template/faq.html.j2:452
 msgid "What is the difference between GNS and TrickleDNS?"
@@ -1236,6 +1279,10 @@ msgid ""
 "distribution of authoritative records, and authority remains derived from "
 "the DNS hierarchy."
 msgstr ""
+"A: TrickleDNS 在參與域的 DNS 解析器之間推送 (&quot;關鍵的&quot;)DNS 記錄，以提供 "
+"&quot;更好的可用性、更短的查詢解析時間和更快的更新傳播&quot;。因此，TrickleDNS 專注於擊敗對 DNS "
+"中記錄傳播的可用性（和性能）的攻擊，例如透過對 DNS 根服務器的 DDoS 攻擊。因此，TrickleDNS 關注如何確保權威記錄的分發，"
+"而權威仍然來自 DNS 層次結構。"
 
 #: template/faq.html.j2:467
 msgid ""
@@ -1257,6 +1304,10 @@ msgid ""
 "depends entirely on the trustworthiness of the FCFS authority. The authority "
 "can be queried under the &quot;.pin&quot; TLD."
 msgstr ""
+"A: 為了安全起見，眾所周知，兩方之間必須存在初始信任路徑。然而，對於不需要這樣做的應用程式，可以使用較弱的機制。例如，我們實施了先到先得 (first-"
+"come-first-served; FCFS) 權限，允許任意用戶註冊任意名稱。此權限的密鑰包含在每個 GNUnet 的安裝中。因此，任何在 FCFS "
+"註冊的名稱實際上都是全球性的，不須被進一步介紹。但是，這些名稱的安全性完全取決於 FCFS 機構的可信度。而這些機構可以在&quot;.pin&quot;"
+" TLD被查詢到。"
 
 #: template/faq.html.j2:484
 msgid ""
@@ -1272,6 +1323,8 @@ msgid ""
 "to ignore this preference and use a name of their choice (or even assign no "
 "name) for this user."
 msgstr ""
+"A: 名稱在 GNS 中沒有所有者，因此不能存在 &quot;合法的&quot;域所有者。任何用戶都可以在他的 NICK "
+"記錄中要求擁有任何名稱（作為他的首選名稱或&quot;假名&quot;）。同樣地，所有其他用戶都可以選擇忽略此偏好並使用他們自選的名稱（甚至不指定名稱）。"
 
 #: template/faq.html.j2:497
 msgid ""
@@ -1286,6 +1339,8 @@ msgid ""
 "Thus, users have full control over what information about their zones is "
 "made public."
 msgstr ""
+"A: GNS中的每條記錄都有一個&quot;私有&quot;標誌。僅當未設置此標誌時，記錄才會（通過 DHT "
+"或區域傳輸）與其他用戶共享。因此，用戶可以完全控制公開其區域的哪些信息。"
 
 #: template/faq.html.j2:509
 msgid "Are \"Legacy Host\" (LEHO) records not going to be obsolete with IPv6?"
@@ -1317,6 +1372,8 @@ msgid ""
 "of the resolution process was not acceptable. Furthermore, trust and "
 "consensus might be easy to manipulate by adversaries."
 msgstr ""
+"A: 「閾值」為信任度量的一個根本問題。隨著信任關係的發展，映射的含義會在跨越彼此閾值時改變。我們認為由此導致解決過程的不可預測性是無法接受的。此外，信任"
+"和共識可能很容易被對手操縱。"
 
 #: template/faq.html.j2:538
 msgid "How do you handle compromised zone keys in GNS?"
@@ -1331,6 +1388,8 @@ msgid ""
 "resolve. Peers always automatically check for the existence of a revocation "
 "message when resolving names."
 msgstr ""
+"A: 私鑰的所有者可以創建一個撤銷消息(revocation message)。其可以充滿整個覆蓋網絡，在所有對等點創建一個副本。在使用公鑰之前，對等方檢"
+"查該密鑰是否已被撤銷。所有通過撤銷區域委託的名稱都將無法解析。在解析名稱時，對等方皆會自動檢查撤銷消息的存在。"
 
 #: template/faq.html.j2:552
 msgid "Could the signing algorithm of GNS be upgraded in the future?"
@@ -1345,6 +1404,8 @@ msgid ""
 "existing system by using a new record type to indicate the use of a "
 "different cipher system."
 msgstr ""
+"A: 是的。我們已經修改了協議以支持替代委託記錄並努力地標準化 GNS。 <br> <br> 理所當然地，為了支持新的簽名方案，部署的 GNS "
+"實現必須更新。通過使用新的記錄類型來指示不同密碼系統的使用，新方案可以與現有系統并行運行。"
 
 #: template/faq.html.j2:568
 msgid ""
