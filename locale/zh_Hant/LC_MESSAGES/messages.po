@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-10 22:48+0200\n"
-"PO-Revision-Date: 2021-06-29 05:39+0000\n"
+"PO-Revision-Date: 2021-06-29 22:11+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -1357,6 +1357,9 @@ msgid ""
 "hosting would disappear. Finally, we don't want to have to wait for IPv6 to "
 "become commonplace, GNS should work with today's networks."
 msgstr ""
+"A: 這個問題假設 (a) 虛擬主機只是因為 IPv4位址稀缺而為必要，以及 (b) LEHO 僅在虛擬主機的環境中有用。然而，LEHO 也有助於 "
+"X.509 證書驗證（因為它們指定證書應該對哪個舊主機名有效）。此外，即使完全部署了 IPv6 且有 &quot;無限的&quot;IP "
+"位址可以使用，我們不確定虛擬主機是否會消失。最後，我們不想等 IPv6 變得普遍，GNS 應該與今日的網路配合使用。"
 
 #: template/faq.html.j2:525
 msgid ""
@@ -1422,6 +1425,9 @@ msgid ""
 "necessary, the owner of the zone can simply run multiple peers (and share "
 "the zone's key and database among them)."
 msgstr ""
+"A: 我們不認為這是必要的，因為 GNS 記錄被存儲（和複製）在 R5N DHT "
+"中。因此，每當客戶端執行查找時，通常不會聯繫權限(authority)。即使權限（暫時）離線，DHT "
+"也會緩存記錄一段時間。然而，如果一個區域有多個伺服器被認為是必要的，區域的所有者可以簡單地運行多個對等點（並在它們之間共享區域的密鑰和資料庫）。"
 
 #: template/faq.html.j2:583
 msgid ""
@@ -1442,6 +1448,10 @@ msgid ""
 "unique names may very well be worth the cost. After all, what is a &quot;"
 "globally&quot; unique name worth, if it does not resolve?"
 msgstr ""
+"A: GNU 名稱系統提供了一種抗審查的 DNS 替代方案。與任何安全機制一樣，這是需要付出代價的（名稱不是全球唯一的）。與 HTTP 連接相比，"
+"HTTPS 連接使用更多頻寬且有更高的網路延遲。根據您的應用程式，HTTPS "
+"可能不值得其所需要付出的代價。然而，對於正在經歷審查（或擔心審查）的用戶來說，放棄全球唯一名稱可能十分值得。畢竟， "
+"如果這個問題不被解決的話，&quot;全球&quot;唯一的名字又值得多少？"
 
 #: template/faq.html.j2:599
 msgid "Why do you say that DNS is 'centralized' and 'distributed'?"
@@ -1455,6 +1465,8 @@ msgid ""
 "was able to reassign the management of the country-TLDs of Afganistan and "
 "Iraq during the wars at the beginning of the 21st century."
 msgstr ""
+"A: 我們說 DNS 是“集中式”的，因為它有一個中心元件/中心故障點 --- 根區及其管理(由IANA/ICANN "
+"所管理)。這種集中化會造成漏洞。例如，在 21 世紀初的戰爭期間，美國政府能夠重新分配對阿富汗和伊拉克國家頂級域名(country-TLDs)的管理。"
 
 #: template/faq.html.j2:612
 msgid "How does GNS protect against layer-3 censorship?"
@@ -1472,6 +1484,10 @@ msgid ""
 "identifiers. With nicer names, Tor and tor2web-like services would be even "
 "easier to use. </ol>"
 msgstr ""
+"A: GNS不能直接幫助進行第3層審查，但它可以通過兩種方式間接幫助： <ol> <li> "
+"如今，許多網站都使用虛擬主機，因此，阻擋特定的IP位址比阻擋DNS名稱造成的附帶損害要大得多。這因此它增加了審查的成本。</li> <li> 現有的第 "
+"3 層規避解決方案（例如 Tor）將受益於抗審查命名系統。訪問 Tor 的&quot;.onion&quot; "
+"命名空間目前要求用戶使用不易記住的加密標識符。有了更好的名稱，Tor 和類似 tor2web 的服務將更容易使用。</ol>"
 
 #: template/faq.html.j2:633
 msgid "Does GNS work with search engines?"
@@ -1488,6 +1504,10 @@ msgid ""
 "breaks the cryptographic chain of trust, legacy search engines will "
 "obviously not obtain censorship-resistant names."
 msgstr ""
+"A: GNS 不會對搜尋引擎造成重大問題，因為它們可以像任何普通用戶一樣使用 GNS "
+"執行名稱解析。自然地，雖然我們通常希望普通用戶安裝自定義軟體進行名稱解析，但這不太可能適用於今日的搜尋引擎。然而，DNS2GNS 閘道器允許搜尋引擎使用 "
+"DNS 來解析 GNS 名稱，因此它們仍然可以將 GNS 資源編入索引。然而，由於使用 DNS2GNS "
+"閘道器打破了加密信任鏈，傳統搜尋引擎顯然無法獲得抗審查的名稱。"
 
 #: template/faq.html.j2:649
 msgid "How does GNS compare to the Unmanaged Internet Architecture (UIA)?"
@@ -1503,6 +1523,9 @@ msgid ""
 "possible with the existing Web infrastructure. UIA is not at all concerned "
 "about legacy systems (clean slate)."
 msgstr ""
+"A: UIA 和 GNS 共享相同（實際上起源於Rivest 的SDSI）的基本命名模型。然而，UIA "
+"並不關心與舊有應用程式的整合，而是專注於該用戶多台機器之間的通用連接。相較之下，GNS 旨在盡可能多地與 DNS 相互操作，並儘可能多地與現有的 Web "
+"基礎設施協同工作。UIA 則旨不在舊有系統(clean slate)。"
 
 #: template/faq.html.j2:664
 msgid "Doesn't GNS increase the trusted-computing base compared to DNS(SEC)?"
@@ -1517,6 +1540,9 @@ msgid ""
 "given the name length restriction, for an individual name it is always less "
 "than about 128 entities."
 msgstr ""
+"A: 首先，在 GNS 中您可以明確地看到信任鏈，所以您知道您正在解析的名字屬於您的朋友、或是朋友的朋友，您可以從而決定此結果的可信任程度。自然地，"
+"可信賴計算基地 (trusted-computing base; TCB) 可以通過這種方式變得無限大——但是，考慮到名稱長度限制，單個名稱總是少於大約 "
+"128 個實體(entities)。"
 
 #: template/faq.html.j2:678
 msgid ""
@@ -1535,6 +1561,10 @@ msgid ""
 "TLSA records) and adds a service and protocol number (and the original boxed "
 "record type) to it."
 msgstr ""
+"A: GNS在將域名拆分為標籤進行解析時，會檢測到 &quot;_Service._Proto&quot;語法，將&quot;Service&quot;轉"
+"換為對應的埠號，並將&quot;Proto&quot;轉換為對應的埠號。其餘的名稱可以照常解析。然後，當結果出現時，GNS 會尋找 GNS "
+"特定的&quot;BOX (盒子)&quot;記錄類型。BOX 記錄是包含另一條記錄（例如 SRV 或 TLSA "
+"記錄）並向其添加服務和協議編號（以及原始盒裝記錄類型）的記錄。"
 
 #: template/faq.html.j2:696
 msgid ""
@@ -1627,6 +1657,8 @@ msgid ""
 "have this new profile be applied to all shells (including your desktop "
 "environment)."
 msgstr ""
+"以確保找到 GNUnet 的二進制和程式庫。為了避免您每次都需要這樣做，您可以將以上幾行（不帶“$”的）添加到您的 .bashrc 或 .profile "
+"文件中。您必須登出並再次登入才能將此新設定檔應用於所有的shells（包括您的桌面環境）。"
 
 #: template/faq.html.j2:780
 msgid "What error messages can be ignored?"
@@ -1641,6 +1673,8 @@ msgid ""
 "expensive operation that will take some time. GNUnet will also use INFO "
 "messages to display information about important configuration values."
 msgstr ""
+"A: 在為最終用戶構建的二進製文件中應禁用標記為“DEBUG”的錯誤訊息，並且始終可以被忽略。標記為“INFO”的錯誤訊息則為不需要進行操作的無害事件。舉"
+"例來說，GNUnet 可能使用 INFO 訊息來表示它目前正在執行需要一些時間的昂貴操作。GNUnet 也使用 INFO 訊息來顯示有關重要配置值的資訊。"
 
 #: template/faq.html.j2:798
 msgid "How does GNUnet compare to other file-sharing applications?"
@@ -1665,6 +1699,13 @@ msgid ""
 "compare these systems this briefly), so if you want the real differences, "
 "read the research papers (and probably the code)."
 msgstr ""
+"A: 與 Napster、Gnutella、Kazaa、FastTrack、eDonkey 和大多數其他對等式網路(P2P 網路)不同，GNUnet "
+"的設計將安全性作為最主要優先項目。我們打算製造一個具有全面安全功能的網路。許多其他 P2P 網路容易受到各式各樣的攻擊、用戶幾乎沒有隱私。GNUnet "
+"也同時是個自由軟體，因此程式碼可以被使用，您不必擔心被軟體監視。下表總結了 GNUnet 和其他系統之間的主要區別。該表格內的訊息為據我們所知最準確的資訊"
+"。其中，要比較不同系統之間的差異不是很容易，因為有時候（幾乎）相同協議的各種實現之間存在差異。因為自由程式碼(free "
+"code)可以被檢查，我們通常選擇自由實現(free implementation)作為我們的參考實現(reference implementation)"
+"。此外，由於這些系統都會隨著時間變化，以下的資料可能不是最新的。若您發現任何錯誤，請您告訴我們。最後，由於表格並沒有解釋太多（很難簡單地比較這些系統），如"
+"果您想要了解這些系統之間真正的差異，請您參考研究論文（或許加上程式碼）。"
 
 #: template/faq.html.j2:914
 msgid ""
@@ -1677,6 +1718,10 @@ msgid ""
 "cost of significant increases in resource consumption which in turn may "
 "reduce anonymity."
 msgstr ""
+"另一個重要的參考點是各種匿名的對等網路(peer-to-peer networks)。於此，在應用領域和具體匿名實現方式方面存在差異。匿名路由("
+"Anonymous "
+"routing)是一項艱鉅的研究課題，因此對於像這樣的表面對比，我們會著重於網路延遲(latency)的比較。另一個重要因素為程式語言。類別型安全語言"
+"(Type-safe languages)可能可以提供某些安全性優勢；然而，資源消耗的顯著增加可能為其所需付出的代價，而這反過來可能會降低匿名性。"
 
 #: template/faq.html.j2:927
 msgid "Are there any known attacks (on GNUnet's file-sharing application)?"
@@ -1693,6 +1738,9 @@ msgid ""
 "shared with a small group of people, there is no real reason to try to "
 "obfuscate the content by choosing a difficult keyword anyway."
 msgstr ""
+"A: 一般來說，出現針對關鍵字的已知明文攻擊(known plaintext attack)是有可能的，但是由於用戶可以控制與其所插入內容相關的關鍵字，用"
+"戶可以利用用於生成合理密碼的相同技術來進行保護，以抵制這種攻擊。無論如何，我們不會試圖隱藏內容；因此，除非用戶試圖將只能與一小群人共享的訊息插入網路，用戶"
+"並沒有真正的理由去選擇一個困難的關鍵字來混淆內容。"
 
 #: template/faq.html.j2:943
 msgid "What do you mean by anonymity?"
@@ -1708,6 +1756,8 @@ msgid ""
 "be difficult to impossible for an adversary to distinguish between the "
 "originating peer and all other peers."
 msgstr ""
+"A: 匿名是指個人與（大）群體之間缺乏區別性。GNUnet 中匿名文件共享的一個中心目標是讓所有用戶（對等點）組成一個群組，並使該群組中的通信匿名，也就是"
+"說，沒有人（除了發起者）該有能力知道該群組中的哪些對等點發起了消息。換句話說，對手應該很難、甚至不可能區分原始對等點和所有其他對等點。"
 
 #: template/faq.html.j2:957
 msgid "What does my system do when participating in GNUnet file sharing?"
@@ -1722,6 +1772,9 @@ msgid ""
 "(how large your on-disk block storage is) . Your node will then proceed to "
 "connect to other nodes, becoming part of the network."
 msgstr ""
+"A: 您在GNUnet中設置一個節點（一個對等點）。其由一個 ID（其公鑰的雜湊）標識，並且有許多可訪問的位址（可能沒有位址，例如當它位於 NAT "
+"後面時）。您指定頻寬限制（允許 GNUnet "
+"消耗多少流量）和資料存儲報價（您的磁碟區存儲量有多大）。然後您的節點將繼續連接到其他節點，然後成為網路的一部分。"
 
 #: template/faq.html.j2:974
 msgid "How can I help translate this webpage into other languages?"
@@ -1735,6 +1788,9 @@ msgid ""
 "sufficient permissions will then grant you access. Naturally, any abuse will "
 "result in the loss of permissions."
 msgstr ""
+"A: 首先，您需要在我們的weblate系統註冊一個賬號。請將含有您目標語言的電子郵件發送至translations@gnunet.org "
+"或在irc.freenode.net 上的#gnunet "
+"chat中尋求幫助。通常，具有足夠權限的人會授予您訪問權限。但當然地，任何的濫用行為都會導致您喪失權限。"
 
 #: template/faq.html.j2:988
 msgid "I have some great idea for a new feature, what should I do?"
@@ -1761,6 +1817,10 @@ msgid ""
 "not distinguish between them). We simply sometimes use the term \"ego\" to "
 "stress that you can have more than one."
 msgstr ""
+"我們使用“Ego”一詞來指稱 GNUnet 中的用戶可以擁有多個不可鏈接的身份（從另一個自我(alter "
+"egos)的意義上來說）。由於我們可能希望將我們的商業自我與我們用於政治活動或浪漫的自我分開，擁有多個身份的能力至關重要。<br> GNUnet "
+"中的自我(Egos)在技術層面等同於身份(identities)（並且程式碼並不會區分它們）。我們有時只是簡單地使用\"自我(ego)"
+"\"一詞來強調您可以擁有多個\"自我\"。"
 
 #: template/glossary.html.j2:27
 msgid "Identity"
@@ -1796,12 +1856,16 @@ msgid ""
 "neutral element on the elliptic curve) or a throw-away pseudonym that is "
 "only used once."
 msgstr ""
+"化名(pseudonym)是一種專門建立的、與真實姓名無關的自我(ego)。GNUnet 用戶可以創建許多自我，因此也可以創建許多假名。 <br> "
+"根據定義，由於重複使用相同的假名涉及相同的公鑰，它們是可以被鏈接的。若要保持匿名性，則需使用特殊的“匿名(anonymous)”假名（對於 "
+"GNUnet，這是橢圓曲線上的中性元素）或是使用一次性的拋棄式假名。"
 
 #: template/glossary.html.j2:71
 msgid "Namespaces"
 msgstr "命名空間(Namespaces)"
 
 #: template/glossary.html.j2:73
+#, fuzzy
 msgid ""
 "The GNU Name System allows every ego (or identity) to securely and privately "
 "associate any number of label-value pairs with an ego. The values are called "
@@ -1813,12 +1877,17 @@ msgid ""
 "which despite its name may not be public knowledge and is never disclosed by "
 "the GNS protocol itself."
 msgstr ""
+"GNU 名稱系統允許每個自我（或身份）安全且私密地將任意數量的標籤-值對(label-value pairs)與一個自我互相聯繫。根據網域名稱系統 ("
+"Domain Name System; DNS) 的術語，這些值稱為記錄集(record sets)。該自我的標籤到記錄集的映射(mapping "
+")稱為命名空間(namespace)。<br> 如果記錄被公開並發布，其他用戶就有可能可以根據該自我的公鑰和標籤查找記錄。於此，標籤不僅可以充當密碼短語("
+"passphrase)，還可以充當公鑰——儘管它的名字可能不被公眾所知，也不會被 GNS 協議本身公開。"
 
 #: template/glossary.html.j2:89
 msgid "Peer"
 msgstr "同儕(Peer)"
 
 #: template/glossary.html.j2:91
+#, fuzzy
 msgid ""
 "A \"peer\" is an instance of GNUnet with its own per-instance public key and "
 "network addresses. Technically, it is possible to run multiple peers on the "
@@ -1832,6 +1901,11 @@ msgid ""
 "to egos or identities. Namespaces cannot be associated with a peer, only "
 "with egos."
 msgstr ""
+"一個\"對等點(peer)\"是個具有其自己實例公鑰和網路位址的GNUnet實例"
+"。技術上來說，在同一主機上運行多個對等點是有可能的，但這僅在測試方面有意義。<br> 按照設計，GNUnet 支持多個用戶共享同一個對等點，就如同 "
+"UNIX 是一個多用戶系統一樣。一個\"對等點\"的組成通常包含由一組以\"gnunet\"用戶身份運行、並允許\"gnunet\"組中的所有用戶使用該 "
+"API 的基礎 GNUnet 服務。在多用戶系統上，每個用戶可能需要額外的\"個人化\"服務。 <br> "
+"雖然對等點也由公鑰標識，但這些公鑰與自我或身份完全無關。命名空間不能與對等點相關聯、只能與自我相關聯。"
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
 #: template/reclaim/index.html.j2:80 template/reclaim/motivation.html.j2:6
@@ -1847,6 +1921,10 @@ msgid ""
 "Name System (GNS), a secure, decentralized name system built on top of "
 "GNUnet."
 msgstr ""
+"如今，網域名稱系統可以實現流量放大攻擊(traffic amplification attacks)、審查(censorship)（如: "
+"中國)、大規模監控(mass surveillance; MORECOWBELL)以及攻擊性的網路戰爭(offensive cyber war; "
+"QUANTUMDNS)。<br/> 很不幸地，DoT、DoH、DNSSEC、DPRIVE 等應急措施無法解決這些問題。這就是我們構建 GNU 名稱系統 "
+"(GNS) -- 一個建立在 GNUnet 之上、安全的、分散的名稱系統的原因。"
 
 #: template/gns.html.j2:28 template/reclaim/tech.html.j2:6
 msgid "Overview"
@@ -1860,6 +1938,9 @@ msgid ""
 "<li>Censorship resistance</li> <li>Query privacy</li> <li>Secure name "
 "resolution</li> <li>Compatibility with DNS</li>"
 msgstr ""
+"GNU 名稱系統 (GNS) 是個安全且分散的命名系統。它允許其用戶將名稱註冊為頂級域 (top-level domains ; TLD) 並解析其 "
+"TLD 中的其他名稱空間。<br/> GNS 旨在提供：<ul> <li>抗審查性</li> <li>查詢隱私</li> <li>安全的名稱解析</"
+"li> <li>與DNS的兼容性S</li>"
 
 #: template/gns.html.j2:52
 msgid "Resources"
@@ -1872,6 +1953,8 @@ msgid ""
 "ensure a small footprint and uniform experience for developers regardless of "
 "how libcurl was compiled."
 msgstr ""
+"libgnurl是libcurl的微分支。libgnurl 的目標是通過單個加密後端 (GnuTLS) 以唯一支持 HTTP 和 HTTPS（並且僅支持 "
+"HTTP 1.x），用以確保無論 libcurl 是如何被編譯的，開發人員都有相同的體驗與低耗能。"
 
 #: template/gnurl.html.j2:30
 #, fuzzy
