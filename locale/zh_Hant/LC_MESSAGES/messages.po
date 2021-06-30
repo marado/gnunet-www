@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-10 22:48+0200\n"
-"PO-Revision-Date: 2021-06-30 09:15+0000\n"
+"PO-Revision-Date: 2021-06-30 13:26+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -2057,7 +2057,7 @@ msgid "Rename to fix"
 msgstr "重命名以修復"
 
 #: template/gnurl.html.j2:120
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "How does forking fix it? Easy. First, we can get rid of all of the "
 "compatibility issues --- if you use libgnurl, you state that you don&#39;t "
@@ -2074,6 +2074,12 @@ msgid ""
 "are miniscule and can easily be applied again and again whenever libcurl "
 "makes a new release."
 msgstr ""
+"分叉(forking )是如何解決此問題的？答案很簡單。首先，我們可以擺脫所有的兼容性問題——如果你使用libgnurl，您聲明除了HTTP/HTTPS以"
+"外，您不需要任何東西。那些需要更多東西的應用程式應該持續使用原始的cURL。那些不需要的，則可以轉而選擇更簡單的東西。由於程式庫有了一個新名稱，我們不必擔"
+"心一旦重建此程式庫就會損壞大量套件的問題。所以將其重命名並表示\"libgnurl = libcurl with only HTTP/HTTPS "
+"support and GnuTLS\"修復了 99%% 的問題使讓我情緒黯淡。請注意，如果沒有fork，這幾乎\"無法\"完成"
+"，因為重命名為修復過程中很重要的一部分。現在，在標準的cURL構建系統中可能會有創意的解決方案來實現同樣的事情，但是這在gnurl "
+"最初被啟動時被認為是太多工作了。"
 
 #: template/gnurl.html.j2:142
 msgid "Using libgnurl"
@@ -2089,6 +2095,11 @@ msgid ""
 "proposed, but so far we have kept our changes minimal and no additions to "
 "the original curl source have been written."
 msgstr ""
+"僅將cURL用於HTTP/HTTPS並且可以與GnuTLS一起使用的專案應該能夠通過將\"-lcurl\"更改為\"-"
+"lgnurl\"來切換到libgnurl。就是這樣。不需要更改原始碼，因為libgnurl力求與cURL的HTTP/HTTPS/"
+"GnuTLS子集錯誤對錯誤相容(bug-for-bug "
+"compatibility)。如果有人提議，我們可能會添加與此核心子集相關的新功能，但到目前為止，我們將更改保持在最低限度，"
+"並且沒有添加新功能到原始的curl source中。"
 
 #: template/gnurl.html.j2:161
 msgid "Gotchas"
@@ -2106,6 +2117,10 @@ msgid ""
 "no conflicts in filenames occur you are not expected to remove curl to make "
 "use of gnurl and viceversa."
 msgstr ""
+"libgnurl和gnurl的原意並非作為用戶curl 的替代品: <br> 這並不意味著我們對使用gnurl完成的工作沒有信心，"
+"而是意味著我們期望curl或libcurl 的工具不會使用不同的命名二進製文件和程式庫。如果您知道自己在做什麼，您應該能夠使用gnurl作為您工具的一部分"
+"來代替curl。但是，我們不建議這樣做，因為<em>到目前為止</em>，已經測試過的唯一用法是將其作為Taler和GNunet 構建系統的一部分。"
+"<br> 由於檔案名稱中沒有發生衝突，您不需要刪除 curl來使用gnurl，反之亦然。"
 
 #: template/gnurl.html.j2:188
 msgid "You can get the gnurl git repository using:"
@@ -2116,6 +2131,7 @@ msgid "The versions are checked in as (signed) git tags."
 msgstr "這些版本以(簽字的)git標籤登記。"
 
 #: template/gnurl.html.j2:211
+#, fuzzy
 msgid ""
 "Releases are published on <a href=\"https://ftpmirror.gnu.org/gnu/gnunet/"
 "\">ftpmirror.gnu.org/gnu/gnunet</a>. gnurl is available from within a "
@@ -2127,12 +2143,20 @@ msgid ""
 "\"https://nixos.org/nix/\">Nix</a>, and as www/gnurl in <a href=\"https://"
 "pkgsrc.org\">pkgsrc</a>."
 msgstr ""
+"版本發佈於<a href=\"https://ftpmirror.gnu.org/gnu/gnunet/\">ftpmirror.gnu.org/gnu/"
+"gnunet</a>。您則可以從各種發行版和軟體套件管理系統(package managers)中取得gnurl 。一些包含 gnurl "
+"的軟體套件管理系統包括: <a href=\"https://www.gnu.org/software/guix/\">GNU Guix</a>("
+"available as \"gnurl\"), <a href=\"https://gentoo.org\">Gentoo</a>通過ebuild "
+"collection協作<a href=\"https://git.gnunet.org/youbroketheinternet-overlay.git/"
+"\">youbroketheinternet</a>, <a href=\"https://nixos.org/nix/\">Nix</a>，以及www/"
+"gnurl中的<a href=\"https://pkgsrc.org\">pkgsrc</a>。"
 
 #: template/gnurl.html.j2:228
 msgid "Building gnurl"
 msgstr "建立gnurl"
 
 #: template/gnurl.html.j2:230
+#, fuzzy
 msgid ""
 "We suggest to closely follow release announcements, as they might indicate "
 "changes in how gnurl is to be build. <br> If your package manager provides a "
@@ -2146,6 +2170,12 @@ msgid ""
 "b> building gnurl from the tip of the default git branch, as only tags are "
 "considered to be stable and approved builds."
 msgstr ""
+"我們建議您密切關注發佈公告，因為公告內容可能會指出gnurl的構建方式發生了變化。<br> "
+"如果您的軟體套件管理系統提供二進制構建或構建指令來從原始碼自動構建gnurl 並與您的環境相整合，我們強烈建議您使用此二進制構建。<br> "
+"有兩種方法可以構建gnurl。第一種方法為從最新的git 標籤(git tag)構建，第二種方法則是使用分佈式 tarball(distributed "
+"tarball)。分配器(Distributors )通常應該要從tarball構建，但我們在此會對兩種方法做描述。這兩種方法都是在考慮到NetBSD "
+"9用戶空間的情況下編寫的，請根據需要替換適當的工具。<br>您應該<b>避免</b>從默認git分支(default git "
+"branch)的尖端構建gnurl，因為只有標籤(tags)被認為是穩定的、已批准的構建。"
 
 #: template/gnurl.html.j2:251
 msgid "Building from the distributed tarball (prefered method)"
@@ -2288,6 +2318,9 @@ msgid ""
 "with GNUnet over a well known tool: their browsers. This addition to the C "
 "API and the command line tools may attract new users and developers."
 msgstr ""
+"... 什麼時候可以使用命令行工具？我們需要記得，每個人都有權保持安全和私密，但並不是每個人都對使用終端機感到自在。除了新的 Web 應用程式之外，"
+"對GNUnet API的進一步開發的REST訪問允許新用戶通過一個眾所周知的工具與GNUnet互動: 他們的瀏覽器。C API "
+"和命令行工具的這一新增功能可能可以吸引新用戶和開發人員。"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:54
 msgid ""
@@ -2319,6 +2352,7 @@ msgid ""
 msgstr "如果發現任何錯誤或意外功能，請您嘗試並與我聯繫。;)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:98
+#, fuzzy
 msgid ""
 "Right now, the build process of the web application may be a little too "
 "complex for a casual user. We may be able to solve this by using docker.<br /"
@@ -2328,6 +2362,9 @@ msgid ""
 "each record type.<br /> Last but not least, additional features, design "
 "changes, etc..."
 msgstr ""
+"Web應用程式目前的構建過程對於普通用戶來說可能稍嫌複雜。我們或許可以通過使用docker來解決這個問題。<br "
+"/>此外，Web應用程式不會阻止錯誤輸入，而是以錯誤訊息的方式進行回應。添加GNUnet記錄目前僅適用於了解 GNS "
+"記錄外觀的人。而這可以適應各種記錄類型。<br />最後，附加功能、設計更改等..."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:111
 msgid "Thanks for reading."
@@ -2357,6 +2394,8 @@ msgid ""
 "for 2020 below or any past project which is not yet finished (or even your "
 "own idea), please contact us on the mailing list."
 msgstr ""
+"作為一個 GNU計畫，GNUnet 多年來持續參與Google Summer of Code (GSoC)。此頁面列出了所有目前、過去和已完成的項目。"
+"如果您想參與並申請以下 2020年的任何計畫或任何尚未完成的過去項目（甚至您自己的計劃），請通過郵件列表與我們聯繫。"
 
 #: template/gsoc.html.j2:34
 msgid ""
@@ -2394,6 +2433,12 @@ msgid ""
 "ol> <br/> <strong>Difficulty:</strong> Beginner <br/> <strong>Mentors:</"
 "strong> Martin Schanzenbach"
 msgstr ""
+"REST API目前僅支持單用戶系統(single user system)。由於在多用戶系統上，必須對每個用戶實施訪問控制，這成為了一個問題。在這個計劃"
+"中，必須擴展REST服務以支持用戶身份驗證。這包含正確地處理用戶的上下文交換(context "
+"switching)。<ol>。<li>實現用戶認證。</li>。<li>測試存取控制。</li>。<li>記錄對REST "
+"API的更改。</li>。</ol>優勢技能/語言/框架：<ol>。<li>C</li>。<li>了解 Linux/Unix "
+"上的用戶身份驗證子系統。</li>。<li>REST/HTTP 身份驗證方法</li>。</ol>。<br/>。<strong>困難程度：</"
+"strong> 初學者<br/>。<strong>導師：</strong> Martin Schanzenbach"
 
 #: template/gsoc.html.j2:111
 msgid ""
