@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-10 22:48+0200\n"
-"PO-Revision-Date: 2021-06-08 03:45+0000\n"
-"Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
-"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/"
-">\n"
+"PO-Revision-Date: 2021-07-21 20:59+0000\n"
+"Last-Translator: Edhyne Dablé <edhyne.dable@gmail.com>\n"
+"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
+"\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -858,7 +858,7 @@ msgstr "Participez !"
 
 #: template/ev.html.j2:6
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
-msgstr ""
+msgstr "Association pour la promotion de GNUnet e.V."
 
 #: template/ev.html.j2:11
 #, fuzzy
@@ -908,6 +908,17 @@ msgid ""
 "git/\">Satzung (Charter)</a> (currently only available in German, "
 "translations welcome)."
 msgstr ""
+"Les développeurs GNUnet avec des accès git peuvent devenir des membres afin "
+"participer aux procédures de prises de décisions et formellement soutenir "
+"GNUnet e.V. Pour cela, il suffit de mettre à jour le fichier <tt>members."
+"txt</tt> dans la base de données d'archives <a href=\"https://git.gnunet.org/"
+"gnunet-ev.git/\">gnunet-ev</a>. Il n'y a pas de cotisations pour les "
+"membres, toutefois, les membres doivent soutenir GNUnet e.V et tout "
+"particulièrement contribuer au développement technique à hauteur de leurs "
+"moyens. Pour plus de détails, merci de vous référez à cette page <a href="
+"\"https://git.gnunet.org/gnunet-ev.git/\">Satzung (Charter)</a> ("
+"actuellement uniquement disponible en allemand, des traductions sont les "
+"bienvenues)."
 
 #: template/ev.html.j2:52
 msgid "Governance"
@@ -923,6 +934,14 @@ msgid ""
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
 "\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
 msgstr ""
+"Vous pouvez trouver notre charte ainsi que la liste des membres depuis <a "
+"href=\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git."
+"gnunet.org/gnunet-ev.git/tree/satzung.tex</a>. Le bureau de direction actuel "
+"est composé de : <dl><dt>Présidence</dt><dd><a href=\"https://schanzen.eu\""
+">Martin Schanzenbach</a></dd><dt>Présidence intérimaire "
+"Vorsitz</dt><dd>t3sserakt</dd><dt>Intendant</dt><dd>Florian "
+"Dold</dd><dt>Beisitzer</dt><dd><a href=\"https://grothoff.org/christian/\""
+">Christian Grothoff</a>, ch3 </dd></dl>"
 
 #: template/ev.html.j2:73
 #, fuzzy
@@ -1040,6 +1059,15 @@ msgid ""
 "you believe a bug is sensitive, you can set its view status to private (this "
 "should be the exception)."
 msgstr ""
+"R : Nous recensons la liste des bugs actuellement connus dans le <a href="
+"\"https://bugs.gnunet.org/\">Mantis system</a>. Certains bugs sont "
+"occasionnellement directement remontés aux développeurs ou via la liste de "
+"distribution des développeurs. Cette option n'est pas privilégiée étant "
+"donné que les développeurs ont rarement le temps de faire remonter ces bugs "
+"dans la base de données Mantis. S'il vous plaît signalez directement les "
+"bugs via le système de suivi des bugs. Si vous considérez qu'un bug est "
+"critique, vous pouvez lui donner le statut de privé (cela représente une "
+"exception)."
 
 #: template/faq.html.j2:72 template/faq.html.j2:192
 msgid "Is there a graphical user interface?"
@@ -1050,10 +1078,13 @@ msgid ""
 "A: gnunet-gtk is a separate download. The package contains various GTK+ "
 "based graphical interfaces, including a graphical tool for configuration."
 msgstr ""
+"R : gnunet-gtk est un téléchargement à part. Le paquet contient diverses "
+"interfaces graphiques basées sur des boîtes à outils GTK+, y compris un "
+"outil graphique pour la configuration."
 
 #: template/faq.html.j2:82
 msgid "Why does gnunet-service-nse create a high CPU load?"
-msgstr ""
+msgstr "Pourquoi est-ce que gnunet-service-nse génère une charge CPU élevée ?"
 
 #: template/faq.html.j2:84
 msgid ""
@@ -1066,10 +1097,19 @@ msgid ""
 "nse&quot; section of your configuration file to a higher value. The default "
 "is &quot;5 ms&quot;."
 msgstr ""
+"R : Le processus gnunet-service-nseva initialement calculer une soi-disante "
+"&quot;preuve-de-travail&quot; ce qui sert à convaincre le réseau que votre "
+"partage est réel (ou plutôt rendre plus complexe pour un adversaire "
+"d'organiser une attaque Sybil sur le réseau de l'estimateur de taille). Le "
+"calcul prend en général quelques jours, cela dépend de la vitesse de votre "
+"CPU ? Si la charge du processeur constitue un problème pour vous, vous "
+"pourrez choisir une valeur plus élevée pour &quot;WORKDELAY&quot; dans la "
+"section &quot;nse&quot; de votre fichier de configuration. La valeur par "
+"défaut est &quot;5 ms&quot;."
 
 #: template/faq.html.j2:98
 msgid "How does GNUnet compare to Tor?"
-msgstr ""
+msgstr "Quelles sont les différences entre GNUnet et Tor ?"
 
 #: template/faq.html.j2:100
 msgid ""
@@ -1078,10 +1118,15 @@ msgid ""
 "GNUnet does not really have one focus; our theme is secure decentralized "
 "networking, but that is too broad to be called a focus."
 msgstr ""
+"R : Tor se concentre sur la communication anonyme et la résistance à la "
+"censure pour les connexions TCP et avec l'offre Tor Browser Bundle pour la "
+"navigation sur le web en particulier. GNUnet n'a pas d'objectif unique, "
+"notre thème est la mise en réseau décentralisée sécurisée, mais cela reste "
+"trop vaste pour considérer cela comme un objectif à proprement parler."
 
 #: template/faq.html.j2:110
 msgid "How does GNUnet compare to I2P?"
-msgstr ""
+msgstr "Quelle est la différence entre GNUnet et I2P ?"
 
 #: template/faq.html.j2:112
 msgid ""
@@ -1091,10 +1136,17 @@ msgid ""
 "using onion (or garlic) routing as the basis for various (anonymized) "
 "applications. I2P is largely used via a Web frontend."
 msgstr ""
+"R : GNUnet aussi bien que I2P veulent améliorer Internet, le rendre plus "
+"sécurisé et décentralisé. Toutefois, au niveau technique, il n'y a presque "
+"aucun point commun. <br><br> I2P est écrit en Java et a des I2P dispose de "
+"tunnels (asymétriques) utilisant le routage en oignon (ou en ail) comme base "
+"pour de nombreuses applications (anonymisées). I2P est globalement utilisé "
+"via une interface Web frontend."
 
 #: template/faq.html.j2:123
 msgid "Is GNUnet ready for use on production systems?"
 msgstr ""
+"Est-ce que GNUnet est prêt à être utilisé sur des systèmes de production ?"
 
 #: template/faq.html.j2:125
 msgid ""
