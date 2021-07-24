@@ -9,6 +9,13 @@
   color: #3355FF; /* contrast for near white bg */
 }
 
+.container a.subnav-anchor:after, .container a.nav-link:after {
+  font-size: inherit;
+  font-family: inherit;
+  content: "";
+  font-weight: inherit;
+}
+
 .static-top {
   position: fixed;
   top: 0;
