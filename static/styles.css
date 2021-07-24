@@ -1,11 +1,11 @@
-a.link:after {
+.container a:after {
   font-size: .75em;
   font-family: 'Font Awesome 5 Free';
   content: " \f35d";
   font-weight: 900;
 }
 
-a.link {
+.container a {
   color: #3355FF; /* contrast for near white bg */
 }
 

@@ -1,0 +1,83 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+  <h1>GNUnet 0.15.0 released</h1>
+<p>
+  We are pleased to announce the release of GNUnet 0.15.0.
+<br>
+  This is a new major release. It breaks protocol compatibility with the 0.14.x versions.
+  Please be aware that Git master is thus henceforth <b>INCOMPATIBLE</b> with
+  the 0.14.x GNUnet network, and interactions between old and new peers
+  will result in issues.  0.14.x peers will be able to communicate with Git
+  master or 0.14.x peers, but some services - in particular GNS - will not be compatible.<br/>
+  The MESSENGER service goes out of experimental to be used by
+  libraries and applications as dependency. It handles decentralized
+  messaging in flexible groups by using the CADET service and messages
+  can be signed with your ego from the IDENTITY service. The service
+  is still in an early stage, so its protocol (currently version 0.1)
+  will likely adapt or change in future releases to some degree.<br/>
+  In terms of usability, users should be aware that there are still
+  <b>a number of known open issues</b> in particular with respect to ease
+  of use, but also some critical privacy issues especially for mobile users.
+  Also, the nascent network is tiny and thus unlikely to
+  provide good anonymity or extensive amounts of interesting information.
+  As a result, the 0.15.0 release is still <b>only suitable for early adopters
+  with some reasonable pain tolerance</b>.
+</p>
+<h4>Download links</h4>
+<ul>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.15.0.tar.gz">gnunet-0.15.0.tar.gz</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.15.0.tar.gz.sig">signature</a>)</li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.15.0.tar.gz">gnunet-gtk-0.15.0.tar.gz</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.15.0.tar.gz.sig">signature</a>)</li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.15.0.tar.gz">gnunet-fuse-0.15.0.tar.gz</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-0.15.0.tar.gz.sig">signature</a>)</li>
+</ul>
+<p>
+  The GPG key used to sign is: <a href="https://gnunet.org/~schanzen/3D11063C10F98D14BD24D1470B0998EF86F59B6A">3D11063C10F98D14BD24D1470B0998EF86F59B6A</a>
+</p>
+<p>
+  Note that due to mirror synchronization, not all links might be functional
+  early after the release. For direct access try
+  <a href="http://ftp.gnu.org/gnu/gnunet/">http://ftp.gnu.org/gnu/gnunet/</a>
+</p>
+<h4>Noteworthy changes in 0.15.0 (since 0.14.1)</h4>
+<ul>
+  <li><tt>GNS</tt>:
+      <ul>
+        <li>First-come-first-served GNUnet top-level domain ".pin" zone key and website updated a. <a href="https://fcfs.gnunet.org/">Register here.</a> <a href="https://bugs.gnunet.org/view.php?id=6832">#6832</a></li>
+        <li>New <a href="https://lsd.gnunet.org/lsd0001/#name-edkey">EDKEY zone keys</a>.</li>
+      </ul>
+  </li>
+  <li><tt>SCALARPRODUCT</tt>: Crypto ported to libsodium improving performance. <a href="https://bugs.gnunet.org/view.php?id=6818">#6818</a></li>
+  <li><tt>RECLAIM</tt>: Added support for <a class="link" href="https://github.com/Fraunhofer-AISEC/libpabc">BBS+ blind signature credentials</a> for selective disclosure.</li>
+  <li><tt>UTIL</tt>:
+    <ul>
+      <li>Swap gnunet-config's default behaviour for the rewrite flag.</li>
+      <li>Config file is not not always written</li>
+      <li>Introduced new TIME helper functions</li>
+    </ul>
+  </li>
+  <li><tt>SETU</tt>: XXX</li>
+  <li><tt>Buildsystem</tt>: XXX</li>
+  <li><tt>MESSENGER</tt>: New messenger component moved out of experimental.</li>
+</ul>
+<p>
+  A detailed list of changes can be found in the <a href="https://git.gnunet.org/gnunet.git/tree/ChangeLog">ChangeLog</a> and
+  the <a href="https://bugs.gnunet.org/changelog_page.php?project_id=13">0.14.0 bugtracker</a>.
+</p>
+<h4>Known Issues</h4>
+<ul>
+  <li>There are known major design issues in the TRANSPORT, ATS and CORE subsystems which will need to be addressed in the future to achieve acceptable usability, performance and security.</li>
+  <li>There are known moderate implementation limitations in CADET that negatively impact performance.</li>
+  <li>There are known moderate design issues in FS that also impact usability and performance.</li>
+  <li>There are minor implementation limitations in SET that create unnecessary attack surface for availability.</li>
+  <li>The RPS subsystem remains experimental.</li>
+  <li>Some high-level tests in the test-suite fail non-deterministically due to the low-level TRANSPORT issues.</li>
+</ul>
+<p>
+  In addition to this list, you may also want to consult our bug tracker at <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a> which lists about 190 more specific issues.
+</p>
+
+<h4>Thanks</h4>
+<p>
+  This release was the work of many people. The following people contributed code and were thus easily identified:
+  Christian Grothoff, Daniel Golle, t3sserakt, TheJackiMonster and Martin Schanzenbach.
+</p>
+{% endblock body_content %}
