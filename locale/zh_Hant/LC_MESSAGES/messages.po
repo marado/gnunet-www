@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-10 22:48+0200\n"
-"PO-Revision-Date: 2021-06-30 17:00+0000\n"
+"PO-Revision-Date: 2021-07-28 12:35+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -182,7 +182,6 @@ msgstr ""
 "的應用程式，GNUnet已經發展到包含所有類型的基本協議組件和應用程序，並朝向創建 GNU 互聯網發展。"
 
 #: template/about.html.j2:23
-#, fuzzy
 msgid ""
 "Today, the actual use and thus the social requirements for a global network "
 "differs widely from those goals of 1970. While the Internet remains suitable "
@@ -190,8 +189,8 @@ msgid ""
 "hierarchy and when necessary isolated from the rest of the world, the "
 "situation is less tenable for civil society."
 msgstr ""
-"現今，全球網絡的實際用途和社會需求與 1970 "
-"年的目標大不相同。雖然網際網路仍然適合軍事用途(網絡設備由指揮層操作，並在必要時與世界其他地方隔離)，但民間社會的情況卻較站不住腳。"
+"現今，全球網路的實際用途和社會需求與 1970 "
+"年的目標大不相同。雖然網際網路仍然適合軍事用途（網絡設備由指揮層操作，並在必要時與世界其他地方隔離），但民間社會的情況卻較站不住腳。"
 
 #: template/about.html.j2:32
 msgid ""
@@ -422,12 +421,11 @@ msgid "Conversation (Pre-Alpha)"
 msgstr "對話(Pre-Alpha)"
 
 #: template/applications.html.j2:75
-#, fuzzy
 msgid ""
 "GNUnet conversation is an application that provides secure voice "
 "communication in a fully decentralized way by employing GNUnet for routing "
 "and transport."
-msgstr "GNUnet對話是一種通過採用GNUnet進行路由和傳輸以完全分散的方式提供安全語音通信的應用程式。"
+msgstr "GNUnet conversation 是一種應用程式，其透過採用 GNUnet 進行路由和傳輸、並以完全分散的方式提供安全語音通信。"
 
 #: template/applications.html.j2:91
 msgid "Applications utilizing GNUnet"
@@ -451,16 +449,14 @@ msgid "secushare"
 msgstr "安全共享"
 
 #: template/applications.html.j2:120
-#, fuzzy
 msgid ""
 "<a href=\"https://secushare.org/\">secushare</a> is creating a decentralized "
 "social networking application on top of GNUnet. Using overlay multicast and "
 "the extensible PSYC protocol, notifications are distributed end-to-end "
 "encrypted to authorized recipients only."
 msgstr ""
-"<a href=\"https://secushare.org/\">安全共享</a>正在GNUnet之上建立一個去中心化"
-"的社交網路應用程序。使用覆蓋多播(multicast)和可擴展的PSYC協議，透過端對端"
-"(end-to-end)加密將通知分發給授權接收者。"
+"<a href=\"https://secushare.org/\">secushare</a>正在GNUnet之上建立一個去中心化的社交網路應用程序。"
+"其使用覆蓋多播 (multicast) 和可擴展的PSYC協議，透過端對端 (end-to-end) 加密將通知分發給授權接收者。"
 
 #: template/applications.html.j2:139
 msgid "pretty Easy privacy"
@@ -483,31 +479,27 @@ msgid "Cadet-GTK"
 msgstr "學員GTK (Cadet-GTK)"
 
 #: template/applications.html.j2:162
-#, fuzzy
 msgid ""
 "<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> is a "
 "convenient but feature-rich graphical application providing messaging using "
 "the CADET subsystem. It is developed using GTK and libhandy for a convergent "
 "design."
 msgstr ""
-"<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">學員-GTK(Cadet-"
-"GTK)</a>是一種方便而功能豐富的圖形應用程序，學員-GTK(Cadet-GTK)尤其使用CADET"
-"子系統提供消息傳遞。它是使用GTK和libhandy開發的以收斂設計。"
+"<a href=\"https://gitlab.com/gnunet-messenger/cadet-gtk\">Cadet-GTK</a> "
+"是一種方便而功能豐富的圖形應用程序，Cadet-GTK 尤其使用 CADET 子系統提供消息傳遞。其使用 GTK 和 libhandy 開發的以收斂設計。"
 
 #: template/applications.html.j2:180
 msgid "groupchat"
 msgstr "群組聊天"
 
 #: template/applications.html.j2:182
-#, fuzzy
 msgid ""
 "<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> is a "
 "terminal user interface providing messaging using the CADET subsystem. It is "
 "developed using nim. Cadet-GTK and groupchat are planned to be compatible."
 msgstr ""
-"<a href=\"https://git.gnunet.org/groupchat.git/\">群組聊天(groupchat)</a>是一"
-"個終端用戶界面，特別是使用CADET子系統提供消息傳遞。它使用nim來開發。學員-"
-"GTK(Cadet-GTK)與群組聊天(groupchat)兩者計劃兼容。"
+"<a href=\"https://git.gnunet.org/groupchat.git/\">groupchat</a> 是一個終端用戶界面，"
+"特別是使用 CADET 子系統提供消息傳遞。它使用 nim 來開發。Cadet-GTK 與 groupchat 被計劃為互相兼容。"
 
 #: template/architecture.html.j2:6
 msgid "GNUnet System Architecture"
@@ -533,7 +525,6 @@ msgid "Security"
 msgstr "安全性"
 
 #: template/architecture.html.j2:38
-#, fuzzy
 msgid ""
 "GNUnet is implemented using a multi-process architecture. Each subsystem "
 "runs as a separate process, providing fault isolation and enabling tight "
@@ -542,7 +533,7 @@ msgid ""
 "remain free software."
 msgstr ""
 "GNUnet 是使用多進程架構實現的。每個子系統都作為一個單獨的進程運行，以提供故障隔離並允許為每個子系統授予嚴格的權限。自然地，這是一個<a href="
-"\"https://www.gnu.org/\">GNU</a> package的實現，並會持續保持為一個自由軟體。"
+"\"https://www.gnu.org/\">GNU</a> package 的實現，並會持續保持為一個自由軟體。"
 
 #: template/architecture.html.j2:52
 msgid "System architecture"
@@ -553,7 +544,6 @@ msgid "Subsystems"
 msgstr "子系統"
 
 #: template/architecture.html.j2:67
-#, fuzzy
 msgid "libgnunetutil"
 msgstr "libgnunetutil"
 
@@ -574,21 +564,16 @@ msgid "The mailing list"
 msgstr "寄件名單"
 
 #: template/contact.html.j2:13
-#, fuzzy
-#| msgid ""
-#| "We have a mailing list for developer discussions. You can subscribe to or "
-#| "read the list archive at <a href=\"http://lists.gnu.org/mailman/listinfo/"
-#| "gnunet-developers\">http://lists.gnu.org/mailman/listinfo/gnunet-"
-#| "developers</a>."
 msgid ""
 "An archived, public mailing list for GNUnet is hosted at <a href=\"https://"
 "lists.gnu.org/mailman/listinfo/gnunet-developers\">https://lists.gnu.org/"
 "mailman/listinfo/gnunet-developers</a>. You can send messages to the list at "
 "<a href=\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</a>."
 msgstr ""
-"我們有一個郵件列表供開發人員討論。您可以於<a href=\"http://lists.gnu.org/"
-"mailman/listinfo/gnunet-developers\">http://lists.gnu.org/mailman/listinfo/"
-"gnunet-developers</a>訂閱或是閱讀此檔案清單。"
+"GNUnet 的存檔公共郵件列表託管在 <a href=\"https://lists.gnu.org/mailman/listinfo/gnunet-"
+"developers\">https://lists.gnu.org/mailman/listinfo/gnunet-developers</a>。"
+"您可以於 <a href=\"mailto:gnunet-developers@gnu.org\">gnunet-developers@gnu.org</"
+"a> 傳送訊息至此列表。"
 
 #: template/contact.html.j2:25
 msgid "Contacting individuals"
@@ -634,7 +619,6 @@ msgstr ""
 "gnunet_taler_agreement.tex\">GNUnet e.V. --- Taler 系統對於授權與協同開發的SA協議</a>已被符合。"
 
 #: template/copyright.html.j2:22
-#, fuzzy
 msgid ""
 "<p>The agreements ensure that the code will continue to be made available "
 "under free software licenses, but gives developers the freedom to move code "
@@ -642,8 +626,8 @@ msgid ""
 "company the ability to dual-license (for example, so that we can distribute "
 "via App-stores that are hostile to free software).</p>"
 msgstr ""
-"<p>這些協議確保程式碼可以在自由軟體許可下繼續地被提供，但使開發人員可以自由地在GNUnet和GNU "
-"Taler之間移動程式碼，而不必擔心許可證問題，並使公司具有雙重許可的能力(例如，因此我們可以通過對自由軟體有敵意的應用程式商店進行分發)。</p>"
+"<p>這些協議確保程式碼可以在自由軟體許可下繼續地被提供，使開發人員可以自由地在 GNUnet 和 GNU Taler "
+"之間移動程式碼，而不必擔心許可證問題，並予公司雙重許可的能力（例如，由於如此我們可以通過對自由軟體有敵意的應用程式商店進行發布）。</p>"
 
 #: template/copyright.html.j2:30
 msgid ""
@@ -782,14 +766,13 @@ msgid "About GNUnet e.V."
 msgstr "關於GNUnet e.V."
 
 #: template/ev.html.j2:13
-#, fuzzy
 msgid ""
 "On December 27th 2013 a group of GNUnet hackers met at 30c3 to create the "
 "\"Verein zur F&ouml;rderung von GNUnet e.V.\", an association under German "
 "law to support GNUnet development. The Amtsgericht M&uuml;nchen registered "
 "the association on the 7th of March under VR 205287."
 msgstr ""
-"2013 年 12 月 27 日，一群 GNUnet 黑客在 30c3 會面，創建了\"Verein zur F&ouml;rderung von "
+"2013 年 12 月 27 日，一群 GNUnet 黑客在 30c3 會面，創建了 \"Verein zur F&ouml;rderung von "
 "GNUnet e.V.\"，一個根據德國法律支持 GNUnet 開發的協會。Amtsgericht M&uuml;nchen 於 3 月 7 日在 VR "
 "205287 之下註冊了該協會。"
 
@@ -1164,7 +1147,6 @@ msgid "Is GNS resistant to the attacks on DNS used by the US?"
 msgstr "GNS是否可以抵抗美國使用的DNS攻擊?"
 
 #: template/faq.html.j2:271
-#, fuzzy
 msgid ""
 "A: We believe so, as there is no entity that any government could force to "
 "change the mapping for a name except for each individual user (and then the "
@@ -1876,7 +1858,6 @@ msgid "Namespaces"
 msgstr "命名空間(Namespaces)"
 
 #: template/glossary.html.j2:73
-#, fuzzy
 msgid ""
 "The GNU Name System allows every ego (or identity) to securely and privately "
 "associate any number of label-value pairs with an ego. The values are called "
@@ -1889,16 +1870,15 @@ msgid ""
 "the GNS protocol itself."
 msgstr ""
 "GNU 名稱系統允許每個自我（或身份）安全且私密地將任意數量的標籤-值對(label-value pairs)與一個自我互相聯繫。根據網域名稱系統 ("
-"Domain Name System; DNS) 的術語，這些值稱為記錄集(record sets)。該自我的標籤到記錄集的映射(mapping "
-")稱為命名空間(namespace)。<br> 如果記錄被公開並發布，其他用戶就有可能可以根據該自我的公鑰和標籤查找記錄。於此，標籤不僅可以充當密碼短語("
-"passphrase)，還可以充當公鑰——儘管它的名字可能不被公眾所知，也不會被 GNS 協議本身公開。"
+"Domain Name System; DNS) 的術語，這些值稱為記錄集 (record sets)。該自我的標籤到記錄集的映射(mapping )"
+"稱為命名空間 (namespace)。<br> 如果記錄被公開並發布，其他用戶就有可能可以根據該自我的公鑰和標籤查找記錄。於此，標籤不僅可以充當密碼短語 "
+"(passphrase)，還可以充當公鑰——儘管它的名字可能不被公眾所知，也不會被 GNS 協議本身公開。"
 
 #: template/glossary.html.j2:89
 msgid "Peer"
 msgstr "同儕(Peer)"
 
 #: template/glossary.html.j2:91
-#, fuzzy
 msgid ""
 "A \"peer\" is an instance of GNUnet with its own per-instance public key and "
 "network addresses. Technically, it is possible to run multiple peers on the "
@@ -1912,11 +1892,11 @@ msgid ""
 "to egos or identities. Namespaces cannot be associated with a peer, only "
 "with egos."
 msgstr ""
-"一個\"對等點(peer)\"是個具有其自己實例公鑰和網路位址的GNUnet實例"
-"。技術上來說，在同一主機上運行多個對等點是有可能的，但這僅在測試方面有意義。<br> 按照設計，GNUnet 支持多個用戶共享同一個對等點，就如同 "
-"UNIX 是一個多用戶系統一樣。一個\"對等點\"的組成通常包含由一組以\"gnunet\"用戶身份運行、並允許\"gnunet\"組中的所有用戶使用該 "
-"API 的基礎 GNUnet 服務。在多用戶系統上，每個用戶可能需要額外的\"個人化\"服務。 <br> "
-"雖然對等點也由公鑰標識，但這些公鑰與自我或身份完全無關。命名空間不能與對等點相關聯、只能與自我相關聯。"
+"一個 \"對等點 (peer)\" "
+"是個具有其自己實例公鑰和網路位址的GNUnet實例。技術上來說，在同一主機上運行多個對等點是有可能的，但這僅在測試方面有意義。<br> 按照設計，"
+"GNUnet 支持多個用戶共享同一個對等點，就如同 UNIX 是一個多用戶系統一樣。一個 \"對等點\" 的組成通常包含由一組以 \"gnunet\" "
+"用戶身份運行、並允許 \"gnunet\" 組中的所有用戶使用該 API 的基礎 GNUnet 服務。在多用戶系統上，每個用戶可能需要額外的 \"個人化 "
+"(personalized)\" 服務。 <br> 雖然對等點也由公鑰標識，但這些公鑰與自我或身份完全無關。命名空間不能與對等點相關聯、只能與自我相關聯。"
 
 #: template/gns.html.j2:13 template/gnurl.html.j2:60
 #: template/reclaim/index.html.j2:80 template/reclaim/motivation.html.j2:6
@@ -1968,23 +1948,19 @@ msgstr ""
 "HTTP 1.x），用以確保無論 libcurl 是如何被編譯的，開發人員都有相同的體驗與低耗能。"
 
 #: template/gnurl.html.j2:30
-#, fuzzy
 msgid ""
 "Our main usecase is for GNUnet and Taler, but it might be usable for others, "
 "hence we&#39;re releasing the code to the general public."
-msgstr ""
-"我們的程式碼主要用於GNUnet和Taler，但考慮到對其他人可能也有幫助，我們決定"
-"&#39;將程式碼公之於眾。"
+msgstr "我們的程式碼主要用於 GNUnet 和 Taler，但考慮到對其他人可能也有幫助，我們決定將程式碼公之於眾。"
 
 #: template/gnurl.html.j2:37
-#, fuzzy
 msgid ""
 "libgnurl is released under the same license as libcurl. Please read the "
 "README for instructions, as you must supply the correct options to configure "
 "to get a proper build of libgnurl."
 msgstr ""
-"libgnurl與libcurl由相同的許可證所發行。由於您必須提供正確的選項來進行配置以獲"
-"取正確的libgnurl建構，請閱讀README以了解更多的相關指令。"
+"libgnurl 與 libcurl 由相同的許可證所發行。由於您必須提供正確的選項來進行配置以獲取正確的 libgnurl 建構，請閱讀 README "
+"以了解更多的相關指令。"
 
 #: template/gnurl.html.j2:48
 msgid "About gnurl"
@@ -2031,9 +2007,15 @@ msgid ""
 "of those features, and thus including security issues that might arise from "
 "that code."
 msgstr ""
+"對於 GNUnet，我們還需要一個特定現代版本的 GnuTLS 。因此，無論如何都需要為 GNUnet 再次編譯 cURL。但是，如果將 cURL "
+"鏈接到此版本的 GnuTLS 會發生什麼事？首先，GnuTLS 需要被手動安裝在系統中。接著，我們需要構建 cURL。cURL 會順利地構建，"
+"但鏈接器最終會\"抱怨\"。鏈接器會\"抱怨\"是因為 cURL 還鏈接了許多其他系統庫 （gssapi, ldap, ssh2, rtmp, "
+"krb5, sasl2, 請參閱上方關於 obscure protocols 的討論）。由於這些系統庫是分發的一部分，他們與舊版的GnuTLS "
+"有鏈接。因此，同一個二進製文件將鏈接到兩個不同版本的 GnuTLS。這通常是災難的\"秘訣\"。因此，為了避免更新十幾個系統庫（並安裝兩個版本），禁用 "
+"GNUnet 不使用的（為數眾多的）所有 cURL 功能是有必要的。對於 GNUnet 來說，cURL 支持的更隱晦的協議接近死代碼——大多是無害的，但也"
+"沒有用。然而，由於某些應用程序可能會使用其中一項功能，分發版通常會被迫啟用所有這些功能，從而包括可能由該代碼引起的安全問題。"
 
 #: template/gnurl.html.j2:99
-#, fuzzy
 msgid ""
 "So to use a modern version of GnuTLS, a sane approach is to disable all of "
 "the \"optional\" features of cURL that drag in system libraries that link "
@@ -2046,10 +2028,10 @@ msgid ""
 "the linker will link GNUnet against the right version. Note that none of "
 "this can really be trivially fixed by the cURL developers."
 msgstr ""
-"因此，要使用現代版本的 GnuTLS，一個明智的方法是禁用 cURL 的所有\"可選(optional)\"功能"
-"，這些功能將鏈接部份連接到舊的GnuTLS程式庫中。這是可以運行的，但是使用者\"永遠\"不應該在 /usr 或 /usr/local 中安裝那個版本的 "
-"libcurl，因為這可能會破壞系統的其他部分，而這些部分可能依賴於我們剛剛禁用的功能。Libtool版本控制在這裡沒有幫助，因為Libtool版本控制的"
-"原意並非處理具有可選功能的程式庫。理所當然地，在其他地方安裝cURL也會造成問題，因為我們現在必須非常小心，鏈接器會將 GNUnet "
+"因此，要使用現代版本的 GnuTLS，一個明智的方法是禁用 cURL 的所有\"可選 (optional)\"功能，這些功能將鏈接部份連接到舊的 "
+"GnuTLS 程式庫中。這是可以運行的，但是使用者\"永遠\"不應該在 /usr 或 /usr/local 中安裝那個版本的 "
+"libcurl，因為這可能會破壞系統的其他部分，而這些部分可能依賴於我們剛剛禁用的功能。Libtool版本控制在這裡沒有幫助，因為 Libtool "
+"版本控制的原意並非處理具有可選功能的程式庫。理所當然地，在其他地方安裝 cURL 也會造成問題，因為我們現在必須非常小心，鏈接器會將 GNUnet "
 "部份連接到正確的版本。請注意，cURL 開發人員無法輕鬆地解決這些問題。"
 
 #: template/gnurl.html.j2:118
@@ -2057,7 +2039,7 @@ msgid "Rename to fix"
 msgstr "重命名以修復"
 
 #: template/gnurl.html.j2:120
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "How does forking fix it? Easy. First, we can get rid of all of the "
 "compatibility issues --- if you use libgnurl, you state that you don&#39;t "
@@ -2074,11 +2056,11 @@ msgid ""
 "are miniscule and can easily be applied again and again whenever libcurl "
 "makes a new release."
 msgstr ""
-"分叉(forking )是如何解決此問題的？答案很簡單。首先，我們可以擺脫所有的兼容性問題——如果你使用libgnurl，您聲明除了HTTP/HTTPS以"
-"外，您不需要任何東西。那些需要更多東西的應用程式應該持續使用原始的cURL。那些不需要的，則可以轉而選擇更簡單的東西。由於程式庫有了一個新名稱，我們不必擔"
-"心一旦重建此程式庫就會損壞大量套件的問題。所以將其重命名並表示\"libgnurl = libcurl with only HTTP/HTTPS "
-"support and GnuTLS\"修復了 99%% 的問題使讓我情緒黯淡。請注意，如果沒有fork，這幾乎\"無法\"完成"
-"，因為重命名為修復過程中很重要的一部分。現在，在標準的cURL構建系統中可能會有創意的解決方案來實現同樣的事情，但是這在gnurl "
+"分叉 (forking ) 是如何解決此問題的？答案很簡單。首先，我們可以擺脫所有的兼容性問題——如果你使用libgnurl，您聲明除了 HTTP/"
+"HTTPS 以外，您不需要任何東西。那些需要更多東西的應用程式應該持續使用原始的cURL。那些不需要的，則可以轉而選擇更簡單的東西。由於程式庫有了一個新名"
+"稱，我們不必擔心一旦重建此程式庫就會損壞大量套件的問題。所以將其重命名並表示 \"libgnurl = libcurl with only HTTP/"
+"HTTPS support and GnuTLS\" 修復了 99%% 的問題使讓我情緒黯淡。請注意，如果沒有 fork，這幾乎\"無法\"完成"
+"，因為重命名為修復過程中很重要的一部分。現在，在標準的 cURL 構建系統中可能會有創意的解決方案來實現同樣的事情，但是這在 gnurl "
 "最初被啟動時被認為是太多工作了。"
 
 #: template/gnurl.html.j2:142
@@ -2131,7 +2113,6 @@ msgid "The versions are checked in as (signed) git tags."
 msgstr "這些版本以(簽字的)git標籤登記。"
 
 #: template/gnurl.html.j2:211
-#, fuzzy
 msgid ""
 "Releases are published on <a href=\"https://ftpmirror.gnu.org/gnu/gnunet/"
 "\">ftpmirror.gnu.org/gnu/gnunet</a>. gnurl is available from within a "
@@ -2143,20 +2124,19 @@ msgid ""
 "\"https://nixos.org/nix/\">Nix</a>, and as www/gnurl in <a href=\"https://"
 "pkgsrc.org\">pkgsrc</a>."
 msgstr ""
-"版本發佈於<a href=\"https://ftpmirror.gnu.org/gnu/gnunet/\">ftpmirror.gnu.org/gnu/"
-"gnunet</a>。您則可以從各種發行版和軟體套件管理系統(package managers)中取得gnurl 。一些包含 gnurl "
+"版本發佈於 <a href=\"https://ftpmirror.gnu.org/gnu/gnunet/\">ftpmirror.gnu.org/"
+"gnu/gnunet</a>。您則可以從各種發行版和軟體套件管理系統 (package managers) 中取得 gnurl 。一些包含 gnurl "
 "的軟體套件管理系統包括: <a href=\"https://www.gnu.org/software/guix/\">GNU Guix</a>("
 "available as \"gnurl\"), <a href=\"https://gentoo.org\">Gentoo</a>通過ebuild "
 "collection協作<a href=\"https://git.gnunet.org/youbroketheinternet-overlay.git/"
-"\">youbroketheinternet</a>, <a href=\"https://nixos.org/nix/\">Nix</a>，以及www/"
-"gnurl中的<a href=\"https://pkgsrc.org\">pkgsrc</a>。"
+"\">youbroketheinternet</a>, <a href=\"https://nixos.org/nix/\">Nix</a>，以及 "
+"www/gnurl 中的 <a href=\"https://pkgsrc.org\">pkgsrc</a>。"
 
 #: template/gnurl.html.j2:228
 msgid "Building gnurl"
 msgstr "建立gnurl"
 
 #: template/gnurl.html.j2:230
-#, fuzzy
 msgid ""
 "We suggest to closely follow release announcements, as they might indicate "
 "changes in how gnurl is to be build. <br> If your package manager provides a "
@@ -2172,10 +2152,10 @@ msgid ""
 msgstr ""
 "我們建議您密切關注發佈公告，因為公告內容可能會指出gnurl的構建方式發生了變化。<br> "
 "如果您的軟體套件管理系統提供二進制構建或構建指令來從原始碼自動構建gnurl 並與您的環境相整合，我們強烈建議您使用此二進制構建。<br> "
-"有兩種方法可以構建gnurl。第一種方法為從最新的git 標籤(git tag)構建，第二種方法則是使用分佈式 tarball(distributed "
-"tarball)。分配器(Distributors )通常應該要從tarball構建，但我們在此會對兩種方法做描述。這兩種方法都是在考慮到NetBSD "
-"9用戶空間的情況下編寫的，請根據需要替換適當的工具。<br>您應該<b>避免</b>從默認git分支(default git "
-"branch)的尖端構建gnurl，因為只有標籤(tags)被認為是穩定的、已批准的構建。"
+"有兩種方法可以構建 gnurl。第一種方法為從最新的 git 標籤 (git tag) 構建，第二種方法則是使用分佈式 tarball ("
+"distributed tarball)。分配器 (Distributors ) 通常應該要從 tarball 構建，但我們在此會對兩種方法做描述。"
+"這兩種方法都是在考慮到NetBSD 9用戶空間的情況下編寫的，請根據需要替換適當的工具。<br>您應該<b>避免</b>從默認 git 分支("
+"default git branch) 的尖端構建 gnurl，因為只有標籤 (tags) 被認為是穩定的、已批准的構建。"
 
 #: template/gnurl.html.j2:251
 msgid "Building from the distributed tarball (prefered method)"
@@ -2344,6 +2324,18 @@ msgid ""
 "api.git/\">GNUnet REST API Docmentation Git</a>).<br /> Clone the repository "
 "and \"make html\". Then open the 'index.html' under 'build/html/'. </li>"
 msgstr ""
+"<li> 在 GNUnet 中開發的 REST API<br> REST API 已合併到 gnunet.git 存儲庫中 (<a href="
+"\"https://gnunet.org/git/gnunet.git/\">GNUnet Main Git</a>)。<br /> 若要使用新功能，"
+"請複製存儲庫並按照 gnunet.org 上的<a href=\"https://gnunet.org/en/install.html\">安裝</a> "
+"進行操作。接下來，使用 \"gnunet-arm -i rest\" 啟動 rest service。</li> <li> 網路應用程式 (The "
+"Web Application)<br> 網路應用程序位於 gnunet-webui.git 儲存庫下 (<a href=\"https://gnunet"
+".org/git/gnunet-webui.git/\">GNUnet WebUI Git</a>)。<br /> 您需要安裝最新版本的 \"節點 "
+"(node)\" 和 \"紗線 (yarn)\"。根據您的系統，您可能需要下載更新版本並手動安裝它們，而不是通過您的 packet "
+"manager。安裝成功後，您需要複製儲存庫。接下來，您需要運行 \"yarn install\" 和 \"yarn start\" 以進行測試。使用 "
+"\"yarn build\" 來構建網路應用程式並使用 \"dist\" 目錄中的輸出以部署網站（請記住，該網站與另一個本地主機實例通信）。</li> "
+"<li> 文件<br /> 該文件位於 gnunet-rest-api.git 儲存庫下 (<a href=\"https://gnunet.org/"
+"git/gnunet-rest-api.git/\">GNUnet REST API Docmentation Git</a>).<br /> "
+"複製儲存庫 \"make html\". 接著開啟'build/html/' 之下的 'index.html'。</li>"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:91
 msgid ""
@@ -2352,7 +2344,6 @@ msgid ""
 msgstr "如果發現任何錯誤或意外功能，請您嘗試並與我聯繫。;)"
 
 #: template/gsoc-2018-gnunet-webui.html.j2:98
-#, fuzzy
 msgid ""
 "Right now, the build process of the web application may be a little too "
 "complex for a casual user. We may be able to solve this by using docker.<br /"
@@ -2362,8 +2353,8 @@ msgid ""
 "each record type.<br /> Last but not least, additional features, design "
 "changes, etc..."
 msgstr ""
-"Web應用程式目前的構建過程對於普通用戶來說可能稍嫌複雜。我們或許可以通過使用docker來解決這個問題。<br "
-"/>此外，Web應用程式不會阻止錯誤輸入，而是以錯誤訊息的方式進行回應。添加GNUnet記錄目前僅適用於了解 GNS "
+"Web應用程式目前的構建過程對於普通用戶來說可能稍嫌複雜。我們或許可以通過使用 docker 來解決這個問題。<br "
+"/>此外，網路應用程式不會阻止錯誤輸入，而是以錯誤訊息的方式進行回應。添加 GNUnet 記錄目前僅適用於了解 GNS "
 "記錄外觀的人。而這可以適應各種記錄類型。<br />最後，附加功能、設計更改等..."
 
 #: template/gsoc-2018-gnunet-webui.html.j2:111
@@ -2419,6 +2410,15 @@ msgid ""
 "but depends on selected protocols. <br/> <strong>Mentors:</strong> Martin "
 "Schanzenbach, t3sserakt"
 msgstr ""
+"GNUnet 團隊目前正在重寫傳輸層，以解決連接性的核心問題。這個新組件目前以 \"TNG\" 的名稱開發。目前所謂的 \"傳輸插件 ("
+"transport plugins)\" 在 TNG 中將被表示為 \"通信器 (communicators)\"。通信器為具有明確定義的 API "
+"的流程，允許透過特定協議連接對等點。已經實現的主要協議為 UNIX sockets、UDP sockets 和 TCP "
+"sockets。對於真正有彈性的網路，還需要其他連接選項，例如 WiFi 網狀網路 (WiFi mesh)、藍牙 (Bluetooth)、HTTP(S)、"
+"QUIC 或甚至更模糊的替代方案，例如無線電。在這個專案中，其目標是選擇、實施和測試新的通信器。雖然 TNG 尚未準備就緒，但根據設計，"
+"可以開發和測試針對當前 API 的通信器。由於有很多協議可供選擇，我們期望這個項目可以由多個學生進行。任務包括：<ol><li>決定實施哪些通信器。</l"
+"i><li>測試通信器。</li><li>文件。</li></ol> 優勢技能/語言/框架：<ol><li>C</li><li>HTTPS、QUIC、"
+"藍牙或 WiFi的知識。</li></ol><br/><strong>難易程度：</strong> 中等， 但取決於選定的協議。 <br/"
+"><strong>導師：</strong> Martin Schanzenbach, t3sserakt"
 
 #: template/gsoc.html.j2:79
 msgid ""
@@ -2458,6 +2458,15 @@ msgid ""
 "li> <li>Webextensions</li> </ol> <br/> <strong>Difficulty:</strong> "
 "Challenging <br/> <strong>Mentors:</strong> Martin Schanzenbach"
 msgstr ""
+"reclaimID 是一個建立在 GNU 名稱系統之上的去中心化身份系統。目前，有一個使用 GNUnet <a href=\"https://rest."
+"gnunet.org\">REST API</a> 的 Webextension。為了提高採用率和易用性，該項目旨在在 Webextention "
+"中包含一個完整的 GNUnet 節點作為後備。GNUnet 可以編譯為 Web Assembly 或 JavaScript，如<a href="
+"\"https://gnunet.io\">此處</a>所示。這個想法是為了改進這個概念並支持更多的 GNUnet "
+"子系統。該項目的難易度在很大程度上取決於學生對構建工具、emscripten 和 improvisation skills 的熟練程度。詳盡的任務清單為："
+"<ol><li>改進現有的 GNUnet emscripten 構建以包含更多子系統。</li><li>將結果整合到 Webextention 中。</"
+"li><li>將結果整合到 re:claimID Webextension中</li></ol> "
+"優勢技能/語言/框架：<ol><li>C</li><li>emscripten</li><li>Webextensions</li></ol><br/"
+"><strong>難易程度：</strong> 困難<br/><strong>導師：</strong> Martin Schanzenbach"
 
 #: template/gsoc.html.j2:147
 msgid ""
@@ -2563,7 +2572,6 @@ msgid "<strong>Mentors:</strong> TBD"
 msgstr "<strong>導師:</strong> TBD"
 
 #: template/gsoc.html.j2:267
-#, fuzzy
 msgid ""
 "One great problem of the current Internet is the lack of disintermediation. "
 "When people want to talk they need a chat service. When they want to share "
@@ -2579,9 +2587,9 @@ msgid ""
 "more information and context, read"
 msgstr ""
 "當前網際網路的一大問題是--"
-"缺乏去中介化(disintermediation)。當人們想要交談時，他們需要聊天服務。當人們想要共享文件時，他們需要文件傳輸服務。"
-"雖然GNUnet已經非常先進地整合到 Linux 網路連結中，但是現有的應用程式（如 "
-"irc、www、ftp、rsh、nntpd）僅需要一些額外的工作就能以點對點的方式運行：使用 GNS 主機名，例如friend.gnu。"
+"缺乏去中介化(disintermediation)。當人們想要交談時，他們需要聊天服務。當人們想要共享文件時，他們需要文件傳輸服務。雖然 GNUnet "
+"已經非常先進地整合到 Linux 網路連結中，但是現有的應用程式（如 "
+"irc、www、ftp、rsh、nntpd）僅需要一些額外的工作就能以點對點的方式運行：使用 GNS 主機名，例如 friend.gnu。"
 "一旦人們將某人添加到他們的 GNS 中，他們就可以立即直接發送消息、交換文件等，而中間只有 GNUnet、使用自 1980 年代以來就隨 unix "
 "系統分發的應用程式。我們可以製作一個操作系統發行版(OS "
 "distribution)，這些東西用人的暱稱(而非雲端服務)就可以立即使用。有關更多訊息和上下文，請閱讀"
@@ -2739,7 +2747,6 @@ msgstr ""
 "li><li> 由於目前secushare的一部分用Rust 編寫的， Rust 為此課題的首選，但這不是必需的。</li></ul>"
 
 #: template/gsoc.html.j2:509
-#, fuzzy
 msgid ""
 "Implementation of the GNUnet auction system described in Chapter 3 of <a "
 "href=\"https://grothoff.org/christian/teich2017ms.pdf\">this thesis</a>. "
@@ -2749,8 +2756,8 @@ msgid ""
 msgstr ""
 "<a href=\"https://grothoff.org/christian/teich2017ms.pdf\">本論文</a>第 3 "
 "章描述了GNUnet拍賣系統(GNUnet auction system)的實現。\n"
-"具體任務是在libbrandt中增加智能合約建立(smart contract creation)與輪次執行(round time "
-"enforcement)，以及創建GNUnet拍賣服務(GNUnet auction "
+"具體任務是在 libbrandt 中增加智能合約建立(smart contract creation)與輪次執行(round time "
+"enforcement)，以及創建 GNUnet 拍賣服務(GNUnet auction "
 "service)、圖書館(library)和三個使用者介面程式創建(create)、資訊(info)和加入(join)。"
 
 #: template/gsoc.html.j2:521
@@ -2842,9 +2849,9 @@ msgid ""
 "APIs</a> that expose the <a href=\"https://docs.gnunet.org/doxygen/modules."
 "html\">GNUnet API</a>."
 msgstr ""
-"為了予GNUnet 實現類似於GNUnet-Gtk的Web-based UI，具有尚未確定的框架，例如 Angular2。這包括尚不存在的<a href="
-"\"http://jsonapi.org/\">REST APIs</a>的設計和實現，而REST APIs將公開<a href=\"https"
-"://docs.gnunet.org/doxygen/modules.html\">GNUnet API</a>。"
+"為了予 GNUnet 實現類似於 GNUnet-Gtk的Web-based UI，具有尚未確定的框架，例如 Angular2。這包括尚不存在的<a "
+"href=\"http://jsonapi.org/\">REST APIs</a>的設計和實現，而 REST APIs 將公開<a href="
+"\"https://docs.gnunet.org/doxygen/modules.html\">GNUnet API</a>。"
 
 #: template/gsoc.html.j2:657
 msgid "Required Skills: C, JavaScript, CSS"
