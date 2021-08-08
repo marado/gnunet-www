@@ -29,6 +29,9 @@ meetingnotes:
   2019: 2019-12-27
   2020: 2020-12-30
 newsposts:
+  - page: 2021-08-0.15.0.html
+    date: 2021-08-08
+    title: GNUnet 0.15.0
   - page: 2021-05-DISSENS.html
     date: 2021-05-10
     title: "DISSENS: Decentralized Identities for Self-sovereign End-users"
