@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-06-10 22:48+0200\n"
-"PO-Revision-Date: 2021-07-30 20:59+0000\n"
+"PO-Revision-Date: 2021-08-24 08:59+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
 "gnunet/website/zh_Hant/>\n"
@@ -45,7 +45,6 @@ msgid "Bug Tracker"
 msgstr "Bug Tracker"
 
 #: common/footer.j2.inc:19 template/copyright.html.j2:6
-#, fuzzy
 msgid "Copyright Assignment"
 msgstr "版權轉讓"
 
@@ -80,9 +79,8 @@ msgid "Community"
 msgstr "社群"
 
 #: common/navigation.j2.inc:47 template/index.html.j2:292
-#, fuzzy
 msgid "Engage"
-msgstr "從事"
+msgstr "參與"
 
 #: common/navigation.j2.inc:48
 msgid "GSoC Projects"
@@ -341,7 +339,6 @@ msgstr ""
 "，<a href=\"use.html\">使用它</a>並以各種方式<a href=\"engage.html\">貢獻和參與</a>。"
 
 #: template/about.html.j2:100
-#, fuzzy
 msgid ""
 "Please be aware that this project is (despite of it's age) still in an early "
 "alpha stage when it comes to software &#8211; its not an easy task to "
@@ -757,9 +754,8 @@ msgid ""
 msgstr "您可以從我們的開發服務器獲取版本 0.11.x 的 git 標籤："
 
 #: template/engage.html.j2:6
-#, fuzzy
 msgid "Engage!"
-msgstr "銜接！"
+msgstr "參與！"
 
 #: template/ev.html.j2:6
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
@@ -904,12 +900,10 @@ msgstr ""
 "您可以訂閱此網站的寄件清單或是 RSS feed 以自動獲取通知。"
 
 #: template/faq.html.j2:48
-#, fuzzy
 msgid "Is the code free?"
 msgstr "程式碼是免費的嗎？"
 
 #: template/faq.html.j2:50
-#, fuzzy
 msgid ""
 "A: GNUnet is free software, available under the <a href=\"https://www.gnu."
 "org/licenses/agpl-3.0.en.html\">GNU Affero Public License (AGPL)</a>."
@@ -2825,7 +2819,6 @@ msgid "Unfinished/Abandoned as gnunet-qr was moved to C outside of GSoC."
 msgstr "未完成/被放棄，因為 gnunet-qr 已移至 GSoC 之外的 C 中。"
 
 #: template/gsoc.html.j2:642
-#, fuzzy
 msgid ""
 "Implementation of a Web-based UI for GNUnet similar to GNUnet-Gtk with a yet "
 "to be determined framework such as Angular2. This includes the design and "
@@ -2936,7 +2929,6 @@ msgid "GNUnet provides privacy-by design"
 msgstr "GNUnet 通過設計提供隱私"
 
 #: template/index.html.j2:152
-#, fuzzy
 msgid ""
 "It provides <a class=\"link\" href=\"https://www.w3.org/2014/strint/"
 "papers/65.pdf\"> improving addressing, routing, naming and content "
@@ -2951,8 +2943,7 @@ msgstr ""
 "content distribution)</a>並且使用了技術穩健的方式(technically robust manner)。\n"
 "<!-- Proposal from fabian gerlach: GNUnet is built <a href=\"https://www.w3."
 "org/2014/strint/papers/65.pdf\">\"隱私設計(privacy by design)\"</a> and \"分發設計("
-"distributed by design)\". 這以技術穩健的方式(technically robust "
-"manner)改進了尋址、路由、命名和內容分發。-->"
+"distributed by design)\". 這以技術穩健的方式改進了尋址、路由、命名和內容分發。-->"
 
 #: template/index.html.j2:177
 msgid "Freedoms are not respected"
@@ -3014,7 +3005,6 @@ msgid "GNUnet is a framework"
 msgstr "GNUnet 是一個框架"
 
 #: template/index.html.j2:266
-#, fuzzy
 msgid ""
 "It offers a metadata-preserving foundation for your application. It offers "
 "components for addressing, reliable encrypted channels with advanced routing "
@@ -3182,7 +3172,6 @@ msgstr ""
 ">與我們保持聯繫！</a></p>"
 
 #: template/install.html.j2:28
-#, fuzzy
 msgid ""
 "We recommend to use binary packages provided by the package manager "
 "integrated within your Operating System. GNUnet is reportedly available for "
@@ -3213,8 +3202,8 @@ msgstr ""
 "\"https://search.nixos.org/packages?from=0&size=50&sort=relevance&query="
 "gnunet\">NixOS</a></li> <li><a href=\"install-on-openwrt.html\">OpenWrt</a></"
 "li> </ul> \n"
-"如果GNUnet可用於您的作業系統但是您沒有在此列表中找到它，請將此情況回饋給我們，以便我們將其添加到此列表中。此外，如果您有興趣為您的作業系統pack "
-"GNUnet，（若您需要這項工作的幫助）請通過 gnunet-developers@gnu.org 與我們聯繫。如果您使用的是帶有 APT "
+"如果 GNUnet可用於您的作業系統但是您沒有在此列表中找到它，請將此情況回饋給我們，以便我們將其添加到此列表中。此外，如果您有興趣為您的作業系統 "
+"pack GNUnet，（若您需要這項工作的幫助）請通過 gnunet-developers@gnu.org 與我們聯繫。如果您使用的是帶有 APT "
 "軟體套件管理系統的作業系統，GNUnet 的安裝非常簡單："
 
 #: template/install.html.j2:59
