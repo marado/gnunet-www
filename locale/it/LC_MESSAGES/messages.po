@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-26 19:27+0200\n"
+"POT-Creation-Date: 2021-08-28 22:42+0200\n"
 "PO-Revision-Date: 2021-06-19 12:58+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
-"Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/>"
-"\n"
+"Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/"
+">\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +40,7 @@ msgstr "GNUnet e V."
 msgid "About GNUnet"
 msgstr "Su GNUnet"
 
-#: common/footer.j2.inc:14 common/navigation.j2.inc:64
+#: common/footer.j2.inc:14 common/navigation.j2.inc:65
 msgid "Bug Tracker"
 msgstr "Rilevatore di bug"
 
@@ -48,7 +48,7 @@ msgstr "Rilevatore di bug"
 msgid "Copyright Assignment"
 msgstr "Accordo sul copyright"
 
-#: common/footer.j2.inc:20 common/navigation.j2.inc:90
+#: common/footer.j2.inc:20 common/navigation.j2.inc:91
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr "Bibliografia"
@@ -62,95 +62,99 @@ msgid "Report issues with this website."
 msgstr "Segnalare problemi del sito."
 
 #: common/navigation.j2.inc:38
+msgid "Home"
+msgstr ""
+
+#: common/navigation.j2.inc:39
 msgid "About"
 msgstr "Riguardo a"
 
-#: common/navigation.j2.inc:39 common/old-news.j2.inc:7
+#: common/navigation.j2.inc:40 common/old-news.j2.inc:7
 #: template/news/index.html.j2:8
 msgid "News"
 msgstr "Novità"
 
-#: common/navigation.j2.inc:40 template/index.html.j2:289
+#: common/navigation.j2.inc:41 template/index.html.j2:289
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: common/navigation.j2.inc:44
+#: common/navigation.j2.inc:45
 msgid "Community"
 msgstr "Community"
 
-#: common/navigation.j2.inc:47 template/index.html.j2:292
+#: common/navigation.j2.inc:48 template/index.html.j2:292
 msgid "Engage"
 msgstr "Partecipa"
 
-#: common/navigation.j2.inc:48
+#: common/navigation.j2.inc:49
 msgid "GSoC Projects"
 msgstr "Progetti GSoC"
 
-#: common/navigation.j2.inc:50
+#: common/navigation.j2.inc:51
 msgid "Copyright for Contributors"
 msgstr "Copyright per i collaboratori"
 
-#: common/navigation.j2.inc:51
+#: common/navigation.j2.inc:52
 msgid "IRC Archive"
 msgstr "Archivio IRC"
 
-#: common/navigation.j2.inc:58
+#: common/navigation.j2.inc:59
 msgid "Development"
 msgstr "Sviluppo"
 
-#: common/navigation.j2.inc:61
+#: common/navigation.j2.inc:62
 msgid "System Architecture"
 msgstr "Architettura del sistema"
 
-#: common/navigation.j2.inc:63 template/roadmap.html.j2:6
+#: common/navigation.j2.inc:64 template/roadmap.html.j2:6
 msgid "Roadmap"
 msgstr "Tabella di marcia"
 
-#: common/navigation.j2.inc:65 template/gnurl.html.j2:186
+#: common/navigation.j2.inc:66 template/gnurl.html.j2:186
 msgid "Source Code"
 msgstr "Codice sorgente"
 
-#: common/navigation.j2.inc:66
+#: common/navigation.j2.inc:67
 msgid "Source Code Documentation"
 msgstr "Documentazione del codice sorgente"
 
-#: common/navigation.j2.inc:67
+#: common/navigation.j2.inc:68
 msgid "Continuous Integration"
 msgstr "Integrazione continuativa"
 
-#: common/navigation.j2.inc:68
+#: common/navigation.j2.inc:69
 msgid "Development Tutorial"
 msgstr "Guida allo sviluppo"
 
-#: common/navigation.j2.inc:79
+#: common/navigation.j2.inc:80
 msgid "Documentation"
 msgstr "Documentazione"
 
-#: common/navigation.j2.inc:82 template/install.html.j2:6
+#: common/navigation.j2.inc:83 template/install.html.j2:6
 msgid "Install"
 msgstr "Installazione"
 
-#: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
+#: common/navigation.j2.inc:84 template/install-on-openwrt.html.j2:76
 msgid "Use"
 msgstr "Usare"
 
-#: common/navigation.j2.inc:84
+#: common/navigation.j2.inc:85
 msgid "Videos"
 msgstr "Video"
 
-#: common/navigation.j2.inc:85 template/glossary.html.j2:6
+#: common/navigation.j2.inc:86 template/glossary.html.j2:6
 msgid "Glossary"
 msgstr "Glossario"
 
-#: common/navigation.j2.inc:86
+#: common/navigation.j2.inc:87
 msgid "Handbook"
 msgstr "Manuale"
 
-#: common/navigation.j2.inc:88
+#: common/navigation.j2.inc:89
 msgid "REST API"
 msgstr "API REST"
 
-#: common/navigation.j2.inc:89 template/reclaim/index.html.j2:83
+#: common/navigation.j2.inc:90 template/reclaim/index.html.j2:83
 msgid "FAQ"
 msgstr "FAQ"
 

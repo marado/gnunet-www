@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-10 22:48+0200\n"
+"POT-Creation-Date: 2021-08-28 22:42+0200\n"
 "PO-Revision-Date: 2021-05-21 14:59+0000\n"
 "Last-Translator: Shorouk Hassouna <shoroukhassuna@gmail.com>\n"
 "Language-Team: Arabic <http://weblate.taler.net/projects/gnunet/website/ar/"
@@ -43,7 +43,7 @@ msgstr "GNUnet"
 msgid "About GNUnet"
 msgstr "عن GNUnet"
 
-#: common/footer.j2.inc:14 common/navigation.j2.inc:64
+#: common/footer.j2.inc:14 common/navigation.j2.inc:65
 msgid "Bug Tracker"
 msgstr "أداة تعقب الأخطاء"
 
@@ -51,7 +51,7 @@ msgstr "أداة تعقب الأخطاء"
 msgid "Copyright Assignment"
 msgstr ""
 
-#: common/footer.j2.inc:20 common/navigation.j2.inc:90
+#: common/footer.j2.inc:20 common/navigation.j2.inc:91
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr "المراجع"
@@ -65,97 +65,101 @@ msgid "Report issues with this website."
 msgstr "الابلاغ عن مشكلة بهذا الموقع."
 
 #: common/navigation.j2.inc:38
+msgid "Home"
+msgstr ""
+
+#: common/navigation.j2.inc:39
 msgid "About"
 msgstr "عن"
 
-#: common/navigation.j2.inc:39 common/old-news.j2.inc:7
+#: common/navigation.j2.inc:40 common/old-news.j2.inc:7
 #: template/news/index.html.j2:8
 msgid "News"
 msgstr "الاخبار"
 
-#: common/navigation.j2.inc:40 template/index.html.j2:289
+#: common/navigation.j2.inc:41 template/index.html.j2:289
 msgid "Applications"
 msgstr "التطبيقات"
 
-#: common/navigation.j2.inc:44
+#: common/navigation.j2.inc:45
 msgid "Community"
 msgstr "المجتمع"
 
-#: common/navigation.j2.inc:47 template/index.html.j2:292
+#: common/navigation.j2.inc:48 template/index.html.j2:292
 msgid "Engage"
 msgstr "اشترك"
 
-#: common/navigation.j2.inc:48
+#: common/navigation.j2.inc:49
 msgid "GSoC Projects"
 msgstr "مشروعات GSoC"
 
-#: common/navigation.j2.inc:50
+#: common/navigation.j2.inc:51
 msgid "Copyright for Contributors"
 msgstr "حق النشر للمشتركين"
 
-#: common/navigation.j2.inc:51
+#: common/navigation.j2.inc:52
 msgid "IRC Archive"
 msgstr "ارشيف IRC"
 
-#: common/navigation.j2.inc:58
+#: common/navigation.j2.inc:59
 msgid "Development"
 msgstr "تطوير"
 
-#: common/navigation.j2.inc:61
+#: common/navigation.j2.inc:62
 msgid "System Architecture"
 msgstr "هندسة النظام"
 
-#: common/navigation.j2.inc:63 template/roadmap.html.j2:6
+#: common/navigation.j2.inc:64 template/roadmap.html.j2:6
 msgid "Roadmap"
 msgstr "خريطة الطريق"
 
-#: common/navigation.j2.inc:65 template/gnurl.html.j2:186
+#: common/navigation.j2.inc:66 template/gnurl.html.j2:186
 msgid "Source Code"
 msgstr "Source Code"
 
-#: common/navigation.j2.inc:66
+#: common/navigation.j2.inc:67
 #, fuzzy
 #| msgid "Documentation"
 msgid "Source Code Documentation"
 msgstr "التوثيق"
 
-#: common/navigation.j2.inc:67
+#: common/navigation.j2.inc:68
 msgid "Continuous Integration"
 msgstr "الدمج المستمر"
 
-#: common/navigation.j2.inc:68
+#: common/navigation.j2.inc:69
 msgid "Development Tutorial"
 msgstr "درس التطوير"
 
-#: common/navigation.j2.inc:79
+#: common/navigation.j2.inc:80
 msgid "Documentation"
 msgstr "التوثيق"
 
-#: common/navigation.j2.inc:82 template/install.html.j2:6
+#: common/navigation.j2.inc:83 template/install.html.j2:6
 msgid "Install"
 msgstr "تحميل"
 
-#: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
+#: common/navigation.j2.inc:84 template/install-on-openwrt.html.j2:76
 msgid "Use"
 msgstr "استخدم"
 
-#: common/navigation.j2.inc:84
+#: common/navigation.j2.inc:85
 msgid "Videos"
 msgstr "مقاطع الڤيديو"
 
-#: common/navigation.j2.inc:85 template/glossary.html.j2:6
+#: common/navigation.j2.inc:86 template/glossary.html.j2:6
 msgid "Glossary"
 msgstr "قائمة المصطلحات"
 
-#: common/navigation.j2.inc:86
+#: common/navigation.j2.inc:87
 msgid "Handbook"
 msgstr "الدليل"
 
-#: common/navigation.j2.inc:88
+#: common/navigation.j2.inc:89
 msgid "REST API"
 msgstr ""
 
-#: common/navigation.j2.inc:89 template/reclaim/index.html.j2:83
+#: common/navigation.j2.inc:90 template/reclaim/index.html.j2:83
 msgid "FAQ"
 msgstr "أسئلة شائعه"
 

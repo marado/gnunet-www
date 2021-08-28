@@ -16,9 +16,9 @@
   </style>
 </noscript>
 <nav class="navbar top navbar-expand-md bg-near-black">
-  <a class="navbar-brand" href="{{ url_localized('index.html') }}">
+  <!--<a class="navbar-brand" href="{{ url_localized('index.html') }}">GNUnet
       <img src="{{ url_static('images/gnunet-logo-dark-only-text.png') }}" alt="GNUnet" height="25px" />
-  </a>
+  </a>-->
 
   <!-- menu button -->
   <button class="navbar-toggler navbar-toggler-right custom-toggler"
@@ -35,6 +35,7 @@
   <!-- navbar -->
   <div class="collapse navbar-collapse bg-near-black" id="navbarMain">
     <ul class="navbar-nav mr-auto nav">
+      <li class="nav-link"><a href="{{ url_localized('index.html') }}">{{ _("Home") }}</a></li>
       <li class="nav-link"><a href="{{ url_localized('about.html') }}">{{ _("About") }}</a></li>
       <li class="nav-link"><a href="{{ url_localized('news/index.html') }}">{{ _("News") }}</a></li>
       <li class="nav-link"><a href="{{ url_localized('applications.html') }}">{{ _("Applications") }}</a></li>

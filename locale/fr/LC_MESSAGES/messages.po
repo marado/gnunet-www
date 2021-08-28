@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-10 22:48+0200\n"
+"POT-Creation-Date: 2021-08-28 22:42+0200\n"
 "PO-Revision-Date: 2021-07-30 20:59+0000\n"
 "Last-Translator: Marianne Le Guennec <marianne.leguennec@gmail.com>\n"
-"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/>"
-"\n"
+"Language-Team: French <http://weblate.taler.net/projects/gnunet/website/fr/"
+">\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +40,7 @@ msgstr "GNUnet e.V."
 msgid "About GNUnet"
 msgstr "À propos de GNUnet"
 
-#: common/footer.j2.inc:14 common/navigation.j2.inc:64
+#: common/footer.j2.inc:14 common/navigation.j2.inc:65
 msgid "Bug Tracker"
 msgstr "Système de suivi des dysfonctionnements"
 
@@ -48,7 +48,7 @@ msgstr "Système de suivi des dysfonctionnements"
 msgid "Copyright Assignment"
 msgstr "Cession de droits d'auteur"
 
-#: common/footer.j2.inc:20 common/navigation.j2.inc:90
+#: common/footer.j2.inc:20 common/navigation.j2.inc:91
 #: template/developers.html.j2:24
 msgid "Bibliography"
 msgstr "Bibliographie"
@@ -62,95 +62,99 @@ msgid "Report issues with this website."
 msgstr "Signaler des problèmes sur ce site."
 
 #: common/navigation.j2.inc:38
+msgid "Home"
+msgstr ""
+
+#: common/navigation.j2.inc:39
 msgid "About"
 msgstr "À propos"
 
-#: common/navigation.j2.inc:39 common/old-news.j2.inc:7
+#: common/navigation.j2.inc:40 common/old-news.j2.inc:7
 #: template/news/index.html.j2:8
 msgid "News"
 msgstr "Actualités"
 
-#: common/navigation.j2.inc:40 template/index.html.j2:289
+#: common/navigation.j2.inc:41 template/index.html.j2:289
 msgid "Applications"
 msgstr "Applications"
 
-#: common/navigation.j2.inc:44
+#: common/navigation.j2.inc:45
 msgid "Community"
 msgstr "Communauté"
 
-#: common/navigation.j2.inc:47 template/index.html.j2:292
+#: common/navigation.j2.inc:48 template/index.html.j2:292
 msgid "Engage"
 msgstr "Participer"
 
-#: common/navigation.j2.inc:48
+#: common/navigation.j2.inc:49
 msgid "GSoC Projects"
 msgstr "Projets GSoC"
 
-#: common/navigation.j2.inc:50
+#: common/navigation.j2.inc:51
 msgid "Copyright for Contributors"
 msgstr "Droits d'auteur pour les contributeurs"
 
-#: common/navigation.j2.inc:51
+#: common/navigation.j2.inc:52
 msgid "IRC Archive"
 msgstr "Archive IRC"
 
-#: common/navigation.j2.inc:58
+#: common/navigation.j2.inc:59
 msgid "Development"
 msgstr "Développement"
 
-#: common/navigation.j2.inc:61
+#: common/navigation.j2.inc:62
 msgid "System Architecture"
 msgstr "Infrastructure Logiciel"
 
-#: common/navigation.j2.inc:63 template/roadmap.html.j2:6
+#: common/navigation.j2.inc:64 template/roadmap.html.j2:6
 msgid "Roadmap"
 msgstr "Feuille de route"
 
-#: common/navigation.j2.inc:65 template/gnurl.html.j2:186
+#: common/navigation.j2.inc:66 template/gnurl.html.j2:186
 msgid "Source Code"
 msgstr "Code Source"
 
-#: common/navigation.j2.inc:66
+#: common/navigation.j2.inc:67
 msgid "Source Code Documentation"
 msgstr "Documents Code Source"
 
-#: common/navigation.j2.inc:67
+#: common/navigation.j2.inc:68
 msgid "Continuous Integration"
 msgstr "Intégration continue"
 
-#: common/navigation.j2.inc:68
+#: common/navigation.j2.inc:69
 msgid "Development Tutorial"
 msgstr "Tutoriel de Développement"
 
-#: common/navigation.j2.inc:79
+#: common/navigation.j2.inc:80
 msgid "Documentation"
 msgstr "Documentation"
 
-#: common/navigation.j2.inc:82 template/install.html.j2:6
+#: common/navigation.j2.inc:83 template/install.html.j2:6
 msgid "Install"
 msgstr "Installer"
 
-#: common/navigation.j2.inc:83 template/install-on-openwrt.html.j2:76
+#: common/navigation.j2.inc:84 template/install-on-openwrt.html.j2:76
 msgid "Use"
 msgstr "Utiliser"
 
-#: common/navigation.j2.inc:84
+#: common/navigation.j2.inc:85
 msgid "Videos"
 msgstr "Vidéos"
 
-#: common/navigation.j2.inc:85 template/glossary.html.j2:6
+#: common/navigation.j2.inc:86 template/glossary.html.j2:6
 msgid "Glossary"
 msgstr "Glossaire"
 
-#: common/navigation.j2.inc:86
+#: common/navigation.j2.inc:87
 msgid "Handbook"
 msgstr "Manuel"
 
-#: common/navigation.j2.inc:88
+#: common/navigation.j2.inc:89
 msgid "REST API"
 msgstr "API REST"
 
-#: common/navigation.j2.inc:89 template/reclaim/index.html.j2:83
+#: common/navigation.j2.inc:90 template/reclaim/index.html.j2:83
 msgid "FAQ"
 msgstr "F.A.Q"
 
@@ -910,8 +914,8 @@ msgstr ""
 "membres, toutefois, les membres doivent soutenir GNUnet e.V et tout "
 "particulièrement contribuer au développement technique à hauteur de leurs "
 "moyens. Pour plus de détails, merci de vous référez à cette page <a href="
-"\"https://git.gnunet.org/gnunet-ev.git/\">Satzung (Charter)</a> ("
-"actuellement uniquement disponible en allemand, des traductions sont les "
+"\"https://git.gnunet.org/gnunet-ev.git/\">Satzung (Charter)</a> "
+"(actuellement uniquement disponible en allemand, des traductions sont les "
 "bienvenues)."
 
 #: template/ev.html.j2:52
@@ -931,11 +935,11 @@ msgstr ""
 "Vous pouvez trouver notre charte ainsi que la liste des membres depuis <a "
 "href=\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git."
 "gnunet.org/gnunet-ev.git/tree/satzung.tex</a>. Le bureau de direction actuel "
-"est composé de : <dl><dt>Présidence</dt><dd><a href=\"https://schanzen.eu\""
-">Martin Schanzenbach</a></dd><dt>Présidence intérimaire "
-"Vorsitz</dt><dd>t3sserakt</dd><dt>Intendant</dt><dd>Florian "
-"Dold</dd><dt>Beisitzer</dt><dd><a href=\"https://grothoff.org/christian/\""
-">Christian Grothoff</a>, ch3 </dd></dl>"
+"est composé de : <dl><dt>Présidence</dt><dd><a href=\"https://schanzen.eu"
+"\">Martin Schanzenbach</a></dd><dt>Présidence intérimaire Vorsitz</"
+"dt><dd>t3sserakt</dd><dt>Intendant</dt><dd>Florian Dold</dd><dt>Beisitzer</"
+"dt><dd><a href=\"https://grothoff.org/christian/\">Christian Grothoff</a>, "
+"ch3 </dd></dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
@@ -964,9 +968,9 @@ msgstr ""
 "plus bas. Notez que nous ne sommes pas en capacité de vous fournir des reçus "
 "de vos dons. Si vous avez l'intention de donner une importante somme "
 "d'argent, veuillez nous contacter au préalable pour discuter d'un "
-"arrangement sur mesure. "
-"<dl><dt>Bitcoin</dt><dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd><dt>SEPA/"
-"IBAN</dt><dd>DE67830654080004822650 (BIC/SWIFT : GENODEF1SLR)</dd></dl>"
+"arrangement sur mesure. <dl><dt>Bitcoin</"
+"dt><dd>1GNUnetpWeR9Zs3vipdvVywo1GseeksjUh</dd><dt>SEPA/IBAN</"
+"dt><dd>DE67830654080004822650 (BIC/SWIFT : GENODEF1SLR)</dd></dl>"
 
 #: template/faq.html.j2:12 template/faq.html.j2:23
 msgid "General"
