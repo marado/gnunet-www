@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-28 22:42+0200\n"
-"PO-Revision-Date: 2021-06-07 17:59+0000\n"
-"Last-Translator: Ariane Kristof <ariane@kristofs.de>\n"
-"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/"
-">\n"
+"POT-Creation-Date: 2021-06-10 22:48+0200\n"
+"PO-Revision-Date: 2021-08-30 19:06+0000\n"
+"Last-Translator: Stefan <eintritt@hotmail.com>\n"
+"Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -395,22 +395,18 @@ msgid "Current funding"
 msgstr "Aktuelle Finanzierung"
 
 #: template/about.html.j2:110
-#, fuzzy
 msgid ""
 "This project is receiving funding from the European Union’s Horizon 2020 "
 "research and innovation programme NGI Assure."
 msgstr ""
 "Dieses Projekt wird vom Forschungs- und Innovationsprogramm Horizon 2020 der "
-"Europäischen Union NGI Assure gefördert."
+"Europäischen Union „NGI Assure“ gefördert."
 
 #: template/about.html.j2:122
-#, fuzzy
-#| msgid "We are grateful for past funding from the following organizations:"
 msgid ""
 "We are grateful for free hosting offered by the following organizations:"
 msgstr ""
-"Wir sind dankbar für das kostenlose Hosting, das von folgenden "
-"Organisationen bereitgestellt wird:"
+"Wir sind dankbar für das kostenlose Hosting durch folgende Organisationen:"
 
 #: template/about.html.j2:131
 msgid "Past funding"
@@ -423,14 +419,12 @@ msgstr ""
 "Unterstützung:"
 
 #: template/applications.html.j2:7
-#, fuzzy
 msgid "Applications provided by GNUnet"
 msgstr "Von GNUnet bereitgestellte Anwendungen"
 
 #: template/applications.html.j2:13 template/gns.html.j2:7
-#, fuzzy
 msgid "The GNU Name System"
-msgstr "Das GNU-Namenssystem"
+msgstr "Das GNU Name System"
 
 #: template/applications.html.j2:15
 msgid ""
@@ -451,9 +445,8 @@ msgstr ""
 "einen robusten, effizienten and sofortigen Schlüsselentzugsmechanismus. -->"
 
 #: template/applications.html.j2:38
-#, fuzzy
 msgid "Self-sovereign, decentralized identity provider"
-msgstr "Selbstsouveräner, dezentraler Identitätsanbieter"
+msgstr "Selbstorganisierter dezentraler Dienst für digitale Identität"
 
 #: template/applications.html.j2:41
 msgid ""
@@ -500,7 +493,6 @@ msgid "Applications utilizing GNUnet"
 msgstr "Anwendungen auf Basis von GNUnet"
 
 #: template/applications.html.j2:97
-#, fuzzy
 msgid "GNU Taler (Alpha)"
 msgstr "GNU Taler (Alpha)"
 
@@ -516,7 +508,6 @@ msgstr ""
 "geringen Transaktionskosten ausgeführt."
 
 #: template/applications.html.j2:118
-#, fuzzy
 msgid "secushare"
 msgstr "secushare"
 
@@ -551,7 +542,6 @@ msgstr ""
 "Prüfung von Schlüsseln einsetzen."
 
 #: template/applications.html.j2:160
-#, fuzzy
 msgid "Cadet-GTK"
 msgstr "Cadet-GTK"
 
@@ -569,9 +559,8 @@ msgstr ""
 "entwickelt."
 
 #: template/applications.html.j2:180
-#, fuzzy
 msgid "groupchat"
-msgstr "Gruppenchat"
+msgstr "Chat"
 
 #: template/applications.html.j2:182
 msgid ""
@@ -638,7 +627,6 @@ msgid "libgnunetutil"
 msgstr "libgnunetutil"
 
 #: template/architecture.html.j2:73
-#, fuzzy
 msgid "APIs"
 msgstr "APIs"
 
@@ -847,7 +835,6 @@ msgstr ""
 "verschiedenen Versionen finden."
 
 #: template/download.html.j2:17
-#, fuzzy
 msgid "0.11.x series"
 msgstr "0.11.x Serie"
 
@@ -875,10 +862,8 @@ msgstr ""
 "abrufen:"
 
 #: template/engage.html.j2:6
-#, fuzzy
-#| msgid "Engage"
 msgid "Engage!"
-msgstr "Mach mit!"
+msgstr "Mitmachen!"
 
 #: template/ev.html.j2:6
 msgid "Verein zur F&ouml;rderung von GNUnet e.V."
@@ -944,16 +929,6 @@ msgid "Governance"
 msgstr "Führung"
 
 #: template/ev.html.j2:54
-#, fuzzy
-#| msgid ""
-#| "You can find our \"Satzung\", and the list of members under <a href="
-#| "\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git."
-#| "gnunet.org/gnunet-ev.git/tree/satzung.tex</a>. The current board consists "
-#| "of: <dl><dt>Vorsitz</dt> <dd><a href=\"https://schanzen.eu\">Martin "
-#| "Schanzenbach</a></dd> <dt>stellvertretender Vorsitz</dt> <dd>t3sserakt</"
-#| "dd> <dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a "
-#| "href=\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </"
-#| "dd> </dl>"
 msgid ""
 "You can find our charter, and the list of members under <a href=\"https://"
 "git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet.org/"
@@ -963,13 +938,14 @@ msgid ""
 "<dt>Kassenwart</dt> <dd>Florian Dold</dd> <dt>Beisitzer</dt> <dd> <a href="
 "\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd> </dl>"
 msgstr ""
-"Du findest unsere Satzung und das Mitgliederverzeichnis unter <a href="
-"\"https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet."
-"org/gnunet-ev.git/tree/satzung.tex</a>. Der Vorstand besteht gegenwärtig "
-"aus: <dl><dt>Vorsitz</dt>.<dd>.<a href=\"https://schanzen.eu\">Martin "
-"Schanzenbach</a></dd>.<dt>stellvertretender Vorsitz</dt>.<dd>t3sserakt</dd>."
-"<dt>Kassenwart</dt>.<dd>Florian Dold</dd>.<dt>Beisitzer</dt>.<dd>.<a href="
-"\"https://grothoff.org/christian/\">Christian Grothoff</a>, ch3 </dd>.</dl>"
+"Du findest unsere Satzung und das Mitgliederverzeichnis unter <a href=\"https"
+"://git.gnunet.org/gnunet-ev.git/tree/satzung.tex\">https://git.gnunet.org/"
+"gnunet-ev.git/tree/satzung.tex</a>. Der Vorstand besteht gegenwärtig aus: "
+"<dl><dt>Vorsitz</dt>.<dd>.<a href=\"https://schanzen.eu\">Martin "
+"Schanzenbach</a></dd>.<dt>stellvertretender "
+"Vorsitz</dt>.<dd>t3sserakt</dd>.<dt>Kassenwart</dt>.<dd>Florian "
+"Dold</dd>.<dt>Beisitzer</dt>.<dd>.<a href=\"https://grothoff.org/christian/\""
+">Christian Grothoff</a>, ch3 </dd>.</dl>"
 
 #: template/ev.html.j2:73
 msgid "Official Meeting Notes"
@@ -1011,7 +987,6 @@ msgid "Features"
 msgstr "Merkmale"
 
 #: template/faq.html.j2:15 template/faq.html.j2:694
-#, fuzzy
 msgid "Error messages"
 msgstr "Fehlermeldungen"
 
