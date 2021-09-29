@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-09-29 13:42+0200\n"
+"POT-Creation-Date: 2021-09-29 13:55+0200\n"
 "PO-Revision-Date: 2021-08-30 19:06+0000\n"
 "Last-Translator: Stefan <eintritt@hotmail.com>\n"
 "Language-Team: German <http://weblate.taler.net/projects/gnunet/website/de/"
@@ -74,7 +74,7 @@ msgstr "Über GNUnet"
 msgid "News"
 msgstr "Neues"
 
-#: common/navigation.j2.inc:41 template/index.html.j2:335
+#: common/navigation.j2.inc:41 template/index.html.j2:336
 msgid "Applications"
 msgstr "Anwendungen"
 
@@ -82,7 +82,7 @@ msgstr "Anwendungen"
 msgid "Community"
 msgstr "Gemeinschaft"
 
-#: common/navigation.j2.inc:48 template/index.html.j2:338
+#: common/navigation.j2.inc:48 template/index.html.j2:339
 msgid "Engage"
 msgstr "Mach mit"
 
@@ -3687,19 +3687,20 @@ msgid "Sustainability"
 msgstr ""
 
 #: template/index.html.j2:254
+#, python-format
 msgid ""
 "GNUnet does not require a decentralized, public ledger. This eliminates the "
-"need for consensus mechanisms, which do not scale and are ecologically "
-"unsustainable. GNUnet and its applications employ decentralization only "
-"where it provides the most value and use more efficient technology stacks "
-"where needed."
+"need for wasteful, continuous consensus mechanisms, which do not scale and "
+"are ecologically unsustainable. GNUnet and its applications employ "
+"decentralization only <a href=\"%(url)s\"> where it provides the most value "
+"and use more efficient technology stacks where needed</a>."
 msgstr ""
 
-#: template/index.html.j2:275
+#: template/index.html.j2:276
 msgid "Decentralization is the key, but hard"
 msgstr "Dezentralisierung ist der Schlüssel, aber schwierig"
 
-#: template/index.html.j2:278
+#: template/index.html.j2:279
 msgid ""
 "<!-- replaced with Proposal from Fabian Gerlach: It seems as if every other "
 "distributed or P2P project develops its own library stack, covering "
@@ -3719,11 +3720,11 @@ msgstr ""
 "<!-- TODO: rework this sentence. --> Dieses treibt den Aufwand und erhöht "
 "die Anzahl möglicher Fehlerquellen."
 
-#: template/index.html.j2:310
+#: template/index.html.j2:311
 msgid "GNUnet is a framework"
 msgstr "GNUnet ist ein Rahmen"
 
-#: template/index.html.j2:312
+#: template/index.html.j2:313
 msgid ""
 "It offers a metadata-preserving foundation for your application. It offers "
 "components for addressing, reliable encrypted channels with advanced routing "
@@ -3735,11 +3736,11 @@ msgstr ""
 "fortgeschrittenem Routing sowie Ressourcenerkennung und Namensgebung. Unsere "
 "Arbeit gründet sich auf fast zwei Jahrzehnte Forschungsarbeit."
 
-#: template/index.html.j2:332
+#: template/index.html.j2:333
 msgid "Learn more"
 msgstr "Mehr erfahren"
 
-#: template/index.html.j2:341
+#: template/index.html.j2:342
 msgid "Get started"
 msgstr "Erste Schritte"
 

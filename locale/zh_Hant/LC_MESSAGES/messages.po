@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-09-29 13:42+0200\n"
+"POT-Creation-Date: 2021-09-29 13:55+0200\n"
 "PO-Revision-Date: 2021-08-24 08:59+0000\n"
 "Last-Translator: Ting-Yi Fu <futingyi0215@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <http://weblate.taler.net/projects/"
@@ -74,7 +74,7 @@ msgstr "關於"
 msgid "News"
 msgstr "最新消息"
 
-#: common/navigation.j2.inc:41 template/index.html.j2:335
+#: common/navigation.j2.inc:41 template/index.html.j2:336
 msgid "Applications"
 msgstr "應用程式"
 
@@ -82,7 +82,7 @@ msgstr "應用程式"
 msgid "Community"
 msgstr "社群"
 
-#: common/navigation.j2.inc:48 template/index.html.j2:338
+#: common/navigation.j2.inc:48 template/index.html.j2:339
 msgid "Engage"
 msgstr "參與"
 
@@ -3196,19 +3196,20 @@ msgid "Sustainability"
 msgstr ""
 
 #: template/index.html.j2:254
+#, python-format
 msgid ""
 "GNUnet does not require a decentralized, public ledger. This eliminates the "
-"need for consensus mechanisms, which do not scale and are ecologically "
-"unsustainable. GNUnet and its applications employ decentralization only "
-"where it provides the most value and use more efficient technology stacks "
-"where needed."
+"need for wasteful, continuous consensus mechanisms, which do not scale and "
+"are ecologically unsustainable. GNUnet and its applications employ "
+"decentralization only <a href=\"%(url)s\"> where it provides the most value "
+"and use more efficient technology stacks where needed</a>."
 msgstr ""
 
-#: template/index.html.j2:275
+#: template/index.html.j2:276
 msgid "Decentralization is the key, but hard"
 msgstr "去中心化是關鍵，但很難實踐"
 
-#: template/index.html.j2:278
+#: template/index.html.j2:279
 msgid ""
 "<!-- replaced with Proposal from Fabian Gerlach: It seems as if every other "
 "distributed or P2P project develops its own library stack, covering "
@@ -3225,11 +3226,11 @@ msgstr ""
 "於構建P2P系統的通用元件和工具。\n"
 "<!-- TODO: rework this sentence. -->這會增加工作量並且增加潛在的漏洞數量。"
 
-#: template/index.html.j2:310
+#: template/index.html.j2:311
 msgid "GNUnet is a framework"
 msgstr "GNUnet 是一個框架"
 
-#: template/index.html.j2:312
+#: template/index.html.j2:313
 msgid ""
 "It offers a metadata-preserving foundation for your application. It offers "
 "components for addressing, reliable encrypted channels with advanced routing "
@@ -3239,11 +3240,11 @@ msgstr ""
 "它為您的應用程式提供了保留元資料的基礎。它提供用於尋址、具有高級路由和資源發"
 "現和命名的可靠加密通道的組件。我們的工作基於跨越近二十年的持續研究。"
 
-#: template/index.html.j2:332
+#: template/index.html.j2:333
 msgid "Learn more"
 msgstr "了解更多"
 
-#: template/index.html.j2:341
+#: template/index.html.j2:342
 msgid "Get started"
 msgstr "開始"
 

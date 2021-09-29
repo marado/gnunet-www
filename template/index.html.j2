@@ -251,13 +251,14 @@
         <section>
         <h2>{{ _("Sustainability") }}</h2>
         <p>
-        {% trans %}
+        {% trans url=url_localized('news/2021-05-DISSENS.html') %}
         GNUnet does not require a decentralized, public ledger.
         This eliminates the need for wasteful, continuous consensus
         mechanisms, which do not scale and are ecologically unsustainable.
-        GNUnet and its applications employ decentralization only where it
+        GNUnet and its applications employ decentralization only
+        <a href="{{ url }}"> where it
         provides the most value and use more efficient technology stacks where
-        needed.
+        needed</a>.
           {% endtrans %}
         </p>
         </section>
