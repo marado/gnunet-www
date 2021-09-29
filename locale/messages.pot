@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-28 22:42+0200\n"
+"POT-Creation-Date: 2021-09-29 13:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-#: common/navigation.j2.inc:41 template/index.html.j2:289
+#: common/navigation.j2.inc:41 template/index.html.j2:335
 msgid "Applications"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Community"
 msgstr ""
 
-#: common/navigation.j2.inc:48 template/index.html.j2:292
+#: common/navigation.j2.inc:48 template/index.html.j2:338
 msgid "Engage"
 msgstr ""
 
@@ -2562,10 +2562,33 @@ msgid ""
 msgstr ""
 
 #: template/index.html.j2:229
+msgid "The state of the art is inefficient"
+msgstr ""
+
+#: template/index.html.j2:231
+msgid ""
+"The ongoing hype around distributed ledgers and blockchains is "
+"detrimental to the health of our planet."
+msgstr ""
+
+#: template/index.html.j2:252
+msgid "Sustainability"
+msgstr ""
+
+#: template/index.html.j2:254
+msgid ""
+"GNUnet does not require a decentralized, public ledger. This eliminates "
+"the need for consensus mechanisms, which do not scale and are "
+"ecologically unsustainable. GNUnet and its applications employ "
+"decentralization only where it provides the most value and use more "
+"efficient technology stacks where needed."
+msgstr ""
+
+#: template/index.html.j2:275
 msgid "Decentralization is the key, but hard"
 msgstr ""
 
-#: template/index.html.j2:232
+#: template/index.html.j2:278
 msgid ""
 "<!-- replaced with Proposal from Fabian Gerlach: It seems as if every "
 "other distributed or P2P project develops its own library stack, covering"
@@ -2576,11 +2599,11 @@ msgid ""
 " increases the potential number of vulnerabilities."
 msgstr ""
 
-#: template/index.html.j2:264
+#: template/index.html.j2:310
 msgid "GNUnet is a framework"
 msgstr ""
 
-#: template/index.html.j2:266
+#: template/index.html.j2:312
 msgid ""
 "It offers a metadata-preserving foundation for your application. It "
 "offers components for addressing, reliable encrypted channels with "
@@ -2588,11 +2611,11 @@ msgid ""
 "continuous research spanning almost two decades."
 msgstr ""
 
-#: template/index.html.j2:286
+#: template/index.html.j2:332
 msgid "Learn more"
 msgstr ""
 
-#: template/index.html.j2:295
+#: template/index.html.j2:341
 msgid "Get started"
 msgstr ""
 

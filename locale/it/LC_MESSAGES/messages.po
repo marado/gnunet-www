@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-08-28 22:42+0200\n"
+"POT-Creation-Date: 2021-09-29 13:42+0200\n"
 "PO-Revision-Date: 2021-06-19 12:58+0000\n"
 "Last-Translator: Francesca Cipriani <cesca.cipriani@gmail.com>\n"
 "Language-Team: Italian <http://weblate.taler.net/projects/gnunet/website/it/"
@@ -74,7 +74,7 @@ msgstr "Riguardo a"
 msgid "News"
 msgstr "Novità"
 
-#: common/navigation.j2.inc:41 template/index.html.j2:289
+#: common/navigation.j2.inc:41 template/index.html.j2:335
 msgid "Applications"
 msgstr "Applicazioni"
 
@@ -82,7 +82,7 @@ msgstr "Applicazioni"
 msgid "Community"
 msgstr "Community"
 
-#: common/navigation.j2.inc:48 template/index.html.j2:292
+#: common/navigation.j2.inc:48 template/index.html.j2:338
 msgid "Engage"
 msgstr "Partecipa"
 
@@ -3359,10 +3359,33 @@ msgid ""
 msgstr ""
 
 #: template/index.html.j2:229
+msgid "The state of the art is inefficient"
+msgstr ""
+
+#: template/index.html.j2:231
+msgid ""
+"The ongoing hype around distributed ledgers and blockchains is detrimental "
+"to the health of our planet."
+msgstr ""
+
+#: template/index.html.j2:252
+msgid "Sustainability"
+msgstr ""
+
+#: template/index.html.j2:254
+msgid ""
+"GNUnet does not require a decentralized, public ledger. This eliminates the "
+"need for consensus mechanisms, which do not scale and are ecologically "
+"unsustainable. GNUnet and its applications employ decentralization only "
+"where it provides the most value and use more efficient technology stacks "
+"where needed."
+msgstr ""
+
+#: template/index.html.j2:275
 msgid "Decentralization is the key, but hard"
 msgstr ""
 
-#: template/index.html.j2:232
+#: template/index.html.j2:278
 msgid ""
 "<!-- replaced with Proposal from Fabian Gerlach: It seems as if every other "
 "distributed or P2P project develops its own library stack, covering "
@@ -3373,11 +3396,11 @@ msgid ""
 "potential number of vulnerabilities."
 msgstr ""
 
-#: template/index.html.j2:264
+#: template/index.html.j2:310
 msgid "GNUnet is a framework"
 msgstr ""
 
-#: template/index.html.j2:266
+#: template/index.html.j2:312
 msgid ""
 "It offers a metadata-preserving foundation for your application. It offers "
 "components for addressing, reliable encrypted channels with advanced routing "
@@ -3385,13 +3408,13 @@ msgid ""
 "spanning almost two decades."
 msgstr ""
 
-#: template/index.html.j2:286
+#: template/index.html.j2:332
 #, fuzzy
 #| msgid "read more"
 msgid "Learn more"
 msgstr "Maggiori informazioni"
 
-#: template/index.html.j2:295
+#: template/index.html.j2:341
 msgid "Get started"
 msgstr ""
 
