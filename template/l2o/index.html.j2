@@ -1,0 +1,215 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("NGI Assure project: Layer-2-Overlay") }}</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-2 d-none d-lg-block"><!-- for large viewports show menu for better orientation -->
+      <nav class="nav subnav position-fixed flex-column border-right" style="position:fixed">
+      <a class="nav-link" href="#idea">{{ _("Project motivation") }}</a>
+      <a class="nav-link" href="#testframework">{{ _("New Test Framework") }}</a>
+      <a class="nav-link" href="#milestones">{{ _("Milestones") }}</a>
+      <a class="nav-link" href="#milestone1">{{ _("Milestone 1") }}</a>
+      <a class="nav-link" href="#milestone2">{{ _("Milestone 2") }}</a>
+      <a class="nav-link" href="#milestone3">{{ _("Milestone 3") }}</a>
+      <a class="nav-link" href="#milestone4">{{ _("Milestone 4") }}</a>
+      <a class="nav-link" href="#milestone5">{{ _("Milestone 5") }}</a>
+      <a class="nav-link" href="#milestone6">{{ _("Milestone 6") }}</a>
+      </nav>
+    </div>
+    <div class="col">
+
+      <section>
+        <p>
+        {% trans %}
+          This project was funded through the NGI Assure Fund, a fund established by <a href="https://nlnet.nl/project/GNUnet-L2/">NLnet</a>.
+        {% endtrans %}
+        </p>
+      </section>
+
+
+      <h2><a name="idea" class="subnav-anchor"></a>{{ _("Project motivation") }}</h2>
+
+      <section>
+        <h4>The GNUnet transport subsystem</h4>
+        <p>
+          {% trans %}
+	  The <a href="https://docs.gnunet.org/handbook/gnunet.html#TRANSPORT-Subsystem">current</a> GNUnet TRANSPORT architecture with its pluggable transport mechanism (TCP, UDP, HTTP(S) and other protocols) together with the ATS subsystem for bandwidth allocation and choosing plugins has several <a href="https://docs.gnunet.org/handbook/gnunet.html#TRANSPORT_002dNG-Subsystem">issues</a> with its design.
+
+	  With the Layer-2-Overlay project we like to implement the <a href="https://docs.gnunet.org/handbook/gnunet.html#Design-goals-of-TNG">design goals</a> of the future GNUnet TRANSPORT Next Generation (TNG) subsystem.
+
+	  One major change in the design is to separate the protocol plugins into processes (now called communicators) detached from the main transport service. Three communicators were already implemented (TCP, UDP and UNIX sockets).
+	  The old transport code is hard to maintain, because it is cluttered with "manipulation" support code for TESTBED (the actual testing framework). Testing TRANSPORT is a hard task, especially with TESTBED which has its own design flaws, and test code which is very hard to read to get an idea what the test code is doing. Therefore the first task (milestone 1) is to implement a new testing framework which uses network namespaces to make testing of TNG much easier. Have a look into what is planed for Layer-2-Overlay in the <a href="#milestones">milestones</a>.
+          {% endtrans %}
+        </p>
+      </section>
+
+      <h2><a name="testframework" class="subnav-anchor"></a>{{ _("New Test Framwork") }}</h2>
+
+      <p>The new testing framework consists of two major parts. First the command style pattern borrowed from the GNU Taler project, second a network namespace setup, to have a suitable test setup for testing several network topologies with lossy connections, firewalls, etc..</p>
+
+      <h3><a name="cmd" class="subnav-anchor"></a>{{ _("Command Style Pattern") }}</h3>
+      
+      <section>
+        <p>
+          {% trans %}
+	  The new style of writing tests in GNUnet is borrowed from the <a href="https://docs.taler.net/developers-manual.html#testing-library">GNU Taler testing library</a>. In <a href="#milestone1">milestone 1</a> we implemented commands to setup the <a href="#netjails">netjails</a>, the test environment for each peer, to start a single peers and sending a simple test message. Because some commands depend on other commands to be finished, and those commands are asynchronous, we needed additional functionality in the command interpreter library to block execution until some commands are finished (e.g. all peers needs to be running, before peers starting to send messages). For a detailed description have a look into the <a href="testng.html">testing ng documentation</a>.           
+            {% endtrans %}
+        </p>
+      </section>
+
+      <h3><a name="netjails" class="subnav-anchor"></a>{{ _("Netjails") }}</h3>
+      
+      <section>
+        <p>
+          {% trans %}
+    	          To do extensive testing of the new transport implementation one needs to simulate various network topologies to enable faking network characteristics like lossy connections or firewalls. To achieve this we are working with <a href="https://www.man7.org/linux/man-pages/man8/ip-netns.8.html">network namespace</a>. We have commands for starting and stopping network namespaces. Those commands are scripts, which are using several shell commands to setup the network namespace. A third script then is responsible for start a GNUnet helper. This helper can load plugins. Each plugin represents some test case. Per node in the network namespaces one helper is started, which means on each node is a local interpreter loop running. For a detailed description have a look into the <a href="testng.html">testing ng documentation</a>. 
+            {% endtrans %}
+        </p>
+      </section>
+
+      <h2><a name="milestones" class="subnav-anchor"></a>{{ _("Milestones") }}</h2>
+
+      <p>The next milestone to be reached is milestone 3. One half of it, the udp backchannel test is already implemented, and some bugs in the tng service were fixed.</p>
+
+      <h3><a name="milestone1" class="subnav-anchor"></a>{{ _("Milestone 1 Test Infrastructure and minimal Test Case") }}</h3>
+      <section>
+        <p>
+          {% trans %}
+        The first subtask consists of implementing a framework for setting up VLANs between network namespaces and a framework to test communication between peers which are running in those VLANs. Finally a minimal Test Case will be implemented. Despite the fact that the transport service is already able to use several communicators (transport protocol implementations), it will only use the tcp communicator, not the unix socket nor the udp communicator, which already are in place and working.
+
+	<ul>	
+    <li>SUID helpers to setup network namespace and starting peers with network namespace.</li>
+    <li>Basic transport-level operations (get address, send, receive, connect).</li>
+    <li>Peers connected through test and transfer data.</li>
+    </ul>
+            {% endtrans %}
+        </p>
+	<h4>Deliverable</h4>
+	<p>
+          {% trans %}
+	  First MVP which uses the TCP communicator to send messages between peers. The deliverable can be verified through out the specific test cases running in the GNUnet CI.
+
+	  <a href="mile1.html">Details</a>
+	  {% endtrans %}
+        </p>
+      </section>
+
+      <h3><a name="milestone2" class="subnav-anchor"></a>{{ _("Milestone 2 Enhancing Test Framework") }}</h3>
+      <section>
+        <p>
+          {% trans %}
+            To test more complex functionality we need to enhance the capabilities of the testing framework. Hooks for performance measurement will be implemented.
+	    <ul>	
+    <li>Enhancing transport-level operations.</li>
+    <li>Block execution of commands at a peer. (Barriers).</li>
+    </ul>
+            {% endtrans %}
+        </p>
+	<h4>Deliverable</h4>
+	<p>
+          {% trans %}
+	  Outcome of this deliverable are advanced test case (again verifiable in the GNUnet continuous integration (CI)) with performance measurements.
+
+<a href="mile2.html">Details</a>
+	  {% endtrans %}
+        </p>
+      </section>
+
+      <h3><a name="milestone3" class="subnav-anchor"></a>{{ _("Milestone 3 UDP integration") }}</h3>
+      <section>
+        <p>
+          {% trans %}
+            With this subtask I will implement enhanced L2O features like using unidirectional transport protocols with backchannels. Addresses by which a peer can be reached can be delivered on handshake or by  UDP broadcast. With this milestone the transport service will be able to use more than one communicator (pluggable transport).
+	    <ul>	
+    <li>unidirectional communication and backchannels.</li>
+    <li>UDP broadcast.</li>
+    </ul>
+            {% endtrans %}
+        </p>
+	<h4>Deliverable</h4>
+	<p>
+          {% trans %}
+	  The CI contains test case which uses the UDP protocol to message between peers and to learn about “foreign” peers.
+
+	  <a href="mile3.html">Details</a>
+	  {% endtrans %}
+        </p>
+      </section>
+
+      <h3><a name="milestone4" class="subnav-anchor"></a>{{ _("Milestone 4 Distance Vector") }}</h3>
+      <section>
+        <p>
+          {% trans %}
+            In this subtask I will enhance connectivity to peers not directly connected. Therefore peers have to act as relay. To achieve this I will implement the distance vector protocol.
+            {% endtrans %}
+        </p>
+	<h4>Deliverable</h4>
+	<p>
+          {% trans %}
+	  The CI contains test cases with a setup of peers not connected directly. The test cases proof that each peer can reach any other peer.
+	  {% endtrans %}
+        </p>
+      </section>
+
+      <h3><a name="milestone5" class="subnav-anchor"></a>{{ _("Milestone 5 NAT Traversal") }}</h3>
+      <section>
+        <p>
+          {% trans %}
+            This subtask will make peers behind NAT reachable. Two simple traversal methods will be implemented.
+	    <ul>
+    <li>NAT traversal via UpnPC.</li>
+    <li>Autonomous NAT Traversal using fake ICMP messages.</li>
+    </ul>
+            {% endtrans %}
+        </p>
+	<h4>Deliverable</h4>
+	<p>
+          {% trans %}
+	  The CI contains test case with a peer setup containing peer behind a NAT. The test cases 
+   	proof that each peer can be reached, even if that peer is behind a NAT. The test case are 	measuring the performance. This measurement is used to compare with the outcome of the 	next milestone. This result of this milestone will be a first stable release. 
+	  {% endtrans %}
+        </p>
+      </section>
+
+      <h3><a name="milestone6" class="subnav-anchor"></a>{{ _("Milestone 6 Optimization") }}</h3>
+      <section>
+        <p>
+          {% trans %}
+            In this subtask I will implement algorithms (flow and congestion control, quality of service optimizations) which will select the optimal transport protocol for a given situation. 
+
+I will analyze potential performance gains by integrating libraries of the interpeer project. If the effort of integrating interpeer presumably would lead to better performance than other optimizations of the same amount of work, this integration is done.
+
+I will finish the project with a performance analysis to optimize the selection logic.
+       <ul>
+    <li>Queue management.
+    <li>Interpeer project synergy
+    	<ol>
+        <li>Analysis of the interpeer project in regard to integrate it into GNUnet.</li>
+        <li>Optional integration into GNUnet, if it can be done at all and in a reasonable amount of work.</li>
+	</ol>
+    <li>Commands for performance measurement(s).</li>		
+    <li>Performance analysis.</li>
+    </ul>
+            {% endtrans %}
+        </p>
+	<h4>Deliverable</h4>
+	<p>
+          {% trans %}
+	        The test cases in the CI are measuring the performance gains. This measurement can be compared with the measurement of milestone 5. Again one outcome of this milestone will be a stable release.
+
+      Documentation of the interpeer project analysis.
+	  {% endtrans %}
+        </p>
+      </section>
+
+      
+
+    </div>
+  </div>
+
+</article>
+{% endblock body_content %}

@@ -1,0 +1,158 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("NGI Assure project: Layer-2-Overlay") }}</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-2 d-none d-lg-block"><!-- for large viewports show menu for better orientation -->
+      <nav class="nav subnav position-fixed flex-column border-right" style="position:fixed">
+      <a class="nav-link" href="index.html#idea">{{ _("Project main page") }}</a>
+      </nav>
+    </div>
+    <div class="col">
+
+      <h2>The next generation testing framework</h2>
+
+      <section>
+        <h4><a name="netjail" class="subnav-anchor"></a>{{ _("Netjail setup and execution") }}</h4>
+        <p>
+          {% trans %}
+	  Netjail is the GNUnet naming for having several <a href="https://www.man7.org/linux/man-pages/man8/ip-netns.8.html">network namespaces</a>, being isolated from each other to test how GNUnet nodes with limited connectivity behave, and how the new transport next generation implementation can help to circumvent the connectivity obstacles. The network namespaces are span a network with globally known nodes and several subnets separated from each other via a single router.
+
+	  We have three scripts for the test setup:
+	  
+	  <ul>
+	    <li>netjail_start.sh: A script to setup the network namespaces. This script takes three arguments. The first is either the name of a configuration for the test setup topology or a string containing the topology information. The second is the process id of the test. The third is a flag if the first parameter contains the name of the configuration file or the topology string.</li>
+	    <li>netjail_exec.sh: A script to run some command in a specific namespace. This script takes eight arguments. The first is the index of a node in a namespace for which we like to execute a command. The second is the index of the namespace of the node. The third is the command to execute, the fourth is the number of subnets, the fifth the number of nodes in each subnet, the sixth is the identifier used by the <a href="https://www.man7.org/linux/man-pages/man8/ip-netns.8.html">ip-netns</a> command, the sixth is a flag is the topology information is given via a topology file of a string containing the topology information..</li>
+	    <li>netjail_stop.sh: A script which remove all the network namespace setup by netjail_start.sh. The arguments are the same as those for netjail_start.sh.</li>
+	    </ul>
+
+	    The is a generic test binary (test_transport_start_with_config) which will start the above mentioned scripts. Because creating network namespaces is only permitted for privileged users the generic test binary is not start directly, but via scripts. This script starts the generic binary using the command unshare. Using unshare one can create a namespace with its own user namespace, where creating network namespaces is allowed. Precondition to do this with unshare, is to set the kernel.unprivileged_userns_clone kernel parameter.  
+          {% endtrans %}
+        </p>
+      </section>
+
+      <h4><a name="cmdhelper" class="subnav-anchor"></a>{{ _("CMD helper and testcase plugins") }}</h4>
+      
+      <section>
+        <p>
+          {% trans %}
+	  Although netjail_exec.sh can execute an arbitrary command in the ng testing framework a special command is used: gnunet-cmds-helper
+	  This commands itself is of a special kind named helper processes which communicates via GNUNET_MessageHeaders on stdin/stdout with the process that started the helper. The gnunet-cmds-helper is used to load testcase plugins. Those plugins are implementations of an api which is used to start different test cases. Those plugins are dynamically loaded by gnunet-cmds-helper. Each plugin defines the commands which are running in a local interpreter loop started by the helper on that specific network namespace node. The plugins are also responsible for the communication via the helper with the master interpreter loop.
+            {% endtrans %}
+        </p>
+      </section>
+      <h4><a name="cmdpattern" class="subnav-anchor"></a>{{ _("Command Pattern") }}</h4>
+      
+      <section>
+        <p>
+          {% trans %}
+	  The testing framework borrowed from the <a href="https://docs.taler.net/developers-manual.html#testing-library">GNU Taler testing library</a> was extended to handle asychronous commands. Therefore a struct GNUNET_TESTING_AsyncContext was added to struct GNUNET_TESTING_Command. By default the continuation function of GNUNET_TESTING_AsyncContext is the interpreter_next function of the interpreter loop (blocking asynchronous command) which will be executed calling GNUNET_TESTING_async_finish, when the asynchronous task finished, but also can be any other function to be executed when the asynchronous task is non blocking.
+          {% endtrans %}
+        </p>
+      </section>
+      <h4><a name="cmdpattern" class="subnav-anchor"></a>{{ _("Topology Configuration") }}</h4>
+      
+      <section>
+        <p>
+          {% trans %}
+	  The topology of the netjail setup can be configured via a configuration file, or with a configuration string handed over to the generic binary for starting netjail based tests.</br></br>
+
+Both method can be examined in two example test scripts</br></br>
+
+test_transport_send_simple.sh</br></br>
+
+and</br></br>
+
+test_transport_send_simple_string.sh</br></br>
+
+The Syntax of the configuration is as follows.</br></br> 
+
+The configuration string is structured by lines and the delimiter ':' used for seperating key/value(s) pairs and the chars '{' and '}' for grouping several key/value pairs as value and '|' to separate a group of values from the key/value(s) pair identifying a line.</br></br>
+
+Keys are</br></br>
+
+<table width="100%">
+		<tr>
+			<td width="10%" style="vertical-align: top;">M</td><td width="90%" style="vertical-align: top;">The number of natted subnets in the topology.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">N</td><td width="90%" style="vertical-align: top;">The number of nodes in each subnet.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">X</td><td width="90%" style="vertical-align: top;">The Number of globally known (not natted) nodes.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">K</td><td width="90%" style="vertical-align: top;"> A globally known (not natted) node. The number value identifies the node.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">T</td><td width="90%" style="vertical-align: top;">The default test plugin to execute.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">R</td><td width="90%" style="vertical-align: top;">A router of a subnet.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">P</td><td width="90%" style="vertical-align: top;">A subnet node with two key values, the first one for identifying the subnet and the second for identifying the node in the subnet.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">connect</td><td width="90%" style="vertical-align: top;">Can be one of several grouped values of the P, K or R key. Configuring a connection to another node. </br></br>
+
+            The value of the connect key is a node key (P or K) with two resp. one number value identifying the node, and an additional value    
+            configuring a protocol. </br></br>
+
+            If the connect key is used in a line configuring a node it is used to configure a connection, which will result in the node identified by the 
+            line P or K key will try to connect nodes also identified with the P or K key via the configured protocol.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">tcp_port</td><td width="90%" style="vertical-align: top;">Can be a grouped value of the R key. The value of the tcp_port can be 0 or 1, if a port forwarding to the first (index 1) node of a subnet is not or is configured for the 
+	    tcp protocol.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">udp_port</td><td width="90%" style="vertical-align: top;">Can be a grouped value of the R key. The value of the tcp_port can be 0 or 1, if a port forwarding to the first (index 1) node of a subnet is not or is configured for the 
+	    udp protocol.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="10%" style="vertical-align: top;">plugin</td><td width="90%" style="vertical-align: top;">Can be a grouped value of the P or K key. The value is the name of a plugin which will run on that peer instead of the default plugin defined by key K.</td>
+		</tr>
+	    </table>	
+          {% endtrans %}
+        </p>
+      </section>
+    </div>
+  </div>
+
+</article>
+{% endblock body_content %}

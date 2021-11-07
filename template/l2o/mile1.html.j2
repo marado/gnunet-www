@@ -1,0 +1,135 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("NGI Assure project: Layer-2-Overlay") }}</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-2 d-none d-lg-block"><!-- for large viewports show menu for better orientation -->
+      <nav class="nav subnav position-fixed flex-column border-right" style="position:fixed">
+      <a class="nav-link" href="index.html#idea">{{ _("Project main page") }}</a>
+      </nav>
+    </div>
+    <div class="col">
+
+      <h2>Implementation details milestone 1</h2>
+
+      <section>
+        <h4><a name="netjail" class="subnav-anchor"></a>{{ _("Master Loop") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/test_transport_api_cmd_simple_send.c</td><td width="60%" style="vertical-align: top;">Binary for starting the simple send test. Obsolete in current code base!</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/netjail_start.sh</td><td width="60%" style="vertical-align: top;">Script to setup the netjail topology. Will be execute by the following command. </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_netjail_start.c</td><td width="60%" style="vertical-align: top;">Command to create the netjail setup.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/netjail_exec.sh</td><td width="60%" style="vertical-align: top;">Script to execute a local test interpreter per node.  Will be execute by the following command.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_netjail_start_testsystem.c</td><td width="60%" style="vertical-align: top;">Command to start the helper processes.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_netjail_stop_testsystem.c</td><td width="60%" style="vertical-align: top;">Command to stop the helper processes.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/netjail_stop.sh</td><td width="60%" style="vertical-align: top;">Script to stop the netjail topology.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_netjail_stop.c</td><td width="60%" style="vertical-align: top;">Command to stop the test setup.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+	  </table>
+          {% endtrans %}
+        </p>
+	<h4><a name="netjail" class="subnav-anchor"></a>{{ _("Local Loop") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/gnunet-cmds-helper.c</td><td width="60%" style="vertical-align: top;">Helper to start the local interpreter loop.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/test_transport_plugin_cmd_simple_send.c</td><td width="60%" style="vertical-align: top;">Plugin which creates the cmds for the simple send test case.</td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_system_create.c</td><td width="60%" style="vertical-align: top;">Command to create a local test system.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/transport_api_cmd_start_peer.c</td><td width="60%" style="vertical-align: top;">Command to start a peer.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/transport_api_cmd_connecting_peers.c</td><td width="60%" style="vertical-align: top;"> Command to connect two peers.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td>src/transport/transport_api_cmd_send_simple.c</td><td width="60%" style="vertical-align: top;">Command to send a simple message from one peer to another.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/transport_api_cmd_stop_peer.c</td><td width="60%" style="vertical-align: top;">Command to stop a peer.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_system_destroy.c</td><td width="60%" style="vertical-align: top;">Command to destroy the local test system.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_local_test_finished.c</td><td>Command to send a message to the master loop, if the local loop has finished.</td>
+		<tr>
+	  </table>
+          {% endtrans %}
+        </p>
+	<h4><a name="netjail" class="subnav-anchor"></a>{{ _("Configuration") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/test_transport_api2_tcp_node1.conf</td><td width="60%" style="vertical-align: top;">Configuration for the first node running during the simple send test case.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td  width="40%" style="vertical-align: top;">src/transport/test_transport_api2_tcp_node2.conf</td><td width="60%" style="vertical-align: top;">Configuration for the second node running during the simple send test case.</td>
+		</tr>
+	  </table>
+          {% endtrans %}
+        </p>
+      </section>
+
+      
+    </div>
+  </div>
+
+</article>
+{% endblock body_content %}
