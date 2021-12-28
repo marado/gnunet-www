@@ -29,6 +29,9 @@ meetingnotes:
   2019: 2019-12-27
   2020: 2020-12-30
 newsposts:
+  - page: 2021-12-GNSSpecISE.html
+    date: 2021-12-28
+    title: GNS Technical Specification Call for Reviews
   - page: 2021-08-0.15.0.html
     date: 2021-08-08
     title: GNUnet 0.15.0
