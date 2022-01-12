@@ -1,0 +1,85 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("NGI Assure project: Layer-2-Overlay") }}</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-2 d-none d-lg-block"><!-- for large viewports show menu for better orientation -->
+      <nav class="nav subnav position-fixed flex-column border-right" style="position:fixed">
+      <a class="nav-link" href="index.html#idea">{{ _("Project main page") }}</a>
+      </nav>
+    </div>
+    <div class="col">
+
+      <h2>Implementation details milestone 2</h2>
+
+      <section>
+        <h4><a name="netjail" class="subnav-anchor"></a>{{ _("Master Loop") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/test_transport_simple_send.sh</td><td width="60%" style="vertical-align: top;">Introduced scripts to start the tests. The script checks, if a kernel parameter is set to allow unprivileged users to 								  create network namespaces. The script than starts the following gerneric binary in a network namespace.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/test_transport_start_with_config.c</td><td width="60%" style="vertical-align: top;">A generic binary to start a test case which will be configured by a configuration file.</td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing.c</td><td width="60%" style="vertical-align: top;">Added code to read netjail topology from a file.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/topo.sh</td><td width="60%" style="vertical-align: top;">Script which reads the topology from a file for the use in the other netjail scripts.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">All already existing commands.</td><td width="60%" style="vertical-align: top;">All commands changed to work with the topology data.</td>
+		</tr>
+	  </table>
+          {% endtrans %}
+        </p>
+	<h4><a name="netjail" class="subnav-anchor"></a>{{ _("Local Loop") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_send_peer_ready.c</td><td width="60%" style="vertical-align: top;">Command to send a message to the master loop if a peer has started in local loop.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/testing/testing_api_cmd_local_test_prepared.c</td><td width="60%" style="vertical-align: top;">Command to send a message to the master loop if a peer is ready to shutdown.</td>
+		</tr>
+	  </table>
+          {% endtrans %}
+        </p>
+	<h4><a name="netjail" class="subnav-anchor"></a>{{ _("Configuration") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+		<tr>
+			<td width="40%" style="vertical-align: top;">src/transport/transport_api_cmd_start_peer.c</td><td width="60%" style="vertical-align: top;">Command now uses a configuration template for the peer configuration.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="40%" style="vertical-align: top;">test_transport_simple_send_topo.conf</td><td width="60%" style="vertical-align: top;">Topology configuration file for the simple send test case.</td>
+		<tr>
+	  </table>
+          {% endtrans %}
+        </p>
+      </section>
+
+      
+    </div>
+  </div>
+
+</article>
+{% endblock body_content %}

@@ -1,0 +1,114 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("NGI Assure project: Layer-2-Overlay") }}</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-2 d-none d-lg-block"><!-- for large viewports show menu for better orientation -->
+      <nav class="nav subnav position-fixed flex-column border-right" style="position:fixed">
+      <a class="nav-link" href="index.html#idea">{{ _("Project main page") }}</a>
+      </nav>
+    </div>
+    <div class="col">
+
+      <h2>Implementation details milestone 3</h2>
+
+      <section>
+        <h4><a name="netjail" class="subnav-anchor"></a>{{ _("Bug fixing") }}</h4>
+        <p>
+          {% trans %}
+	  Some bugs in the tng service and communicator code which were found with new tests were fixed.
+	  {% endtrans %}
+        </p>
+      </section>
+
+      <section>
+        <h4><a name="netjail" class="subnav-anchor"></a>{{ _("Master Loop") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/transport/test_transport_udp_backchannel.sh</td><td width="55%" style="vertical-align: top;">Added script to start the udp backchannel test case.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/transport/test_transport_simple_send_broadcast.sh</td><td width="55%" style="vertical-align: top;">Added script for the UDB broadcast test.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/transport/test_transport_simple_send_string.sh</td><td width="55%" style="vertical-align: top;">Added script as an example to start a test with inline topology configuration string.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">All commands</td><td width="55%" style="vertical-align: top;">Changed code to handle strings with topology information.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/testing/netjail_start.sh</td><td width="55%" style="vertical-align: top;">Changed the netjail start script to configure port forwarding for specific protocols (tcp, udp).</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/testing/netjail_*.sh</td><td width="40%" style="vertical-align: top;">Moved to contrib/netjail directory</td>
+		</tr>
+	  </table>
+          {% endtrans %}
+        </p>
+	<h4><a name="netjail" class="subnav-anchor"></a>{{ _("Local Loop") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+	  	 <tr>
+			<td width="60%" style="vertical-align: top;">src/transport/test_transport_plugin_cmd_simple_send_broadcast.c</td><td width="40%" style="vertical-align: top;">New plugin for the udp broadcast test case.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/transport/test_transport_plugin_cmd_udp_backchannel.c</td><td width="40%" style="vertical-align: top;">New plugin for the udp backchannel test case.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/transport/transport_api_cmd_backchannel_check.c</td><td width="40%" style="vertical-align: top;">Command to check for a udp backchannel specific log entry.</td>
+		</tr>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">src/testing/testing_api_cmd_block_until_external_trigger.cc</td><td width="40%" style="vertical-align: top;">Command to block the local loop until triggered by a external signal.</td>
+		</tr>
+	  </table>
+          {% endtrans %}
+        </p>
+	<h4><a name="netjail" class="subnav-anchor"></a>{{ _("Configuration") }}</h4>
+        <p>
+          {% trans %}
+	  <table width="100%">
+	  	 <tr>
+			<td width="60%" style="vertical-align: top;">src/transport/test_transport_simple_send_broadcast_topo.conf</td><td width="40%" style="vertical-align: top;">Topology configuration for the broadcast test.</td>
+		<tr>
+			<td></td><td> </td>
+		</tr>
+		<tr>
+			<td width="60%" style="vertical-align: top;">test_transport_udp_backchannel_topo.conf</td><td width="40%" style="vertical-align: top;">Topology configuration file for the udp backchannel test case.</td>
+		<tr>
+	  </table>
+          {% endtrans %}
+        </p>
+      </section>
+
+      
+    </div>
+  </div>
+
+</article>
+{% endblock body_content %}

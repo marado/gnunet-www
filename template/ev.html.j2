@@ -40,7 +40,7 @@
           to support GNUnet e.V. and in particularly contribute to the
           technical development within their means. For further
           details, we refer to the
-          <a href="https://git.gnunet.org/gnunet-ev.git/">Satzung</a>
+          <a href="https://git.gnunet.org/gnunet-ev.git/">Satzung (Charter)</a>
           (currently only available in German, translations welcome).
         {% endtrans %}
       </p>
@@ -52,45 +52,32 @@
       <h3>{{ _("Governance") }}</h3>
       <p>
         {% trans %}
-          You can find our "Satzung", and the list of members under
+          You can find our charter, and the list of members under
           <a href="https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex">https://git.gnunet.org/gnunet-ev.git/tree/satzung.tex</a>.
           The current board consists of:
           <dl><dt>Vorsitz</dt>
-            <dd><a href="https://grothoff.org/christian/">Christian Grothoff</a></dd>
+            <dd><a href="https://schanzen.eu">Martin Schanzenbach</a></dd>
             <dt>stellvertretender Vorsitz</dt>
-            <dd>xrs</dd>
+            <dd>t3sserakt</dd>
             <dt>Kassenwart</dt>
             <dd>Florian Dold</dd>
             <dt>Beisitzer</dt>
-            <dd>Lurchi</dd>
+            <dd>
+              <a href="https://grothoff.org/christian/">Christian Grothoff</a>, ch3
+            </dd>
           </dl>
         {% endtrans %}
       </p>
     </div>
     <div class="col-md">
       <h3>{{ _("Official Meeting Notes") }}</h3>
-      <p>
-        <ul>
-          <li>{{ _("2013-12 (constitutional meeting)") }}
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2013-12-27.txt">txt</a>)
+      <ul>
+        {% for year, date in meetingnotesdata.items() %}
+          <li>
+            {{ year|e }}: (Protocol: <a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/{{ date|e }}.txt">txt</a>)
           </li>
-          <li>2014-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2014-12-28.txt">txt</a>)
-          </li>
-          <li>2015-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2015-12-29.txt">txt</a>)
-          </li>
-          <li>2016-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2016-12-28.txt">txt</a>)
-          </li>
-          <li>2017-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2017-12-27.txt">txt</a>)
-          </li>
-          <li>2018-12
-            (<a href="https://git.gnunet.org/gnunet-ev.git/tree/minutes/2018-12-27.txt">txt</a>)
-          </li>
-        </ul>
-      </p>
+        {% endfor %}
+      </ul>
     </div>
   </div><!-- END:row -->
 

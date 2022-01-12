@@ -1,0 +1,67 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <center><img style="width: 14em" src="{{ url_static('images/gns-logo.png') }}"  alt="GNS" /></center>
+    <h1>{{ _("The GNU Name System") }}</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <h2>{{ _("Motivation") }}</h2>
+        <p>
+          {% trans %}
+          The Domain Name System today enables traffic amplification attacks,
+          censorship (i.e. China), mass surveillance (MORECOWBELL) and offensive
+          cyber war (QUANTUMDNS).<br/>
+          Unfortunately, band aid solutions such as DoT, DoH, DNSSEC, DPRIVE
+          and the like will not fix this. This is why we built the GNU Name
+          System (GNS), a secure, decentralized name system built on top of
+          GNUnet.
+          {% endtrans %}
+        </p>
+
+      </div>
+      <div class="col-md">
+      <h2>{{ _("Overview") }}</h2>
+      <p>
+      The GNU Name System (GNS) is a decentralized database that enables users to securely resolve names to values. Names can be used to identify other users (for example, in social networking), or network services (for example, VPN services running at a peer in GNUnet, or purely IP-based services on the Internet). Users interact with GNS by typing in a hostname that ends in a top-level domain that is configured in the “GNS” section, matches an identity of the user or ends in a Base32-encoded public key.
+      </p>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md">
+    <h2>{{ _("Features") }}</h2>
+    <p>
+{% trans %}
+The GNU Name System (GNS) is secure and decentralized naming system. It allows its users to register names as top-level domains (TLDs) and resolve other namespaces within their TLDs.
+<br/>
+GNS is designed to provide:
+<ul>
+<li>Censorship resistance</li>
+<li>Query privacy</li>
+<li>Secure name resolution</li>
+<li>Compatibility with DNS</li>
+{% endtrans %}
+</p>
+</div>
+      <div class="col-md">
+      <h2>{{ _("Resources") }}</h2>
+      <p>
+Videos giving an overview of most of the GNS and the motivations behind it is available in our <a href="{{ url_localized('video.html') }}">videos section</a>.<br/>
+        Read more about GNS in the respective section of our <a href="https://docs.gnunet.org/handbook/gnunet.html#GNU-Name-System-_0028GNS_0029" target="_blank">handbook</a>.
+        </p>
+        <p>
+         For protocol details, we maintain a <a href="https://lsd.gnunet.org/lsd0001">technical specification</a> which can be used to implement resolvers
+         for GNS.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+{% endblock body_content %}

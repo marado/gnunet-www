@@ -1,0 +1,30 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="m-3">
+  <a class="mt-2 mb-2" href="{{ url_localized('reclaim/index.html') }}">reclaimID</a> / IdPs
+</div>
+<h2 class="text-center">{{ _("For IdPs") }}</h2>
+<br/>
+<div class="container">
+  <h2><b>Step 1:</b> OpenID Service</h2>
+  As an identity provider and credential issuer, you need to setup an OpenID Connect server. There are many servers out there. For a list of servers, check out the <a href="https://openid.net/developers/certified/">OpenID website</a>.
+  One important caveat is that the server should allow you to issue user information inside the signed "ID Token".
+  The configuration regarding what user information goes into the token is of course completely under your discretion.
+
+  <h2 class="mt-5"><b>Step 2:</b> Configuring the reclaimID client</h2>
+  reclaimID uses special client values which must be registered at the OpenID server. The values are:
+  <ul>
+    <li><b>Client ID</b>: reclaimid</li>
+    <li><b>Client secret</b>: none (public client)</li>
+    <li><b>Redirect URI</b>: https://ui.reclaim</li>
+    <li><b>Grant type</b>: Authorization code</li>
+    <li><b>PKCE</b>: enabled (Optional but highly recommended)</li>
+  </ul>
+
+  <h2 class="mt-5"><b>Step 3:</b> Configuring a webfinger</h2>
+  You must support the webfinger-based <a href="https://openid.net/specs/openid-connect-discovery-1_0.html">OpenID Connect service discovery</a>.
+  Whenever the user configures an email address for an identity, reclaimID will try to discover the issuing identity provider through the OIDC Discovery protocol. This includes a <a href="https://openid.net/specs/openid-connect-discovery-1_0.html#EmailSyntax">request to the authority part of the email address</a>.
+
+  The response should point reclaimID to the actual OpenID Connect service <a href="https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata">serving the issuer medatata</a>. reclaimID will try to request all scopes which are listed in the metadata, but does not expect all of them to be granted.
+</div>
+{% endblock body_content %}

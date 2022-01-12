@@ -1,181 +1,408 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
-<article class="container">
+  <article class="container">
+    <header>
+      <h1>gnurl (libgnurl)</h1>
+      <a href="#motivation">motivation</a>
+      <a href="#rename">rename</a>
+      <a href="#using">using</a>
+      <a href="#gotchas">gotchas</a>
+      <a href="#source">source</a>
+      <a href="#downloads">downloads</a>
+      <a href="#building">building</a>
+      <a href="#reporting">reporting</a>
+      <a href="#maintainer">maintainer</a>
+    </header>
 
-  <header>
-    <h1>gnurl (libgnurl)</h1>
-  </header>
+    <section class="container">
+      <div class="row">
+        <div class="col-md">
+          <p>
+            {% trans %}
+              libgnurl is a micro fork of libcurl. The goal of
+              libgnurl is to support only HTTP and HTTPS (and only
+              HTTP 1.x) with a single crypto backend (GnuTLS) to
+              ensure a small footprint and uniform experience for
+              developers regardless of how libcurl was compiled.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Our main usecase is for GNUnet and Taler, but it might
+              be usable for others, hence we&#39;re releasing the code
+              to the general public.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              libgnurl is released under the same license as
+              libcurl. Please read the README for instructions, as you
+              must supply the correct options to configure to get a
+              proper build of libgnurl.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <h2>{{ _("About gnurl") }}</h3>
+          <p>
+            {% trans %}
+              Large parts of the following 6 paragraphs are old and need
+              to be rewritten.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <a name="motivation"></a>
+          <h3>{{_("Motivation") }}</h4>
+          <p>
+            {% trans %}
+              cURL supports many crypto backends. GNUnet requires the use of
+              GnuTLS, but other variants are used by some distributions. Supporting
+              other crypto backends would again expose us to a wider array of
+              security issues, may create licensing issues and most importantly
+              introduce new bugs as some crypto backends are known to introduce
+              subtle runtime issues. While it is possible to have two versions of
+              libcurl installed on the same system, this is error-prone, especially
+              as if we are linked against the wrong version, the bugs that arise
+              might be rather subtle.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+	      For GNUnet, we also need a particularly modern version of
+	      GnuTLS. Thus, it would anyway be necessary to recompile cURL for
+	      GNUnet. But what happens if one links cURL against this version of
+	      GnuTLS? Well, first one would install GnuTLS by hand in the
+	      system. Then, we build cURL. cURL will build against it just fine, but
+	      the linker will eventually complain bitterly. The reason is that cURL
+	      also links against a bunch of other system libraries (gssapi, ldap,
+	      ssh2, rtmp, krb5, sasl2, see discussion on obscure protocols above),
+	      which --- as they are part of the distribution --- were linked against
+	      an older version of GnuTLS. As a result, the same binary would be
+	      linked against two different versions of GnuTLS. That is typically a
+	      recipe for disaster. Thus, in order to avoid updating a dozen system
+	      libraries (and having two versions of those installed), it is
+	      necessary to disable all of those cURL features that GNUnet does not
+	      use, and there are many of those. For GNUnet, the more obscure
+	      protocols supported by cURL are close to dead code --- mostly
+	      harmless, but not useful. However, as some application may use one of
+	      those features, distributions are typically forced to enable all of
+	      those features, and thus including security issues that might arise
+	      from that code.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+	      So to use a modern version of GnuTLS, a sane approach is to disable
+	      all of the "optional" features of cURL that drag in system libraries
+	      that link against the older GnuTLS. That works, except that one should
+	      then NEVER install that version of libcurl in say /usr or /usr/local,
+	      as that may break other parts of the system that might depend on these
+	      features that we just disabled. Libtool versioning doesn't help here,
+	      as it is not intended to deal with libraries that have optional
+	      features. Naturally, installing cURL somewhere else is also
+	      problematic, as we now need to be really careful that the linker will
+	      link GNUnet against the right version. Note that none of this can
+	      really be trivially fixed by the cURL developers.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <a name="rename"></a>
+          <h3>{{_("Rename to fix") }}</h4>
+          <p>
+            {% trans %}
+              How does forking fix it? Easy. First, we can get rid of all of the
+              compatibility issues --- if you use libgnurl, you state that you don&#39;t
+              need anything but HTTP/HTTPS. Those applications that need more,
+              should stick with the original cURL. Those that do not, can choose to
+              move to something simpler. As the library gets a new name, we do not
+              have to worry about tons of packages breaking as soon as one rebuilds
+              it. So renaming itself and saying that "libgnurl = libcurl with only
+              HTTP/HTTPS support and GnuTLS" fixes 99%% of the problems that darkened
+              my mood. Note that this pretty much CANNOT be done without a fork, as
+              renaming is an essential part of the fix. Now, there might be creative
+              solutions to achieve the same thing within the standard cURL build
+              system, but this was deemed to be too much work when
+              gnurl was originally started.
+              The changes libgnurl makes to curl are miniscule and can
+              easily be applied again and again whenever libcurl makes a new
+              release.
+            {% endtrans %}
+          </p>
+        </div>
+        <div class="col-md">
+          <a name="using"></a>
+          <h3>{{_("Using libgnurl") }}</h4>
+          <p>
+            {% trans %}
+              Projects that use cURL only for HTTP/HTTPS and that would work
+              with GnuTLS should be able to switch to libgnurl by changing
+              "-lcurl" to "-lgnurl". That&#39;s it. No changes to the source code
+              should be required,
+              as libgnurl strives for bug-for-bug compatibility with the
+              HTTP/HTTPS/GnuTLS subset of cURL.
+              We might add new features relating to this core subset if they
+              are proposed, but so far we have kept our changes minimal and
+              no additions to the original curl source have been written.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <a name="gotchas"></a>
+          <h3>{{_("Gotchas") }}</h4>
+          <p>
+            {% trans %}
+              libgnurl and gnurl are not intended to be used as a replacement
+              for curl for users:
+              <br>
+              This does not mean there is no confidence in the work done
+              with gnurl, it means that tools which expect curl or libcurl
+              will not make use of a different named binary and library.
+              If you know what you are doing, you should be able to use
+              gnurl as part of your tooling in place of curl. We do not
+              recommend to do so however, as the only usage it is tested
+              for <em>so far</em> is as part of Taler&#39;s and GNunet&#39;s
+              build-system.
+              <br>
+              Since no conflicts in filenames occur you are not expected
+              to remove curl to make use of gnurl and viceversa.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
 
-  <div class="container">
-    <p>
-      {% trans %}
-      libgnurl is a micro fork of libcurl. The goal of libgnurl
-      is to support only HTTP and HTTPS (and only HTTP 1.x) with
-      a single crypto backend (GnuTLS) to ensure a small footprint
-      and uniform experience for developers regardless of how
-      libcurl was compiled.<br>
-      Our main usecase is for GNUnet, but it might be usable for
-      others, hence we're releasing the code
-      to the general public.<br>
-      libgnurl is released under the same
-      license as libcurl. Please read the README for instructions, as you
-      must supply the correct options to configure to get a proper build of
-      libgnurl.
-      {% endtrans %}
-    </p>
-    <h3>{{_("Motivation") }}</h3>
-    <p>
-      {% trans %}
-      cURL supports many crypto backends. GNUnet requires the use of
-      GnuTLS, but other variants are used by some distributions. Supporting
-      other crypto backends would again expose us to a wider array of
-      security issues, may create licensing issues and most importantly
-      introduce new bugs as some crypto backends are known to introduce
-      subtle runtime issues. While it is possible to have two versions of
-      libcurl installed on the same system, this is error-prone, especially
-      as if we are linked against the wrong version, the bugs that arise
-      might be rather subtle.
-      {% endtrans %}
-    </p>
-    <p>
-        {% trans %}
-	For GNUnet, we also need a particularly modern version of
-	GnuTLS. Thus, it would anyway be necessary to recompile cURL for
-	GNUnet. But what happens if one links cURL against this version of
-	GnuTLS? Well, first one would install GnuTLS by hand in the
-	system. Then, we build cURL. cURL will build against it just fine, but
-	the linker will eventually complain bitterly. The reason is that cURL
-	also links against a bunch of other system libraries (gssapi, ldap,
-	ssh2, rtmp, krb5, sasl2, see discussion on obscure protocols above),
-	which --- as they are part of the distribution --- were linked against
-	an older version of GnuTLS. As a result, the same binary would be
-	linked against two different versions of GnuTLS. That is typically a
-	recipe for disaster. Thus, in order to avoid updating a dozen system
-	libraries (and having two versions of those installed), it is
-	necessary to disable all of those cURL features that GNUnet does not
-	use, and there are many of those. For GNUnet, the more obscure
-	protocols supported by cURL are close to dead code --- mostly
-	harmless, but not useful. However, as some application may use one of
-	those features, distributions are typically forced to enable all of
-	those features, and thus including security issues that might arise
-	from that code.
-        {% endtrans %}
-      </p>
-      <p>
-        {% trans %}
-	So to use a modern version of GnuTLS, a sane approach is to disable
-	all of the "optional" features of cURL that drag in system libraries
-	that link against the older GnuTLS. That works, except that one should
-	then NEVER install that version of libcurl in say /usr or /usr/local,
-	as that may break other parts of the system that might depend on these
-	features that we just disabled. Libtool versioning doesn't help here,
-	as it is not intended to deal with libraries that have optional
-	features. Naturally, installing cURL somewhere else is also
-	problematic, as we now need to be really careful that the linker will
-	link GNUnet against the right version. Note that none of this can
-	really be trivially fixed by the cURL developers.
-        {% endtrans %}
-      </p>
-      <h3>{{_("Rename to fix") }}</h3>
-    <p>
-    {% trans %}
-    How does forking fix it? Easy. First, we can get rid of all of the
-    compatibility issues --- if you use libgnurl, you state that you don't
-    need anything but HTTP/HTTPS. Those applications that need more,
-    should stick with the original cURL. Those that do not, can choose to
-    move to something simpler. As the library gets a new name, we do not
-    have to worry about tons of packages breaking as soon as one rebuilds
-    it. So renaming itself and saying that "libgnurl = libcurl with only
-    HTTP/HTTPS support and GnuTLS" fixes 99%% of the problems that darkened
-    my mood. Note that this pretty much CANNOT be done without a fork, as
-    renaming is an essential part of the fix. Now, there might be creative
-    solutions to achieve the same thing within the standard cURL build
-    system, but I'm not happy to wait for a decade for Daniel to review
-    the patches. The changes libgnurl makes to curl are miniscule and can
-    easily be applied again and again whenever libcurl makes a new
-    release.
-      {% endtrans %}
-    </p>
-    <h3>{{_("Using libgnurl") }}</h3>
-    <p>
-      {% trans %}
-      Projects that use cURL only for HTTP/HTTPS and that would work
-      with GnuTLS should be able to switch to libgnurl by changing
-      "-lcurl" to "-lgnurl". That's it. No changes to the source code
-      should be required,
-      as libgnurl strives for bug-for-bug compatibility with the
-      HTTP/HTTPS/GnuTLS subset of cURL.
-      We might add new features relating to this core subset if they
-      are proposed, but so far we have kept our changes minimal and
-      no additions to the original curl source have been written.
-      {% endtrans %}
-    </p>
-    <h4>{{_("Gotchas") }}</h4>
-    <p>
-      {% trans %}
-      libgnurl and gnurl are not intended to be used as a replacement
-      for curl for users. Since no conflicts in filenames should occur
-      you are not expected to remove curl to make use of gnurl and
-      viceversa.
-      {% endtrans %}
-    </p>
-  </div>
+      <div class="row">
+        <div class="col-md">
+          <a name="source"></a>
+          <h2>{{ _("Source Code") }}</h3>
+          <p>
+            {% trans %}
+	      You can get the gnurl git repository using:
+            {% endtrans %}
+          </p>
+          <ul>
+	    <li>
+              <code>git clone https://git.taler.net/gnurl.git</code>
+            </li>
+            <li>
+	      <code>git clone git://git.taler.net/gnurl.git</code>
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+	      The versions are checked in as (signed) git tags.
+            {% endtrans %}
+          </p>
+        </div>
 
-  <div class="row container">
-    <div class="col-md">
-      <h3>{{ _("Source Code") }}</h3>
-      <p>
-        {% trans %}
-	You can get the Gnurl Git repository using:
-	<!--
-	https://bugs.gnunet.org/view.php?id=5483 !
-	<code>git clone https://git.taler.net/gnurl.git</code>
-	-->
-	<code>git clone git://git.taler.net/gnurl.git</code>
-	The versions are checked in as signed git tags.
-        {% endtrans %}
-      </p>
-    </div>
-    <div class="col-md">
-      <h3>{{ _("Downloads") }}</h3>
-      <p>
-        {% trans %}
-	Releases are published on <a href="https://ftp.gnu.org/gnu/gnunet/">ftp.gnu.org/gnu/gnunet</a>.
-	gnURL is available from within a variety of distributions and package managers.
-	Package Managers which include gnurl are:
-        <a href="https://www.gnu.org/software/guix/">GNU Guix</a> (available as "gnurl"),
-	<a href="https://gentoo.org">Gentoo</a> through the collaborative ebuild collection
-	<a href="https://git.gnunet.org/youbroketheinternet-overlay.git/">youbroketheinternet</a>,
-        <a href="https://nixos.org/nix/">Nix</a>, and <a href="http://pkgsrc.org">pkgsrc</a>.
-        {% endtrans %}
-      </p>
-    </div>
-  </div>
+        <div class="col-md">
+          <a name="downloads"></a>
+          <h2>{{ _("Downloads") }}</h3>
+          <p>
+            {% trans %}
+	      Releases are published on <a href="https://ftpmirror.gnu.org/gnu/gnunet/">ftpmirror.gnu.org/gnu/gnunet</a>.
+	      gnurl is available from within a variety of distributions and package managers.
+	      Some Package Managers which include gnurl are:
+              <a href="https://www.gnu.org/software/guix/">GNU Guix</a> (available as "gnurl"),
+	      <a href="https://gentoo.org">Gentoo</a> through the collaborative ebuild collection
+	      <a href="https://git.gnunet.org/youbroketheinternet-overlay.git/">youbroketheinternet</a>,
+              <a href="https://nixos.org/nix/">Nix</a>, and as www/gnurl in
+              <a href="https://pkgsrc.org">pkgsrc</a>.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
 
-  <div class="row container">
-    <div class="col-md">
-      <h3>{{ _("Reporting Bugs") }}</h3>
-      <p>
-        {% trans %}
-	You can report bugs on our bug tracker:
-	<a href="https://bugs.gnunet.org/">bugs.gnunet.org</a>. Alternatively
-	you can use our bug mailinglist, but we prefer to track bugs
-	on the bugtracker.
-        {% endtrans %}
-      </p>
-    </div>
-    <div class="col-md">
-      <h3>{{ _("Maintainer and Cryptographic signatures") }}</h3>
-      <p>
-        {% trans %}
-	gnurl/libgnurl is maintained by ng0.
-	Releases are signed
-	with the OpenPGP Key <b>A88C8ADD129828D7EAC02E52E22F9BBFEE348588</b>,
-	with the key fingerprint <b>A88C 8ADD 1298 28D7 EAC0  2E52 E22F 9BBF EE34 8588</b>.
-        {% endtrans %}
-      </p>
-    </div>
-  </div>
+      <div class="row">
+        <div class="col-md">
+          <a name="building"></a>
+          <h2>{{ _("Building gnurl") }}</h3>
+          <p>
+            {% trans %}
+              We suggest to closely follow release announcements, as they
+              might indicate changes in how gnurl is to be build.
+              <br>
+              If your package manager provides a binary build or build
+              instructions to build gnurl from source automated and
+              integrated with your environment, we strongly suggest to use
+              this binary build.
+              <br>
+              There are two ways to build gnurl. The first one builds from
+              the most recent git tag, the second one uses the distributed
+              tarball. Distributors generally are supposed to build from
+              the tarball, but we describe both methods here. Both methods
+              are written with a NetBSD 9 userland in mind, substitute tools
+              as necessary.
+              <br>
+              You should <b>avoid</b> building gnurl from the tip of the
+              default git branch, as only tags are considered to be stable
+              and approved builds.
+            {% endtrans %}
+          </p>
+          <h3>{{ _("Building from the distributed tarball (prefered method)") }}</h4>
+          <p>
+            {% trans %}
+              If you want to verify the signature, install an OpenPGP compatible tool such
+              as security/gnupgp2 (and set it up). Assuming you use pkgin:
+            {% endtrans %}
+          </p>
+          <ul>
+            <li>
+              pkgin update
+            </li>
+            <li>
+              pkgin install gnupg2
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+              Fetch the signature key from
+            {% endtrans %}
+            <a href="https://keys.openpgp.org/search?q=nikita%40NetBSD.org">keys.openpgp.org</a>
+            {% trans %}
+              or via commandline with gnupg2.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              Fetch the release, the signature, the checksum file as well as its signature:
+            {% endtrans %}
+          </p>
+          <ul>
+            <li>
+              ftp https://ftpmirror.gnu.org/gnu/gnunet/gnurl-7.65.3.tar.Z
+            </li>
+            <li>
+              ftp https://ftpmirror.gnu.org/gnu/gnunet/gnurl-7.65.3.tar.Z.sig
+            </li>
+            <li>
+              ftp https://ftpmirror.gnu.org/gnu.org/gnunet/gnurl-7.65.3.sum.txt
+            </li>
+            <li>
+              ftp https://ftpmirror.gnu.org/gnu.org/gnunet/gnurl-7.65.3.sum.txt.sig
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+              verify the signatures, and verify the checksums against the
+              checksums in the .sum.txt file.
+            {% endtrans %}
+          </p>
+          <p>
+            {% trans %}
+              unpack the tarball:
+            {% endtrans %}
+          </p>
+          <ul>
+            <li>
+              tar -zxf gnurl-7.65.3.tar.Z
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+              Change into the directory
+            {% endtrans %}
+          </p>
+          <ul>
+            <li>
+              cd gnurl-7.65.3
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+              Now you can either run
+            {% endtrans %}
+          </p>
+          <ul>
+            <li>
+              ./configure
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+              directly (and read configure-gnurl before you do so) or invoke
+            {% endtrans %}
+          </p>
+          <ul>
+            <li>
+              ./configure-gnurl
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+              and pass additional parameters such as a custom PREFIX location.
+              Further reference can be the
+            {% endtrans %}
+            <a href="http://pkgsrc.se/www/gnurl">www/gnurl</a> Makefile.
+            {% trans %}
+              Now run
+            {% endtrans %}
+          </p>
+          <ul>
+            <li>
+              make
+            </li>
+            <li>
+              make check
+              {% trans %}
+                (this is optional)
+              {% endtrans %}
+            </li>
+            <li>
+              make install
+            </li>
+          </ul>
+          <p>
+            {% trans %}
+              and you are done.
+            {% endtrans %}
+          </p>
+          <h3>{{ _("Building from a tagged git commit") }}</h4>
+          <p>
+            {% trans %}
+              Follow the steps above, but instead of downloading the tarball,
+              clone the git tag you want to build from.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
 
-</article> <!-- /container -->
+      <div class="row">
+        <div class="col-md">
+          <a name="reporting"></a>
+          <h2>{{ _("Reporting Bugs") }}</h3>
+          <p>
+            {% trans %}
+	      You can report bugs on our bug tracker:
+	      <a href="https://bugs.gnunet.org/">bugs.gnunet.org</a>. Alternatively
+	      you can use our bug mailinglist, but we prefer to track bugs
+	      on the bugtracker.
+            {% endtrans %}
+          </p>
+        </div>
+
+        <div class="col-md">
+          <a name="maintainer"></a>
+          <h2>{{ _("Maintainer and Cryptographic signatures") }}</h3>
+          <p>
+            {% trans %}
+	      gnurl/libgnurl is looking for a new maintainer.
+	      Releases after version 7.69.1 and up to version 7.72.0 were signed with the OpenPGP Key
+              <b>0xD6B570842F7E7F8D</b> (<a href="https://keys.openpgp.org/search?q=6115012DEA3026F62A98A556D6B570842F7E7F8D">keys.openpgp.org</a>), with the key fingerprint
+              <b>6115 012D EA30 26F6 2A98  A556 D6B5 7084 2F7E 7F8D</b>.
+            {% endtrans %}
+          </p>
+        </div>
+      </div>
+    </section>
+  </article> <!-- /container -->
 {% endblock body_content %}

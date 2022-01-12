@@ -7,54 +7,179 @@
   </header>
 
   <div class="row container justify-content-center">
-    <div class="col-md">
-      {% trans %}
-      <p>The following GNUnet installation instructions help you building from source for your distribution.</p>
-      <p><i>Please note that the installation process will get much easier once we have proper packages again (planned for winter 2019).</i></p>
-      <p>You have already installed GNUnet and want to use it?
-      <a href="https://gnunet.org/en/use">Check this out!</a> </p>
-      {% endtrans %}
+    <div class="alert alert-info">
+{% trans %}
+          Notice: GNUnet is still undergoing major development. It is
+          largely <i>not yet ready</i> for usage beyond developers.
+{% endtrans %}
     </div>
-    <div class="col-md">
-      {% trans %}
-      <p>Please be aware that this project is still in an early alpha
-      stage when it comes to running software &#8211; its not an easy task
-      to rewrite the whole Internet! We are happy to get your
-      <a href="engage.html">helping hand</a> anytime!</p>
-      <p>Further information is available in our <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">handbook</a>.</p>
-      <p>If you have any queries about the installation or the usage, please <a href="engage.html">get in touch!</a></p>
-      {% endtrans %}
-    </div>
+{% trans %}
+<p>Please be aware that this project is still in an early alpha
+stage when it comes to running software &#8211; its not an easy task
+to rewrite the whole Internet! We are happy to get your
+<a href="engage.html">helping hand</a> anytime!
+Further information is available in our <a href="https://docs.gnunet.org/#toc-Using-GNUnet-1">handbook</a>.
+If you have any queries about the installation or the usage, please <a href="engage.html">get in touch!</a></p>
+{% endtrans %}
   </div>
 
+  <h3>Binary packages</h3><br/>
+  <p>
+    {% trans %}
+    We recommend to use binary packages provided by the package manager integrated
+    within your Operating System. GNUnet is reportedly available for at least:
+    <ul>
+      <li><a href="https://pkgs.alpinelinux.org/package/edge/testing/x86_64/gnunet">Alpine</a></li>
+      <li><a href="https://aur.archlinux.org/packages/gnunet/">Arch (AUR)</a></li>
+      <li><a href="https://packages.debian.org/search?keywords=gnunet">Debian</a></li>
+      <li><a href="https://copr.fedorainfracloud.org/coprs/yosl/gnunet/">Fedora (Copr)</a></li>
+      <li><a href="https://guix.gnu.org/en/packages/G/">Guix</a></li>
+      <li><a href="https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnunet.rb">Homebrew</a></li>
+      <li><a href="https://search.nixos.org/packages?from=0&size=50&sort=relevance&query=gnunet">NixOS</a></li>
+      <li><a href="install-on-openwrt.html">OpenWrt</a></li>
+    </ul>
+    If GNUnet is available for your Operating System and it is missing,
+    send us feedback so that we can add it to this list. Furthermore, if
+    you are interested in packaging GNUnet for your Operating System,
+    get in touch with us at gnunet-developers@gnu.org if you require
+    help with this job.
+
+    If you were using an Operating System with the APT package manager,
+    GNUnet could be installed as simple as:
+    {% endtrans %}
+  </p>
+  <code class="block">
+    $ apt-get install gnunet
+  </code>
+  <p>
+   Please beware that some distributions may include outdated GNUnet packages!
+  </p>
+  <h3>From source</h3>
+  <p>
+    {% trans %}
+    Next we describe a generic way to install from source. If you are using
+    one of the following Operating Systems these step-by-step guides might
+    be useful:
+    <a href="install-on-archpi.html">ArchPi</a>, 
+    <a href="install-on-debian9.html">Debian 9</a>, 
+    <a href="install-on-macos.html">Mac OS</a>, 
+    <a href="install-on-netbsd.html">NetBSD</a>, 
+    <a href="install-on-ubuntu1804.html">Ubuntu 1804</a>.
+    Be aware that not all of them might be totally up-to-date! Please <a href="engage.html">ask us</a>
+     if you get stuck.
+    {% endtrans %}
+  </p>
+  <p>
+    {% trans %}
+    First, install the <a href="https://git.gnunet.org/gnunet.git/tree/README">required dependencies</a> of GNUnet. There are base requirements and optional
+    requirements.
+    {% endtrans %}
+  </p>
+  <p>
+    {% trans %}
+    Now, you need to decide if you want to install GNUnet from the release
+    tarball or from git. If you want to use GNUnet and there is no binary
+    package available for your OS, you should stick with the release tarball.
+    If you want to develop using the most recent build, you should go with
+    the <a href="https://git.gnunet.org/">git repository</a>.
+    {% endtrans %}
+  </p>
+  <p>The current release tarballs for gnunet, a Gtk UI and fuse extensions can be found here:</p>
+  <div class="row container justify-content-center">
+    <div class="col-md">
+    <b>gnunet</b>: <a href="http://ftpmirror.gnu.org/gnunet/gnunet-latest.tar.gz">Download</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-latest.tar.gz.sig">sig</a>)<br>
+    <b>gnunet-gtk</b>: <a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-latest.tar.gz">Download</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-latest.tar.gz.sig">sig</a>)<br/>
+    <b>gnunet-fuse</b>: <a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-latest.tar.gz">Download</a> (<a href="http://ftpmirror.gnu.org/gnunet/gnunet-fuse-latest.tar.gz.sig">sig</a>)
+    </div>
+  </div>
+  <p>
+   {% trans %}
+   To compile gnunet from the git source you can do so by entering:
+   {% endtrans %}
+  </p>
+  <code class="block">
+    $ git clone https://git.gnunet.org/git/gnunet.git
+  </code>
+  <p>
+   {% trans %}
+   Before building GNUnet, make sure that you setup the required groups and
+   add your user to the group <code>gnunet</code>:
+   {% endtrans %}
+  </p>
+  <code class="block">
+    # addgroup gnunetdns <br>
+    # adduser --system --home "/var/lib/gnunet" --group gnunet --shell /bin/sh gnunet<br>
+    # usermod -a -G gnunet &lt;username&gt;
+  </code>
+  <p>
+   {% trans %}
+   To compile GNUnet, execute:
+   {% endtrans %}
+  </p>
+  <code class="block">
+    $ export GNUNET_PREFIX=/usr/local/lib # or other directory of your choice<br>
+    $ ./bootstrap # only if you install from git <br>
+    $ ./configure --prefix=$GNUNET_PREFIX/.. <br>
+    $ make
+  </code>
+  <p>
+    {% trans %}
+    You can find more configuration flags in the
+    <a href="https://git.gnunet.org/gnunet.git/tree/README">README</a>.<br>
+    Install GNUnet with:
+    {% endtrans %}
+  </p>
+  <code class="block">
+    $ (sudo) make install # you only need sudo if your GNUNET_PREFIX is not writeable by your user
+  </code>
+  <p>
+    {% trans %}
+    You can now start GNUnet by running:
+    {% endtrans %}
+  </p>
+  <code class="block">
+    $ gnunet-arm -s
+  </code>
+  <p>
+    {% trans %}
+    Check the <a href="https://docs.gnunet.org/handbook/gnunet.html#Minimal-configuration">handbook</a> for detailed documentation.
+    For a more hands-on experience, <a href="https://gnunet.org/en/use.html">continue here</a>.
+    {% endtrans %}
+  </p>
+
+
+<!--
   <div class="row container justify-content-center text-center">
     <div class="col-md">
-      <p><a href="install-on-ubuntu1804.html"><img src="{{ url('static/images/ubuntu-logo32.png') }}" class="distro-logo"></a></p>
+      <p><a href="install-on-ubuntu1804.html"><img src="{{ url('images/ubuntu-logo32.png') }}" class="distro-logo"></a></p>
       <h3>Ubuntu 18.04</h3>
     </div>
     <div class="col-md">
-      <p><a href="install-on-debian9.html"><img src="{{ url('static/images/debian-logo.svg') }}" class="distro-logo"></a></p>
+      <p><a href="install-on-debian9.html"><img src="{{ url('images/debian-logo.svg') }}" class="distro-logo"></a></p>
       <h3>Debian 9</h3>
     </div>
     <div class="col-md">
-      <!-- Not the officially distributed file, but it's the same logo, in svg. Use this. -->
-      <p><a href="install-on-netbsd.html"><img src="{{ url('static/images/NetBSD_Logo.svg') }}" class="distro-logo"></a></p>
+      <p><a href="install-on-netbsd.html"><img src="{{ url('images/NetBSD_Logo.svg') }}" class="distro-logo"></a></p>
       <h3>NetBSD</h3>
     </div>
   </div>
 
   <div class="row container justify-content-center text-center">
     <div class="col-md">
-      <p><a href="install-on-macos.html"><img src="{{ url('static/images/apple-logo.svg') }}" class="distro-logo"></a></p>
-      <h3>macOS</h3>
+      <h1><a href="install-on-macos.html">Apple<br/>macOS</a></h1>
     </div>
     <div class="col-md">
-      <p><a href="install-on-archpi.html"><img src="{{ url('static/images/archlinux-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
+      <p><a href="install-on-archpi.html"><img src="{{ url('images/archlinux-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
       <h3>Arch Linux/Arch-Pi</h3>
     </div>
     <div class="col-md">
+      <p><a href="install-on-openwrt.html"><img src ="{{ url('images/openwrt-logo.svg') }}" class="distro-logo" style="width:300px;height:auto"></a></p>
+      <h3>OpenWrt</h3>
+    </div>
+    <div class="col-md">
+      <p><a href="https://wiki.gentoo.org/wiki/Overlay:Youbroketheinternet"><img alt="gentoo linux" src ="{{ url('images/gentoo-logo.svg') }}" class="distro-logo" style="width:170px;height:auto"></a></p>
     </div>
   </div>
-
+-->
 </article>
 {% endblock body_content %}

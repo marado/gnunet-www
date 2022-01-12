@@ -1,0 +1,29 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+  <h1>GNUnet 0.13.1 released</h1>
+<p>
+  This is a bugfix release for gnunet and gnunet-gtk specifically.
+  <br>
+  For gnunet, no changes to the source have been made. However,
+  the default configuration had to be modified to support the changes
+  made in 0.13.0.
+  <br>
+  For gnunet-gtk, this fixes a more serious issue where the
+  0.13.0 tarball failed to build.
+</p>
+<h4>Download links</h4>
+<ul>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.13.1.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-0.13.1.tar.gz</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-0.13.1.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-0.13.1.tar.gz.sig</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.13.1.tar.gz">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.13.1.tar.gz</a></li>
+  <li><a href="http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.13.1.tar.gz.sig">http://ftpmirror.gnu.org/gnunet/gnunet-gtk-0.13.1.tar.gz.sig</a></li>
+</ul>
+<p>
+  The GPG key used to sign is: <tt>3D11063C10F98D14BD24D1470B0998EF86F59B6A</tt>
+</p>
+<p>
+  Note that due to mirror synchronization, not all links might be functional
+  early after the release. For direct access try
+  <a href="http://ftp.gnu.org/gnu/gnunet/">http://ftp.gnu.org/gnu/gnunet/</a>
+</p>
+{% endblock body_content %}

@@ -1,0 +1,37 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+  <div class="container-fluid">
+    <div class="container">
+      <article>
+        <div class="row">
+          <div class="container text-center">
+            <h1>Living Standards</h1>
+            <section>
+              <p>
+                {% trans %}
+                On this page you can find links to our technical specifications.
+                {% endtrans %}
+              </p>
+            </section>
+          </div>
+        </div>
+        <ul>
+          <li><b>LSD0000</b>: Reserved</li>
+          <li><b>LSD0001</b>: <a href="https://lsd.gnunet.org/lsd0001">The GNU Name System</a></li>
+          <li><b>LSD0002</b>: <a href="https://lsd.gnunet.org/lsd0002">re:claimID (work-in-progress)</a></li>
+          <li><b>LSD0003</b>: <a href="https://lsd.gnunet.org/lsd0003">Byzantine Fault Tolerant Set Reconciliation (work-in-progress)</a></li>
+          <li><b>LSD0004</b>: <a href="https://lsd.gnunet.org/lsd0004">The R5N Distributed Hash Table (work-in-progress)</a></li>
+        </ul>
+        Unspecified components and subsystems:
+        <ul>
+          <li>CADET: Secure node-to-node communication.</li>
+          <li>CONVERSATION: Voice communication.</li>
+          <li>FILE-SHARING</li>
+          <li>CORE: Secure peer-to-peer neighbour communication.</li>
+          <li>TRANSPORT: Connectivity.</li>
+        </ul>
+
+      </article>
+    </div>
+  </div>
+{% endblock body_content %}

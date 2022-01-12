@@ -1,0 +1,94 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="container">
+  <div class="row">
+    <div class="container text-center">
+      <h1>{{ _("Roadmap") }}</h1>
+    </div>
+    <p>
+      This is our roadmap. We distinguish between short, medium and long term goals.
+      The roadmap is subject to change and its primary purpose it to indicate the current work in progress and future work as well as the path to a stable release. Goals which are currently in active development are marked in <b>bold</b>.
+    </p>
+    <ul class="timeline">
+      <li>
+        <section class="item-preview">
+          <header>
+            <h3>Short term</h3>
+            <p class="item-date">
+            &le;0.16
+            </p>
+            <p class="item-abstract">
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>DHT:</b>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>Improvements including signed paths and stability improvements.</b></li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><a href="https://lsd.gnunet.org/lsd0004/"><b>Technical specification.</b></a></li>
+                </ul>
+              </li>
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>RECLAIM: <a href="https://lsd.gnunet.org/lsd0002/">Technical specification</a></b>.</li>
+              <li><span class="fa-li"><i class="far fa-check-square"></i></span>SET:
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="far fa-check-square"></i></span>Improvements to code quality and correctness.</li>
+                  <li><span class="fa-li"><i class="far fa-check-square"></i></span><a href="https://lsd.gnunet.org/lsd0003/">Technical specification</a>.</li>
+                </ul>
+              </li>
+             </ul>
+            </p>
+          </header>
+          </p>
+        </section>
+      </li>
+      <li>
+        <section class="item-preview">
+          <header>
+            <h3>Medium term</h3>
+            <p class="item-date">
+            &gt;0.16
+            </p>
+            <p class="item-abstract">
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>TNG</b>: Transport rewrite. [<a href="https://bugs.gnunet.org/search.php?tag_string=tng">Open issues</a>]
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>TNG service</b></li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>TCP communicator</b></li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>UDP communicator</b></li>
+                  <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>UNIX Domain Socket communicator</b></li>
+                  <li><span class="fa-li"><i class="far fa-square"></i></span>NAT</li>
+                </ul>
+              </li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>CORE/CADET: Performance and correctness improvements.</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>CONVERSATION improvements to performance, latency hiding and usability.</li>
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>Stable and usable documentation.</b></li>
+              <li><span class="fa-li"><i class="far fa-minus-square"></i></span><b>GNUnet packages available and up-to-date in distributions.</b></li>
+             </ul>
+            </p>
+          </header>
+          </p>
+        </section>
+      </li>
+      <li>
+        <section class="item-preview">
+          <header>
+            <h3>Long term</h3>
+            <p class="item-date">
+            1.x
+            </p>
+            <p class="item-abstract">
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Stable release.</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Onion routing with RPS</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Mix network, pEp integration on top of mix network</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Collaborative filtering / news distribution</li>
+              <li><span class="fa-li"><i class="far fa-square"></i></span>Improved FS design, proper integration with GNS</li>
+             </ul>
+            </p>
+          </header>
+          </p>
+        </section>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+{% endblock body_content %}

@@ -36,26 +36,41 @@
     <!--    <link rel="icon" href="../../favicon.ico"> -->
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ url('dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_dist('css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{{ url('static/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_static('styles.css') }}" rel="stylesheet">
 
-    <script src="{{ url('dist/js/jquery-1.11.1.min.js') }}"></script>
-    <script src="{{ url('dist/js/bootstrap.min.js') }}"></script>
-    <link href="{{ url('static/navbar.css') }}" rel="stylesheet">
+    <script src="{{ url_dist('js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ url_dist('js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_static('navbar.css') }}" rel="stylesheet">
+
+    <link href="{{ url_dist('font-awesome/css/all.css') }}" rel="stylesheet">
+
+    <link href="{{ url_static('scroll.css') }}" rel="stylesheet">
+    <script src="{{ url_static('scroll.js') }}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- font awesome, for team page -->
-    <link href="{{ url('dist/font-awesome/css/all.css') }}" rel="stylesheet">
 
-    <!-- handwritten rss -->
-    <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="GNUnet.org rss" href="{{ url_localized('rss.xml') }}" />
 
-    <!-- rss and atom, WIP
-    <link rel="alternate" type="application/rss+xml" href="{{ url('feed.rss') }} title="RSS feed for gnunet.org">
-    <link rel="alternate" type="application/atom+xml" href="{{ url('feed.atom') }} title="Atom feed for gnunet.org">
-    -->
+    <!-- opengraph -->
+    <!--
+      We do not actively use Twitter or endorse it, but people might
+      use our posts there or other websites might conform to the
+      twitter namespace of the opengraph. More opengraph must be
+      implemented in the sitecode.
+      -->
+    <meta name="twitter:card" content="article" />
+    <meta name="twitter:site" content="@gnunet" />
+    <meta name="twitter:creator" content="@gnunet" />
+    {#
+    TODO: Implement the necessary functions.
+    <meta property="og:url" content="{{ url_localized(url) }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ summary }}" />
+    <meta property="og:image" content="" />
+    #}

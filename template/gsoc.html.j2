@@ -9,8 +9,8 @@
   <div class="row">
     <div class="col-2 d-none d-lg-block"><!-- for large viewports show menu for better orientation -->
       <nav class="nav subnav position-fixed flex-column border-right" style="position:fixed">
-      <a class="nav-link" href="#current">{{ _("Current projects") }}</a>
-      <a class="nav-link" href="#past">{{ _("Past projects") }}</a>
+      <a class="nav-link" href="#current">{{ _("Ideas 2021") }}</a>
+      <!--<a class="nav-link" href="#past">{{ _("Past projects") }}</a>-->
       <a class="nav-link" href="#finished">{{ _("Finished projects") }}</a>
       </nav>
     </div>
@@ -19,17 +19,204 @@
       <section>
         <p>
         {% trans %}
-          As a GNU project, GNUnet has participated in the
-          Google Summer of Code (GSoC) for a number of years.
-          This page lists all current, past, and finished
-          projects.
+          As a GNU project, GNUnet has participated in the Google Summer of Code (GSoC) for a number of years. This page lists all current, past, and finished projects.
+          If you want to participate and apply for any of the ideas for 2020 below or any past project which is not yet finished (or even your own idea), please contact us on the mailing list.
         {% endtrans %}
         </p>
       </section>
 
 
-      <h2><a name="current" class="subnav-anchor"></a>{{ _("Current projects (2019)") }}</h2>
+      <h2><a name="current" class="subnav-anchor"></a>{{ _("Ideas 2021") }}</h2>
+
       <section>
+        <h4>Transport Next Generation (TNG): Communicator plugins</h4>
+        <p>
+          {% trans %}
+            The GNUnet team is currently working on a transport layer rewrite
+            in order to fix core issues with connectivity.
+            This new component is currently developed under the name "TNG".
+            What is currently known as "transport plugins" will in the TNG
+            be represented as "communicators".
+
+            Communicators are processes with a well defined API that allow
+            to connect peers over a specific protocol.
+            The primary protocol which are already implemented are UNIX sockets,
+            UDP sockets, and TCP sockets.
+
+            For a truly resilient network, other connectivity options such as
+            WiFi mesh, Bluetooth, HTTP(S), QUIC or even more obscure alternatives
+            such as radio are required.
+
+            In this project, the goal is to select, implement and test new
+            communicators.
+            While TNG is not yet ready, communicators can, by design, be developed
+            and tested against the current API.
+
+            We expect that this project can be worked on by multiple students
+            as there are a lot of protocols to choose from.
+            The tasks would consist of:
+            <ol>
+              <li>Deciding which communicators to implement.</li>
+              <li>Test the communicators.</li>
+              <li>Documentation.</li>
+            </ol>
+            Advantageous skills/languages/frameworks:
+            <ol>
+              <li>C</li>
+              <li>Knowledge of HTTPS, QUIC, Bluetooth or WiFi.</li>
+            </ol>
+            <br/>
+            <strong>Difficulty:</strong> Average, but depends on selected protocols.
+            <br/>
+            <strong>Mentors:</strong> Martin Schanzenbach, t3sserakt
+          {% endtrans %}
+        </p>
+      </section>
+
+      <section>
+        <h4>REST: Multi-user support</h4>
+        <p>
+          {% trans %}
+            The REST API currently only supports a single user system.
+            This is an issue as on multi-user systems, access control
+            must be enfoced on a per-user basis.
+
+            In this project, the REST service must be extended to
+            support user authentication.
+            This includes the correct handling of user context switches.
+            <ol>
+              <li>Implement user authentication.</li>
+              <li>Test the access control.</li>
+              <li>Document the changes to the REST API.</li>
+            </ol>
+            Advantageous skills/languages/frameworks:
+            <ol>
+              <li>C</li>
+              <li>Knowledge of user authentication subsystems on Linux/Unix.</li>
+              <li>REST/HTTP Authentication methods</li>
+            </ol>
+            <br/>
+            <strong>Difficulty:</strong> Beginner
+            <br/>
+            <strong>Mentors:</strong> Martin Schanzenbach
+          {% endtrans %}
+        </p>
+      </section>
+
+
+
+      <section>
+        <h4>re:claimID/GNUnet Browser Plugin</h4>
+        <p>
+          {% trans %}
+            reclaimID is a decentralized identity system build on top of the GNU
+            Name System.
+            Currently, there is a Webextension which uses the GNUnet <a href="https://rest.gnunet.org">REST API</a>.
+            In order to improve adoption and ease of use, this project aims to include
+            a full GNUnet node within the Webextention as a fallback.
+            GNUnet can be compiled to Web Assembly or JavaScript as demonstrated
+            <a href="https://gnunet.io">here</a>.
+            The idea is to improve upon this concept and support more of GNUnet's
+            subsystems.
+
+            The difficulty of this project largely depends on the students
+            proficiency with build tools, emscripten and improvisation skills.
+            There non-exhaustive task list would be:
+            <ol>
+              <li>Improve existing GNUnet emscripten build to include more subsystems.</li>
+              <li>Integrate the result into a Webextention.</li>
+              <li>Integrate the result into the re:claimID Webextension</li>
+            </ol>
+            Advantageous skills/languages/frameworks:
+            <ol>
+              <li>C</li>
+              <li>emscripten</li>
+              <li>Webextensions</li>
+            </ol>
+            <br/>
+            <strong>Difficulty:</strong> Challenging
+            <br/>
+            <strong>Mentors:</strong> Martin Schanzenbach
+          {% endtrans %}
+        </p>
+      </section>
+
+      <section>
+        <h4>Canonical statistics identifier</h4>
+        <p>
+          {% trans %}
+            Currently, the keys in our statistics database are too verbose.
+            For example:
+        </p>
+        <p>
+          nse # flood messages received: 13<br/>
+          nse # peers connected: 4<br/>
+          nse # nodes in the network (estimate): 203<br/>
+          nse # flood messages started: 5<br/>
+          nse # estimated network diameter: 3<br/>
+          nse # flood messages transmitted: 10<br/>
+        </p>
+        <p>
+           With such verbose keys there's no easy way to form compact JSON
+           document or entries for time-series database.
+           And you can't query single stats without having to copypaste the line
+           exactly and put in quotes.
+            In short, the goals are to...
+            <ol>
+              <li>Think of a way how statistics entries can be made canonical.</li>
+              <li>Implement the change and migrate existing uses.</li>
+              <li>Document the format(s) and define an appropriate registration mechanism for identifiers</li>
+            </ol>
+            Relevant bugs: <a href="https://bugs.gnunet.org/view.php?id=5650">#5650</a><br/>
+            Advantageous skills/languages/frameworks:
+            <ol>
+              <li>C</li>
+              <li>HTML</li>
+            </ol>
+            <br/>
+            <strong>Difficulty:</strong> Beginner
+            <br/>
+            <strong>Mentors:</strong> Martin Schanzenbach
+          {% endtrans %}
+        </p>
+      </section>
+
+      <section>
+        <h4>Rust templates for GNUnet services</h4>
+        <p>
+          {% trans %}
+          The goal is to either build upon the (outdated) <a href="https://github.com/canndrew/gnunet-rs">GNUnet Rust
+          bindings</a> or to follow the path of <a href="GNUnet Go">https://github.com/bfix/gnunet-go</a>
+          which tries to reimplement most of the GNUnet stack.
+          The end result should be an extension template for GNUnet in the form
+          of the existing <a href="https://git.gnunet.org/gnunet-ext.git/">C template</a>
+          which allows to quickly start implementing services and libraries
+          for GNUnet.
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            <strong>Mentors:</strong> Martin Schanzenbach
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Required Skills: Solid knowledge of Rust and ideally asynchronuous IO.
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Difficulty level: medium
+          {% endtrans %}
+        </p>
+      </section>
+
+      <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
+      <!--<h2><a name="past" class="subnav-anchor"></a>{{ _("Past projects") }}</h2>
+      <p>
+        Past projects: Previously proposed, but left unfinished. Inspiration for students.
+      </p>
+            <section>
         <h4>Android Port</h4>
         <p>
           {% trans %}
@@ -40,7 +227,14 @@
         </p>
         <p>
           {% trans %}
-            <strong>Mentors:</strong> <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>
+            Includes: Implementation of rudimentary Android compatibility for GNUnet,
+            in part by porting the GNUnet utils scheduler to act as
+            a thin wrapper over libuv.
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            <strong>Mentors:</strong> <a href="https://www.goebel-consult.de/">Hartmut Goebel</a>, Jeff Burdges, Christian Grothoff
           {% endtrans %}
         </p>
       </section>
@@ -66,87 +260,6 @@
         </p>
       </section>
 
-      <section>
-        <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
-        <p>
-          {% trans %}
-            Python 2.7 is reaching its end-of-life, and we want to get rid
-            of the dependency on Python. The existing gnunet-qr tool is a
-            rather simple wrapper around python-zbar, which itself wraps
-            libzbar. The goal of this project is to directly use libzbar
-            to scan QR codes for GNUnet / the GNU Name System (see
-            also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
-            <br>
-            <strong>Mentors:</strong> Christian Grothoff
-          {% endtrans %}
-        </p>
-      </section>
-
-      <section>
-        <h4>re:claimID OpenID Connect performance improvements</h4>
-        <p>
-          {% trans %}
-            reclaimID is a decentralized identity system build on top of the GNU
-            Name System.
-            Upon authorization, the user provides a requesting party (RP) such as a website
-            with an authorization ticket (e.g. piggybacked in an OpenID authorization code).
-            The RP uses information contained in this ticket to
-            <ol>
-              <li> Retrieve the decryption key from GNS</li>
-              <li> Retrieve the user attributes from GNS</li>
-            </ol>
-            The GNS lookups ensure that the RP receives up-to-date attributes and functional
-            decryption keys. However, in particular the RP-specific encryption key
-            resolution can be slow and even fail depending on the network topology.
-            We propose that in an initial exchange, in particular OpenID authorization code
-            flows, we try to incorporate key and maybe even an attribute set in the ticket
-            exchange.
-
-            In order to mitigate this issue, this project is meant to investigate and implement how...
-            <ol>
-              <li> ... decryption keys can be added to an initial exchange in OpenID.</li>
-              <li> ... initial set(s) of attributes can be piggybacked in OpenID.</li>
-            </ol>
-            <br/>
-            <strong>Mentors:</strong> Martin Schanzenbach
-          {% endtrans %}
-        </p>
-      </section>
-
-      <section>
-        <h4>re:claimID alternative GNS-based encryption</h4>
-        <p>
-          {% trans %}
-            re:claimID is a decentralized identity system build on top of the GNU
-            Name System.
-            The initial design and implementation of re:claimID includes an attribute-based
-            encryption module in order to prevent unauthorized access to attributes in the
-            name system.
-            Our motivation for re:claimID was for it to be name system agnostic, which
-            means the design theoretically also works for other name systems such as
-            namecoin.
-            Other name systems often do not have built-in mechanisms in order to do this.
-            Hence, we implemented an ABE access control layer. Our ABE implementation
-            requires two third party libraries: libpbc and libgabe. While we could merge
-            libgabe into the gnunet service implementation of re:claimID, libpbc is a
-            rather large, third party library which lacks packaging in distributions and
-            for platforms.
-            On the other hand, GNS supports record data encryption using symmetric keys as
-            labels.
-            If we make the access control layer of re:claimID more generic in order to
-            support both ABE and GNS encryption, we could reduce the required depenencies.
-            This would result in gnunet packages to include re:claimID by default.
-
-            In short, the goals are to...
-            <ol>
-              <li> ... improve performance by reducing encryption overhead.</li>
-              <li> ... reduce dependencies.</li>
-            </ol>
-            <br/>
-            <strong>Mentors:</strong> Martin Schanzenbach
-          {% endtrans %}
-        </p>
-      </section>
 
       <section>
         <h4>Enable all networking applications to run over GNUnet out of the box</h4>
@@ -174,44 +287,6 @@
         <p>
           {% trans %}
             <strong>Mentors:</strong> lynX &amp; dvn
-          {% endtrans %}
-        </p>
-      </section>
-      <!-- Past projects: Previously proposed, but left unfinished. Inspiration for students. -->
-      <h2><a name="past" class="subnav-anchor"></a>{{ _("Past projects") }}</h2>
-      <section>
-        <h4>Rust APIs for GNUnet services</h4>
-        <p>
-          {% trans %}
-            There are a variety of GNUNet APIs that should be
-            exposed in the Rust wrappers.  Implementing these will
-            require extending the port of GNUNet utils written by
-            Andrew Cann and Kelong Cong.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            As an introduction to the code base, we suggest that the
-            student and Jeff Burdges together update the
-            asynchronous IO system from gjio to futures-rs or
-            another layer built upon it.  Jeff Burdges is expected
-            to concurrently be implementing a GNUNet API for his own
-            mix network work.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            <strong>Mentors:</strong> Jeff Burdges
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            Required Skills: Rust
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            Difficulty level: low
           {% endtrans %}
         </p>
       </section>
@@ -249,25 +324,6 @@
         </p>
       </section>
       <section>
-        <h4>RESTful GNUnet</h4>
-        <p>
-          {% trans %}
-            Design and implementation
-            of <a href="http://jsonapi.org/">REST APIs</a> that expose
-            the
-            <a href="https://docs.gnunet.org/doxygen/modules.html">GNUnet API</a>
-            so that easy, hands-on development is
-            possible. Also, browser-based UIs will be much easier to
-            create on top of REST APIs.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            <strong>Mentors:</strong> Martin Schanzenbach
-          {% endtrans %}
-        </p>
-      </section>
-      <section>
         <h4>Rust implementation of GNUnet utils</h4>
         <p>
           {% trans %}
@@ -280,21 +336,6 @@
         <p>
           {% trans %}
             <strong>Mentors:</strong> Jeff Burdges
-          {% endtrans %}
-        </p>
-      </section>
-      <section>
-        <h4>Android compatibility for GNUnet</h4>
-        <p>
-          {% trans %}
-            Implement rudimentary Android compatibility for GNUnet,
-            in part by porting the GNUnet utils scheduler to act as
-            a thin wrapper over libuv.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            <strong>Mentors:</strong> Jeff Burdges and Christian Grothoff
           {% endtrans %}
         </p>
       </section>
@@ -543,21 +584,6 @@
         <p><strong>Mentors:</strong> Krista Grothoff, Jeff Burdges</p>
       </section>
       <section>
-        <h4>Implementation of a replacement for PANDA</h4>
-        <p>
-          {% trans %}
-            Implementation of a replacement for PANDA (see Pond) with better
-            security, and maybe integration with the GNU Name System for key
-            exchange.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-            <strong>Mentors:</strong> Jeff Burdges
-          {% endtrans %}
-        </p>
-      </section>
-      <section>
         <h4>Supporting GNU Guix's package distribution</h4>
         <p>
           {% trans %}
@@ -566,8 +592,49 @@
           {% endtrans %}
         </p>
       </section>
+      -->
       <h2><a name="finished" class="subnav-anchor"></a>{{ _("Finished projects") }}</h2>
       <!-- Commentary: Finished projects, descriptions and Links to write-ups about them. -->
+      <h3>2019</h3>
+      <section>
+        <h4>Migrate gnunet-qr from Python 2.7 to C using libzbar</h4>
+        <p>
+          {% trans %}
+            Python 2.7 is reaching its end-of-life, and we want to get rid
+            of the dependency on Python. The existing gnunet-qr tool is a
+            rather simple wrapper around python-zbar, which itself wraps
+            libzbar. The goal of this project is to directly use libzbar
+            to scan QR codes for GNUnet / the GNU Name System (see
+            also <a href="https://bugs.gnunet.org/view.php?id=5562">#5562</a>).
+            {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            <strong>Mentors:</strong> Christian Grothoff
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Required Skills:
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Difficulty level:
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Report:
+          {% endtrans %}
+        </p>
+        <p>
+          {% trans %}
+            Unfinished/Abandoned as gnunet-qr was moved to C outside of GSoC.
+          {% endtrans %}
+        </p>
+      </section>
+
       <h3>2018</h3>
       <section>
         <h4>GNUnet Web-based User Interface</h4>

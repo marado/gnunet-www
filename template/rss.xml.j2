@@ -1,0 +1,46 @@
+{#
+# Copyright (C) 2019, 2020 GNUnet e.V.
+#
+# This code is derived from code contributed to GNUnet eV
+# by nikita <nikita@n0.is>.
+#
+# Permission to use, copy, modify, and/or distribute this software for
+# any purpose with or without fee is hereby granted.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+# WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+# AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+# DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+# PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+# TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+#
+# SPDX-License-Identifier: 0BSD
+#}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="{{ siteconf['baseurl'] }}{{ lang }}/rss.xml" rel="self" type="application/rss+xml" />
+    <title>{{ siteconf['rsstitle'] }}</title>
+    <language>{{ lang }}</language>
+    <description>{{ siteconf['rssdescr']|e }}</description>
+    <link>{{ siteconf['baseurl'] }}/</link>
+    <lastBuildDate>{{ now }}</lastBuildDate>
+    {% for newspostitem in newsposts %}
+      <item>
+        <guid>{{ siteconf['baseurl'] }}{{ lang }}{{ siteconf['newsloc'] }}{{ newspostitem['page'] }}</guid>
+        <link>{{ siteconf['baseurl'] }}{{ lang }}{{ siteconf['newsloc'] }}{{ newspostitem['page'] }}</link>
+        <pubDate>{{ conv_date_rfc822(newspostitem["date"]) }}</pubDate>
+        <title>{{ newspostitem['title']|e }}</title>
+        <description>
+          <![CDATA[
+             {% filter extract_body %}
+             {% include ('news/' + newspostitem['page'] + ".j2") %}
+             {% endfilter %}
+           ]]>
+        </description>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -1,0 +1,102 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="container">
+  <div class="row">
+    <div class="container text-center">
+      <img style="width:50%" src="{{ url_static('images/reclaim_logo.png') }}"  alt="reclaimID" />
+      <br/>
+      <p class="mt-4">{{ _("Self-sovereign, Decentralised Identity Management and Personal Data Sharing") }}</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+          <h2>{{ _("Self-sovereign") }}</h2>
+          <p>
+          {% trans %}
+          You manage your identities and attributes locally on your computer. No need to trust a third party service with your data.
+          {% endtrans %}
+          </p>
+        </section>
+      </div>
+      <div class="col-lg-3 homepageicon">
+        <span class="fas fa-fist-raised"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <span class="fas fa-project-diagram"></span>
+      </div>
+      <div class="col-lg-6">
+        <section>
+          <h2>{{ _("Decentralized") }}</h2>
+          <p>
+          {% trans %}
+          You can share your identity attributes securely over a decentralized name system. This allows your friends to access your shared data without the need of a trusted third party.
+          {% endtrans %}
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+          <h2>{{ _("Standard-compliant") }}</h2>
+          <p>
+          {% trans %}
+          You can use OpenID Connect to integrate reclaim in your web sites.
+          {% endtrans %}
+          </p>
+        </section>
+      </div>
+      <div class="col-lg-3 homepageicon">
+        <span class="fab fa-openid"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('reclaim/tech.html') }}"><i class="fas fa-cubes"></i><br/>{{ _("Technology") }}</a>
+      </div>
+      <div class="col-md-4 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('reclaim/motivation.html') }}"><i class="fas fa-fire"></i><br/>{{ _("Motivation") }}</a>
+      </div>
+      <div class="col-md-4 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('reclaim/faq.html') }}"><i class="fas fa-question"></i><br/>{{ _("FAQ") }}</a>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-4 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('reclaim/users.html') }}"><i class="fas fa-user"></i><br/>{{ _("For users") }}</a>
+      </div>
+      <div class="col-md-4 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('reclaim/websites.html') }}"><i class="fas fa-globe"></i><br/>{{ _("For websites") }}</a>
+      </div>
+      <div class="col-md-4 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('reclaim/idps.html') }}"><i class="fas fa-users"></i><br/>{{ _("For IdPs") }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock body_content %}

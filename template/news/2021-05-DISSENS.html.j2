@@ -1,0 +1,67 @@
+{% extends "common/news.j2" %}
+{% block body_content %}
+  <h1>DISSENS: Decentralized Identities for Self-sovereign End-users (NGI TRUST)</h1>
+<p>
+  Since mid 2020, a consortium between <a class="link" href="https://taler.net">Taler Systems S.A.</a>,
+the <a class="link" href="https://bfh.ch">Bern University of Applied Sciences</a> and <a class="link" href="https://aisec.fraunhofer.de">Fraunhofer AISEC</a> has been working
+  on bringing privacy-friendly payments using GNU Taler and self-sovereign
+  identity using GNUnet's <a class="link" href="https://reclaim.gnunet.org">re:claimID</a>
+  together in an e-commerce framework.
+</p>
+<p>
+<img style="width: 100%; border: 1px solid #333" src="{{ url_static('dissens-overview.png')}}"/>
+</p>
+<h2>Content</h2>
+<p>
+  Registrations of accounts prior to receiving services online is the standard process for commercial offerings on the Internet which depend on two corner stones of the Web: Payment processing and digital identities. The use of third-party identity provider services (IdPs) is practical as it delegates the task of verifying and storing personal information. The use of payment processors is convenient for the customer as it provides one-click payments. However, the quasi-oligopoly of services providers in those areas include Google and Facebook for identities and PayPal or Stripe for payment processing. Those corporations are not only based in privacy-unfriendly jurisdictions, but also exploit private data for profit.
+</p>
+<p>
+DISSENS makes the case that what is urgently needed are fundamentally different, user-centric and privacy-friendly alternatives to the above.
+Self-sovereign identity (SSI) management is the way to replace IdPs with a user-centric, decentralized mechanism where data and access control is fully under the control of the data subject.
+In combination with a privacy-friendly payment system, DISSENS aims to achieve the same one-click user experience that is currently achieved by privacy-invasive account-based Web shops, but without the users having to setup accounts.
+</p>
+<p>
+To achieve this, DISSENS integrates re:claimID with the GNU Taler payment system in a pilot in order to demonstrate the practical feasibility and benefits of privacy enhancing technologies for users and commercial service providers.
+DISSENS also implements a reference scenario which includes credentials issued by the partners Fraunhofer AISEC and BFH for employees and students, respectively. Users are able to access and use a pilot service developed by Taler Systems S.A. while being able to claim specific discounts for students and researchers.
+</p>
+<p>
+This approach offers significant benefits over existing solutions built using other SSI systems such as <a class="link" href="https://www.sovrin.org">Sovrin</a> or <a class="link" href="https://www.serto.id">serto</a> (formerly uPort):
+</p>
+<b>No gatekeepers; No vendor lock-in:</b>
+<p>
+The approach is completely open to issuers and does not impose any registration restrictions (such as registration fees) in order to define domain specific credentials. Further, the system does not impose a consortium-based governance model — which tend to eventually be driven by commercial interests and not consumer interests. The design enables all participants in the ecosystem to participate without prior onboarding while at the same time being offered full transparency and control regarding their personal data and processes involved.
+</p>
+<b>Support for non-interactive business processes:</b>
+<p>
+At the same time, unlike the SSI systems cited above, re:claimID offers a way to access user information without online interaction with the user. Offline access of shared identity data is a crucial requirement in almost any business process as such processes often occur after direct interaction with the user. For example, customer information such as billing addresses are required in — possibly recurring — back office billing processes which occur well after interaction with a customer.
+</p>
+<b>Scalability and sustainability:</b>
+<p>
+Finally, both re:claimID as the SSI system as well as Taler do not suffer from the usual predicament Blockchain-based systems find themselves in: Both systems do not require a decentralized, public ledger. This eliminates the need for consensus mechanisms, which do not scale and are ecologically unsustainable. In fact, DISSENS employs decentralization only where it provides the most value and use more efficient technology stacks where needed: re:claimID builds on top of the <a class="link" href="{{ url_localized('gns.html') }}">GNU Name System</a>, which makes use of a DHT, an efficient (O(log n)) peer-to-peer data structure. For payments, GNU Taler uses centralized infrastructure operated by audited and regulated exchange providers and facilitates account-less end-to-end interactions between customers and services where all parties have O(1) transaction costs.
+</p>
+<p>
+The result of DISSENS will provide businesses and credential issuers with ready-to-use and standards-compliant templates to build privacy-friendly services in the Web.
+The aim of the DISSENS project was to design a technology stack which combines privacy-friendly online payments with self-sovereign personal data management. The result enables users to be in complete control over their digital identity and personal information while at the same time being able to selectively share information necessary to use commercial services. The pilot demonstrates a sustainable, user-centric, standard-compliant and accessible use case for public service employees and students in the domain of commercial food delivery.
+It serves as an easy-to-adapt template for the integration of other scenarios and use cases.
+</p>
+<h2>Future work</h2>
+<p>
+GNUnet is working on the underlying components mature to the point that Taler+re:claimID can be recommended to operators to enable for account-less shopping with or without verified credentials. This will also require the continuation of our
+work on the low-level transport rewrite as it is a core component of GNS which
+in turn is what makes re:claimID spin.
+</p>
+<h2>Links</h2>
+<ul>
+  <li>Mid-project <a class="link" href="https://gnunet.org/~schanzen/2021-01-18-reclaimID-Taler-Shopping.webm">demonstration video</a> (~7 MB).</li>
+  <li><a class="link" href="https://git.gnunet.org/bibliography.git/plain/docs/dissens2021.pdf">The paper</a> (also accepted for publication without appendix at the <a class="link" href="https://oid2021.compute.dtu.dk/">Open Identity Summit 2021</a>)</li>
+  <li><a class="link" href="https://wordpress.org/plugins/gnu-taler-payment-for-woocommerce/">Taler WooCommerce plugin</a> (wordpress.org)</li>
+  <li>The privacy credential library <a class="link" href="https://github.com/Fraunhofer-AISEC/libpabc">libpabc</a> (github.com).</li>
+  <li><a class="link" href="https://git.taler.net/woocommerce-taler.git">Setup scripts and installation documentation for a Taler + re:claimID + WooCommerce service</a> (taler.net).</li>
+  <li><a class="link" href="https://git.gnunet.org/gnunet-presentations.git/plain/2021dissens/reclaim.pdf">Slide deck</a>.</li>
+</ul>
+<p>
+</p>
+<p>
+  This work is generously funded by <a class="link" href="https://www.ngi.eu">the EC's Next Generation Internet (NGI) initiative</a> as part of their <a class="link" href="https://www.ngi.eu/ngi-projects/ngi-trust/">NGI TRUST</a> programme.
+</p>
+{% endblock body_content %}

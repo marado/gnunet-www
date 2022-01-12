@@ -9,8 +9,12 @@
   </head>
   <body id="mybody">
     {% include "common/navigation.j2.inc" %}
-    <div id="body_content" class="bg-near-white">
-    {% block body_content %}{% endblock %}
+    <div id="body_content" class="bg-white">
+      <!-- jump to top, TODO: the link does not cover all of the button -->
+      <a href="#" id="jump-top" role="button">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+      {% block body_content %}{% endblock %}
     </div>
     {% include "common/footer.j2.inc" %}
   </body>

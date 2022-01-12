@@ -1,0 +1,5 @@
+{% extends "common/base.j2" %}
+{% from "common/old-news.j2.inc" import oldnews with context %}
+{% block body_content %}
+{{ oldnews(2013) }}
+{% endblock body_content %}

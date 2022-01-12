@@ -1,0 +1,44 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="m-3">
+  <a class="mt-2 mb-2" href="{{ url_localized('reclaim/index.html') }}">reclaimID</a> / Websites
+</div>
+<h2 class="text-center">{{ _("For websites") }}</h2>
+<div class="container">
+  <h2><b>Step 1:</b> Installation</h2>
+  <p>
+    Please use the <a href="{{ url_localized('install.html') }}">GNUnet installation guides</a>.
+  </p>
+  <h2 class="mt-5"><b>Step 2:</b> Registering an OpenID Connect client</h2>
+  <p>The easiest way to manage OpenID Connect client is through our CLI tool:</p>
+  <code class="block">$ gem install reclaim-oidc</code>
+  <p>To register an OpenID Connect client, execute:</p>
+  <code class="block">$ reclaim-oidc --add --client-name myclient --redirect-uri https://mywebsite.com/oidc_cb --description "My Client"</code>
+  <p>You can list all registered clients and your local OpenID Connect metadata required to initiate an authorization code flow by executing:</p>
+  <code class="block">$ reclaim-oidc --list </code>
+  <p>The response will look like this</p>
+  <code class="block">OpenID Connect Provider Information:<br/>
+  ------------------------------------<br/>
+  Authorize Endpoint: http://localhost:7776/openid/authorize<br/>
+  Token Endpoint: http://localhost:7776/openid/token<br/>
+  JSON-Web-Token Algorithm: HS512<br/>
+  JSON-Web-Token key: secret<br/>
+  Example Authorization Redirect:<br/>
+  https://api.reclaim/openid/authorize?client_id=&lt;client_id&gt;&amp;redirect_uri=&lt;redirect_uri&gt;&amp;response_type=code&amp;scope=email%20full_name&amp;nonce=1234<br/>
+  <br/>
+  Registered Clients:<br/>
+  -------------------<br/>
+  name: myclient<br/>
+  client_id: &lt;client_id&gt;<br/>
+  client_secret: &lt;client_secret&gt;<br/>
+  description: My Client<br/>
+  redirect_uri: https://mywebsite.com/oidc_cb<br/>
+  ...
+  </code>
+  <div class="alert alert-info"><b>NOTE</b>: The client secrets and JWT token signing keys can be configured. However, due to the fact that re:claimID endpoint are running on your local machine, they are not critical.</div>
+
+  <h2 class="mt-5"><b>Step 3:</b> Website integration</h2>
+  <p>You can use the information above to integrate re:claimID as a generic <a href="https://openid.net/specs/openid-connect-core-1_0.html">OpenID Connect Identity Provider</a> into the web application of your choice. The integration steps for this part depend on the application you use. Hence, please refer to your respective documentation or the OpenID Connect specifications.
+  </p>
+</div>
+{% endblock body_content %}

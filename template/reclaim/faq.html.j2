@@ -1,0 +1,26 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<div class="m-3">
+  <a class="mt-2 mb-2" href="{{ url_localized('reclaim/index.html') }}">reclaimID</a> / FAQ
+</div>
+<h2 class="text-center">{{ _("Frequently asked questions") }}</h2>
+<br/>
+<div class="container">
+  <ul class="fa-ul">
+    <li class="mt-4"><i class="fa-li fas fa-question-circle"></i> <b>How is re:claimID different from</b> <i>&lt;insert other identity provider service here&gt; ?</i></li>
+    <li><i class="fa-li fas fa-comment"></i> Unlike most other identity provider services, re:claimID is not operated by a single service provider or even a federated consortium of service providers. Instead, it is a fully decentralised service operated implicitly by its users. Consequently, large-scale data monetisation, mass-surveillance and other (ab)use of personal data is inherently mitigated.</li>
+    <li class="mt-4"><i class="fa-li fas fa-question-circle"></i> <b>How much does re:claimID cost?</b></li>
+    <li><i class="fa-li fas fa-comment"></i> re:claimID is Free Software. We argue that in order for an identity system to be a credible solution for self-sovereign citizens to exercise their right to digital self determination, open and free software as well as services are indispensible.</li>
+    <li class="mt-4"><i class="fa-li fas fa-question-circle"></i> <b>How does re:claimID work?</b></li>
+    <li><i class="fa-li fas fa-comment"></i> re:claimID uses the GNU Name System as identity and attribute directory service. In order to allow the user to enforce access control decisions, we use a cryptographic access control layer. However, the user is not required to manage any cryptographic keys or manage zones in a namespace. This is done under the hood by re:claimID.</li>
+    <li class="mt-4"><i class="fa-li fas fa-question-circle"></i> <b>How does a website know the attribute data share via re:claimID is correct?</b></li>
+    <li><i class="fa-li fas fa-comment"></i> Short answer: It doesn't.
+      Long answer: Identities are initially self-asserted by the user. re:claimID could, however, also be used to share third party attested attributes (e.g. X.509 certificates). Further, have integrated <a href="https://github.com/Fraunhofer-AISEC/libpabc">Privacy-ABCs</a> for <a href="{{ url_localized('news/2021-05-DISSENS.html') }}">this use case</a>.</li>
+    <li class="mt-4"><i class="fa-li fas fa-question-circle"></i> <b>Who is behind re:claimID?</b></li>
+    <li><i class="fa-li fas fa-comment"></i> re:claimID was initially developed at <a href="https://aisec.fraunhofer.de">Fraunhofer AISEC</a> and is part of GNUnet.</li>
+    <li class="mt-4"><i class="fa-li fas fa-question-circle"></i> <b>I found a bug!</b></li>
+    <li><i class="fa-li fas fa-comment"></i> We aim to continuously develop and improve re:claimID. Help us by <a href="https://bugs.gnunet.org">reporting any issues you encounter</a>.</li>
+  </ul>
+
+</div>
+{% endblock body_content %}

@@ -1,0 +1,117 @@
+{% extends "common/base.j2" %}
+{% block body_content %}
+<article class="container">
+
+  <header>
+    <h1>{{ _("Tutorial: GNUnet on OpenWrt") }}</h1>
+  </header>
+
+  Welcome to this GNUnet tutorial for <a href="https://www.openwrt.org">OpenWrt</a>.
+
+  Running on OpenWrt allows having a GNUnet node on embedded Linux systems or
+  inside a very tiny virtual machine. This tutorial shows you how to
+  install, run, and operate it.
+
+  <h2>{{ _("Installation") }}</h2>
+
+  <p>To run GNUnet in a meaningful way, you will need a system with at least 16MB
+  of flash storage and at least 64MB of RAM (128MB of more recommended).</p>
+
+  <p>OpenWrt ships with up-to-date packages of GNUnet, so you can install it right
+  from the OpenWrt packages repository without having to build things from source
+  by yourself.</p>
+  <p>GNUnet has been split into a high number of small packages, allowing to select
+  anything between the most simple setup supporting GNS and gnunet-vpn:
+  <p><code>
+  root@OpenWrt:/# opkg update<br/>
+  ...<br/>
+  root@OpenWrt:/# opkg install gnunet gnunet-gns-flat gnunet-peerstore-flat gnunet-vpn gnunet-transport-tcp gnunet-transport-http_client
+  </code></p>
+  <p>...and a full blown GNUnet node for filesharing:</p>
+  <p>First of all, setup an external (USB, ...) storage volume to contain GNUnet's databases, see <a href="https://openwrt.org/docs/guide-user/storage/fstab">OpenWrt's user guide: Fstab Configuration</a>.<br/>Then install PostgreSQL:</p>
+  <p><code>
+  root@OpenWrt:/# opkg update<br/>
+  ...<br/>
+  root@OpenWrt:/# opkg install pgsql-server pgsql-cli<br/>
+  ...
+  </code></p>
+  <p>Now configure PGDATA directory in /etc/config/postgresql to be located on your external storage volume. When restarting the postgresql init.d service you should see the new database directory being initialized.<br/>Then install GNUnet itself:</p>
+  <p><code>
+  root@OpenWrt:/# opkg install gnunet gnunet-dhtcache-pgsql gnunet-fs-pgsql gnunet-gns-pgsql gnunet-peerstore-flat gnunet-vpn gnunet-transport-tcp gnunet-transport-http_client
+  </code></p>
+
+  <p>Congrats! GNUnet is now installed!</p>
+
+  <p>Alternatively you can also use the OpenWrt ImageBuilder to generate ready-made images with those packages pre-installed.</p>
+
+  <h2>{{ _("Configuration") }}</h2>
+
+  <p>GNUnet's configuration is contained in OpenWrt's UCI by a simple translation
+  mechanism overlaying options set in UCI on GNUnet's default configuration.<br/>
+  In this way, only the options changed by the user are persistent in UCI.
+  Example:</p>
+  <p><code>
+  root@OpenWrt:/# uci show gnunet<br/>
+  gnunet.nse=gnunet-config<br/>
+  gnunet.nse.WORKDELAY='500 ms'<br/>
+  gnunet.dhtcache=gnunet-config<br/>
+  gnunet.dhtcache.DATABASE='postgres'<br/>
+  gnunet.datastore=gnunet-config<br/>
+  gnunet.datastore.DATABASE='postgres'<br/>
+  gnunet.namestore=gnunet-config<br/>
+  gnunet.namestore.DATABASE='postgres'<br/>
+  gnunet.namecache=gnunet-config<br/>
+  gnunet.namecache.DATABASE='postgres'<br/>
+  gnunet.peerstore=gnunet-config<br/>
+  gnunet.peerstore.DATABASE='flat'<br/>
+  gnunet.peerstore_flat=gnunet-config<br/>
+  gnunet.peerstore_flat.FILENAME='/etc/gnunet/peerstore.flat'<br/>
+  gnunet.psycstore=gnunet-config<br/>
+  gnunet.psycstore.DATABASE='postgres'<br/>
+<br/>
+  root@OpenWrt:/# uci set gnunet.peerstore_flat.FILENAME='/mnt/sda1/gnunet/peerstore.flat'<br/>
+  root@OpenWrt:/# uci commit gnunet<br/>
+  </code></p>
+
+  <h2>{{ _("Use") }}</h2>
+
+  <p>OpenWrt's procd runs the gnunet-arm service manager which then runs GNUnet services. We can list them with the -I option:</p>
+
+  <p><code>
+  root@OpenWrt:/etc# gnunet-arm -I<br/>
+  Services (excluding stopped services):<br/>
+  (started: 24 / stopped: 14 / finished: 1)<br/>
+  ats (binary='gnunet-service-ats', status=started)<br/>
+  cadet (binary='gnunet-service-cadet', status=started)<br/>
+  core (binary='gnunet-service-core', status=started)<br/>
+  datastore (binary='gnunet-service-datastore', status=started)<br/>
+  dht (binary='gnunet-service-dht', status=started)<br/>
+  fs (binary='gnunet-service-fs', status=started)<br/>
+  gns (binary='gnunet-service-gns', status=started)<br/>
+  hostlist (binary='gnunet-daemon-hostlist', status=started)<br/>
+  namecache (binary='gnunet-service-namecache', status=started)<br/>
+  namestore (binary='gnunet-service-namestore', status=started)<br/>
+  nat (binary='gnunet-service-nat', status=started)<br/>
+  nse (binary='gnunet-service-nse', status=started)<br/>
+  peerinfo (binary='gnunet-service-peerinfo', status=started)<br/>
+  peerstore (binary='gnunet-service-peerstore', status=started)<br/>
+  resolver (binary='gnunet-service-resolver', status=started)<br/>
+  rest (binary='gnunet-rest-server', status=started)<br/>
+  revocation (binary='gnunet-service-revocation', status=started)<br/>
+  rps (binary='gnunet-service-rps', status=started)<br/>
+  set (binary='gnunet-service-set', status=started)<br/>
+  statistics (binary='gnunet-service-statistics', status=started)<br/>
+  topology (binary='gnunet-daemon-topology', status=started)<br/>
+  transport (binary='gnunet-service-transport', status=started)<br/>
+  vpn (binary='gnunet-service-vpn', status=started)<br/>
+  zonemaster (binary='gnunet-service-zonemaster', status=started)<br/>
+  zonemaster-monitor (binary='gnunet-service-zonemaster-monitor', status=finished)<br/>
+  </code></p>
+
+  <h2>{{ _("Make sure, it works!") }}</h2>
+   <p>
+        Please head over here: <a href="https://gnunet.org/en/use.html">Use!</a>
+   <p>
+
+</article>
+{% endblock body_content %}

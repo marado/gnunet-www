@@ -1,387 +1,347 @@
 {% extends "common/base.j2" %}
 {% block body_content %}
 <!-- Jumbotron -->
-<div class="jumbotron">
+<div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
-        <center><img src="{{ url('static/images/gnunet-logo-dark-text.png') }}"  alt="GNUnet" /></center>
-      </div>
-      <div class="col-lg-6">
-      <p>
-        {% trans %}
-        GNUnet is a new network protocol stack for building secure, distributed,
-        and privacy-preserving applications. With strong roots in academic
-        <a href="https://bib.gnunet.org">research</a>, our goal is to replace the
-        <a href="https://secushare.org/broken-internet">old insecure Internet</a>
-        protocol stack.
-        {% endtrans %}
-        <br><br>
-        {% trans %}
-        GNUnet is typically run as an
-        <a href="https://en.wikipedia.org/wiki/Overlay_network">overlay network</a>
-        on top of the existing Internet infrastructure forming the
-        basis of a hybrid
-        <a href="architecture.html">peer-to-peer mesh and relay backbone</a>
-        for applications to run on. It could just as well be run
-        independently of the Internet, over
-        <a href="https://en.wikipedia.org/wiki/Physical_layer">dedicated radio and cable</a>.
-        {% endtrans %}
-        <br><br>
-        {% trans %}
-        GNUnet is made for a free and open society: It's a self-organizing
-        network and it is
-        <a href="http://www.gnu.org/philosophy/free-sw.html">free software</a>
-        as in freedom. GNUnet puts you in control of your data. You
-        determine which data to share with whom, and you're not
-        pressured to accept compromises.
-        {% endtrans %}
-      </p>
+      <div class="container text-center">
+        <h1>{{ _("The Internet of tomorrow needs GNUnet today") }}</h1>
       </div>
     </div>
+
+    <div class="container text-center">
+      <img src="{{ url_static('images/gnunet-logo-dark-no-text.png') }}"  alt="GNUnet" />
+    </div>
   </div>
-  <div class="container text-center">
-    <p>
-      <a class="btn btn-primary btn-lg" href="#about">
-      {% trans %}
-      About
-      {% endtrans %}
-      </a>
-      &nbsp;
-      <a class="btn btn-primary btn-lg" href="install.html">
-      {% trans %}
-      Install
-      {% endtrans %}
-      </a>
-      &nbsp;
-      <a class="btn btn-primary btn-lg" href="engage.html">
-      {% trans %}
-      Engage
-      {% endtrans %}
-      </a>
-    </p>
+</div>
+
+<div class="container-fluid">
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <span class="fa fa-bullhorn"></span>
+      </div>
+      <div class="col-lg-6">
+      <section>
+        <h2>{{ _("Latest news") }}</h2>
+        <p>
+        {% for item in newsdata[:3] %}
+        <a class="link" href="{{ url_localized('news/' + item['page']) }}" title="{{ item['date']}}">{{ item['date'] }}: {{ item['title'] }}</a><br/>
+        {% endfor %}
+        <br/>
+        <a class="link" href="{{ url_localized('news/index.html')}}">{{ _("Older news entries") }}</a>
+        </p>
+        </section>
+      </div>
+    </div>
   </div>
 </div>
 
 
-
-<div class="container-fluid c_acronym link-white">
+<div class="container-fluid greybox">
   <div class="container">
     <div class="row">
-      <div class="container text-center">
-        <h1><a name="about"></a>{% trans %}The Internet of tomorrow needs GNUnet today{% endtrans %}</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
         <section>
-        <h3>{{ _("Imagine...") }}</h3>
+        <h2>{{ _("The Internet is broken") }}</h2>
         <p>
         {% trans %}
-        The conventional Internet is currently like a system of roads
-        with deep potholes and highwaymen all over the place. Even if
-        you still can use the roads (e.g. send emails, or browse
-        websites) your vehicle might get hijacked, damaged, or long
-        arms might reach into its back and steal your items (data) to
-        use it against you and sell it to others - while you can't
-        even notice the thievery nor accuse and hold the scroungers
-        accountable.
-	<!-- Proposal from Fabian Gerlach: The conventional Internet is currently like a system of roads
-	with deep potholes and surveillance cameras all over the place.
-	Even if you still can use the roads (e.g. send emails, or browse
-	websites) your vehicle might gets damaged. And the surveillance
-	cameras will create a movement profile about your life: They
-	recognize your car license plate, track you everywhere you drive,
-	and save this information in a central data base. -->
-        {% endtrans %}
-        </section>
+          The conventional Internet is currently like a system of
+          roads with deep potholes and highwaymen all over the
+          place. Even if you still can use the roads (e.g. send
+          emails, or browse websites) your vehicle might get hijacked,
+          damaged, or long arms might reach into its back and steal
+          your items (data) to use it against you and sell it to
+          others - while you can&#39;t even notice the thievery nor
+          accuse and hold the scroungers accountable.
+	<!--
+          Proposal from Fabian Gerlach: The conventional Internet is currently like a system of roads
+	  with deep potholes and surveillance cameras all over the place.
+	  Even if you still can use the roads (e.g. send emails, or browse
+	  websites) your vehicle might gets damaged. And the surveillance
+	  cameras will create a movement profile about your life: They
+	  recognize your car license plate, track you everywhere you drive,
+	  and save this information in a central data base.
+          -->
+          The Internet was not designed with security in mind: protecting against
+          address forgery, routers learning metadata, or choosing trustworthy
+          third parties is nontrivial and sometimes impossible.
+	<!--
+          Proposal from Fabian Gerlach: The Internet is not designed with security in mind:
+	  The network generally learns too much about users; it has insecure
+	  defaults and high complexity; and it is centralized. That makes it very
+	  vulnerable for multiple attacks massively threatening our freedom.
+          -->
+      {% endtrans %}
         </p>
+        </section>
       </div>
-      <div class="col-lg-4">
-        <section>
-        <h3>{{ _("The Internet is broken") }}</h3>
+      <div class="col-lg-3 homepageicon">
+        <span class="fas fa-dumpster-fire"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <span class="fas fa-layer-group"></span>
+      </div>
+      <div class="col-lg-6">
+      <section>
+        <h2>{{ _("GNUnet helps building a new Internet") }}</h2>
         <p>
           {% trans %}
-          Protocols from Ethernet and IP to BGP and X.509 PKI are
-          insecure by default: protecting against address forgery,
-          routers learning metadata, or choosing trustworthy CAs is
-          nontrivial and sometimes impossible.
-	<!-- Proposal from Fabian Gerlach: The Internet is not designed with security in mind:
-	The network generally learns too much about users; it has insecure
-	defaults and high complexity; and it is centralized. That makes it very
-	vulnerable for multiple attacks massively threatening our freedom. -->
+            GNUnet is a network protocol stack for building secure,
+            distributed, and privacy-preserving applications.<br/>
+            With
+            strong roots in
+            <a class="link" href="https://bib.gnunet.org">academic research</a>, our
+            goal is to replace the
+            <a class="link" href="https://secushare.org/broken-internet">old insecure Internet</a>
+            protocol stack.
           {% endtrans %}
         </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("Metadata is exposed") }}</h2>
         <p>
           {% trans %}
-          GNUnet provides
-	  <a href="https://www.w3.org/2014/strint/papers/65.pdf">privacy by design</a>,
+	    Your metadata is just as revealing as the actual content; and it gets exposed on the Internet.<br>
+            Even though transport encryption is increasingly being
+            deployed on the Internet, it still reveals data that can
+            threaten democracy: the identities of senders and receivers,
+            the times, frequency and the volume of communication are all
+            still revealed.<br>
+          {% endtrans %}
+            <!--
+            Looks like a weak argumentation to me:
+            which <a href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables reverse-engineering pages visited via website fingerprinting</a>.
+            -->
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-3 homepageicon">
+        <span class="fa fa-eye"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("GNUnet provides privacy-by design") }}</h2>
+        <p>
+          {% trans %}
+          It provides <a class="link" href="https://www.w3.org/2014/strint/papers/65.pdf">
 	  improving addressing, routing, naming and
-          content distribution in a technically robust manner - as
+          content distribution</a> in a technically robust manner - as
           opposed to ad-hoc designs in place today.
-	<!-- Proposal from fabian gerlach: GNUnet is built 
-	<a href="https://www.w3.org/2014/strint/papers/65.pdf">"privacy by design"</> and
-	"distributed by design". This improves addressing, routing, naming and
-	content distribution in a technically robust manner. -->
+	<!--
+          Proposal from fabian gerlach: GNUnet is built
+	  <a href="https://www.w3.org/2014/strint/papers/65.pdf">"privacy by design"</a> and
+	  "distributed by design". This improves addressing, routing, naming and
+	  content distribution in a technically robust manner.
+        -->
+          {% endtrans %}
+
+        <p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("Freedoms are not respected") }}</h2>
+        <p>
+          {% trans %}
+	    Today, monitoring increasingly centralized infrastructure,
+	    proprietary implementations, traffic shapers and firewalls
+	    restrict all of the
+	    <a class="link" href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a>
+	    to various degrees.
           {% endtrans %}
         </p>
         </section>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-3 homepageicon">
+        <i class="fas fa-user-lock"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <span class="fas fa-dove"></span>
+      </div>
+      <div class="col-lg-6">
         <section>
-        <h3>{{ _("Decentralization is hard") }}</h3>
+        <h2>{{ _("GNUnet supports a free and open society") }}</h2>
+        <p>
+        {% trans %}
+          GNUnet is a self-organizing network and it
+          is <a class="link" href="https://www.gnu.org/philosophy/free-sw.html">free software</a>
+          as in freedom. GNUnet puts you in control of your data.
+          You determine which data to share with whom, and you&#39;re not
+          pressured to accept compromises.
+          It gives users freedoms to securely access information
+            ("run" the network), to study all aspects of the network&#39;s
+            operation ("access the code"), to distribute information
+            ("copy"), as well as the freedom to deploy new applications
+            ("modify").
+          {% endtrans %}
+        </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("The state of the art is inefficient") }}</h2>
+        <p>
+          {% trans %}
+          The ongoing hype around distributed ledgers and blockchains
+          is detrimental to the health of our planet.
+          {% endtrans %}
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-3 homepageicon">
+        <i class="fas fa-industry"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <span class="fas fa-globe-europe"></span>
+      </div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("Sustainability") }}</h2>
+        <p>
+        {% trans url=url_localized('news/2021-05-DISSENS.html') %}
+        GNUnet does not require a decentralized, public ledger.
+        This eliminates the need for wasteful, continuous consensus
+        mechanisms, which do not scale and are ecologically unsustainable.
+        GNUnet and its applications employ decentralization only
+        <a href="{{ url }}"> where it
+        provides the most value and use more efficient technology stacks where
+        needed</a>.
+          {% endtrans %}
+        </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid greybox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("Decentralization is the key, but hard") }}</h2>
 
         <p>
           {% trans %}
-          <!-- replaced with Proposal from Fabian Gerlach: 
-	It seems as if every other distributed or P2P project
-          develops its own library stack, covering transports, stream
-          muxing, discovery and others. This divides effort and
-          multiplies bug count.-->
-	  Instead of sharing common components and tools for building P2P systems, every P2P project seems to re-invent the wheel.
-               <!-- TODO: rework this sentence. -->
-               This heightens the effort and increases the
-               potential number of vulnerabilities.
+          <!--
+            replaced with Proposal from Fabian Gerlach:
+	    It seems as if every other distributed or P2P project
+            develops its own library stack, covering transports, stream
+            muxing, discovery and others. This divides effort and
+            multiplies bug count.
+            -->
+	    Instead of sharing common components and tools for
+	    building P2P systems, every P2P project seems to re-invent
+	    the wheel.
+            <!-- TODO: rework this sentence. -->
+            This heightens the effort and increases the
+            potential number of vulnerabilities.
 	  {% endtrans %}
-	<p>
+        </p>
+        </section>
+      </div>
+      <div class="col-lg-3 homepageicon">
+        <span class="fas fa-dharmachakra"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 homepageicon">
+        <span class="fas fa-flask"></span>
+      </div>
+      <div class="col-lg-6">
+        <section>
+        <h2>{{ _("GNUnet is a framework") }}</h2>
+        <p>
 	  {% trans %}
-          GNUnet is a metadata-preserving foundation for your
-          application, covering areas from addressing to reliable
-          bidirectional Axolotl-encrypted channels, with advanced
-          routing. Our work is based on continuous research spanning
+          It offers a metadata-preserving foundation for your
+          application. It offers components for addressing, reliable
+          encrypted channels with advanced
+          routing and resource discovery and naming.
+          Our work is based on continuous research spanning
           almost two decades.
           {% endtrans %}
         </p>
         </section>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-4">
-        <section>
-        <h3>{{ _("Metadata is exposed") }}</h3>
-        <p>
-          {% trans %}
-	Your metadata is just as revealing as the actual content; and it gets exposed on the Internet.<br>
-          Even though transport encryption is increasingly being
-          deployed on the Internet, it still reveals data that can
-          threaten democracy: the identities of senders and receivers,
-          the times, frequency and the volume of communication are all
-          still revealed.<br>
-	  <!-- Looks like a weak argumentation to me:
-          which <a
-          href="https://www.freehaven.net/anonbib/cache/websitefingerprinting-pets2016.pdf">enables
-          reverse-engineering pages visited via website
-          fingerprinting</a>.
-          -->
-          GNUnet
-	  <a href="https://secushare.org/anonymity">addresses</a>
-	  these concerns with perfect forward secrecy via ephemeral
-	  public key addressing, fixed packet size to hinder traffic
-	  analysis, layered encryption, Sybil-resistant routing, and
-	  more.
-          {% endtrans %}
-        </p>
-        </section>
-      </div>
-      <div class="col-lg-4">
-        <section>
-        <h3>{{ _("Freedoms are not respected") }}</h3>
-        <p>
-          {% trans %}
-	  Today, monitoring increasingly centralized infrastructure,
-	  proprietary implementations, traffic shapers and firewalls
-	  restrict all of the
-	  <a href="https://www.gnu.org/philosophy/free-sw.html">essential freedoms</a>
-	  to various degrees.
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-          GNUnet gives users freedoms to securely access information
-          ("run" the network), to study all aspects of the network's
-          operation ("access the code"), to distribute information
-          ("copy"), as well as the freedom to deploy new applications
-          ("modify").
-          {% endtrans %}
-        </p>
-        </section>
-      </div>
-      <div class="col-lg-4">
-        <section>
-        <h3>{{ _("Learn more about GNUnet") }}</h3>
-        <p>
-          {% trans %}
-          If you want to know more about the GNUnet please continue reading 
-	the <a href="about.html">about page</a>. There are much more resources, 
-	such as the <a href="https://docs.gnunet.org">main handbook / 
-	reference manual</a>, a <a href="https://bib.gnunet.org/">bibliography</a> 
-	and <a href="https://gnunet.org/en/video.html">videos</a>. 
-          {% endtrans %}
-        </p>
-        <p>
-          {% trans %}
-	You are very welcome to <a href="https://gnunet.org/en/engage.html">
-	get engaged into the conversation</a>, 
-	<a href="https://gnunet.org/en/install.html">install GNUnet</a>, 
-	<a href="https://gnunet.org/en/use.html">use it</a> and 
-	<a href="https://gnunet.org/en/engage.html">contribute</a>. <br>
-	Be aware that this project is still in an early alpha stage when it comes 
-	to software &#8211; its not an easy task to rewrite the whole Internet!
-          {% endtrans %}
-        </p>
-        </section>
-      </div>
-    </div>
   </div>
+
 </div>
-
-
-
+<hr style="padding: 2em;"/>
 <div class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="container text-center">
-        <h1>
-          {% trans %}
-            Featured Applications
-          {% endtrans %}
-        </h1>
+      <div class="col-lg-3 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('about.html') }}"><i class="fas fa-graduation-cap"></i><br/>{{ _("Learn more") }}</a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4">
-      <section>
-      <h3>{{ _("GNU Taler (Alpha)") }}</h3>
-      <p>
-        {% trans %}
-        <a href="https://taler.net/">GNU Taler</a>
-	is a new privacy-preserving electronic payment system.
-	Payments are cryptographically
-        secured and are confirmed within milliseconds with
-        extremely low transaction costs.
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
-    <div class="col-lg-4">
-      <section>
-      <h3>{{ _("The GNU Name System") }}</h3>
-
-      <p>
-        {% trans %}
-        The <a href="use.html#gns">GNU Name System (GNS)</a>
-        is a fully decentralized replacement
-	for the Domain Name System (DNS).  Instead of using a
-	hierarchy, GNS uses a directed graph.  Naming conventions
-	are similar to DNS, but queries and replies are private even
-	with respect to peers providing the answers.  The integrity of
-	records and privacy of look-ups is cryptographically secured.
-	<!-- Too technical: GNS integrates
-	a robust, efficient and instant key revocation mechanism. -->
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
-     <div class="col-lg-4">
-      <section>
-      <h3>{{ _("re:claimID") }}</h3>
-      <p>
-        {% trans %}
-        <a href="https://reclaim-identity.io/">re:claimID</a>
-        is a decentralized Identity Provider (IdP) service built in top of the
-        GNU Name System. It allows users to securely share personal information
-        with websites using standardized protocols (OpenID Connect).
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4">
-      <section>
-      <h3>{{ _("Filesharing (Alpha)") }}</h3>
-      <p>
-        {% trans %}
-        GNUnet <a href="use.html#fs">filesharing</a>
-        is an application that aims to provide
-        censorship-resistant, anonymous filesharing. The publisher is
-	empowered to make a gradual choice between performance and anonymity.
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
-    <div class="col-lg-4">
-      <section>
-      <h3>{{ _("Conversation (Pre-Alpha)") }}</h3>
-      <p>
-        {% trans %}
-	GNUnet conversation is an application that provides secure
-        voice communication in a fully decentralized way by employing
-        GNUnet for routing and transport.
-        {% endtrans %}
-      </p>
-      </section>
-    </div>
-  </div>
-  </div>
-</div>
-
-<div class="container-fluid c_acronym link-white">
-  <div class="container">
-    <div class="row">
-      <div class="container text-center">
-        <h1>
-          {% trans %}
-          Upcoming Applications
-          {% endtrans %}
-        </h1>
+      <div class="col-lg-3 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('applications.html') }}"><i class="fas fa-cubes"></i><br/>{{ _("Applications") }}</a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <section>
-        <h3>{{ _("secushare") }}</h3>
-        <p>
-          {% trans %}
-          <a href="https://secushare.org/">secushare</a>
-          is creating a decentralized social networking
-          application on top of GNUnet.  Using overlay
-          multicast and the extensible PSYC protocol, notifications are
-          distributed end-to-end encrypted to authorized recipients only.
-          {% endtrans %}
-        </p>
-        </section>
+      <div class="col-lg-3 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('engage.html') }}"><i class="fas fa-users"></i><br/>{{ _("Engage") }}</a>
       </div>
-      <div class="col-lg-6">
-        <section>
-        <h3>{{ _("pretty Easy privacy") }}</h3>
-        <p>
-          {% trans %}
-          <a href="https://pep.foundation/">pretty Easy privacy</a> (p&#8801;p)
-          is creating a usable end-to-end encrypted e-mail solution using
-          opportunistic key exchange.
-          p&#8801;p will use GNUnet to protect metadata and exploit new
-          cryptographic protocols to verify keys.
-          {% endtrans %}
-        </p>
-        </section>
+      <div class="col-lg-3 mt-1">
+        <a class="frontpage btn btn-primary btn-lg" href="{{ url_localized('install.html') }}"><i class="fas fa-play"></i><br/>{{ _("Get started") }}</a>
       </div>
     </div>
   </div>
 </div>
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="container text-center">
-      <h1>{{ _("News") }}<a name="news"></a></h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      {% include "template/news.html.j2.inc" %}
-    </div>
-  </div>
-</div> <!-- /container -->
 {% endblock body_content %}

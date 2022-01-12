@@ -1,112 +1,35 @@
-#
-# Copyright (C) 2017, 2018, 2019 GNUnet e.V.
-#
-# Copying and distribution of this file, with or without modification,
-# are permitted in any medium without royalty provided the copyright
-# notice and this notice are preserved.  This file is offered as-is,
-# without any warranty.
-#
-# ----
+# This file is in the public domain.
+
+include build-system/config.mk
 
 # All: build HTML pages in all languages and compile the
-# TypeScript logic in web-common.
+.PHONY: all
+all:
+	./inc/update-messages
+	env "BASEURL=$(opt_baseurl)" ./inc/build-site
 
-# Hardly anyone seems to read README files anymore, so keep this note here:
-# Don't remove the variables for python etc. They exist
-# because one system sticks with PEPs, and others opt
-# for installing every version side-by-side,
-# Same goes for babel.
-
-include config.mk
-
-all: css locale template
-	cp -R dist rendered/
-	cp -R static rendered/
-	cp rendered/static/robots.txt rendered/robots.txt
-	cp rendered/static/stage.robots.txt rendered/stage.robots.txt
-	cp rendered/static/robots.txt rendered/dist/robots.txt
-	cp rendered/static/robots.txt rendered/en/robots.txt
-	cp rendered/static/robots.txt rendered/de/robots.txt
-	cp rendered/static/robots.txt rendered/es/robots.txt
-	cp rendered/static/robots.txt rendered/fr/robots.txt
-	cp rendered/static/robots.txt rendered/it/robots.txt
-	cp favicon.ico rendered/favicon.ico
-	/bin/sh make_sitemap.sh
-	cp rendered/sitemap.xml rendered/en/sitemap.xml
-	cp rss.xml rendered/rss.xml
-	cp rss.xml rendered/en/rss.xml
-	cp rss.xml rendered/de/rss.xml
-	cp rss.xml rendered/es/rss.xml
-	cp rss.xml rendered/fr/rss.xml
-	cp rss.xml rendered/it/rss.xml
-	cp static/moved.html rendered/frontpage.html
-	cd rendered; ln -fs frontpage.html frontpage
-	cp static/moved_gsoc.html rendered/gsoc.html
-	cd rendered; ln -fs gsoc.html gsoc
-	mkdir rendered/node ; cp static/moved_about.html rendered/node/about.html
-	cd rendered/node ; ln -fs about.html 397
-	cp static/moved_about.html rendered/about.html
-	cd rendered ; ln -fs about.html philosophy
-
-# Extract translateable strings from jinja2 templates.
-# Because of the local i18nfix extractor module we need
-# to set the pythonpath before invoking pybabel.
-locale/messages.pot: common/*.j2.inc template/*.j2
-	PYTHONPATH=. $(BABEL) -v extract -F locale/babel.map -o locale/messages.pot .
-
-# Update translation (.po) files with new strings.
-locale-update: locale/messages.pot
-	msgmerge -U -m --previous locale/en/LC_MESSAGES/messages.po locale/messages.pot
-	msgmerge -U -m --previous locale/de/LC_MESSAGES/messages.po locale/messages.pot
-	msgmerge -U -m --previous locale/fr/LC_MESSAGES/messages.po locale/messages.pot
-	msgmerge -U -m --previous locale/es/LC_MESSAGES/messages.po locale/messages.pot
-	msgmerge -U -m --previous locale/it/LC_MESSAGES/messages.po locale/messages.pot
-
-	if grep -nA1 '#-#-#-#-#' locale/*/LC_MESSAGES/messages.po; then echo -e "\nERROR: Conflicts encountered in PO files.\n"; exit 1; fi
-
-# sass preprocessor
-css:
-	sassc static/styles.sass static/styles.css
-
-# Compile translation files for use.
-locale-compile:
-	$(BABEL) -v compile -d locale -l en --use-fuzzy
-	$(BABEL) -v compile -d locale -l de --use-fuzzy
-	$(BABEL) -v compile -d locale -l fr --use-fuzzy
-	$(BABEL) -v compile -d locale -l it --use-fuzzy
-	$(BABEL) -v compile -d locale -l es --use-fuzzy
-
-# Process everything related to gettext translations.
-locale: locale-update locale-compile
-
-# Run the jinja2 templating engine to expand templates to HTML
-# incorporating translations.
-template: locale-compile
-	$(PYTHON) ./template.py
-
-it: template
-
-current_dir = $(shell pwd)
-
+.PHONY: run
 run: all
-	@[ "$(BROWSER)" ] || ( echo "You need to export the environment variable 'BROWSER' to run this."; exit 1 )
-	$(RUN_BROWSER) http://0.0.0.0:8000 &
-	cd rendered && $(PYTHON) -m http.server
+	$(browser) http://0.0.0.0:8000/rendered/en &
+	$(python) -m http.server
 
+variant = $(opt_variant)
 
-# docker-all: Build using a docker image which contains all the needed packages.
+ifndef variant
+$(error variant is not set)
+endif
 
-docker: docker-all
+.PHONY: install
+install: all
+	$(mkdir) -p $(prefix)/$(variant)
+	$(cp) -r rendered/* $(prefix)/$(variant)/
+	$(cp) -r rendered/.well-known/ $(prefix)/$(variant)/
 
-docker-all:
-	docker build -t gnunet-www-builder .
-	# Importing via the shell like this is hacky,
-	# but after trying lots of other ways, this works most reliably...
-	$(PYTHON) -c 'import i18nfix'
-	docker run --rm -v $$(pwd):/tmp/ --user $$(id -u):$$(id -g) gnunet-www-builder
-
+.PHONY: clean
 clean:
-	rm -rf __pycache__
-	rm -rf en/ de/ fr/ it/ es/ ru/
-	rm -rf rendered/
-	rm -rf *.pyc *~ \.*~ \#*\#
+	$(rm) -rf __pycache__ *.pyc  *~ \.*~ \#*\#
+	$(rm) -rf rendered/
+
+.PHONY: submodules/update
+submodules/update:
+	$(git) submodule update --recursive --remote

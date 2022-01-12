@@ -13,11 +13,11 @@ RUN apt-get update && \
       python3-setuptools \
       python3-babel \
       python3-jinja2 \
-      sassc && \
+      git \
     apt-get clean all && \
     apt-get -y autoremove && \
     rm -rf \
       /var/lib/apt/lists/* \
       /tmp/*
 
-CMD /bin/bash -c "cd /tmp/ && make"
+CMD /bin/bash -c "cd /tmp/ && ./boostrap && ./configure && make"
